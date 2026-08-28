@@ -25,7 +25,7 @@ export default function HSCExamInterface({
   const isBn = lang === 'bn';
 
   // Initialize unique question tracker dictionary
-  // id -> { consecutiveCorrect: 0, status: 'unseen' | 'learning' | 'mistake' | 'done', totalAttempts: 0 }
+  // id -> { consecutiveCorrect: 0, status: 'learning' | 'mistake' | 'done', totalAttempts: 0 }
   const [questionStats, setQuestionStats] = useState(() => {
     const initialMap = {};
     questions.forEach((q) => {
@@ -40,33 +40,58 @@ export default function HSCExamInterface({
   });
 
   // The active running queue of questions
-  const [activeQueue, setActiveQueue] = useState([...questions]);
+  const [activeQueue, setActiveQueue] = useState(() => [...questions]);
   const [queueIndex, setQueueIndex] = useState(0);
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isNotSureClicked, setIsNotSureClicked] = useState(false);
-  const [isFinished, setIsFinished] = useState(false);
 
   // Timer
   const [secondsLeft, setSecondsLeft] = useState(900); // 15 mins
 
+  // Calculate live counters across all unique questions
+  const totalUnique = questions.length;
+  const doneCount = Object.values(questionStats).filter(
+    (s) => s.status === 'done' && s.consecutiveCorrect >= 3
+  ).length;
+  const mistakeCount = Object.values(questionStats).filter(
+    (s) => s.status === 'mistake'
+  ).length;
+  const learningCount = Object.values(questionStats).filter(
+    (s) => s.status === 'learning'
+  ).length;
+
+  // STRICT 100% DONE CONDITION: Exam can ONLY be finished when EVERY question is done 3 times
+  const isAllDone = totalUnique > 0 && doneCount === totalUnique;
+
   useEffect(() => {
-    if (isFinished) return;
+    if (isAllDone) return;
     const timer = setInterval(() => {
       setSecondsLeft((prev) => (prev > 0 ? prev - 1 : 0));
     }, 1000);
     return () => clearInterval(timer);
-  }, [isFinished]);
+  }, [isAllDone]);
 
-  const currentQ = activeQueue[queueIndex] || questions[0];
-  const currentStat = currentQ ? questionStats[currentQ.id] || { consecutiveCorrect: 0, status: 'learning' } : { consecutiveCorrect: 0, status: 'learning' };
+  useEffect(() => {
+    if (isAllDone) {
+      confetti({
+        particleCount: 160,
+        spread: 100,
+        origin: { y: 0.5 }
+      });
+    }
+  }, [isAllDone]);
 
-  // Calculate live counters across all unique questions
-  const totalUnique = questions.length;
-  const doneCount = Object.values(questionStats).filter((s) => s.status === 'done').length;
-  const mistakeCount = Object.values(questionStats).filter((s) => s.status === 'mistake').length;
-  const learningCount = Object.values(questionStats).filter((s) => s.status === 'learning').length;
+  // Safely resolve the current question so it is NEVER undefined
+  const currentQ =
+    activeQueue[queueIndex] ||
+    questions.find((q) => (questionStats[q.id]?.consecutiveCorrect || 0) < 3) ||
+    questions[0];
+
+  const currentStat = currentQ
+    ? questionStats[currentQ.id] || { consecutiveCorrect: 0, status: 'learning' }
+    : { consecutiveCorrect: 0, status: 'learning' };
 
   const formatTimer = (secs) => {
     const mins = Math.floor(secs / 60);
@@ -95,7 +120,11 @@ export default function HSCExamInterface({
 
   const processAnswer = (isCorrect, isNotSure) => {
     const qId = currentQ.id;
-    const prevStat = questionStats[qId] || { consecutiveCorrect: 0, status: 'learning', totalAttempts: 0 };
+    const prevStat = questionStats[qId] || {
+      consecutiveCorrect: 0,
+      status: 'learning',
+      totalAttempts: 0
+    };
 
     let newConsecutive = isCorrect ? prevStat.consecutiveCorrect + 1 : 0;
     let newStatus = prevStat.status;
@@ -133,7 +162,10 @@ export default function HSCExamInterface({
       const newQueue = [...prevQueue];
       // Target insert index: at least current position + 4 (3 questions in middle)
       const minGap = 4;
-      const targetIndex = Math.min(newQueue.length, queueIndex + minGap + Math.floor(Math.random() * 2));
+      const targetIndex = Math.min(
+        newQueue.length,
+        queueIndex + minGap + Math.floor(Math.random() * 2)
+      );
 
       // Insert question at target position
       newQueue.splice(targetIndex, 0, questionToRepeat);
@@ -142,35 +174,18 @@ export default function HSCExamInterface({
   };
 
   const handleNext = () => {
-    // Check if 100% of unique questions have reached 3 consecutive correct answers
-    const allDone = questions.every((q) => {
-      const s = questionStats[q.id];
-      return s && s.status === 'done' && s.consecutiveCorrect >= 3;
-    });
+    const nextIdx = queueIndex + 1;
 
-    if (allDone) {
-      setIsFinished(true);
-      confetti({
-        particleCount: 150,
-        spread: 90,
-        origin: { y: 0.5 }
-      });
-      return;
-    }
-
-    let nextIdx = queueIndex + 1;
-
-    // If we've reached the end of activeQueue but some questions are still not Done:
+    // Check if queue needs replenishment with remaining non-done questions
     if (nextIdx >= activeQueue.length) {
-      // Collect all non-done questions
-      const remainingQuestions = questions.filter((q) => {
-        const s = questionStats[q.id];
-        return !s || s.status !== 'done' || s.consecutiveCorrect < 3;
-      });
+      const remainingQuestions = questions.filter(
+        (q) => (questionStats[q.id]?.consecutiveCorrect || 0) < 3
+      );
 
       if (remainingQuestions.length > 0) {
-        // Append remaining questions to queue
-        setActiveQueue((prevQueue) => [...prevQueue, ...remainingQuestions]);
+        // Shuffle remaining and append
+        const shuffled = [...remainingQuestions].sort(() => Math.random() - 0.5);
+        setActiveQueue((prev) => [...prev, ...shuffled]);
       }
     }
 
@@ -196,7 +211,6 @@ export default function HSCExamInterface({
     setSelectedOption(null);
     setIsAnswered(false);
     setIsNotSureClicked(false);
-    setIsFinished(false);
     setSecondsLeft(900);
   };
 
@@ -214,7 +228,7 @@ export default function HSCExamInterface({
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
 
-      {!isFinished && currentQ ? (
+      {!isAllDone && currentQ ? (
         <div className="space-y-6 relative z-10">
           {/* 1. Top Status Bar matching sketch: Learning | Mistake | Done + Timer/Date */}
           <div className="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-[#1d2536]">
@@ -275,7 +289,7 @@ export default function HSCExamInterface({
               {currentStat.consecutiveCorrect === 3
                 ? '✅ Mastered (Done)'
                 : currentStat.consecutiveCorrect > 0
-                ? `${currentStat.consecutiveCorrect}/3 Correct (Appears in 3-4 Qs)`
+                ? `${currentStat.consecutiveCorrect}/3 Correct (Reappears in 3-4 Qs)`
                 : '🔁 Repeat after 3-4 Qs'}
             </span>
           </div>
@@ -287,7 +301,7 @@ export default function HSCExamInterface({
                 Question : {queueIndex + 1}
               </span>
               <span className="text-xs text-slate-500 font-semibold">
-                (Queue: {queueIndex + 1}/{activeQueue.length})
+                (Done: {doneCount}/{totalUnique})
               </span>
             </div>
 
@@ -411,11 +425,7 @@ export default function HSCExamInterface({
                   onClick={handleNext}
                   className="px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all transform active:scale-95"
                 >
-                  <span>
-                    {doneCount === totalUnique
-                      ? isBn ? '🎉 সম্পন্ন করুন ও স্কোর দেখুন' : 'Finish & View Score'
-                      : isBn ? 'পরবর্তী প্রশ্ন' : 'Next Question'}
-                  </span>
+                  <span>{isBn ? 'পরবর্তী প্রশ্ন' : 'Next Question'}</span>
                   <ArrowRight size={17} />
                 </button>
               )}
@@ -477,7 +487,7 @@ export default function HSCExamInterface({
           )}
         </div>
       ) : (
-        /* Final Mastery Screen */
+        /* Final 100% Mastery Screen - ONLY shown when isAllDone is TRUE */
         <div className="text-center py-8 space-y-6 relative z-10 animate-in zoom-in duration-300">
           <div className="w-20 h-20 rounded-3xl bg-gradient-to-tr from-emerald-600 to-teal-500 text-white mx-auto flex items-center justify-center shadow-xl shadow-emerald-950/60 border border-emerald-400/30">
             <Award size={44} />
@@ -485,27 +495,27 @@ export default function HSCExamInterface({
 
           <div>
             <h2 className="text-3xl font-black text-white">
-              {isBn ? 'অভিনন্দন! সম্পূর্ণ ভোকাবুলারি আয়ত্ত হয়েছে!' : 'Congratulations! All Words Mastered!'}
+              {isBn ? 'অভিনন্দন! সম্পূর্ণ ভোকাবুলারি ১০০% সম্পন্ন হয়েছে!' : 'Congratulations! 100% Words Mastered!'}
             </h2>
             <p className="text-slate-400 text-sm mt-1">
               {isBn
-                ? 'আপনি প্রতিটি শব্দ ও প্রশ্নের উত্তর সফলভাবে অন্তত ৩ বার সঠিকভাবে দিয়েছেন।'
-                : 'You have successfully answered every word correctly at least 3 times!'}
+                ? 'আপনি প্রতিটি শব্দ ও প্রশ্নের উত্তর সফলভাবে ৩ বার সঠিকভাবে দিয়ে সম্পন্ন (Done) করেছেন।'
+                : 'You have answered EVERY question correctly 3 times and marked all as Done!'}
             </p>
           </div>
 
           {/* Stats Summary Cards */}
           <div className="grid grid-cols-3 gap-3 max-w-md mx-auto">
             <div className="p-3.5 rounded-2xl bg-[#0e131e] border border-emerald-500/30 text-center">
-              <span className="text-xs text-slate-400 block">Mastered (Done)</span>
-              <span className="text-2xl font-black text-emerald-400">{doneCount}</span>
+              <span className="text-xs text-slate-400 block">Done (সম্পূর্ণ)</span>
+              <span className="text-2xl font-black text-emerald-400">{doneCount} / {totalUnique}</span>
             </div>
             <div className="p-3.5 rounded-2xl bg-[#0e131e] border border-blue-500/30 text-center">
               <span className="text-xs text-slate-400 block">Total Unique</span>
               <span className="text-2xl font-black text-blue-400">{totalUnique}</span>
             </div>
             <div className="p-3.5 rounded-2xl bg-[#0e131e] border border-amber-500/30 text-center">
-              <span className="text-xs text-slate-400 block">Retention</span>
+              <span className="text-xs text-slate-400 block">Mastery Score</span>
               <span className="text-2xl font-black text-amber-400">100% ⭐</span>
             </div>
           </div>
@@ -517,7 +527,7 @@ export default function HSCExamInterface({
               className="px-5 py-2.5 rounded-xl bg-[#192233] hover:bg-[#222e44] text-slate-300 text-sm font-bold inline-flex items-center gap-2 transition-all"
             >
               <RotateCcw size={16} />
-              <span>{isBn ? 'পুনরায় প্র্যাকটিস করুন' : 'Practice Again'}</span>
+              <span>{isBn ? 'পুনরায় প্র্যাকটিস শুরু করুন' : 'Practice Again'}</span>
             </button>
 
             {onClose && (
