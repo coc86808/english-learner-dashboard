@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   LayoutDashboard,
-  FolderArchive,
+  Layers,
   GraduationCap,
   Trophy,
   TrendingUp,
@@ -22,9 +22,9 @@ export default function MobileBottomNav({
       icon: LayoutDashboard
     },
     {
-      id: 'question-bank',
-      label: isBn ? 'প্রশ্নব্যাংক' : 'Bank',
-      icon: FolderArchive
+      id: 'flashcards',
+      label: isBn ? 'ফ্ল্যাশকার্ড' : 'Cards',
+      icon: Layers
     },
     {
       id: 'exams',

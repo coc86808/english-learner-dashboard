@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   LayoutDashboard,
-  FolderArchive,
+  Layers,
   GraduationCap,
   Bot,
   History,
@@ -21,7 +21,8 @@ export default function Sidebar({
   isOpen,
   setIsOpen,
   lang,
-  onOpenAuth
+  onOpenAuth,
+  onOpenProfile
 }) {
   const isBn = lang === 'bn';
 
@@ -34,9 +35,9 @@ export default function Sidebar({
       activeColor: 'bg-emerald-500/15 text-emerald-400 border-l-4 border-emerald-500'
     },
     {
-      id: 'question-bank',
-      label: isBn ? 'প্রশ্নব্যাংক' : 'Question Bank',
-      icon: FolderArchive,
+      id: 'flashcards',
+      label: isBn ? 'ফ্ল্যাশকার্ড' : 'Flashcards',
+      icon: Layers,
       badge: 'PRO',
       badgeColor: 'bg-amber-500/20 text-amber-300'
     },
@@ -165,14 +166,28 @@ export default function Sidebar({
         </div>
 
         {/* Bottom Auth / Profile Section */}
-        <div className="p-4 border-t border-[#192030] bg-[#090c13]/50">
-          <button
-            onClick={onOpenAuth}
-            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-sm shadow-lg shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all duration-200 transform active:scale-95"
+        <div className="p-3.5 border-t border-[#192030] bg-[#090c13]/50">
+          <div
+            onClick={onOpenProfile || onOpenAuth}
+            className="w-full flex items-center justify-between p-2.5 rounded-xl bg-[#121824] hover:bg-[#182132] border border-[#1e293c] transition-all cursor-pointer group shadow-sm"
           >
-            <LogIn size={17} />
-            <span>{isBn ? 'Sign Up / লগইন' : 'Sign Up / Log In'}</span>
-          </button>
+            <div className="flex items-center gap-2.5 min-w-0">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-xs shrink-0 shadow-md">
+                TA
+              </div>
+              <div className="min-w-0">
+                <span className="block text-xs font-bold text-white group-hover:text-emerald-300 truncate">
+                  Tanvir Ahmed
+                </span>
+                <span className="block text-[10px] text-slate-400 truncate">
+                  {isBn ? 'প্রোফাইল ও দুর্বল শব্দ' : 'Profile & Weak Words'}
+                </span>
+              </div>
+            </div>
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 shrink-0">
+              HSC
+            </span>
+          </div>
         </div>
       </aside>
     </>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { BookOpen, GraduationCap, BookMarked } from 'lucide-react';
+import { Layers, GraduationCap, BookMarked } from 'lucide-react';
 
 export default function ActionCards({
   lang,
-  onOpenQuestionBank,
+  onOpenFlashcards,
   onOpenQuickPractice,
   onOpenMockExam
 }) {
@@ -11,13 +11,13 @@ export default function ActionCards({
 
   const cards = [
     {
-      id: 'qb',
-      title: isBn ? 'প্রশ্নব্যাংক' : 'Question Bank',
-      subtitle: isBn ? 'ইউনিট ও লেসনভিত্তিক MCQ' : 'Unit & Lesson MCQs',
-      icon: BookOpen,
-      iconBg: 'bg-gradient-to-br from-emerald-600 to-teal-700 text-white shadow-lg shadow-emerald-950/40',
-      borderHover: 'hover:border-emerald-500/50 hover:shadow-emerald-950/30',
-      onClick: onOpenQuestionBank
+      id: 'fc',
+      title: isBn ? 'ফ্ল্যাশকার্ড' : 'Flashcards',
+      subtitle: isBn ? 'অ্যাক্টিভ রিকল ও স্পেসড লার্নিং' : 'Active Recall & Flip Cards',
+      icon: Layers,
+      iconBg: 'bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-950/40',
+      borderHover: 'hover:border-amber-500/50 hover:shadow-amber-950/30',
+      onClick: onOpenFlashcards
     },
     {
       id: 'qp',

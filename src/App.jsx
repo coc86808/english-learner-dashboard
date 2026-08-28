@@ -11,9 +11,12 @@ import AdminDashboard from './components/admin/AdminDashboard';
 import HSCUnitsExplorer from './components/HSCUnitsExplorer';
 import UnitLessonExamModal from './components/UnitLessonExamModal';
 import MobileBottomNav from './components/MobileBottomNav';
+import FlashcardsExplorer from './components/FlashcardsExplorer';
+import WeakWordsSection from './components/WeakWordsSection';
+import UserProfileModal from './components/UserProfileModal';
 import { usersList } from './data/users';
-import { hscQuestionsList } from './data/questions';
-import { Trophy, GraduationCap, BookOpen } from 'lucide-react';
+import { hscQuestionsList, hscVocabularyList } from './data/questions';
+import { Trophy, GraduationCap, BookOpen, Layers } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -24,10 +27,53 @@ export default function App() {
   const [users, setUsers] = useState(usersList);
   const [questions, setQuestions] = useState(hscQuestionsList);
 
+  // Weak Words State (Tracked across Flashcards & Exams)
+  const [weakWords, setWeakWords] = useState(() => {
+    try {
+      const saved = localStorage.getItem('hsc_weak_words');
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    // Initial sample weak words for immediate demo & revision
+    return [
+      hscVocabularyList[0], // Ambitious
+      hscVocabularyList[1], // Unrealistic
+      hscVocabularyList[2], // Dreamer
+      hscVocabularyList[6], // Eloquent
+      hscVocabularyList[9], // Pedantic
+    ];
+  });
+
+  const handleToggleWeakWord = (wordItem) => {
+    setWeakWords((prev) => {
+      const exists = prev.some(w => w.id === wordItem.id || w.word === wordItem.word);
+      let updated;
+      if (exists) {
+        updated = prev.filter(w => w.id !== wordItem.id && w.word !== wordItem.word);
+      } else {
+        updated = [...prev, wordItem];
+      }
+      try {
+        localStorage.setItem('hsc_weak_words', JSON.stringify(updated));
+      } catch (e) {}
+      return updated;
+    });
+  };
+
+  const handleRemoveWeakWord = (wordItem) => {
+    setWeakWords((prev) => {
+      const updated = prev.filter(w => w.id !== wordItem.id && w.word !== wordItem.word);
+      try {
+        localStorage.setItem('hsc_weak_words', JSON.stringify(updated));
+      } catch (e) {}
+      return updated;
+    });
+  };
+
   // Modals state
   const [isQuickPracticeOpen, setIsQuickPracticeOpen] = useState(false);
   const [isQuestionBankOpen, setIsQuestionBankOpen] = useState(false);
   const [isUnitLessonModalOpen, setIsUnitLessonModalOpen] = useState(false);
+  const [isUserProfileOpen, setIsUserProfileOpen] = useState(false);
   const [selectedExamUnit, setSelectedExamUnit] = useState(null);
   const [selectedExamLesson, setSelectedExamLesson] = useState(null);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
@@ -38,8 +84,8 @@ export default function App() {
     switch (activeTab) {
       case 'dashboard':
         return isBn ? 'ড্যাশবোর্ড' : 'Dashboard';
-      case 'question-bank':
-        return isBn ? 'প্রশ্নব্যাংক' : 'Question Bank';
+      case 'flashcards':
+        return isBn ? 'ফ্ল্যাশকার্ড' : 'Flashcards';
       case 'exams':
         return isBn ? 'পরীক্ষা' : 'Exam';
       case 'history':
@@ -47,7 +93,7 @@ export default function App() {
       case 'leaderboard':
         return isBn ? 'লিডারবোর্ড' : 'Leaderboard';
       case 'progress':
-        return isBn ? 'প্রগ্রেস রিপোর্ট' : 'Progress Report';
+        return isBn ? 'প্রগ্রেস ও দুর্বল শব্দ' : 'Progress & Weak Words';
       case 'admin':
         return isBn ? 'অ্যাডমিন প্যানেল' : 'Admin Control Panel';
       default:
@@ -69,6 +115,7 @@ export default function App() {
         setIsOpen={setSidebarOpen}
         lang={lang}
         onOpenAuth={() => setIsAuthOpen(true)}
+        onOpenProfile={() => setIsUserProfileOpen(true)}
       />
 
       {/* Main Workspace Area */}
@@ -93,7 +140,7 @@ export default function App() {
               {/* Top 3 Action Feature Cards */}
               <ActionCards
                 lang={lang}
-                onOpenQuestionBank={() => setIsQuestionBankOpen(true)}
+                onOpenFlashcards={() => setActiveTab('flashcards')}
                 onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
                 onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
               />
@@ -105,7 +152,7 @@ export default function App() {
                   {/* Subject-Wise Report Card */}
                   <SubjectReport
                     lang={lang}
-                    onOpenAllSubjects={() => setIsQuestionBankOpen(true)}
+                    onOpenAllSubjects={() => setActiveTab('exams')}
                     onSelectLesson={(lesson, unit) => {
                       setSelectedExamUnit(unit);
                       setSelectedExamLesson(lesson);
@@ -239,10 +286,13 @@ export default function App() {
             </div>
           )}
 
-          {activeTab === 'question-bank' && (
-            <div className="max-w-6xl mx-auto">
-              <HSCUnitsExplorer
+          {activeTab === 'flashcards' && (
+            <div className="max-w-4xl mx-auto">
+              <FlashcardsExplorer
                 lang={lang}
+                weakWords={weakWords}
+                onToggleWeakWord={handleToggleWeakWord}
+                onStartExamFromCards={() => setActiveTab('exams')}
               />
             </div>
           )}
@@ -266,63 +316,84 @@ export default function App() {
           )}
 
           {activeTab === 'progress' && (
-            <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              <div className="lg:col-span-7">
-                <SubjectReport
-                  lang={lang}
-                  onOpenAllSubjects={() => setActiveTab('question-bank')}
-                  onSelectLesson={(lesson, unit) => {
-                    setSelectedExamUnit(unit);
-                    setSelectedExamLesson(lesson);
-                    setIsUnitLessonModalOpen(true);
-                  }}
-                />
-              </div>
-              <div className="lg:col-span-5 space-y-6">
-                {/* Overall Textbook Mastery Summary */}
-                <div className="bg-[#131824] border border-[#1d2536] rounded-2xl p-6 shadow-card space-y-4">
-                  <div className="flex items-center gap-3 pb-3 border-b border-[#1d2536]">
-                    <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20">
-                      <GraduationCap size={22} />
-                    </div>
-                    <div>
-                      <h3 className="text-white font-bold text-base">
-                        {isBn ? 'HSC পাঠ্যবই ভোকাবুলারি অগ্রগতি' : 'HSC Textbook Mastery'}
-                      </h3>
-                      <p className="text-xs text-slate-400">
-                        {isBn ? '১২টি ইউনিট ও সকল লেসন' : '12 Units & All Lessons'}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3 pt-1">
-                    <div className="p-3.5 rounded-xl bg-[#0e131e] border border-[#222c40] text-center">
-                      <span className="text-xs text-slate-400 block mb-1">মোট শব্দ সংখ্যা</span>
-                      <span className="text-xl font-black text-emerald-400">২৩ টি</span>
-                    </div>
-                    <div className="p-3.5 rounded-xl bg-[#0e131e] border border-[#222c40] text-center">
-                      <span className="text-xs text-slate-400 block mb-1">সম্পূর্ণ আয়ত্ত (Done)</span>
-                      <span className="text-xl font-black text-blue-400">০ টি</span>
-                    </div>
-                  </div>
-
-                  <div className="pt-2">
-                    <div className="flex justify-between text-xs text-slate-300 mb-1.5">
-                      <span>সর্বমোট সিলেবাস সম্পন্ন</span>
-                      <span className="font-bold text-emerald-400">০%</span>
-                    </div>
-                    <div className="w-full h-2 bg-[#0e131e] rounded-full overflow-hidden border border-[#1c2436]">
-                      <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full w-0" />
-                    </div>
-                  </div>
-
-                  <button
-                    onClick={() => setActiveTab('exams')}
-                    className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all shadow-lg active:scale-95"
-                  >
-                    {isBn ? '▶ পরীক্ষা দিয়ে অগ্রগতি বাড়ান' : '▶ Take Exam to Increase Progress'}
-                  </button>
+            <div className="max-w-5xl mx-auto space-y-8">
+              {/* Progress Summary Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <div className="lg:col-span-7">
+                  <SubjectReport
+                    lang={lang}
+                    onOpenAllSubjects={() => setActiveTab('exams')}
+                    onSelectLesson={(lesson, unit) => {
+                      setSelectedExamUnit(unit);
+                      setSelectedExamLesson(lesson);
+                      setIsUnitLessonModalOpen(true);
+                    }}
+                  />
                 </div>
+                <div className="lg:col-span-5 space-y-6">
+                  {/* Overall Textbook Mastery Summary */}
+                  <div className="bg-[#131824] border border-[#1d2536] rounded-2xl p-6 shadow-card space-y-4">
+                    <div className="flex items-center gap-3 pb-3 border-b border-[#1d2536]">
+                      <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20">
+                        <GraduationCap size={22} />
+                      </div>
+                      <div>
+                        <h3 className="text-white font-bold text-base">
+                          {isBn ? 'HSC পাঠ্যবই ভোকাবুলারি অগ্রগতি' : 'HSC Textbook Mastery'}
+                        </h3>
+                        <p className="text-xs text-slate-400">
+                          {isBn ? '১২টি ইউনিট ও সকল লেসন' : '12 Units & All Lessons'}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-3 pt-1">
+                      <div className="p-3.5 rounded-xl bg-[#0e131e] border border-[#222c40] text-center">
+                        <span className="text-xs text-slate-400 block mb-1">
+                          {isBn ? 'মোট শব্দ সংখ্যা' : 'Total Words'}
+                        </span>
+                        <span className="text-xl font-black text-emerald-400">
+                          23
+                        </span>
+                      </div>
+                      <div className="p-3.5 rounded-xl bg-[#0e131e] border border-[#222c40] text-center">
+                        <span className="text-xs text-slate-400 block mb-1">
+                          {isBn ? 'দুর্বল শব্দ' : 'Weak Words'}
+                        </span>
+                        <span className="text-xl font-black text-rose-400">
+                          {weakWords.length}
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="pt-2">
+                      <div className="flex justify-between text-xs text-slate-300 mb-1.5">
+                        <span>{isBn ? 'সর্বমোট সিলেবাস সম্পন্ন' : 'Overall Syllabus Covered'}</span>
+                        <span className="font-bold text-emerald-400">০%</span>
+                      </div>
+                      <div className="w-full h-2 bg-[#0e131e] rounded-full overflow-hidden border border-[#1c2436]">
+                        <div className="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full w-0" />
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => setActiveTab('exams')}
+                      className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all shadow-lg active:scale-95 cursor-pointer"
+                    >
+                      {isBn ? '▶ পরীক্ষা দিয়ে অগ্রগতি বাড়ান' : '▶ Take Exam to Increase Progress'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Weak Words Section & PDF Download Table */}
+              <div className="pt-4 border-t border-[#1a2233]">
+                <WeakWordsSection
+                  weakWords={weakWords}
+                  onRemoveWeakWord={handleRemoveWeakWord}
+                  onOpenFlashcards={() => setActiveTab('flashcards')}
+                  lang={lang}
+                />
               </div>
             </div>
           )}
@@ -348,6 +419,18 @@ export default function App() {
       </div>
 
       {/* 4. Interactive Modals */}
+      <UserProfileModal
+        isOpen={isUserProfileOpen}
+        onClose={() => setIsUserProfileOpen(false)}
+        lang={lang}
+        weakWords={weakWords}
+        onRemoveWeakWord={handleRemoveWeakWord}
+        onOpenFlashcards={() => {
+          setIsUserProfileOpen(false);
+          setActiveTab('flashcards');
+        }}
+      />
+
       <UnitLessonExamModal
         isOpen={isUnitLessonModalOpen}
         onClose={() => {
