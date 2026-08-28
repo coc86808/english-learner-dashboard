@@ -1,14 +1,14 @@
 import React from 'react';
 import { X, Zap } from 'lucide-react';
 import HSCExamInterface from './HSCExamInterface';
-import { initialHSCQuestions } from '../data/adminMockData';
+import { hscQuestionsList } from '../data/questions';
 
 export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuestions }) {
   if (!isOpen) return null;
 
   const questionsList = dynamicQuestions && dynamicQuestions.length > 0
     ? dynamicQuestions
-    : initialHSCQuestions;
+    : hscQuestionsList;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md overflow-y-auto">

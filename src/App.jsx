@@ -13,7 +13,8 @@ import MockExamModal from './components/MockExamModal';
 import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
 import HSCExamInterface from './components/HSCExamInterface';
-import { initialAdminUsers, initialHSCQuestions } from './data/adminMockData';
+import { usersList } from './data/users';
+import { hscQuestionsList } from './data/questions';
 import { Trophy, History as HistoryIcon, TrendingUp, Sparkles, Shield } from 'lucide-react';
 
 export default function App() {
@@ -22,8 +23,8 @@ export default function App() {
   const [lang, setLang] = useState('bn'); // 'bn' | 'en'
 
   // Admin Data State (Users and HSC Questions)
-  const [users, setUsers] = useState(initialAdminUsers);
-  const [questions, setQuestions] = useState(initialHSCQuestions);
+  const [users, setUsers] = useState(usersList);
+  const [questions, setQuestions] = useState(hscQuestionsList);
 
   // Modals state
   const [isQuickPracticeOpen, setIsQuickPracticeOpen] = useState(false);
