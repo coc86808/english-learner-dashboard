@@ -6,7 +6,6 @@ import SubjectReport from './components/SubjectReport';
 import RecentExams from './components/RecentExams';
 import QuickPracticeModal from './components/QuickPracticeModal';
 import QuestionBankModal from './components/QuestionBankModal';
-import MockExamModal from './components/MockExamModal';
 import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
 import HSCUnitsExplorer from './components/HSCUnitsExplorer';
@@ -27,7 +26,6 @@ export default function App() {
   // Modals state
   const [isQuickPracticeOpen, setIsQuickPracticeOpen] = useState(false);
   const [isQuestionBankOpen, setIsQuestionBankOpen] = useState(false);
-  const [isMockExamOpen, setIsMockExamOpen] = useState(false);
   const [isUnitLessonModalOpen, setIsUnitLessonModalOpen] = useState(false);
   const [selectedExamUnit, setSelectedExamUnit] = useState(null);
   const [selectedExamLesson, setSelectedExamLesson] = useState(null);
@@ -364,13 +362,11 @@ export default function App() {
         isOpen={isQuestionBankOpen}
         onClose={() => setIsQuestionBankOpen(false)}
         lang={lang}
-      />
-
-      <MockExamModal
-        isOpen={isMockExamOpen}
-        onClose={() => setIsMockExamOpen(false)}
-        lang={lang}
-        onStartExamDirect={handleStartExam}
+        onSelectUnit={(unit) => {
+          setSelectedExamUnit(unit);
+          setSelectedExamLesson(null);
+          setIsUnitLessonModalOpen(true);
+        }}
       />
 
       <AuthModal
