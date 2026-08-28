@@ -14,6 +14,7 @@ import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
 import HSCExamInterface from './components/HSCExamInterface';
 import HSCUnitsExplorer from './components/HSCUnitsExplorer';
+import UnitLessonExamModal from './components/UnitLessonExamModal';
 import { usersList } from './data/users';
 import { hscQuestionsList } from './data/questions';
 import { Trophy, History as HistoryIcon, TrendingUp, Sparkles, Shield } from 'lucide-react';
@@ -31,6 +32,9 @@ export default function App() {
   const [isQuickPracticeOpen, setIsQuickPracticeOpen] = useState(false);
   const [isQuestionBankOpen, setIsQuestionBankOpen] = useState(false);
   const [isMockExamOpen, setIsMockExamOpen] = useState(false);
+  const [isUnitLessonModalOpen, setIsUnitLessonModalOpen] = useState(false);
+  const [selectedExamUnit, setSelectedExamUnit] = useState(null);
+  const [selectedExamLesson, setSelectedExamLesson] = useState(null);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
 
   const isBn = lang === 'bn';
@@ -96,7 +100,7 @@ export default function App() {
                 lang={lang}
                 onOpenQuestionBank={() => setIsQuestionBankOpen(true)}
                 onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
-                onOpenMockExam={() => setIsMockExamOpen(true)}
+                onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
               />
 
               {/* Main Content Grid: 2/3 Main Reports + 1/3 Side Widgets */}
@@ -107,13 +111,18 @@ export default function App() {
                   <SubjectReport
                     lang={lang}
                     onOpenAllSubjects={() => setIsQuestionBankOpen(true)}
+                    onSelectLesson={(lesson, unit) => {
+                      setSelectedExamUnit(unit);
+                      setSelectedExamLesson(lesson);
+                      setIsUnitLessonModalOpen(true);
+                    }}
                   />
 
                   {/* Recent Exams Card */}
                   <RecentExams
                     lang={lang}
-                    onOpenAllExams={() => setIsMockExamOpen(true)}
-                    onStartExam={handleStartExam}
+                    onOpenAllExams={() => setIsUnitLessonModalOpen(true)}
+                    onStartExam={() => setIsUnitLessonModalOpen(true)}
                   />
                 </div>
 
@@ -261,6 +270,17 @@ export default function App() {
       </div>
 
       {/* 4. Interactive Modals */}
+      <UnitLessonExamModal
+        isOpen={isUnitLessonModalOpen}
+        onClose={() => {
+          setIsUnitLessonModalOpen(false);
+          setSelectedExamLesson(null);
+        }}
+        initialUnit={selectedExamUnit}
+        initialLesson={selectedExamLesson}
+        lang={lang}
+      />
+
       <QuickPracticeModal
         isOpen={isQuickPracticeOpen}
         onClose={() => setIsQuickPracticeOpen(false)}

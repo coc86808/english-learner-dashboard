@@ -84,7 +84,7 @@ export default function SubjectReport({ lang, onOpenAllSubjects, onSelectLesson 
                     {unit.lessons.map((lesson) => (
                       <div
                         key={lesson.id}
-                        onClick={() => onSelectLesson && onSelectLesson(lesson)}
+                        onClick={() => onSelectLesson && onSelectLesson(lesson, unit)}
                         className="flex items-center justify-between text-slate-300 p-1.5 rounded-lg hover:bg-[#182030] cursor-pointer transition-colors group"
                       >
                         <div className="flex items-center gap-2">
