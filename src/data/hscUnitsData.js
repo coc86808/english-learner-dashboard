@@ -16,10 +16,10 @@ export const hscUnits = [
     totalWords: 23,
     masteredWords: 0,
     lessons: [
-      { id: 'u1-l1', number: 'Lesson-1', title: "The Parrot's Tale", titleBn: 'তোতাকাহিনী', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '২৩ টি প্রশ্ন', wordsCount: 23, progress: 0 },
-      { id: 'u1-l2', number: 'Lesson 2', title: 'Education and Technology', titleBn: 'শিক্ষা ও প্রযুক্তি', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u1-l3', number: 'Lesson 3', title: 'Children in School', titleBn: 'বিদ্যালয়ে শিশু', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u1-l4', number: 'Lesson-4', title: 'Civic Engagement', titleBn: 'নাগরিক সম্পৃক্ততা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u1-l1', number: 'Lesson-1', title: "The Parrot's Tale", titleBn: 'তোতাকাহিনী', questionsCount: '২৩ টি প্রশ্ন', wordsCount: 23, progress: 0 },
+      { id: 'u1-l2', number: 'Lesson 2', title: 'Education and Technology', titleBn: 'শিক্ষা ও প্রযুক্তি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u1-l3', number: 'Lesson 3', title: 'Children in School', titleBn: 'বিদ্যালয়ে শিশু', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u1-l4', number: 'Lesson-4', title: 'Civic Engagement', titleBn: 'নাগরিক সম্পৃক্ততা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -34,10 +34,10 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u2-l1', number: 'Lesson 1', title: 'What is Beauty?', titleBn: 'সৌন্দর্য কী?', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u2-l2', number: 'Lesson 2', title: 'Folk Music', titleBn: 'লোকসংগীত', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u2-l3', number: 'Lesson 3', title: 'Art', titleBn: 'শিল্পকলা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u2-l4', number: 'Lesson 4', title: 'Craft', titleBn: 'কারুশিল্প', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u2-l1', number: 'Lesson 1', title: 'What is Beauty?', titleBn: 'সৌন্দর্য কী?', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u2-l2', number: 'Lesson 2', title: 'Folk Music', titleBn: 'লোকসংগীত', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u2-l3', number: 'Lesson 3', title: 'Art', titleBn: 'শিল্পকলা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u2-l4', number: 'Lesson 4', title: 'Craft', titleBn: 'কারুশিল্প', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -52,10 +52,10 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u3-l1', number: 'Lesson 1', title: 'Myths of Bengal', titleBn: 'বাংলার পৌরাণিক রূপকথা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u3-l2', number: 'Lesson 2', title: 'Icarus', titleBn: 'ইকারাস', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u3-l3', number: 'Lesson 3', title: 'The Legend of Gazi', titleBn: 'গাজী পীরের উপাখ্যান', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u3-l4', number: 'Lesson 4', title: 'Khona', titleBn: 'খনার বচন ও জীবন', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u3-l1', number: 'Lesson 1', title: 'Myths of Bengal', titleBn: 'বাংলার পৌরাণিক রূপকথা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u3-l2', number: 'Lesson 2', title: 'Icarus', titleBn: 'ইকারাস', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u3-l3', number: 'Lesson 3', title: 'The Legend of Gazi', titleBn: 'গাজী পীরের উপাখ্যান', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u3-l4', number: 'Lesson 4', title: 'Khona', titleBn: 'খনার বচন ও জীবন', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -70,8 +70,8 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u4-l1', number: 'Lesson 1', title: 'Three Speeches', titleBn: 'তিনটি ঐতিহাসিক ভাষণ', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u4-l2', number: 'Lesson 2', title: 'Great Women', titleBn: 'মহীয়সী নারী', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u4-l1', number: 'Lesson 1', title: 'Three Speeches', titleBn: 'তিনটি ঐতিহাসিক ভাষণ', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u4-l2', number: 'Lesson 2', title: 'Great Women', titleBn: 'মহীয়সী নারী', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -86,11 +86,11 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u5-l1', number: 'Lesson 1', title: 'Are We Aware of These Rights-I?', titleBn: 'আমরা কি অধিকার সম্পর্কে সচেতন?-১', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u5-l2', number: 'Lesson 2', title: 'Are We Aware of These Rights-II?', titleBn: 'আমরা কি অধিকার সম্পর্কে সচেতন?-২', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u5-l3', number: 'Lesson 3', title: 'Rights to Health and Education', titleBn: 'স্বাস্থ্য ও শিক্ষার অধিকার', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u5-l4', number: 'Lesson 4', title: 'Coal Miners', titleBn: 'কয়লা খনি শ্রমিকদের জীবন', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u5-l5', number: 'Lesson 5', title: 'Frederick Douglass', titleBn: 'ফ্রেডরিক ডগলাস', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u5-l1', number: 'Lesson 1', title: 'Are We Aware of These Rights-I?', titleBn: 'আমরা কি অধিকার সম্পর্কে সচেতন?-১', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u5-l2', number: 'Lesson 2', title: 'Are We Aware of These Rights-II?', titleBn: 'আমরা কি অধিকার সম্পর্কে সচেতন?-২', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u5-l3', number: 'Lesson 3', title: 'Rights to Health and Education', titleBn: 'স্বাস্থ্য ও শিক্ষার অধিকার', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u5-l4', number: 'Lesson 4', title: 'Coal Miners', titleBn: 'কয়লা খনি শ্রমিকদের জীবন', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u5-l5', number: 'Lesson 5', title: 'Frederick Douglass', titleBn: 'ফ্রেডরিক ডগলাস', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -105,8 +105,8 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u6-l1', number: 'Lesson 1', title: 'What is a Dream?', titleBn: 'স্বপ্ন কী?', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u6-l2', number: 'Lesson 2', title: 'Dreams in Literature', titleBn: 'সাহিত্যে স্বপ্ন', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u6-l1', number: 'Lesson 1', title: 'What is a Dream?', titleBn: 'স্বপ্ন কী?', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u6-l2', number: 'Lesson 2', title: 'Dreams in Literature', titleBn: 'সাহিত্যে স্বপ্ন', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -121,9 +121,9 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u7-l1', number: 'Lesson 1', title: 'Brojen Das: On Crossing the Channel', titleBn: 'ব্রজেন দাস: ইংলিশ চ্যানেল পাড়ি', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u7-l2', number: 'Lesson 2', title: 'Scaling a Mountain Peak', titleBn: 'পাহাড় চূড়ায় আরোহণ', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u7-l3', number: 'Lesson 3', title: 'The Unbeaten Girls', titleBn: 'অপরাজেয় নারী ফুটবল দল', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u7-l1', number: 'Lesson 1', title: 'Brojen Das: On Crossing the Channel', titleBn: 'ব্রজেন দাস: ইংলিশ চ্যানেল পাড়ি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u7-l2', number: 'Lesson 2', title: 'Scaling a Mountain Peak', titleBn: 'পাহাড় চূড়ায় আরোহণ', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u7-l3', number: 'Lesson 3', title: 'The Unbeaten Girls', titleBn: 'অপরাজেয় নারী ফুটবল দল', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -138,10 +138,10 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u8-l1', number: 'Lesson 1', title: 'Family Relationship', titleBn: 'পারিবারিক সম্পর্ক', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u8-l2', number: 'Lesson 2', title: 'Warmth in Relationships', titleBn: 'সম্পর্কের আন্তরিকতা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u8-l3', number: 'Lesson 3', title: 'A Mother in Mannville', titleBn: 'ম্যানভিলের একজন মা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u8-l4', number: 'Lesson 4', title: 'Love and Friendship', titleBn: 'ভালোবাসা ও বন্ধুত্ব', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u8-l1', number: 'Lesson 1', title: 'Family Relationship', titleBn: 'পারিবারিক সম্পর্ক', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u8-l2', number: 'Lesson 2', title: 'Warmth in Relationships', titleBn: 'সম্পর্কের আন্তরিকতা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u8-l3', number: 'Lesson 3', title: 'A Mother in Mannville', titleBn: 'ম্যানভিলের একজন মা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u8-l4', number: 'Lesson 4', title: 'Love and Friendship', titleBn: 'ভালোবাসা ও বন্ধুত্ব', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -156,10 +156,10 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u9-l1', number: 'Lesson 1', title: 'Storm and Stress at Adolescence', titleBn: 'কৈশোরের ঝড় ও সংকট', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u9-l2', number: 'Lesson 2', title: 'Adolescence and Some Related Problems', titleBn: 'কৈশোরকালীন নানা সমস্যা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u9-l3', number: 'Lesson 3', title: 'Why Does Child Marriage Happen?', titleBn: 'বাল্যবিবাহের কারণ ও ফলাফল', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u9-l4', number: 'Lesson 4', title: 'The Story of Shilpi', titleBn: 'শিল্পীর জীবনসংগ্রাম', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u9-l1', number: 'Lesson 1', title: 'Storm and Stress at Adolescence', titleBn: 'কৈশোরের ঝড় ও সংকট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u9-l2', number: 'Lesson 2', title: 'Adolescence and Some Related Problems', titleBn: 'কৈশোরকালীন নানা সমস্যা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u9-l3', number: 'Lesson 3', title: 'Why Does Child Marriage Happen?', titleBn: 'বাল্যবিবাহের কারণ ও ফলাফল', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u9-l4', number: 'Lesson 4', title: 'The Story of Shilpi', titleBn: 'শিল্পীর জীবনসংগ্রাম', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -174,11 +174,11 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners and Etiquette', titleBn: 'শিষ্টাচার ও আদব-কায়দা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u10-l2', number: 'Lesson 2', title: 'Food and Culture', titleBn: 'খাদ্য ও খাদ্যাভ্যাস', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u10-l3', number: 'Lesson 3', title: 'Traditional Craft and Design', titleBn: 'ঐতিহ্যবাহী কারুকলা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u10-l4', number: 'Lesson 4', title: 'Fitness and Wellbeing', titleBn: 'সুস্বাস্থ্য ও শরীরচর্চা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u10-l5', number: 'Lesson 5', title: 'Spending and Savings', titleBn: 'খরচ ও সঞ্চয়', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners and Etiquette', titleBn: 'শিষ্টাচার ও আদব-কায়দা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u10-l2', number: 'Lesson 2', title: 'Food and Culture', titleBn: 'খাদ্য ও খাদ্যাভ্যাস', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u10-l3', number: 'Lesson 3', title: 'Traditional Craft and Design', titleBn: 'ঐতিহ্যবাহী কারুকলা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u10-l4', number: 'Lesson 4', title: 'Fitness and Wellbeing', titleBn: 'সুস্বাস্থ্য ও শরীরচর্চা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u10-l5', number: 'Lesson 5', title: 'Spending and Savings', titleBn: 'খরচ ও সঞ্চয়', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -193,11 +193,11 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u11-l1', number: 'Lesson 1', title: 'Conflicts: Causes and Types', titleBn: 'সংঘাতের কারণ ও প্রকারভেদ', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u11-l2', number: 'Lesson 2', title: 'Old Man at the Bridge', titleBn: 'ব্রিজে বৃদ্ধ মানুষটি', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u11-l3', number: 'Lesson 3', title: 'Cruelty of War', titleBn: 'যুদ্ধের নির্মমতা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u11-l4', number: 'Lesson 4', title: 'Peace Movements and Activism', titleBn: 'শান্তি আন্দোলন', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u11-l5', number: 'Lesson 5', title: 'The Post-War Era', titleBn: 'যুদ্ধোত্তর যুগ', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u11-l1', number: 'Lesson 1', title: 'Conflicts: Causes and Types', titleBn: 'সংঘাতের কারণ ও প্রকারভেদ', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u11-l2', number: 'Lesson 2', title: 'Old Man at the Bridge', titleBn: 'ব্রিজে বৃদ্ধ মানুষটি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u11-l3', number: 'Lesson 3', title: 'Cruelty of War', titleBn: 'যুদ্ধের নির্মমতা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u11-l4', number: 'Lesson 4', title: 'Peace Movements and Activism', titleBn: 'শান্তি আন্দোলন', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u11-l5', number: 'Lesson 5', title: 'The Post-War Era', titleBn: 'যুদ্ধোত্তর যুগ', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   },
   {
@@ -212,11 +212,11 @@ export const hscUnits = [
     totalWords: 0,
     masteredWords: 0,
     lessons: [
-      { id: 'u12-l1', number: 'Lesson 1', title: 'Water, Water Everywhere', titleBn: 'চারিদিকে পানি, কিন্তু...', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u12-l2', number: 'Lesson 2', title: 'The Hakaluki Haor', titleBn: 'হাকালুকি হাওর', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u12-l3', number: 'Lesson 3', title: 'Giant Panda and Endangered Species', titleBn: 'বিপন্ন প্রাণী ও পান্ডা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u12-l4', number: 'Lesson 4', title: 'Threats to Tigers of Sundarbans', titleBn: 'সুন্দরবনের বাঘের সংকট', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u12-l5', number: 'Lesson 5', title: 'Renewable Energy Resources', titleBn: 'নবায়নযোগ্য শক্তি', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u12-l1', number: 'Lesson 1', title: 'Water, Water Everywhere', titleBn: 'চারিদিকে পানি, কিন্তু...', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u12-l2', number: 'Lesson 2', title: 'The Hakaluki Haor', titleBn: 'হাকালুকি হাওর', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u12-l3', number: 'Lesson 3', title: 'Giant Panda and Endangered Species', titleBn: 'বিপন্ন প্রাণী ও পান্ডা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u12-l4', number: 'Lesson 4', title: 'Threats to Tigers of Sundarbans', titleBn: 'সুন্দরবনের বাঘের সংকট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u12-l5', number: 'Lesson 5', title: 'Renewable Energy Resources', titleBn: 'নবায়নযোগ্য শক্তি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
     ]
   }
 ];

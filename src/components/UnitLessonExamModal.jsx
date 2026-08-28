@@ -173,7 +173,7 @@ export default function UnitLessonExamModal({
                 )}
 
                 <button
-                  onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Test', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
+                  onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Test', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
                   className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all shrink-0 active:scale-95"
                 >
                   <Play size={14} className="fill-current" />
@@ -201,14 +201,9 @@ export default function UnitLessonExamModal({
                     )}
                   </div>
 
-                  {/* Red Clock + Green Document */}
+                  {/* Question Count + Textbook Read button */}
                   <div className="flex items-center justify-between pt-2 border-t border-[#182030]">
                     <div className="flex items-center gap-4 text-xs font-semibold">
-                      <div className="flex items-center gap-1.5 text-rose-400">
-                        <Clock size={14} className="stroke-[2.2]" />
-                        <span>{lesson.duration || '১ ঘণ্টা ৪০ মিনিট'}</span>
-                      </div>
-
                       <div className="flex items-center gap-1.5 text-emerald-400">
                         <FileText size={14} className="stroke-[2.2]" />
                         <span>{lesson.questionsCount || `${lesson.wordsCount} টি প্রশ্ন`}</span>

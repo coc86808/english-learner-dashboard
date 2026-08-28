@@ -178,7 +178,7 @@ export default function HSCUnitsExplorer({
               )}
 
               <button
-                onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Vocabulary Test', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
+                onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Vocabulary Test', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
                 className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all shrink-0 active:scale-95"
               >
                 <Play size={14} className="fill-current" />
@@ -207,15 +207,9 @@ export default function HSCUnitsExplorer({
                   )}
                 </div>
 
-                {/* Bottom Row: Red Clock + Green Document matching Screenshot 2 */}
+                {/* Bottom Row: Question Count + Textbook Read button */}
                 <div className="flex items-center justify-between pt-2 border-t border-[#182030]">
                   <div className="flex items-center gap-4 text-xs font-semibold">
-                    {/* Duration with red clock icon */}
-                    <div className="flex items-center gap-1.5 text-rose-400">
-                      <Clock size={14} className="stroke-[2.2]" />
-                      <span>{lesson.duration || '১ ঘণ্টা ৪০ মিনিট'}</span>
-                    </div>
-
                     {/* Question Count with green file icon */}
                     <div className="flex items-center gap-1.5 text-emerald-400">
                       <FileText size={14} className="stroke-[2.2]" />
