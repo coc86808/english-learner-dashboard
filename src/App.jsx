@@ -4,20 +4,16 @@ import Header from './components/Header';
 import ActionCards from './components/ActionCards';
 import SubjectReport from './components/SubjectReport';
 import RecentExams from './components/RecentExams';
-import StreakWidget from './components/StreakWidget';
-import FriendsWidget from './components/FriendsWidget';
-import DailyPointsChart from './components/DailyPointsChart';
 import QuickPracticeModal from './components/QuickPracticeModal';
 import QuestionBankModal from './components/QuestionBankModal';
 import MockExamModal from './components/MockExamModal';
 import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
-import HSCExamInterface from './components/HSCExamInterface';
 import HSCUnitsExplorer from './components/HSCUnitsExplorer';
 import UnitLessonExamModal from './components/UnitLessonExamModal';
 import { usersList } from './data/users';
 import { hscQuestionsList } from './data/questions';
-import { Trophy, History as HistoryIcon, TrendingUp, Sparkles, Shield } from 'lucide-react';
+import { Trophy, GraduationCap, BookOpen } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -126,24 +122,77 @@ export default function App() {
                   />
                 </div>
 
-                {/* Right Side: Stats Panel (4 Columns) */}
+                {/* Right Side: English Learning Summary Panel */}
                 <div className="lg:col-span-4 space-y-6">
-                  {/* Streak Widget */}
-                  <StreakWidget
-                    lang={lang}
-                    streakCount={2}
-                    freezesLeft={0}
-                    onStreakAction={() => setIsQuickPracticeOpen(true)}
-                  />
+                  {/* How to Use Card */}
+                  <div className="bg-[#131824] border border-[#1d2536] rounded-2xl p-5 space-y-4">
+                    <div className="flex items-center gap-2 mb-1">
+                      <GraduationCap size={18} className="text-emerald-400" />
+                      <h3 className="text-white font-bold text-sm">
+                        {isBn ? 'কীভাবে শিখবেন?' : 'How to Learn?'}
+                      </h3>
+                    </div>
 
-                  {/* Active Friends Widget */}
-                  <FriendsWidget
-                    lang={lang}
-                    onOpenFriendsModal={() => alert(isBn ? 'বন্ধু তালিকা শীঘ্রই আসছে!' : 'Friends system coming soon!')}
-                  />
+                    <div className="space-y-3 text-xs text-slate-300 leading-relaxed">
+                      {[
+                        { step: '1', text: isBn ? 'বাঁ দিকে ইউনিট ও লেসন নির্বাচন করুন' : 'Select a Unit & Lesson from the left', color: 'bg-emerald-500' },
+                        { step: '2', text: isBn ? '"📖 পাঠ্যবই পড়ুন" এ ক্লিক করে গল্পটি পড়ুন' : 'Click "Read Textbook" to read the story', color: 'bg-blue-500' },
+                        { step: '3', text: isBn ? 'MCQ পরীক্ষা শুরু করুন — ভুল হলে বারবার আসবে' : 'Start MCQ Exam — wrong answers repeat until mastered', color: 'bg-violet-500' },
+                        { step: '4', text: isBn ? 'প্রতিটি প্রশ্নে ৩ বার সঠিক উত্তর দিলে Done হবে' : 'Answer 3 times correctly to mark as Done', color: 'bg-amber-500' },
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-2.5">
+                          <span className={`w-5 h-5 rounded-full ${item.color} text-white text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5`}>
+                            {item.step}
+                          </span>
+                          <span>{item.text}</span>
+                        </div>
+                      ))}
+                    </div>
 
-                  {/* Daily Points Chart */}
-                  <DailyPointsChart lang={lang} />
+                    <button
+                      onClick={() => setIsUnitLessonModalOpen(true)}
+                      className="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all active:scale-95"
+                    >
+                      {isBn ? '▶ এখনই পরীক্ষা শুরু করুন' : '▶ Start Exam Now'}
+                    </button>
+                  </div>
+
+                  {/* Textbook Coverage Summary */}
+                  <div className="bg-[#131824] border border-[#1d2536] rounded-2xl p-5 space-y-3">
+                    <h3 className="text-white font-bold text-sm flex items-center gap-2">
+                      <BookOpen size={16} className="text-blue-400" />
+                      {isBn ? 'পাঠ্যবই কভারেজ' : 'Textbook Coverage'}
+                    </h3>
+
+                    <div className="space-y-2.5 text-xs">
+                      {[
+                        { label: isBn ? 'Unit 1: The Parrot\'s Tale' : 'Unit 1: The Parrot\'s Tale', done: 23, total: 23, color: 'bg-emerald-500' },
+                        { label: isBn ? 'Unit 1: Education & Technology' : 'Unit 1: Education & Technology', done: 0, total: 0, color: 'bg-slate-700' },
+                        { label: isBn ? 'Unit 2 – 12 (আসছে)' : 'Units 2 – 12 (Coming Soon)', done: 0, total: 0, color: 'bg-slate-700' },
+                      ].map((item, i) => (
+                        <div key={i}>
+                          <div className="flex justify-between text-slate-300 mb-1">
+                            <span className="truncate max-w-[180px]">{item.label}</span>
+                            <span className="text-slate-400 shrink-0 ml-2">
+                              {item.total > 0 ? `${item.done}/${item.total}` : isBn ? 'শীঘ্রই' : 'Soon'}
+                            </span>
+                          </div>
+                          <div className="w-full h-1.5 bg-[#1c2436] rounded-full">
+                            <div
+                              className={`h-full rounded-full ${item.color} transition-all duration-700`}
+                              style={{ width: item.total > 0 ? `${Math.round((item.done / item.total) * 100)}%` : '0%' }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <p className="text-[11px] text-slate-500 pt-1">
+                      {isBn
+                        ? '* পাঠ্যবইয়ের টেক্সট দিলে বাকি ইউনিটগুলো যোগ হবে।'
+                        : '* Provide textbook text to unlock remaining units.'}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
