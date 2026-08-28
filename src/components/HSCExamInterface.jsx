@@ -59,7 +59,7 @@ export default function HSCExamInterface({
   // Calculate live counters across all unique questions
   const totalUnique = questions.length;
   const doneCount = Object.values(questionStats).filter(
-    (s) => s.status === 'done' && s.consecutiveCorrect >= 3
+    (s) => s.status === 'done'
   ).length;
   const mistakeCount = Object.values(questionStats).filter(
     (s) => s.status === 'mistake'
@@ -69,7 +69,9 @@ export default function HSCExamInterface({
   ).length;
 
   // STRICT 100% DONE INVARIANT: Exam NEVER ends until EVERY single question has 3 consecutive correct answers
-  const isAllDone = totalUnique > 0 && doneCount === totalUnique;
+  const isAllDone =
+    totalUnique > 0 &&
+    questions.every((q) => (questionStats[q.id]?.consecutiveCorrect || 0) >= 3);
 
   useEffect(() => {
     if (isAllDone) return;
@@ -133,6 +135,17 @@ export default function HSCExamInterface({
     processAnswer(false, true);
   };
 
+  /**
+   * EXACT MCQ STATE ENGINE:
+   * 1. 1st time correct -> mark as Done, re-schedule for 2 more re-tests after 3/4 questions.
+   * 2. If wrong / Not sure at any point -> removed from Done or Learning, added to Mistake, resets count to 0, re-scheduled after 3/4 questions.
+   * 3. When Mistake question returns:
+   *    - If wrong again -> stays in Mistake, repeats after 3/4 questions.
+   *    - If correct on 2nd time -> marked as Learning, repeats after 3/4 questions.
+   * 4. When Learning question returns:
+   *    - If correct -> marked as Done, repeats after 3/4 questions until 3 consecutive correct are achieved.
+   *    - If wrong -> removed and added to Mistake.
+   */
   const processAnswer = (isCorrect, isNotSure) => {
     const qId = currentQ.id;
     const prevStat = questionStats[qId] || {
@@ -141,17 +154,24 @@ export default function HSCExamInterface({
       totalAttempts: 0
     };
 
-    let newConsecutive = isCorrect ? prevStat.consecutiveCorrect + 1 : 0;
+    let newConsecutive = 0;
     let newStatus = 'learning';
 
     if (isCorrect) {
-      if (newConsecutive >= 3) {
-        newStatus = 'done'; // Mastered after 3 consecutive correct answers!
+      newConsecutive = prevStat.consecutiveCorrect + 1;
+
+      if (prevStat.status === 'mistake') {
+        // Correct on retry from mistake -> marked as Learning
+        newStatus = 'learning';
+      } else if (newConsecutive >= 3) {
+        // 3rd consecutive correct -> fully Mastered & Done
+        newStatus = 'done';
       } else {
-        newStatus = 'learning'; // 1st or 2nd correct answer
+        // 1st time correct or progressing towards completion -> marked as Done
+        newStatus = 'done';
       }
     } else {
-      // If wrong or not sure: remove from Done or Learning and set to mistake
+      // Wrong option or Not Sure -> removed from Done or Learning and added to Mistake
       newStatus = 'mistake';
       newConsecutive = 0;
     }
@@ -167,24 +187,23 @@ export default function HSCExamInterface({
       }
     }));
 
-    // If not yet completed 3 consecutive times, schedule reappearance after at least 3-4 questions
+    // If not yet completed 3 consecutive times, schedule reappearance after at least 3-4 questions in middle
     if (newConsecutive < 3) {
       scheduleReappearance(currentQ);
     }
   };
 
-  // Spaced Repetition Insertion: ensures at least 3-4 other questions in between
+  // Spaced Repetition Insertion: guarantees at least 3-4 other questions in between
   const scheduleReappearance = (questionToRepeat) => {
     setActiveQueue((prevQueue) => {
       const newQueue = [...prevQueue];
-      // Target insert index: at least current position + 4 (guaranteeing 3-4 questions in middle)
+      // Insert at least current position + 4 (ensuring 3-4 questions in middle)
       const minGap = 4;
       const targetIndex = Math.min(
         newQueue.length,
         queueIndex + minGap + Math.floor(Math.random() * 2)
       );
 
-      // Insert question at target position
       newQueue.splice(targetIndex, 0, questionToRepeat);
       return newQueue;
     });
@@ -193,14 +212,14 @@ export default function HSCExamInterface({
   const handleNext = () => {
     const nextIdx = queueIndex + 1;
 
-    // Check if queue needs replenishment with remaining non-done questions
+    // Check if queue needs replenishment with remaining non-mastered questions
     if (nextIdx >= activeQueue.length) {
       const remainingQuestions = questions.filter(
         (q) => (questionStats[q.id]?.consecutiveCorrect || 0) < 3
       );
 
       if (remainingQuestions.length > 0) {
-        // Shuffle remaining and append to guarantee non-stop practice
+        // Shuffle and append remaining to guarantee non-stop practice
         const shuffled = [...remainingQuestions].sort(() => Math.random() - 0.5);
         setActiveQueue((prev) => [...prev, ...shuffled]);
       }
@@ -451,8 +470,8 @@ export default function HSCExamInterface({
                   {isNotSureClicked || selectedOption !== currentQ.correctOption
                     ? (isBn ? '⚠️ ভুল হয়েছে / নিশ্চিত ছিলেন না। ৩-৪টি প্রশ্নের পর এই প্রশ্নটি পুনরায় আসবে।' : '⚠️ Marked as mistake. This question will reappear after 3-4 questions.')
                     : (currentStat.consecutiveCorrect + 1 >= 3
-                        ? (isBn ? '🎉 দারুণ! ৩ বার সঠিক উত্তর দিয়ে এই শব্দটি সম্পন্ন (Done) হয়েছে!' : '🎉 Awesome! Answered correctly 3 times. Marked as Done!')
-                        : (isBn ? `👍 সঠিক উত্তর (${currentStat.consecutiveCorrect + 1}/3)! নিশ্চিত করতে ৩-৪টি প্রশ্নের পর আবার আসবে।` : `👍 Correct (${currentStat.consecutiveCorrect + 1}/3)! Will reappear after 3-4 questions to master.`))}
+                        ? (isBn ? '🎉 দারুণ! ৩ বার সফলভাবে সম্পন্ন হয়েছে!' : '🎉 Awesome! Completed 3 consecutive times.')
+                        : (isBn ? `👍 সঠিক উত্তর! আরও নিশ্চিত করতে ৩-৪টি প্রশ্নের পর আবার আসবে।` : `👍 Correct! Will reappear after 3-4 questions for re-test.`))}
                 </span>
               </div>
 
