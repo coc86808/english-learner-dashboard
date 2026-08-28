@@ -7,6 +7,9 @@ import {
   RotateCcw,
   Award,
   Volume2,
+  VolumeX,
+  Maximize2,
+  Minimize2,
   Calendar,
   Timer,
   Sparkles,
@@ -15,14 +18,19 @@ import {
   Check
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { soundManager } from '../utils/soundEffects';
+import CertificateModal from './CertificateModal';
 
 export default function HSCExamInterface({
   questions = [],
   onFinishExam,
   onClose,
-  lang = 'bn'
+  lang = 'bn',
+  studentInfo = { name: 'Tanvir Ahmed', college: 'Notre Dame College, Dhaka', batch: 'HSC 2026' }
 }) {
   const isBn = lang === 'bn';
+  const [isSoundOn, setIsSoundOn] = useState(true);
+  const [isCertificateOpen, setIsCertificateOpen] = useState(false);
 
   // Initialize unique question tracker dictionary
   // id -> { consecutiveCorrect: 0, status: 'learning' | 'mistake' | 'done', totalAttempts: 0 }
@@ -75,13 +83,14 @@ export default function HSCExamInterface({
 
   useEffect(() => {
     if (isAllDone) {
+      if (isSoundOn) soundManager.playComplete();
       confetti({
         particleCount: 160,
         spread: 100,
         origin: { y: 0.5 }
       });
     }
-  }, [isAllDone]);
+  }, [isAllDone, isSoundOn]);
 
   // Safely resolve the current question so it is NEVER undefined
   const currentQ =
@@ -105,6 +114,10 @@ export default function HSCExamInterface({
     setIsAnswered(true);
 
     const isCorrect = index === currentQ.correctOption;
+    if (isSoundOn) {
+      if (isCorrect) soundManager.playCorrect();
+      else soundManager.playWrong();
+    }
     processAnswer(isCorrect, false);
   };
 
@@ -113,6 +126,10 @@ export default function HSCExamInterface({
     setIsNotSureClicked(true);
     setIsAnswered(true);
     setSelectedOption(null);
+
+    if (isSoundOn) {
+      soundManager.playWrong();
+    }
 
     // "Not sure" is treated as mistake for spaced review
     processAnswer(false, true);
@@ -253,13 +270,28 @@ export default function HSCExamInterface({
               </div>
             </div>
 
-            {/* Timer & Date badge */}
-            <div className="flex items-center gap-2 text-xs font-semibold bg-[#0e121a] px-3.5 py-1.5 rounded-xl border border-[#232c3f] text-slate-300">
-              <Timer size={14} className="text-amber-400" />
-              <span>{formatTimer(secondsLeft)}</span>
-              <span className="text-slate-600">|</span>
-              <Calendar size={14} className="text-slate-400" />
-              <span className="text-slate-400">29-Aug-2026</span>
+            {/* Timer & Date badge + Sound Toggle */}
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 text-xs font-semibold bg-[#0e121a] px-3.5 py-1.5 rounded-xl border border-[#232c3f] text-slate-300">
+                <Timer size={14} className="text-amber-400" />
+                <span>{formatTimer(secondsLeft)}</span>
+                <span className="text-slate-600">|</span>
+                <Calendar size={14} className="text-slate-400" />
+                <span className="text-slate-400">29-Aug-2026</span>
+              </div>
+
+              {/* Sound Toggle */}
+              <button
+                onClick={() => setIsSoundOn(!isSoundOn)}
+                title={isSoundOn ? 'Mute sound effects' : 'Enable sound effects'}
+                className={`p-1.5 rounded-xl border transition-all ${
+                  isSoundOn
+                    ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
+                    : 'bg-[#182030] text-slate-500 border-slate-700'
+                }`}
+              >
+                {isSoundOn ? <Volume2 size={16} /> : <VolumeX size={16} />}
+              </button>
             </div>
           </div>
 
@@ -523,6 +555,14 @@ export default function HSCExamInterface({
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
             <button
+              onClick={() => setIsCertificateOpen(true)}
+              className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 text-sm font-black inline-flex items-center gap-2 transition-all shadow-lg shadow-amber-500/30"
+            >
+              <Award size={18} />
+              <span>{isBn ? 'সার্টিফিকেট ডাউনলোড করুন' : 'Download Certificate'}</span>
+            </button>
+
+            <button
               onClick={handleRestart}
               className="px-5 py-2.5 rounded-xl bg-[#192233] hover:bg-[#222e44] text-slate-300 text-sm font-bold inline-flex items-center gap-2 transition-all"
             >
@@ -541,6 +581,17 @@ export default function HSCExamInterface({
           </div>
         </div>
       )}
+
+      {/* Official Certificate Modal */}
+      <CertificateModal
+        isOpen={isCertificateOpen}
+        onClose={() => setIsCertificateOpen(false)}
+        studentName={studentInfo.name}
+        collegeName={studentInfo.college}
+        hscBatch={studentInfo.batch}
+        totalMastered={totalUnique}
+        lang={lang}
+      />
     </div>
   );
 }

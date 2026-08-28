@@ -16,6 +16,8 @@ import {
 import UserManagement from './UserManagement';
 import QuestionManagement from './QuestionManagement';
 import AdminAnalytics from './AdminAnalytics';
+import QuizMakerSettings from './QuizMakerSettings';
+import { Sliders } from 'lucide-react';
 
 export default function AdminDashboard({
   users,
@@ -152,8 +154,9 @@ export default function AdminDashboard({
         {[
           { id: 'questions', label: isBn ? 'প্রশ্ন ও ভোকাবুলারি ব্যাংক' : 'Questions & Vocab Bank', icon: BookOpen },
           { id: 'users', label: isBn ? 'শিক্ষার্থী ব্যবস্থাপনা' : 'Student Management', icon: Users },
-          { id: 'broadcast', label: isBn ? 'নোটিশ ও অ্যানাউন্সমেন্ট' : 'Broadcast & Notices', icon: Bell },
           { id: 'analytics', label: isBn ? 'অ্যানালিটিক্স ও রিপোর্ট' : 'Analytics & Stats', icon: TrendingUp },
+          { id: 'quiz-settings', label: isBn ? 'কুইজ মেকার সেটিংস' : 'Quiz Maker Pro Settings', icon: Sliders },
+          { id: 'broadcast', label: isBn ? 'নোটিশ ও অ্যানাউন্সমেন্ট' : 'Broadcast & Notices', icon: Bell },
         ].map((tab) => {
           const Icon = tab.icon;
           const isActive = adminTab === tab.id;
@@ -250,6 +253,12 @@ export default function AdminDashboard({
         <AdminAnalytics
           users={users}
           questions={questions}
+          lang={lang}
+        />
+      )}
+
+      {adminTab === 'quiz-settings' && (
+        <QuizMakerSettings
           lang={lang}
         />
       )}
