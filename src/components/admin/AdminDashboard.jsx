@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import UserManagement from './UserManagement';
 import QuestionManagement from './QuestionManagement';
+import AdminAnalytics from './AdminAnalytics';
 
 export default function AdminDashboard({
   users,
@@ -246,38 +247,11 @@ export default function AdminDashboard({
       )}
 
       {adminTab === 'analytics' && (
-        <div className="bg-[#131824] border border-[#1d2536] rounded-2xl p-6 shadow-card space-y-6">
-          <h3 className="text-white font-bold text-base md:text-lg flex items-center gap-2">
-            <TrendingUp className="text-emerald-400" size={20} />
-            <span>{isBn ? 'শিক্ষার্থীদের পারফরম্যান্স ও অগ্রগতি বিশ্লেষণ' : 'Student Learning Performance Analytics'}</span>
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="p-4 rounded-xl bg-[#0f1420] border border-[#1b2333]">
-              <span className="text-xs text-slate-400 block mb-1">
-                {isBn ? 'গড় কুইজ নির্ভুলতা (Accuracy)' : 'Average Accuracy Rate'}
-              </span>
-              <span className="text-2xl font-black text-emerald-400">76.4%</span>
-              <p className="text-[11px] text-slate-500 mt-1">Based on last 150 completed quizzes</p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#0f1420] border border-[#1b2333]">
-              <span className="text-xs text-slate-400 block mb-1">
-                {isBn ? 'সর্বাধিক চর্চিত অধ্যায়' : 'Most Practiced Chapter'}
-              </span>
-              <span className="text-base font-bold text-white">Unit 1: Nelson Mandela</span>
-              <p className="text-[11px] text-cyan-400 mt-1">42% of total attempts</p>
-            </div>
-
-            <div className="p-4 rounded-xl bg-[#0f1420] border border-[#1b2333]">
-              <span className="text-xs text-slate-400 block mb-1">
-                {isBn ? 'দৈনিক সক্রিয় শিক্ষার্থী' : 'Daily Active Learners'}
-              </span>
-              <span className="text-2xl font-black text-yellow-400">4 / 5</span>
-              <p className="text-[11px] text-slate-500 mt-1">80% daily return rate</p>
-            </div>
-          </div>
-        </div>
+        <AdminAnalytics
+          users={users}
+          questions={questions}
+          lang={lang}
+        />
       )}
     </div>
   );
