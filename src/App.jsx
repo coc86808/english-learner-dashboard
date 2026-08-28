@@ -18,7 +18,7 @@ import { Trophy, GraduationCap, BookOpen } from 'lucide-react';
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [lang, setLang] = useState('bn'); // 'bn' | 'en'
+  const [lang, setLang] = useState('en'); // 'en' | 'bn' (default English)
 
   // Admin Data State (Users and HSC Questions)
   const [users, setUsers] = useState(usersList);

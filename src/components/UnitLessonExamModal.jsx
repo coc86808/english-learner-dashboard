@@ -20,7 +20,7 @@ export default function UnitLessonExamModal({
   onClose,
   initialUnit = null,
   initialLesson = null,
-  lang = 'bn'
+  lang = 'en'
 }) {
   const isBn = lang === 'bn';
 

@@ -19,7 +19,7 @@ import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 
 export default function HSCUnitsExplorer({
-  lang = 'bn',
+  lang = 'en',
   onStartUnitQuiz
 }) {
   const isBn = lang === 'bn';

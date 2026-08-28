@@ -23,7 +23,7 @@ export default function HSCExamInterface({
   questions = [],
   onFinishExam,
   onClose,
-  lang = 'bn',
+  lang = 'en',
   studentInfo = { name: 'Tanvir Ahmed', college: 'Notre Dame College, Dhaka', batch: 'HSC 2026' }
 }) {
   const isBn = lang === 'bn';
