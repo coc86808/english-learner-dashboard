@@ -325,32 +325,32 @@ export default function HSCExamInterface({
   }
 
   return (
-    <div className="max-w-3xl mx-auto w-full bg-[#131824] border border-[#1d2536] rounded-3xl p-5 md:p-8 shadow-2xl relative overflow-hidden text-slate-100">
+    <div className="max-w-3xl mx-auto w-full bg-[#131824] border border-[#1d2536] rounded-2xl sm:rounded-3xl p-3.5 sm:p-6 md:p-8 shadow-2xl relative overflow-hidden text-slate-100">
       {/* Background Glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl pointer-events-none" />
 
       {!isAllDone && currentQ ? (
-        <div className="space-y-6 relative z-10">
-          {/* 1. Top Status Bar matching hand sketch: Learning | Mistake | Done + Timer/Date (NO counting bar) */}
-          <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-[#1d2536]">
-            <div className="flex items-center gap-2.5 sm:gap-4 text-xs sm:text-sm font-bold">
+        <div className="space-y-4 sm:space-y-6 relative z-10">
+          {/* 1. Top Status Bar matching hand sketch: Learning | Mistake | Done */}
+          <div className="flex items-center justify-between gap-2 pb-3 sm:pb-4 border-b border-[#1d2536]">
+            <div className="flex items-center gap-1.5 sm:gap-3 text-xs sm:text-sm font-bold">
               {/* Learning counter */}
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-300 shadow-sm">
-                <span className="text-slate-400 font-normal">Learning</span>
-                <span className="text-base font-black text-blue-400">{learningCount}</span>
+              <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-300 shadow-sm">
+                <span className="text-slate-400 font-normal text-[11px] sm:text-xs">Learning</span>
+                <span className="text-sm sm:text-base font-black text-blue-400">{learningCount}</span>
               </div>
 
               {/* Mistake counter */}
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-rose-500/15 border border-rose-500/30 text-rose-300 shadow-sm">
-                <span className="text-slate-400 font-normal">Mistake</span>
-                <span className="text-base font-black text-rose-400">{mistakeCount}</span>
+              <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-rose-500/15 border border-rose-500/30 text-rose-300 shadow-sm">
+                <span className="text-slate-400 font-normal text-[11px] sm:text-xs">Mistake</span>
+                <span className="text-sm sm:text-base font-black text-rose-400">{mistakeCount}</span>
               </div>
 
               {/* Done counter */}
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 shadow-sm">
-                <span className="text-slate-400 font-normal">Done</span>
-                <span className="text-base font-black text-emerald-400">{doneCount}</span>
+              <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg sm:rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 shadow-sm">
+                <span className="text-slate-400 font-normal text-[11px] sm:text-xs">Done</span>
+                <span className="text-sm sm:text-base font-black text-emerald-400">{doneCount}</span>
               </div>
             </div>
 

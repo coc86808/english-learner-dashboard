@@ -10,6 +10,7 @@ import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
 import HSCUnitsExplorer from './components/HSCUnitsExplorer';
 import UnitLessonExamModal from './components/UnitLessonExamModal';
+import MobileBottomNav from './components/MobileBottomNav';
 import { usersList } from './data/users';
 import { hscQuestionsList } from './data/questions';
 import { Trophy, GraduationCap, BookOpen } from 'lucide-react';
@@ -85,8 +86,8 @@ export default function App() {
           onOpenStreakModal={() => alert(isBn ? 'আপনার স্ট্রিক ২ দিন বজায় রয়েছে!' : 'Your 2-day streak is active!')}
         />
 
-        {/* 3. Main Dashboard Scrollable Canvas */}
-        <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-7 space-y-6">
+        {/* 3. Main Dashboard Scrollable Canvas with mobile bottom safe padding */}
+        <main className="flex-1 overflow-y-auto p-3.5 sm:p-5 md:p-6 lg:p-7 pb-24 lg:pb-7 space-y-6">
           {activeTab === 'dashboard' && (
             <div className="max-w-[1550px] mx-auto space-y-6">
               {/* Top 3 Action Feature Cards */}
@@ -337,6 +338,13 @@ export default function App() {
             />
           )}
         </main>
+
+        {/* Mobile Bottom Navigation Bar */}
+        <MobileBottomNav
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          lang={lang}
+        />
       </div>
 
       {/* 4. Interactive Modals */}

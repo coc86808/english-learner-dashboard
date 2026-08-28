@@ -58,10 +58,10 @@ export default function Header({
           <span>{isBn ? '২' : streakCount}</span>
         </button>
 
-        {/* Custom Toggle Switch 1 (matching visual switch in screenshot) */}
+        {/* Custom Toggle Switch 1 (Desktop only) */}
         <button
           onClick={() => setToggleA(!toggleA)}
-          className={`w-9 h-5 rounded-full transition-colors relative flex items-center px-0.5 ${
+          className={`hidden md:flex w-9 h-5 rounded-full transition-colors relative items-center px-0.5 ${
             toggleA ? 'bg-slate-700' : 'bg-slate-800 border border-slate-700'
           }`}
           title="Mode Toggle 1"
@@ -73,10 +73,10 @@ export default function Header({
           />
         </button>
 
-        {/* Custom Toggle Switch 2 (matching visual switch in screenshot) */}
+        {/* Custom Toggle Switch 2 (Desktop only) */}
         <button
           onClick={() => setToggleB(!toggleB)}
-          className={`w-9 h-5 rounded-full transition-colors relative flex items-center px-0.5 ${
+          className={`hidden md:flex w-9 h-5 rounded-full transition-colors relative items-center px-0.5 ${
             toggleB ? 'bg-emerald-600' : 'bg-slate-800 border border-slate-700'
           }`}
           title="Mode Toggle 2"
@@ -91,10 +91,10 @@ export default function Header({
         {/* Theme Icon (Moon / Sun) */}
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
-          className="p-2 rounded-xl text-slate-400 hover:text-amber-400 hover:bg-[#141a27] transition-all"
+          className="hidden sm:flex p-1.5 md:p-2 rounded-xl text-slate-400 hover:text-amber-400 hover:bg-[#141a27] transition-all"
           title="Toggle Day/Night mode"
         >
-          {isDarkMode ? <Moon size={18} /> : <Sun size={18} />}
+          {isDarkMode ? <Moon size={17} /> : <Sun size={17} />}
         </button>
 
         {/* Language Switcher */}

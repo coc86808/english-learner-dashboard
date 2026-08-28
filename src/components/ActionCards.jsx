@@ -47,23 +47,25 @@ export default function ActionCards({
           <button
             key={card.id}
             onClick={card.onClick}
-            className={`flex flex-col items-center justify-center p-5 md:p-6 rounded-2xl bg-[#131824] border border-[#1d2536] transition-all duration-300 group hover:-translate-y-1 hover:bg-[#182030] ${card.borderHover} cursor-pointer text-center relative overflow-hidden`}
+            className={`flex items-center sm:flex-col sm:justify-center p-4 sm:p-6 rounded-2xl bg-[#131824] border border-[#1d2536] transition-all duration-300 group hover:-translate-y-1 hover:bg-[#182030] ${card.borderHover} cursor-pointer text-left sm:text-center relative overflow-hidden gap-3.5 sm:gap-0`}
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-emerald-500/[0.02] opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div
-              className={`w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110 ${card.iconBg}`}
+              className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center sm:mb-3 shrink-0 transition-transform duration-300 group-hover:scale-110 ${card.iconBg}`}
             >
-              <Icon size={28} className="stroke-[2.2]" />
+              <Icon size={24} className="sm:w-7 sm:h-7 stroke-[2.2]" />
             </div>
 
-            <span className="text-white font-bold text-sm md:text-base tracking-tight mb-0.5">
-              {card.title}
-            </span>
+            <div className="min-w-0 flex-1">
+              <span className="text-white font-bold text-sm md:text-base tracking-tight block mb-0.5">
+                {card.title}
+              </span>
 
-            <span className="text-xs text-slate-400 font-medium">
-              {card.subtitle}
-            </span>
+              <span className="text-xs text-slate-400 font-medium block truncate">
+                {card.subtitle}
+              </span>
+            </div>
           </button>
         );
       })}
