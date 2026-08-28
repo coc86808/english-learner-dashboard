@@ -57,8 +57,9 @@ export default function HSCExamInterface({
   const [shuffledOptions, setShuffledOptions] = useState([]);
   const [shuffledCorrectIndex, setShuffledCorrectIndex] = useState(0);
 
-  // Timer
-  const [secondsLeft, setSecondsLeft] = useState(900); // 15 mins
+  // Hint: user can reveal Bengali meaning before answering (marks as Learning)
+  const [hintRevealed, setHintRevealed] = useState(false);
+  const [hintUsedForCurrentQ, setHintUsedForCurrentQ] = useState(false);
 
   // Calculate live counters across all unique questions
   const totalUnique = questions.length;
@@ -76,14 +77,6 @@ export default function HSCExamInterface({
   const isAllDone =
     totalUnique > 0 &&
     questions.every((q) => (questionStats[q.id]?.consecutiveCorrect || 0) >= 3);
-
-  useEffect(() => {
-    if (isAllDone) return;
-    const timer = setInterval(() => {
-      setSecondsLeft((prev) => (prev > 0 ? prev - 1 : 0));
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [isAllDone]);
 
   useEffect(() => {
     if (isAllDone) {
@@ -123,12 +116,30 @@ export default function HSCExamInterface({
     setSelectedOption(null);
     setIsAnswered(false);
     setIsNotSureClicked(false);
+    setHintRevealed(false);
+    setHintUsedForCurrentQ(false);
   }, [queueIndex]); // Re-shuffle every time queue position advances, not just on id change
 
-  const formatTimer = (secs) => {
-    const mins = Math.floor(secs / 60);
-    const remainingSecs = secs % 60;
-    return `${mins.toString().padStart(2, '0')}:${remainingSecs.toString().padStart(2, '0')}`;
+  const handleRevealHint = () => {
+    setHintRevealed(true);
+    setHintUsedForCurrentQ(true);
+    // Mark as learning immediately in questionStats if not in mistake
+    if (!currentQ) return;
+    const qId = currentQ.id;
+    setQuestionStats((prev) => {
+      const prevStat = prev[qId] || {
+        consecutiveCorrect: 0,
+        status: 'learning',
+        totalAttempts: 0
+      };
+      return {
+        ...prev,
+        [qId]: {
+          ...prevStat,
+          status: prevStat.status === 'mistake' ? 'mistake' : 'learning'
+        }
+      };
+    });
   };
 
   const handleSelectOption = (shuffledIndex) => {
@@ -141,7 +152,7 @@ export default function HSCExamInterface({
       if (isCorrect) soundManager.playCorrect();
       else soundManager.playWrong();
     }
-    processAnswer(isCorrect, false);
+    processAnswer(isCorrect, false, hintUsedForCurrentQ);
   };
 
   const handleNotSure = () => {
@@ -160,16 +171,17 @@ export default function HSCExamInterface({
 
   /**
    * EXACT MCQ STATE ENGINE:
-   * 1. 1st time correct -> mark as Done, re-schedule for 2 more re-tests after 3/4 questions.
-   * 2. If wrong / Not sure at any point -> removed from Done or Learning, added to Mistake, resets count to 0, re-scheduled after 3/4 questions.
-   * 3. When Mistake question returns:
+   * 1. 1st time correct (no hint) -> mark as Done, re-schedule for 2 more re-tests after 3/4 questions.
+   * 2. Correct BUT hint was used -> mark as Learning (not Done), re-schedule.
+   * 3. If wrong / Not sure at any point -> removed from Done or Learning, added to Mistake, resets count to 0.
+   * 4. When Mistake question returns:
    *    - If wrong again -> stays in Mistake, repeats after 3/4 questions.
    *    - If correct on 2nd time -> marked as Learning, repeats after 3/4 questions.
-   * 4. When Learning question returns:
+   * 5. When Learning question returns:
    *    - If correct -> marked as Done, repeats after 3/4 questions until 3 consecutive correct are achieved.
    *    - If wrong -> removed and added to Mistake.
    */
-  const processAnswer = (isCorrect, isNotSure) => {
+  const processAnswer = (isCorrect, isNotSure, usedHint = false) => {
     const qId = currentQ.id;
     const prevStat = questionStats[qId] || {
       consecutiveCorrect: 0,
@@ -183,14 +195,18 @@ export default function HSCExamInterface({
     if (isCorrect) {
       newConsecutive = prevStat.consecutiveCorrect + 1;
 
-      if (prevStat.status === 'mistake') {
+      if (usedHint) {
+        // Used hint before answering → treat as Learning regardless of correctness
+        newStatus = 'learning';
+        newConsecutive = Math.min(newConsecutive, 1); // cap to max 1 when hint used
+      } else if (prevStat.status === 'mistake') {
         // Correct on retry from mistake -> marked as Learning
         newStatus = 'learning';
       } else if (newConsecutive >= 3) {
         // 3rd consecutive correct -> fully Mastered & Done
         newStatus = 'done';
       } else {
-        // 1st time correct or progressing towards completion -> marked as Done
+        // 1st or 2nd correct without hint -> marked as Done
         newStatus = 'done';
       }
     } else {
@@ -215,6 +231,7 @@ export default function HSCExamInterface({
       scheduleReappearance(currentQ);
     }
   };
+
 
   // Spaced Repetition Insertion: guarantees at least 3-4 other questions in between
   const scheduleReappearance = (questionToRepeat) => {
@@ -337,17 +354,8 @@ export default function HSCExamInterface({
               </div>
             </div>
 
-            {/* Timer & Date badge + Sound Toggle */}
+            {/* Sound Toggle only (timer removed) */}
             <div className="flex items-center gap-2">
-              <div className="flex items-center gap-2 text-xs font-semibold bg-[#0e121a] px-3.5 py-1.5 rounded-xl border border-[#232c3f] text-slate-300">
-                <Timer size={14} className="text-amber-400" />
-                <span>{formatTimer(secondsLeft)}</span>
-                <span className="text-slate-600">|</span>
-                <Calendar size={14} className="text-slate-400" />
-                <span className="text-slate-400">29-Aug-2026</span>
-              </div>
-
-              {/* Sound Toggle */}
               <button
                 onClick={() => setIsSoundOn(!isSoundOn)}
                 title={isSoundOn ? 'Mute sound effects' : 'Enable sound effects'}
@@ -402,10 +410,33 @@ export default function HSCExamInterface({
               {currentQ.questionText || `Choose the correct meaning/synonym of "${currentQ.word}":`}
             </p>
 
-            {currentQ.bengaliMeaning && (
-              <span className="text-xs text-slate-400 block pt-1 border-t border-[#1a2233]">
-                💡 <span className="font-semibold text-slate-300">বাংলা অর্থ:</span> {currentQ.bengaliMeaning}
-              </span>
+            {/* Bengali Meaning area: Hidden before answer with Hint button; revealed if hint clicked or once answered */}
+            {!isAnswered ? (
+              <div className="pt-2 border-t border-[#1a2233]">
+                {!hintRevealed ? (
+                  <button
+                    onClick={handleRevealHint}
+                    className="text-xs font-semibold text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 px-3 py-1.5 rounded-xl transition-all inline-flex items-center gap-1.5 cursor-pointer active:scale-95"
+                  >
+                    <span>💡 {isBn ? 'বাংলা অর্থ দেখুন (হিন্ট নিলে এটি Learning হিসেবে চিহ্নিত হবে)' : 'Show Bengali Meaning (Will mark as Learning)'}</span>
+                  </button>
+                ) : (
+                  <div className="flex items-center justify-between text-xs pt-1">
+                    <span className="text-amber-300 font-medium">
+                      💡 <span className="font-semibold text-amber-200">{isBn ? 'বাংলা অর্থ (হিন্ট):' : 'Bengali Meaning (Hint):'}</span> {currentQ.bengaliMeaning}
+                    </span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                      Learning চিহ্নিত
+                    </span>
+                  </div>
+                )}
+              </div>
+            ) : (
+              currentQ.bengaliMeaning && (
+                <div className="pt-2 border-t border-[#1a2233] text-xs text-slate-300">
+                  💡 <span className="font-semibold text-emerald-400">{isBn ? 'বাংলা অর্থ:' : 'Bengali Meaning:'}</span> {currentQ.bengaliMeaning}
+                </div>
+              )
             )}
           </div>
 
@@ -508,16 +539,18 @@ export default function HSCExamInterface({
                   </span>
                 </span>
                 <span className="text-emerald-300 font-bold">
-                  Correct: {String.fromCharCode(65 + currentQ.correctOption)} ({currentQ.options[currentQ.correctOption]})
+                  Correct: {String.fromCharCode(65 + shuffledCorrectIndex)} ({shuffledOptions[shuffledCorrectIndex]?.text})
                 </span>
               </div>
 
               {/* Spaced repetition indicator note */}
               <div className="text-[11px] text-amber-300/90 font-medium bg-[#1a1726] p-2 rounded-lg border border-amber-500/20 flex items-center gap-1.5">
-                <RefreshCw size={13} className="text-amber-400" />
+                <RefreshCw size={13} className="text-amber-400 shrink-0" />
                 <span>
-                  {isNotSureClicked || selectedOption !== currentQ.correctOption
+                  {isNotSureClicked || selectedOption !== shuffledCorrectIndex
                     ? (isBn ? '⚠️ ভুল হয়েছে / নিশ্চিত ছিলেন না। ৩-৪টি প্রশ্নের পর এই প্রশ্নটি পুনরায় আসবে।' : '⚠️ Marked as mistake. This question will reappear after 3-4 questions.')
+                    : hintUsedForCurrentQ
+                    ? (isBn ? '💡 হিন্ট ব্যবহার করেছিলেন। শব্দটি ভালোমতো মুখস্থ করতে ৩-৪টি প্রশ্নের পর আবার আসবে।' : '💡 Hint was used. Marked as Learning. Will reappear after 3-4 questions for re-test.')
                     : (currentStat.consecutiveCorrect + 1 >= 3
                         ? (isBn ? '🎉 দারুণ! ৩ বার সফলভাবে সম্পন্ন হয়েছে!' : '🎉 Awesome! Completed 3 consecutive times.')
                         : (isBn ? `👍 সঠিক উত্তর! আরও নিশ্চিত করতে ৩-৪টি প্রশ্নের পর আবার আসবে।` : `👍 Correct! Will reappear after 3-4 questions for re-test.`))}
