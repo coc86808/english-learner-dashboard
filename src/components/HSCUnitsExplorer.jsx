@@ -1,197 +1,276 @@
 import React, { useState } from 'react';
 import {
-  GraduationCap,
   BookOpen,
-  Search,
   CheckCircle2,
-  ChevronRight,
-  ChevronDown,
-  ChevronUp,
+  Clock,
+  FileText,
+  ArrowLeft,
+  Search,
+  Sparkles,
   Play,
-  Layers,
-  Sparkles
+  RotateCcw,
+  GraduationCap,
+  ChevronRight
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
+import { hscQuestionsList } from '../data/questions';
+import HSCExamInterface from './HSCExamInterface';
 
-export default function HSCUnitsExplorer({ lang, onStartUnitQuiz }) {
+export default function HSCUnitsExplorer({
+  lang = 'bn',
+  onStartUnitQuiz
+}) {
   const isBn = lang === 'bn';
-  const [searchTerm, setSearchTerm] = useState('');
-  const [expandedUnitId, setExpandedUnitId] = useState('unit-1');
+  const [selectedUnit, setSelectedUnit] = useState(null);
+  const [selectedLesson, setSelectedLesson] = useState(null);
+  const [isExamActive, setIsExamActive] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Handle clicking a Unit card (Navigates to Screenshot 2: Lessons View)
+  const handleSelectUnit = (unit) => {
+    setSelectedUnit(unit);
+    setSelectedLesson(null);
+    setIsExamActive(false);
+  };
+
+  // Handle clicking a Lesson card (Navigates to Screenshot 3: Live Exam)
+  const handleSelectLesson = (lesson) => {
+    setSelectedLesson(lesson);
+    setIsExamActive(true);
+    if (onStartUnitQuiz) {
+      onStartUnitQuiz(selectedUnit, lesson);
+    }
+  };
+
+  // Back buttons
+  const handleBackToUnits = () => {
+    setSelectedUnit(null);
+    setSelectedLesson(null);
+    setIsExamActive(false);
+  };
+
+  const handleBackToLessons = () => {
+    setIsExamActive(false);
+  };
+
+  // Filter questions for the selected unit and lesson
+  const getFilteredQuestions = () => {
+    if (!selectedUnit) return hscQuestionsList;
+
+    const unitQuestions = hscQuestionsList.filter((q) => {
+      if (!q.unit) return true;
+      return (
+        q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) ||
+        q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())
+      );
+    });
+
+    if (selectedLesson) {
+      const lessonQuestions = unitQuestions.filter((q) => {
+        return (
+          q.unit &&
+          (q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) ||
+            q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))
+        );
+      });
+      if (lessonQuestions.length > 0) return lessonQuestions;
+    }
+
+    return unitQuestions.length > 0 ? unitQuestions : hscQuestionsList;
+  };
 
   const filteredUnits = hscUnits.filter((u) => {
-    const matchesTitle =
-      u.unitTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      u.unitTitleBn.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      u.unitNumber.toLowerCase().includes(searchTerm.toLowerCase());
-
-    const matchesLessons = u.lessons.some(
-      (l) =>
-        l.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        l.titleBn.toLowerCase().includes(searchTerm.toLowerCase())
+    if (!searchQuery.trim()) return true;
+    const q = searchQuery.toLowerCase();
+    return (
+      u.unitNumber.toLowerCase().includes(q) ||
+      u.unitTitle.toLowerCase().includes(q) ||
+      u.unitTitleBn.includes(q) ||
+      u.lessons.some((l) => l.title.toLowerCase().includes(q) || l.titleBn.includes(q))
     );
-
-    return matchesTitle || matchesLessons;
   });
-
-  const toggleExpand = (id) => {
-    setExpandedUnitId(expandedUnitId === id ? null : id);
-  };
 
   return (
     <div className="space-y-6">
-      {/* Top Banner & Search Header */}
-      <div className="bg-gradient-to-r from-[#141b2a] via-[#101622] to-[#121927] border border-[#1f2a3e] p-6 rounded-3xl shadow-card flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-        <div>
-          <div className="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 mb-2">
-            <GraduationCap size={15} />
-            <span>HSC English For Today (12 Units & Lessons)</span>
-          </div>
-          <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">
-            {isBn ? 'HSC সম্পূর্ণ পাঠ্যবই ও অধ্যায়ভিত্তিক শব্দকোষ' : 'HSC English Textbook & Vocabulary Bank'}
-          </h2>
-          <p className="text-xs md:text-sm text-slate-400 mt-1 max-w-xl">
-            {isBn
-              ? 'বোর্ড সিলেবাসের ১২টি ইউনিট এবং প্রতিটি লেসনের গুরুত্বপূর্ণ ভোকাবুলারি, বাংলা অর্থ, সমার্থক-বিপরীত শব্দ ও বোর্ড পরীক্ষার প্রশ্ন।'
-              : 'Master all 12 units and individual lessons with textbook definitions, synonyms, antonyms, and past board questions.'}
-          </p>
-        </div>
+      {/* ------------------------------------------------------------- */}
+      {/* VIEW 3: LIVE ACTIVE EXAM SCREEN                               */}
+      {/* ------------------------------------------------------------- */}
+      {isExamActive && selectedUnit && selectedLesson ? (
+        <div className="space-y-4 animate-in fade-in zoom-in-95 duration-200">
+          {/* Breadcrumb Navigation Bar */}
+          <div className="bg-[#131824] border border-[#1e2738] p-3.5 rounded-2xl flex flex-wrap items-center justify-between gap-3 text-xs text-slate-300">
+            <button
+              onClick={handleBackToLessons}
+              className="px-3.5 py-1.5 rounded-xl bg-[#182030] hover:bg-[#222e44] text-emerald-400 font-bold inline-flex items-center gap-1.5 transition-all shadow-sm"
+            >
+              <ArrowLeft size={14} />
+              <span>{isBn ? 'লেসন তালিকায় ফিরে যান' : 'Back to Lessons'}</span>
+            </button>
 
-        {/* Search Bar */}
-        <div className="w-full md:w-80 relative">
-          <Search size={17} className="absolute left-3.5 top-3 text-slate-400" />
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder={isBn ? 'ইউনিট বা লেসন খুঁজুন...' : 'Search unit or lesson...'}
-            className="w-full bg-[#161c2b] border border-[#232c3f] focus:border-emerald-500 rounded-2xl pl-10 pr-4 py-2.5 text-sm text-white placeholder-slate-500 outline-none"
+            <div className="flex items-center gap-2 font-semibold text-xs sm:text-sm">
+              <span className="text-emerald-400 font-bold">{selectedUnit.unitNumber}</span>
+              <span className="text-slate-600">➔</span>
+              <span className="text-white font-bold">{selectedLesson.number}: {selectedLesson.title}</span>
+            </div>
+          </div>
+
+          {/* Spaced-Repetition Exam Engine */}
+          <HSCExamInterface
+            questions={getFilteredQuestions()}
+            onClose={handleBackToLessons}
+            lang={lang}
           />
         </div>
-      </div>
+      ) : selectedUnit ? (
+        /* ------------------------------------------------------------- */
+        /* VIEW 2: LESSONS GRID (EXACTLY MATCHING SCREENSHOT 2)           */
+        /* ------------------------------------------------------------- */
+        <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-200">
+          {/* Top Bar with Back Button & Unit Title */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1f283a]">
+            <div className="flex items-center gap-3">
+              <button
+                onClick={handleBackToUnits}
+                className="p-2.5 rounded-xl bg-[#131824] hover:bg-[#1c2436] border border-[#232c3f] text-slate-300 hover:text-white transition-all shadow-sm"
+                title="Back to all units"
+              >
+                <ArrowLeft size={18} />
+              </button>
 
-      {/* Grid of all 12 Units with Expandable Lessons */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {filteredUnits.map((unit) => {
-          const isExpanded = expandedUnitId === unit.id;
-
-          return (
-            <div
-              key={unit.id}
-              className={`bg-[#131824] border rounded-2xl p-5 shadow-card transition-all duration-200 flex flex-col justify-between ${
-                isExpanded ? 'border-emerald-500/40 bg-[#141a27]' : 'border-[#1d2536] hover:border-[#28354c]'
-              }`}
-            >
               <div>
-                {/* Unit Header */}
-                <div
-                  onClick={() => toggleExpand(unit.id)}
-                  className="flex items-start justify-between gap-3 cursor-pointer group"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-black text-sm shrink-0 shadow-sm">
-                      {unit.unitNumber.replace('Unit ', 'U')}
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-xs font-black text-emerald-400 uppercase tracking-wider">
-                          {unit.unitNumber}
-                        </span>
-                        <span className="text-xs text-slate-500">• {unit.lessons.length} {isBn ? 'টি লেসন' : 'Lessons'}</span>
-                      </div>
-                      <h3 className="text-white font-extrabold text-base md:text-lg group-hover:text-emerald-300 transition-colors mt-0.5">
-                        {isBn ? unit.unitTitleBn : unit.unitTitle}
-                      </h3>
-                      <span className="text-xs text-slate-400 font-medium">
-                        {unit.unitTitle}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2 shrink-0">
-                    <span className="text-xs font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-1 rounded-lg border border-emerald-500/20">
-                      {unit.progress}%
-                    </span>
-                    <button className="p-1 rounded-lg hover:bg-slate-800 text-slate-400 group-hover:text-white">
-                      {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                    </button>
-                  </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-black text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20 uppercase">
+                    {selectedUnit.unitNumber}
+                  </span>
+                  <span className="text-xs text-slate-400">
+                    {isBn ? selectedUnit.unitTitleBn : selectedUnit.unitTitle}
+                  </span>
                 </div>
-
-                {/* Progress Bar */}
-                <div className="w-full bg-[#1c2436] h-1.5 rounded-full overflow-hidden mt-3.5">
-                  <div
-                    className="bg-gradient-to-r from-emerald-500 to-teal-400 h-full rounded-full transition-all duration-700"
-                    style={{ width: `${Math.max(unit.progress, 5)}%` }}
-                  />
-                </div>
-
-                {/* Lessons Details List */}
-                {isExpanded && (
-                  <div className="mt-4 pt-3.5 border-t border-[#1e2738] space-y-2 animate-in fade-in duration-200">
-                    <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2">
-                      {isBn ? 'অন্তর্ভুক্ত লেসনসমূহ:' : 'Included Lessons:'}
-                    </span>
-
-                    {unit.lessons.map((lesson) => (
-                      <div
-                        key={lesson.id}
-                        className="p-3 rounded-xl bg-[#0e131e] border border-[#1b2333] hover:border-emerald-500/30 flex items-center justify-between gap-3 group/lesson transition-all"
-                      >
-                        <div className="flex items-center gap-2.5">
-                          <CheckCircle2
-                            size={15}
-                            className={lesson.progress >= 50 ? 'text-emerald-400' : 'text-slate-600'}
-                          />
-                          <div>
-                            <span className="text-xs md:text-sm font-bold text-white group-hover/lesson:text-emerald-300 transition-colors block">
-                              {lesson.number}: {lesson.title}
-                            </span>
-                            {isBn && (
-                              <span className="text-[11px] text-slate-400">
-                                {lesson.titleBn}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-
-                        <div className="flex items-center gap-2 shrink-0">
-                          <span className="text-[11px] text-slate-400 bg-[#161c2b] px-2 py-0.5 rounded border border-[#232c3f]">
-                            {lesson.wordsCount} words
-                          </span>
-
-                          <button
-                            onClick={() => onStartUnitQuiz && onStartUnitQuiz(unit, lesson)}
-                            className="p-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 transition-all"
-                            title="Start Lesson Quiz"
-                          >
-                            <Play size={13} className="fill-current" />
-                          </button>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Bottom Quick Test Trigger */}
-              <div className="mt-4 pt-3 border-t border-[#1c2436] flex items-center justify-between">
-                <span className="text-xs text-slate-400">
-                  {isBn ? 'মুখস্থ হয়েছে:' : 'Mastered:'}{' '}
-                  <strong className="text-emerald-400 font-bold">{unit.masteredWords}</strong>/{unit.totalWords}
-                </span>
-
-                <button
-                  onClick={() => onStartUnitQuiz && onStartUnitQuiz(unit)}
-                  className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs inline-flex items-center gap-1.5 shadow-md shadow-emerald-950/40 transition-all"
-                >
-                  <Play size={12} className="fill-current" />
-                  <span>{isBn ? 'ইউনিট টেস্ট শুরু করুন' : 'Start Unit Test'}</span>
-                </button>
+                <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-0.5">
+                  {selectedUnit.unitTitle}
+                </h2>
               </div>
             </div>
-          );
-        })}
-      </div>
+
+            {/* Quick Full Unit Test Trigger */}
+            <button
+              onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Vocabulary Test', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all shrink-0"
+            >
+              <Play size={14} className="fill-current" />
+              <span>{isBn ? 'সম্পূর্ণ ইউনিট পরীক্ষা' : 'Full Unit Test'}</span>
+            </button>
+          </div>
+
+          {/* Exact 3-Columns Dark Rounded Lesson Cards Grid matching Screenshot 2 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {selectedUnit.lessons.map((lesson) => (
+              <div
+                key={lesson.id}
+                onClick={() => handleSelectLesson(lesson)}
+                className="bg-[#10141f] hover:bg-[#151c2c] border border-[#1e2738] hover:border-emerald-500/60 rounded-2xl p-5 transition-all duration-200 cursor-pointer group shadow-card flex flex-col justify-between space-y-4"
+              >
+                {/* Lesson Title matching Screenshot 2 */}
+                <div>
+                  <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                    {lesson.number}: {lesson.title}
+                  </h3>
+                  {isBn && lesson.titleBn && (
+                    <span className="text-xs text-slate-400 block mt-1">
+                      {lesson.titleBn}
+                    </span>
+                  )}
+                </div>
+
+                {/* Bottom Row: Red Clock + Green Document matching Screenshot 2 */}
+                <div className="flex items-center gap-4 text-xs font-semibold pt-2 border-t border-[#182030]">
+                  {/* Duration with red clock icon */}
+                  <div className="flex items-center gap-1.5 text-rose-400">
+                    <Clock size={14} className="stroke-[2.2]" />
+                    <span>{lesson.duration || '১ ঘণ্টা ৪০ মিনিট'}</span>
+                  </div>
+
+                  {/* Question Count with green file icon */}
+                  <div className="flex items-center gap-1.5 text-emerald-400">
+                    <FileText size={14} className="stroke-[2.2]" />
+                    <span>{lesson.questionsCount || `${lesson.wordsCount * 4} টি প্রশ্ন`}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : (
+        /* ------------------------------------------------------------- */
+        /* VIEW 1: 12 UNIT CARDS GRID (EXACTLY MATCHING SCREENSHOT 1)     */
+        /* ------------------------------------------------------------- */
+        <div className="space-y-6 animate-in fade-in duration-200">
+          {/* Header with Search */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
+            <div>
+              <div className="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 mb-1">
+                <GraduationCap size={14} />
+                <span>NCTB HSC English For Today</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                {isBn ? 'অধ্যায়ভিত্তিক পরীক্ষা ও প্রশ্নব্যাংক' : 'HSC 12 Units & Lessons'}
+              </h2>
+            </div>
+
+            {/* Search Input */}
+            <div className="relative w-full sm:w-72">
+              <Search
+                size={16}
+                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
+              />
+              <input
+                type="text"
+                placeholder={isBn ? 'ইউনিট বা লেসন খুঁজুন...' : 'Search unit or lesson...'}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 bg-[#131824] border border-[#232c3f] rounded-xl text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors"
+              />
+            </div>
+          </div>
+
+          {/* Exact 4-Columns Vibrant Color Cards Grid matching Screenshot 1 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+            {filteredUnits.map((unit) => (
+              <div
+                key={unit.id}
+                onClick={() => handleSelectUnit(unit)}
+                className={`relative overflow-hidden rounded-3xl p-5 sm:p-6 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl cursor-pointer select-none text-white min-h-[170px] sm:min-h-[185px] flex flex-col justify-between shadow-lg ${unit.bgClass || 'bg-[#1b8a43]'}`}
+              >
+                {/* Ambient Internal Glow */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/15 to-transparent pointer-events-none" />
+
+                {/* Top-Left Unit Title & Subtitle matching Screenshot 1 */}
+                <div className="relative z-10 space-y-1 pr-12">
+                  <h3 className="text-xl sm:text-2xl font-black tracking-tight drop-shadow-sm">
+                    {unit.unitNumber}
+                  </h3>
+                  <p className="text-xs sm:text-sm font-medium text-white/90 drop-shadow-sm leading-tight">
+                    {unit.unitTitle}
+                  </p>
+                </div>
+
+                {/* Bottom Stats / Lessons count */}
+                <div className="relative z-10 flex items-center justify-between text-[11px] font-semibold text-white/80 pt-4">
+                  <span>{unit.lessons.length} Lessons</span>
+                  <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                    <ChevronRight size={14} className="text-white" />
+                  </div>
+                </div>
+
+                {/* Large Translucent Watermark Number matching Screenshot 1 */}
+                <span className="absolute -bottom-2 -right-1 text-7xl sm:text-8xl font-black text-white/25 select-none pointer-events-none leading-none tracking-tighter">
+                  {unit.number}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
