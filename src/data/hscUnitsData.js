@@ -13,10 +13,10 @@ export const hscUnits = [
     bgClass: 'bg-[#1b8a43] hover:bg-[#1f9c4c]',
     gradient: 'from-[#1e9649] to-[#146e33]',
     progress: 0,
-    totalWords: 0,
+    totalWords: 23,
     masteredWords: 0,
     lessons: [
-      { id: 'u1-l1', number: 'Lesson-1', title: "The Parrot's Tale", titleBn: 'তোতাকাহিনী', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u1-l1', number: 'Lesson-1', title: "The Parrot's Tale", titleBn: 'তোতাকাহিনী', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '২৩ টি প্রশ্ন', wordsCount: 23, progress: 0 },
       { id: 'u1-l2', number: 'Lesson 2', title: 'Education and Technology', titleBn: 'শিক্ষা ও প্রযুক্তি', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u1-l3', number: 'Lesson 3', title: 'Children in School', titleBn: 'বিদ্যালয়ে শিশু', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u1-l4', number: 'Lesson-4', title: 'Civic Engagement', titleBn: 'নাগরিক সম্পৃক্ততা', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },

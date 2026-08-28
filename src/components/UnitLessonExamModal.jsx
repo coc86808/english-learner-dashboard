@@ -7,11 +7,13 @@ import {
   Play,
   ArrowLeft,
   Search,
-  ChevronRight
+  ChevronRight,
+  BookOpen
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList } from '../data/questions';
 import HSCExamInterface from './HSCExamInterface';
+import TextbookReaderModal from './TextbookReaderModal';
 
 export default function UnitLessonExamModal({
   isOpen,
@@ -26,6 +28,7 @@ export default function UnitLessonExamModal({
   const [selectedUnit, setSelectedUnit] = useState(initialUnit || null);
   const [selectedLesson, setSelectedLesson] = useState(initialLesson || null);
   const [isExamActive, setIsExamActive] = useState(Boolean(initialUnit && initialLesson));
+  const [isTextbookOpen, setIsTextbookOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   if (!isOpen) return null;
@@ -117,6 +120,16 @@ export default function UnitLessonExamModal({
                   {selectedLesson.number}: {selectedLesson.title}
                 </span>
               </div>
+
+              {selectedUnit.id === 'unit-1' && (
+                <button
+                  onClick={() => setIsTextbookOpen(true)}
+                  className="px-3 py-1.5 rounded-xl bg-[#182030] hover:bg-emerald-500/20 text-emerald-300 font-bold inline-flex items-center gap-1.5 border border-[#23334d] text-xs transition-all"
+                >
+                  <BookOpen size={13} />
+                  <span>{isBn ? 'টেক্সটবুক পড়ুন' : 'Read Textbook'}</span>
+                </button>
+              )}
             </div>
 
             <HSCExamInterface
@@ -148,13 +161,25 @@ export default function UnitLessonExamModal({
                 </div>
               </div>
 
-              <button
-                onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Test', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all shrink-0"
-              >
-                <Play size={14} className="fill-current" />
-                <span>{isBn ? 'সম্পূর্ণ ইউনিট পরীক্ষা' : 'Full Unit Test'}</span>
-              </button>
+              <div className="flex items-center gap-2.5 flex-wrap">
+                {selectedUnit.id === 'unit-1' && (
+                  <button
+                    onClick={() => setIsTextbookOpen(true)}
+                    className="px-4 py-2.5 rounded-xl bg-[#182030] hover:bg-[#222e44] text-emerald-300 border border-emerald-500/30 text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition-all shadow-sm active:scale-95"
+                  >
+                    <BookOpen size={15} />
+                    <span>{isBn ? '📖 পাঠ্যবই পড়ুন' : '📖 Read Textbook'}</span>
+                  </button>
+                )}
+
+                <button
+                  onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Test', duration: '১ ঘণ্টা ৪০ মিনিট', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all shrink-0 active:scale-95"
+                >
+                  <Play size={14} className="fill-current" />
+                  <span>{isBn ? 'সম্পূর্ণ ইউনিট পরীক্ষা' : 'Full Unit Test'}</span>
+                </button>
+              </div>
             </div>
 
             {/* 3-Column Dark Lesson Cards matching Screenshot 2 */}
@@ -177,16 +202,31 @@ export default function UnitLessonExamModal({
                   </div>
 
                   {/* Red Clock + Green Document */}
-                  <div className="flex items-center gap-4 text-xs font-semibold pt-2 border-t border-[#182030]">
-                    <div className="flex items-center gap-1.5 text-rose-400">
-                      <Clock size={14} className="stroke-[2.2]" />
-                      <span>{lesson.duration || '১ ঘণ্টা ৪০ মিনিট'}</span>
+                  <div className="flex items-center justify-between pt-2 border-t border-[#182030]">
+                    <div className="flex items-center gap-4 text-xs font-semibold">
+                      <div className="flex items-center gap-1.5 text-rose-400">
+                        <Clock size={14} className="stroke-[2.2]" />
+                        <span>{lesson.duration || '১ ঘণ্টা ৪০ মিনিট'}</span>
+                      </div>
+
+                      <div className="flex items-center gap-1.5 text-emerald-400">
+                        <FileText size={14} className="stroke-[2.2]" />
+                        <span>{lesson.questionsCount || `${lesson.wordsCount} টি প্রশ্ন`}</span>
+                      </div>
                     </div>
 
-                    <div className="flex items-center gap-1.5 text-emerald-400">
-                      <FileText size={14} className="stroke-[2.2]" />
-                      <span>{lesson.questionsCount || `${lesson.wordsCount * 4} টি প্রশ্ন`}</span>
-                    </div>
+                    {selectedUnit.id === 'unit-1' && lesson.id === 'u1-l1' && (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setIsTextbookOpen(true);
+                        }}
+                        title="Read Story"
+                        className="px-2 py-1 rounded-lg bg-[#182236] hover:bg-emerald-500/20 text-emerald-300 text-[11px] font-bold border border-[#23334d] transition-all"
+                      >
+                        পড়ুন
+                      </button>
+                    )}
                   </div>
                 </div>
               ))}
@@ -257,6 +297,19 @@ export default function UnitLessonExamModal({
             </div>
           </div>
         )}
+
+        {/* Official Textbook Reader Modal */}
+        <TextbookReaderModal
+          isOpen={isTextbookOpen}
+          onClose={() => setIsTextbookOpen(false)}
+          onStartExam={() => {
+            setIsTextbookOpen(false);
+            if (selectedUnit) {
+              handleSelectLesson(selectedUnit.lessons[0]);
+            }
+          }}
+          lang={lang}
+        />
       </div>
     </div>
   );
