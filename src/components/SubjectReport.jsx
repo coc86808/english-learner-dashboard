@@ -74,7 +74,7 @@ export default function SubjectReport({ lang, onOpenAllSubjects, onSelectLesson 
                 <div className="w-full bg-[#1c2436] h-1.5 rounded-full overflow-hidden mt-2">
                   <div
                     className="bg-gradient-to-r from-emerald-500 to-teal-400 h-full rounded-full transition-all duration-700 ease-out"
-                    style={{ width: `${Math.max(unit.progress, 4)}%` }}
+                    style={{ width: `${unit.progress}%` }}
                   />
                 </div>
 

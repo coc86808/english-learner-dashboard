@@ -258,6 +258,32 @@ export default function HSCExamInterface({
     }
   };
 
+  if (questions.length === 0) {
+    return (
+      <div className="max-w-3xl mx-auto w-full bg-[#131824] border border-[#1d2536] rounded-3xl p-8 sm:p-12 shadow-2xl text-center space-y-5 text-slate-100">
+        <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center">
+          <Sparkles size={32} />
+        </div>
+        <h3 className="text-xl sm:text-2xl font-bold text-white">
+          {isBn ? 'পাঠ্যবইয়ের প্রশ্ন লোড করার অপেক্ষায়...' : 'Ready for Textbook Questions'}
+        </h3>
+        <p className="text-sm text-slate-400 max-w-md mx-auto leading-relaxed">
+          {isBn
+            ? 'সব ফেক প্রশ্ন এবং প্রগ্রেস সফলভাবে মুছে ফেলা হয়েছে। আপনি টেক্সটবুক দিলে সাথে সাথে প্রশ্ন তৈরি হয়ে এই অধ্যায়ে যুক্ত হয়ে যাবে।'
+            : 'All fake questions and progress have been cleared. Ready to learn directly from your textbook.'}
+        </p>
+        {onClose && (
+          <button
+            onClick={onClose}
+            className="px-6 py-2.5 rounded-xl bg-[#192233] hover:bg-[#222e44] text-slate-300 text-sm font-bold transition-all"
+          >
+            {isBn ? 'ড্যাশবোর্ডে ফিরে যান' : 'Back to Dashboard'}
+          </button>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-3xl mx-auto w-full bg-[#131824] border border-[#1d2536] rounded-3xl p-5 md:p-8 shadow-2xl relative overflow-hidden text-slate-100">
       {/* Background Glow */}
