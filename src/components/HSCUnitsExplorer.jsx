@@ -224,7 +224,7 @@ export default function HSCUnitsExplorer({
                   {isBn ? 'অনুশীলনের ধরন বেছে নিন (Practice Categories):' : 'Select Practice Categories:'}
                 </h3>
                 <span className="text-[11px] text-emerald-400 font-semibold bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md">
-                  {selectedCategories.length} টি সক্রিয়
+                  {selectedCategories.length} {isBn ? 'টি সক্রিয়' : 'Active'}
                 </span>
               </div>
 
@@ -287,8 +287,8 @@ export default function HSCUnitsExplorer({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {selectedUnit.lessons.map((lesson) => {
               const activeCount = selectedUnit.id === 'unit-1' && lesson.id === 'u1-l1'
-                ? `${23 * selectedCategories.length} টি প্রশ্ন`
-                : (lesson.questionsCount || '০ টি প্রশ্ন');
+                ? `${23 * selectedCategories.length} ${isBn ? 'টি প্রশ্ন' : 'Questions'}`
+                : (lesson.questionsCount || (isBn ? '০ টি প্রশ্ন' : '0 Questions'));
 
               return (
               <div
@@ -325,9 +325,9 @@ export default function HSCUnitsExplorer({
                         setIsTextbookOpen(true);
                       }}
                       title="Read Story"
-                      className="px-2 py-1 rounded-lg bg-[#182236] hover:bg-emerald-500/20 text-emerald-300 text-[11px] font-bold border border-[#23334d] transition-all"
+                      className="px-2.5 py-1 rounded-lg bg-[#182236] hover:bg-emerald-500/20 text-emerald-300 text-[11px] font-bold border border-[#23334d] transition-all"
                     >
-                      পড়ুন
+                      {isBn ? 'পড়ুন' : 'Read'}
                     </button>
                   )}
                 </div>
