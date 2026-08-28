@@ -12,7 +12,8 @@ import {
   ChevronRight,
   Menu,
   X,
-  Shield
+  Shield,
+  LogOut
 } from 'lucide-react';
 
 export default function Sidebar({
@@ -22,7 +23,9 @@ export default function Sidebar({
   setIsOpen,
   lang,
   onOpenAuth,
-  onOpenProfile
+  onOpenProfile,
+  currentUser,
+  onLogout
 }) {
   const isBn = lang === 'bn';
 
@@ -167,26 +170,33 @@ export default function Sidebar({
 
         {/* Bottom Auth / Profile Section */}
         <div className="p-3.5 border-t border-[#192030] bg-[#090c13]/50">
-          <div
-            onClick={onOpenProfile || onOpenAuth}
-            className="w-full flex items-center justify-between p-2.5 rounded-xl bg-[#121824] hover:bg-[#182132] border border-[#1e293c] transition-all cursor-pointer group shadow-sm"
-          >
-            <div className="flex items-center gap-2.5 min-w-0">
+          <div className="w-full flex items-center justify-between p-2 rounded-xl bg-[#121824] border border-[#1e293c] shadow-sm">
+            <div
+              onClick={onOpenProfile}
+              className="flex items-center gap-2.5 min-w-0 cursor-pointer group flex-1"
+            >
               <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-xs shrink-0 shadow-md">
-                TA
+                {currentUser && currentUser.name ? currentUser.name.split(' ').map(n=>n[0]).join('').slice(0, 2) : 'TA'}
               </div>
               <div className="min-w-0">
                 <span className="block text-xs font-bold text-white group-hover:text-emerald-300 truncate">
-                  Tanvir Ahmed
+                  {currentUser ? currentUser.name : 'Tanvir Ahmed'}
                 </span>
                 <span className="block text-[10px] text-slate-400 truncate">
                   {isBn ? 'প্রোফাইল ও দুর্বল শব্দ' : 'Profile & Weak Words'}
                 </span>
               </div>
             </div>
-            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 shrink-0">
-              HSC
-            </span>
+
+            {onLogout && (
+              <button
+                onClick={onLogout}
+                className="p-1.5 rounded-lg text-slate-500 hover:text-rose-400 hover:bg-rose-950/30 transition-all cursor-pointer shrink-0 ml-1"
+                title={isBn ? 'লগআউট' : 'Log Out'}
+              >
+                <LogOut size={15} />
+              </button>
+            )}
           </div>
         </div>
       </aside>

@@ -14,6 +14,7 @@ import MobileBottomNav from './components/MobileBottomNav';
 import FlashcardsExplorer from './components/FlashcardsExplorer';
 import WeakWordsSection from './components/WeakWordsSection';
 import UserProfileModal from './components/UserProfileModal';
+import LandingPage from './components/LandingPage';
 import { usersList } from './data/users';
 import { hscQuestionsList, hscVocabularyList } from './data/questions';
 import { Trophy, GraduationCap, BookOpen, Layers } from 'lucide-react';
@@ -22,6 +23,41 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [lang, setLang] = useState('en'); // 'en' | 'bn' (default English)
+
+  // Mandatory Authentication Gate State
+  const [currentUser, setCurrentUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('hsc_auth_user');
+      if (saved) return JSON.parse(saved);
+    } catch (e) {}
+    return null; // Guest visitor sees Home Page by default
+  });
+  const [isSignUpMode, setIsSignUpMode] = useState(true);
+
+  const handleAuthSuccess = (user) => {
+    setCurrentUser(user);
+    try {
+      localStorage.setItem('hsc_auth_user', JSON.stringify(user));
+    } catch (e) {}
+    setIsAuthOpen(false);
+  };
+
+  const handleDemoLogin = () => {
+    const demoUser = {
+      name: 'Tanvir Ahmed',
+      college: 'Notre Dame College, Dhaka',
+      batch: 'HSC 2026',
+      email: 'tanvir.demo@hsc2026.edu'
+    };
+    handleAuthSuccess(demoUser);
+  };
+
+  const handleLogout = () => {
+    setCurrentUser(null);
+    try {
+      localStorage.removeItem('hsc_auth_user');
+    } catch (e) {}
+  };
 
   // Admin Data State (Users and HSC Questions)
   const [users, setUsers] = useState(usersList);
@@ -80,6 +116,32 @@ export default function App() {
 
   const isBn = lang === 'bn';
 
+  // MANDATORY HOME PAGE & AUTH GATE:
+  // If user is not authenticated, show Public Home / Landing Page
+  if (!currentUser) {
+    return (
+      <div className="bg-[#0a0d14] text-slate-100 min-h-screen">
+        <LandingPage
+          onOpenAuth={(isSignUp = true) => {
+            setIsSignUpMode(isSignUp);
+            setIsAuthOpen(true);
+          }}
+          onDirectLogin={handleDemoLogin}
+          lang={lang}
+          setLang={setLang}
+        />
+
+        <AuthModal
+          isOpen={isAuthOpen}
+          onClose={() => setIsAuthOpen(false)}
+          lang={lang}
+          isSignUpDefault={isSignUpMode}
+          onAuthSuccess={handleAuthSuccess}
+        />
+      </div>
+    );
+  }
+
   const getTabTitle = () => {
     switch (activeTab) {
       case 'dashboard':
@@ -116,6 +178,8 @@ export default function App() {
         lang={lang}
         onOpenAuth={() => setIsAuthOpen(true)}
         onOpenProfile={() => setIsUserProfileOpen(true)}
+        currentUser={currentUser}
+        onLogout={handleLogout}
       />
 
       {/* Main Workspace Area */}
@@ -131,6 +195,9 @@ export default function App() {
           onOpenAdmin={() => setActiveTab(activeTab === 'admin' ? 'dashboard' : 'admin')}
           onOpenNotifications={() => alert(isBn ? 'নতুন ৩টি প্র্যাকটিস টেস্ট যুক্ত হয়েছে!' : '3 new practice tests added!')}
           onOpenStreakModal={() => alert(isBn ? 'আপনার স্ট্রিক ২ দিন বজায় রয়েছে!' : 'Your 2-day streak is active!')}
+          currentUser={currentUser}
+          onLogout={handleLogout}
+          onOpenProfile={() => setIsUserProfileOpen(true)}
         />
 
         {/* 3. Main Dashboard Scrollable Canvas with mobile bottom safe padding */}

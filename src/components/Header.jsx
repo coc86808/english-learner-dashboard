@@ -10,7 +10,8 @@ import {
   ToggleLeft,
   ToggleRight,
   User,
-  Shield
+  Shield,
+  LogOut
 } from 'lucide-react';
 
 export default function Header({
@@ -22,7 +23,10 @@ export default function Header({
   onOpenNotifications,
   onOpenStreakModal,
   onOpenAdmin,
-  isAdminActive
+  isAdminActive,
+  currentUser,
+  onLogout,
+  onOpenProfile
 }) {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [toggleA, setToggleA] = useState(true);
@@ -130,6 +134,33 @@ export default function Header({
           <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
           <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-emerald-500" />
         </button>
+
+        {/* User Profile Avatar Trigger */}
+        {currentUser && (
+          <button
+            onClick={onOpenProfile}
+            className="flex items-center gap-2 p-1 pl-2 pr-2.5 rounded-xl bg-[#141b29] hover:bg-[#1c263a] border border-[#232f45] transition-all cursor-pointer group"
+            title="Open Profile & Weak Words"
+          >
+            <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-[10px]">
+              {currentUser.name ? currentUser.name.split(' ').map(n=>n[0]).join('').slice(0, 2) : 'TA'}
+            </div>
+            <span className="hidden lg:inline text-xs font-bold text-slate-200 group-hover:text-white max-w-[90px] truncate">
+              {currentUser.name || 'Tanvir'}
+            </span>
+          </button>
+        )}
+
+        {/* Log Out Button */}
+        {onLogout && (
+          <button
+            onClick={onLogout}
+            className="p-2 rounded-xl text-slate-400 hover:text-rose-400 hover:bg-rose-950/30 transition-all cursor-pointer"
+            title={isBn ? 'লগআউট করুন' : 'Log Out'}
+          >
+            <LogOut size={17} />
+          </button>
+        )}
       </div>
     </header>
   );
