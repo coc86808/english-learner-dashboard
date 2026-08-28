@@ -106,7 +106,7 @@ export default function HSCExamInterface({
     ? questionStats[currentQ.id] || { consecutiveCorrect: 0, status: 'learning' }
     : { consecutiveCorrect: 0, status: 'learning' };
 
-  // Shuffle options every time a new question appears
+  // Shuffle options on every question appearance (including spaced-repetition re-tests of the same question)
   useEffect(() => {
     if (!currentQ || !currentQ.options) return;
     const indexed = currentQ.options.map((text, i) => ({ text, originalIndex: i }));
@@ -123,7 +123,7 @@ export default function HSCExamInterface({
     setSelectedOption(null);
     setIsAnswered(false);
     setIsNotSureClicked(false);
-  }, [currentQ?.id]);
+  }, [queueIndex]); // Re-shuffle every time queue position advances, not just on id change
 
   const formatTimer = (secs) => {
     const mins = Math.floor(secs / 60);
