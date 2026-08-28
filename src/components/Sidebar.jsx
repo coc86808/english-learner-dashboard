@@ -86,11 +86,11 @@ export default function Sidebar({
         <div>
           <div className="h-16 flex items-center justify-between px-5 border-b border-[#192030]">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 via-teal-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-900/30">
-                <span className="font-extrabold text-white text-base tracking-tighter">
-                  DDI
-                </span>
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="Learner Hub"
+                className="w-10 h-10 rounded-xl object-cover shadow-lg shadow-emerald-900/30 border border-emerald-500/30"
+              />
               <div>
                 <span className="text-white font-bold text-lg tracking-tight block">
                   {isBn ? 'লার্নার হাব' : 'Learner Hub'}
