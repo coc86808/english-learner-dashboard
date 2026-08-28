@@ -53,6 +53,10 @@ export default function HSCExamInterface({
   const [isAnswered, setIsAnswered] = useState(false);
   const [isNotSureClicked, setIsNotSureClicked] = useState(false);
 
+  // Shuffled display: each element is { text: string, originalIndex: number }
+  const [shuffledOptions, setShuffledOptions] = useState([]);
+  const [shuffledCorrectIndex, setShuffledCorrectIndex] = useState(0);
+
   // Timer
   const [secondsLeft, setSecondsLeft] = useState(900); // 15 mins
 
@@ -102,18 +106,37 @@ export default function HSCExamInterface({
     ? questionStats[currentQ.id] || { consecutiveCorrect: 0, status: 'learning' }
     : { consecutiveCorrect: 0, status: 'learning' };
 
+  // Shuffle options every time a new question appears
+  useEffect(() => {
+    if (!currentQ || !currentQ.options) return;
+    const indexed = currentQ.options.map((text, i) => ({ text, originalIndex: i }));
+    // Fisher-Yates shuffle
+    for (let i = indexed.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indexed[i], indexed[j]] = [indexed[j], indexed[i]];
+    }
+    setShuffledOptions(indexed);
+    const newCorrectPos = indexed.findIndex(
+      (o) => o.originalIndex === currentQ.correctOption
+    );
+    setShuffledCorrectIndex(newCorrectPos);
+    setSelectedOption(null);
+    setIsAnswered(false);
+    setIsNotSureClicked(false);
+  }, [currentQ?.id]);
+
   const formatTimer = (secs) => {
     const mins = Math.floor(secs / 60);
     const remainingSecs = secs % 60;
     return `${mins.toString().padStart(2, '0')}:${remainingSecs.toString().padStart(2, '0')}`;
   };
 
-  const handleSelectOption = (index) => {
+  const handleSelectOption = (shuffledIndex) => {
     if (isAnswered || !currentQ) return;
-    setSelectedOption(index);
+    setSelectedOption(shuffledIndex);
     setIsAnswered(true);
 
-    const isCorrect = index === currentQ.correctOption;
+    const isCorrect = shuffledIndex === shuffledCorrectIndex;
     if (isSoundOn) {
       if (isCorrect) soundManager.playCorrect();
       else soundManager.playWrong();
@@ -386,10 +409,10 @@ export default function HSCExamInterface({
             )}
           </div>
 
-          {/* 4. Options List matching sketch: Option 1, Option 2, Option 3, Option 4 */}
+          {/* 4. Options List — shuffled randomly every question */}
           <div className="space-y-3">
-            {currentQ.options.map((option, idx) => {
-              const isOptionCorrect = idx === currentQ.correctOption;
+            {shuffledOptions.map((opt, idx) => {
+              const isOptionCorrect = idx === shuffledCorrectIndex;
               const isOptionSelected = idx === selectedOption;
 
               let optionStyle =
@@ -427,7 +450,7 @@ export default function HSCExamInterface({
                     >
                       {String.fromCharCode(65 + idx)}
                     </span>
-                    <span className="font-medium">{option}</span>
+                    <span className="font-medium">{opt.text}</span>
                   </div>
 
                   {isAnswered && isOptionCorrect && (
