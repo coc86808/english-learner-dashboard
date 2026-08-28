@@ -29,6 +29,29 @@ export default function HSCUnitsExplorer({
   const [isTextbookOpen, setIsTextbookOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
+  // 4 Practice Categories: Synonyms, Antonyms, English Meaning, Bangla Meaning
+  const [selectedCategories, setSelectedCategories] = useState([
+    'synonyms',
+    'antonyms',
+    'english_meaning',
+    'bangla_meaning'
+  ]);
+
+  const toggleCategory = (catId) => {
+    setSelectedCategories((prev) => {
+      if (prev.includes(catId)) {
+        if (prev.length === 1) return prev; // Keep at least one category selected
+        return prev.filter((c) => c !== catId);
+      } else {
+        return [...prev, catId];
+      }
+    });
+  };
+
+  const selectAllCategories = () => {
+    setSelectedCategories(['synonyms', 'antonyms', 'english_meaning', 'bangla_meaning']);
+  };
+
   // Handle clicking a Unit card (Navigates to Screenshot 2: Lessons View)
   const handleSelectUnit = (unit) => {
     setSelectedUnit(unit);
@@ -56,11 +79,16 @@ export default function HSCUnitsExplorer({
     setIsExamActive(false);
   };
 
-  // Filter questions for the selected unit and lesson
+  // Filter questions for the selected unit, lesson, and practice categories
   const getFilteredQuestions = () => {
-    if (!selectedUnit) return hscQuestionsList;
+    // 1. Filter by selected category types
+    const categoryFiltered = hscQuestionsList.filter((q) =>
+      selectedCategories.includes(q.category)
+    );
 
-    const unitQuestions = hscQuestionsList.filter((q) => {
+    if (!selectedUnit) return categoryFiltered;
+
+    const unitQuestions = categoryFiltered.filter((q) => {
       if (!q.unit) return true;
       return (
         q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) ||
@@ -79,7 +107,7 @@ export default function HSCUnitsExplorer({
       if (lessonQuestions.length > 0) return lessonQuestions;
     }
 
-    return unitQuestions.length > 0 ? unitQuestions : hscQuestionsList;
+    return unitQuestions.length > 0 ? unitQuestions : categoryFiltered;
   };
 
   const filteredUnits = hscUnits.filter((u) => {
@@ -187,9 +215,82 @@ export default function HSCUnitsExplorer({
             </div>
           </div>
 
+          {/* Practice Categories Selector Bar */}
+          <div className="bg-[#131824] border border-[#1e2738] rounded-2xl p-4 sm:p-5 shadow-card space-y-3">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <span className="text-emerald-400 font-black text-sm">🎯</span>
+                <h3 className="text-white font-bold text-sm">
+                  {isBn ? 'অনুশীলনের ধরন বেছে নিন (Practice Categories):' : 'Select Practice Categories:'}
+                </h3>
+                <span className="text-[11px] text-emerald-400 font-semibold bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md">
+                  {selectedCategories.length} টি সক্রিয়
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2 text-xs">
+                <button
+                  onClick={selectAllCategories}
+                  className="text-slate-400 hover:text-emerald-300 transition-colors font-semibold underline underline-offset-2 cursor-pointer"
+                >
+                  {isBn ? 'সবগুলো নির্বাচন করুন (Select All)' : 'Select All'}
+                </button>
+              </div>
+            </div>
+
+            {/* 4 Practice Mode Cards: Synonyms, Antonyms, English Meaning, Bangla Meaning */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+              {[
+                { id: 'synonyms', label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms', icon: '🔄', desc: isBn ? 'অনুরূপ অর্থের MCQ' : 'Similar meaning MCQ' },
+                { id: 'antonyms', label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms', icon: '⚡', desc: isBn ? 'বিপরীত অর্থের MCQ' : 'Opposite meaning MCQ' },
+                { id: 'english_meaning', label: isBn ? 'ইংরেজি অর্থ (English Meaning)' : 'Meaning in English', icon: '📖', desc: isBn ? 'ইংরেজি সংজ্ঞাভিত্তিক MCQ' : 'English definition MCQ' },
+                { id: 'bangla_meaning', label: isBn ? 'বাংলা অর্থ (Bangla Meaning)' : 'Meaning in Bangla', icon: '🇧🇩', desc: isBn ? 'সঠিক বাংলা অর্থের MCQ' : 'Bangla meaning MCQ' },
+              ].map((cat) => {
+                const isSelected = selectedCategories.includes(cat.id);
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => toggleCategory(cat.id)}
+                    className={`p-3 rounded-xl border text-left transition-all duration-200 cursor-pointer flex items-center justify-between gap-2.5 ${
+                      isSelected
+                        ? 'bg-emerald-950/50 border-emerald-500/70 text-white shadow-sm shadow-emerald-950/40'
+                        : 'bg-[#0f1420] border-[#1f2738] text-slate-400 hover:bg-[#151c2b] hover:border-slate-600'
+                    }`}
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span className="text-base shrink-0">{cat.icon}</span>
+                      <div className="min-w-0">
+                        <span className={`block text-xs font-bold truncate ${isSelected ? 'text-emerald-300' : 'text-slate-300'}`}>
+                          {cat.label}
+                        </span>
+                        <span className="block text-[10px] text-slate-500 truncate">
+                          {cat.desc}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={`w-4 h-4 rounded-full border flex items-center justify-center text-[9px] shrink-0 transition-all ${
+                        isSelected
+                          ? 'bg-emerald-500 border-emerald-400 text-white font-black'
+                          : 'border-slate-600 bg-transparent'
+                      }`}
+                    >
+                      {isSelected ? '✓' : ''}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
           {/* Exact 3-Columns Dark Rounded Lesson Cards Grid matching Screenshot 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {selectedUnit.lessons.map((lesson) => (
+            {selectedUnit.lessons.map((lesson) => {
+              const activeCount = selectedUnit.id === 'unit-1' && lesson.id === 'u1-l1'
+                ? `${23 * selectedCategories.length} টি প্রশ্ন`
+                : (lesson.questionsCount || '০ টি প্রশ্ন');
+
+              return (
               <div
                 key={lesson.id}
                 onClick={() => handleSelectLesson(lesson)}
@@ -213,7 +314,7 @@ export default function HSCUnitsExplorer({
                     {/* Question Count with green file icon */}
                     <div className="flex items-center gap-1.5 text-emerald-400">
                       <FileText size={14} className="stroke-[2.2]" />
-                      <span>{lesson.questionsCount || `${lesson.wordsCount} টি প্রশ্ন`}</span>
+                      <span>{activeCount}</span>
                     </div>
                   </div>
 
@@ -231,7 +332,8 @@ export default function HSCUnitsExplorer({
                   )}
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       ) : (

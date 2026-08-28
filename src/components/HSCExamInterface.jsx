@@ -370,11 +370,20 @@ export default function HSCExamInterface({
             </div>
           </div>
 
-          {/* 2. Question Header matching sketch: Question: 13 (Clean header with no counting bar) */}
-          <div className="flex items-center justify-between">
-            <span className="text-xl sm:text-2xl font-black text-white tracking-wide">
-              Question : {queueIndex + 1}
-            </span>
+          {/* 2. Question Header: Question Number + Category Badge + Unit Tag */}
+          <div className="flex flex-wrap items-center justify-between gap-2.5">
+            <div className="flex items-center gap-2.5 flex-wrap">
+              <span className="text-xl sm:text-2xl font-black text-white tracking-wide">
+                Question : {queueIndex + 1}
+              </span>
+
+              {currentQ.categoryLabel && (
+                <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 shadow-sm">
+                  <span>{currentQ.categoryIcon || '🎯'}</span>
+                  <span>{currentQ.categoryLabel}</span>
+                </span>
+              )}
+            </div>
 
             <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-[#1a2336] text-cyan-300 border border-[#2c3a54]">
               {currentQ.unit || 'HSC English Textbook'}
@@ -410,7 +419,7 @@ export default function HSCExamInterface({
               {currentQ.questionText || `Choose the correct meaning/synonym of "${currentQ.word}":`}
             </p>
 
-            {/* Bengali Meaning area: Hidden before answer with Hint button; revealed if hint clicked or once answered */}
+            {/* Bengali Meaning / Hint area: Hidden before answer with Hint button; revealed if hint clicked or once answered */}
             {!isAnswered ? (
               <div className="pt-2 border-t border-[#1a2233]">
                 {!hintRevealed ? (
@@ -418,7 +427,7 @@ export default function HSCExamInterface({
                     onClick={handleRevealHint}
                     className="text-xs font-semibold text-amber-400 hover:text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 px-3 py-1.5 rounded-xl transition-all inline-flex items-center gap-1.5 cursor-pointer active:scale-95"
                   >
-                    <span>💡 {isBn ? 'বাংলা অর্থ দেখুন (হিন্ট নিলে এটি Learning হিসেবে চিহ্নিত হবে)' : 'Show Bengali Meaning (Will mark as Learning)'}</span>
+                    <span>💡 {currentQ.category === 'bangla_meaning' ? 'হিন্ট দেখুন (হিন্ট নিলে এটি Learning হিসেবে চিহ্নিত হবে)' : 'বাংলা অর্থ দেখুন (হিন্ট নিলে এটি Learning হিসেবে চিহ্নিত হবে)'}</span>
                   </button>
                 ) : (
                   <div className="flex items-center justify-between text-xs pt-1">
