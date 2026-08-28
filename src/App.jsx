@@ -12,6 +12,7 @@ import QuestionBankModal from './components/QuestionBankModal';
 import MockExamModal from './components/MockExamModal';
 import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
+import HSCExamInterface from './components/HSCExamInterface';
 import { initialAdminUsers, initialHSCQuestions } from './data/adminMockData';
 import { Trophy, History as HistoryIcon, TrendingUp, Sparkles, Shield } from 'lucide-react';
 
@@ -200,22 +201,29 @@ export default function App() {
           )}
 
           {activeTab === 'exams' && (
-            <div className="max-w-5xl mx-auto space-y-6">
+            <div className="max-w-4xl mx-auto space-y-6">
               <div className="flex items-center justify-between">
-                <h2 className="text-2xl font-bold text-white">
-                  {isBn ? 'পরীক্ষা ও টেস্ট সিরিজ' : 'Exams & Test Series'}
-                </h2>
+                <div>
+                  <h2 className="text-2xl font-bold text-white">
+                    {isBn ? 'HSC লাইভ মডেল টেস্ট ও ভোকাবুলারি কুইজ' : 'HSC Live Model Test & Vocab Quiz'}
+                  </h2>
+                  <p className="text-xs text-slate-400 mt-1">
+                    {isBn ? 'পাঠ্যবইয়ের অধ্যায়ভিত্তিক প্র্যাকটিস ও বোর্ড পরীক্ষার প্রশ্ন' : 'Chapter-wise textbook practice and board questions'}
+                  </p>
+                </div>
+
                 <button
                   onClick={() => setIsMockExamOpen(true)}
-                  className="px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white text-sm font-semibold rounded-xl"
+                  className="px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white text-xs md:text-sm font-semibold rounded-xl"
                 >
-                  {isBn ? 'নতুন মক টেস্ট' : 'New Mock Test'}
+                  {isBn ? 'অন্যান্য টেস্ট সিলেক্ট করুন' : 'Select Another Test'}
                 </button>
               </div>
-              <RecentExams
+
+              {/* Live HSC Exam Interface */}
+              <HSCExamInterface
+                questions={questions}
                 lang={lang}
-                onOpenAllExams={() => setIsMockExamOpen(true)}
-                onStartExam={handleStartExam}
               />
             </div>
           )}
