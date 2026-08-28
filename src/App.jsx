@@ -11,12 +11,18 @@ import QuickPracticeModal from './components/QuickPracticeModal';
 import QuestionBankModal from './components/QuestionBankModal';
 import MockExamModal from './components/MockExamModal';
 import AuthModal from './components/AuthModal';
-import { Trophy, History as HistoryIcon, TrendingUp, Sparkles } from 'lucide-react';
+import AdminDashboard from './components/admin/AdminDashboard';
+import { initialAdminUsers, initialHSCQuestions } from './data/adminMockData';
+import { Trophy, History as HistoryIcon, TrendingUp, Sparkles, Shield } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [lang, setLang] = useState('bn'); // 'bn' | 'en'
+
+  // Admin Data State (Users and HSC Questions)
+  const [users, setUsers] = useState(initialAdminUsers);
+  const [questions, setQuestions] = useState(initialHSCQuestions);
 
   // Modals state
   const [isQuickPracticeOpen, setIsQuickPracticeOpen] = useState(false);
@@ -40,6 +46,8 @@ export default function App() {
         return isBn ? 'লিডারবোর্ড' : 'Leaderboard';
       case 'progress':
         return isBn ? 'প্রগ্রেস রিপোর্ট' : 'Progress Report';
+      case 'admin':
+        return isBn ? 'অ্যাডমিন প্যানেল' : 'Admin Control Panel';
       default:
         return isBn ? 'ড্যাশবোর্ড' : 'Dashboard';
     }
@@ -70,6 +78,8 @@ export default function App() {
           lang={lang}
           setLang={setLang}
           streakCount={2}
+          isAdminActive={activeTab === 'admin'}
+          onOpenAdmin={() => setActiveTab(activeTab === 'admin' ? 'dashboard' : 'admin')}
           onOpenNotifications={() => alert(isBn ? 'নতুন ৩টি প্র্যাকটিস টেস্ট যুক্ত হয়েছে!' : '3 new practice tests added!')}
           onOpenStreakModal={() => alert(isBn ? 'আপনার স্ট্রিক ২ দিন বজায় রয়েছে!' : 'Your 2-day streak is active!')}
         />
@@ -237,6 +247,17 @@ export default function App() {
               </div>
             </div>
           )}
+
+          {activeTab === 'admin' && (
+            <AdminDashboard
+              users={users}
+              setUsers={setUsers}
+              questions={questions}
+              setQuestions={setQuestions}
+              onExitAdmin={() => setActiveTab('dashboard')}
+              lang={lang}
+            />
+          )}
         </main>
       </div>
 
@@ -245,6 +266,7 @@ export default function App() {
         isOpen={isQuickPracticeOpen}
         onClose={() => setIsQuickPracticeOpen(false)}
         lang={lang}
+        dynamicQuestions={questions}
       />
 
       <QuestionBankModal

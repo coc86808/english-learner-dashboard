@@ -3,17 +3,28 @@ import { X, Zap, CheckCircle2, XCircle, Award, RotateCcw, ArrowRight } from 'luc
 import confetti from 'canvas-confetti';
 import { mockQuickQuestions } from '../data/mockData';
 
-export default function QuickPracticeModal({ isOpen, onClose, lang }) {
+export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuestions }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
+  const activeQuestionsList = dynamicQuestions && dynamicQuestions.length > 0
+    ? dynamicQuestions.map((q) => ({
+        id: q.id,
+        subject: q.unit || 'HSC English',
+        question: q.questionText || `Meaning of "${q.word}"`,
+        options: q.options || [],
+        correct: q.correctOption !== undefined ? q.correctOption : 0,
+        explanation: q.exampleSentence || (q.synonyms ? `Synonyms: ${q.synonyms}` : 'HSC textbook vocabulary')
+      }))
+    : mockQuickQuestions;
+
   if (!isOpen) return null;
 
   const isBn = lang === 'bn';
-  const currentQ = mockQuickQuestions[currentIndex];
+  const currentQ = activeQuestionsList[currentIndex] || activeQuestionsList[0];
 
   const handleSelectOption = (idx) => {
     if (isAnswered) return;
@@ -26,7 +37,7 @@ export default function QuickPracticeModal({ isOpen, onClose, lang }) {
   };
 
   const handleNext = () => {
-    if (currentIndex + 1 < mockQuickQuestions.length) {
+    if (currentIndex + 1 < activeQuestionsList.length) {
       setCurrentIndex(currentIndex + 1);
       setSelectedOption(null);
       setIsAnswered(false);
@@ -77,8 +88,8 @@ export default function QuickPracticeModal({ isOpen, onClose, lang }) {
                 </span>
                 <span>
                   {isBn
-                    ? `প্রশ্ন ${currentIndex + 1} / ${mockQuickQuestions.length}`
-                    : `Question ${currentIndex + 1} of ${mockQuickQuestions.length}`}
+                    ? `প্রশ্ন ${currentIndex + 1} / ${activeQuestionsList.length}`
+                    : `Question ${currentIndex + 1} of ${activeQuestionsList.length}`}
                 </span>
               </div>
 
@@ -156,8 +167,8 @@ export default function QuickPracticeModal({ isOpen, onClose, lang }) {
               </h3>
               <p className="text-slate-400 text-sm mb-4">
                 {isBn
-                  ? `আপনি ${mockQuickQuestions.length} টি প্রশ্নের মধ্যে ${score} টি সঠিক উত্তর দিয়েছেন!`
-                  : `You scored ${score} out of ${mockQuickQuestions.length} questions!`}
+                  ? `আপনি ${activeQuestionsList.length} টি প্রশ্নের মধ্যে ${score} টি সঠিক উত্তর দিয়েছেন!`
+                  : `You scored ${score} out of ${activeQuestionsList.length} questions!`}
               </p>
 
               <div className="bg-[#0e131e] p-4 rounded-xl border border-slate-800 max-w-xs mx-auto mb-6">

@@ -11,7 +11,8 @@ import {
   LogIn,
   ChevronRight,
   Menu,
-  X
+  X,
+  Shield
 } from 'lucide-react';
 
 export default function Sidebar({
@@ -63,6 +64,13 @@ export default function Sidebar({
       label: isBn ? 'প্রগ্রেস' : 'Progress',
       icon: TrendingUp,
       badge: null
+    },
+    {
+      id: 'admin',
+      label: isBn ? 'অ্যাডমিন প্যানেল' : 'Admin Panel',
+      icon: Shield,
+      badge: 'ADMIN',
+      badgeColor: 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
     }
   ];
 
