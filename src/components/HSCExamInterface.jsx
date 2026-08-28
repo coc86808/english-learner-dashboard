@@ -142,35 +142,42 @@ export default function HSCExamInterface({
   };
 
   const handleNext = () => {
-    const nextIdx = queueIndex + 1;
-
-    // Check if all unique questions are in 'done' state
+    // Check if 100% of unique questions have reached 3 consecutive correct answers
     const allDone = questions.every((q) => {
       const s = questionStats[q.id];
-      return s && s.status === 'done';
+      return s && s.status === 'done' && s.consecutiveCorrect >= 3;
     });
 
-    if (allDone || nextIdx >= activeQueue.length) {
-      if (allDone) {
-        setIsFinished(true);
-        confetti({
-          particleCount: 150,
-          spread: 90,
-          origin: { y: 0.5 }
-        });
-      } else {
-        // More reviews needed, continue through queue
-        setQueueIndex(nextIdx);
-        setSelectedOption(null);
-        setIsAnswered(false);
-        setIsNotSureClicked(false);
-      }
-    } else {
-      setQueueIndex(nextIdx);
-      setSelectedOption(null);
-      setIsAnswered(false);
-      setIsNotSureClicked(false);
+    if (allDone) {
+      setIsFinished(true);
+      confetti({
+        particleCount: 150,
+        spread: 90,
+        origin: { y: 0.5 }
+      });
+      return;
     }
+
+    let nextIdx = queueIndex + 1;
+
+    // If we've reached the end of activeQueue but some questions are still not Done:
+    if (nextIdx >= activeQueue.length) {
+      // Collect all non-done questions
+      const remainingQuestions = questions.filter((q) => {
+        const s = questionStats[q.id];
+        return !s || s.status !== 'done' || s.consecutiveCorrect < 3;
+      });
+
+      if (remainingQuestions.length > 0) {
+        // Append remaining questions to queue
+        setActiveQueue((prevQueue) => [...prevQueue, ...remainingQuestions]);
+      }
+    }
+
+    setQueueIndex(nextIdx);
+    setSelectedOption(null);
+    setIsAnswered(false);
+    setIsNotSureClicked(false);
   };
 
   const handleRestart = () => {
@@ -405,7 +412,9 @@ export default function HSCExamInterface({
                   className="px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all transform active:scale-95"
                 >
                   <span>
-                    {isBn ? 'পরবর্তী প্রশ্ন' : 'Next Question'}
+                    {doneCount === totalUnique
+                      ? isBn ? '🎉 সম্পন্ন করুন ও স্কোর দেখুন' : 'Finish & View Score'
+                      : isBn ? 'পরবর্তী প্রশ্ন' : 'Next Question'}
                   </span>
                   <ArrowRight size={17} />
                 </button>
