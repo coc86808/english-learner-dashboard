@@ -13,6 +13,7 @@ import MockExamModal from './components/MockExamModal';
 import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
 import HSCExamInterface from './components/HSCExamInterface';
+import HSCUnitsExplorer from './components/HSCUnitsExplorer';
 import { usersList } from './data/users';
 import { hscQuestionsList } from './data/questions';
 import { Trophy, History as HistoryIcon, TrendingUp, Sparkles, Shield } from 'lucide-react';
@@ -182,21 +183,10 @@ export default function App() {
           )}
 
           {activeTab === 'question-bank' && (
-            <div className="max-w-5xl mx-auto space-y-6">
-              <div className="flex items-center justify-between">
-                <h2 className="text-2xl font-bold text-white">
-                  {isBn ? 'প্রশ্নব্যাংক ও আর্কাইভ' : 'Question Bank & Archive'}
-                </h2>
-                <button
-                  onClick={() => setIsQuestionBankOpen(true)}
-                  className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold rounded-xl"
-                >
-                  {isBn ? 'ক্যাটাগরি ব্রাউজ করুন' : 'Browse Categories'}
-                </button>
-              </div>
-              <SubjectReport
+            <div className="max-w-5xl mx-auto">
+              <HSCUnitsExplorer
                 lang={lang}
-                onOpenAllSubjects={() => setIsQuestionBankOpen(true)}
+                onStartUnitQuiz={() => setIsQuickPracticeOpen(true)}
               />
             </div>
           )}
