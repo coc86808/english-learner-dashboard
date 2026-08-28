@@ -21,7 +21,7 @@ export default function ActionCards({
     },
     {
       id: 'qp',
-      title: isBn ? 'দ্রুত প্র্যাকটিস' : 'Quick Practice',
+      title: isBn ? 'প্র্যাকটিস লার্নিং' : 'Practice Learning',
       subtitle: isBn ? 'যেকোনো লেসন থেকে MCQ' : 'Random Lesson MCQ',
       icon: GraduationCap,
       iconBg: 'bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-lg shadow-blue-950/40',
@@ -30,7 +30,7 @@ export default function ActionCards({
     },
     {
       id: 'me',
-      title: isBn ? 'পূর্ণ পরীক্ষা' : 'Full Exam',
+      title: isBn ? 'পরীক্ষা' : 'Exam',
       subtitle: isBn ? 'ইউনিট ➔ লেসন ➔ পরীক্ষা' : 'Unit → Lesson → Exam',
       icon: BookMarked,
       iconBg: 'bg-gradient-to-br from-violet-600 to-purple-700 text-white shadow-lg shadow-violet-950/40',

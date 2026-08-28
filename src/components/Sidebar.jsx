@@ -42,7 +42,7 @@ export default function Sidebar({
     },
     {
       id: 'exams',
-      label: isBn ? 'পরীক্ষা' : 'Mock Exams',
+      label: isBn ? 'পরীক্ষা' : 'Exam',
       icon: GraduationCap,
       badge: null
     },

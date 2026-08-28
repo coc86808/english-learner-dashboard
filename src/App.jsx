@@ -41,7 +41,7 @@ export default function App() {
       case 'question-bank':
         return isBn ? 'প্রশ্নব্যাংক' : 'Question Bank';
       case 'exams':
-        return isBn ? 'পরীক্ষা ও টেস্ট সিরিজ' : 'Exams & Test Series';
+        return isBn ? 'পরীক্ষা' : 'Exam';
       case 'history':
         return isBn ? 'পরীক্ষার হিস্ট্রি' : 'Exam History';
       case 'leaderboard':
