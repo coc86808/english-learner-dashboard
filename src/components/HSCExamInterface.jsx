@@ -8,8 +8,6 @@ import {
   Award,
   Volume2,
   VolumeX,
-  Maximize2,
-  Minimize2,
   Calendar,
   Timer,
   Sparkles,
@@ -70,7 +68,7 @@ export default function HSCExamInterface({
     (s) => s.status === 'learning'
   ).length;
 
-  // STRICT 100% DONE CONDITION: Exam can ONLY be finished when EVERY question is done 3 times
+  // STRICT 100% DONE INVARIANT: Exam NEVER ends until EVERY single question has 3 consecutive correct answers
   const isAllDone = totalUnique > 0 && doneCount === totalUnique;
 
   useEffect(() => {
@@ -92,7 +90,7 @@ export default function HSCExamInterface({
     }
   }, [isAllDone, isSoundOn]);
 
-  // Safely resolve the current question so it is NEVER undefined
+  // Safely resolve the current question
   const currentQ =
     activeQueue[queueIndex] ||
     questions.find((q) => (questionStats[q.id]?.consecutiveCorrect || 0) < 3) ||
@@ -144,16 +142,18 @@ export default function HSCExamInterface({
     };
 
     let newConsecutive = isCorrect ? prevStat.consecutiveCorrect + 1 : 0;
-    let newStatus = prevStat.status;
+    let newStatus = 'learning';
 
     if (isCorrect) {
       if (newConsecutive >= 3) {
-        newStatus = 'done'; // Mastered after 3 correct answers!
+        newStatus = 'done'; // Mastered after 3 consecutive correct answers!
       } else {
-        newStatus = 'learning'; // 1 or 2 correct answers
+        newStatus = 'learning'; // 1st or 2nd correct answer
       }
     } else {
-      newStatus = 'mistake'; // Wrong or Not Sure resets to mistake
+      // If wrong or not sure: remove from Done or Learning and set to mistake
+      newStatus = 'mistake';
+      newConsecutive = 0;
     }
 
     // Update global question stats
@@ -167,17 +167,17 @@ export default function HSCExamInterface({
       }
     }));
 
-    // If not yet completed 3 times (not 'done'), re-insert into queue with 3-4 question gap!
+    // If not yet completed 3 consecutive times, schedule reappearance after at least 3-4 questions
     if (newConsecutive < 3) {
       scheduleReappearance(currentQ);
     }
   };
 
-  // Spaced Repetition Insertion: ensures at least 3-4 questions in between
+  // Spaced Repetition Insertion: ensures at least 3-4 other questions in between
   const scheduleReappearance = (questionToRepeat) => {
     setActiveQueue((prevQueue) => {
       const newQueue = [...prevQueue];
-      // Target insert index: at least current position + 4 (3 questions in middle)
+      // Target insert index: at least current position + 4 (guaranteeing 3-4 questions in middle)
       const minGap = 4;
       const targetIndex = Math.min(
         newQueue.length,
@@ -200,7 +200,7 @@ export default function HSCExamInterface({
       );
 
       if (remainingQuestions.length > 0) {
-        // Shuffle remaining and append
+        // Shuffle remaining and append to guarantee non-stop practice
         const shuffled = [...remainingQuestions].sort(() => Math.random() - 0.5);
         setActiveQueue((prev) => [...prev, ...shuffled]);
       }
@@ -247,8 +247,8 @@ export default function HSCExamInterface({
 
       {!isAllDone && currentQ ? (
         <div className="space-y-6 relative z-10">
-          {/* 1. Top Status Bar matching sketch: Learning | Mistake | Done + Timer/Date */}
-          <div className="flex flex-wrap items-center justify-between gap-3 pb-5 border-b border-[#1d2536]">
+          {/* 1. Top Status Bar matching hand sketch: Learning | Mistake | Done + Timer/Date (NO counting bar) */}
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-[#1d2536]">
             <div className="flex items-center gap-2.5 sm:gap-4 text-xs sm:text-sm font-bold">
               {/* Learning counter */}
               <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-300 shadow-sm">
@@ -266,7 +266,6 @@ export default function HSCExamInterface({
               <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 shadow-sm">
                 <span className="text-slate-400 font-normal">Done</span>
                 <span className="text-base font-black text-emerald-400">{doneCount}</span>
-                <span className="text-[10px] text-slate-500 font-normal">/{totalUnique}</span>
               </div>
             </div>
 
@@ -295,47 +294,11 @@ export default function HSCExamInterface({
             </div>
           </div>
 
-          {/* Mastery Progress Bar (3 Correct Checks to Master) */}
-          <div className="bg-[#0e131e] p-3 rounded-2xl border border-[#1b2333] flex items-center justify-between gap-3 text-xs">
-            <div className="flex items-center gap-2">
-              <span className="text-slate-400 font-medium">
-                {isBn ? 'এই শব্দের দক্ষতা (Mastery):' : 'Word Mastery Level:'}
-              </span>
-              <div className="flex items-center gap-1.5">
-                {[1, 2, 3].map((step) => (
-                  <div
-                    key={step}
-                    className={`w-6 h-6 rounded-lg flex items-center justify-center font-bold text-[10px] transition-all ${
-                      currentStat.consecutiveCorrect >= step
-                        ? 'bg-emerald-500 text-white shadow-sm shadow-emerald-500/40'
-                        : 'bg-[#182030] text-slate-600 border border-[#232c3f]'
-                    }`}
-                  >
-                    {currentStat.consecutiveCorrect >= step ? <Check size={12} /> : step}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <span className="text-[11px] text-slate-400 font-medium">
-              {currentStat.consecutiveCorrect === 3
-                ? '✅ Mastered (Done)'
-                : currentStat.consecutiveCorrect > 0
-                ? `${currentStat.consecutiveCorrect}/3 Correct (Reappears in 3-4 Qs)`
-                : '🔁 Repeat after 3-4 Qs'}
-            </span>
-          </div>
-
-          {/* 2. Question Header matching sketch: Question: 13 */}
+          {/* 2. Question Header matching sketch: Question: 13 (Clean header with no counting bar) */}
           <div className="flex items-center justify-between">
-            <div className="inline-flex items-center gap-2">
-              <span className="text-xl sm:text-2xl font-black text-white tracking-wide">
-                Question : {queueIndex + 1}
-              </span>
-              <span className="text-xs text-slate-500 font-semibold">
-                (Done: {doneCount}/{totalUnique})
-              </span>
-            </div>
+            <span className="text-xl sm:text-2xl font-black text-white tracking-wide">
+              Question : {queueIndex + 1}
+            </span>
 
             <span className="text-xs font-semibold px-3 py-1 rounded-lg bg-[#1a2336] text-cyan-300 border border-[#2c3a54]">
               {currentQ.unit || 'HSC English Textbook'}
