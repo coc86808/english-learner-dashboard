@@ -160,6 +160,7 @@ export default function UnitLessonExamModal({
 
             <HSCExamInterface
               questions={getFilteredQuestions()}
+              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}`}
               onClose={() => setIsExamActive(false)}
               lang={lang}
             />

@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Sparkles, 
   Volume2, 
@@ -22,12 +22,22 @@ export default function FlashcardsExplorer({
   onStartExamFromCards 
 }) {
   const isBn = lang === 'bn';
-  const [selectedLessonId, setSelectedLessonId] = useState('u1-l1');
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Load saved flashcards session progress if available
+  const savedFC = (() => {
+    try {
+      const raw = localStorage.getItem('hsc_flashcards_progress');
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    return null;
+  })();
+
+  const [selectedLessonId, setSelectedLessonId] = useState(savedFC?.selectedLessonId || 'u1-l1');
+  const [currentIndex, setCurrentIndex] = useState(savedFC?.currentIndex || 0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(false);
   const [cardsList, setCardsList] = useState(hscVocabularyList);
-  const [masteredWords, setMasteredWords] = useState([]);
+  const [masteredWords, setMasteredWords] = useState(savedFC?.masteredWords || []);
 
   // Filter or shuffle cards based on selected lesson
   useEffect(() => {
@@ -39,9 +49,19 @@ export default function FlashcardsExplorer({
       list = [...list].sort(() => Math.random() - 0.5);
     }
     setCardsList(list);
-    setCurrentIndex(0);
     setIsFlipped(false);
   }, [selectedLessonId, isShuffled]);
+
+  // Persist flashcards progress on change
+  useEffect(() => {
+    try {
+      localStorage.setItem('hsc_flashcards_progress', JSON.stringify({
+        currentIndex,
+        masteredWords,
+        selectedLessonId
+      }));
+    } catch (e) {}
+  }, [currentIndex, masteredWords, selectedLessonId]);
 
   const currentCard = cardsList[currentIndex] || cardsList[0] || {};
   const isWeak = currentCard ? weakWords.some(w => w.id === currentCard.id || w.word === currentCard.word) : false;

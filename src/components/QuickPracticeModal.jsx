@@ -25,6 +25,7 @@ export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuest
         {/* HSC Exam Interface matching hand-drawn sketch */}
         <HSCExamInterface
           questions={questionsList}
+          sessionKey="quick_practice"
           onClose={onClose}
           lang={lang}
         />
