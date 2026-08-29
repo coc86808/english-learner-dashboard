@@ -644,6 +644,7 @@ export default function App() {
         onClose={() => setIsAuthOpen(false)}
         lang={lang}
       />
+
       <Analytics />
     </div>
   );
