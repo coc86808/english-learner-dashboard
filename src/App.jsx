@@ -172,6 +172,31 @@ export default function App() {
     } catch (e) {}
   };
 
+  const handleUpdateProfile = (updatedProfile) => {
+    if (!updatedProfile) return;
+    setCurrentUser(updatedProfile);
+    try {
+      localStorage.setItem('hsc_auth_user', JSON.stringify(updatedProfile));
+      // Save directly to Firebase Cloud Firestore
+      saveUserToFirestore(updatedProfile);
+
+      // Update in users state and localStorage registered list
+      setUsers((prev) => {
+        const next = prev.map((u) => 
+          (u.email && u.email.toLowerCase() === updatedProfile.email?.toLowerCase()) || (u.id === updatedProfile.id)
+            ? { ...u, ...updatedProfile }
+            : u
+        );
+        try {
+          localStorage.setItem('hsc_registered_users', JSON.stringify(next));
+        } catch (e) {}
+        return next;
+      });
+    } catch (e) {
+      console.warn('Profile update error:', e);
+    }
+  };
+
   const [questions, setQuestions] = useState(hscQuestionsList);
 
   // Weak Words State (Tracked across Flashcards & Exams)
@@ -653,6 +678,7 @@ export default function App() {
         weakWords={weakWords}
         onRemoveWeakWord={handleRemoveWeakWord}
         currentUser={currentUser}
+        onUpdateProfile={handleUpdateProfile}
         onOpenAuth={() => setIsAuthOpen(true)}
         onOpenFlashcards={() => {
           setIsUserProfileOpen(false);
