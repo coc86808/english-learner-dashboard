@@ -8,6 +8,9 @@ import {
   Sparkles, 
   ArrowRight, 
   Zap, 
+  AlertCircle,
+  CheckCircle2,
+  ShieldCheck,
   GraduationCap 
 } from 'lucide-react';
 
@@ -16,24 +19,122 @@ export default function AuthModal({
   onClose, 
   lang = 'en', 
   isSignUpDefault = true,
-  onAuthSuccess 
+  onAuthSuccess,
+  registeredUsers = [],
+  onUpdateUsers
 }) {
   const [isSignUp, setIsSignUp] = useState(isSignUpDefault);
   const [name, setName] = useState('');
   const [college, setCollege] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const isBn = lang === 'bn';
 
   if (!isOpen) return null;
 
+  const handleSwitchMode = (signUpMode) => {
+    setIsSignUp(signUpMode);
+    setErrorMessage('');
+    setSuccessMessage('');
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setErrorMessage('');
+    setSuccessMessage('');
 
     const normalizedEmail = (email || '').trim().toLowerCase();
     const cleanPassword = (password || '').trim();
 
-    // Check for Master Admin credentials
+    if (!normalizedEmail) {
+      setErrorMessage(isBn ? 'ইমেইল বা ইউজারনেম আবশ্যক।' : 'Email or username is required.');
+      return;
+    }
+
+    if (!cleanPassword) {
+      setErrorMessage(isBn ? 'পাসওয়ার্ড আবশ্যক।' : 'Password is required.');
+      return;
+    }
+
+    // -------------------------------------------------------------
+    // 1. REGISTRATION (SIGN UP) MODE
+    // -------------------------------------------------------------
+    if (isSignUp) {
+      if (!name.trim()) {
+        setErrorMessage(isBn ? 'অনুগ্রহ করে আপনার পূর্ণ নাম লিখুন।' : 'Please enter your full name.');
+        return;
+      }
+
+      if (!college.trim()) {
+        setErrorMessage(isBn ? 'অনুগ্রহ করে আপনার কলেজের নাম লিখুন।' : 'Please enter your college name.');
+        return;
+      }
+
+      if (cleanPassword.length < 6) {
+        setErrorMessage(isBn ? 'পাসওয়ার্ড অন্তত ৬ অক্ষরের হতে হবে।' : 'Password must be at least 6 characters long.');
+        return;
+      }
+
+      if (cleanPassword !== confirmPassword.trim()) {
+        setErrorMessage(isBn ? 'পাসওয়ার্ড দুটি মেলেনি! পুনরায় যাচাই করুন।' : 'Passwords do not match! Please retype.');
+        return;
+      }
+
+      // Check if user already exists
+      const existingUser = (registeredUsers || []).find(
+        (u) =>
+          (u.email && u.email.toLowerCase() === normalizedEmail) ||
+          (u.phone && u.phone === normalizedEmail)
+      );
+
+      if (existingUser || normalizedEmail === 'admin@learnerhub.com' || normalizedEmail === 'sakin7112') {
+        setErrorMessage(
+          isBn
+            ? 'এই ইমেইল বা ইউজারনেম দিয়ে ইতিমধ্যে একটি অ্যাকাউন্ট তৈরি আছে। দয়া করে লগইন করুন।'
+            : 'An account with this email/username already exists. Please Sign In.'
+        );
+        return;
+      }
+
+      // Create & Register New Student
+      const newStudent = {
+        id: `usr-${Date.now()}`,
+        name: name.trim(),
+        college: college.trim(),
+        hscBatch: 'HSC 2026',
+        email: normalizedEmail,
+        phone: normalizedEmail,
+        password: cleanPassword,
+        role: 'student',
+        streak: 0,
+        points: 0,
+        testsCompleted: 0,
+        masteredWordsCount: 0,
+        status: 'Active',
+        joinedDate: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
+        avatar: `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`
+      };
+
+      const updatedList = [newStudent, ...(registeredUsers || [])];
+      if (onUpdateUsers) onUpdateUsers(updatedList);
+
+      setSuccessMessage(isBn ? '✅ সফলভাবে রেজিস্ট্রেশন সম্পন্ন হয়েছে!' : '✅ Registration successful!');
+
+      setTimeout(() => {
+        if (onAuthSuccess) onAuthSuccess(newStudent);
+        onClose();
+      }, 700);
+      return;
+    }
+
+    // -------------------------------------------------------------
+    // 2. SIGN IN (LOGIN) MODE - STRICT VERIFICATION
+    // -------------------------------------------------------------
+
+    // Check Master Admin Account
     const isAdminAccount =
       (normalizedEmail === 'admin@learnerhub.com' ||
         normalizedEmail === 'sakinadmin' ||
@@ -58,39 +159,71 @@ export default function AuthModal({
       return;
     }
 
-    // Standard Student Account
-    const studentUser = {
-      name: name || 'HSC Candidate',
-      college: college || 'Notre Dame College, Dhaka',
-      batch: 'HSC 2026',
-      email: email || 'student@hsc2026.edu',
-      role: 'student',
-      points: 0,
-      streak: 0
-    };
+    // Look for Registered Student in database
+    const matchedUser = (registeredUsers || []).find(
+      (u) =>
+        (u.email && u.email.toLowerCase() === normalizedEmail) ||
+        (u.phone && u.phone === normalizedEmail) ||
+        (u.name && u.name.toLowerCase() === normalizedEmail)
+    );
 
+    // If Account does not exist -> Block login & require registration!
+    if (!matchedUser) {
+      setErrorMessage(
+        isBn
+          ? '❌ এই অ্যাকাউন্টটি নিবন্ধিত নয়। দয়া করে প্রথমে সাইন আপ (রেজিস্ট্রেশন) করুন।'
+          : '❌ Account not found! Please register (Sign Up) first.'
+      );
+      return;
+    }
+
+    // Verify Password
+    const isPasswordValid =
+      matchedUser.password === cleanPassword ||
+      (!matchedUser.password && (cleanPassword === '123456' || cleanPassword === 'Student@123'));
+
+    if (!isPasswordValid) {
+      setErrorMessage(
+        isBn
+          ? '❌ ভুল পাসওয়ার্ড! অনুগ্রহ করে আপনার সঠিক পাসওয়ার্ড দিন।'
+          : '❌ Incorrect password! Please check and enter the correct password.'
+      );
+      return;
+    }
+
+    // Login Success
     if (onAuthSuccess) {
-      onAuthSuccess(studentUser);
+      onAuthSuccess({
+        ...matchedUser,
+        role: matchedUser.role || 'student'
+      });
     }
     onClose();
   };
 
-  const handleDemoLogin = () => {
-    const demoUser = {
-      name: 'Tanvir Ahmed',
-      college: 'Notre Dame College, Dhaka',
-      batch: 'HSC 2026',
-      email: 'tanvir.demo@hsc2026.edu',
-      role: 'student',
-      points: 0,
-      streak: 0
-    };
-    if (onAuthSuccess) {
-      onAuthSuccess(demoUser);
+  // Quick Verified Demo Student (uses pre-registered test credentials)
+  const handleDemoStudentLogin = () => {
+    let demoUser = (registeredUsers || []).find((u) => u.email === 'tanvir.demo@hsc2026.edu');
+    if (!demoUser) {
+      demoUser = {
+        id: 'usr-demo',
+        name: 'Tanvir Ahmed',
+        college: 'Notre Dame College, Dhaka',
+        batch: 'HSC 2026',
+        email: 'tanvir.demo@hsc2026.edu',
+        password: 'Demo@123',
+        role: 'student',
+        points: 0,
+        streak: 0,
+        testsCompleted: 0
+      };
+      if (onUpdateUsers) onUpdateUsers([demoUser, ...(registeredUsers || [])]);
     }
+    if (onAuthSuccess) onAuthSuccess(demoUser);
     onClose();
   };
 
+  // Quick Master Admin Login
   const handleAdminQuickLogin = () => {
     const adminUser = {
       name: 'Master Admin (Sakin)',
@@ -101,22 +234,20 @@ export default function AuthModal({
       points: 0,
       streak: 0
     };
-    if (onAuthSuccess) {
-      onAuthSuccess(adminUser);
-    }
+    if (onAuthSuccess) onAuthSuccess(adminUser);
     onClose();
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="bg-[#101522] border border-[#222e44] rounded-3xl w-full max-w-md overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200">
+      <div className="bg-[#101522] border border-[#222e44] rounded-3xl w-full max-w-md overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200 max-h-[95vh] overflow-y-auto">
         {/* Header */}
         <div className="px-6 py-4 bg-[#0a0e17] border-b border-[#1b2538] flex items-center justify-between">
           <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm sm:text-base">
             <Sparkles size={18} />
             <span>
               {isSignUp 
-                ? (isBn ? 'নতুন একাউন্ট খুলুন (Sign Up)' : 'Create Student Account') 
+                ? (isBn ? 'নতুন স্টুডেন্ট রেজিস্ট্রেশন (Sign Up)' : 'Student Registration (Sign Up)') 
                 : (isBn ? 'লগইন করুন (Sign In)' : 'Welcome Back (Sign In)')}
             </span>
           </div>
@@ -129,13 +260,13 @@ export default function AuthModal({
           </button>
         </div>
 
-        {/* 1-Click Quick Login Buttons */}
+        {/* Quick Testing Badges */}
         <div className="p-5 pb-0">
           <div className="grid grid-cols-2 gap-2.5">
             <button
               type="button"
-              onClick={handleDemoLogin}
-              className="py-2.5 px-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
+              onClick={handleDemoStudentLogin}
+              className="py-2 px-3 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
             >
               <Zap size={14} className="fill-amber-400 text-amber-400" />
               <span>{isBn ? '⚡ ডেমো স্টুডেন্ট' : '⚡ Demo Student'}</span>
@@ -144,20 +275,35 @@ export default function AuthModal({
             <button
               type="button"
               onClick={handleAdminQuickLogin}
-              className="py-2.5 px-3 rounded-2xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/40 text-purple-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
+              className="py-2 px-3 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/40 text-purple-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
             >
               <span>👑 {isBn ? 'মাস্টার অ্যাডমিন' : 'Master Admin'}</span>
             </button>
           </div>
           
-          <div className="relative flex py-4 items-center">
+          <div className="relative flex py-3.5 items-center">
             <div className="flex-grow border-t border-[#1e273a]"></div>
             <span className="flex-shrink mx-3 text-slate-500 text-[11px] font-semibold uppercase tracking-wider">
-              {isBn ? 'অথবা ইমেইল / ইউজারনেম দিয়ে' : 'Or with Email / Username'}
+              {isSignUp ? (isBn ? 'তথ্য দিয়ে রেজিস্ট্রেশন করুন' : 'Enter Details to Register') : (isBn ? 'অথবা অ্যাকাউন্টে লগইন করুন' : 'Or Login with Account')}
             </span>
             <div className="flex-grow border-t border-[#1e273a]"></div>
           </div>
         </div>
+
+        {/* Error / Success Feedback Banner */}
+        {errorMessage && (
+          <div className="mx-5 mb-2 p-3 rounded-xl bg-rose-500/15 border border-rose-500/40 text-rose-300 text-xs font-semibold flex items-start gap-2 animate-in fade-in">
+            <AlertCircle size={16} className="text-rose-400 shrink-0 mt-0.5" />
+            <span>{errorMessage}</span>
+          </div>
+        )}
+
+        {successMessage && (
+          <div className="mx-5 mb-2 p-3 rounded-xl bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-xs font-semibold flex items-start gap-2 animate-in fade-in">
+            <CheckCircle2 size={16} className="text-emerald-400 shrink-0 mt-0.5" />
+            <span>{successMessage}</span>
+          </div>
+        )}
 
         {/* Form Body */}
         <form onSubmit={handleSubmit} className="p-5 pt-0 space-y-3.5">
@@ -165,7 +311,7 @@ export default function AuthModal({
             <>
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  {isBn ? 'আপনার পূর্ণ নাম' : 'Full Name'}
+                  {isBn ? 'আপনার পূর্ণ নাম *' : 'Full Name *'}
                 </label>
                 <div className="relative">
                   <User size={15} className="absolute left-3.5 top-3 text-slate-500" />
@@ -174,7 +320,7 @@ export default function AuthModal({
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder={isBn ? 'নাম লিখুন (যেমন: Tanvir Ahmed)' : 'e.g. Tanvir Ahmed'}
+                    placeholder={isBn ? 'যেমন: Tanvir Ahmed' : 'e.g. Tanvir Ahmed'}
                     className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
                   />
                 </div>
@@ -182,15 +328,16 @@ export default function AuthModal({
 
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  {isBn ? 'কলেজের নাম' : 'College Name'}
+                  {isBn ? 'কলেজের নাম *' : 'College Name *'}
                 </label>
                 <div className="relative">
                   <Building size={15} className="absolute left-3.5 top-3 text-slate-500" />
                   <input
                     type="text"
+                    required
                     value={college}
                     onChange={(e) => setCollege(e.target.value)}
-                    placeholder={isBn ? 'যেমন: Notre Dame College' : 'e.g. Notre Dame College'}
+                    placeholder={isBn ? 'যেমন: Notre Dame College, Dhaka' : 'e.g. Notre Dame College, Dhaka'}
                     className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
                   />
                 </div>
@@ -200,7 +347,9 @@ export default function AuthModal({
 
           <div>
             <label className="block text-xs font-semibold text-slate-300 mb-1">
-              {isBn ? 'ইমেইল বা ইউজারনেম' : 'Email or Username'}
+              {isSignUp 
+                ? (isBn ? 'ইমেইল বা ফোন নম্বর *' : 'Email or Phone Number *')
+                : (isBn ? 'ইমেইল বা ইউজারনেম *' : 'Email or Username *')}
             </label>
             <div className="relative">
               <Mail size={15} className="absolute left-3.5 top-3 text-slate-500" />
@@ -209,7 +358,7 @@ export default function AuthModal({
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@learnerhub.com / sakin7112"
+                placeholder={isSignUp ? 'student@hsc2026.edu / 017xxxxxxxx' : 'student@hsc2026.edu / admin@learnerhub.com'}
                 className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
               />
             </div>
@@ -217,7 +366,7 @@ export default function AuthModal({
 
           <div>
             <label className="block text-xs font-semibold text-slate-300 mb-1">
-              {isBn ? 'পাসওয়ার্ড' : 'Password'}
+              {isSignUp ? (isBn ? 'পাসওয়ার্ড (কমপক্ষে ৬ অক্ষর) *' : 'Password (min 6 chars) *') : (isBn ? 'পাসওয়ার্ড *' : 'Password *')}
             </label>
             <div className="relative">
               <Lock size={15} className="absolute left-3.5 top-3 text-slate-500" />
@@ -232,23 +381,42 @@ export default function AuthModal({
             </div>
           </div>
 
+          {isSignUp && (
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1">
+                {isBn ? 'পাসওয়ার্ড নিশ্চিত করুন *' : 'Confirm Password *'}
+              </label>
+              <div className="relative">
+                <Lock size={15} className="absolute left-3.5 top-3 text-slate-500" />
+                <input
+                  type="password"
+                  required
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  placeholder="••••••••"
+                  className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
+                />
+              </div>
+            </div>
+          )}
+
           <button
             type="submit"
             className="w-full mt-2 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-emerald-950/60 flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-95"
           >
-            <span>{isSignUp ? (isBn ? 'সাইন আপ সম্পন্ন করুন' : 'Complete Sign Up') : (isBn ? 'লগইন করুন' : 'Sign In Now')}</span>
+            <span>{isSignUp ? (isBn ? 'রেজিস্ট্রেশন সম্পন্ন করুন' : 'Complete Registration') : (isBn ? 'লগইন করুন' : 'Sign In Now')}</span>
             <ArrowRight size={16} />
           </button>
 
           <div className="pt-3 text-center border-t border-[#1b2436]">
             <button
               type="button"
-              onClick={() => setIsSignUp(!isSignUp)}
+              onClick={() => handleSwitchMode(!isSignUp)}
               className="text-xs font-medium text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer"
             >
               {isSignUp
                 ? (isBn ? 'ইতিমধ্যে অ্যাকাউন্ট আছে? লগইন করুন' : 'Already have an account? Sign In')
-                : (isBn ? 'নতুন ব্যবহারকারী? ফ্রি সাইন আপ করুন' : "Don't have an account? Sign Up Free")}
+                : (isBn ? 'নতুন ব্যবহারকারী? ফ্রি রেজিস্ট্রেশন করুন' : "Don't have an account? Register Free")}
             </button>
           </div>
         </form>

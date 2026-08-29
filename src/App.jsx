@@ -121,8 +121,25 @@ export default function App() {
     }
   };
 
-  // Admin Data State (Users and HSC Questions)
-  const [users, setUsers] = useState(usersList);
+  // Admin Data State (Persistent Registered Users and HSC Questions)
+  const [users, setUsers] = useState(() => {
+    try {
+      const saved = localStorage.getItem('hsc_registered_users');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch (e) {}
+    return usersList;
+  });
+
+  const handleUpdateUsers = (updatedUsers) => {
+    setUsers(updatedUsers);
+    try {
+      localStorage.setItem('hsc_registered_users', JSON.stringify(updatedUsers));
+    } catch (e) {}
+  };
+
   const [questions, setQuestions] = useState(hscQuestionsList);
 
   // Weak Words State (Tracked across Flashcards & Exams)
@@ -644,6 +661,10 @@ export default function App() {
         isOpen={isAuthOpen}
         onClose={() => setIsAuthOpen(false)}
         lang={lang}
+        isSignUpDefault={isSignUpMode}
+        onAuthSuccess={handleAuthSuccess}
+        registeredUsers={users}
+        onUpdateUsers={handleUpdateUsers}
       />
 
       <Analytics />
