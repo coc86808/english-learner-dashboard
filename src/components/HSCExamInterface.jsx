@@ -22,7 +22,7 @@ import {
 import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
-import { smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
+import { smartInterleaveQuestions, hscVocabularyList } from '../data/questions/hscQuestionsData';
 
 export default function HSCExamInterface({
   questions = [],
@@ -36,6 +36,7 @@ export default function HSCExamInterface({
   const [isSoundOn, setIsSoundOn] = useState(true);
   const [isCertificateOpen, setIsCertificateOpen] = useState(false);
   const [isSaveModalOpen, setIsSaveModalOpen] = useState(false);
+  const [weakWordToast, setWeakWordToast] = useState(null);
 
   // Compute a unique key for this exam session
   const activeSessionKey = sessionKey || (questions[0]?.unit ? `exam_${questions[0].unit.replace(/[^a-zA-Z0-9]/g, '_')}` : 'default_exam');
@@ -253,6 +254,99 @@ export default function HSCExamInterface({
         lastAnswerWasCorrect: isCorrect
       }
     }));
+
+    // -------------------------------------------------------------
+    // AUTOMATIC WEAK WORD & MASTERY ENGINE:
+    // 1. Same word mistake 3 times in MCQ -> Auto mark as Weak Word
+    // 2. Same word answered correctly 5 times -> Auto remove from Weak Words
+    // -------------------------------------------------------------
+    if (currentQ.word) {
+      const wordKey = currentQ.word.trim();
+      try {
+        const perfRaw = localStorage.getItem('hsc_word_performance');
+        const perfMap = perfRaw ? JSON.parse(perfRaw) : {};
+        const wordPerf = perfMap[wordKey] || {
+          mistakeCount: 0,
+          correctCount: 0,
+          totalMistakes: 0,
+          totalCorrect: 0,
+          isWeak: false
+        };
+
+        const weakRaw = localStorage.getItem('hsc_weak_words');
+        let currentWeakList = weakRaw ? JSON.parse(weakRaw) : [];
+        if (!Array.isArray(currentWeakList)) currentWeakList = [];
+
+        if (isCorrect) {
+          wordPerf.correctCount = (wordPerf.correctCount || 0) + 1;
+          wordPerf.totalCorrect = (wordPerf.totalCorrect || 0) + 1;
+
+          // Rule: 5 Right Answers -> Automatically Remove from Weak Words!
+          if (wordPerf.correctCount >= 5) {
+            const wasWeak = wordPerf.isWeak || currentWeakList.some((w) => w && w.word?.toLowerCase() === wordKey.toLowerCase());
+            wordPerf.isWeak = false;
+            wordPerf.mistakeCount = 0; // Reset mistake count upon 5 correct answers
+
+            if (wasWeak) {
+              const updatedWeak = currentWeakList.filter((w) => w && w.word?.toLowerCase() !== wordKey.toLowerCase());
+              localStorage.setItem('hsc_weak_words', JSON.stringify(updatedWeak));
+              window.dispatchEvent(new CustomEvent('hsc_weak_words_updated', { detail: { word: wordKey, action: 'removed' } }));
+
+              setWeakWordToast({
+                type: 'mastered',
+                word: wordKey,
+                message: isBn
+                  ? `🎉 "${wordKey}" ৫ বার সঠিক উত্তর দেওয়ায় দুর্বল তালিকা থেকে সফলভাবে উত্তীর্ণ (Mastered) হয়েছে!`
+                  : `🎉 "${wordKey}" answered correctly 5 times & removed from Weak Words!`
+              });
+              setTimeout(() => setWeakWordToast(null), 4500);
+            }
+          }
+        } else {
+          // Wrong Answer / Not Sure
+          wordPerf.mistakeCount = (wordPerf.mistakeCount || 0) + 1;
+          wordPerf.totalMistakes = (wordPerf.totalMistakes || 0) + 1;
+          wordPerf.correctCount = 0; // Reset consecutive correct streak
+
+          // Rule: 3 Mistakes -> Automatically Mark as Weak Word!
+          if (wordPerf.mistakeCount >= 3) {
+            const alreadyWeak = currentWeakList.some((w) => w && w.word?.toLowerCase() === wordKey.toLowerCase());
+            wordPerf.isWeak = true;
+
+            if (!alreadyWeak) {
+              const vocabItem = hscVocabularyList.find((v) => v.word.toLowerCase() === wordKey.toLowerCase()) || {
+                id: currentQ.vocabId || `word-${wordKey.toLowerCase()}`,
+                word: wordKey,
+                bengaliMeaning: currentQ.bengaliMeaning || 'অর্থ',
+                synonyms: currentQ.synonyms || '',
+                antonyms: currentQ.antonyms || '',
+                englishMeaning: currentQ.englishMeaning || '',
+                unit: currentQ.unit || 'HSC English',
+                boardExamTag: currentQ.boardExamTag || 'HSC Board Standard'
+              };
+
+              const updatedWeak = [vocabItem, ...currentWeakList];
+              localStorage.setItem('hsc_weak_words', JSON.stringify(updatedWeak));
+              window.dispatchEvent(new CustomEvent('hsc_weak_words_updated', { detail: { word: wordKey, action: 'added' } }));
+
+              setWeakWordToast({
+                type: 'weak',
+                word: wordKey,
+                message: isBn
+                  ? `⚠️ "${wordKey}" ৩ বার ভুল করায় স্বয়ংক্রিয়ভাবে দুর্বল শব্দ তালিকায় যোগ করা হয়েছে!`
+                  : `⚠️ "${wordKey}" made 3 mistakes & automatically marked as Weak Word!`
+              });
+              setTimeout(() => setWeakWordToast(null), 4500);
+            }
+          }
+        }
+
+        perfMap[wordKey] = wordPerf;
+        localStorage.setItem('hsc_word_performance', JSON.stringify(perfMap));
+      } catch (err) {
+        console.warn('Word performance tracking error:', err);
+      }
+    }
   };
 
   const handleNext = () => {
@@ -474,6 +568,29 @@ export default function HSCExamInterface({
               )}
             </div>
           </div>
+
+          {/* Dynamic Weak Word / Mastery Alert Toast Banner */}
+          {weakWordToast && (
+            <div
+              className={`p-3.5 rounded-2xl border text-xs sm:text-sm font-bold flex items-center justify-between gap-3 shadow-lg animate-in slide-in-from-top-2 duration-200 ${
+                weakWordToast.type === 'weak'
+                  ? 'bg-rose-950/80 border-rose-500/60 text-rose-200 shadow-rose-950/50 ring-1 ring-rose-500/30'
+                  : 'bg-emerald-950/80 border-emerald-500/60 text-emerald-200 shadow-emerald-950/50 ring-1 ring-emerald-500/30'
+              }`}
+            >
+              <div className="flex items-center gap-2.5">
+                <span className="text-base sm:text-lg">{weakWordToast.type === 'weak' ? '⚠️' : '🎉'}</span>
+                <span className="leading-snug">{weakWordToast.message}</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setWeakWordToast(null)}
+                className="text-slate-400 hover:text-white p-1 rounded-lg transition-colors cursor-pointer shrink-0"
+              >
+                <X size={15} />
+              </button>
+            </div>
+          )}
 
           {/* 2. Question Header: Question Number + Category Badge + Unit Tag */}
           <div className="flex flex-wrap items-center justify-between gap-2.5">

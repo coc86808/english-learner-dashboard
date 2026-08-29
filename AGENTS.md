@@ -44,3 +44,9 @@ Whenever the user uploads or provides vocabulary (via photo or text):
    - Only registered students with correct passwords can log in.
    - Master Admin has 1-click Account Authorization controls (Authorize / Approve, Ban, Role Switch, Password Reset) in the Admin Panel.
 
+## 5. Automatic Weak Word & Mastery Rules
+1. **3 Mistakes Threshold (Auto Weak Word)**:
+   - If a student makes a mistake on the **same word 3 times in MCQ**, that word is automatically flagged as a **Weak Word** and added to the student's `weakWords` list and saved in storage/cloud.
+2. **5 Correct Answers Threshold (Auto Mastery / Recovery)**:
+   - If a student answers that word correctly **5 times in MCQ**, the word is automatically **removed from Weak Words** (marked as Mastered/Recovered) and cleared from the weak word queue.
+

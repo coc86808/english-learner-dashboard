@@ -205,18 +205,40 @@ export default function App() {
       const saved = localStorage.getItem('hsc_weak_words');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) return parsed.filter(w => w && w.word);
+        if (Array.isArray(parsed)) return parsed.filter((w) => w && w.word);
       }
     } catch (e) {}
     return [];
   });
 
+  // Listen to MCQ automatic weak word additions & removals in real-time
+  React.useEffect(() => {
+    const handleWeakWordsSync = () => {
+      try {
+        const saved = localStorage.getItem('hsc_weak_words');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) setWeakWords(parsed.filter((w) => w && w.word));
+        } else {
+          setWeakWords([]);
+        }
+      } catch (e) {}
+    };
+
+    window.addEventListener('hsc_weak_words_updated', handleWeakWordsSync);
+    window.addEventListener('storage', handleWeakWordsSync);
+    return () => {
+      window.removeEventListener('hsc_weak_words_updated', handleWeakWordsSync);
+      window.removeEventListener('storage', handleWeakWordsSync);
+    };
+  }, []);
+
   const handleToggleWeakWord = (wordItem) => {
     setWeakWords((prev) => {
-      const exists = prev.some(w => w.id === wordItem.id || w.word === wordItem.word);
+      const exists = prev.some((w) => w.id === wordItem.id || w.word === wordItem.word);
       let updated;
       if (exists) {
-        updated = prev.filter(w => w.id !== wordItem.id && w.word !== wordItem.word);
+        updated = prev.filter((w) => w.id !== wordItem.id && w.word !== wordItem.word);
       } else {
         updated = [...prev, wordItem];
       }
@@ -229,7 +251,7 @@ export default function App() {
 
   const handleRemoveWeakWord = (wordItem) => {
     setWeakWords((prev) => {
-      const updated = prev.filter(w => w.id !== wordItem.id && w.word !== wordItem.word);
+      const updated = prev.filter((w) => w.id !== wordItem.id && w.word !== wordItem.word);
       try {
         localStorage.setItem('hsc_weak_words', JSON.stringify(updated));
       } catch (e) {}
