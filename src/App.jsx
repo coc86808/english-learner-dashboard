@@ -20,8 +20,57 @@ import { usersList } from './data/users';
 import { hscQuestionsList, hscVocabularyList } from './data/questions';
 import { Trophy, GraduationCap, BookOpen, Layers } from 'lucide-react';
 
+const tabToPath = {
+  dashboard: '/dashboard',
+  vocab_bank: '/vocabulary-bank',
+  flashcards: '/flashcards',
+  exams: '/exams',
+  history: '/history',
+  leaderboard: '/leaderboard',
+  progress: '/progress',
+  admin: '/admin'
+};
+
+const pathToTab = (pathname) => {
+  const clean = (pathname || '').replace(/^\/+|\/+$/g, '').toLowerCase();
+  if (!clean || clean === 'home' || clean === 'dashboard') return 'dashboard';
+  if (clean === 'leaderboard' || clean === 'leanderbord' || clean === 'leaderbord') return 'leaderboard';
+  if (clean === 'vocab_bank' || clean === 'vocabulary-bank' || clean === 'vocabulary' || clean === 'vocab') return 'vocab_bank';
+  if (clean === 'flashcards' || clean === 'flashcard') return 'flashcards';
+  if (clean === 'exams' || clean === 'exam' || clean === 'practice') return 'exams';
+  if (clean === 'history') return 'history';
+  if (clean === 'progress' || clean === 'weak-words') return 'progress';
+  if (clean === 'admin' || clean === 'admin-panel') return 'admin';
+  return 'dashboard';
+};
+
 export default function App() {
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTabState] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return pathToTab(window.location.pathname);
+    }
+    return 'dashboard';
+  });
+
+  const setActiveTab = (tab) => {
+    setActiveTabState(tab);
+    if (typeof window !== 'undefined') {
+      const targetPath = tabToPath[tab] || '/dashboard';
+      if (window.location.pathname !== targetPath) {
+        window.history.pushState({ tab }, '', targetPath);
+      }
+    }
+  };
+
+  React.useEffect(() => {
+    const handlePopState = () => {
+      const tab = pathToTab(window.location.pathname);
+      setActiveTabState(tab);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [lang, setLang] = useState('en'); // 'en' | 'bn' (default English)
 
@@ -41,6 +90,11 @@ export default function App() {
       localStorage.setItem('hsc_auth_user', JSON.stringify(user));
     } catch (e) {}
     setIsAuthOpen(false);
+    if (typeof window !== 'undefined') {
+      const currentTab = pathToTab(window.location.pathname);
+      const targetPath = tabToPath[currentTab] || '/dashboard';
+      window.history.replaceState({ tab: currentTab }, '', targetPath);
+    }
   };
 
   const handleDemoLogin = () => {
@@ -61,6 +115,9 @@ export default function App() {
     try {
       localStorage.removeItem('hsc_auth_user');
     } catch (e) {}
+    if (typeof window !== 'undefined') {
+      window.history.pushState({}, '', '/');
+    }
   };
 
   // Admin Data State (Users and HSC Questions)

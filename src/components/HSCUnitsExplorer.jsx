@@ -14,7 +14,7 @@ import {
   BookMarked
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
-import { hscQuestionsList } from '../data/questions';
+import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 import ErrorBoundary from './ErrorBoundary';
