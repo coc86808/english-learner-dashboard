@@ -111,19 +111,21 @@ export default function Header({
           <span>{lang === 'bn' ? 'বাং' : 'EN'}</span>
         </button>
 
-        {/* Admin Portal Toggle Button */}
-        <button
-          onClick={onOpenAdmin}
-          className={`px-2.5 py-1 rounded-lg text-xs font-bold border transition-all flex items-center gap-1.5 shadow-sm ${
-            isAdminActive
-              ? 'bg-purple-600 border-purple-400 text-white shadow-purple-950/50'
-              : 'bg-[#181326] border-purple-500/30 text-purple-300 hover:border-purple-500/60 hover:text-white'
-          }`}
-          title="Admin Control Panel"
-        >
-          <Shield size={14} className={isAdminActive ? 'text-white' : 'text-purple-400'} />
-          <span className="hidden sm:inline">{isAdminActive ? (isBn ? 'অ্যাডমিন মোড' : 'Admin Active') : (isBn ? 'অ্যাডমিন' : 'Admin')}</span>
-        </button>
+        {/* Admin Portal Toggle Button (Only for Admin users) */}
+        {currentUser?.role === 'admin' && (
+          <button
+            onClick={onOpenAdmin}
+            className={`px-2.5 py-1 rounded-lg text-xs font-bold border transition-all flex items-center gap-1.5 shadow-sm ${
+              isAdminActive
+                ? 'bg-purple-600 border-purple-400 text-white shadow-purple-950/50'
+                : 'bg-[#181326] border-purple-500/30 text-purple-300 hover:border-purple-500/60 hover:text-white'
+            }`}
+            title="Admin Control Panel"
+          >
+            <Shield size={14} className={isAdminActive ? 'text-white' : 'text-purple-400'} />
+            <span className="hidden sm:inline">{isAdminActive ? (isBn ? 'অ্যাডমিন মোড' : 'Admin Active') : (isBn ? 'অ্যাডমিন' : 'Admin')}</span>
+          </button>
+        )}
 
         {/* Notifications */}
         <button

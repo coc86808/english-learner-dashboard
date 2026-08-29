@@ -48,7 +48,10 @@ export default function App() {
       name: 'Tanvir Ahmed',
       college: 'Notre Dame College, Dhaka',
       batch: 'HSC 2026',
-      email: 'tanvir.demo@hsc2026.edu'
+      email: 'tanvir.demo@hsc2026.edu',
+      role: 'student',
+      points: 0,
+      streak: 0
     };
     handleAuthSuccess(demoUser);
   };
@@ -501,14 +504,28 @@ export default function App() {
           )}
 
           {activeTab === 'admin' && (
-            <AdminDashboard
-              users={users}
-              setUsers={setUsers}
-              questions={questions}
-              setQuestions={setQuestions}
-              onExitAdmin={() => setActiveTab('dashboard')}
-              lang={lang}
-            />
+            currentUser?.role === 'admin' ? (
+              <AdminDashboard
+                users={users}
+                setUsers={setUsers}
+                questions={questions}
+                setQuestions={setQuestions}
+                onExitAdmin={() => setActiveTab('dashboard')}
+                lang={lang}
+              />
+            ) : (
+              <div className="p-8 text-center bg-[#131824] border border-[#1d2536] rounded-2xl space-y-3">
+                <Shield size={36} className="mx-auto text-rose-500" />
+                <h3 className="text-lg font-bold text-white">Access Denied (অ্যাক্সেস সংরক্ষিত)</h3>
+                <p className="text-xs text-slate-400">This section is restricted to administrators only.</p>
+                <button
+                  onClick={() => setActiveTab('dashboard')}
+                  className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs"
+                >
+                  Return to Dashboard
+                </button>
+              </div>
+            )
           )}
         </main>
 

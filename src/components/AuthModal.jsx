@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   X, 
   Mail, 
@@ -29,14 +29,48 @@ export default function AuthModal({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const user = {
-      name: name || 'Tanvir Ahmed',
+
+    const normalizedEmail = (email || '').trim().toLowerCase();
+    const cleanPassword = (password || '').trim();
+
+    // Check for Master Admin credentials
+    const isAdminAccount =
+      (normalizedEmail === 'admin@learnerhub.com' ||
+        normalizedEmail === 'sakinadmin' ||
+        normalizedEmail === 'admin' ||
+        normalizedEmail === 'sakin7112') &&
+      (cleanPassword === 'AdminHSC@2026!' ||
+        cleanPassword === 'Abc@#123' ||
+        cleanPassword === 'Z%#91V4PrG');
+
+    if (isAdminAccount) {
+      const adminUser = {
+        name: 'Master Admin (Sakin)',
+        college: 'Learner Hub Management',
+        batch: 'Admin Access',
+        email: 'admin@learnerhub.com',
+        role: 'admin',
+        points: 0,
+        streak: 0
+      };
+      if (onAuthSuccess) onAuthSuccess(adminUser);
+      onClose();
+      return;
+    }
+
+    // Standard Student Account
+    const studentUser = {
+      name: name || 'HSC Candidate',
       college: college || 'Notre Dame College, Dhaka',
       batch: 'HSC 2026',
-      email: email || 'tanvir@student.edu'
+      email: email || 'student@hsc2026.edu',
+      role: 'student',
+      points: 0,
+      streak: 0
     };
+
     if (onAuthSuccess) {
-      onAuthSuccess(user);
+      onAuthSuccess(studentUser);
     }
     onClose();
   };
@@ -46,7 +80,10 @@ export default function AuthModal({
       name: 'Tanvir Ahmed',
       college: 'Notre Dame College, Dhaka',
       batch: 'HSC 2026',
-      email: 'tanvir.demo@hsc2026.edu'
+      email: 'tanvir.demo@hsc2026.edu',
+      role: 'student',
+      points: 0,
+      streak: 0
     };
     if (onAuthSuccess) {
       onAuthSuccess(demoUser);

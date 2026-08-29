@@ -77,13 +77,17 @@ export default function Sidebar({
       icon: TrendingUp,
       badge: null
     },
-    {
-      id: 'admin',
-      label: isBn ? 'অ্যাডমিন প্যানেল' : 'Admin Panel',
-      icon: Shield,
-      badge: 'ADMIN',
-      badgeColor: 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
-    }
+    ...(currentUser?.role === 'admin'
+      ? [
+          {
+            id: 'admin',
+            label: isBn ? 'অ্যাডমিন প্যানেল' : 'Admin Panel',
+            icon: Shield,
+            badge: 'ADMIN',
+            badgeColor: 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
+          }
+        ]
+      : [])
   ];
 
   return (
