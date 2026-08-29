@@ -478,7 +478,11 @@ export default function UnitLessonExamModal({
           onStartExam={() => {
             setIsTextbookOpen(false);
             if (selectedUnit) {
-              handleSelectLesson(selectedUnit.lessons[0]);
+              if (selectedLesson) {
+                setIsExamActive(true);
+              } else {
+                handleSelectLesson(selectedUnit.lessons[0]);
+              }
             }
           }}
           lang={lang}
