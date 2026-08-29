@@ -1,7 +1,6 @@
 /**
- * PDF Generator for HSC English Weak Words Revision Sheet & Vocabulary Bank
- * Format: Word meaning | Synonym | Antonym
- * Styled authentically after NCTB HSC English Guide Book Pages
+ * PDF Generator for HSC English Vocabulary Bank & Weak Words Revision Sheet
+ * Styled with Emerald Header, Color-Coded Bangla Meanings & Antonyms, and Student/Curriculum Badge
  */
 
 export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en' }) {
@@ -17,16 +16,17 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
 
   const tableRows = words.map((item, idx) => `
     <tr>
-      <td class="word-meaning-cell">
-        <span class="eng-word">${item.word}</span>
-        ${item.partsOfSpeech ? `<span class="pos-tag">(${item.partsOfSpeech})</span>` : ''}
-        <span class="hyphen">-</span>
-        <span class="bn-meaning">${item.bengaliMeaning || '-'}</span>
+      <td class="word-cell" style="width: 20%;">
+        <div class="word-title">${idx + 1}. ${item.word}</div>
+        ${item.partsOfSpeech ? `<span class="pos-badge">${item.partsOfSpeech}</span>` : ''}
       </td>
-      <td class="synonym-cell">
+      <td class="meaning-cell" style="width: 30%;">
+        ${item.bengaliMeaning || '-'}
+      </td>
+      <td class="synonym-cell" style="width: 25%;">
         ${item.synonyms || '-'}
       </td>
-      <td class="antonym-cell">
+      <td class="antonym-cell" style="width: 25%;">
         ${item.antonyms && item.antonyms.trim() !== '' && item.antonyms.trim() !== '-' ? item.antonyms : '-'}
       </td>
     </tr>
@@ -56,63 +56,88 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
       color: #0f172a;
       background-color: #ffffff;
       margin: 0;
-      padding: 12px;
+      padding: 14px;
       font-size: 11px;
       line-height: 1.35;
     }
 
-    .guide-header {
-      border: 1.5px solid #1e293b;
-      border-radius: 8px;
-      padding: 10px 14px;
+    .header-container {
+      border-bottom: 2.5px solid #059669;
+      padding-bottom: 8px;
       margin-bottom: 12px;
-      background: #f8fafc;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
     }
 
     .brand-title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 800;
-      color: #0f172a;
+      color: #065f46;
       margin: 0 0 2px 0;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: -0.3px;
     }
 
     .brand-subtitle {
       font-size: 11px;
       font-weight: 600;
-      color: #059669;
+      color: #047857;
       margin: 0;
     }
 
-    .meta-badge {
+    .meta-box {
+      text-align: right;
       font-size: 10px;
-      font-weight: 700;
-      background: #059669;
+      color: #475569;
+    }
+
+    .meta-box strong {
+      color: #0f172a;
+    }
+
+    .student-badge-card {
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 8px 14px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #1e293b;
+    }
+
+    .student-badge-card strong {
+      color: #0f172a;
+    }
+
+    .summary-pill {
+      background-color: #059669;
       color: #ffffff;
-      padding: 4px 10px;
-      border-radius: 6px;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 10.5px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 10.5px;
-      border: 1.5px solid #1e293b;
+      font-size: 11px;
+      border: 1px solid #cbd5e1;
     }
 
     thead th {
-      background-color: #e2e8f0;
-      color: #0f172a;
+      background-color: #065f46 !important;
+      color: #ffffff !important;
       text-align: left;
-      padding: 6px 10px;
-      font-weight: 800;
-      font-size: 11px;
-      border: 1px solid #64748b;
-      letter-spacing: 0.3px;
+      padding: 8px 12px;
+      font-weight: 700;
+      font-size: 10.5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid #065f46;
     }
 
     tbody tr {
@@ -124,88 +149,108 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
     }
 
     tbody td {
-      padding: 5px 9px;
-      border: 1px solid #94a3b8;
+      padding: 8px 12px;
+      border: 1px solid #cbd5e1;
       vertical-align: middle;
     }
 
-    .word-meaning-cell {
-      width: 38%;
+    .word-title {
+      font-weight: 700;
+      color: #0f172a;
+      font-size: 12px;
+      line-height: 1.2;
     }
 
-    .eng-word {
-      font-weight: 800;
-      color: #0f172a;
+    .pos-badge {
+      display: inline-block;
+      font-size: 9.5px;
+      font-weight: 600;
+      padding: 1px 5px;
+      border-radius: 4px;
+      background-color: #e2e8f0;
+      color: #475569;
+      margin-top: 3px;
+    }
+
+    .meaning-cell {
+      color: #047857;
+      font-weight: 600;
+      font-family: 'Hind Siliguri', 'Inter', sans-serif;
       font-size: 11.5px;
     }
 
-    .pos-tag {
-      font-size: 9px;
-      color: #64748b;
-      font-weight: 600;
-      margin-left: 2px;
-    }
-
-    .hyphen {
-      margin: 0 3px;
-      font-weight: 800;
-      color: #334155;
-    }
-
-    .bn-meaning {
-      font-family: 'Hind Siliguri', sans-serif;
-      font-weight: 500;
-      color: #1e293b;
-    }
-
     .synonym-cell {
-      width: 31%;
       color: #1e293b;
-      font-weight: 500;
+      font-size: 11px;
     }
 
     .antonym-cell {
-      width: 31%;
-      color: #334155;
+      color: #b91c1c;
       font-weight: 500;
+      font-size: 11px;
     }
 
-    .guide-footer {
-      margin-top: 14px;
+    .footer {
+      margin-top: 16px;
       padding-top: 8px;
-      border-top: 1px solid #cbd5e1;
+      border-top: 1px solid #e2e8f0;
       text-align: center;
-      font-size: 9px;
+      font-size: 9.5px;
       color: #64748b;
       display: flex;
       justify-content: space-between;
-      align-items: center;
     }
 
-    .footer-quote {
-      font-family: 'Hind Siliguri', sans-serif;
-      font-weight: 600;
-      color: #475569;
+    @media print {
+      body {
+        padding: 0;
+      }
+      thead th {
+        background-color: #065f46 !important;
+        color: #ffffff !important;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f8fafc !important;
+      }
+      .meaning-cell {
+        color: #047857 !important;
+      }
+      .antonym-cell {
+        color: #b91c1c !important;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="guide-header">
+  <div class="header-container">
     <div>
-      <h1 class="brand-title">HSC English 1st Paper — Weak Words Bank</h1>
-      <p class="brand-subtitle">Student: ${name} (${college} • ${batch})</p>
+      <h1 class="brand-title">HSC English For Today</h1>
+      <p class="brand-subtitle">Weak Words Revision & Mastery Sheet (দুর্বল শব্দ তালিকা)</p>
     </div>
-    <div class="meta-badge">
-      Total Words: ${words.length}
+    <div class="meta-box">
+      <div><strong>Date:</strong> ${currentDate}</div>
+      <div><strong>Curriculum:</strong> NCTB HSC 2026</div>
+    </div>
+  </div>
+
+  <div class="student-badge-card">
+    <div>
+      <strong>Student Name:</strong> ${name} &nbsp;|&nbsp; 
+      <strong>College:</strong> ${college} &nbsp;|&nbsp; 
+      <strong>Batch:</strong> ${batch}
+    </div>
+    <div class="summary-pill">
+      Total Weak Words: ${words.length}
     </div>
   </div>
 
   <table>
     <thead>
       <tr>
-        <th style="width: 38%;">Word meaning</th>
-        <th style="width: 31%;">Synonym</th>
-        <th style="width: 31%;">Antonym</th>
+        <th style="width: 20%;">WORD</th>
+        <th style="width: 30%;">MEANING (BANGLA)</th>
+        <th style="width: 25%;">SYNONYMS</th>
+        <th style="width: 25%;">ANTONYMS</th>
       </tr>
     </thead>
     <tbody>
@@ -213,17 +258,16 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
     </tbody>
   </table>
 
-  <div class="guide-footer">
-    <span>English Learner Dashboard</span>
-    <span class="footer-quote">এইচএসসি ও এডমিশনে সাফল্যের পথে, চলো একসাথে...</span>
-    <span>Date: ${currentDate}</span>
+  <div class="footer">
+    <span>Learner Hub • Spaced Repetition Vocabulary Engine</span>
+    <span>Personalized Revision Sheet</span>
   </div>
 
   <script>
     window.onload = function() {
       setTimeout(() => {
         window.print();
-      }, 400);
+      }, 350);
     };
   </script>
 </body>
@@ -233,14 +277,18 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
 }
 
 /**
- * Authentic Guide-Book Sheet PDF Generator for Vocabulary Bank
+ * Vocabulary Bank PDF Generator matching the preferred Emerald Header & Color-Coded Table Style
  */
 export function generateVocabularyBankPDF({
   words = [],
   unitTitle = 'All Units',
   lessonTitle = 'All Lessons',
+  studentInfo = {},
   lang = 'en'
 }) {
+  const name = studentInfo.name || 'Tanvir Ahmed';
+  const college = studentInfo.college || 'Notre Dame College, Dhaka';
+  const batch = studentInfo.batch || 'HSC 2026';
   const currentDate = new Date().toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
@@ -249,16 +297,17 @@ export function generateVocabularyBankPDF({
 
   const tableRows = words.map((item, idx) => `
     <tr>
-      <td class="word-meaning-cell">
-        <span class="eng-word">${item.word}</span>
-        ${item.partsOfSpeech ? `<span class="pos-tag">(${item.partsOfSpeech})</span>` : ''}
-        <span class="hyphen">-</span>
-        <span class="bn-meaning">${item.bengaliMeaning || '-'}</span>
+      <td class="word-cell" style="width: 20%;">
+        <div class="word-title">${idx + 1}. ${item.word}</div>
+        ${item.partsOfSpeech ? `<span class="pos-badge">${item.partsOfSpeech}</span>` : ''}
       </td>
-      <td class="synonym-cell">
+      <td class="meaning-cell" style="width: 30%;">
+        ${item.bengaliMeaning || '-'}
+      </td>
+      <td class="synonym-cell" style="width: 25%;">
         ${item.synonyms || '-'}
       </td>
-      <td class="antonym-cell">
+      <td class="antonym-cell" style="width: 25%;">
         ${item.antonyms && item.antonyms.trim() !== '' && item.antonyms.trim() !== '-' ? item.antonyms : '-'}
       </td>
     </tr>
@@ -288,79 +337,91 @@ export function generateVocabularyBankPDF({
       color: #0f172a;
       background-color: #ffffff;
       margin: 0;
-      padding: 10px;
+      padding: 14px;
       font-size: 11px;
       line-height: 1.35;
     }
 
-    /* Textbook Guide Running Top Bar */
-    .top-running-bar {
+    /* Top Brand Header */
+    .header-container {
+      border-bottom: 2.5px solid #059669;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      border-bottom: 1.5px solid #0f172a;
-      padding-bottom: 4px;
-      margin-bottom: 8px;
-      font-size: 10px;
-      font-weight: 700;
-      color: #334155;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
+      align-items: flex-end;
     }
 
-    /* Main Guide Header Box */
-    .guide-header-box {
-      border: 1.5px solid #0f172a;
-      border-radius: 6px;
-      padding: 8px 12px;
-      margin-bottom: 10px;
-      background: #f1f5f9;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .main-title {
-      font-size: 15px;
+    .brand-title {
+      font-size: 18px;
       font-weight: 800;
-      color: #0f172a;
+      color: #065f46;
       margin: 0 0 2px 0;
-      letter-spacing: -0.2px;
+      letter-spacing: -0.3px;
     }
 
-    .sub-title {
-      font-size: 10.5px;
+    .brand-subtitle {
+      font-size: 11.5px;
       font-weight: 600;
       color: #047857;
       margin: 0;
     }
 
-    .count-tag {
+    .meta-box {
+      text-align: right;
       font-size: 10px;
-      font-weight: 800;
-      background: #0f172a;
-      color: #ffffff;
-      padding: 3px 8px;
-      border-radius: 4px;
+      color: #475569;
     }
 
-    /* Exact 3-Column Textbook Guide Table */
+    .meta-box strong {
+      color: #0f172a;
+    }
+
+    /* Student & Selection Info Card */
+    .student-badge-card {
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 8px;
+      padding: 8px 14px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      color: #1e293b;
+    }
+
+    .student-badge-card strong {
+      color: #0f172a;
+    }
+
+    .summary-pill {
+      background-color: #059669;
+      color: #ffffff;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 10.5px;
+    }
+
+    /* 4-Column Table with Emerald Header */
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 10.5px;
-      border: 1.5px solid #0f172a;
+      font-size: 11px;
+      border: 1px solid #cbd5e1;
     }
 
     thead th {
-      background-color: #e2e8f0;
-      color: #0f172a;
+      background-color: #065f46 !important;
+      color: #ffffff !important;
       text-align: left;
-      padding: 6px 9px;
-      font-weight: 800;
-      font-size: 11px;
-      border: 1px solid #475569;
-      letter-spacing: 0.3px;
+      padding: 8px 12px;
+      font-weight: 700;
+      font-size: 10.5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid #065f46;
     }
 
     tbody tr {
@@ -372,117 +433,124 @@ export function generateVocabularyBankPDF({
     }
 
     tbody td {
-      padding: 5px 8px;
-      border: 1px solid #94a3b8;
+      padding: 8px 12px;
+      border: 1px solid #cbd5e1;
       vertical-align: middle;
     }
 
-    .word-meaning-cell {
-      width: 38%;
-      white-space: normal;
-    }
-
-    .eng-word {
-      font-weight: 800;
+    .word-title {
+      font-weight: 700;
       color: #0f172a;
-      font-size: 11px;
+      font-size: 12px;
+      line-height: 1.2;
     }
 
-    .pos-tag {
-      font-size: 8.5px;
-      color: #64748b;
+    .pos-badge {
+      display: inline-block;
+      font-size: 9.5px;
       font-weight: 600;
-      margin-left: 2px;
+      padding: 1px 5px;
+      border-radius: 4px;
+      background-color: #e2e8f0;
+      color: #475569;
+      margin-top: 3px;
     }
 
-    .hyphen {
-      margin: 0 3px;
-      font-weight: 800;
-      color: #0f172a;
-    }
-
-    .bn-meaning {
-      font-family: 'Hind Siliguri', sans-serif;
-      font-weight: 500;
-      color: #1e293b;
-      font-size: 10.5px;
+    .meaning-cell {
+      color: #047857;
+      font-weight: 600;
+      font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      font-size: 11.5px;
     }
 
     .synonym-cell {
-      width: 31%;
       color: #1e293b;
-      font-weight: 500;
-      font-size: 10px;
-      line-height: 1.3;
+      font-size: 11px;
     }
 
     .antonym-cell {
-      width: 31%;
-      color: #334155;
+      color: #b91c1c;
       font-weight: 500;
-      font-size: 10px;
-      line-height: 1.3;
+      font-size: 11px;
     }
 
-    /* Textbook Guide Bottom Banner */
-    .guide-footer-bar {
-      margin-top: 12px;
-      padding-top: 6px;
-      border-top: 1.5px solid #0f172a;
+    /* Clean Footer */
+    .footer {
+      margin-top: 16px;
+      padding-top: 8px;
+      border-top: 1px solid #e2e8f0;
       text-align: center;
-      font-size: 9px;
-      color: #475569;
+      font-size: 9.5px;
+      color: #64748b;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .guide-quote {
+    .footer-quote {
       font-family: 'Hind Siliguri', sans-serif;
-      font-weight: 700;
-      color: #0f172a;
-      font-size: 9.5px;
+      font-weight: 600;
+      color: #065f46;
     }
 
     @media print {
       body {
         padding: 0;
       }
-      .guide-header-box {
-        background: #f1f5f9 !important;
+      .student-badge-card {
+        background-color: #f0fdf4 !important;
+        border: 1px solid #bbf7d0 !important;
+      }
+      .summary-pill {
+        background-color: #059669 !important;
+        color: #ffffff !important;
       }
       thead th {
-        background-color: #e2e8f0 !important;
+        background-color: #065f46 !important;
+        color: #ffffff !important;
       }
       tbody tr:nth-child(even) {
         background-color: #f8fafc !important;
+      }
+      .meaning-cell {
+        color: #047857 !important;
+      }
+      .antonym-cell {
+        color: #b91c1c !important;
       }
     }
   </style>
 </head>
 <body>
-  <div class="top-running-bar">
-    <span>English 1st Paper</span>
-    <span>${unitTitle}</span>
-    <span>Vocabulary Sheet</span>
+  <div class="header-container">
+    <div>
+      <h1 class="brand-title">HSC English 1st Paper — Vocabulary Bank</h1>
+      <p class="brand-subtitle">${unitTitle} • ${lessonTitle}</p>
+    </div>
+    <div class="meta-box">
+      <div><strong>Curriculum:</strong> NCTB HSC 2026</div>
+      <div><strong>Date:</strong> ${currentDate}</div>
+    </div>
   </div>
 
-  <div class="guide-header-box">
+  <div class="student-badge-card">
     <div>
-      <h1 class="main-title">HSC English 1st Paper — Vocabulary Bank</h1>
-      <p class="sub-title">${unitTitle} • ${lessonTitle}</p>
+      <strong>Student:</strong> ${name} &nbsp;|&nbsp; 
+      <strong>College:</strong> ${college} &nbsp;|&nbsp; 
+      <strong>Batch:</strong> ${batch}
     </div>
-    <div class="count-tag">
-      Total: ${words.length} Words
+    <div class="summary-pill">
+      Total Words: ${words.length}
     </div>
   </div>
 
   <table>
     <thead>
       <tr>
-        <th style="width: 38%;">Word meaning</th>
-        <th style="width: 31%;">Synonym</th>
-        <th style="width: 31%;">Antonym</th>
+        <th style="width: 20%;">WORD</th>
+        <th style="width: 30%;">MEANING (BANGLA)</th>
+        <th style="width: 25%;">SYNONYMS</th>
+        <th style="width: 25%;">ANTONYMS</th>
       </tr>
     </thead>
     <tbody>
@@ -490,10 +558,10 @@ export function generateVocabularyBankPDF({
     </tbody>
   </table>
 
-  <div class="guide-footer-bar">
-    <span>English Learner Dashboard</span>
-    <span class="guide-quote">এইচএসসি ও এডমিশনে সাফল্যের পথে, চলো একসাথে...</span>
-    <span>NCTB Board Standard</span>
+  <div class="footer">
+    <span>Learner Hub • Spaced Repetition Vocabulary Engine</span>
+    <span class="footer-quote">এইচএসসি ও এডমিশনে সাফল্যের পথে, চলো একসাথে...</span>
+    <span>Official HSC Textbook Sheet</span>
   </div>
 
   <script>

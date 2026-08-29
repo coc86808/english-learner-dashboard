@@ -134,18 +134,23 @@ export default function VocabularyBank({
 
   const handleDownloadPDF = () => {
     const unitTitle = selectedUnitId === 'all'
-      ? 'All Units'
+      ? (isBn ? 'সকল ইউনিট' : 'All Units')
       : (activeUnitObj?.unitNumber + ': ' + activeUnitObj?.unitTitle);
     
     const lessonObj = availableLessons.find(l => l.id === selectedLessonId);
     const lessonTitle = selectedLessonId === 'all'
-      ? (selectedUnitId === 'all' ? 'All Lessons' : `All Lessons in ${activeUnitObj?.unitNumber}`)
+      ? (selectedUnitId === 'all' ? (isBn ? 'সকল লেসন' : 'All Lessons') : `${isBn ? 'সকল লেসন' : 'All Lessons'} (${activeUnitObj?.unitNumber})`)
       : (lessonObj ? `${lessonObj.number}: ${lessonObj.title}` : 'Selected Lesson');
 
     generateVocabularyBankPDF({
       words: filteredList,
       unitTitle,
       lessonTitle,
+      studentInfo: {
+        name: 'Tanvir Ahmed',
+        college: 'Notre Dame College, Dhaka',
+        batch: 'HSC 2026'
+      },
       lang
     });
   };
@@ -156,57 +161,6 @@ export default function VocabularyBank({
 
   return (
     <div className="space-y-6 animate-in fade-in duration-300">
-      {/* Printable Sheet CSS Styling */}
-      <style>{`
-        @media print {
-          body * {
-            visibility: hidden;
-          }
-          #printable-vocab-bank, #printable-vocab-bank * {
-            visibility: visible;
-          }
-          #printable-vocab-bank {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            background: white !important;
-            color: black !important;
-            padding: 0 !important;
-            margin: 0 !important;
-          }
-          .no-print {
-            display: none !important;
-          }
-          .print-table {
-            width: 100% !important;
-            border-collapse: collapse !important;
-            font-size: 10.5pt !important;
-            color: black !important;
-            border: 1.5px solid #0f172a !important;
-          }
-          .print-table th, .print-table td {
-            border: 1px solid #64748b !important;
-            padding: 5px 8px !important;
-            text-align: left !important;
-            background: transparent !important;
-            color: black !important;
-            vertical-align: middle !important;
-          }
-          .print-table th {
-            background-color: #e2e8f0 !important;
-            font-weight: 800 !important;
-            font-size: 11pt !important;
-          }
-          .print-table tr:nth-child(even) {
-            background-color: #f8fafc !important;
-          }
-          .print-table tr {
-            page-break-inside: avoid !important;
-          }
-        }
-      `}</style>
-
       {/* Top Banner & Header */}
       <div className="no-print p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#131a29] via-[#0f1523] to-[#121927] border border-[#222e44] shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -402,40 +356,28 @@ export default function VocabularyBank({
         </div>
       </div>
 
-      {/* Main Vocabulary Sheet (Designed identically to user guide photo) */}
-      <div id="printable-vocab-bank" className="bg-[#111723] border border-[#1e293b] rounded-3xl shadow-xl overflow-hidden">
-        {/* Printable Header (Visible only when printed) */}
-        <div className="hidden print:block p-4 text-center border-b border-black bg-[#f1f5f9]">
-          <div className="flex justify-between items-center text-[9pt] text-slate-700 font-bold uppercase mb-1">
-            <span>English 1st Paper</span>
-            <span>{selectedUnitId === 'all' ? 'All Units' : activeUnitObj?.unitNumber + ': ' + activeUnitObj?.unitTitle}</span>
-            <span>NCTB Vocabulary Sheet</span>
-          </div>
-          <h2 className="text-lg font-bold uppercase tracking-wider text-black">HSC English 1st Paper — Vocabulary Bank</h2>
-          <p className="text-xs text-slate-800 font-medium mt-0.5">
-            {selectedUnitId === 'all'
-              ? 'Complete HSC Vocabulary Guide Sheet (All Units)'
-              : activeUnitObj?.unitNumber + ': ' + activeUnitObj?.unitTitle + (selectedLessonId !== 'all' ? ' — ' + availableLessons.find(l => l.id === selectedLessonId)?.title : '')}
-          </p>
-        </div>
-
+      {/* Main Vocabulary Sheet (Designed with 4 Columns & Emerald Header) */}
+      <div className="bg-[#111723] border border-[#1e293b] rounded-3xl shadow-xl overflow-hidden">
         {/* Responsive Table Container */}
         <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse print-table">
+          <table className="w-full text-left border-collapse">
             <thead>
-              <tr className="bg-[#172030] print:bg-[#e2e8f0] text-slate-200 print:text-black border-b border-[#24334a] print:border-[#0f172a] text-xs sm:text-sm font-bold uppercase tracking-wider">
-                <th className="py-3 px-4 sm:px-5 w-[38%] sm:w-[36%] border-r border-[#24334a] print:border-[#64748b]">
-                  <span>{isBn ? 'Word meaning (শব্দ ও অর্থ)' : 'Word meaning'}</span>
+              <tr className="bg-[#065f46] text-white text-xs sm:text-sm font-bold uppercase tracking-wider">
+                <th className="py-3.5 px-4 sm:px-6 w-[22%] border-r border-[#047857]">
+                  <span>WORD</span>
                 </th>
-                <th className="py-3 px-4 sm:px-5 w-[31%] sm:w-[32%] border-r border-[#24334a] print:border-[#64748b]">
-                  <span>{isBn ? 'Synonym (সমার্থক শব্দ)' : 'Synonym'}</span>
+                <th className="py-3.5 px-4 sm:px-6 w-[30%] border-r border-[#047857]">
+                  <span>MEANING (BANGLA)</span>
                 </th>
-                <th className="py-3 px-4 sm:px-5 w-[31%] sm:w-[32%]">
-                  <span>{isBn ? 'Antonym (বিপরীত শব্দ)' : 'Antonym'}</span>
+                <th className="py-3.5 px-4 sm:px-6 w-[24%] border-r border-[#047857]">
+                  <span>SYNONYMS</span>
+                </th>
+                <th className="py-3.5 px-4 sm:px-6 w-[24%]">
+                  <span>ANTONYMS</span>
                 </th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#1b2537] print:divide-[#64748b] text-xs sm:text-sm">
+            <tbody className="divide-y divide-[#1b2537] text-xs sm:text-sm">
               {filteredList.length > 0 ? (
                 filteredList.map((item, index) => {
                   const weak = isWeak(item);
@@ -444,65 +386,68 @@ export default function VocabularyBank({
                   return (
                     <tr
                       key={item.id || index}
-                      className="hover:bg-[#161f2e] print:hover:bg-transparent transition-colors group"
+                      className="hover:bg-[#161f2e] transition-colors group"
                     >
-                      {/* Column 1: Word meaning (Formatted as: Word- বাংলা অর্থ) */}
-                      <td className="py-3 px-4 sm:px-5 align-middle border-r border-[#1b2537] print:border-[#94a3b8]">
-                        <div className="flex items-center gap-2">
-                          <span className="no-print text-slate-500 font-mono text-[11px] select-none w-5 shrink-0">
-                            {index + 1}.
-                          </span>
-
-                          <div className="min-w-0 flex-1">
-                            <span className="text-white print:text-black font-bold text-sm sm:text-base group-hover:text-emerald-300 print:group-hover:text-black transition-colors">
-                              {item.word}
-                            </span>
+                      {/* Column 1: WORD */}
+                      <td className="py-3.5 px-4 sm:px-6 align-middle border-r border-[#1b2537]">
+                        <div className="flex items-center justify-between gap-2">
+                          <div>
+                            <div className="flex items-center gap-1.5">
+                              <span className="text-slate-500 font-mono text-xs select-none">
+                                {index + 1}.
+                              </span>
+                              <span className="text-white font-bold text-sm sm:text-base group-hover:text-emerald-300 transition-colors">
+                                {item.word}
+                              </span>
+                            </div>
 
                             {item.partsOfSpeech && (
-                              <span className="no-print ml-1.5 px-1.5 py-0.5 rounded bg-[#1e2a3d] border border-[#2b3b55] text-slate-300 text-[10px] font-semibold">
-                                {item.partsOfSpeech}
-                              </span>
+                              <div className="mt-1">
+                                <span className="px-2 py-0.5 rounded bg-[#1e2a3d] border border-[#2b3b55] text-slate-300 text-[10px] font-semibold">
+                                  {item.partsOfSpeech}
+                                </span>
+                              </div>
                             )}
-
-                            {/* Hyphen and Bengali Meaning */}
-                            <span className="text-slate-300 print:text-black font-medium ml-1">
-                              - {item.bengaliMeaning}
-                            </span>
                           </div>
 
                           {/* Quick Audio & Bookmark Action buttons */}
-                          <div className="no-print flex items-center gap-1 shrink-0">
+                          <div className="flex items-center gap-1 shrink-0">
                             <button
                               onClick={() => handleSpeak(item.word)}
                               title="Listen pronunciation"
-                              className={`p-1 rounded-md transition-colors cursor-pointer ${
+                              className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                                 isAudioActive
                                   ? 'bg-emerald-500 text-white animate-pulse'
                                   : 'text-slate-400 hover:text-emerald-400 hover:bg-[#1a2538]'
                               }`}
                             >
-                              <Volume2 size={13} />
+                              <Volume2 size={14} />
                             </button>
 
                             {onToggleWeakWord && (
                               <button
                                 onClick={() => onToggleWeakWord(item)}
                                 title={weak ? 'Remove from Weak Words' : 'Add to Weak Words'}
-                                className={`p-1 rounded-md transition-colors cursor-pointer ${
+                                className={`p-1.5 rounded-lg transition-colors cursor-pointer ${
                                   weak
                                     ? 'text-rose-400 bg-rose-500/15'
                                     : 'text-slate-500 hover:text-rose-400 hover:bg-[#1a2538]'
                                 }`}
                               >
-                                <Bookmark size={13} className={weak ? 'fill-rose-400' : ''} />
+                                <Bookmark size={14} className={weak ? 'fill-rose-400' : ''} />
                               </button>
                             )}
                           </div>
                         </div>
                       </td>
 
-                      {/* Column 2: Synonym */}
-                      <td className="py-3 px-4 sm:px-5 text-slate-200 print:text-black font-normal align-middle leading-snug border-r border-[#1b2537] print:border-[#94a3b8]">
+                      {/* Column 2: MEANING (BANGLA) */}
+                      <td className="py-3.5 px-4 sm:px-6 text-emerald-400 font-bold align-middle font-bengali leading-relaxed border-r border-[#1b2537]">
+                        {item.bengaliMeaning || '-'}
+                      </td>
+
+                      {/* Column 3: SYNONYMS */}
+                      <td className="py-3.5 px-4 sm:px-6 text-slate-200 font-normal align-middle leading-relaxed border-r border-[#1b2537]">
                         {item.synonyms ? (
                           <span>{item.synonyms}</span>
                         ) : (
@@ -510,8 +455,8 @@ export default function VocabularyBank({
                         )}
                       </td>
 
-                      {/* Column 3: Antonym */}
-                      <td className="py-3 px-4 sm:px-5 text-slate-200 print:text-black font-normal align-middle leading-snug">
+                      {/* Column 4: ANTONYMS */}
+                      <td className="py-3.5 px-4 sm:px-6 text-rose-400 font-medium align-middle leading-relaxed">
                         {item.antonyms && item.antonyms.trim() !== '-' && item.antonyms.trim() !== '' ? (
                           <span>{item.antonyms}</span>
                         ) : (
@@ -523,7 +468,7 @@ export default function VocabularyBank({
                 })
               ) : (
                 <tr>
-                  <td colSpan="3" className="py-12 text-center text-slate-400">
+                  <td colSpan="4" className="py-12 text-center text-slate-400">
                     <p className="text-base font-semibold">
                       {isBn ? 'এই ইউনিট বা লেসনে কোনো শব্দ পাওয়া যায়নি।' : 'No vocabulary words found for this selection.'}
                     </p>
@@ -535,13 +480,6 @@ export default function VocabularyBank({
               )}
             </tbody>
           </table>
-        </div>
-
-        {/* Printable Footer (Visible only when printed) */}
-        <div className="hidden print:flex justify-between items-center p-3 border-t border-black text-[9pt] text-slate-700 font-medium">
-          <span>English Learner Dashboard</span>
-          <span className="font-bold text-black font-bengali">এইচএসসি ও এডমিশনে সাফল্যের পথে, চলো একসাথে...</span>
-          <span>NCTB Board Curriculum</span>
         </div>
       </div>
     </div>
