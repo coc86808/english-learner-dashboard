@@ -19,6 +19,7 @@ import VocabularyBank from './components/VocabularyBank';
 import { usersList } from './data/users';
 import { hscQuestionsList, hscVocabularyList } from './data/questions';
 import { Trophy, GraduationCap, BookOpen, Layers } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const tabToPath = {
   dashboard: '/dashboard',
@@ -195,6 +196,7 @@ export default function App() {
           isSignUpDefault={isSignUpMode}
           onAuthSuccess={handleAuthSuccess}
         />
+        <Analytics />
       </div>
     );
   }
@@ -642,6 +644,7 @@ export default function App() {
         onClose={() => setIsAuthOpen(false)}
         lang={lang}
       />
+      <Analytics />
     </div>
   );
 }
