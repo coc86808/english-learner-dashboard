@@ -144,8 +144,7 @@ export default function AuthModal({
         normalizedEmail.includes('sakin')) &&
       (cleanPassword === 'AdminHSC@2026!' ||
         cleanPassword === 'Abc@#123' ||
-        cleanPassword === 'Z%#91V4PrG' ||
-        cleanPassword === '123456');
+        cleanPassword === 'Z%#91V4PrG');
 
     if (isAdminAccount) {
       const adminUser = {
@@ -183,7 +182,7 @@ export default function AuthModal({
     // Verify Password
     const isPasswordValid =
       matchedUser.password === cleanPassword ||
-      (!matchedUser.password && (cleanPassword === '123456' || cleanPassword === 'Student@123'));
+      (!matchedUser.password && cleanPassword === 'Student@123');
 
     if (!isPasswordValid) {
       setErrorMessage(
