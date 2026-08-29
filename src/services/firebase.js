@@ -1,4 +1,3 @@
-import { initializeApp } from 'firebase/app';
 import { 
   getFirestore, 
   collection, 
@@ -11,6 +10,15 @@ import {
   onSnapshot, 
   serverTimestamp 
 } from 'firebase/firestore';
+import { 
+  getAuth, 
+  GoogleAuthProvider, 
+  signInWithPopup, 
+  createUserWithEmailAndPassword, 
+  signInWithEmailAndPassword, 
+  signOut as firebaseSignOut, 
+  onAuthStateChanged 
+} from 'firebase/auth';
 import { getAnalytics, isSupported } from 'firebase/analytics';
 
 // Your web app's Firebase configuration
@@ -27,6 +35,10 @@ const firebaseConfig = {
 // Initialize Firebase App
 export const app = initializeApp(firebaseConfig);
 
+// Initialize Firebase Auth
+export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider();
+
 // Initialize Cloud Firestore
 export const db = getFirestore(app);
 
@@ -38,6 +50,43 @@ if (typeof window !== 'undefined') {
       analytics = getAnalytics(app);
     }
   }).catch(() => {});
+}
+
+// -------------------------------------------------------------
+// Authentication Helper Functions
+// -------------------------------------------------------------
+
+/**
+ * 1-Click Sign in with Google
+ */
+export async function signInWithGoogle() {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    if (user) {
+      const studentProfile = {
+        id: `usr-${user.uid}`,
+        name: user.displayName || 'HSC Candidate',
+        email: user.email,
+        phone: user.phoneNumber || user.email,
+        college: 'HSC College',
+        hscBatch: 'HSC 2026',
+        avatar: user.photoURL || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`,
+        role: user.email === 'sakin@gmail.com' || user.email === 'admin@learnerhub.com' ? 'admin' : 'student',
+        streak: 0,
+        points: 0,
+        testsCompleted: 0,
+        masteredWordsCount: 0,
+        status: 'Active',
+        joinedDate: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
+      };
+      await saveUserToFirestore(studentProfile);
+      return { success: true, user: studentProfile };
+    }
+  } catch (error) {
+    console.error('Google Sign-In Error:', error);
+    return { success: false, error: error.message };
+  }
 }
 
 // -------------------------------------------------------------
