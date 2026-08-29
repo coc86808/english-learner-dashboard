@@ -1,19 +1,29 @@
 import React from 'react';
-import { Layers, GraduationCap, BookMarked } from 'lucide-react';
+import { Layers, GraduationCap, BookMarked, BookOpen } from 'lucide-react';
 
 export default function ActionCards({
   lang,
   onOpenFlashcards,
   onOpenQuickPractice,
-  onOpenMockExam
+  onOpenMockExam,
+  onOpenVocabBank
 }) {
   const isBn = lang === 'bn';
 
   const cards = [
     {
+      id: 'vb',
+      title: isBn ? 'ভোকাবুলারি ব্যাংক' : 'Vocabulary Bank',
+      subtitle: isBn ? 'বোর্ড শিট ও শব্দার্থ' : 'NCTB Word Sheet',
+      icon: BookOpen,
+      iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-950/40',
+      borderHover: 'hover:border-emerald-500/50 hover:shadow-emerald-950/30',
+      onClick: onOpenVocabBank
+    },
+    {
       id: 'fc',
       title: isBn ? 'ফ্ল্যাশকার্ড' : 'Flashcards',
-      subtitle: isBn ? 'অ্যাক্টিভ রিকল ও স্পেসড লার্নিং' : 'Active Recall & Flip Cards',
+      subtitle: isBn ? 'অ্যাক্টিভ রিকল ও ফ্লিপ' : 'Active Recall & Flip',
       icon: Layers,
       iconBg: 'bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-950/40',
       borderHover: 'hover:border-amber-500/50 hover:shadow-amber-950/30',
@@ -22,7 +32,7 @@ export default function ActionCards({
     {
       id: 'qp',
       title: isBn ? 'প্র্যাকটিস লার্নিং' : 'Practice Learning',
-      subtitle: isBn ? 'যেকোনো লেসন থেকে MCQ' : 'Random Lesson MCQ',
+      subtitle: isBn ? 'যেকোনো লেসন MCQ' : 'Random Lesson MCQ',
       icon: GraduationCap,
       iconBg: 'bg-gradient-to-br from-blue-600 to-indigo-700 text-white shadow-lg shadow-blue-950/40',
       borderHover: 'hover:border-blue-500/50 hover:shadow-blue-950/30',
@@ -31,7 +41,7 @@ export default function ActionCards({
     {
       id: 'me',
       title: isBn ? 'পরীক্ষা' : 'Exam',
-      subtitle: isBn ? 'ইউনিট ➔ লেসন ➔ পরীক্ষা' : 'Unit → Lesson → Exam',
+      subtitle: isBn ? 'লেসন ভিত্তিক পরীক্ষা' : 'Unit & Lesson Exam',
       icon: BookMarked,
       iconBg: 'bg-gradient-to-br from-violet-600 to-purple-700 text-white shadow-lg shadow-violet-950/40',
       borderHover: 'hover:border-violet-500/50 hover:shadow-violet-950/30',
@@ -40,7 +50,7 @@ export default function ActionCards({
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 md:gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
       {cards.map((card) => {
         const Icon = card.icon;
         return (

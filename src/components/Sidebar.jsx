@@ -3,6 +3,7 @@ import {
   LayoutDashboard,
   Layers,
   GraduationCap,
+  BookOpen,
   Bot,
   History,
   Trophy,
@@ -36,6 +37,13 @@ export default function Sidebar({
       icon: LayoutDashboard,
       badge: null,
       activeColor: 'bg-emerald-500/15 text-emerald-400 border-l-4 border-emerald-500'
+    },
+    {
+      id: 'vocab_bank',
+      label: isBn ? 'ভোকাবুলারি ব্যাংক' : 'Vocabulary Bank',
+      icon: BookOpen,
+      badge: 'NCTB',
+      badgeColor: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
     },
     {
       id: 'flashcards',

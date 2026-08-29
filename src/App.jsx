@@ -15,6 +15,7 @@ import FlashcardsExplorer from './components/FlashcardsExplorer';
 import WeakWordsSection from './components/WeakWordsSection';
 import UserProfileModal from './components/UserProfileModal';
 import LandingPage from './components/LandingPage';
+import VocabularyBank from './components/VocabularyBank';
 import { usersList } from './data/users';
 import { hscQuestionsList, hscVocabularyList } from './data/questions';
 import { Trophy, GraduationCap, BookOpen, Layers } from 'lucide-react';
@@ -146,6 +147,8 @@ export default function App() {
     switch (activeTab) {
       case 'dashboard':
         return isBn ? 'ড্যাশবোর্ড' : 'Dashboard';
+      case 'vocab_bank':
+        return isBn ? 'ভোকাবুলারি ব্যাংক' : 'Vocabulary Bank';
       case 'flashcards':
         return isBn ? 'ফ্ল্যাশকার্ড' : 'Flashcards';
       case 'exams':
@@ -204,9 +207,10 @@ export default function App() {
         <main className="flex-1 overflow-y-auto p-3.5 sm:p-5 md:p-6 lg:p-7 pb-24 lg:pb-7 space-y-6">
           {activeTab === 'dashboard' && (
             <div className="max-w-[1550px] mx-auto space-y-6">
-              {/* Top 3 Action Feature Cards */}
+              {/* Top 4 Action Feature Cards */}
               <ActionCards
                 lang={lang}
+                onOpenVocabBank={() => setActiveTab('vocab_bank')}
                 onOpenFlashcards={() => setActiveTab('flashcards')}
                 onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
                 onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
@@ -350,6 +354,18 @@ export default function App() {
                   </div>
                 ))}
               </div>
+            </div>
+          )}
+
+          {activeTab === 'vocab_bank' && (
+            <div className="max-w-6xl mx-auto">
+              <VocabularyBank
+                lang={lang}
+                onStartExam={() => setActiveTab('exams')}
+                onOpenFlashcards={() => setActiveTab('flashcards')}
+                weakWords={weakWords}
+                onToggleWeakWord={handleToggleWeakWord}
+              />
             </div>
           )}
 
