@@ -171,10 +171,10 @@ export const hscUnits = [
     bgClass: 'bg-[#e05307] hover:bg-[#f16010]',
     gradient: 'from-[#f16010] to-[#b33e02]',
     progress: 0,
-    totalWords: 50,
+    totalWords: 53,
     masteredWords: 0,
     lessons: [
-      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners Around the World', titleBn: 'বিশ্বজুড়ে শিষ্টাচার ও সংস্কৃতি', questionsCount: '১০০ টি প্রশ্ন', wordsCount: 25, progress: 0 },
+      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners Around the World', titleBn: 'বিশ্বজুড়ে শিষ্টাচার ও সংস্কৃতি', questionsCount: '১১২ টি প্রশ্ন', wordsCount: 28, progress: 0 },
       { id: 'u10-l2', number: 'Lesson 2', title: 'Food and Culture', titleBn: 'খাদ্য ও সংস্কৃতি (সৈয়দ মুজতবা আলী)', questionsCount: '১০০ টি প্রশ্ন', wordsCount: 25, progress: 0 },
       { id: 'u10-l3', number: 'Lesson 3', title: 'Traditional Craft and Design', titleBn: 'ঐতিহ্যবাহী কারুকলা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u10-l4', number: 'Lesson 4', title: 'Fitness and Wellbeing', titleBn: 'সুস্বাস্থ্য ও শরীরচর্চা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },

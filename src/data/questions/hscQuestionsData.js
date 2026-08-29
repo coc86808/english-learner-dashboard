@@ -1,10 +1,10 @@
 /**
  * HSC English Vocabulary and MCQ Question Database
  * Unit 1: Education and Life | Lesson 1: The Parrot's Tale (23 Words)
- * Unit 10: Lifestyle | Lesson 1: Manners Around the World (25 Words)
+ * Unit 10: Lifestyle | Lesson 1: Manners Around the World (28 Words)
  * Unit 10: Lifestyle | Lesson 2: Food and Culture (25 Words)
  *
- * Total: 73 Vocabulary Words | 292 Board-Standard MCQs
+ * Total: 76 Vocabulary Words | 304 Board-Standard MCQs
  */
 
 export const hscVocabularyList = [
@@ -883,6 +883,42 @@ export const hscVocabularyList = [
     "exampleSentence": "The fried cucumber dolma was hailed by Mujtaba Ali as a truly superlative culinary creation.",
     "unit": "Unit 10: Lesson 2 (Food and Culture)",
     "boardExamTag": "HSC Board Exam 2026"
+  },
+  {
+    "id": "vocab-74",
+    "word": "Initially",
+    "bengaliMeaning": "শুরুতে / প্রাথমিকভাবে / প্রারম্ভে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "At first, Originally, In the beginning, Primarily, Early on",
+    "antonyms": "Finally, Ultimately, Eventually, Lastly, In the end",
+    "englishMeaning": "At first; at the beginning or initial stage of an event.",
+    "exampleSentence": "In China, a gift is initially refused out of courtesy before it is gratefully accepted.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam, Unit 10"
+  },
+  {
+    "id": "vocab-75",
+    "word": "Greet",
+    "bengaliMeaning": "অভিবাদন জানানো / সম্ভাষণ করা / স্বাগত জানানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Welcome, Salute, Hail, Address, Acknowledge",
+    "antonyms": "Ignore, Overlook, Snub, Avoid, Dismiss",
+    "englishMeaning": "To give a polite word or sign of welcome or recognition upon meeting someone.",
+    "exampleSentence": "In Chinese cultural tradition, you should greet the oldest or most senior person first.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Standard, Unit 10"
+  },
+  {
+    "id": "vocab-76",
+    "word": "Cheek",
+    "bengaliMeaning": "গাল / কপোল / মুখের পাশের অংশ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Side of face, Jowl, Jawline",
+    "antonyms": "Forehead, Chin",
+    "englishMeaning": "Either side of the face below the eye and above the jaw.",
+    "exampleSentence": "Kissing on the cheek in greeting is common in Britain but strictly forbidden in public in the Middle East.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "NCTB Textbook Vocab, Unit 10"
   }
 ];
 
@@ -1034,7 +1070,6 @@ export const hscQuestionsList = buildQuestionsDatabase();
 export function smartInterleaveQuestions(rawQuestions = []) {
   if (!rawQuestions || rawQuestions.length <= 1) return rawQuestions;
 
-  // Group questions by vocabId or word
   const wordBuckets = {};
   rawQuestions.forEach((q) => {
     const key = q.vocabId || q.word;
@@ -1043,7 +1078,6 @@ export function smartInterleaveQuestions(rawQuestions = []) {
   });
 
   const keys = Object.keys(wordBuckets);
-  // Shuffle word bucket order slightly to give fresh variety
   const shuffledKeys = [...keys].sort(() => Math.random() - 0.5);
 
   const interleaved = [];

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Unit Ten: Lifestyle
  * Lesson 1: Manners Around the World (বিশ্বজুড়ে শিষ্টাচার ও সংস্কৃতি)
  * Official NCTB HSC English For Today Textbook
@@ -29,7 +29,7 @@ Do present and receive things with both hands. Politely refusing a gift before a
 
 Greetings:
 Shake hands softly as a firm handshake could be considered a sign of aggression. It may make your Chinese friends feel uncomfortable. Greet the most senior first and gradually others. Children are expected to greet you rather than you greeting the children.`,
-      keyVocab: ['Chopsticks', 'Graceful', 'Norm', 'Discouraged', 'Symbolise', 'Aggression', 'Senior']
+      keyVocab: ['Chopsticks', 'Graceful', 'Norm', 'Initially', 'Discouraged', 'Symbolise', 'Aggression', 'Greet', 'Senior']
     },
     {
       paraNumber: 2,
@@ -45,7 +45,7 @@ In general, South Africans give gifts on birthdays and Christmas. It is common f
 
 Greetings:
 When dealing with foreigners, most South Africans shake hands with a smile while maintaining eye-contact. Some women do not shake hands and merely nod their head, so it is best to wait for a woman to extend her hand. Men may kiss a woman they know well on the cheek in place of a handshake. Greetings are leisurely and are marked by good cheers.`,
-      keyVocab: ['Casual', 'Hostess', 'Preparation', 'Gradually', 'Foreigners', 'Merely', 'Extend', 'Leisurely']
+      keyVocab: ['Casual', 'Hostess', 'Preparation', 'Gradually', 'Foreigners', 'Merely', 'Extend', 'Cheek', 'Leisurely']
     },
     {
       paraNumber: 3,
@@ -61,7 +61,7 @@ It is customary to take a small gift for the host if invited to a home. This is 
 
 Greetings:
 A handshake is the most common form of greeting among the British people and is customary when you are introduced to somebody new. It is only when you meet a friend of the opposite sex whom you haven't seen for a long time, that you would give a kiss on the cheek.`,
-      keyVocab: ['Customary', 'Informal', 'Indicates', 'Receipt']
+      keyVocab: ['Customary', 'Informal', 'Cheek', 'Receipt']
     },
     {
       paraNumber: 4,
@@ -77,7 +77,7 @@ Gifts are given frequently to show love, gratitude and respect. Anytime you are 
 
 Greetings:
 The most common greeting is salaam alaykum ('May peace be upon you'), to which the reply is waalaykum as salaam ('and peace be upon you too'). Shaking hands (between men) is an important gesture of mutual respect. Hugging and kissing on the cheeks between same sex people in social situations are quite common though it is strictly forbidden between men and women.`,
-      keyVocab: ['Utensils', 'Gratitude', 'Gesture', 'Mutual', 'Forbidden']
+      keyVocab: ['Utensils', 'Gratitude', 'Gesture', 'Mutual', 'Forbidden', 'Cheek']
     }
   ]
 };
