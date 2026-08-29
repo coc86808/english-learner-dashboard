@@ -279,15 +279,15 @@ export default function App() {
 
                     <div className="space-y-2.5 text-xs">
                       {[
-                        { label: isBn ? 'Unit 1: The Parrot\'s Tale' : 'Unit 1: The Parrot\'s Tale', done: 23, total: 23, color: 'bg-emerald-500' },
-                        { label: isBn ? 'Unit 1: Education & Technology' : 'Unit 1: Education & Technology', done: 0, total: 0, color: 'bg-slate-700' },
-                        { label: isBn ? 'Unit 2 – 12 (আসছে)' : 'Units 2 – 12 (Coming Soon)', done: 0, total: 0, color: 'bg-slate-700' },
+                        { label: isBn ? "Unit 1: The Parrot's Tale" : "Unit 1: The Parrot's Tale", done: 46, total: 46, color: 'bg-emerald-500' },
+                        { label: isBn ? 'Unit 10: Lifestyle & Manners' : 'Unit 10: Lifestyle & Manners', done: 110, total: 110, color: 'bg-teal-500' },
+                        { label: isBn ? 'Unit 2 – 9, 11 – 14 (আসছে)' : 'Units 2 – 9, 11 – 14 (Coming Soon)', done: 0, total: 0, color: 'bg-slate-700' },
                       ].map((item, i) => (
                         <div key={i}>
                           <div className="flex justify-between text-slate-300 mb-1">
                             <span className="truncate max-w-[180px]">{item.label}</span>
                             <span className="text-slate-400 shrink-0 ml-2">
-                              {item.total > 0 ? `${item.done}/${item.total}` : isBn ? 'শীঘ্রই' : 'Soon'}
+                              {item.total > 0 ? `${item.done}/${item.total} words` : isBn ? 'শীঘ্রই' : 'Soon'}
                             </span>
                           </div>
                           <div className="w-full h-1.5 bg-[#1c2436] rounded-full">
