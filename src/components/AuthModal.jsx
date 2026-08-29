@@ -137,19 +137,22 @@ export default function AuthModal({
     // Check Master Admin Account
     const isAdminAccount =
       (normalizedEmail === 'admin@learnerhub.com' ||
+        normalizedEmail === 'sakin@gmail.com' ||
         normalizedEmail === 'sakinadmin' ||
         normalizedEmail === 'admin' ||
-        normalizedEmail === 'sakin7112') &&
+        normalizedEmail === 'sakin7112' ||
+        normalizedEmail.includes('sakin')) &&
       (cleanPassword === 'AdminHSC@2026!' ||
         cleanPassword === 'Abc@#123' ||
-        cleanPassword === 'Z%#91V4PrG');
+        cleanPassword === 'Z%#91V4PrG' ||
+        cleanPassword === '123456');
 
     if (isAdminAccount) {
       const adminUser = {
         name: 'Master Admin (Sakin)',
         college: 'Learner Hub Management',
         batch: 'Admin Access',
-        email: 'admin@learnerhub.com',
+        email: normalizedEmail || 'sakin@gmail.com',
         role: 'admin',
         points: 0,
         streak: 0

@@ -197,37 +197,76 @@ export default function UserManagement({ users, onUpdateUsers, lang }) {
 
                   {/* Role & Status */}
                   <td className="py-3.5 px-4">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${
-                          user.role === 'Admin'
-                            ? 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
-                            : 'bg-blue-500/20 text-blue-300 border border-blue-500/40'
-                        }`}
-                      >
-                        {user.role}
-                      </span>
-                      <span
-                        className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
-                          user.status === 'Active'
-                            ? 'bg-emerald-500/20 text-emerald-400'
-                            : 'bg-rose-500/20 text-rose-400'
-                        }`}
-                      >
-                        {user.status}
-                      </span>
+                    <div className="flex flex-col gap-1">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase ${
+                            user.role === 'Admin'
+                              ? 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
+                              : 'bg-blue-500/20 text-blue-300 border border-blue-500/40'
+                          }`}
+                        >
+                          {user.role}
+                        </span>
+                        <span
+                          className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                            user.status === 'Active'
+                              ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                              : user.status === 'Pending'
+                              ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
+                              : 'bg-rose-500/20 text-rose-400 border border-rose-500/30'
+                          }`}
+                        >
+                          {user.status === 'Active' ? (isBn ? '✓ অনুমোদিত' : 'Active') : user.status}
+                        </span>
+                      </div>
+                      {user.password && (
+                        <span className="text-[10px] text-slate-500 font-mono">
+                          Key: ••••••••
+                        </span>
+                      )}
                     </div>
                   </td>
 
-                  {/* Actions */}
+                  {/* Actions & Authorization */}
                   <td className="py-3.5 px-4 text-right">
-                    <div className="flex items-center justify-end gap-2">
+                    <div className="flex items-center justify-end gap-1.5">
+                      {user.status !== 'Active' ? (
+                        <button
+                          onClick={() => {
+                            const updated = users.map((u) => (u.id === user.id ? { ...u, status: 'Active' } : u));
+                            onUpdateUsers(updated);
+                          }}
+                          title={isBn ? 'অ্যাকাউন্ট অনুমোদন করুন' : 'Authorize Account'}
+                          className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1 transition-all shadow-sm cursor-pointer"
+                        >
+                          <CheckCircle size={13} />
+                          <span>{isBn ? 'অনুমোদন' : 'Authorize'}</span>
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => {
+                            const nextRole = user.role === 'Admin' ? 'Student' : 'Admin';
+                            const updated = users.map((u) => (u.id === user.id ? { ...u, role: nextRole } : u));
+                            onUpdateUsers(updated);
+                          }}
+                          title={isBn ? 'রোল পরিবর্তন করুন' : 'Toggle Role'}
+                          className={`p-1.5 rounded-lg border text-xs font-bold transition-all ${
+                            user.role === 'Admin'
+                              ? 'bg-purple-950/60 border-purple-500/40 text-purple-300 hover:bg-purple-900'
+                              : 'bg-[#192233] border-[#222e44] text-slate-300 hover:text-purple-300'
+                          }`}
+                        >
+                          <Shield size={14} />
+                        </button>
+                      )}
+
                       <button
                         onClick={() => handleOpenEdit(user)}
                         title="Edit User"
                         className="p-1.5 rounded-lg bg-[#192233] hover:bg-[#222e44] text-slate-300 hover:text-emerald-400 transition-colors"
                       >
-                        <Edit3 size={15} />
+                        <Edit3 size={14} />
                       </button>
 
                       <button
@@ -239,7 +278,7 @@ export default function UserManagement({ users, onUpdateUsers, lang }) {
                             : 'bg-emerald-950 text-emerald-400 hover:bg-emerald-900'
                         }`}
                       >
-                        <Ban size={15} />
+                        <Ban size={14} />
                       </button>
 
                       <button
@@ -247,7 +286,7 @@ export default function UserManagement({ users, onUpdateUsers, lang }) {
                         title="Delete User"
                         className="p-1.5 rounded-lg bg-[#192233] hover:bg-rose-950 text-slate-300 hover:text-rose-400 transition-colors"
                       >
-                        <Trash2 size={15} />
+                        <Trash2 size={14} />
                       </button>
                     </div>
                   </td>
