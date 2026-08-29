@@ -1,7 +1,6 @@
-﻿/**
+/**
  * Unit Ten: Lifestyle
- * Lesson 2/3: Food and Culture (খাদ্য ও সংস্কৃতি)
- * Author: Syed Mujtaba Ali (Translated by Nazes Afroz from Tales of a Voyager / জলে ডাঙ্গায়)
+ * Lesson 2: Etiquette Netquette (Good manners always wins / শিষ্টাচার সর্বদা জয়ী হয়)
  * Official NCTB HSC English For Today Textbook
  */
 
@@ -10,62 +9,53 @@ export const unit10Lesson2Textbook = {
   unitTitle: 'Unit 10: Lifestyle',
   unitTitleBn: 'ইউনিট ১০: জীবনযাত্রা ও সংস্কৃতি',
   lessonId: 'u10-l2',
-  lessonNumber: 'Lesson 2/3',
-  title: 'Food and Culture',
-  titleBn: 'খাদ্য ও সংস্কৃতি (সৈয়দ মুজতবা আলী - জলে ডাঙ্গায়)',
-  author: 'Syed Mujtaba Ali (Translated by Nazes Afroz)',
-  summaryBn: 'সৈয়দ মুজতবা আলীর বিখ্যাত ভ্রমণকাহিনী "জলে ডাঙ্গায়" (Tales of a Voyager)-এর এই অংশে মিসরের কায়রো শহরের বর্ণিল খাদ্যাভ্যাস, বিখ্যাত "ফুল" (মিশরীয় শিম বা ব্রড বিনের খাবার), চাল-মাংস-পনির ভরা শসা এবং বিশ্বজুড়ে খাদ্য সংস্কৃতির রসাত্মক ও অন্তর্দৃষ্টিপূর্ণ তুলনা তুলে ধরা হয়েছে।',
+  lessonNumber: 'Lesson 2',
+  title: 'Etiquette Netquette',
+  titleBn: 'শিষ্টাচার ও নেটকেট (Good manners always wins)',
+  storyTitle: 'Good manners always wins',
+  storyTitleBn: 'শিষ্টাচার সর্বদা জয়ী হয়',
+  author: 'NCTB English For Today',
+  summaryBn: 'এই শিক্ষণীয় গল্পে এক অদ্ভুত ও স্বার্থপর ব্যক্তির কথা বলা হয়েছে যে মানুষের মুখে বিনয়ী শব্দ (যেমন ‘দয়া করে’, ‘ধন্যবাদ’) সহ্য করতে না পেরে এমন একটি মেশিন আবিষ্কার করে যা সব শিষ্টাচারসূচক শব্দ চুরি করে নেয়। এর ফলে সমাজে অশান্তি ও রুক্ষতা ছড়িয়ে পড়ে। পরিশেষে বিশেষ চাহিদাসম্পন্ন দুই ছোট মেয়ে তাদের ইশারা ভাষা ও বুদ্ধির মাধ্যমে মেশিনটিকে রিউইন্ড করে ধ্বংস করে দেয় এবং সমাজে আবারও শিষ্টাচার, পারস্পরিক শ্রদ্ধা ও শান্তি ফিরে আসে।',
   sections: [
     {
       paraNumber: 1,
-      heading: 'The Voyager & Egyptian Bean Delicacy (Fool)',
-      headingBn: 'ভ্রমণযাত্রী ও মিশরীয় শিমের অনন্য খাবার "ফুল"',
-      content: `Syed Mujtaba Ali was an acclaimed Bengali author, academic and linguist. He was a travel enthusiast and his travelogues are regarded as precious gems in our Bangla literature. At some point of time between the two World Wars, Syed Mujtaba Ali set out on a ship from India on a journey to Europe. Leaving Sri Lanka behind, he sailed across the Arabian Sea, then along the coast of Africa, before reaching the Suez Port. Syed Mujtaba Ali's time in Egypt was punctuated by a number of funny anecdotes, both about the people and the pyramids. The following excerpt is from Syed Mujtaba Ali's travelogue, Tales of a Voyager (Jolay Dangay) where he gives a charming and insightful description of Egyptian food and language. Nazes Afroz translated the following excerpt.
-
-I also tasted another unique item — Egyptian broad bean seeds. You must have seen the massive kegs of oil in the Alibaba film. In two or three such kegs, they put broad bean seeds and boil them overnight. After adding olive oil and some spices, they serve them from the morning. We ate them at midnight. What taste! I can still feel it in my mouth. Our pumpkin seeds are no match for this delicacy. Even Paul and Percy agreed that the soybeans of China would be far behind, never mind surpassing it.`,
-      keyVocab: ['Acclaimed', 'Travelogue', 'Punctuated', 'Anecdotes', 'Insightful', 'Delicacy', 'Surpassing']
+      heading: 'The Strange Man & Hatred of Politeness',
+      headingBn: 'অদ্ভুত মানুষ ও ভদ্রতার প্রতি তার চরম ঘৃণা',
+      content: `Once upon a time, there was a strange man who was highly bothered to see others' happiness. His own personal interest was at any cost important to him. Neither was he a polite man, nor did he like other people to be polite to each other. In fact, he hated the courteous and polite people around him and thus he hated a few expressions like please, thank you, don't mention it etc. It troubled him a lot when people around were smiling to use these expressions.`,
+      bengaliTranslation: `একদা এক অদ্ভুত লোক ছিল যে অন্যদের সুখ দেখতে অত্যন্ত বিরক্ত হতো। যেকোনো মূল্যে তার নিজের ব্যক্তিগত স্বার্থই তার কাছে সবচেয়ে গুরুত্বপূর্ণ ছিল। সে নিজে কোনো ভদ্র লোক ছিল না, আবার অন্য মানুষ একে অপরের প্রতি ভদ্র আচরণ করুক তাও সে পছন্দ করতো না। প্রকৃতপক্ষে, সে তার চারপাশের ভদ্র ও বিনয়ী লোকদের ঘৃণা করতো এবং তাই সে ‘দয়া করে’, ‘তোমাকে ধন্যবাদ’, ‘এটা কোনো ব্যাপারই না’ ইত্যাদি কিছু অভিব্যক্তি ঘৃণা করতো। তার চারপাশের মানুষ যখন হাসিমুখে এই অভিব্যক্তিগুলো ব্যবহার করতো, তখন এটা তাকে ভীষণভাবে কষ্ট দিতো।`,
+      keyVocab: ['Bothered', 'Courteous', 'Polite', 'Expressions', 'Troubled']
     },
     {
       paraNumber: 2,
-      heading: 'Whims of Pharaohs & "Fool\'s Restaurant" in Cairo',
-      headingBn: 'ফারাওদের খেয়ালিপনা ও কায়রোর "ফুলের রেস্তোরাঁ"',
-      content: `We heard that the king and the poor — everyone ate those beans twice a day. The restaurant owner told us that some pharaoh liked it so much that he had forbidden his subjects to eat these beans! Hence the reason why people talk about the whims of the pharaohs.
-I picked up its Arabic name — fool.
-
-The following is an incident from the following morning but as it is related to this item, I will narrate it here.
-Dozens of nationalities like the French, the Greeks, the Italians, the English lived in Cairo. So the city was adorned with signage in languages from around the world. The following morning when we were exploring the nooks and crannies of the city, I came across a signboard that said:
-Fool's Restaurant
-
-Paul, Percy and I noticed it together. We were lost for words and finally we burst out laughing.
-"A restaurant for stupid people?"
-What did it really mean?
-At that point I suddenly remembered the word fool had been used in Arabic for the broad bean dish. Not meaning stupid people. It meant this shopkeeper sold broad bean seeds. The three of us peeped inside the shop to see that all the customers had a plate of fool in front of them.`,
-      keyVocab: ['Forbidden', 'Whims', 'Adorned', 'Signage', 'Nooks and crannies', 'Narrate']
+      heading: 'The Malicious Machine to Steal Polite Words',
+      headingBn: 'ভদ্র শব্দ চুরির জন্য ক্ষতিকর মেশিন উদ্ভাবন',
+      content: `The man considered all these expressions extravagant. So, he took a mission to invent a device that would steal these polite words. He calculated two benefits from his efforts. One, people won't use these words and thus he would be relieved of his apathy to people's polite behavior and the second one was earning money by selling the words stolen by the machine to somebody else. He took great caution so that nobody would understand his secret plan. After a few months' hard work, he succeeded in inventing the machine he desired for a long time.`,
+      bengaliTranslation: `লোকটি এই সমস্ত অভিব্যক্তিকে অপব্যয়ী ও অনাবশ্যক মনে করতো। তাই সে এমন একটি যন্ত্র উদ্ভাবন করার অভিযান হাতে নিল যা এই ভদ্র শব্দগুলো চুরি করবে। সে তার এই প্রচেষ্টা থেকে দুটি সুবিধার হিসাব কষেছিল। প্রথমত, মানুষ এই শব্দগুলো ব্যবহার করবে না এবং এভাবে সে লোকজনের ভদ্র আচরণের প্রতি তার তীব্র বিরক্তি ও অনীহা থেকে মুক্তি পাবে; আর দ্বিতীয়টি হলো, মেশিনের সাহায্যে চুরি করা এই শব্দগুলো অন্য কারো কাছে বিক্রি করে অর্থ উপার্জন করা। সে অত্যন্ত সতর্কতা অবলম্বন করেছিল যাতে কেউ তার গোপন পরিকল্পনা বুঝতে না পারে। কয়েক মাসের কঠোর পরিশ্রমের পর, সে যে মেশিনটি দীর্ঘদিন ধরে চেয়েছিল তা উদ্ভাবন করতে সফল হলো।`,
+      keyVocab: ['Extravagant', 'Relieved', 'Apathy', 'Caution', 'Desired']
     },
     {
       paraNumber: 3,
-      heading: 'Gastronomy & Comparison of Global Flavours',
-      headingBn: 'রন্ধনকলা ও বিশ্বের নানা দেশের স্বাদের তুলনা',
-      content: `Our Bengali meals consist of five flavours of food — bitter, savoury, hot, sour sides and desserts. The English eat only sweet and savoury preparations. They cannot stomach the hot stuff, and even less the sour. And possibly never even know that bitters could be consumed. Hence English cuisine seems bland and tasteless to us. But the English can bake good cake-pastry-pudding, something they learned from the Italians. In my opinion, our sandesh and rasogolla are such delicacies that there is no reason to go bananas over those desserts.
+      heading: 'Disappearance of Politeness & Rise of Bitterness',
+      headingBn: 'শিষ্টাচারের বিলুপ্তি ও সমাজে রুক্ষতার বিস্তার',
+      content: `The machine started working and it gave the man complete satisfaction. People from their long practice would try to say thank you. so kind of you. my pleasure, don't mention it etc. as to appreciate others or express gratitude. But their tongue could not produce these words. The machine caught them. It resulted in a huge change in people's behaviour and attitudes. Gradually people became rough and tough, they lost their mental cool, they were blaming each other or fighting with each other.
 
-Egyptian cuisine is a close cousin of Indian food of the Mughlai variety. I might not be able to prove the theory but after tasting food in many countries, it is my firm belief that imitating the Taj Mahal of cooking, that the Mughals perfected after coming to India (one should not forget that they could not master it in their own land as the Indian spices were unavailable in their motherland of Turkestan), the people in Afghanistan, Iran, the Arab land, Egypt, even Spain, have been trying to build their own little Taj of cuisine. The reach of this gastronomy has spread to East Europe's Greece, Hungary, Rumania, Yugoslavia, Albania and even Italy.`,
-      keyVocab: ['Savoury', 'Stomach', 'Cuisine', 'Delicacies', 'Gastronomy', 'Imitating']
+They became so selfish that they started refusing to help others without having a return for their, service. Love, respect, affections, fellow feelings became some unknown words and, eventually, they were missing from people's practices.`,
+      bengaliTranslation: `মেশিনটি কাজ করা শুরু করলো এবং তা লোকটিকে পূর্ণ সন্তুষ্টি এনে দিলো। মানুষ তাদের দীর্ঘদিনের অভ্যাস থেকে অন্যদের প্রশংসা করতে বা কৃতজ্ঞতা প্রকাশ করতে 'আপনাকে ধন্যবাদ', 'আপনার অনেক দয়া', 'আমার আনন্দ', 'কিছু মনে করবেন না' ইত্যাদি বলার চেষ্টা করতো। কিন্তু তাদের জিহ্বা এই শব্দগুলো উচ্চারণ করতে পারতো না। মেশিনটি সেগুলোকে আটকে দিতো। এর ফলে মানুষের আচরণ ও দৃষ্টিভঙ্গিতে এক বিরাট পরিবর্তন আসলো। ধীরে ধীরে মানুষ রূঢ় ও নিষ্ঠুর হয়ে উঠলো, তারা তাদের মানসিক ধৈর্য হারিয়ে ফেললো, তারা একে অপরকে দোষারোপ করতে বা একে অপরের সাথে ঝগড়া-মারামারি করতে লাগলো।
+
+তারা এতটাই স্বার্থপর হয়ে উঠলো যে নিজেদের সেবার বিনিময়ে কিছু না পেলে অন্যদের সাহায্য করতে অস্বীকার করতে শুরু করলো। ভালোবাসা, সম্মান, স্নেহ, সহমর্মিতা যেন কিছু অপরিচিত শব্দ হয়ে গেল এবং পরিশেষে, এগুলো মানুষের আচরণ ও চর্চা থেকে হারিয়ে গেল।`,
+      keyVocab: ['Satisfaction', 'Gratitude', 'Attitudes', 'Refusing', 'Affections', 'Fellow feelings']
     },
     {
       paraNumber: 4,
-      heading: 'The Stuffed Cucumber Marvel & Superlative Culinary Art',
-      headingBn: 'পোলাও ও মাংস ভরা শসার বিস্ময়কর রন্ধনশৈলী',
-      content: `I discovered all these theories many years later. At present Abul Asfia and Claudette Chenier brought back samples of various dishes on a platter. I saw there was murg musallam, sheesh kebab and five or six kinds of unknown items. The known ones did not really carry the aroma of Kolkata food but it mattered little. After eating Irish stew and Italian macaroni on the ship, our palates had lost all taste; so seeing these dishes made our mouths water. My heart was craving for a little boiled rice, fried bitter gourd, sonamoog daal or yellow lentil, fried potol [pointed gourd] and fish curry — why was I daydreaming? Just rice and fish curry could do, but these were not available outside Bengal. So what was the point of such mourning?
-So I showed them the items from the platter I did not want.
+      heading: 'Two Clever Girls, the Explosion & Victory of Good Manners',
+      headingBn: 'বুদ্ধিমতী দুই মেয়ে, মেশিনের ধ্বংস ও শিষ্টাচারের চিরন্তন জয়',
+      content: `The man was terribly happy with his success, but he didn't count on two little girls with special needs. They had speech difficulties and so they used to communicate using sign language. Since the machine couldn't steal gestures, these girls continued their previous practices of being kind and polite. Soon they realized the difference between them and other people which led them to investigate the reason. After much toil, they could discover the wicked man, who was in a hide out on the top of a hill next to the sea with his enormous machine busy in capturing people's polite words and separating them into letters. The girls found the man taking a nap when they crept up to the machine and rewound it so that people could get back to their normal behaviour.
 
-Peeking at the next table, I saw one man was about to start eating two cucumbers on a plate. How could two cucumbers, whatever the size might be, be enough for someone's dinner? I could not solve that puzzle by wracking my brain. That too, he was sitting at a table in an eatery supplemented by sauces and chutneys. Even in a sophisticated country like England, people would bite into an apple right after buying it off the street. They did not have to enter a restaurant to eat it with a fork and knife with sauces and chutneys...
+As a result, the machine exploded, scattering all the letters it had gathered into the sky. After some moments, the letters started coming down, like rain, and ended up in the sea. After that, everyone became polite and respectful to each other again. The anger and the arguments stopped, proving that good manners are very useful for keeping people together in a spirit of happiness.`,
+      bengaliTranslation: `লোকটি তার সাফল্যে ভীষণ খুশি হয়েছিল, কিন্তু সে বিশেষ চাহিদাসম্পন্ন দুটি ছোট মেয়ের কথা হিসেবে ধরেনি। তাদের বাকপ্রতিবন্ধকতা ছিল এবং তাই তারা ইশারা ভাষা (সাইন ল্যাঙ্গুয়েজ) ব্যবহার করে যোগাযোগ করতো। যেহেতু মেশিনটি শারীরিক অঙ্গভঙ্গি চুরি করতে পারতো না, তাই এই মেয়ে দুটি সদয় ও বিনয়ী হওয়ার তাদের আগের অভ্যাস বজায় রেখেছিল। শীঘ্রই তারা নিজেদের এবং অন্যান্য মানুষের মধ্যে পার্থক্য বুঝতে পারলো যা তাদেরকে কারণ অনুসন্ধানে পরিচালিত করলো। অনেক পরিশ্রমের পর, তারা সেই দুষ্ট লোকটির সন্ধান পেল, যে সাগরের পাশের একটি পাহাড়ের চূড়ায় তার আস্তানায় বিশালাকার মেশিন নিয়ে মানুষের ভদ্র শব্দগুলো ধরে সেগুলোকে অক্ষরে আলাদা করতে ব্যস্ত ছিল। মেয়েরা লোকটিকে ঘুমাতে দেখে চুপিচুপি মেশিনের কাছে চলে গেল এবং এটিকে রিউইন্ড (পেছনে ঘুরিয়ে) করে দিলো যাতে মানুষ তাদের স্বাভাবিক আচরণ ফিরে পেতে পারে।
 
-At that point I saw, instead of chewing the cucumber, the man just pressed it in the middle and some polau-like substance mixed with a few things oozed out. I was surprised to no end. I told the restaurant owner that whatever be my luck, I ought to eat those cucumbers.
-
-Two cucumbers were served. After pressing them a little with a fork, the polau came out. The polau was mixed with small pieces of meat (what we call keema), slices of tomato and grated country cheese. I realised that all the stuffings had been put inside the boiled cucumber and finally it was fried in ghee. The same principle as our dolma of fish and potol — the only difference was here they had stuffed the cucumber with polau, meat, tomato and cheese. Thus this was a truly superlative creation.
-And what taste! It melted the moment it touched my tongue.
-I had never eaten such a five-in-one dish.`,
-      keyVocab: ['Aroma', 'Palates', 'Craving', 'Supplemented', 'Sophisticated', 'Stuffings', 'Superlative']
+ফলস্বরূপ, মেশিনটি বিস্ফোরিত হলো এবং আকাশে ছড়িয়ে দিল তার জমা করা সমস্ত অক্ষরগুলোকে। কিছুক্ষণ পর, অক্ষরগুলো বৃষ্টির মতো নিচে নামতে শুরু করলো এবং সাগরে গিয়ে পতিত হলো। এরপর, সবাই আবারও একে অপরের প্রতি বিনয়ী ও শ্রদ্ধাশীল হয়ে উঠলো। রাগ ও বাকবিতণ্ডা থেমে গেল, যা প্রমাণ করে যে মানুষকে আনন্দের পরিবেশে একসাথে রাখার জন্য ভালো শিষ্টাচার অত্যন্ত ফলপ্রসূ ও অপরিহার্য।`,
+      keyVocab: ['Special needs', 'Gestures', 'Investigate', 'Toil', 'Wicked', 'Enormous', 'Capturing', 'Crept', 'Rewound', 'Exploded', 'Scattering', 'Respectful', 'Arguments']
     }
   ]
 };

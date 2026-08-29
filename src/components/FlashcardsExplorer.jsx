@@ -47,7 +47,7 @@ export default function FlashcardsExplorer({
     } else if (selectedLessonId === 'u10-l1') {
       list = hscVocabularyList.filter(item => item.unit.includes("Unit 10: Lesson 1") || item.unit.includes("Manners Around the World"));
     } else if (selectedLessonId === 'u10-l2') {
-      list = hscVocabularyList.filter(item => item.unit.includes("Unit 10: Lesson 2") || item.unit.includes("Food and Culture"));
+      list = hscVocabularyList.filter(item => item.unit.includes("Unit 10: Lesson 2") || item.unit.includes("Etiquette Netquette") || item.unit.includes("Good manners always wins") || item.unit.includes("Food and Culture"));
     }
     if (isShuffled) {
       list = [...list].sort(() => Math.random() - 0.5);
@@ -165,10 +165,10 @@ export default function FlashcardsExplorer({
             onChange={(e) => setSelectedLessonId(e.target.value)}
             className="bg-[#172030] border border-[#26334a] text-slate-200 text-xs rounded-xl px-3 py-2 outline-none focus:border-emerald-500 cursor-pointer font-medium"
           >
-            <option value="all">All Available Words (122 Words)</option>
-            <option value="u1-l1">Unit 1: The Parrot's Tale (23 Words)</option>
+            <option value="all">All Available Words (156 Words)</option>
+            <option value="u1-l1">Unit 1: The Parrot's Tale (46 Words)</option>
             <option value="u10-l1">Unit 10: Manners Around the World (74 Words)</option>
-            <option value="u10-l2">Unit 10: Food and Culture (25 Words)</option>
+            <option value="u10-l2">Unit 10: Etiquette Netquette (36 Words)</option>
           </select>
 
           <button

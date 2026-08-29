@@ -20,6 +20,7 @@ import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
+import ErrorBoundary from './ErrorBoundary';
 
 export default function UnitLessonExamModal({
   isOpen,
@@ -75,27 +76,29 @@ export default function UnitLessonExamModal({
   };
 
   const getFilteredQuestions = () => {
-    const categoryFiltered = hscQuestionsList.filter((q) =>
-      selectedCategories.includes(q.category)
+    const categoryFiltered = (hscQuestionsList || []).filter((q) =>
+      q && q.category && selectedCategories.includes(q.category)
     );
 
     if (!selectedUnit) return categoryFiltered;
 
+    const uNum = (selectedUnit.unitNumber || '').toLowerCase();
+    const uTitle = (selectedUnit.unitTitle || '').toLowerCase();
+
     const unitQuestions = categoryFiltered.filter((q) => {
-      if (!q.unit) return true;
-      return (
-        q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) ||
-        q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())
-      );
+      if (!q || !q.unit) return false;
+      const qu = q.unit.toLowerCase();
+      return (uNum && qu.includes(uNum)) || (uTitle && qu.includes(uTitle));
     });
 
     if (selectedLesson && selectedLesson.id !== 'all') {
+      const lNum = (selectedLesson.number || '').toLowerCase();
+      const lTitle = (selectedLesson.title || '').toLowerCase();
+
       const lessonQuestions = unitQuestions.filter((q) => {
-        return (
-          q.unit &&
-          (q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) ||
-            q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))
-        );
+        if (!q || !q.unit) return false;
+        const qu = q.unit.toLowerCase();
+        return (lNum && qu.includes(lNum)) || (lTitle && qu.includes(lTitle));
       });
       if (lessonQuestions.length > 0) return smartInterleaveQuestions(lessonQuestions);
     }
@@ -149,12 +152,14 @@ export default function UnitLessonExamModal({
               )}
             </div>
 
-            <HSCExamInterface
-              questions={getFilteredQuestions()}
-              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}`}
-              onClose={() => setIsExamActive(false)}
-              lang={lang}
-            />
+            <ErrorBoundary>
+              <HSCExamInterface
+                questions={getFilteredQuestions()}
+                sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}`}
+                onClose={() => setIsExamActive(false)}
+                lang={lang}
+              />
+            </ErrorBoundary>
           </div>
         ) : selectedUnit && selectedLesson ? (
           /* STEP 3: DEDICATED PRACTICE CATEGORIES SETUP SCREEN */

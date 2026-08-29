@@ -126,6 +126,18 @@ export default function TextbookReaderModal({
                   {sec.content}
                 </div>
 
+                {/* Bengali Translation if present */}
+                {sec.bengaliTranslation && (
+                  <div className="p-3.5 rounded-xl bg-[#141b2a] border border-[#223048] text-xs sm:text-sm text-emerald-200/90 leading-relaxed font-medium">
+                    <span className="text-[11px] font-bold text-emerald-400 block mb-1">
+                      🇧🇩 {isBn ? 'বাংলা অনুবাদ:' : 'Bengali Meaning:'}
+                    </span>
+                    <div className="whitespace-pre-line text-slate-300/90">
+                      {sec.bengaliTranslation}
+                    </div>
+                  </div>
+                )}
+
                 {/* Key Vocabulary Pills */}
                 {sec.keyVocab && sec.keyVocab.length > 0 && (
                   <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-[#182030] text-xs">

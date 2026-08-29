@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { 
   FileDown, 
   AlertCircle, 
@@ -26,15 +26,17 @@ export default function WeakWordsSection({
   const [searchQuery, setSearchQuery] = useState('');
 
   // Default fallback to 5 weak words from Unit 1 if user hasn't made any mistakes yet
-  const effectiveWeakWords = weakWords && weakWords.length > 0
+  const effectiveWeakWords = (Array.isArray(weakWords) && weakWords.length > 0
     ? weakWords
-    : hscVocabularyList.slice(0, 5); // Sample weak words for immediate demo
+    : (hscVocabularyList || []).slice(0, 5)
+  ).filter(item => Boolean(item && item.word));
 
   const filteredWords = effectiveWeakWords.filter(item => {
+    if (!item || !item.word) return false;
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
     return (
-      item.word.toLowerCase().includes(q) ||
+      (item.word && item.word.toLowerCase().includes(q)) ||
       (item.bengaliMeaning && item.bengaliMeaning.includes(q)) ||
       (item.synonyms && item.synonyms.toLowerCase().includes(q)) ||
       (item.antonyms && item.antonyms.toLowerCase().includes(q))

@@ -68,16 +68,12 @@ export default function App() {
   const [weakWords, setWeakWords] = useState(() => {
     try {
       const saved = localStorage.getItem('hsc_weak_words');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) return parsed.filter(w => w && w.word);
+      }
     } catch (e) {}
-    // Initial sample weak words for immediate demo & revision
-    return [
-      hscVocabularyList[0], // Ambitious
-      hscVocabularyList[1], // Unrealistic
-      hscVocabularyList[2], // Dreamer
-      hscVocabularyList[6], // Eloquent
-      hscVocabularyList[9], // Pedantic
-    ];
+    return (hscVocabularyList || []).slice(0, 5);
   });
 
   const handleToggleWeakWord = (wordItem) => {

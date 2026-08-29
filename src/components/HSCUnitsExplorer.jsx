@@ -17,6 +17,7 @@ import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList } from '../data/questions';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
+import ErrorBoundary from './ErrorBoundary';
 
 export default function HSCUnitsExplorer({
   lang = 'en',
@@ -76,30 +77,49 @@ export default function HSCUnitsExplorer({
     setIsExamActive(false);
   };
 
+  // Safely count questions for a category in selected unit/lesson
+  const getCategoryCount = (catId) => {
+    if (!selectedUnit) return 0;
+    const uNum = (selectedUnit.unitNumber || '').toLowerCase();
+    const uTitle = (selectedUnit.unitTitle || '').toLowerCase();
+    const lNum = selectedLesson && selectedLesson.id !== 'all' ? (selectedLesson.number || '').toLowerCase() : '';
+    const lTitle = selectedLesson && selectedLesson.id !== 'all' ? (selectedLesson.title || '').toLowerCase() : '';
+
+    return (hscQuestionsList || []).filter((q) => {
+      if (!q || q.category !== catId || !q.unit) return false;
+      const qu = q.unit.toLowerCase();
+      const matchUnit = (uNum && qu.includes(uNum)) || (uTitle && qu.includes(uTitle));
+      if (!matchUnit) return false;
+      if (!lNum && !lTitle) return true;
+      return (lNum && qu.includes(lNum)) || (lTitle && qu.includes(lTitle));
+    }).length;
+  };
+
   // Filter questions for the selected unit, lesson, and practice categories
   const getFilteredQuestions = () => {
-    // 1. Filter by selected category types
-    const categoryFiltered = hscQuestionsList.filter((q) =>
-      selectedCategories.includes(q.category)
+    const categoryFiltered = (hscQuestionsList || []).filter((q) =>
+      q && q.category && selectedCategories.includes(q.category)
     );
 
     if (!selectedUnit) return categoryFiltered;
 
+    const uNum = (selectedUnit.unitNumber || '').toLowerCase();
+    const uTitle = (selectedUnit.unitTitle || '').toLowerCase();
+
     const unitQuestions = categoryFiltered.filter((q) => {
-      if (!q.unit) return true;
-      return (
-        q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) ||
-        q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())
-      );
+      if (!q || !q.unit) return false;
+      const qu = q.unit.toLowerCase();
+      return (uNum && qu.includes(uNum)) || (uTitle && qu.includes(uTitle));
     });
 
     if (selectedLesson && selectedLesson.id !== 'all') {
+      const lNum = (selectedLesson.number || '').toLowerCase();
+      const lTitle = (selectedLesson.title || '').toLowerCase();
+
       const lessonQuestions = unitQuestions.filter((q) => {
-        return (
-          q.unit &&
-          (q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) ||
-            q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))
-        );
+        if (!q || !q.unit) return false;
+        const qu = q.unit.toLowerCase();
+        return (lNum && qu.includes(lNum)) || (lTitle && qu.includes(lTitle));
       });
       if (lessonQuestions.length > 0) return smartInterleaveQuestions(lessonQuestions);
     }
@@ -154,12 +174,14 @@ export default function HSCUnitsExplorer({
           </div>
 
           {/* Spaced-Repetition Exam Engine */}
-          <HSCExamInterface
-            questions={getFilteredQuestions()}
-            sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}`}
-            onClose={() => setIsExamActive(false)}
-            lang={lang}
-          />
+          <ErrorBoundary>
+            <HSCExamInterface
+              questions={getFilteredQuestions()}
+              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}`}
+              onClose={() => setIsExamActive(false)}
+              lang={lang}
+            />
+          </ErrorBoundary>
         </div>
       ) : selectedUnit && selectedLesson ? (
         /* ------------------------------------------------------------- */
@@ -230,28 +252,28 @@ export default function HSCUnitsExplorer({
                   label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
                   icon: '🔄',
                   desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
-                  available: hscQuestionsList.filter(q => q.category === 'synonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                  available: getCategoryCount('synonyms')
                 },
                 {
                   id: 'antonyms',
                   label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
                   icon: '⚡',
                   desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
-                  available: hscQuestionsList.filter(q => q.category === 'antonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                  available: getCategoryCount('antonyms')
                 },
                 {
                   id: 'english_meaning',
                   label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
                   icon: '📖',
                   desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
-                  available: hscQuestionsList.filter(q => q.category === 'english_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                  available: getCategoryCount('english_meaning')
                 },
                 {
                   id: 'bangla_meaning',
                   label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
                   icon: '🇧🇩',
                   desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
-                  available: hscQuestionsList.filter(q => q.category === 'bangla_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                  available: getCategoryCount('bangla_meaning')
                 }
               ].map((cat) => {
                 const isSelected = selectedCategories.includes(cat.id);

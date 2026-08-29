@@ -59,43 +59,66 @@ export default function HSCExamInterface({
   // id -> { consecutiveCorrect: 0, status: 'learning' | 'mistake' | 'done', totalAttempts: 0 }
   const [questionStats, setQuestionStats] = useState(() => {
     const initialMap = {};
-    questions.forEach((q) => {
-      initialMap[q.id] = {
-        consecutiveCorrect: 0,
-        status: 'learning',
-        totalAttempts: 0,
-        lastAnswerWasCorrect: null
-      };
-    });
+    if (Array.isArray(questions)) {
+      questions.forEach((q) => {
+        if (q && q.id) {
+          initialMap[q.id] = {
+            consecutiveCorrect: 0,
+            status: 'learning',
+            totalAttempts: 0,
+            lastAnswerWasCorrect: null
+          };
+        }
+      });
+    }
     return initialMap;
   });
 
   // The active running queue of questions
-  const [activeQueue, setActiveQueue] = useState(() => smartInterleaveQuestions(questions));
+  const [activeQueue, setActiveQueue] = useState(() => {
+    if (!Array.isArray(questions) || questions.length === 0) return [];
+    return smartInterleaveQuestions(questions);
+  });
   const [queueIndex, setQueueIndex] = useState(0);
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isNotSureClicked, setIsNotSureClicked] = useState(false);
 
+  // Safely resolve the current question
+  const currentQ =
+    (activeQueue && activeQueue[queueIndex]) ||
+    (Array.isArray(questions) && questions.find((q) => q && (questionStats[q.id]?.consecutiveCorrect || 0) < 3)) ||
+    (Array.isArray(questions) && questions[0]) ||
+    null;
+
+  const currentStat = currentQ && currentQ.id
+    ? questionStats[currentQ.id] || { consecutiveCorrect: 0, status: 'learning' }
+    : { consecutiveCorrect: 0, status: 'learning' };
+
   // Shuffled display: each element is { text: string, originalIndex: number }
-  const [shuffledOptions, setShuffledOptions] = useState([]);
-  const [shuffledCorrectIndex, setShuffledCorrectIndex] = useState(0);
+  const [shuffledOptions, setShuffledOptions] = useState(() => {
+    if (!currentQ || !Array.isArray(currentQ.options)) return [];
+    return currentQ.options.map((text, i) => ({ text, originalIndex: i }));
+  });
+  const [shuffledCorrectIndex, setShuffledCorrectIndex] = useState(() => {
+    return currentQ ? (currentQ.correctOption || 0) : 0;
+  });
 
   // Hint: user can reveal Bengali meaning before answering (marks as Learning)
   const [hintRevealed, setHintRevealed] = useState(false);
   const [hintUsedForCurrentQ, setHintUsedForCurrentQ] = useState(false);
 
   // Calculate live counters across all unique questions
-  const totalUnique = questions.length;
+  const totalUnique = Array.isArray(questions) ? questions.length : 0;
   const doneCount = Object.values(questionStats).filter(
-    (s) => s.status === 'done'
+    (s) => s && s.status === 'done'
   ).length;
   const mistakeCount = Object.values(questionStats).filter(
-    (s) => s.status === 'mistake'
+    (s) => s && s.status === 'mistake'
   ).length;
   const learningCount = Object.values(questionStats).filter(
-    (s) => s.status === 'learning'
+    (s) => s && s.status === 'learning'
   ).length;
 
   // Exam completes when all questions in the queue have been answered
@@ -112,19 +135,9 @@ export default function HSCExamInterface({
     }
   }, [isAllDone, isSoundOn]);
 
-  // Safely resolve the current question
-  const currentQ =
-    activeQueue[queueIndex] ||
-    questions.find((q) => (questionStats[q.id]?.consecutiveCorrect || 0) < 3) ||
-    questions[0];
-
-  const currentStat = currentQ
-    ? questionStats[currentQ.id] || { consecutiveCorrect: 0, status: 'learning' }
-    : { consecutiveCorrect: 0, status: 'learning' };
-
   // Shuffle options on every question appearance (including spaced-repetition re-tests of the same question)
   useEffect(() => {
-    if (!currentQ || !currentQ.options) return;
+    if (!currentQ || !Array.isArray(currentQ.options) || currentQ.options.length === 0) return;
     const indexed = currentQ.options.map((text, i) => ({ text, originalIndex: i }));
     // Fisher-Yates shuffle
     for (let i = indexed.length - 1; i > 0; i--) {
@@ -133,15 +146,15 @@ export default function HSCExamInterface({
     }
     setShuffledOptions(indexed);
     const newCorrectPos = indexed.findIndex(
-      (o) => o.originalIndex === currentQ.correctOption
+      (o) => o.originalIndex === (currentQ.correctOption ?? 0)
     );
-    setShuffledCorrectIndex(newCorrectPos);
+    setShuffledCorrectIndex(newCorrectPos >= 0 ? newCorrectPos : 0);
     setSelectedOption(null);
     setIsAnswered(false);
     setIsNotSureClicked(false);
     setHintRevealed(false);
     setHintUsedForCurrentQ(false);
-  }, [queueIndex]); // Re-shuffle every time queue position advances, not just on id change
+  }, [queueIndex, currentQ?.id]); // Re-shuffle every time queue position advances or question changes
 
   const handleRevealHint = () => {
     setHintRevealed(true);
@@ -315,7 +328,6 @@ export default function HSCExamInterface({
     setSelectedOption(null);
     setIsAnswered(false);
     setIsNotSureClicked(false);
-    setSecondsLeft(900);
   };
 
   const handleSpeak = (text) => {
@@ -544,7 +556,7 @@ export default function HSCExamInterface({
 
           {/* 4. Options List — shuffled randomly every question */}
           <div className="space-y-3">
-            {shuffledOptions.map((opt, idx) => {
+            {(shuffledOptions && shuffledOptions.length > 0 ? shuffledOptions : (currentQ?.options || []).map((text, i) => ({ text, originalIndex: i }))).map((opt, idx) => {
               const isOptionCorrect = idx === shuffledCorrectIndex;
               const isOptionSelected = idx === selectedOption;
 
