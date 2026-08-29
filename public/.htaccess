@@ -1,6 +1,18 @@
+DirectoryIndex index.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # 1. Automatically redirect /wp-admin and /wp-login to /blog/
+  RewriteRule ^wp-admin(.*)$ /blog/wp-admin$1 [R=301,L]
+  RewriteRule ^wp-login\.php(.*)$ /blog/wp-login.php$1 [R=301,L]
+
+  # 2. Allow direct access to /blog without SPA rewrite
+  RewriteCond %{REQUEST_URI} ^/blog [NC]
+  RewriteRule ^ - [L]
+
+  # 3. React SPA routing
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
