@@ -201,43 +201,6 @@ export default function AuthModal({
     onClose();
   };
 
-  // Quick Verified Demo Student (uses pre-registered test credentials)
-  const handleDemoStudentLogin = () => {
-    let demoUser = (registeredUsers || []).find((u) => u.email === 'tanvir.demo@hsc2026.edu');
-    if (!demoUser) {
-      demoUser = {
-        id: 'usr-demo',
-        name: 'Tanvir Ahmed',
-        college: 'Notre Dame College, Dhaka',
-        batch: 'HSC 2026',
-        email: 'tanvir.demo@hsc2026.edu',
-        password: 'Demo@123',
-        role: 'student',
-        points: 0,
-        streak: 0,
-        testsCompleted: 0
-      };
-      if (onUpdateUsers) onUpdateUsers([demoUser, ...(registeredUsers || [])]);
-    }
-    if (onAuthSuccess) onAuthSuccess(demoUser);
-    onClose();
-  };
-
-  // Quick Master Admin Login
-  const handleAdminQuickLogin = () => {
-    const adminUser = {
-      name: 'Master Admin (Sakin)',
-      college: 'Learner Hub Management',
-      batch: 'Admin Access',
-      email: 'admin@learnerhub.com',
-      role: 'admin',
-      points: 0,
-      streak: 0
-    };
-    if (onAuthSuccess) onAuthSuccess(adminUser);
-    onClose();
-  };
-
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
       <div className="bg-[#101522] border border-[#222e44] rounded-3xl w-full max-w-md overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200 max-h-[95vh] overflow-y-auto">
@@ -258,36 +221,6 @@ export default function AuthModal({
           >
             <X size={18} />
           </button>
-        </div>
-
-        {/* Quick Testing Badges */}
-        <div className="p-5 pb-0">
-          <div className="grid grid-cols-2 gap-2.5">
-            <button
-              type="button"
-              onClick={handleDemoStudentLogin}
-              className="py-2 px-3 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
-            >
-              <Zap size={14} className="fill-amber-400 text-amber-400" />
-              <span>{isBn ? '⚡ ডেমো স্টুডেন্ট' : '⚡ Demo Student'}</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={handleAdminQuickLogin}
-              className="py-2 px-3 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/40 text-purple-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
-            >
-              <span>👑 {isBn ? 'মাস্টার অ্যাডমিন' : 'Master Admin'}</span>
-            </button>
-          </div>
-          
-          <div className="relative flex py-3.5 items-center">
-            <div className="flex-grow border-t border-[#1e273a]"></div>
-            <span className="flex-shrink mx-3 text-slate-500 text-[11px] font-semibold uppercase tracking-wider">
-              {isSignUp ? (isBn ? 'তথ্য দিয়ে রেজিস্ট্রেশন করুন' : 'Enter Details to Register') : (isBn ? 'অথবা অ্যাকাউন্টে লগইন করুন' : 'Or Login with Account')}
-            </span>
-            <div className="flex-grow border-t border-[#1e273a]"></div>
-          </div>
         </div>
 
         {/* Error / Success Feedback Banner */}
@@ -358,7 +291,7 @@ export default function AuthModal({
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder={isSignUp ? 'student@hsc2026.edu / 017xxxxxxxx' : 'student@hsc2026.edu / admin@learnerhub.com'}
+                placeholder={isSignUp ? (isBn ? 'ইমেইল বা ফোন নম্বর (e.g. 017xxxxxxxx)' : 'student@hsc2026.edu / 017xxxxxxxx') : (isBn ? 'ইমেইল বা ইউজারনেম' : 'student@hsc2026.edu / username')}
                 className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
               />
             </div>

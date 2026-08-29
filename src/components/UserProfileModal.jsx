@@ -81,25 +81,12 @@ export default function UserProfileModal({
             </div>
           </div>
 
-          {/* Key Stat Badges & Admin Switch */}
+          {/* Key Stat Badges */}
           <div className="flex items-center gap-2.5 flex-wrap">
-            {currentUser?.role === 'admin' ? (
+            {currentUser?.role === 'admin' && (
               <span className="px-3.5 py-1.5 rounded-xl bg-purple-500/20 border border-purple-500/40 text-purple-300 text-xs font-bold flex items-center gap-1.5 shadow-sm">
                 👑 Master Admin Active
               </span>
-            ) : (
-              onOpenAuth && (
-                <button
-                  onClick={() => {
-                    onClose();
-                    onOpenAuth();
-                  }}
-                  className="px-3.5 py-1.5 rounded-xl bg-purple-950/40 hover:bg-purple-900/60 border border-purple-500/40 text-purple-300 hover:text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
-                  title="Log in with Admin credentials"
-                >
-                  <span>👑 Admin Login</span>
-                </button>
-              )
             )}
             <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#141b28] border border-orange-500/30 text-orange-400 text-xs font-bold">
               <Flame size={15} className="fill-orange-500" />
