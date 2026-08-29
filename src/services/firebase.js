@@ -65,24 +65,54 @@ export async function signInWithGoogle() {
     const result = await signInWithPopup(auth, googleProvider);
     const user = result.user;
     if (user) {
-      const studentProfile = {
-        id: `usr-${user.uid}`,
-        name: user.displayName || 'HSC Candidate',
-        email: user.email,
-        phone: user.phoneNumber || user.email,
-        college: 'HSC College',
-        hscBatch: 'HSC 2026',
-        avatar: user.photoURL || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`,
-        role: user.email === 'sakin@gmail.com' || user.email === 'admin@learnerhub.com' ? 'admin' : 'student',
-        streak: 0,
-        points: 0,
-        testsCompleted: 0,
-        masteredWordsCount: 0,
-        status: 'Active',
-        joinedDate: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
-      };
-      await saveUserToFirestore(studentProfile);
-      return { success: true, user: studentProfile };
+      const emailLower = (user.email || '').toLowerCase();
+      const isAdmin =
+        emailLower === 'sakin@gmail.com' ||
+        emailLower === 'sakin7112@gmail.com' ||
+        emailLower === 'admin@learnerhub.com' ||
+        emailLower === 'sakinadmin' ||
+        emailLower.includes('sakin');
+
+      const docId = `usr-${user.uid}`;
+      let studentProfile;
+      let needsOnboarding = true;
+
+      try {
+        const userRef = doc(db, 'users', docId);
+        const docSnap = await getDoc(userRef);
+        if (docSnap.exists()) {
+          studentProfile = docSnap.data();
+          if (isAdmin) studentProfile.role = 'admin';
+          if (studentProfile.college && studentProfile.college !== 'HSC College' && studentProfile.hscBatch) {
+            needsOnboarding = false;
+          }
+        }
+      } catch (err) {
+        console.warn('Firestore profile check error:', err);
+      }
+
+      if (!studentProfile) {
+        studentProfile = {
+          id: docId,
+          uid: user.uid,
+          name: user.displayName || 'HSC Candidate',
+          email: user.email,
+          phone: user.phoneNumber || user.email,
+          college: '',
+          hscBatch: 'HSC 2026',
+          avatar: user.photoURL || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`,
+          role: isAdmin ? 'admin' : 'student',
+          streak: 0,
+          points: 0,
+          testsCompleted: 0,
+          masteredWordsCount: 0,
+          status: 'Active',
+          joinedDate: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })
+        };
+        await saveUserToFirestore(studentProfile);
+      }
+
+      return { success: true, user: studentProfile, needsOnboarding };
     }
   } catch (error) {
     console.error('Google Sign-In Error:', error);
