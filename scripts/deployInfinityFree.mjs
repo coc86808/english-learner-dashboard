@@ -18,17 +18,8 @@ async function deploy() {
 
     console.log('Successfully connected to FTP server!');
     
-    // List root directory
-    const rootList = await client.list();
-    console.log('Root directory items:', rootList.map(item => item.name));
-
-    // Target directory is usually /htdocs
-    const targetDir = rootList.some(item => item.name === 'htdocs') ? 'htdocs' : '';
-
-    if (targetDir) {
-      console.log(`Navigating to ${targetDir}...`);
-      await client.cd(targetDir);
-    }
+    // Navigate to /htdocs
+    await client.cd('/htdocs');
 
     const htdocsList = await client.list();
     console.log('Current files in htdocs:', htdocsList.map(item => item.name));
@@ -36,15 +27,28 @@ async function deploy() {
     // Upload dist directory
     const distPath = path.resolve('dist');
     console.log(`Uploading local build from ${distPath} to remote server...`);
-
     await client.uploadFromDir(distPath);
 
-    // Make sure .htaccess is also uploaded
-    const htaccessPath = path.resolve('public', '.htaccess');
-    if (fs.existsSync(htaccessPath)) {
-      console.log('Uploading .htaccess for SPA routing support...');
-      await client.uploadFrom(htaccessPath, '.htaccess');
-    }
+    // Create custom .htaccess for Apache DirectoryIndex prioritization & SPA routing
+    const htaccessContent = `DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+`;
+    fs.writeFileSync('temp_htaccess.txt', htaccessContent);
+    console.log('Uploading .htaccess for SPA routing and DirectoryIndex...');
+    await client.uploadFrom('temp_htaccess.txt', '.htaccess');
+    fs.unlinkSync('temp_htaccess.txt');
+
+    const finalList = await client.list();
+    console.log('Final files in /htdocs:', finalList.map(item => item.name));
 
     console.log('🎉 Deployment to InfinityFree completed successfully!');
   } catch (err) {
