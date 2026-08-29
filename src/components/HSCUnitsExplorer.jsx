@@ -141,7 +141,8 @@ export default function HSCUnitsExplorer({
               <span className="text-white font-bold">{selectedLesson.number}: {selectedLesson.title}</span>
             </div>
 
-            {selectedUnit.id === 'unit-1' && selectedLesson.id === 'u1-l1' && (
+            {((selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
+              (selectedUnit.id === 'unit-10' && (selectedLesson.id === 'u10-l1' || selectedLesson.id === 'u10-l2' || selectedLesson.id === 'u10-l3' || selectedLesson.id === 'all'))) && (
               <button
                 onClick={() => setIsTextbookOpen(true)}
                 className="px-3 py-1.5 rounded-xl bg-[#192233] hover:bg-emerald-500/20 text-emerald-300 font-bold inline-flex items-center gap-1.5 border border-[#26334a] transition-all text-xs cursor-pointer"
@@ -192,10 +193,12 @@ export default function HSCUnitsExplorer({
               </div>
             </div>
 
-            {selectedUnit.id === 'unit-1' && selectedLesson.id === 'u1-l1' && (
+            {/* Read Textbook Button */}
+            {((selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
+              (selectedUnit.id === 'unit-10' && (selectedLesson.id === 'u10-l1' || selectedLesson.id === 'u10-l2' || selectedLesson.id === 'u10-l3' || selectedLesson.id === 'all'))) && (
               <button
                 onClick={() => setIsTextbookOpen(true)}
-                className="px-4 py-2 rounded-xl bg-[#182030] hover:bg-[#222e44] text-emerald-300 border border-emerald-500/30 text-xs font-bold inline-flex items-center gap-2 transition-all shadow-sm active:scale-95 cursor-pointer shrink-0"
+                className="px-4 py-2 rounded-xl bg-[#172030] hover:bg-emerald-500/20 text-emerald-400 font-bold inline-flex items-center gap-2 border border-[#26334a] transition-all text-xs sm:text-sm cursor-pointer shadow-sm"
               >
                 <BookOpen size={14} />
                 <span>{isBn ? '📖 পাঠ্যবই পড়ুন' : '📖 Read Story'}</span>
@@ -227,28 +230,28 @@ export default function HSCUnitsExplorer({
                   label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
                   icon: '🔄',
                   desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
-                  available: selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all') ? 23 : 0
+                  available: hscQuestionsList.filter(q => q.category === 'synonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                 },
                 {
                   id: 'antonyms',
                   label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
                   icon: '⚡',
                   desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
-                  available: selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all') ? 23 : 0
+                  available: hscQuestionsList.filter(q => q.category === 'antonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                 },
                 {
                   id: 'english_meaning',
                   label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
                   icon: '📖',
                   desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
-                  available: selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all') ? 23 : 0
+                  available: hscQuestionsList.filter(q => q.category === 'english_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                 },
                 {
                   id: 'bangla_meaning',
                   label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
                   icon: '🇧🇩',
                   desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
-                  available: selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all') ? 23 : 0
+                  available: hscQuestionsList.filter(q => q.category === 'bangla_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                 }
               ].map((cat) => {
                 const isSelected = selectedCategories.includes(cat.id);
@@ -312,7 +315,7 @@ export default function HSCUnitsExplorer({
               <div className="flex items-center gap-2 text-xs sm:text-sm">
                 <span className="text-slate-400 font-medium">{isBn ? 'মোট নির্বাচিত প্রশ্ন:' : 'Total Selected Questions:'}</span>
                 <span className="font-black text-emerald-400 text-base">
-                  {selectedCategories.length * (selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all') ? 23 : 0)} {isBn ? 'টি' : 'Questions'}
+                  {getFilteredQuestions().length} {isBn ? 'টি' : 'Questions'}
                 </span>
                 <span className="text-xs text-slate-500">
                   ({selectedCategories.length} {isBn ? 'টি ক্যাটাগরি সক্রিয়' : 'categories active'})
@@ -521,6 +524,8 @@ export default function HSCUnitsExplorer({
       <TextbookReaderModal
         isOpen={isTextbookOpen}
         onClose={() => setIsTextbookOpen(false)}
+        unitId={selectedUnit?.id || 'unit-1'}
+        lessonId={selectedLesson?.id || 'u1-l1'}
         onStartExam={() => {
           setIsTextbookOpen(false);
           if (selectedUnit) {

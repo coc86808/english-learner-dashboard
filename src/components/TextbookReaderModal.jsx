@@ -12,17 +12,28 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { unit1Lesson1Textbook } from '../data/textbooks/unit1Lesson1Text';
+import { unit10Lesson1Textbook } from '../data/textbooks/unit10Lesson1Text';
+import { unit10Lesson2Textbook } from '../data/textbooks/unit10Lesson2Text';
 
 export default function TextbookReaderModal({
   isOpen,
   onClose,
   onStartExam,
+  unitId = 'unit-1',
+  lessonId = 'u1-l1',
   lang = 'bn'
 }) {
   const [selectedVocab, setSelectedVocab] = useState(null);
   const isBn = lang === 'bn';
 
   if (!isOpen) return null;
+
+  let currentTextbook = unit1Lesson1Textbook;
+  if (lessonId === 'u10-l2' || lessonId === 'u10-l3') {
+    currentTextbook = unit10Lesson2Textbook;
+  } else if (unitId === 'unit-10' || (lessonId && lessonId.includes('u10'))) {
+    currentTextbook = unit10Lesson1Textbook;
+  }
 
   const handleSpeak = (text) => {
     if ('speechSynthesis' in window) {
@@ -52,10 +63,10 @@ export default function TextbookReaderModal({
                 <span>NCTB HSC English For Today Textbook</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                {unit1Lesson1Textbook.title} ({unit1Lesson1Textbook.titleBn})
+                {currentTextbook.title} ({currentTextbook.titleBn})
               </h2>
               <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
-                {unit1Lesson1Textbook.unitTitle} • Author: <span className="text-slate-200 font-semibold">{unit1Lesson1Textbook.author}</span>
+                {currentTextbook.unitTitle} • Author: <span className="text-slate-200 font-semibold">{currentTextbook.author}</span>
               </p>
             </div>
 
@@ -78,13 +89,13 @@ export default function TextbookReaderModal({
               <span>{isBn ? 'গল্পের সারসংক্ষেপ ও মূলভাব (Theme):' : 'Story Theme & Context:'}</span>
             </span>
             <p className="leading-relaxed text-slate-300">
-              {unit1Lesson1Textbook.summaryBn}
+              {currentTextbook.summaryBn}
             </p>
           </div>
 
           {/* Scrollable Story Content */}
           <div className="flex-1 overflow-y-auto pr-2 space-y-6 text-sm sm:text-base leading-relaxed text-slate-200">
-            {unit1Lesson1Textbook.sections.map((sec) => (
+            {currentTextbook.sections.map((sec) => (
               <div
                 key={sec.paraNumber}
                 className="p-5 rounded-2xl bg-[#0e131e]/70 border border-[#1d2638] space-y-3 hover:border-emerald-500/30 transition-all group"
@@ -137,7 +148,7 @@ export default function TextbookReaderModal({
 
           {/* Footer Navigation */}
           <div className="pt-3 border-t border-[#1a2233] flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
-            <span>📖 {unit1Lesson1Textbook.sections.length} টি প্যারাগ্রাফ সম্পন্ন</span>
+            <span>📖 {currentTextbook.sections.length} টি প্যারাগ্রাফ সম্পন্ন</span>
 
             <button
               onClick={() => {
