@@ -247,10 +247,10 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
   <table>
     <thead>
       <tr>
-        <th style="width: 20%;">WORD</th>
-        <th style="width: 30%;">MEANING (BANGLA)</th>
-        <th style="width: 25%;">SYNONYMS</th>
-        <th style="width: 25%;">ANTONYMS</th>
+        <th style="width: 20%;">Word</th>
+        <th style="width: 30%;">Meaning (Bangla)</th>
+        <th style="width: 25%;">Synonyms</th>
+        <th style="width: 25%;">Antonyms</th>
       </tr>
     </thead>
     <tbody>
@@ -547,10 +547,10 @@ export function generateVocabularyBankPDF({
   <table>
     <thead>
       <tr>
-        <th style="width: 20%;">WORD</th>
-        <th style="width: 30%;">MEANING (BANGLA)</th>
-        <th style="width: 25%;">SYNONYMS</th>
-        <th style="width: 25%;">ANTONYMS</th>
+        <th style="width: 20%;">Word</th>
+        <th style="width: 30%;">Meaning (Bangla)</th>
+        <th style="width: 25%;">Synonyms</th>
+        <th style="width: 25%;">Antonyms</th>
       </tr>
     </thead>
     <tbody>

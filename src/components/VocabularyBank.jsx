@@ -362,18 +362,18 @@ export default function VocabularyBank({
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
-              <tr className="bg-[#065f46] text-white text-xs sm:text-sm font-bold uppercase tracking-wider">
+              <tr className="bg-[#065f46] text-white text-xs sm:text-sm font-bold tracking-wide">
                 <th className="py-3.5 px-4 sm:px-6 w-[22%] border-r border-[#047857]">
-                  <span>WORD</span>
+                  <span>Word</span>
                 </th>
                 <th className="py-3.5 px-4 sm:px-6 w-[30%] border-r border-[#047857]">
-                  <span>MEANING (BANGLA)</span>
+                  <span>Meaning (Bangla)</span>
                 </th>
                 <th className="py-3.5 px-4 sm:px-6 w-[24%] border-r border-[#047857]">
-                  <span>SYNONYMS</span>
+                  <span>Synonyms</span>
                 </th>
                 <th className="py-3.5 px-4 sm:px-6 w-[24%]">
-                  <span>ANTONYMS</span>
+                  <span>Antonyms</span>
                 </th>
               </tr>
             </thead>
