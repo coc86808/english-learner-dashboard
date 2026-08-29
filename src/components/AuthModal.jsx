@@ -119,9 +119,23 @@ export default function AuthModal({
         avatar: `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`
       };
 
-      // Save to Cloud Firestore & Local State
+      // Save to Cloud Firestore & Local State immediately
       saveUserToFirestore(newStudent);
-      const updatedList = [newStudent, ...(registeredUsers || [])];
+      const currentLocal = (() => {
+        try {
+          const raw = localStorage.getItem('hsc_registered_users');
+          if (raw) {
+            const p = JSON.parse(raw);
+            if (Array.isArray(p) && p.length > 0) return p;
+          }
+        } catch (e) {}
+        return Array.isArray(registeredUsers) ? registeredUsers : [];
+      })();
+
+      const updatedList = [newStudent, ...currentLocal.filter((u) => u && u.email !== newStudent.email)];
+      try {
+        localStorage.setItem('hsc_registered_users', JSON.stringify(updatedList));
+      } catch (e) {}
       if (onUpdateUsers) onUpdateUsers(updatedList);
 
       setSuccessMessage(isBn ? '✅ সফলভাবে রেজিস্ট্রেশন সম্পন্ন হয়েছে!' : '✅ Registration successful!');
