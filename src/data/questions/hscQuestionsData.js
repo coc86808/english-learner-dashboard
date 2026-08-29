@@ -1,10 +1,10 @@
 /**
  * HSC English Vocabulary and MCQ Question Database
  * Unit 1: Education and Life | Lesson 1: The Parrot's Tale (23 Words)
- * Unit 10: Lifestyle | Lesson 1: Manners Around the World (28 Words)
+ * Unit 10: Lifestyle | Lesson 1: Manners Around the World (74 Words)
  * Unit 10: Lifestyle | Lesson 2: Food and Culture (25 Words)
  *
- * Total: 76 Vocabulary Words | 304 Board-Standard MCQs
+ * Total: 122 Vocabulary Words | 488 Board-Standard MCQs
  */
 
 export const hscVocabularyList = [
@@ -919,6 +919,558 @@ export const hscVocabularyList = [
     "exampleSentence": "Kissing on the cheek in greeting is common in Britain but strictly forbidden in public in the Middle East.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "NCTB Textbook Vocab, Unit 10"
+  },
+  {
+    "id": "vocab-u10-01",
+    "word": "Approach",
+    "bengaliMeaning": "আগমন / দৃষ্টিভঙ্গি / আচরণরীতি",
+    "partsOfSpeech": "Noun / Verb",
+    "synonyms": "Attitude, Manner, Advance, Access",
+    "antonyms": "Leave, Departure, Retreat",
+    "englishMeaning": "A way of dealing with situations or coming nearer to someone.",
+    "exampleSentence": "A polite and humble approach helps foreigners adapt to different international customs.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam, Unit 10"
+  },
+  {
+    "id": "vocab-u10-02",
+    "word": "Arbitrary",
+    "bengaliMeaning": "অযৌক্তিক / স্বেচ্ছাচারী / খামখেয়ালি",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Unreasonable, Illogical, Random, Whimsical",
+    "antonyms": "Rational, Reasoned, Logical, Systematic",
+    "englishMeaning": "Based on random choice or personal whim rather than reason.",
+    "exampleSentence": "Some cultural dining rules may seem arbitrary to outsiders, but they carry deep traditional value.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Standard, Unit 10"
+  },
+  {
+    "id": "vocab-u10-03",
+    "word": "Bother",
+    "bengaliMeaning": "বিরক্ত করা / দুশ্চিন্তাগ্রস্ত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Trouble, Disturb, Annoy, Irritate, Pester",
+    "antonyms": "Comfort, Please, Soothe, Reassure",
+    "englishMeaning": "To take the trouble to do something or cause annoyance to someone.",
+    "exampleSentence": "Never bother hostesses by asking inappropriate questions during formal dinner preparations.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC 1st Paper Textbook"
+  },
+  {
+    "id": "vocab-u10-04",
+    "word": "Caveman",
+    "bengaliMeaning": "গুহা-মানব / আদিম বর্বর মানুষ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Primitive, Brutal, Cave-dweller, Barbarian",
+    "antonyms": "Civilized, Cultured, Modern human",
+    "englishMeaning": "A prehistoric person or a primitive, uncivilized individual.",
+    "exampleSentence": "Table etiquette distinguishes a civilized society from primitive caveman behavior.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Standard, Unit 10"
+  },
+  {
+    "id": "vocab-u10-05",
+    "word": "Cheer",
+    "bengaliMeaning": "শুভকামনা ব্যক্ত করা / উল্লাস প্রকাশ",
+    "partsOfSpeech": "Noun / Verb",
+    "synonyms": "Salutation, Applause, Joy, Exultation",
+    "antonyms": "Gloom, Disapproval, Sorrow",
+    "englishMeaning": "To shout for joy or express warm salutation and good wishes.",
+    "exampleSentence": "South African greetings are leisurely and marked by good cheer and laughter.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-06",
+    "word": "Chew",
+    "bengaliMeaning": "চিবানো / খাদ্য চর্বণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Masticate, Munch, Bite, Crunch",
+    "antonyms": "Swallow whole, Gulp",
+    "englishMeaning": "To bite and grind food in the mouth with the teeth.",
+    "exampleSentence": "Good manners dictate that you should chew your food quietly with your mouth closed.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Textbook Vocab, Unit 10"
+  },
+  {
+    "id": "vocab-u10-07",
+    "word": "Chomp",
+    "bengaliMeaning": "শব্দ করে কিছু চিবানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Bite, Chew noisily, Munch, Crunch",
+    "antonyms": "Sip, Nibble gently",
+    "englishMeaning": "To munch or chew loudly and vigorously.",
+    "exampleSentence": "Don't chomp food loudly when dining at a formal Chinese banquet.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC 1st Paper Model"
+  },
+  {
+    "id": "vocab-u10-08",
+    "word": "Civilized",
+    "bengaliMeaning": "সভ্য / মার্জিত / সুসংস্কৃত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Courteous, Enlightened, Refined, Cultured, Polite",
+    "antonyms": "Uncivilized, Savage, Barbaric, Rude",
+    "englishMeaning": "Having an advanced culture, politeness, and refined social manners.",
+    "exampleSentence": "Respecting local dining customs is the mark of a civilized traveler.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Dhaka Board Standard"
+  },
+  {
+    "id": "vocab-u10-09",
+    "word": "Claim",
+    "bengaliMeaning": "দাবি করা / ঘোষণা দেওয়া",
+    "partsOfSpeech": "Verb / Noun",
+    "synonyms": "Declare, Assert, Maintain, State",
+    "antonyms": "Disclaim, Deny, Renounce",
+    "englishMeaning": "To state or assert that something is true or belongs to oneself.",
+    "exampleSentence": "Anthropologists claim that dining rituals reflect a community's deepest values.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-10",
+    "word": "Concerned",
+    "bengaliMeaning": "উদ্বিগ্ন / চিন্তিত / সহানুভূতিশীল",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Disturbed, Anxious, Mindful, Caring",
+    "antonyms": "Fascinated, Unconcerned, Carefree, Indifferent",
+    "englishMeaning": "Feeling anxiety or showing thoughtful care about something.",
+    "exampleSentence": "Hosts are concerned about the comfort and satisfaction of their guests.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Chattogram Board Standard"
+  },
+  {
+    "id": "vocab-u10-11",
+    "word": "Conscientious",
+    "bengaliMeaning": "বিবেকবুদ্ধিপূর্ণ / নিষ্ঠাবান / অত্যন্ত সতর্ক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Diligent, Careful, Dedicated, Meticulous, Scrupulous",
+    "antonyms": "Unconcerned, Relaxed, Careless, Irresponsible",
+    "englishMeaning": "Wishing to do what is right and taking immense care in one's actions.",
+    "exampleSentence": "A conscientious guest always remembers to send a thank-you note after dinner.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Rajshahi Board Exam"
+  },
+  {
+    "id": "vocab-u10-12",
+    "word": "Considerate",
+    "bengaliMeaning": "সহানুভূতিশীল / সুবিবেচক / অন্যের প্রতি মনোযোগী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Concerned, Mindful, Thoughtful, Attentive, Kind",
+    "antonyms": "Inconsiderate, Careless, Thoughtless, Selfish",
+    "englishMeaning": "Careful not to cause inconvenience or hurt to others.",
+    "exampleSentence": "It is considerate to offer help to the hostess with clearing up after the meal.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Standard, Unit 10"
+  },
+  {
+    "id": "vocab-u10-13",
+    "word": "Consider",
+    "bengaliMeaning": "বিবেচনা করা / ভেবে দেখা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Ponder, Think about, Deliberate, Contemplate",
+    "antonyms": "Disregard, Ignore, Overlook",
+    "englishMeaning": "To think carefully about something, typically before making a decision.",
+    "exampleSentence": "In China, a firm handshake might be considered a sign of unwanted aggression.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Sylhet Board Model"
+  },
+  {
+    "id": "vocab-u10-14",
+    "word": "Conversation",
+    "bengaliMeaning": "কথোপকথন / আলাপচারিতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Discussion, Talk, Dialogue, Chat, Discourse",
+    "antonyms": "Silence, Speechlessness",
+    "englishMeaning": "A talk, especially an informal one, between two or more people.",
+    "exampleSentence": "South African greetings involve warm eye-contact and pleasant conversations.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Barishal Board Standard"
+  },
+  {
+    "id": "vocab-u10-15",
+    "word": "Cue",
+    "bengaliMeaning": "ইঙ্গিত / সংকেত / সূত্র",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Hint, Signal, Prompt, Clue, Reminder",
+    "antonyms": "Nowhere, Blindness",
+    "englishMeaning": "A signal or reminder for someone to do something.",
+    "exampleSentence": "Wait for the host's cue before you begin eating dinner in Great Britain.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Cumilla Board Standard"
+  },
+  {
+    "id": "vocab-u10-16",
+    "word": "Discreetly",
+    "bengaliMeaning": "সতর্কভাবে / বিচক্ষণতার সাথে / সাবধানে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Carefully, Cautiously, Tactfully, Prudently",
+    "antonyms": "Incautiously, Rashly, Recklessly, Blatantly",
+    "englishMeaning": "In a careful and prudent manner, especially in order to avoid causing offense.",
+    "exampleSentence": "If you dislike a dish, discreetly leave it on your plate without drawing attention.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Dinajpur Board Standard"
+  },
+  {
+    "id": "vocab-u10-17",
+    "word": "Disgusted",
+    "bengaliMeaning": "নিদারুণ বিরক্ত / ক্ষুব্ধ / অসন্তুষ্ট",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Repelled, Revolted, Sickened, Offended",
+    "antonyms": "Pleased, Delighted, Satisfied",
+    "englishMeaning": "Feeling or showing strong disapproval, revulsion, or intense annoyance.",
+    "exampleSentence": "Hosts may feel disgusted if guests violate basic table sanitation rules.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Mymensingh Board Standard"
+  },
+  {
+    "id": "vocab-u10-18",
+    "word": "Edge",
+    "bengaliMeaning": "কিনারা / প্রান্তসীমা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Side, Border, Rim, Margin, Brink",
+    "antonyms": "Middle, Center, Interior",
+    "englishMeaning": "The outside limit of an object, surface, or area.",
+    "exampleSentence": "Place your knife and fork on the edge of the plate when pausing during a meal.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-19",
+    "word": "Entire",
+    "bengaliMeaning": "সম্পূর্ণ / সমগ্র / পুরো",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Whole, Complete, Total, Full, Absolute",
+    "antonyms": "Partial, Incomplete, Fragmented",
+    "englishMeaning": "With no part left out; whole and complete.",
+    "exampleSentence": "The entire family participates in receiving guests warmly in Middle Eastern households.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Jashore Board Standard"
+  },
+  {
+    "id": "vocab-u10-20",
+    "word": "Frequently",
+    "bengaliMeaning": "বারংবার / পুনঃপুনঃ / ঘনঘন",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Often, Regularly, Repeatedly, Recurrently",
+    "antonyms": "Rarely, Seldom, Infrequently",
+    "englishMeaning": "Regularly or habitually; occurring many times.",
+    "exampleSentence": "Gifts are given frequently in the Middle East to show genuine love and mutual respect.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC 1st Paper Textbook"
+  },
+  {
+    "id": "vocab-u10-21",
+    "word": "Firm",
+    "bengaliMeaning": "দৃঢ় / শক্তপোক্ত / সুদৃঢ়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Strong, Stable, Solid, Resolute, Sturdy",
+    "antonyms": "Soft, Light, Weak, Flexible",
+    "englishMeaning": "Solid, resolute, and strongly held or gripped.",
+    "exampleSentence": "While a firm handshake is expected in the West, it may seem aggressive in China.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Dhaka Board 2024"
+  },
+  {
+    "id": "vocab-u10-22",
+    "word": "Gristle",
+    "bengaliMeaning": "নরম হাড় / তরুণাস্থি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Cartilage, Tough connective tissue",
+    "antonyms": "Tender meat, Soft flesh",
+    "englishMeaning": "Cartilage, especially when present as a tough substance in cooked meat.",
+    "exampleSentence": "Discreetly remove gristle from your mouth using a fork or napkin.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-23",
+    "word": "Grab",
+    "bengaliMeaning": "কোন কিছু আঁকড়ে ধরা বা টেনে নেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Grasp, Seize, Clutch, Snatch, Take",
+    "antonyms": "Throw, Release, Drop, Let go",
+    "englishMeaning": "To grasp or seize something suddenly or roughly.",
+    "exampleSentence": "Never grab food across the table; instead, ask someone politely to pass it.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Rajshahi Board Standard"
+  },
+  {
+    "id": "vocab-u10-24",
+    "word": "Gravy",
+    "bengaliMeaning": "ঝোল / খাবারের সুস্বাদু রস",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Seasoning, Sauce, Broth, Meat juices",
+    "antonyms": "Dry seasoning",
+    "englishMeaning": "A sauce made from meat juices and seasonings used with roasted dishes.",
+    "exampleSentence": "In Britain, use a piece of bread on a fork to soak up remaining sauce or gravy.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Textbook Vocab"
+  },
+  {
+    "id": "vocab-u10-25",
+    "word": "Gulp",
+    "bengaliMeaning": "এক ঢোকে গলাধঃকরণ / দ্রুত গিলে ফেলা",
+    "partsOfSpeech": "Verb / Noun",
+    "synonyms": "Mouthful, Swallow, Guzzle, Quaff",
+    "antonyms": "Sip, Nibble, Taste slowly",
+    "englishMeaning": "To swallow food or liquid quickly and in large quantities.",
+    "exampleSentence": "It is considered impolite to gulp drinks hastily during a formal dinner.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Cumilla Board Standard"
+  },
+  {
+    "id": "vocab-u10-26",
+    "word": "Habitual",
+    "bengaliMeaning": "নিয়মিত / স্বভাবগত / সচরাচর ঘটা",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Common, Regular, Typical, Customary, Routine",
+    "antonyms": "Irregular, Occasional, Rare, Unaccustomed",
+    "englishMeaning": "Done or doing constantly as a habit; customary.",
+    "exampleSentence": "Giving dates and sweets as gifts is a habitual practice in the Middle East.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Sylhet Board Question"
+  },
+  {
+    "id": "vocab-u10-27",
+    "word": "Hugging",
+    "bengaliMeaning": "দৃঢ় আলিঙ্গন / বুকে জড়িয়ে ধরা",
+    "partsOfSpeech": "Noun / Participle",
+    "synonyms": "Embracing, Cuddling, Clasping, Enfolding",
+    "antonyms": "Releasing, Pushing away, Shunning",
+    "englishMeaning": "Holding someone tightly in one's arms, typically to express affection.",
+    "exampleSentence": "Hugging between same-sex friends is a common social greeting across Arab nations.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Barishal Board Standard"
+  },
+  {
+    "id": "vocab-u10-28",
+    "word": "Host",
+    "bengaliMeaning": "নিমন্ত্রণকর্তা / মেজবান / গৃহকর্তা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Party-giver, Entertainer, Master of ceremonies",
+    "antonyms": "Guest, Visitor, Invitee",
+    "englishMeaning": "A person who receives or entertains other people as guests.",
+    "exampleSentence": "Wait until your host indicates that it is time to start eating the meal.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-29",
+    "word": "Identify",
+    "bengaliMeaning": "শনাক্ত করা / চিহ্নিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Point out, Discover, Recognize, Distinguish, Spot",
+    "antonyms": "Conceal, Hide, Mistake, Confuse",
+    "englishMeaning": "To establish or indicate who or what someone or something is.",
+    "exampleSentence": "Cross-cultural training helps travelers identify acceptable local social norms.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Dinajpur Board Standard"
+  },
+  {
+    "id": "vocab-u10-30",
+    "word": "Inadvertently",
+    "bengaliMeaning": "অসাবধানতাবশত / অনিচ্ছাকৃতভাবে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Accidentally, Unintentionally, Unwittingly, Involuntarily",
+    "antonyms": "Intentionally, Deliberately, Purposefully",
+    "englishMeaning": "Without intention; accidentally or by careless oversight.",
+    "exampleSentence": "Avoid using your left hand so you do not inadvertently offend your host.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Mymensingh Board Standard"
+  },
+  {
+    "id": "vocab-u10-31",
+    "word": "Indicate",
+    "bengaliMeaning": "ইঙ্গিত দেওয়া / নির্দেশ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Point out, Signal, Suggest, Show, Signify",
+    "antonyms": "Mislead, Obscure, Conceal",
+    "englishMeaning": "To point out, show, or suggest the necessity of an action.",
+    "exampleSentence": "In Britain, wait until the host indicates that guests may take their seats.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC 1st Paper Textbook"
+  },
+  {
+    "id": "vocab-u10-32",
+    "word": "Indication",
+    "bengaliMeaning": "ইঙ্গিত / নির্দেশক সংকেত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Signal, Hint, Clue, Sign, Marker",
+    "antonyms": "Misdirection, Misguidance",
+    "englishMeaning": "A sign or piece of information indicating something.",
+    "exampleSentence": "A smile and nod are common indications of polite recognition in South Africa.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Jashore Board Standard"
+  },
+  {
+    "id": "vocab-u10-33",
+    "word": "Insistent",
+    "bengaliMeaning": "জেদকারী / নাছোড়বান্দা / অবিচল",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Adamant, Persistent, Firm, Unyielding, Tenacious",
+    "antonyms": "Undemanding, Yielding, Flexible, Compliant",
+    "englishMeaning": "Insisting or demanding something firmly; not allowing refusal.",
+    "exampleSentence": "Hosts may be pleasantly insistent that you try every specialty on the table.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-34",
+    "word": "Lack",
+    "bengaliMeaning": "অভাব থাকা / ঘাটতি হওয়া",
+    "partsOfSpeech": "Verb / Noun",
+    "synonyms": "Need, Require, Scarcity, Deficiency, Shortage",
+    "antonyms": "Possess, Own, Abundance, Plenty",
+    "englishMeaning": "The state of being without or not having enough of something.",
+    "exampleSentence": "A lack of cultural awareness can lead to awkward dining misunderstandings.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Dhaka Board Standard"
+  },
+  {
+    "id": "vocab-u10-35",
+    "word": "Lean",
+    "bengaliMeaning": "হেলান বা ঠেস দিয়ে বসা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Bend, Sway, Incline, Slouch, Rest against",
+    "antonyms": "Stand-up, Sit up, Straighten",
+    "englishMeaning": "To be in or move into a sloping position; rest against support.",
+    "exampleSentence": "Do not lean heavily on the dining table or put your elbows up during dinner.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Chattogram Board Standard"
+  },
+  {
+    "id": "vocab-u10-36",
+    "word": "Maintain",
+    "bengaliMeaning": "বজায় রাখা / সংরক্ষণ করা / বজায় রাখা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Continue, Keep, Carry on, Sustain, Preserve",
+    "antonyms": "Break-off, Discontinue, Abandon, Neglect",
+    "englishMeaning": "To cause or enable a condition or state of affairs to continue.",
+    "exampleSentence": "Maintain friendly eye-contact when greeting someone with a handshake in South Africa.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Standard, Unit 10"
+  },
+  {
+    "id": "vocab-u10-37",
+    "word": "Messy",
+    "bengaliMeaning": "অপরিষ্কার / অগোছালো / অপরিচ্ছন্ন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Untidy, Dirty, Disordered, Chaotic, Sloppy",
+    "antonyms": "Clean, Organized, Neat, Tidy",
+    "englishMeaning": "Untidy or dirty; lacking order and neatness.",
+    "exampleSentence": "Avoid leaving a messy plate when finishing your meal at a host's dinner table.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Rajshahi Board Exam"
+  },
+  {
+    "id": "vocab-u10-38",
+    "word": "Nod",
+    "bengaliMeaning": "মাথা নাড়ানো বা দোলানো / সম্মতির সংকেত",
+    "partsOfSpeech": "Verb / Noun",
+    "synonyms": "Greet, Signal, Gesture, Incline head, Bow",
+    "antonyms": "Recede, Shake head, Refuse",
+    "englishMeaning": "To lower and raise one's head slightly and briefly in greeting or agreement.",
+    "exampleSentence": "Some South African women do not shake hands and merely nod their head in greeting.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC 1st Paper Textbook"
+  },
+  {
+    "id": "vocab-u10-39",
+    "word": "Offend",
+    "bengaliMeaning": "অসন্তুষ্ট করা / আঘাত দেওয়া / অনুভূতিতে আঘাত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Displease, Aggravate, Insult, Upset, Hurt",
+    "antonyms": "Please, Delight, Charm, Gratify",
+    "englishMeaning": "To cause someone to feel hurt, angry, or upset by bad behavior.",
+    "exampleSentence": "Offering gifts with only one hand may offend hosts in Chinese culture.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Sylhet Board Model"
+  },
+  {
+    "id": "vocab-u10-40",
+    "word": "Posture",
+    "bengaliMeaning": "দেহ ভঙ্গি / অঙ্গভঙ্গি / শারীরিক বসার ধরন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Position, Pose, Stance, Bearing, Carriage",
+    "antonyms": "Slouching, Deformity",
+    "englishMeaning": "The position in which someone holds their body when standing or sitting.",
+    "exampleSentence": "Sitting with an upright, graceful posture shows respect during an official dinner.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Cumilla Board Standard"
+  },
+  {
+    "id": "vocab-u10-41",
+    "word": "Potential",
+    "bengaliMeaning": "সম্ভাব্য / সুপ্ত সম্ভাবনাযুক্ত",
+    "partsOfSpeech": "Adjective / Noun",
+    "synonyms": "Promising, Aspiring, Possible, Latent, Likely",
+    "antonyms": "Unpromising, Impossible, Improbable",
+    "englishMeaning": "Having or showing the capacity to develop into something in the future.",
+    "exampleSentence": "Understanding cultural differences prevents potential embarrassment when traveling.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Barishal Board Standard"
+  },
+  {
+    "id": "vocab-u10-42",
+    "word": "Puff up",
+    "bengaliMeaning": "ফুলে যাওয়া / গর্বে ফেঁপে ওঠা",
+    "partsOfSpeech": "Verb phrase",
+    "synonyms": "Bulk, Inflate, Swell, Expand, Bloat",
+    "antonyms": "Squeeze, Deflate, Shrink, Compress",
+    "englishMeaning": "To swell or become larger and fuller.",
+    "exampleSentence": "Bread rolls served at British dinners often puff up delightfully during baking.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Dinajpur Board Standard"
+  },
+  {
+    "id": "vocab-u10-43",
+    "word": "Quietly",
+    "bengaliMeaning": "শান্তভাবে / নীরবে / নিঃশব্দে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Silently, Softly, Calmly, Peacefully, Inaudibly",
+    "antonyms": "Loudly, Noisily, Boisterously",
+    "englishMeaning": "In a quiet manner; with little or no sound.",
+    "exampleSentence": "Enjoy your food quietly without slurping or talking with your mouth full.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Mymensingh Board Standard"
+  },
+  {
+    "id": "vocab-u10-44",
+    "word": "Refinement",
+    "bengaliMeaning": "শিষ্টাচার / সুরুচি / মার্জিত স্বভাব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Politeness, Sophistication, Elegance, Cultivation",
+    "antonyms": "Rudeness, Vulgarity, Coarseness",
+    "englishMeaning": "The improvement or clarification of something with elegant taste and manner.",
+    "exampleSentence": "Table manners were developed through centuries of social refinement.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Exam"
+  },
+  {
+    "id": "vocab-u10-45",
+    "word": "Refuse",
+    "bengaliMeaning": "অসম্মত হওয়া / প্রত্যাখ্যান করা / বর্জন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Reject, Deny, Decline, Turn down, Spurn",
+    "antonyms": "Accept, Grant, Agree, Receive",
+    "englishMeaning": "To indicate or show that one is not willing to do or accept something.",
+    "exampleSentence": "In Chinese culture, guests politely refuse a gift several times before finally accepting it.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC Board Standard, Unit 10"
+  },
+  {
+    "id": "vocab-u10-46",
+    "word": "Scatter",
+    "bengaliMeaning": "ছড়ানো / ইতস্তত ছড়িয়ে দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Disperse, Dissipate, Strew, Spread, Sprinkle",
+    "antonyms": "Collect, Gather, Assemble, Concentrate",
+    "englishMeaning": "To throw in various random directions; separate and disperse.",
+    "exampleSentence": "Never scatter breadcrumbs on the tablecloth; keep your dining area tidy.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "HSC 1st Paper Model"
   }
 ];
 
@@ -1116,4 +1668,5 @@ export function getFilteredCategoryQuestions(
 
   return smartInterleaveQuestions(matched);
 }
+
 
