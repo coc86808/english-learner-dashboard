@@ -1,13 +1,8 @@
-/**
- * HSC English Vocabulary and MCQ Question Database
- * Unit 1: Education and Life | Lesson 1: The Parrot's Tale (46 Words)
- * Unit 10: Lifestyle | Lesson 1: Manners Around the World (74 Words)
- * Unit 10: Lifestyle | Lesson 2: Etiquette Netquette (36 Words)
- *
- * Total: 156 Vocabulary Words | 613 Board-Standard MCQs
- */
+import fs from 'fs';
+import path from 'path';
 
-export const hscVocabularyList = [
+const hscVocabularyList = [
+  // 1. Bounty (vocab-u1-l1-01)
   {
     "id": "vocab-u1-l1-01",
     "word": "Bounty",
@@ -20,6 +15,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "HSC Board Standard, Unit 1"
   },
+
+  // 2. Contextual (vocab-u1-l1-02)
   {
     "id": "vocab-u1-l1-02",
     "word": "Contextual",
@@ -32,6 +29,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "HSC Board Exam, Unit 1"
   },
+
+  // 3. Deliberate (vocab-u1-l1-03)
   {
     "id": "vocab-u1-l1-03",
     "word": "Deliberate",
@@ -44,6 +43,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 4. Detractor (vocab-u1-l1-04)
   {
     "id": "vocab-u1-l1-04",
     "word": "Detractor",
@@ -56,6 +57,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 5. Delighted (vocab-u1-l1-05)
   {
     "id": "vocab-u1-l1-05",
     "word": "Delighted",
@@ -68,6 +71,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 6. Din (vocab-u1-l1-06)
   {
     "id": "vocab-u1-l1-06",
     "word": "Din",
@@ -80,6 +85,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 7. Demonstration (vocab-u1-l1-07)
   {
     "id": "vocab-u1-l1-07",
     "word": "Demonstration",
@@ -92,18 +99,22 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 8. Downfall (vocab-u1-l1-08)
   {
     "id": "vocab-u1-l1-08",
     "word": "Downfall",
     "bengaliMeaning": "অধঃপতন / পতন / সর্বনাশ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Ruin, collapse, degradation, descent",
+    "synonyms": "Ruin, collapse, downfall, degradation",
     "antonyms": "Rise, ascent, triumph, elevation",
     "englishMeaning": "A loss of power, prosperity, health, or status; ruin.",
     "exampleSentence": "Rigid schooling led to the tragic downfall and death of the vibrant bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 9. Exquisite (vocab-u1-l1-09)
   {
     "id": "vocab-u1-l1-09",
     "word": "Exquisite",
@@ -116,6 +127,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 10. Entrust (vocab-u1-l1-10)
   {
     "id": "vocab-u1-l1-10",
     "word": "Entrust",
@@ -128,6 +141,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 11. Flourish (vocab-u1-l1-11)
   {
     "id": "vocab-u1-l1-11",
     "word": "Flourish",
@@ -140,6 +155,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 12. Feeble (vocab-u1-l1-12)
   {
     "id": "vocab-u1-l1-12",
     "word": "Feeble",
@@ -152,6 +169,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 13. Flutter (vocab-u1-l1-13)
   {
     "id": "vocab-u1-l1-13",
     "word": "Flutter",
@@ -164,6 +183,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "HSC Board Exam, Unit 1"
   },
+
+  // 14. Folly (vocab-u1-l1-14)
   {
     "id": "vocab-u1-l1-14",
     "word": "Folly",
@@ -176,18 +197,22 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 15. Gilded (vocab-u1-l1-15)
   {
     "id": "vocab-u1-l1-15",
     "word": "Gilded",
     "bengaliMeaning": "সোনার জলে মোড়ানো / সোনালি / স্বর্ণখচিত",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Gold-plated, golden, ornate, adorned",
+    "synonyms": "Gold-plated, golden, ornate, gilded",
     "antonyms": "Unadorned, plain, bare, rustic",
     "englishMeaning": "Covered thinly with gold leaf or gold paint; opulent.",
     "exampleSentence": "Inside the gilded cage, the wild bird lost its natural song and freedom.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 16. Hop (vocab-u1-l1-16)
   {
     "id": "vocab-u1-l1-16",
     "word": "Hop",
@@ -200,6 +225,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 17. Humorous (vocab-u1-l1-17)
   {
     "id": "vocab-u1-l1-17",
     "word": "Humorous",
@@ -212,6 +239,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 18. Impudence (vocab-u1-l1-18)
   {
     "id": "vocab-u1-l1-18",
     "word": "Impudence",
@@ -224,6 +253,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 19. Innate (vocab-u1-l1-19)
   {
     "id": "vocab-u1-l1-19",
     "word": "Innate",
@@ -236,6 +267,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 20. Ideally (vocab-u1-l1-20)
   {
     "id": "vocab-u1-l1-20",
     "word": "Ideally",
@@ -248,6 +281,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 21. Lurk (vocab-u1-l1-21)
   {
     "id": "vocab-u1-l1-21",
     "word": "Lurk",
@@ -260,6 +295,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 22. Merrily (vocab-u1-l1-22)
   {
     "id": "vocab-u1-l1-22",
     "word": "Merrily",
@@ -272,6 +309,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 23. Maintenance (vocab-u1-l1-23)
   {
     "id": "vocab-u1-l1-23",
     "word": "Maintenance",
@@ -284,6 +323,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "HSC Board Exam, Unit 1"
   },
+
+  // 24. Mount (vocab-u1-l1-24)
   {
     "id": "vocab-u1-l1-24",
     "word": "Mount",
@@ -296,6 +337,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 25. Negligible (vocab-u1-l1-25)
   {
     "id": "vocab-u1-l1-25",
     "word": "Negligible",
@@ -308,6 +351,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 26. Ponder (vocab-u1-l1-26)
   {
     "id": "vocab-u1-l1-26",
     "word": "Ponder",
@@ -320,6 +365,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 27. Personnel (vocab-u1-l1-27)
   {
     "id": "vocab-u1-l1-27",
     "word": "Personnel",
@@ -332,6 +379,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 28. Pace (vocab-u1-l1-28)
   {
     "id": "vocab-u1-l1-28",
     "word": "Pace",
@@ -344,6 +393,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 29. Percussion (vocab-u1-l1-29)
   {
     "id": "vocab-u1-l1-29",
     "word": "Percussion",
@@ -356,6 +407,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 30. Polish (vocab-u1-l1-30)
   {
     "id": "vocab-u1-l1-30",
     "word": "Polish",
@@ -368,6 +421,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 31. Reprehensible (vocab-u1-l1-31)
   {
     "id": "vocab-u1-l1-31",
     "word": "Reprehensible",
@@ -380,6 +435,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 32. Scripture (vocab-u1-l1-32)
   {
     "id": "vocab-u1-l1-32",
     "word": "Scripture",
@@ -392,6 +449,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 33. Summon (vocab-u1-l1-33)
   {
     "id": "vocab-u1-l1-33",
     "word": "Summon",
@@ -404,6 +463,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "HSC Board Exam, Unit 1"
   },
+
+  // 34. Startled (vocab-u1-l1-34)
   {
     "id": "vocab-u1-l1-34",
     "word": "Startled",
@@ -416,6 +477,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 35. Slander (vocab-u1-l1-35)
   {
     "id": "vocab-u1-l1-35",
     "word": "Slander",
@@ -428,6 +491,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 36. Screech (vocab-u1-l1-36)
   {
     "id": "vocab-u1-l1-36",
     "word": "Screech",
@@ -440,6 +505,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 37. Sigh (vocab-u1-l1-37)
   {
     "id": "vocab-u1-l1-37",
     "word": "Sigh",
@@ -452,6 +519,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 38. Satire (vocab-u1-l1-38)
   {
     "id": "vocab-u1-l1-38",
     "word": "Satire",
@@ -464,6 +533,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 39. Twig (vocab-u1-l1-39)
   {
     "id": "vocab-u1-l1-39",
     "word": "Twig",
@@ -476,6 +547,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 40. Tear (vocab-u1-l1-40)
   {
     "id": "vocab-u1-l1-40",
     "word": "Tear",
@@ -488,6 +561,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 41. Thrust (vocab-u1-l1-41)
   {
     "id": "vocab-u1-l1-41",
     "word": "Thrust",
@@ -500,6 +575,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 42. Thunderous (vocab-u1-l1-42)
   {
     "id": "vocab-u1-l1-42",
     "word": "Thunderous",
@@ -512,6 +589,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 43. Unlettered (vocab-u1-l1-43)
   {
     "id": "vocab-u1-l1-43",
     "word": "Unlettered",
@@ -524,6 +603,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "HSC Board Exam, Unit 1"
   },
+
+  // 44. Veritable (vocab-u1-l1-44)
   {
     "id": "vocab-u1-l1-44",
     "word": "Veritable",
@@ -536,6 +617,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 45. Vice (vocab-u1-l1-45)
   {
     "id": "vocab-u1-l1-45",
     "word": "Vice",
@@ -548,6 +631,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 46. Workmanship (vocab-u1-l1-46)
   {
     "id": "vocab-u1-l1-46",
     "word": "Workmanship",
@@ -560,6 +645,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 47. Etiquette (vocab-24)
   {
     "id": "vocab-24",
     "word": "Etiquette",
@@ -572,6 +659,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam, Unit 10"
   },
+
+  // 48. Manners (vocab-25)
   {
     "id": "vocab-25",
     "word": "Manners",
@@ -584,6 +673,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC 1st Paper, Unit 10"
   },
+
+  // 49. Graceful (vocab-26)
   {
     "id": "vocab-26",
     "word": "Graceful",
@@ -596,6 +687,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dhaka Board Standard, Unit 10"
   },
+
+  // 50. Aggression (vocab-27)
   {
     "id": "vocab-27",
     "word": "Aggression",
@@ -608,6 +701,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 51. Chopsticks (vocab-28)
   {
     "id": "vocab-28",
     "word": "Chopsticks",
@@ -620,6 +715,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Textbook Vocab, Unit 10"
   },
+
+  // 52. Norm (vocab-29)
   {
     "id": "vocab-29",
     "word": "Norm",
@@ -632,6 +729,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 53. Discouraged (vocab-30)
   {
     "id": "vocab-30",
     "word": "Discouraged",
@@ -644,6 +743,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 54. Symbolise (vocab-31)
   {
     "id": "vocab-31",
     "word": "Symbolise",
@@ -656,6 +757,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 55. Senior (vocab-32)
   {
     "id": "vocab-32",
     "word": "Senior",
@@ -668,6 +771,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 56. Casual (vocab-33)
   {
     "id": "vocab-33",
     "word": "Casual",
@@ -680,18 +785,22 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 57. Hostess (vocab-34)
   {
     "id": "vocab-34",
     "word": "Hostess",
     "bengaliMeaning": "গৃহকর্ত্রী / মেজবান নারী / নিমন্ত্রণকর্ত্রী",
     "partsOfSpeech": "Noun",
-    "synonyms": "Welcomer, Entertainer, Lady host, Host",
+    "synonyms": "Hostess, Welcomer, Entertainer, Lady host",
     "antonyms": "Guest, Visitor, Invitee",
     "englishMeaning": "A woman who receives or entertains guests socially or commercially.",
     "exampleSentence": "It is customary to thank the hostess warmly for preparing a wonderful meal.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 58. Preparation (vocab-35)
   {
     "id": "vocab-35",
     "word": "Preparation",
@@ -704,6 +813,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 59. Gradually (vocab-36)
   {
     "id": "vocab-36",
     "word": "Gradually",
@@ -716,6 +827,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 60. Foreigners (vocab-37)
   {
     "id": "vocab-37",
     "word": "Foreigners",
@@ -728,6 +841,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 61. Merely (vocab-38)
   {
     "id": "vocab-38",
     "word": "Merely",
@@ -740,6 +855,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 62. Extend (vocab-39)
   {
     "id": "vocab-39",
     "word": "Extend",
@@ -752,6 +869,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 63. Leisurely (vocab-40)
   {
     "id": "vocab-40",
     "word": "Leisurely",
@@ -764,6 +883,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 64. Customary (vocab-41)
   {
     "id": "vocab-41",
     "word": "Customary",
@@ -776,6 +897,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 65. Informal (vocab-42)
   {
     "id": "vocab-42",
     "word": "Informal",
@@ -788,6 +911,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 66. Gratitude (vocab-43)
   {
     "id": "vocab-43",
     "word": "Gratitude",
@@ -800,6 +925,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 67. Gesture (vocab-44)
   {
     "id": "vocab-44",
     "word": "Gesture",
@@ -812,6 +939,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 68. Mutual (vocab-45)
   {
     "id": "vocab-45",
     "word": "Mutual",
@@ -824,6 +953,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 69. Forbidden (vocab-46)
   {
     "id": "vocab-46",
     "word": "Forbidden",
@@ -836,6 +967,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 70. Utensils (vocab-47)
   {
     "id": "vocab-47",
     "word": "Utensils",
@@ -848,6 +981,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam Model"
   },
+
+  // 71. Receipt (vocab-48)
   {
     "id": "vocab-48",
     "word": "Receipt",
@@ -860,6 +995,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 72. Apathy (vocab-u10-l2-01)
   {
     "id": "vocab-u10-l2-01",
     "word": "Apathy",
@@ -872,6 +1009,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dhaka Board Standard"
   },
+
+  // 73. Blow (vocab-u10-l2-02)
   {
     "id": "vocab-u10-l2-02",
     "word": "Blow",
@@ -884,6 +1023,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 74. Caution (vocab-u10-l2-03)
   {
     "id": "vocab-u10-l2-03",
     "word": "Caution",
@@ -896,6 +1037,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 75. Choosy (vocab-u10-l2-04)
   {
     "id": "vocab-u10-l2-04",
     "word": "Choosy",
@@ -908,6 +1051,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 76. Count (vocab-u10-l2-05)
   {
     "id": "vocab-u10-l2-05",
     "word": "Count",
@@ -920,6 +1065,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 77. Courteous (vocab-u10-l2-06)
   {
     "id": "vocab-u10-l2-06",
     "word": "Courteous",
@@ -932,6 +1079,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 78. Creep (vocab-u10-l2-07)
   {
     "id": "vocab-u10-l2-07",
     "word": "Creep",
@@ -944,6 +1093,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 79. Enormous (vocab-u10-l2-08)
   {
     "id": "vocab-u10-l2-08",
     "word": "Enormous",
@@ -956,6 +1107,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 80. Explode (vocab-u10-l2-09)
   {
     "id": "vocab-u10-l2-09",
     "word": "Explode",
@@ -968,6 +1121,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 81. Expression (vocab-u10-l2-10)
   {
     "id": "vocab-u10-l2-10",
     "word": "Expression",
@@ -980,6 +1135,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 82. Extravagant (vocab-u10-l2-11)
   {
     "id": "vocab-u10-l2-11",
     "word": "Extravagant",
@@ -992,6 +1149,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 83. Eye contact (vocab-u10-l2-12)
   {
     "id": "vocab-u10-l2-12",
     "word": "Eye contact",
@@ -1004,6 +1163,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 84. Free-will agent (vocab-u10-l2-13)
   {
     "id": "vocab-u10-l2-13",
     "word": "Free-will agent",
@@ -1016,6 +1177,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 85. Forbid (vocab-u10-l2-14)
   {
     "id": "vocab-u10-l2-14",
     "word": "Forbid",
@@ -1028,6 +1191,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 86. Gesture (vocab-u10-l2-15)
   {
     "id": "vocab-u10-l2-15",
     "word": "Gesture",
@@ -1040,6 +1205,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 87. Gratefulness (vocab-u10-l2-16)
   {
     "id": "vocab-u10-l2-16",
     "word": "Gratefulness",
@@ -1052,6 +1219,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 88. Grocery (vocab-u10-l2-17)
   {
     "id": "vocab-u10-l2-17",
     "word": "Grocery",
@@ -1064,6 +1233,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 89. Honk (vocab-u10-l2-18)
   {
     "id": "vocab-u10-l2-18",
     "word": "Honk",
@@ -1076,6 +1247,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 90. Invent (vocab-u10-l2-19)
   {
     "id": "vocab-u10-l2-19",
     "word": "Invent",
@@ -1088,6 +1261,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 91. Investigation (vocab-u10-l2-20)
   {
     "id": "vocab-u10-l2-20",
     "word": "Investigation",
@@ -1100,6 +1275,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 92. Liberty (vocab-u10-l2-21)
   {
     "id": "vocab-u10-l2-21",
     "word": "Liberty",
@@ -1112,6 +1289,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 93. Mission (vocab-u10-l2-22)
   {
     "id": "vocab-u10-l2-22",
     "word": "Mission",
@@ -1124,6 +1303,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 94. Portion (vocab-u10-l2-23)
   {
     "id": "vocab-u10-l2-23",
     "word": "Portion",
@@ -1136,6 +1317,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 95. Rarely (vocab-u10-l2-24)
   {
     "id": "vocab-u10-l2-24",
     "word": "Rarely",
@@ -1148,6 +1331,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Barishal Board Model"
   },
+
+  // 96. Relieve (vocab-u10-l2-25)
   {
     "id": "vocab-u10-l2-25",
     "word": "Relieve",
@@ -1160,6 +1345,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 97. Rewind (vocab-u10-l2-26)
   {
     "id": "vocab-u10-l2-26",
     "word": "Rewind",
@@ -1172,10 +1359,12 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 98. Room (vocab-u10-l2-27)
   {
     "id": "vocab-u10-l2-27",
     "word": "Room",
-    "bengaliMeaning": "জায়গা / সুযোগ / কক্ষ",
+    "bengaliMeaning": "জায়গা, স্থান / পরিসর",
     "partsOfSpeech": "Noun",
     "synonyms": "Space, capacity, clearance, expanse",
     "antonyms": "Crowdedness, congestion, lack of space",
@@ -1184,6 +1373,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 99. Satisfaction (vocab-u10-l2-28)
   {
     "id": "vocab-u10-l2-28",
     "word": "Satisfaction",
@@ -1196,6 +1387,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 100. Scatter (vocab-u10-l2-29)
   {
     "id": "vocab-u10-l2-29",
     "word": "Scatter",
@@ -1208,6 +1401,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dhaka Board 1st Paper"
   },
+
+  // 101. Seldom (vocab-u10-l2-30)
   {
     "id": "vocab-u10-l2-30",
     "word": "Seldom",
@@ -1220,6 +1415,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Dinajpur Board Model"
   },
+
+  // 102. Showy (vocab-u10-l2-31)
   {
     "id": "vocab-u10-l2-31",
     "word": "Showy",
@@ -1232,6 +1429,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 103. Spirit (vocab-u10-l2-32)
   {
     "id": "vocab-u10-l2-32",
     "word": "Spirit",
@@ -1244,6 +1443,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 104. Take a hand (vocab-u10-l2-33)
   {
     "id": "vocab-u10-l2-33",
     "word": "Take a hand",
@@ -1256,6 +1457,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 105. Terribly (vocab-u10-l2-34)
   {
     "id": "vocab-u10-l2-34",
     "word": "Terribly",
@@ -1268,6 +1471,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 106. Toil (vocab-u10-l2-35)
   {
     "id": "vocab-u10-l2-35",
     "word": "Toil",
@@ -1280,6 +1485,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Sylhet Board Standard"
   },
+
+  // 107. Trouble (vocab-u10-l2-36)
   {
     "id": "vocab-u10-l2-36",
     "word": "Trouble",
@@ -1292,6 +1499,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "HSC Board Exam 2026"
   },
+
+  // 108. Initially (vocab-74)
   {
     "id": "vocab-74",
     "word": "Initially",
@@ -1304,6 +1513,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam, Unit 10"
   },
+
+  // 109. Greet (vocab-75)
   {
     "id": "vocab-75",
     "word": "Greet",
@@ -1316,6 +1527,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 110. Cheek (vocab-76)
   {
     "id": "vocab-76",
     "word": "Cheek",
@@ -1328,6 +1541,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "NCTB Textbook Vocab, Unit 10"
   },
+
+  // 111. Approach (vocab-u10-01)
   {
     "id": "vocab-u10-01",
     "word": "Approach",
@@ -1340,6 +1555,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam, Unit 10"
   },
+
+  // 112. Arbitrary (vocab-u10-02)
   {
     "id": "vocab-u10-02",
     "word": "Arbitrary",
@@ -1352,6 +1569,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 113. Bother (vocab-u10-03)
   {
     "id": "vocab-u10-03",
     "word": "Bother",
@@ -1364,6 +1583,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC 1st Paper Textbook"
   },
+
+  // 114. Caveman (vocab-u10-04)
   {
     "id": "vocab-u10-04",
     "word": "Caveman",
@@ -1376,6 +1597,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 115. Cheer (vocab-u10-05)
   {
     "id": "vocab-u10-05",
     "word": "Cheer",
@@ -1388,6 +1611,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 116. Chew (vocab-u10-06)
   {
     "id": "vocab-u10-06",
     "word": "Chew",
@@ -1400,6 +1625,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Textbook Vocab, Unit 10"
   },
+
+  // 117. Chomp (vocab-u10-07)
   {
     "id": "vocab-u10-07",
     "word": "Chomp",
@@ -1412,6 +1639,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC 1st Paper Model"
   },
+
+  // 118. Civilized (vocab-u10-08)
   {
     "id": "vocab-u10-08",
     "word": "Civilized",
@@ -1424,6 +1653,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dhaka Board Standard"
   },
+
+  // 119. Claim (vocab-u10-09)
   {
     "id": "vocab-u10-09",
     "word": "Claim",
@@ -1436,6 +1667,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 120. Concerned (vocab-u10-10)
   {
     "id": "vocab-u10-10",
     "word": "Concerned",
@@ -1448,6 +1681,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 121. Conscientious (vocab-u10-11)
   {
     "id": "vocab-u10-11",
     "word": "Conscientious",
@@ -1460,6 +1695,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 122. Considerate (vocab-u10-12)
   {
     "id": "vocab-u10-12",
     "word": "Considerate",
@@ -1472,6 +1709,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 123. Consider (vocab-u10-13)
   {
     "id": "vocab-u10-13",
     "word": "Consider",
@@ -1484,6 +1723,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Sylhet Board Model"
   },
+
+  // 124. Conversation (vocab-u10-14)
   {
     "id": "vocab-u10-14",
     "word": "Conversation",
@@ -1496,6 +1737,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Barishal Board Standard"
   },
+
+  // 125. Cue (vocab-u10-15)
   {
     "id": "vocab-u10-15",
     "word": "Cue",
@@ -1508,6 +1751,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 126. Discreetly (vocab-u10-16)
   {
     "id": "vocab-u10-16",
     "word": "Discreetly",
@@ -1520,6 +1765,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dinajpur Board Standard"
   },
+
+  // 127. Disgusted (vocab-u10-17)
   {
     "id": "vocab-u10-17",
     "word": "Disgusted",
@@ -1532,6 +1779,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 128. Edge (vocab-u10-18)
   {
     "id": "vocab-u10-18",
     "word": "Edge",
@@ -1544,6 +1793,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 129. Entire (vocab-u10-19)
   {
     "id": "vocab-u10-19",
     "word": "Entire",
@@ -1556,6 +1807,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 130. Frequently (vocab-u10-20)
   {
     "id": "vocab-u10-20",
     "word": "Frequently",
@@ -1568,6 +1821,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC 1st Paper Textbook"
   },
+
+  // 131. Firm (vocab-u10-21)
   {
     "id": "vocab-u10-21",
     "word": "Firm",
@@ -1580,6 +1835,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dhaka Board 2024"
   },
+
+  // 132. Gristle (vocab-u10-22)
   {
     "id": "vocab-u10-22",
     "word": "Gristle",
@@ -1592,6 +1849,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 133. Grab (vocab-u10-23)
   {
     "id": "vocab-u10-23",
     "word": "Grab",
@@ -1604,6 +1863,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Rajshahi Board Standard"
   },
+
+  // 134. Gravy (vocab-u10-24)
   {
     "id": "vocab-u10-24",
     "word": "Gravy",
@@ -1616,6 +1877,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Textbook Vocab"
   },
+
+  // 135. Gulp (vocab-u10-25)
   {
     "id": "vocab-u10-25",
     "word": "Gulp",
@@ -1628,6 +1891,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 136. Habitual (vocab-u10-26)
   {
     "id": "vocab-u10-26",
     "word": "Habitual",
@@ -1640,10 +1905,12 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Sylhet Board Question"
   },
+
+  // 137. Hugging (vocab-u10-27)
   {
     "id": "vocab-u10-27",
     "word": "Hugging",
-    "bengaliMeaning": "আলিঙ্গন / বুকে জড়িয়ে ধরা",
+    "bengaliMeaning": "আলিঙ্গন করা / বুকে জড়িয়ে ধরা",
     "partsOfSpeech": "Noun",
     "synonyms": "Embracing, Clasping, Enfolding, Cuddling",
     "antonyms": "Releasing, Pushing away, Shunning",
@@ -1652,6 +1919,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Barishal Board Standard"
   },
+
+  // 138. Host (vocab-u10-28)
   {
     "id": "vocab-u10-28",
     "word": "Host",
@@ -1664,6 +1933,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 139. Identify (vocab-u10-29)
   {
     "id": "vocab-u10-29",
     "word": "Identify",
@@ -1676,6 +1947,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dinajpur Board Standard"
   },
+
+  // 140. Inadvertently (vocab-u10-30)
   {
     "id": "vocab-u10-30",
     "word": "Inadvertently",
@@ -1688,6 +1961,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 141. Indicate (vocab-u10-31)
   {
     "id": "vocab-u10-31",
     "word": "Indicate",
@@ -1700,6 +1975,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC 1st Paper Textbook"
   },
+
+  // 142. Indication (vocab-u10-32)
   {
     "id": "vocab-u10-32",
     "word": "Indication",
@@ -1712,6 +1989,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Jashore Board Standard"
   },
+
+  // 143. Insistent (vocab-u10-33)
   {
     "id": "vocab-u10-33",
     "word": "Insistent",
@@ -1724,6 +2003,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 144. Lack (vocab-u10-34)
   {
     "id": "vocab-u10-34",
     "word": "Lack",
@@ -1736,6 +2017,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dhaka Board Standard"
   },
+
+  // 145. Lean (vocab-u10-35)
   {
     "id": "vocab-u10-35",
     "word": "Lean",
@@ -1748,6 +2031,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Chattogram Board Standard"
   },
+
+  // 146. Maintain (vocab-u10-36)
   {
     "id": "vocab-u10-36",
     "word": "Maintain",
@@ -1760,6 +2045,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 147. Messy (vocab-u10-37)
   {
     "id": "vocab-u10-37",
     "word": "Messy",
@@ -1772,6 +2059,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Rajshahi Board Exam"
   },
+
+  // 148. Nod (vocab-u10-38)
   {
     "id": "vocab-u10-38",
     "word": "Nod",
@@ -1784,6 +2073,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC 1st Paper Textbook"
   },
+
+  // 149. Offend (vocab-u10-39)
   {
     "id": "vocab-u10-39",
     "word": "Offend",
@@ -1796,6 +2087,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Sylhet Board Model"
   },
+
+  // 150. Posture (vocab-u10-40)
   {
     "id": "vocab-u10-40",
     "word": "Posture",
@@ -1808,6 +2101,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Cumilla Board Standard"
   },
+
+  // 151. Potential (vocab-u10-41)
   {
     "id": "vocab-u10-41",
     "word": "Potential",
@@ -1820,6 +2115,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Barishal Board Standard"
   },
+
+  // 152. Puff up (vocab-u10-42)
   {
     "id": "vocab-u10-42",
     "word": "Puff up",
@@ -1832,6 +2129,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Dinajpur Board Standard"
   },
+
+  // 153. Quietly (vocab-u10-43)
   {
     "id": "vocab-u10-43",
     "word": "Quietly",
@@ -1844,6 +2143,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Mymensingh Board Standard"
   },
+
+  // 154. Refinement (vocab-u10-44)
   {
     "id": "vocab-u10-44",
     "word": "Refinement",
@@ -1856,6 +2157,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Exam"
   },
+
+  // 155. Refuse (vocab-u10-45)
   {
     "id": "vocab-u10-45",
     "word": "Refuse",
@@ -1868,6 +2171,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "HSC Board Standard, Unit 10"
   },
+
+  // 156. Scatter (vocab-u10-46)
   {
     "id": "vocab-u10-46",
     "word": "Scatter",
@@ -1881,6 +2186,21 @@ export const hscVocabularyList = [
     "boardExamTag": "HSC 1st Paper Model"
   }
 ];
+
+// Generate JS file content
+function generateFileContent() {
+  const jsonString = JSON.stringify(hscVocabularyList, null, 2);
+  
+  return `/**
+ * HSC English Vocabulary and MCQ Question Database
+ * Unit 1: Education and Life | Lesson 1: The Parrot's Tale (46 Words)
+ * Unit 10: Lifestyle | Lesson 1: Manners Around the World (74 Words)
+ * Unit 10: Lifestyle | Lesson 2: Etiquette Netquette (36 Words)
+ *
+ * Total: 156 Vocabulary Words | 613 Board-Standard MCQs
+ */
+
+export const hscVocabularyList = ${jsonString};
 
 // Generates question variations for each vocabulary word with authentic curriculum-based distractors and safe skip for empty fields
 export function buildQuestionsDatabase() {
@@ -2090,4 +2410,113 @@ export function getFilteredCategoryQuestions(
   });
 
   return smartInterleaveQuestions(matched);
+}
+`;
+}
+
+// Write the file
+const targetPath = path.resolve('src/data/questions/hscQuestionsData.js');
+fs.writeFileSync(targetPath, generateFileContent(), 'utf-8');
+console.log('Successfully wrote hscQuestionsData.js');
+
+// Now verify
+const questions = buildQuestionsDatabaseTest(hscVocabularyList);
+console.log('Total vocabulary items:', hscVocabularyList.length);
+console.log('Total questions generated:', questions.length);
+
+const u1l1Questions = questions.filter(q => q.id.startsWith('hsc-u1-l1-'));
+const u10l1Questions = questions.filter(q => q.id.startsWith('hsc-u10-l1-'));
+const u10l2Questions = questions.filter(q => q.id.startsWith('hsc-u10-l2-'));
+
+console.log('U1-L1 questions:', u1l1Questions.length, '(expected 180)');
+console.log('U10-L1 questions:', u10l1Questions.length, '(expected 290)');
+console.log('U10-L2 questions:', u10l2Questions.length, '(expected 143)');
+
+let emptyOptionErrors = 0;
+questions.forEach((q, idx) => {
+  if (!q.options || q.options.length !== 4) {
+    console.error('Question ' + q.id + ' does not have 4 options: ' + JSON.stringify(q.options));
+    emptyOptionErrors++;
+  }
+  q.options.forEach((opt, oIdx) => {
+    if (opt === undefined || opt === null || opt.trim() === '') {
+      console.error('Question ' + q.id + ' option ' + oIdx + ' is empty: "' + opt + '"');
+      emptyOptionErrors++;
+    }
+  });
+});
+
+if (emptyOptionErrors === 0) {
+  console.log('All questions passed verification with ZERO empty options!');
+} else {
+  console.error('Encountered ' + emptyOptionErrors + ' option errors!');
+}
+
+function buildQuestionsDatabaseTest(vocabList) {
+  const list = [];
+  vocabList.forEach((item, index) => {
+    const num = (index + 1).toString().padStart(2, '0');
+    let prefix = 'hsc-u1-l1-' + num;
+    if (item.unit.includes('Unit 10: Lesson 1') || item.unit.includes('Manners Around the World')) {
+      prefix = 'hsc-u10-l1-' + num;
+    } else if (item.unit.includes('Unit 10: Lesson 2') || item.unit.includes('Etiquette Netquette') || item.unit.includes('Good manners always wins') || item.unit.includes('Food and Culture')) {
+      prefix = 'hsc-u10-l2-' + num;
+    }
+
+    const synList = item.synonyms ? item.synonyms.split(',').map(s => s.trim()).filter(Boolean) : [];
+    const antList = item.antonyms ? item.antonyms.split(',').map(s => s.trim()).filter(Boolean) : [];
+
+    const primarySyn = synList.length > 0 ? synList[0] : '';
+    const primaryAnt = antList.length > 0 ? antList[0] : '';
+
+    const otherIdx1 = (index + 3) % vocabList.length;
+    const otherIdx2 = (index + 7) % vocabList.length;
+    const otherIdx3 = (index + 11) % vocabList.length;
+    const distractorWord1 = vocabList[otherIdx1].word;
+    const distractorWord2 = vocabList[otherIdx2].word;
+    const distractorWord3 = vocabList[otherIdx3].word;
+
+    const defIdx1 = (index + 2) % vocabList.length;
+    const defIdx2 = (index + 5) % vocabList.length;
+    const defIdx3 = (index + 9) % vocabList.length;
+    const defDistractor1 = vocabList[defIdx1].englishMeaning;
+    const defDistractor2 = vocabList[defIdx2].englishMeaning;
+    const defDistractor3 = vocabList[defIdx3].englishMeaning;
+
+    const bngDistractor1 = vocabList[defIdx1].bengaliMeaning.split('/')[0].trim();
+    const bngDistractor2 = vocabList[defIdx2].bengaliMeaning.split('/')[0].trim();
+    const bngDistractor3 = vocabList[defIdx3].bengaliMeaning.split('/')[0].trim();
+
+    if (primarySyn) {
+      const synOption2 = primaryAnt || distractorWord3;
+      list.push({
+        id: prefix + '-syn',
+        options: [primarySyn, synOption2, distractorWord1, distractorWord2]
+      });
+    }
+
+    if (primaryAnt) {
+      const antOption2 = primarySyn || distractorWord3;
+      list.push({
+        id: prefix + '-ant',
+        options: [primaryAnt, antOption2, distractorWord1, distractorWord2]
+      });
+    }
+
+    if (item.englishMeaning && item.englishMeaning.trim() !== '') {
+      list.push({
+        id: prefix + '-eng',
+        options: [item.englishMeaning, defDistractor1, defDistractor2, defDistractor3]
+      });
+    }
+
+    if (item.bengaliMeaning && item.bengaliMeaning.trim() !== '') {
+      const bngCorrect = item.bengaliMeaning.split('/')[0].trim();
+      list.push({
+        id: prefix + '-bng',
+        options: [bngCorrect, bngDistractor1, bngDistractor2, bngDistractor3]
+      });
+    }
+  });
+  return list;
 }

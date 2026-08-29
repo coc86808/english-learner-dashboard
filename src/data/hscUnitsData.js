@@ -16,7 +16,7 @@ export const hscUnits = [
     totalWords: 46,
     masteredWords: 0,
     lessons: [
-      { id: 'u1-l1', number: 'Lesson 1', title: "The Parrot's Tale", titleBn: 'তোতাকাহিনী', questionsCount: '১৮৪ টি প্রশ্ন', wordsCount: 46, progress: 0 },
+      { id: 'u1-l1', number: 'Lesson 1', title: "The Parrot's Tale", titleBn: 'তোতাকাহিনী', questionsCount: '১৮০ টি প্রশ্ন', wordsCount: 46, progress: 0 },
       { id: 'u1-l2', number: 'Lesson 2', title: 'Education and Technology', titleBn: 'শিক্ষা ও প্রযুক্তি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u1-l3', number: 'Lesson 3', title: 'Children in School', titleBn: 'বিদ্যালয়ে শিশু', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u1-l4', number: 'Lesson 4', title: 'Civic Engagement', titleBn: 'নাগরিক সম্পৃক্ততা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
@@ -174,8 +174,8 @@ export const hscUnits = [
     totalWords: 110,
     masteredWords: 0,
     lessons: [
-      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners Around the World', titleBn: 'বিশ্বজুড়ে শিষ্টাচার ও সংস্কৃতি', questionsCount: '২৯৬ টি প্রশ্ন', wordsCount: 74, progress: 0 },
-      { id: 'u10-l2', number: 'Lesson 2', title: 'Etiquette Netiquette', titleBn: 'শিষ্টাচার ও নেটকেট (Good manners always wins)', questionsCount: '১৪৪ টি প্রশ্ন', wordsCount: 36, progress: 0 },
+      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners Around the World', titleBn: 'বিশ্বজুড়ে শিষ্টাচার ও সংস্কৃতি', questionsCount: '২৯০ টি প্রশ্ন', wordsCount: 74, progress: 0 },
+      { id: 'u10-l2', number: 'Lesson 2', title: 'Etiquette Netiquette', titleBn: 'শিষ্টাচার ও নেটকেট (Good manners always wins)', questionsCount: '১৪৩ টি প্রশ্ন', wordsCount: 36, progress: 0 },
       { id: 'u10-l3', number: 'Lesson 3', title: 'Food and Culture', titleBn: 'খাদ্য ও সংস্কৃতি (সৈয়দ মুজতবা আলী)', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u10-l4', number: 'Lesson 4', title: 'Fitness', titleBn: 'সুস্বাস্থ্য ও ফিটনেস', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u10-l5', number: 'Lesson 5', title: 'Consumerism', titleBn: 'ভোগবাদ ও ভোক্তা সংস্কৃতি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },

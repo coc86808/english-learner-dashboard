@@ -88,7 +88,7 @@ export default function UnitLessonExamModal({
     const unitQuestions = categoryFiltered.filter((q) => {
       if (!q || !q.unit) return false;
       const qu = q.unit.toLowerCase();
-      return (uNum && qu.includes(uNum)) || (uTitle && qu.includes(uTitle));
+      return (uNum && (qu.includes(uNum + ':') || new RegExp(`\\b${uNum}\\b`, 'i').test(qu))) || (uTitle && qu.includes(uTitle));
     });
 
     if (selectedLesson && selectedLesson.id !== 'all') {
@@ -225,28 +225,28 @@ export default function UnitLessonExamModal({
                     label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
                     icon: '🔄',
                     desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
-                    available: hscQuestionsList.filter(q => q.category === 'synonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                    available: hscQuestionsList.filter(q => q.category === 'synonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                   },
                   {
                     id: 'antonyms',
                     label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
                     icon: '⚡',
                     desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
-                    available: hscQuestionsList.filter(q => q.category === 'antonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                    available: hscQuestionsList.filter(q => q.category === 'antonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                   },
                   {
                     id: 'english_meaning',
                     label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
                     icon: '📖',
                     desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
-                    available: hscQuestionsList.filter(q => q.category === 'english_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                    available: hscQuestionsList.filter(q => q.category === 'english_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                   },
                   {
                     id: 'bangla_meaning',
                     label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
                     icon: '🇧🇩',
                     desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
-                    available: hscQuestionsList.filter(q => q.category === 'bangla_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase()) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                    available: hscQuestionsList.filter(q => q.category === 'bangla_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
                   }
                 ].map((cat) => {
                   const isSelected = selectedCategories.includes(cat.id);

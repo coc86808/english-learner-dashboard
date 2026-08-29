@@ -1,0 +1,1248 @@
+[1] ID: vocab-u1-l1-01 | Word: Bounty | POS: Noun
+    Bengali: পুরস্কার / অনুদান / বদান্যতা
+    Synonyms: Reward, prize, grant, bonus
+    Antonyms: Penalty, fine, punishment
+    English: A reward, prize, or monetary grant given by authority for an effort or service.
+    Example: The king gave a handsome bounty to the scholars and cage-builders.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: HSC Board Standard, Unit 1
+
+[2] ID: vocab-u1-l1-02 | Word: Contextual | POS: Adjective
+    Bengali: প্রাসঙ্গিক / পরিপ্রেক্ষিতমূলক
+    Synonyms: Relevant, related, circumstantial, pertinent
+    Antonyms: Irrelevant, unrelated, out-of-context
+    English: Depending on, related to, or clarifying the surrounding circumstances.
+    Example: Contextual understanding of Rabindranath's satire makes the story even more profound.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: HSC Board Exam, Unit 1
+
+[3] ID: vocab-u1-l1-03 | Word: Deliberate | POS: Verb
+    Bengali: গভীরভাবে চিন্তা করা / বিবেচনা করা
+    Synonyms: Contemplate, ponder, reflect, meditate
+    Antonyms: Disregard, overlook, ignore
+    English: To engage in long and careful consideration or discussion.
+    Example: The royal pundits met to deliberate on how to educate the ignorant bird.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dhaka Board 1st Paper
+
+[4] ID: vocab-u1-l1-04 | Word: Detractor | POS: Noun
+    Bengali: নিন্দুক / সমালোচক / কুৎসাকারী
+    Synonyms: Critic, disparager, censurer, fault-finder
+    Antonyms: Supporter, admirer, advocate, benefactor
+    English: A person who disparages someone or something, seeking to diminish their worth.
+    Example: The envious detractor complained that the bird was starving inside its cage.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Chattogram Board Standard
+
+[5] ID: vocab-u1-l1-05 | Word: Delighted | POS: Adjective
+    Bengali: আনন্দিত / অত্যন্ত খুশি
+    Synonyms: Pleased, overjoyed, thrilled, gratified
+    Antonyms: Dejected, depressed, miserable, sorrowful
+    English: Feeling or showing great pleasure and satisfaction.
+    Example: The king was delighted to witness the golden sheen of the newly built cage.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Rajshahi Board Exam
+
+[6] ID: vocab-u1-l1-06 | Word: Din | POS: Noun
+    Bengali: কোলাহল / হট্টগোল / বিকট শব্দ
+    Synonyms: Uproar, tumult, commotion, racket, clamor
+    Antonyms: Silence, quietude, peace, serenity
+    English: A loud, unpleasant, and prolonged tumult or noise.
+    Example: The deafening din of scholars reciting mantras filled the entire palace courtyard.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Sylhet Board Standard
+
+[7] ID: vocab-u1-l1-07 | Word: Demonstration | POS: Noun
+    Bengali: প্রদর্শন / চিত্রায়ন / উপস্থাপন
+    Synonyms: Display, illustration, exhibition, presentation
+    Antonyms: Concealment, hiding, suppression
+    English: An act of showing or explaining something clearly to an audience.
+    Example: The teachers gave a magnificent demonstration of the parrot's memorization method.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Barishal Board Model
+
+[8] ID: vocab-u1-l1-08 | Word: Downfall | POS: Noun
+    Bengali: অধঃপতন / পতন / সর্বনাশ
+    Synonyms: Ruin, collapse, downfall, degradation
+    Antonyms: Rise, ascent, triumph, elevation
+    English: A loss of power, prosperity, health, or status; ruin.
+    Example: Rigid schooling led to the tragic downfall and death of the vibrant bird.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Cumilla Board Standard
+
+[9] ID: vocab-u1-l1-09 | Word: Exquisite | POS: Adjective
+    Bengali: অপরূপ সুন্দর / চমৎকার / নিখুঁত কারুকাজময়
+    Synonyms: Splendid, magnificent, elegant, superb, delicate
+    Antonyms: Crude, ordinary, common, ugly
+    English: Extremely beautiful, delicate, and pleasing to look at.
+    Example: Goldsmiths crafted an exquisite golden cage that dazzled all royal visitors.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Jashore Board Standard
+
+[10] ID: vocab-u1-l1-10 | Word: Entrust | POS: Verb
+    Bengali: অর্পণ করা / দায়িত্ব দেওয়া / ন্যস্ত করা
+    Synonyms: Assign, delegate, commit, confide
+    Antonyms: Withhold, retain, keep, hold
+    English: To assign the responsibility for doing something to someone.
+    Example: The king decided to entrust the education of the bird to his nephews.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Mymensingh Board Standard
+
+[11] ID: vocab-u1-l1-11 | Word: Flourish | POS: Verb
+    Bengali: সমৃদ্ধিশালী হওয়া / উন্নতি লাভ করা / বিকশিত হওয়া
+    Synonyms: Thrive, prosper, bloom, blossom
+    Antonyms: Wither, decline, languish, fail
+    English: To grow or develop in a healthy or vigorous way; thrive.
+    Example: All the relatives and scribes flourished with wealth from the education fund.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dinajpur Board Model
+
+[12] ID: vocab-u1-l1-12 | Word: Feeble | POS: Adjective
+    Bengali: দুর্বল / নিস্তেজ / ক্ষীণ
+    Synonyms: Weak, frail, sickly, debilitated, faint
+    Antonyms: Strong, robust, vigorous, sturdy
+    English: Lacking physical strength, energy, or power; weak.
+    Example: Over time, the stuffed parrot grew too feeble even to chirp or flutter.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dhaka Board 1st Paper
+
+[13] ID: vocab-u1-l1-13 | Word: Flutter | POS: Verb
+    Bengali: ডানা ঝাপটানো / কম্পিত হওয়া
+    Synonyms: Flap, flicker, quiver, beat
+    Antonyms: Settle, freeze, stay still
+    English: To fly unsteadily or flap wings quickly and lightly.
+    Example: The caged parrot tried to flutter its wings toward the open forest sky.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: HSC Board Exam, Unit 1
+
+[14] ID: vocab-u1-l1-14 | Word: Folly | POS: Noun
+    Bengali: বোকামি / মূর্খতা / নির্বুদ্ধিতা
+    Synonyms: Foolishness, stupidity, absurdity, silliness
+    Antonyms: Wisdom, prudence, sagacity, sanity
+    English: Lack of good sense; foolishness or an unwise action.
+    Example: Rabindranath Tagore satirized the utter folly of rote memorization in education.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Chattogram Board Standard
+
+[15] ID: vocab-u1-l1-15 | Word: Gilded | POS: Adjective
+    Bengali: সোনার জলে মোড়ানো / সোনালি / স্বর্ণখচিত
+    Synonyms: Gold-plated, golden, ornate, gilded
+    Antonyms: Unadorned, plain, bare, rustic
+    English: Covered thinly with gold leaf or gold paint; opulent.
+    Example: Inside the gilded cage, the wild bird lost its natural song and freedom.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Rajshahi Board Exam
+
+[16] ID: vocab-u1-l1-16 | Word: Hop | POS: Verb
+    Bengali: লাফানো / লাফিয়ে চলা / এক পায়ে লাফানো
+    Synonyms: Jump, leap, bound, skip
+    Antonyms: Stand still, halt, stay
+    English: To move by jumping on one or both feet or legs.
+    Example: In the wild, the free bird used to hop merrily from branch to branch.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Sylhet Board Standard
+
+[17] ID: vocab-u1-l1-17 | Word: Humorous | POS: Adjective
+    Bengali: হাস্যরসাত্মক / হাস্যরসপূর্ণ / রসাত্মক
+    Synonyms: Amusing, comical, funny, witty, hilarious
+    Antonyms: Serious, grave, somber, solemn
+    English: Causing lighthearted laughter and amusement; comical.
+    Example: Tagore presents a humorous yet biting critique of bureaucratic education.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Barishal Board Model
+
+[18] ID: vocab-u1-l1-18 | Word: Impudence | POS: Noun
+    Bengali: ধৃষ্টতা / ঔদ্ধত্য / নির্লজ্জতা
+    Synonyms: Insolence, impertinence, audacity, disrespect
+    Antonyms: Politeness, civility, modesty, courtesy
+    English: The trait of being rude, insolent, and disrespectfully bold.
+    Example: The royal courtiers considered it impudence when the bird gasped for air.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Cumilla Board Standard
+
+[19] ID: vocab-u1-l1-19 | Word: Innate | POS: Adjective
+    Bengali: সহজাত / স্বভাবজাত / জন্মগত
+    Synonyms: Inborn, inherent, natural, instinctive
+    Antonyms: Acquired, learned, extrinsic, artificial
+    English: Inborn; natural; present from birth rather than acquired.
+    Example: True learning must nurture a child's innate curiosity and creativity.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Jashore Board Standard
+
+[20] ID: vocab-u1-l1-20 | Word: Ideally | POS: Adverb
+    Bengali: আদর্শভাবে / নিখুঁতভাবে / সর্বোত্তমভাবে
+    Synonyms: Perfectly, flawlessly, optimally, impeccably
+    Antonyms: Imperfectly, poorly, defectively
+    English: In the best possible way; perfectly.
+    Example: Ideally, schools should provide an open and joyful learning environment.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Mymensingh Board Standard
+
+[21] ID: vocab-u1-l1-21 | Word: Lurk | POS: Verb
+    Bengali: ওত পেতে থাকা / লুকিয়ে থাকা / গোপনে থাকা
+    Synonyms: Skulk, sneak, hide, prowl
+    Antonyms: Emerge, appear, show
+    English: To remain hidden so as to wait in ambush or go unnoticed.
+    Example: Detractors lurking in dark corners whispered rumors about the bird's suffering.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dinajpur Board Model
+
+[22] ID: vocab-u1-l1-22 | Word: Merrily | POS: Adverb
+    Bengali: আনন্দের সাথে / হাসিখুশিভাবে / উল্লাসভরে
+    Synonyms: Joyfully, cheerfully, happily, gleefully
+    Antonyms: Sadly, sorrowfully, gloomily, unhappily
+    English: In a cheerful and joyous manner.
+    Example: The free forest birds sang merrily among the green tree tops.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dhaka Board 1st Paper
+
+[23] ID: vocab-u1-l1-23 | Word: Maintenance | POS: Noun
+    Bengali: রক্ষণাবেক্ষণ / সংস্কার / দেখাশোনা
+    Synonyms: Upkeep, preservation, conservation, sustenance
+    Antonyms: Neglect, destruction, abandonment, disregard
+    English: The process of preserving a condition or keeping something in good repair.
+    Example: Enormous sums of money were allocated for the maintenance of the golden cage.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: HSC Board Exam, Unit 1
+
+[24] ID: vocab-u1-l1-24 | Word: Mount | POS: Verb
+    Bengali: আরোহণ করা / চড়া / ওঠা
+    Synonyms: Ascend, climb, ride, scale
+    Antonyms: Dismount, descend, drop, step down
+    English: To climb up on or get on top of something, such as a horse or platform.
+    Example: The royal inspector mounted his grand elephant to inspect the parrot's school.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Chattogram Board Standard
+
+[25] ID: vocab-u1-l1-25 | Word: Negligible | POS: Adjective
+    Bengali: নগণ্য / তুচ্ছ / উপেক্ষণীয়
+    Synonyms: Insignificant, trivial, minor, slight, petty
+    Antonyms: Significant, substantial, important, remarkable
+    English: So small or unimportant as to be not worth considering.
+    Example: The educators regarded the bird's actual physical health as completely negligible.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Rajshahi Board Exam
+
+[26] ID: vocab-u1-l1-26 | Word: Ponder | POS: Verb
+    Bengali: গভীরভাবে চিন্তা করা / ভাবা / অনুধ্যান করা
+    Synonyms: Contemplate, consider, deliberate, meditate, reflect
+    Antonyms: Ignore, disregard, dismiss, overlook
+    English: To think about something carefully, especially before making a decision.
+    Example: The king sat to ponder the reports submitted by the cage guardians.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Sylhet Board Standard
+
+[27] ID: vocab-u1-l1-27 | Word: Personnel | POS: Noun
+    Bengali: কর্মীবৃন্দ / কর্মকর্তা-কর্মচারী / কর্মী
+    Synonyms: Staff, workforce, employees, manpower
+    Antonyms: 
+    English: People employed in an organization or engaged on an official undertaking.
+    Example: Scores of royal personnel were hired just to polish the golden cage bars.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Barishal Board Model
+
+[28] ID: vocab-u1-l1-28 | Word: Pace | POS: Noun
+    Bengali: গতি / চলার গতি / বেগ
+    Synonyms: Speed, tempo, rate, velocity, swiftness
+    Antonyms: Sluggishness, slowness, standstill
+    English: Speed in walking, running, or movement; rate of progress.
+    Example: The scribes worked at a furious pace to produce endless copies of the text.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Cumilla Board Standard
+
+[29] ID: vocab-u1-l1-29 | Word: Percussion | POS: Noun
+    Bengali: ঘাতবাদ্য / বাদ্যযন্ত্রের আঘাতধ্বনি
+    Synonyms: Drumming, beat, percussion instrument
+    Antonyms: 
+    English: Musical instruments played by striking with the hand or a beater.
+    Example: Loud percussion drums were sounded to announce the parrot's grand education.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Jashore Board Standard
+
+[30] ID: vocab-u1-l1-30 | Word: Polish | POS: Verb
+    Bengali: উজ্জ্বল করা / চকচকে করা / ঘষে মাজা
+    Synonyms: Burnish, shine, buff, brighten, rub
+    Antonyms: Tarnish, dull, blemish, dirty
+    English: To make the surface of something smooth and shiny by rubbing.
+    Example: The workers spent all day using powder to polish the bird's magnificent cage.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Mymensingh Board Standard
+
+[31] ID: vocab-u1-l1-31 | Word: Reprehensible | POS: Adjective
+    Bengali: নিন্দনীয় / তিরস্কারযোগ্য / গর্হিত
+    Synonyms: Blameworthy, deplorable, disgraceful, shameful
+    Antonyms: Praiseworthy, commendable, blameless, impeccable
+    English: Deserving censure or condemnation; blameworthy.
+    Example: Forcing manuscripts down a living creature's throat was a reprehensible act.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dinajpur Board Model
+
+[32] ID: vocab-u1-l1-32 | Word: Scripture | POS: Noun
+    Bengali: ধর্মগ্রন্থ / ধর্মীয় শাস্ত্র
+    Synonyms: Sacred text, holy book, holy scripture, canon
+    Antonyms: 
+    English: The sacred writings or treatises of a religion or philosophical system.
+    Example: Leaves torn from thick scripture texts were shoved into the parrot's mouth.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dhaka Board 1st Paper
+
+[33] ID: vocab-u1-l1-33 | Word: Summon | POS: Verb
+    Bengali: তলব করা / ডেকে পাঠানো
+    Synonyms: Call, convene, cite, assemble
+    Antonyms: Dismiss, send away, discharge, ignore
+    English: To authoritatively or urgently call on someone to be present.
+    Example: The king decided to summon the nephews to answer the complaints of critics.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: HSC Board Exam, Unit 1
+
+[34] ID: vocab-u1-l1-34 | Word: Startled | POS: Adjective
+    Bengali: চমকিত / আঁতকে ওঠা / শঙ্কিত
+    Synonyms: Shocked, alarmed, surprised, astonished
+    Antonyms: Calm, undisturbed, composed, assured
+    English: Feeling sudden shock or alarm caused by an unexpected occurrence.
+    Example: The courtiers were startled when the nephew claimed the bird had no complaints.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Chattogram Board Standard
+
+[35] ID: vocab-u1-l1-35 | Word: Slander | POS: Verb / Noun
+    Bengali: কুৎসা রটানো / মিথ্যা অপবাদ দেওয়া / পরনিন্দা করা
+    Synonyms: Defame, vilify, malign, disparage, smear
+    Antonyms: Praise, applaud, commend, laud
+    English: To make false and damaging spoken statements about someone.
+    Example: The nephews claimed that the envious detractors were spreading pure slander.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Rajshahi Board Exam
+
+[36] ID: vocab-u1-l1-36 | Word: Screech | POS: Verb / Noun
+    Bengali: কর্কশ চিৎকার করা / তীক্ষ্ণ চিৎকার দেওয়া
+    Synonyms: Shriek, squawk, scream, squeal
+    Antonyms: Whisper, murmur, hush
+    English: To make a loud, harsh, piercing cry or sound.
+    Example: The starving parrot could only let out a faint screech when prodded.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Sylhet Board Standard
+
+[37] ID: vocab-u1-l1-37 | Word: Sigh | POS: Verb / Noun
+    Bengali: দীর্ঘশ্বাস ফেলা / হা-হুতাশ করা
+    Synonyms: Gasp, groan, moan, breathe out
+    Antonyms: Rejoice, cheer, laugh
+    English: To emit a long, deep, audible breath expressing sadness or exhaustion.
+    Example: The dying bird let out a final weak sigh inside its magnificent prison.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Barishal Board Model
+
+[38] ID: vocab-u1-l1-38 | Word: Satire | POS: Noun
+    Bengali: ব্যঙ্গরচনা / বিদ্রূপাত্মক সাহিত্য
+    Synonyms: Parody, lampoon, sarcasm, irony, mockery
+    Antonyms: Praise, tribute, eulogy, panegyric
+    English: The use of humor, irony, or exaggeration to expose human folly and vices.
+    Example: The Parrot's Tale is a world-famous political and pedagogical satire by Tagore.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Cumilla Board Standard
+
+[39] ID: vocab-u1-l1-39 | Word: Twig | POS: Noun
+    Bengali: গাছের ছোট ডাল / কচি ডাল / পল্লব
+    Synonyms: Sprig, branchlet, shoot, stick
+    Antonyms: 
+    English: A slender, woody shoot growing from a branch or stem of a tree.
+    Example: The forest bird once happily built its nest on a green leafy twig.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Jashore Board Standard
+
+[40] ID: vocab-u1-l1-40 | Word: Tear | POS: Verb
+    Bengali: ছিঁড়ে ফেলা / টুকরো করা / ফালাফালা করা
+    Synonyms: Rip, shred, split, sever
+    Antonyms: Mend, join, repair, stitch
+    English: To pull or rip something apart or into pieces with force.
+    Example: The pundits would tear page after page of manuscripts into tiny bits for the bird.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Mymensingh Board Standard
+
+[41] ID: vocab-u1-l1-41 | Word: Thrust | POS: Verb
+    Bengali: জোরপূর্বক ঢোকানো / ঠেলা দেওয়া / ধাক্কা দেওয়া
+    Synonyms: Shove, push, force, drive, plunge
+    Antonyms: Withdraw, extract, pull back, retract
+    English: To push someone or something suddenly or violently in a specified direction.
+    Example: Handfuls of torn manuscript pages were thrust directly into the bird's beak.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dinajpur Board Model
+
+[42] ID: vocab-u1-l1-42 | Word: Thunderous | POS: Adjective
+    Bengali: বজ্রনিনাদপূর্ণ / প্রচণ্ড শব্দময় / বজ্রসম গর্জনপূর্ণ
+    Synonyms: Booming, deafening, roaring, thundering
+    Antonyms: Quiet, silent, muted, subdued
+    English: Making a very loud and deep noise like thunder.
+    Example: Thunderous applause filled the auditorium when the royal education was praised.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Dhaka Board 1st Paper
+
+[43] ID: vocab-u1-l1-43 | Word: Unlettered | POS: Adjective
+    Bengali: নিরক্ষর / অশিক্ষিত / বিদ্যাবুদ্ধিহীন
+    Synonyms: Illiterate, uneducated, unlearned, ignorant
+    Antonyms: Literate, educated, learned, scholarly
+    English: Not educated; illiterate; unable to read or write.
+    Example: The king declared that the unlettered forest bird must be formally civilized.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: HSC Board Exam, Unit 1
+
+[44] ID: vocab-u1-l1-44 | Word: Veritable | POS: Adjective
+    Bengali: প্রকৃত / যথার্থ / খাঁটি / সত্যিকার
+    Synonyms: Authentic, genuine, real, actual
+    Antonyms: Fake, false, counterfeit, spurious
+    English: Being truly or very much so; real, genuine, and authentic.
+    Example: The bird's cage became a veritable spectacle for spectators from across the empire.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Chattogram Board Standard
+
+[45] ID: vocab-u1-l1-45 | Word: Vice | POS: Noun
+    Bengali: পাপ / অনাচার / অনৈতিকতা / অসদাচরণ
+    Synonyms: Sin, immorality, wickedness, wrongdoing
+    Antonyms: Virtue, goodness, righteousness, morality
+    English: Immoral or wicked behavior; a bad habit or moral weakness.
+    Example: Greed and sycophancy were the underlying vices of the royal courtiers.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Rajshahi Board Exam
+
+[46] ID: vocab-u1-l1-46 | Word: Workmanship | POS: Noun
+    Bengali: কারিগরি দক্ষতা / নির্মাণকৌশল / শিল্পনৈপুণ্য
+    Synonyms: Craftsmanship, artisanship, artistry, expertise
+    Antonyms: Incompetence, clumsiness, crude work
+    English: The degree of skill with which a product is made or a job done.
+    Example: The gold cage was praised for its unmatched workmanship and flawless finish.
+    Unit: Unit 1: Lesson 1 (The Parrot's Tale) | Board: Sylhet Board Standard
+
+[47] ID: vocab-24 | Word: Etiquette | POS: Noun
+    Bengali: শিষ্টাচার / সামাজিক আদব-কায়দা / আচরণবিধি
+    Synonyms: Protocol, manners, decorum, propriety, politeness
+    Antonyms: Impoliteness, rudeness, indecency, discourtesy
+    English: The customary code of polite behavior in society or among members of a particular profession or group.
+    Example: Understanding table etiquette is essential when attending formal dinners in different countries.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam, Unit 10
+
+[48] ID: vocab-25 | Word: Manners | POS: Noun
+    Bengali: ভদ্রতা / আদব-কায়দা / সদাচার
+    Synonyms: Courtesy, politeness, civility, etiquette, respect
+    Antonyms: Rudeness, discourtesy, bad manners, impoliteness
+    English: Polite ways of behaving toward others with social respect and consideration.
+    Example: Good manners demand that you shake hands softly in China so as not to appear aggressive.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper, Unit 10
+
+[49] ID: vocab-26 | Word: Graceful | POS: Adjective
+    Bengali: মার্জিত / লাবণ্যময় / শোভন / সুরুচিপূর্ণ
+    Synonyms: Elegant, refined, dignified, tasteful, polite
+    Antonyms: Clumsy, awkward, ungainly, crude, rude
+    English: Characterized by elegance, good taste, refinement, and polite movement.
+    Example: Be graceful and polite when taking food with chopsticks in Chinese dining culture.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dhaka Board Standard, Unit 10
+
+[50] ID: vocab-27 | Word: Aggression | POS: Noun
+    Bengali: আগ্রাসন / আক্রমণাত্মক মনোভাব / শত্রুভাবাপন্নতা
+    Synonyms: Hostility, belligerence, combativeness, antagonism
+    Antonyms: Friendliness, gentleness, peacefulness, passivity
+    English: Feelings of anger or antipathy resulting in hostile or violent behavior.
+    Example: In China, a firm handshake could be interpreted as a sign of aggression.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[51] ID: vocab-28 | Word: Chopsticks | POS: Noun
+    Bengali: খাবার খাওয়ার কাঠি / চপস্টিক
+    Synonyms: Eating sticks
+    Antonyms: 
+    English: A pair of small, thin sticks used especially in East Asia for eating food.
+    Example: Don't play with chopsticks or point at anyone with them while dining in China.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Textbook Vocab, Unit 10
+
+[52] ID: vocab-29 | Word: Norm | POS: Noun
+    Bengali: সামাজিক রীতি / প্রচলিত প্রথা / আদর্শ মাপকাঠি
+    Synonyms: Standard, convention, custom, rule, tradition
+    Antonyms: Anomaly, exception, irregularity, deviation
+    English: A standard or pattern, especially of social behavior, that is typical or expected of a group.
+    Example: Politely refusing a gift before accepting it is the cultural norm in China.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Chattogram Board Standard
+
+[53] ID: vocab-30 | Word: Discouraged | POS: Adjective
+    Bengali: নিরুৎসাহিত / হতোদ্যম / মনোবল হারানো
+    Synonyms: Disheartened, Demoralized, Despondent, Depressed
+    Antonyms: Encouraged, Motivated, Inspired, Hopeful
+    English: Having lost confidence or enthusiasm; disheartened.
+    Example: Foreign visitors shouldn't feel discouraged when trying to learn complex cultural etiquette.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Rajshahi Board Exam
+
+[54] ID: vocab-31 | Word: Symbolise | POS: Verb
+    Bengali: প্রতীক হিসেবে প্রকাশ করা / তাৎপর্য বহন করা
+    Synonyms: Represent, Signify, Stand for, Typify, Embody
+    Antonyms: Misrepresent, Conceal, Obscure
+    English: To represent or identify by means of a symbol or emblem.
+    Example: In many cultures, sharing bread is used to symbolise friendship and unity.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Sylhet Board Standard
+
+[55] ID: vocab-32 | Word: Senior | POS: Noun / Adjective
+    Bengali: বয়োজ্যেষ্ঠ / ঊর্ধ্বতন / প্রবীণ ব্যক্তি
+    Synonyms: Elder, Older, Superior, Higher-ranking
+    Antonyms: Junior, Subordinate, Youth, Minor
+    English: A person who is older or has a higher rank or standing than another.
+    Example: In China, it is customary to greet the most senior person first.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Barishal Board Model
+
+[56] ID: vocab-33 | Word: Casual | POS: Adjective
+    Bengali: অনানুষ্ঠানিক / সাদামাটা / সাধারণ পোশাক বা আচরণ
+    Synonyms: Informal, Relaxed, Nonchalant, Easygoing, Everyday
+    Antonyms: Formal, Ceremonious, Strict, Stiff
+    English: Relaxed and unconcerned; not formal.
+    Example: Casual clothing is fine for everyday outings, but formal dinners demand etiquette.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Cumilla Board Standard
+
+[57] ID: vocab-34 | Word: Hostess | POS: Noun
+    Bengali: গৃহকর্ত্রী / মেজবান নারী / নিমন্ত্রণকর্ত্রী
+    Synonyms: Hostess, Welcomer, Entertainer, Lady host
+    Antonyms: Guest, Visitor, Invitee
+    English: A woman who receives or entertains guests socially or commercially.
+    Example: It is customary to thank the hostess warmly for preparing a wonderful meal.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Jashore Board Standard
+
+[58] ID: vocab-35 | Word: Preparation | POS: Noun
+    Bengali: প্রস্তুতি / আয়োজন / প্রস্তুতকরণ
+    Synonyms: Arrangement, Readiness, Planning, Organization
+    Antonyms: Unpreparedness, Neglect, Disorganization, Improvisation
+    English: The action or process of making ready or being made ready for use or consideration.
+    Example: Hours of careful preparation went into creating the magnificent feast for royal guests.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Mymensingh Board Standard
+
+[59] ID: vocab-36 | Word: Gradually | POS: Adverb
+    Bengali: ধীরে ধীরে / পর্যায়ক্রমে / ক্রমান্বয়ে
+    Synonyms: Slowly, Steadily, Step by step, Progressively, Incrementally
+    Antonyms: Suddenly, Abruptly, Rapidly, Instantly
+    English: In a gradual way; slowly; by degrees.
+    Example: Gradually, foreign travelers learn to appreciate local table traditions.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dinajpur Board Model
+
+[60] ID: vocab-37 | Word: Foreigners | POS: Noun
+    Bengali: বিদেশি / ভিন্ন দেশ বা সংস্কৃতির নাগরিক
+    Synonyms: Aliens, Strangers, Outsiders, Immigrants
+    Antonyms: Natives, Citizens, Locals, Inhabitants
+    English: Persons born in or coming from another country.
+    Example: Foreigners should study local customs before visiting traditional households.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dhaka Board 1st Paper
+
+[61] ID: vocab-38 | Word: Merely | POS: Adverb
+    Bengali: কেবল / শুধুমাত্র / নিতান্তই
+    Synonyms: Only, Simply, Just, Purely, Solely
+    Antonyms: Completely, Entirely, Fully, Substantially
+    English: Just; only; no more than.
+    Example: Politeness is not merely a formality; it is a sign of deep human respect.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Chattogram Board Standard
+
+[62] ID: vocab-39 | Word: Extend | POS: Verb
+    Bengali: প্রসারিত করা / বাড়িয়ে দেওয়া / বিস্তার করা
+    Synonyms: Stretch out, Reach out, Offer, Proffer, Prolong
+    Antonyms: Withdraw, Retract, Shorten, Pull back
+    English: To hold out something toward someone; offer.
+    Example: Always extend your right hand when offering a greeting or receiving a gift in Arab culture.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Rajshahi Board Exam
+
+[63] ID: vocab-40 | Word: Leisurely | POS: Adjective / Adverb
+    Bengali: ধীরস্থির / আয়েশি / শান্ত ও নিরুদ্বেগ
+    Synonyms: Unhurried, Relaxed, Easygoing, Casual, Slow-paced
+    Antonyms: Hurried, Rushed, Hasty, Fast-paced
+    English: Acting or done at leisure; unhurried or relaxed.
+    Example: South African greetings are leisurely and filled with warm conversation.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Sylhet Board Standard
+
+[64] ID: vocab-41 | Word: Customary | POS: Adjective
+    Bengali: প্রথাগত / ঐতিহ্যবাহী / প্রচলিত রীতিনীতি অনুযায়ী
+    Synonyms: Traditional, Usual, Conventional, Habitual, Routine
+    Antonyms: Unusual, Unconventional, Rare, Strange
+    English: According to the customs or usual practices associated with a particular society.
+    Example: It is customary in Britain to write a thank-you note to the host after a formal dinner.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Barishal Board Model
+
+[65] ID: vocab-42 | Word: Informal | POS: Adjective
+    Bengali: ঘরোয়া / অনানুষ্ঠানিক / সাদামাটা পরিবেশ
+    Synonyms: Casual, Relaxed, Unofficial, Familiar, Easy
+    Antonyms: Formal, Official, Ceremonial, Rigid
+    English: Having a relaxed, friendly, or unofficial style, manner, or nature.
+    Example: An informal dinner with close friends doesn't require strict seating arrangements.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Cumilla Board Standard
+
+[66] ID: vocab-43 | Word: Gratitude | POS: Noun
+    Bengali: কৃতজ্ঞতা / ধন্যবাদবোধ / উপকারের স্বীকৃতি
+    Synonyms: Thankfulness, Appreciation, Gratefulness, Recognition
+    Antonyms: Ingratitude, Unthankfulness, Indifference
+    English: The quality of being thankful; readiness to show appreciation and return kindness.
+    Example: Expressing gratitude to your hosts is an essential element of good manners.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Jashore Board Standard
+
+[67] ID: vocab-44 | Word: Gesture | POS: Noun
+    Bengali: অঙ্গভঙ্গি / মনোভাব প্রকাশের শারীরিক বা আচরণিক ভঙ্গি
+    Synonyms: Signal, Sign, Action, Motion, Movement
+    Antonyms: Inaction, Immobility, Speechlessness
+    English: A movement of part of the body, especially a hand or the head, to express an idea or meaning.
+    Example: In South Africa, a warm wave and smile is a common greeting gesture.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Mymensingh Board Standard
+
+[68] ID: vocab-45 | Word: Mutual | POS: Adjective
+    Bengali: পারস্পরিক / উভয়ের মধ্যে বিদ্যমান
+    Synonyms: Reciprocal, Shared, Joint, Common, Bilateral
+    Antonyms: One-sided, Unilateral, Individual, Single
+    English: Held in common by two or more parties; shared.
+    Example: Mutual respect is the foundation of harmonious cross-cultural interactions.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dinajpur Board Model
+
+[69] ID: vocab-46 | Word: Forbidden | POS: Adjective
+    Bengali: সম্পূর্ণ নিষিদ্ধ / অননুমোদিত / বর্জনীয়
+    Synonyms: Prohibited, Banned, Disallowed, Barred, Taboo
+    Antonyms: Allowed, Permitted, Lawful, Authorized
+    English: Not allowed; banned.
+    Example: Public kissing is strictly forbidden in conservative Middle Eastern societies.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dhaka Board 1st Paper
+
+[70] ID: vocab-47 | Word: Utensils | POS: Noun
+    Bengali: তৈজসপত্র / খাবার তৈরি ও খাওয়ার সরঞ্জাম বা পাত্র
+    Synonyms: Cutlery, Implements, Tools, Tableware, Appliances
+    Antonyms: 
+    English: Implements, containers, or other articles, especially for household or dining use.
+    Example: In traditional Middle Eastern dining, people often eat with their right hand using hardly any utensils.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam Model
+
+[71] ID: vocab-48 | Word: Receipt | POS: Noun
+    Bengali: প্রাপ্তি / কোনো কিছু পাওয়ার মুহূর্ত
+    Synonyms: Receiving, Reception, Acceptance, Acquisition
+    Antonyms: Dispatch, Sending, Delivery, Issuance
+    English: The action of receiving something or the fact of its being received.
+    Example: Upon receipt of a gift in China, express sincere thanks even if you initially hesitated.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Chattogram Board Standard
+
+[72] ID: vocab-u10-l2-01 | Word: Apathy | POS: Noun
+    Bengali: অনীহা / উদাসীনতা
+    Synonyms: Indifference, unconcern, disinterest, detachment
+    Antonyms: Enthusiasm, passion, zeal, eagerness
+    English: Lack of interest, enthusiasm, or concern for others.
+    Example: The selfish man was relieved of his apathy toward people's polite behavior.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dhaka Board Standard
+
+[73] ID: vocab-u10-l2-02 | Word: Blow | POS: Verb
+    Bengali: বাজানো / ভেঁপু বাজানো
+    Synonyms: Honk, sound, blast, blare, toot
+    Antonyms: Mute, silence, quiet
+    English: To sound a horn, whistle, or instrument loudly.
+    Example: Do not blow the car horn unnecessarily in quiet residential neighborhoods.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Rajshahi Board Exam
+
+[74] ID: vocab-u10-l2-03 | Word: Caution | POS: Noun
+    Bengali: সতর্কতা / সাবধানতা
+    Synonyms: Alertness, carefulness, prudence, vigilance
+    Antonyms: Carelessness, negligence, recklessness, rashness
+    English: Care taken to avoid danger or mistakes.
+    Example: The girls approached the mysterious machine with extreme caution.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Sylhet Board Standard
+
+[75] ID: vocab-u10-l2-04 | Word: Choosy | POS: Adjective
+    Bengali: খুঁতখুঁতে / বাছাবাছিকারী
+    Synonyms: Picky, selective, fastidious, particular
+    Antonyms: Indifferent, uncritical, easy-going, undemanding
+    English: Having very specific requirements; hard to please.
+    Example: Being overly choosy about food when invited out can appear rude to your host.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Barishal Board Model
+
+[76] ID: vocab-u10-l2-05 | Word: Count | POS: Verb
+    Bengali: বিবেচনা করা / হিসেবে ধরা
+    Synonyms: Include, consider, regard, reckon
+    Antonyms: Exclude, disregard, ignore, overlook
+    English: To take into account; consider or include.
+    Example: Small acts of politeness count heavily in building strong community bonds.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Cumilla Board Standard
+
+[77] ID: vocab-u10-l2-06 | Word: Courteous | POS: Adjective
+    Bengali: বিনয়ী / ভদ্র / সদাচারী
+    Synonyms: Polite, well-behaved, respectful, gracious, civil
+    Antonyms: Impolite, disrespectful, rude, discourteous
+    English: Polite, respectful, and considerate in manner.
+    Example: Always remain courteous even when expressing disagreement online or in person.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Jashore Board Standard
+
+[78] ID: vocab-u10-l2-07 | Word: Creep | POS: Verb
+    Bengali: গুঁড়ি মেরে চলা / চুপিচুপি যাওয়া
+    Synonyms: Crawl, slither, sneak, tiptoe, glide
+    Antonyms: Run, hustle, march, sprint
+    English: To move slowly and carefully in order to avoid being heard or noticed.
+    Example: The girls tried to creep softly toward the laboratory without alerting the guard.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Mymensingh Board Standard
+
+[79] ID: vocab-u10-l2-08 | Word: Enormous | POS: Adjective
+    Bengali: প্রকাণ্ড / বিশালাকার / দানবাকৃতি
+    Synonyms: Huge, massive, gigantic, colossal, immense
+    Antonyms: Small, tiny, minute, miniature
+    English: Very large in size, quantity, or extent.
+    Example: The scientist constructed an enormous machine inside the hilltop cave.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dinajpur Board Model
+
+[80] ID: vocab-u10-l2-09 | Word: Explode | POS: Verb
+    Bengali: বিস্ফোরিত হওয়া / ফেটে যাওয়া
+    Synonyms: Blow up, burst, detonate, shatter, erupt
+    Antonyms: Implode, stabilize, remain intact
+    English: To burst or shatter violently and noisily.
+    Example: When overloaded with polite energy, the evil contraption exploded into dust.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dhaka Board 1st Paper
+
+[81] ID: vocab-u10-l2-10 | Word: Expression | POS: Noun
+    Bengali: শব্দ / অভিব্যক্তি / প্রকাশভঙ্গি
+    Synonyms: Utterance, phrase, remark, statement, idiom
+    Antonyms: Silence, inexpression, speechlessness
+    English: A word or phrase used to express an idea or polite feeling.
+    Example: Phrases like 'please' and 'thank you' are vital expressions of social respect.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Chattogram Board Standard
+
+[82] ID: vocab-u10-l2-11 | Word: Extravagant | POS: Adjective
+    Bengali: অতিরিক্ত / অপব্যয়ী / বাড়াবাড়ি
+    Synonyms: Wasteful, excessive, immoderate, lavish
+    Antonyms: Reasonable, moderate, frugal, economical
+    English: Lacking restraint in spending money or using resources; excessive.
+    Example: There is no need for extravagant gifts when a heartfelt thank-you card suffices.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Rajshahi Board Exam
+
+[83] ID: vocab-u10-l2-12 | Word: Eye contact | POS: Noun phrase
+    Bengali: চোখাচোখি / দৃষ্টিবিনিময়
+    Synonyms: Direct gaze, visual connection, eye-to-eye gaze
+    Antonyms: Averted gaze, gaze avoidance, looking away
+    English: The state in which two people look directly into each other's eyes.
+    Example: Maintaining warm eye contact during conversations conveys sincerity and confidence.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Sylhet Board Standard
+
+[84] ID: vocab-u10-l2-13 | Word: Free-will agent | POS: Noun phrase
+    Bengali: স্বাধীনভাবে কাজ করার অধিকারপ্রাপ্ত ব্যক্তি
+    Synonyms: Autonomous person, independent agent, self-governing individual
+    Antonyms: Dependent, puppet, slave, subordinate
+    English: An individual possessing the freedom and capacity to make their own ethical choices.
+    Example: As a free-will agent, every student is responsible for maintaining good online manners.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Barishal Board Model
+
+[85] ID: vocab-u10-l2-14 | Word: Forbid | POS: Verb
+    Bengali: নিষেধ করা / বারণ করা
+    Synonyms: Prohibit, prevent, disallow, ban, bar
+    Antonyms: Allow, permit, approve, authorize
+    English: To refuse to allow something; prohibit.
+    Example: Netiquette rules forbid the use of insulting language in public forums.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Cumilla Board Standard
+
+[86] ID: vocab-u10-l2-15 | Word: Gesture | POS: Noun
+    Bengali: ইশারা বা ইঙ্গিত / শারীরিক অঙ্গভঙ্গি
+    Synonyms: Sign, motion, signal, body language, gesticulation
+    Antonyms: Speech, vocal utterance, words
+    English: A movement of part of the body to convey an attitude or polite message.
+    Example: A friendly waving gesture reassured the lost traveler in the foreign city.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Jashore Board Standard
+
+[87] ID: vocab-u10-l2-16 | Word: Gratefulness | POS: Noun
+    Bengali: কৃতজ্ঞতা / ধন্যবাদ জ্ঞাপন
+    Synonyms: Thankfulness, appreciation, gratitude, acknowledgement
+    Antonyms: Ingratitude, unthankfulness, thanklessness
+    English: The feeling or quality of being grateful; appreciation.
+    Example: Expressing gratefulness makes both the giver and the receiver feel appreciated.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Mymensingh Board Standard
+
+[88] ID: vocab-u10-l2-17 | Word: Grocery | POS: Noun
+    Bengali: নিত্যপণ্য দ্রব্য / মুদি মালামাল
+    Synonyms: Commodities, provisions, foodstuff, supplies
+    Antonyms: 
+    English: Items of food and other essential household goods sold in a store.
+    Example: It is good etiquette to help elderly neighbors carry their heavy grocery bags.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Cumilla Board Standard
+
+[89] ID: vocab-u10-l2-18 | Word: Honk | POS: Verb / Noun
+    Bengali: মোটরগাড়ির ভেঁপু বাজানো
+    Synonyms: Hoot, blow, blare, toot
+    Antonyms: Silence, quietness, mute
+    English: To emit or cause a car horn to emit a loud sound.
+    Example: Polite drivers do not honk aggressively at pedestrians in crosswalks.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dhaka Board 1st Paper
+
+[90] ID: vocab-u10-l2-19 | Word: Invent | POS: Verb
+    Bengali: উদ্ভাবন করা / সৃষ্টি করা
+    Synonyms: Create, devise, formulate, originate, design
+    Antonyms: Destroy, shatter, demolish, ruin
+    English: To create or design something that has not existed before.
+    Example: The man took a mission to invent a device that would steal polite words.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Mymensingh Board Standard
+
+[91] ID: vocab-u10-l2-20 | Word: Investigation | POS: Noun
+    Bengali: তদন্ত / অনুসন্ধান / নিরীক্ষা
+    Synonyms: Inquiry, examination, probe, scrutiny, inspection
+    Antonyms: Neglect, disregard, oversight, ignorance
+    English: A formal inquiry or systematic search to discover facts and truth.
+    Example: Their clever investigation led the two girls to uncover the secret hilltop laboratory.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dinajpur Board Model
+
+[92] ID: vocab-u10-l2-21 | Word: Liberty | POS: Noun
+    Bengali: স্বাধীনতা / স্বাধিকার
+    Synonyms: Freedom, autonomy, independence, emancipation
+    Antonyms: Captivity, bondage, imprisonment, slavery
+    English: The state of being free within society from oppressive restrictions.
+    Example: Online liberty comes with the moral responsibility to practice proper netiquette.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Chattogram Board Standard
+
+[93] ID: vocab-u10-l2-22 | Word: Mission | POS: Noun
+    Bengali: বিশেষকার্য / সুনির্দিষ্ট লক্ষ্য
+    Synonyms: Aim, purpose, goal, assignment, objective
+    Antonyms: Aimlessness, purposelessness
+    English: An important assignment given to a person or group.
+    Example: The students embarked on a mission to spread kindness across their school.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Rajshahi Board Exam
+
+[94] ID: vocab-u10-l2-23 | Word: Portion | POS: Noun
+    Bengali: পরিবেশিত খাবারের অংশ / ভাগ
+    Synonyms: Serving, share, allotment, helping, section
+    Antonyms: Whole, entirety, totality
+    English: A part of a whole; an amount of food served for one person.
+    Example: Take a moderate portion of food so that enough remains for other dinner guests.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Sylhet Board Standard
+
+[95] ID: vocab-u10-l2-24 | Word: Rarely | POS: Adverb
+    Bengali: কদাচিৎ / খুব কমই
+    Synonyms: Infrequently, hardly, seldom, scarcely
+    Antonyms: Often, frequently, regularly, usually
+    English: Not often; seldom.
+    Example: Courteous individuals rarely get involved in bitter online arguments.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Barishal Board Model
+
+[96] ID: vocab-u10-l2-25 | Word: Relieve | POS: Verb
+    Bengali: পরিত্রাণ পাওয়া / লাঘব করা
+    Synonyms: Alleviate, ease, soothe, unburden, lighten
+    Antonyms: Aggravate, worsen, intensify, burden
+    English: To release from a burdensome duty, pain, or discomfort.
+    Example: Saying 'excuse me' can instantly relieve awkward social tension.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Cumilla Board Standard
+
+[97] ID: vocab-u10-l2-26 | Word: Rewind | POS: Verb
+    Bengali: উল্টোদিকে চালিয়ে দেওয়া / পেছনের দিকে ঘোরানো
+    Synonyms: Reverse, undo, roll back, turn back, invert
+    Antonyms: Fast-forward, advance, proceed, accelerate
+    English: To wind back toward the beginning or reverse an operation.
+    Example: The girls managed to rewind the machine's dial, restoring stolen polite phrases.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Jashore Board Standard
+
+[98] ID: vocab-u10-l2-27 | Word: Room | POS: Noun
+    Bengali: জায়গা, স্থান / পরিসর
+    Synonyms: Space, capacity, clearance, expanse
+    Antonyms: Crowdedness, congestion, lack of space
+    English: Space that can be occupied or where something can be done.
+    Example: Make room for elderly and disabled passengers when boarding public transport.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Mymensingh Board Standard
+
+[99] ID: vocab-u10-l2-28 | Word: Satisfaction | POS: Noun
+    Bengali: পরিতৃপ্তি / সন্তুষ্টি
+    Synonyms: Contentment, pleasure, fulfillment, gratification
+    Antonyms: Discontent, dissatisfaction, displeasure, disappointment
+    English: Fulfillment of one's wishes, expectations, or needs.
+    Example: Helping others with polite sincerity brings immense inner satisfaction.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dinajpur Board Model
+
+[100] ID: vocab-u10-l2-29 | Word: Scatter | POS: Verb
+    Bengali: ছড়িয়ে পড়া / চারদিকে ছিটকে যাওয়া
+    Synonyms: Disperse, spread, strew, disseminate, dissipate
+    Antonyms: Gather, collect, assemble, cluster
+    English: To throw in various random directions; disperse widely.
+    Example: When the machine exploded, stolen words began to scatter back to their owners.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dhaka Board 1st Paper
+
+[101] ID: vocab-u10-l2-30 | Word: Seldom | POS: Adverb
+    Bengali: কদাচিৎ / কদাচ
+    Synonyms: Rarely, infrequently, scarcely, hardly ever
+    Antonyms: Often, frequently, constantly, always
+    English: Not often; rarely.
+    Example: People who practice good manners seldom find themselves in unnecessary conflicts.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Dinajpur Board Model
+
+[102] ID: vocab-u10-l2-31 | Word: Showy | POS: Adjective
+    Bengali: চটকদার / প্রদর্শনপ্রবণ
+    Synonyms: Ostentatious, flashy, flamboyant, gaudy
+    Antonyms: Restrained, modest, subtle, understated
+    English: Having a striking appearance or style, often excessively ornate.
+    Example: True elegance lies in modesty rather than in wearing showy decorations.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Rajshahi Board Exam
+
+[103] ID: vocab-u10-l2-32 | Word: Spirit | POS: Noun
+    Bengali: উদ্দীপনা / মনোভাব / আমেজ
+    Synonyms: Mood, feelings, attitude, atmosphere, enthusiasm
+    Antonyms: Apathy, lifelessness, dullness
+    English: The prevailing tone or tendency of what is said or done; mood.
+    Example: Polite greetings lift the spirit of everyone in the room.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Sylhet Board Standard
+
+[104] ID: vocab-u10-l2-33 | Word: Take a hand | POS: Idiom / Phrase
+    Bengali: হস্তক্ষেপ করা / অংশ নেওয়া
+    Synonyms: Participate, step in, intervene, take part, lend a hand
+    Antonyms: Stay out, withdraw, abstain, hold back
+    English: To become actively involved or take part in solving a problem.
+    Example: The brave girls decided to take a hand in solving the mystery of the stolen words.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Chattogram Board Standard
+
+[105] ID: vocab-u10-l2-34 | Word: Terribly | POS: Adverb
+    Bengali: অত্যন্ত / ভীষণভাবে / প্রচণ্ডভাবে
+    Synonyms: Extremely, Exceedingly, Immensely, Very, Awfully
+    Antonyms: Slightly, Barely, Mildly, Moderately
+    English: Very much; extremely; to an intense degree.
+    Example: The man was terribly happy with his initial success before the girls intervened.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Rajshahi Board Exam
+
+[106] ID: vocab-u10-l2-35 | Word: Toil | POS: Noun / Verb
+    Bengali: কঠোর পরিশ্রম / অক্লান্ত খাটুনি
+    Synonyms: Labour, Hard work, Exertion, Drudgery, Struggle
+    Antonyms: Idleness, Leisure, Laziness, Rest, Relaxation
+    English: Extremely hard, exhausting, and continuous physical or mental effort.
+    Example: After much toil, the girls discovered where the wicked man was hiding.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: Sylhet Board Standard
+
+[107] ID: vocab-u10-l2-36 | Word: Trouble | POS: Verb
+    Bengali: কষ্ট দেওয়া / বিরক্ত করা / উদ্বিগ্ন করা
+    Synonyms: Bother, Disturb, Annoy, Afflict, Distress
+    Antonyms: Comfort, Soothe, Calm, Assist, Reassure
+    English: To cause distress, discomfort, pain, or inconvenience to someone.
+    Example: It troubled the man a lot when he saw smiling people using polite expressions.
+    Unit: Unit 10: Lesson 2 (Etiquette Netquette) | Board: HSC Board Exam 2026
+
+[108] ID: vocab-74 | Word: Initially | POS: Adverb
+    Bengali: শুরুতে / প্রাথমিকভাবে / প্রারম্ভে
+    Synonyms: Originally, At first, In the beginning, Primarily, Early on
+    Antonyms: Finally, Ultimately, Eventually, Lastly, In the end
+    English: At first; at the beginning or initial stage of an event.
+    Example: In China, a gift is initially refused out of courtesy before it is gratefully accepted.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam, Unit 10
+
+[109] ID: vocab-75 | Word: Greet | POS: Verb
+    Bengali: অভিবাদন জানানো / সম্ভাষণ করা / স্বাগত জানানো
+    Synonyms: Welcome, Salute, Hail, Address, Acknowledge
+    Antonyms: Ignore, Overlook, Snub, Avoid, Dismiss
+    English: To give a polite word or sign of welcome or recognition upon meeting someone.
+    Example: In Chinese cultural tradition, you should greet the oldest or most senior person first.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[110] ID: vocab-76 | Word: Cheek | POS: Noun
+    Bengali: গাল / কপোল
+    Synonyms: Side of face, Jowl
+    Antonyms: 
+    English: Either side of the face below the eye and above the jaw.
+    Example: Kissing on the cheek in greeting is common in Britain but strictly forbidden in public in the Middle East.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: NCTB Textbook Vocab, Unit 10
+
+[111] ID: vocab-u10-01 | Word: Approach | POS: Noun
+    Bengali: দৃষ্টিভঙ্গি / কর্মপদ্ধতি / আগমন
+    Synonyms: Attitude, Method, Manner, Strategy, Advance
+    Antonyms: Departure, Retreat, Withdrawal, Avoidance
+    English: A way of dealing with situations or coming nearer to someone.
+    Example: A polite and humble approach helps foreigners adapt to different international customs.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam, Unit 10
+
+[112] ID: vocab-u10-02 | Word: Arbitrary | POS: Adjective
+    Bengali: স্বেচ্ছাচারী / খামখেয়ালি / অযৌক্তিক
+    Synonyms: Random, Whimsical, Unreasonable, Capricious, Illogical
+    Antonyms: Rational, Logical, Reasoned, Systematic
+    English: Based on random choice or personal whim rather than reason.
+    Example: Some cultural dining rules may seem arbitrary to outsiders, but they carry deep traditional value.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[113] ID: vocab-u10-03 | Word: Bother | POS: Verb
+    Bengali: বিরক্ত করা / কষ্ট দেওয়া / ব্যতিব্যস্ত করা
+    Synonyms: Trouble, Disturb, Annoy, Irritate, Pester
+    Antonyms: Comfort, Please, Soothe, Reassure
+    English: To take the trouble to do something or cause annoyance to someone.
+    Example: Never bother hostesses by asking inappropriate questions during formal dinner preparations.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper Textbook
+
+[114] ID: vocab-u10-04 | Word: Caveman | POS: Noun
+    Bengali: গুহামানব / আদিম মানুষ
+    Synonyms: Cave-dweller, Barbarian, Troglodyte, Primitive human
+    Antonyms: Modern human, Civilized person, Gentleman
+    English: A prehistoric person or a primitive, uncivilized individual.
+    Example: Table etiquette distinguishes a civilized society from primitive caveman behavior.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[115] ID: vocab-u10-05 | Word: Cheer | POS: Noun
+    Bengali: উল্লাস / আনন্দ / শুভকামনা
+    Synonyms: Joy, Happiness, Merriment, Exultation, Good spirits
+    Antonyms: Gloom, Sadness, Sorrow, Melancholy, Despair
+    English: Shouts of joy or expressions of warm salutation and happiness.
+    Example: South African greetings are leisurely and marked by good cheer and laughter.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[116] ID: vocab-u10-06 | Word: Chew | POS: Verb
+    Bengali: চিবানো / চর্বণ করা
+    Synonyms: Masticate, Munch, Crunch, Grind
+    Antonyms: Swallow whole, Gulp, Swallow
+    English: To bite and grind food in the mouth with the teeth.
+    Example: Good manners dictate that you should chew your food quietly with your mouth closed.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Textbook Vocab, Unit 10
+
+[117] ID: vocab-u10-07 | Word: Chomp | POS: Verb
+    Bengali: শব্দ করে চিবানো / মচমচ করে চিবানো
+    Synonyms: Munch, Crunch, Chew noisily, Bite
+    Antonyms: Nibble, Sip
+    English: To munch or chew loudly and vigorously.
+    Example: Don't chomp food loudly when dining at a formal Chinese banquet.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper Model
+
+[118] ID: vocab-u10-08 | Word: Civilized | POS: Adjective
+    Bengali: সভ্য / মার্জিত / সুসংস্কৃত
+    Synonyms: Refined, Cultured, Enlightened, Polite, Courteous
+    Antonyms: Barbaric, Savage, Uncivilized, Primitive
+    English: Having an advanced culture, politeness, and refined social manners.
+    Example: Respecting local dining customs is the mark of a civilized traveler.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dhaka Board Standard
+
+[119] ID: vocab-u10-09 | Word: Claim | POS: Verb
+    Bengali: দাবি করা / ঘোষণা দেওয়া / অভিমত প্রকাশ করা
+    Synonyms: Assert, Declare, State, Maintain, Profess
+    Antonyms: Deny, Disclaim, Renounce, Disavow
+    English: To state or assert that something is true or belongs to oneself.
+    Example: Anthropologists claim that dining rituals reflect a community's deepest values.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[120] ID: vocab-u10-10 | Word: Concerned | POS: Adjective
+    Bengali: উদ্বিগ্ন / চিন্তিত / যত্নবান
+    Synonyms: Anxious, Worried, Caring, Attentive, Apprehensive
+    Antonyms: Unconcerned, Indifferent, Carefree, Apathetic
+    English: Feeling anxiety or showing thoughtful care about something.
+    Example: Hosts are concerned about the comfort and satisfaction of their guests.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Chattogram Board Standard
+
+[121] ID: vocab-u10-11 | Word: Conscientious | POS: Adjective
+    Bengali: বিবেকবান / নিষ্ঠাবান / অত্যন্ত সতর্ক
+    Synonyms: Meticulous, Scrupulous, Diligent, Careful, Dedicated
+    Antonyms: Careless, Irresponsible, Negligent, Slack
+    English: Wishing to do what is right and taking immense care in one's actions.
+    Example: A conscientious guest always remembers to send a thank-you note after dinner.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Rajshahi Board Exam
+
+[122] ID: vocab-u10-12 | Word: Considerate | POS: Adjective
+    Bengali: সুবিবেচক / অন্যের প্রতি যত্নবান / সহানুভূতিশীল
+    Synonyms: Thoughtful, Mindful, Attentive, Kind, Caring
+    Antonyms: Inconsiderate, Thoughtless, Selfish, Unkind
+    English: Careful not to cause inconvenience or hurt to others.
+    Example: It is considerate to offer help to the hostess with clearing up after the meal.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[123] ID: vocab-u10-13 | Word: Consider | POS: Verb
+    Bengali: বিবেচনা করা / ভেবে দেখা / গণ্য করা
+    Synonyms: Contemplate, Deliberate, Ponder, Regard, Deem
+    Antonyms: Ignore, Disregard, Overlook, Dismiss
+    English: To think carefully about something, typically before making a decision.
+    Example: In China, a firm handshake might be considered a sign of unwanted aggression.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Sylhet Board Model
+
+[124] ID: vocab-u10-14 | Word: Conversation | POS: Noun
+    Bengali: কথোপকথন / আলাপচারিতা
+    Synonyms: Dialogue, Discussion, Talk, Chat, Discourse
+    Antonyms: Silence, Speechlessness, Taciturnity
+    English: A talk, especially an informal one, between two or more people.
+    Example: South African greetings involve warm eye-contact and pleasant conversations.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Barishal Board Standard
+
+[125] ID: vocab-u10-15 | Word: Cue | POS: Noun
+    Bengali: ইঙ্গিত / সংকেত / সূত্র
+    Synonyms: Signal, Hint, Prompt, Clue, Sign
+    Antonyms: 
+    English: A signal or reminder for someone to do something.
+    Example: Wait for the host's cue before you begin eating dinner in Great Britain.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Cumilla Board Standard
+
+[126] ID: vocab-u10-16 | Word: Discreetly | POS: Adverb
+    Bengali: সতর্কভাবে / বিচক্ষণতার সাথে / সাবধানে
+    Synonyms: Tactfully, Prudently, Cautiously, Carefully
+    Antonyms: Indiscreetly, Blatantly, Recklessly, Rashly
+    English: In a careful and prudent manner, especially in order to avoid causing offense.
+    Example: If you dislike a dish, discreetly leave it on your plate without drawing attention.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dinajpur Board Standard
+
+[127] ID: vocab-u10-17 | Word: Disgusted | POS: Adjective
+    Bengali: নিদারুণ বিরক্ত / বিতৃষ্ণ / অসন্তুষ্ট
+    Synonyms: Repelled, Revolted, Sickened, Appalled, Offended
+    Antonyms: Delighted, Pleased, Gratified, Charmed
+    English: Feeling or showing strong disapproval, revulsion, or intense annoyance.
+    Example: Hosts may feel disgusted if guests violate basic table sanitation rules.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Mymensingh Board Standard
+
+[128] ID: vocab-u10-18 | Word: Edge | POS: Noun
+    Bengali: কিনারা / প্রান্ত / ধার
+    Synonyms: Border, Rim, Margin, Brink, Boundary
+    Antonyms: Center, Middle, Interior
+    English: The outside limit of an object, surface, or area.
+    Example: Place your knife and fork on the edge of the plate when pausing during a meal.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[129] ID: vocab-u10-19 | Word: Entire | POS: Adjective
+    Bengali: সম্পূর্ণ / সমগ্র / পুরো
+    Synonyms: Whole, Complete, Total, Full, Absolute
+    Antonyms: Partial, Incomplete, Fractional
+    English: With no part left out; whole and complete.
+    Example: The entire family participates in receiving guests warmly in Middle Eastern households.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Jashore Board Standard
+
+[130] ID: vocab-u10-20 | Word: Frequently | POS: Adverb
+    Bengali: বারবার / পুনঃপুনঃ / ঘনঘন / প্রায়শই
+    Synonyms: Often, Regularly, Repeatedly, Recurrently
+    Antonyms: Rarely, Seldom, Infrequently, Occasionally
+    English: Regularly or habitually; occurring many times.
+    Example: Gifts are given frequently in the Middle East to show genuine love and mutual respect.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper Textbook
+
+[131] ID: vocab-u10-21 | Word: Firm | POS: Adjective
+    Bengali: দৃঢ় / শক্ত / মজবুত
+    Synonyms: Solid, Strong, Resolute, Sturdy, Stable
+    Antonyms: Weak, Soft, Loose, Flexible, Feeble
+    English: Solid, resolute, and strongly held or gripped.
+    Example: While a firm handshake is expected in the West, it may seem aggressive in China.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dhaka Board 2024
+
+[132] ID: vocab-u10-22 | Word: Gristle | POS: Noun
+    Bengali: তরুণাস্থি / নরম হাড়
+    Synonyms: Cartilage
+    Antonyms: 
+    English: Cartilage, especially when present as a tough substance in cooked meat.
+    Example: Discreetly remove gristle from your mouth using a fork or napkin.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[133] ID: vocab-u10-23 | Word: Grab | POS: Verb
+    Bengali: ছোঁ মেরে নেওয়া / আঁকড়ে ধরা / কেড়ে নেওয়া
+    Synonyms: Seize, Grasp, Snatch, Clutch
+    Antonyms: Release, Let go, Drop, Relinquish
+    English: To grasp or seize something suddenly or roughly.
+    Example: Never grab food across the table; instead, ask someone politely to pass it.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Rajshahi Board Standard
+
+[134] ID: vocab-u10-24 | Word: Gravy | POS: Noun
+    Bengali: ঝোল / মাংসের রস থেকে তৈরি সুস্বাদু সস
+    Synonyms: Sauce, Broth, Meat juices, Dressing
+    Antonyms: 
+    English: A sauce made from meat juices and seasonings used with roasted dishes.
+    Example: In Britain, use a piece of bread on a fork to soak up remaining sauce or gravy.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Textbook Vocab
+
+[135] ID: vocab-u10-25 | Word: Gulp | POS: Verb
+    Bengali: দ্রুত গিলে ফেলা / ঢকঢক করে গেলা
+    Synonyms: Swallow, Guzzle, Quaff, Drink hastily
+    Antonyms: Sip, Nibble, Taste slowly
+    English: To swallow food or liquid quickly and in large quantities.
+    Example: It is considered impolite to gulp drinks hastily during a formal dinner.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Cumilla Board Standard
+
+[136] ID: vocab-u10-26 | Word: Habitual | POS: Adjective
+    Bengali: স্বভাবগত / অভ্যাসগত / নিয়মিত
+    Synonyms: Customary, Routine, Regular, Usual, Chronic
+    Antonyms: Occasional, Rare, Infrequent, Unusual, Irregular
+    English: Done or doing constantly as a habit; customary.
+    Example: Giving dates and sweets as gifts is a habitual practice in the Middle East.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Sylhet Board Question
+
+[137] ID: vocab-u10-27 | Word: Hugging | POS: Noun
+    Bengali: আলিঙ্গন করা / বুকে জড়িয়ে ধরা
+    Synonyms: Embracing, Clasping, Enfolding, Cuddling
+    Antonyms: Releasing, Pushing away, Shunning
+    English: Holding someone tightly in one's arms, typically to express affection.
+    Example: Hugging between same-sex friends is a common social greeting across Arab nations.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Barishal Board Standard
+
+[138] ID: vocab-u10-28 | Word: Host | POS: Noun
+    Bengali: নিমন্ত্রণকর্তা / মেজবান / গৃহকর্তা
+    Synonyms: Entertainer, Party-giver, Master of ceremonies
+    Antonyms: Guest, Visitor, Invitee
+    English: A person who receives or entertains other people as guests.
+    Example: Wait until your host indicates that it is time to start eating the meal.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[139] ID: vocab-u10-29 | Word: Identify | POS: Verb
+    Bengali: শনাক্ত করা / চিহ্নিত করা / চিনে নেওয়া
+    Synonyms: Recognize, Distinguish, Spot, Discern, Determine
+    Antonyms: Mistake, Confuse, Misidentify, Overlook
+    English: To establish or indicate who or what someone or something is.
+    Example: Cross-cultural training helps travelers identify acceptable local social norms.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dinajpur Board Standard
+
+[140] ID: vocab-u10-30 | Word: Inadvertently | POS: Adverb
+    Bengali: অসাবধানতাবশত / অনিচ্ছাকৃতভাবে / ভুলবশত
+    Synonyms: Accidentally, Unintentionally, Unwittingly, Involuntarily
+    Antonyms: Intentionally, Deliberately, Purposefully, Consciously
+    English: Without intention; accidentally or by careless oversight.
+    Example: Avoid using your left hand so you do not inadvertently offend your host.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Mymensingh Board Standard
+
+[141] ID: vocab-u10-31 | Word: Indicate | POS: Verb
+    Bengali: নির্দেশ করা / ইঙ্গিত দেওয়া / প্রকাশ করা
+    Synonyms: Signal, Show, Suggest, Signify, Point out
+    Antonyms: Conceal, Hide, Obscure, Mislead
+    English: To point out, show, or suggest the necessity of an action.
+    Example: In Britain, wait until the host indicates that guests may take their seats.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper Textbook
+
+[142] ID: vocab-u10-32 | Word: Indication | POS: Noun
+    Bengali: ইঙ্গিত / নির্দেশক সংকেত / লক্ষণ
+    Synonyms: Sign, Signal, Hint, Clue, Symptom
+    Antonyms: Misdirection, Misguidance, Concealment
+    English: A sign or piece of information indicating something.
+    Example: A smile and nod are common indications of polite recognition in South Africa.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Jashore Board Standard
+
+[143] ID: vocab-u10-33 | Word: Insistent | POS: Adjective
+    Bengali: নাছোড়বান্দা / অবিচল / দৃঢ়প্রতিজ্ঞ
+    Synonyms: Persistent, Adamant, Firm, Tenacious, Unyielding
+    Antonyms: Yielding, Flexible, Compliant, Undemanding
+    English: Insisting or demanding something firmly; not allowing refusal.
+    Example: Hosts may be pleasantly insistent that you try every specialty on the table.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[144] ID: vocab-u10-34 | Word: Lack | POS: Noun
+    Bengali: ঘাটতি / অভাব / অপর্যাপ্ততা
+    Synonyms: Shortage, Deficiency, Scarcity, Dearth, Absence
+    Antonyms: Abundance, Plenty, Sufficiency, Surplus
+    English: The state of being without or not having enough of something.
+    Example: A lack of cultural awareness can lead to awkward dining misunderstandings.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dhaka Board Standard
+
+[145] ID: vocab-u10-35 | Word: Lean | POS: Verb
+    Bengali: হেলান দেওয়া / কাত হওয়া / ঝুঁকে পড়া
+    Synonyms: Incline, Bend, Tilt, Slouch, Rest against
+    Antonyms: Straighten, Stand upright, Sit up
+    English: To be in or move into a sloping position; rest against support.
+    Example: Do not lean heavily on the dining table or put your elbows up during dinner.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Chattogram Board Standard
+
+[146] ID: vocab-u10-36 | Word: Maintain | POS: Verb
+    Bengali: বজায় রাখা / সংরক্ষণ করা / অব্যাহত রাখা
+    Synonyms: Sustain, Preserve, Keep, Continue, Uphold
+    Antonyms: Discontinue, Abandon, Neglect, Drop
+    English: To cause or enable a condition or state of affairs to continue.
+    Example: Maintain friendly eye-contact when greeting someone with a handshake in South Africa.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[147] ID: vocab-u10-37 | Word: Messy | POS: Adjective
+    Bengali: অগোছালো / অপরিষ্কার / নোংরা
+    Synonyms: Untidy, Disordered, Dirty, Sloppy, Chaotic
+    Antonyms: Neat, Tidy, Clean, Organized, Orderly
+    English: Untidy or dirty; lacking order and neatness.
+    Example: Avoid leaving a messy plate when finishing your meal at a host's dinner table.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Rajshahi Board Exam
+
+[148] ID: vocab-u10-38 | Word: Nod | POS: Verb
+    Bengali: মাথা নেড়ে সম্মতি দেওয়া / মাথা ঝুঁকানো
+    Synonyms: Incline head, Bow, Signal, Gesture, Acknowledge
+    Antonyms: Shake head, Refuse, Disagree
+    English: To lower and raise one's head slightly and briefly in greeting or agreement.
+    Example: Some South African women do not shake hands and merely nod their head in greeting.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper Textbook
+
+[149] ID: vocab-u10-39 | Word: Offend | POS: Verb
+    Bengali: অসন্তুষ্ট করা / অপমানিত করা / ক্ষুব্ধ করা
+    Synonyms: Insult, Displease, Upset, Affront, Hurt
+    Antonyms: Please, Delight, Gratify, Charm, Flatter
+    English: To cause someone to feel hurt, angry, or upset by bad behavior.
+    Example: Offering gifts with only one hand may offend hosts in Chinese culture.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Sylhet Board Model
+
+[150] ID: vocab-u10-40 | Word: Posture | POS: Noun
+    Bengali: দেহভঙ্গি / অঙ্গভঙ্গি / শারীরিক অবস্থান
+    Synonyms: Stance, Bearing, Pose, Position, Carriage
+    Antonyms: Slouching, Deformity
+    English: The position in which someone holds their body when standing or sitting.
+    Example: Sitting with an upright, graceful posture shows respect during an official dinner.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Cumilla Board Standard
+
+[151] ID: vocab-u10-41 | Word: Potential | POS: Adjective
+    Bengali: সম্ভাব্য / সুপ্ত / ভবিষ্যৎ সম্ভাবনাপূর্ণ
+    Synonyms: Possible, Prospective, Latent, Probable, Likely
+    Antonyms: Impossible, Improbable, Actual, Unlikely
+    English: Having or showing the capacity to develop into something in the future.
+    Example: Understanding cultural differences prevents potential embarrassment when traveling.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Barishal Board Standard
+
+[152] ID: vocab-u10-42 | Word: Puff up | POS: Verb phrase
+    Bengali: ফুলে ওঠা / ফেঁপে ওঠা / স্ফীত হওয়া
+    Synonyms: Inflate, Swell, Expand, Bloat
+    Antonyms: Deflate, Shrink, Compress, Flatten
+    English: To swell or become larger and fuller.
+    Example: Bread rolls served at British dinners often puff up delightfully during baking.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Dinajpur Board Standard
+
+[153] ID: vocab-u10-43 | Word: Quietly | POS: Adverb
+    Bengali: নীরবে / শান্তভাবে / নিঃশব্দে
+    Synonyms: Silently, Softly, Calmly, Inaudibly, Peacefully
+    Antonyms: Loudly, Noisily, Boisterously, Clamorously
+    English: In a quiet manner; with little or no sound.
+    Example: Enjoy your food quietly without slurping or talking with your mouth full.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: Mymensingh Board Standard
+
+[154] ID: vocab-u10-44 | Word: Refinement | POS: Noun
+    Bengali: মার্জিত রূপ / সুরুচি / শিষ্টাচার / পরিশুদ্ধতা
+    Synonyms: Sophistication, Elegance, Politeness, Cultivation, Polish
+    Antonyms: Vulgarity, Coarseness, Rudeness, Crudeness
+    English: The improvement or clarification of something with elegant taste and manner.
+    Example: Table manners were developed through centuries of social refinement.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Exam
+
+[155] ID: vocab-u10-45 | Word: Refuse | POS: Verb
+    Bengali: প্রত্যাখ্যান করা / অসম্মত হওয়া / নাকচ করা
+    Synonyms: Decline, Reject, Turn down, Spurn, Deny
+    Antonyms: Accept, Agree, Receive, Consent
+    English: To indicate or show that one is not willing to do or accept something.
+    Example: In Chinese culture, guests politely refuse a gift several times before finally accepting it.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC Board Standard, Unit 10
+
+[156] ID: vocab-u10-46 | Word: Scatter | POS: Verb
+    Bengali: ছড়িয়ে দেওয়া / ছিটানো / ইতস্তত বিক্ষিপ্ত করা
+    Synonyms: Disperse, Spread, Strew, Sprinkle, Dissipate
+    Antonyms: Gather, Collect, Assemble, Concentrate
+    English: To throw in various random directions; separate and disperse.
+    Example: Never scatter breadcrumbs on the tablecloth; keep your dining area tidy.
+    Unit: Unit 10: Lesson 1 (Manners Around the World) | Board: HSC 1st Paper Model
+

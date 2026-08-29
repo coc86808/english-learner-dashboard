@@ -77,8 +77,8 @@ export default function VocabularyBank({
         const unitTitleStr = activeUnitObj ? activeUnitObj.unitTitle.toLowerCase() : '';
         const matchesUnit =
           item.unit &&
-          (item.unit.toLowerCase().includes(unitNumberStr) ||
-            item.unit.toLowerCase().includes(unitTitleStr));
+          ((unitNumberStr && (item.unit.toLowerCase().includes(unitNumberStr + ':') || new RegExp(`\\b${unitNumberStr}\\b`, 'i').test(item.unit))) ||
+            (unitTitleStr && item.unit.toLowerCase().includes(unitTitleStr)));
 
         if (!matchesUnit) return false;
 

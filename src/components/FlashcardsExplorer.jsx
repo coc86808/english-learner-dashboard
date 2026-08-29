@@ -43,7 +43,7 @@ export default function FlashcardsExplorer({
   useEffect(() => {
     let list = [...hscVocabularyList];
     if (selectedLessonId === 'u1-l1') {
-      list = hscVocabularyList.filter(item => item.unit.includes("Unit 1") || item.unit.includes("The Parrot's Tale"));
+      list = hscVocabularyList.filter(item => item.unit.includes("Unit 1:") || item.unit.includes("The Parrot's Tale"));
     } else if (selectedLessonId === 'u10-l1') {
       list = hscVocabularyList.filter(item => item.unit.includes("Unit 10: Lesson 1") || item.unit.includes("Manners Around the World"));
     } else if (selectedLessonId === 'u10-l2') {

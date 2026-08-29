@@ -88,7 +88,7 @@ export default function HSCUnitsExplorer({
     return (hscQuestionsList || []).filter((q) => {
       if (!q || q.category !== catId || !q.unit) return false;
       const qu = q.unit.toLowerCase();
-      const matchUnit = (uNum && qu.includes(uNum)) || (uTitle && qu.includes(uTitle));
+      const matchUnit = (uNum && (qu.includes(uNum + ':') || new RegExp(`\\b${uNum}\\b`, 'i').test(qu))) || (uTitle && qu.includes(uTitle));
       if (!matchUnit) return false;
       if (!lNum && !lTitle) return true;
       return (lNum && qu.includes(lNum)) || (lTitle && qu.includes(lTitle));
@@ -109,7 +109,7 @@ export default function HSCUnitsExplorer({
     const unitQuestions = categoryFiltered.filter((q) => {
       if (!q || !q.unit) return false;
       const qu = q.unit.toLowerCase();
-      return (uNum && qu.includes(uNum)) || (uTitle && qu.includes(uTitle));
+      return (uNum && (qu.includes(uNum + ':') || new RegExp(`\\b${uNum}\\b`, 'i').test(qu))) || (uTitle && qu.includes(uTitle));
     });
 
     if (selectedLesson && selectedLesson.id !== 'all') {
