@@ -91,6 +91,22 @@ export default function AuthModal({
     onClose();
   };
 
+  const handleAdminQuickLogin = () => {
+    const adminUser = {
+      name: 'Master Admin (Sakin)',
+      college: 'Learner Hub Management',
+      batch: 'Admin Access',
+      email: 'admin@learnerhub.com',
+      role: 'admin',
+      points: 0,
+      streak: 0
+    };
+    if (onAuthSuccess) {
+      onAuthSuccess(adminUser);
+    }
+    onClose();
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
       <div className="bg-[#101522] border border-[#222e44] rounded-3xl w-full max-w-md overflow-hidden shadow-2xl animate-in zoom-in-95 duration-200">
@@ -113,21 +129,31 @@ export default function AuthModal({
           </button>
         </div>
 
-        {/* 1-Click Demo Login Banner for Instant Testing */}
+        {/* 1-Click Quick Login Buttons */}
         <div className="p-5 pb-0">
-          <button
-            type="button"
-            onClick={handleDemoLogin}
-            className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer shadow-sm active:scale-95"
-          >
-            <Zap size={16} className="fill-amber-400 text-amber-400" />
-            <span>{isBn ? '⚡ ১-ক্লিকে ডেমো স্টুডেন্ট লগইন করুন' : '⚡ 1-Click Instant Demo Login'}</span>
-          </button>
+          <div className="grid grid-cols-2 gap-2.5">
+            <button
+              type="button"
+              onClick={handleDemoLogin}
+              className="py-2.5 px-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
+            >
+              <Zap size={14} className="fill-amber-400 text-amber-400" />
+              <span>{isBn ? '⚡ ডেমো স্টুডেন্ট' : '⚡ Demo Student'}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleAdminQuickLogin}
+              className="py-2.5 px-3 rounded-2xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/40 text-purple-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
+            >
+              <span>👑 {isBn ? 'মাস্টার অ্যাডমিন' : 'Master Admin'}</span>
+            </button>
+          </div>
           
           <div className="relative flex py-4 items-center">
             <div className="flex-grow border-t border-[#1e273a]"></div>
             <span className="flex-shrink mx-3 text-slate-500 text-[11px] font-semibold uppercase tracking-wider">
-              {isBn ? 'অথবা ইমেইল দিয়ে' : 'Or with Email'}
+              {isBn ? 'অথবা ইমেইল / ইউজারনেম দিয়ে' : 'Or with Email / Username'}
             </span>
             <div className="flex-grow border-t border-[#1e273a]"></div>
           </div>
@@ -174,16 +200,16 @@ export default function AuthModal({
 
           <div>
             <label className="block text-xs font-semibold text-slate-300 mb-1">
-              {isBn ? 'ইমেইল বা ফোন নম্বর' : 'Email or Phone'}
+              {isBn ? 'ইমেইল বা ইউজারনেম' : 'Email or Username'}
             </label>
             <div className="relative">
               <Mail size={15} className="absolute left-3.5 top-3 text-slate-500" />
               <input
-                type="email"
+                type="text"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="student@hsc2026.edu"
+                placeholder="admin@learnerhub.com / sakin7112"
                 className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
               />
             </div>

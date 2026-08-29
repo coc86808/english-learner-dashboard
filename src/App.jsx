@@ -604,6 +604,7 @@ export default function App() {
         weakWords={weakWords}
         onRemoveWeakWord={handleRemoveWeakWord}
         currentUser={currentUser}
+        onOpenAuth={() => setIsAuthOpen(true)}
         onOpenFlashcards={() => {
           setIsUserProfileOpen(false);
           setActiveTab('flashcards');
