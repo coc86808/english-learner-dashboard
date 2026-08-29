@@ -25,11 +25,10 @@ export default function WeakWordsSection({
   const isBn = lang === 'bn';
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Default fallback to 5 weak words from Unit 1 if user hasn't made any mistakes yet
-  const effectiveWeakWords = (Array.isArray(weakWords) && weakWords.length > 0
-    ? weakWords
-    : (hscVocabularyList || []).slice(0, 5)
-  ).filter(item => Boolean(item && item.word));
+  // Use only genuine weak words tracked for this student (no fake fallback)
+  const effectiveWeakWords = (Array.isArray(weakWords) ? weakWords : []).filter(
+    (item) => Boolean(item && item.word)
+  );
 
   const filteredWords = effectiveWeakWords.filter(item => {
     if (!item || !item.word) return false;

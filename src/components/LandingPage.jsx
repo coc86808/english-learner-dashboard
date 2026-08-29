@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { 
   Sparkles, 
   Layers, 
@@ -310,7 +310,7 @@ export default function LandingPage({
                   Unit 1: The Parrot's Tale
                 </span>
                 <span className="text-xs font-semibold text-slate-400">
-                  Card 1 of 23
+                  Card 1 of 46
                 </span>
               </div>
 

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { 
   X, 
   User, 
@@ -21,23 +21,22 @@ export default function UserProfileModal({
   lang = 'en', 
   weakWords = [], 
   onRemoveWeakWord,
-  onOpenFlashcards
+  onOpenFlashcards,
+  currentUser
 }) {
   if (!isOpen) return null;
 
   const isBn = lang === 'bn';
   const studentInfo = {
-    name: 'Tanvir Ahmed',
-    college: 'Notre Dame College, Dhaka',
-    batch: 'HSC 2026',
-    streak: 2,
-    points: 1250,
-    rank: '#12 (Top 5%)'
+    name: currentUser?.name || 'HSC Student',
+    college: currentUser?.college || 'HSC 2026 Batch',
+    batch: currentUser?.batch || 'HSC 2026',
+    streak: currentUser?.streak || 0,
+    points: currentUser?.points || 0,
+    rank: currentUser?.rank || '-'
   };
 
-  const effectiveWeakWords = weakWords && weakWords.length > 0
-    ? weakWords
-    : hscVocabularyList.slice(0, 5);
+  const effectiveWeakWords = Array.isArray(weakWords) ? weakWords : [];
 
   const handleDownloadPDF = () => {
     generateWeakWordsPDF({
@@ -63,7 +62,7 @@ export default function UserProfileModal({
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-[#1b2536]">
           <div className="flex items-center gap-4">
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-2xl shadow-xl shadow-emerald-950/60 ring-2 ring-emerald-500/40">
-              TA
+              {studentInfo.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase() || 'ST'}
             </div>
             <div>
               <div className="flex items-center gap-2">

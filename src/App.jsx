@@ -73,7 +73,7 @@ export default function App() {
         if (Array.isArray(parsed)) return parsed.filter(w => w && w.word);
       }
     } catch (e) {}
-    return (hscVocabularyList || []).slice(0, 5);
+    return [];
   });
 
   const handleToggleWeakWord = (wordItem) => {
@@ -189,11 +189,11 @@ export default function App() {
           onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
           lang={lang}
           setLang={setLang}
-          streakCount={2}
+          streakCount={currentUser?.streak || 0}
           isAdminActive={activeTab === 'admin'}
           onOpenAdmin={() => setActiveTab(activeTab === 'admin' ? 'dashboard' : 'admin')}
-          onOpenNotifications={() => alert(isBn ? 'নতুন ৩টি প্র্যাকটিস টেস্ট যুক্ত হয়েছে!' : '3 new practice tests added!')}
-          onOpenStreakModal={() => alert(isBn ? 'আপনার স্ট্রিক ২ দিন বজায় রয়েছে!' : 'Your 2-day streak is active!')}
+          onOpenNotifications={() => alert(isBn ? '১৫৬টি শব্দ এবং ৬১৩টি বোর্ড স্ট্যান্ডার্ড MCQ অনুশীলনের জন্য প্রস্তুত!' : '156 Vocabulary words and 613 Board Standard MCQs are ready!')}
+          onOpenStreakModal={() => alert(isBn ? `আপনার স্ট্রিক: ${currentUser?.streak || 0} দিন। প্রতিদিন পরীক্ষা দিয়ে স্ট্রিক ধরে রাখুন!` : `Your streak: ${currentUser?.streak || 0} days. Practice daily to build your streak!`)}
           currentUser={currentUser}
           onLogout={handleLogout}
           onOpenProfile={() => setIsUserProfileOpen(true)}
@@ -313,42 +313,65 @@ export default function App() {
 
           {/* Other Tabs Views */}
           {activeTab === 'leaderboard' && (
-            <div className="max-w-4xl mx-auto bg-[#131824] border border-[#1d2536] rounded-2xl p-6 shadow-card">
-              <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#1d2536]">
-                <Trophy size={26} className="text-yellow-400" />
-                <h2 className="text-xl font-bold text-white">
-                  {isBn ? 'সাপ্তাহিক লিডারবোর্ড' : 'Weekly Leaderboard'}
-                </h2>
-              </div>
-              <div className="space-y-3">
-                {[
-                  { rank: '1 🥇', name: 'Tanvir Ahmed', points: '1,450 pts', badge: 'Master' },
-                  { rank: '2 🥈', name: 'Sadia Rahman', points: '1,280 pts', badge: 'Diamond' },
-                  { rank: '3 🥉', name: 'Nafis Iqbal', points: '1,120 pts', badge: 'Gold' },
-                  { rank: '4', name: 'You (আপনি)', points: '890 pts', badge: 'Silver', isUser: true },
-                ].map((row, idx) => (
-                  <div
-                    key={idx}
-                    className={`p-4 rounded-xl flex items-center justify-between border ${
-                      row.isUser
-                        ? 'bg-emerald-950/40 border-emerald-500/50 text-emerald-300'
-                        : 'bg-[#182030] border-[#222c40] text-slate-200'
-                    }`}
-                  >
-                    <div className="flex items-center gap-4">
-                      <span className="font-bold text-base w-8">{row.rank}</span>
-                      <span className="font-semibold text-sm">{row.name}</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-xs bg-[#121722] px-2.5 py-1 rounded-md text-slate-400">
-                        {row.badge}
-                      </span>
-                      <span className="font-bold text-emerald-400 text-sm">
-                        {row.points}
-                      </span>
-                    </div>
+            <div className="max-w-4xl mx-auto bg-[#131824] border border-[#1d2536] rounded-2xl p-6 shadow-card space-y-6">
+              <div className="flex items-center justify-between pb-4 border-b border-[#1d2536]">
+                <div className="flex items-center gap-3">
+                  <Trophy size={26} className="text-yellow-400" />
+                  <div>
+                    <h2 className="text-xl font-bold text-white">
+                      {isBn ? 'HSC ২০২৬ লিডারবোর্ড' : 'HSC 2026 Student Leaderboard'}
+                    </h2>
+                    <p className="text-xs text-slate-400">
+                      {isBn ? 'সাপ্তাহিক MCQ অনুশীলন ও স্পেসড রিপিটিশন স্কোরের ভিত্তিতে র‍্যাঙ্কিং' : 'Rankings based on active quiz attempts & spaced repetition accuracy'}
+                    </p>
                   </div>
-                ))}
+                </div>
+
+                <div className="px-3.5 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-xs font-bold">
+                  {isBn ? 'লাইভ ট্র্যাকিং' : 'Live Sync'}
+                </div>
+              </div>
+
+              {/* Current Student Standing Card */}
+              <div className="p-5 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-[#162132] to-[#121824] border border-emerald-500/30 flex items-center justify-between flex-wrap gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500 text-slate-950 font-black text-lg flex items-center justify-center shadow-lg shadow-emerald-950/60">
+                    {(currentUser?.name || 'S').slice(0, 2).toUpperCase()}
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="font-bold text-white text-base">{currentUser?.name || 'Student'}</span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                        {isBn ? 'আপনি' : 'You'}
+                      </span>
+                    </div>
+                    <span className="text-xs text-slate-400">{currentUser?.college || 'HSC 2026 Candidate'}</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="text-right">
+                    <span className="text-xs text-slate-400 block">{isBn ? 'আপনার অর্জিত পয়েন্ট' : 'Your Points'}</span>
+                    <span className="text-lg font-black text-emerald-400">{currentUser?.points || 0} pts</span>
+                  </div>
+                  <button
+                    onClick={() => setActiveTab('exams')}
+                    className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md active:scale-95 cursor-pointer"
+                  >
+                    {isBn ? 'MCQ দিয়ে পয়েন্ট বাড়ান' : 'Earn Points in Exams'}
+                  </button>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-[#0e131e] border border-[#1b2434] text-center space-y-2">
+                <p className="text-sm font-semibold text-slate-200">
+                  {isBn ? '💡 নিয়মিত পরীক্ষা দিয়ে পয়েন্ট সংগ্রহ করুন!' : '💡 Complete chapter MCQ exams to earn mastery points!'}
+                </p>
+                <p className="text-xs text-slate-400 max-w-md mx-auto">
+                  {isBn 
+                    ? 'প্রতিটি লেসনের ভুল প্রশ্ন টানা ৩ বার সঠিক উত্তর দিয়ে Mastery অর্জন করলে পয়েন্ট যুক্ত হবে।'
+                    : 'Mastering missed questions with 3 consecutive correct answers adds to your verified score.'}
+                </p>
               </div>
             </div>
           )}
@@ -432,7 +455,7 @@ export default function App() {
                           {isBn ? 'মোট শব্দ সংখ্যা' : 'Total Words'}
                         </span>
                         <span className="text-xl font-black text-emerald-400">
-                          23
+                          {hscVocabularyList.length}
                         </span>
                       </div>
                       <div className="p-3.5 rounded-xl bg-[#0e131e] border border-[#222c40] text-center">
@@ -504,6 +527,7 @@ export default function App() {
         lang={lang}
         weakWords={weakWords}
         onRemoveWeakWord={handleRemoveWeakWord}
+        currentUser={currentUser}
         onOpenFlashcards={() => {
           setIsUserProfileOpen(false);
           setActiveTab('flashcards');

@@ -19,7 +19,7 @@ export default function Header({
   onToggleSidebar,
   lang,
   setLang,
-  streakCount = 2,
+  streakCount = 0,
   onOpenNotifications,
   onOpenStreakModal,
   onOpenAdmin,
@@ -59,7 +59,7 @@ export default function Header({
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#18131e] border border-orange-500/30 hover:border-orange-500/60 text-orange-400 font-semibold text-xs md:text-sm shadow-sm hover:scale-105 transition-all"
         >
           <Flame size={16} className="text-orange-500 fill-orange-500 animate-flame" />
-          <span>{isBn ? '২' : streakCount}</span>
+          <span>{streakCount}</span>
         </button>
 
         {/* Custom Toggle Switch 1 (Desktop only) */}
