@@ -33,3 +33,14 @@ Whenever the user uploads or provides vocabulary (via photo or text):
 
 ## 3. Persistent Memory Reminders
 - Review and apply these rules on every task involving vocabulary, MCQs, or curriculum additions.
+
+## 4. User Authentication & Authorization Rules
+1. **Master Admin Credentials & Aliases**:
+   - Master Admin Emails/Usernames: `sakin@gmail.com`, `sakin7112`, `sakinadmin`, `admin@learnerhub.com`, `admin`.
+   - Master Admin Passwords: `AdminHSC@2026!`, `Abc@#123`, `Z%#91V4PrG`.
+   - Logging in with any of these credentials in the standard login form unlocks full `role: 'admin'` Master Admin access.
+2. **Student Authentication & Authorization**:
+   - Mandatory registration for new students (Full Name, College, Email/Phone, Password).
+   - Only registered students with correct passwords can log in.
+   - Master Admin has 1-click Account Authorization controls (Authorize / Approve, Ban, Role Switch, Password Reset) in the Admin Panel.
+
