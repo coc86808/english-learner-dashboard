@@ -101,10 +101,10 @@ export default function HSCUnitsExplorer({
             q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))
         );
       });
-      if (lessonQuestions.length > 0) return lessonQuestions;
+      if (lessonQuestions.length > 0) return smartInterleaveQuestions(lessonQuestions);
     }
 
-    return unitQuestions.length > 0 ? unitQuestions : categoryFiltered;
+    return smartInterleaveQuestions(unitQuestions.length > 0 ? unitQuestions : categoryFiltered);
   };
 
   const filteredUnits = hscUnits.filter((u) => {

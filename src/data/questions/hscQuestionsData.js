@@ -886,7 +886,7 @@ export const hscVocabularyList = [
   }
 ];
 
-// Generates 4 question variations for each vocabulary word
+// Generates 4 question variations for each vocabulary word with authentic curriculum-based distractors
 function buildQuestionsDatabase() {
   const list = [];
 
@@ -899,10 +899,33 @@ function buildQuestionsDatabase() {
       prefix = 'hsc-u10-l2-' + num;
     }
 
+    const primarySyn = item.synonyms.split(',')[0].trim();
+    const primaryAnt = item.antonyms.split(',')[0].trim();
+
+    // Pick 2 other realistic word distractors from nearby vocabulary
+    const otherIdx1 = (index + 3) % hscVocabularyList.length;
+    const otherIdx2 = (index + 7) % hscVocabularyList.length;
+    const distractorWord1 = hscVocabularyList[otherIdx1].word;
+    const distractorWord2 = hscVocabularyList[otherIdx2].word;
+
+    // Pick 3 realistic definition distractors from other vocabulary words
+    const defIdx1 = (index + 2) % hscVocabularyList.length;
+    const defIdx2 = (index + 5) % hscVocabularyList.length;
+    const defIdx3 = (index + 9) % hscVocabularyList.length;
+    const defDistractor1 = hscVocabularyList[defIdx1].englishMeaning;
+    const defDistractor2 = hscVocabularyList[defIdx2].englishMeaning;
+    const defDistractor3 = hscVocabularyList[defIdx3].englishMeaning;
+
+    // Pick 3 realistic Bengali meaning distractors
+    const bngDistractor1 = hscVocabularyList[defIdx1].bengaliMeaning.split('/')[0].trim();
+    const bngDistractor2 = hscVocabularyList[defIdx2].bengaliMeaning.split('/')[0].trim();
+    const bngDistractor3 = hscVocabularyList[defIdx3].bengaliMeaning.split('/')[0].trim();
+
     // 1. SYNONYM QUESTION
     list.push({
       id: prefix + '-syn',
       vocabId: item.id,
+      wordIndex: index,
       word: item.word,
       category: 'synonyms',
       categoryLabel: 'Synonym (সমার্থক শব্দ)',
@@ -910,7 +933,7 @@ function buildQuestionsDatabase() {
       bengaliMeaning: item.bengaliMeaning,
       partsOfSpeech: item.partsOfSpeech,
       questionText: 'What is the closest SYNONYM of the word "' + item.word + '"?',
-      options: [item.synonyms.split(',')[0].trim(), item.antonyms.split(',')[0].trim(), 'Hesitant', 'Indifferent'],
+      options: [primarySyn, primaryAnt, distractorWord1, distractorWord2],
       correctOption: 0,
       synonyms: item.synonyms,
       antonyms: item.antonyms,
@@ -924,6 +947,7 @@ function buildQuestionsDatabase() {
     list.push({
       id: prefix + '-ant',
       vocabId: item.id,
+      wordIndex: index,
       word: item.word,
       category: 'antonyms',
       categoryLabel: 'Antonym (বিপরীত শব্দ)',
@@ -931,7 +955,7 @@ function buildQuestionsDatabase() {
       bengaliMeaning: item.bengaliMeaning,
       partsOfSpeech: item.partsOfSpeech,
       questionText: 'What is the ANTONYM (Opposite) of the word "' + item.word + '"?',
-      options: [item.antonyms.split(',')[0].trim(), item.synonyms.split(',')[0].trim(), 'Feasible', 'Active'],
+      options: [primaryAnt, primarySyn, distractorWord1, distractorWord2],
       correctOption: 0,
       synonyms: item.synonyms,
       antonyms: item.antonyms,
@@ -945,6 +969,7 @@ function buildQuestionsDatabase() {
     list.push({
       id: prefix + '-eng',
       vocabId: item.id,
+      wordIndex: index,
       word: item.word,
       category: 'english_meaning',
       categoryLabel: 'Meaning in English (ইংরেজি অর্থ)',
@@ -954,9 +979,9 @@ function buildQuestionsDatabase() {
       questionText: 'What is the English meaning of the word "' + item.word + '"?',
       options: [
         item.englishMeaning,
-        'Feeling lazy, sleepy, and exhausted without any aim',
-        'Being totally frightened and running away from problems',
-        'Showing anger and violence towards other people'
+        defDistractor1,
+        defDistractor2,
+        defDistractor3
       ],
       correctOption: 0,
       synonyms: item.synonyms,
@@ -972,6 +997,7 @@ function buildQuestionsDatabase() {
     list.push({
       id: prefix + '-bng',
       vocabId: item.id,
+      wordIndex: index,
       word: item.word,
       category: 'bangla_meaning',
       categoryLabel: 'Meaning in Bangla (বাংলা অর্থ)',
@@ -981,9 +1007,9 @@ function buildQuestionsDatabase() {
       questionText: '"' + item.word + '" শব্দটির সঠিক বাংলা অর্থ কোনটি?',
       options: [
         bngCorrect,
-        'অলস ও কর্মবিমুখ ব্যক্তি',
-        'ভীতু ও কাপুরুষোচিত আচরণ',
-        'প্রতারণাপূর্ণ মিথ্যা স্তাবকতা'
+        bngDistractor1,
+        bngDistractor2,
+        bngDistractor3
       ],
       correctOption: 0,
       synonyms: item.synonyms,
@@ -1001,7 +1027,45 @@ function buildQuestionsDatabase() {
 export const hscQuestionsList = buildQuestionsDatabase();
 
 /**
- * Filter questions based on selected categories
+ * Smart question interleaver:
+ * Ensures questions from different words are smoothly interleaved round-robin
+ * so that no two consecutive questions share the same vocabulary word!
+ */
+export function smartInterleaveQuestions(rawQuestions = []) {
+  if (!rawQuestions || rawQuestions.length <= 1) return rawQuestions;
+
+  // Group questions by vocabId or word
+  const wordBuckets = {};
+  rawQuestions.forEach((q) => {
+    const key = q.vocabId || q.word;
+    if (!wordBuckets[key]) wordBuckets[key] = [];
+    wordBuckets[key].push(q);
+  });
+
+  const keys = Object.keys(wordBuckets);
+  // Shuffle word bucket order slightly to give fresh variety
+  const shuffledKeys = [...keys].sort(() => Math.random() - 0.5);
+
+  const interleaved = [];
+  let hasMore = true;
+  let round = 0;
+
+  while (hasMore) {
+    hasMore = false;
+    for (const key of shuffledKeys) {
+      if (wordBuckets[key].length > round) {
+        interleaved.push(wordBuckets[key][round]);
+        hasMore = true;
+      }
+    }
+    round++;
+  }
+
+  return interleaved;
+}
+
+/**
+ * Filter questions based on selected categories with smart interleaving
  */
 export function getFilteredCategoryQuestions(
   categories = ['synonyms', 'antonyms', 'english_meaning', 'bangla_meaning'],
@@ -1012,9 +1076,10 @@ export function getFilteredCategoryQuestions(
     ? categories
     : ['synonyms', 'antonyms', 'english_meaning', 'bangla_meaning'];
 
-  return hscQuestionsList.filter((q) => {
-    const matchCat = activeCategories.includes(q.category);
-    if (!matchCat) return false;
-    return true;
+  const matched = hscQuestionsList.filter((q) => {
+    return activeCategories.includes(q.category);
   });
+
+  return smartInterleaveQuestions(matched);
 }
+

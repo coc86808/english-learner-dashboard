@@ -22,6 +22,7 @@ import {
 import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
+import { smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
 
 export default function HSCExamInterface({
   questions = [],
@@ -70,7 +71,7 @@ export default function HSCExamInterface({
   });
 
   // The active running queue of questions
-  const [activeQueue, setActiveQueue] = useState(() => [...questions]);
+  const [activeQueue, setActiveQueue] = useState(() => smartInterleaveQuestions(questions));
   const [queueIndex, setQueueIndex] = useState(0);
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -97,10 +98,8 @@ export default function HSCExamInterface({
     (s) => s.status === 'learning'
   ).length;
 
-  // STRICT 100% DONE INVARIANT: Exam NEVER ends until EVERY single question has 3 consecutive correct answers
-  const isAllDone =
-    totalUnique > 0 &&
-    questions.every((q) => (questionStats[q.id]?.consecutiveCorrect || 0) >= 3);
+  // Exam completes when all questions in the queue have been answered
+  const isAllDone = totalUnique > 0 && queueIndex >= activeQueue.length;
 
   useEffect(() => {
     if (isAllDone) {
@@ -206,6 +205,7 @@ export default function HSCExamInterface({
    *    - If wrong -> removed and added to Mistake.
    */
   const processAnswer = (isCorrect, isNotSure, usedHint = false) => {
+    if (!currentQ) return;
     const qId = currentQ.id;
     const prevStat = questionStats[qId] || {
       consecutiveCorrect: 0,
@@ -218,28 +218,19 @@ export default function HSCExamInterface({
 
     if (isCorrect) {
       newConsecutive = prevStat.consecutiveCorrect + 1;
-
       if (usedHint) {
-        // Used hint before answering → treat as Learning regardless of correctness
         newStatus = 'learning';
-        newConsecutive = Math.min(newConsecutive, 1); // cap to max 1 when hint used
-      } else if (prevStat.status === 'mistake') {
-        // Correct on retry from mistake -> marked as Learning
-        newStatus = 'learning';
-      } else if (newConsecutive >= 3) {
-        // 3rd consecutive correct -> fully Mastered & Done
-        newStatus = 'done';
       } else {
-        // 1st or 2nd correct without hint -> marked as Done
         newStatus = 'done';
       }
     } else {
-      // Wrong option or Not Sure -> removed from Done or Learning and added to Mistake
+      // Wrong option or Not Sure -> marked as mistake
       newStatus = 'mistake';
       newConsecutive = 0;
+      // Append mistake question to the end of the queue for later review after all words are attempted
+      setActiveQueue((prev) => [...prev, currentQ]);
     }
 
-    // Update global question stats
     setQuestionStats((prev) => ({
       ...prev,
       [qId]: {
@@ -249,50 +240,16 @@ export default function HSCExamInterface({
         lastAnswerWasCorrect: isCorrect
       }
     }));
-
-    // If not yet completed 3 consecutive times, schedule reappearance after at least 3-4 questions in middle
-    if (newConsecutive < 3) {
-      scheduleReappearance(currentQ);
-    }
-  };
-
-
-  // Spaced Repetition Insertion: guarantees at least 3-4 other questions in between
-  const scheduleReappearance = (questionToRepeat) => {
-    setActiveQueue((prevQueue) => {
-      const newQueue = [...prevQueue];
-      // Insert at least current position + 4 (ensuring 3-4 questions in middle)
-      const minGap = 4;
-      const targetIndex = Math.min(
-        newQueue.length,
-        queueIndex + minGap + Math.floor(Math.random() * 2)
-      );
-
-      newQueue.splice(targetIndex, 0, questionToRepeat);
-      return newQueue;
-    });
   };
 
   const handleNext = () => {
     const nextIdx = queueIndex + 1;
-
-    // Check if queue needs replenishment with remaining non-mastered questions
-    if (nextIdx >= activeQueue.length) {
-      const remainingQuestions = questions.filter(
-        (q) => (questionStats[q.id]?.consecutiveCorrect || 0) < 3
-      );
-
-      if (remainingQuestions.length > 0) {
-        // Shuffle and append remaining to guarantee non-stop practice
-        const shuffled = [...remainingQuestions].sort(() => Math.random() - 0.5);
-        setActiveQueue((prev) => [...prev, ...shuffled]);
-      }
-    }
-
     setQueueIndex(nextIdx);
     setSelectedOption(null);
     setIsAnswered(false);
     setIsNotSureClicked(false);
+    setHintRevealed(false);
+    setHintUsedForCurrentQ(false);
   };
 
   const handleSaveAndExit = () => {

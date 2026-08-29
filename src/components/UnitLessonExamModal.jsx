@@ -17,7 +17,7 @@ import {
   Award
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
-import { hscQuestionsList } from '../data/questions/hscQuestionsData';
+import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 
@@ -97,10 +97,10 @@ export default function UnitLessonExamModal({
             q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))
         );
       });
-      if (lessonQuestions.length > 0) return lessonQuestions;
+      if (lessonQuestions.length > 0) return smartInterleaveQuestions(lessonQuestions);
     }
 
-    return unitQuestions.length > 0 ? unitQuestions : categoryFiltered;
+    return smartInterleaveQuestions(unitQuestions.length > 0 ? unitQuestions : categoryFiltered);
   };
 
   const hasTextbook =
