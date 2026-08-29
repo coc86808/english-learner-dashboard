@@ -13,9 +13,11 @@ import {
   Layers,
   ArrowUpDown,
   ExternalLink,
-  ChevronDown
+  ChevronDown,
+  BookMarked
 } from 'lucide-react';
 import { hscVocabularyList } from '../data/questions';
+import { hscUnits } from '../data/hscUnitsData';
 
 export default function VocabularyBank({
   lang = 'en',
@@ -27,7 +29,8 @@ export default function VocabularyBank({
   const isBn = lang === 'bn';
 
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedUnitFilter, setSelectedUnitFilter] = useState('all');
+  const [selectedUnitId, setSelectedUnitId] = useState('all');
+  const [selectedLessonId, setSelectedLessonId] = useState('all');
   const [selectedPosFilter, setSelectedPosFilter] = useState('all');
   const [sortBy, setSortBy] = useState('default'); // 'default' | 'az' | 'za'
   const [speakingWord, setSpeakingWord] = useState(null);
@@ -45,26 +48,68 @@ export default function VocabularyBank({
     window.speechSynthesis.speak(utterance);
   };
 
-  // Filtered list
+  // Find currently selected unit object
+  const activeUnitObj = useMemo(() => {
+    if (selectedUnitId === 'all') return null;
+    return hscUnits.find((u) => u.id === selectedUnitId);
+  }, [selectedUnitId]);
+
+  // Lessons available under currently selected unit
+  const availableLessons = useMemo(() => {
+    if (!activeUnitObj) return [];
+    return activeUnitObj.lessons;
+  }, [activeUnitObj]);
+
+  // Handle Unit Selection Change (resets lesson to 'all')
+  const handleUnitChange = (unitId) => {
+    setSelectedUnitId(unitId);
+    setSelectedLessonId('all');
+  };
+
+  // Filtered vocabulary list
   const filteredList = useMemo(() => {
     return hscVocabularyList.filter((item) => {
-      // Unit filter
-      if (selectedUnitFilter === 'u10-l1') {
-        if (!item.unit.includes('Unit 10: Lesson 1') && !item.unit.includes('Manners Around the World')) return false;
-      } else if (selectedUnitFilter === 'u10-l2') {
-        if (!item.unit.includes('Unit 10: Lesson 2') && !item.unit.includes('Food and Culture')) return false;
-      } else if (selectedUnitFilter === 'u1-l1') {
-        if (!item.unit.includes('Unit 1: Lesson 1') && !item.unit.includes("The Parrot's Tale")) return false;
+      // 1. Unit & Lesson filter
+      if (selectedUnitId !== 'all') {
+        const unitNumberStr = activeUnitObj ? activeUnitObj.unitNumber.toLowerCase() : '';
+        const unitTitleStr = activeUnitObj ? activeUnitObj.unitTitle.toLowerCase() : '';
+        const matchesUnit =
+          item.unit &&
+          (item.unit.toLowerCase().includes(unitNumberStr) ||
+            item.unit.toLowerCase().includes(unitTitleStr));
+
+        if (!matchesUnit) return false;
+
+        // Specific Lesson filter under this unit
+        if (selectedLessonId !== 'all') {
+          const lessonObj = availableLessons.find((l) => l.id === selectedLessonId);
+          if (lessonObj) {
+            const lessonNumStr = lessonObj.number.toLowerCase().replace('-', ' ');
+            const lessonTitleStr = lessonObj.title.toLowerCase();
+            const matchesLesson =
+              item.unit &&
+              (item.unit.toLowerCase().includes(lessonNumStr) ||
+                item.unit.toLowerCase().includes(lessonTitleStr) ||
+                (selectedLessonId === 'u10-l1' && item.unit.includes('Lesson 1')) ||
+                (selectedLessonId === 'u10-l2' && item.unit.includes('Lesson 2')) ||
+                (selectedLessonId === 'u1-l1' && item.unit.includes('Lesson 1')));
+
+            if (!matchesLesson) return false;
+          }
+        }
       }
 
-      // Part of speech filter
+      // 2. Part of speech filter
       if (selectedPosFilter !== 'all') {
-        if (!item.partsOfSpeech || !item.partsOfSpeech.toLowerCase().includes(selectedPosFilter.toLowerCase())) {
+        if (
+          !item.partsOfSpeech ||
+          !item.partsOfSpeech.toLowerCase().includes(selectedPosFilter.toLowerCase())
+        ) {
           return false;
         }
       }
 
-      // Search Query
+      // 3. Search Query filter (Word, Bengali meaning, Synonym, Antonym, English definition)
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase().trim();
         const matchWord = item.word.toLowerCase().includes(q);
@@ -83,7 +128,7 @@ export default function VocabularyBank({
       if (sortBy === 'za') return b.word.localeCompare(a.word);
       return 0;
     });
-  }, [searchQuery, selectedUnitFilter, selectedPosFilter, sortBy]);
+  }, [searchQuery, selectedUnitId, selectedLessonId, selectedPosFilter, sortBy, activeUnitObj, availableLessons]);
 
   const handlePrintSheet = () => {
     window.print();
@@ -153,8 +198,8 @@ export default function VocabularyBank({
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
               {isBn
-                ? 'বোর্ড ও পাঠ্যবইয়ের গাইড ফরম্যাটে শব্দার্থ, সমার্থক শব্দ (Synonym) ও বিপরীত শব্দ (Antonym)-এর সম্পূর্ণ শিট।'
-                : 'Complete textbook guide sheet with Word Meanings, Synonyms, and Antonyms formatted for board exams.'}
+                ? 'বোর্ড ও পাঠ্যবইয়ের গাইড ফরম্যাটে সকল ইউনিট ও লেসনের শব্দার্থ, সমার্থক শব্দ (Synonym) ও বিপরীত শব্দ (Antonym)-এর সম্পূর্ণ শিট।'
+                : 'Complete textbook guide sheet with Word Meanings, Synonyms, and Antonyms for all Units and Lessons.'}
             </p>
           </div>
 
@@ -174,86 +219,161 @@ export default function VocabularyBank({
                 className="px-4 py-2.5 rounded-xl bg-[#1a2334] hover:bg-[#25324a] text-slate-200 hover:text-white text-xs sm:text-sm font-bold flex items-center gap-2 border border-[#2b3952] cursor-pointer transition-all"
               >
                 <GraduationCap size={16} className="text-emerald-400" />
-                <span>{isBn ? 'পরীক্ষা শুরু করুন' : 'Take Exam'}</span>
+                <span>{isBn ? 'MCQ পরীক্ষা দিন' : 'Take MCQ Exam'}</span>
               </button>
             )}
           </div>
         </div>
 
-        {/* Live Filter Controls */}
-        <div className="mt-6 pt-6 border-t border-[#1d273a] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-          {/* 1. Search Box */}
-          <div className="relative">
-            <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder={isBn ? 'শব্দ, অর্থ বা সিনোনিম খুঁজুন...' : 'Search word, meaning, synonym...'}
-              className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 transition-colors"
-            />
+        {/* 2-Level Dynamic Unit & Lesson Selector Controls */}
+        <div className="mt-6 pt-6 border-t border-[#1d273a] space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {/* 1. SELECT UNIT */}
+            <div className="relative">
+              <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <BookMarked size={12} className="text-emerald-400" />
+                <span>{isBn ? '১. ইউনিট নির্বাচন করুন' : '1. Select Unit'}</span>
+              </label>
+              <div className="relative">
+                <select
+                  value={selectedUnitId}
+                  onChange={(e) => handleUnitChange(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 outline-none focus:border-emerald-500 cursor-pointer appearance-none font-medium"
+                >
+                  <option value="all">
+                    {isBn ? 'সকল ইউনিট (১২২টি শব্দ)' : 'All Units (122 Words)'}
+                  </option>
+                  {hscUnits.map((u) => (
+                    <option key={u.id} value={u.id}>
+                      {u.unitNumber}: {u.unitTitle} ({u.totalWords} {isBn ? 'শব্দ' : 'Words'})
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              </div>
+            </div>
+
+            {/* 2. SELECT LESSON (Dynamically populated based on selected Unit) */}
+            <div className="relative">
+              <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <BookOpen size={12} className="text-blue-400" />
+                <span>{isBn ? '২. লেসন নির্বাচন করুন' : '2. Select Lesson'}</span>
+              </label>
+              <div className="relative">
+                <select
+                  value={selectedLessonId}
+                  onChange={(e) => setSelectedLessonId(e.target.value)}
+                  disabled={selectedUnitId === 'all'}
+                  className={`w-full px-3.5 py-2.5 rounded-xl bg-[#0d121c] border text-xs sm:text-sm outline-none cursor-pointer appearance-none font-medium ${
+                    selectedUnitId === 'all'
+                      ? 'border-[#1b2332] text-slate-500 cursor-not-allowed'
+                      : 'border-[#232f45] text-slate-200 focus:border-emerald-500'
+                  }`}
+                >
+                  {selectedUnitId === 'all' ? (
+                    <option value="all">{isBn ? 'সকল লেসনের শব্দ' : 'All Lessons'}</option>
+                  ) : (
+                    <>
+                      <option value="all">
+                        {isBn ? `সকল লেসন (${activeUnitObj?.totalWords || 0} শব্দ)` : `All Lessons in ${activeUnitObj?.unitNumber} (${activeUnitObj?.totalWords || 0} Words)`}
+                      </option>
+                      {availableLessons.map((l) => (
+                        <option key={l.id} value={l.id}>
+                          {l.number}: {l.title} ({l.wordsCount || 0} {isBn ? 'শব্দ' : 'Words'})
+                        </option>
+                      ))}
+                    </>
+                  )}
+                </select>
+                <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              </div>
+            </div>
+
+            {/* 3. SEARCH BAR */}
+            <div className="relative">
+              <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <Search size={12} className="text-amber-400" />
+                <span>{isBn ? '৩. শব্দ বা অর্থ অনুসন্ধান' : '3. Search Word / Meaning'}</span>
+              </label>
+              <div className="relative">
+                <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={isBn ? 'শব্দ, অর্থ বা সিনোনিম...' : 'Word, synonym, meaning...'}
+                  className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 transition-colors font-medium"
+                />
+              </div>
+            </div>
+
+            {/* 4. PART OF SPEECH & SORT */}
+            <div className="relative">
+              <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <Filter size={12} className="text-purple-400" />
+                <span>{isBn ? '৪. পার্টস অব স্পিচ' : '4. Part of Speech'}</span>
+              </label>
+              <div className="relative">
+                <select
+                  value={selectedPosFilter}
+                  onChange={(e) => setSelectedPosFilter(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 outline-none focus:border-emerald-500 cursor-pointer appearance-none font-medium"
+                >
+                  <option value="all">{isBn ? 'সকল পার্টস অব স্পিচ' : 'All Parts of Speech'}</option>
+                  <option value="noun">Noun (বিশেষ্য)</option>
+                  <option value="verb">Verb (ক্রিয়া)</option>
+                  <option value="adjective">Adjective (বিশেষণ)</option>
+                  <option value="adverb">Adverb (ভাব বিশেষণ)</option>
+                </select>
+                <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              </div>
+            </div>
           </div>
 
-          {/* 2. Unit & Lesson Filter */}
-          <div className="relative">
-            <select
-              value={selectedUnitFilter}
-              onChange={(e) => setSelectedUnitFilter(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 outline-none focus:border-emerald-500 cursor-pointer appearance-none"
-            >
-              <option value="all">All Units & Lessons (122 Words)</option>
-              <option value="u10-l1">Unit 10: Lesson 1 - Manners Around the World (74 Words)</option>
-              <option value="u10-l2">Unit 10: Lesson 2 - Food and Culture (25 Words)</option>
-              <option value="u1-l1">Unit 1: Lesson 1 - The Parrot's Tale (23 Words)</option>
-            </select>
-            <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-          </div>
+          {/* Active Filter Badges & Quick Switchers */}
+          <div className="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-slate-400 font-semibold">{isBn ? 'সক্রিয় নির্বাচন:' : 'Active Selection:'}</span>
+              
+              <span className="px-2.5 py-1 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 font-bold">
+                {selectedUnitId === 'all'
+                  ? (isBn ? 'সকল ইউনিট' : 'All Units')
+                  : activeUnitObj?.unitNumber + ': ' + activeUnitObj?.unitTitle}
+              </span>
 
-          {/* 3. Part of Speech Filter */}
-          <div className="relative">
-            <select
-              value={selectedPosFilter}
-              onChange={(e) => setSelectedPosFilter(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 outline-none focus:border-emerald-500 cursor-pointer appearance-none"
-            >
-              <option value="all">All Parts of Speech</option>
-              <option value="noun">Noun (বিশেষ্য)</option>
-              <option value="verb">Verb (ক্রিয়া)</option>
-              <option value="adjective">Adjective (বিশেষণ)</option>
-              <option value="adverb">Adverb (ভাব বিশেষণ)</option>
-            </select>
-            <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-          </div>
+              {selectedLessonId !== 'all' && (
+                <span className="px-2.5 py-1 rounded-lg bg-blue-500/15 border border-blue-500/30 text-blue-300 font-bold">
+                  {availableLessons.find(l => l.id === selectedLessonId)?.number}: {availableLessons.find(l => l.id === selectedLessonId)?.title}
+                </span>
+              )}
 
-          {/* 4. Sort Order */}
-          <div className="relative">
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl bg-[#0d121c] border border-[#232f45] text-xs sm:text-sm text-slate-200 outline-none focus:border-emerald-500 cursor-pointer appearance-none"
-            >
-              <option value="default">Default Textbook Order</option>
-              <option value="az">Alphabetical (A → Z)</option>
-              <option value="za">Alphabetical (Z → A)</option>
-            </select>
-            <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-          </div>
-        </div>
+              {selectedPosFilter !== 'all' && (
+                <span className="px-2.5 py-1 rounded-lg bg-purple-500/15 border border-purple-500/30 text-purple-300 font-bold uppercase">
+                  {selectedPosFilter}
+                </span>
+              )}
+            </div>
 
-        {/* Counter Summary */}
-        <div className="mt-4 flex items-center justify-between text-xs text-slate-400 font-medium">
-          <span>
-            {isBn ? 'মোট প্রদর্শিত শব্দ: ' : 'Showing: '}
-            <strong className="text-emerald-400 font-bold">{filteredList.length}</strong> / {hscVocabularyList.length} {isBn ? 'টি শব্দ' : 'words'}
-          </span>
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="text-amber-400 hover:underline cursor-pointer"
-            >
-              {isBn ? 'সার্চ ক্লিয়ার করুন' : 'Clear search'}
-            </button>
-          )}
+            <div className="flex items-center gap-2 text-slate-300">
+              <span>
+                {isBn ? 'মোট প্রদর্শিত শব্দ: ' : 'Showing: '}
+                <strong className="text-emerald-400 font-bold">{filteredList.length}</strong> / {hscVocabularyList.length} {isBn ? 'টি শব্দ' : 'words'}
+              </span>
+              {(searchQuery || selectedUnitId !== 'all' || selectedLessonId !== 'all' || selectedPosFilter !== 'all') && (
+                <button
+                  onClick={() => {
+                    setSearchQuery('');
+                    setSelectedUnitId('all');
+                    setSelectedLessonId('all');
+                    setSelectedPosFilter('all');
+                  }}
+                  className="text-amber-400 hover:underline cursor-pointer font-bold ml-2"
+                >
+                  {isBn ? 'রিসেট করুন' : 'Reset All'}
+                </button>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -263,13 +383,9 @@ export default function VocabularyBank({
         <div className="hidden print:block p-6 text-center border-b border-black">
           <h2 className="text-xl font-bold uppercase tracking-wider text-black">HSC English 1st Paper — Vocabulary Bank</h2>
           <p className="text-xs text-black mt-1">
-            {selectedUnitFilter === 'u10-l1'
-              ? 'Unit 10: Lifestyle — Lesson 1: Manners Around the World'
-              : selectedUnitFilter === 'u10-l2'
-              ? 'Unit 10: Lifestyle — Lesson 2: Food and Culture (Syed Mujtaba Ali)'
-              : selectedUnitFilter === 'u1-l1'
-              ? "Unit 1: Education and Life — Lesson 1: The Parrot's Tale"
-              : 'Complete HSC Vocabulary Guide Sheet'}
+            {selectedUnitId === 'all'
+              ? 'Complete HSC Vocabulary Guide Sheet (All Units)'
+              : activeUnitObj?.unitNumber + ': ' + activeUnitObj?.unitTitle + (selectedLessonId !== 'all' ? ' — ' + availableLessons.find(l => l.id === selectedLessonId)?.title : '')}
           </p>
         </div>
 
@@ -383,10 +499,10 @@ export default function VocabularyBank({
                 <tr>
                   <td colSpan="3" className="py-12 text-center text-slate-400">
                     <p className="text-base font-semibold">
-                      {isBn ? 'কোনো শব্দ পাওয়া যায়নি।' : 'No vocabulary words found.'}
+                      {isBn ? 'এই ইউনিট বা লেসনে কোনো শব্দ পাওয়া যায়নি।' : 'No vocabulary words found for this selection.'}
                     </p>
                     <p className="text-xs text-slate-500 mt-1">
-                      {isBn ? 'অনুসন্ধান বা ফিল্টার পরিবর্তন করে আবার চেষ্টা করুন।' : 'Try changing your search query or unit filter.'}
+                      {isBn ? 'অন্য কোনো ইউনিট বা লেসন নির্বাচন করুন।' : 'Try selecting another Unit or Lesson.'}
                     </p>
                   </td>
                 </tr>
