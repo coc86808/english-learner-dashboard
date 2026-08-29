@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   GraduationCap 
 } from 'lucide-react';
+import { saveUserToFirestore } from '../services/firebase';
 
 export default function AuthModal({ 
   isOpen, 
@@ -118,6 +119,8 @@ export default function AuthModal({
         avatar: `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`
       };
 
+      // Save to Cloud Firestore & Local State
+      saveUserToFirestore(newStudent);
       const updatedList = [newStudent, ...(registeredUsers || [])];
       if (onUpdateUsers) onUpdateUsers(updatedList);
 
@@ -161,12 +164,32 @@ export default function AuthModal({
       return;
     }
 
+    // Merge latest memory users with latest localStorage users
+    const allUsers = (() => {
+      try {
+        const local = localStorage.getItem('hsc_registered_users');
+        if (local) {
+          const parsed = JSON.parse(local);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            const map = new Map();
+            (registeredUsers || []).forEach((u) => u && u.email && map.set(u.email.toLowerCase().trim(), u));
+            parsed.forEach((u) => u && u.email && map.set(u.email.toLowerCase().trim(), u));
+            return Array.from(map.values());
+          }
+        }
+      } catch (e) {}
+      return registeredUsers || [];
+    })();
+
+    // Smart typo correction for @gamil.com -> @gmail.com
+    const cleanEmail = normalizedEmail.replace('@gamil.', '@gmail.');
+
     // Look for Registered Student in database
-    const matchedUser = (registeredUsers || []).find(
+    const matchedUser = allUsers.find(
       (u) =>
-        (u.email && u.email.toLowerCase() === normalizedEmail) ||
-        (u.phone && u.phone === normalizedEmail) ||
-        (u.name && u.name.toLowerCase() === normalizedEmail)
+        (u.email && (u.email.toLowerCase().trim() === normalizedEmail || u.email.toLowerCase().trim() === cleanEmail)) ||
+        (u.phone && (u.phone.trim() === normalizedEmail || u.phone.trim() === cleanEmail)) ||
+        (u.name && u.name.toLowerCase().trim() === normalizedEmail)
     );
 
     // If Account does not exist -> Block login & require registration!

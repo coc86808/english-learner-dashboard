@@ -20,6 +20,10 @@ import { usersList } from './data/users';
 import { hscQuestionsList, hscVocabularyList } from './data/questions';
 import { Trophy, GraduationCap, BookOpen, Layers } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
+import { 
+  saveUserToFirestore, 
+  listenToFirestoreUsers 
+} from './services/firebase';
 
 const tabToPath = {
   dashboard: '/dashboard',
@@ -133,10 +137,38 @@ export default function App() {
     return usersList;
   });
 
+  // Real-time Cloud Firestore Synchronization
+  React.useEffect(() => {
+    const unsubscribe = listenToFirestoreUsers((cloudUsers) => {
+      if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
+        setUsers((prev) => {
+          const map = new Map();
+          usersList.forEach((u) => map.set(u.email?.toLowerCase(), u));
+          prev.forEach((u) => map.set(u.email?.toLowerCase(), u));
+          cloudUsers.forEach((u) => map.set(u.email?.toLowerCase(), u));
+          const merged = Array.from(map.values());
+          try {
+            localStorage.setItem('hsc_registered_users', JSON.stringify(merged));
+          } catch (e) {}
+          return merged;
+        });
+      }
+    });
+    return () => {
+      if (typeof unsubscribe === 'function') unsubscribe();
+    };
+  }, []);
+
   const handleUpdateUsers = (updatedUsers) => {
     setUsers(updatedUsers);
     try {
       localStorage.setItem('hsc_registered_users', JSON.stringify(updatedUsers));
+      // Automatically sync updated users to Google Cloud Firestore
+      if (Array.isArray(updatedUsers)) {
+        updatedUsers.forEach((u) => {
+          if (u && u.email) saveUserToFirestore(u);
+        });
+      }
     } catch (e) {}
   };
 
