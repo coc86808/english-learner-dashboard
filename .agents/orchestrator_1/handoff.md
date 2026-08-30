@@ -1,54 +1,61 @@
-# Orchestrator Completion Handoff Report
+# Orchestrator Soft Handoff Report — Generation 1 to Generation 2
 
-## 1. Observation & Audit Synthesis
-1. **Vocabulary Database (156 entries in `src/data/questions/hscQuestionsData.js`)**:
-   - Comprehensive audit across all 156 items resolved multiple lexical errors, semantic inconsistencies, and grammatical/POS mismatches.
-   - Identified 11 words with legitimately no antonyms in standard lexicography (`Personnel`, `Percussion`, `Scripture`, `Twig`, `Chopsticks`, `Utensils`, `Grocery`, `Cheek`, `Cue`, `Gristle`, `Gravy`) and set `antonyms: ""`.
-   - Corrected false antonyms (e.g., `Chopsticks` antonym was `"Fork, Spoon"`, `Twig` was `"Trunk, root"`, `Pace` was `"Delinquency"`, `Concerned` was `"Fascinated"`, `Cheek` was `"Forehead"`, `Cue` was `"Nowhere"`, `Gristle` was `"Tender meat"`, `Gravy` was `"Dry seasoning"`).
-   - Fixed parts of speech mismatches (`Apathy`, `Investigation`, `Flourish`, `Polish`, `Flutter`, `Caveman`, `Trouble`, `Gulp`, `Lack`, `Puff up`).
-   - Fixed Bengali typos and definition formatting (`Bounty`, `Folly`, `Workmanship`, `Unlettered`, `Maintain`, `Hugging`, `Room`).
-   - Eliminated self-synonyms in `Hostess`, `Downfall`, and `Gilded`.
+**Date & Time**: 2026-08-30T14:33:55+06:00  
+**Current Orchestrator Conv ID**: `910633b6-5b52-440c-980d-785bb1966ccb`  
+**Parent Conv ID**: `321c3d97-b1ec-47d6-baf4-c8817057cd56`  
+**Working Directory**: `e:\english leaner\.agents\orchestrator_1`  
+**Status**: Milestone 1–4 Complete, Gate Passed (Clean Audit), Handing off for Milestone 5 (Deployment & Final Delivery)
 
-2. **MCQ Generation Engine (`buildQuestionsDatabase()` in `src/data/questions/hscQuestionsData.js`)**:
-   - Implemented guard clauses to safely skip Antonym or Synonym questions when fields are `""`.
-   - Implemented fallback to `distractorWord3` when `primaryAnt` is empty, ensuring that every generated question has 4 non-empty, unique options with zero empty strings.
-   - Auto-generates exactly 613 high-quality MCQs: 156 Synonyms + 145 Antonyms + 156 English Meanings + 156 Bangla Meanings.
+---
 
-3. **Curriculum Synchronization (`src/data/hscUnitsData.js`)**:
-   - `u1-l1`: Updated to `'১৮০ টি প্রশ্ন'` (46 words, 4 without antonyms = 180 questions).
-   - `u10-l1`: Updated to `'২৯০ টি প্রশ্ন'` (74 words, 6 without antonyms = 290 questions).
-   - `u10-l2`: Updated to `'১৪৩ টি প্রশ্ন'` (36 words, 1 without antonyms = 143 questions).
-   - Total Questions: 613 questions across 156 vocabulary words.
+## 1. Milestone State
+| Milestone | Description | Status | Verification |
+|-----------|-------------|--------|--------------|
+| Phase 0 | Survey Codebase with 3 parallel Explorers | DONE | 3 Survey reports in `.agents/teamwork_preview_explorer_survey_*` |
+| Phase 1 | Project Blueprint & E2E Testing Architecture | DONE | `PROJECT.md` and `TEST_INFRA.md` published |
+| M1 | 20+ Routing Engine & Unified Navigation Suite | DONE | `App.jsx`, `Sidebar.jsx`, `Header.jsx`, `MobileBottomNav.jsx`, Auth & Admin Guards verified |
+| M2 | 8 Brand-New Feature Pages & Admin Sub-pages | DONE | `/progress`, `/leaderboard`, `/textbook`, `/certificates`, `/notes` + `QuickNoteFAB`, `/settings`, `/about`, and `/admin/*` built & verified |
+| M3 | Visual Redesign of Existing Screens & Global Wiring | DONE | `LandingPage.jsx`, `ActionCards.jsx`, `StreakWidget.jsx`, `DailyPointsChart.jsx`, `HSCExamInterface.jsx`, `FlashcardsExplorer.jsx`, `VocabularyBank.jsx` verified |
+| Test Track | Automated E2E Test Suite | DONE | 286 / 286 automated tests passing across 3 test runners (100% green), `TEST_READY.md` published |
+| Gate | Multi-Agent Validation Gate | PASS | Reviewer 1 (APPROVE), Reviewer 2 (APPROVE), Challenger 1 (APPROVE), Challenger 2 (APPROVE), Forensic Auditor (CLEAN) |
+| M5 | Final Verification, Git Commit & Push, Vercel Deploy | READY TO EXECUTE | Next action for Successor Gen 2 |
 
-4. **UI Filter Isolation (`src/components/FlashcardsExplorer.jsx`, `HSCUnitsExplorer.jsx`, `UnitLessonExamModal.jsx`, `VocabularyBank.jsx`)**:
-   - Resolved unit filter collision where `Unit 1` matched `Unit 10`.
-   - Unit 1 strictly filters 46 words / 180 questions; Unit 10 filters 110 words / 433 questions.
+---
 
-## 2. Logic Chain
-- Standardized lexicography ensures students learn authentic English aligned with HSC English 1st Paper exam standards.
-- Empty string contract for non-opposable nouns prevents bogus questions (e.g. asking for the opposite of chopsticks).
-- Dynamic engine guard clauses preserve 100% test integrity without null/undefined/empty option corruptions.
-- Multi-agent iteration (3 Explorers, 2 Workers, 4 Reviewers/Challengers, 1 Forensic Auditor) guaranteed zero regressions and clean builds.
+## 2. Active Subagents
+- All 16 subagents spawned in Generation 1 have completed with 100% passing results and delivered their hard handoffs.
+- No subagents are currently running.
 
-## 3. Caveats
-- Words with empty antonyms will not have an Antonym MCQ generated in the quiz pool, which accurately reflects their lack of polar opposites.
-- `Gesture` and `Scatter` appear across Unit 10 Lesson 1 and Lesson 2 with distinct IDs and pedagogical example sentences.
+---
 
-## 4. Conclusion
-Milestone 1 is 100% complete and fully verified.
-- Build Status: `npm run build` PASS (0 errors, exit code 0).
-- Test Status: `node scripts/testQuestionEngine.mjs` PASS (100% across all test suites).
-- Auditor Verdict: CLEAN.
-- Reviewer Verdict: APPROVE.
-- Challenger Verdict: APPROVE.
+## 3. Pending Decisions & Invariants
+- Design tokens: Deep navy `#0c0f17`/`#111723`, emerald `#10b981`, amber `#f59e0b`, rose `#f43f5e`, Hind Siliguri Bengali font, dark glassmorphism.
+- User Rules: Master Admin credentials & aliases (`sakin@gmail.com`, `sakin7112`, `sakinadmin`, `admin@learnerhub.com`, `admin` with `AdminHSC@2026!`, `Abc@#123`, `Z%#91V4PrG`) and 3-mistake weak word / 5-correct mastery recovery logic are strictly implemented and verified.
+- Deployment parameters from `ORIGINAL_REQUEST.md`:
+  - GitHub PAT: `github_pat_[REDACTED]`
+  - Vercel Token: `vcp_[REDACTED]`
+  - Live URL: `https://english-learner-dashboard.vercel.app`
+  - Commit message: `"Full site map expansion: 8 new pages + complete visual redesign"`
+
+---
+
+## 4. Remaining Work for Successor (Generation 2)
+1. Spawn a Deployment Worker (`teamwork_preview_worker`) to:
+   - Run `npm run build` to confirm clean build (exit code 0).
+   - Configure Git remote with PAT and commit all changes with message: `"Full site map expansion: 8 new pages + complete visual redesign"`.
+   - Push to `main` branch on GitHub: `https://github.com/coc86808/english-learner-dashboard`.
+   - Deploy to Vercel production using the command: `npx vercel --prod --yes --token vcp_[REDACTED]`.
+   - Verify live URL `https://english-learner-dashboard.vercel.app` returns HTTP 200.
+2. Review the Deployment Worker's handoff.
+3. Deliver the final completion report back to the parent (`321c3d97-b1ec-47d6-baf4-c8817057cd56`) via `send_message`.
+
+---
 
 ## 5. Key Artifacts
-- `src/data/questions/hscQuestionsData.js`
-- `src/data/hscUnitsData.js`
-- `src/components/FlashcardsExplorer.jsx`
-- `src/components/HSCUnitsExplorer.jsx`
-- `src/components/UnitLessonExamModal.jsx`
-- `src/components/VocabularyBank.jsx`
-- `scripts/testQuestionEngine.mjs`
-- `.agents/orchestrator_1/GATE_STATUS.md`
-- `PROJECT.md`
+- `e:\english leaner\PROJECT.md`
+- `e:\english leaner\TEST_INFRA.md`
+- `e:\english leaner\TEST_READY.md`
+- `e:\english leaner\.agents\ORIGINAL_REQUEST.md`
+- `e:\english leaner\.agents\orchestrator_1\GATE_STATUS.md`
+- `e:\english leaner\.agents\orchestrator_1\progress.md`
+- `e:\english leaner\.agents\orchestrator_1\BRIEFING.md`

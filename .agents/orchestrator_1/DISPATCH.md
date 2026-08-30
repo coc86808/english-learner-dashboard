@@ -1,20 +1,30 @@
 # Dispatch Log
 
-## 2026-08-29T09:04:59Z
+## 2026-08-30T08:02:07Z
+You are the Project Orchestrator for the HSC English Learner Dashboard complete redesign and full site map expansion.
 
-You are the Project Orchestrator (teamwork_preview_orchestrator).
+Your working directory is: e:\english leaner\.agents\orchestrator_1
+The full verbatim user request and requirements are at: e:\english leaner\.agents\ORIGINAL_REQUEST.md
 
-Working directory: e:\english leaner\.agents\orchestrator_1
-Project root: e:\english leaner
-Original Request path: e:\english leaner\.agents\ORIGINAL_REQUEST.md
-
-Your mission is to execute the user's request recorded in ORIGINAL_REQUEST.md:
-1. Audit all 156 vocabulary entries in src/data/questions/hscQuestionsData.js for invalid, nonsensical, or non-HSC-standard synonyms/antonyms and inaccurate Bengali meanings.
-2. Cross-reference Bengali meanings using Google Translate (or web search / translation tools).
-3. If a word has no valid synonyms or antonyms (proper noun / technical term / abstract concept), set field to "" and ensure the MCQ engine skips MCQ generation for empty fields.
-4. Correct wrong synonyms, antonyms, and Bengali meanings in src/data/questions/hscQuestionsData.js.
-5. Ensure curriculum synchronization if question/word counts are affected (per project rules in AGENTS.md / GEMINI.md).
-6. Verify with `npm run build` with 0 errors.
-7. Produce a comprehensive report of all issues found and changes made.
-
-Maintain BRIEFING.md, plan.md, and progress.md in your working directory. When complete, send a completion report back with full details of all changes, audit results, and verification results.
+Key Deliverables:
+1. R1: Complete visual redesign of all existing screens (LandingPage, Dashboard, HSCExamInterface, FlashcardsExplorer, VocabularyBank, Navigation Header/Sidebar/MobileBottomNav, Admin layout) with dark glassmorphism, deep navy (#0c0f17, #131824, #0d1220), emerald accents (#10b981), glowing borders, Framer Motion animations.
+2. R2: Build 8 brand-new fully functional pages from scratch:
+   - /progress (Student Progress Dashboard: study hours chart, unit accuracy donuts, streak calendar heatmap, weak word recovery timeline, XP score)
+   - /leaderboard (Ranked table, top 3 podium, student rank badge, animated rank changes)
+   - /textbook (NCTB passage text reader with emerald clickable vocab highlights + popup definitions/synonyms)
+   - /certificates (Unit certificate cards, downloadable/printable certificate generator with student name, college, date, NCTB badge)
+   - /notes (Rich text notepad per unit/lesson, localStorage persistence, search, quick-note floating action button)
+   - /settings (Password change form, theme toggle, language English/Bangla toggle, notification preferences, account delete)
+   - /about (Platform mission, NCTB curriculum badge, developer credit, contact form with localStorage save)
+   - Enhanced Admin Sub-pages (/admin/users with 1-click authorize/ban/role-switch/password reset, /admin/analytics with drill-down, heatmap, active users)
+3. R3: Full navigation & routing wiring across all 20+ routes with auth guard (students cannot access /admin*, unauthenticated redirected to landing/auth), mobile bottom nav (5 core items), sidebar with labeled sections (Study, Practice, Progress, Account, Admin).
+4. Strict adherence to project user rules in AGENTS.md / GEMINI.md:
+   - Master admin credentials and aliases must work
+   - 3 mistakes weak word / 5 correct mastery logic
+   - Vocabulary and MCQ rules
+5. R4: Verification, Git & Deploy:
+   - Run `npm run build` — must exit with 0 errors.
+   - Commit changes: "Full site map expansion: 8 new pages + complete visual redesign"
+   - Push to GitHub main branch using the provided PAT.
+   - Deploy to Vercel production using the provided token.
+   - Verify live URL returns HTTP 200.
