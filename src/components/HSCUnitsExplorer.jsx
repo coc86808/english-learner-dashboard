@@ -287,6 +287,7 @@ export default function HSCUnitsExplorer({
             </div>
 
             {((selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
+              (selectedUnit.id === 'unit-9' && (selectedLesson.id === 'u9-l1' || selectedLesson.id === 'all')) ||
               (selectedUnit.id === 'unit-10' && (selectedLesson.id === 'u10-l1' || selectedLesson.id === 'u10-l2' || selectedLesson.id === 'u10-l3' || selectedLesson.id === 'all'))) && (
               <button
                 onClick={() => setIsTextbookOpen(true)}
@@ -342,6 +343,7 @@ export default function HSCUnitsExplorer({
 
             {/* Read Textbook Button */}
             {((selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
+              (selectedUnit.id === 'unit-9' && (selectedLesson.id === 'u9-l1' || selectedLesson.id === 'all')) ||
               (selectedUnit.id === 'unit-10' && (selectedLesson.id === 'u10-l1' || selectedLesson.id === 'u10-l2' || selectedLesson.id === 'u10-l3' || selectedLesson.id === 'all'))) && (
               <button
                 onClick={() => setIsTextbookOpen(true)}
@@ -668,6 +670,7 @@ export default function HSCUnitsExplorer({
 
             {/* Read Full Unit Textbook */}
             {((selectedUnit.id === 'unit-1' && (!selectedLesson || selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
+              (selectedUnit.id === 'unit-9' && (!selectedLesson || selectedLesson.id === 'u9-l1' || selectedLesson.id === 'all')) ||
               (selectedUnit.id === 'unit-10' && (!selectedLesson || selectedLesson.id === 'u10-l1' || selectedLesson.id === 'u10-l2' || selectedLesson.id === 'u10-l3' || selectedLesson.id === 'all'))) && (
               <button
                 onClick={() => setIsTextbookOpen(true)}
