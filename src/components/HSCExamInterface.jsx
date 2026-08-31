@@ -143,6 +143,31 @@ export default function HSCExamInterface({
   const [hintRevealed, setHintRevealed] = useState(false);
   const [hintUsedForCurrentQ, setHintUsedForCurrentQ] = useState(false);
 
+  // Re-synchronize when questions prop or sessionKey changes
+  useEffect(() => {
+    if (Array.isArray(questions) && questions.length > 0) {
+      const initialMap = {};
+      questions.forEach((q) => {
+        if (q && q.id) {
+          initialMap[q.id] = {
+            consecutiveCorrect: 0,
+            status: 'learning',
+            totalAttempts: 0,
+            lastAnswerWasCorrect: null
+          };
+        }
+      });
+      setQuestionStats(initialMap);
+      setActiveQueue(smartInterleaveQuestions(questions));
+      setQueueIndex(0);
+      setSelectedOption(null);
+      setIsAnswered(false);
+      setIsNotSureClicked(false);
+      setHintRevealed(false);
+      setHintUsedForCurrentQ(false);
+    }
+  }, [sessionKey, questions]);
+
   // Calculate live counters across all unique questions
   const totalUnique = Array.isArray(questions) ? questions.length : 0;
   const doneCount = Object.values(questionStats).filter(
@@ -151,12 +176,10 @@ export default function HSCExamInterface({
   const mistakeCount = Object.values(questionStats).filter(
     (s) => s && s.status === 'mistake'
   ).length;
-  const learningCount = Object.values(questionStats).filter(
-    (s) => s && s.status === 'learning'
-  ).length;
+  const learningCount = Math.max(0, totalUnique - doneCount - mistakeCount);
 
   // Exam completes when all unique items in this session are marked as Done!
-  const isAllDone = totalUnique > 0 && doneCount === totalUnique;
+  const isAllDone = totalUnique > 0 && doneCount >= totalUnique;
 
   useEffect(() => {
     if (isAllDone) {

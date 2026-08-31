@@ -1,15 +1,16 @@
-import React from 'react';
-import { X, Zap } from 'lucide-react';
+import React, { useMemo } from 'react';
+import { X } from 'lucide-react';
 import HSCExamInterface from './HSCExamInterface';
 import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions';
 
 export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuestions }) {
   if (!isOpen) return null;
 
-  // Default to exactly 10 questions session
-  const questionsList = dynamicQuestions && dynamicQuestions.length > 0
-    ? dynamicQuestions
-    : smartInterleaveQuestions(hscQuestionsList).slice(0, 10);
+  // Exactly 10 questions session
+  const tenQuestionsList = useMemo(() => {
+    const base = dynamicQuestions && dynamicQuestions.length > 0 ? dynamicQuestions : hscQuestionsList;
+    return smartInterleaveQuestions(base).slice(0, 10);
+  }, [dynamicQuestions, isOpen]);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md overflow-y-auto">
@@ -23,10 +24,10 @@ export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuest
           <X size={18} />
         </button>
 
-        {/* HSC Exam Interface */}
+        {/* HSC Exam Interface for exactly 10 questions */}
         <HSCExamInterface
-          questions={questionsList}
-          sessionKey="quick_practice_10"
+          questions={tenQuestionsList}
+          sessionKey={`quick_practice_10_${isOpen ? 'active' : 'idle'}`}
           onClose={onClose}
           lang={lang}
         />
