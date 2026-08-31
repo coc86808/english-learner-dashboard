@@ -16,13 +16,17 @@ import {
   ExternalLink,
   ChevronDown,
   ChevronUp,
+  ChevronLeft,
+  ChevronRight,
   BookMarked,
   FileText,
   X,
   Award,
   AlertCircle,
   Play,
-  RotateCcw
+  RotateCcw,
+  ListFilter,
+  SlidersHorizontal
 } from 'lucide-react';
 import { hscVocabularyList } from '../data/questions';
 import { hscUnits } from '../data/hscUnitsData';
@@ -46,6 +50,10 @@ export default function VocabularyBank({
   const [selectedStatusFilter, setSelectedStatusFilter] = useState('all'); // 'all' | 'weak' | 'clean'
   const [selectedPosFilter, setSelectedPosFilter] = useState('all');
   const [sortBy, setSortBy] = useState('default'); // 'default' | 'az' | 'za'
+
+  // Words to Learn Limit State (DEFAULT = 10)
+  const [wordsLimit, setWordsLimit] = useState(10); // 10 | 20 | 30 | 50 | 'all'
+  const [currentPage, setCurrentPage] = useState(1);
 
   // Interactive Expandable Rows State
   const [expandedWordIds, setExpandedWordIds] = useState(new Set());
@@ -80,15 +88,6 @@ export default function VocabularyBank({
     });
   };
 
-  const expandAll = () => {
-    const allIds = new Set(filteredList.map((item) => item.id || item.word));
-    setExpandedWordIds(allIds);
-  };
-
-  const collapseAll = () => {
-    setExpandedWordIds(new Set());
-  };
-
   // Find currently selected unit object
   const activeUnitObj = useMemo(() => {
     if (selectedUnitId === 'all') return null;
@@ -116,7 +115,7 @@ export default function VocabularyBank({
 
   // Extract unique boards available in the dataset for filtering
   const boardFilterOptions = useMemo(() => {
-    const boards = [
+    return [
       { id: 'all', label: isBn ? 'সকল বোর্ড (All Boards)' : 'All Board Standards' },
       { id: 'dhaka', label: 'Dhaka Board' },
       { id: 'chattogram', label: 'Chattogram Board' },
@@ -129,10 +128,20 @@ export default function VocabularyBank({
       { id: 'dinajpur', label: 'Dinajpur Board' },
       { id: 'standard', label: 'HSC Board Standard' }
     ];
-    return boards;
   }, [isBn]);
 
-  // Filtered vocabulary list
+  // Words limit options
+  const limitOptions = useMemo(() => {
+    return [
+      { value: 10, label: isBn ? '১০টি শব্দ (ডিফল্ট)' : '10 Words (Default)' },
+      { value: 20, label: isBn ? '২০টি শব্দ' : '20 Words' },
+      { value: 30, label: isBn ? '৩০টি শব্দ' : '30 Words' },
+      { value: 50, label: isBn ? '৫০টি শব্দ' : '50 Words' },
+      { value: 'all', label: isBn ? 'সকল শব্দ (All Words)' : 'All Words' }
+    ];
+  }, [isBn]);
+
+  // Filtered vocabulary list (full pool matching filters)
   const filteredList = useMemo(() => {
     return hscVocabularyList.filter((item) => {
       // 1. Unit & Lesson filter
@@ -231,6 +240,37 @@ export default function VocabularyBank({
     weakWords
   ]);
 
+  // Reset page to 1 whenever filters or limit change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedUnitId, selectedLessonId, selectedBoardFilter, selectedStatusFilter, selectedPosFilter, sortBy, wordsLimit]);
+
+  // Pagination & Displayed Slice Logic
+  const totalFilteredCount = filteredList.length;
+  const isLimitAll = wordsLimit === 'all';
+  const limitNum = isLimitAll ? totalFilteredCount : Number(wordsLimit) || 10;
+  const totalPages = isLimitAll ? 1 : Math.max(1, Math.ceil(totalFilteredCount / limitNum));
+
+  // Safe current page within range
+  const safeCurrentPage = Math.min(Math.max(1, currentPage), totalPages);
+
+  const startIndex = isLimitAll ? 0 : (safeCurrentPage - 1) * limitNum;
+  const endIndex = isLimitAll ? totalFilteredCount : Math.min(startIndex + limitNum, totalFilteredCount);
+
+  const displayedList = useMemo(() => {
+    if (isLimitAll) return filteredList;
+    return filteredList.slice(startIndex, endIndex);
+  }, [filteredList, isLimitAll, startIndex, endIndex]);
+
+  const expandAll = () => {
+    const allIds = new Set(displayedList.map((item) => item.id || item.word));
+    setExpandedWordIds(allIds);
+  };
+
+  const collapseAll = () => {
+    setExpandedWordIds(new Set());
+  };
+
   const handleDownloadPDF = () => {
     const unitTitle =
       selectedUnitId === 'all'
@@ -251,6 +291,7 @@ export default function VocabularyBank({
         ? `${lessonObj.number}: ${lessonObj.title}`
         : 'Selected Lesson';
 
+    // Export the currently active filtered set
     generateVocabularyBankPDF({
       words: filteredList,
       unitTitle,
@@ -271,7 +312,8 @@ export default function VocabularyBank({
     selectedBoardFilter !== 'all' ||
     selectedStatusFilter !== 'all' ||
     selectedPosFilter !== 'all' ||
-    sortBy !== 'default';
+    sortBy !== 'default' ||
+    wordsLimit !== 10;
 
   const resetAllFilters = () => {
     setSearchQuery('');
@@ -281,6 +323,8 @@ export default function VocabularyBank({
     setSelectedStatusFilter('all');
     setSelectedPosFilter('all');
     setSortBy('default');
+    setWordsLimit(10);
+    setCurrentPage(1);
   };
 
   return (
@@ -302,8 +346,8 @@ export default function VocabularyBank({
             </h1>
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
               {isBn
-                ? 'পাঠ্যবই ও বোর্ড স্ট্যান্ডার্ড প্রতিটি শব্দের বাংলা অর্থ, সমার্থক শব্দ (Synonyms), বিপরীত শব্দ (Antonyms), ইংরেজি সংজ্ঞা ও বাক্যে প্রয়োগের পূর্ণাঙ্গ শিট।'
-                : 'Interactive 4-column textbook sheet with Bengali Meanings, Synonyms, Antonyms, English Definitions, Example Sentences, and Board Exam Tags.'}
+                ? 'পাঠ্যবই ও বোর্ড স্ট্যান্ডার্ড প্রতিটি শব্দের বাংলা অর্থ, সমার্থক শব্দ (Synonyms), বিপরীত শব্দ (Antonyms), ইংরেজি সংজ্ঞা ও বাক্যে প্রয়োগের পূর্ণাঙ্গ শিট। একবারে কতটি শব্দ শিখবেন তা পছন্দ করুন (ডিফল্ট: ১০টি)।'
+                : 'Interactive 4-column textbook sheet with Bengali Meanings, Synonyms, Antonyms, English Definitions, and Board Exam Tags. Choose how many words to learn at a time (Default: 10).'}
             </p>
           </div>
 
@@ -339,14 +383,14 @@ export default function VocabularyBank({
           </div>
         </div>
 
-        {/* Multi-Level Filter Controls */}
+        {/* Multi-Level Filter Controls (5-Column Responsive Grid) */}
         <div className="mt-6 pt-6 border-t border-[#1e293b] space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
             {/* 1. SELECT UNIT */}
             <div className="relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <BookMarked size={12} className="text-emerald-400" />
-                <span>{isBn ? '১. ইউনিট নির্বাচন করুন' : '1. Select Unit'}</span>
+                <span>{isBn ? '১. ইউনিট নির্বাচন' : '1. Select Unit'}</span>
               </label>
               <div className="relative">
                 <select
@@ -371,7 +415,7 @@ export default function VocabularyBank({
             <div className="relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <BookOpen size={12} className="text-cyan-400" />
-                <span>{isBn ? '২. লেসন নির্বাচন করুন' : '2. Select Lesson'}</span>
+                <span>{isBn ? '২. লেসন নির্বাচন' : '2. Select Lesson'}</span>
               </label>
               <div className="relative">
                 <select
@@ -405,11 +449,39 @@ export default function VocabularyBank({
               </div>
             </div>
 
-            {/* 3. SEARCH BAR */}
+            {/* 3. WORDS TO LEARN LIMIT SELECTOR (Default 10) */}
+            <div className="relative">
+              <label className="block text-[11px] font-bold text-emerald-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                <ListFilter size={12} className="text-emerald-400" />
+                <span>{isBn ? '৩. পড়ার শব্দ সংখ্যা' : '3. Words to Learn'}</span>
+                <span className="text-[9px] px-1.5 py-0.2 bg-emerald-500/20 text-emerald-300 rounded font-black">
+                  {isBn ? 'ডিফল্ট ১০' : 'Def 10'}
+                </span>
+              </label>
+              <div className="relative">
+                <select
+                  value={wordsLimit}
+                  onChange={(e) => {
+                    const val = e.target.value === 'all' ? 'all' : Number(e.target.value);
+                    setWordsLimit(val);
+                  }}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-emerald-500/40 text-xs sm:text-sm text-emerald-200 outline-none focus:border-emerald-400 cursor-pointer appearance-none font-bold shadow-inner"
+                >
+                  {limitOptions.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {opt.label}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown size={14} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-emerald-400 pointer-events-none" />
+              </div>
+            </div>
+
+            {/* 4. SEARCH BAR */}
             <div className="relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <Search size={12} className="text-amber-400" />
-                <span>{isBn ? '৩. শব্দ বা অর্থ অনুসন্ধান' : '3. Search Word / Meaning'}</span>
+                <span>{isBn ? '৪. শব্দ অনুসন্ধান' : '4. Search Word'}</span>
               </label>
               <div className="relative">
                 <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -417,7 +489,7 @@ export default function VocabularyBank({
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={isBn ? 'শব্দ, অর্থ, সিনোনিম, বা বোর্ড...' : 'Word, synonym, meaning, board...'}
+                  placeholder={isBn ? 'শব্দ, অর্থ, সিনোনিম...' : 'Word, synonym, meaning...'}
                   className="w-full pl-9 pr-8 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-xs sm:text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 transition-colors font-medium"
                 />
                 {searchQuery && (
@@ -431,11 +503,11 @@ export default function VocabularyBank({
               </div>
             </div>
 
-            {/* 4. BOARD EXAM & STATUS FILTER */}
+            {/* 5. BOARD EXAM & STATUS FILTER */}
             <div className="relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <Award size={12} className="text-purple-400" />
-                <span>{isBn ? '৪. বোর্ড ও স্ট্যাটাস ফিল্টার' : '4. Board & Status Filter'}</span>
+                <span>{isBn ? '৫. বোর্ড ও স্ট্যাটাস' : '5. Board & Status'}</span>
               </label>
               <div className="relative">
                 <select
@@ -454,10 +526,28 @@ export default function VocabularyBank({
             </div>
           </div>
 
-          {/* Quick Filter Chips & Status Toggles */}
+          {/* Quick Filter Chips & Words Limit Pills */}
           <div className="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs border-t border-[#1a2334]/60">
             <div className="flex items-center gap-2 flex-wrap">
-              <span className="text-slate-400 font-semibold">{isBn ? 'কুইক ফিল্টার:' : 'Quick Filters:'}</span>
+              <span className="text-slate-400 font-semibold">{isBn ? 'পড়ার সংখ্যা:' : 'Words Limit:'}</span>
+
+              {/* Quick Word Limit Pills */}
+              <div className="inline-flex rounded-lg bg-[#0c0f17] border border-emerald-500/30 p-0.5">
+                {[10, 20, 30, 50, 'all'].map((lim) => (
+                  <button
+                    key={lim}
+                    onClick={() => setWordsLimit(lim)}
+                    className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all ${
+                      wordsLimit === lim
+                        ? 'bg-emerald-500 text-slate-950 shadow-sm'
+                        : 'text-slate-400 hover:text-emerald-300'
+                    }`}
+                  >
+                    {lim === 'all' ? (isBn ? 'সব' : 'All') : lim}
+                    {lim === 10 && <span className="ml-1 text-[9px] opacity-75">★</span>}
+                  </button>
+                ))}
+              </div>
 
               {/* Status Toggles */}
               <button
@@ -486,7 +576,7 @@ export default function VocabularyBank({
                     onClick={() => setSelectedPosFilter(pos.id)}
                     className={`px-2.5 py-1 rounded-md text-[11px] font-semibold transition-all ${
                       selectedPosFilter === pos.id
-                        ? 'bg-emerald-500 text-slate-950 font-bold'
+                        ? 'bg-cyan-500 text-slate-950 font-bold'
                         : 'text-slate-400 hover:text-slate-200'
                     }`}
                   >
@@ -500,7 +590,7 @@ export default function VocabularyBank({
                 onClick={() => setSortBy(sortBy === 'az' ? (sortBy === 'za' ? 'default' : 'za') : 'az')}
                 className={`px-3 py-1 rounded-lg border text-[11px] font-bold flex items-center gap-1 transition-all ${
                   sortBy !== 'default'
-                    ? 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40'
+                    ? 'bg-purple-500/20 text-purple-300 border-purple-500/40'
                     : 'bg-[#141b2a] text-slate-400 border-[#1e293b] hover:text-slate-200'
                 }`}
               >
@@ -514,22 +604,29 @@ export default function VocabularyBank({
               <div className="flex items-center gap-1.5 text-[11px]">
                 <button
                   onClick={expandAll}
-                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold"
+                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold cursor-pointer"
                 >
-                  {isBn ? 'সব প্রসারিত করুন' : 'Expand All'}
+                  {isBn ? 'সব প্রসারিত' : 'Expand All'}
                 </button>
                 <button
                   onClick={collapseAll}
-                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold"
+                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold cursor-pointer"
                 >
-                  {isBn ? 'সব গুটিয়ে নিন' : 'Collapse All'}
+                  {isBn ? 'সব গুটিয়ে' : 'Collapse All'}
                 </button>
               </div>
 
-              <span>
+              <span className="font-medium text-slate-300">
                 {isBn ? 'প্রদর্শিত: ' : 'Showing: '}
-                <strong className="text-emerald-400 font-bold">{filteredList.length}</strong> / {hscVocabularyList.length}{' '}
-                {isBn ? 'শব্দ' : 'words'}
+                <strong className="text-emerald-400 font-bold">
+                  {totalFilteredCount > 0 ? `${startIndex + 1} - ${endIndex}` : 0}
+                </strong>{' '}
+                / {totalFilteredCount} {isBn ? 'শব্দ' : 'words'}
+                {!isLimitAll && totalPages > 1 && (
+                  <span className="text-slate-400 text-[11px] ml-1">
+                    ({isBn ? `পৃষ্ঠা ${safeCurrentPage}/${totalPages}` : `Page ${safeCurrentPage}/${totalPages}`})
+                  </span>
+                )}
               </span>
 
               {hasActiveFilters && (
@@ -554,7 +651,7 @@ export default function VocabularyBank({
               <tr className="text-xs sm:text-sm font-extrabold tracking-wide uppercase">
                 <th className="py-4 px-4 sm:px-6 w-[24%] border-r border-[#047857]">
                   <div className="flex items-center gap-1.5">
-                    <span>Word / Term</span>
+                    <span>Word</span>
                   </div>
                 </th>
                 <th className="py-4 px-4 sm:px-6 w-[28%] border-r border-[#047857]">
@@ -577,8 +674,9 @@ export default function VocabularyBank({
 
             {/* Alternating Shaded Rows with Expandable Details */}
             <tbody className="divide-y divide-[#1b2537] text-xs sm:text-sm font-sans">
-              {filteredList.length > 0 ? (
-                filteredList.map((item, index) => {
+              {displayedList.length > 0 ? (
+                displayedList.map((item, index) => {
+                  const serialNum = startIndex + index + 1;
                   const weak = isWeak(item);
                   const isAudioActive = speakingWord === item.word;
                   const isExpanded = expandedWordIds.has(item.id || item.word);
@@ -597,8 +695,8 @@ export default function VocabularyBank({
                           <div className="flex items-center justify-between gap-2">
                             <div className="min-w-0">
                               <div className="flex items-center gap-2">
-                                <span className="text-slate-500 font-mono text-[11px] select-none">
-                                  {index + 1}.
+                                <span className="text-slate-500 font-mono text-[11px] select-none w-5 shrink-0">
+                                  {serialNum}.
                                 </span>
                                 <span className="text-white font-black text-sm sm:text-base group-hover:text-emerald-300 transition-colors">
                                   {item.word}
@@ -632,7 +730,6 @@ export default function VocabularyBank({
                                 }`}
                               >
                                 {isAudioActive ? (
-                                  /* Animated Audio Wave Indicator */
                                   <div className="flex items-end gap-[2px] h-3.5 w-3.5 px-0.5 justify-center">
                                     <span className="w-1 bg-slate-950 rounded-full animate-bounce [animation-delay:-0.3s] h-3" />
                                     <span className="w-1 bg-slate-950 rounded-full animate-bounce [animation-delay:-0.15s] h-2" />
@@ -665,7 +762,7 @@ export default function VocabularyBank({
                               <button
                                 onClick={() => toggleRowExpansion(item.id || item.word)}
                                 title={isExpanded ? 'Collapse details' : 'Expand full details'}
-                                className="p-1 text-slate-400 hover:text-white transition-colors"
+                                className="p-1 text-slate-400 hover:text-white transition-colors cursor-pointer"
                               >
                                 {isExpanded ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
                               </button>
@@ -727,7 +824,7 @@ export default function VocabularyBank({
                                 <div className="flex items-center gap-2">
                                   <button
                                     onClick={() => handleSpeak(item.word)}
-                                    className="text-xs text-cyan-300 hover:text-cyan-200 font-bold flex items-center gap-1 bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-lg transition-colors"
+                                    className="text-xs text-cyan-300 hover:text-cyan-200 font-bold flex items-center gap-1 bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-lg transition-colors cursor-pointer"
                                   >
                                     <Volume2 size={13} />
                                     <span>{isBn ? 'উচ্চারণ শুনুন' : 'Pronounce'}</span>
@@ -805,6 +902,92 @@ export default function VocabularyBank({
             </tbody>
           </table>
         </div>
+
+        {/* Pagination & Next Slice Learning Controls */}
+        {!isLimitAll && totalPages > 1 && (
+          <div className="p-4 sm:p-5 bg-[#0e1422] border-t border-[#1e293b] flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-xs text-slate-300 font-medium">
+              <span>
+                {isBn ? 'পৃষ্ঠা ' : 'Page '}
+                <strong className="text-white font-bold">{safeCurrentPage}</strong> {isBn ? 'এর' : 'of'}{' '}
+                <strong className="text-white font-bold">{totalPages}</strong> •{' '}
+                {isBn
+                  ? `শব্দ ${startIndex + 1} থেকে ${endIndex} (মোট ${totalFilteredCount}টি)`
+                  : `Words ${startIndex + 1} to ${endIndex} of ${totalFilteredCount}`}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              {/* Previous Page */}
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={safeCurrentPage === 1}
+                className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1 transition-all ${
+                  safeCurrentPage === 1
+                    ? 'border-[#1b2434] text-slate-600 cursor-not-allowed bg-[#0c101a]'
+                    : 'border-[#24334a] text-slate-200 hover:bg-[#1c273c] hover:text-white bg-[#131b29] cursor-pointer'
+                }`}
+              >
+                <ChevronLeft size={14} />
+                <span>{isBn ? 'পূর্ববর্তী' : 'Previous'}</span>
+              </button>
+
+              {/* Page Number Buttons */}
+              <div className="flex items-center gap-1">
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .filter((p) => {
+                    // Show first, last, and current +/- 1
+                    return p === 1 || p === totalPages || Math.abs(p - safeCurrentPage) <= 1;
+                  })
+                  .map((p, idx, arr) => {
+                    const prev = arr[idx - 1];
+                    const showEllipsis = prev && p - prev > 1;
+
+                    return (
+                      <React.Fragment key={p}>
+                        {showEllipsis && <span className="px-1 text-slate-500 text-xs">...</span>}
+                        <button
+                          onClick={() => setCurrentPage(p)}
+                          className={`w-8 h-8 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                            safeCurrentPage === p
+                              ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-950/60'
+                              : 'bg-[#131b29] border border-[#24334a] text-slate-300 hover:bg-[#1a2538] hover:text-white'
+                          }`}
+                        >
+                          {p}
+                        </button>
+                      </React.Fragment>
+                    );
+                  })}
+              </div>
+
+              {/* Next Page */}
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={safeCurrentPage === totalPages}
+                className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1 transition-all ${
+                  safeCurrentPage === totalPages
+                    ? 'border-[#1b2434] text-slate-600 cursor-not-allowed bg-[#0c101a]'
+                    : 'border-[#24334a] text-slate-200 hover:bg-[#1c273c] hover:text-white bg-[#131b29] cursor-pointer'
+                }`}
+              >
+                <span>{isBn ? 'পরবর্তী' : 'Next'}</span>
+                <ChevronRight size={14} />
+              </button>
+
+              {/* Jump to Next 10 Words Direct Action */}
+              {safeCurrentPage < totalPages && (
+                <button
+                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  className="ml-2 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold flex items-center gap-1.5 shadow-md shadow-emerald-950/50 cursor-pointer transition-all active:scale-95"
+                >
+                  <span>{isBn ? `পরবর্তী ${limitNum}টি পড়ুন` : `Learn Next ${limitNum}`}</span>
+                  <ChevronRight size={14} />
+                </button>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
