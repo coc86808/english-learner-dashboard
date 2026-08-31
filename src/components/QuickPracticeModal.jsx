@@ -1,14 +1,15 @@
 import React from 'react';
 import { X, Zap } from 'lucide-react';
 import HSCExamInterface from './HSCExamInterface';
-import { hscQuestionsList } from '../data/questions';
+import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions';
 
 export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuestions }) {
   if (!isOpen) return null;
 
+  // Default to exactly 10 questions session
   const questionsList = dynamicQuestions && dynamicQuestions.length > 0
     ? dynamicQuestions
-    : hscQuestionsList;
+    : smartInterleaveQuestions(hscQuestionsList).slice(0, 10);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md overflow-y-auto">
@@ -16,16 +17,16 @@ export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuest
         {/* Floating Close Button */}
         <button
           onClick={onClose}
-          className="absolute -top-3 -right-3 z-50 w-9 h-9 rounded-full bg-[#182030] hover:bg-rose-950 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center shadow-xl transition-all"
+          className="absolute -top-3 -right-3 z-50 w-9 h-9 rounded-full bg-[#182030] hover:bg-rose-950 border border-slate-700 text-slate-300 hover:text-white flex items-center justify-center shadow-xl transition-all cursor-pointer"
           title="Close Quiz"
         >
           <X size={18} />
         </button>
 
-        {/* HSC Exam Interface matching hand-drawn sketch */}
+        {/* HSC Exam Interface */}
         <HSCExamInterface
           questions={questionsList}
-          sessionKey="quick_practice"
+          sessionKey="quick_practice_10"
           onClose={onClose}
           lang={lang}
         />

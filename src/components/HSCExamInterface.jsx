@@ -155,8 +155,8 @@ export default function HSCExamInterface({
     (s) => s && s.status === 'learning'
   ).length;
 
-  // Exam completes when all questions in the queue have been answered
-  const isAllDone = totalUnique > 0 && queueIndex >= activeQueue.length;
+  // Exam completes when all unique items in this session are marked as Done!
+  const isAllDone = totalUnique > 0 && doneCount === totalUnique;
 
   useEffect(() => {
     if (isAllDone) {
@@ -392,6 +392,15 @@ export default function HSCExamInterface({
 
   const handleNext = () => {
     const nextIdx = queueIndex + 1;
+    // If we reach the end of the current queue but not all words are Done, re-queue the unfinished ones
+    if (nextIdx >= activeQueue.length && doneCount < totalUnique) {
+      const unfinishedQuestions = (Array.isArray(questions) ? questions : []).filter(
+        (q) => q && q.id && questionStats[q.id]?.status !== 'done'
+      );
+      if (unfinishedQuestions.length > 0) {
+        setActiveQueue((prev) => [...prev, ...smartInterleaveQuestions(unfinishedQuestions)]);
+      }
+    }
     setQueueIndex(nextIdx);
     setSelectedOption(null);
     setIsAnswered(false);
@@ -508,9 +517,9 @@ export default function HSCExamInterface({
     );
   }
 
-  // Progress percentage calculation
-  const progressPercent = activeQueue.length > 0
-    ? Math.min(100, Math.round(((queueIndex) / activeQueue.length) * 100))
+  // Progress percentage calculation based on words marked Done
+  const progressPercent = totalUnique > 0
+    ? Math.min(100, Math.round((doneCount / totalUnique) * 100))
     : 0;
 
   return (
