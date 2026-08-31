@@ -120,12 +120,14 @@ export const ROUTES = {
 // Route Normalization Helper
 const normalizePath = (rawPath) => {
   if (!rawPath) return '/';
-  const clean = rawPath.trim().toLowerCase().replace(/\/+$/, '') || '/';
-  if (clean === '/home') return '/dashboard';
-  if (clean === '/vocab' || clean === '/vocabulary') return '/vocabulary-bank';
-  if (clean === '/exams') return '/exam';
-  if (clean === '/admin-panel') return '/admin';
-  if (clean === '/admin/quiz-settings') return '/admin/settings';
+  const clean = rawPath.trim().replace(/\/+$/, '') || '/';
+  const lower = clean.toLowerCase();
+  if (lower === '/home') return '/dashboard';
+  if (lower === '/vocab' || lower === '/vocabulary') return '/vocabulary-bank';
+  if (lower === '/exams') return '/exam';
+  if (lower.startsWith('/exams/')) return `/exam/${clean.slice(7)}`;
+  if (lower === '/admin-panel') return '/admin';
+  if (lower === '/admin/quiz-settings') return '/admin/settings';
   return clean;
 };
 
@@ -398,21 +400,21 @@ export default function App() {
   // Map route to active tab id for sidebar/header compatibility
   const activeTab = useMemo(() => {
     if (currentPath === '/dashboard') return 'dashboard';
-    if (currentPath === '/units') return 'units';
-    if (currentPath === '/vocabulary-bank' || currentPath === '/vocabulary') return 'vocab_bank';
-    if (currentPath === '/flashcards') return 'flashcards';
-    if (currentPath === '/practice') return 'practice';
-    if (currentPath === '/exam' || currentPath === '/exams') return 'exams';
-    if (currentPath === '/weak-words') return 'weak-words';
-    if (currentPath === '/textbook') return 'textbook';
-    if (currentPath === '/progress') return 'progress';
-    if (currentPath === '/leaderboard') return 'leaderboard';
-    if (currentPath === '/notes') return 'notes';
-    if (currentPath === '/certificates') return 'certificates';
-    if (currentPath === '/settings') return 'settings';
-    if (currentPath === '/profile') return 'profile';
-    if (currentPath === '/history') return 'history';
-    if (currentPath === '/about') return 'about';
+    if (currentPath.startsWith('/units')) return 'units';
+    if (currentPath.startsWith('/vocabulary-bank') || currentPath.startsWith('/vocabulary')) return 'vocab_bank';
+    if (currentPath.startsWith('/flashcards')) return 'flashcards';
+    if (currentPath.startsWith('/practice')) return 'practice';
+    if (currentPath.startsWith('/exam') || currentPath.startsWith('/exams')) return 'exams';
+    if (currentPath.startsWith('/weak-words')) return 'weak-words';
+    if (currentPath.startsWith('/textbook')) return 'textbook';
+    if (currentPath.startsWith('/progress')) return 'progress';
+    if (currentPath.startsWith('/leaderboard')) return 'leaderboard';
+    if (currentPath.startsWith('/notes')) return 'notes';
+    if (currentPath.startsWith('/certificates')) return 'certificates';
+    if (currentPath.startsWith('/settings')) return 'settings';
+    if (currentPath.startsWith('/profile')) return 'profile';
+    if (currentPath.startsWith('/history')) return 'history';
+    if (currentPath.startsWith('/about')) return 'about';
     if (currentPath.startsWith('/admin')) return 'admin';
     return 'dashboard';
   }, [currentPath]);
@@ -712,10 +714,14 @@ export default function App() {
             </div>
           )}
 
-          {/* Route: /exam or /exams */}
-          {(currentPath === '/exam' || currentPath === '/exams') && (
+          {/* Route: /exam or /exams or /units (Supports dynamic subpaths like /exam/UNIT-1_Education_and_Life/lesson_1) */}
+          {(currentPath.startsWith('/exam') || currentPath.startsWith('/exams') || currentPath.startsWith('/units')) && (
             <div className="max-w-6xl mx-auto">
-              <HSCUnitsExplorer lang={lang} />
+              <HSCUnitsExplorer
+                lang={lang}
+                currentPath={currentPath}
+                navigate={navigate}
+              />
             </div>
           )}
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BookOpen,
   Sparkles,
@@ -25,11 +25,16 @@ import {
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
+import { formatUnitSlug, formatLessonSlug, matchUnitFromSlug, matchLessonFromSlug } from '../utils/routeHelpers';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 import ErrorBoundary from './ErrorBoundary';
 
-export default function HSCUnitsExplorer({ lang = 'bn' }) {
+export default function HSCUnitsExplorer({
+  lang = 'bn',
+  currentPath = '/exam',
+  navigate
+}) {
   const isBn = lang === 'bn';
 
   // Navigation State
@@ -52,6 +57,43 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
     'bangla_meaning'
   ]);
 
+  // Sync state with URL path whenever currentPath changes (e.g. direct load, refresh, or back/forward buttons)
+  useEffect(() => {
+    if (!currentPath) return;
+
+    // Remove leading slash and split path segments
+    const clean = currentPath.replace(/^\/+|\/+$/g, '');
+    const segments = clean.split('/');
+
+    // Check if path is in /exam/... or /units/...
+    if (segments[0] === 'exam' || segments[0] === 'exams' || segments[0] === 'units') {
+      const unitSlug = segments[1];
+      const lessonSlug = segments[2];
+
+      if (unitSlug) {
+        const matchedU = matchUnitFromSlug(unitSlug, hscUnits);
+        if (matchedU) {
+          setSelectedUnit(matchedU);
+          if (lessonSlug) {
+            const matchedL = matchLessonFromSlug(lessonSlug, matchedU);
+            if (matchedL) {
+              setSelectedLesson(matchedL);
+            } else {
+              setSelectedLesson(null);
+            }
+          } else {
+            setSelectedLesson(null);
+          }
+        }
+      } else {
+        // Just /exam or /units
+        setSelectedUnit(null);
+        setSelectedLesson(null);
+        setIsExamActive(false);
+      }
+    }
+  }, [currentPath]);
+
   const toggleCategory = (catId) => {
     setSelectedCategories((prev) => {
       if (prev.includes(catId)) {
@@ -67,32 +109,56 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
     setSelectedCategories(['synonyms', 'antonyms', 'english_meaning', 'bangla_meaning']);
   };
 
-  // Handle clicking a Unit card (Navigates to Step 2: Lessons View)
+  // Safe navigation helper that updates browser history and App state
+  const changeRoute = (newUrl) => {
+    if (typeof navigate === 'function') {
+      navigate(newUrl);
+    } else if (typeof window !== 'undefined') {
+      window.history.pushState({ path: newUrl }, '', newUrl);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    }
+  };
+
+  // Handle clicking a Unit card (Navigates to: /exam/UNIT-1_Education_and_Life)
   const handleSelectUnit = (unit) => {
     setSelectedUnit(unit);
     setSelectedLesson(null);
     setIsExamActive(false);
-    setQuestionLimit(10); // reset to default 10
+    setQuestionLimit(10);
     setIsCustomMode(false);
+    const unitSlug = formatUnitSlug(unit);
+    changeRoute(`/exam/${unitSlug}`);
   };
 
-  // Handle clicking a Lesson card (Navigates to Step 3: Question Amount & Category Setup Screen)
+  // Handle clicking a Lesson card (Navigates to: /exam/UNIT-1_Education_and_Life/lesson_1)
   const handleSelectLesson = (lesson) => {
     setSelectedLesson(lesson);
     setIsExamActive(false);
-    setQuestionLimit(10); // reset to default 10
+    setQuestionLimit(10);
     setIsCustomMode(false);
+    const unitSlug = formatUnitSlug(selectedUnit);
+    const lessonSlug = formatLessonSlug(lesson);
+    changeRoute(`/exam/${unitSlug}/${lessonSlug}`);
   };
 
-  // Back buttons
+  // Back to Units (Navigates to: /exam)
   const handleBackToUnits = () => {
     setSelectedUnit(null);
     setSelectedLesson(null);
     setIsExamActive(false);
+    changeRoute('/exam');
   };
 
+  // Back to Lessons (Navigates to: /exam/UNIT-1_Education_and_Life)
   const handleBackToLessons = () => {
+    setSelectedLesson(null);
     setIsExamActive(false);
+    if (selectedUnit) {
+      const unitSlug = formatUnitSlug(selectedUnit);
+      changeRoute(`/exam/${unitSlug}`);
+    } else {
+      changeRoute('/exam');
+    }
   };
 
   // Safely count questions for a category in selected unit/lesson
@@ -252,7 +318,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1f283a]">
             <div className="flex items-center gap-3">
               <button
-                onClick={() => setSelectedLesson(null)}
+                onClick={handleBackToLessons}
                 className="p-2.5 rounded-xl bg-[#131824] hover:bg-[#1c2436] border border-[#232c3f] text-slate-300 hover:text-white transition-all shadow-sm cursor-pointer"
                 title="Back to lessons"
               >
@@ -573,7 +639,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
         </div>
       ) : selectedUnit ? (
         /* ------------------------------------------------------------- */
-        /* VIEW 2: LESSONS GRID (EXACTLY MATCHING SCREENSHOT 2)           */
+        /* VIEW 2: LESSONS GRID (MATCHING UNIT)                          */
         /* ------------------------------------------------------------- */
         <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-200">
           {/* Top Bar with Back Button & Unit Title */}
@@ -658,7 +724,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
         </div>
       ) : (
         /* ------------------------------------------------------------- */
-        /* VIEW 1: ALL UNITS OVERVIEW GRID (MATCHING SCREENSHOT 1)       */
+        /* VIEW 1: ALL UNITS OVERVIEW GRID                               */
         /* ------------------------------------------------------------- */
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Header Banner */}
