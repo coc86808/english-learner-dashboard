@@ -251,18 +251,6 @@ export default function AboutPage({ lang = 'en', onNavigate, currentUser }) {
               </p>
 
               <div className="pt-2 flex flex-col gap-2">
-                <a
-                  href="https://github.com/coc86808/english-learner-dashboard"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="p-3 rounded-2xl bg-[#0c0f17] hover:bg-[#151c2a] border border-[#1e293b] text-slate-200 font-semibold flex items-center justify-between transition-all"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <Code2 size={16} className="text-slate-400" />
-                    <span>Open Source Repository</span>
-                  </div>
-                  <ExternalLink size={14} className="text-slate-500" />
-                </a>
 
                 <a
                   href="https://t.me/sakin7112"
