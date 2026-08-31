@@ -785,19 +785,6 @@ export default function App() {
             </div>
           )}
 
-          {/* Route: /certificates */}
-          {currentPath === '/certificates' && (
-            <CertificatesPage
-              lang={lang}
-              currentUser={currentUser}
-              navigate={navigate}
-              onStartExam={(unit) => {
-                setSelectedExamUnit(unit);
-                setIsUnitLessonModalOpen(true);
-              }}
-            />
-          )}
-
           {/* Route: /settings */}
           {currentPath === '/settings' && (
             <SettingsPage

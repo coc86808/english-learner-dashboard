@@ -347,17 +347,6 @@ export default function Header({
                   <button
                     onClick={() => {
                       setIsProfileMenuOpen(false);
-                      if (navigate) navigate('/certificates');
-                    }}
-                    className="w-full flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-slate-300 hover:text-white hover:bg-[#161e2e] rounded-xl transition-all"
-                  >
-                    <Award size={15} className="text-yellow-400" />
-                    <span>{isBn ? 'সার্টিফিকেট' : 'Certificates'}</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      setIsProfileMenuOpen(false);
                       if (navigate) navigate('/settings');
                     }}
                     className="w-full flex items-center gap-2.5 px-3 py-2 text-xs font-medium text-slate-300 hover:text-white hover:bg-[#161e2e] rounded-xl transition-all"

@@ -1025,16 +1025,8 @@ export default function HSCExamInterface({
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
             <button
-              onClick={() => setIsCertificateOpen(true)}
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 text-sm font-black inline-flex items-center gap-2 transition-all shadow-lg shadow-amber-500/30 cursor-pointer active:scale-95"
-            >
-              <Award size={18} />
-              <span>{isBn ? 'সার্টিফিকেট ডাউনলোড করুন' : 'Download Certificate'}</span>
-            </button>
-
-            <button
               onClick={handleRestart}
-              className="px-5 py-3 rounded-xl bg-[#111723] hover:bg-[#161e2e] border border-[#1e293b] text-slate-300 text-sm font-bold inline-flex items-center gap-2 transition-all cursor-pointer"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-sm font-black inline-flex items-center gap-2 transition-all shadow-lg shadow-emerald-500/30 cursor-pointer active:scale-95"
             >
               <RotateCcw size={16} />
               <span>{isBn ? 'পুনরায় পরীক্ষা দিন' : 'Practice Again'}</span>

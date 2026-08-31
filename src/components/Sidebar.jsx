@@ -163,15 +163,6 @@ export default function Sidebar({
           icon: Trophy,
           badge: 'TOP 5%',
           badgeColor: 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/30'
-        },
-        {
-          path: '/certificates',
-          tabId: 'certificates',
-          labelEn: 'Certificates',
-          labelBn: 'সার্টিফিকেট',
-          icon: Award,
-          badge: 'Earn ≥80%',
-          badgeColor: 'bg-amber-500/15 text-amber-300 border border-amber-500/30'
         }
       ]
     },
