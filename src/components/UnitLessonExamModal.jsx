@@ -213,29 +213,6 @@ export default function UnitLessonExamModal({
         ) : selectedUnit && selectedLesson ? (
           /* STEP 3: DEDICATED QUESTION AMOUNT & CATEGORIES SETUP SCREEN */
           <div className="bg-[#131824] border border-[#232c3f] rounded-3xl p-5 md:p-8 shadow-2xl space-y-6 text-slate-100 max-h-[85vh] overflow-y-auto max-w-3xl mx-auto">
-            {/* Step Breadcrumb */}
-            <div className="p-3 px-4 rounded-2xl bg-[#0c1018] border border-[#1e2738] flex items-center justify-between text-[11px] font-bold text-slate-400 overflow-x-auto">
-              <div className="flex items-center gap-2 shrink-0">
-                <span className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-[10px]">1</span>
-                <span className="text-slate-300">{selectedUnit.unitNumber}</span>
-              </div>
-              <span className="text-slate-600">➔</span>
-              <div className="flex items-center gap-2 shrink-0">
-                <span className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-[10px]">2</span>
-                <span className="text-slate-300 truncate max-w-[120px]">{selectedLesson.number}</span>
-              </div>
-              <span className="text-slate-600">➔</span>
-              <div className="flex items-center gap-2 shrink-0 text-emerald-400">
-                <span className="w-5 h-5 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center text-[10px] font-black">3</span>
-                <span className="font-extrabold">{isBn ? 'প্রশ্নের সংখ্যা ও ধরন' : 'Question Amount & Types'}</span>
-              </div>
-              <span className="text-slate-600">➔</span>
-              <div className="flex items-center gap-2 shrink-0 text-slate-500">
-                <span className="w-5 h-5 rounded-full bg-slate-800 text-slate-500 flex items-center justify-center text-[10px]">4</span>
-                <span>{isBn ? 'পরীক্ষা' : 'Live Exam'}</span>
-              </div>
-            </div>
-
             {/* Header with Back Button */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1f283a]">
               <div className="flex items-center gap-3">
