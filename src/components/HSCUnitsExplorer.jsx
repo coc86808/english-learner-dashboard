@@ -1,17 +1,24 @@
 import React, { useState } from 'react';
 import {
   BookOpen,
-  CheckCircle2,
-  Clock,
-  FileText,
-  ArrowLeft,
-  Search,
   Sparkles,
-  Play,
-  RotateCcw,
+  ArrowRight,
+  ArrowLeft,
   GraduationCap,
+  Play,
+  Layers,
   ChevronRight,
-  BookMarked
+  BookMarked,
+  CheckCircle,
+  HelpCircle,
+  BarChart2,
+  Clock,
+  Award,
+  Search,
+  Check,
+  Zap,
+  ListOrdered,
+  SlidersHorizontal
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
@@ -19,16 +26,18 @@ import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 import ErrorBoundary from './ErrorBoundary';
 
-export default function HSCUnitsExplorer({
-  lang = 'en',
-  onStartUnitQuiz
-}) {
+export default function HSCUnitsExplorer({ lang = 'bn' }) {
   const isBn = lang === 'bn';
+
+  // Navigation State
   const [selectedUnit, setSelectedUnit] = useState(null);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [isExamActive, setIsExamActive] = useState(false);
   const [isTextbookOpen, setIsTextbookOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Question Limit Option (DEFAULT = 10 questions)
+  const [questionLimit, setQuestionLimit] = useState(10); // 10 | 20 | 30 | 50 | 'all'
 
   // 4 Practice Categories: Synonyms, Antonyms, English Meaning, Bangla Meaning
   const [selectedCategories, setSelectedCategories] = useState([
@@ -53,17 +62,19 @@ export default function HSCUnitsExplorer({
     setSelectedCategories(['synonyms', 'antonyms', 'english_meaning', 'bangla_meaning']);
   };
 
-  // Handle clicking a Unit card (Navigates to Screenshot 2: Lessons View)
+  // Handle clicking a Unit card (Navigates to Step 2: Lessons View)
   const handleSelectUnit = (unit) => {
     setSelectedUnit(unit);
     setSelectedLesson(null);
     setIsExamActive(false);
+    setQuestionLimit(10); // reset to default 10
   };
 
-  // Handle clicking a Lesson card (Navigates to View 3: Category Setup Screen)
+  // Handle clicking a Lesson card (Navigates to Step 3: Question Amount & Category Setup Screen)
   const handleSelectLesson = (lesson) => {
     setSelectedLesson(lesson);
     setIsExamActive(false);
+    setQuestionLimit(10); // reset to default 10
   };
 
   // Back buttons
@@ -95,8 +106,8 @@ export default function HSCUnitsExplorer({
     }).length;
   };
 
-  // Filter questions for the selected unit, lesson, and practice categories
-  const getFilteredQuestions = () => {
+  // Get all available matching questions for current unit/lesson & categories
+  const getAllMatchingQuestions = () => {
     const categoryFiltered = (hscQuestionsList || []).filter((q) =>
       q && q.category && selectedCategories.includes(q.category)
     );
@@ -127,6 +138,18 @@ export default function HSCUnitsExplorer({
     return smartInterleaveQuestions(unitQuestions.length > 0 ? unitQuestions : categoryFiltered);
   };
 
+  // Sliced questions based on chosen question limit (Default: 10)
+  const getFilteredQuestions = () => {
+    const allMatching = getAllMatchingQuestions();
+    if (questionLimit === 'all' || allMatching.length <= Number(questionLimit)) {
+      return allMatching;
+    }
+    return allMatching.slice(0, Number(questionLimit));
+  };
+
+  const allAvailableQuestions = getAllMatchingQuestions();
+  const actualExamCount = getFilteredQuestions().length;
+
   const filteredUnits = hscUnits.filter((u) => {
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
@@ -152,13 +175,17 @@ export default function HSCUnitsExplorer({
               className="px-3.5 py-1.5 rounded-xl bg-[#182030] hover:bg-[#222e44] text-emerald-400 font-bold inline-flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
             >
               <ArrowLeft size={14} />
-              <span>{isBn ? 'অনুশীলন সেটিংসে ফিরে যান' : 'Back to Practice Setup'}</span>
+              <span>{isBn ? 'প্রশ্ন সেটিংসে ফিরে যান' : 'Back to Question Setup'}</span>
             </button>
 
             <div className="flex items-center gap-2 font-semibold text-xs sm:text-sm">
               <span className="text-emerald-400 font-bold">{selectedUnit.unitNumber}</span>
               <span className="text-slate-600">➔</span>
               <span className="text-white font-bold">{selectedLesson.number}: {selectedLesson.title}</span>
+              <span className="text-slate-600">➔</span>
+              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-black border border-emerald-500/30">
+                {actualExamCount} {isBn ? 'টি প্রশ্ন' : 'Questions'}
+              </span>
             </div>
 
             {((selectedUnit.id === 'unit-1' && (selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
@@ -177,7 +204,7 @@ export default function HSCUnitsExplorer({
           <ErrorBoundary>
             <HSCExamInterface
               questions={getFilteredQuestions()}
-              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}`}
+              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}_q_${questionLimit}`}
               onClose={() => setIsExamActive(false)}
               lang={lang}
             />
@@ -185,10 +212,33 @@ export default function HSCUnitsExplorer({
         </div>
       ) : selectedUnit && selectedLesson ? (
         /* ------------------------------------------------------------- */
-        /* VIEW 3: DEDICATED PRACTICE CATEGORIES SELECTION SCREEN         */
+        /* VIEW 3: DEDICATED QUESTION AMOUNT & CATEGORIES SELECTION SCREEN*/
         /* (AFTER SELECTING UNIT & LESSON)                               */
         /* ------------------------------------------------------------- */
         <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-200 max-w-3xl mx-auto">
+          {/* Site Map Step Progress Bar */}
+          <div className="p-3 px-4 rounded-2xl bg-[#0c1018] border border-[#1e2738] flex items-center justify-between text-[11px] font-bold text-slate-400 overflow-x-auto">
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-[10px]">1</span>
+              <span className="text-slate-300">{selectedUnit.unitNumber}</span>
+            </div>
+            <span className="text-slate-600">➔</span>
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-[10px]">2</span>
+              <span className="text-slate-300 truncate max-w-[120px]">{selectedLesson.number}</span>
+            </div>
+            <span className="text-slate-600">➔</span>
+            <div className="flex items-center gap-2 shrink-0 text-emerald-400">
+              <span className="w-5 h-5 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center text-[10px] font-black">3</span>
+              <span className="font-extrabold">{isBn ? 'প্রশ্নের সংখ্যা ও ধরন' : 'Questions & Categories'}</span>
+            </div>
+            <span className="text-slate-600">➔</span>
+            <div className="flex items-center gap-2 shrink-0 text-slate-500">
+              <span className="w-5 h-5 rounded-full bg-slate-800 text-slate-500 flex items-center justify-center text-[10px]">4</span>
+              <span>{isBn ? 'লাইভ পরীক্ষা' : 'Live Exam'}</span>
+            </div>
+          </div>
+
           {/* Top Bar with Back to Lessons */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1f283a]">
             <div className="flex items-center gap-3">
@@ -228,119 +278,179 @@ export default function HSCUnitsExplorer({
             )}
           </div>
 
-          {/* Main Category Selection Card */}
+          {/* Main Setup Card */}
           <div className="bg-[#131824] border border-[#1e2738] rounded-3xl p-5 sm:p-7 shadow-2xl space-y-6">
-            <div>
-              <div className="flex items-center gap-2.5 mb-1.5">
-                <span className="text-xl">🎯</span>
-                <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
-                  {isBn ? 'অনুশীলনের ধরন বেছে নিন' : 'Select What You Want to Practice'}
-                </h3>
+            {/* 1. QUESTION AMOUNT SELECTION SECTION (Default: 10) */}
+            <div className="p-5 rounded-2xl bg-[#0c1018] border border-emerald-500/30 space-y-3 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div className="flex items-center gap-2.5">
+                  <ListOrdered size={20} className="text-emerald-400" />
+                  <div>
+                    <h3 className="text-base sm:text-lg font-black text-white tracking-tight flex items-center gap-2">
+                      <span>{isBn ? 'কতটি প্রশ্ন অনুশীলন করতে চান?' : 'How Many Questions to Practice?'}</span>
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
+                        {isBn ? 'ডিফল্ট: ১০টি' : 'Default: 10'}
+                      </span>
+                    </h3>
+                    <p className="text-xs text-slate-400 mt-0.5">
+                      {isBn
+                        ? 'আপনার পছন্দমতো প্রশ্নের পরিমাণ নির্বাচন করুন (ডিফল্ট ১০টি প্রশ্ন সেট করা আছে)'
+                        : 'Choose how many questions you want in this practice session (Default: 10)'}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                {isBn
-                  ? 'নিচের ক্যাটাগরিগুলো থেকে আপনার পছন্দমতো বিষয়গুলো নির্বাচন করুন। প্রতিটি ক্যাটাগরিতে কতটি প্রশ্ন রয়েছে তা নিচে প্রদর্শিত হয়েছে।'
-                  : 'Select one or more practice categories below. Available question counts are shown for each category.'}
-              </p>
+
+              {/* Question Count Pill Selectors */}
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 pt-2">
+                {[
+                  { value: 10, label: isBn ? '১০টি প্রশ্ন' : '10 Questions', badge: isBn ? '★ ডিফল্ট' : '★ Default' },
+                  { value: 20, label: isBn ? '২০টি প্রশ্ন' : '20 Questions', badge: isBn ? 'স্ট্যান্ডার্ড' : 'Standard' },
+                  { value: 30, label: isBn ? '৩০টি প্রশ্ন' : '30 Questions', badge: isBn ? 'মডেল টেস্ট' : 'Model Test' },
+                  { value: 50, label: isBn ? '৫০টি প্রশ্ন' : '50 Questions', badge: isBn ? 'মেগা টেস্ট' : 'Mega Test' },
+                  { value: 'all', label: isBn ? `সকল প্রশ্ন` : `All Questions`, badge: `${allAvailableQuestions.length} ${isBn ? 'টি' : 'MCQs'}` }
+                ].map((opt) => {
+                  const isSelected = questionLimit === opt.value;
+                  return (
+                    <button
+                      key={opt.value}
+                      onClick={() => setQuestionLimit(opt.value)}
+                      className={`p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-1 ${
+                        isSelected
+                          ? 'bg-gradient-to-b from-emerald-500/30 to-emerald-950/60 border-emerald-400 text-white shadow-lg shadow-emerald-950/50 ring-2 ring-emerald-500/40 scale-[1.03]'
+                          : 'bg-[#121927] border-[#1f2a3e] text-slate-300 hover:bg-[#182234] hover:border-slate-500'
+                      }`}
+                    >
+                      <span className={`text-xs sm:text-sm font-black ${isSelected ? 'text-emerald-300' : 'text-slate-200'}`}>
+                        {opt.label}
+                      </span>
+                      <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded ${
+                        isSelected ? 'bg-emerald-500 text-slate-950' : 'bg-[#1a2334] text-slate-400'
+                      }`}>
+                        {opt.badge}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
-            {/* 4 Interactive Category Cards with Available Question Counts */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {[
-                {
-                  id: 'synonyms',
-                  label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
-                  icon: '🔄',
-                  desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
-                  available: getCategoryCount('synonyms')
-                },
-                {
-                  id: 'antonyms',
-                  label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
-                  icon: '⚡',
-                  desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
-                  available: getCategoryCount('antonyms')
-                },
-                {
-                  id: 'english_meaning',
-                  label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
-                  icon: '📖',
-                  desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
-                  available: getCategoryCount('english_meaning')
-                },
-                {
-                  id: 'bangla_meaning',
-                  label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
-                  icon: '🇧🇩',
-                  desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
-                  available: getCategoryCount('bangla_meaning')
-                }
-              ].map((cat) => {
-                const isSelected = selectedCategories.includes(cat.id);
-                return (
-                  <button
-                    key={cat.id}
-                    onClick={() => toggleCategory(cat.id)}
-                    className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3 relative overflow-hidden group ${
-                      isSelected
-                        ? 'bg-gradient-to-br from-emerald-950/60 to-[#0e1624] border-emerald-500/80 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/30'
-                        : 'bg-[#0f1420] border-[#1f2738] text-slate-400 hover:bg-[#151c2b] hover:border-slate-600'
-                    }`}
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-center gap-3">
-                        <span className="text-2xl shrink-0 p-2 rounded-xl bg-[#172030] border border-[#232f45]">
-                          {cat.icon}
-                        </span>
-                        <div>
-                          <span className={`block text-sm sm:text-base font-bold ${isSelected ? 'text-emerald-300' : 'text-white'}`}>
-                            {cat.label}
+            {/* 2. CATEGORY SELECTION SECTION */}
+            <div className="space-y-3">
+              <div>
+                <div className="flex items-center gap-2.5 mb-1.5">
+                  <span className="text-xl">🎯</span>
+                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">
+                    {isBn ? 'অনুশীলনের ধরন / ক্যাটাগরি বেছে নিন' : 'Select Practice Question Categories'}
+                  </h3>
+                </div>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  {isBn
+                    ? 'নিচের ক্যাটাগরিগুলো থেকে পছন্দমতো বিষয় নির্বাচন করুন। প্রতিটি ক্যাটাগরির মোট প্রশ্ন নিচে প্রদর্শিত আছে।'
+                    : 'Select practice categories below. Individual category question counts are shown.'}
+                </p>
+              </div>
+
+              {/* 4 Interactive Category Cards with Available Question Counts */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                {[
+                  {
+                    id: 'synonyms',
+                    label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
+                    icon: '🔄',
+                    desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
+                    available: getCategoryCount('synonyms')
+                  },
+                  {
+                    id: 'antonyms',
+                    label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
+                    icon: '⚡',
+                    desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
+                    available: getCategoryCount('antonyms')
+                  },
+                  {
+                    id: 'english_meaning',
+                    label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
+                    icon: '📖',
+                    desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
+                    available: getCategoryCount('english_meaning')
+                  },
+                  {
+                    id: 'bangla_meaning',
+                    label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
+                    icon: '🇧🇩',
+                    desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
+                    available: getCategoryCount('bangla_meaning')
+                  }
+                ].map((cat) => {
+                  const isSelected = selectedCategories.includes(cat.id);
+                  return (
+                    <button
+                      key={cat.id}
+                      onClick={() => toggleCategory(cat.id)}
+                      className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3 relative overflow-hidden group ${
+                        isSelected
+                          ? 'bg-gradient-to-br from-emerald-950/60 to-[#0e1624] border-emerald-500/80 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/30'
+                          : 'bg-[#0f1420] border-[#1f2738] text-slate-400 hover:bg-[#151c2b] hover:border-slate-600'
+                      }`}
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex items-center gap-3">
+                          <span className="text-2xl shrink-0 p-2 rounded-xl bg-[#172030] border border-[#232f45]">
+                            {cat.icon}
                           </span>
-                          <span className="block text-xs text-slate-400 mt-0.5 leading-snug">
-                            {cat.desc}
-                          </span>
+                          <div>
+                            <span className={`block text-sm sm:text-base font-bold ${isSelected ? 'text-emerald-300' : 'text-white'}`}>
+                              {cat.label}
+                            </span>
+                            <span className="block text-xs text-slate-400 mt-0.5 leading-snug">
+                              {cat.desc}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Checkbox Checkmark */}
+                        <div
+                          className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs shrink-0 transition-all ${
+                            isSelected
+                              ? 'bg-emerald-500 border-emerald-400 text-white font-black scale-110 shadow-md shadow-emerald-500/50'
+                              : 'border-slate-600 bg-transparent'
+                          }`}
+                        >
+                          {isSelected ? '✓' : ''}
                         </div>
                       </div>
 
-                      {/* Checkbox Checkmark */}
-                      <div
-                        className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs shrink-0 transition-all ${
-                          isSelected
-                            ? 'bg-emerald-500 border-emerald-400 text-white font-black scale-110 shadow-md shadow-emerald-500/50'
-                            : 'border-slate-600 bg-transparent'
-                        }`}
-                      >
-                        {isSelected ? '✓' : ''}
+                      {/* Available Questions Count Badge */}
+                      <div className="pt-2 border-t border-[#1a2334] flex items-center justify-between text-xs">
+                        <span className="text-slate-400 font-medium">
+                          {isBn ? 'উপলব্ধ প্রশ্ন:' : 'Available Questions:'}
+                        </span>
+                        <span className={`font-bold px-2 py-0.5 rounded-md ${
+                          cat.available > 0
+                            ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
+                            : 'bg-slate-800 text-slate-500'
+                        }`}>
+                          {cat.available} {isBn ? 'টি প্রশ্ন' : 'Questions'}
+                        </span>
                       </div>
-                    </div>
-
-                    {/* Available Questions Count Badge */}
-                    <div className="pt-2 border-t border-[#1a2334] flex items-center justify-between text-xs">
-                      <span className="text-slate-400 font-medium">
-                        {isBn ? 'উপলব্ধ প্রশ্ন:' : 'Available Questions:'}
-                      </span>
-                      <span className={`font-bold px-2 py-0.5 rounded-md ${
-                        cat.available > 0
-                          ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
-                          : 'bg-slate-800 text-slate-500'
-                      }`}>
-                        {cat.available} {isBn ? 'টি প্রশ্ন' : 'Questions'}
-                      </span>
-                    </div>
-                  </button>
-                );
-              })}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Summary Bar: Total Selected + Quick Toggles */}
             <div className="p-4 rounded-2xl bg-[#0c1018] border border-[#1b2332] flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2 text-xs sm:text-sm">
-                <span className="text-slate-400 font-medium">{isBn ? 'মোট নির্বাচিত প্রশ্ন:' : 'Total Selected Questions:'}</span>
+                <span className="text-slate-400 font-medium">{isBn ? 'পরীক্ষায় আসছে:' : 'Exam Session:'}</span>
                 <span className="font-black text-emerald-400 text-base">
-                  {getFilteredQuestions().length} {isBn ? 'টি' : 'Questions'}
+                  {actualExamCount} {isBn ? 'টি প্রশ্ন' : 'Questions'}
                 </span>
                 <span className="text-xs text-slate-500">
-                  ({selectedCategories.length} {isBn ? 'টি ক্যাটাগরি সক্রিয়' : 'categories active'})
+                  ({isBn ? `মোট উপলব্ধ ${allAvailableQuestions.length}টির মধ্যে` : `out of ${allAvailableQuestions.length} available`})
                 </span>
               </div>
 
@@ -349,7 +459,7 @@ export default function HSCUnitsExplorer({
                   onClick={selectAllCategories}
                   className="text-emerald-400 hover:text-emerald-300 font-semibold underline underline-offset-2 cursor-pointer"
                 >
-                  {isBn ? 'সবগুলো সিলেক্ট করুন' : 'Select All'}
+                  {isBn ? 'সব ক্যাটাগরি সিলেক্ট করুন' : 'Select All Categories'}
                 </button>
               </div>
             </div>
@@ -360,7 +470,11 @@ export default function HSCUnitsExplorer({
               className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-base sm:text-lg flex items-center justify-center gap-3 shadow-xl shadow-emerald-950/70 transition-all cursor-pointer active:scale-[0.98] hover:shadow-emerald-900/90"
             >
               <Play size={20} className="fill-current" />
-              <span>{isBn ? '🚀 পরীক্ষা শুরু করুন (Start Exam Now)' : '🚀 Start Practice Exam Now'}</span>
+              <span>
+                {isBn
+                  ? `🚀 ${actualExamCount}টি প্রশ্নের পরীক্ষা শুরু করুন (Start Exam)`
+                  : `🚀 Start ${actualExamCount}-Question Exam Now`}
+              </span>
             </button>
           </div>
         </div>
@@ -374,192 +488,168 @@ export default function HSCUnitsExplorer({
             <div className="flex items-center gap-3">
               <button
                 onClick={handleBackToUnits}
-                className="p-2.5 rounded-xl bg-[#131824] hover:bg-[#1c2436] border border-[#232c3f] text-slate-300 hover:text-white transition-all shadow-sm"
+                className="p-2.5 rounded-xl bg-[#131824] hover:bg-[#1c2436] border border-[#232c3f] text-slate-300 hover:text-white transition-all shadow-sm cursor-pointer"
                 title="Back to all units"
               >
                 <ArrowLeft size={18} />
               </button>
 
               <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-black text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20 uppercase">
-                    {selectedUnit.unitNumber}
-                  </span>
-                  <span className="text-xs text-slate-400">
-                    {isBn ? selectedUnit.unitTitleBn : selectedUnit.unitTitle}
-                  </span>
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-0.5">
+                <span className="text-xs font-black text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20 uppercase tracking-wider">
+                  {selectedUnit.unitNumber}
+                </span>
+                <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight mt-0.5">
                   {selectedUnit.unitTitle}
                 </h2>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  {selectedUnit.unitTitleBn} • {selectedUnit.totalWords} Words Available
+                </p>
               </div>
             </div>
 
-            {/* Action Buttons: Read Textbook + Full Unit Exam */}
-            <div className="flex items-center gap-2.5 flex-wrap">
-              {selectedUnit.id === 'unit-1' && (
-                <button
-                  onClick={() => setIsTextbookOpen(true)}
-                  className="px-4 py-2.5 rounded-xl bg-[#182030] hover:bg-[#222e44] text-emerald-300 border border-emerald-500/30 text-xs sm:text-sm font-bold inline-flex items-center gap-2 transition-all shadow-sm active:scale-95"
-                >
-                  <BookOpen size={15} />
-                  <span>{isBn ? '📖 পাঠ্যবই পড়ুন' : '📖 Read Textbook'}</span>
-                </button>
-              )}
-
+            {/* Read Full Unit Textbook */}
+            {((selectedUnit.id === 'unit-1' && (!selectedLesson || selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
+              (selectedUnit.id === 'unit-10' && (!selectedLesson || selectedLesson.id === 'u10-l1' || selectedLesson.id === 'u10-l2' || selectedLesson.id === 'u10-l3' || selectedLesson.id === 'all'))) && (
               <button
-                onClick={() => handleSelectLesson({ id: 'all', number: 'All Lessons', title: 'Full Unit Vocabulary Test', questionsCount: `${selectedUnit.totalWords} টি প্রশ্ন` })}
-                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all shrink-0 active:scale-95"
+                onClick={() => setIsTextbookOpen(true)}
+                className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer shrink-0"
               >
-                <Play size={14} className="fill-current" />
-                <span>{isBn ? 'সম্পূর্ণ ইউনিট পরীক্ষা' : 'Full Unit Test'}</span>
+                <BookOpen size={15} />
+                <span>{isBn ? '📖 পাঠ্যবই রিডার খুলুন' : '📖 Open Textbook'}</span>
               </button>
-            </div>
+            )}
           </div>
 
-          {/* Exact 3-Columns Dark Rounded Lesson Cards Grid matching Screenshot 2 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {selectedUnit.lessons.map((lesson) => {
-              const countLabel = selectedUnit.id === 'unit-1' && lesson.id === 'u1-l1'
-                ? (isBn ? '২৩ টি প্রশ্ন' : '23 Questions')
-                : (lesson.questionsCount || (isBn ? '০ টি প্রশ্ন' : '0 Questions'));
+          {/* Lessons Grid */}
+          <div className="space-y-3">
+            <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+              {isBn ? 'লেসন নির্বাচন করুন:' : 'Select a Lesson to Practice:'}
+            </h3>
 
-              return (
-              <div
-                key={lesson.id}
-                onClick={() => handleSelectLesson(lesson)}
-                className="bg-[#10141f] hover:bg-[#151c2c] border border-[#1e2738] hover:border-emerald-500/60 rounded-2xl p-5 transition-all duration-200 cursor-pointer group shadow-card flex flex-col justify-between space-y-4"
-              >
-                {/* Lesson Title matching Screenshot 2 */}
-                <div>
-                  <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
-                    {lesson.number}: {lesson.title}
-                  </h3>
-                  {isBn && lesson.titleBn && (
-                    <span className="text-xs text-slate-400 block mt-1">
-                      {lesson.titleBn}
-                    </span>
-                  )}
-                </div>
-
-                {/* Bottom Row: Question Count + Textbook Read button */}
-                <div className="flex items-center justify-between pt-2 border-t border-[#182030]">
-                  <div className="flex items-center gap-4 text-xs font-semibold">
-                    {/* Question Count with green file icon */}
-                    <div className="flex items-center gap-1.5 text-emerald-400">
-                      <FileText size={14} className="stroke-[2.2]" />
-                      <span>{countLabel}</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              {selectedUnit.lessons.map((lesson) => (
+                <div
+                  key={lesson.id}
+                  onClick={() => handleSelectLesson(lesson)}
+                  className="p-4 rounded-2xl bg-[#0f1420] hover:bg-[#161e2e] border border-[#1f2738] hover:border-emerald-500/50 transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3 group shadow-md"
+                >
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20">
+                        {lesson.number}
+                      </span>
+                      <span className="text-xs text-slate-400 font-mono">
+                        {lesson.wordsCount} Words
+                      </span>
                     </div>
+
+                    <h4 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-300 transition-colors mt-2">
+                      {lesson.title}
+                    </h4>
+                    <p className="text-xs text-slate-400 mt-0.5">
+                      {lesson.titleBn}
+                    </p>
                   </div>
 
-                  {selectedUnit.id === 'unit-1' && lesson.id === 'u1-l1' && (
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setIsTextbookOpen(true);
-                      }}
-                      title="Read Story"
-                      className="px-2.5 py-1 rounded-lg bg-[#182236] hover:bg-emerald-500/20 text-emerald-300 text-[11px] font-bold border border-[#23334d] transition-all"
-                    >
-                      {isBn ? 'পড়ুন' : 'Read'}
-                    </button>
-                  )}
+                  <div className="flex items-center justify-between pt-2 border-t border-[#1a2232] text-xs">
+                    <span className="text-slate-400 font-medium">{lesson.questionsCount}</span>
+                    <span className="text-emerald-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span>{isBn ? 'প্রশ্নের সংখ্যা বেছে নিন' : 'Choose Questions'}</span>
+                      <ArrowRight size={13} />
+                    </span>
+                  </div>
                 </div>
-              </div>
-              );
-            })}
+              ))}
+            </div>
           </div>
         </div>
       ) : (
         /* ------------------------------------------------------------- */
-        /* VIEW 1: 12 UNIT CARDS GRID (EXACTLY MATCHING SCREENSHOT 1)     */
+        /* VIEW 1: ALL UNITS OVERVIEW GRID (MATCHING SCREENSHOT 1)       */
         /* ------------------------------------------------------------- */
         <div className="space-y-6 animate-in fade-in duration-200">
-          {/* Header with Search */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2">
-            <div>
-              <div className="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 mb-1">
-                <GraduationCap size={14} />
-                <span>NCTB HSC English For Today</span>
+          {/* Header Banner */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#121927] via-[#0d1320] to-[#121927] border border-[#1e293b] shadow-2xl relative overflow-hidden backdrop-blur-xl">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-2 max-w-2xl">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+                  <GraduationCap size={14} />
+                  <span>{isBn ? 'এনসিটিবি এইচএসসি কারিকুলাম' : 'NCTB HSC Curriculum'}</span>
+                </div>
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+                  {isBn ? 'ইউনিটভিত্তিক পরীক্ষা ও প্রস্তুতি (Exam & Practice)' : 'Unit-wise Board Exam & Practice'}
+                </h1>
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                  {isBn
+                    ? 'আপনার কাঙ্ক্ষিত ইউনিট ও লেসন বেছে নিয়ে প্রশ্নের সংখ্যা (১০টি, ২০টি, ৩০টি বা সকল) নির্বাচন করে দ্রুত পরীক্ষা দিন।'
+                    : 'Select a Unit, choose a Lesson, set how many questions you want to practice (10, 20, 30, or All), and start targeted MCQ exams.'}
+                </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                {isBn ? 'অধ্যায়ভিত্তিক পরীক্ষা ও প্রশ্নব্যাংক' : 'HSC 12 Units & Lessons'}
-              </h2>
-            </div>
 
-            {/* Search Input */}
-            <div className="relative w-full sm:w-72">
-              <Search
-                size={16}
-                className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"
-              />
-              <input
-                type="text"
-                placeholder={isBn ? 'ইউনিট বা লেসন খুঁজুন...' : 'Search unit or lesson...'}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-9 pr-4 py-2 bg-[#131824] border border-[#232c3f] rounded-xl text-xs sm:text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors"
-              />
+              {/* Search Bar */}
+              <div className="relative w-full md:w-72">
+                <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={isBn ? 'ইউনিট বা লেসন খুঁজুন...' : 'Search units, lessons...'}
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-xs sm:text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 transition-colors"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Exact 4-Columns Vibrant Color Cards Grid matching Screenshot 1 */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+          {/* Units Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
             {filteredUnits.map((unit) => (
               <div
                 key={unit.id}
                 onClick={() => handleSelectUnit(unit)}
-                className={`relative overflow-hidden rounded-3xl p-5 sm:p-6 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl cursor-pointer select-none text-white min-h-[170px] sm:min-h-[185px] flex flex-col justify-between shadow-lg ${unit.bgClass || 'bg-[#1b8a43]'}`}
+                className={`relative p-5 sm:p-6 rounded-3xl border border-white/10 cursor-pointer overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl flex flex-col justify-between min-h-[190px] group ${unit.bgClass}`}
               >
-                {/* Ambient Internal Glow */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/15 to-transparent pointer-events-none" />
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-black bg-white/20 text-white backdrop-blur-sm">
+                      {unit.unitNumber}
+                    </span>
+                    <span className="text-[11px] font-bold text-white/80 bg-black/30 px-2 py-0.5 rounded-md">
+                      {unit.lessons.length} {isBn ? 'টি লেসন' : 'Lessons'}
+                    </span>
+                  </div>
 
-                {/* Top-Left Unit Title & Subtitle matching Screenshot 1 */}
-                <div className="relative z-10 space-y-1 pr-12">
-                  <h3 className="text-xl sm:text-2xl font-black tracking-tight drop-shadow-sm">
-                    {unit.unitNumber}
-                  </h3>
-                  <p className="text-xs sm:text-sm font-medium text-white/90 drop-shadow-sm leading-tight">
+                  <h3 className="text-lg sm:text-xl font-black text-white leading-snug group-hover:underline underline-offset-4">
                     {unit.unitTitle}
+                  </h3>
+                  <p className="text-xs text-white/80 font-medium mt-1">
+                    {unit.unitTitleBn}
                   </p>
                 </div>
 
-                {/* Bottom Stats / Lessons count */}
-                <div className="relative z-10 flex items-center justify-between text-[11px] font-semibold text-white/80 pt-4">
-                  <span>{unit.lessons.length} Lessons</span>
-                  <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
-                    <ChevronRight size={14} className="text-white" />
-                  </div>
+                <div className="relative z-10 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-white/90 font-semibold">
+                  <span>{unit.totalWords} Words • {unit.totalWords * 4} MCQs</span>
+                  <span className="flex items-center gap-1 font-bold group-hover:translate-x-1.5 transition-transform bg-white/20 px-2.5 py-1 rounded-lg">
+                    <span>{isBn ? 'লেসন দেখুন' : 'View Lessons'}</span>
+                    <ArrowRight size={13} />
+                  </span>
                 </div>
-
-                {/* Large Translucent Watermark Number matching Screenshot 1 */}
-                <span className="absolute -bottom-2 -right-1 text-7xl sm:text-8xl font-black text-white/25 select-none pointer-events-none leading-none tracking-tighter">
-                  {unit.number}
-                </span>
               </div>
             ))}
           </div>
         </div>
       )}
 
-      {/* Official Textbook Reader Modal */}
-      <TextbookReaderModal
-        isOpen={isTextbookOpen}
-        onClose={() => setIsTextbookOpen(false)}
-        unitId={selectedUnit?.id || 'unit-1'}
-        lessonId={selectedLesson?.id || 'u1-l1'}
-        onStartExam={() => {
-          setIsTextbookOpen(false);
-          if (selectedUnit) {
-            if (selectedLesson) {
-              setIsExamActive(true);
-            } else {
-              handleSelectLesson(selectedUnit.lessons[0]);
-            }
-          }
-        }}
-        lang={lang}
-      />
+      {/* Textbook Reader Modal */}
+      {isTextbookOpen && (
+        <TextbookReaderModal
+          isOpen={isTextbookOpen}
+          onClose={() => setIsTextbookOpen(false)}
+          initialUnit={selectedUnit?.id || 'unit-1'}
+          initialLesson={selectedLesson?.id || 'u1-l1'}
+          lang={lang}
+        />
+      )}
     </div>
   );
 }
