@@ -18,7 +18,10 @@ import {
   Check,
   Zap,
   ListOrdered,
-  SlidersHorizontal
+  SlidersHorizontal,
+  PenTool,
+  Plus,
+  Minus
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
@@ -37,7 +40,9 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Question Limit Option (DEFAULT = 10 questions)
-  const [questionLimit, setQuestionLimit] = useState(10); // 10 | 20 | 30 | 50 | 'all'
+  const [questionLimit, setQuestionLimit] = useState(10); // 10 | 20 | 30 | 50 | 'all' | custom number
+  const [isCustomMode, setIsCustomMode] = useState(false);
+  const [customInputVal, setCustomInputVal] = useState('15');
 
   // 4 Practice Categories: Synonyms, Antonyms, English Meaning, Bangla Meaning
   const [selectedCategories, setSelectedCategories] = useState([
@@ -68,6 +73,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
     setSelectedLesson(null);
     setIsExamActive(false);
     setQuestionLimit(10); // reset to default 10
+    setIsCustomMode(false);
   };
 
   // Handle clicking a Lesson card (Navigates to Step 3: Question Amount & Category Setup Screen)
@@ -75,6 +81,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
     setSelectedLesson(lesson);
     setIsExamActive(false);
     setQuestionLimit(10); // reset to default 10
+    setIsCustomMode(false);
   };
 
   // Back buttons
@@ -138,16 +145,41 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
     return smartInterleaveQuestions(unitQuestions.length > 0 ? unitQuestions : categoryFiltered);
   };
 
-  // Sliced questions based on chosen question limit (Default: 10)
-  const getFilteredQuestions = () => {
-    const allMatching = getAllMatchingQuestions();
-    if (questionLimit === 'all' || allMatching.length <= Number(questionLimit)) {
-      return allMatching;
+  const allAvailableQuestions = getAllMatchingQuestions();
+
+  // Handle custom number input change
+  const handleCustomInputChange = (e) => {
+    const val = e.target.value.replace(/[^0-9]/g, '');
+    setCustomInputVal(val);
+    setIsCustomMode(true);
+    if (val) {
+      const parsed = Math.max(1, Math.min(Number(val), allAvailableQuestions.length || 100));
+      setQuestionLimit(parsed);
     }
-    return allMatching.slice(0, Number(questionLimit));
   };
 
-  const allAvailableQuestions = getAllMatchingQuestions();
+  // Handle quick +/- adjustments for custom number
+  const handleAdjustCustom = (delta) => {
+    setIsCustomMode(true);
+    const curr = Number(customInputVal) || 10;
+    const next = Math.max(1, Math.min(curr + delta, allAvailableQuestions.length || 100));
+    setCustomInputVal(String(next));
+    setQuestionLimit(next);
+  };
+
+  // Sliced questions based on chosen question limit (Default: 10)
+  const getFilteredQuestions = () => {
+    const allMatching = allAvailableQuestions;
+    const effectiveLimit = isCustomMode
+      ? (Number(customInputVal) || 10)
+      : questionLimit;
+
+    if (effectiveLimit === 'all' || allMatching.length <= Number(effectiveLimit)) {
+      return allMatching;
+    }
+    return allMatching.slice(0, Number(effectiveLimit));
+  };
+
   const actualExamCount = getFilteredQuestions().length;
 
   const filteredUnits = hscUnits.filter((u) => {
@@ -183,7 +215,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
               <span className="text-slate-600">➔</span>
               <span className="text-white font-bold">{selectedLesson.number}: {selectedLesson.title}</span>
               <span className="text-slate-600">➔</span>
-              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-black border border-emerald-500/30">
+              <span className="px-2.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-black border border-emerald-500/30">
                 {actualExamCount} {isBn ? 'টি প্রশ্ন' : 'Questions'}
               </span>
             </div>
@@ -204,7 +236,7 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
           <ErrorBoundary>
             <HSCExamInterface
               questions={getFilteredQuestions()}
-              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}_q_${questionLimit}`}
+              sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}_q_${actualExamCount}`}
               onClose={() => setIsExamActive(false)}
               lang={lang}
             />
@@ -280,8 +312,8 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
 
           {/* Main Setup Card */}
           <div className="bg-[#131824] border border-[#1e2738] rounded-3xl p-5 sm:p-7 shadow-2xl space-y-6">
-            {/* 1. QUESTION AMOUNT SELECTION SECTION (Default: 10) */}
-            <div className="p-5 rounded-2xl bg-[#0c1018] border border-emerald-500/30 space-y-3 relative overflow-hidden">
+            {/* 1. QUESTION AMOUNT SELECTION SECTION (Default: 10 + Custom Input Option) */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-[#0c1018] border border-emerald-500/30 space-y-4 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -296,15 +328,15 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
                     </h3>
                     <p className="text-xs text-slate-400 mt-0.5">
                       {isBn
-                        ? 'আপনার পছন্দমতো প্রশ্নের পরিমাণ নির্বাচন করুন (ডিফল্ট ১০টি প্রশ্ন সেট করা আছে)'
-                        : 'Choose how many questions you want in this practice session (Default: 10)'}
+                        ? 'নিচের অপশন থেকে নির্বাচন করুন অথবা নিজের পছন্দমতো সংখ্যা লিখে পরীক্ষা দিন।'
+                        : 'Choose from preset options or type any custom number of questions you want.'}
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Question Count Pill Selectors */}
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 pt-2">
+              {/* Question Count Pill Selectors Grid (Presets + Custom Card) */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2.5 pt-1">
                 {[
                   { value: 10, label: isBn ? '১০টি প্রশ্ন' : '10 Questions', badge: isBn ? '★ ডিফল্ট' : '★ Default' },
                   { value: 20, label: isBn ? '২০টি প্রশ্ন' : '20 Questions', badge: isBn ? 'স্ট্যান্ডার্ড' : 'Standard' },
@@ -312,11 +344,14 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
                   { value: 50, label: isBn ? '৫০টি প্রশ্ন' : '50 Questions', badge: isBn ? 'মেগা টেস্ট' : 'Mega Test' },
                   { value: 'all', label: isBn ? `সকল প্রশ্ন` : `All Questions`, badge: `${allAvailableQuestions.length} ${isBn ? 'টি' : 'MCQs'}` }
                 ].map((opt) => {
-                  const isSelected = questionLimit === opt.value;
+                  const isSelected = !isCustomMode && questionLimit === opt.value;
                   return (
                     <button
                       key={opt.value}
-                      onClick={() => setQuestionLimit(opt.value)}
+                      onClick={() => {
+                        setIsCustomMode(false);
+                        setQuestionLimit(opt.value);
+                      }}
                       className={`p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-1 ${
                         isSelected
                           ? 'bg-gradient-to-b from-emerald-500/30 to-emerald-950/60 border-emerald-400 text-white shadow-lg shadow-emerald-950/50 ring-2 ring-emerald-500/40 scale-[1.03]'
@@ -334,6 +369,82 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
                     </button>
                   );
                 })}
+
+                {/* 6. Custom Mode Option Card */}
+                <button
+                  onClick={() => {
+                    setIsCustomMode(true);
+                    setQuestionLimit(Number(customInputVal) || 10);
+                  }}
+                  className={`p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-1 ${
+                    isCustomMode
+                      ? 'bg-gradient-to-b from-cyan-500/30 to-blue-950/60 border-cyan-400 text-white shadow-lg shadow-cyan-950/50 ring-2 ring-cyan-500/40 scale-[1.03]'
+                      : 'bg-[#121927] border-[#1f2a3e] text-slate-300 hover:bg-[#182234] hover:border-slate-500'
+                  }`}
+                >
+                  <span className={`text-xs sm:text-sm font-black flex items-center gap-1 ${isCustomMode ? 'text-cyan-300' : 'text-slate-200'}`}>
+                    <PenTool size={12} />
+                    <span>{isBn ? 'কাস্টম সংখ্যা' : 'Custom'}</span>
+                  </span>
+                  <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded ${
+                    isCustomMode ? 'bg-cyan-400 text-slate-950' : 'bg-[#1a2334] text-cyan-400'
+                  }`}>
+                    {isCustomMode ? `${customInputVal || 0} ${isBn ? 'টি' : 'MCQs'}` : (isBn ? 'নিজে লিখুন' : 'Type here')}
+                  </span>
+                </button>
+              </div>
+
+              {/* Interactive Custom Number Input Box with Increment / Decrement */}
+              <div className="pt-2 border-t border-[#1a2334] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+                    <PenTool size={13} className="text-cyan-400" />
+                    <span>{isBn ? 'নির্দিষ্ট সংখ্যা লিখুন (Custom Amount):' : 'Or Type Custom Amount:'}</span>
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  {/* Minus button */}
+                  <button
+                    onClick={() => handleAdjustCustom(-5)}
+                    className="w-8 h-8 rounded-lg bg-[#141d2c] hover:bg-[#1e2a3f] border border-[#24334a] text-slate-300 hover:text-white flex items-center justify-center font-bold cursor-pointer transition-all active:scale-95"
+                    title="-5 questions"
+                  >
+                    <Minus size={14} />
+                  </button>
+
+                  {/* Input field */}
+                  <div className="relative">
+                    <input
+                      type="text"
+                      inputMode="numeric"
+                      value={customInputVal}
+                      onChange={handleCustomInputChange}
+                      placeholder="15"
+                      className={`w-20 px-2.5 py-1.5 rounded-xl bg-[#080d16] border text-center text-sm font-black text-white outline-none transition-all shadow-inner ${
+                        isCustomMode
+                          ? 'border-cyan-400 ring-2 ring-cyan-500/30 text-cyan-300'
+                          : 'border-[#24334a] focus:border-cyan-400 text-slate-200'
+                      }`}
+                    />
+                    <span className="absolute -top-2 right-1 text-[9px] font-bold text-slate-500 select-none">
+                      MCQ
+                    </span>
+                  </div>
+
+                  {/* Plus button */}
+                  <button
+                    onClick={() => handleAdjustCustom(5)}
+                    className="w-8 h-8 rounded-lg bg-[#141d2c] hover:bg-[#1e2a3f] border border-[#24334a] text-slate-300 hover:text-white flex items-center justify-center font-bold cursor-pointer transition-all active:scale-95"
+                    title="+5 questions"
+                  >
+                    <Plus size={14} />
+                  </button>
+
+                  <span className="text-xs text-slate-400 font-medium ml-1">
+                    {isBn ? `(সর্বোচ্চ ${allAvailableQuestions.length}টি)` : `(Max ${allAvailableQuestions.length})`}
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -452,6 +563,11 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
                 <span className="text-xs text-slate-500">
                   ({isBn ? `মোট উপলব্ধ ${allAvailableQuestions.length}টির মধ্যে` : `out of ${allAvailableQuestions.length} available`})
                 </span>
+                {isCustomMode && (
+                  <span className="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 text-[10px] font-bold border border-cyan-500/30">
+                    {isBn ? 'কাস্টম মোড' : 'Custom'}
+                  </span>
+                )}
               </div>
 
               <div className="flex items-center gap-3 text-xs">
@@ -582,8 +698,8 @@ export default function HSCUnitsExplorer({ lang = 'bn' }) {
                 </h1>
                 <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
                   {isBn
-                    ? 'আপনার কাঙ্ক্ষিত ইউনিট ও লেসন বেছে নিয়ে প্রশ্নের সংখ্যা (১০টি, ২০টি, ৩০টি বা সকল) নির্বাচন করে দ্রুত পরীক্ষা দিন।'
-                    : 'Select a Unit, choose a Lesson, set how many questions you want to practice (10, 20, 30, or All), and start targeted MCQ exams.'}
+                    ? 'আপনার কাঙ্ক্ষিত ইউনিট ও লেসন বেছে নিয়ে প্রশ্নের সংখ্যা (১০টি, ২০টি, ৩০টি বা কাস্টম সংখ্যা) নির্বাচন করে দ্রুত পরীক্ষা দিন।'
+                    : 'Select a Unit, choose a Lesson, set how many questions you want to practice (10, 20, 30, or Custom Amount), and start targeted MCQ exams.'}
                 </p>
               </div>
 
