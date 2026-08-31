@@ -86,10 +86,10 @@ export default function Header({
         sectionBn: 'অনুশীলন',
         titleEn: norm === '/practice' ? 'Quick Practice'
           : norm === '/weak-words' ? 'Weak Words Hub'
-          : 'Board Standard Exam',
+          : 'MCQ Vocab',
         titleBn: norm === '/practice' ? 'দ্রুত অনুশীলন'
           : norm === '/weak-words' ? 'দুর্বল শব্দ ভান্ডার'
-          : 'বোর্ড পরীক্ষা'
+          : 'MCQ ভোকাব'
       };
     }
     if (norm === '/progress' || norm === '/leaderboard' || norm === '/certificates') {

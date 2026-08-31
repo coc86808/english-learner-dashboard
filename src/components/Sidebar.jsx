@@ -123,8 +123,8 @@ export default function Sidebar({
         {
           path: '/exam',
           tabId: 'exams',
-          labelEn: 'Board Exam',
-          labelBn: 'বোর্ড পরীক্ষা',
+          labelEn: 'MCQ Vocab',
+          labelBn: 'MCQ ভোকাব',
           icon: CheckSquare,
           badge: '613 MCQs',
           badgeColor: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'

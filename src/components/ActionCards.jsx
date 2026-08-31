@@ -77,7 +77,7 @@ export default function ActionCards({
     },
     {
       id: 'me',
-      title: isBn ? 'বোর্ড MCQ পরীক্ষা' : 'Board MCQ Exam',
+      title: isBn ? 'MCQ ভোকাব পরীক্ষা' : 'MCQ Vocab',
       subtitle: isBn ? '৪-ক্যাটাগরি স্পেসড টেস্ট' : '4-Category Spaced Drills',
       badge: '613+ MCQs',
       badgeColor: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30',
