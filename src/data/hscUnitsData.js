@@ -153,10 +153,10 @@ export const hscUnits = [
     bgClass: 'bg-[#d97706] hover:bg-[#ec850b]',
     gradient: 'from-[#ec850b] to-[#a85802]',
     progress: 0,
-    totalWords: 27,
+    totalWords: 61,
     masteredWords: 0,
     lessons: [
-      { id: 'u9-l1', number: 'Lesson 1', title: 'Storms and Stresses of Adolescence', titleBn: 'কৈশোরের ঝড় ও সংকট', questionsCount: '১০৮ টি প্রশ্ন', wordsCount: 27, progress: 0 },
+      { id: 'u9-l1', number: 'Lesson 1', title: 'Storms and Stresses of Adolescence', titleBn: 'কৈশোরের ঝড় ও সংকট', questionsCount: '২৪৪ টি প্রশ্ন', wordsCount: 61, progress: 0 },
       { id: 'u9-l2', number: 'Lesson 2', title: 'Adolescence and Some (Related) Problems in Bangladesh', titleBn: 'বাংলাদেশে কৈশোরকালীন নানা সমস্যা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u9-l3', number: 'Lesson 3', title: 'The Story of Shilpi', titleBn: 'শিল্পীর জীবনসংগ্রাম', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
       { id: 'u9-l4', number: 'Lesson 4', title: "Say 'No' to Bullying", titleBn: 'বুলিং বা নিপীড়নকে ‘না’ বলুন', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
