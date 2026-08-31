@@ -77,6 +77,7 @@ import { hscUnits } from './data/hscUnitsData';
 
 // Services & Analytics
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { 
   saveUserToFirestore, 
   listenToFirestoreUsers 
@@ -953,6 +954,7 @@ export default function App() {
       />
 
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
