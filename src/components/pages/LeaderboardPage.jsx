@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Trophy,
@@ -7,21 +7,21 @@ import {
   Medal,
   Flame,
   Search,
-  TrendingUp,
-  TrendingDown,
+  ChevronUp,
+  ChevronDown,
   Minus,
   Sparkles,
   Zap,
   ArrowRight,
   ShieldCheck,
-  ChevronUp,
-  ChevronDown,
-  Filter,
-  Users,
   Building2,
-  CheckCircle2
+  Users,
+  CheckCircle2,
+  RefreshCw
 } from 'lucide-react';
 import { usersList } from '../../data/users/userData';
+import { listenToFirestoreUsers } from '../../services/firebase';
+import { calculateStudentTimeframePoints, countRealMasteredWords } from '../../services/scoreManager';
 
 export default function LeaderboardPage({
   lang = 'en',
@@ -36,194 +36,134 @@ export default function LeaderboardPage({
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCollegeFilter, setSelectedCollegeFilter] = useState('all');
 
-  // Merged and active students dataset
-  const baseStudents = useMemo(() => {
-    const list = Array.isArray(registeredUsers) && registeredUsers.length > 0
-      ? registeredUsers
-      : usersList;
+  // Real-time Cloud Firestore & Local Registered Users State
+  const [cloudUsers, setCloudUsers] = useState([]);
+  const [examHistory, setExamHistory] = useState(() => {
+    try {
+      const raw = localStorage.getItem('hsc_exam_history');
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      return [];
+    }
+  });
 
-    // Rich populated leaderboard entries across top colleges of Bangladesh
-    const extendedList = [
-      {
-        id: 'usr-ndc-1',
-        name: 'Tanvir Ahmed',
-        college: 'Notre Dame College, Dhaka',
-        batch: 'HSC 2026',
-        streak: 14,
-        pointsWeekly: 680,
-        pointsMonthly: 2150,
-        pointsAllTime: 4850,
-        accuracy: 96.8,
-        masteredWords: 142,
-        trend: '+2',
-        trendType: 'up',
-        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-vn-2',
-        name: 'Sadia Rahman',
-        college: 'Viqarunnisa Noon College',
-        batch: 'HSC 2026',
-        streak: 12,
-        pointsWeekly: 640,
-        pointsMonthly: 2020,
-        pointsAllTime: 4620,
-        accuracy: 95.4,
-        masteredWords: 138,
-        trend: '+1',
-        trendType: 'up',
-        avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-dc-3',
-        name: 'Nafis Iqbal',
-        college: 'Dhaka College',
-        batch: 'HSC 2026',
-        streak: 9,
-        pointsWeekly: 590,
-        pointsMonthly: 1890,
-        pointsAllTime: 4310,
-        accuracy: 94.1,
-        masteredWords: 125,
-        trend: '-1',
-        trendType: 'down',
-        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-rc-4',
-        name: 'Mehedi Hasan',
-        college: 'Rajshahi College',
-        batch: 'HSC 2026',
-        streak: 8,
-        pointsWeekly: 520,
-        pointsMonthly: 1710,
-        pointsAllTime: 3950,
-        accuracy: 92.5,
-        masteredWords: 110,
-        trend: '0',
-        trendType: 'neutral',
-        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-cc-5',
-        name: 'Anika Tabassum',
-        college: 'Chittagong College',
-        batch: 'HSC 2026',
-        streak: 11,
-        pointsWeekly: 490,
-        pointsMonthly: 1650,
-        pointsAllTime: 3820,
-        accuracy: 91.8,
-        masteredWords: 104,
-        trend: '+3',
-        trendType: 'up',
-        avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-hc-6',
-        name: 'Zubair Hossain',
-        college: 'Holy Cross College, Dhaka',
-        batch: 'HSC 2026',
-        streak: 7,
-        pointsWeekly: 440,
-        pointsMonthly: 1510,
-        pointsAllTime: 3540,
-        accuracy: 89.6,
-        masteredWords: 96,
-        trend: '-2',
-        trendType: 'down',
-        avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-ac-7',
-        name: 'Farhana Akhter',
-        college: 'Adamjee Cantonment College',
-        batch: 'HSC 2026',
-        streak: 6,
-        pointsWeekly: 410,
-        pointsMonthly: 1420,
-        pointsAllTime: 3310,
-        accuracy: 88.2,
-        masteredWords: 88,
-        trend: '+1',
-        trendType: 'up',
-        avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-kc-8',
-        name: 'Siam Mahmud',
-        college: 'Govt. BL College, Khulna',
-        batch: 'HSC 2026',
-        streak: 5,
-        pointsWeekly: 380,
-        pointsMonthly: 1310,
-        pointsAllTime: 3080,
-        accuracy: 86.9,
-        masteredWords: 82,
-        trend: '0',
-        trendType: 'neutral',
-        avatar: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-sc-9',
-        name: 'Rashedul Karim',
-        college: 'Sylhet MC College',
-        batch: 'HSC 2026',
-        streak: 4,
-        pointsWeekly: 350,
-        pointsMonthly: 1200,
-        pointsAllTime: 2890,
-        accuracy: 85.0,
-        masteredWords: 75,
-        trend: '-1',
-        trendType: 'down',
-        avatar: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=120&h=120&fit=crop'
-      },
-      {
-        id: 'usr-bc-10',
-        name: 'Mahira Islam',
-        college: 'Barisal Govt. Women College',
-        batch: 'HSC 2026',
-        streak: 5,
-        pointsWeekly: 320,
-        pointsMonthly: 1140,
-        pointsAllTime: 2650,
-        accuracy: 84.2,
-        masteredWords: 68,
-        trend: '+2',
-        trendType: 'up',
-        avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop'
+  // Real-time Firestore Users Subscription & Storage Sync
+  useEffect(() => {
+    const unsubscribe = listenToFirestoreUsers((firestoreUsers) => {
+      if (Array.isArray(firestoreUsers) && firestoreUsers.length > 0) {
+        setCloudUsers(firestoreUsers);
       }
-    ];
+    });
 
-    // Check if currentUser is already in list; if not, integrate user with current points
-    const currentEmail = currentUser?.email?.toLowerCase();
-    const currentName = currentUser?.name || 'Student';
-    const exists = extendedList.some((s) => s.email?.toLowerCase() === currentEmail || s.name === currentName);
+    const handleSync = () => {
+      try {
+        const rawHistory = localStorage.getItem('hsc_exam_history');
+        if (rawHistory) setExamHistory(JSON.parse(rawHistory));
+      } catch (e) {}
+    };
 
-    if (!exists && currentUser) {
-      extendedList.push({
-        id: currentUser.id || 'usr-current',
-        name: currentUser.name || 'Student User',
-        email: currentUser.email,
-        college: currentUser.college || 'Notre Dame College, Dhaka',
-        batch: currentUser.batch || 'HSC 2026',
-        streak: currentUser.streak || 5,
-        pointsWeekly: Math.round((currentUser.points || 1450) * 0.4),
-        pointsMonthly: currentUser.points || 1450,
-        pointsAllTime: Math.round((currentUser.points || 1450) * 2.2),
-        accuracy: 92.0,
-        masteredWords: 85,
-        trend: '+2',
-        trendType: 'up',
-        avatar: currentUser.avatar || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120&h=120&fit=crop'
+    window.addEventListener('hsc_leaderboard_updated', handleSync);
+    window.addEventListener('hsc_user_stats_updated', handleSync);
+    window.addEventListener('storage', handleSync);
+
+    return () => {
+      if (typeof unsubscribe === 'function') unsubscribe();
+      window.removeEventListener('hsc_leaderboard_updated', handleSync);
+      window.removeEventListener('hsc_user_stats_updated', handleSync);
+      window.removeEventListener('storage', handleSync);
+    };
+  }, []);
+
+  // 1. Build authentic merged list of all registered real students
+  const baseStudents = useMemo(() => {
+    const userMap = new Map();
+
+    // Default student database
+    usersList.forEach((u) => {
+      if (u.role?.toLowerCase() !== 'admin') {
+        userMap.set((u.email || u.id).toLowerCase(), { ...u });
+      }
+    });
+
+    // Props registered users
+    if (Array.isArray(registeredUsers)) {
+      registeredUsers.forEach((u) => {
+        if (u && u.role?.toLowerCase() !== 'admin') {
+          const key = (u.email || u.id || u.name).toLowerCase();
+          const prev = userMap.get(key) || {};
+          userMap.set(key, { ...prev, ...u });
+        }
       });
     }
 
-    return extendedList;
-  }, [registeredUsers, currentUser]);
+    // LocalStorage registered users
+    try {
+      const saved = localStorage.getItem('hsc_registered_users');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          parsed.forEach((u) => {
+            if (u && u.role?.toLowerCase() !== 'admin') {
+              const key = (u.email || u.id || u.name).toLowerCase();
+              const prev = userMap.get(key) || {};
+              userMap.set(key, { ...prev, ...u });
+            }
+          });
+        }
+      }
+    } catch (e) {}
 
-  // Rank students according to active timeframe
+    // Cloud Firestore users
+    if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
+      cloudUsers.forEach((u) => {
+        if (u && u.role?.toLowerCase() !== 'admin') {
+          const key = (u.email || u.id || u.name).toLowerCase();
+          const prev = userMap.get(key) || {};
+          userMap.set(key, { ...prev, ...u });
+        }
+      });
+    }
+
+    // Current Logged-in User
+    if (currentUser && currentUser.role?.toLowerCase() !== 'admin') {
+      const userKey = (currentUser.email || currentUser.id || currentUser.name).toLowerCase();
+      const prev = userMap.get(userKey) || {};
+      userMap.set(userKey, {
+        ...prev,
+        ...currentUser,
+        masteredWordsCount: Math.max(currentUser.masteredWordsCount || 0, countRealMasteredWords())
+      });
+    }
+
+    // Convert map to array with calculated dynamic metrics for each student
+    const studentList = Array.from(userMap.values()).map((st) => {
+      const pointsData = calculateStudentTimeframePoints(st, examHistory);
+      const accuracy = Number(st.accuracy) || 92;
+      const streak = Number(st.streak) || (st.points > 0 ? 3 : 1);
+      const mastered = Number(st.masteredWordsCount) || (st.points ? Math.round(st.points / 15) : 10);
+
+      return {
+        id: st.id || `usr-${st.name.replace(/\s+/g, '_')}`,
+        name: st.name || 'HSC Candidate',
+        email: st.email || '',
+        college: st.college || 'Notre Dame College, Dhaka',
+        batch: st.hscBatch || 'HSC 2026',
+        streak,
+        pointsWeekly: pointsData.weekly,
+        pointsMonthly: pointsData.monthly,
+        pointsAllTime: pointsData.allTime,
+        accuracy: Math.min(100, Math.max(60, accuracy)),
+        masteredWords: mastered,
+        trend: st.trend || '+1',
+        trendType: st.trendType || 'up',
+        avatar: st.avatar || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop`
+      };
+    });
+
+    return studentList;
+  }, [registeredUsers, cloudUsers, currentUser, examHistory]);
+
+  // 2. Rank students in real-time according to active timeframe points
   const rankedStudents = useMemo(() => {
     const sorted = [...baseStudents].sort((a, b) => {
       const ptsA = timeframe === 'weekly' ? a.pointsWeekly : timeframe === 'monthly' ? a.pointsMonthly : a.pointsAllTime;
@@ -238,29 +178,30 @@ export default function LeaderboardPage({
     }));
   }, [baseStudents, timeframe]);
 
-  // Unique list of colleges for filter chips
+  // 3. Unique list of colleges for filter dropdown
   const collegeList = useMemo(() => {
     const set = new Set();
     rankedStudents.forEach((s) => {
-      if (s.college) set.add(s.college);
+      if (s.college && s.college !== 'Learner Hub Management') set.add(s.college);
     });
     return Array.from(set);
   }, [rankedStudents]);
 
-  // Filtered leaderboard based on search query & college
+  // 4. Filtered leaderboard based on search query & college filter
   const filteredStudents = useMemo(() => {
     return rankedStudents.filter((st) => {
-      const matchSearch = searchQuery.trim() === '' ||
+      const matchSearch =
+        searchQuery.trim() === '' ||
         st.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         st.college.toLowerCase().includes(searchQuery.toLowerCase());
-      
+
       const matchCollege = selectedCollegeFilter === 'all' || st.college === selectedCollegeFilter;
 
       return matchSearch && matchCollege;
     });
   }, [rankedStudents, searchQuery, selectedCollegeFilter]);
 
-  // Top 3 Podium Students
+  // 5. Top 3 Podium Students
   const top3 = useMemo(() => {
     return [
       rankedStudents[0] || null, // Rank 1 Gold (Center)
@@ -269,19 +210,20 @@ export default function LeaderboardPage({
     ];
   }, [rankedStudents]);
 
-  // Find Current User Standing
+  // 6. Find Current User Standing & Distance to next rank
   const currentUserStanding = useMemo(() => {
     const userEmail = currentUser?.email?.toLowerCase();
-    const userName = currentUser?.name || 'Tanvir Ahmed';
+    const userName = currentUser?.name || '';
 
-    const index = rankedStudents.findIndex((s) => 
-      (s.email && s.email.toLowerCase() === userEmail) || s.name === userName
+    const index = rankedStudents.findIndex((s) =>
+      (userEmail && s.email && s.email.toLowerCase() === userEmail) ||
+      (userName && s.name.toLowerCase() === userName.toLowerCase())
     );
 
     if (index !== -1) {
       const userRank = rankedStudents[index];
       const prevRankUser = index > 0 ? rankedStudents[index - 1] : null;
-      const pointsDiff = prevRankUser ? (prevRankUser.activePoints - userRank.activePoints + 10) : 0;
+      const pointsDiff = prevRankUser ? Math.max(10, prevRankUser.activePoints - userRank.activePoints + 10) : 0;
 
       return {
         ...userRank,
@@ -294,19 +236,19 @@ export default function LeaderboardPage({
     // Default fallback
     const first = rankedStudents[0];
     return {
-      rankNumber: 7,
-      name: userName,
+      rankNumber: rankedStudents.length > 0 ? rankedStudents.length : 1,
+      name: currentUser?.name || 'Your Profile',
       college: currentUser?.college || 'Notre Dame College, Dhaka',
-      activePoints: currentUser?.points || 1450,
-      streak: currentUser?.streak || 5,
+      activePoints: currentUser?.points || 0,
+      streak: currentUser?.streak || 1,
       prevRankUser: first,
-      pointsDiff: 45
+      pointsDiff: first ? Math.max(10, first.activePoints - (currentUser?.points || 0) + 10) : 50
     };
   }, [rankedStudents, currentUser]);
 
   return (
-    <div className="max-w-6xl mx-auto space-y-7 pb-24 font-sans">
-      {/* 1. Header & Live Sync Status */}
+    <div className="max-w-6xl mx-auto space-y-7 pb-28 font-sans">
+      {/* 1. Header & Live Cloud Sync Status */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#121827] via-[#101522] to-[#0c0f17] border border-[#1e293b] shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 -mt-10 -mr-10 w-60 h-60 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -314,11 +256,11 @@ export default function LeaderboardPage({
           <div className="flex items-center gap-2.5">
             <span className="px-3 py-1 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1.5 shadow-sm">
               <Trophy size={14} className="text-amber-400" />
-              <span>HSC 2026 National Leaderboard</span>
+              <span>HSC 2026 Real-Time Leaderboard</span>
             </span>
             <span className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-400 bg-emerald-950/60 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>{isBn ? 'লাইভ সিঙ্ক' : 'Live Sync'}</span>
+              <span>{isBn ? 'রিয়েল-টাইম ক্লাউড ডেটা' : 'Real-Time Live Sync'}</span>
             </span>
           </div>
 
@@ -327,8 +269,8 @@ export default function LeaderboardPage({
           </h1>
           <p className="text-xs sm:text-sm text-slate-400">
             {isBn
-              ? 'সাপ্তাহিক ও মাসিক MCQ নির্ভুলতা এবং স্পেসড রিপিটিশন স্কোরের ভিত্তিতে জাতীয় র‍্যাঙ্কিং'
-              : 'Official national rankings based on verified board MCQ mastery, streaks, and accuracy.'}
+              ? 'বাস্তব পরীক্ষা ও কুইজ পারফরম্যান্সের ভিত্তিতে স্বয়ংক্রিয়ভাবে হালনাগাদকৃত জাতীয় র‍্যাঙ্কিং'
+              : 'Official live rankings driven by real student test scores, streaks, and verified MCQ mastery.'}
           </p>
         </div>
 
@@ -362,7 +304,7 @@ export default function LeaderboardPage({
         </div>
       </div>
 
-      {/* 2. Top 3 Podium Display */}
+      {/* 2. Top 3 Champions Podium Display */}
       <div className="p-6 sm:p-8 rounded-3xl bg-[#111723] border border-[#1e293b] shadow-card space-y-6">
         <div className="text-center space-y-1">
           <span className="text-xs font-black tracking-widest text-amber-400 uppercase">
@@ -376,7 +318,7 @@ export default function LeaderboardPage({
         {/* Podium Layout: Rank 2 (Left), Rank 1 (Center Elevated), Rank 3 (Right) */}
         <div className="grid grid-cols-3 gap-2 sm:gap-6 items-end pt-8 max-w-3xl mx-auto">
           {/* Rank 2 (Silver) */}
-          {top3[1] && (
+          {top3[1] ? (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -421,10 +363,10 @@ export default function LeaderboardPage({
                 <span className="text-xs font-black text-slate-300 mt-1">SILVER</span>
               </div>
             </motion.div>
-          )}
+          ) : <div className="h-28" />}
 
           {/* Rank 1 (Gold - Center) */}
-          {top3[0] && (
+          {top3[0] ? (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -478,10 +420,10 @@ export default function LeaderboardPage({
                 </span>
               </div>
             </motion.div>
-          )}
+          ) : <div className="h-36" />}
 
           {/* Rank 3 (Bronze) */}
-          {top3[2] && (
+          {top3[2] ? (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -526,11 +468,11 @@ export default function LeaderboardPage({
                 <span className="text-xs font-black text-amber-500 mt-1">BRONZE</span>
               </div>
             </motion.div>
-          )}
+          ) : <div className="h-24" />}
         </div>
       </div>
 
-      {/* 3. Search & Filter Bar */}
+      {/* 3. Search & College Filter Bar */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-[#111723] border border-[#1e293b] shadow-card">
         {/* Search Input */}
         <div className="relative w-full sm:w-80">
@@ -560,7 +502,7 @@ export default function LeaderboardPage({
         </div>
       </div>
 
-      {/* 4. Ranked Students Table */}
+      {/* 4. Real-time Ranked Students Table */}
       <div className="rounded-3xl bg-[#111723] border border-[#1e293b] shadow-card overflow-hidden">
         {/* Table Header */}
         <div className="grid grid-cols-12 gap-2 px-5 py-3.5 bg-[#0c0f17] border-b border-[#1e293b] text-xs font-black text-slate-400 uppercase tracking-wider">
@@ -576,7 +518,9 @@ export default function LeaderboardPage({
         <div className="divide-y divide-[#1e293b]">
           {filteredStudents.length > 0 ? (
             filteredStudents.map((student) => {
-              const isCurrentUser = student.name === (currentUser?.name || 'Tanvir Ahmed');
+              const isCurrentUser =
+                (currentUser?.email && student.email && student.email.toLowerCase() === currentUser.email.toLowerCase()) ||
+                student.name === currentUser?.name;
 
               return (
                 <motion.div
@@ -584,7 +528,7 @@ export default function LeaderboardPage({
                   layout
                   className={`grid grid-cols-12 gap-2 px-5 py-4 items-center text-xs sm:text-sm transition-all ${
                     isCurrentUser
-                      ? 'bg-emerald-950/20 border-l-4 border-l-emerald-400 text-white font-bold'
+                      ? 'bg-emerald-950/30 border-l-4 border-l-emerald-400 text-white font-bold'
                       : 'hover:bg-[#151c2c] text-slate-300'
                   }`}
                 >
@@ -680,7 +624,7 @@ export default function LeaderboardPage({
         </div>
       </div>
 
-      {/* 5. User's Personal Rank Sticky Bottom Card */}
+      {/* 5. User's Personal Real Rank Floating Footer Card */}
       <div className="fixed bottom-3 left-4 right-4 max-w-5xl mx-auto z-40">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -698,11 +642,11 @@ export default function LeaderboardPage({
                   {currentUserStanding.name}
                 </span>
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                  {isBn ? 'আপনার বর্তমান অবস্থান' : 'Your Standing'}
+                  {isBn ? 'আপনার রিয়েল অবস্থান' : 'Your Live Standing'}
                 </span>
               </div>
               <p className="text-xs text-slate-300">
-                {currentUserStanding.college} • <strong className="text-emerald-400 font-bold">{currentUserStanding.activePoints} XP</strong>
+                {currentUserStanding.college} • <strong className="text-emerald-400 font-bold">{currentUserStanding.activePoints} XP</strong> • 🔥 {currentUserStanding.streak || 1}d Streak
               </p>
             </div>
           </div>
@@ -711,20 +655,24 @@ export default function LeaderboardPage({
           <div className="flex items-center justify-between sm:justify-end gap-4 w-full sm:w-auto border-t sm:border-t-0 pt-2 sm:pt-0 border-[#1e293b]">
             <div className="text-left sm:text-right">
               <span className="text-xs text-amber-300 font-semibold block">
-                {isBn 
-                  ? `পরবর্তী র‍্যাঙ্ক (#${currentUserStanding.rankNumber - 1}) টপকাতে আর মাত্র ${currentUserStanding.pointsDiff} XP বাকি!`
-                  : `Only ${currentUserStanding.pointsDiff} XP needed to overtake Rank #${currentUserStanding.rankNumber - 1}!`}
+                {currentUserStanding.prevRankUser ? (
+                  isBn 
+                    ? `পরবর্তী র‍্যাঙ্ক (#${currentUserStanding.rankNumber - 1}) টপকাতে আর মাত্র ${currentUserStanding.pointsDiff} XP বাকি!`
+                    : `Only ${currentUserStanding.pointsDiff} XP needed to overtake Rank #${currentUserStanding.rankNumber - 1}!`
+                ) : (
+                  isBn ? '🏆 আপনি লিডারবোর্ডের শীর্ষে অবস্থান করছেন!' : '🏆 You are currently leading at Rank #1!'
+                )}
               </span>
               <span className="text-[11px] text-slate-400">
-                {isBn ? 'প্রতি সঠিক উত্তরে ১০ XP পাবেন' : '+10 XP per correct MCQ answer'}
+                {isBn ? 'প্রতি সঠিক উত্তরে ১০ XP ও বোনাস পয়েন্ট পাবেন' : '+10 XP per correct MCQ & speed bonus'}
               </span>
             </div>
 
             <button
-              onClick={() => navigate('/exam')}
-              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5 shrink-0"
+              onClick={() => navigate('/practice')}
+              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs shadow-lg shadow-emerald-950/50 active:scale-95 transition-all flex items-center gap-1.5 shrink-0 cursor-pointer"
             >
-              <span>{isBn ? 'র‍্যাঙ্ক বুস্ট করুন' : 'Boost Rank'}</span>
+              <span>{isBn ? 'কুইজ দিয়ে র‍্যাঙ্ক বাড়ান' : 'Boost Rank Now'}</span>
               <ArrowRight size={14} />
             </button>
           </div>

@@ -32,6 +32,7 @@ import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
 import { smartInterleaveQuestions, hscVocabularyList } from '../data/questions/hscQuestionsData';
+import { recordCompletedExam } from '../services/scoreManager';
 
 export default function HSCExamInterface({
   questions = [],
@@ -190,6 +191,17 @@ export default function HSCExamInterface({
         spread: 110,
         origin: { y: 0.5 }
       });
+
+      // Record real score, points, and test stats in profile & Firestore
+      recordCompletedExam({
+        totalQuestions: totalUnique,
+        doneCount,
+        mistakeCount,
+        timeSpentSeconds: timerSeconds,
+        unit: currentQ?.unit || 'HSC English',
+        lesson: currentQ?.category || 'Lesson'
+      });
+
       if (onFinishExam) {
         onFinishExam({
           totalQuestions: totalUnique,

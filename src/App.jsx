@@ -188,8 +188,23 @@ export default function App() {
         });
       }
     });
+    const handleUserStatsSync = (e) => {
+      if (e && e.detail) {
+        setCurrentUser(e.detail);
+      } else {
+        try {
+          const saved = localStorage.getItem('hsc_auth_user');
+          if (saved) setCurrentUser(JSON.parse(saved));
+        } catch (err) {}
+      }
+    };
+    window.addEventListener('hsc_user_stats_updated', handleUserStatsSync);
+    window.addEventListener('storage', handleUserStatsSync);
+
     return () => {
       if (typeof unsubscribe === 'function') unsubscribe();
+      window.removeEventListener('hsc_user_stats_updated', handleUserStatsSync);
+      window.removeEventListener('storage', handleUserStatsSync);
     };
   }, []);
 
