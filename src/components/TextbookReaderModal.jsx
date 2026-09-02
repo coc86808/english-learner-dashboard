@@ -14,6 +14,7 @@ import {
 import { unit1Lesson1Textbook } from '../data/textbooks/unit1Lesson1Text';
 import { unit1Lesson2Textbook } from '../data/textbooks/unit1Lesson2Text';
 import { unit1Lesson3Textbook } from '../data/textbooks/unit1Lesson3Text';
+import { unit1Lesson4Textbook } from '../data/textbooks/unit1Lesson4Text';
 import { unit2Lesson1Textbook } from '../data/textbooks/unit2Lesson1Text';
 import { unit2Lesson2Textbook } from '../data/textbooks/unit2Lesson2Text';
 import { unit2Lesson3Textbook } from '../data/textbooks/unit2Lesson3Text';
@@ -44,6 +45,8 @@ export default function TextbookReaderModal({
     currentTextbook = unit2Lesson3Textbook;
   } else if (lessonId === 'u2-l4') {
     currentTextbook = unit2Lesson4Textbook;
+  } else if (lessonId === 'u1-l4') {
+    currentTextbook = unit1Lesson4Textbook;
   } else if (lessonId === 'u1-l3') {
     currentTextbook = unit1Lesson3Textbook;
   } else if (lessonId === 'u1-l2') {

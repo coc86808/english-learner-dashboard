@@ -126,7 +126,7 @@ export default function Sidebar({
           labelEn: 'MCQ Vocab',
           labelBn: 'MCQ ভোকাব',
           icon: CheckSquare,
-          badge: '1,437 MCQs',
+          badge: '1,489 MCQs',
           badgeColor: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
         },
         {
