@@ -79,7 +79,7 @@ export default function ActionCards({
       id: 'me',
       title: isBn ? 'MCQ ভোকাব পরীক্ষা' : 'MCQ Vocab',
       subtitle: isBn ? '৪-ক্যাটাগরি স্পেসড টেস্ট' : '4-Category Spaced Drills',
-      badge: '2,081+ MCQs',
+      badge: '2,221+ MCQs',
       badgeColor: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30',
       icon: GraduationCap,
       iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-950/60 ring-2 ring-cyan-500/30',
