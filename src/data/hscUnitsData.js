@@ -31,13 +31,13 @@ export const hscUnits = [
     bgClass: 'bg-[#1d63d8] hover:bg-[#256fe8]',
     gradient: 'from-[#226fe8] to-[#154db0]',
     progress: 0,
-    totalWords: 0,
+    totalWords: 81,
     masteredWords: 0,
     lessons: [
-      { id: 'u2-l1', number: 'Lesson 1', title: 'What is Beauty?', titleBn: 'সৌন্দর্য কী?', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u2-l2', number: 'Lesson 2', title: 'Folk Music', titleBn: 'লোকসংগীত', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u2-l3', number: 'Lesson 3', title: 'Art', titleBn: 'শিল্পকলা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u2-l4', number: 'Lesson 4', title: 'Craft', titleBn: 'কারুশিল্প', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u2-l1', number: 'Lesson 1', title: 'What is Beauty?', titleBn: 'সৌন্দর্য কী?', questionsCount: '৮৮ টি প্রশ্ন', wordsCount: 22, progress: 0 },
+      { id: 'u2-l2', number: 'Lesson 2', title: 'Folk Music', titleBn: 'লোকসংগীত', questionsCount: '৮০ টি প্রশ্ন', wordsCount: 20, progress: 0 },
+      { id: 'u2-l3', number: 'Lesson 3', title: 'Art', titleBn: 'শিল্পকলা', questionsCount: '১১২ টি প্রশ্ন', wordsCount: 28, progress: 0 },
+      { id: 'u2-l4', number: 'Lesson 4', title: 'Craft', titleBn: 'কারুশিল্প', questionsCount: '৪৪ টি প্রশ্ন', wordsCount: 11, progress: 0 },
     ]
   },
   {
