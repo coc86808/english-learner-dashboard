@@ -1,10 +1,8 @@
 /**
  * HSC English Vocabulary and MCQ Question Database
- * Unit 1: Education and Life | Lesson 1: The Parrot's Tale (46 Words)
- * Unit 10: Lifestyle | Lesson 1: Manners Around the World (74 Words)
- * Unit 10: Lifestyle | Lesson 2: Etiquette Netquette (36 Words)
+ * Complete 12 Units, 45 Lessons (Official NCTB Syllabus)
  *
- * Total: 156 Vocabulary Words | 613 Board-Standard MCQs
+ * Total: 685 Vocabulary Words | 2,729 Board-Standard MCQs
  */
 
 export const hscVocabularyList = [

@@ -174,8 +174,8 @@ export const hscUnits = [
     totalWords: 134,
     masteredWords: 0,
     lessons: [
-      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners Around the World', titleBn: 'বিশ্বজুড়ে শিষ্টাচার', questionsCount: '২৪০ টি প্রশ্ন', wordsCount: 60, progress: 0 },
-      { id: 'u10-l2', number: 'Lesson 2', title: 'Etiquette Netquette', titleBn: 'শিষ্টাচার ও নেটকেয়ার', questionsCount: '২০০ টি প্রশ্ন', wordsCount: 50, progress: 0 },
+      { id: 'u10-l1', number: 'Lesson 1', title: 'Manners Around the World', titleBn: 'বিশ্বজুড়ে শিষ্টাচার', questionsCount: '২৯৬ টি প্রশ্ন', wordsCount: 74, progress: 0 },
+      { id: 'u10-l2', number: 'Lesson 2', title: 'Etiquette Netquette', titleBn: 'শিষ্টাচার ও নেটকেয়ার', questionsCount: '১৪৪ টি প্রশ্ন', wordsCount: 36, progress: 0 },
       { id: 'u10-l3', number: 'Lesson 3', title: 'Food and Culture', titleBn: 'খাদ্য ও সংস্কৃতি (মুজতবা আলী)', questionsCount: '৩২ টি প্রশ্ন', wordsCount: 8, progress: 0 },
       { id: 'u10-l4', number: 'Lesson 4', title: 'Fitness', titleBn: 'ফিটনেস ও মেডিটেশন', questionsCount: '৩২ টি প্রশ্ন', wordsCount: 8, progress: 0 },
       { id: 'u10-l5', number: 'Lesson 5', title: 'Consumerism', titleBn: 'ভোক্তাবাদ ও ব্যয়', questionsCount: '৩২ টি প্রশ্ন', wordsCount: 8, progress: 0 },

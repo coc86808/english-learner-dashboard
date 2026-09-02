@@ -161,17 +161,17 @@ export default function AboutPage({ lang = 'en', onNavigate, currentUser }) {
         {/* 4 Core Quantitative Metrics */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-[#1e293b]/80 relative z-10">
           <div className="p-4 rounded-2xl bg-[#0c0f17]/90 border border-[#1e293b] text-center space-y-1">
-            <span className="text-2xl sm:text-3xl font-black text-emerald-400 block">14 Units</span>
-            <span className="text-xs text-slate-400 font-semibold">{isBn ? 'সম্পূর্ণ এনসিটিবি সিলেবাস' : 'Official NCTB Units'}</span>
+            <span className="text-2xl sm:text-3xl font-black text-emerald-400 block">12 Units</span>
+            <span className="text-xs text-slate-400 font-semibold">{isBn ? 'সম্পূর্ণ এনসিটিবি সিলেবাস (৪৫ লেসন)' : 'Official NCTB Units (45 Lessons)'}</span>
           </div>
 
           <div className="p-4 rounded-2xl bg-[#0c0f17]/90 border border-[#1e293b] text-center space-y-1">
-            <span className="text-2xl sm:text-3xl font-black text-cyan-400 block">156+</span>
-            <span className="text-xs text-slate-400 font-semibold">{isBn ? 'নির্বাচিত ভোকাবুলারি' : 'Curated Vocabulary'}</span>
+            <span className="text-2xl sm:text-3xl font-black text-cyan-400 block">685+</span>
+            <span className="text-xs text-slate-400 font-semibold">{isBn ? 'নির্বাচিত পাঠ্যবই শব্দার্থ' : 'Curated Vocabulary'}</span>
           </div>
 
           <div className="p-4 rounded-2xl bg-[#0c0f17]/90 border border-[#1e293b] text-center space-y-1">
-            <span className="text-2xl sm:text-3xl font-black text-amber-400 block">613+</span>
+            <span className="text-2xl sm:text-3xl font-black text-amber-400 block">2,725+</span>
             <span className="text-xs text-slate-400 font-semibold">{isBn ? 'বোর্ড স্ট্যান্ডার্ড এমসিকিউ' : 'Board Standard MCQs'}</span>
           </div>
 

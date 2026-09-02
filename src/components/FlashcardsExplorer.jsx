@@ -71,12 +71,24 @@ export default function FlashcardsExplorer({
       } else {
         list = [];
       }
-    } else if (selectedLessonId === 'u1-l1') {
-      list = hscVocabularyList.filter(item => item.unit.includes("Unit 1:") || item.unit.includes("The Parrot's Tale"));
-    } else if (selectedLessonId === 'u10-l1') {
-      list = hscVocabularyList.filter(item => item.unit.includes("Unit 10: Lesson 1") || item.unit.includes("Manners Around the World"));
-    } else if (selectedLessonId === 'u10-l2') {
-      list = hscVocabularyList.filter(item => item.unit.includes("Unit 10: Lesson 2") || item.unit.includes("Etiquette Netquette") || item.unit.includes("Good manners always wins") || item.unit.includes("Food and Culture"));
+    } else if (selectedLessonId === 'all') {
+      list = [...hscVocabularyList];
+    } else if (selectedLessonId?.startsWith('unit-')) {
+      const uNum = selectedLessonId.replace('unit-', '');
+      list = hscVocabularyList.filter(item => {
+        const m = item.unit?.match(/Unit\s+(\d+)/i);
+        return m && m[1] === uNum;
+      });
+    } else {
+      const m = selectedLessonId?.match(/^u(\d+)-l(\d+)$/);
+      if (m) {
+        const uNum = m[1];
+        const lNum = m[2];
+        list = hscVocabularyList.filter(item => {
+          const match = item.unit?.match(/Unit\s+(\d+)\s*:\s*Lesson\s+(\d+)/i);
+          return match && match[1] === uNum && match[2] === lNum;
+        });
+      }
     }
     if (isShuffled) {
       list = [...list].sort(() => Math.random() - 0.5);
@@ -284,15 +296,21 @@ export default function FlashcardsExplorer({
           <select
             value={selectedLessonId}
             onChange={(e) => setSelectedLessonId(e.target.value)}
-            className="bg-[#161e2e] border border-[#1e293b] text-slate-200 text-xs rounded-xl px-3.5 py-2.5 outline-none focus:border-emerald-500 cursor-pointer font-medium shadow-inner hover:border-slate-600 transition-colors"
+            className="bg-[#161e2e] border border-[#1e293b] text-slate-200 text-xs rounded-xl px-3.5 py-2.5 outline-none focus:border-emerald-500 cursor-pointer font-medium shadow-inner hover:border-slate-600 transition-colors max-w-[260px] sm:max-w-[320px] truncate"
           >
-            <option value="all">All Words (156 Words)</option>
-            <option value="u1-l1">Unit 1: The Parrot's Tale (46 Words)</option>
-            <option value="u10-l1">Unit 10: Manners Around the World (74 Words)</option>
-            <option value="u10-l2">Unit 10: Etiquette Netquette (36 Words)</option>
+            <option value="all">{isBn ? `সব শব্দ (${hscVocabularyList.length} টি শব্দ)` : `All Words (${hscVocabularyList.length} Words)`}</option>
             {weakWords.length > 0 && (
-              <option value="weak_only">⚠️ Weak Words Queue ({weakWords.length} Words)</option>
+              <option value="weak_only">⚠️ {isBn ? `দুর্বল শব্দসমূহ (${weakWords.length} টি)` : `Weak Words Queue (${weakWords.length} Words)`}</option>
             )}
+            {hscUnits.map((unit) => (
+              <optgroup key={unit.id} label={`${unit.unitNumber}: ${isBn ? unit.unitTitleBn : unit.unitTitle} (${unit.totalWords} ${isBn ? 'শব্দ' : 'words'})`}>
+                {unit.lessons.map((lesson) => (
+                  <option key={lesson.id} value={lesson.id}>
+                    {unit.unitNumber} {lesson.number}: {isBn ? lesson.titleBn : lesson.title} ({lesson.wordsCount} {isBn ? 'শব্দ' : 'Words'})
+                  </option>
+                ))}
+              </optgroup>
+            ))}
           </select>
 
           <button

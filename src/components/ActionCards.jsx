@@ -55,7 +55,7 @@ export default function ActionCards({
       id: 'vb',
       title: isBn ? 'ভোকাবুলারি ব্যাংক' : 'Vocabulary Bank',
       subtitle: isBn ? 'বোর্ড শিট ও শব্দার্থ' : 'NCTB 4-Col Sheet',
-      badge: '156+ Words',
+      badge: '685+ Words',
       badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
       icon: BookOpen,
       iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-950/60 ring-2 ring-emerald-500/30',

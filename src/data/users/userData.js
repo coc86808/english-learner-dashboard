@@ -62,7 +62,7 @@ export const usersList = [
     streak: 0,
     points: 0,
     testsCompleted: 0,
-    masteredWordsCount: 156,
+    masteredWordsCount: 685,
     status: 'Active',
     role: 'Admin',
     joinedDate: '01 Aug 2026',

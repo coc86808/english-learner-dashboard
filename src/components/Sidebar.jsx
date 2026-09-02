@@ -92,7 +92,7 @@ export default function Sidebar({
           labelEn: 'Vocabulary Bank',
           labelBn: 'ভোকাবুলারি ব্যাংক',
           icon: BookMarked,
-          badge: '156 Words',
+          badge: '685 Words',
           badgeColor: 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
         },
         {
