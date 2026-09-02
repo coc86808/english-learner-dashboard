@@ -98,15 +98,15 @@ export const hscUnits = [
     number: 6,
     unitNumber: 'Unit 6',
     unitTitle: 'Dreams',
-    unitTitleBn: 'স্বপ্ন',
+    unitTitleBn: 'স্বপ্ন ও মানব আকাঙ্ক্ষা',
     bgClass: 'bg-[#c21818] hover:bg-[#d62020]',
     gradient: 'from-[#d62020] to-[#960f0f]',
     progress: 0,
-    totalWords: 0,
+    totalWords: 25,
     masteredWords: 0,
     lessons: [
-      { id: 'u6-l1', number: 'Lesson 1', title: 'What is a Dream?', titleBn: 'স্বপ্ন কী?', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u6-l2', number: 'Lesson 2', title: 'Dreams in Literature', titleBn: 'সাহিত্যে স্বপ্ন', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u6-l1', number: 'Lesson 1', title: 'What is a Dream?', titleBn: 'স্বপ্ন কী?', questionsCount: '৬০ টি প্রশ্ন', wordsCount: 15, progress: 0 },
+      { id: 'u6-l2', number: 'Lesson 2', title: 'Dreams in Literature', titleBn: 'সাহিত্যে স্বপ্ন', questionsCount: '৪০ টি প্রশ্ন', wordsCount: 10, progress: 0 },
     ]
   },
   {
