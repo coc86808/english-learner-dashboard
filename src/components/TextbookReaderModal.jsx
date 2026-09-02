@@ -23,6 +23,11 @@ import { unit3Lesson1Textbook } from '../data/textbooks/unit3Lesson1Text';
 import { unit3Lesson2Textbook } from '../data/textbooks/unit3Lesson2Text';
 import { unit3Lesson3Textbook } from '../data/textbooks/unit3Lesson3Text';
 import { unit3Lesson4Textbook } from '../data/textbooks/unit3Lesson4Text';
+import { unit5Lesson1Textbook } from '../data/textbooks/unit5Lesson1Text';
+import { unit5Lesson2Textbook } from '../data/textbooks/unit5Lesson2Text';
+import { unit5Lesson3Textbook } from '../data/textbooks/unit5Lesson3Text';
+import { unit5Lesson4Textbook } from '../data/textbooks/unit5Lesson4Text';
+import { unit5Lesson5Textbook } from '../data/textbooks/unit5Lesson5Text';
 import { unit9Lesson1Textbook } from '../data/textbooks/unit9Lesson1Text';
 import { unit10Lesson1Textbook } from '../data/textbooks/unit10Lesson1Text';
 import { unit10Lesson2Textbook } from '../data/textbooks/unit10Lesson2Text';
@@ -41,7 +46,17 @@ export default function TextbookReaderModal({
   if (!isOpen) return null;
 
   let currentTextbook = unit1Lesson1Textbook;
-  if (lessonId === 'u3-l1' || (unitId === 'unit-3' && (!lessonId || lessonId === 'u3-l1'))) {
+  if (lessonId === 'u5-l1' || (unitId === 'unit-5' && (!lessonId || lessonId === 'u5-l1'))) {
+    currentTextbook = unit5Lesson1Textbook;
+  } else if (lessonId === 'u5-l2') {
+    currentTextbook = unit5Lesson2Textbook;
+  } else if (lessonId === 'u5-l3') {
+    currentTextbook = unit5Lesson3Textbook;
+  } else if (lessonId === 'u5-l4') {
+    currentTextbook = unit5Lesson4Textbook;
+  } else if (lessonId === 'u5-l5') {
+    currentTextbook = unit5Lesson5Textbook;
+  } else if (lessonId === 'u3-l1' || (unitId === 'unit-3' && (!lessonId || lessonId === 'u3-l1'))) {
     currentTextbook = unit3Lesson1Textbook;
   } else if (lessonId === 'u3-l2') {
     currentTextbook = unit3Lesson2Textbook;
