@@ -43,6 +43,9 @@ import { unit9Lesson3Textbook } from '../data/textbooks/unit9Lesson3Text';
 import { unit9Lesson4Textbook } from '../data/textbooks/unit9Lesson4Text';
 import { unit10Lesson1Textbook } from '../data/textbooks/unit10Lesson1Text';
 import { unit10Lesson2Textbook } from '../data/textbooks/unit10Lesson2Text';
+import { unit10Lesson3Textbook } from '../data/textbooks/unit10Lesson3Text';
+import { unit10Lesson4Textbook } from '../data/textbooks/unit10Lesson4Text';
+import { unit10Lesson5Textbook } from '../data/textbooks/unit10Lesson5Text';
 
 export default function TextbookReaderModal({
   isOpen,
@@ -116,8 +119,14 @@ export default function TextbookReaderModal({
     currentTextbook = unit9Lesson4Textbook;
   } else if (unitId === 'unit-9' || (lessonId && lessonId.includes('u9'))) {
     currentTextbook = unit9Lesson1Textbook;
-  } else if (lessonId === 'u10-l2' || lessonId === 'u10-l3') {
+  } else if (lessonId === 'u10-l2') {
     currentTextbook = unit10Lesson2Textbook;
+  } else if (lessonId === 'u10-l3') {
+    currentTextbook = unit10Lesson3Textbook;
+  } else if (lessonId === 'u10-l4') {
+    currentTextbook = unit10Lesson4Textbook;
+  } else if (lessonId === 'u10-l5') {
+    currentTextbook = unit10Lesson5Textbook;
   } else if (unitId === 'unit-10' || (lessonId && lessonId.includes('u10'))) {
     currentTextbook = unit10Lesson1Textbook;
   }
