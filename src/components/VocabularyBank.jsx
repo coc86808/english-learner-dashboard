@@ -189,9 +189,11 @@ export default function VocabularyBank({
         if (selectedBoardFilter === 'standard' && !tag.includes('standard') && !tag.includes('model')) return false;
       }
 
-      // 3. Status Filter (Weak Words vs Clean/Mastered)
+      // 3. Status Filter (Weak Words vs Red Mark vs Clean/Mastered)
       if (selectedStatusFilter === 'weak') {
         if (!isWeak(item)) return false;
+      } else if (selectedStatusFilter === 'redMark') {
+        if (!item.isCrossReferenced) return false;
       } else if (selectedStatusFilter === 'clean') {
         if (isWeak(item)) return false;
       }
@@ -223,6 +225,14 @@ export default function VocabularyBank({
 
       return true;
     }).sort((a, b) => {
+      // Prioritize Red-Marked words with inter-unit connections to the top
+      if (sortBy === 'default' || sortBy === 'redMark') {
+        if (a.isCrossReferenced && !b.isCrossReferenced) return -1;
+        if (!a.isCrossReferenced && b.isCrossReferenced) return 1;
+        if (a.isCrossReferenced && b.isCrossReferenced) {
+          return (b.crossRefMatchCount || 0) - (a.crossRefMatchCount || 0);
+        }
+      }
       if (sortBy === 'az') return a.word.localeCompare(b.word);
       if (sortBy === 'za') return b.word.localeCompare(a.word);
       return 0;
@@ -549,7 +559,7 @@ export default function VocabularyBank({
                 ))}
               </div>
 
-              {/* Status Toggles */}
+              {/* Status Toggles: Weak Words & Task 2 Red Mark */}
               <button
                 onClick={() => setSelectedStatusFilter(selectedStatusFilter === 'weak' ? 'all' : 'weak')}
                 className={`px-3 py-1 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
@@ -560,6 +570,18 @@ export default function VocabularyBank({
               >
                 <Bookmark size={12} className="fill-current" />
                 <span>{isBn ? `দুর্বল শব্দ (${weakWords.length})` : `Weak Words (${weakWords.length})`}</span>
+              </button>
+
+              <button
+                onClick={() => setSelectedStatusFilter(selectedStatusFilter === 'redMark' ? 'all' : 'redMark')}
+                className={`px-3 py-1 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+                  selectedStatusFilter === 'redMark'
+                    ? 'bg-rose-600 text-white shadow-md shadow-rose-950/60 ring-2 ring-rose-400'
+                    : 'bg-[#1a121c] text-rose-300 hover:bg-rose-950/40 border border-rose-500/40'
+                }`}
+              >
+                <span className="text-xs">🔥</span>
+                <span>{isBn ? 'রেড মার্ক শব্দাবলী' : 'Red Mark Key Words'}</span>
               </button>
 
               {/* Part of Speech Quick Filter */}
@@ -687,7 +709,9 @@ export default function VocabularyBank({
                       <tr
                         onClick={() => toggleRowExpansion(item.id || item.word)}
                         className={`transition-colors cursor-pointer group select-text ${
-                          index % 2 === 0 ? 'bg-[#111723]' : 'bg-[#141d2c]'
+                          item.isCrossReferenced
+                            ? 'bg-rose-950/20 hover:bg-rose-950/30 border-l-4 border-l-rose-500'
+                            : index % 2 === 0 ? 'bg-[#111723]' : 'bg-[#141d2c]'
                         } hover:bg-[#1a2538] ${isExpanded ? 'border-b-0 bg-[#162033]' : ''}`}
                       >
                         {/* Column 1: WORD + Audio + Bookmark + Expand Indicator */}
@@ -704,6 +728,17 @@ export default function VocabularyBank({
                               </div>
 
                               <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                                {item.isCrossReferenced && (
+                                  <span className="px-2 py-0.5 rounded-full bg-rose-500/25 border border-rose-500/50 text-rose-300 text-[10px] font-black inline-flex items-center gap-1 shadow-sm shadow-rose-950/50">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping"></span>
+                                    {isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}
+                                  </span>
+                                )}
+                                {item.sources && item.sources.length > 1 && (
+                                  <span className="px-1.5 py-0.5 rounded bg-blue-500/20 border border-blue-500/40 text-blue-300 text-[9px] font-bold">
+                                    📚 {item.sources.length} লেসনে
+                                  </span>
+                                )}
                                 {item.partsOfSpeech && (
                                   <span className="px-2 py-0.5 rounded bg-[#1e2a3d] border border-[#2b3b55] text-slate-300 text-[10px] font-bold">
                                     {item.partsOfSpeech}
@@ -831,6 +866,27 @@ export default function VocabularyBank({
                                   </button>
                                 </div>
                               </div>
+
+                              {/* Task 2: Red Mark Inter-Unit Cross-Reference Box */}
+                              {item.isCrossReferenced && item.crossReferencedWords && item.crossReferencedWords.length > 0 && (
+                                <div className="p-3 rounded-xl bg-rose-950/40 border border-rose-500/50 flex items-start gap-2.5">
+                                  <span className="text-rose-400 font-bold text-xs shrink-0 flex items-center gap-1">
+                                    🔥 {isBn ? 'রেড মার্ক আন্তঃসংযোগ:' : 'Red Mark Inter-Unit Link:'}
+                                  </span>
+                                  <div className="text-xs text-rose-200 leading-relaxed">
+                                    {isBn ? 'এই শব্দটির সমার্থক / বিপরীতার্থক শব্দ বইটির অন্যান্য পাঠের প্রধান শব্দ হিসেবে বিদ্যমান:' : 'This word connects as a synonym or antonym to other main words in the textbook:'}{' '}
+                                    <span className="font-bold text-white underline">{item.crossReferencedWords.join(', ')}</span>
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* Multi-Sources Box */}
+                              {item.sources && item.sources.length > 1 && (
+                                <div className="p-2.5 rounded-xl bg-blue-950/30 border border-blue-500/30 text-xs text-blue-200 flex items-center gap-2">
+                                  <span className="font-bold text-blue-400 shrink-0">📚 {isBn ? 'উপস্থিতির উৎসসমূহ:' : 'Sources:'}</span>
+                                  <span>{item.sources.join(' • ')}</span>
+                                </div>
+                              )}
 
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 text-xs sm:text-sm">
                                 {/* English Definition */}

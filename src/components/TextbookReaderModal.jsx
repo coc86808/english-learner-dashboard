@@ -193,10 +193,10 @@ export default function TextbookReaderModal({
                 <span>NCTB HSC English For Today Textbook</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                {currentTextbook.title} ({currentTextbook.titleBn})
+                {currentTextbook.title || currentTextbook.lessonTitle} {currentTextbook.titleBn || currentTextbook.lessonTitleBn ? `(${currentTextbook.titleBn || currentTextbook.lessonTitleBn})` : ''}
               </h2>
               <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
-                {currentTextbook.unitTitle} • Author: <span className="text-slate-200 font-semibold">{currentTextbook.author}</span>
+                {currentTextbook.unitTitle} • Author: <span className="text-slate-200 font-semibold">{currentTextbook.author || 'NCTB Curriculum'}</span>
               </p>
             </div>
 
@@ -219,15 +219,21 @@ export default function TextbookReaderModal({
               <span>{isBn ? 'গল্পের সারসংক্ষেপ ও মূলভাব (Theme):' : 'Story Theme & Context:'}</span>
             </span>
             <p className="leading-relaxed text-slate-300">
-              {currentTextbook.summaryBn}
+              {currentTextbook.summaryBn || currentTextbook.summary || (isBn ? 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত পাঠ্যবইয়ের পূর্ণাঙ্গ পাঠ্যাংশ।' : 'Official NCTB English For Today Textbook full reading passage.')}
             </p>
           </div>
 
           {/* Scrollable Story Content */}
           <div className="flex-1 overflow-y-auto pr-2 space-y-6 text-sm sm:text-base leading-relaxed text-slate-200">
-            {currentTextbook.sections.map((sec) => (
+            {(currentTextbook.sections || currentTextbook.paragraphs?.map((p, idx) => ({
+              paraNumber: p.number || (idx + 1),
+              heading: p.heading || `অনুচ্ছেদ ${idx + 1}`,
+              content: p.text || p.content || '',
+              bengaliTranslation: p.bengaliTranslation || '',
+              highlightWords: p.highlightWords || []
+            })) || []).map((sec, secIdx) => (
               <div
-                key={sec.paraNumber}
+                key={sec.paraNumber || secIdx}
                 className="p-5 rounded-2xl bg-[#0e131e]/70 border border-[#1d2638] space-y-3 hover:border-emerald-500/30 transition-all group"
               >
                 {/* Section Header */}

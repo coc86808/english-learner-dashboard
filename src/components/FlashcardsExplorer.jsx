@@ -393,13 +393,22 @@ export default function FlashcardsExplorer({
           >
             {/* ==================== FRONT OF CARD ==================== */}
             <div 
-              className="absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(0deg)] rounded-3xl bg-gradient-to-b from-[#111723] via-[#0e1420] to-[#0c0f17] border border-[#1e293b] hover:border-emerald-500/40 p-6 sm:p-8 flex flex-col justify-between shadow-2xl transition-all"
+              className={`absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(0deg)] rounded-3xl bg-gradient-to-b from-[#111723] via-[#0e1420] to-[#0c0f17] border ${
+                currentCard.isCrossReferenced ? 'border-rose-500/60 ring-2 ring-rose-500/20' : 'border-[#1e293b]'
+              } hover:border-emerald-500/40 p-6 sm:p-8 flex flex-col justify-between shadow-2xl transition-all`}
             >
               {/* Card Header Row */}
               <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/25 shadow-sm">
-                  {currentCard.unit || "Unit 1: The Parrot's Tale"}
-                </span>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/25 shadow-sm">
+                    {currentCard.unit || "Unit 1: The Parrot's Tale"}
+                  </span>
+                  {currentCard.isCrossReferenced && (
+                    <span className="text-[10px] font-black text-rose-300 bg-rose-500/20 px-2.5 py-1 rounded-full border border-rose-500/50 shadow-sm flex items-center gap-1 animate-pulse">
+                      🔥 {isBn ? 'রেড মার্ক শব্দ' : 'Red Mark Key Word'}
+                    </span>
+                  )}
+                </div>
 
                 <div className="flex items-center gap-2">
                   {currentCard.partsOfSpeech && (
@@ -545,6 +554,17 @@ export default function FlashcardsExplorer({
                   <div className="bg-[#161e2e]/90 border border-[#1e293b] p-3 rounded-2xl text-slate-300 italic text-xs">
                     <strong className="text-amber-400 not-italic font-bold">Textbook Context: </strong>
                     "{currentCard.exampleSentence}"
+                  </div>
+                )}
+
+                {/* Task 2: Red Mark Inter-Unit Cross-Reference Note */}
+                {currentCard.isCrossReferenced && currentCard.crossReferencedWords && currentCard.crossReferencedWords.length > 0 && (
+                  <div className="bg-rose-950/40 border border-rose-500/40 p-3 rounded-2xl text-rose-200 text-xs flex items-start gap-2">
+                    <span className="text-rose-400 font-black shrink-0">🔥 রেড মার্ক:</span>
+                    <span>
+                      {isBn ? 'অন্যান্য পাঠের সংযুক্ত শব্দসমূহ:' : 'Inter-Unit Syn/Ant Linked Words:'}{' '}
+                      <strong className="text-white underline">{currentCard.crossReferencedWords.join(', ')}</strong>
+                    </span>
                   </div>
                 )}
               </div>

@@ -1,42 +1,36 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 8: Relationships | Lesson 4: Love (Butterfly Forever)
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 8: Relationships | Lesson: Love
  */
 
 export const unit8Lesson4Textbook = {
   unitId: 'unit-8',
   lessonId: 'u8-l4',
   unitTitle: 'Unit 8: Relationships',
-  unitTitleBn: 'ইউনিট ৮: মানবসম্পর্ক',
-  lessonTitle: 'Lesson 4: Love',
-  lessonTitleBn: 'লেসন ৪: ভালোবাসা (প্রজাপতি চিরন্তন)',
-  author: 'Chen Qiyou (Butterfly Forever)',
-  totalWords: 9,
+  unitTitleBn: 'ইউনিট ৮: পারস্পরিক সম্পর্ক (Relationships)',
+  title: 'Love',
+  titleBn: 'Love',
+  lessonTitle: 'Love',
+  lessonTitleBn: 'Love',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Love পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 1,
+  sections: [
+    {
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 149)",
+        "content": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently. and then slowly falls back on the cold and wet road, like a butterfly at night. Although it is spring, it feels like deep autumn. All she did was cross the road to mail a letter for me. A very simple act, yet I will never forget it as long as I live. I open my eyes and remain standing under the balcony, blankly, my eyes filled with hot tears. All the cars in the entire world have stopped. People rush to the middle of the road. Nobody knows the one that lies on the road there is mine, my butterfly. At this moment she is only five meters away front me, yet it is so far away. Bigger raindrops fall onto my glasses, splashing into my life. Why? Why did we bring only one umbrella? Then I see Yingzi again, in her white windbreaker, the umbrella above her head, crossing the road quietly. She is mailing the letter for me. The letter I wrote to my mother in the South. I stand blankly under the balcony and see, once again, Yingzi walking toward the middle of the road. The rain wasnt that big, yet it was the biggest rain in my entire life. Below is the content ofthe letter. Did Yingzi know? \"Ma, T am going to marry Ymgzi next month.\" Translated by Shouhna Qi. C. Imagery Imagery is a device used in literary texts that uses vivid descriptions to appeal to a readers' senses. i.e., taste, smell, touch, hearing, or sight. Imagety can help a reader form mental images of the setting and events of a literary text, and immerse themselves into the world a writer creates through language. Work with a partner to identify the use of imagery in \"Butterfly Forever\". Now close your eyes and try to imagine what the characters see, feel, and hear by using the imagery in the story. Do you think the writer was successfül in creating a vivid picture?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 149 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+],
   paragraphs: [
     {
-      number: 'i',
-      heading: 'The Symbolism of Butterflies (প্রজাপতি ও আত্মার রূপক)',
-      text: "Butterflies are regarded as powerful symbols in many cultures and contexts. They are often associated with change and growth, due to their fascinating transformation from caterpillar to cocoon, and finally into a graceful butterfly. In Greek mythology, psyche (meaning 'soul') is often depicted with butterfly wings. Butterflies are thus connected to the soul and the quest for love and beauty, while also reminding us of the transient and fleeting nature of life.",
-      bengaliTranslation: "বহু সংস্কৃতিতে প্রজাপতিকে গভীর রূপক প্রতীক হিসেবে বিবেচনা করা হয়। শুঁয়োপোকা থেকে গুটি এবং শেষ পর্যন্ত নয়নাভিরাম প্রজাপতির রূপান্তরকে পরিবর্তন ও আত্মবিকাশের প্রতীক হিসেবে দেখা হয়। প্রাচীন গ্রিক পুরাণে মানুষের আত্মাকে (psyche) প্রজাপতির ডানার সাথে তুলনা করা হয়েছে। ভালোবাসার ব্যাকুলতা এবং মানবজীবনের ক্ষণস্থায়ী সৌন্দর্যের বার্তা বহন করে এই প্রজাপতি।",
-      highlightWords: ['transformation', 'cocoon', 'psyche', 'transient', 'fascinating']
-    },
-    {
-      number: 'ii',
-      heading: 'A Rainy Afternoon and a Tragic Memory (বৃষ্টিভেজা রাজপথ ও ট্র্যাজিক স্মৃতি)',
-      text: "IT IS RAINING. The asphalt road looks cold and wet. It glitters with reflections of green, yellow, and red lights. We are taking shelter under the balcony. The solitary green mailbox stands alone across the street. Inside the big pocket of my white windbreaker is a letter for my mother. Yingzi opens up the small umbrella and steps out to cross the road to mail the letter. A sudden sound of screeching tires tears the wet air—leaving only silence, a crumpled umbrella, and a love frozen forever in memory like a butterfly.",
-      bengaliTranslation: "ঝুম বৃষ্টি পড়ছে। পিচঢালা সড়কটি ভিজে চকচক করছে ট্রাফিক বাতির প্রতিফলনে। আমরা বারান্দার নিচে আশ্রয় নিয়েছি। রাস্তার ওপারে নিঃসঙ্গ এক সবুজ লেটারবক্স দাঁড়িয়ে আছে। আমার উইন্ডব্রেকার জ্যাকেটের পকেটে রয়েছে মায়ের কাছে পাঠানোর এক চিঠি। ইংজি মিষ্টি হেসে একটি ছোট ছাতা মাথায় দিয়ে চিঠিটি ফেলতে রাস্তা পার হতে যায়। হঠাৎ ব্রেক কষার তীব্র কর্কশ শব্দে আকাশ বাতাস কেঁপে ওঠে—মুহূর্তেই স্তব্ধ হয়ে যায় পৃথিবী। পড়ে থাকে কেবল ভাঙা ছাতা, আর স্মৃতিতে প্রজাপতির মতো চিরন্তন হয়ে জমে থাকে এক অশ্রুসিক্ত ভালোবাসা।",
-      highlightWords: ['asphalt', 'solitary', 'windbreaker', 'umbrella']
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 149)",
+        "text": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently. and then slowly falls back on the cold and wet road, like a butterfly at night. Although it is spring, it feels like deep autumn. All she did was cross the road to mail a letter for me. A very simple act, yet I will never forget it as long as I live. I open my eyes and remain standing under the balcony, blankly, my eyes filled with hot tears. All the cars in the entire world have stopped. People rush to the middle of the road. Nobody knows the one that lies on the road there is mine, my butterfly. At this moment she is only five meters away front me, yet it is so far away. Bigger raindrops fall onto my glasses, splashing into my life. Why? Why did we bring only one umbrella? Then I see Yingzi again, in her white windbreaker, the umbrella above her head, crossing the road quietly. She is mailing the letter for me. The letter I wrote to my mother in the South. I stand blankly under the balcony and see, once again, Yingzi walking toward the middle of the road. The rain wasnt that big, yet it was the biggest rain in my entire life. Below is the content ofthe letter. Did Yingzi know? \"Ma, T am going to marry Ymgzi next month.\" Translated by Shouhna Qi. C. Imagery Imagery is a device used in literary texts that uses vivid descriptions to appeal to a readers' senses. i.e., taste, smell, touch, hearing, or sight. Imagety can help a reader form mental images of the setting and events of a literary text, and immerse themselves into the world a writer creates through language. Work with a partner to identify the use of imagery in \"Butterfly Forever\". Now close your eyes and try to imagine what the characters see, feel, and hear by using the imagery in the story. Do you think the writer was successfül in creating a vivid picture?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 149 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Psyche', meaning: 'মানবিক আত্মা / মন ও প্রণোদনা', pos: 'Noun', syn: 'Soul, spirit, mind, inner self', ant: 'Physical body, flesh' },
-    { word: 'Transient', meaning: 'ক্ষণস্থায়ী / দ্রুত অপসীয়মান', pos: 'Adjective', syn: 'Ephemeral, fleeting, temporary', ant: 'Permanent, eternal' },
-    { word: 'Asphalt', meaning: 'পিচঢালা মসৃণ রাজপথ', pos: 'Noun', syn: 'Tarmac, bitumen, blacktop', ant: 'Dirt path, dirt trail' },
-    { word: 'Windbreaker', meaning: 'বাতাস প্রতিরোধী জ্যাকেট', pos: 'Noun', syn: 'Windcheater, parka, jacket', ant: 'Cotton vest' },
-    { word: 'Cocoon', meaning: 'গুটি / রূপান্তরের আবরণী খোলস', pos: 'Noun', syn: 'Chrysalis, protective casing', ant: 'Exposed surface' },
-    { word: 'Transformation', meaning: 'আমূল রূপান্তর / পরিবর্তন', pos: 'Noun', syn: 'Metamorphosis, evolution, change', ant: 'Stagnation, constancy' },
-    { word: 'Umbrella', meaning: 'ছাতা / বর্ষাতি আচ্ছাদন', pos: 'Noun', syn: 'Parasol, canopy, sunshade', ant: 'Rainstorm' },
-    { word: 'Fascinating', meaning: 'মুগ্ধকর / অতি চমৎকার', pos: 'Adjective', syn: 'Captivating, enchanting, spellbinding', ant: 'Boring, dull' },
-    { word: 'Solitary', meaning: 'একাকী / নির্জন ও নিঃসঙ্গ', pos: 'Adjective', syn: 'Lone, isolated, single', ant: 'Crowded, accompanied' }
-  ]
+]
 };

@@ -18,7 +18,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A reward, prize, or monetary grant given by authority for an effort or service.",
     "exampleSentence": "The king gave a handsome bounty to the scholars and cage-builders.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "HSC Board Standard, Unit 1"
+    "boardExamTag": "HSC Board Standard, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-02",
@@ -30,7 +39,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Depending on, related to, or clarifying the surrounding circumstances.",
     "exampleSentence": "Contextual understanding of Rabindranath's satire makes the story even more profound.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-03",
@@ -42,7 +60,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To engage in long and careful consideration or discussion.",
     "exampleSentence": "The royal pundits met to deliberate on how to educate the ignorant bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "ponder"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "ponder"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-04",
@@ -54,7 +85,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who disparages someone or something, seeking to diminish their worth.",
     "exampleSentence": "The envious detractor complained that the bird was starving inside its cage.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-05",
@@ -66,7 +106,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling or showing great pleasure and satisfaction.",
     "exampleSentence": "The king was delighted to witness the golden sheen of the newly built cage.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-06",
@@ -78,7 +127,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A loud, unpleasant, and prolonged tumult or noise.",
     "exampleSentence": "The deafening din of scholars reciting mantras filled the entire palace courtyard.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-07",
@@ -90,7 +148,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An act of showing or explaining something clearly to an audience.",
     "exampleSentence": "The teachers gave a magnificent demonstration of the parrot's memorization method.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-08",
@@ -102,7 +169,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A loss of power, prosperity, health, or status; ruin.",
     "exampleSentence": "Rigid schooling led to the tragic downfall and death of the vibrant bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-09",
@@ -114,7 +190,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely beautiful, delicate, and pleasing to look at.",
     "exampleSentence": "Goldsmiths crafted an exquisite golden cage that dazzled all royal visitors.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "splendid",
+      "magnificent"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "splendid",
+      "magnificent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u1-l1-10",
@@ -126,7 +217,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To assign the responsibility for doing something to someone.",
     "exampleSentence": "The king decided to entrust the education of the bird to his nephews.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-11",
@@ -138,7 +238,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To grow or develop in a healthy or vigorous way; thrive.",
     "exampleSentence": "All the relatives and scribes flourished with wealth from the education fund.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "prosper"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "prosper"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-12",
@@ -150,7 +263,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Lacking physical strength, energy, or power; weak.",
     "exampleSentence": "Over time, the stuffed parrot grew too feeble even to chirp or flutter.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-13",
@@ -162,7 +284,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To fly unsteadily or flap wings quickly and lightly.",
     "exampleSentence": "The caged parrot tried to flutter its wings toward the open forest sky.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-14",
@@ -174,7 +305,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Lack of good sense; foolishness or an unwise action.",
     "exampleSentence": "Rabindranath Tagore satirized the utter folly of rote memorization in education.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-15",
@@ -186,7 +326,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Covered thinly with gold leaf or gold paint; opulent.",
     "exampleSentence": "Inside the gilded cage, the wild bird lost its natural song and freedom.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-16",
@@ -198,7 +347,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To move by jumping on one or both feet or legs.",
     "exampleSentence": "In the wild, the free bird used to hop merrily from branch to branch.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-17",
@@ -210,7 +368,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Causing lighthearted laughter and amusement; comical.",
     "exampleSentence": "Tagore presents a humorous yet biting critique of bureaucratic education.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "grave"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "grave"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-18",
@@ -222,7 +393,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The trait of being rude, insolent, and disrespectfully bold.",
     "exampleSentence": "The royal courtiers considered it impudence when the bird gasped for air.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-19",
@@ -234,7 +414,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Inborn; natural; present from birth rather than acquired.",
     "exampleSentence": "True learning must nurture a child's innate curiosity and creativity.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-20",
@@ -246,7 +435,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In the best possible way; perfectly.",
     "exampleSentence": "Ideally, schools should provide an open and joyful learning environment.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-21",
@@ -258,7 +456,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To remain hidden so as to wait in ambush or go unnoticed.",
     "exampleSentence": "Detractors lurking in dark corners whispered rumors about the bird's suffering.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-22",
@@ -270,7 +477,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a cheerful and joyous manner.",
     "exampleSentence": "The free forest birds sang merrily among the green tree tops.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-23",
@@ -282,7 +498,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The process of preserving a condition or keeping something in good repair.",
     "exampleSentence": "Enormous sums of money were allocated for the maintenance of the golden cage.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-24",
@@ -294,7 +519,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To climb up on or get on top of something, such as a horse or platform.",
     "exampleSentence": "The royal inspector mounted his grand elephant to inspect the parrot's school.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-25",
@@ -306,7 +540,20 @@ export const hscVocabularyList = [
     "englishMeaning": "So small or unimportant as to be not worth considering.",
     "exampleSentence": "The educators regarded the bird's actual physical health as completely negligible.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "substantial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "substantial"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-26",
@@ -318,7 +565,22 @@ export const hscVocabularyList = [
     "englishMeaning": "To think about something carefully, especially before making a decision.",
     "exampleSentence": "The king sat to ponder the reports submitted by the cage guardians.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "consider",
+      "deliberate"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "consider",
+      "deliberate"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u1-l1-27",
@@ -330,7 +592,16 @@ export const hscVocabularyList = [
     "englishMeaning": "People employed in an organization or engaged on an official undertaking.",
     "exampleSentence": "Scores of royal personnel were hired just to polish the golden cage bars.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-28",
@@ -342,7 +613,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Speed in walking, running, or movement; rate of progress.",
     "exampleSentence": "The scribes worked at a furious pace to produce endless copies of the text.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-29",
@@ -354,7 +634,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Musical instruments played by striking with the hand or a beater.",
     "exampleSentence": "Loud percussion drums were sounded to announce the parrot's grand education.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-30",
@@ -366,7 +655,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To make the surface of something smooth and shiny by rubbing.",
     "exampleSentence": "The workers spent all day using powder to polish the bird's magnificent cage.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-31",
@@ -378,7 +676,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Deserving censure or condemnation; blameworthy.",
     "exampleSentence": "Forcing manuscripts down a living creature's throat was a reprehensible act.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-32",
@@ -390,7 +697,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The sacred writings or treatises of a religion or philosophical system.",
     "exampleSentence": "Leaves torn from thick scripture texts were shoved into the parrot's mouth.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-33",
@@ -402,7 +718,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To authoritatively or urgently call on someone to be present.",
     "exampleSentence": "The king decided to summon the nephews to answer the complaints of critics.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-34",
@@ -414,7 +739,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling sudden shock or alarm caused by an unexpected occurrence.",
     "exampleSentence": "The courtiers were startled when the nephew claimed the bird had no complaints.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "astonished"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "astonished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-35",
@@ -426,7 +764,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To make false and damaging spoken statements about someone.",
     "exampleSentence": "The nephews claimed that the envious detractors were spreading pure slander.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-36",
@@ -438,7 +785,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To make a loud, harsh, piercing cry or sound.",
     "exampleSentence": "The starving parrot could only let out a faint screech when prodded.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "hush"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "hush"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-37",
@@ -450,7 +810,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To emit a long, deep, audible breath expressing sadness or exhaustion.",
     "exampleSentence": "The dying bird let out a final weak sigh inside its magnificent prison.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "cheer"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "cheer"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-38",
@@ -462,7 +835,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The use of humor, irony, or exaggeration to expose human folly and vices.",
     "exampleSentence": "The Parrot's Tale is a world-famous political and pedagogical satire by Tagore.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-39",
@@ -474,7 +856,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A slender, woody shoot growing from a branch or stem of a tree.",
     "exampleSentence": "The forest bird once happily built its nest on a green leafy twig.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-40",
@@ -486,7 +877,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To pull or rip something apart or into pieces with force.",
     "exampleSentence": "The pundits would tear page after page of manuscripts into tiny bits for the bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-41",
@@ -498,7 +898,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To push someone or something suddenly or violently in a specified direction.",
     "exampleSentence": "Handfuls of torn manuscript pages were thrust directly into the bird's beak.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-42",
@@ -510,7 +919,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Making a very loud and deep noise like thunder.",
     "exampleSentence": "Thunderous applause filled the auditorium when the royal education was praised.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-43",
@@ -522,7 +940,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not educated; illiterate; unable to read or write.",
     "exampleSentence": "The king declared that the unlettered forest bird must be formally civilized.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-44",
@@ -534,7 +961,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Being truly or very much so; real, genuine, and authentic.",
     "exampleSentence": "The bird's cage became a veritable spectacle for spectators from across the empire.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "authentic"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "authentic"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l1-45",
@@ -546,7 +986,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Immoral or wicked behavior; a bad habit or moral weakness.",
     "exampleSentence": "Greed and sycophancy were the underlying vices of the royal courtiers.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l1-46",
@@ -558,7 +1007,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The degree of skill with which a product is made or a job done.",
     "exampleSentence": "The gold cage was praised for its unmatched workmanship and flawless finish.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-24",
@@ -570,7 +1028,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The customary code of polite behavior in society or among members of a particular profession or group.",
     "exampleSentence": "Understanding table etiquette is essential when attending formal dinners in different countries.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam, Unit 10"
+    "boardExamTag": "HSC Board Exam, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "manners"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "manners"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-25",
@@ -582,7 +1053,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Polite ways of behaving toward others with social respect and consideration.",
     "exampleSentence": "Good manners demand that you shake hands softly in China so as not to appear aggressive.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper, Unit 10"
+    "boardExamTag": "HSC 1st Paper, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "etiquette"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "etiquette"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-26",
@@ -594,7 +1078,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Characterized by elegance, good taste, refinement, and polite movement.",
     "exampleSentence": "Be graceful and polite when taking food with chopsticks in Chinese dining culture.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dhaka Board Standard, Unit 10"
+    "boardExamTag": "Dhaka Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-27",
@@ -606,7 +1099,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Feelings of anger or antipathy resulting in hostile or violent behavior.",
     "exampleSentence": "In China, a firm handshake could be interpreted as a sign of aggression.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-28",
@@ -618,7 +1120,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A pair of small, thin sticks used especially in East Asia for eating food.",
     "exampleSentence": "Don't play with chopsticks or point at anyone with them while dining in China.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Textbook Vocab, Unit 10"
+    "boardExamTag": "HSC Textbook Vocab, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-29",
@@ -630,7 +1141,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A standard or pattern, especially of social behavior, that is typical or expected of a group.",
     "exampleSentence": "Politely refusing a gift before accepting it is the cultural norm in China.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-30",
@@ -642,7 +1162,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having lost confidence or enthusiasm; disheartened.",
     "exampleSentence": "Foreign visitors shouldn't feel discouraged when trying to learn complex cultural etiquette.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-31",
@@ -654,7 +1183,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To represent or identify by means of a symbol or emblem.",
     "exampleSentence": "In many cultures, sharing bread is used to symbolise friendship and unity.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-32",
@@ -666,7 +1204,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who is older or has a higher rank or standing than another.",
     "exampleSentence": "In China, it is customary to greet the most senior person first.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-33",
@@ -678,7 +1225,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relaxed and unconcerned; not formal.",
     "exampleSentence": "Casual clothing is fine for everyday outings, but formal dinners demand etiquette.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "informal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "informal"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-34",
@@ -690,7 +1250,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A woman who receives or entertains guests socially or commercially.",
     "exampleSentence": "It is customary to thank the hostess warmly for preparing a wonderful meal.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "host"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "host"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-35",
@@ -702,7 +1275,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action or process of making ready or being made ready for use or consideration.",
     "exampleSentence": "Hours of careful preparation went into creating the magnificent feast for royal guests.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-36",
@@ -714,7 +1296,20 @@ export const hscVocabularyList = [
     "englishMeaning": "In a gradual way; slowly; by degrees.",
     "exampleSentence": "Gradually, foreign travelers learn to appreciate local table traditions.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "abruptly"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "abruptly"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-37",
@@ -726,7 +1321,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Persons born in or coming from another country.",
     "exampleSentence": "Foreigners should study local customs before visiting traditional households.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-38",
@@ -738,7 +1342,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Just; only; no more than.",
     "exampleSentence": "Politeness is not merely a formality; it is a sign of deep human respect.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-39",
@@ -750,7 +1363,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To hold out something toward someone; offer.",
     "exampleSentence": "Always extend your right hand when offering a greeting or receiving a gift in Arab culture.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-40",
@@ -762,7 +1384,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Acting or done at leisure; unhurried or relaxed.",
     "exampleSentence": "South African greetings are leisurely and filled with warm conversation.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "casual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "casual"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-41",
@@ -774,7 +1409,20 @@ export const hscVocabularyList = [
     "englishMeaning": "According to the customs or usual practices associated with a particular society.",
     "exampleSentence": "It is customary in Britain to write a thank-you note to the host after a formal dinner.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "habitual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "habitual"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-42",
@@ -786,7 +1434,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Having a relaxed, friendly, or unofficial style, manner, or nature.",
     "exampleSentence": "An informal dinner with close friends doesn't require strict seating arrangements.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "casual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "casual"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-43",
@@ -798,7 +1459,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The quality of being thankful; readiness to show appreciation and return kindness.",
     "exampleSentence": "Expressing gratitude to your hosts is an essential element of good manners.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "gratefulness"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "gratefulness"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-44",
@@ -810,7 +1484,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A movement of part of the body, especially a hand or the head, to express an idea or meaning.",
     "exampleSentence": "In South Africa, a warm wave and smile is a common greeting gesture.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-45",
@@ -822,7 +1505,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Held in common by two or more parties; shared.",
     "exampleSentence": "Mutual respect is the foundation of harmonious cross-cultural interactions.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "individual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "individual"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-46",
@@ -834,7 +1530,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not allowed; banned.",
     "exampleSentence": "Public kissing is strictly forbidden in conservative Middle Eastern societies.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-47",
@@ -846,7 +1551,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Implements, containers, or other articles, especially for household or dining use.",
     "exampleSentence": "In traditional Middle Eastern dining, people often eat with their right hand using hardly any utensils.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam Model"
+    "boardExamTag": "HSC Board Exam Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-48",
@@ -858,7 +1572,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of receiving something or the fact of its being received.",
     "exampleSentence": "Upon receipt of a gift in China, express sincere thanks even if you initially hesitated.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "acquisition"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "acquisition"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-01",
@@ -870,7 +1597,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Lack of interest, enthusiasm, or concern for others.",
     "exampleSentence": "The selfish man was relieved of his apathy toward people's polite behavior.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dhaka Board Standard"
+    "boardExamTag": "Dhaka Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-02",
@@ -882,7 +1618,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To sound a horn, whistle, or instrument loudly.",
     "exampleSentence": "Do not blow the car horn unnecessarily in quiet residential neighborhoods.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "honk"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "honk"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-03",
@@ -894,7 +1643,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Care taken to avoid danger or mistakes.",
     "exampleSentence": "The girls approached the mysterious machine with extreme caution.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-04",
@@ -906,7 +1664,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having very specific requirements; hard to please.",
     "exampleSentence": "Being overly choosy about food when invited out can appear rude to your host.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-05",
@@ -918,7 +1685,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To take into account; consider or include.",
     "exampleSentence": "Small acts of politeness count heavily in building strong community bonds.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "consider"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "consider"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-06",
@@ -930,7 +1710,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Polite, respectful, and considerate in manner.",
     "exampleSentence": "Always remain courteous even when expressing disagreement online or in person.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-07",
@@ -942,7 +1731,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To move slowly and carefully in order to avoid being heard or noticed.",
     "exampleSentence": "The girls tried to creep softly toward the laboratory without alerting the guard.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-08",
@@ -954,7 +1752,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Very large in size, quantity, or extent.",
     "exampleSentence": "The scientist constructed an enormous machine inside the hilltop cave.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "miniature"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "miniature"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-09",
@@ -966,7 +1777,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To burst or shatter violently and noisily.",
     "exampleSentence": "When overloaded with polite energy, the evil contraption exploded into dust.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-10",
@@ -978,7 +1798,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A word or phrase used to express an idea or polite feeling.",
     "exampleSentence": "Phrases like 'please' and 'thank you' are vital expressions of social respect.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-11",
@@ -990,7 +1819,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Lacking restraint in spending money or using resources; excessive.",
     "exampleSentence": "There is no need for extravagant gifts when a heartfelt thank-you card suffices.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "moderate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "moderate"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-12",
@@ -1002,7 +1844,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state in which two people look directly into each other's eyes.",
     "exampleSentence": "Maintaining warm eye contact during conversations conveys sincerity and confidence.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-13",
@@ -1014,7 +1865,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An individual possessing the freedom and capacity to make their own ethical choices.",
     "exampleSentence": "As a free-will agent, every student is responsible for maintaining good online manners.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-14",
@@ -1026,7 +1886,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To refuse to allow something; prohibit.",
     "exampleSentence": "Netiquette rules forbid the use of insulting language in public forums.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-15",
@@ -1038,7 +1907,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A movement of part of the body to convey an attitude or polite message.",
     "exampleSentence": "A friendly waving gesture reassured the lost traveler in the foreign city.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-16",
@@ -1050,7 +1928,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The feeling or quality of being grateful; appreciation.",
     "exampleSentence": "Expressing gratefulness makes both the giver and the receiver feel appreciated.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "gratitude"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "gratitude"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-17",
@@ -1062,7 +1953,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Items of food and other essential household goods sold in a store.",
     "exampleSentence": "It is good etiquette to help elderly neighbors carry their heavy grocery bags.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-18",
@@ -1074,7 +1974,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To emit or cause a car horn to emit a loud sound.",
     "exampleSentence": "Polite drivers do not honk aggressively at pedestrians in crosswalks.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "blow"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "blow"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-19",
@@ -1086,7 +1999,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To create or design something that has not existed before.",
     "exampleSentence": "The man took a mission to invent a device that would steal polite words.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-20",
@@ -1098,7 +2020,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A formal inquiry or systematic search to discover facts and truth.",
     "exampleSentence": "Their clever investigation led the two girls to uncover the secret hilltop laboratory.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-21",
@@ -1110,7 +2041,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being free within society from oppressive restrictions.",
     "exampleSentence": "Online liberty comes with the moral responsibility to practice proper netiquette.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-22",
@@ -1122,7 +2062,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An important assignment given to a person or group.",
     "exampleSentence": "The students embarked on a mission to spread kindness across their school.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-23",
@@ -1134,7 +2083,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A part of a whole; an amount of food served for one person.",
     "exampleSentence": "Take a moderate portion of food so that enough remains for other dinner guests.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-24",
@@ -1146,7 +2104,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Not often; seldom.",
     "exampleSentence": "Courteous individuals rarely get involved in bitter online arguments.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Barishal Board Model"
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "seldom",
+      "frequently"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "seldom"
+    ],
+    "crossRefAntonyms": [
+      "frequently"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-l2-25",
@@ -1158,7 +2132,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To release from a burdensome duty, pain, or discomfort.",
     "exampleSentence": "Saying 'excuse me' can instantly relieve awkward social tension.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-26",
@@ -1170,7 +2153,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To wind back toward the beginning or reverse an operation.",
     "exampleSentence": "The girls managed to rewind the machine's dial, restoring stolen polite phrases.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-27",
@@ -1182,7 +2174,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Space that can be occupied or where something can be done.",
     "exampleSentence": "Make room for elderly and disabled passengers when boarding public transport.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-28",
@@ -1194,7 +2195,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Fulfillment of one's wishes, expectations, or needs.",
     "exampleSentence": "Helping others with polite sincerity brings immense inner satisfaction.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "contentment"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "contentment"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-29",
@@ -1206,7 +2220,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To throw in various random directions; disperse widely.",
     "exampleSentence": "When the machine exploded, stolen words began to scatter back to their owners.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-30",
@@ -1218,7 +2241,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Not often; rarely.",
     "exampleSentence": "People who practice good manners seldom find themselves in unnecessary conflicts.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Dinajpur Board Model"
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "rarely",
+      "frequently"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "rarely"
+    ],
+    "crossRefAntonyms": [
+      "frequently"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-l2-31",
@@ -1230,7 +2269,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Having a striking appearance or style, often excessively ornate.",
     "exampleSentence": "True elegance lies in modesty rather than in wearing showy decorations.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "gaudy",
+      "modest"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "gaudy"
+    ],
+    "crossRefAntonyms": [
+      "modest"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-l2-32",
@@ -1242,7 +2297,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The prevailing tone or tendency of what is said or done; mood.",
     "exampleSentence": "Polite greetings lift the spirit of everyone in the room.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "apathy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "apathy"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-33",
@@ -1254,7 +2322,23 @@ export const hscVocabularyList = [
     "englishMeaning": "To become actively involved or take part in solving a problem.",
     "exampleSentence": "The brave girls decided to take a hand in solving the mystery of the stolen words.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "intervene",
+      "abstain"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "intervene"
+    ],
+    "crossRefAntonyms": [
+      "abstain"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-l2-34",
@@ -1266,7 +2350,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Very much; extremely; to an intense degree.",
     "exampleSentence": "The man was terribly happy with his initial success before the girls intervened.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "immensely"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "immensely"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l2-35",
@@ -1278,7 +2375,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely hard, exhausting, and continuous physical or mental effort.",
     "exampleSentence": "After much toil, the girls discovered where the wicked man was hiding.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l2-36",
@@ -1290,7 +2396,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To cause distress, discomfort, pain, or inconvenience to someone.",
     "exampleSentence": "It troubled the man a lot when he saw smiling people using polite expressions.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "HSC Board Exam 2026"
+    "boardExamTag": "HSC Board Exam 2026",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "bother"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "bother"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-74",
@@ -1302,7 +2421,16 @@ export const hscVocabularyList = [
     "englishMeaning": "At first; at the beginning or initial stage of an event.",
     "exampleSentence": "In China, a gift is initially refused out of courtesy before it is gratefully accepted.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam, Unit 10"
+    "boardExamTag": "HSC Board Exam, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-75",
@@ -1314,7 +2442,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To give a polite word or sign of welcome or recognition upon meeting someone.",
     "exampleSentence": "In Chinese cultural tradition, you should greet the oldest or most senior person first.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-76",
@@ -1326,7 +2463,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Either side of the face below the eye and above the jaw.",
     "exampleSentence": "Kissing on the cheek in greeting is common in Britain but strictly forbidden in public in the Middle East.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "NCTB Textbook Vocab, Unit 10"
+    "boardExamTag": "NCTB Textbook Vocab, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-01",
@@ -1338,7 +2484,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A way of dealing with situations or coming nearer to someone.",
     "exampleSentence": "A polite and humble approach helps foreigners adapt to different international customs.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam, Unit 10"
+    "boardExamTag": "HSC Board Exam, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "avoidance"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "avoidance"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-02",
@@ -1350,7 +2509,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Based on random choice or personal whim rather than reason.",
     "exampleSentence": "Some cultural dining rules may seem arbitrary to outsiders, but they carry deep traditional value.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-03",
@@ -1362,7 +2530,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To take the trouble to do something or cause annoyance to someone.",
     "exampleSentence": "Never bother hostesses by asking inappropriate questions during formal dinner preparations.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper Textbook"
+    "boardExamTag": "HSC 1st Paper Textbook",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "trouble"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "trouble"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-04",
@@ -1374,7 +2555,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A prehistoric person or a primitive, uncivilized individual.",
     "exampleSentence": "Table etiquette distinguishes a civilized society from primitive caveman behavior.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-05",
@@ -1386,7 +2576,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Shouts of joy or expressions of warm salutation and happiness.",
     "exampleSentence": "South African greetings are leisurely and marked by good cheer and laughter.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "despair"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "despair"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-06",
@@ -1398,7 +2601,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To bite and grind food in the mouth with the teeth.",
     "exampleSentence": "Good manners dictate that you should chew your food quietly with your mouth closed.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Textbook Vocab, Unit 10"
+    "boardExamTag": "HSC Textbook Vocab, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "gulp"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "gulp"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-07",
@@ -1410,7 +2626,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To munch or chew loudly and vigorously.",
     "exampleSentence": "Don't chomp food loudly when dining at a formal Chinese banquet.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper Model"
+    "boardExamTag": "HSC 1st Paper Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-08",
@@ -1422,7 +2647,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Having an advanced culture, politeness, and refined social manners.",
     "exampleSentence": "Respecting local dining customs is the mark of a civilized traveler.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dhaka Board Standard"
+    "boardExamTag": "Dhaka Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "courteous"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "courteous"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-09",
@@ -1434,7 +2672,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To state or assert that something is true or belongs to oneself.",
     "exampleSentence": "Anthropologists claim that dining rituals reflect a community's deepest values.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "maintain"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "maintain"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-10",
@@ -1446,7 +2697,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling anxiety or showing thoughtful care about something.",
     "exampleSentence": "Hosts are concerned about the comfort and satisfaction of their guests.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "anxious"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "anxious"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-11",
@@ -1458,7 +2722,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Wishing to do what is right and taking immense care in one's actions.",
     "exampleSentence": "A conscientious guest always remembers to send a thank-you note after dinner.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-12",
@@ -1470,7 +2743,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Careful not to cause inconvenience or hurt to others.",
     "exampleSentence": "It is considerate to offer help to the hostess with clearing up after the meal.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-13",
@@ -1482,7 +2764,22 @@ export const hscVocabularyList = [
     "englishMeaning": "To think carefully about something, typically before making a decision.",
     "exampleSentence": "In China, a firm handshake might be considered a sign of unwanted aggression.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Sylhet Board Model"
+    "boardExamTag": "Sylhet Board Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "deliberate",
+      "ponder"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "deliberate",
+      "ponder"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u10-14",
@@ -1494,7 +2791,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A talk, especially an informal one, between two or more people.",
     "exampleSentence": "South African greetings involve warm eye-contact and pleasant conversations.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-15",
@@ -1506,7 +2812,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A signal or reminder for someone to do something.",
     "exampleSentence": "Wait for the host's cue before you begin eating dinner in Great Britain.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-16",
@@ -1518,7 +2833,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a careful and prudent manner, especially in order to avoid causing offense.",
     "exampleSentence": "If you dislike a dish, discreetly leave it on your plate without drawing attention.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-17",
@@ -1530,7 +2854,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling or showing strong disapproval, revulsion, or intense annoyance.",
     "exampleSentence": "Hosts may feel disgusted if guests violate basic table sanitation rules.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "delighted"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "delighted"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-18",
@@ -1542,7 +2879,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The outside limit of an object, surface, or area.",
     "exampleSentence": "Place your knife and fork on the edge of the plate when pausing during a meal.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-19",
@@ -1554,7 +2900,16 @@ export const hscVocabularyList = [
     "englishMeaning": "With no part left out; whole and complete.",
     "exampleSentence": "The entire family participates in receiving guests warmly in Middle Eastern households.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-20",
@@ -1566,7 +2921,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Regularly or habitually; occurring many times.",
     "exampleSentence": "Gifts are given frequently in the Middle East to show genuine love and mutual respect.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper Textbook"
+    "boardExamTag": "HSC 1st Paper Textbook",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "rarely",
+      "seldom"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "rarely",
+      "seldom"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-21",
@@ -1578,7 +2948,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Solid, resolute, and strongly held or gripped.",
     "exampleSentence": "While a firm handshake is expected in the West, it may seem aggressive in China.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dhaka Board 2024"
+    "boardExamTag": "Dhaka Board 2024",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "solid",
+      "feeble"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "solid"
+    ],
+    "crossRefAntonyms": [
+      "feeble"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-22",
@@ -1590,7 +2976,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Cartilage, especially when present as a tough substance in cooked meat.",
     "exampleSentence": "Discreetly remove gristle from your mouth using a fork or napkin.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-23",
@@ -1602,7 +2997,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To grasp or seize something suddenly or roughly.",
     "exampleSentence": "Never grab food across the table; instead, ask someone politely to pass it.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Rajshahi Board Standard"
+    "boardExamTag": "Rajshahi Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-24",
@@ -1614,7 +3018,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A sauce made from meat juices and seasonings used with roasted dishes.",
     "exampleSentence": "In Britain, use a piece of bread on a fork to soak up remaining sauce or gravy.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Textbook Vocab"
+    "boardExamTag": "HSC Textbook Vocab",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-25",
@@ -1626,7 +3039,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To swallow food or liquid quickly and in large quantities.",
     "exampleSentence": "It is considered impolite to gulp drinks hastily during a formal dinner.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-26",
@@ -1638,7 +3060,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Done or doing constantly as a habit; customary.",
     "exampleSentence": "Giving dates and sweets as gifts is a habitual practice in the Middle East.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Sylhet Board Question"
+    "boardExamTag": "Sylhet Board Question",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "customary",
+      "chronic"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "customary",
+      "chronic"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u10-27",
@@ -1650,7 +3087,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Holding someone tightly in one's arms, typically to express affection.",
     "exampleSentence": "Hugging between same-sex friends is a common social greeting across Arab nations.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-28",
@@ -1662,7 +3108,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who receives or entertains other people as guests.",
     "exampleSentence": "Wait until your host indicates that it is time to start eating the meal.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-29",
@@ -1674,7 +3129,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To establish or indicate who or what someone or something is.",
     "exampleSentence": "Cross-cultural training helps travelers identify acceptable local social norms.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-30",
@@ -1686,7 +3150,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Without intention; accidentally or by careless oversight.",
     "exampleSentence": "Avoid using your left hand so you do not inadvertently offend your host.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-31",
@@ -1698,7 +3171,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To point out, show, or suggest the necessity of an action.",
     "exampleSentence": "In Britain, wait until the host indicates that guests may take their seats.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper Textbook"
+    "boardExamTag": "HSC 1st Paper Textbook",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-32",
@@ -1710,7 +3192,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A sign or piece of information indicating something.",
     "exampleSentence": "A smile and nod are common indications of polite recognition in South Africa.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Jashore Board Standard"
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-33",
@@ -1722,7 +3213,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Insisting or demanding something firmly; not allowing refusal.",
     "exampleSentence": "Hosts may be pleasantly insistent that you try every specialty on the table.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "firm"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "firm"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-34",
@@ -1734,7 +3238,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being without or not having enough of something.",
     "exampleSentence": "A lack of cultural awareness can lead to awkward dining misunderstandings.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dhaka Board Standard"
+    "boardExamTag": "Dhaka Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-35",
@@ -1746,7 +3259,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To be in or move into a sloping position; rest against support.",
     "exampleSentence": "Do not lean heavily on the dining table or put your elbows up during dinner.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-36",
@@ -1758,7 +3280,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To cause or enable a condition or state of affairs to continue.",
     "exampleSentence": "Maintain friendly eye-contact when greeting someone with a handshake in South Africa.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-37",
@@ -1770,7 +3301,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Untidy or dirty; lacking order and neatness.",
     "exampleSentence": "Avoid leaving a messy plate when finishing your meal at a host's dinner table.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-38",
@@ -1782,7 +3322,23 @@ export const hscVocabularyList = [
     "englishMeaning": "To lower and raise one's head slightly and briefly in greeting or agreement.",
     "exampleSentence": "Some South African women do not shake hands and merely nod their head in greeting.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper Textbook"
+    "boardExamTag": "HSC 1st Paper Textbook",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "gesture",
+      "refuse"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "gesture"
+    ],
+    "crossRefAntonyms": [
+      "refuse"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u10-39",
@@ -1794,7 +3350,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To cause someone to feel hurt, angry, or upset by bad behavior.",
     "exampleSentence": "Offering gifts with only one hand may offend hosts in Chinese culture.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Sylhet Board Model"
+    "boardExamTag": "Sylhet Board Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-40",
@@ -1806,7 +3371,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The position in which someone holds their body when standing or sitting.",
     "exampleSentence": "Sitting with an upright, graceful posture shows respect during an official dinner.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "pose"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "pose"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-41",
@@ -1818,7 +3396,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Having or showing the capacity to develop into something in the future.",
     "exampleSentence": "Understanding cultural differences prevents potential embarrassment when traveling.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "improbable"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "improbable"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-42",
@@ -1830,7 +3421,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To swell or become larger and fuller.",
     "exampleSentence": "Bread rolls served at British dinners often puff up delightfully during baking.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "shrink"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "shrink"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-43",
@@ -1842,7 +3446,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a quiet manner; with little or no sound.",
     "exampleSentence": "Enjoy your food quietly without slurping or talking with your mouth full.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-44",
@@ -1854,7 +3467,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The improvement or clarification of something with elegant taste and manner.",
     "exampleSentence": "Table manners were developed through centuries of social refinement.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Exam"
+    "boardExamTag": "HSC Board Exam",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "polish"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "polish"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-45",
@@ -1866,7 +3492,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To indicate or show that one is not willing to do or accept something.",
     "exampleSentence": "In Chinese culture, guests politely refuse a gift several times before finally accepting it.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "consent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "consent"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-46",
@@ -1878,7 +3517,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To throw in various random directions; separate and disperse.",
     "exampleSentence": "Never scatter breadcrumbs on the tablecloth; keep your dining area tidy.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "HSC 1st Paper Model"
+    "boardExamTag": "HSC 1st Paper Model",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-01",
@@ -1890,7 +3538,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To restrain oneself from partaking in or indulging in something harmful or risky.",
     "exampleSentence": "Adolescents should abstain from substance abuse and risky behaviors.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-02",
@@ -1902,7 +3559,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The learning, gaining, or developing of a skill, habit, or cognitive quality.",
     "exampleSentence": "The acquisition of adult skills is crucial during the teenage years.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-03",
@@ -1914,7 +3580,23 @@ export const hscVocabularyList = [
     "englishMeaning": "The transitional period of human growth and development between childhood and adulthood (ages 13 to 18).",
     "exampleSentence": "Adolescence is a time of rapid growth, identity formation, and potential.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "BSMRTU Admission & Board Exam"
+    "boardExamTag": "BSMRTU Admission & Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "puberty",
+      "adulthood"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "puberty"
+    ],
+    "crossRefAntonyms": [
+      "adulthood"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u9-l1-04",
@@ -1926,7 +3608,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who is fully grown or developed, legally aged 18 and over in our society.",
     "exampleSentence": "Persons 18 and over are legally considered adults in our society.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "infant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "infant"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-05",
@@ -1938,7 +3633,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A colorless volatile flammable liquid which is the intoxicating constituent of wine, beer, and spirits.",
     "exampleSentence": "Many adolescents face peer pressure to use alcohol and cigarettes.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-06",
@@ -1950,7 +3654,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To originate, emerge, or come into being as a noticeable issue or event.",
     "exampleSentence": "Community leaders should intervene constructively when youth problems arise.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "occur"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "occur"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-07",
@@ -1962,7 +3679,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The act of keeping away from or preventing something harmful from happening.",
     "exampleSentence": "The avoidance of harmful drugs during teenage years protects future health.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-08",
@@ -1974,7 +3700,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An obstacle, taboo, or rule that prevents progress, movement, or access.",
     "exampleSentence": "Provider attitudes often pose a significant barrier to adolescent healthcare access.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-09",
@@ -1986,7 +3721,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to biology, living organisms, and natural bodily processes.",
     "exampleSentence": "Biological processes drive many developmental aspects of puberty and growth.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-10",
@@ -1998,7 +3742,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having the ability, skill, or power to do or understand something successfully.",
     "exampleSentence": "Adolescents are not yet fully capable of evaluating complex long-term consequences.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Exam, Unit 9"
+    "boardExamTag": "HSC Board Exam, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-11",
@@ -2010,7 +3763,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The imparting or exchanging of information by speaking, writing, or using digital media.",
     "exampleSentence": "The spread of global communication has transformed adolescent lifestyles.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "interaction"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "interaction"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-12",
@@ -2022,7 +3788,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A group of people living in the same place or having particular characteristics in common.",
     "exampleSentence": "Members of the community share the responsibility to support adolescent wellbeing.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "individual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "individual"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-13",
@@ -2034,7 +3813,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A result or effect of an action, condition, or behavioral decision.",
     "exampleSentence": "Adolescents should consider the serious consequences of reckless choices.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-14",
@@ -2046,7 +3834,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Notably large in size, amount, extent, or importance.",
     "exampleSentence": "Adolescence is also a time of considerable risk and peer pressure.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "substantial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "substantial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-15",
@@ -2058,7 +3859,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To deal successfully with something difficult, stressful, or demanding.",
     "exampleSentence": "Life skills training helps adolescents to cope with academic and emotional pressures.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-16",
@@ -2070,7 +3880,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Having decisive importance in the success, failure, or development of something.",
     "exampleSentence": "Adolescence represents one of the critical transitions in human life.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "crucial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "crucial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-17",
@@ -2082,7 +3905,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A factor or element that decisively determines the nature or outcome of something.",
     "exampleSentence": "The biological determinants of puberty are largely universal in nature.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "consequence"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "consequence"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-18",
@@ -2094,7 +3930,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a way that is not the same as another; in another manner.",
     "exampleSentence": "Laws, customs, and community practices affect adolescents differently than adults.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-19",
@@ -2106,7 +3951,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to the production, distribution, and consumption of goods, income, and resources.",
     "exampleSentence": "Young people gradually move toward social and economic independence.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Chattogram Board Standard"
+    "boardExamTag": "Chattogram Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "financial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "financial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-20",
@@ -2118,7 +3976,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To apply or bring to bear force, authority, effort, or psychological influence.",
     "exampleSentence": "Social contexts exert powerful influences on adolescent decision-making.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-21",
@@ -2130,7 +3997,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To undergo, encounter, or feel the effects of a situation or sensation.",
     "exampleSentence": "Adolescents experience profound biological and emotional transformations.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Exam, Unit 9"
+    "boardExamTag": "HSC Board Exam, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-22",
@@ -2142,7 +4018,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of treating someone unfairly in order to benefit from their work or vulnerability.",
     "exampleSentence": "Lack of legal protections leaves young people vulnerable to exploitation.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Sylhet Board Exam"
+    "boardExamTag": "Sylhet Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "empowerment"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "empowerment"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-23",
@@ -2154,7 +4043,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To a moderately large extent or degree; with reasonable consistency.",
     "exampleSentence": "The physical stages of puberty are fairly universal across all human societies.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-24",
@@ -2166,7 +4064,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to or encompassing the whole world; worldwide.",
     "exampleSentence": "Global digital media connects adolescents across countries and cultures.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "universal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "universal"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-25",
@@ -2178,7 +4089,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being unable to do something due to lack of power, skill, or development.",
     "exampleSentence": "Inability to perceive hidden risks can lead adolescents into dangerous situations.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-26",
@@ -2190,7 +4110,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A single human being as distinct from a group, class, or family.",
     "exampleSentence": "Most individuals go through developmental stages regardless of their background.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-27",
@@ -2202,7 +4131,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The earliest period of childhood development, from birth to age two.",
     "exampleSentence": "Rapid growth during adolescence is second only to that in infancy.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "adulthood"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "adulthood"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-28",
@@ -2214,7 +4156,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Done with conscious intention, purpose, premeditation, or design.",
     "exampleSentence": "Awareness campaigns educate teens about preventing intentional harm and injuries.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "deliberate",
+      "unintentional"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "deliberate"
+    ],
+    "crossRefAntonyms": [
+      "unintentional"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u9-l1-29",
@@ -2226,7 +4184,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To step into a situation to prevent undesirable outcomes or resolve conflict.",
     "exampleSentence": "Adults must intervene effectively when young people encounter mental health problems.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-30",
@@ -2238,7 +4205,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not taking something into account; regardless of external conditions.",
     "exampleSentence": "Individuals pass through developmental stages irrespective of social or economic status.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-31",
@@ -2250,7 +4226,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Of crucial importance; serving as the fundamental or chief factor.",
     "exampleSentence": "During adolescence one experiences several key physical and cognitive developments.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "crucial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "crucial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-32",
@@ -2262,7 +4251,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Doing something or occurring after the usual, expected, or proper time.",
     "exampleSentence": "In modern urbanized societies, educated individuals tend to marry late.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-33",
@@ -2274,7 +4272,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The length of time for which a person, animal, or organism lives or functions.",
     "exampleSentence": "Adolescence represents one of the critical transitions in a person's life span.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Sylhet Board Exam"
+    "boardExamTag": "Sylhet Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-34",
@@ -2286,7 +4293,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The biological and psychological process of reaching full development and maturity.",
     "exampleSentence": "Physical and sexual maturation marks the transition toward adulthood.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-35",
@@ -2298,7 +4314,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Consisting in or characterized by the absence rather than the presence of distinguishing features; adverse or harmful.",
     "exampleSentence": "Early risky habits can have long-lasting negative impacts on future health.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "positive"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "positive"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-36",
@@ -2310,7 +4339,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To happen, come to pass, or take place naturally.",
     "exampleSentence": "Biological growth that occurs after childhood prepares the body for adult life.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "arise"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "arise"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-37",
@@ -2322,7 +4364,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To present or constitute a problem, danger, or difficulty.",
     "exampleSentence": "Provider attitudes often pose significant barriers to accessing youth health services.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-38",
@@ -2334,7 +4385,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Constructive, optimistic, or confident; having a good or beneficial effect.",
     "exampleSentence": "Supportive families exert a positive influence on teenagers' emotional health.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "negative"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "negative"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-39",
@@ -2346,7 +4410,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The condition or period of being pregnant with an unborn offspring.",
     "exampleSentence": "Lack of reproductive education puts vulnerable young girls at risk of unintended pregnancies.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-40",
@@ -2358,7 +4431,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Continuous physical force or psychological stress exerted upon someone.",
     "exampleSentence": "Teens often struggle with peer pressure to engage in high-risk behaviors.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-41",
@@ -2370,7 +4452,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To support, encourage, or actively contribute to the progress or growth of something.",
     "exampleSentence": "Schools have a duty to promote healthy adolescent development.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "hinder"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "hinder"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-42",
@@ -2382,7 +4477,25 @@ export const hscVocabularyList = [
     "englishMeaning": "The period during which adolescents reach sexual maturity and become capable of reproduction.",
     "exampleSentence": "The onset of puberty marks the biological passage from childhood to adolescence.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "adolescence",
+      "adulthood",
+      "infancy"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "adolescence"
+    ],
+    "crossRefAntonyms": [
+      "adulthood",
+      "infancy"
+    ],
+    "priority": 103
   },
   {
     "id": "vocab-u9-l1-43",
@@ -2394,7 +4507,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The area of variation between upper and lower limits on a particular scale.",
     "exampleSentence": "Adolescents must learn a wide range of interpersonal and academic skills.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Sylhet Board Exam"
+    "boardExamTag": "Sylhet Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "limitation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "limitation"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-44",
@@ -2406,7 +4532,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The biological process by which new individual organisms are produced by their parents.",
     "exampleSentence": "Laws sometimes restrict unmarried adolescents' access to reproductive health information.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "extinction"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "extinction"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-45",
@@ -2418,7 +4557,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To put a limit on or keep within specific bounds.",
     "exampleSentence": "Societal taboos restrict adolescents from openly discussing reproductive health.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-46",
@@ -2430,7 +4578,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A situation involving exposure to danger, injury, or loss.",
     "exampleSentence": "Impulsive decision-making puts young people at high risk of unintentional injury.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-47",
@@ -2442,7 +4599,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The function assumed or part played by a person or thing in a particular situation.",
     "exampleSentence": "Teenagers develop the skills needed to carry out adult roles successfully.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-48",
@@ -2454,7 +4620,20 @@ export const hscVocabularyList = [
     "englishMeaning": "More than two but not many of something.",
     "exampleSentence": "Children must pass through several stages in their lives to become adults.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "solitary"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "solitary"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-49",
@@ -2466,7 +4645,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a way that is exact, detailed, and specific.",
     "exampleSentence": "Specifically, adolescents struggle to assess the consequences of high-risk actions.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-50",
@@ -2478,7 +4666,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To pass or cause something to spread from one person or place to another.",
     "exampleSentence": "Unprotected risky behaviors can transmit serious infections such as HIV.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-51",
@@ -2490,7 +4687,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The process or a period of changing from one state or condition to another.",
     "exampleSentence": "Adolescents make a successful transition from childhood to adulthood with family guidance.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-52",
@@ -2502,7 +4708,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely great in scale, amount, intensity, or potential.",
     "exampleSentence": "Adolescence is a time of tremendous intellectual and emotional growth.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-53",
@@ -2514,7 +4729,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Done not on purpose or without conscious design.",
     "exampleSentence": "Young people taking physical hazards often suffer unintentional trauma.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "intentional",
+      "deliberate"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "intentional",
+      "deliberate"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u9-l1-54",
@@ -2526,7 +4756,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Applicable to, existing in, or characteristic of all people, places, or conditions.",
     "exampleSentence": "The biological determinants of puberty are universal throughout humanity.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "individual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "individual"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l1-55",
@@ -2538,7 +4781,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The process of making an area more urban or migration of populations to cities.",
     "exampleSentence": "Urbanization and digital communication have reshaped modern youth culture.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-56",
@@ -2550,7 +4802,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To differ in size, amount, degree, or nature from something else of the same type.",
     "exampleSentence": "The duration of adolescence may vary across cultures and socio-economic situations.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-57",
@@ -2562,7 +4823,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Susceptible to physical harm, emotional injury, or exploitation.",
     "exampleSentence": "Lack of life skills makes adolescents vulnerable to peer manipulation.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-58",
@@ -2574,7 +4844,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being comfortable, healthy, or happy.",
     "exampleSentence": "Healthy lifestyle choices established early promote future well-being.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-59",
@@ -2586,7 +4865,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Including a great variety of people or things; broad in scope.",
     "exampleSentence": "Adolescents experience a wide range of social and emotional changes.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-60",
@@ -2598,7 +4886,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The full duration, extent, or reach of something from beginning to end.",
     "exampleSentence": "Adolescence represents one of the most critical transitions in an individual's life span.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l1-61",
@@ -2610,7 +4907,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The process of moving or transitioning from one life stage, condition, or state to another.",
     "exampleSentence": "The onset of puberty marks the developmental passage from childhood to adolescence.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "transition"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "transition"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-01",
@@ -2622,7 +4932,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To fundamentally change something so that it is radically different and improved.",
     "exampleSentence": "Artificial intelligence has the potential to revolutionise the way we learn and teach.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dhaka Board 1st Paper, Unit 1"
+    "boardExamTag": "Dhaka Board 1st Paper, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-02",
@@ -2634,7 +4953,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Designed or altered to meet the specific requirements or abilities of an individual student.",
     "exampleSentence": "AI can provide students with personalised learning experiences tailored to their pace.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "universal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "universal"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-03",
@@ -2646,7 +4978,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To convert a process or task to be operated largely by automatic electronic equipment.",
     "exampleSentence": "AI educational tools can automate repetitive grading tasks for teachers.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-04",
@@ -2658,7 +4999,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Containing or characterized by repetition, especially when routine or uninteresting.",
     "exampleSentence": "Automating repetitive grading frees up valuable classroom time for teachers.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-05",
@@ -2670,7 +5020,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A limiting rule or condition; a lack of capacity or restrictive factor.",
     "exampleSentence": "While AI has immense benefits, it also has notable limitations in human empathy.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-06",
@@ -2682,7 +5041,16 @@ export const hscVocabularyList = [
     "englishMeaning": "People who teach something or guide learning in an academic or training context.",
     "exampleSentence": "AI is designed to assist instructors in classroom management rather than replace them.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-07",
@@ -2694,7 +5062,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A person or thing likely to cause damage, job loss, or danger.",
     "exampleSentence": "Some educators perceive automated software as a potential threat to their jobs.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "risk"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "risk"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-08",
@@ -2706,7 +5087,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not or no longer needed or useful; superfluous.",
     "exampleSentence": "Teachers fear technological automation might make human instructors redundant.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-09",
@@ -2718,7 +5108,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Putting a decision, plan, software, or agreement into effect.",
     "exampleSentence": "Implementing smart classroom software requires considerable financial investment.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-10",
@@ -2730,7 +5129,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Reciprocal action or social communication between individuals.",
     "exampleSentence": "Students need interpersonal human interaction alongside digital learning tools.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "communication"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "communication"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-11",
@@ -2742,7 +5154,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to a person's emotions, feelings, and psychological well-being.",
     "exampleSentence": "AI cannot replace the vital emotional support provided by empathetic teachers.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "HSC Board Standard, Unit 1"
+    "boardExamTag": "HSC Board Standard, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-12",
@@ -2754,7 +5175,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To a great degree; intensely or excessively.",
     "exampleSentence": "Relying too heavily on digital tools may hinder social skills development.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-13",
@@ -2766,7 +5196,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To have a strong effect on someone or something.",
     "exampleSentence": "Overdependence on algorithms could impact students' critical reasoning negatively.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-14",
@@ -2778,7 +5217,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Requiring careful handling due to privacy, confidentiality, or security risks.",
     "exampleSentence": "Educational software must protect sensitive personal data collected from students.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-15",
@@ -2790,7 +5238,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Decisive or critical, especially in the success or failure of something.",
     "exampleSentence": "EdTech companies play a crucial role in promoting ethical classroom tools.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "critical"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "critical"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-16",
@@ -2802,7 +5263,20 @@ export const hscVocabularyList = [
     "englishMeaning": "In a way that avoids activities that harm people or violate moral principles.",
     "exampleSentence": "Developers must ensure educational algorithms are deployed ethically.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "fairly"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "fairly"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-17",
@@ -2814,7 +5288,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a sensible, trustworthy, and accountable manner.",
     "exampleSentence": "Schools must use student analytics responsibly to safeguard pupil privacy.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-18",
@@ -2826,7 +5309,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Able to be easily reached, entered, used, or obtained by diverse users.",
     "exampleSentence": "Modern technology should be accessible to students from all socio-economic backgrounds.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Sylhet Board Exam"
+    "boardExamTag": "Sylhet Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-19",
@@ -2838,7 +5330,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Covering a large number and wide scope of subjects or individuals.",
     "exampleSentence": "Grants help make learning applications accessible to a broader range of schools.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-20",
@@ -2850,7 +5351,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Available as another possibility or choice.",
     "exampleSentence": "Institutions explore alternative funding options to finance modern computing labs.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "compulsory"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "compulsory"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-21",
@@ -2862,7 +5376,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To counterbalance or compensate for a cost, loss, or disadvantage.",
     "exampleSentence": "Educational grants help offset the high costs of digital software subscriptions.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-22",
@@ -2874,7 +5397,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To make something greater by adding to it; to supplement.",
     "exampleSentence": "Classroom technology should augment teacher capabilities rather than replace them.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-23",
@@ -2886,7 +5418,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having a personality or education that is fully developed and well balanced.",
     "exampleSentence": "A well-rounded education combines both smart technology and human mentorship.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-24",
@@ -2898,7 +5439,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Protected against danger, unauthorized access, or loss.",
     "exampleSentence": "Student databases must be properly secured against unauthorized external breaches.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "vulnerable"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "vulnerable"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-25",
@@ -2910,7 +5464,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The use of imagination or original ideas to create something artistic or novel.",
     "exampleSentence": "Current AI tools often lack the spontaneous creativity found in human minds.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "originality"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "originality"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-26",
@@ -2922,7 +5489,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The quality of being new, unique, and not derived from something else.",
     "exampleSentence": "Human teachers cultivate true originality and expressive thought in their students.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "reproduction"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "reproduction"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-27",
@@ -2934,7 +5514,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To succeed in dealing with a problem, difficulty, or obstacle.",
     "exampleSentence": "Future software updates aim to overcome algorithmic biases in language comprehension.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-28",
@@ -2946,7 +5535,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Featuring new, original, and advanced methods or ideas.",
     "exampleSentence": "Innovative learning apps provide interactive visual exercises for complex topics.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-29",
@@ -2958,7 +5556,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The conclusion that can be drawn from something or prospective future effects.",
     "exampleSentence": "Educators must carefully study the social implications of AI in education.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-30",
@@ -2970,7 +5577,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Easy to perceive, understand, or examine; open to public scrutiny.",
     "exampleSentence": "AI algorithms should function in a transparent and explainable manner.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-31",
@@ -2982,7 +5598,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having the power, duty, or legal authority to conduct policy and actions.",
     "exampleSentence": "Developers must comply with laws governing student data privacy and protection.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-32",
@@ -2994,7 +5619,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to the intellect, mental reasoning, and creative scholarship.",
     "exampleSentence": "Respecting intellectual property rights is essential when training AI models.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "cognitive"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "cognitive"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l2-33",
@@ -3006,7 +5644,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of working together with someone to produce or create something.",
     "exampleSentence": "Close collaboration between teachers and software engineers yields better classroom tools.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l2-34",
@@ -3018,7 +5665,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely useful, helpful, or important.",
     "exampleSentence": "AI is a valuable addition to modern classrooms when used with proper pedagogical care.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-01",
@@ -3030,7 +5686,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Was made up or composed of specific parts or elements.",
     "exampleSentence": "The gate of Tomoe Gakuen simply consisted of two living tree posts with twigs and leaves.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dhaka Board 1st Paper, Unit 1"
+    "boardExamTag": "Dhaka Board 1st Paper, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-02",
@@ -3042,7 +5707,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not in a straight or level position; crookedly or to one side.",
     "exampleSentence": "The morning wind had blown the school signboard askew across the tree trunk.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-03",
@@ -3054,7 +5728,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A momentary or partial view of someone or something.",
     "exampleSentence": "Totto-chan caught a glimpse of real railroad cars resting in the school playground.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-04",
@@ -3066,7 +5749,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Crouched or sat with the knees bent and the heels close to or touching the buttocks.",
     "exampleSentence": "She squatted down near the hedge to peer through the green bushes.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-05",
@@ -3078,7 +5770,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Looked with concentration, curiosity, or difficulty through an opening.",
     "exampleSentence": "The young girl peered excitedly through the shrubbery to verify the train cars.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-06",
@@ -3090,7 +5791,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An area in a garden or park planted with shrubs and green bushes.",
     "exampleSentence": "Colorful flowers and neat shrubbery surrounded the natural school boundaries.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-07",
@@ -3102,7 +5812,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having been deserted or left behind by former owners or users.",
     "exampleSentence": "The innovative school converted six abandoned railroad cars into cozy classrooms.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-08",
@@ -3114,7 +5833,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Shone with flashes of light; glittered brightly in the sun.",
     "exampleSentence": "The clean glass windows of the train cars sparkled brilliantly in the morning sunlight.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-09",
@@ -3126,7 +5854,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having healthy pink or reddish cheeks indicating vibrant youth.",
     "exampleSentence": "The rosy-cheeked child smiled with unbound excitement upon seeing her new school.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-10",
@@ -3138,7 +5875,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having ample space; commodious and roomy.",
     "exampleSentence": "The not very spacious school grounds felt lively and welcoming with green plants.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-11",
@@ -3150,7 +5896,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having the shape of a half-circle.",
     "exampleSentence": "A semicircular flight of seven stone steps led up to the headmaster's office door.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "HSC Board Standard, Unit 1"
+    "boardExamTag": "HSC Board Standard, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-12",
@@ -3162,7 +5917,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Suddenly and unexpectedly; without warning.",
     "exampleSentence": "Totto-chan stopped abruptly on the top stair, making her mother nearly bump into her.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "gradually"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "gradually"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l3-13",
@@ -3174,7 +5942,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A railway official in charge of a railway station.",
     "exampleSentence": "Seeing all the train carriages, Totto-chan innocently assumed the headmaster was a stationmaster.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-14",
@@ -3186,7 +5963,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In poor condition through long use or lack of care; worn.",
     "exampleSentence": "Headmaster Kobayashi wore a rather shabby but neatly kept black three-piece suit.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-15",
@@ -3198,7 +5984,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a lively, enthusiastic, and animated manner.",
     "exampleSentence": "The young girl spiritedly asked whether the gentleman was a principal or a train master.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-16",
@@ -3210,7 +6005,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling awkward, self-conscious, or ashamed by a social blunder.",
     "exampleSentence": "Mother felt embarrassed by her daughter's direct and blunt question.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-17",
@@ -3222,7 +6026,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A feeling of anxiety, restlessness, or apprehension.",
     "exampleSentence": "Totto-chan felt a brief moment of uneasiness when her mother stepped out of the office.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-18",
@@ -3234,7 +6047,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Without delay; immediately and readily.",
     "exampleSentence": "Given permission to speak freely, Totto-chan began narrating her life straight away.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-19",
@@ -3246,7 +6068,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In confusion or disorderly disorder; topsy-turvy.",
     "exampleSentence": "Her lively childhood stories tumbled out in a higgledy-piggledy, charming stream of thought.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-20",
@@ -3258,7 +6089,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Subjecting someone or one's mind to extreme mental effort or strain.",
     "exampleSentence": "Racking her brains for new topics to share, she remembered her torn play dresses.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-21",
@@ -3270,7 +6110,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Strips of some material torn off or ragged fragments.",
     "exampleSentence": "Her outdoor adventures crawling under fences often reduced her dresses to shreds.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-22",
@@ -3282,7 +6131,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Made a hole or passage through or beneath an obstacle.",
     "exampleSentence": "She burrowed beneath barbed wire fencing around vacant neighborhood gardens.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "ascended"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "ascended"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l3-23",
@@ -3294,7 +6156,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Decorated with needlework patterns using colored thread.",
     "exampleSentence": "Her jersey dress featured small red flowers neatly embroidered on the collar.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-24",
@@ -3306,7 +6177,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Greatly surprised, impressed, or struck with wonder.",
     "exampleSentence": "She would have been astonished to realize she had spoken continuously for four hours.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-25",
@@ -3318,7 +6198,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling or showing an appreciation of kindness; thankful.",
     "exampleSentence": "Totto-chan felt deeply grateful to find an adult who truly listened to her voice.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "obliged"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "obliged"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l3-26",
@@ -3330,7 +6223,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Entire and uninterrupted; continuous in time without a break.",
     "exampleSentence": "The patient headmaster listened to the seven-year-old for four solid hours.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "substantial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "substantial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l3-27",
@@ -3342,7 +6248,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Officially forced to leave a school or other organization.",
     "exampleSentence": "The young girl had no idea she had been expelled from her former traditional school.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-28",
@@ -3354,7 +6269,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person's inherent qualities of mind and character; natural temperament.",
     "exampleSentence": "Her cheerful, sunny disposition allowed her to see beauty and wonder in everything.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l3-29",
@@ -3366,7 +6290,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Having or showing a habitually forgetful or inattentive disposition.",
     "exampleSentence": "Being delightfully absent-minded gave the child an innocent and endearing charm.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "oblivious"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "oblivious"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l3-30",
@@ -3378,7 +6315,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state, quality, or fact of being innocent of evil, deceit, or wrongdoing.",
     "exampleSentence": "Her pure innocence and natural curiosity finally found a welcoming home at Tomoe Gakuen.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Dhaka Board 1st Paper, Unit 1"
+    "boardExamTag": "Dhaka Board 1st Paper, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-01",
@@ -3390,7 +6336,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To recognize the full worth, significance, or aesthetic quality of something.",
     "exampleSentence": "Beauty is easy to appreciate but remarkably difficult to define.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Dhaka Board Standard, Unit 2"
+    "boardExamTag": "Dhaka Board Standard, Unit 2",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-02",
@@ -3402,7 +6357,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The ability to see, hear, or become aware of something through the senses or intellect.",
     "exampleSentence": "Is the notion of beauty universal, or is it shaped by individual perceptions?",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "HSC Board Exam, Unit 2"
+    "boardExamTag": "HSC Board Exam, Unit 2",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-03",
@@ -3414,7 +6378,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who sees or observes someone or something.",
     "exampleSentence": "People often wonder whether beauty truly lies in the eye of the beholder.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-04",
@@ -3426,7 +6399,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Inherent mental or physical powers and creative talents.",
     "exampleSentence": "Artists create stunning representations of beauty using their creative faculties.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-05",
@@ -3438,7 +6420,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To regard or represent as perfect or better than in reality.",
     "exampleSentence": "Lord Byron idealizes the pure, innocent charm of the woman he depicts.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "glorifies"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "glorifies"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l1-06",
@@ -3450,7 +6445,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Unable to be separated, dissolved, or treated as distinct.",
     "exampleSentence": "Emily Dickinson asserts in her poem that beauty is inseparable from truth.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-07",
@@ -3462,7 +6466,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Regions or areas considered with reference to their climate and atmosphere.",
     "exampleSentence": "She walks in beauty, like the night of cloudless climes and starry skies.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-08",
@@ -3474,7 +6487,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Full of or lit by stars.",
     "exampleSentence": "The poet compares her sublime grace to a cloudless starry night.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-09",
@@ -3486,7 +6508,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The visual appearance of someone's face or bearing.",
     "exampleSentence": "All that is best of dark and bright meet harmoniously in her aspect and her eyes.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-10",
@@ -3498,7 +6529,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Made pleasantly smooth, soft, or tender in quality.",
     "exampleSentence": "The dazzling day is mellowed to a tender, gentle light in the lady's presence.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-11",
@@ -3510,7 +6550,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Showing gentleness, kindness, and delicate softness.",
     "exampleSentence": "The poet praises the tender light that heaven denies to the gaudy day.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "HSC Board Standard, Unit 2"
+    "boardExamTag": "HSC Board Standard, Unit 2",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-12",
@@ -3522,7 +6571,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Extravagantly bright or showy, typically so as to be tasteless.",
     "exampleSentence": "Unlike gaudy daylight, the lady's soothing glow possesses timeless dignity.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "showy",
+      "modest"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "showy"
+    ],
+    "crossRefAntonyms": [
+      "modest"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u2-l1-13",
@@ -3534,7 +6599,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Weakened or damaged; lessened in beauty or perfection.",
     "exampleSentence": "One shade more or one ray less would have half impaired her nameless grace.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-14",
@@ -3546,7 +6620,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Smoothness, elegance, and beauty of movement, form, or expression.",
     "exampleSentence": "Her nameless grace radiates through every movement and raven curl of hair.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "refinement"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "refinement"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l1-15",
@@ -3558,7 +6645,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Glossy black in color, like the feathers of a raven.",
     "exampleSentence": "A wave of beauty shines in every raven tress that frames her delicate face.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-16",
@@ -3570,7 +6666,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A long lock or curl of a woman's hair.",
     "exampleSentence": "The dark shadows play gracefully in every raven tress cascading down her shoulder.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-17",
@@ -3582,7 +6687,20 @@ export const hscVocabularyList = [
     "englishMeaning": "In a calm, peaceful, and untroubled manner.",
     "exampleSentence": "Her facial expression serenely conveys the sweet purity of her inner mind.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "quietly"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "quietly"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l1-18",
@@ -3594,7 +6712,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Clearly expressing or indicating something without words.",
     "exampleSentence": "Her calm smile and glowing brow remain so soft and yet deeply eloquent.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-19",
@@ -3606,7 +6733,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Only just; almost not; with difficulty.",
     "exampleSentence": "The narrator died for beauty, but was scarce adjusted in the tomb when another arrived.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "seldom"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "seldom"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l1-20",
@@ -3618,7 +6758,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Next to or joined with something else.",
     "exampleSentence": "One who died for truth was laid to rest in an adjoining tomb room.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-21",
@@ -3630,7 +6779,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Fellow members of a group or religion; brothers in purpose.",
     "exampleSentence": "The martyr for truth proclaimed that lovers of truth and beauty are brethren.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l1-22",
@@ -3642,7 +6800,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A man who is one of a person's blood relations.",
     "exampleSentence": "Like kinsmen meeting in the night, the two spirits conversed across the rooms.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "foreigners"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "foreigners"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l2-01",
@@ -3654,7 +6825,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Appealing to cultured taste; developed to a high degree of complexity.",
     "exampleSentence": "Folk music is not influenced by sophisticated rules of classical compositions.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-02",
@@ -3666,7 +6846,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Denoting attitudes, activities, or songs that have no religious or spiritual basis.",
     "exampleSentence": "Bangladesh has a rich tradition of folk music featuring both religious and secular songs.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-03",
@@ -3678,7 +6867,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Originated or arose from a particular source.",
     "exampleSentence": "Folk tunes sprang naturally from the collective heart and soul of rural communities.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-04",
@@ -3690,7 +6888,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Performed or occurring as a result of a sudden inner impulse without premeditation.",
     "exampleSentence": "Folk songs are a spontaneous expression of feelings in simple language and melody.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-05",
@@ -3702,7 +6909,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A particular form of a language peculiar to a specific region or social group.",
     "exampleSentence": "Despite its universal appeal, rural folk music often uses local dialects.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "vernacular"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "vernacular"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l2-06",
@@ -3714,7 +6934,22 @@ export const hscVocabularyList = [
     "englishMeaning": "An event, action, or object that clearly shows or embodies something.",
     "exampleSentence": "Folk music is an explicit manifestation of the joys and sorrows of village life.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "demonstration",
+      "expression"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "demonstration",
+      "expression"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u2-l2-07",
@@ -3726,7 +6961,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A strong, regular, repeated pattern of movement or sound in music.",
     "exampleSentence": "The flowing rivers and monsoon rains provide natural rhythms for Bengali folk tunes.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-08",
@@ -3738,7 +6982,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Arousing or able to arouse intense emotional feelings.",
     "exampleSentence": "Bhatiyali songs contain an emotive expression of human longing, love, and separation.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-09",
@@ -3750,7 +7003,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to, situated on, or characteristic of a river system.",
     "exampleSentence": "Since Bangladesh is largely riverine, songs of boatmen form a core cultural genre.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-10",
@@ -3762,7 +7024,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Figures of speech in which words or phrases are applied to an object not literally applicable.",
     "exampleSentence": "Mystical Baul poets compose philosophical verses using metaphors of rivers and boats.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-11",
@@ -3774,7 +7045,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Smaller groups of people differing ethnically or culturally from the larger majority.",
     "exampleSentence": "Ethnic minorities like Chakmas and Santals have deeply enriched Bangladesh's folk music.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-12",
@@ -3786,7 +7066,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A large organized group of singers; singing in unison together.",
     "exampleSentence": "Folk forms such as Gambhira and Kabigan are traditionally performed in vibrant chorus.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-13",
@@ -3798,7 +7087,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The ability or willingness to tolerate differing opinions or religious beliefs.",
     "exampleSentence": "Lalon Shah preached deep religious tolerance and rejected sectarian discrimination.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-14",
@@ -3810,7 +7108,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A set of religious beliefs or principles that guide someone's actions.",
     "exampleSentence": "Lalon rejected social divisions based strictly on class, caste, and religious creed.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-15",
@@ -3822,7 +7129,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A journey to a place associated with someone or something well respected or holy.",
     "exampleSentence": "While on a pilgrimage to a holy site, Lalon contracted smallpox and fell gravely ill.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-16",
@@ -3834,7 +7150,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Caught or developed a disease or medical condition.",
     "exampleSentence": "After he contracted smallpox during his journey, his companions left him behind.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-17",
@@ -3846,7 +7171,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Love, loyalty, or enthusiasm for a person, belief, or religious path.",
     "exampleSentence": "Lalon dedicated his life to spiritual devotion under the guidance of Siraj Sain.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "apathy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "apathy"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l2-18",
@@ -3858,7 +7196,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Severe self-discipline and avoidance of all forms of physical indulgence.",
     "exampleSentence": "Baul mystics embrace asceticism to attain higher spiritual truth within their soul.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-19",
@@ -3870,7 +7217,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A building or community occupied by religious persons living under ascetic vows.",
     "exampleSentence": "Lalon established his famous spiritual monastery and akhrah in Chheuriya near Kushtia.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l2-20",
@@ -3882,7 +7238,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Personal followers or students of a religious teacher or philosopher.",
     "exampleSentence": "His devoted disciples sang his compositions with ektara across every corner of Bengal.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-01",
@@ -3894,7 +7259,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The art of making three-dimensional representative or abstract forms.",
     "exampleSentence": "Novera Ahmed pioneered modern sculpture in Bangladesh using stone and plaster.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-02",
@@ -3906,7 +7280,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To bring or recall a feeling, memory, or image to the conscious mind.",
     "exampleSentence": "The primary aim of great painting is to evoke genuine aesthetic emotions.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-03",
@@ -3918,7 +7301,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Concerned with beauty or the appreciation of artistic elegance.",
     "exampleSentence": "Fine art touches the soul by presenting profound aesthetic experiences.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-04",
@@ -3930,7 +7322,20 @@ export const hscVocabularyList = [
     "englishMeaning": "An expression of opinions or an explanation about an event or situation.",
     "exampleSentence": "Zainul's drawings served as powerful social commentary on human suffering.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "interpretation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "interpretation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-05",
@@ -3942,7 +7347,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Presents something in high admiration or as especially worthy of praise.",
     "exampleSentence": "A landscape painting glorifies the sublime majesty of nature's scenery.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-06",
@@ -3954,7 +7368,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Severe mental or physical pain or intense suffering.",
     "exampleSentence": "Paintings of war-torn cities convey intense anguish and humanitarian despair.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "contentment"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "contentment"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-07",
@@ -3966,7 +7393,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extreme scarcity of food causing starvation and widespread death.",
     "exampleSentence": "Zainul Abedin achieved historical renown for his haunting sketches of the 1943 Bengal famine.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-08",
@@ -3978,7 +7414,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Poignant, evocative, and difficult to ignore or forget from the mind.",
     "exampleSentence": "His ink drawings captured the haunting agony of starving masses on city pavements.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-09",
@@ -3990,7 +7435,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Belonging to or occurring in the present time.",
     "exampleSentence": "Prominent artists fostered the spectacular rise of Bangladeshi contemporary art.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-10",
@@ -4002,7 +7456,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An artistic genre of three-dimensional works designed to transform interior perception.",
     "exampleSentence": "Post-war artists embraced installation art to express complex socio-political realities.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-11",
@@ -4014,7 +7477,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having or showing an accurate and deep understanding of a complex issue.",
     "exampleSentence": "The museum galleries display modern realities in fascinating and insightful ways.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-12",
@@ -4026,7 +7498,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Successful, authoritative, and commanding great public respect.",
     "exampleSentence": "S M Sultan was a distinguished painter renowned for his muscular peasant figures.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-13",
@@ -4038,7 +7519,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having informal and unconventional social habits and an artistic lifestyle.",
     "exampleSentence": "S M Sultan is remembered as a bohemian artist who roamed far and wide.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-14",
@@ -4050,7 +7540,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An exhibition showing the development of the work of a particular artist over time.",
     "exampleSentence": "A major retrospective held in 1987 solidified Sultan's rank as an artistic legend.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-15",
@@ -4062,7 +7561,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Not enjoying the same standard of living or rights as the majority of people in a society.",
     "exampleSentence": "Despite his underprivileged rural background, Sultan conquered world art galleries.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "deprived",
+      "affluent"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "deprived"
+    ],
+    "crossRefAntonyms": [
+      "affluent"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u2-l3-16",
@@ -4074,7 +7589,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Continuing or long-lasting through changing circumstances.",
     "exampleSentence": "S M Sultan created enduring connections between village peasants and canvas art.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "transient"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "transient"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-17",
@@ -4086,7 +7614,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Importance or reputation gained by ability or achievement; also physical height.",
     "exampleSentence": "Sultan painted village farmers with extensive muscles and godly physical stature.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-18",
@@ -4098,7 +7635,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Awards, honors, or privileges granted as a special honor or as an acknowledgment of merit.",
     "exampleSentence": "The painter won worldwide accolades from leading art critics and newspapers.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-19",
@@ -4110,7 +7656,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Expressing praise and commendation in speech or writing.",
     "exampleSentence": "The Washington Post published laudatory reviews praising his epic canvas paintings.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "critical"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "critical"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-20",
@@ -4122,7 +7681,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Publicly praised and celebrated with high honor.",
     "exampleSentence": "He became internationally acclaimed as a master painter of classic dimensions.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "distinguished"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "distinguished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-21",
@@ -4134,7 +7706,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who is among the first to explore or settle a new country or area of thought.",
     "exampleSentence": "Novera Ahmed was the daring pioneer of modern three-dimensional sculpting in Bangladesh.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-22",
@@ -4146,7 +7727,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Announced officially or publicly with strong conviction.",
     "exampleSentence": "Zainul Abedin proclaimed that it would take society a long time to understand Novera's art.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "withheld"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "withheld"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-23",
@@ -4158,7 +7752,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a manner that is suitable or appropriate in the circumstances.",
     "exampleSentence": "This description aptly highlights her forward-thinking vanguard mentality.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-24",
@@ -4170,7 +7773,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Objects made by a human being, typically an item of cultural or historical interest.",
     "exampleSentence": "Her artistic artefacts blended western abstract form with Bengal rural motifs.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-25",
@@ -4182,7 +7794,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Decorative designs, patterns, or dominant recurring ideas in artistic work.",
     "exampleSentence": "Traditional village motifs inspired her unique sculptures depicting women's lives.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-26",
@@ -4194,7 +7815,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Formally opened a facility, event, or initiated an exhibition.",
     "exampleSentence": "Her landmark solo sculpture exhibition was inaugurated at Dhaka University Library.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l3-27",
@@ -4206,7 +7836,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Very complicated or detailed in design and arrangement.",
     "exampleSentence": "Alpana involves painting intricate floral patterns with white rice paste on courtyards.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "sophisticated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "sophisticated"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l3-28",
@@ -4218,7 +7861,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To a satisfactory or acceptable extent; suitably.",
     "exampleSentence": "Artists adopted new styles to adequately express the profound changes in human thought.",
     "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-01",
@@ -4230,7 +7882,25 @@ export const hscVocabularyList = [
     "englishMeaning": "Using or based on what one feels to be true without conscious reasoning.",
     "exampleSentence": "While art is considered intuitive and visionary, craft is a practical application of skills.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "spontaneous",
+      "innate",
+      "deliberate"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "spontaneous",
+      "innate"
+    ],
+    "crossRefAntonyms": [
+      "deliberate"
+    ],
+    "priority": 103
   },
   {
     "id": "vocab-u2-l4-02",
@@ -4242,7 +7912,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Workers in a skilled trade, especially one that involves making things by hand.",
     "exampleSentence": "Rural communities historically relied on local artisans to fashion essential household wares.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-03",
@@ -4254,7 +7933,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A type of brownish-red earthenware used for pottery, tiles, and figurines.",
     "exampleSentence": "The anonymous maker of a terracotta doll imbues the clay piece with a loving human touch.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-04",
@@ -4266,7 +7954,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not identified by name; of unknown authorship or identity.",
     "exampleSentence": "The makers of historic nakshikanthas remain anonymous, yet their genius endures.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-05",
@@ -4278,7 +7975,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Connected with the sense of touch or pleasant to feel with one's fingers.",
     "exampleSentence": "The tactile texture of hand-stitched embroidered quilts makes them inviting to hold.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-06",
@@ -4290,7 +7996,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Up to a particular standard or keeping up with recent developments.",
     "exampleSentence": "Craftwork is a dynamic tradition that constantly stays abreast of changing tastes.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-07",
@@ -4302,7 +8017,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A sign's physical form (such as a sound, printed word, or image) as distinct from its meaning.",
     "exampleSentence": "Handmade artifacts function as a stable signifier of timeless community heritage.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-08",
@@ -4314,7 +8038,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A division of a county with some corporate powers; a historic town settlement.",
     "exampleSentence": "Sonargaon is an ancient township boasting a famous Folk Arts and Crafts Museum.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-09",
@@ -4326,7 +8059,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The ancient past, especially the period before the Middle Ages.",
     "exampleSentence": "Hundreds of tourists flock to Panam Nagar to admire its rich antiquity and splendid buildings.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u2-l4-10",
@@ -4338,7 +8080,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Successful in material terms; flourishing financially.",
     "exampleSentence": "Sonargaon was a prosperous medieval trading post with an active river port.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "affluent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "affluent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u2-l4-11",
@@ -4350,7 +8105,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Magnificent and splendid appearance; grandeur.",
     "exampleSentence": "Famed traveler Ibn Battuta visited Sonargaon in 1346 and was amazed by its architectural splendor.",
     "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-01",
@@ -4362,7 +8126,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To light up or make much clearer and intellectually enlightened.",
     "exampleSentence": "True education should illuminate our minds and inspire civic action.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Dhaka Board 1st Paper, Unit 1"
+    "boardExamTag": "Dhaka Board 1st Paper, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-02",
@@ -4374,7 +8147,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being actively involved and committed to something.",
     "exampleSentence": "Students' active civic engagement brings lasting benefits to society.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "HSC Board Exam, Unit 1"
+    "boardExamTag": "HSC Board Exam, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "apathy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "apathy"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l4-03",
@@ -4386,7 +8172,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A reason or reasons for acting or behaving in a particular way.",
     "exampleSentence": "Civic engagement utilizes knowledge, skills, values, and noble motivation.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "apathy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "apathy"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l4-04",
@@ -4398,7 +8197,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The unjust or prejudicial treatment of different categories of people.",
     "exampleSentence": "Responsible citizens raise their voices against injustice and social discrimination.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-05",
@@ -4410,7 +8218,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Formal written requests, typically signed by many people, appealing to authority.",
     "exampleSentence": "Citizens submitted petitions to the municipal authority against unfair tax hikes.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-06",
@@ -4422,7 +8239,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The use or involvement of volunteer labor, especially in community services.",
     "exampleSentence": "Spontaneous civic participation outside of formal courses is known as volunteerism.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-07",
@@ -4434,7 +8260,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A sudden forceful rush or flow forward, as of floodwaters.",
     "exampleSentence": "Rivers overflowed their banks due to the torrential onrush of water from hills.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "torrent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "torrent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l4-08",
@@ -4446,7 +8285,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Conditions or practices conducive to maintaining health and preventing disease.",
     "exampleSentence": "Volunteers distributed soaps and purification tablets to maintain public hygiene.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-09",
@@ -4458,7 +8306,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Of considerable importance, size, or worth.",
     "exampleSentence": "The students raised a substantial relief fund to assist elderly flood victims.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "considerable",
+      "negligible"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "considerable"
+    ],
+    "crossRefAntonyms": [
+      "negligible"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u1-l4-10",
@@ -4470,7 +8334,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To a great extent; extremely or immeasurably.",
     "exampleSentence": "The young volunteers were immensely gratified by the smiling faces of the victims.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-11",
@@ -4482,7 +8355,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Causing anxiety, sorrow, or deep mental pain.",
     "exampleSentence": "Reports of poor families freezing without home heating were deeply distressing.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "HSC Board Standard, Unit 1"
+    "boardExamTag": "HSC Board Standard, Unit 1",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "harrowing"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "harrowing"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u1-l4-12",
@@ -4494,7 +8380,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A shy, reticent person who enjoys solitary reflection.",
     "exampleSentence": "Though Alex was a quiet introvert, his deep empathy inspired international aid.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u1-l4-13",
@@ -4506,7 +8401,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A request made in an urgent and emotional manner.",
     "exampleSentence": "The young boy's heartfelt plea touched his teacher and mobilized the entire class.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l1-01",
@@ -4518,7 +8422,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Looking steadily and intently, especially in admiration, surprise, or thought.",
     "exampleSentence": "Waking up in darkness and gazing at the fig-tree, the poet beholds Bengal's beauty.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Dhaka Board Standard, Unit 3"
+    "boardExamTag": "Dhaka Board Standard, Unit 3",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l1-02",
@@ -4530,7 +8443,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Settling or congregating for rest or sleep, as birds do.",
     "exampleSentence": "Dawn's swallows were roosting under huge umbrella-like leaves.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l1-03",
@@ -4542,7 +8464,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Having or covered with many leaves or foliage.",
     "exampleSentence": "The poet discovered a leafy dome formed by ancient indigenous trees.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "barren",
+      "desolate"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "barren",
+      "desolate"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u3-l1-04",
@@ -4554,7 +8491,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A rounded vault or canopy forming a roof or ceiling.",
     "exampleSentence": "The branches of Bat and Aswatha arched into a magnificent natural dome.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "hollow"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "hollow"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l1-05",
@@ -4566,7 +8516,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A period of profound silence, quiet, or stillness.",
     "exampleSentence": "The forest trees stood all in a hush before the first light of dawn.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "din"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "din"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l1-06",
@@ -4578,7 +8541,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Patterned with or penetrated by many small compartments like a honeycomb.",
     "exampleSentence": "Chand Sadagar sailed long ago in his magnificent honeycombed boat.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Barishal Board Exam"
+    "boardExamTag": "Barishal Board Exam",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "solid"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "solid"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l1-07",
@@ -4590,7 +8566,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Matchless; so good or exceptional as to be beyond all comparison.",
     "exampleSentence": "The mythical traveler was awestruck by Bengal's incomparable natural beauty.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l1-08",
@@ -4602,7 +8587,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Decreasing in vigor, power, or lunar brightness.",
     "exampleSentence": "Behula floated on the river while the waning moon sank behind sandbanks.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l1-09",
@@ -4614,7 +8608,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A flat buoyant structure of timber or other materials used for transport on water.",
     "exampleSentence": "Behula journeyed on a fragile raft down the river Ganguri.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "pontoon"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "pontoon"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l1-10",
@@ -4626,7 +8633,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Feeling or showing misery, unhappiness, or loneliness.",
     "exampleSentence": "She danced before the court of gods like a desolate, sorrowful wagtail.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "solitary"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "solitary"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l1-11",
@@ -4638,7 +8658,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A small songbird with a long tail that wags incessantly up and down.",
     "exampleSentence": "The poet compared Behula's dance to the rapid movements of a wagtail.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "HSC Board Standard, Unit 3"
+    "boardExamTag": "HSC Board Standard, Unit 3",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l1-12",
@@ -4650,7 +8679,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Made a prolonged high-pitched cry of pain, grief, or anger.",
     "exampleSentence": "Bengal's flowers and rivers wailed like melodious ankle bells as she danced.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "mourned"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "mourned"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l2-01",
@@ -4662,7 +8704,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Frightening, especially in appearance to an extreme degree.",
     "exampleSentence": "The fearsome Minotaur kept the terrified citizens of Crete in constant horror.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l2-02",
@@ -4674,7 +8725,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To make someone feel extremely frightened by threatening harm.",
     "exampleSentence": "The beast was sent to terrorize everyone who defied the monarch.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Dhaka Board Standard"
+    "boardExamTag": "Dhaka Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l2-03",
@@ -4686,7 +8746,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Performed or producing work with outstanding skill or artistry.",
     "exampleSentence": "Daedalus was a masterful inventor and builder admired throughout ancient Greece.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l2-04",
@@ -4698,7 +8767,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A complicated irregular network of passages or paths in which it is difficult to find one's way.",
     "exampleSentence": "The intricate labyrinth was designed so expertly that escape was virtually impossible.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l2-05",
@@ -4710,7 +8788,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely unpleasant and shocking, usually dealing with death or injury.",
     "exampleSentence": "Enemies hurled into the dark maze met a gruesome and agonizing end.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l2-06",
@@ -4722,7 +8809,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Left without the means to move from somewhere; marooned.",
     "exampleSentence": "After fleeing prison, father and son found themselves stranded on the guarded island.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "abandoned"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "abandoned"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l2-07",
@@ -4734,7 +8834,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Average in amount, intensity, quality, or degree; not extreme.",
     "exampleSentence": "The father urged Icarus to fly at a moderate height to preserve his wings.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "modest"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "modest"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l2-08",
@@ -4746,7 +8859,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Paid careful attention to advice or a warning.",
     "exampleSentence": "If Icarus had heeded his father's wise counsel, disaster could have been avoided.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l2-09",
@@ -4758,7 +8880,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Overcome by superior force or deeply affected by intense emotion.",
     "exampleSentence": "Overwhelmed by the exhilarating joy of flight, the young boy soared toward the sun.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "overcome"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "overcome"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l2-10",
@@ -4770,7 +8905,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Went up or climbed; rose move up through the air.",
     "exampleSentence": "As he ascended higher into the sky, the intense solar heat began melting the wax.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "plummeted"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "plummeted"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l2-11",
@@ -4782,7 +8930,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Fell or dropped straight down at high speed.",
     "exampleSentence": "With his wax melted, Icarus plummeted into the roaring sea below.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "HSC Board Standard, Unit 3"
+    "boardExamTag": "HSC Board Standard, Unit 3",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "ascended"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "ascended"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l2-12",
@@ -4794,7 +8955,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Felt or expressed deep sorrow for the death of someone loved.",
     "exampleSentence": "The brokenhearted architect mourned his son and named the waters in his honor.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-01",
@@ -4806,7 +8976,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Traditional stories sometimes regarded as historical but unauthenticated.",
     "exampleSentence": "Ancient legends recount the extraordinary deeds of the sufi saint in Bengal.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Dhaka Board Standard, Unit 3"
+    "boardExamTag": "Dhaka Board Standard, Unit 3",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "folklore"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "folklore"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l3-02",
@@ -4818,7 +9001,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Surprising and welcome events that cannot be explained by natural laws.",
     "exampleSentence": "Gazi Pir was credited with miracles that pacified the wilderness of Sunderbans.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-03",
@@ -4830,7 +9022,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Ready to accept control or instruction; submissive and calm.",
     "exampleSentence": "The holy saint could supposedly pacify wild beasts and make them completely docile.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-04",
@@ -4842,7 +9043,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Clearly visible or understood; seeming rather than actual.",
     "exampleSentence": "He rode the fierce Bengal tiger in no apparent danger of harm.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-05",
@@ -4854,7 +9064,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Narrow, sheltered waterways, especially an inlet for a river.",
     "exampleSentence": "The coastal forest is crisscrossed by labyrinthine canals and mangrove creeks.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-06",
@@ -4866,7 +9085,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Keeping careful watch for possible danger or difficulties.",
     "exampleSentence": "His vigilant protection permitted villagers to settle near dangerous tiger territory.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "oblivious"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "oblivious"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l3-07",
@@ -4878,7 +9110,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to animals preying naturally on others.",
     "exampleSentence": "All predatory creatures were kept at bay by the mystical saint.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-08",
@@ -4890,7 +9131,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Originating or occurring naturally in a particular place; native.",
     "exampleSentence": "The Gazi stories have been performed for centuries in indigenous village theatre.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-09",
@@ -4902,7 +9152,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A roll of parchment or paper for writing or painting on.",
     "exampleSentence": "Gazir Paat represents an authentic scroll painting tradition preserved in museums.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l3-10",
@@ -4914,7 +9173,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Represented by a drawing, painting, or other art form.",
     "exampleSentence": "The folk saint is typically depicted with spiritual grace holding a snake.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "HSC Board Standard, Unit 3"
+    "boardExamTag": "HSC Board Standard, Unit 3",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-01",
@@ -4926,7 +9194,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Succeed in activity, typically by making good economic progress.",
     "exampleSentence": "Timely winter rain guarantees that the agricultural land and kingdom will prosper.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Dhaka Board Standard, Unit 3"
+    "boardExamTag": "Dhaka Board Standard, Unit 3",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "flourish"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "flourish"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l4-02",
@@ -4938,7 +9219,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The dependence of two or more people or things on each other.",
     "exampleSentence": "Khona intuitively understood the deep interdependence between humans and rainfall.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-03",
@@ -4950,7 +9240,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A countless or extremely great number of people or things.",
     "exampleSentence": "Nature affects agriculture and harvesting patterns in myriad subtle ways.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "scarce"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "scarce"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u3-l4-04",
@@ -4962,7 +9265,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The traditional beliefs, customs, and stories of a community passed by word of mouth.",
     "exampleSentence": "Khona's remarkable life and wisdom remain deeply anchored in Bengali folklore.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-05",
@@ -4974,7 +9286,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having correspondence in the terminal sounds of words or to lines of verse.",
     "exampleSentence": "Her rhyming maxims made complex agricultural knowledge effortless for peasants to recall.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-06",
@@ -4986,7 +9307,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Open resistance; bold disobedience against an authoritarian rule.",
     "exampleSentence": "Her brave defiance of elite court astrologers exposed the fallacies of dogma.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-07",
@@ -4998,7 +9328,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who uses astrology to tell others about their character, or to predict future events.",
     "exampleSentence": "The royal astrologer Varaha felt deeply humiliated when his predictions failed.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-08",
@@ -5010,7 +9349,16 @@ export const hscVocabularyList = [
     "englishMeaning": "According with a plan or pre-ordained destiny; certain to happen.",
     "exampleSentence": "The prophecy claimed the newborn boy was destined for misfortune and sorrow.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-09",
@@ -5022,7 +9370,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Floating in water; not sinking below the surface.",
     "exampleSentence": "The infant was placed in a copper pot and set afloat on the current of the river.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-10",
@@ -5034,7 +9391,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Things predicted; statements about what will happen in the future.",
     "exampleSentence": "Khona's seasonal weather predictions proved uncannily accurate season after season.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u3-l4-11",
@@ -5046,7 +9412,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Prohibited or prevented someone from expressing opinion or knowledge.",
     "exampleSentence": "Though her tongue was cruelly cut out, Khona's timeless verses could never be silenced.",
     "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l1-01",
@@ -5058,7 +9433,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Husbands or wives, considered in relation to their partner.",
     "exampleSentence": "Marriage should be entered into only with the full and free consent of intending spouses.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Dhaka Board Standard, Unit 5"
+    "boardExamTag": "Dhaka Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l1-02",
@@ -5070,7 +9454,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The act of interfering in something; meddling or intervention.",
     "exampleSentence": "No individual should be subjected to arbitrary interference with their personal privacy.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l1-03",
@@ -5082,7 +9475,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Communication by exchanging letters or messages.",
     "exampleSentence": "The human rights charter protects citizens' confidential mail and correspondence.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "communication"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "communication"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l1-04",
@@ -5094,7 +9500,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The protection granted by a nation to someone who has left their native country as a political refugee.",
     "exampleSentence": "Every persecuted victim has the fundamental right to seek asylum abroad.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l1-05",
@@ -5106,7 +9521,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Hostility and ill-treatment, especially because of race or political or religious beliefs.",
     "exampleSentence": "Refugees fled across borders to protect their families from brutal persecution.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "tolerance"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "tolerance"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l1-06",
@@ -5118,7 +9546,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The status of belonging to a particular nation by origin, birth, or naturalization.",
     "exampleSentence": "No authority can arbitrarily deprive any human being of their nationality.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l1-07",
@@ -5130,7 +9567,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Suffering a severe and damaging lack of basic material and cultural benefits.",
     "exampleSentence": "No community should be deprived of food, shelter, and legal justice.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "endowed"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "endowed"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l1-08",
@@ -5142,7 +9592,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Permission for something to happen or agreement to do something.",
     "exampleSentence": "Free and informed consent is essential before entering into any matrimonial covenant.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l2-01",
@@ -5154,7 +9613,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The state or quality of being worthy of honor or respect.",
     "exampleSentence": "All human beings are born free and equal in human dignity and rights.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Dhaka Board Standard, Unit 5"
+    "boardExamTag": "Dhaka Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "stature"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "stature"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l2-02",
@@ -5166,7 +9638,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Provided or supplied with a quality, ability, or asset by nature.",
     "exampleSentence": "Humans are endowed with moral conscience and the capacity to reason.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "deprived"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "deprived"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l2-03",
@@ -5178,7 +9663,20 @@ export const hscVocabularyList = [
     "englishMeaning": "An inner feeling or voice viewed as acting as a guide to the rightness or wrongness of one's behavior.",
     "exampleSentence": "A sensitive human conscience refuses to remain silent before oppression.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "integrity"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "integrity"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l2-04",
@@ -5190,7 +9688,20 @@ export const hscVocabularyList = [
     "englishMeaning": "An association, or feelings of friendship, mutual support, and solidarity.",
     "exampleSentence": "Citizens across borders should treat one another in a noble spirit of brotherhood.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "companionship"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "companionship"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l2-05",
@@ -5202,7 +9713,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Believing oneself to be inherently deserving of privileges or rights.",
     "exampleSentence": "Every single child is entitled to safety, nutritious food, and schooling.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "forbidden"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "forbidden"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l2-06",
@@ -5214,7 +9738,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A difference or contrast between similar things or people.",
     "exampleSentence": "Rights apply to all humans without distinction of caste, colour, or religion.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l2-07",
@@ -5226,7 +9759,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to the official power to make legal decisions and judgments.",
     "exampleSentence": "Rights cannot be curtailed based on the jurisdictional status of a homeland.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l2-08",
@@ -5238,7 +9780,23 @@ export const hscVocabularyList = [
     "englishMeaning": "The policy or action of using vigorous campaigning to bring about political or social change.",
     "exampleSentence": "Youth activism has historically challenged institutional bigotry and corruption.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "engagement",
+      "apathy"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "engagement"
+    ],
+    "crossRefAntonyms": [
+      "apathy"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u5-l3-01",
@@ -5250,7 +9808,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Satisfactory or acceptable in quality or quantity.",
     "exampleSentence": "Every family is entitled to an adequate standard of living and health.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Dhaka Board Standard, Unit 5"
+    "boardExamTag": "Dhaka Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l3-02",
@@ -5262,7 +9829,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being comfortable, healthy, or happy.",
     "exampleSentence": "Access to clean water and sanitation directly affects human wellbeing.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "despair"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "despair"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l3-03",
@@ -5274,7 +9854,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being married; matrimony.",
     "exampleSentence": "All children, born in or out of wedlock, deserve equal legal security.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l3-04",
@@ -5286,7 +9875,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to the basic elements of a subject; primary.",
     "exampleSentence": "Free elementary education must be accessible to children in every village.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "sophisticated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "sophisticated"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l3-05",
@@ -5298,7 +9900,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Required by law or a rule; obligatory.",
     "exampleSentence": "The constitution declared primary schooling to be free and compulsory.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l3-06",
@@ -5310,7 +9921,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Forming a necessary base or core; of central importance.",
     "exampleSentence": "Freedom of thought is recognized as a fundamental constitutional right.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l3-07",
@@ -5322,7 +9942,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action or process of making something stronger or more robust.",
     "exampleSentence": "Education promotes the strengthening of human rights and peace.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-01",
@@ -5334,7 +9963,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A coal mine and the buildings connected with it.",
     "exampleSentence": "A tragic disaster at the Huskar Colliery prompted sweeping factory reforms.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Dhaka Board Standard, Unit 5"
+    "boardExamTag": "Dhaka Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-02",
@@ -5346,7 +9984,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Without compassion for misery or suffering; cruel and uncaring.",
     "exampleSentence": "Chaining small children to coal carts was an inhumane practice of early capitalism.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-03",
@@ -5358,7 +10005,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of treating someone unfairly in order to benefit from their work.",
     "exampleSentence": "The commission uncovered shocking exploitations of defenseless youth in mines.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "empowerment"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "empowerment"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l4-04",
@@ -5370,7 +10030,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Formal written or spoken statements, especially given in an investigation or court.",
     "exampleSentence": "Heartbreaking testimonies of little girls shocked British parliamentary lawmakers.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-05",
@@ -5382,7 +10051,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A young miner employed to open and close ventilation doors in a mine.",
     "exampleSentence": "The eight-year-old trapper sat in pitch-black gloom for twelve long hours.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-06",
@@ -5394,7 +10072,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A unit of length equal to six feet (approximately 1.8 meters), used especially for measuring the depth of water or mines.",
     "exampleSentence": "The little girl trudged hundreds of fathoms beneath the surface of the earth.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-07",
@@ -5406,7 +10093,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Bend one's head or body forward and downward.",
     "exampleSentence": "Miners had to stoop low in narrow tunnels filled with toxic seeping water.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-08",
@@ -5418,7 +10114,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extreme tiredness resulting from mental or physical exertion or illness.",
     "exampleSentence": "Overcome by sheer fatigue, child laborers would collapse on the damp pit floor.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-09",
@@ -5430,7 +10135,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Make someone legally or morally bound to an action or course of action.",
     "exampleSentence": "Impoverished children felt obliged to earn bread for their starving siblings.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l4-10",
@@ -5442,7 +10156,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In an offensive, bad-mannered, or aggressive manner.",
     "exampleSentence": "Overseers treated the helpless adolescent workers rudely and without empathy.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "HSC Board Standard, Unit 5"
+    "boardExamTag": "HSC Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-01",
@@ -5454,7 +10177,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Of undisputed origin; genuine and verified.",
     "exampleSentence": "Enslaved people were deliberately denied any authentic record of their births.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Dhaka Board Standard, Unit 5"
+    "boardExamTag": "Dhaka Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-02",
@@ -5466,7 +10198,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Not showing proper respect; rude or insolent.",
     "exampleSentence": "Masters considered inquiries about one's own age to be impertinent on a slave's part.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "courteous"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "courteous"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l5-03",
@@ -5478,7 +10223,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Roughly calculate or judge the value, number, quantity, or extent of.",
     "exampleSentence": "Douglass had to rely on an approximate estimate to determine how old he was.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-04",
@@ -5490,7 +10244,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The natural color, texture, and appearance of a person's skin.",
     "exampleSentence": "His mother had a darker complexion than either of his grandparents.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-05",
@@ -5502,7 +10265,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The identity and origins of one's parents.",
     "exampleSentence": "The slave boy was kept in dark ignorance regarding his true parentage.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-06",
@@ -5514,7 +10286,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Refused to give something that was due for or desired by another.",
     "exampleSentence": "The vital knowledge of his origin was coldly withheld from Frederick.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-07",
@@ -5526,7 +10307,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A very young child or baby.",
     "exampleSentence": "While still a tiny infant, he was cruelly torn away from his mother's arms.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "adult"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "adult"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l5-08",
@@ -5538,7 +10332,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Create difficulties for someone or something, resulting in delay or obstruction.",
     "exampleSentence": "The master separated families to hinder the natural bonding between mother and son.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-09",
@@ -5550,7 +10353,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Make less sharp, intense, or sensitive.",
     "exampleSentence": "Forced separation was designed to blunt the warm affection of motherhood.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u5-l5-09a",
@@ -5562,7 +10374,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A gentle feeling of fondness or liking.",
     "exampleSentence": "The harsh institution sought to extinguish every spark of familial affection.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "devotion"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "devotion"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u5-l5-10",
@@ -5574,7 +10399,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Unable to rest or relax as a result of anxiety, boredom, or yearning for freedom.",
     "exampleSentence": "A yearning to know his rights gave him a restless, unconquerable spirit.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "HSC Board Standard, Unit 5"
+    "boardExamTag": "HSC Board Standard, Unit 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "docile"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "docile"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l1-01",
@@ -5586,7 +10424,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Based on, concerned with, or verifiable by observation or experience rather than theory.",
     "exampleSentence": "Only recently have sleep and dreams been subjected to empirical scientific analysis.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Dhaka Board Standard, Unit 6"
+    "boardExamTag": "Dhaka Board Standard, Unit 6",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-02",
@@ -5598,7 +10445,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Producing powerful feelings or strong, clear images in the mind.",
     "exampleSentence": "Some people recall extraordinarily vivid dreams filled with intense colors.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "vague"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "vague"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l1-03",
@@ -5610,7 +10470,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Of uncertain, indefinite, or unclear character or meaning.",
     "exampleSentence": "He had only a vague and fleeting recollection of what happened in the night.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "vivid"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "vivid"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l1-04",
@@ -5622,7 +10495,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Impossible to understand; completely perplexing.",
     "exampleSentence": "The exact evolutionary purpose of sleep remains a baffling question to scientists.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-05",
@@ -5634,7 +10516,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A general agreement among members of a group or community.",
     "exampleSentence": "No scientific consensus has emerged regarding the primary biological function of dreaming.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-06",
@@ -5646,7 +10537,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Investigating and solving or explaining something complicated.",
     "exampleSentence": "Neurologists are gradually unraveling the neural pathways activated during sleep.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-07",
@@ -5658,7 +10558,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to psychoanalysis, the psychological theory and therapy developed by Freud.",
     "exampleSentence": "The psychoanalytic perspective treats dreams as symbolic windows into the unconscious.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-08",
@@ -5670,7 +10579,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The part of the mind of which one is not fully aware but which influences actions and feelings.",
     "exampleSentence": "Unresolved anxieties from daytime often manifest through the subconscious mind.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-09",
@@ -5682,7 +10600,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Characterized by the suppression of impulses or desires.",
     "exampleSentence": "Freud famously declared dreams to be disguised fulfillments of repressed wishes.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-10",
@@ -5694,7 +10621,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of explaining the meaning of something.",
     "exampleSentence": "Dream interpretation has been practiced across human civilizations since antiquity.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-11",
@@ -5706,7 +10642,27 @@ export const hscVocabularyList = [
     "englishMeaning": "Based on or influenced by personal feelings, tastes, or opinions.",
     "exampleSentence": "The emotional impact of a nighttime vision is entirely subjective to the dreamer.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "individual",
+      "intuitive",
+      "empirical",
+      "universal"
+    ],
+    "crossRefMatchCount": 4,
+    "crossRefSynonyms": [
+      "individual",
+      "intuitive"
+    ],
+    "crossRefAntonyms": [
+      "empirical",
+      "universal"
+    ],
+    "priority": 104
   },
   {
     "id": "vocab-u6-l1-12",
@@ -5718,7 +10674,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to cognition; the mental process of acquiring knowledge and understanding.",
     "exampleSentence": "Dreams help synthesize memories and strengthen cognitive abilities during sleep.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "intellectual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "intellectual"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l1-13",
@@ -5730,7 +10699,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Things that evoke a specific functional reaction in an organ or tissue.",
     "exampleSentence": "External sensory stimuli like barking dogs can be woven into the fabric of a dream.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "HSC Board Standard, Unit 6"
+    "boardExamTag": "HSC Board Standard, Unit 6",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-14",
@@ -5742,7 +10720,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A collection of things lying about in an untidy mass; mental mess.",
     "exampleSentence": "One theory suggests dreams clear out unnecessary neural clutter from memory.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l1-15",
@@ -5754,7 +10741,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The treatment of mental disorders by psychological rather than medical means.",
     "exampleSentence": "Some psychologists believe dreaming serves as natural, nocturnal psychotherapy.",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l2-01",
@@ -5766,7 +10762,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Make great efforts to achieve or obtain something.",
     "exampleSentence": "Poets give voice to the noble ideals for which brave reformers strive.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Dhaka Board Standard, Unit 6"
+    "boardExamTag": "Dhaka Board Standard, Unit 6",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "toil"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "toil"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l2-02",
@@ -5778,7 +10787,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A revival of or renewed interest in something, especially culture or art.",
     "exampleSentence": "Langston Hughes was a leading intellectual voice of the Harlem Renaissance.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l2-03",
@@ -5790,7 +10808,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Small spaces created by building part of a wall further back from the rest; innermost parts.",
     "exampleSentence": "Nighttime dreams often vanish back into the dusty recesses of the mind.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l2-04",
@@ -5802,7 +10829,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The quality of being worthless or futile.",
     "exampleSentence": "Those who dream only in sleep awaken to discover that their hopes were mere vanity.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l2-05",
@@ -5814,7 +10850,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Too poor to produce much or any vegetation; bleak and lifeless.",
     "exampleSentence": "When cherished dreams die, human life resembles a frozen and barren field.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "desolate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "desolate"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l2-06",
@@ -5826,7 +10875,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A series of pleasant thoughts that distract one's attention from the present.",
     "exampleSentence": "Action-oriented thinkers turn their waking daydream into transformative reality.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "reverie"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "reverie"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l2-07",
@@ -5838,7 +10900,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An experience involving the apparent perception of something not present.",
     "exampleSentence": "Extreme sleep deprivation causes bizarre waking hallucinations in humans.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l2-08",
@@ -5850,7 +10921,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A state of being pleasantly lost in one's thoughts; a daydream.",
     "exampleSentence": "She was lost in a peaceful reverie while listening to the raindrops.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "daydream"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "daydream"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u6-l2-09",
@@ -5862,7 +10946,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Resembling or having the bright luster of silver.",
     "exampleSentence": "The silvery moonlight reflected gently across the surface of the quiet lake.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u6-l2-10",
@@ -5874,7 +10967,16 @@ export const hscVocabularyList = [
     "englishMeaning": "People who vigorously support their country and are prepared to defend it.",
     "exampleSentence": "Poets celebrate the enduring dreams of patriots who struggle for their country's liberty.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "HSC Board Standard, Unit 6"
+    "boardExamTag": "HSC Board Standard, Unit 6",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-01",
@@ -5886,7 +10988,16 @@ export const hscVocabularyList = [
     "englishMeaning": "To arouse a sudden sense of great excitement or enthusiasm.",
     "exampleSentence": "The prospect of breaking a world record electrified the exhausted swimmer.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Dhaka Board Standard, Unit 7"
+    "boardExamTag": "Dhaka Board Standard, Unit 7",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-02",
@@ -5898,7 +11009,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Provoked or annoyed someone so as to stimulate some action or reaction.",
     "exampleSentence": "A passionate desire for national glory goaded him to swim across the freezing sea.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "discouraged"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "discouraged"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l1-03",
@@ -5910,7 +11034,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Betrayal of trust; deceptive or unpredictable danger.",
     "exampleSentence": "Channel swimmers must battle the treachery of sudden Atlantic squalls and currents.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-04",
@@ -5922,7 +11055,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Courage and resolve; strength of character.",
     "exampleSentence": "Only athletes blessed with uncommon mental grit can subdue the English Channel.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-05",
@@ -5934,7 +11076,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Overcome, quieten, or bring under control.",
     "exampleSentence": "Brojen was resolved to subdue the icy waters through sheer endurance.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "overcome"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "overcome"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l1-06",
@@ -5946,7 +11101,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not aware of or not concerned about what is happening around one.",
     "exampleSentence": "Engrossed in rhythm, he became oblivious of freezing temperature and distance.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-07",
@@ -5958,7 +11122,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Gradually lessening or reducing.",
     "exampleSentence": "He fought valiantly to rally his ebbing energy in the final nautical miles.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "waning"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "waning"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l1-08",
@@ -5970,7 +11147,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely hungry; starving.",
     "exampleSentence": "After swimming ten grueling hours, the famished athlete desperately pleaded for nourishment.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-09",
@@ -5982,7 +11168,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Well known, especially so as to be stereotypical.",
     "exampleSentence": "The elusive world record dangled before his vision like the proverbial carrot.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-10",
@@ -5994,7 +11189,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Rough and uneven; having many crags or steep rocks.",
     "exampleSentence": "He scraped his arms against craggy submerged rocks while staggering ashore.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l1-11",
@@ -6006,7 +11210,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The quantity of motion of a moving body; impetus gained by movement.",
     "exampleSentence": "Building strong swimming momentum helped him cut through turbulent coastal surf.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "HSC Board Standard, Unit 7"
+    "boardExamTag": "HSC Board Standard, Unit 7",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "thrust"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "thrust"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l1-12",
@@ -6018,7 +11235,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Heavy sea waves that break into white foam on rocks or a beach.",
     "exampleSentence": "Giant breakers tossed the swimmer violently as he approached the Kent shoreline.",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-01",
@@ -6030,7 +11256,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person or thing regarded as a representative symbol or as worthy of veneration.",
     "exampleSentence": "Nishat Mazumder is celebrated as a sporting icon across Bangladesh.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Dhaka Board Standard, Unit 7"
+    "boardExamTag": "Dhaka Board Standard, Unit 7",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-02",
@@ -6042,7 +11277,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Go on a long arduous journey, typically on foot across rough terrain.",
     "exampleSentence": "She joined the mountaineering and trekking club to learn basic high-altitude survival.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-03",
@@ -6054,7 +11298,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Persistence in doing something despite difficulty or delay in achieving success.",
     "exampleSentence": "Reaching Mount Everest requires unwavering mental perseverance and physical discipline.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-04",
@@ -6066,7 +11319,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Involving or resulting in great damage or disaster.",
     "exampleSentence": "Her mother maintained calm resilience even in the most calamitous moments.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "prosperous"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "prosperous"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l2-05",
@@ -6078,7 +11344,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Certain to happen; unavoidable.",
     "exampleSentence": "With unyielding willpower, conquering formidable obstacles becomes inevitable.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "destined"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "destined"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l2-06",
@@ -6090,7 +11369,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The overcoming of a problem or evil; the winning of something.",
     "exampleSentence": "Hillary and Tenzing's historic conquest of Everest inspired dreamers everywhere.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-07",
@@ -6102,7 +11390,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A journey undertaken by a group of people with a particular purpose.",
     "exampleSentence": "She carried the flag of Bangladesh during the landmark 2012 Himalayan expedition.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-08",
@@ -6114,7 +11411,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely serious or urgent; most terrible.",
     "exampleSentence": "Even under the direst financial constraints, her family stood beside her dreams.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l2-09",
@@ -6126,7 +11432,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Protect and care for someone or something lovingly.",
     "exampleSentence": "To stand atop the highest peak on earth was her long cherished ambition.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "fostered"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "fostered"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l2-10",
@@ -6138,7 +11457,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Unassuming in the estimation of one's abilities; relatively moderate.",
     "exampleSentence": "She emerged from a modest family background to achieve international renown.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "HSC Board Standard, Unit 7"
+    "boardExamTag": "HSC Board Standard, Unit 7",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "extravagant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "extravagant"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l2-11",
@@ -6150,7 +11482,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not likely to be true or to happen.",
     "exampleSentence": "Dreams that appear improbable at first can be realized through unrelenting perseverance.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-01",
@@ -6162,7 +11503,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Representing or being on a small or much smaller scale than normal.",
     "exampleSentence": "Traditional households gave girls miniature kitchen sets to groom them for domestic chores.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Dhaka Board Standard, Unit 7"
+    "boardExamTag": "Dhaka Board Standard, Unit 7",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-02",
@@ -6174,7 +11524,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Physical strength and good health; effort, energy, and enthusiasm.",
     "exampleSentence": "The young female athletes played ninety minutes of football with fierce vigour.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "fatigue"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "fatigue"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l3-03",
@@ -6186,7 +11549,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Persons or things corresponding to others in another group or context.",
     "exampleSentence": "Female footballers proved they could equal and surpass their male counterparts.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-04",
@@ -6198,7 +11570,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Confirmed or settled something conclusively; won an athletic competition.",
     "exampleSentence": "Bangladesh clinched the regional championship trophy with a breathtaking solitary goal.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "secured"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "secured"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u7-l3-05",
@@ -6210,7 +11595,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not defeated or bested; victorious throughout an entire tournament.",
     "exampleSentence": "The fearless squad returned from Bhutan as the proud unbeaten champions.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-06",
@@ -6222,7 +11616,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An exceptionally heroic or monumental achievement resembling a classical epic.",
     "exampleSentence": "The journey of Kalsindur footballers reads like an inspiring real-world epic.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-07",
@@ -6234,7 +11637,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Difficulties or misfortunes.",
     "exampleSentence": "Despite grappling with acute poverty and social bias, they overcame all adversities.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-08",
@@ -6246,7 +11658,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Lack of proper nutrition, caused by not having enough to eat.",
     "exampleSentence": "Early in their careers, several young village girls suffered from chronic malnutrition.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-09",
@@ -6258,7 +11679,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A feeling that makes one self-conscious and unable to act in a relaxed and natural way.",
     "exampleSentence": "The girls shook off all gendered inhibition once they stepped onto the green grass.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u7-l3-10",
@@ -6270,7 +11700,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Induced someone to do something through reasoning or argument.",
     "exampleSentence": "Dedicated teachers persuaded skeptical parents to allow their daughters to practice.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "convinced",
+      "discouraged"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "convinced"
+    ],
+    "crossRefAntonyms": [
+      "discouraged"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u7-l3-11",
@@ -6282,7 +11728,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having or showing a strong desire and determination to succeed.",
     "exampleSentence": "Even humble daily-wage earners became ambitious supporters of their daughters' goals.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "HSC Board Standard, Unit 7"
+    "boardExamTag": "HSC Board Standard, Unit 7",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l1-01",
@@ -6294,7 +11749,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A feeling of fellowship or friendship.",
     "exampleSentence": "Human beings innately crave meaningful companionship and warmth.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Dhaka Board Standard, Unit 8"
+    "boardExamTag": "Dhaka Board Standard, Unit 8",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l1-02",
@@ -6306,7 +11770,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to or occurring in a family or its members.",
     "exampleSentence": "Close familial bonds serve as a safety net through turbulent life crises.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "maternal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "maternal"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u8-l1-03",
@@ -6318,7 +11795,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Closely acquainted; familiar, close, or personal.",
     "exampleSentence": "True friendship develops into an intimate bond of mutual trust.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l1-04",
@@ -6330,7 +11816,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Encouraged or promoted the development of something desirable.",
     "exampleSentence": "Healthy emotional security is fostered within supportive family environments.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "cherished",
+      "discouraged"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "cherished"
+    ],
+    "crossRefAntonyms": [
+      "discouraged"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u8-l1-05",
@@ -6342,7 +11844,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Makes or becomes much greater, more intense, or numerous.",
     "exampleSentence": "Sharing happiness with beloved peers simply redoubles the joy.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l1-06",
@@ -6354,7 +11865,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Demanding someone's total attention and love, or unwilling to share.",
     "exampleSentence": "Excessively possessive behavior can suffocate interpersonal relationships.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l1-07",
@@ -6366,7 +11886,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having an angry argument or disagreement.",
     "exampleSentence": "Endless domestic quarrelling causes severe emotional distress to developing children.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l1-08",
@@ -6378,7 +11907,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Conditions that must exist or be established before something can occur.",
     "exampleSentence": "Mutual respect and loyalty are indispensable preconditions for enduring friendships.",
     "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-01",
@@ -6390,7 +11928,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Of a very dark blue color approaching black.",
     "exampleSentence": "The father arose in the bitter blueblack cold before dawn.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Dhaka Board Standard, Unit 8"
+    "boardExamTag": "Dhaka Board Standard, Unit 8",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-02",
@@ -6402,7 +11949,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Built up a fire with fuel and banked it so that it burns slowly.",
     "exampleSentence": "He made the banked fireplace embers blaze into comforting warmth.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-03",
@@ -6414,7 +11970,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Breaking or causing to break into small sharp fragments.",
     "exampleSentence": "The boy woke to hear the morning frost splintering against the floorboards.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-04",
@@ -6426,7 +11991,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Persisting for a long time or constantly recurring.",
     "exampleSentence": "The home was shadowed by the chronic angers of poverty and labor.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "habitual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "habitual"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u8-l2-05",
@@ -6438,7 +12016,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a way that shows no particular interest or sympathy; unconcernedly.",
     "exampleSentence": "The young son spoke indifferently to a father who gave his all.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-06",
@@ -6450,7 +12037,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Severe or strict in manner, attitude, or appearance.",
     "exampleSentence": "A parent's love often expresses itself through austere and thankless sacrifices.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-07",
@@ -6462,7 +12058,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Services, duties, or acts done for other people.",
     "exampleSentence": "The poet lamented not appreciating his father's austere and lonely offices.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l2-08",
@@ -6474,7 +12079,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Suffered a continuous dull pain from rigorous physical strain.",
     "exampleSentence": "His rough hands ached with fissures caused by harsh winter quarry work.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 8: Lesson 2 (Warmth)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-01",
@@ -6486,7 +12100,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Magnificent; very impressive, excellent, or grand.",
     "exampleSentence": "The young orphan boy chopped a splendid pile of dense mountain hardwood.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Dhaka Board Standard, Unit 8"
+    "boardExamTag": "Dhaka Board Standard, Unit 8",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "magnificent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "magnificent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u8-l3-02",
@@ -6498,7 +12125,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Easily combustible small sticks or twigs used for starting a fire.",
     "exampleSentence": "Jerry stacked dry cedar kindling neatly beside the cabin chimney.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-03",
@@ -6510,7 +12146,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The quality of being honest and having strong moral principles.",
     "exampleSentence": "Jerry possessed rare spiritual integrity that was deeply embedded in courage.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-04",
@@ -6522,7 +12167,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A residential institution for the care and education of orphans.",
     "exampleSentence": "The solitary boy had resided at the Carolina orphanage since infancy.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-05",
@@ -6534,7 +12188,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Used or added in place of something else.",
     "exampleSentence": "In his fantasy, Jerry substituted the loving writer for the mother he never had.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-06",
@@ -6546,7 +12209,23 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely beautiful, elaborate, or impressive.",
     "exampleSentence": "He described his mother's imagined character in magnificent, glowing terms.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "splendid",
+      "modest"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "splendid"
+    ],
+    "crossRefAntonyms": [
+      "modest"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u8-l3-07",
@@ -6558,7 +12237,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Deviating from what is standard, normal, or expected.",
     "exampleSentence": "Jerry's sudden fabrications appeared anomalous compared to his usual candid honesty.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-08",
@@ -6570,7 +12258,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Behaved so as to make it appear that something was the case when in fact it was not.",
     "exampleSentence": "The lonely boy pretended his mother lived comfortably in faraway Mannville.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-09",
@@ -6582,7 +12279,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In an uncompromisingly forthright and direct way.",
     "exampleSentence": "The headmistress bluntly informed the writer that Jerry had no mother alive.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Mymensingh Board Standard"
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l3-10",
@@ -6594,7 +12300,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Giving cause for alarm; serious, solemn, and quiet.",
     "exampleSentence": "Jerry fixed his grave gray-blue eyes upon the distant mountain peaks.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
-    "boardExamTag": "Dhaka Board 1st Paper"
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-01",
@@ -6606,7 +12321,22 @@ export const hscVocabularyList = [
     "englishMeaning": "The human soul, mind, or spirit.",
     "exampleSentence": "In classical Hellenic myths, the human psyche is symbolized with butterfly wings.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Dhaka Board Standard, Unit 8"
+    "boardExamTag": "Dhaka Board Standard, Unit 8",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "spirit",
+      "subconscious"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "spirit",
+      "subconscious"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u8-l4-02",
@@ -6618,7 +12348,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Lasting only for a short time; impermanent.",
     "exampleSentence": "A butterfly's fleeting dance reminds us of the transient sweetness of existence.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "perpetual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "perpetual"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u8-l4-03",
@@ -6630,7 +12373,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A dark bituminous substance used for surfacing roads.",
     "exampleSentence": "Rain slicked the glistening dark asphalt under flashing traffic lamps.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-04",
@@ -6642,7 +12394,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A wind-resistant jacket with a close-fitting neck, waistband, and cuffs.",
     "exampleSentence": "He kept the addressed parcel sheltered inside his nylon windbreaker.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-05",
@@ -6654,7 +12415,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A silky case spun by insect larvae for protection in the pupal stage.",
     "exampleSentence": "The caterpillar patiently endures darkness within the cocoon before emerging.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-06",
@@ -6666,7 +12436,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A marked change in form, nature, or appearance.",
     "exampleSentence": "The wondrous transformation from chrysalis to winged beauty evokes awe.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-07",
@@ -6678,7 +12457,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A device consisting of a circular canopy of cloth on a folding metal frame.",
     "exampleSentence": "She crossed the stormy avenue sheltering underneath a tiny folding umbrella.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-08",
@@ -6690,7 +12478,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely interesting and charming.",
     "exampleSentence": "Butterflies exhibit a fascinating spectrum of iridescence and symmetry.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u8-l4-09",
@@ -6702,7 +12499,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Done or existing alone; isolated.",
     "exampleSentence": "A solitary scarlet postbox stood desolate at the edge of the drenched crossing.",
     "unit": "Unit 8: Lesson 4 (Love)",
-    "boardExamTag": "HSC Board Standard, Unit 8"
+    "boardExamTag": "HSC Board Standard, Unit 8",
+    "sources": [
+      "Unit 8: Lesson 4 (Love)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "accompanied"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "accompanied"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l2-01",
@@ -6714,7 +12524,22 @@ export const hscVocabularyList = [
     "englishMeaning": "The state or condition of being fully grown or mature.",
     "exampleSentence": "Successful passage into adulthood requires supportive community infrastructure.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "infancy",
+      "adolescence"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "infancy",
+      "adolescence"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u9-l2-02",
@@ -6726,7 +12551,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state or fact of having a duty to deal with something or of having control over someone.",
     "exampleSentence": "Communities bear collective responsibility for safeguarding vulnerable youth.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l2-03",
@@ -6738,7 +12572,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A small alteration or movement made to achieve a desired fit, appearance, or result; psychological coping.",
     "exampleSentence": "Puberty requires rapid emotional adjustment to drastic bodily changes.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l2-04",
@@ -6750,7 +12593,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In such a manner as to achieve a desired result.",
     "exampleSentence": "Counselors must intervene effectively when young students face bullying or substance risks.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l2-05",
@@ -6762,7 +12614,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Not married; single.",
     "exampleSentence": "Unmarried adolescent girls frequently face social stigma when asking about reproductive healthcare.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l2-06",
@@ -6774,7 +12635,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A person or thing that provides something; healthcare practitioner.",
     "exampleSentence": "The unsympathetic attitude of the clinic provider alienated teenage patients.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "practitioner"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "practitioner"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l2-07",
@@ -6786,7 +12660,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A settled way of thinking or feeling about someone or something.",
     "exampleSentence": "Enlightened societal attitudes are crucial for empowering growing adolescent girls.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "perceptions"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "perceptions"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l2-08",
@@ -6798,7 +12685,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Dangers or risks, especially regarding health or well-being.",
     "exampleSentence": "Early pregnancy exposes immature adolescent bodies to catastrophic medical hazards.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l3-01",
@@ -6810,7 +12706,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The act of placing in a lower rank or position; the state of being subordinate.",
     "exampleSentence": "Patriarchal traditions enforce the economic subordination of young female dependents.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l3-02",
@@ -6822,7 +12727,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Treatment of a person, group, or concept as insignificant or peripheral.",
     "exampleSentence": "Child marriage cements the lifelong socio-economic marginalisation of girls.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "empowerment"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "empowerment"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l3-03",
@@ -6834,7 +12752,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Having a great deal of money; wealthy.",
     "exampleSentence": "Adolescents from affluent households enjoy superior nutritional and educational resources.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "prosperous"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "prosperous"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l3-04",
@@ -6846,7 +12777,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Property or money brought by a bride to her husband on their marriage.",
     "exampleSentence": "Demands for dowry persist in rural weddings despite being completely illegal.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l3-05",
@@ -6858,7 +12798,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to a mother, especially during pregnancy and childbirth.",
     "exampleSentence": "Ensuring trained obstetric care dramatically reduces maternal complications.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l3-06",
@@ -6870,7 +12819,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being subject to death; death, especially on a large scale.",
     "exampleSentence": "Teenage maternal mortality is significantly higher than that for adult mothers.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l3-07",
@@ -6882,7 +12840,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Reduces in extent or quantity; imposes a restriction on.",
     "exampleSentence": "Early motherhood abruptly curtails a young woman's academic development.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l3-08",
@@ -6894,7 +12861,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The ability to move or be moved freely and easily.",
     "exampleSentence": "Confining young brides indoors eliminates their social contact and physical mobility.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-01",
@@ -6906,7 +12882,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Be appropriate, related, or applicable to something.",
     "exampleSentence": "The workshop addressed issues pertaining to adolescent reproductive rights.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Dhaka Board Standard, Unit 9"
+    "boardExamTag": "Dhaka Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-02",
@@ -6918,7 +12903,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The provision of professional assistance and guidance in resolving personal problems.",
     "exampleSentence": "Professional counselling gave Shilpi the confidence to express her health choices.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-03",
@@ -6930,7 +12924,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Diminished in size, amount, or strength; decreased.",
     "exampleSentence": "Maternal mortality rates have declined substantially across Bangladesh over two decades.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "plummeted"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "plummeted"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l4-04",
@@ -6942,7 +12949,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An escape of blood from a ruptured blood vessel, especially when profuse.",
     "exampleSentence": "Obstructed labor can cause severe hemorrhage that threatens an adolescent mother's life.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-05",
@@ -6954,7 +12970,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An abnormal or surgically made passage between a hollow or tubular organ and the body surface, or between two hollow organs.",
     "exampleSentence": "Obstetric fistula leads to chronic pain and heartbreaking social ostracization.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-06",
@@ -6966,7 +12991,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Prevented or hindered from movement or progress; blocked.",
     "exampleSentence": "Immature pelvic development frequently results in obstructed delivery in teenage girls.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-07",
@@ -6978,7 +13012,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The condition of suffering from a disease or medical condition.",
     "exampleSentence": "Early marriage exposes vulnerable youth to long-term gynecological morbidities.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u9-l4-08",
@@ -6990,7 +13033,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The process of becoming stronger and more confident, especially in controlling one's life and claiming one's rights.",
     "exampleSentence": "Adolescent empowerment clubs provide young women with tools to reshape their destinies.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "strengthening"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "strengthening"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u9-l4-09",
@@ -7002,7 +13058,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Completely certain about something; persuaded by argument or evidence.",
     "exampleSentence": "Shilpi convinced her husband to postpone parenthood until she attained adulthood.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "HSC Board Standard, Unit 9"
+    "boardExamTag": "HSC Board Standard, Unit 9",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "persuaded",
+      "positive"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "persuaded",
+      "positive"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u10-l3-01",
@@ -7014,7 +13085,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A film, book, or illustrated lecture about the places visited and experiences encountered by a traveler.",
     "exampleSentence": "Syed Mujtaba Ali's famous travelogues blend erudition with playful humor.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Dhaka Board Standard, Unit 10"
+    "boardExamTag": "Dhaka Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-02",
@@ -7026,7 +13106,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Short amusing or interesting stories about a real incident or person.",
     "exampleSentence": "The voyager seasoned his Egyptian narratives with witty anecdotes.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-03",
@@ -7038,7 +13127,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The practice or art of choosing, cooking, and eating good food.",
     "exampleSentence": "Mughal gastronomy left an indelible impression upon Middle Eastern cuisines.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-04",
@@ -7050,7 +13148,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Belonging to the category that is salty or spicy rather than sweet.",
     "exampleSentence": "Traditional Bengali banquets balance bitter greens with savoury meat delicacies.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-05",
@@ -7062,7 +13169,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A style or method of cooking, especially as characteristic of a particular country or region.",
     "exampleSentence": "Egyptian street cuisine shares remarkable historical affinity with Mughlai cooking.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-06",
@@ -7074,7 +13190,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Choice or expensive foods considered especially rare and delicious.",
     "exampleSentence": "Sandesh and rasogolla are sweet delicacies revered throughout Bengal.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-07",
@@ -7086,7 +13211,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person skilled in foreign languages or studying the structure of human language.",
     "exampleSentence": "As a polyglot linguist, Ali appreciated the dialectal nuances of Cairo.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l3-08",
@@ -7098,7 +13232,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who goes on a long journey, typically by sea or into space.",
     "exampleSentence": "The intrepid voyager crossed uncharted seas to observe foreign cultures.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 10: Lesson 3 (Food and Culture)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-01",
@@ -7110,7 +13253,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of looking thoughtfully at something for a long time; deep reflective thought.",
     "exampleSentence": "Quiet contemplation beneath trees clears the mind of academic stress.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Dhaka Board Standard, Unit 10"
+    "boardExamTag": "Dhaka Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-02",
@@ -7122,7 +13274,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of looking back on or reviewing past events or situations.",
     "exampleSentence": "Mature retrospection allows us to learn constructive lessons from earlier blunders.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-03",
@@ -7134,7 +13295,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Particular ways of standing, sitting, or positioning the body.",
     "exampleSentence": "Maintaining upright yogic postures enhances respiratory volume and posture.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-04",
@@ -7146,7 +13316,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Vigorous exercises designed to increase cardiovascular efficiency.",
     "exampleSentence": "Practicing thirty minutes of daily aerobics bolsters heart health.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-05",
@@ -7158,7 +13337,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A state of happiness and satisfaction.",
     "exampleSentence": "True mental wellness arises from spiritual contentment rather than vanity.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "satisfaction"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "satisfaction"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l4-06",
@@ -7170,7 +13362,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A strong and fast-moving stream of water or other liquid; overwhelming outpouring.",
     "exampleSentence": "Meditation calms the chaotic torrent of stressful everyday thoughts.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-07",
@@ -7182,7 +13383,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Finding a calm point of mental equilibrium and focus.",
     "exampleSentence": "Centering your breathing before an exam curbs panic and sharpen recall.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l4-08",
@@ -7194,7 +13404,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Showed or guided someone somewhere; heralded the start of something new.",
     "exampleSentence": "Ancient sages ushered in the philosophy of mental purification through meditation.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l5-01",
@@ -7206,7 +13425,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The protection or promotion of the interests of consumers; preoccupation with buying consumer goods.",
     "exampleSentence": "Rampant consumerism drives individuals to accumulate redundant possessions.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Dhaka Board Standard, Unit 10"
+    "boardExamTag": "Dhaka Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "asceticism"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "asceticism"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l5-02",
@@ -7218,7 +13450,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Resulting from or relating to an irresistible urge, especially one that is irrational.",
     "exampleSentence": "Compulsive shopping often masks underlying emotional isolation.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "deliberate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "deliberate"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l5-03",
@@ -7230,7 +13475,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Spend more than is necessary or can be afforded.",
     "exampleSentence": "Those who routinely overspend on brand labels soon invite insolvency.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l5-04",
@@ -7242,7 +13496,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Full of praise and compliments, often excessively or insincerely.",
     "exampleSentence": "Clever salesmen deploy flattering remarks to disarm cautious shoppers.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "critical"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "critical"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u10-l5-05",
@@ -7254,7 +13521,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Extremely impressive or attractive.",
     "exampleSentence": "She was captivated by the stunning craftsmanship of the embroidered silk gown.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "splendid",
+      "magnificent"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "splendid",
+      "magnificent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u10-l5-06",
@@ -7266,7 +13548,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The fact or condition of being addicted to a particular substance or activity.",
     "exampleSentence": "Retail addiction can drain family savings as insidiously as gambling.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l5-07",
@@ -7278,7 +13569,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having an urge or inclination to do something.",
     "exampleSentence": "Shoppers are tempted by flashing neon discount banners during festival seasons.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u10-l5-08",
@@ -7290,7 +13590,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to finance or financial matters.",
     "exampleSentence": "Prudent budgeting shields middle-class households from unexpected financial crises.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
-    "boardExamTag": "HSC Board Standard, Unit 10"
+    "boardExamTag": "HSC Board Standard, Unit 10",
+    "sources": [
+      "Unit 10: Lesson 5 (Consumerism)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "economic"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "economic"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u11-l1-01",
@@ -7302,7 +13615,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Cruel acts or behaviors; callous indifference to or enjoyment of another's suffering.",
     "exampleSentence": "The cruelties of ethnic conflict leave enduring scars across generations.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Dhaka Board Standard, Unit 11"
+    "boardExamTag": "Dhaka Board Standard, Unit 11",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l1-02",
@@ -7314,7 +13636,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The language or dialect spoken by the ordinary people in a particular country or region.",
     "exampleSentence": "Maya Angelou composed her poignant verses in authentic African-American vernacular.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "dialect"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "dialect"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u11-l1-03",
@@ -7326,7 +13661,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to the major groupings into which humankind is divided on the basis of physical traits.",
     "exampleSentence": "Overcoming racial prejudice remains humanity's urgent moral crusade.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "universal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "universal"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u11-l1-04",
@@ -7338,7 +13686,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Subject to lasting shock as a result of an emotionally disturbing experience.",
     "exampleSentence": "Traumatized refugee children require compassionate clinical therapy to rebuild trust.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l1-05",
@@ -7350,7 +13707,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The state of being close to another person or other people; affection and closeness.",
     "exampleSentence": "Community togetherness dispels the toxic chill of solitary confinement.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l1-06",
@@ -7362,7 +13728,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Come to an end; become invalid or extinguished.",
     "exampleSentence": "Naïve hopes of quick diplomatic truce expire as fighting intensifies.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l1-07",
@@ -7374,7 +13749,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Preoccupying or continually filling the mind of someone.",
     "exampleSentence": "Dread of nuclear escalation has been obsessing geopolitical thinkers worldwide.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "haunting"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "haunting"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u11-l1-08",
@@ -7386,7 +13774,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Too bad, embarrassing, or shocking to be spoken about.",
     "exampleSentence": "War zones emanate the unmentionable stench of decay and destruction.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-01",
@@ -7398,7 +13795,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A flat-bottomed boat or hollow cylinder, used with others to support a temporary bridge.",
     "exampleSentence": "Refugees converged upon the vibrating wooden planks of the pontoon bridge.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Dhaka Board Standard, Unit 11"
+    "boardExamTag": "Dhaka Board Standard, Unit 11",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-02",
@@ -7410,7 +13816,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Walked or moved unsteadily, as if about to fall.",
     "exampleSentence": "Exhausted mules staggered under heavy household loads up the river embankment.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-03",
@@ -7422,7 +13837,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Walked doggedly and slowly with heavy steps.",
     "exampleSentence": "Peasants plodded mechanically through ankle-deep dust toward safety.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-04",
@@ -7434,7 +13858,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A strong position secured by an army inside hostile territory to protect bridge crossing.",
     "exampleSentence": "The scout crept forward to examine whether the enemy artillery had reached the bridgehead.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-05",
@@ -7446,7 +13879,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Large-caliber guns used in warfare on land.",
     "exampleSentence": "The distant thud of advancing artillery heralded impending catastrophe.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-06",
@@ -7458,7 +13900,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a way that shows no emotion, understanding, or interest.",
     "exampleSentence": "Overwhelmed by grief, the displaced grandfather stared blankly at the flowing river.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-07",
@@ -7470,7 +13921,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Followers of a political philosophy characterized by dictatorial power and forcible suppression.",
     "exampleSentence": "Franco's fascists bombarded civilian settlements throughout Catalonia.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l2-08",
@@ -7482,7 +13942,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Experiencing worry, unease, or nervousness, typically about an imminent event.",
     "exampleSentence": "The refugee was anxious about the fate of the goats he had been forced to leave behind.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "restless"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "restless"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u11-l3-01",
@@ -7494,7 +13967,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Long speeches by one actor in a play or movie, or as part of a theatrical program.",
     "exampleSentence": "The poignant monologues by Palestinian teenagers brought international audiences to tears.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Dhaka Board Standard, Unit 11"
+    "boardExamTag": "Dhaka Board Standard, Unit 11",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-02",
@@ -7506,7 +13988,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A military operation in which enemy forces surround a town or building, cutting off essential supplies.",
     "exampleSentence": "The protracted military siege denied the urban population access to clean drinking water.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-03",
@@ -7518,7 +14009,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The damaging lack of material benefits considered to be basic necessities in a society.",
     "exampleSentence": "Children grew up under persistent medical and nutritional deprivation.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-04",
@@ -7530,7 +14030,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Broken into many pieces; severely damaged or destroyed.",
     "exampleSentence": "Shattered windowpanes and pulverized masonry carpeted every street after the airstrike.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-05",
@@ -7542,7 +14051,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A temporary suspension of fighting, typically one during which peace talks take place.",
     "exampleSentence": "Humanitarian agencies urged all factions to observe an immediate humanitarian ceasefire.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-06",
@@ -7554,7 +14072,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Waste or rough fragments of stone, brick, concrete, etc., especially as the debris from the demolition of buildings.",
     "exampleSentence": "Rescue crews dug frantically through smoking rubble to locate survivors.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-07",
@@ -7566,7 +14093,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Forced someone to leave their home, typically because of war, persecution, or natural disaster.",
     "exampleSentence": "Over one million displaced families took makeshift refuge in crowded school yards.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l3-08",
@@ -7578,7 +14114,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The complete loss or absence of hope.",
     "exampleSentence": "Amidst heartbreaking despair, youthful Palestinian artists refuse to silence their creative resistance.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "anguish"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "anguish"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u11-l4-01",
@@ -7590,7 +14139,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Feel a powerful desire for something; ask for earnestly.",
     "exampleSentence": "War-weary citizens passionately crave an end to senseless bloodshed.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Dhaka Board Standard, Unit 11"
+    "boardExamTag": "Dhaka Board Standard, Unit 11",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l4-02",
@@ -7602,7 +14160,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Brave; heroic; charming or exceptionally splendid.",
     "exampleSentence": "The poet admired a gallant blossom flourishing in the tranquil monastery garden.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "splendid",
+      "magnificent"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "splendid",
+      "magnificent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u11-l4-03",
@@ -7614,7 +14187,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Eat food or prey hungrily or quickly; destroy or consume entirely.",
     "exampleSentence": "Militarism threatens to devour civil budgets that should fund human health.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l4-04",
@@ -7626,7 +14208,16 @@ export const hscVocabularyList = [
     "englishMeaning": "In a way that shows a modest or low estimate of one's importance; without arrogance.",
     "exampleSentence": "The seeker knelt humbly before the altar to beseech peace.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l4-05",
@@ -7638,7 +14229,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Having a hole or empty space inside; without significance or sincerity.",
     "exampleSentence": "A hollow breeze whispered through the cavern where peace could not be found.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "solid",
+      "substantial"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "solid",
+      "substantial"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u11-l4-06",
@@ -7650,7 +14256,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Worthy of reverence; used as a title or respect for a member of the clergy or elder sage.",
     "exampleSentence": "A reverend sage guided Herbert to the true wellspring of spiritual repose.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l4-07",
@@ -7662,7 +14277,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Live in or at a specified place; remain in a given state.",
     "exampleSentence": "May brotherhood and mutual respect dwell forever among all nations.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l5-01",
@@ -7674,7 +14298,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A military brigade armed with large-caliber artillery pieces and cannons.",
     "exampleSentence": "The Australian artillery-brigade advanced under devastating hostile bombardment.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Dhaka Board Standard, Unit 11"
+    "boardExamTag": "Dhaka Board Standard, Unit 11",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l5-02",
@@ -7686,7 +14319,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A board consisting of a number of wooden slats joined together, placed over muddy ground.",
     "exampleSentence": "Troopers balanced carefully on slippery duckboard walkways crossing the marsh.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l5-03",
@@ -7698,7 +14340,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Show or represent by a drawing, painting, or other art form.",
     "exampleSentence": "Robert Capa's photograph depicts the horrific final heartbeat of a falling warrior.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l5-04",
@@ -7710,7 +14361,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The piece of ground on which a battle is or was fought.",
     "exampleSentence": "Centuries later, wildflowers bloom across what once was a bloody battlefield.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l5-05",
@@ -7722,7 +14382,16 @@ export const hscVocabularyList = [
     "englishMeaning": "An area of land under the jurisdiction of a ruler or state.",
     "exampleSentence": "Armies bled dry fighting over a few muddy square meters of disputed territory.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u11-l5-06",
@@ -7734,7 +14403,22 @@ export const hscVocabularyList = [
     "englishMeaning": "Having someone or something along as a companion or accompaniment.",
     "exampleSentence": "Historical photo collections should be accompanied by clear contextual analysis.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "solitary",
+      "abandoned"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "solitary",
+      "abandoned"
+    ],
+    "priority": 102
   },
   {
     "id": "vocab-u11-l5-07",
@@ -7746,7 +14430,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who serves in an army.",
     "exampleSentence": "Every unknown soldier represents an irreplaceable life cut down in its prime.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "HSC Board Standard, Unit 11"
+    "boardExamTag": "HSC Board Standard, Unit 11",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l1-01",
@@ -7758,7 +14451,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Acutely distressing or painful.",
     "exampleSentence": "The harrowing voyage across drought-stricken waters tested human endurance.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Dhaka Board Standard, Unit 12"
+    "boardExamTag": "Dhaka Board Standard, Unit 12",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "distressing"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "distressing"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l1-02",
@@ -7770,7 +14476,20 @@ export const hscVocabularyList = [
     "englishMeaning": "A river or stream flowing into a larger river or lake.",
     "exampleSentence": "The Buriganga originated as a vibrant tributary linking the Ganges with local commerce.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "affluent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "affluent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l1-03",
@@ -7782,7 +14501,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Never ending or changing; occurring repeatedly.",
     "exampleSentence": "Untreated factory sewage emits a perpetual stench that sickens surrounding residents.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "transient"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "transient"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l1-04",
@@ -7794,7 +14526,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A strong and very unpleasant smell.",
     "exampleSentence": "The foul stench hovering over the dead river drove fishermen away.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l1-05",
@@ -7806,7 +14547,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Allows a liquid, gas, or other substance to flow out from where it has been confined.",
     "exampleSentence": "The municipality discharges massive loads of unpurified sewage directly into the riverbed.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l1-06",
@@ -7818,7 +14568,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A place where animal hides are tanned and turned into leather.",
     "exampleSentence": "Toxic chromium effluent from the old tannery district poisoned subterranean aquifers.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l1-07",
@@ -7830,7 +14589,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Become or make smaller in size or amount.",
     "exampleSentence": "Under blistering tropical heat, the thirsty timber boards began to shrink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l1-08",
@@ -7842,7 +14610,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Be filled with wonder or astonishment.",
     "exampleSentence": "Mughal explorers marvelled at the pristine tide of the sparkling river.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "astonished"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "astonished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l2-01",
@@ -7854,7 +14635,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person who campaigns to bring about political or social change.",
     "exampleSentence": "The teenage activist challenged world leaders to halt reliance on fossil fuels.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Dhaka Board Standard, Unit 12"
+    "boardExamTag": "Dhaka Board Standard, Unit 12",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-02",
@@ -7866,7 +14656,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Totally bewilder or perplex.",
     "exampleSentence": "Students were baffled by the indifference of authorities toward glacier melt.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-03",
@@ -7878,7 +14677,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A group of symptoms that consistently occur together, or a condition characterized by a set of associated symptoms.",
     "exampleSentence": "Living with Asperger syndrome gave Greta unswerving focus on environmental science.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-04",
@@ -7890,7 +14698,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Withdraw from commercial or social relations with a country, organization, or person as a punishment or protest.",
     "exampleSentence": "Youth groups chose to boycott classes to press their urgent climate manifesto.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-05",
@@ -7902,7 +14719,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person or thing that precipitates an event or change.",
     "exampleSentence": "Her solitary school strike served as the catalyst for international climate rallies.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-06",
@@ -7914,7 +14740,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A gradual increase in the overall temperature of the earth's atmosphere generally attributed to the greenhouse effect.",
     "exampleSentence": "Accelerating global-warming intensifies sea-level rise along Bangladesh's coastlines.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-07",
@@ -7926,7 +14761,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Never done or known before.",
     "exampleSentence": "Millions of teenagers mobilized in an unprecedented display of planetary solidarity.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l2-08",
@@ -7938,7 +14782,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Required or expected to justify actions or decisions; responsible.",
     "exampleSentence": "Carbon emitters must be held accountable for compensating climate-vulnerable societies.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 12: Lesson 2 (The Greta Effect)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l3-01",
@@ -7950,7 +14803,20 @@ export const hscVocabularyList = [
     "englishMeaning": "Seriously at risk of extinction.",
     "exampleSentence": "The Bengal slow loris is an endangered primate requiring urgent sanctuary protection.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Dhaka Board Standard, Unit 12"
+    "boardExamTag": "Dhaka Board Standard, Unit 12",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "vulnerable"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "vulnerable"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l3-02",
@@ -7962,7 +14828,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Shedding its leaves annually (of a tree or shrub).",
     "exampleSentence": "Reptiles take refuge amid the leaf litter of deciduous forests during dry winter months.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l3-03",
@@ -7974,7 +14849,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Done, occurring, or active at night.",
     "exampleSentence": "Nocturnal mammals possess acute eyesight to forage under dense canopy shade.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l3-04",
@@ -7986,7 +14870,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of clearing a wide area of trees.",
     "exampleSentence": "Rampant deforestation deprives wild elephants of customary migration corridors.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l3-05",
@@ -7998,7 +14891,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The illegal practice of trespassing on another's property to hunt or steal game.",
     "exampleSentence": "Armed rangers patrol the Sundarbans to suppress tiger poaching.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l3-06",
@@ -8010,7 +14912,20 @@ export const hscVocabularyList = [
     "englishMeaning": "The natural home or environment of an animal, plant, or other organism.",
     "exampleSentence": "Protecting wetland habitat ensures plentiful fish breeding grounds.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "territory"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "territory"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l3-07",
@@ -8022,7 +14937,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The variety of life in the world or in a particular habitat or ecosystem.",
     "exampleSentence": "The mangrove delta shelters an astonishing richness of avian and marine biodiversity.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l3-08",
@@ -8034,7 +14958,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The fact or process of a species, family, or other group of animals or plants becoming extinct.",
     "exampleSentence": "Once a species crosses into extinction, no human ingenuity can restore it.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-01",
@@ -8046,7 +14979,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Great destruction or damage.",
     "exampleSentence": "The cyclone left a trail of unmitigated devastation across coastal fishing hamlets.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Dhaka Board Standard, Unit 12"
+    "boardExamTag": "Dhaka Board Standard, Unit 12",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-02",
@@ -8058,7 +15000,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having a harmful effect, especially in a gradual or subtle way.",
     "exampleSentence": "Corporate dumping exerted pernicious effects upon local ground water tables.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-03",
@@ -8070,7 +15021,20 @@ export const hscVocabularyList = [
     "englishMeaning": "To an extent that is too large or too small in comparison with something else.",
     "exampleSentence": "Environmental contamination falls disproportionately upon impoverished minority enclaves.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "fairly"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "fairly"
+    ],
+    "priority": 101
   },
   {
     "id": "vocab-u12-l4-04",
@@ -8082,7 +15046,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Lacking foresight or intellectual insight.",
     "exampleSentence": "Shortsighted industrial deregulation invites catastrophic long-term public health crises.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-05",
@@ -8094,7 +15067,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The action of consuming something in excessive amounts.",
     "exampleSentence": "Western overconsumption of single-use plastics overwhelms oceanic life.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-06",
@@ -8106,7 +15088,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Having all constituent parts linked or connected.",
     "exampleSentence": "Global ecology operates through an intricate web of interconnected food chains.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-07",
@@ -8118,7 +15109,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A violent and destructive shattering or blowing apart of something.",
     "exampleSentence": "The chemical reactor explosion in Bhopal leaked lethal methyl isocyanate gas.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l4-08",
@@ -8130,7 +15130,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Relating to or concerned with the relation of living organisms to one another and to their physical surroundings.",
     "exampleSentence": "Restoring mangroves is crucial for maintaining regional ecological equilibrium.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Dinajpur Board Standard"
+    "boardExamTag": "Dinajpur Board Standard",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-01",
@@ -8142,7 +15151,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Persons engaged or learned in philosophy, especially as an academic discipline.",
     "exampleSentence": "Agricultural researchers must think as philosophers before disrupting ancient soil microbiomes.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Dhaka Board Standard, Unit 12"
+    "boardExamTag": "Dhaka Board Standard, Unit 12",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-02",
@@ -8154,7 +15172,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Carving wood into an object by repeatedly cutting small slices from it; reducing something in size gradually.",
     "exampleSentence": "Natural farming thrives by whittling away unnecessary tillage and chemical inputs.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Cumilla Board Standard"
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-03",
@@ -8166,7 +15193,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Without purpose or direction.",
     "exampleSentence": "Commercial research wanders aimlessly when severed from holistic ecology.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Rajshahi Board Exam"
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-04",
@@ -8178,7 +15214,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The process by which fertile land becomes desert, typically as a result of drought, deforestation, or inappropriate agriculture.",
     "exampleSentence": "Fukuoka's seed-ball technique succeeded in reversing severe desertification in arid zones.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Chattogram Board Exam"
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-05",
@@ -8190,7 +15235,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The process of adapting something to modern needs or habits, typically by installing modern equipment.",
     "exampleSentence": "Reckless modernization of agriculture depleted living organic topsoil across continents.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Jashore Board Exam"
+    "boardExamTag": "Jashore Board Exam",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-06",
@@ -8202,7 +15256,16 @@ export const hscVocabularyList = [
     "englishMeaning": "Suppositions or systems of ideas intended to explain something.",
     "exampleSentence": "Agronomic theories must bend to real soil behavior in diverse agro-climatic regions.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Barishal Board Standard"
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-07",
@@ -8214,7 +15277,16 @@ export const hscVocabularyList = [
     "englishMeaning": "The process or period of gathering in crops; the product or result of an action.",
     "exampleSentence": "Mulching straw yielded an abundant golden rice harvest with zero chemical fertilizers.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Sylhet Board Standard"
+    "boardExamTag": "Sylhet Board Standard",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   },
   {
     "id": "vocab-u12-l5-08",
@@ -8226,7 +15298,16 @@ export const hscVocabularyList = [
     "englishMeaning": "A person actively engaged in an art, discipline, or profession, especially medicine or agriculture.",
     "exampleSentence": "As a dedicated practitioner of natural tillage, he inspired generations of permaculture farmers.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "HSC Board Standard, Unit 12"
+    "boardExamTag": "HSC Board Standard, Unit 12",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   }
 ];
 
@@ -8375,6 +15456,9 @@ export function buildQuestionsDatabase() {
         exampleSentence: item.exampleSentence,
         unit: item.unit,
         boardExamTag: item.boardExamTag,
+        sources: item.sources || [item.unit],
+        isCrossReferenced: item.isCrossReferenced || false,
+        crossReferencedWords: item.crossReferencedWords || [],
         difficulty: 'Medium'
       });
     }

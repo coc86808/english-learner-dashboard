@@ -1,41 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 8: Relationships | Lesson 1: Family Relationship
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 8: Relationships | Lesson: Family Relationship
  */
 
 export const unit8Lesson1Textbook = {
   unitId: 'unit-8',
   lessonId: 'u8-l1',
   unitTitle: 'Unit 8: Relationships',
-  unitTitleBn: 'ইউনিট ৮: মানবসম্পর্ক',
-  lessonTitle: 'Lesson 1: Family Relationship',
-  lessonTitleBn: 'লেসন ১: পারিবারিক সম্পর্ক',
-  author: 'Aristotle & Social Psychology',
-  totalWords: 8,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ৮: পারস্পরিক সম্পর্ক (Relationships)',
+  title: 'Family Relationship',
+  titleBn: 'Family Relationship',
+  lessonTitle: 'Family Relationship',
+  lessonTitleBn: 'Family Relationship',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Family Relationship পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
     {
-      number: 'i',
-      heading: 'Humans as Social Animals (মানুষ সামাজিক জীব)',
-      text: "The famous Greek philosopher Aristotle said, 'Humans are by nature social animals.' What he meant was that human beings, by instinct, seek company of others and establish relationships, much like most animals of the wild, for companionship and for physical and emotional support. Unlike animals, however, human relationships give meaning to their existence and inspire them to do well in education, in workplace or in a profession.",
-      bengaliTranslation: "গ্রিক দার্শনিক অ্যারিস্টটল বলেছিলেন, 'মানুষ স্বভাবতই সামাজিক জীব।' তিনি বুঝিয়েছিলেন যে, মানুষ জন্মগত প্রবৃত্তি থেকেই অন্যের সঙ্গ কামনা করে এবং বন্য প্রাণীদের মতো নিজেদের টিকে থাকা, সাহচর্য এবং শারীরিক ও মানসিক সমর্থনের জন্য পারস্পরিক সম্পর্ক গড়ে তোলে। তবে পশুদের থেকে ভিন্নভাবে, মানুষের সম্পর্ক তাদের জীবনের অস্তিত্বকে অর্থপূর্ণ করে তোলে এবং শিক্ষা, কর্মক্ষেত্র ও পেশাগত জীবনে ভালো করার প্রেরণা জোগায়।",
-      highlightWords: ['companionship', 'familial', 'intimate', 'fostered']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 132)",
+        "content": "Unit Eight: Relationships Lesson 1 Family Relationship Discuss the following questions in pairs. A. B. I. 2. 3. What do you see in the picture? Can you guess the relationship among the people you see? What type ofrelationship do you have in your family? Who do you have the closest relationship within the family? Read the following text and then discuss the questions that follow. The famous Greek philosopher Aristotle said, Humans are by nature social animals. ' What he meant was that human beings, by instinct, seek company of others and establish relationships, much like most animals of the wild, for companionship and tor physical and emotional support. Unlike animals. however. human relationships give meaning to their existence and inspire them to do well in education, in workplace or in a profession. Relationships are of different kinds. Some are familial and intimate, formed by blood and by marriage; some are social like the ones we have with friends and sorne are made in schools where we form close bonds with classmates and teachers. Relationships can also be fostered in workplaces, which may quickly change from professional to social. There are relationships also between human beings and animals. between children and their toys that they cannot pan with.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 132 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Sharing Joys and Sorrows (আনন্দ ও দুঃখের অংশীদারিত্ব)',
-      text: "Relationships are of different kinds: familial and intimate, formed by blood and marriage, or social bonds in schools and workplaces. When we share our joy with someone, it simply redoubles, and when someone shares our sorrow, it lessens. Relationships are thus needed for our emotional health. To build relationships, we need trust, mutual respect, and love. We cannot be selfish and possessive if we want to establish an effective relationship, for continuous quarrelling only brings misery.",
-      bengaliTranslation: "সম্পর্ক বিভিন্ন ধরনের হতে পারে: পারিবারিক ও অন্তরঙ্গ, যা রক্ত ও বৈবাহিক সূত্রে গড়ে ওঠে; কিংবা বিদ্যালয় ও কর্মক্ষেত্রের সামাজিক মেলবন্ধন। আমরা যখন কারো সাথে আমাদের আনন্দ ভাগ করে নিই, তা দ্বিগুণ বেড়ে যায়; আর যখন কেউ আমাদের দুঃখে সমব্যথী হয়, তখন দুঃখের ভার লাঘব হয়। তাই মানসিক সুস্থতার জন্য সম্পর্ক অপরিহার্য। সম্পর্ক টিকিয়ে রাখতে প্রয়োজন পারস্পরিক শ্রদ্ধা, ভালোবাসা ও গভীর বিশ্বাস। স্বার্থপর ও মাত্রাতিরিক্ত দখলদারিত্বপ্রবণ হলে কোনো স্থায়ী সম্পর্ক গড়া যায় না, কারণ বিবাদ কেবল দুঃখই বয়ে আনে।",
-      highlightWords: ['redoubles', 'possessive', 'quarrelling', 'preconditions']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 133)",
+        "content": "Relationships 127 All these relationships keep us close to each other and provide us all kinds of support, love and affection. A person who has no family feels the pain of loneliness and isolation. There is no one IO laugh or cry With him/her, When we share our joy with someone, it simply redoubles, and we when we suffer a loss and someone -our sorrow. it lessens. Relationships are thus needed for our emotional health. To build relationships, we need to have trust and respect for each other, and love where this is needed. We cannot be selfish and possessive if we want to establish an effective relationship. But quite onen we see people quarrelling and fighting with each Other which only brings misery and loss to all. Now discuss the following questions in pairs. I. 2. 3. 4. Why is relationship so important? What different types of relationships are there? What happens to a person who has no family? What are some of the preconditions of good relationship? C. Think of a member of your family who is kind and caring. Write a paragraph in no more than 150 words about him/her. In your paragraph you should include thc following: Who is the person? What does he/she do for you? What do you do to return his/her acts of kindness? Give one example of hisller caring attitude. My family Members in my family who live with me: Things my family likes to do for fun:",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 133 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Companionship', meaning: 'সঙ্গ / সাহচর্য / বন্ধুত্ব', pos: 'Noun', syn: 'Fellowship, camaraderie, company', ant: 'Isolation, loneliness' },
-    { word: 'Familial', meaning: 'পারিবারিক / রক্তসম্পর্কিত', pos: 'Adjective', syn: 'Domestic, genealogical, ancestral', ant: 'Non-familial, unrelated' },
-    { word: 'Intimate', meaning: 'অন্তরঙ্গ / নিবিড় / ঘনিষ্ঠ', pos: 'Adjective', syn: 'Close, confidential, deep', ant: 'Distant, aloof, detached' },
-    { word: 'Fostered', meaning: 'লালিত-পালিত বা গড়ে তোলা', pos: 'Verb', syn: 'Nurtured, cultivated, encouraged', ant: 'Neglected, suppressed' },
-    { word: 'Redoubles', meaning: 'বহুগুণ বৃদ্ধি পায় / দ্বিগুণ হওয়া', pos: 'Verb', syn: 'Multiplies, intensifies, amplifies', ant: 'Diminishes, decreases' },
-    { word: 'Possessive', meaning: 'স্বত্বাধিকারী / দখলদারিত্বপ্রবণ', pos: 'Adjective', syn: 'Controlling, domineering, jealous', ant: 'Unselfish, sharing' },
-    { word: 'Quarrelling', meaning: 'কলহ / বিবাদে লিপ্ত হওয়া', pos: 'Noun', syn: 'Disputing, bickering, wrangling', ant: 'Harmonizing, cooperating' },
-    { word: 'Preconditions', meaning: 'পূর্বশর্ত / আবশ্যিক শর্ত', pos: 'Noun', syn: 'Prerequisites, requirements', ant: 'Outcomes, results' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 132)",
+        "text": "Unit Eight: Relationships Lesson 1 Family Relationship Discuss the following questions in pairs. A. B. I. 2. 3. What do you see in the picture? Can you guess the relationship among the people you see? What type ofrelationship do you have in your family? Who do you have the closest relationship within the family? Read the following text and then discuss the questions that follow. The famous Greek philosopher Aristotle said, Humans are by nature social animals. ' What he meant was that human beings, by instinct, seek company of others and establish relationships, much like most animals of the wild, for companionship and tor physical and emotional support. Unlike animals. however. human relationships give meaning to their existence and inspire them to do well in education, in workplace or in a profession. Relationships are of different kinds. Some are familial and intimate, formed by blood and by marriage; some are social like the ones we have with friends and sorne are made in schools where we form close bonds with classmates and teachers. Relationships can also be fostered in workplaces, which may quickly change from professional to social. There are relationships also between human beings and animals. between children and their toys that they cannot pan with.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 132 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 133)",
+        "text": "Relationships 127 All these relationships keep us close to each other and provide us all kinds of support, love and affection. A person who has no family feels the pain of loneliness and isolation. There is no one IO laugh or cry With him/her, When we share our joy with someone, it simply redoubles, and we when we suffer a loss and someone -our sorrow. it lessens. Relationships are thus needed for our emotional health. To build relationships, we need to have trust and respect for each other, and love where this is needed. We cannot be selfish and possessive if we want to establish an effective relationship. But quite onen we see people quarrelling and fighting with each Other which only brings misery and loss to all. Now discuss the following questions in pairs. I. 2. 3. 4. Why is relationship so important? What different types of relationships are there? What happens to a person who has no family? What are some of the preconditions of good relationship? C. Think of a member of your family who is kind and caring. Write a paragraph in no more than 150 words about him/her. In your paragraph you should include thc following: Who is the person? What does he/she do for you? What do you do to return his/her acts of kindness? Give one example of hisller caring attitude. My family Members in my family who live with me: Things my family likes to do for fun:",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 133 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };

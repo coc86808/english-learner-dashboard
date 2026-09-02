@@ -1,55 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 6: Dreams | Lesson 1: What is a Dream?
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 6: Dreams | Lesson: What is a Dream?
  */
 
 export const unit6Lesson1Textbook = {
   unitId: 'unit-6',
   lessonId: 'u6-l1',
   unitTitle: 'Unit 6: Dreams',
-  unitTitleBn: 'ইউনিট ৬: স্বপ্ন',
-  lessonTitle: 'Lesson 1: What is a Dream?',
-  lessonTitleBn: 'লেসন ১: স্বপ্ন কী?',
-  author: 'Cognitive Science & Sigmund Freud',
-  totalWords: 15,
+  unitTitleBn: 'ইউনিট ৬: স্বপ্ন (Dreams)',
+  title: 'What is a Dream?',
+  titleBn: 'What is a Dream?',
+  lessonTitle: 'What is a Dream?',
+  lessonTitleBn: 'What is a Dream?',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের What is a Dream? পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
+    {
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 110)",
+        "content": "Unit Six: Dreams Lesson 1 What is a Dream? Work in pairs and discuss the A. following questions. What is a dream? • Do you have dreams? • Is a dream real or unreal? • Is there any relation between dream and action? • Who is a dreamer? Do you like a dreamer? Why/why not? B. Read the following words aloud. You may not be familiar with some of them. Look up their meaning in a dictionary. How are they related to dreams? , and (e) colour reverie silvery reality nightmare romantic short lasting pleasant imagination hallucination dreamy day-dream shadowy dreamer fragments C. Read the tilllowing test and fill in the gaps with the words listed above. You can use a word only once. All Of us know what a dream is. Generally we dream during our sleep. Dreams may appear to be short or long lasting. Sometimes we say. \"I dreamt for the whole night!\" But do we really dream for the whole night? Some dreams are sweet or Some are horrible. When we dream something extremely bad, wc callita(b) . They are soft, (d) . know how the words (f) dream? Do you know any (h) . This is interesting that dreams have no (c) and (g) Do you differ from .. .... What do they do? Does dream have any relation with (i) . . Do we always dream during our sleep?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 110 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 113)",
+        "content": "Dreams F. Read the following statements. Are they true or false? If Ikilse, give correct answers. 107 l. 2, 3. 4. 5. 6. 7. Philosophers had little interest in dreams until very recently. Dreams are always elusive. Scientists differ in their opinions in terms of the reasons or duration of a dream. According to Freud, dreams are conscious memories that we forgot for some time. Modern scientists believe that dreams help generate new ideas. Brain can connect to external stimulus like radio signals. Dreams can work as mind-cleaner. G. Theorists interpret dreams that we have during our sleep. But we also dream when we are awake. Now give examples of a sweet dream while sleeping a nightmare a dream that you cherish consciously a day dream H. Noted scientist and former President of India, APJ Abdul Kalam says, \"Dream is not what you see in sleep, dream is something that does not let you sleep.\" Work in pairs and answer the questions — Q Do you agree with his statement? Why/why not? Q Do you have a dream that does not let you sleep? What is that? What do you do to make it real?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 113 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+],
   paragraphs: [
     {
-      number: 'i',
-      heading: 'The Nature and Mystery of Dreams (স্বপ্নের স্বরূপ ও রহস্য)',
-      text: "Dreams have fascinated philosophers for thousands of years, but only recently have dreams been subjected to empirical research and scientific study. Chances are that you've often found yourself puzzling over the content of a dream, or perhaps you've wondered why you dream at all. A dream can include any of the images, thoughts and emotions that are experienced during sleep. Dreams can be extraordinarily vivid or very vague; filled with joyful emotions or frightening images; focused and understandable or unclear and confusing.",
-      bengaliTranslation: "হাজার হাজার বছর ধরে স্বপ্ন দার্শনিকদের মুগ্ধ ও বিস্মিত করে এসেছে; কিন্তু অতি সম্প্রতি স্বপ্নকে বাস্তব পরীক্ষণ ও বিজ্ঞানভিত্তিক গবেষণার আওতায় আনা হয়েছে। প্রায়শই হয়তো আপনি কোনো স্বপ্নের অর্থ নিয়ে ধাঁধায় পড়েছেন কিংবা ভেবেছেন মানুষ কেনই বা স্বপ্ন দেখে। ঘুমের সময় অনুভূত যে কোনো প্রতিচ্ছবি, চিন্তা ও আবেগই স্বপ্নের অন্তর্ভুক্ত হতে পারে। স্বপ্ন কখনো অসাধারণ স্পষ্ট ও প্রাণবন্ত হতে পারে, আবার কখনো চরম অস্পষ্ট ও ধোঁয়াটে হতে পারে; আনন্দময় অনুভূতিতে পূর্ণ হতে পারে, আবার ভীতিকর চিত্রকল্পেও ঢাকা পড়তে পারে।",
-      highlightWords: ['empirical', 'vivid', 'vague', 'baffling', 'consensus', 'unraveling']
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 110)",
+        "text": "Unit Six: Dreams Lesson 1 What is a Dream? Work in pairs and discuss the A. following questions. What is a dream? • Do you have dreams? • Is a dream real or unreal? • Is there any relation between dream and action? • Who is a dreamer? Do you like a dreamer? Why/why not? B. Read the following words aloud. You may not be familiar with some of them. Look up their meaning in a dictionary. How are they related to dreams? , and (e) colour reverie silvery reality nightmare romantic short lasting pleasant imagination hallucination dreamy day-dream shadowy dreamer fragments C. Read the tilllowing test and fill in the gaps with the words listed above. You can use a word only once. All Of us know what a dream is. Generally we dream during our sleep. Dreams may appear to be short or long lasting. Sometimes we say. \"I dreamt for the whole night!\" But do we really dream for the whole night? Some dreams are sweet or Some are horrible. When we dream something extremely bad, wc callita(b) . They are soft, (d) . know how the words (f) dream? Do you know any (h) . This is interesting that dreams have no (c) and (g) Do you differ from .. .... What do they do? Does dream have any relation with (i) . . Do we always dream during our sleep?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 110 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Why Do We Dream? Freud & Psychoanalysis (কেন আমরা স্বপ্ন দেখি? ফ্রয়েড ও মনোসমীক্ষণ)',
-      text: "While many theories have been proposed about the reason and function of dreams, no consensus has emerged. Consistent with the psychoanalytic perspective, Sigmund Freud's theory of dreams suggests that dreams are a representation of subconscious desires, thoughts and motivations. According to Freud, people are driven by aggressive and sexual instincts that are repressed from conscious awareness. In his famous book 'The Interpretation of Dreams' (1899), Freud wrote that dreams are 'disguised fulfillments of repressed wishes.'",
-      bengaliTranslation: "স্বপ্নের কারণ ও ভূমিকা সম্পর্কে বহু তত্ত্ব প্রস্তাব করা হলেও এখনো কোনো সর্বসম্মত ঐকমত্য প্রতিষ্ঠিত হয়নি। মনোসমীক্ষণ দৃষ্টিকোণ অনুসারে, সিগমুন্ড ফ্রয়েডের স্বপ্নের তত্ত্ব ইঙ্গিত করে যে স্বপ্ন হলো আমাদের অবচেতন মনের কামনা, চিন্তা ও গভীর প্রেরণার রূপক প্রতিফলন। ফ্রয়েডের মতে, মানুষ অবদমিত সহজাত প্রবৃত্তি দ্বারা পরিচালিত হয় যা সচেতন চেতনা থেকে চেপে রাখা হয়। ১৮৯৯ সালে প্রকাশিত তাঁর বিখ্যাত গ্রন্থ 'দ্য ইন্টারপ্রিটেশন অব ড্রিমস'-এ ফ্রয়েড লিখেছিলেন—স্বপ্ন হলো 'অবদমিত ইচ্ছার ছদ্মবেশী রূপায়ণ'।",
-      highlightWords: ['psychoanalytic', 'subconscious', 'repressed', 'interpretation', 'subjective']
-    },
-    {
-      number: 'iii',
-      heading: 'Cognitive Models, Mental Clutter & Psychotherapy (বুদ্ধিবৃত্তিক তত্ত্ব ও মানসিক পরিচ্ছন্নতা)',
-      text: "Some researchers suggest that dreams are a subjective interpretation of signals generated by the brain during sleep where cognitive elements produce new ideas. Another theory uses a computer metaphor to account for dreams—dreams serve to clean up clutter from the mind, much like clean-up operations in a computer refreshing the memory. Yet another model proposes that dreams function as a form of psychotherapy where the dreamer makes connections between emotions in a safe environment.",
-      bengaliTranslation: "কিছু গবেষক মনে করেন, ঘুমের সময় মস্তিষ্কে সৃষ্ট সংকেতসমূহের ব্যক্তিগত বা আত্মগত বিশ্লেষণই হলো স্বপ্ন; যেখানে আমাদের বুদ্ধিবৃত্তিক উপাদানসমূহ নতুন চিন্তার জন্ম দেয়। আরেকটি তত্ত্বে কম্পিউটার উপমা ব্যবহার করে বলা হয়—কম্পিউটার যেমন অপ্রয়োজনীয় ফাইল মুছে মেমরি পরিষ্কার করে, স্বপ্নও তেমনি মানুষের মন থেকে জমে থাকা মানসিক জঞ্জাল ও বিশৃঙ্খলা দূর করে পরবর্তী দিনের জন্য প্রস্তুত করে। অন্য একটি মডেল স্বপ্নকে এক ধরনের 'সাইকোথেরাপি' হিসেবে বিবেচনা করে যেখানে নিরাপদ পরিবেশে মানুষ আবেগ ও চিন্তার মেলবন্ধন ঘটায়।",
-      highlightWords: ['cognitive', 'stimuli', 'clutter', 'psychotherapy']
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 113)",
+        "text": "Dreams F. Read the following statements. Are they true or false? If Ikilse, give correct answers. 107 l. 2, 3. 4. 5. 6. 7. Philosophers had little interest in dreams until very recently. Dreams are always elusive. Scientists differ in their opinions in terms of the reasons or duration of a dream. According to Freud, dreams are conscious memories that we forgot for some time. Modern scientists believe that dreams help generate new ideas. Brain can connect to external stimulus like radio signals. Dreams can work as mind-cleaner. G. Theorists interpret dreams that we have during our sleep. But we also dream when we are awake. Now give examples of a sweet dream while sleeping a nightmare a dream that you cherish consciously a day dream H. Noted scientist and former President of India, APJ Abdul Kalam says, \"Dream is not what you see in sleep, dream is something that does not let you sleep.\" Work in pairs and answer the questions — Q Do you agree with his statement? Why/why not? Q Do you have a dream that does not let you sleep? What is that? What do you do to make it real?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 113 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Empirical', meaning: 'বাস্তবধর্মী / পরীক্ষণভিত্তিক', pos: 'Adjective', syn: 'Experimental, factual, observational', ant: 'Theoretical, speculative' },
-    { word: 'Vivid', meaning: 'সুস্পষ্ট / উজ্জ্বল / প্রাণবন্ত', pos: 'Adjective', syn: 'Clear, graphic, striking', ant: 'Vague, dull, indistinct' },
-    { word: 'Vague', meaning: 'অস্পষ্ট / অনির্দিষ্ট / ধোঁয়াটে', pos: 'Adjective', syn: 'Unclear, hazy, indistinct', ant: 'Vivid, precise, sharp' },
-    { word: 'Baffling', meaning: 'বিভ্রান্তিকর / হতবুদ্ধিকর', pos: 'Adjective', syn: 'Perplexing, puzzling, enigmatic', ant: 'Clear, straightforward' },
-    { word: 'Consensus', meaning: 'সর্বসম্মত অভিমত / ঐক্যমত', pos: 'Noun', syn: 'Agreement, unanimity, accord', ant: 'Disagreement, discord' },
-    { word: 'Unraveling', meaning: 'রহস্য উন্মোচন করা / জট খোলা', pos: 'Verb', syn: 'Deciphering, untangling, solving', ant: 'Complicating, tangling' },
-    { word: 'Psychoanalytic', meaning: 'মনোসমীক্ষণমূলক', pos: 'Adjective', syn: 'Psychological, psychoanalytical', ant: 'Physiological, physical' },
-    { word: 'Subconscious', meaning: 'অবচেতন / অবচেতন মন', pos: 'Noun', syn: 'Subliminal mind, unconscious', ant: 'Conscious awareness' },
-    { word: 'Repressed', meaning: 'অবদমিত / দমনকৃত অনুভূতি', pos: 'Adjective', syn: 'Suppressed, smothered, stifled', ant: 'Expressed, uninhibited' },
-    { word: 'Interpretation', meaning: 'ব্যাখ্যা / তাৎপর্য বিশ্লেষণ', pos: 'Noun', syn: 'Explanation, analysis, decipherment', ant: 'Misinterpretation' },
-    { word: 'Subjective', meaning: 'আত্মগত / ব্যক্তিগত দৃষ্টিভঙ্গিভিত্তিক', pos: 'Adjective', syn: 'Personal, individual, intuitive', ant: 'Objective, impartial' },
-    { word: 'Cognitive', meaning: 'বুদ্ধিবৃত্তিক / জ্ঞানসম্বন্ধীয়', pos: 'Adjective', syn: 'Mental, intellectual, perceptual', ant: 'Instinctive, reflex' },
-    { word: 'Stimuli', meaning: 'উত্তেজক / উদ্দীপক সংকেতমালা', pos: 'Noun', syn: 'Incentives, impulses, triggers', ant: 'Deterrents, suppressants' },
-    { word: 'Clutter', meaning: 'এলোমেলো আবর্জনা / বিশৃঙ্খলা', pos: 'Noun', syn: 'Disorder, mess, jumble', ant: 'Neatness, order, clarity' },
-    { word: 'Psychotherapy', meaning: 'মানসিক রোগের মনস্তাত্ত্বিক চিকিৎসা', pos: 'Noun', syn: 'Counseling, therapy, psychoanalysis', ant: 'Somatic surgery' }
-  ]
+]
 };

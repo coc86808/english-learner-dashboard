@@ -1,40 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 11: Peace and Conflict | Lesson 5: Opinions through Images
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 11: Peace and Conflict | Lesson: Opinions through images
  */
 
 export const unit11Lesson5Textbook = {
   unitId: 'unit-11',
   lessonId: 'u11-l5',
   unitTitle: 'Unit 11: Peace and Conflict',
-  unitTitleBn: 'ইউনিট ১১: শান্তি ও সংঘাত',
-  lessonTitle: 'Lesson 5: Opinions through Images',
-  lessonTitleBn: 'লেসন ৫: ছবির ভাষায় যুদ্ধ ও সংঘাত (রণক্ষেত্রের স্থিরচিত্র)',
-  author: 'Robert Capa & James Francis Hurley (War Photography)',
-  totalWords: 7,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ১১: শান্তি ও সংঘাত (Peace and Conflict)',
+  title: 'Opinions through images',
+  titleBn: 'Opinions through images',
+  lessonTitle: 'Opinions through images',
+  lessonTitleBn: 'Opinions through images',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Opinions through images পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
     {
-      number: 'i',
-      heading: 'Iconic Battlefield Photographs (যুদ্ধের ঐতিহাসিক স্থিরচিত্র ও দলিল)',
-      text: "Photographs captured across global battlefields over the past century convey the gruesome reality of combat more forcefully than words. Robert Capa's legendary 1936 gelatin silver print, 'The Falling Soldier', depicts the instantaneous death of an anti-fascist Republican soldier during the Spanish Civil War, freezing the tragic price of ideology into human memory.",
-      bengaliTranslation: "বিগত এক শতাব্দী ধরে বিশ্বজুড়ে বিভিন্ন রণক্ষেত্রে ধারণ করা আলোকচিত্রগুলো যুদ্ধের নারকীয় বাস্তবতাকে শব্দের চেয়েও তীব্রভাবে প্রকাশ করে। ১৯৩৬ সালে রবার্ট ক্যাপার তোলা কালজয়ী ছবি 'The Falling Soldier' স্প্যানিশ গৃহযুদ্ধে ফ্যাসিবাদবিরোধী এক সাধারণ সৈনিকের গুলিতে লুটিয়ে পড়ার মুহূর্তকে ধারণ করেছে, যা যুদ্ধের নির্মম আত্মত্যাগকে মানবজাতির স্মৃতিতে চিরভাস্বর করে রেখেছে।",
-      highlightWords: ['artillery-brigade', 'duckboard', 'depicts', 'battlefield']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 219)",
+        "content": "Peace and Conflict Lesson 5 Opinions through Images 213 A. See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information. Robert Capa's \"The Falling Soldier,\" a gelatin silver print from Sept. 5, 19.36* depicts the death Ofa Republican soldier during the Spanish Civil War. Credit: The Metropolitan Muscm OfArt Via Bloomberg News. Soldiers of an Australian 4th Division field artillery brigade walk on a duckboard track laid across a muddy, shattered battlefield in Chateau Wood, near Hooge, Belgium. on October 29.1917. This was during the Battle of Passchendaele. fought by British forces and their allies against Germany for control of territory near Ypres, Belgium. Credit: James Francis Hurley / State Library ofNew South Wales",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 219 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Devastation of Trench and Jungle Warfare (কাদামাটি ও ধ্বংসস্তূপে বিপর্যস্ত যোদ্ধা)',
-      text: "During World War I's Battle of Passchendaele, an Australian field artillery brigade walked along a makeshift duckboard track laid across muddy, shell-cratered terrain. Accompanied by charred stumps of blasted trees, every weary soldier witnessed total environmental and territorial ruin. Such images serve as an enduring testament against armed escalation and militarism.",
-      bengaliTranslation: "প্রথম বিশ্বযুদ্ধের পাসচেনডেলের যুদ্ধে অস্ট্রেলিয়ার এক গোলন্দাজ দল কাদার জলাশয়ের ওপর পাতা এক সরু কাঠের তক্তাপথ (duckboard) দিয়ে হেটে যাচ্ছিল। বোমার আঘাতে কয়লা হয়ে যাওয়া গাছের গুঁড়ি আর বিধ্বস্ত মাটির বুক চিরে এগিয়ে যাওয়া প্রতিটি ক্লান্ত সৈন্য চারপাশের সম্পূর্ণ বিনাশের সাক্ষী হয়েছিল। এই ঐতিহাসিক ছবিগুলো চিরকাল সামরিক আগ্রাসন ও যুদ্ধ উন্মাদনার বিরুদ্ধে এক বলিষ্ঠ প্রতিবাদ হয়ে থাকবে।",
-      highlightWords: ['territory', 'accompanied', 'soldier']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 221)",
+        "content": "Peace and Conflict Robert Pledge, co-founder of Contact Press Images: 215 US soldiers on patrol, A Shau Valley, South Vietnam, December 1967. The soldiers seen from the back, facing a Vietnamese woman hugging a baby, with a half-naked boy by her side. Photo taken by Gilles Caron. South Vietnamese Gen. Nguyen Ngoc Loan, chief of lhe National Police. fires his pistol into the head of suspected Viet Cong officer Nguyen Van Lem (also known as Bay Lop) on a Saigon street, early in the Tet Offensive of the Vietnam War. Photo taken by Eddie Adams.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 221 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Artillery-brigade', meaning: 'কামান ব্রিগেড / ভারী গোলন্দাজ দল', pos: 'Noun', syn: 'Ordnance unit, cannon battalion, artillery corps', ant: 'Unarmed scouts' },
-    { word: 'Duckboard', meaning: 'কাদামুক্ত কাঠের তক্তাপথ', pos: 'Noun', syn: 'Wooden planking, boardwalk, marsh path', ant: 'Deep mud' },
-    { word: 'Depicts', meaning: 'চিত্রিত করে / ফুটিয়ে তোলে', pos: 'Verb', syn: 'Portrays, illustrates, delineates, represents', ant: 'Conceals, obscures' },
-    { word: 'Battlefield', meaning: 'রণক্ষেত্র / যুদ্ধক্ষেত্র', pos: 'Noun', syn: 'Battleground, war zone, front lines, combat arena', ant: 'Sanctuary, peace zone' },
-    { word: 'Territory', meaning: 'ভূখণ্ড / ভৌগোলিক এলাকা', pos: 'Noun', syn: 'Domain, province, tract, terrain, sector', ant: 'No man\'s land' },
-    { word: 'Accompanied', meaning: 'সংযুক্ত / সাথে বিদ্যমান', pos: 'Adjective', syn: 'Attended, escorted, partnered, joined', ant: 'Alone, unaccompanied' },
-    { word: 'Soldier', meaning: 'সৈনিক / সমরাস্ত্রধারী যোদ্ধা', pos: 'Noun', syn: 'Combatant, warrior, trooper, serviceman', ant: 'Civilian, non-combatant' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 219)",
+        "text": "Peace and Conflict Lesson 5 Opinions through Images 213 A. See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information. Robert Capa's \"The Falling Soldier,\" a gelatin silver print from Sept. 5, 19.36* depicts the death Ofa Republican soldier during the Spanish Civil War. Credit: The Metropolitan Muscm OfArt Via Bloomberg News. Soldiers of an Australian 4th Division field artillery brigade walk on a duckboard track laid across a muddy, shattered battlefield in Chateau Wood, near Hooge, Belgium. on October 29.1917. This was during the Battle of Passchendaele. fought by British forces and their allies against Germany for control of territory near Ypres, Belgium. Credit: James Francis Hurley / State Library ofNew South Wales",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 219 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 221)",
+        "text": "Peace and Conflict Robert Pledge, co-founder of Contact Press Images: 215 US soldiers on patrol, A Shau Valley, South Vietnam, December 1967. The soldiers seen from the back, facing a Vietnamese woman hugging a baby, with a half-naked boy by her side. Photo taken by Gilles Caron. South Vietnamese Gen. Nguyen Ngoc Loan, chief of lhe National Police. fires his pistol into the head of suspected Viet Cong officer Nguyen Van Lem (also known as Bay Lop) on a Saigon street, early in the Tet Offensive of the Vietnam War. Photo taken by Eddie Adams.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 221 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };

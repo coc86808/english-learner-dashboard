@@ -1,41 +1,64 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 9: Adolescence | Lesson 2: Adolescence and Some Related Problems in Bangladesh
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 9: Adolescence | Lesson: Adolescence and Some (Related) Problems in Bangladesh
  */
 
 export const unit9Lesson2Textbook = {
   unitId: 'unit-9',
   lessonId: 'u9-l2',
   unitTitle: 'Unit 9: Adolescence',
-  unitTitleBn: 'ইউনিট ৯: বয়ঃসন্ধিকাল',
-  lessonTitle: 'Lesson 2: Adolescence and Some Related Problems in Bangladesh',
-  lessonTitleBn: 'লেসন ২: বয়ঃসন্ধিকাল ও বাংলাদেশের কিছু সমস্যা',
-  author: 'World Health Organization (WHO)',
-  totalWords: 8,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ৯: কৈশোর (Adolescence)',
+  title: 'Adolescence and Some (Related) Problems in Bangladesh',
+  titleBn: 'Adolescence and Some (Related) Problems in Bangladesh',
+  lessonTitle: 'Adolescence and Some (Related) Problems in Bangladesh',
+  lessonTitleBn: 'Adolescence and Some (Related) Problems in Bangladesh',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Adolescence and Some (Related) Problems in Bangladesh পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 3,
+  sections: [
     {
-      number: 'i',
-      heading: 'Adolescent Vulnerability and Health Barriers (বয়ঃসন্ধিকালীন স্বাস্থ্যঝুঁকি ও সীমাবদ্ধতা)',
-      text: "Laws and policies often restrict adolescents' access to reproductive health information and services, especially when they are unmarried. In addition, even when services do exist, provider attitudes about adolescents often pose a significant barrier to the use of those services. Many teenagers remain unaware of potential health hazards and bodily changes during this critical developmental phase.",
-      bengaliTranslation: "আইন ও নীতিমালা প্রায়শই কিশোর-কিশোরীদের প্রজনন স্বাস্থ্য সংক্রান্ত তথ্য ও সেবা লাভের ক্ষেত্রে প্রতিবন্ধকতা সৃষ্টি করে, বিশেষ করে তারা অবিবাহিত হলে। অধিকন্তু, চিকিৎসাসেবা বিদ্যমান থাকলেও সেবা প্রদানকারীদের রক্ষণশীল মনোভাব কিশোর-কিশোরীদের সেই সেবা গ্রহণে এক বড় বাধা হিসেবে কাজ করে। ফলে এই সংবেদনশীল বয়সে অনেক কিশোর-কিশোরী সম্ভাব্য স্বাস্থ্যঝুঁকি সম্পর্কে অজ্ঞ থেকে যায়।",
-      highlightWords: ['unmarried', 'provider', 'attitudes', 'hazards']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 157)",
+        "content": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A. Warm up activity Look at the pictures and discuss the following questions in pairs. a source; internet a. What does each of these photographs show? b. What are some typical bealth problems affecting adolescent boys and girls? c. Whos do you think, are more vulnerable to adolescent health problems—boys or girls? Why? d. Why should all of us say 'No' to habit-forming drugs of every kind'? B. Now read about some typical health problems experienced by adolescent girls and boys in Bangladesh. i. Adolescents constitute a nation's core resource för national renewal and growth. Adolescence is a period in life when transition from childhood to adulthood takes place and behaviours and life styles are shaped. According to the World Health Organisation (WHO), adolescence is thc period which shapes the future of girls' and boys' lives. There are more then 31 million adolescents in Bangladesh; 13.7 million of them are girls and 14.3 million boys.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 157 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'The Journey Towards Adulthood (প্রাপ্তবয়স্কতায় উত্তরণ ও সামাজিক দায়িত্ব)',
-      text: "Adolescents depend on their families, their communities, schools, health services and their workplaces to learn a wide range of skills that can help them cope with pressures and make a successful transition to adulthood. Parents, community members, service providers, and social institutions have the collective responsibility to promote adolescent development and intervene effectively when problems arise.",
-      bengaliTranslation: "কৈশোর থেকে প্রাপ্তবয়স্ক জীবনের সফল উত্তরণে এবং মানসিক চাপ মোকাবেলায় কিশোর-কিশোরীদের দক্ষতা অর্জনে তাদের পরিবার, সমাজ, বিদ্যালয় ও কর্মস্থলের ওপর নির্ভর করতে হয়। কিশোর-কিশোরীদের সঠিক বিকাশ সাধন এবং যে কোনো সংকট দেখা দিলে কার্যকরভাবে হস্তক্ষেপ করার দায়িত্ব পিতা-মাতা, সমাজের সদস্য, সেবাদানকারী ও সামাজিক প্রতিষ্ঠানসমূহের সবার।",
-      highlightWords: ['adulthood', 'responsibility', 'adjustment', 'effectively']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 159)",
+        "content": "Adolescence 153 opportunities. Moreover, they lack information about health issues. According to a study. only about three in five adolescents have even heard of HIV. It is also reported that more than 50 percent of adolescent girls are undernourished and suffer from anaemia. Adolescent fertility is also high in Bangladesh. Ille contribution of the adolescent fertility rate to the total fertility rate increased from 203% in 1993 to 24.4% in 2007. Moreover, neonatal mortality is another concern for younger mothers. vi. While the situation for adolescent boys is somewhat better, many are vulnerable and lack the power to make decisions about their own lives. Many boys who are unable to go to school, or are unemployed, remain unaware of social or health issues. They are at considerable risk of being drawn into criminal activities. They are also more likely to get exposed to drugs and alcohol. Sources: source: The Internet 1. Health Profile of Adolescents gnd Youth in Bangladesh, Government of Bangladesh, 2007, avaiigble at: h itp: euo. who eint,'LinkFilew'P ublieation_lleollh_ .pdf, 2. Unite for Children, UNICEF. Adolescent Empowerment Project in Bangladesh, 2009, available at http•.,'.'vw\"•«, C. Read the following statements and decide if they arc true or false. If a statement is false, correct it. a. In Bangladesh there are more adolescent boys than adolescent girls. b. Many girls in Bangladesh get married before they reach the legal age for marriage. c. A bride's family has to pay dowry only before the wedding. d. More than half of Bangladeshi adolescent girls cannot meet their dietary needs. e. Many adolescent boys in Bangladesh are likely to be involved in various forms of criminal offence. English Today. Classes 'a-xn and Alin",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 159 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 161)",
+        "content": "Adolescence 155 F. The test in Activity B has six paragraphs (i-vi). Choose the most suitable headings for the paragraphs from the list of headings below. There are more headings in the box than the paragraphs, so you will not use all of them. I. 2. 3. 4. 5. 6. 7. 8. 9. List of headings Reasons for adolescent feltility Concerted efforts to address adolescents' needs Importance Of adolescent population A process of disempowerment of women The curse of early man-iage Consequences of taking drugs Unfortunate state of adolescent girls Boys are not free from certain risks Violence within the family G. One of your cousins living in a different city is a teen now. Write an email to her/him suggesting what to do during this transitional period of life.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 161 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Adulthood', meaning: 'প্রাপ্তবয়স্ক অবস্থা / যৌবনোত্তর জীবন', pos: 'Noun', syn: 'Maturity, legal age, full age', ant: 'Childhood, infancy' },
-    { word: 'Responsibility', meaning: 'দায়িত্ব / সামাজিক দায়বদ্ধতা', pos: 'Noun', syn: 'Duty, obligation, accountability', ant: 'Irresponsibility, neglect' },
-    { word: 'Adjustment', meaning: 'অভিযোজন / পরিবর্তনের সাথে খাপ খাওয়ানো', pos: 'Noun', syn: 'Adaptation, accommodation, orientation', ant: 'Maladjustment, disharmony' },
-    { word: 'Effectively', meaning: 'কার্যকরভাবে / ফলপ্রসূ উপায়ে', pos: 'Adverb', syn: 'Efficaciously, successfully, productively', ant: 'Ineffectively, fruitlessly' },
-    { word: 'Unmarried', meaning: 'অবিবাহিত / একক জীবনযাপনকারী', pos: 'Adjective', syn: 'Single, unwed, bachelor/spinster', ant: 'Married, wedded' },
-    { word: 'Provider', meaning: 'সেবাদানকারী / পৃষ্ঠপোষক', pos: 'Noun', syn: 'Supplier, practitioner, caregiver', ant: 'Beneficiary, consumer' },
-    { word: 'Attitudes', meaning: 'মনোভাব / মানসিক দৃষ্টিভঙ্গি', pos: 'Noun', syn: 'Mindsets, outlooks, viewpoints', ant: 'Actions, realities' },
-    { word: 'Hazards', meaning: 'বিপদাপদ / স্বাস্থ্যঝুঁকি', pos: 'Noun', syn: 'Dangers, perils, risks, threats', ant: 'Safeties, protections' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 157)",
+        "text": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A. Warm up activity Look at the pictures and discuss the following questions in pairs. a source; internet a. What does each of these photographs show? b. What are some typical bealth problems affecting adolescent boys and girls? c. Whos do you think, are more vulnerable to adolescent health problems—boys or girls? Why? d. Why should all of us say 'No' to habit-forming drugs of every kind'? B. Now read about some typical health problems experienced by adolescent girls and boys in Bangladesh. i. Adolescents constitute a nation's core resource för national renewal and growth. Adolescence is a period in life when transition from childhood to adulthood takes place and behaviours and life styles are shaped. According to the World Health Organisation (WHO), adolescence is thc period which shapes the future of girls' and boys' lives. There are more then 31 million adolescents in Bangladesh; 13.7 million of them are girls and 14.3 million boys.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 157 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 159)",
+        "text": "Adolescence 153 opportunities. Moreover, they lack information about health issues. According to a study. only about three in five adolescents have even heard of HIV. It is also reported that more than 50 percent of adolescent girls are undernourished and suffer from anaemia. Adolescent fertility is also high in Bangladesh. Ille contribution of the adolescent fertility rate to the total fertility rate increased from 203% in 1993 to 24.4% in 2007. Moreover, neonatal mortality is another concern for younger mothers. vi. While the situation for adolescent boys is somewhat better, many are vulnerable and lack the power to make decisions about their own lives. Many boys who are unable to go to school, or are unemployed, remain unaware of social or health issues. They are at considerable risk of being drawn into criminal activities. They are also more likely to get exposed to drugs and alcohol. Sources: source: The Internet 1. Health Profile of Adolescents gnd Youth in Bangladesh, Government of Bangladesh, 2007, avaiigble at: h itp: euo. who eint,'LinkFilew'P ublieation_lleollh_ .pdf, 2. Unite for Children, UNICEF. Adolescent Empowerment Project in Bangladesh, 2009, available at http•.,'.'vw\"•«, C. Read the following statements and decide if they arc true or false. If a statement is false, correct it. a. In Bangladesh there are more adolescent boys than adolescent girls. b. Many girls in Bangladesh get married before they reach the legal age for marriage. c. A bride's family has to pay dowry only before the wedding. d. More than half of Bangladeshi adolescent girls cannot meet their dietary needs. e. Many adolescent boys in Bangladesh are likely to be involved in various forms of criminal offence. English Today. Classes 'a-xn and Alin",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 159 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 161)",
+        "text": "Adolescence 155 F. The test in Activity B has six paragraphs (i-vi). Choose the most suitable headings for the paragraphs from the list of headings below. There are more headings in the box than the paragraphs, so you will not use all of them. I. 2. 3. 4. 5. 6. 7. 8. 9. List of headings Reasons for adolescent feltility Concerted efforts to address adolescents' needs Importance Of adolescent population A process of disempowerment of women The curse of early man-iage Consequences of taking drugs Unfortunate state of adolescent girls Boys are not free from certain risks Violence within the family G. One of your cousins living in a different city is a teen now. Write an email to her/him suggesting what to do during this transitional period of life.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 161 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };

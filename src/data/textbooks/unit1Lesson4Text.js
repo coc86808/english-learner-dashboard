@@ -1,60 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 1: Education and Life | Lesson 4: Civic Engagement
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 1: Education and Life | Lesson: Civic Engagement
  */
 
 export const unit1Lesson4Textbook = {
   unitId: 'unit-1',
   lessonId: 'u1-l4',
   unitTitle: 'Unit 1: Education and Life',
-  unitTitleBn: 'ইউনিট ১: শিক্ষা ও জীবন',
-  lessonTitle: 'Lesson 4: Civic Engagement',
-  lessonTitleBn: 'লেসন ৪: নাগরিক সম্পৃক্ততা ও স্বেচ্ছাসেবা',
-  author: 'NCTB National Curriculum & Community Studies',
-  totalWords: 13,
+  unitTitleBn: 'ইউনিট ১: শিক্ষা ও জীবন (Education and Life)',
+  title: 'Civic Engagement',
+  titleBn: 'Civic Engagement',
+  lessonTitle: 'Civic Engagement',
+  lessonTitleBn: 'Civic Engagement',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Civic Engagement পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
+    {
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 33)",
+        "content": "Education and Life 27 D. Read the stories below. When you have finished reading, write on thc blank space on the top of each story what the story is about— civic engagement, volunteerism, or service learning. Scenario I: A group of college students were watching television news in their hostel. They were touched by the plight of the flood affected people in Sunamgonj. All the rivers and water bodies there had overflowed their banks because of the onrush of flood water from the hills beyond our border. Their homes, haats. bazars, shops, and crop lands were under several feet of water. The local administration had rescued the people and accommodated them in schools that were on higher grounds. Villagers in the nearby areas were helping these people in all possible ways. Yet, ensuring drinking water, cleanliness and hygiene was a big challenge. The schools had toilets but these were clearly not enough. Seeing this situation, Ahmed, Swapan, Rakib, and Niladri quickly decided to go to Sunamgonj and work for the flood victims. But to do that they needed money which they did not have.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 33 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 35)",
+        "content": "Education and Life 29 Alex's plea touched the teacher. She wanted to know what he had planned. He told her that he had talked to others in the class and they all would like to donate a month of their pocket money for these poor fellows to save their lives. The teacher then guided the class to take up a project. The boys, with the help of the teacher. worked it out. They contacted the local municipality in the Romanian town and expressed an interest to work for them. They also contacted their own lawmakers who also contributed to their fund. Then a small team led by the teacher went to Romania. They spent a couple of weeks with the people, helped them put heating in their houses, supply them with sufficient blankets and food. The school authority monitored the whole process from the first to last. They warmly welcomed them back. Everyone was proud of the students who had made and carried out their own plan. helped the people in their need, stood beside them to give mental and emotional support and came back home as young heroes. Read the statements below. Some of them are true and some are false. Write T (for true) or F (for false) in the boxes beside the statements. E. F. G. 1. 2. 3. Both stories have one common point— civic engagement. The story of college students is an example of service learning. Alex proved that he was a global citizen. Answer the questions. I. What are the similarities among the stories? 2. How are the stories different from one another? Work in groups. Think about a civic problem in your locality. Describe the problem and then make a complete plan on how you expect to solve the problem.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 35 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+],
   paragraphs: [
     {
-      number: 'i',
-      heading: 'Education for Life and Society (জীবনের জন্য শিক্ষা ও সমাজ উন্নয়ন)',
-      text: "Education aims to bring about positive changes in our behavior. It helps us try to change our lives as well as the society we live in. Education that does not illuminate our minds or does not inspire us to work for the community is not complete at all. Education is not all about getting grades or receiving certificates—we use education to make life better. We are expected to apply the knowledge, skills and values that we learn in a classroom in our engagement with the world that lies outside.",
-      bengaliTranslation: "শিক্ষার মূল লক্ষ্য আমাদের আচরণে ইতিবাচক পরিবর্তন আনা। এটি আমাদের জীবন এবং সমাজকে সুন্দর করতে সাহায্য করে। যে শিক্ষা আমাদের মনকে আলোকিত করে না বা সমাজের জন্য কাজ করতে উদ্বুদ্ধ করে না, তা কখনোই পরিপূর্ণ নয়। শিক্ষা কেবল ভালো গ্রেড পাওয়া বা সনদ অর্জনের মধ্যেই সীমাবদ্ধ নয়—আমরা জীবনকে সুন্দরতর করার জন্যই শিক্ষা গ্রহণ করি। শ্রেণিকক্ষে অর্জিত জ্ঞান, দক্ষতা ও মূল্যবোধকে বাইরের বৃহত্তর জগতের সাথে সম্পৃক্ত হয়ে প্রয়োগ করাই শিক্ষার সার্থকতা।",
-      highlightWords: ['illuminate', 'engagement', 'motivation', 'values']
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 33)",
+        "text": "Education and Life 27 D. Read the stories below. When you have finished reading, write on thc blank space on the top of each story what the story is about— civic engagement, volunteerism, or service learning. Scenario I: A group of college students were watching television news in their hostel. They were touched by the plight of the flood affected people in Sunamgonj. All the rivers and water bodies there had overflowed their banks because of the onrush of flood water from the hills beyond our border. Their homes, haats. bazars, shops, and crop lands were under several feet of water. The local administration had rescued the people and accommodated them in schools that were on higher grounds. Villagers in the nearby areas were helping these people in all possible ways. Yet, ensuring drinking water, cleanliness and hygiene was a big challenge. The schools had toilets but these were clearly not enough. Seeing this situation, Ahmed, Swapan, Rakib, and Niladri quickly decided to go to Sunamgonj and work for the flood victims. But to do that they needed money which they did not have.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 33 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Civic Engagement, Volunteerism & Service Learning (নাগরিক সম্পৃক্ততার ধারণা)',
-      text: "Learners' civic engagement is highly appreciated all over the world. Civic engagement means working to make a difference in the civic life of the community using knowledge, skills, values and motivation. Civically engaged individuals consider themselves responsible citizens who raise their voices against injustice, discrimination and other forms of social ills. They organize rallies, make human chains, write petitions, control traffic, clean beaches, or care for the elderly. When civic engagement is integrated into an academic programme and assessed on a scale, it is called service learning. When it is spontaneous, irregular, and voluntary, it is considered volunteerism.",
-      bengaliTranslation: "বিশ্বজুড়ে শিক্ষার্থীদের নাগরিক সম্পৃক্ততা অত্যন্ত প্রশংসিত। নাগরিক সম্পৃক্ততা হলো জ্ঞান, দক্ষতা, মূল্যবোধ ও অনুপ্রেরণা কাজে লাগিয়ে সমাজের নাগরিক জীবনে ইতিবাচক পরিবর্তন আনা। সচেতন নাগরিকেরা অন্যায়, বৈষম্য ও সামাজিক অসঙ্গতির বিরুদ্ধে প্রতিবাদ জানান। তাঁরা শোভাযাত্রা, মানববন্ধন, গণস্বাক্ষর সংগ্রহ, ট্রাফিক নিয়ন্ত্রণ কিংবা বয়স্কদের সেবায় এগিয়ে আসেন। যখন এটি প্রাতিষ্ঠানিক পাঠ্যক্রমের অংশ হিসেবে মূল্যায়িত হয়, তখন তাকে বলা হয় 'সার্ভিস লার্নিং'। আর যখন এটি স্বতঃস্ফূর্ত ও নিজস্ব তাগিদে করা হয়, তখন তা 'স্বেচ্ছাসেবা' (ভলান্টিয়ারিজম)।",
-      highlightWords: ['civic', 'discrimination', 'petitions', 'volunteerism']
-    },
-    {
-      number: 'iii',
-      heading: 'Scenario 1: Flood Relief in Sunamgonj (সুনামগঞ্জের বন্যাদুর্গতদের পাশে শিক্ষার্থীরা)',
-      text: "A group of college students in their hostel were touched by the plight of flood-affected people in Sunamgonj. Rivers had overflowed their banks due to the onrush of water from hills beyond the border. Ensuring drinking water, cleanliness, and hygiene was a big challenge. Ahmed, Swapan, Rakib, and Niladri pooled their contributions, collected Taka 3,00,000 from classmates, teachers, and civil society, and bought high-protein biscuits, molasses (gur), beaten rice (chira), water purification tablets, and hygiene supplies. Their priority was senior citizens and children. They stayed more than a week, immensely rewarded by the satisfaction of helping people.",
-      bengaliTranslation: "হোস্টেলে থাকা একদল কলেজ শিক্ষার্থী সুনামগঞ্জের বন্যাদুর্গত মানুষের দুর্দশা দেখে ব্যথিত হলো। সীমান্তপারের পাহাড়ি ঢলের প্রবল স্রোতে নদী উপচে জনপদ প্লাবিত হয়েছিল। সেখানে বিশুদ্ধ খাবার পানি ও স্বাস্থ্যবিধি বজায় রাখা ছিল এক বিরাট চ্যালেঞ্জ। আহমেদ, স্বপন, রাকিব ও নীলাদ্রি সহপাঠী, শিক্ষক ও নাগরিকদের কাছ থেকে ৩ লক্ষ টাকা অনুদান সংগ্রহ করে শুকনো খাবার, চিঁড়া, গুড়, পানি বিশুদ্ধকরণ ট্যাবলেট ও সাবান কিনে বন্যাদুর্গতদের দ্বারে দ্বারে পৌঁছে দিল। তাদের এই আন্তরিক প্রচেষ্টা সীমাহীন মানসিক তৃপ্তি এনে দিয়েছিল।",
-      highlightWords: ['onrush', 'hygiene', 'substantial', 'immensely']
-    },
-    {
-      number: 'iv',
-      heading: 'Scenario 2: Alex and Global Citizenship (অ্যালেক্স ও বৈশ্বিক নাগরিকত্বের দৃষ্টান্ত)',
-      text: "Alex, an eleven-year-old boy from California, saw distressing news of severe winter conditions in a remote Romanian town where residents had no proper heating and faced health hazards. An introvert boy by nature, Alex became very emotional and took a video clip to his teacher saying, 'We must do something for these people.' Guided by the teacher, the students took up a service-learning project, donated pocket money, raised funds, and a team traveled to Romania to help install heating and supply blankets. Everyone was proud of the students who came back as young heroes, demonstrating true global citizenship.",
-      bengaliTranslation: "ক্যালিফোর্নিয়ার এগারো বছর বয়সী বালক অ্যালেক্স টিভিতে রোমানিয়ার তীব্র শীতকবলিত দুর্গত মানুষের মর্মান্তিক দৃশ্য দেখে ব্যথিত হয়। স্বভাবগতভাবে কিছুটা অন্তর্মুখী হলেও সে আবেগাপ্লুত হয়ে শিক্ষকের কাছে আকুল আবেদন নিয়ে যায়। শিক্ষকের দিকনির্দেশনায় স্কুলের সহপাঠীরা টিফিনের টাকা জমিয়ে তহবিল তৈরি করে রোমানিয়ার দুর্গতদের জন্য হিটিং ব্যবস্থা ও কম্বল পৌঁছে দেওয়ার প্রকল্প বাস্তবায়ন করে। দূরদর্শী এই সেবা কার্যক্রমের মাধ্যমে তারা সত্যিকারের বিশ্বনাগরিকের অনন্য দৃষ্টান্ত স্থাপন করে।",
-      highlightWords: ['distressing', 'introvert', 'plea']
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 35)",
+        "text": "Education and Life 29 Alex's plea touched the teacher. She wanted to know what he had planned. He told her that he had talked to others in the class and they all would like to donate a month of their pocket money for these poor fellows to save their lives. The teacher then guided the class to take up a project. The boys, with the help of the teacher. worked it out. They contacted the local municipality in the Romanian town and expressed an interest to work for them. They also contacted their own lawmakers who also contributed to their fund. Then a small team led by the teacher went to Romania. They spent a couple of weeks with the people, helped them put heating in their houses, supply them with sufficient blankets and food. The school authority monitored the whole process from the first to last. They warmly welcomed them back. Everyone was proud of the students who had made and carried out their own plan. helped the people in their need, stood beside them to give mental and emotional support and came back home as young heroes. Read the statements below. Some of them are true and some are false. Write T (for true) or F (for false) in the boxes beside the statements. E. F. G. 1. 2. 3. Both stories have one common point— civic engagement. The story of college students is an example of service learning. Alex proved that he was a global citizen. Answer the questions. I. What are the similarities among the stories? 2. How are the stories different from one another? Work in groups. Think about a civic problem in your locality. Describe the problem and then make a complete plan on how you expect to solve the problem.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 35 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Illuminate', meaning: 'আলোকিত করা / উদ্ভাসিত করা', pos: 'Verb', syn: 'Enlighten, clarify, brighten', ant: 'Darken, confuse, obscure' },
-    { word: 'Engagement', meaning: 'সম্পৃক্ততা / সক্রিয় অংশগ্রহণ', pos: 'Noun', syn: 'Involvement, participation, commitment', ant: 'Detachment, apathy' },
-    { word: 'Motivation', meaning: 'অনুপ্রেরণা / উদ্দীপনা', pos: 'Noun', syn: 'Incentive, inspiration, drive', ant: 'Discouragement, apathy' },
-    { word: 'Discrimination', meaning: 'বৈষম্য / পক্ষপাতিত্ব', pos: 'Noun', syn: 'Bias, prejudice, inequity', ant: 'Equality, fairness' },
-    { word: 'Petitions', meaning: 'আবেদনপত্র / গণস্বাক্ষরযুক্ত দাবি', pos: 'Noun', syn: 'Appeals, pleas, supplications', ant: 'Orders, commands' },
-    { word: 'Volunteerism', meaning: 'স্বেচ্ছাসেবা / পরার্থপরতা', pos: 'Noun', syn: 'Voluntary service, altruism', ant: 'Coercion, compulsion' },
-    { word: 'Onrush', meaning: 'প্রবল স্রোত / পাহাড়ি ঢল', pos: 'Noun', syn: 'Surge, flood, deluge', ant: 'Retreat, ebb' },
-    { word: 'Hygiene', meaning: 'স্বাস্থ্যবিধি / পরিচ্ছন্নতা', pos: 'Noun', syn: 'Cleanliness, sanitation, purity', ant: 'Filth, dirtiness' },
-    { word: 'Substantial', meaning: 'উল্লেখযোগ্য / পর্যাপ্ত / অর্থবহ', pos: 'Adjective', syn: 'Considerable, significant, ample', ant: 'Negligible, trivial' },
-    { word: 'Immensely', meaning: 'অত্যধিক মাত্রায় / অপরিমেয়ভাবে', pos: 'Adverb', syn: 'Vastly, enormously, exceedingly', ant: 'Scarcely, slightly' },
-    { word: 'Distressing', meaning: 'মর্মান্তিক / উদ্বেগজনক / কষ্টদায়ক', pos: 'Adjective', syn: 'Heartbreaking, agonizing, upsetting', ant: 'Comforting, soothing' },
-    { word: 'Introvert', meaning: 'অন্তর্মুখী / চাপা স্বভাবের', pos: 'Noun', syn: 'Reserved person, quiet, introspective', ant: 'Extrovert, outgoing person' },
-    { word: 'Plea', meaning: 'আকুল আবেদন / প্রার্থনা', pos: 'Noun', syn: 'Appeal, supplication, request', ant: 'Demand, command' }
-  ]
+]
 };

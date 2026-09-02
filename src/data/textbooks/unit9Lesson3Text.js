@@ -1,41 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 9: Adolescence | Lesson 3: Why Does Child Marriage Happen?
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 9: Adolescence | Lesson: The Story of Shilpi
  */
 
 export const unit9Lesson3Textbook = {
   unitId: 'unit-9',
   lessonId: 'u9-l3',
   unitTitle: 'Unit 9: Adolescence',
-  unitTitleBn: 'ইউনিট ৯: বয়ঃসন্ধিকাল',
-  lessonTitle: 'Lesson 3: Why Does Child Marriage Happen?',
-  lessonTitleBn: 'লেসন ৩: বাল্যবিবাহ কেন ঘটে?',
-  author: 'UNICEF & Ministry of Women and Children Affairs',
-  totalWords: 8,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ৯: কৈশোর (Adolescence)',
+  title: 'The Story of Shilpi',
+  titleBn: 'The Story of Shilpi',
+  lessonTitle: 'The Story of Shilpi',
+  lessonTitleBn: 'The Story of Shilpi',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের The Story of Shilpi পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
     {
-      number: 'i',
-      heading: 'Gender Inequality and Subordination (লিঙ্গবৈষম্য ও সামাজিক অধীনতা)',
-      text: "The situation of adolescent girls in Bangladesh is characterized by inequality and subordination within the family and society. This inequality leads to widespread practice of child marriage, marginalisation or exclusion from health, education and economic opportunities, and vulnerability to violence. While affluent families tend to delay marriage, impoverished rural households view adolescent daughters as financial burdens.",
-      bengaliTranslation: "বাংলাদেশে কিশোরীদের অবস্থা পরিবার ও সমাজে বৈষম্য এবং অধীনতা দ্বারা চিহ্নিত। এই গভীর বৈষম্য ব্যাপক বাল্যবিবাহ, স্বাস্থ্য ও শিক্ষা থেকে প্রান্তিকীকরণ বা বঞ্চনা এবং পারিবারিক সহিংসতার ঝুঁকি তৈরি করে। বিত্তশালী পরিবারগুলো যেখানে মেয়েদের দেরিতে বিয়ে দেয়, সেখানে দরিদ্র পরিবারগুলো কিশোরী কন্যাদের অর্থনৈতিক বোঝা হিসেবে বিবেচনা করে থাকে।",
-      highlightWords: ['subordination', 'marginalisation', 'affluent', 'dowry']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 163)",
+        "content": "Adolescence 157 When Shilpi heard about those risks. she invited her husband, Rashid. to discuss pregnancy with a counsellor. After hearing about the risks, Rashid agreed to delay having children for five years despite pressures from his parents and neighbours to produce an offspring. Together. thc couple met with a female health care provider, who informed them about the various family planning options available. Shilpi's mother-in-law and neighbours continued to pressurize the newlyweds. Deeply rooted cultural practices and traditions caused a rift between Shilpi and Rashid and their extended family, some Of whose members insulted and cfiticized the couple. Unable to convince their close relatives of the risks. Shilpi and Rashid returned to the counsellor. They took the help of a parent peer who had been trained to speak to other parents about adolescent issues. Shilpi's mother-in-law and neighbours eventually came to understand the harmful effects ofearly pregnancy on mother and child. After that, the villagers no longer pressurized the couple; their parents and neighbours began to support them and speak out against early marriage and pregnancy. C. Discuss the following questions in pairs: a. Why did Shilpi decide to delay her pregnancy? b. How were Shilpi and her husband able to handle the pressure for having children? c. What are the various health-related services that couples like Shilpi and Rashid need? d. Is there any empowerrnent group working in your area? If yes, what do they do? e. As an adolescent boy/girl, what peer support can you provide Io boys and girls in your locality who have already married? D. Think about what the adverse effects of child marriage can be and write a 200 word essay on the topic.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 163 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Severe Consequences of Early Marriage (বাল্যবিবাহের মারাত্মক স্বাস্থ্যঝুঁকি ও সীমাবদ্ধতা)',
-      text: "When a girl gets married early, she usually drops out of school and begins full-time domestic servitude in her in-laws' household. Illegal dowry demands often trigger domestic abuse. Furthermore, adolescent brides face severe maternal health hazards; maternal mortality rates for teenage mothers remain dangerously high. Child marriage abruptly curtails their mobility, ending their personal education and future independence.",
-      bengaliTranslation: "অল্প বয়সে বিয়ে হয়ে গেলে একটি মেয়ে সাধারণত স্কুল থেকে ঝরে পড়ে এবং শ্বশুরবাড়িতে কায়িক শ্রমে নিয়োজিত হতে বাধ্য হয়। বেআইনি যৌতুকের দাবি প্রায়শই শারীরিক নির্যাতনের কারণ হয়ে দাঁড়ায়। অধিকন্তু, অল্প বয়সে সন্তান ধারণ করায় কিশোরী বধূদের মাতৃমৃত্যুর হার অত্যন্ত বেশি থাকে। বাল্যবিবাহ তাদের চলাচলের স্বাধীনতাকে সংকুচিত করে দেয় এবং তাদের ব্যক্তিগত শিক্ষা ও স্বাবলম্বী হওয়ার সম্ভাবনাকে চিরতরে নিঃশেষ করে।",
-      highlightWords: ['maternal', 'mortality', 'curtails', 'mobility']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 165)",
+        "content": "Adolescence 159 , younger women in rural areas are somewhat more likely to have experience of sexual violence than (t) . women. Overall, the graph shows an (g) . young becoming victims of violence. F. Adolescent health quiz . picture of rural and urban adolescents and Take the quiz to see how healthy you are. Tick each item that is true for you. Each tick mark is worth 1 point. Add up the points and check your score. Life at home Q You have the opportunity to make decisions that are important to you. Q You can talk to caring and responsible adults about important things. Q You feel safe at home, Q You understand and follow the rules your parents have set for you. Life at College Q You do well in college and ask for help when you need it. Q You plan to do well in your HSC examination. Q You can complete your homework/college tasks on your own. Making good choices Q Your friends do not use or offer you cigarettes, alcohol or drugs. Q You have friends who are trustworthy. Q You are active in college sports. cultural clubs and voluntary organizations. Healthy lifestyle Q You have 3 healthy meals each day including breakfast. Q You take 3 calcium rich food items, such as milk or yogurt everyday. Q You eat enough fruit and vegetables daily. Q You avoid eating food high in fat. sugar and salt most days of the week. Q You watch 2 hours of TV or less every day. O You exercise or play sports daily. Bonus points You volunteer in your community to help others. Q You do things to help out at home.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 165 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Subordination', meaning: 'অধীনতা / পরাধীনতা / অবদমন', pos: 'Noun', syn: 'Servitude, subjugation, inferiority', ant: 'Autonomy, equality, dominance' },
-    { word: 'Marginalisation', meaning: 'প্রান্তিকীকরণ / অধিকারহীন অবস্থায় ঠেলে দেওয়া', pos: 'Noun', syn: 'Exclusion, alienation, sidelining', ant: 'Inclusion, mainstreaming' },
-    { word: 'Affluent', meaning: 'ধনাঢ্য / বিত্তশালী / সচ্ছল', pos: 'Adjective', syn: 'Wealthy, prosperous, rich, well-off', ant: 'Impoverished, needy, destitute' },
-    { word: 'Dowry', meaning: 'যৌতুক / পণ', pos: 'Noun', syn: 'Marriage portion, bride price, marital exaction', ant: 'Free gift' },
-    { word: 'Maternal', meaning: 'মাতৃত্বজনিত / প্রসূতি সংক্রান্ত', pos: 'Adjective', syn: 'Motherly, pregnancy-related, obstetric', ant: 'Paternal' },
-    { word: 'Mortality', meaning: 'মৃত্যুহার / মরণশীলতা', pos: 'Noun', syn: 'Death rate, fatality, perishability', ant: 'Immortality, survival' },
-    { word: 'Curtails', meaning: 'সংকোচন করে / হ্রাস করে বা কেড়ে নেয়', pos: 'Verb', syn: 'Restricts, limits, reduces, slashes', ant: 'Expands, increases, extends' },
-    { word: 'Mobility', meaning: 'চলাচলের স্বাধীনতা / গমনাগমন', pos: 'Noun', syn: 'Movement, freedom of travel, agility', ant: 'Confinement, restriction' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 163)",
+        "text": "Adolescence 157 When Shilpi heard about those risks. she invited her husband, Rashid. to discuss pregnancy with a counsellor. After hearing about the risks, Rashid agreed to delay having children for five years despite pressures from his parents and neighbours to produce an offspring. Together. thc couple met with a female health care provider, who informed them about the various family planning options available. Shilpi's mother-in-law and neighbours continued to pressurize the newlyweds. Deeply rooted cultural practices and traditions caused a rift between Shilpi and Rashid and their extended family, some Of whose members insulted and cfiticized the couple. Unable to convince their close relatives of the risks. Shilpi and Rashid returned to the counsellor. They took the help of a parent peer who had been trained to speak to other parents about adolescent issues. Shilpi's mother-in-law and neighbours eventually came to understand the harmful effects ofearly pregnancy on mother and child. After that, the villagers no longer pressurized the couple; their parents and neighbours began to support them and speak out against early marriage and pregnancy. C. Discuss the following questions in pairs: a. Why did Shilpi decide to delay her pregnancy? b. How were Shilpi and her husband able to handle the pressure for having children? c. What are the various health-related services that couples like Shilpi and Rashid need? d. Is there any empowerrnent group working in your area? If yes, what do they do? e. As an adolescent boy/girl, what peer support can you provide Io boys and girls in your locality who have already married? D. Think about what the adverse effects of child marriage can be and write a 200 word essay on the topic.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 163 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 165)",
+        "text": "Adolescence 159 , younger women in rural areas are somewhat more likely to have experience of sexual violence than (t) . women. Overall, the graph shows an (g) . young becoming victims of violence. F. Adolescent health quiz . picture of rural and urban adolescents and Take the quiz to see how healthy you are. Tick each item that is true for you. Each tick mark is worth 1 point. Add up the points and check your score. Life at home Q You have the opportunity to make decisions that are important to you. Q You can talk to caring and responsible adults about important things. Q You feel safe at home, Q You understand and follow the rules your parents have set for you. Life at College Q You do well in college and ask for help when you need it. Q You plan to do well in your HSC examination. Q You can complete your homework/college tasks on your own. Making good choices Q Your friends do not use or offer you cigarettes, alcohol or drugs. Q You have friends who are trustworthy. Q You are active in college sports. cultural clubs and voluntary organizations. Healthy lifestyle Q You have 3 healthy meals each day including breakfast. Q You take 3 calcium rich food items, such as milk or yogurt everyday. Q You eat enough fruit and vegetables daily. Q You avoid eating food high in fat. sugar and salt most days of the week. Q You watch 2 hours of TV or less every day. O You exercise or play sports daily. Bonus points You volunteer in your community to help others. Q You do things to help out at home.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 165 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };

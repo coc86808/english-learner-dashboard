@@ -1,52 +1,64 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 7: Youthful Achievers | Lesson 1: Brojen Das: On Crossing the English Channel
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 7: Youthful Achievers | Lesson: Brojen Das: On Crossing the English Channel
  */
 
 export const unit7Lesson1Textbook = {
   unitId: 'unit-7',
   lessonId: 'u7-l1',
   unitTitle: 'Unit 7: Youthful Achievers',
-  unitTitleBn: 'ইউনিট ৭: তারুণ্যের অর্জন ও সাফল্য',
-  lessonTitle: 'Lesson 1: Brojen Das: On Crossing the English Channel',
-  lessonTitleBn: 'লেসন ১: ব্রজেন দাস ও ইংলিশ চ্যানেল বিজয়',
-  author: 'Brojen Das (Memoir: I Had Not Failed My Country)',
-  totalWords: 12,
+  unitTitleBn: 'ইউনিট ৭: তরুণ বিজয়ী (Youthful Achievers)',
+  title: 'Brojen Das: On Crossing the English Channel',
+  titleBn: 'Brojen Das: On Crossing the English Channel',
+  lessonTitle: 'Brojen Das: On Crossing the English Channel',
+  lessonTitleBn: 'Brojen Das: On Crossing the English Channel',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Brojen Das: On Crossing the English Channel পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 3,
+  sections: [
+    {
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 120)",
+        "content": "Unit Seven: Youthful Achievers Lesson 1 Brojen Das: On Crossing the English Channel Brojcn Das was born on 9 December 1927 in Munshiganj. He was a legendary swimmer who became the first person from Asia to swim across the English Channel in 1958. He crossed the channel six times and set a world record in channel swimming in 1961. The government Of Bangladesh honoured him with the National Sports award in 1976 and Swadhinata Padak (posthumously) in 1999. He also received the Pride Of Performance award in 1959 from the Pakistan government and the King of Channel trophy from I-JK, Mr Das breathed his last on I June 1998. Following is an abridged version Of a memoir by Brojen Das in which he gives a captivating account of his record-breaking perförmance in the English Channel- A. Read the text below and answers the questions that follow. I had not failed my country Brojen Das I could hear very faint voices as if coming from the other side of Lhe world. Th time about 4:00 in the morning and the date September 22.1961. I was feelin tired and exhausted and was encountering stiff opposition from the strong tide. looked towards my accompanying motorboat carrying my manager Qu Mohammad Ali, skipper Len Hutchinson and the official observers Mr. J. U. Wood They were all pointing towards the Kent shore. As I looked up, I could see flashes I realized I was very close to the shore. I asked what the time was and how far I had still to go. They told me that if I p the last ounce of energy into my swirnming» I would set a new world record fo France to England swim. This electrified me. The goal for which I had bee striving for the past four years could be mine. The aim, which goaded me to swi the Channel six Limes. each time risking my life and reputation, was so close. Ye it could be far...",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 120 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 121)",
+        "content": "Youthful Achievers Treachery of Weather 115 The Channel, with its cold biting water, the winds, the waves and the tides does no make things easier. The unpredictable weather changes for the worse after swimmer jumps in. It has never, to my knowledge. changed for the better fo anyone yet... Apart from stamina and practice of long distance swimmings on must have the grit, determination and courage to subdue the Channel. Weather ill luck have conspired and joined hands many a time to defeat Channel swimmers They had defeated me no less than five times.... The final shot On the morning of 9 September 1961, after finishing my swim, I had gone to The BBC-TV cameramen filmed me in my bed. Although very tired afte swimming for II hours and 48 minutes, I could not fall asleep. Thc thought that had once again failed my country, friends and fans was disturbing me. After onl four hours sleep the following night, I decided to try again — for the sixth time... bad fixed the tentative date for September 20. On that day I took the fe to Calais, Sea Sick I get sea-sick in the ferry and also during swimming if there are breakers or waves This sea-sickness was the main cause of my failure to set a world record September 8/9 or even in 1960. The night rest at the Cap Gris Nez hotel did m immense good. I felt on top of the world. The weather on September 21 was n perfect. I jumped into the water within 12 days of my 5th swim, a record in itself after saying a Iitde prayer, asking God to give me good weather all through and crown me with success. Nearly the whole of Cap Gris Nez village had turned ou to wish me luck and see me enter the water for the sixth time.... Plunge And After Once in water, you get oblivious of time. distance or direction. The only thought which kept me worried, was that I must make it and that I must get good weather all the way. The second half of the swim is always very difficult. And if even little waves develop, it saps the ebbing energy of the swimmer all the more. Taking a lesson from my previous swims I kept my speed at a steady pace for I knew 1 would need every ounce of my energy towards the close.... Brojcn das crossing thc Channel IPhoto: http:/hvwubrojendas.com/",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 121 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 123)",
+        "content": "Youthful Achievers 3. He finished the 6th swim i) a little bit late than expected ii) just on time iii) 15 minutes after the time set by the Channel authority iv) 15 minutes before the time taken by the previous record holder 4. Brojen Das used to suffer from seasickness - i) when he was in the ferv ii) when he was in cold water iii) when there were rocks in front of him iv) when he felt hungry 5. The people of the Cap Gris Nez came to the shore to i) congratulate Brojen Das upon his success ii) to see off Brojen Das iii) to welcome Brojen Das iv) to take photos with him 6. Once a swimmer gets into the Channel water. - i) he/she cannot keep a track of the time ii) he/she cannot keep a track of the directions iii) he/she cannot keep track Of the distance iv) all of the above 117 D. E. F. Suppose you are a sports journalist. You arc going to interview a swimmer after his/her record-breaking performance at the national sports competition. Make a list of 5 questions that you would like to ask the swimmer. Now, complete the story about a village girl called Urmila, who became champion in a national swimming competition at the age of 14. Write no more than 180 words. Urmila was a little girl who grew up in a village named Patuair in Kishoreganj district. A small river called Phuleswari flowed through her village. At the age of five, Urmila used to go to the river with her father and started to learn swimming. Her mother did not like the idea of her daughter swimming in the river. But her father was happy to train Urmila to be a competent swimmer. Who knew that the little girl would become an accomplished swimmer one day! Group project: Visit thc website http://www.brojcndas.com/conqucringthc.htm. Choose some photos of Brojen Das from the site. Write captions for each of the photos. Make a poster on Brojen Das and give a group presentation to the class.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 123 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+],
   paragraphs: [
     {
-      number: 'i',
-      heading: 'The First Asian Across the English Channel (ইংলিশ চ্যানেল জয়ী প্রথম এশীয়)',
-      text: "Brojen Das was born on 9 December 1927 in Munshiganj. He was a legendary swimmer who became the first person from Asia to swim across the English Channel in 1958. He crossed the channel six times and set a world record in channel swimming in 1961. The government of Bangladesh honoured him with the National Sports award in 1976 and Swadhinata Padak (posthumously) in 1999. He also received the Pride of Performance award in 1959 and the King of Channel trophy from the UK.",
-      bengaliTranslation: "মুন্সীগঞ্জের কৃতি সন্তান কিংবদন্তি সাঁতারু ব্রজেন দাস ১৯৫৮ সালে প্রথম এশীয় হিসেবে সফলভাবে ইংলিশ চ্যানেল অতিক্রম করেন। তিনি মোট ছয়বার ইংলিশ চ্যানেল পাড়ি দেন এবং ১৯৬১ সালে বিশ্বরেকর্ড গড়ে তোলেন। বাংলাদেশ সরকার তাঁকে ১৯৭৬ সালে জাতীয় ক্রীড়া পুরস্কার এবং ১৯৯৯ সালে মরণোত্তর স্বাধীনতা পদকে ভূষিত করে। এছাড়াও তিনি ব্রিটেনের 'কিং অব চ্যানেল' ট্রফি লাভ করেন।",
-      highlightWords: ['electrified', 'goaded']
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 120)",
+        "text": "Unit Seven: Youthful Achievers Lesson 1 Brojen Das: On Crossing the English Channel Brojcn Das was born on 9 December 1927 in Munshiganj. He was a legendary swimmer who became the first person from Asia to swim across the English Channel in 1958. He crossed the channel six times and set a world record in channel swimming in 1961. The government Of Bangladesh honoured him with the National Sports award in 1976 and Swadhinata Padak (posthumously) in 1999. He also received the Pride Of Performance award in 1959 from the Pakistan government and the King of Channel trophy from I-JK, Mr Das breathed his last on I June 1998. Following is an abridged version Of a memoir by Brojen Das in which he gives a captivating account of his record-breaking perförmance in the English Channel- A. Read the text below and answers the questions that follow. I had not failed my country Brojen Das I could hear very faint voices as if coming from the other side of Lhe world. Th time about 4:00 in the morning and the date September 22.1961. I was feelin tired and exhausted and was encountering stiff opposition from the strong tide. looked towards my accompanying motorboat carrying my manager Qu Mohammad Ali, skipper Len Hutchinson and the official observers Mr. J. U. Wood They were all pointing towards the Kent shore. As I looked up, I could see flashes I realized I was very close to the shore. I asked what the time was and how far I had still to go. They told me that if I p the last ounce of energy into my swirnming» I would set a new world record fo France to England swim. This electrified me. The goal for which I had bee striving for the past four years could be mine. The aim, which goaded me to swi the Channel six Limes. each time risking my life and reputation, was so close. Ye it could be far...",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 120 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Treachery of Weather & The Final Shot (প্রকৃতির বৈরিতা ও চূড়ান্ত প্রচেষ্টা)',
-      text: "The Channel, with its cold biting water, unpredictable winds, and stiff waves, does not make things easier. Apart from stamina, one must have the grit, determination and courage to subdue the Channel. Weather and ill luck had defeated me no less than five times. On 9 September 1961, after swimming for 11 hours and 48 minutes, I had gone to bed disturbed by the thought that I had failed my country. After only four hours of sleep, I decided to try again for the sixth time. I jumped into the water within 12 days of my 5th swim, a record in itself.",
-      bengaliTranslation: "ইংলিশ চ্যানেলের হাড়কাঁপানো ঠাণ্ডা পানি, বাতাসের তীব্রতা আর স্রোত সাঁতারুদের জন্য এক দুঃসহ পরীক্ষা। কেবল শারীরিক সামর্থ্যই যথেষ্ট নয়; চ্যানেলকে বশ করতে প্রয়োজন লৌহকঠিন মনোবল, অদম্য সাহস ও একাগ্রতা। বৈরী আবহাওয়া ও দুর্ভাগ্য এর আগে আমাকে পাঁচবার পরাস্ত করেছিল। ১৯৬১ সালের ৯ সেপ্টেম্বর প্রায় ১২ ঘণ্টা সাঁতারের পর তীরে পৌঁছাতে ব্যর্থ হয়ে বিছানায় শুয়ে ভেবেছিলাম আমি আমার দেশকে ব্যর্থ হতে দিয়েছি। মাত্র চার ঘণ্টা ঘুমিয়ে আমি ষষ্ঠবারের মতো চেষ্টা করার সিদ্ধান্ত নিই।",
-      highlightWords: ['treachery', 'grit', 'subdue', 'breakers', 'ebbing']
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 121)",
+        "text": "Youthful Achievers Treachery of Weather 115 The Channel, with its cold biting water, the winds, the waves and the tides does no make things easier. The unpredictable weather changes for the worse after swimmer jumps in. It has never, to my knowledge. changed for the better fo anyone yet... Apart from stamina and practice of long distance swimmings on must have the grit, determination and courage to subdue the Channel. Weather ill luck have conspired and joined hands many a time to defeat Channel swimmers They had defeated me no less than five times.... The final shot On the morning of 9 September 1961, after finishing my swim, I had gone to The BBC-TV cameramen filmed me in my bed. Although very tired afte swimming for II hours and 48 minutes, I could not fall asleep. Thc thought that had once again failed my country, friends and fans was disturbing me. After onl four hours sleep the following night, I decided to try again — for the sixth time... bad fixed the tentative date for September 20. On that day I took the fe to Calais, Sea Sick I get sea-sick in the ferry and also during swimming if there are breakers or waves This sea-sickness was the main cause of my failure to set a world record September 8/9 or even in 1960. The night rest at the Cap Gris Nez hotel did m immense good. I felt on top of the world. The weather on September 21 was n perfect. I jumped into the water within 12 days of my 5th swim, a record in itself after saying a Iitde prayer, asking God to give me good weather all through and crown me with success. Nearly the whole of Cap Gris Nez village had turned ou to wish me luck and see me enter the water for the sixth time.... Plunge And After Once in water, you get oblivious of time. distance or direction. The only thought which kept me worried, was that I must make it and that I must get good weather all the way. The second half of the swim is always very difficult. And if even little waves develop, it saps the ebbing energy of the swimmer all the more. Taking a lesson from my previous swims I kept my speed at a steady pace for I knew 1 would need every ounce of my energy towards the close.... Brojcn das crossing thc Channel IPhoto: http:/hvwubrojendas.com/",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 121 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'iii',
-      heading: 'World Record and Fulfilling Life Ambition (বিশ্বরেকর্ড ও মাতৃভূমির মুখ উজ্জ্বল)',
-      text: "Once in water, you get oblivious of time, distance or direction. I was famished and exhausted, squeezing my body for the last drop of energy. I saw flashes on the Kent shore. The record was dangling before my swollen eyes like the proverbial carrot. I kept pulling myself on through sharp and craggy rocks until I touched the shore. The time was 4:35 a.m. GMT: I had broken the world record by 15 minutes! I thanked God and remembered my parents—I had not failed my country.",
-      bengaliTranslation: "পানিতে নামলে সময়, দূরত্ব আর দিকের হুঁশ থাকে না। ক্ষুধায় আর চরম ক্লান্তিতে অবসন্ন হয়ে আমি শরীরের শেষ শক্তিটুকু নিংড়ে সাঁতার কাটতে থাকলাম। হঠাৎ কেন্টের তীরে আলোর ঝলক দেখতে পেলাম। বিশ্বরেকর্ড যেন আমার ফোলা চোখের সামনে ধরা দিচ্ছিল। খাড়া পাথুরে শৈলশিরা পেরিয়ে যখন ইংল্যান্ডের তীরে পৌঁছালাম, তখন ঘড়িতে ভোর ৪টা ৩৫ মিনিট। আমি পূর্ববর্তী বিশ্বরেকর্ড ১৫ মিনিট ব্যবধানে ভেঙে দিয়েছি! পরম করুণাময় ও পিতামাতাকে স্মরণ করে মনে হলো—না, আমি আমার দেশের মুখ মলিন হতে দিইনি।",
-      highlightWords: ['oblivious', 'famished', 'proverbial', 'craggy', 'momentum']
+        "number": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 123)",
+        "text": "Youthful Achievers 3. He finished the 6th swim i) a little bit late than expected ii) just on time iii) 15 minutes after the time set by the Channel authority iv) 15 minutes before the time taken by the previous record holder 4. Brojen Das used to suffer from seasickness - i) when he was in the ferv ii) when he was in cold water iii) when there were rocks in front of him iv) when he felt hungry 5. The people of the Cap Gris Nez came to the shore to i) congratulate Brojen Das upon his success ii) to see off Brojen Das iii) to welcome Brojen Das iv) to take photos with him 6. Once a swimmer gets into the Channel water. - i) he/she cannot keep a track of the time ii) he/she cannot keep a track of the directions iii) he/she cannot keep track Of the distance iv) all of the above 117 D. E. F. Suppose you are a sports journalist. You arc going to interview a swimmer after his/her record-breaking performance at the national sports competition. Make a list of 5 questions that you would like to ask the swimmer. Now, complete the story about a village girl called Urmila, who became champion in a national swimming competition at the age of 14. Write no more than 180 words. Urmila was a little girl who grew up in a village named Patuair in Kishoreganj district. A small river called Phuleswari flowed through her village. At the age of five, Urmila used to go to the river with her father and started to learn swimming. Her mother did not like the idea of her daughter swimming in the river. But her father was happy to train Urmila to be a competent swimmer. Who knew that the little girl would become an accomplished swimmer one day! Group project: Visit thc website http://www.brojcndas.com/conqucringthc.htm. Choose some photos of Brojen Das from the site. Write captions for each of the photos. Make a poster on Brojen Das and give a group presentation to the class.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 123 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Electrified', meaning: 'তড়িৎস্পৃষ্ট বা রোমাঞ্চিত করল', pos: 'Verb', syn: 'Thrilled, galvanized, energized', ant: 'Dampened, dispirited' },
-    { word: 'Goaded', meaning: 'প্রণোদিত বা তাড়িত করল', pos: 'Verb', syn: 'Prodded, spurred, impelled', ant: 'Dissuaded, discouraged' },
-    { word: 'Treachery', meaning: 'বিশ্বাসঘাতকতা / অপ্রত্যাশিত ঝুঁকি', pos: 'Noun', syn: 'Perfidiousness, betrayal, hazard', ant: 'Loyalty, reliability' },
-    { word: 'Grit', meaning: 'দৃঢ় মনোবল / অদম্য সাহসিকতা', pos: 'Noun', syn: 'Courage, resolve, fortitude', ant: 'Cowardice, weakness' },
-    { word: 'Subdue', meaning: 'বশীভূত বা জয় করা', pos: 'Verb', syn: 'Conquer, tame, overcome', ant: 'Surrender, yield' },
-    { word: 'Oblivious', meaning: 'বেখবর / অচেতন / আত্মমগ্ন', pos: 'Adjective', syn: 'Unaware, unmindful, heedless', ant: 'Aware, alert' },
-    { word: 'Ebbing', meaning: 'ক্ষয়িষ্ণু / হ্রাস পাওয়া', pos: 'Adjective', syn: 'Dwindling, waning, receding', ant: 'Surging, rising' },
-    { word: 'Famished', meaning: 'ক্ষুধার্ত / অনাহারে কাতর', pos: 'Adjective', syn: 'Starving, ravenous, hungry', ant: 'Sated, full' },
-    { word: 'Proverbial', meaning: 'প্রবাদপ্রতিম / সুবিখ্যাত', pos: 'Adjective', syn: 'Legendary, famous, renowned', ant: 'Obscure, unknown' },
-    { word: 'Craggy', meaning: 'পাথুরে খাড়া / অসমতল শৈলময়', pos: 'Adjective', syn: 'Rugged, steep, rocky', ant: 'Smooth, flat' },
-    { word: 'Momentum', meaning: 'গতিশক্তি / তীব্র গতিবেগ', pos: 'Noun', syn: 'Impetus, thrust, velocity', ant: 'Inertia, stagnation' },
-    { word: 'Breakers', meaning: 'উত্তাল ফেনিল ঢেউ', pos: 'Noun', syn: 'Foaming waves, surf, billows', ant: 'Calm water' }
-  ]
+]
 };

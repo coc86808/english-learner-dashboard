@@ -1,41 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 12: Environment and Nature | Lesson 3: Endangered Species
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 12: Environment and Nature | Lesson: Endangered Species
  */
 
 export const unit12Lesson3Textbook = {
   unitId: 'unit-12',
   lessonId: 'u12-l3',
   unitTitle: 'Unit 12: Environment and Nature',
-  unitTitleBn: 'ইউনিট ১২: পরিবেশ ও প্রকৃতি',
-  lessonTitle: 'Lesson 3: Endangered Species',
-  lessonTitleBn: 'লেসন ৩: বিপন্ন বন্যপ্রাণী ও জীববৈচিত্র্য সংরক্ষণ',
-  author: 'IUCN Red List & Wildlife Conservation Society',
-  totalWords: 8,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ১২: পরিবেশ ও প্রকৃতি (Environment and Nature)',
+  title: 'Endangered Species',
+  titleBn: 'Endangered Species',
+  lessonTitle: 'Endangered Species',
+  lessonTitleBn: 'Endangered Species',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Endangered Species পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
     {
-      number: 'i',
-      heading: 'Fragile Wildlife of Bangladesh (বাংলাদেশের সংকটাপন্ন বন্যপ্রাণী)',
-      text: "Bangladesh boasts diverse ecosystems, but many unique wildlife species are critically endangered. The elongated tortoise inhabits deciduous and mixed evergreen forests across southeastern hill tracts. Similarly, the nocturnal Bengal slow loris—locally known as 'lajjaboti banor'—is threatened by rampant deforestation and habitat fragmentation.",
-      bengaliTranslation: "বাংলাদেশ বৈচিত্র্যময় বাস্তুতন্ত্রের লীলাভূমি হলেও এর বহু অনন্য বন্যপ্রাণী আজ চরম বিলুপ্তির মুখে। লম্বাটে কচ্ছপ (Elongated Tortoise) মূলত পার্বত্য চট্টগ্রামের পর্ণমোচী ও চিরহরিৎ বনাঞ্চলে বাস করে। একইভাবে আমাদের নিশাচর স্তন্যপায়ী প্রাণী 'লজ্জাবতী বানর' বা শরমিন্দা বিলাই নির্বিচারে বন উজাড় ও আবাসস্থল ধ্বংসের কারণে মারাত্মক ঝুঁকির সম্মুখীন।",
-      highlightWords: ['endangered', 'deciduous', 'nocturnal', 'deforestation', 'habitat']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 233)",
+        "content": "Environment and Nature B. Read this poem by Jayne Cortez and answer the questions that follow Endangered Species List Blues A snow leopard does not know It's on the endangered species list Mr. &. Mrs. Crab are not into destroying the world they are crawling to the mud flats to take in some rotten insects It's not what's up that's going down when you smell yourself on the threshold of extinction It's you and your portable chemical toilet going to hell under friendly fire It's you and your missile receptor exploding to pieces It's not what's up that's going down The person who OK's biological weapons should not cry about the stench of new diseases The one who cuts off the trees so the orangutans can't hang should not wonder about ecological devastation It's not what's up that's going down It's what's down that's going up It's not what's up that's going down It's what's down that's going up C. Listen to the musical version of the poem using this QR code: 227",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 233 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Combating the Crisis of Extinction (চোরাশিকার রোধ ও জীববৈচিত্র্য রক্ষা)',
-      text: "Illegal poaching and commercial trade push majestic creatures like the Asian elephant and Bengal tiger closer to irreversible extinction. Safeguarding rich national biodiversity demands robust forest corridors, legal protection for endangered habitats, and strict penalties against illicit wildlife trafficking.",
-      bengaliTranslation: "বেআইনি চোরাশিকার ও বন্যপ্রাণীর অঙ্গপ্রত্যঙ্গ পাচার এশীয় হাতি ও রয়েল বেঙ্গল টাইগারের মতো রাজকীয় প্রাণীদের চিরতরে বিলুপ্তির অতল গহ্বরে ঠেলে দিচ্ছে। আমাদের অমূল্য জীববৈচিত্র্য রক্ষা করতে হলে বনাঞ্চলের নিরাপদ করিডোর তৈরি, বন্যপ্রাণীর প্রাকৃতিক আবাসস্থলের আইনি নিরাপত্তা এবং চোরাশিকারীদের বিরুদ্ধে কঠোর শাস্তিমূলক ব্যবস্থা গ্রহণ করা অত্যন্ত জরুরি।",
-      highlightWords: ['poaching', 'biodiversity', 'extinction']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 235)",
+        "content": "Environment and Nature 229 always walks alone had been very lonely ever since and was very angry at humans. 'How would you feel if your partner was taken away from you?' the Nayaka asked. • That's exactly how this elephant felt. The two elephants sometimes went their separate ways at night, but in the morning, they always came together again. On that terrible day. the elephant watched his buddy fall to the ground. If two creatures are always together and then you shoot one, how's the other one going to feel? • Scientists have invented a special word for people who believe that animals can talk and that there are spirits who live in rocks and rivers: animists. G. Write your impression about the people who are termed as 'animists' in 125 words.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 235 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Endangered', meaning: 'বিলুপ্তির ঝুঁকিতে থাকা / বিপন্ন প্রজাতি', pos: 'Adjective', syn: 'Threatened, imperiled, vulnerable, at-risk', ant: 'Flourishing, abundant, secure' },
-    { word: 'Deciduous', meaning: 'পর্ণমোচী / নির্দিষ্ট ঋতুতে পাতাঝরা বন', pos: 'Adjective', syn: 'Broad-leaved, seasonal shedding', ant: 'Evergreen, perennial' },
-    { word: 'Nocturnal', meaning: 'নিশাচর / রাতের বেলা সক্রিয় প্রাণী', pos: 'Adjective', syn: 'Night-loving, night-active, nighttime', ant: 'Diurnal, daytime-active' },
-    { word: 'Deforestation', meaning: 'নির্বিচারে বন উজাড়করণ / বৃক্ষনিধন', pos: 'Noun', syn: 'Forest clearance, logging, logging-off, de-treeing', ant: 'Afforestation, reforestation' },
-    { word: 'Poaching', meaning: 'চোরাশিকার / বেআইনি বন্যপ্রাণী হত্যা', pos: 'Noun', syn: 'Illegal hunting, illicit trapping, game-theft', ant: 'Wildlife stewardship, sanctuary conservation' },
-    { word: 'Habitat', meaning: 'প্রাকৃতিক আবাসস্থল / প্রাণীর নিজস্ব পরিবেশ', pos: 'Noun', syn: 'Natural home, territory, biotope, ecosystem', ant: 'Captivity, artificial enclosure' },
-    { word: 'Biodiversity', meaning: 'জীববৈচিত্র্য / বিভিন্ন প্রজাতির সমাহার', pos: 'Noun', syn: 'Ecological diversity, biological variety, flora and fauna', ant: 'Monoculture, ecological sterility' },
-    { word: 'Extinction', meaning: 'বিলুপ্তি / চিরতরে ধ্বংসপ্রাপ্তি', pos: 'Noun', syn: 'Dying out, eradication, annihilation, disappearance', ant: 'Survival, revival, proliferation' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 233)",
+        "text": "Environment and Nature B. Read this poem by Jayne Cortez and answer the questions that follow Endangered Species List Blues A snow leopard does not know It's on the endangered species list Mr. &. Mrs. Crab are not into destroying the world they are crawling to the mud flats to take in some rotten insects It's not what's up that's going down when you smell yourself on the threshold of extinction It's you and your portable chemical toilet going to hell under friendly fire It's you and your missile receptor exploding to pieces It's not what's up that's going down The person who OK's biological weapons should not cry about the stench of new diseases The one who cuts off the trees so the orangutans can't hang should not wonder about ecological devastation It's not what's up that's going down It's what's down that's going up It's not what's up that's going down It's what's down that's going up C. Listen to the musical version of the poem using this QR code: 227",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 233 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 235)",
+        "text": "Environment and Nature 229 always walks alone had been very lonely ever since and was very angry at humans. 'How would you feel if your partner was taken away from you?' the Nayaka asked. • That's exactly how this elephant felt. The two elephants sometimes went their separate ways at night, but in the morning, they always came together again. On that terrible day. the elephant watched his buddy fall to the ground. If two creatures are always together and then you shoot one, how's the other one going to feel? • Scientists have invented a special word for people who believe that animals can talk and that there are spirits who live in rocks and rivers: animists. G. Write your impression about the people who are termed as 'animists' in 125 words.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 235 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };

@@ -795,6 +795,12 @@ export default function HSCExamInterface({
                       <span>{currentQ.categoryLabel}</span>
                     </span>
                   )}
+                  {currentQ.isCrossReferenced && (
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-xl bg-rose-500/20 text-rose-300 border border-rose-500/50 flex items-center gap-1.5 shadow-sm animate-pulse">
+                      <span>🔥</span>
+                      <span>{isBn ? 'রেড মার্ক প্রশ্ন (আন্তঃসংযোগ)' : 'Red Mark Key Word'}</span>
+                    </span>
+                  )}
                   {currentStat.consecutiveCorrect > 0 && (
                     <span className="text-xs font-semibold px-2 py-0.5 rounded-lg bg-amber-500/15 text-amber-300 border border-amber-500/30 flex items-center gap-1">
                       <Flame size={12} className="text-amber-400 fill-amber-400" />
@@ -809,12 +815,19 @@ export default function HSCExamInterface({
               </div>
 
               {/* Question Prompt Card */}
-              <div className="p-5 sm:p-6 rounded-2xl bg-[#111723]/90 border border-[#1e293b] shadow-xl space-y-3.5 backdrop-blur-md">
+              <div className={`p-5 sm:p-6 rounded-2xl bg-[#111723]/90 border ${
+                currentQ.isCrossReferenced ? 'border-rose-500/50 ring-1 ring-rose-500/20' : 'border-[#1e293b]'
+              } shadow-xl space-y-3.5 backdrop-blur-md`}>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2.5 flex-wrap">
                     <h3 className="text-2xl sm:text-3xl font-black text-emerald-400 tracking-tight">
                       {currentQ.word}
                     </h3>
+                    {currentQ.isCrossReferenced && (
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-rose-950/80 text-rose-300 border border-rose-500/40">
+                        🔥 Inter-Unit Link
+                      </span>
+                    )}
                     {currentQ.partsOfSpeech && (
                       <span className="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-[#161e2e] text-slate-300 border border-[#243048]">
                         {currentQ.partsOfSpeech}

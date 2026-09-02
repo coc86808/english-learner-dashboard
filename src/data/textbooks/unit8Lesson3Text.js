@@ -1,43 +1,78 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 8: Relationships | Lesson 3: A Mother in Mannville
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 8: Relationships | Lesson: A Mother in Mannville
  */
 
 export const unit8Lesson3Textbook = {
   unitId: 'unit-8',
   lessonId: 'u8-l3',
   unitTitle: 'Unit 8: Relationships',
-  unitTitleBn: 'ইউনিট ৮: মানবসম্পর্ক',
-  lessonTitle: 'Lesson 3: A Mother in Mannville',
-  lessonTitleBn: 'লেসন ৩: ম্যানভিলে এক মা (জেরির গল্প)',
-  author: 'Marjorie Kinnan Rawlings',
-  totalWords: 10,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ৮: পারস্পরিক সম্পর্ক (Relationships)',
+  title: 'A Mother in Mannville',
+  titleBn: 'A Mother in Mannville',
+  lessonTitle: 'A Mother in Mannville',
+  lessonTitleBn: 'A Mother in Mannville',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের A Mother in Mannville পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 4,
+  sections: [
     {
-      number: 'i',
-      heading: 'Jerry and the Mountain Cabin (জেরি ও পাহাড়ি কুটির)',
-      text: "The narrator rented a mountain cabin near an orphanage in Carolina to write in quiet seclusion. She needed someone to chop wood for her fireplace, and the orphanage sent Jerry, a twelve-year-old boy. At first, she thought he was too small for such heavy work. But Jerry began to chop: the blows of his ax were rhythmic and steady. Soon, an astonishing amount of solid wood had been cut. 'You've done as much as a man,' she exclaimed, 'This is a splendid pile!' Jerry refused extra praise, showing a quiet dignity that went beyond mere honesty.",
-      bengaliTranslation: "লেখিকা নিরিবিলিতে সাহিত্য রচনার জন্য ক্যারোলিনার এক অনাথ আশ্রমের কাছে পাহাড়ি কুটির ভাড়া নিয়েছিলেন। ফায়ারপ্লেসের জন্য কাঠ কাটার প্রয়োজন হলে আশ্রম থেকে জেরি নামের বারো বছর বয়সী এক অনাথ ছেলেকে পাঠানো হয়। প্রথমে ছেলেটিকে এত কঠিন কাজের জন্য বড্ড ছোট মনে হলেও, কুড়াল চালানো শুরু করার পর তার ছন্দময় ও অবিচল আঘাতে লেখিকা বিস্মিত হন। অল্প সময়েই প্রকাণ্ড কাঠের স্তূপ জমা হয়। লেখিকা মুগ্ধ হয়ে বলেন, 'তুমি তো একজন প্রাপ্তবয়স্ক মানুষের মতোই কাজ করেছ! কী চমৎকার কাঠের স্তূপ!' জেরি নীরবে তার আত্মমর্যাদা বজায় রাখে।",
-      highlightWords: ['splendid', 'kindling', 'integrity', 'orphanage']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 139)",
+        "content": "Relationships 133 As you read 'A Mother in Mannvilles, decide which point Of view is used by the narrator. 2. Setting: The setting of a story or novel is the place and time in which the actions take place. Authors onen use descriptions of time, season, weather, landscape. the natural surroundings etc. to establish the setting ofa literary work. As you read the story, note down as many descriptions as possible used by the author to create thc setting. You may use the following table to organise these descriptions. Description of time. weather etc. Example: • I went there in autumn... Description of location. area, nature etc. Example: • The orphanage is high in the Carolina C. Now read an abridged version of the story 'A Mother in Mannville' and then do the activities that follow. A Mother in Mannville The orphanage is high in the Carolina mountains. I was there in the autumn. I wanted quiet, isolation, to do some troublesome writing. I wanted mountain air to blow out the malaria from too long a time in the subtropics. I was homesick too. for the flaming of maples in October. and for corn shocks and pumpkins and black-walnut trees.... I found them all living in a cabin that belonged to the orphanage, half a mile beyond the orphanage farm. When I took the cabin, I asked for a boy or man to come and chop wood for the fireplace.... I looked up from my typewriter one late afternoon, a little startled. A boy stood at the door and my pointer dog. my companions was at his side and had not barked to warn me. The boy was probably twelve years old. but undersized. Ile wore overalls and a torn shirt, and was barefooted. He said, \"I can chop some wood today.\" „„.\"You? But you're small.\" \"Size don't matter. chopping wood.\" he said. \"Some of the big boys don't chop good. I've been chopping wood at the orphanage a long time.\"",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 139 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Integrity and the Myth of a Mother (চারিত্রিক সততা ও কাল্পনিক মায়ের আকুলতা)',
-      text: "The word that came to the narrator's mind was 'integrity'—it is bedded on courage, but it is more than brave; it is honest, but it is more than honesty. When the ax handle accidentally broke, Jerry insisted on paying for it himself. Over time, an affectionate bond formed between Jerry and the writer. Jerry began telling stories about a beautiful mother living in Mannville who sent him gifts. But when the narrator prepared to leave and visited the orphanage to leave money for Jerry's mother, the orphanage superintendent plainly and bluntly revealed the truth: Jerry had no mother, and no one had ever sent him gifts.",
-      bengaliTranslation: "জেরির চরিত্র দেখে লেখিকার মনে যে শব্দটি প্রথম এসেছিল, তা হলো 'নৈতিক সততা' (integrity)—যা সাহসের চেয়েও বড় এবং কেবল সততার চেয়েও গভীর। কুড়ালের বাঁট ভেঙে গেলে জেরি নিজেই ক্ষতিপূরণ দিতে চেয়েছিল। ধীরে ধীরে লেখিকা ও জেরির মধ্যে এক নিবিড় মমত্ববোধ গড়ে ওঠে। জেরি তখন ম্যানভিলে বসবাসকারী তার এক কাল্পনিক সুন্দর মায়ের গল্প বলা শুরু করে, যিনি নাকি তাকে সুন্দর সব উপহার পাঠান। কিন্তু বিদায় নেওয়ার প্রাক্কালে লেখিকা যখন আশ্রমে যান জেরির মায়ের জন্য কিছু অর্থ জমা রাখতে, তখন আশ্রমের কর্ত্রী সোজাসাপটাভাবে এক মর্মান্তিক সত্য প্রকাশ করেন—ম্যানভিলে জেরির কোনো মা নেই, এবং কখনো কেউ তাকে কোনো উপহার পাঠায়নি। তীব্র মাতৃস্নেহের অতৃপ্ত তৃষ্ণা থেকেই জেরি এই মিথ্যার আশ্রয় নিয়েছিল।",
-      highlightWords: ['substituted', 'magnificent', 'anomalous', 'pretended', 'bluntly', 'grave']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 141)",
+        "content": "Relationships 135 Jt was only then that he would take the money. He was standing back of his own care- lessness. He was a free-will agent and he chose to do careful work, and if he failed, he took the responsibility without subterfuge. And he did for me the unnecessary thing. the gracious thing, that we find done only by the great of heart. Things no training can teach, for they are done on the instant, with no predicated experience. Ile found a cubbyhole beside the fireplace that I had not noticed. There, ofhis own accord, he put kindling and \"medium\" wood, so that I might always have dry fire material ready in case of sudden wet weather. A stone was loose in the rough walk to the cabin. He dug a deeper hole and steadied it, although he came, himself. by a shortcut over the bank. I found that when I tried to return his thoughtfulness with such things as candy and apples, he was wordless. \"Thank you\" was, perhaps, an expression for which he had had no use, for his courtesy was instinctive. He only looked at the gift and at mc. and a curtain lifted, so that I saw deep into the clear well ofllis eyes, and gratitude was there, and affection, soft over the firm granite of his character.... He became intimate, of course. with my pointer. Pat. There is a strange communion between a boy and a dog. Perhaps they possess the same singleness of spirit, the same kind of wisdom. It is difficult to explain, but it exists. When T went across the state for a weekend, I left the dog in Jerry's charge.... My return was belated and fog filled the mountain passes so treacherously that.... it was Monday noon before I reached the cabin. The dog had been fed and cared for that morning. Jerry came early in the afternoon. anxious. \"The superintendent said nobody would drive in the fog,\" he said. \"I came.... last night and you hadn't come. So I brought Pat some of my breakfast this morning. I wouldn't have let anything happen to him.\" .... I gave him a dollar in payment. and he looked at it and went away. But that night he came in the darkness and knocked at the door. \"Come in, Jerry,\" I said, \"if you're allowed to be away this late.\" \"I told maybe a story\" he said, \"I told them I thought you would want to see me.\" 'That's true,\" I assured him. and I saw his relief. \"I want to hear about how you managed with the dog.\"",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 141 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 145)",
+        "content": "Relationships 139 E. True-false: Some of the statements below are true and some are false. In pairs, choose the false statements and discuss why they are false. I. The author was homesick for the subtropics. 2. The author expected to find a large pile of wood aner the boy's first day of work. 3. Jerry could chop wood as well as a man. 4. Jerry paid 10 have the ax repaired. 5. Jerry did other jobs around the cabin without being asked. 6. The author's dog was fed and cared for while she was away. 7. The dog had tried to run away from Jerry in the high grass. 8. The author sympathizes with Jerry's mother 9. Jerry did not stop by the cabin to say good-bye to the author. IO. Miss Clark told the author that Jerry had no mother. F. Fill in each of the blanks (a-e) with a word from the box that best completes a sentence. confidence predicated missed subterfuge betrayed At first the relationship between the author-narrator and Jerry is (a) on Jerry chopping wood well. But soon a real bond develops between them because Jerry has (b) his mother's love in his life and needs the and support of a mother figure. The narrator has (c) (d) in Jeny's character when she sees his integrity. Jen-y's only is to say he has a mother. The narrator feels (e) when Jerry tells ber he has a mother, G. In the table below there arc some questions in column A with their answers in column B but not in the correct order. Match the questions and answers. I. 2. 3. 4. 5, A Why does the %Titer's pointer dog not bark at Jerry? Why does the narrator think Jerry will not be able to chop the wood effectively? Why is the narrator shocked when Jerw says he a mother in Mann ville? Why does the narrator think Jerry has integrity? Why does Jerry disappear from the orphanage at the end of the story? a. He seems too small. b. He senses that Jerry is a friend. c. She feels the mother should not have deserted such an adorable boy. d, Jerry is committed to the tasks he does and is honest and trustworthy. e. Jerry did not want to say good bye to the author.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 145 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "4",
+        "heading": "অনুচ্ছেদ 4 (Page 147)",
+        "content": "Relationships Across 3 disease transmitted by rnosquitoes 4 driven 5 a little 7 abnonnal 9 spread throughout 11 absent minded 12 mutilated, crippled 13 shrub with pink, white or purple flowers 14 bright red 141 Down I poisonous plant with small white flowers 2 small pieces of dry wood used to start a fire 6 childbirth 8 dangerously IO plan to hide the truth L. Look at the storyboard below. A storyboard is a visual form of telling a story. One may draw a series or pictures to narrate a story. [Source: Choose a series of actions from thc story 'A Mother in Mannville' and draw your own storyboard. Display them in your classroom with the help of the teacher.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 147 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Splendid', meaning: 'চমৎকার / অসাধারণ সুন্দর', pos: 'Adjective', syn: 'Magnificent, marvelous, superb', ant: 'Dull, terrible, poor' },
-    { word: 'Kindling', meaning: 'আগুন ধরানোর শুকনো কাঠ', pos: 'Noun', syn: 'Tinder, firesticks, dry splinters', ant: 'Damp logs' },
-    { word: 'Integrity', meaning: 'সততা ও নৈতিক দৃঢ়তা', pos: 'Noun', syn: 'Probity, uprightness, rectitude', ant: 'Dishonesty, corruption' },
-    { word: 'Orphanage', meaning: 'এতিমখানা / অনাথ আশ্রম', pos: 'Noun', syn: "Children's home, foster refuge", ant: 'Family home' },
-    { word: 'Substituted', meaning: 'প্রতিস্থাপিত করেছিল / বদল করল', pos: 'Verb', syn: 'Replaced, exchanged, swapped', ant: 'Retained, kept' },
-    { word: 'Magnificent', meaning: 'জমকালো / গৌরবমণ্ডিত', pos: 'Adjective', syn: 'Grand, splendid, glorious', ant: 'Pathetic, meager' },
-    { word: 'Anomalous', meaning: 'অস্বাভাবিক / ব্যতিক্রমী', pos: 'Adjective', syn: 'Irregular, atypical, abnormal', ant: 'Normal, ordinary' },
-    { word: 'Pretended', meaning: 'ভণিতা বা ছলনা করেছিল', pos: 'Verb', syn: 'Feigned, faked, simulated', ant: 'Demonstrated truth' },
-    { word: 'Bluntly', meaning: 'সোজাসাপটাভাবে / রাখঢাক ছাড়া', pos: 'Adverb', syn: 'Plainly, directly, candidly', ant: 'Subtly, vaguely' },
-    { word: 'Grave', meaning: 'গম্ভীর / ভাবলেশহীন ও ধীরস্থির', pos: 'Adjective', syn: 'Solemn, serious, somber', ant: 'Playful, frivolous' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 139)",
+        "text": "Relationships 133 As you read 'A Mother in Mannvilles, decide which point Of view is used by the narrator. 2. Setting: The setting of a story or novel is the place and time in which the actions take place. Authors onen use descriptions of time, season, weather, landscape. the natural surroundings etc. to establish the setting ofa literary work. As you read the story, note down as many descriptions as possible used by the author to create thc setting. You may use the following table to organise these descriptions. Description of time. weather etc. Example: • I went there in autumn... Description of location. area, nature etc. Example: • The orphanage is high in the Carolina C. Now read an abridged version of the story 'A Mother in Mannville' and then do the activities that follow. A Mother in Mannville The orphanage is high in the Carolina mountains. I was there in the autumn. I wanted quiet, isolation, to do some troublesome writing. I wanted mountain air to blow out the malaria from too long a time in the subtropics. I was homesick too. for the flaming of maples in October. and for corn shocks and pumpkins and black-walnut trees.... I found them all living in a cabin that belonged to the orphanage, half a mile beyond the orphanage farm. When I took the cabin, I asked for a boy or man to come and chop wood for the fireplace.... I looked up from my typewriter one late afternoon, a little startled. A boy stood at the door and my pointer dog. my companions was at his side and had not barked to warn me. The boy was probably twelve years old. but undersized. Ile wore overalls and a torn shirt, and was barefooted. He said, \"I can chop some wood today.\" „„.\"You? But you're small.\" \"Size don't matter. chopping wood.\" he said. \"Some of the big boys don't chop good. I've been chopping wood at the orphanage a long time.\"",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 139 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 141)",
+        "text": "Relationships 135 Jt was only then that he would take the money. He was standing back of his own care- lessness. He was a free-will agent and he chose to do careful work, and if he failed, he took the responsibility without subterfuge. And he did for me the unnecessary thing. the gracious thing, that we find done only by the great of heart. Things no training can teach, for they are done on the instant, with no predicated experience. Ile found a cubbyhole beside the fireplace that I had not noticed. There, ofhis own accord, he put kindling and \"medium\" wood, so that I might always have dry fire material ready in case of sudden wet weather. A stone was loose in the rough walk to the cabin. He dug a deeper hole and steadied it, although he came, himself. by a shortcut over the bank. I found that when I tried to return his thoughtfulness with such things as candy and apples, he was wordless. \"Thank you\" was, perhaps, an expression for which he had had no use, for his courtesy was instinctive. He only looked at the gift and at mc. and a curtain lifted, so that I saw deep into the clear well ofllis eyes, and gratitude was there, and affection, soft over the firm granite of his character.... He became intimate, of course. with my pointer. Pat. There is a strange communion between a boy and a dog. Perhaps they possess the same singleness of spirit, the same kind of wisdom. It is difficult to explain, but it exists. When T went across the state for a weekend, I left the dog in Jerry's charge.... My return was belated and fog filled the mountain passes so treacherously that.... it was Monday noon before I reached the cabin. The dog had been fed and cared for that morning. Jerry came early in the afternoon. anxious. \"The superintendent said nobody would drive in the fog,\" he said. \"I came.... last night and you hadn't come. So I brought Pat some of my breakfast this morning. I wouldn't have let anything happen to him.\" .... I gave him a dollar in payment. and he looked at it and went away. But that night he came in the darkness and knocked at the door. \"Come in, Jerry,\" I said, \"if you're allowed to be away this late.\" \"I told maybe a story\" he said, \"I told them I thought you would want to see me.\" 'That's true,\" I assured him. and I saw his relief. \"I want to hear about how you managed with the dog.\"",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 141 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 145)",
+        "text": "Relationships 139 E. True-false: Some of the statements below are true and some are false. In pairs, choose the false statements and discuss why they are false. I. The author was homesick for the subtropics. 2. The author expected to find a large pile of wood aner the boy's first day of work. 3. Jerry could chop wood as well as a man. 4. Jerry paid 10 have the ax repaired. 5. Jerry did other jobs around the cabin without being asked. 6. The author's dog was fed and cared for while she was away. 7. The dog had tried to run away from Jerry in the high grass. 8. The author sympathizes with Jerry's mother 9. Jerry did not stop by the cabin to say good-bye to the author. IO. Miss Clark told the author that Jerry had no mother. F. Fill in each of the blanks (a-e) with a word from the box that best completes a sentence. confidence predicated missed subterfuge betrayed At first the relationship between the author-narrator and Jerry is (a) on Jerry chopping wood well. But soon a real bond develops between them because Jerry has (b) his mother's love in his life and needs the and support of a mother figure. The narrator has (c) (d) in Jeny's character when she sees his integrity. Jen-y's only is to say he has a mother. The narrator feels (e) when Jerry tells ber he has a mother, G. In the table below there arc some questions in column A with their answers in column B but not in the correct order. Match the questions and answers. I. 2. 3. 4. 5, A Why does the %Titer's pointer dog not bark at Jerry? Why does the narrator think Jerry will not be able to chop the wood effectively? Why is the narrator shocked when Jerw says he a mother in Mann ville? Why does the narrator think Jerry has integrity? Why does Jerry disappear from the orphanage at the end of the story? a. He seems too small. b. He senses that Jerry is a friend. c. She feels the mother should not have deserted such an adorable boy. d, Jerry is committed to the tasks he does and is honest and trustworthy. e. Jerry did not want to say good bye to the author.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 145 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "4",
+        "heading": "অনুচ্ছেদ 4 (Page 147)",
+        "text": "Relationships Across 3 disease transmitted by rnosquitoes 4 driven 5 a little 7 abnonnal 9 spread throughout 11 absent minded 12 mutilated, crippled 13 shrub with pink, white or purple flowers 14 bright red 141 Down I poisonous plant with small white flowers 2 small pieces of dry wood used to start a fire 6 childbirth 8 dangerously IO plan to hide the truth L. Look at the storyboard below. A storyboard is a visual form of telling a story. One may draw a series or pictures to narrate a story. [Source: Choose a series of actions from thc story 'A Mother in Mannville' and draw your own storyboard. Display them in your classroom with the help of the teacher.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 147 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };

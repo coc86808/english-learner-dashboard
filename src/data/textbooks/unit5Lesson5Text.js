@@ -1,51 +1,64 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 5: Human Rights | Lesson 5: Frederick Douglass
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 5: Human Rights | Lesson: Frederick Douglass
  */
 
 export const unit5Lesson5Textbook = {
   unitId: 'unit-5',
   lessonId: 'u5-l5',
   unitTitle: 'Unit 5: Human Rights',
-  unitTitleBn: 'ইউনিট ৫: মানবাধিকার',
-  lessonTitle: 'Lesson 5: Frederick Douglass',
-  lessonTitleBn: 'লেসন ৫: ফ্রেডরিক ডগলাস ও দাসপ্রথা বিরোধী সংগ্রাম',
-  author: 'Frederick Douglass (Narrative of the Life of an American Slave)',
-  totalWords: 11,
+  unitTitleBn: 'ইউনিট ৫: মানবাধিকার (Human Rights)',
+  title: 'Frederick Douglass',
+  titleBn: 'Frederick Douglass',
+  lessonTitle: 'Frederick Douglass',
+  lessonTitleBn: 'Frederick Douglass',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Frederick Douglass পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 3,
+  sections: [
+    {
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 105)",
+        "content": "Human Rights Lesson 5 Frederick Douglass A. Warm up activity 1. Who was Frederick Douglass? 2. Are you familiar with the history of slavery in the United States? 3. What is the connection between slavery and racism? 99 4. Can you think Of Other historical figures who fought for the rights Of marginalized groups, similar to Frederick Douglass? Frederick Douglass B. Frederick Douglass, an important leader in the fight against slavery, was born into slavery around 1818 in Talbot County, Maryland. Ile became very well-known, advising presidents and giving talks to many people about various issues like women's rights and Irish self-rule. Douglass wrote several books about his life, including his famous autobiography, Narrative ofthe Lift of Frederick Douglass, anAmerican Slave. Here is an excerpt from this book:",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 105 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 107)",
+        "content": "Human Rights This is the inevitable result. 101 I never saw my mother, to know her as such. more than four or five times in my life; and each of these times was very short in duration, and at night. She was hired by a Mr. Stewart, who lived about twelve miles frorn my home. She made her journeys to sec me in the night, travelling the whole distance on foot, aner the performance of her day's work. She was a field hand, and a whipping is the penalty of not being in the field at sunrise, unless a slave has special permission from his or her master to the contrary—a permission which they seldom get, and one that gives to him that gives it the proud name oibeing a kind master. I do not recollect of ever seeing my mother by the light of day. She was with me in the night, She would lie down with me, and get me to sleep, but long before I waked she was gone. Very little communication ever took place between us. Death soon ended what little we could have while she lived, and with it her hardships and suffering. She died when I was about seven years old, on one of my master's farms, near Lee's Mill, I was not allowed to be present during her illness, at her death, or burial. She was gone long before I knew anything about it. Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchfill care, I received the tidings of her death with much the same emotions I should have probably felt al the death of a stranger. Que'tions: How did Douglass feel about not knowing his age? I. Why did Frederick Douglass not know who his father was, and why was there 2. speculation that his master might have been his father? What references to racism did Douglass make in his writing? 3. 4.. How did Douglass feel about his mother's passing? HOW do you think Douglass's early experiences shaped his views on slavery? 5.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 107 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 109)",
+        "content": "Human Rights F. Comparative Exercise: 103 ILO,'AIexius Chichari1,1-JN News Female tea workers are going (o drop the collected leaves at factory. Tea leaf pickers get 120 Taka (S I .5 USD) daily wages to collect 24 KG leaves. Read the excerpt from the AI Jazeera atticle titled \"Why Are Bangladesh Tea Garden Workers Protesting?\" \"We hardly get any type of facilities, don't have enough money for our children's education, we barely get 3 kg flour as ration once a week. Some days we don't even get IO eat, which is why we are protesting,\" Kundu told AI Jazeera in Srimongal. known as Bangladesh's tea capital. Another tea pick\", Shamoli Bhuyia. told Al Jazeera: 'The owners don't understand our plight. We have been demanding our daily wage be raised to $3 a day. then we will go back to work.\" 2. Compare the experiences of modern day tea workers in Bangladesh with those of Frederick Douglass in the United States. Consider the following questions: a. What are the similarities in how they were treated? b. What differences can you identity in their experiences? c. How did the conditions Of cheap/forced labour shape their identities and futures? Focus on how both groups were controlled by powerful landowners and denied basic rights. G. Write an essay in 500-800 words on the following topic: 'Modern day slavery is rooted in the legacies Of colonial exploitation.'",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 109 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+],
   paragraphs: [
     {
-      number: 'i',
-      heading: 'Deprivation of Identity and Age (দাসদের জন্মপরিচয় ও বয়স গোপনের নিষ্ঠুরতা)',
-      text: "I was born in Tuckahoe, Talbot county, Maryland. I have no accurate knowledge of my age, never having seen any authentic record containing it. By far the larger part of the slaves know as little of their ages as horses know of theirs, and it is the wish of most masters within my knowledge to keep their slaves thus ignorant. I do not remember to have ever met a slave who could tell of his birthday. The white children could tell their ages. I could not tell why I ought to be deprived of the same privilege.",
-      bengaliTranslation: "আমি মেরিল্যান্ডের ট্যালবট কাউন্টির টাকাহোতে জন্মগ্রহণ করেছিলাম। নিজের সঠিক বয়স সম্পর্কে আমার কোনো প্রামাণিক জ্ঞান নেই, কারণ বয়সের কোনো খাঁটি লিখিত রেকর্ড আমি কখনোই দেখিনি। অধিকাংশ ক্রীতদাসেরা নিজেদের বয়স সম্পর্কে ঠিক ততটুকুই জানত, যতটুকু ঘোড়া তার বয়স জানে; এবং অধিকাংশ দাসমালিক তাদের ক্রীতদাসদের এভাবেই সম্পূর্ণ অজ্ঞ করে রাখতে চাইত। শ্বেতাঙ্গ শিশুরা তাদের জন্মদিন ও বয়স জানত, অথচ আমাদের মতো দাস শিশুদের কেন এই স্বাভাবিক অধিকার থেকে বঞ্চিত করা হতো, তা আমি বুঝতে পারতাম না।",
-      highlightWords: ['authentic', 'deprived', 'impertinent', 'estimate']
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 105)",
+        "text": "Human Rights Lesson 5 Frederick Douglass A. Warm up activity 1. Who was Frederick Douglass? 2. Are you familiar with the history of slavery in the United States? 3. What is the connection between slavery and racism? 99 4. Can you think Of Other historical figures who fought for the rights Of marginalized groups, similar to Frederick Douglass? Frederick Douglass B. Frederick Douglass, an important leader in the fight against slavery, was born into slavery around 1818 in Talbot County, Maryland. Ile became very well-known, advising presidents and giving talks to many people about various issues like women's rights and Irish self-rule. Douglass wrote several books about his life, including his famous autobiography, Narrative ofthe Lift of Frederick Douglass, anAmerican Slave. Here is an excerpt from this book:",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 105 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'Family Lineage and Withheld Truth (পিতামাতার পরিচয় ও সত্য গোপন)',
-      text: "My mother was named Harriet Bailey. She was of a darker complexion than either my grandmother or grandfather. My father was a white man. He was admitted to be such by all I ever heard speak of my parentage. The opinion was also whispered that my master was my father; but of the correctness of this opinion, I know nothing; the means of knowing was withheld from me.",
-      bengaliTranslation: "আমার মায়ের নাম ছিল হ্যারিয়েট বেইলি। তাঁর গায়ের রঙ ছিল বেশ কালো। আমার পিতা ছিলেন একজন শ্বেতাঙ্গ ব্যক্তি। আমার পিতৃপরিচয় নিয়ে যারা কথা বলত, তাদের সবার কথাই এমন ছিল। গোপনে এমন কথাও বলা হতো যে খোদ আমার দাসমালিকই ছিলেন আমার পিতা; তবে এর সত্যতা যাচাই করার কোনো উপায় আমার ছিল না—সত্য জানার সব পথ আমার কাছ থেকে কঠোরভাবে গোপন রাখা হয়েছিল।",
-      highlightWords: ['complexion', 'parentage', 'withheld', 'restless']
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 107)",
+        "text": "Human Rights This is the inevitable result. 101 I never saw my mother, to know her as such. more than four or five times in my life; and each of these times was very short in duration, and at night. She was hired by a Mr. Stewart, who lived about twelve miles frorn my home. She made her journeys to sec me in the night, travelling the whole distance on foot, aner the performance of her day's work. She was a field hand, and a whipping is the penalty of not being in the field at sunrise, unless a slave has special permission from his or her master to the contrary—a permission which they seldom get, and one that gives to him that gives it the proud name oibeing a kind master. I do not recollect of ever seeing my mother by the light of day. She was with me in the night, She would lie down with me, and get me to sleep, but long before I waked she was gone. Very little communication ever took place between us. Death soon ended what little we could have while she lived, and with it her hardships and suffering. She died when I was about seven years old, on one of my master's farms, near Lee's Mill, I was not allowed to be present during her illness, at her death, or burial. She was gone long before I knew anything about it. Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchfill care, I received the tidings of her death with much the same emotions I should have probably felt al the death of a stranger. Que'tions: How did Douglass feel about not knowing his age? I. Why did Frederick Douglass not know who his father was, and why was there 2. speculation that his master might have been his father? What references to racism did Douglass make in his writing? 3. 4.. How did Douglass feel about his mother's passing? HOW do you think Douglass's early experiences shaped his views on slavery? 5.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 107 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'iii',
-      heading: 'Cruel Separation of Mother and Infant (মা ও শিশুর নির্মম বিচ্ছেদ)',
-      text: "My mother and I were separated when I was but an infant—before I knew her as my mother. It is a common custom, in the part of Maryland from which I ran away, to part children from their mothers at a very early age. Frequently, before the child has reached its twelfth month, its mother is taken from it, and hired out on some farm a considerable distance off, and the child is placed under the care of an old woman, too old for field labor. For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother, and to blunt and destroy the natural affection of the mother for the child.",
-      bengaliTranslation: "আমি যখন দুগ্ধপোষ্য শিশু—মায়ের স্নেহ চেনার আগেই—আমাকে আমার মায়ের কাছ থেকে চিরতরে আলাদা করে দেওয়া হয়। মেরিল্যান্ডের যে অঞ্চল থেকে আমি পালিয়ে এসেছিলাম, সেখানে শৈশবেই শিশুদের মায়ের কোল থেকে কেড়ে নেওয়া ছিল এক সাধারণ রীতি। শিশুর বয়স এক বছর হওয়ার আগেই মাকে অনেক দূরে অন্য কোনো খামারে ভাড়া দিয়ে দেওয়া হতো, আর সন্তানকে মাঠে কাজ করতে অক্ষম কোনো বৃদ্ধা দাসীর কাছে ফেলে রাখা হতো। শিশুর মনে মায়ের প্রতি স্নেহবোধ যাতে বাধাগ্রস্ত হয় এবং মায়ের স্বাভাবিক মমতাকে ভোঁতা ও ধ্বংস করে দেওয়া যায়—তা ছাড়া এই বিচ্ছেদের পেছনে আর কোনো কারণ ছিল না।",
-      highlightWords: ['infant', 'hinder', 'blunt', 'affection']
+        "number": "3",
+        "heading": "অনুচ্ছেদ 3 (Page 109)",
+        "text": "Human Rights F. Comparative Exercise: 103 ILO,'AIexius Chichari1,1-JN News Female tea workers are going (o drop the collected leaves at factory. Tea leaf pickers get 120 Taka (S I .5 USD) daily wages to collect 24 KG leaves. Read the excerpt from the AI Jazeera atticle titled \"Why Are Bangladesh Tea Garden Workers Protesting?\" \"We hardly get any type of facilities, don't have enough money for our children's education, we barely get 3 kg flour as ration once a week. Some days we don't even get IO eat, which is why we are protesting,\" Kundu told AI Jazeera in Srimongal. known as Bangladesh's tea capital. Another tea pick\", Shamoli Bhuyia. told Al Jazeera: 'The owners don't understand our plight. We have been demanding our daily wage be raised to $3 a day. then we will go back to work.\" 2. Compare the experiences of modern day tea workers in Bangladesh with those of Frederick Douglass in the United States. Consider the following questions: a. What are the similarities in how they were treated? b. What differences can you identity in their experiences? c. How did the conditions Of cheap/forced labour shape their identities and futures? Focus on how both groups were controlled by powerful landowners and denied basic rights. G. Write an essay in 500-800 words on the following topic: 'Modern day slavery is rooted in the legacies Of colonial exploitation.'",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 109 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Authentic', meaning: 'প্রামাণিক / খাঁটি / নির্ভরযোগ্য', pos: 'Adjective', syn: 'Genuine, legitimate, verified', ant: 'Fake, counterfeit, false' },
-    { word: 'Impertinent', meaning: 'ধৃষ্টতাপূর্ণ / বেয়াদব / অসঙ্গত', pos: 'Adjective', syn: 'Insolent, impudent, disrespectful', ant: 'Respectful, polite, courteous' },
-    { word: 'Estimate', meaning: 'আনুমানিক হিসাব / পরিমাপ', pos: 'Noun', syn: 'Approximation, evaluation, appraisal', ant: 'Exact truth, certainty' },
-    { word: 'Complexion', meaning: 'ত্বকের বর্ণ / শারীরিক গায়ের রঙ', pos: 'Noun', syn: 'Skin tone, hue, coloration', ant: 'Inner nature' },
-    { word: 'Parentage', meaning: 'পিতামাতার পরিচয় / বংশমর্যাদা', pos: 'Noun', syn: 'Lineage, ancestry, descent, roots', ant: 'Unknown origin' },
-    { word: 'Withheld', meaning: 'গোপন রাখা / আটকে রাখা', pos: 'Verb', syn: 'Kept back, concealed, retained', ant: 'Disclosed, revealed, granted' },
-    { word: 'Infant', meaning: 'দুগ্ধপোষ্য শিশু / নবজাতক', pos: 'Noun', syn: 'Baby, toddler, newborn', ant: 'Adult, grown-up' },
-    { word: 'Hinder', meaning: 'বাধা দেওয়া / বিঘ্নিত করা', pos: 'Verb', syn: 'Obstruct, impede, hamper, thwart', ant: 'Facilitate, promote, assist' },
-    { word: 'Blunt', meaning: 'ভোঁতা করা / অনুভূতি নিস্তেজ করা', pos: 'Verb', syn: 'Dull, deaden, numb, dampen', ant: 'Sharpen, heighten, sensitize' },
-    { word: 'Affection', meaning: 'স্নেহ / মমতা / ভালোবাসা', pos: 'Noun', syn: 'Tenderness, fondness, maternal love', ant: 'Hatred, animosity, indifference' },
-    { word: 'Restless', meaning: 'অস্থির / বিদ্রোহী মনোভাবাপন্ন', pos: 'Adjective', syn: 'Rebellious, unruly, agitated', ant: 'Submissive, contented, calm' }
-  ]
+]
 };

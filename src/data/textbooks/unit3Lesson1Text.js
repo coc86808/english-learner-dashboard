@@ -1,52 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 3: Myths and Literature | Lesson 1: Myths of Bengal
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 3: Myths and Literature | Lesson: Myths of Bengal
  */
 
 export const unit3Lesson1Textbook = {
   unitId: 'unit-3',
   lessonId: 'u3-l1',
   unitTitle: 'Unit 3: Myths and Literature',
-  unitTitleBn: 'ইউনিট ৩: পুরাণ ও সাহিত্য',
-  lessonTitle: 'Lesson 1: Myths of Bengal',
-  lessonTitleBn: 'লেসন ১: বাংলার পৌরাণিক রূপকথা',
-  author: 'Jibanananda Das (Translated by Fakrul Alam)',
-  totalWords: 12,
+  unitTitleBn: 'ইউনিট ৩: লোকগাথা ও সাহিত্য (Myths and Literature)',
+  title: 'Myths of Bengal',
+  titleBn: 'Myths of Bengal',
+  lessonTitle: 'Myths of Bengal',
+  lessonTitleBn: 'Myths of Bengal',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের Myths of Bengal পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
+    {
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 57)",
+        "content": "Unit Three : Myths and Literature Lesson 1 Myths of Bengal A. Warm up activity What isa myth? Look up the meaning of the word in a dictionary or on the Intemet. What kind of myths do you think we can find in our culture? B. Now read the following poem by Jibanananda Das (1899-1954) in English translation and then answer the questions either by responding to your classroom teacher in English or by trying to write down answers in your notebook. 1 Have Seen Bengal's Face Because I have seen Bengal's face I will seek no more, The world has not anything more beautiful to show me. Waking up in darkness, gazing at the fig-tree. I behold Dawn's swallows roosting under huge umbrella-like leaves. 1100k around me and discover a leafy dome, Jaarn, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes. When long, long ago, Chand came in his honeycombed boat To a blue Hijal, Bat Tamal shade near the Champa, he too sighted Bengal's incomparable beauty. One day, alas, in the Ganguri, On a raft, as the waning moon sank on the river's sandbanks, Behula too saw countless aswaths bats besides golden ricefields And heard the thmsh's soft song. One day. arriving in Amara, Where gods held court, when she danced like a desolate wagtail. Bengal's rivers. fields, flowers. wailed like strings of bells on her feet. Trans18tion Jibanananda Mukh Ami\" by Faki•ul Alam 1 5 10",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 57 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 59)",
+        "content": "Myths and Literature 53 F. Read the text from Banglapedia on the two legendary characters Behula and Chad Saodagar mentioned in the poem. Then discuss the questions that follow. Behula is a legendary folk heroine and one of the main characters of Manasamangal, a medieval epic. She was the daughter of Sayven of Ujaninagar. Lakhindar was the youngest son of Chand Saodagar of Champaknagar. Behula grew up to be a beautiful and intelligent woman and was married to Lakhindar. Chand Saodagar, a devotee of Shiva, had boasted that he was cleverer and stronger than Manasa, the snake goddess. He built an iron chamber for Lakhindar, believing it to be impregnable. However on the wedding night of Behula and Lakhindars Manasa sent a snake to kill Lakhindar. The snake made itself as fine as a strand Of hair and. entering the chamber through a minute hole. bit Lakhindar. Behula refused to accept her husband's death. She placed her husband's corpse on a banana raft and set out on a hazardous journey towards thc abode of the gods. Despite all the dangers and temptations she encountered, Behula continued her journey and finally succeeded in reaching the abode of the gods. She pleaded for her husband's life and promised Manasa that Chand Saodagar would worship her. Moved by Behula's love for her husband, Manasa not only restored Lakhindar but also his brothers whom she had killed earlier. Behula returned home with her husband and brothers-in-law, and Chaod Saodagar finally bowed before the might of Manau Lakhindar and Behula then returned to their heavenly abode as Aniruddha and Usa. [from: http://en.banglapedia.org/index.php?title—Behulal Questions for discussion I) 2) 3) Is there a connection between the story of Behula and Chad Saodagar and the poem of Jibanananda Das? Why does the poet use medieval Bengali legends in this poem? What other Bengali myths/legends do you know about? Have you seen them represented in any form in popular culture?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 59 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+],
   paragraphs: [
     {
-      number: 'i',
-      heading: "'I Have Seen Bengal's Face' (বাংলার মুখ আমি দেখিয়াছি)",
-      text: "Because I have seen Bengal's face I will seek no more,\nThe world has not anything more beautiful to show me.\nWaking up in darkness, gazing at the fig-tree, I behold\nDawn's swallows roosting under huge umbrella-like leaves.\nI look around me and discover a leafy dome,\nJaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush,\nShadowing clumps of cactus and zedoary bushes.",
-      bengaliTranslation: "বাংলার মুখ আমি দেখিয়াছি, তাই আমি পৃথিবীর রূপ\nখুঁজিতে যাই না আর: অন্ধকারে জেগে উঠে ডুমুরের গাছে\nচেয়ে দেখি ছাতার মতন বড়ো পাতাটির নিচে বসে আছে\nভোরের দোয়েলপাখি— চারিদিকে চেয়ে দেখি পল্লবের স্তূপ\nজাম-কাঁঠাল-বট-হিজল-অশ্বত্থের শাখা নীরব হয়ে আছে,\nফণিমনসার ঝোপে আর শটিবনে ছায়া ফেলে।",
-      highlightWords: ['gazing', 'roosting', 'leafy', 'dome', 'hush']
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 57)",
+        "text": "Unit Three : Myths and Literature Lesson 1 Myths of Bengal A. Warm up activity What isa myth? Look up the meaning of the word in a dictionary or on the Intemet. What kind of myths do you think we can find in our culture? B. Now read the following poem by Jibanananda Das (1899-1954) in English translation and then answer the questions either by responding to your classroom teacher in English or by trying to write down answers in your notebook. 1 Have Seen Bengal's Face Because I have seen Bengal's face I will seek no more, The world has not anything more beautiful to show me. Waking up in darkness, gazing at the fig-tree. I behold Dawn's swallows roosting under huge umbrella-like leaves. 1100k around me and discover a leafy dome, Jaarn, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes. When long, long ago, Chand came in his honeycombed boat To a blue Hijal, Bat Tamal shade near the Champa, he too sighted Bengal's incomparable beauty. One day, alas, in the Ganguri, On a raft, as the waning moon sank on the river's sandbanks, Behula too saw countless aswaths bats besides golden ricefields And heard the thmsh's soft song. One day. arriving in Amara, Where gods held court, when she danced like a desolate wagtail. Bengal's rivers. fields, flowers. wailed like strings of bells on her feet. Trans18tion Jibanananda Mukh Ami\" by Faki•ul Alam 1 5 10",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 57 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: "Chand Sadagar & Incomparable Beauty (চাঁদ সওদাগর ও অনুপম রূপ)",
-      text: "When long, long ago, Chand came in his honeycombed boat\nTo a blue Hijal, Bat Tamal shade near the Champa, he too sighted\nBengal's incomparable beauty. One day, alas, in the Ganguri,\nOn a raft, as the waning moon sank on the river's sandbanks,\nBehula too saw countless aswaths bats besides golden ricefields\nAnd heard the thrush's soft song.",
-      bengaliTranslation: "অনেক অনেক আগে, চম্পার কাছে হিজল-তমালের নীল ছায়ায়\nমধুমাখা ডিঙা নিয়ে এসে চাঁদ সওদাগরও দেখেছিলেন\nবাংলার অপরূপ রূপ। হায়, একদিন গাঙুড়ের জলে ভেলায় ভেসে,\nযখন কৃষ্ণা দ্বাদশীর চাঁদ নদীর বালুচরে ডুবে যাচ্ছিল,\nবেহুলাও দেখেছিল সোনালি ধানের খেতের পাশে অশ্বত্থ আর বটের সারি,\nআর শুনেছিল শ্যামা পাখির নরম গান।",
-      highlightWords: ['honeycombed', 'incomparable', 'waning', 'raft']
-    },
-    {
-      number: 'iii',
-      heading: "Behula in the Court of Gods (দেবসভায় বেহুলার নৃত্য)",
-      text: "One day, arriving in Amara,\nWhere gods held court, when she danced like a desolate wagtail,\nBengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
-      bengaliTranslation: "একদিন ইন্দ্রের অমরাবতীতে দেবতাদের সভায় পৌঁছে,\nযখন সে সঙ্গীহারা এক খঞ্জনা পাখির মতো নেচেছিল,\nতখন বাংলার নদী, মাঠ, ফুল যেন তার পায়ের ঘুঙুরের মতো কেঁদে উঠেছিল।",
-      highlightWords: ['desolate', 'wagtail', 'wailed']
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 59)",
+        "text": "Myths and Literature 53 F. Read the text from Banglapedia on the two legendary characters Behula and Chad Saodagar mentioned in the poem. Then discuss the questions that follow. Behula is a legendary folk heroine and one of the main characters of Manasamangal, a medieval epic. She was the daughter of Sayven of Ujaninagar. Lakhindar was the youngest son of Chand Saodagar of Champaknagar. Behula grew up to be a beautiful and intelligent woman and was married to Lakhindar. Chand Saodagar, a devotee of Shiva, had boasted that he was cleverer and stronger than Manasa, the snake goddess. He built an iron chamber for Lakhindar, believing it to be impregnable. However on the wedding night of Behula and Lakhindars Manasa sent a snake to kill Lakhindar. The snake made itself as fine as a strand Of hair and. entering the chamber through a minute hole. bit Lakhindar. Behula refused to accept her husband's death. She placed her husband's corpse on a banana raft and set out on a hazardous journey towards thc abode of the gods. Despite all the dangers and temptations she encountered, Behula continued her journey and finally succeeded in reaching the abode of the gods. She pleaded for her husband's life and promised Manasa that Chand Saodagar would worship her. Moved by Behula's love for her husband, Manasa not only restored Lakhindar but also his brothers whom she had killed earlier. Behula returned home with her husband and brothers-in-law, and Chaod Saodagar finally bowed before the might of Manau Lakhindar and Behula then returned to their heavenly abode as Aniruddha and Usa. [from: http://en.banglapedia.org/index.php?title—Behulal Questions for discussion I) 2) 3) Is there a connection between the story of Behula and Chad Saodagar and the poem of Jibanananda Das? Why does the poet use medieval Bengali legends in this poem? What other Bengali myths/legends do you know about? Have you seen them represented in any form in popular culture?",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 59 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Gazing', meaning: 'একদৃষ্টিতে তাকিয়ে থাকা', pos: 'Verb', syn: 'Staring, contemplating, observing', ant: 'Glancing, overlooking' },
-    { word: 'Roosting', meaning: 'পাখির আশ্রয় বা বিশ্রাম নেওয়া', pos: 'Verb', syn: 'Perching, nesting, resting', ant: 'Flying, roaming' },
-    { word: 'Leafy', meaning: 'পত্রবহুল / পাতাময়', pos: 'Adjective', syn: 'Foliaged, lush, verdant', ant: 'Barren, leafless' },
-    { word: 'Dome', meaning: 'গম্বুজ / প্রাকৃতিক ছাউনি', pos: 'Noun', syn: 'Canopy, vault, arch', ant: 'Depression, hollow' },
-    { word: 'Hush', meaning: 'নিস্তব্ধতা / গভীর নীরবতা', pos: 'Noun', syn: 'Silence, stillness, tranquility', ant: 'Noise, clamor' },
-    { word: 'Honeycombed', meaning: 'মৌচাক সদৃশ / খোপ খোপ কাটা', pos: 'Adjective', syn: 'Cellular, reticulated, structured', ant: 'Solid, uniform' },
-    { word: 'Incomparable', meaning: 'অতুলনীয় / যার সমকক্ষ নেই', pos: 'Adjective', syn: 'Peerless, matchless, unrivaled', ant: 'Ordinary, average' },
-    { word: 'Waning', meaning: 'হ্রাসমান / ক্ষয়িষ্ণু', pos: 'Adjective', syn: 'Diminishing, fading, subsiding', ant: 'Waxing, growing' },
-    { word: 'Raft', meaning: 'ভেলা / চালি', pos: 'Noun', syn: 'Float, catamaran, barge', ant: 'Submarine' },
-    { word: 'Desolate', meaning: 'বিমর্ষ / সঙ্গীহীন / নিঃসঙ্গ', pos: 'Adjective', syn: 'Solitary, forlorn, bleak', ant: 'Cheerful, companionable' },
-    { word: 'Wagtail', meaning: 'খঞ্জনা পাখি', pos: 'Noun', syn: 'Small songbird, motacilla', ant: 'Bird of prey' },
-    { word: 'Wailed', meaning: 'বিলাপ করেছিল / কেঁদে উঠেছিল', pos: 'Verb', syn: 'Mourned, wept, lamented', ant: 'Rejoiced, laughed' }
-  ]
+]
 };

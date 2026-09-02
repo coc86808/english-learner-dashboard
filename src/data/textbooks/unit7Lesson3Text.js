@@ -1,44 +1,50 @@
 /**
- * NCTB HSC English For Today Textbook Passage Data
- * Unit 7: Youthful Achievers | Lesson 3: The Unbeaten Girls
+ * NCTB HSC English For Today Textbook Passage Data (Full Official Text)
+ * Unit 7: Youthful Achievers | Lesson: The Unbeaten Girls
  */
 
 export const unit7Lesson3Textbook = {
   unitId: 'unit-7',
   lessonId: 'u7-l3',
   unitTitle: 'Unit 7: Youthful Achievers',
-  unitTitleBn: 'ইউনিট ৭: তারুণ্যের অর্জন ও সাফল্য',
-  lessonTitle: 'Lesson 3: The Unbeaten Girls',
-  lessonTitleBn: 'লেসন ৩: কলসিন্দুরের অপরাজিত বালিকারা',
-  author: 'Sports Journalism on Kalsindur Football Champions',
-  totalWords: 11,
-  paragraphs: [
+  unitTitleBn: 'ইউনিট ৭: তরুণ বিজয়ী (Youthful Achievers)',
+  title: 'The Unbeaten Girls',
+  titleBn: 'The Unbeaten Girls',
+  lessonTitle: 'The Unbeaten Girls',
+  lessonTitleBn: 'The Unbeaten Girls',
+  author: 'NCTB Curriculum & Authors',
+  summaryBn: 'জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) অনুমোদিত HSC English For Today পাঠ্যবইয়ের The Unbeaten Girls পাঠের পূর্ণাঙ্গ পাঠ্যাংশ।',
+  totalWords: 2,
+  sections: [
     {
-      number: 'i',
-      heading: 'Shattering Stereotypes (সামাজিক কুসংস্কার ও ভ্রান্ত ধারণা চূর্ণ)',
-      text: "In a traditional society like ours, little boys and girls are given separate sets of toys—while toys for boys include cars, guns or footballs, girls are given dolls and miniature cooking utensils under the assumption that girls lack the vigour or energy to match their male counterparts. This false assumption has been shattered in recent decades as women began proving their power across fields, most notably by the girls of Kalsindur, a remote village in Dhobaura upazila of Mymensingh.",
-      bengaliTranslation: "আমাদের মতো রক্ষণশীল সমাজে ছেলে ও মেয়েদের শৈশবেই খেলনা নিয়ে বৈষম্যের শিকার হতে হয়—ছেলেদের গাড়ি বা ফুটবল দেওয়া হলেও মেয়েদের পুতুল আর রান্নাবাটির সরঞ্জাম ধরিয়ে দেওয়া হতো। এর পেছনে ধারণা ছিল যে ছেলেরা উদ্যোগী ও প্রাণবন্ত, অথচ মেয়েরা ছেলেদের শারীরিক শক্তিমত্তার সমকক্ষ নয়। সাম্প্রতিক দশকগুলোতে নারীর অভূতপূর্ব ক্ষমতায়নে এই ভ্রান্ত ধারণা ধূলিসাৎ হয়েছে, যার সবচেয়ে উজ্জ্বল প্রমাণ ময়মনসিংহের ধোবাউড়া উপজেলার অজপাড়াগাঁ কলসিন্দুরের ফুটবলার কন্যারা।",
-      highlightWords: ['miniature', 'vigour', 'counterparts']
+        "paraNumber": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 129)",
+        "content": "Youthful Achievers Sanjida Akhter 123 The Bangladesh girls' football team won the AFC Under 14 Regional Football Championship 2015 in Nepal and the team was dominated by Kalsindur footballers. Do you know the team that won the championship in AFC Under 14 Regional Football Tournament 2016 in Tajikistan also had eight Kalsindur girls including the captain and the highest scorer? Bangladesh National Women's Football Team was champion in Hong Kong Under-15 Women's Jockey Cup and Kalsindur girls led the match. They also proved themselves when Bangladesh shared championship jointly with Laos in 2019. could even think that these girls would seize the thc 1st SAFF under-18 Women Championship in Bhutan in 2018, remaining unbeaten? The whole nation was overwhelmed at their success, and their school was immediately nationalist at their request. The success of Kalsindur girls reads like an epic. They started their journey with practically nothing. They didnst have any boots or jerseys to wear. Initially. they played wearing salwar and kamij. They also suffered from malnutrition. What made them win against all adversities then? What was the magic behind? Mohammad Mafiz Uddin was an assistant teacher at Kalsindur Government Free Primary School where Minati Rani Sheel was the head teacher. They observed the girls' interests in football and decided to help. It was however not that easy. Girls playing football is still not Mana Manda a common picture in Bangladesh. Guardians were not convinced as they were used to seeing girls helping mothers with household chores. A farmer, an auto-rickshaw driver. a tea-shop owner or a housemaid mother couldn't be that ambitious either. But Minati Rani Sheel and Mohammad Maliz Uddin persuaded them to allow their daughters to play. Being great motivators, the two teachers supported the girls in their effort to overcome the odds. They inspired them, created opponunities for them and took personal care of them. Soon the girls could prove themselves. shaking off their inhibition. Their success has also persuaded the villagers to come IO their support.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 129 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     },
     {
-      number: 'ii',
-      heading: 'A Footballer Factory & International Glory (আন্তর্জাতিক ময়দানে জয়যাত্রা)',
-      text: "Kalsindur has emerged as a footballer factory and a symbol of girl power. Sabina, Sanjida, Shiuli Azim, Maria Manda, and Shamsunnahar led the national team to unprecedented glory. In 2018, they clinched the SAFF under-18 Women's Championship in Bhutan, remaining unbeaten. The success of Kalsindur girls reads like an epic. Starting with practically nothing—without boots or jerseys, and suffering from malnutrition—they triumphed over all adversities through the passionate guidance of school teachers Mafiz Uddin and Minati Rani Sheel.",
-      bengaliTranslation: "কলসিন্দুর গ্রামটি আজ বাংলাদেশের ফুটবলের আঁতুড়ঘর এবং নারী জাগরণের জীবন্ত প্রতীকে পরিণত হয়েছে। মারিয়া মান্ডা, সানজিদা, শিউলি আজিম ও শামসুন্নাহারদের মতো কন্যারা জাতীয় দলকে অনন্য উচ্চতায় নিয়ে গেছেন। ২০১৮ সালে ভুটানে অনুষ্ঠিত সাফ অনূর্ধ্ব-১৮ চ্যাম্পিয়নশিপে তারা কোনো ম্যাচ না হেরে অপরাজিত চ্যাম্পিয়ন হওয়ার গৌরব অর্জন করে। কোনো বুট বা জার্সি ছাড়া, অপুষ্টি ও সামাজিক রক্তচক্ষুর প্রতিকূলতা পেরিয়ে এই মেয়েদের এগিয়ে যাওয়া কোনো রূপকথার মহাকাব্যের চেয়ে কম নয়।",
-      highlightWords: ['clinched', 'unbeaten', 'epic', 'malnutrition', 'adversities', 'inhibition', 'persuaded', 'ambitious']
+        "paraNumber": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 131)",
+        "content": "Youthful Achievers 125 D. E. F. G. H. Write sentences with the words below and provide their Bangla equivalent words in the blanks spaces provided: unleash intrinsic comrade groom adversities inhibition Answer the following questions. I. How do people commonly discriminate between genders? 2. What do the Kalsindur girls owe to their teachers and guardians? 3. What is the moral of the Story and how does it affect you? 4. Who, according to you, contributed the most to KalsiDdur girls' success? Why do you think so? 5. Justify the statement — the story is a good example of reciprocal respect. Make a flow chart on the major success of Kalsindur girls. Supported by Minati Rani and Mafiz Uddin Change the speech of the following text. \"When these girls go from one place to another, even the auto-rickshaw pullers don't take any fare from them as they are the pride ofthe village. It's a small token of recognition but it's great!?' says Mala Rani Sarkar, tbe Tearn Manager of Kalisindur Women Football Team. Work in pairs. Suppose you have a sister or cousin who wants to play football or cricket or any other outdoor game. What suggestions will you give her and why? Write a letter to the local sports authority to arrange an inter-college football tournament in your area.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 131 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
     }
-  ],
-  vocabulary: [
-    { word: 'Miniature', meaning: 'ক্ষুদ্র সংস্করণের / ক্ষুদ্রাকৃতির', pos: 'Adjective', syn: 'Small-scale, tiny, diminutive', ant: 'Colossal, giant, huge' },
-    { word: 'Vigour', meaning: 'শারীরিক প্রাণশক্তি / তেজ ও উদ্যম', pos: 'Noun', syn: 'Vitality, energy, robustness', ant: 'Lethargy, weakness' },
-    { word: 'Counterparts', meaning: 'সমকক্ষ ব্যক্তি বা প্রতিপক্ষ', pos: 'Noun', syn: 'Equals, equivalents, peers', ant: 'Opposites, unequals' },
-    { word: 'Clinched', meaning: 'চূড়ান্তভাবে জয় বা নিশ্চিত করল', pos: 'Verb', syn: 'Secured, won, sealed, grabbed', ant: 'Lost, forfeited' },
-    { word: 'Unbeaten', meaning: 'অপরাজিত / অজেয় বিজয়ী', pos: 'Adjective', syn: 'Undefeated, unconquered, victorious', ant: 'Defeated, beaten' },
-    { word: 'Epic', meaning: 'মহাকাব্যিক / গৌরবোজ্জ্বল কীর্তি', pos: 'Noun', syn: 'Legendary tale, saga, heroic feat', ant: 'Trivial event' },
-    { word: 'Adversities', meaning: 'প্রতিকূলতা / জীবনের বাধা-বিপত্তি', pos: 'Noun', syn: 'Hardships, obstacles, misfortunes', ant: 'Privileges, prosperity' },
-    { word: 'Malnutrition', meaning: 'অপুষ্টিজনিত শারীরিক অবস্থা', pos: 'Noun', syn: 'Undernourishment, dietary deficiency', ant: 'Healthy nutrition' },
-    { word: 'Inhibition', meaning: 'দ্বিধা / মানসিক জড়তা বা সংকোচ', pos: 'Noun', syn: 'Restraint, shyness, hesitancy', ant: 'Boldness, confidence' },
-    { word: 'Persuaded', meaning: 'প্ররোচিত বা সম্মত করেছিল', pos: 'Verb', syn: 'Convinced, coaxed, influenced', ant: 'Dissuaded, deterred' },
-    { word: 'Ambitious', meaning: 'উচ্চাকাঙ্ক্ষী / সংকল্পবদ্ধ', pos: 'Adjective', syn: 'Aspiring, determined, driven', ant: 'Unambitious, apathetic' }
-  ]
+],
+  paragraphs: [
+    {
+        "number": "1",
+        "heading": "অনুচ্ছেদ 1 (Page 129)",
+        "text": "Youthful Achievers Sanjida Akhter 123 The Bangladesh girls' football team won the AFC Under 14 Regional Football Championship 2015 in Nepal and the team was dominated by Kalsindur footballers. Do you know the team that won the championship in AFC Under 14 Regional Football Tournament 2016 in Tajikistan also had eight Kalsindur girls including the captain and the highest scorer? Bangladesh National Women's Football Team was champion in Hong Kong Under-15 Women's Jockey Cup and Kalsindur girls led the match. They also proved themselves when Bangladesh shared championship jointly with Laos in 2019. could even think that these girls would seize the thc 1st SAFF under-18 Women Championship in Bhutan in 2018, remaining unbeaten? The whole nation was overwhelmed at their success, and their school was immediately nationalist at their request. The success of Kalsindur girls reads like an epic. They started their journey with practically nothing. They didnst have any boots or jerseys to wear. Initially. they played wearing salwar and kamij. They also suffered from malnutrition. What made them win against all adversities then? What was the magic behind? Mohammad Mafiz Uddin was an assistant teacher at Kalsindur Government Free Primary School where Minati Rani Sheel was the head teacher. They observed the girls' interests in football and decided to help. It was however not that easy. Girls playing football is still not Mana Manda a common picture in Bangladesh. Guardians were not convinced as they were used to seeing girls helping mothers with household chores. A farmer, an auto-rickshaw driver. a tea-shop owner or a housemaid mother couldn't be that ambitious either. But Minati Rani Sheel and Mohammad Maliz Uddin persuaded them to allow their daughters to play. Being great motivators, the two teachers supported the girls in their effort to overcome the odds. They inspired them, created opponunities for them and took personal care of them. Soon the girls could prove themselves. shaking off their inhibition. Their success has also persuaded the villagers to come IO their support.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 129 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    },
+    {
+        "number": "2",
+        "heading": "অনুচ্ছেদ 2 (Page 131)",
+        "text": "Youthful Achievers 125 D. E. F. G. H. Write sentences with the words below and provide their Bangla equivalent words in the blanks spaces provided: unleash intrinsic comrade groom adversities inhibition Answer the following questions. I. How do people commonly discriminate between genders? 2. What do the Kalsindur girls owe to their teachers and guardians? 3. What is the moral of the Story and how does it affect you? 4. Who, according to you, contributed the most to KalsiDdur girls' success? Why do you think so? 5. Justify the statement — the story is a good example of reciprocal respect. Make a flow chart on the major success of Kalsindur girls. Supported by Minati Rani and Mafiz Uddin Change the speech of the following text. \"When these girls go from one place to another, even the auto-rickshaw pullers don't take any fare from them as they are the pride ofthe village. It's a small token of recognition but it's great!?' says Mala Rani Sarkar, tbe Tearn Manager of Kalisindur Women Football Team. Work in pairs. Suppose you have a sister or cousin who wants to play football or cricket or any other outdoor game. What suggestions will you give her and why? Write a letter to the local sports authority to arrange an inter-college football tournament in your area.",
+        "bengaliTranslation": "জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড (NCTB) পাঠ্যবইয়ের 131 নম্বর পৃষ্ঠার মূল পাঠ্যাংশ।",
+        "highlightWords": []
+    }
+]
 };
