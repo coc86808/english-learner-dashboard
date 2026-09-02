@@ -32,7 +32,7 @@ import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
 import { smartInterleaveQuestions, hscVocabularyList } from '../data/questions/hscQuestionsData';
-import { recordCompletedExam } from '../services/scoreManager';
+import { recordCompletedExam, syncLearningStateToCloudDebounced } from '../services/scoreManager';
 
 export default function HSCExamInterface({
   questions = [],
@@ -419,6 +419,14 @@ export default function HSCExamInterface({
 
         perfMap[wordKey] = wordPerf;
         localStorage.setItem('hsc_word_performance', JSON.stringify(perfMap));
+
+        // Background Cloud Firestore Synchronization
+        try {
+          const authUserRaw = localStorage.getItem('hsc_auth_user');
+          const authUser = authUserRaw ? JSON.parse(authUserRaw) : null;
+          const uId = authUser?.id || authUser?.uid || 'usr-local-guest';
+          syncLearningStateToCloudDebounced(uId);
+        } catch (e) {}
       } catch (err) {
         console.warn('Word performance tracking error:', err);
       }

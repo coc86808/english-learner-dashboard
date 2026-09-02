@@ -207,3 +207,30 @@ export function calculateStudentTimeframePoints(user, examHistory = []) {
     allTime: finalAllTime
   };
 }
+
+let syncTimeout = null;
+/**
+ * Debounced background sync of local word performance and weak words to Firestore
+ */
+export function syncLearningStateToCloudDebounced(userId) {
+  if (!userId) return;
+  if (syncTimeout) clearTimeout(syncTimeout);
+
+  syncTimeout = setTimeout(async () => {
+    try {
+      const { saveLearningStateToFirestore } = await import('./firebase');
+      const rawPerf = localStorage.getItem('hsc_word_performance');
+      const rawWeak = localStorage.getItem('hsc_weak_words');
+      const rawHist = localStorage.getItem('hsc_exam_history');
+
+      const wordPerformance = rawPerf ? JSON.parse(rawPerf) : {};
+      const weakWords = rawWeak ? JSON.parse(rawWeak) : [];
+      const examHistory = rawHist ? JSON.parse(rawHist) : [];
+
+      await saveLearningStateToFirestore(userId, { wordPerformance, weakWords, examHistory });
+    } catch (e) {
+      console.warn('Debounced cloud sync fallback:', e);
+    }
+  }, 1200);
+}
+

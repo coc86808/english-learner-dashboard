@@ -13,7 +13,7 @@ import {
   Shield,
   BookOpen
 } from 'lucide-react';
-import { saveUserToFirestore, signInWithGoogle } from '../services/firebase';
+import { saveUserToFirestore, signInWithGoogle, fetchAndHydrateUserLearningState } from '../services/firebase';
 
 export default function AuthModal({ 
   isOpen, 
@@ -70,6 +70,7 @@ export default function AuthModal({
           setView('onboarding');
         } else {
           // Returning student with completed profile
+          await fetchAndHydrateUserLearningState(res.user.id || res.user.uid);
           if (onAuthSuccess) onAuthSuccess(res.user);
           onClose();
         }

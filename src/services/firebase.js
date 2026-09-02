@@ -236,3 +236,89 @@ export async function saveExamResultToFirestore(result) {
     return false;
   }
 }
+
+/**
+ * Save word performance & weak words learning state to Firestore for a user
+ */
+export async function saveLearningStateToFirestore(userId, { wordPerformance, weakWords, examHistory }) {
+  if (!userId) return false;
+  try {
+    const userRef = doc(db, 'users', userId);
+    const updates = {
+      updatedAt: serverTimestamp()
+    };
+    if (wordPerformance) updates.wordPerformance = JSON.stringify(wordPerformance);
+    if (weakWords) updates.weakWords = JSON.stringify(weakWords);
+    if (examHistory) updates.examHistory = JSON.stringify(examHistory.slice(0, 50));
+
+    await setDoc(userRef, updates, { merge: true });
+    return true;
+  } catch (error) {
+    console.warn('Firestore learning state save failed:', error);
+    return false;
+  }
+}
+
+/**
+ * Fetch and hydrate user's cloud learning state from Firestore into LocalStorage
+ */
+export async function fetchAndHydrateUserLearningState(userId) {
+  if (!userId) return null;
+  try {
+    const userRef = doc(db, 'users', userId);
+    const docSnap = await getDoc(userRef);
+    if (docSnap.exists()) {
+      const data = docSnap.data();
+
+      // Hydrate word performance
+      if (data.wordPerformance) {
+        try {
+          const parsedPerf = typeof data.wordPerformance === 'string' ? JSON.parse(data.wordPerformance) : data.wordPerformance;
+          const localPerfRaw = localStorage.getItem('hsc_word_performance');
+          const localPerf = localPerfRaw ? JSON.parse(localPerfRaw) : {};
+          const mergedPerf = { ...parsedPerf, ...localPerf };
+          localStorage.setItem('hsc_word_performance', JSON.stringify(mergedPerf));
+        } catch (e) {}
+      }
+
+      // Hydrate weak words
+      if (data.weakWords) {
+        try {
+          const parsedWeak = typeof data.weakWords === 'string' ? JSON.parse(data.weakWords) : data.weakWords;
+          if (Array.isArray(parsedWeak)) {
+            localStorage.setItem('hsc_weak_words', JSON.stringify(parsedWeak));
+            if (typeof window !== 'undefined') {
+              window.dispatchEvent(new CustomEvent('hsc_weak_words_updated'));
+            }
+          }
+        } catch (e) {}
+      }
+
+      // Hydrate exam history
+      if (data.examHistory) {
+        try {
+          const parsedHistory = typeof data.examHistory === 'string' ? JSON.parse(data.examHistory) : data.examHistory;
+          if (Array.isArray(parsedHistory)) {
+            const localHistRaw = localStorage.getItem('hsc_exam_history');
+            const localHist = localHistRaw ? JSON.parse(localHistRaw) : [];
+            const map = new Map();
+            parsedHistory.forEach(h => map.set(h.id, h));
+            localHist.forEach(h => map.set(h.id, h));
+            const mergedHist = Array.from(map.values()).sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+            localStorage.setItem('hsc_exam_history', JSON.stringify(mergedHist));
+            if (typeof window !== 'undefined') {
+              window.dispatchEvent(new CustomEvent('hsc_leaderboard_updated'));
+            }
+          }
+        } catch (e) {}
+      }
+
+      return data;
+    }
+    return null;
+  } catch (error) {
+    console.warn('Firestore learning state fetch error:', error);
+    return null;
+  }
+}
+
