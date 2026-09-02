@@ -166,12 +166,12 @@ export default function AboutPage({ lang = 'en', onNavigate, currentUser }) {
           </div>
 
           <div className="p-4 rounded-2xl bg-[#0c0f17]/90 border border-[#1e293b] text-center space-y-1">
-            <span className="text-2xl sm:text-3xl font-black text-cyan-400 block">685+</span>
+            <span className="text-2xl sm:text-3xl font-black text-cyan-400 block">858+</span>
             <span className="text-xs text-slate-400 font-semibold">{isBn ? 'নির্বাচিত পাঠ্যবই শব্দার্থ' : 'Curated Vocabulary'}</span>
           </div>
 
           <div className="p-4 rounded-2xl bg-[#0c0f17]/90 border border-[#1e293b] text-center space-y-1">
-            <span className="text-2xl sm:text-3xl font-black text-amber-400 block">2,725+</span>
+            <span className="text-2xl sm:text-3xl font-black text-amber-400 block">3,432+</span>
             <span className="text-xs text-slate-400 font-semibold">{isBn ? 'বোর্ড স্ট্যান্ডার্ড এমসিকিউ' : 'Board Standard MCQs'}</span>
           </div>
 

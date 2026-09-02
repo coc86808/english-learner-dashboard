@@ -545,7 +545,7 @@ export default function App() {
           streakCount={currentUser?.streak || 0}
           isAdminActive={currentPath.startsWith('/admin')}
           onOpenAdmin={() => navigate(currentPath.startsWith('/admin') ? '/dashboard' : '/admin')}
-          onOpenNotifications={() => alert(isBn ? '৬8৫টি পাঠ্যবই শব্দ এবং ২,৭২৯টি বোর্ড স্ট্যান্ডার্ড MCQ অনুশীলনের জন্য প্রস্তুত!' : '685 Textbook Vocabulary words and 2,729 Board Standard MCQs are ready for practice!')}
+          onOpenNotifications={() => alert(isBn ? '৮৫৮টি পাঠ্যবই শব্দ এবং ৩,৪৩২টি বোর্ড স্ট্যান্ডার্ড MCQ অনুশীলনের জন্য প্রস্তুত!' : '858 Textbook Vocabulary words and 3,432 Board Standard MCQs are ready for practice!')}
           onOpenStreakModal={() => alert(isBn ? `আপনার স্ট্রিক: ${currentUser?.streak || 0} দিন। প্রতিদিন পরীক্ষা দিয়ে স্ট্রিক ধরে রাখুন!` : `Your streak: ${currentUser?.streak || 0} days. Practice daily to build your streak!`)}
           currentUser={currentUser}
           onLogout={handleLogout}

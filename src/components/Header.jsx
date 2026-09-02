@@ -267,8 +267,8 @@ export default function Header({
         <button
           onClick={onOpenNotifications || (() => {
             alert(isBn 
-              ? '📢 নোটিফিকেশন: ৬8৫টি পাঠ্যবই শব্দ এবং ২,৭২৯টি বোর্ড স্ট্যান্ডার্ড MCQ সম্পূর্ণ সক্রিয় আছে।' 
-              : '📢 Notifications: 685 Textbook Vocabulary words and 2,729 Board Standard MCQs are ready for practice!'
+              ? '📢 বিজ্ঞপ্তি: ৮৫৮টি পাঠ্যবই শব্দ এবং ৩,৪৩২টি বোর্ড স্ট্যান্ডার্ড MCQ অনুশীলনের জন্য প্রস্তুত!'
+              : '📢 Notifications: 858 Textbook Vocabulary words and 3,432 Board Standard MCQs are ready for practice!'
             );
           })}
           className="relative p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#151c2a] border border-transparent hover:border-[#1e293b] transition-all cursor-pointer"

@@ -150,7 +150,7 @@ export default function LandingPage({
       id: 4,
       name: 'Sadia Afrin',
       college: 'Holy Cross College, Dhaka',
-      score: 'Mastered 685+ Words',
+      score: 'Mastered 858+ Words',
       avatar: 'SA',
       avatarColor: 'from-cyan-500 to-blue-600',
       badge: 'Mastery Gold',
@@ -197,7 +197,7 @@ export default function LandingPage({
       q: isBn ? 'Learner Hub কি সম্পূর্ণ বিনামূল্যে ব্যবহার করা যায়?' : 'Is Learner Hub 100% free for all HSC students?',
       a: isBn 
         ? 'হ্যাঁ, Learner Hub সম্পূর্ণ উন্মুক্ত ও ফ্রি। কোনো গোপন সাবস্ক্রিপশন ফি নেই। সব ফ্ল্যাশকার্ড, MCQ পরীক্ষা ও PDF শিট আনলিমিটেড ব্যবহারযোগ্য।'
-        : 'Yes, Learner Hub is 100% completely free with no hidden charges. All 12 units (45 lessons), 685+ vocabulary words, 2,729+ MCQs, and PDF revision sheets are unlimited.'
+        : 'Yes, Learner Hub is 100% completely free with no hidden charges. All 12 units (45 lessons), 858+ vocabulary words, 3,432+ MCQs, and PDF revision sheets are unlimited.'
     },
     {
       q: isBn ? 'স্পেসড-রিপিটিশন (Spaced Repetition) কীভাবে কাজ করে?' : 'How does the Spaced Repetition engine work?',
@@ -240,8 +240,8 @@ export default function LandingPage({
           </span>
           <span>
             {isBn 
-              ? '🎉 এইচএসসি ২০২৬ ব্যাচ: ৬8৫+ পাঠ্যবই ভোকাবুলারি ও ২,৭২৯+ বোর্ড MCQ লাইভ!'
-              : '🎉 NCTB 2026 HSC English Exam Prep: 685+ Words & 2,729+ Board MCQs Live!'}
+              ? '🎉 এইচএসসি ২০২৬ ব্যাচ: ৮৫৮+ পাঠ্যবই ভোকাবুলারি ও ৩,৪৩২+ বোর্ড MCQ লাইভ!'
+              : '🎉 NCTB 2026 HSC English Exam Prep: 858+ Words & 3,432+ Board MCQs Live!'}
           </span>
           <button
             onClick={() => onOpenAuth(true)}
@@ -559,7 +559,7 @@ export default function LandingPage({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
-                number: '685+',
+                number: '858+',
                 labelEn: 'Textbook Vocabulary Words',
                 labelBn: 'পাঠ্যবইয়ের শব্দার্থ',
                 icon: BookOpen,
@@ -567,7 +567,7 @@ export default function LandingPage({
                 border: 'border-emerald-500/30 bg-[#111827]/80'
               },
               {
-                number: '2,725+',
+                number: '3,432+',
                 labelEn: 'Board Standard MCQs',
                 labelBn: 'বোর্ড স্ট্যান্ডার্ড MCQ প্রশ্ন',
                 icon: GraduationCap,
@@ -987,7 +987,7 @@ export default function LandingPage({
               © 2026 Learner Hub. Tailored for NCTB Higher Secondary Certificate (HSC) Students in Bangladesh.
             </p>
             <p className="text-slate-400 font-medium">
-              685+ Words • 2,725+ MCQs • 12 Units • Spaced Repetition Engine
+              858+ Words • 3,432+ MCQs • 12 Units • Spaced Repetition Engine
             </p>
           </div>
         </div>
@@ -1012,7 +1012,7 @@ export default function LandingPage({
                   {isBn ? 'এইচএসসি ২০২৬ ইংলিশ প্র্যাকটিস' : 'HSC 2026 English Prep'}
                 </span>
                 <span className="text-[10px] text-emerald-400 font-medium">
-                  {isBn ? '৬8৫+ শব্দ • ২,৭২৫+ MCQ • ১০০% ফ্রি' : '685+ Words • 2,725+ MCQs • Free'}
+                  {isBn ? '৮৫৮+ শব্দ • ৩,৪৩২+ MCQ • ১০০% ফ্রি' : '858+ Words • 3,432+ MCQs • Free'}
                 </span>
               </div>
             </div>
