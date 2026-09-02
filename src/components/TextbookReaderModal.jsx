@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { unit1Lesson1Textbook } from '../data/textbooks/unit1Lesson1Text';
 import { unit1Lesson2Textbook } from '../data/textbooks/unit1Lesson2Text';
+import { unit1Lesson3Textbook } from '../data/textbooks/unit1Lesson3Text';
 import { unit9Lesson1Textbook } from '../data/textbooks/unit9Lesson1Text';
 import { unit10Lesson1Textbook } from '../data/textbooks/unit10Lesson1Text';
 import { unit10Lesson2Textbook } from '../data/textbooks/unit10Lesson2Text';
@@ -31,7 +32,9 @@ export default function TextbookReaderModal({
   if (!isOpen) return null;
 
   let currentTextbook = unit1Lesson1Textbook;
-  if (lessonId === 'u1-l2') {
+  if (lessonId === 'u1-l3') {
+    currentTextbook = unit1Lesson3Textbook;
+  } else if (lessonId === 'u1-l2') {
     currentTextbook = unit1Lesson2Textbook;
   } else if (unitId === 'unit-9' || (lessonId && lessonId.includes('u9'))) {
     currentTextbook = unit9Lesson1Textbook;
