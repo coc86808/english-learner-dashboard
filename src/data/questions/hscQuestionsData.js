@@ -20273,6 +20273,23 @@ export function smartInterleaveQuestions(rawQuestions = []) {
   return interleaved;
 }
 
+export function matchesUnitAndLesson(item, unitId, lessonId) {
+  if (!item) return false;
+  if (!unitId || unitId === 'all') return true;
+  const uNum = typeof unitId === 'string' && unitId.startsWith('unit-')
+    ? unitId.replace('unit-', '')
+    : String(unitId).replace(/[^0-9]/g, '');
+  const itemTag = (item.boardExamTag || '') + ' ' + (item.unit || '') + ' ' + (item.id || '');
+  const unitRegex = new RegExp('\\bUnit\\s*' + uNum + '\\b|vocab-u' + uNum + '(-|\\b)', 'i');
+  if (!unitRegex.test(itemTag)) return false;
+  if (!lessonId || lessonId === 'all') return true;
+  const lNum = typeof lessonId === 'string' && lessonId.includes('-l')
+    ? lessonId.split('-l')[1]
+    : String(lessonId).replace(/[^0-9]/g, '');
+  const lessonRegex = new RegExp('(?:•|:)\\s*Lesson\\s*' + lNum + '(\\b|\\s|\\()|vocab-u' + uNum + '-l' + lNum + '(\\b|-)', 'i');
+  return lessonRegex.test(itemTag);
+}
+
 export function getFilteredCategoryQuestions(
   categories = ['synonyms', 'antonyms', 'english_meaning', 'bangla_meaning'],
   lessonId = null,
@@ -20288,3 +20305,4 @@ export function getFilteredCategoryQuestions(
 
   return smartInterleaveQuestions(matched);
 }
+

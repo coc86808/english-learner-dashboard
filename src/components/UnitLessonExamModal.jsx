@@ -21,7 +21,7 @@ import {
   Minus
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
-import { hscQuestionsList, smartInterleaveQuestions } from '../data/questions/hscQuestionsData';
+import { hscQuestionsList, smartInterleaveQuestions, matchesUnitAndLesson } from '../data/questions/hscQuestionsData';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 import ErrorBoundary from './ErrorBoundary';
@@ -93,28 +93,14 @@ export default function UnitLessonExamModal({
 
     if (!selectedUnit) return categoryFiltered;
 
-    const uNum = (selectedUnit.unitNumber || '').toLowerCase();
-    const uTitle = (selectedUnit.unitTitle || '').toLowerCase();
+    const unitId = selectedUnit.id;
+    const lessonId = selectedLesson?.id || 'all';
 
-    const unitQuestions = categoryFiltered.filter((q) => {
-      if (!q || !q.unit) return false;
-      const qu = q.unit.toLowerCase();
-      return (uNum && (qu.includes(uNum + ':') || new RegExp(`\\b${uNum}\\b`, 'i').test(qu))) || (uTitle && qu.includes(uTitle));
-    });
+    const matched = categoryFiltered.filter((q) =>
+      matchesUnitAndLesson(q, unitId, lessonId)
+    );
 
-    if (selectedLesson && selectedLesson.id !== 'all') {
-      const lNum = (selectedLesson.number || '').toLowerCase();
-      const lTitle = (selectedLesson.title || '').toLowerCase();
-
-      const lessonQuestions = unitQuestions.filter((q) => {
-        if (!q || !q.unit) return false;
-        const qu = q.unit.toLowerCase();
-        return (lNum && qu.includes(lNum)) || (lTitle && qu.includes(lTitle));
-      });
-      if (lessonQuestions.length > 0) return smartInterleaveQuestions(lessonQuestions);
-    }
-
-    return smartInterleaveQuestions(unitQuestions.length > 0 ? unitQuestions : categoryFiltered);
+    return smartInterleaveQuestions(matched.length > 0 ? matched : categoryFiltered);
   };
 
   const allAvailableQuestions = getAllMatchingQuestions();

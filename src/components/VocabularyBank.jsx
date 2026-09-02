@@ -29,7 +29,7 @@ import {
   SlidersHorizontal,
   ArrowRight
 } from 'lucide-react';
-import { hscVocabularyList } from '../data/questions';
+import { hscVocabularyList, matchesUnitAndLesson } from '../data/questions';
 import { hscUnits } from '../data/hscUnitsData';
 import { generateVocabularyBankPDF } from '../utils/pdfGenerator';
 
@@ -202,33 +202,8 @@ export default function VocabularyBank({
   const filteredList = useMemo(() => {
     return hscVocabularyList.filter((item) => {
       // 1. Unit & Lesson filter
-      if (selectedUnitId !== 'all') {
-        const unitNumberStr = activeUnitObj ? activeUnitObj.unitNumber.toLowerCase() : '';
-        const unitTitleStr = activeUnitObj ? activeUnitObj.unitTitle.toLowerCase() : '';
-        const matchesUnit =
-          item.unit &&
-          ((unitNumberStr && (item.unit.toLowerCase().includes(unitNumberStr + ':') || new RegExp(`\\b${unitNumberStr}\\b`, 'i').test(item.unit))) ||
-            (unitTitleStr && item.unit.toLowerCase().includes(unitTitleStr)));
-
-        if (!matchesUnit) return false;
-
-        // Specific Lesson filter under this unit
-        if (selectedLessonId !== 'all') {
-          const lessonObj = availableLessons.find((l) => l.id === selectedLessonId);
-          if (lessonObj) {
-            const lessonNumStr = lessonObj.number.toLowerCase().replace('-', ' ');
-            const lessonTitleStr = lessonObj.title.toLowerCase();
-            const matchesLesson =
-              item.unit &&
-              (item.unit.toLowerCase().includes(lessonNumStr) ||
-                item.unit.toLowerCase().includes(lessonTitleStr) ||
-                (selectedLessonId === 'u10-l1' && item.unit.includes('Lesson 1')) ||
-                (selectedLessonId === 'u10-l2' && item.unit.includes('Lesson 2')) ||
-                (selectedLessonId === 'u1-l1' && item.unit.includes('Lesson 1')));
-
-            if (!matchesLesson) return false;
-          }
-        }
+      if (!matchesUnitAndLesson(item, selectedUnitId, selectedLessonId)) {
+        return false;
       }
 
       // 2. Word Status / Category Filter

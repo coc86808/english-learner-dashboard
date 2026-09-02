@@ -163,7 +163,7 @@ export const hscUnits = [
     "bgClass": "bg-[#8338bd] hover:bg-[#9345ce]",
     "gradient": "from-[#9345ce] to-[#68249a]",
     "progress": 0,
-    "totalWords": 20,
+    "totalWords": 0,
     "masteredWords": 0,
     "lessons": [
       {
@@ -171,8 +171,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Three Speeches",
         "titleBn": "তিনটি ঐতিহাসিক ভাষণ",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "০ টি প্রশ্ন",
+        "wordsCount": 0,
         "progress": 0
       },
       {
@@ -180,8 +180,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Great Women",
         "titleBn": "মহীয়সী নারী",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "০ টি প্রশ্ন",
+        "wordsCount": 0,
         "progress": 0
       }
     ]

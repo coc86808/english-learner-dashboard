@@ -23,7 +23,7 @@ import {
   Play
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { hscVocabularyList } from '../data/questions/hscQuestionsData';
+import { hscVocabularyList, matchesUnitAndLesson } from '../data/questions/hscQuestionsData';
 import { hscUnits } from '../data/hscUnitsData';
 
 export default function FlashcardsExplorer({ 
@@ -74,20 +74,12 @@ export default function FlashcardsExplorer({
     } else if (selectedLessonId === 'all') {
       list = [...hscVocabularyList];
     } else if (selectedLessonId?.startsWith('unit-')) {
-      const uNum = selectedLessonId.replace('unit-', '');
-      list = hscVocabularyList.filter(item => {
-        const m = item.unit?.match(/Unit\s+(\d+)/i);
-        return m && m[1] === uNum;
-      });
+      list = hscVocabularyList.filter((item) => matchesUnitAndLesson(item, selectedLessonId, 'all'));
     } else {
       const m = selectedLessonId?.match(/^u(\d+)-l(\d+)$/);
       if (m) {
-        const uNum = m[1];
-        const lNum = m[2];
-        list = hscVocabularyList.filter(item => {
-          const match = item.unit?.match(/Unit\s+(\d+)\s*:\s*Lesson\s+(\d+)/i);
-          return match && match[1] === uNum && match[2] === lNum;
-        });
+        const uId = `unit-${m[1]}`;
+        list = hscVocabularyList.filter((item) => matchesUnitAndLesson(item, uId, selectedLessonId));
       }
     }
     if (isShuffled) {
