@@ -28,18 +28,7 @@ import {
 
 import { hscUnits } from '../../data/hscUnitsData';
 import { hscVocabularyList } from '../../data/questions/hscQuestionsData';
-import { unit1Lesson1Textbook } from '../../data/textbooks/unit1Lesson1Text';
-import { unit10Lesson1Textbook } from '../../data/textbooks/unit10Lesson1Text';
-import { unit10Lesson2Textbook } from '../../data/textbooks/unit10Lesson2Text';
-
-// Registry of loaded NCTB textbooks
-const TEXTBOOK_REGISTRY = {
-  'u1-l1': unit1Lesson1Textbook,
-  'unit-1': unit1Lesson1Textbook,
-  'u10-l1': unit10Lesson1Textbook,
-  'u10-l2': unit10Lesson2Textbook,
-  'unit-10': unit10Lesson1Textbook,
-};
+import { ALL_TEXTBOOKS as TEXTBOOK_REGISTRY } from '../../data/textbooks/index';
 
 export default function TextbookPage({
   lang = 'en',
