@@ -38,6 +38,9 @@ import { unit8Lesson2Textbook } from '../data/textbooks/unit8Lesson2Text';
 import { unit8Lesson3Textbook } from '../data/textbooks/unit8Lesson3Text';
 import { unit8Lesson4Textbook } from '../data/textbooks/unit8Lesson4Text';
 import { unit9Lesson1Textbook } from '../data/textbooks/unit9Lesson1Text';
+import { unit9Lesson2Textbook } from '../data/textbooks/unit9Lesson2Text';
+import { unit9Lesson3Textbook } from '../data/textbooks/unit9Lesson3Text';
+import { unit9Lesson4Textbook } from '../data/textbooks/unit9Lesson4Text';
 import { unit10Lesson1Textbook } from '../data/textbooks/unit10Lesson1Text';
 import { unit10Lesson2Textbook } from '../data/textbooks/unit10Lesson2Text';
 
@@ -105,6 +108,12 @@ export default function TextbookReaderModal({
     currentTextbook = unit1Lesson3Textbook;
   } else if (lessonId === 'u1-l2') {
     currentTextbook = unit1Lesson2Textbook;
+  } else if (lessonId === 'u9-l2') {
+    currentTextbook = unit9Lesson2Textbook;
+  } else if (lessonId === 'u9-l3') {
+    currentTextbook = unit9Lesson3Textbook;
+  } else if (lessonId === 'u9-l4') {
+    currentTextbook = unit9Lesson4Textbook;
   } else if (unitId === 'unit-9' || (lessonId && lessonId.includes('u9'))) {
     currentTextbook = unit9Lesson1Textbook;
   } else if (lessonId === 'u10-l2' || lessonId === 'u10-l3') {
