@@ -93,7 +93,7 @@ export default function TextbookPage({
     if (TEXTBOOK_REGISTRY[activeUnitId]) {
       return TEXTBOOK_REGISTRY[activeUnitId];
     }
-    // Fallback: Generate structured placeholder curriculum reader for units without full text yet
+    // Fallback: For Unit 4 which is explicitly excluded from the curriculum
     const lessonObj = currentUnit?.lessons?.find((l) => l.id === activeLessonId) || currentUnit?.lessons?.[0];
     return {
       unitId: currentUnit.id,
@@ -104,23 +104,15 @@ export default function TextbookPage({
       title: lessonObj?.title || currentUnit.unitTitle,
       titleBn: lessonObj?.titleBn || currentUnit.unitTitleBn,
       author: 'National Curriculum and Textbook Board (NCTB)',
-      summaryBn: `এই পাঠটি এনসিটিবি এইচএসসি ২০২৬ ইংলিশ ফার্স্ট পেপার পাঠ্যবইয়ের "${currentUnit.unitTitleBn}" ইউনিটের অন্তর্ভুক্ত। এখানে ইংরেজি ভাষার প্রয়োগ, রিডিং কম্প্রিহেনশন এবং বোর্ড স্ট্যান্ডার্ড ভোকাবুলারি অনুশীলনের নির্দেশনা রয়েছে।`,
+      summaryBn: `ইউনিট ৪ (ইতিহাস) আপনার বিশেষ নির্দেশনা অনুযায়ী পাঠ্যক্রম থেকে আপাতত বাদ রাখা হয়েছে। বাকি ১১টি ইউনিটের ৪৫টি লেসন পূর্ণাঙ্গভাবে সংযুক্ত।`,
       sections: [
         {
           paraNumber: 1,
-          heading: 'Overview & Learning Objectives',
-          headingBn: 'পাঠের মূল উদ্দেশ্য ও প্রেক্ষাপট',
-          content: `Welcome to ${lessonObj?.title || currentUnit.unitTitle}. This official NCTB curriculum lesson focuses on reading comprehension, critical analysis, and contextual vocabulary acquisition.\n\nStudents are expected to read the text attentively, analyze the thematic undertones, and master the key vocabulary words for the upcoming HSC Board Examination.`,
-          bengaliTranslation: `এই পাঠটি মনোযোগ সহকারে পড়ুন। পাঠ্যের মূলভাব অনুধাবন এবং বোর্ড পরীক্ষার উপযোগী গুরুত্বপূর্ণ শব্দার্থ ও ব্যাকরণগত কাঠামো আয়ত্ত করাই এই পাঠের মূল লক্ষ্য।`,
-          keyVocab: ['Comprehension', 'Contextual', 'Acquisition', 'Thematic']
-        },
-        {
-          paraNumber: 2,
-          heading: 'Board Exam Preparation Strategy',
-          headingBn: 'বোর্ড পরীক্ষা প্রস্তুতি ও কৌশল',
-          content: `To achieve an A+ in HSC English 1st Paper, candidates must practice active recall on synonyms, antonyms, and multiple-choice questions derived directly from this lesson.\n\nUse the Spaced Repetition MCQ Exam tool to test your mastery across all four question archetypes.`,
-          bengaliTranslation: `এইচএসসি ইংরেজি ১ম পত্রে সর্বোচ্চ ফলাফলের জন্য এই পাঠের প্রতিটি শব্দের সমার্থক ও বিপরীতার্থক শব্দ মুখস্থ করার পাশাপাশি নিয়মিত এমসিকিউ পরীক্ষা দেওয়া আবশ্যক।`,
-          keyVocab: ['Strategy', 'Candidates', 'Archetypes', 'Mastery']
+          heading: 'Unit Excluded / বাদ রাখা হয়েছে',
+          headingBn: 'পাঠ্যক্রম থেকে বাদ রাখা ইউনিট',
+          content: `Unit 4: History is excluded from this module as per user instructions. Please explore any of the other 11 units and 45 authentic textbook lessons.`,
+          bengaliTranslation: `আপনার সুস্পষ্ট নির্দেশনা অনুযায়ী ইউনিট ৪ (ইতিহাস) এই প্ল্যাটফর্মে অন্তর্ভুক্ত করা হয়নি। অনুগ্রহ করে অন্যান্য ১১টি ইউনিটের ৪৫টি সম্পূর্ণ লেসন অনুশীলন করুন।`,
+          keyVocab: []
         }
       ]
     };
@@ -518,13 +510,13 @@ export default function TextbookPage({
               )}
 
               {/* Key Vocabulary Chips */}
-              {sec.keyVocab && sec.keyVocab.length > 0 && (
+              {(sec.keyVocab || sec.highlightWords) && (sec.keyVocab || sec.highlightWords).length > 0 && (
                 <div className="pt-2 border-t border-[#182030] flex flex-wrap items-center gap-2 text-xs">
                   <span className="text-[11px] font-bold text-slate-400 flex items-center gap-1">
                     <Sparkles size={13} className="text-emerald-400" />
                     <span>{isBn ? 'গুরুত্বপূর্ণ শব্দসমূহ (ক্লিক করুন):' : 'Key Vocabulary (Click):'}</span>
                   </span>
-                  {sec.keyVocab.map((w, vIdx) => (
+                  {(sec.keyVocab || sec.highlightWords).map((w, vIdx) => (
                     <button
                       key={vIdx}
                       onClick={() => handleWordClick(w)}

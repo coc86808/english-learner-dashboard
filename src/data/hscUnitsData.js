@@ -218,42 +218,5 @@ export const hscUnits = [
       { id: 'u12-l4', number: 'Lesson 4', title: 'What is Environmental Justice?', titleBn: 'পরিবেশগত সুবিচার', questionsCount: '৩২ টি প্রশ্ন', wordsCount: 8, progress: 0 },
       { id: 'u12-l5', number: 'Lesson 5', title: 'Limits of the Scientific Method', titleBn: 'প্রাকৃতিক কৃষি ও মাসানোবু ফুকুওকা', questionsCount: '৩২ টি প্রশ্ন', wordsCount: 8, progress: 0 },
     ]
-  },
-  {
-    id: 'unit-13',
-    number: 13,
-    unitNumber: 'Unit 13',
-    unitTitle: 'Reading for Pleasure',
-    unitTitleBn: 'আনন্দপাঠ ও সাহিত্য সম্ভার',
-    bgClass: 'bg-[#059669] hover:bg-[#10b981]',
-    gradient: 'from-[#10b981] to-[#047857]',
-    progress: 0,
-    totalWords: 0,
-    masteredWords: 0,
-    lessons: [
-      { id: 'u13-l1', number: 'Lesson 1', title: "Sultana's Dream", titleBn: 'সুলতানার স্বপ্ন (রোকেয়া সাখাওয়াত হোসেন)', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u13-l2', number: 'Lesson 2', title: "Thank You, Ma'am", titleBn: 'থ্যাংক ইউ, ম্যাম (ল্যাংস্টন হিউজ)', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u13-l3', number: 'Lesson 3', title: 'Toba Tek Singh', titleBn: 'টোবা টেক সিং (সাদাত হাসান মান্টো)', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u13-l4', number: 'Lesson 4', title: 'Deathbed', titleBn: 'মৃত্যুশয্যা', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u13-l5', number: 'Lesson 5', title: '"Hope" is the thing with feathers', titleBn: '"আশা" পালকযুক্ত এক পাখি (এমিলি ডিকিনসন)', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u13-l6', number: 'Lesson 6', title: 'Bird', titleBn: 'পাখি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u13-l7', number: 'Lesson 7', title: 'The Proposal', titleBn: 'দ্য প্রপোজাল (আন্তন চেখভ)', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-    ]
-  },
-  {
-    id: 'unit-14',
-    number: 14,
-    unitNumber: 'Unit 14',
-    unitTitle: 'Miscellaneous',
-    unitTitleBn: 'বিবিধ দক্ষতা ও পরীক্ষা প্রস্তুতি',
-    bgClass: 'bg-[#6366f1] hover:bg-[#4f46e5]',
-    gradient: 'from-[#6366f1] to-[#4338ca]',
-    progress: 0,
-    totalWords: 0,
-    masteredWords: 0,
-    lessons: [
-      { id: 'u14-l1', number: 'Lesson 1', title: 'Cloze Test with & without Clues', titleBn: 'ক্লোজ টেস্ট উইথ অ্যান্ড উইদাউট ক্লু', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u14-l2', number: 'Lesson 2', title: 'Rearranging Sentences', titleBn: 'রি-অ্যারেঞ্জিং বা বাক্য পুনর্বিন্যাস', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-    ]
   }
 ];
