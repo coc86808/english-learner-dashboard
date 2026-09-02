@@ -115,15 +115,15 @@ export const hscUnits = [
     unitNumber: 'Unit 7',
     unitTitle: 'Youthful Achievers',
     unitTitleBn: 'তারুণ্যের অর্জন ও সাফল্য',
-    bgClass: 'bg-[#e05307] hover:bg-[#f16010]',
-    gradient: 'from-[#f16010] to-[#b33e02]',
+    bgClass: 'bg-[#d97706] hover:bg-[#b45309]',
+    gradient: 'from-[#f59e0b] to-[#d97706]',
     progress: 0,
-    totalWords: 0,
+    totalWords: 34,
     masteredWords: 0,
     lessons: [
-      { id: 'u7-l1', number: 'Lesson 1', title: 'Brojen Das: On Crossing the English Channel', titleBn: 'ব্রজেন দাস: ইংলিশ চ্যানেল পাড়ি', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u7-l2', number: 'Lesson 2', title: 'Scaling a Mountain Peak', titleBn: 'পাহাড় চূড়ায় আরোহণ', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
-      { id: 'u7-l3', number: 'Lesson 3', title: 'The Unbeaten Girls', titleBn: 'অপরাজেয় নারী ফুটবল দল', questionsCount: '০ টি প্রশ্ন', wordsCount: 0, progress: 0 },
+      { id: 'u7-l1', number: 'Lesson 1', title: 'Brojen Das: On Crossing the English Channel', titleBn: 'ব্রজেন দাস ও ইংলিশ চ্যানেল', questionsCount: '৪৮ টি প্রশ্ন', wordsCount: 12, progress: 0 },
+      { id: 'u7-l2', number: 'Lesson 2', title: 'Scaling a Mountain Peak', titleBn: 'পর্বতচূড়া আরোহণ', questionsCount: '৪৪ টি প্রশ্ন', wordsCount: 11, progress: 0 },
+      { id: 'u7-l3', number: 'Lesson 3', title: 'The Unbeaten Girls', titleBn: 'অপরাজিত বালিকারা (কলসিন্দুর)', questionsCount: '৪৪ টি প্রশ্ন', wordsCount: 11, progress: 0 },
     ]
   },
   {
