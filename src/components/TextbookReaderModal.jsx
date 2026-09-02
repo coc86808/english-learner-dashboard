@@ -46,6 +46,11 @@ import { unit10Lesson2Textbook } from '../data/textbooks/unit10Lesson2Text';
 import { unit10Lesson3Textbook } from '../data/textbooks/unit10Lesson3Text';
 import { unit10Lesson4Textbook } from '../data/textbooks/unit10Lesson4Text';
 import { unit10Lesson5Textbook } from '../data/textbooks/unit10Lesson5Text';
+import { unit11Lesson1Textbook } from '../data/textbooks/unit11Lesson1Text';
+import { unit11Lesson2Textbook } from '../data/textbooks/unit11Lesson2Text';
+import { unit11Lesson3Textbook } from '../data/textbooks/unit11Lesson3Text';
+import { unit11Lesson4Textbook } from '../data/textbooks/unit11Lesson4Text';
+import { unit11Lesson5Textbook } from '../data/textbooks/unit11Lesson5Text';
 
 export default function TextbookReaderModal({
   isOpen,
@@ -129,6 +134,18 @@ export default function TextbookReaderModal({
     currentTextbook = unit10Lesson5Textbook;
   } else if (unitId === 'unit-10' || (lessonId && lessonId.includes('u10'))) {
     currentTextbook = unit10Lesson1Textbook;
+  } else if (lessonId === 'u11-l1' || (unitId === 'unit-11' && (!lessonId || lessonId === 'u11-l1'))) {
+    currentTextbook = unit11Lesson1Textbook;
+  } else if (lessonId === 'u11-l2') {
+    currentTextbook = unit11Lesson2Textbook;
+  } else if (lessonId === 'u11-l3') {
+    currentTextbook = unit11Lesson3Textbook;
+  } else if (lessonId === 'u11-l4') {
+    currentTextbook = unit11Lesson4Textbook;
+  } else if (lessonId === 'u11-l5') {
+    currentTextbook = unit11Lesson5Textbook;
+  } else if (unitId === 'unit-11' || (lessonId && lessonId.includes('u11'))) {
+    currentTextbook = unit11Lesson1Textbook;
   }
 
   const handleSpeak = (text) => {
