@@ -399,21 +399,21 @@ export default function FlashcardsExplorer({
       ) : (
         /* 3. True 3D Dual-Sided Flip Interactive Card Container */
         <div 
-          className="w-full [perspective:1200px] min-h-[400px] sm:min-h-[440px] select-none"
+          className="w-full [perspective:1200px] min-h-[320px] sm:min-h-[420px] select-none"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
           <div 
             onClick={() => setIsFlipped(prev => !prev)}
-            className={`w-full min-h-[400px] sm:min-h-[440px] relative transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer ${
+            className={`w-full min-h-[320px] sm:min-h-[420px] relative transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer ${
               isFlipped ? '[transform:rotateY(180deg)]' : '[transform:rotateY(0deg)]'
             }`}
           >
             {/* ==================== FRONT OF CARD ==================== */}
             <div 
-              className={`absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(0deg)] rounded-3xl bg-gradient-to-b from-[#111723] via-[#0e1420] to-[#0c0f17] border ${
+              className={`absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(0deg)] rounded-2xl sm:rounded-3xl bg-gradient-to-b from-[#111723] via-[#0e1420] to-[#0c0f17] border ${
                 currentCard.isCrossReferenced ? 'border-rose-500/60 ring-2 ring-rose-500/20' : 'border-[#1e293b]'
-              } hover:border-emerald-500/40 p-6 sm:p-8 flex flex-col justify-between shadow-2xl transition-all`}
+              } hover:border-emerald-500/40 p-4 sm:p-7 flex flex-col justify-between shadow-2xl transition-all`}
             >
               {/* Card Header Row */}
               <div className="flex items-center justify-between">
@@ -490,7 +490,7 @@ export default function FlashcardsExplorer({
 
             {/* ==================== BACK OF CARD ==================== */}
             <div 
-              className="absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(180deg)] rounded-3xl bg-gradient-to-b from-[#131926] via-[#0e1420] to-[#0c0f17] border border-emerald-500/40 p-6 sm:p-8 flex flex-col justify-between shadow-2xl shadow-emerald-950/40 overflow-y-auto"
+              className="absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl sm:rounded-3xl bg-gradient-to-b from-[#131926] via-[#0e1420] to-[#0c0f17] border border-emerald-500/40 p-4 sm:p-7 flex flex-col justify-between shadow-2xl shadow-emerald-950/40 overflow-y-auto"
             >
               {/* Back Header */}
               <div className="flex items-center justify-between border-b border-[#1e293b] pb-3">

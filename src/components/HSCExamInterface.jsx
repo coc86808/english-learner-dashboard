@@ -922,7 +922,7 @@ export default function HSCExamInterface({
                       whileHover={!isAnswered ? { scale: 1.01, backgroundColor: '#161e2e' } : {}}
                       whileTap={!isAnswered ? { scale: 0.99 } : {}}
                       {...motionProps}
-                      className={`w-full p-4 rounded-2xl border text-sm sm:text-base transition-all duration-200 flex items-center justify-between text-left group cursor-pointer ${optionClasses}`}
+                      className={`w-full min-h-[52px] p-3.5 sm:p-4 rounded-2xl border text-sm sm:text-base transition-all duration-200 flex items-center justify-between text-left group cursor-pointer ${optionClasses}`}
                     >
                       <div className="flex items-center gap-3.5">
                         <span
@@ -951,7 +951,7 @@ export default function HSCExamInterface({
               </div>
 
               {/* Bottom Action Area: "Not sure" / "Next Question" */}
-              <div className="flex items-center justify-between pt-2 gap-3">
+              <div className="flex items-center justify-between pt-2 gap-2.5 sm:gap-3 flex-wrap">
                 <div className="text-xs text-slate-400 hidden sm:block">
                   {currentQ.boardExamTag && (
                     <span className="bg-[#111723] px-3 py-1.5 rounded-xl border border-[#1e293b] text-cyan-300 font-semibold flex items-center gap-1.5">
@@ -961,13 +961,13 @@ export default function HSCExamInterface({
                   )}
                 </div>
 
-                <div className="flex items-center gap-3 ml-auto">
+                <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto ml-auto">
                   {!isAnswered ? (
                     <button
                       onClick={handleNotSure}
-                      className="px-5 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] border-2 border-slate-700 hover:border-amber-500/60 text-slate-300 hover:text-amber-300 font-bold text-sm transition-all shadow-md active:scale-95 flex items-center gap-2 cursor-pointer"
+                      className="flex-1 sm:flex-initial px-4 sm:px-5 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] border-2 border-slate-700 hover:border-amber-500/60 text-slate-300 hover:text-amber-300 font-bold text-xs sm:text-sm transition-all shadow-md active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
                     >
-                      <HelpCircle size={17} className="text-amber-400" />
+                      <HelpCircle size={17} className="text-amber-400 shrink-0" />
                       <span>{isBn ? 'Not sure (নিশ্চিত নই)' : 'Not sure'}</span>
                     </button>
                   ) : (
@@ -975,7 +975,7 @@ export default function HSCExamInterface({
                       initial={{ scale: 0.95, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       onClick={handleNext}
-                      className="px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm inline-flex items-center gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer active:scale-95"
+                      className="flex-1 sm:flex-initial px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer active:scale-95"
                     >
                       <span>{isBn ? 'পরবর্তী প্রশ্ন' : 'Next Question'}</span>
                       <ArrowRight size={17} />

@@ -558,13 +558,13 @@ export default function App() {
           {currentPath === '/dashboard' && (
             <div className="max-w-[1550px] mx-auto space-y-6">
               {/* Contextual Smart Card: Resume Learning */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#141b2c] via-[#111726] to-[#0c101a] border border-emerald-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg shadow-emerald-950/20">
-                <div className="flex items-center gap-3.5">
-                  <div className="w-11 h-11 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 shadow-inner">
+              <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#141b2c] via-[#111726] to-[#0c101a] border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg shadow-emerald-950/20">
+                <div className="flex items-start sm:items-center gap-3.5">
+                  <div className="w-11 h-11 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 shadow-inner mt-0.5 sm:mt-0">
                     <BookOpen size={22} />
                   </div>
                   <div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <span className="text-white font-extrabold text-sm sm:text-base">
                         {isBn ? 'পড়াশোনা চালিয়ে যান: Unit 1 • The Parrot\'s Tale' : 'Resume Learning: Unit 1 • The Parrot\'s Tale'}
                       </span>
@@ -572,8 +572,8 @@ export default function App() {
                         NCTB 2026
                       </span>
                     </div>
-                    <p className="text-xs text-slate-400 mt-0.5">
-                      {isBn ? '৪৬টি শব্দ • ১৮৪টি বোর্ড MCQ • তোতাকাহিনী (রবীন্দ্রনাথ ঠাকুর)' : '46 Words • 184 Board MCQs • Interactive Passage & Active Recall'}
+                    <p className="text-xs text-slate-400 mt-1">
+                      {isBn ? '৫১টি শব্দ • ২০৪টি বোর্ড MCQ • তোতাকাহিনী (রবীন্দ্রনাথ ঠাকুর)' : '51 Words • 204 Board MCQs • Interactive Passage & Active Recall'}
                     </p>
                   </div>
                 </div>

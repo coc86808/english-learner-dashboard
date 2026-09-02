@@ -166,12 +166,12 @@ export default function Header({
 
         {/* Dynamic Breadcrumbs */}
         <div className="min-w-0 flex flex-col justify-center">
-          <div className="flex items-center gap-1.5 text-[11px] text-slate-400 font-medium leading-none">
+          <div className="hidden sm:flex items-center gap-1.5 text-[11px] text-slate-400 font-medium leading-none">
             <span className="text-emerald-400 font-semibold">HSC 2026</span>
             <span>/</span>
             <span className="truncate">{isBn ? breadcrumbs.sectionBn : breadcrumbs.sectionEn}</span>
           </div>
-          <h1 className="text-sm sm:text-base lg:text-lg font-bold text-white tracking-tight truncate leading-tight mt-0.5">
+          <h1 className="text-sm sm:text-base lg:text-lg font-bold text-white tracking-tight truncate leading-tight mt-0.5 max-w-[130px] xs:max-w-[180px] sm:max-w-none">
             {isBn ? breadcrumbs.titleBn : breadcrumbs.titleEn}
           </h1>
         </div>
@@ -201,14 +201,14 @@ export default function Header({
       </div>
 
       {/* 3. Right Action Tools */}
-      <div className="flex items-center gap-2 sm:gap-2.5 md:gap-3">
+      <div className="flex items-center gap-1.5 sm:gap-2.5 md:gap-3">
         {/* Mobile Search Toggle */}
         <button
           onClick={() => setIsSearchOpen(!isSearchOpen)}
-          className="md:hidden p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#151c2a] transition-all"
+          className="md:hidden p-1.5 sm:p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#151c2a] transition-all"
           title="Search"
         >
-          <Search size={18} />
+          <Search size={17} />
         </button>
 
         {/* Daily Streak Flame Counter */}
@@ -219,11 +219,11 @@ export default function Header({
               : `🔥 Your Active Streak: ${streakCount} Days!\nKeep practicing daily to build your retention streak.`
             );
           })}
-          className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-full bg-[#18131e] border border-orange-500/30 hover:border-orange-500/60 text-orange-400 font-bold text-xs shadow-sm hover:scale-105 transition-all cursor-pointer group"
+          className="flex items-center gap-1 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full bg-[#18131e] border border-orange-500/30 hover:border-orange-500/60 text-orange-400 font-bold text-xs shadow-sm hover:scale-105 transition-all cursor-pointer group"
           title={isBn ? `স্ট্রিক: ${streakCount} দিন` : `Streak: ${streakCount} Days`}
         >
-          <Flame size={15} className="text-orange-500 fill-orange-500 animate-flame" />
-          <span>{streakCount}</span>
+          <Flame size={14} className="text-orange-500 fill-orange-500 animate-flame" />
+          <span className="text-[11px] sm:text-xs">{streakCount}</span>
           <span className="hidden sm:inline text-[10px] text-orange-400/80 font-normal">
             {isBn ? 'দিন' : 'd'}
           </span>
@@ -232,10 +232,10 @@ export default function Header({
         {/* Language Switcher Button */}
         <button
           onClick={() => setLang(lang === 'bn' ? 'en' : 'bn')}
-          className="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-[#111723] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white transition-all flex items-center gap-1.5 cursor-pointer shadow-sm active:scale-95"
+          className="px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-xl text-[11px] sm:text-xs font-bold bg-[#111723] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white transition-all flex items-center gap-1 sm:gap-1.5 cursor-pointer shadow-sm active:scale-95"
           title={isBn ? 'Switch to English' : 'বাংলায় দেখুন'}
         >
-          <Languages size={14} className="text-emerald-400" />
+          <Languages size={13} className="text-emerald-400" />
           <span>{lang === 'bn' ? 'বাং' : 'EN'}</span>
         </button>
 
@@ -249,7 +249,7 @@ export default function Header({
                 onOpenAdmin();
               }
             }}
-            className={`px-2.5 py-1.5 rounded-xl text-xs font-extrabold border transition-all flex items-center gap-1.5 shadow-sm cursor-pointer ${
+            className={`px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-xl text-xs font-extrabold border transition-all flex items-center gap-1.5 shadow-sm cursor-pointer ${
               isAdminActive
                 ? 'bg-purple-600 border-purple-400 text-white shadow-purple-950/60'
                 : 'bg-[#181326] border-purple-500/30 text-purple-300 hover:border-purple-500/60 hover:text-white'
@@ -263,7 +263,7 @@ export default function Header({
           </button>
         )}
 
-        {/* Notifications Bell */}
+        {/* Notifications Bell (Desktop) */}
         <button
           onClick={onOpenNotifications || (() => {
             alert(isBn 
@@ -271,7 +271,7 @@ export default function Header({
               : '📢 Notifications: 858 Textbook Vocabulary words and 3,432 Board Standard MCQs are ready for practice!'
             );
           })}
-          className="relative p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#151c2a] border border-transparent hover:border-[#1e293b] transition-all cursor-pointer"
+          className="hidden sm:flex relative p-2 rounded-xl text-slate-400 hover:text-white hover:bg-[#151c2a] border border-transparent hover:border-[#1e293b] transition-all cursor-pointer"
           title={isBn ? 'নোটিফিকেশন' : 'Notifications'}
         >
           <Bell size={18} />

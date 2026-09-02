@@ -26,7 +26,8 @@ import {
   Play,
   RotateCcw,
   ListFilter,
-  SlidersHorizontal
+  SlidersHorizontal,
+  ArrowRight
 } from 'lucide-react';
 import { hscVocabularyList } from '../data/questions';
 import { hscUnits } from '../data/hscUnitsData';
@@ -54,6 +55,10 @@ export default function VocabularyBank({
   // Words to Learn Limit State (DEFAULT = 10)
   const [wordsLimit, setWordsLimit] = useState(10); // 10 | 20 | 30 | 50 | 'all'
   const [currentPage, setCurrentPage] = useState(1);
+
+  // View Mode State ('card' on mobile by default, user can switch to 'table')
+  const [viewMode, setViewMode] = useState('card');
+  const [showMobileFilterDrawer, setShowMobileFilterDrawer] = useState(false);
 
   // Interactive Expandable Rows State
   const [expandedWordIds, setExpandedWordIds] = useState(new Set());
@@ -327,21 +332,21 @@ export default function VocabularyBank({
   return (
     <div className="space-y-6 animate-in fade-in duration-300 pb-10">
       {/* Top Banner & NCTB Header Card with Glassmorphic Gradient */}
-      <div className="no-print p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#111723] via-[#0d1320] to-[#121927] border border-[#1e293b] shadow-2xl relative overflow-hidden backdrop-blur-xl">
+      <div className="no-print p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#111723] via-[#0d1320] to-[#121927] border border-[#1e293b] shadow-2xl relative overflow-hidden backdrop-blur-xl">
         {/* Glow Spheres */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="space-y-2 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
-              <BookOpen size={14} />
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6">
+          <div className="space-y-1.5 sm:space-y-2 max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+              <BookOpen size={13} />
               <span>{isBn ? 'অফিসিয়াল এনসিটিবি শিট' : 'Official NCTB Guide Sheet'}</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+            <h1 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
               {isBn ? 'ভোকাবুলারি ব্যাংক (Vocabulary Bank)' : 'HSC Vocabulary Bank'}
             </h1>
-            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            <p className="hidden sm:block text-slate-300 text-xs sm:text-sm leading-relaxed">
               {isBn
                 ? 'পাঠ্যবই ও বোর্ড স্ট্যান্ডার্ড প্রতিটি শব্দের বাংলা অর্থ, সমার্থক শব্দ (Synonyms), বিপরীত শব্দ (Antonyms), ইংরেজি সংজ্ঞা ও বাক্যে প্রয়োগের পূর্ণাঙ্গ শিট। একবারে কতটি শব্দ শিখবেন তা পছন্দ করুন (ডিফল্ট: ১০টি)।'
                 : 'Interactive 4-column textbook sheet with Bengali Meanings, Synonyms, Antonyms, English Definitions, and Board Exam Tags. Choose how many words to learn at a time (Default: 10).'}
@@ -349,7 +354,7 @@ export default function VocabularyBank({
           </div>
 
           {/* Quick Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <button
               onClick={handleDownloadPDF}
               className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-extrabold flex items-center gap-2 shadow-lg shadow-emerald-950/60 cursor-pointer transition-all active:scale-95"
@@ -380,9 +385,47 @@ export default function VocabularyBank({
           </div>
         </div>
 
-        {/* Multi-Level Filter Controls (5-Column Responsive Grid) */}
-        <div className="mt-6 pt-6 border-t border-[#1e293b] space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+        {/* Multi-Level Filter Controls */}
+        <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-[#1e293b] space-y-3.5">
+          {/* Mobile Filter Toggle Header (Visible only on mobile) */}
+          <div className="flex sm:hidden items-center justify-between gap-2">
+            <div className="relative flex-1">
+              <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder={isBn ? 'শব্দ বা অর্থ খুঁজুন...' : 'Search word or meaning...'}
+                className="w-full pl-8 pr-7 py-2 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-xs text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 font-medium"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 p-1"
+                >
+                  <X size={12} />
+                </button>
+              )}
+            </div>
+
+            <button
+              onClick={() => setShowMobileFilterDrawer(!showMobileFilterDrawer)}
+              className={`px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 border transition-all cursor-pointer ${
+                showMobileFilterDrawer || selectedUnitId !== 'all' || selectedStatusFilter !== 'all'
+                  ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40'
+                  : 'bg-[#141b2a] text-slate-300 border-[#1e293b]'
+              }`}
+            >
+              <SlidersHorizontal size={13} />
+              <span>{isBn ? 'ফিল্টার' : 'Filters'}</span>
+              {(selectedUnitId !== 'all' || selectedStatusFilter !== 'all') && (
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+              )}
+            </button>
+          </div>
+
+          {/* Filter Dropdowns Grid (Always visible on desktop, toggleable on mobile) */}
+          <div className={`${showMobileFilterDrawer ? 'grid' : 'hidden sm:grid'} grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3`}>
             {/* 1. SELECT UNIT */}
             <div className="relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
@@ -474,8 +517,8 @@ export default function VocabularyBank({
               </div>
             </div>
 
-            {/* 4. SEARCH BAR */}
-            <div className="relative">
+            {/* 4. SEARCH BAR (Desktop) */}
+            <div className="hidden sm:block relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <Search size={12} className="text-amber-400" />
                 <span>{isBn ? '৪. শব্দ অনুসন্ধান' : '4. Search Word'}</span>
@@ -608,31 +651,57 @@ export default function VocabularyBank({
               </button>
             </div>
 
+            {/* View Mode Switcher: Cards vs Table */}
+            <div className="inline-flex rounded-xl bg-[#0c0f17] border border-[#1e293b] p-0.5 shadow-inner">
+              <button
+                onClick={() => setViewMode('card')}
+                className={`px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                  viewMode === 'card'
+                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-950/50'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                <Layers size={13} />
+                <span>{isBn ? 'কার্ড' : 'Cards'}</span>
+              </button>
+              <button
+                onClick={() => setViewMode('table')}
+                className={`px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                  viewMode === 'table'
+                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-950/50'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                <FileText size={13} />
+                <span>{isBn ? 'টেবিল' : 'Table'}</span>
+              </button>
+            </div>
+
             {/* Expand / Collapse All & Showing Counter */}
-            <div className="flex items-center gap-3 text-slate-300">
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 text-slate-300">
               <div className="flex items-center gap-1.5 text-[11px]">
                 <button
                   onClick={expandAll}
-                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold cursor-pointer"
+                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold cursor-pointer text-[10px] sm:text-[11px]"
                 >
                   {isBn ? 'সব প্রসারিত' : 'Expand All'}
                 </button>
                 <button
                   onClick={collapseAll}
-                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold cursor-pointer"
+                  className="px-2 py-1 rounded bg-[#162033] hover:bg-[#1f2d48] border border-[#233148] text-slate-300 hover:text-white transition-all font-semibold cursor-pointer text-[10px] sm:text-[11px]"
                 >
                   {isBn ? 'সব গুটিয়ে' : 'Collapse All'}
                 </button>
               </div>
 
-              <span className="font-medium text-slate-300">
+              <span className="font-medium text-slate-300 text-xs">
                 {isBn ? 'প্রদর্শিত: ' : 'Showing: '}
                 <strong className="text-emerald-400 font-bold">
                   {totalFilteredCount > 0 ? `${startIndex + 1} - ${endIndex}` : 0}
                 </strong>{' '}
                 / {totalFilteredCount} {isBn ? 'শব্দ' : 'words'}
                 {!isLimitAll && totalPages > 1 && (
-                  <span className="text-slate-400 text-[11px] ml-1">
+                  <span className="text-slate-400 text-[11px] ml-1 hidden sm:inline">
                     ({isBn ? `পৃষ্ঠা ${safeCurrentPage}/${totalPages}` : `Page ${safeCurrentPage}/${totalPages}`})
                   </span>
                 )}
@@ -641,7 +710,7 @@ export default function VocabularyBank({
               {hasActiveFilters && (
                 <button
                   onClick={resetAllFilters}
-                  className="text-amber-400 hover:underline cursor-pointer font-bold ml-1"
+                  className="text-amber-400 hover:underline cursor-pointer font-bold ml-1 text-xs"
                 >
                   {isBn ? 'রিসেট' : 'Reset All'}
                 </button>
@@ -651,10 +720,183 @@ export default function VocabularyBank({
         </div>
       </div>
 
-      {/* Main Vocabulary Sheet (Sticky Emerald Header + Dark Glassmorphic Alternating Rows) */}
-      <div className="bg-[#111723] border border-[#1e293b] rounded-3xl shadow-2xl overflow-hidden backdrop-blur-xl">
-        <div className="overflow-x-auto max-h-[780px] overflow-y-auto relative">
-          <table className="w-full text-left border-collapse">
+      {/* Main Vocabulary Container (Cards View or Sticky Table View) */}
+      <div className="bg-[#111723] border border-[#1e293b] rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden backdrop-blur-xl">
+        {viewMode === 'card' ? (
+          <div className="p-3 sm:p-5">
+            {displayedList.length > 0 ? (
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-3.5 sm:gap-4">
+                {displayedList.map((item, index) => {
+                  const serialNum = startIndex + index + 1;
+                  const weak = isWeak(item);
+                  const isAudioActive = speakingWord === item.word;
+
+                  return (
+                    <div
+                      key={item.id || index}
+                      className={`p-4 rounded-2xl border transition-all duration-200 ${
+                        item.isCrossReferenced
+                          ? 'bg-gradient-to-b from-[#1a1322] via-[#121622] to-[#121622] border-rose-500/40 shadow-lg shadow-rose-950/20'
+                          : 'bg-[#131926] border-[#1e293b] hover:border-emerald-500/40'
+                      }`}
+                    >
+                      {/* Card Header */}
+                      <div className="flex items-start justify-between gap-2.5">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
+                            <span className="text-xs font-mono text-slate-500 font-bold">#{serialNum}</span>
+                            <h3 className="text-lg font-black text-white tracking-tight">{item.word}</h3>
+                            {item.partsOfSpeech && (
+                              <span className="px-2 py-0.5 rounded-md bg-[#1e2a3d] border border-[#2b3b55] text-slate-300 text-[10px] font-bold">
+                                {item.partsOfSpeech}
+                              </span>
+                            )}
+                            {item.boardExamTag && (
+                              <span className="px-2 py-0.5 rounded-md bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 text-[10px] font-bold flex items-center gap-1">
+                                <BookOpen size={10} />
+                                <span>{item.boardExamTag}</span>
+                              </span>
+                            )}
+                          </div>
+
+                          {item.isCrossReferenced && (
+                            <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-rose-500/15 border border-rose-500/30 text-rose-300 text-[10px] font-bold mb-1">
+                              <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping" />
+                              <span>{isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}</span>
+                            </div>
+                          )}
+                          {item.sources && item.sources.length > 1 && (
+                            <span className="inline-block px-1.5 py-0.5 rounded bg-blue-500/20 border border-blue-500/40 text-blue-300 text-[9px] font-bold mb-1 ml-1">
+                              📚 {item.sources.length} {isBn ? 'লেসনে' : 'lessons'}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Quick Audio & Bookmark */}
+                        <div className="flex items-center gap-1 shrink-0">
+                          <button
+                            onClick={(e) => handleSpeak(item.word, e)}
+                            className={`p-2.5 rounded-xl transition-all cursor-pointer flex items-center justify-center ${
+                              isAudioActive
+                                ? 'bg-emerald-500 text-slate-950 ring-2 ring-emerald-300 shadow-md'
+                                : 'bg-[#1a2334] text-emerald-400 hover:bg-[#22314a] border border-[#273752]'
+                            }`}
+                            title="Pronounce"
+                          >
+                            <Volume2 size={16} />
+                          </button>
+                          {onToggleWeakWord && (
+                            <button
+                              onClick={() => onToggleWeakWord(item)}
+                              className={`p-2.5 rounded-xl transition-all cursor-pointer flex items-center justify-center ${
+                                weak
+                                  ? 'bg-rose-500 text-white shadow-md'
+                                  : 'bg-[#1a2334] text-slate-400 hover:text-amber-400 hover:bg-[#22314a] border border-[#273752]'
+                              }`}
+                              title={weak ? 'Remove from weak words' : 'Mark as weak word'}
+                            >
+                              <Bookmark size={16} className={weak ? 'fill-current' : ''} />
+                            </button>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Bengali Meaning */}
+                      <div className="mt-2.5 p-3 rounded-xl bg-[#0c121e] border border-emerald-500/25">
+                        <span className="text-[10px] uppercase font-bold text-emerald-400/80 tracking-wider block mb-0.5">
+                          🇧🇩 {isBn ? 'বাংলা অর্থ' : 'Bangla Meaning'}
+                        </span>
+                        <p className="text-base sm:text-lg font-black text-emerald-300 leading-snug">
+                          {item.bengaliMeaning}
+                        </p>
+                      </div>
+
+                      {/* Synonyms & Antonyms */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2.5">
+                        <div className="p-2.5 rounded-xl bg-[#0c121e] border border-[#1a2538]">
+                          <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-0.5">
+                            🔄 {isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms'}
+                          </span>
+                          <p className="text-xs text-slate-200 font-medium leading-relaxed">
+                            {item.synonyms || '—'}
+                          </p>
+                        </div>
+                        <div className="p-2.5 rounded-xl bg-[#0c121e] border border-rose-950/50">
+                          <span className="text-[10px] uppercase font-bold text-rose-400/80 tracking-wider block mb-0.5">
+                            🔀 {isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms'}
+                          </span>
+                          <p className="text-xs text-rose-300 font-medium leading-relaxed">
+                            {item.antonyms || '—'}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* English Definition */}
+                      {item.englishMeaning && (
+                        <div className="mt-2.5 p-2.5 rounded-xl bg-[#0c121e]/60 border border-[#1a2538]">
+                          <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-0.5">
+                            📖 {isBn ? 'ইংরেজি সংজ্ঞা' : 'English Definition'}
+                          </span>
+                          <p className="text-xs text-slate-300 font-medium leading-relaxed">
+                            {item.englishMeaning}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Verbatim Textbook Example Sentence */}
+                      {item.exampleSentence && (
+                        <div className="mt-2.5 p-3 rounded-xl bg-[#090f18] border border-cyan-950/60">
+                          <span className="text-[10px] uppercase font-bold text-cyan-400 tracking-wider block mb-1 flex items-center gap-1">
+                            <BookOpen size={11} />
+                            <span>{isBn ? 'পাঠ্যবইয়ের প্রামাণিক বাক্য' : 'Textbook Passage Sentence'}</span>
+                          </span>
+                          <p className="text-xs text-slate-300 italic leading-relaxed">
+                            "{item.exampleSentence}"
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Card Footer */}
+                      <div className="mt-3 pt-2.5 border-t border-[#1a2538] flex items-center justify-between gap-2">
+                        <span className="text-[10px] text-slate-400 truncate max-w-[180px]">
+                          {item.unit}
+                        </span>
+                        {onStartExam && (
+                          <button
+                            onClick={() => onStartExam(item.unit, item.lesson)}
+                            className="px-3 py-1.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95 cursor-pointer"
+                          >
+                            <span>{isBn ? 'MCQ পরীক্ষা' : 'Practice MCQ'}</span>
+                            <ArrowRight size={12} />
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="py-16 text-center text-slate-400">
+                <div className="max-w-md mx-auto space-y-3">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center text-slate-400 mx-auto">
+                    <Filter size={24} />
+                  </div>
+                  <p className="text-base font-bold text-white">
+                    {isBn ? 'এই ফিল্টারে কোনো শব্দ পাওয়া যায়নি।' : 'No vocabulary words found for this selection.'}
+                  </p>
+                  <button
+                    onClick={resetAllFilters}
+                    className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-all cursor-pointer"
+                  >
+                    {isBn ? 'সকল ফিল্টার রিসেট করুন' : 'Reset All Filters'}
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="overflow-x-auto max-h-[780px] overflow-y-auto relative">
+            <table className="w-full text-left border-collapse">
             {/* Sticky Emerald Header */}
             <thead className="sticky top-0 z-20 bg-[#065f46] text-white shadow-lg backdrop-blur-md">
               <tr className="text-xs sm:text-sm font-extrabold tracking-wide uppercase">
@@ -946,6 +1188,7 @@ export default function VocabularyBank({
             </tbody>
           </table>
         </div>
+        )}
 
         {/* Pagination & Next Slice Learning Controls */}
         {!isLimitAll && totalPages > 1 && (

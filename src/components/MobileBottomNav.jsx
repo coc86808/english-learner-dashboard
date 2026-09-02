@@ -18,7 +18,7 @@ export default function MobileBottomNav({
 }) {
   const isBn = lang === 'bn';
 
-  // 5 core student items specified in Milestone 1 requirements
+  // 5 core student items optimized for high-yield mobile learning
   const navItems = [
     {
       id: 'dashboard',
@@ -28,10 +28,10 @@ export default function MobileBottomNav({
       icon: LayoutDashboard
     },
     {
-      id: 'textbook',
-      path: '/textbook',
-      labelEn: 'Textbook',
-      labelBn: 'পাঠ্যবই',
+      id: 'vocabulary',
+      path: '/vocabulary',
+      labelEn: 'Vocab',
+      labelBn: 'ভোকাব',
       icon: BookOpen
     },
     {
@@ -43,11 +43,11 @@ export default function MobileBottomNav({
       isPrimary: true
     },
     {
-      id: 'progress',
-      path: '/progress',
-      labelEn: 'Progress',
-      labelBn: 'প্রগ্রেস',
-      icon: TrendingUp
+      id: 'flashcards',
+      path: '/flashcards',
+      labelEn: 'Cards',
+      labelBn: 'কার্ড',
+      icon: Sparkles
     },
     {
       id: 'menu',
@@ -76,8 +76,16 @@ export default function MobileBottomNav({
     const normPath = (currentPath || '').toLowerCase();
     const normItemPath = item.path.toLowerCase();
     if (normPath === normItemPath) return true;
-    if (activeTab === item.id) return true;
-    if (item.id === 'exams' && (normPath === '/exam' || normPath === '/exams' || normPath === '/units' || normPath === '/practice')) {
+    if (item.id === 'vocabulary' && (normPath === '/vocabulary' || normPath === '/vocabulary-bank')) {
+      return true;
+    }
+    if (item.id === 'flashcards' && normPath === '/flashcards') {
+      return true;
+    }
+    if (item.id === 'exams' && (normPath === '/exam' || normPath === '/exams' || normPath === '/practice')) {
+      return true;
+    }
+    if (item.id === 'dashboard' && (normPath === '/dashboard' || normPath === '/')) {
       return true;
     }
     return false;
