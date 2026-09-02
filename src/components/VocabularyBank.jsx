@@ -116,17 +116,10 @@ export default function VocabularyBank({
   // Extract unique boards available in the dataset for filtering
   const boardFilterOptions = useMemo(() => {
     return [
-      { id: 'all', label: isBn ? 'সকল বোর্ড (All Boards)' : 'All Board Standards' },
-      { id: 'dhaka', label: 'Dhaka Board' },
-      { id: 'chattogram', label: 'Chattogram Board' },
-      { id: 'rajshahi', label: 'Rajshahi Board' },
-      { id: 'sylhet', label: 'Sylhet Board' },
-      { id: 'cumilla', label: 'Cumilla Board' },
-      { id: 'barishal', label: 'Barishal Board' },
-      { id: 'jashore', label: 'Jashore Board' },
-      { id: 'mymensingh', label: 'Mymensingh Board' },
-      { id: 'dinajpur', label: 'Dinajpur Board' },
-      { id: 'standard', label: 'HSC Board Standard' }
+      { id: 'all', label: isBn ? 'সকল শব্দাবলী (All Words)' : 'All Words (Full Bank)' },
+      { id: 'redMark', label: isBn ? '🔥 রেড মার্ক শব্দ (২০৬টি)' : '🔥 Red Mark Inter-Unit (206)' },
+      { id: 'multiSource', label: isBn ? '📚 একাধিক লেসনে উপস্থিত শব্দ' : '📚 Multi-Lesson Words' },
+      { id: 'weak', label: isBn ? '⚠️ দুর্বল শব্দাবলী (Weak Words)' : '⚠️ Weak Words Queue' }
     ];
   }, [isBn]);
 
@@ -174,19 +167,13 @@ export default function VocabularyBank({
         }
       }
 
-      // 2. Board Exam Filter
-      if (selectedBoardFilter !== 'all') {
-        const tag = (item.boardExamTag || '').toLowerCase();
-        if (selectedBoardFilter === 'dhaka' && !tag.includes('dhaka')) return false;
-        if (selectedBoardFilter === 'chattogram' && !tag.includes('chattogram')) return false;
-        if (selectedBoardFilter === 'rajshahi' && !tag.includes('rajshahi')) return false;
-        if (selectedBoardFilter === 'sylhet' && !tag.includes('sylhet')) return false;
-        if (selectedBoardFilter === 'cumilla' && !tag.includes('cumilla')) return false;
-        if (selectedBoardFilter === 'barishal' && !tag.includes('barishal')) return false;
-        if (selectedBoardFilter === 'jashore' && !tag.includes('jashore')) return false;
-        if (selectedBoardFilter === 'mymensingh' && !tag.includes('mymensingh')) return false;
-        if (selectedBoardFilter === 'dinajpur' && !tag.includes('dinajpur')) return false;
-        if (selectedBoardFilter === 'standard' && !tag.includes('standard') && !tag.includes('model')) return false;
+      // 2. Word Status / Category Filter
+      if (selectedBoardFilter === 'redMark') {
+        if (!item.isCrossReferenced) return false;
+      } else if (selectedBoardFilter === 'multiSource') {
+        if (!item.sources || item.sources.length <= 1) return false;
+      } else if (selectedBoardFilter === 'weak') {
+        if (!isWeak(item)) return false;
       }
 
       // 3. Status Filter (Weak Words vs Red Mark vs Clean/Mastered)
@@ -516,8 +503,8 @@ export default function VocabularyBank({
             {/* 5. BOARD EXAM & STATUS FILTER */}
             <div className="relative">
               <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                <Award size={12} className="text-purple-400" />
-                <span>{isBn ? '৫. বোর্ড ও স্ট্যাটাস' : '5. Board & Status'}</span>
+                <Sparkles size={12} className="text-purple-400" />
+                <span>{isBn ? '৫. ফিল্টার ও ধরন' : '5. Filter & Status'}</span>
               </label>
               <div className="relative">
                 <select
@@ -745,8 +732,9 @@ export default function VocabularyBank({
                                   </span>
                                 )}
                                 {item.boardExamTag && (
-                                  <span className="px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 text-amber-300 text-[9px] font-semibold truncate max-w-[120px]">
-                                    {item.boardExamTag.split(',')[0]}
+                                  <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-[10px] font-bold truncate max-w-[140px] flex items-center gap-1 shadow-sm">
+                                    <BookOpen size={10} />
+                                    <span>{item.boardExamTag}</span>
                                   </span>
                                 )}
                               </div>
@@ -849,8 +837,8 @@ export default function VocabularyBank({
                                     </span>
                                   )}
                                   {item.boardExamTag && (
-                                    <span className="text-xs font-bold text-amber-300 bg-amber-500/15 border border-amber-500/30 px-2.5 py-0.5 rounded-md flex items-center gap-1">
-                                      <Award size={12} />
+                                    <span className="text-xs font-bold text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-0.5 rounded-md flex items-center gap-1">
+                                      <BookOpen size={12} />
                                       <span>{item.boardExamTag}</span>
                                     </span>
                                   )}

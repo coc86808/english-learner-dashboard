@@ -674,8 +674,8 @@ export default function TextbookPage({
 
               {/* Modal Footer CTA */}
               <div className="pt-2 border-t border-[#1e2a3e] flex items-center justify-between gap-3">
-                <span className="text-[11px] text-slate-400 truncate">
-                  Tag: {selectedVocab.boardExamTag || 'HSC 2026'}
+                <span className="text-[11px] text-cyan-300 font-semibold truncate flex items-center gap-1">
+                  📖 {selectedVocab.boardExamTag || (selectedVocab.unit ? selectedVocab.unit.split(':')[0] : 'NCTB Curriculum')}
                 </span>
                 <button
                   onClick={() => {

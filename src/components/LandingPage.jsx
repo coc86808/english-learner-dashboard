@@ -42,7 +42,7 @@ export default function LandingPage({
       synonyms: ['Aspiring', 'Driven', 'Determined', 'Goal-oriented'],
       antonyms: ['Aimless', 'Lazy', 'Unambitious', 'Apathetic'],
       sentence: 'The nephew was ambitious to educate the wild bird in royal fashion.',
-      boardTag: 'Dhaka Board 2024'
+      boardTag: 'Unit 1 • Lesson 1'
     },
     {
       word: 'Unlettered',
@@ -54,7 +54,7 @@ export default function LandingPage({
       synonyms: ['Illiterate', 'Uneducated', 'Ignorant', 'Untaught'],
       antonyms: ['Literate', 'Educated', 'Scholarly', 'Learned'],
       sentence: 'It was unlettered; it did not sing from the scriptures.',
-      boardTag: 'Rajshahi Board 2023'
+      boardTag: 'Unit 1 • Lesson 1'
     },
     {
       word: 'Distinction',
@@ -66,19 +66,19 @@ export default function LandingPage({
       synonyms: ['Prestige', 'Excellence', 'Differentiation', 'Renown'],
       antonyms: ['Insignificance', 'Mediocrity', 'Sameness'],
       sentence: 'The scholars of distinction gathered with stacks of golden manuscripts.',
-      boardTag: 'Cumilla Board 2024'
+      boardTag: 'Unit 1 • Lesson 1'
     },
     {
       word: 'Persevere',
       pos: 'Verb',
       phonetic: '/ˌpɜː.sɪˈvɪər/',
-      unit: 'Unit 3 • Dreams',
+      unit: 'Unit 6 • Dreams',
       meaningBn: 'অধ্যবসায় করা / শত বাধাতেও চালিয়ে যাওয়া',
       meaningEn: 'Continue in a course of action even in the face of difficulty.',
       synonyms: ['Persist', 'Endure', 'Carry on', 'Tenacious'],
       antonyms: ['Give up', 'Surrender', 'Abandon', 'Yield'],
       sentence: 'HSC candidates must persevere through rigorous vocabulary recall.',
-      boardTag: 'Chattogram Board 2023'
+      boardTag: 'Unit 6 • Lesson 1'
     }
   ];
 

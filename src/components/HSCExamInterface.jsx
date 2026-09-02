@@ -954,8 +954,9 @@ export default function HSCExamInterface({
               <div className="flex items-center justify-between pt-2 gap-3">
                 <div className="text-xs text-slate-400 hidden sm:block">
                   {currentQ.boardExamTag && (
-                    <span className="bg-[#111723] px-3 py-1.5 rounded-xl border border-[#1e293b] text-slate-300">
-                      📌 {currentQ.boardExamTag}
+                    <span className="bg-[#111723] px-3 py-1.5 rounded-xl border border-[#1e293b] text-cyan-300 font-semibold flex items-center gap-1.5">
+                      <span>📖</span>
+                      <span>{currentQ.boardExamTag}</span>
                     </span>
                   )}
                 </div>
