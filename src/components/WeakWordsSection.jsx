@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   FileDown, 
   AlertCircle, 
@@ -9,7 +9,9 @@ import {
   Layers, 
   Play, 
   Sparkles,
-  BookOpen
+  BookOpen,
+  Printer,
+  X
 } from 'lucide-react';
 import { generateWeakWordsPDF } from '../utils/pdfGenerator';
 import { hscVocabularyList } from '../data/questions/hscQuestionsData';
@@ -20,10 +22,75 @@ export default function WeakWordsSection({
   onStartWeakWordsExam,
   onOpenFlashcards,
   lang = 'en',
-  studentInfo = { name: 'Tanvir Ahmed', college: 'Notre Dame College, Dhaka', batch: 'HSC 2026' }
+  studentInfo = {},
+  currentUser = null
 }) {
   const isBn = lang === 'bn';
   const [searchQuery, setSearchQuery] = useState('');
+
+  // PDF Export Customization Modal State
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [pdfStudentName, setPdfStudentName] = useState(() => {
+    try {
+      if (currentUser?.name && currentUser.name !== 'Tanvir Ahmed' && currentUser.name !== 'HSC Candidate') {
+        return currentUser.name;
+      }
+      if (studentInfo?.name && studentInfo.name !== 'Tanvir Ahmed' && studentInfo.name !== 'HSC Candidate') {
+        return studentInfo.name;
+      }
+      const savedPdf = localStorage.getItem('hsc_student_pdf_info');
+      if (savedPdf) {
+        const p = JSON.parse(savedPdf);
+        if (p.name) return p.name;
+      }
+      const savedAuth = localStorage.getItem('hsc_auth_user');
+      if (savedAuth) {
+        const a = JSON.parse(savedAuth);
+        if (a.name && a.name !== 'Tanvir Ahmed') return a.name;
+      }
+    } catch (e) {}
+    return '';
+  });
+
+  const [pdfCollege, setPdfCollege] = useState(() => {
+    try {
+      if (currentUser?.college && !currentUser.college.includes('Notre Dame College')) {
+        return currentUser.college;
+      }
+      if (studentInfo?.college && !studentInfo.college.includes('Notre Dame College')) {
+        return studentInfo.college;
+      }
+      const savedPdf = localStorage.getItem('hsc_student_pdf_info');
+      if (savedPdf) {
+        const p = JSON.parse(savedPdf);
+        if (p.college) return p.college;
+      }
+      const savedAuth = localStorage.getItem('hsc_auth_user');
+      if (savedAuth) {
+        const a = JSON.parse(savedAuth);
+        if (a.college && !a.college.includes('Notre Dame College')) return a.college;
+      }
+    } catch (e) {}
+    return '';
+  });
+
+  const [pdfBatch, setPdfBatch] = useState(() => {
+    return currentUser?.hscBatch || currentUser?.batch || studentInfo?.batch || 'HSC 2026';
+  });
+
+  useEffect(() => {
+    if (currentUser) {
+      if (currentUser.name && currentUser.name !== 'Tanvir Ahmed' && currentUser.name !== 'HSC Candidate') {
+        setPdfStudentName(currentUser.name);
+      }
+      if (currentUser.college && !currentUser.college.includes('Notre Dame College')) {
+        setPdfCollege(currentUser.college);
+      }
+      if (currentUser.hscBatch || currentUser.batch) {
+        setPdfBatch(currentUser.hscBatch || currentUser.batch);
+      }
+    }
+  }, [currentUser]);
 
   // Use only genuine weak words tracked for this student (no fake fallback)
   const effectiveWeakWords = (Array.isArray(weakWords) ? weakWords : []).filter(
@@ -53,11 +120,34 @@ export default function WeakWordsSection({
   };
 
   const handleDownloadPDF = () => {
+    setIsPdfModalOpen(true);
+  };
+
+  const confirmDownloadPDF = (e) => {
+    if (e) e.preventDefault();
+    const chosenName = pdfStudentName.trim() || currentUser?.name || 'HSC Examinee';
+    const chosenCollege = pdfCollege.trim() || currentUser?.college || '';
+    const chosenBatch = pdfBatch.trim() || 'HSC 2026';
+
+    try {
+      localStorage.setItem('hsc_student_pdf_info', JSON.stringify({
+        name: chosenName,
+        college: chosenCollege,
+        batch: chosenBatch
+      }));
+    } catch (err) {}
+
     generateWeakWordsPDF({
       words: effectiveWeakWords,
-      studentInfo,
+      studentInfo: {
+        name: chosenName,
+        college: chosenCollege,
+        batch: chosenBatch
+      },
       lang
     });
+
+    setIsPdfModalOpen(false);
   };
 
   return (
@@ -210,6 +300,105 @@ export default function WeakWordsSection({
               ? 'আপনার সব ভোকাবুলারি আয়ত্তে রয়েছে। ফ্ল্যাশকার্ড বা পরীক্ষা দেওয়ার সময় ভুল হওয়া শব্দগুলো এখানে দেখাবে।'
               : 'You have mastered all tracked words! Any missed words from exams or flashcards will appear here.'}
           </p>
+        </div>
+      )}
+
+      {/* PDF Export Customization Modal */}
+      {isPdfModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-150">
+          <div className="bg-[#111723] border border-rose-500/40 rounded-3xl p-5 sm:p-6 max-w-md w-full shadow-2xl space-y-4 text-slate-100">
+            <div className="flex items-center justify-between pb-3 border-b border-[#1e293b]">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center border border-rose-500/30">
+                  <Printer size={20} />
+                </div>
+                <div>
+                  <h3 className="text-base font-black text-white">
+                    {isBn ? 'দুর্বল শব্দ PDF মুদ্রণ' : 'Weak Words PDF Export'}
+                  </h3>
+                  <p className="text-[11px] text-slate-400">
+                    {isBn ? 'আপনার নাম ও কলেজের তথ্য অনুযায়ী শিট প্রিন্ট হবে' : 'Personalize student name and college on the PDF'}
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsPdfModalOpen(false)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-all cursor-pointer"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <form onSubmit={confirmDownloadPDF} className="space-y-3.5 text-xs">
+              <div>
+                <label className="block text-slate-300 font-bold mb-1 flex items-center justify-between">
+                  <span>{isBn ? 'শিক্ষার্থীর নাম (Student Name):' : 'Student Name:'}</span>
+                  {currentUser?.name && (
+                    <span className="text-[10px] text-emerald-400 font-semibold">{isBn ? '✓ সংরক্ষিত' : '✓ Synced'}</span>
+                  )}
+                </label>
+                <input
+                  type="text"
+                  value={pdfStudentName}
+                  onChange={(e) => setPdfStudentName(e.target.value)}
+                  placeholder={isBn ? 'আপনার নাম লিখুন' : 'Enter student full name'}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-white text-xs outline-none focus:border-rose-500 font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="block text-slate-300 font-bold mb-1">
+                  {isBn ? 'কলেজের নাম (College Name):' : 'College Name:'}
+                </label>
+                <input
+                  type="text"
+                  value={pdfCollege}
+                  onChange={(e) => setPdfCollege(e.target.value)}
+                  placeholder={isBn ? 'যেমন: ঢাকা কলেজ / নটর ডেম কলেজ' : 'e.g. Dhaka College / Notre Dame'}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-white text-xs outline-none focus:border-rose-500 font-medium"
+                />
+              </div>
+
+              <div className="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label className="block text-slate-300 font-bold mb-1">
+                    {isBn ? 'এইচএসসি ব্যাচ:' : 'HSC Batch:'}
+                  </label>
+                  <input
+                    type="text"
+                    value={pdfBatch}
+                    onChange={(e) => setPdfBatch(e.target.value)}
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-white text-xs outline-none focus:border-rose-500 font-medium"
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-300 font-bold mb-1">
+                    {isBn ? 'দুর্বল শব্দ:' : 'Weak Words:'}
+                  </label>
+                  <div className="px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-rose-400 font-bold text-xs flex items-center">
+                    {effectiveWeakWords.length} {isBn ? 'টি শব্দ' : 'Words'}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-end gap-2.5 pt-3 border-t border-[#1e293b]">
+                <button
+                  type="button"
+                  onClick={() => setIsPdfModalOpen(false)}
+                  className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-white transition-colors cursor-pointer"
+                >
+                  {isBn ? 'বাতিল' : 'Cancel'}
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg shadow-rose-950/60 cursor-pointer active:scale-95 transition-all"
+                >
+                  <Printer size={15} />
+                  <span>{isBn ? '📄 PDF তৈরি ও প্রিন্ট করুন' : 'Generate & Print PDF'}</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       )}
     </div>

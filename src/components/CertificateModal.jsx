@@ -4,8 +4,8 @@ import { Award, Download, Printer, X, CheckCircle2, ShieldCheck, Sparkles } from
 export default function CertificateModal({
   isOpen,
   onClose,
-  studentName = 'Tanvir Ahmed',
-  collegeName = 'Notre Dame College, Dhaka',
+  studentName = 'HSC Examinee',
+  collegeName = '',
   hscBatch = 'HSC 2026',
   examTitle = 'HSC English Textbook Vocabulary Mastery',
   score = '100%',
@@ -67,7 +67,7 @@ export default function CertificateModal({
               {studentName}
             </h3>
             <span className="text-xs text-slate-300 block mt-1">
-              {collegeName} • {hscBatch}
+              {collegeName ? `${collegeName} • ` : ''}{hscBatch}
             </span>
           </div>
 

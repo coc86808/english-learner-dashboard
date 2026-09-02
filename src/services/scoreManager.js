@@ -57,7 +57,7 @@ export function recordCompletedExam({
         id: 'usr-local-guest',
         name: 'HSC Candidate',
         email: 'student@learnerhub.com',
-        college: 'Notre Dame College, Dhaka',
+        college: '',
         hscBatch: 'HSC 2026',
         role: 'student',
         streak: 1,

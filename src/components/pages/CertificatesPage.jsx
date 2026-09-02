@@ -32,12 +32,22 @@ export default function CertificatesPage({
   const certificatePrintRef = useRef(null);
 
   // Student Profile Information
-  const student = useMemo(() => ({
-    name: currentUser?.name || 'Tanvir Ahmed',
-    college: currentUser?.college || 'Notre Dame College, Dhaka',
-    batch: currentUser?.batch || currentUser?.hscBatch || 'HSC 2026',
-    email: currentUser?.email || 'tanvir.demo@hsc2026.edu'
-  }), [currentUser]);
+  const student = useMemo(() => {
+    let stored = {};
+    try {
+      if (typeof window !== 'undefined') {
+        const raw = localStorage.getItem('hsc_auth_user');
+        if (raw) stored = JSON.parse(raw);
+      }
+    } catch (e) {}
+
+    return {
+      name: currentUser?.name || stored?.name || 'HSC Examinee',
+      college: currentUser?.college || stored?.college || '',
+      batch: currentUser?.batch || currentUser?.hscBatch || stored?.hscBatch || stored?.batch || 'HSC 2026',
+      email: currentUser?.email || stored?.email || ''
+    };
+  }, [currentUser]);
 
   // Load Exam Scores and History from localStorage or initial simulated progress
   const [examHistory] = useState(() => {

@@ -40,7 +40,7 @@ export default function HSCExamInterface({
   onFinishExam,
   onClose,
   lang = 'en',
-  studentInfo = { name: 'Tanvir Ahmed', college: 'Notre Dame College, Dhaka', batch: 'HSC 2026' }
+  studentInfo = {}
 }) {
   const isBn = lang === 'bn';
   const [isSoundOn, setIsSoundOn] = useState(true);
@@ -1179,9 +1179,21 @@ export default function HSCExamInterface({
       <CertificateModal
         isOpen={isCertificateOpen}
         onClose={() => setIsCertificateOpen(false)}
-        studentName={studentInfo.name}
-        collegeName={studentInfo.college}
-        hscBatch={studentInfo.batch}
+        studentName={studentInfo?.name && studentInfo.name !== 'Tanvir Ahmed' ? studentInfo.name : (() => {
+          try {
+            const raw = localStorage.getItem('hsc_auth_user');
+            if (raw) return JSON.parse(raw)?.name || 'HSC Examinee';
+          } catch(e) {}
+          return 'HSC Examinee';
+        })()}
+        collegeName={studentInfo?.college && !studentInfo.college.includes('Notre Dame College, Dhaka') ? studentInfo.college : (() => {
+          try {
+            const raw = localStorage.getItem('hsc_auth_user');
+            if (raw) return JSON.parse(raw)?.college || '';
+          } catch(e) {}
+          return '';
+        })()}
+        hscBatch={studentInfo?.batch || 'HSC 2026'}
         totalMastered={totalUnique}
         lang={lang}
       />

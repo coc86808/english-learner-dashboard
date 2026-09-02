@@ -688,6 +688,7 @@ export default function App() {
                 weakWords={weakWords}
                 onToggleWeakWord={handleToggleWeakWord}
                 navigate={navigate}
+                currentUser={currentUser}
               />
             </div>
           )}
@@ -748,6 +749,8 @@ export default function App() {
                 onRemoveWeakWord={handleRemoveWeakWord}
                 onOpenFlashcards={() => navigate('/flashcards')}
                 lang={lang}
+                currentUser={currentUser}
+                studentInfo={currentUser}
               />
             </div>
           )}
@@ -819,6 +822,21 @@ export default function App() {
                 lang={lang}
                 onNavigate={navigate}
                 currentUser={currentUser}
+              />
+            </div>
+          )}
+
+          {/* Route: /certificates */}
+          {currentPath === '/certificates' && (
+            <div className="max-w-6xl mx-auto space-y-6">
+              <CertificatesPage
+                lang={lang}
+                currentUser={currentUser}
+                navigate={navigate}
+                onStartExam={(unit) => {
+                  setSelectedExamUnit(unit);
+                  setIsUnitLessonModalOpen(true);
+                }}
               />
             </div>
           )}
@@ -946,8 +964,8 @@ export default function App() {
       <CertificateModal
         isOpen={isCertificateModalOpen}
         onClose={() => setIsCertificateModalOpen(false)}
-        studentName={currentUser?.name || 'Tanvir Ahmed'}
-        collegeName={currentUser?.college || 'Notre Dame College, Dhaka'}
+        studentName={currentUser?.name || 'HSC Examinee'}
+        collegeName={currentUser?.college || ''}
         lang={lang}
       />
 

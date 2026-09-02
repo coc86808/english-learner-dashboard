@@ -39,14 +39,24 @@ export default function ProgressPage({
   const isBn = lang === 'bn';
 
   // Fallback / Active User Data
-  const student = useMemo(() => ({
-    name: currentUser?.name || 'Tanvir Ahmed',
-    college: currentUser?.college || 'Notre Dame College, Dhaka',
-    batch: currentUser?.batch || currentUser?.hscBatch || 'HSC 2026',
-    streak: currentUser?.streak || 5,
-    points: currentUser?.points || 1450,
-    email: currentUser?.email || 'tanvir.demo@hsc2026.edu'
-  }), [currentUser]);
+  const student = useMemo(() => {
+    let stored = {};
+    try {
+      if (typeof window !== 'undefined') {
+        const raw = localStorage.getItem('hsc_auth_user');
+        if (raw) stored = JSON.parse(raw);
+      }
+    } catch (e) {}
+
+    return {
+      name: currentUser?.name || stored?.name || 'HSC Examinee',
+      college: currentUser?.college || stored?.college || '',
+      batch: currentUser?.batch || currentUser?.hscBatch || stored?.hscBatch || stored?.batch || 'HSC 2026',
+      streak: currentUser?.streak || stored?.streak || 0,
+      points: currentUser?.points || stored?.points || 0,
+      email: currentUser?.email || stored?.email || ''
+    };
+  }, [currentUser]);
 
   // Rank Tier Calculation based on XP points
   const rankTierInfo = useMemo(() => {

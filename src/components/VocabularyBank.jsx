@@ -39,7 +39,8 @@ export default function VocabularyBank({
   onOpenFlashcards,
   weakWords = [],
   onToggleWeakWord,
-  navigate
+  navigate,
+  currentUser = null
 }) {
   const isBn = lang === 'bn';
 
@@ -59,6 +60,64 @@ export default function VocabularyBank({
   // View Mode State ('card' on mobile by default, user can switch to 'table')
   const [viewMode, setViewMode] = useState('card');
   const [showMobileFilterDrawer, setShowMobileFilterDrawer] = useState(false);
+
+  // PDF Export Customization Modal State
+  const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [pdfStudentName, setPdfStudentName] = useState(() => {
+    try {
+      if (currentUser?.name && currentUser.name !== 'Tanvir Ahmed' && currentUser.name !== 'HSC Candidate') {
+        return currentUser.name;
+      }
+      const savedPdf = localStorage.getItem('hsc_student_pdf_info');
+      if (savedPdf) {
+        const p = JSON.parse(savedPdf);
+        if (p.name) return p.name;
+      }
+      const savedAuth = localStorage.getItem('hsc_auth_user');
+      if (savedAuth) {
+        const a = JSON.parse(savedAuth);
+        if (a.name && a.name !== 'Tanvir Ahmed') return a.name;
+      }
+    } catch (e) {}
+    return '';
+  });
+
+  const [pdfCollege, setPdfCollege] = useState(() => {
+    try {
+      if (currentUser?.college && !currentUser.college.includes('Notre Dame College')) {
+        return currentUser.college;
+      }
+      const savedPdf = localStorage.getItem('hsc_student_pdf_info');
+      if (savedPdf) {
+        const p = JSON.parse(savedPdf);
+        if (p.college) return p.college;
+      }
+      const savedAuth = localStorage.getItem('hsc_auth_user');
+      if (savedAuth) {
+        const a = JSON.parse(savedAuth);
+        if (a.college && !a.college.includes('Notre Dame College')) return a.college;
+      }
+    } catch (e) {}
+    return '';
+  });
+
+  const [pdfBatch, setPdfBatch] = useState(() => {
+    return currentUser?.hscBatch || currentUser?.batch || 'HSC 2026';
+  });
+
+  useEffect(() => {
+    if (currentUser) {
+      if (currentUser.name && currentUser.name !== 'Tanvir Ahmed' && currentUser.name !== 'HSC Candidate') {
+        setPdfStudentName(currentUser.name);
+      }
+      if (currentUser.college && !currentUser.college.includes('Notre Dame College')) {
+        setPdfCollege(currentUser.college);
+      }
+      if (currentUser.hscBatch || currentUser.batch) {
+        setPdfBatch(currentUser.hscBatch || currentUser.batch);
+      }
+    }
+  }, [currentUser]);
 
   // Interactive Expandable Rows State
   const [expandedWordIds, setExpandedWordIds] = useState(new Set());
@@ -274,6 +333,11 @@ export default function VocabularyBank({
   };
 
   const handleDownloadPDF = () => {
+    setIsPdfModalOpen(true);
+  };
+
+  const confirmDownloadPDF = (e) => {
+    if (e) e.preventDefault();
     const unitTitle =
       selectedUnitId === 'all'
         ? isBn
@@ -293,18 +357,32 @@ export default function VocabularyBank({
         ? `${lessonObj.number}: ${lessonObj.title}`
         : 'Selected Lesson';
 
-    // Export the currently active filtered set
+    const chosenName = pdfStudentName.trim() || currentUser?.name || 'HSC Examinee';
+    const chosenCollege = pdfCollege.trim() || currentUser?.college || '';
+    const chosenBatch = pdfBatch.trim() || 'HSC 2026';
+
+    try {
+      localStorage.setItem('hsc_student_pdf_info', JSON.stringify({
+        name: chosenName,
+        college: chosenCollege,
+        batch: chosenBatch
+      }));
+    } catch (err) {}
+
+    // Export the currently active filtered set with authentic student details
     generateVocabularyBankPDF({
       words: filteredList,
       unitTitle,
       lessonTitle,
       studentInfo: {
-        name: 'HSC Candidate',
-        college: 'Notre Dame College / Dhaka College',
-        batch: 'HSC 2026'
+        name: chosenName,
+        college: chosenCollege,
+        batch: chosenBatch
       },
       lang
     });
+
+    setIsPdfModalOpen(false);
   };
 
   const hasActiveFilters =
@@ -1276,6 +1354,105 @@ export default function VocabularyBank({
           </div>
         )}
       </div>
+
+      {/* PDF Export Customization Modal */}
+      {isPdfModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-150">
+          <div className="bg-[#111723] border border-emerald-500/40 rounded-3xl p-5 sm:p-6 max-w-md w-full shadow-2xl space-y-4 text-slate-100">
+            <div className="flex items-center justify-between pb-3 border-b border-[#1e293b]">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center border border-emerald-500/30">
+                  <Printer size={20} />
+                </div>
+                <div>
+                  <h3 className="text-base font-black text-white">
+                    {isBn ? 'PDF মুদ্রণ ও শিক্ষার্থীর তথ্য' : 'PDF Export & Student Details'}
+                  </h3>
+                  <p className="text-[11px] text-slate-400">
+                    {isBn ? 'আপনার নাম ও কলেজের তথ্য অনুযায়ী শিট প্রিন্ট হবে' : 'Personalize student name and college on the PDF'}
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => setIsPdfModalOpen(false)}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-all cursor-pointer"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <form onSubmit={confirmDownloadPDF} className="space-y-3.5 text-xs">
+              <div>
+                <label className="block text-slate-300 font-bold mb-1 flex items-center justify-between">
+                  <span>{isBn ? 'শিক্ষার্থীর নাম (Student Name):' : 'Student Name:'}</span>
+                  {currentUser?.name && (
+                    <span className="text-[10px] text-emerald-400 font-semibold">{isBn ? '✓ সংরক্ষিত' : '✓ Synced'}</span>
+                  )}
+                </label>
+                <input
+                  type="text"
+                  value={pdfStudentName}
+                  onChange={(e) => setPdfStudentName(e.target.value)}
+                  placeholder={isBn ? 'আপনার নাম লিখুন' : 'Enter student full name'}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-white text-xs outline-none focus:border-emerald-500 font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="block text-slate-300 font-bold mb-1">
+                  {isBn ? 'কলেজের নাম (College Name):' : 'College Name:'}
+                </label>
+                <input
+                  type="text"
+                  value={pdfCollege}
+                  onChange={(e) => setPdfCollege(e.target.value)}
+                  placeholder={isBn ? 'যেমন: ঢাকা কলেজ / নটর ডেম কলেজ' : 'e.g. Dhaka College / Notre Dame'}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-white text-xs outline-none focus:border-emerald-500 font-medium"
+                />
+              </div>
+
+              <div className="grid grid-cols-2 gap-2.5">
+                <div>
+                  <label className="block text-slate-300 font-bold mb-1">
+                    {isBn ? 'এইচএসসি ব্যাচ:' : 'HSC Batch:'}
+                  </label>
+                  <input
+                    type="text"
+                    value={pdfBatch}
+                    onChange={(e) => setPdfBatch(e.target.value)}
+                    className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-white text-xs outline-none focus:border-emerald-500 font-medium"
+                  />
+                </div>
+                <div>
+                  <label className="block text-slate-300 font-bold mb-1">
+                    {isBn ? 'শব্দ সংখ্যা:' : 'Words Count:'}
+                  </label>
+                  <div className="px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-emerald-400 font-bold text-xs flex items-center">
+                    {filteredList.length} {isBn ? 'টি শব্দ' : 'Words'}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-end gap-2.5 pt-3 border-t border-[#1e293b]">
+                <button
+                  type="button"
+                  onClick={() => setIsPdfModalOpen(false)}
+                  className="px-4 py-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-white transition-colors cursor-pointer"
+                >
+                  {isBn ? 'বাতিল' : 'Cancel'}
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg shadow-emerald-950/60 cursor-pointer active:scale-95 transition-all"
+                >
+                  <Printer size={15} />
+                  <span>{isBn ? '📄 PDF তৈরি ও প্রিন্ট করুন' : 'Generate & Print PDF'}</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

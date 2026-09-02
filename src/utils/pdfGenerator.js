@@ -1,13 +1,81 @@
 /**
  * PDF Generator for HSC English Vocabulary Bank & Weak Words Revision Sheet
- * Styled with Emerald Header, Color-Coded Bangla Meanings & Antonyms, and Student/Curriculum Badge
+ * Styled with Emerald Header, Color-Coded Bangla Meanings & Antonyms, and Dynamic Student Profile
  */
+
+export function resolveStudentDetails(studentInfo = {}) {
+  const dummyNames = ['Tanvir Ahmed', 'HSC Candidate'];
+  const dummyColleges = ['Notre Dame College, Dhaka', 'Notre Dame College / Dhaka College', 'HSC College'];
+
+  let name = '';
+  let college = '';
+  let batch = '';
+
+  // 1. Check passed studentInfo
+  if (studentInfo && typeof studentInfo === 'object') {
+    if (studentInfo.name && !dummyNames.includes(studentInfo.name.trim())) {
+      name = studentInfo.name.trim();
+    }
+    if (studentInfo.college && !dummyColleges.includes(studentInfo.college.trim())) {
+      college = studentInfo.college.trim();
+    }
+    if (studentInfo.batch || studentInfo.hscBatch) {
+      batch = (studentInfo.batch || studentInfo.hscBatch).trim();
+    }
+  }
+
+  // 2. Check localStorage auth user
+  if (!name || !college || !batch) {
+    try {
+      if (typeof window !== 'undefined') {
+        const raw = localStorage.getItem('hsc_auth_user');
+        if (raw) {
+          const authUser = JSON.parse(raw);
+          if (!name && authUser?.name && !dummyNames.includes(authUser.name.trim())) {
+            name = authUser.name.trim();
+          }
+          if (!college && authUser?.college && !dummyColleges.includes(authUser.college.trim())) {
+            college = authUser.college.trim();
+          }
+          if (!batch && (authUser?.hscBatch || authUser?.batch)) {
+            batch = (authUser.hscBatch || authUser.batch).trim();
+          }
+        }
+      }
+    } catch (e) {}
+  }
+
+  // 3. Check localStorage custom PDF info
+  if (!name || !college || !batch) {
+    try {
+      if (typeof window !== 'undefined') {
+        const rawPdfInfo = localStorage.getItem('hsc_student_pdf_info');
+        if (rawPdfInfo) {
+          const pdfInfo = JSON.parse(rawPdfInfo);
+          if (!name && pdfInfo?.name && !dummyNames.includes(pdfInfo.name.trim())) {
+            name = pdfInfo.name.trim();
+          }
+          if (!college && pdfInfo?.college && !dummyColleges.includes(pdfInfo.college.trim())) {
+            college = pdfInfo.college.trim();
+          }
+          if (!batch && pdfInfo?.batch) {
+            batch = pdfInfo.batch.trim();
+          }
+        }
+      }
+    } catch (e) {}
+  }
+
+  // 4. Clean sensible defaults (never hardcoded fake names or colleges)
+  if (!name) name = studentInfo?.name?.trim() || 'HSC Examinee';
+  if (!batch) batch = 'HSC 2026';
+
+  return { name, college, batch };
+}
 
 export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en' }) {
   const isBn = lang === 'bn';
-  const name = studentInfo.name || 'Tanvir Ahmed';
-  const college = studentInfo.college || 'Notre Dame College, Dhaka';
-  const batch = studentInfo.batch || 'HSC 2026';
+  const { name, college, batch } = resolveStudentDetails(studentInfo);
   const currentDate = new Date().toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
@@ -36,7 +104,7 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>HSC English - Weak Words Revision Sheet</title>
+  <title>${name} - HSC English Weak Words Revision Sheet</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
     
@@ -235,9 +303,9 @@ export function generateWeakWordsPDF({ words = [], studentInfo = {}, lang = 'en'
 
   <div class="student-badge-card">
     <div>
-      <strong>Student Name:</strong> ${name} &nbsp;|&nbsp; 
-      <strong>College:</strong> ${college} &nbsp;|&nbsp; 
-      <strong>Batch:</strong> ${batch}
+      <strong>Student Name:</strong> ${name}
+      ${college ? ` &nbsp;|&nbsp; <strong>College:</strong> ${college}` : ''}
+      &nbsp;|&nbsp; <strong>Batch:</strong> ${batch}
     </div>
     <div class="summary-pill">
       Total Weak Words: ${words.length}
@@ -286,9 +354,8 @@ export function generateVocabularyBankPDF({
   studentInfo = {},
   lang = 'en'
 }) {
-  const name = studentInfo.name || 'Tanvir Ahmed';
-  const college = studentInfo.college || 'Notre Dame College, Dhaka';
-  const batch = studentInfo.batch || 'HSC 2026';
+  const isBn = lang === 'bn';
+  const { name, college, batch } = resolveStudentDetails(studentInfo);
   const currentDate = new Date().toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
@@ -317,7 +384,7 @@ export function generateVocabularyBankPDF({
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>HSC English 1st Paper - Vocabulary Bank</title>
+  <title>${name} - HSC English Vocabulary Bank (${unitTitle})</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
     
@@ -535,9 +602,9 @@ export function generateVocabularyBankPDF({
 
   <div class="student-badge-card">
     <div>
-      <strong>Student:</strong> ${name} &nbsp;|&nbsp; 
-      <strong>College:</strong> ${college} &nbsp;|&nbsp; 
-      <strong>Batch:</strong> ${batch}
+      <strong>Student:</strong> ${name}
+      ${college ? ` &nbsp;|&nbsp; <strong>College:</strong> ${college}` : ''}
+      &nbsp;|&nbsp; <strong>Batch:</strong> ${batch}
     </div>
     <div class="summary-pill">
       Total Words: ${words.length}
