@@ -14,3 +14,6 @@ dist-ssr
 
 .vercel
 .agents
+temp*
+unit*_ocr*
+*_dump.json

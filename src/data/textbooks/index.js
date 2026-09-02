@@ -1,60 +1,60 @@
 // Central Index of all 45 NCTB HSC English For Today Textbooks (Units 1-12, Unit 4 excluded)
 
-import { unit1Lesson1Textbook } from './unit1Lesson1Text';
-import { unit1Lesson2Textbook } from './unit1Lesson2Text';
-import { unit1Lesson3Textbook } from './unit1Lesson3Text';
-import { unit1Lesson4Textbook } from './unit1Lesson4Text';
+import { unit1Lesson1Textbook } from './unit1Lesson1Text.js';
+import { unit1Lesson2Textbook } from './unit1Lesson2Text.js';
+import { unit1Lesson3Textbook } from './unit1Lesson3Text.js';
+import { unit1Lesson4Textbook } from './unit1Lesson4Text.js';
 
-import { unit2Lesson1Textbook } from './unit2Lesson1Text';
-import { unit2Lesson2Textbook } from './unit2Lesson2Text';
-import { unit2Lesson3Textbook } from './unit2Lesson3Text';
-import { unit2Lesson4Textbook } from './unit2Lesson4Text';
+import { unit2Lesson1Textbook } from './unit2Lesson1Text.js';
+import { unit2Lesson2Textbook } from './unit2Lesson2Text.js';
+import { unit2Lesson3Textbook } from './unit2Lesson3Text.js';
+import { unit2Lesson4Textbook } from './unit2Lesson4Text.js';
 
-import { unit3Lesson1Textbook } from './unit3Lesson1Text';
-import { unit3Lesson2Textbook } from './unit3Lesson2Text';
-import { unit3Lesson3Textbook } from './unit3Lesson3Text';
-import { unit3Lesson4Textbook } from './unit3Lesson4Text';
+import { unit3Lesson1Textbook } from './unit3Lesson1Text.js';
+import { unit3Lesson2Textbook } from './unit3Lesson2Text.js';
+import { unit3Lesson3Textbook } from './unit3Lesson3Text.js';
+import { unit3Lesson4Textbook } from './unit3Lesson4Text.js';
 
-import { unit5Lesson1Textbook } from './unit5Lesson1Text';
-import { unit5Lesson2Textbook } from './unit5Lesson2Text';
-import { unit5Lesson3Textbook } from './unit5Lesson3Text';
-import { unit5Lesson4Textbook } from './unit5Lesson4Text';
-import { unit5Lesson5Textbook } from './unit5Lesson5Text';
+import { unit5Lesson1Textbook } from './unit5Lesson1Text.js';
+import { unit5Lesson2Textbook } from './unit5Lesson2Text.js';
+import { unit5Lesson3Textbook } from './unit5Lesson3Text.js';
+import { unit5Lesson4Textbook } from './unit5Lesson4Text.js';
+import { unit5Lesson5Textbook } from './unit5Lesson5Text.js';
 
-import { unit6Lesson1Textbook } from './unit6Lesson1Text';
-import { unit6Lesson2Textbook } from './unit6Lesson2Text';
+import { unit6Lesson1Textbook } from './unit6Lesson1Text.js';
+import { unit6Lesson2Textbook } from './unit6Lesson2Text.js';
 
-import { unit7Lesson1Textbook } from './unit7Lesson1Text';
-import { unit7Lesson2Textbook } from './unit7Lesson2Text';
-import { unit7Lesson3Textbook } from './unit7Lesson3Text';
+import { unit7Lesson1Textbook } from './unit7Lesson1Text.js';
+import { unit7Lesson2Textbook } from './unit7Lesson2Text.js';
+import { unit7Lesson3Textbook } from './unit7Lesson3Text.js';
 
-import { unit8Lesson1Textbook } from './unit8Lesson1Text';
-import { unit8Lesson2Textbook } from './unit8Lesson2Text';
-import { unit8Lesson3Textbook } from './unit8Lesson3Text';
-import { unit8Lesson4Textbook } from './unit8Lesson4Text';
+import { unit8Lesson1Textbook } from './unit8Lesson1Text.js';
+import { unit8Lesson2Textbook } from './unit8Lesson2Text.js';
+import { unit8Lesson3Textbook } from './unit8Lesson3Text.js';
+import { unit8Lesson4Textbook } from './unit8Lesson4Text.js';
 
-import { unit9Lesson1Textbook } from './unit9Lesson1Text';
-import { unit9Lesson2Textbook } from './unit9Lesson2Text';
-import { unit9Lesson3Textbook } from './unit9Lesson3Text';
-import { unit9Lesson4Textbook } from './unit9Lesson4Text';
+import { unit9Lesson1Textbook } from './unit9Lesson1Text.js';
+import { unit9Lesson2Textbook } from './unit9Lesson2Text.js';
+import { unit9Lesson3Textbook } from './unit9Lesson3Text.js';
+import { unit9Lesson4Textbook } from './unit9Lesson4Text.js';
 
-import { unit10Lesson1Textbook } from './unit10Lesson1Text';
-import { unit10Lesson2Textbook } from './unit10Lesson2Text';
-import { unit10Lesson3Textbook } from './unit10Lesson3Text';
-import { unit10Lesson4Textbook } from './unit10Lesson4Text';
-import { unit10Lesson5Textbook } from './unit10Lesson5Text';
+import { unit10Lesson1Textbook } from './unit10Lesson1Text.js';
+import { unit10Lesson2Textbook } from './unit10Lesson2Text.js';
+import { unit10Lesson3Textbook } from './unit10Lesson3Text.js';
+import { unit10Lesson4Textbook } from './unit10Lesson4Text.js';
+import { unit10Lesson5Textbook } from './unit10Lesson5Text.js';
 
-import { unit11Lesson1Textbook } from './unit11Lesson1Text';
-import { unit11Lesson2Textbook } from './unit11Lesson2Text';
-import { unit11Lesson3Textbook } from './unit11Lesson3Text';
-import { unit11Lesson4Textbook } from './unit11Lesson4Text';
-import { unit11Lesson5Textbook } from './unit11Lesson5Text';
+import { unit11Lesson1Textbook } from './unit11Lesson1Text.js';
+import { unit11Lesson2Textbook } from './unit11Lesson2Text.js';
+import { unit11Lesson3Textbook } from './unit11Lesson3Text.js';
+import { unit11Lesson4Textbook } from './unit11Lesson4Text.js';
+import { unit11Lesson5Textbook } from './unit11Lesson5Text.js';
 
-import { unit12Lesson1Textbook } from './unit12Lesson1Text';
-import { unit12Lesson2Textbook } from './unit12Lesson2Text';
-import { unit12Lesson3Textbook } from './unit12Lesson3Text';
-import { unit12Lesson4Textbook } from './unit12Lesson4Text';
-import { unit12Lesson5Textbook } from './unit12Lesson5Text';
+import { unit12Lesson1Textbook } from './unit12Lesson1Text.js';
+import { unit12Lesson2Textbook } from './unit12Lesson2Text.js';
+import { unit12Lesson3Textbook } from './unit12Lesson3Text.js';
+import { unit12Lesson4Textbook } from './unit12Lesson4Text.js';
+import { unit12Lesson5Textbook } from './unit12Lesson5Text.js';
 
 export const ALL_TEXTBOOKS = {
   // Unit 1

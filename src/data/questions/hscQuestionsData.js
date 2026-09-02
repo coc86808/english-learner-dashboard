@@ -586,7 +586,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "কর্মীবৃন্দ / কর্মকর্তা-কর্মচারী / কর্মী",
     "partsOfSpeech": "Noun",
     "synonyms": "Staff, workforce, employees, manpower",
-    "antonyms": "",
+    "antonyms": "Outsiders, customers, patrons, public",
     "englishMeaning": "People employed in an organization or engaged on an official undertaking.",
     "exampleSentence": "Scores of royal personnel were hired just to polish the golden cage bars.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
@@ -628,7 +628,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "ঘাতবাদ্য / বাদ্যযন্ত্রের আঘাতধ্বনি",
     "partsOfSpeech": "Noun",
     "synonyms": "Drumming, beat, percussion instrument",
-    "antonyms": "",
+    "antonyms": "Silence, hush, quietness, stillness",
     "englishMeaning": "Musical instruments played by striking with the hand or a beater.",
     "exampleSentence": "Loud percussion drums were sounded to announce the parrot's grand education.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
@@ -691,7 +691,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "ধর্মগ্রন্থ / ধর্মীয় শাস্ত্র",
     "partsOfSpeech": "Noun",
     "synonyms": "Sacred text, holy book, holy scripture, canon",
-    "antonyms": "",
+    "antonyms": "Secular literature, profane writing, non-religious work",
     "englishMeaning": "The sacred writings or treatises of a religion or philosophical system.",
     "exampleSentence": "Leaves torn from thick scripture texts were shoved into the parrot's mouth.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
@@ -850,7 +850,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "গাছের ছোট ডাল / কচি ডাল / পল্লব",
     "partsOfSpeech": "Noun",
     "synonyms": "Sprig, branchlet, shoot, stick",
-    "antonyms": "",
+    "antonyms": "Tree trunk, main stem, bole, root",
     "englishMeaning": "A slender, woody shoot growing from a branch or stem of a tree.",
     "exampleSentence": "The forest bird once happily built its nest on a green leafy twig.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
@@ -1114,7 +1114,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "খাবার খাওয়ার কাঠি / চপস্টিক",
     "partsOfSpeech": "Noun",
     "synonyms": "Eating sticks",
-    "antonyms": "",
+    "antonyms": "Bare hands, fingers, eating by hands",
     "englishMeaning": "A pair of small, thin sticks used especially in East Asia for eating food.",
     "exampleSentence": "Don't play with chopsticks or point at anyone with them while dining in China.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
@@ -1545,7 +1545,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "তৈজসপত্র / খাবার তৈরি ও খাওয়ার সরঞ্জাম বা পাত্র",
     "partsOfSpeech": "Noun",
     "synonyms": "Cutlery, Implements, Tools, Tableware, Appliances",
-    "antonyms": "",
+    "antonyms": "Bare hands, fingers, unassisted hands",
     "englishMeaning": "Implements, containers, or other articles, especially for household or dining use.",
     "exampleSentence": "In traditional Middle Eastern dining, people often eat with their right hand using hardly any utensils.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
@@ -1947,7 +1947,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "নিত্যপণ্য দ্রব্য / মুদি মালামাল",
     "partsOfSpeech": "Noun",
     "synonyms": "Commodities, provisions, foodstuff, supplies",
-    "antonyms": "",
+    "antonyms": "Non-food merchandise, luxury durable goods",
     "englishMeaning": "Items of food and other essential household goods sold in a store.",
     "exampleSentence": "It is good etiquette to help elderly neighbors carry their heavy grocery bags.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
@@ -2457,7 +2457,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "গাল / কপোল",
     "partsOfSpeech": "Noun",
     "synonyms": "Side of face, Jowl",
-    "antonyms": "",
+    "antonyms": "Handshake, forehead, hand greeting",
     "englishMeaning": "Either side of the face below the eye and above the jaw.",
     "exampleSentence": "Kissing on the cheek in greeting is common in Britain but strictly forbidden in public in the Middle East.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
@@ -2806,7 +2806,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "ইঙ্গিত / সংকেত / সূত্র",
     "partsOfSpeech": "Noun",
     "synonyms": "Signal, Hint, Prompt, Clue, Sign",
-    "antonyms": "",
+    "antonyms": "Deterrence, dissuasion, impediment",
     "englishMeaning": "A signal or reminder for someone to do something.",
     "exampleSentence": "Wait for the host's cue before you begin eating dinner in Great Britain.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
@@ -2970,7 +2970,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "তরুণাস্থি / নরম হাড়",
     "partsOfSpeech": "Noun",
     "synonyms": "Cartilage",
-    "antonyms": "",
+    "antonyms": "Tender meat, soft fillet, lean cut",
     "englishMeaning": "Cartilage, especially when present as a tough substance in cooked meat.",
     "exampleSentence": "Discreetly remove gristle from your mouth using a fork or napkin.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
@@ -3012,7 +3012,7 @@ export const hscVocabularyList = [
     "bengaliMeaning": "ঝোল / মাংসের রস থেকে তৈরি সুস্বাদু সস",
     "partsOfSpeech": "Noun",
     "synonyms": "Sauce, Broth, Meat juices, Dressing",
-    "antonyms": "",
+    "antonyms": "Dry roast, brothless food, solid dish",
     "englishMeaning": "A sauce made from meat juices and seasonings used with roasted dishes.",
     "exampleSentence": "In Britain, use a piece of bread on a fork to soak up remaining sauce or gravy.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
@@ -15334,10 +15334,10 @@ export function buildQuestionsDatabase() {
       prefix = 'hsc-u3-l3-' + num;
     } else if (item.unit.includes('Unit 3: Lesson 4') || item.unit.includes('Khona')) {
       prefix = 'hsc-u3-l4-' + num;
-    } else if (item.unit.includes('Unit 5: Lesson 1') || item.unit.includes('Rights-I')) {
-      prefix = 'hsc-u5-l1-' + num;
     } else if (item.unit.includes('Unit 5: Lesson 2') || item.unit.includes('Rights-II')) {
       prefix = 'hsc-u5-l2-' + num;
+    } else if (item.unit.includes('Unit 5: Lesson 1') || item.unit.includes('Rights-I')) {
+      prefix = 'hsc-u5-l1-' + num;
     } else if (item.unit.includes('Unit 5: Lesson 3') || item.unit.includes('Health and Education')) {
       prefix = 'hsc-u5-l3-' + num;
     } else if (item.unit.includes('Unit 5: Lesson 4') || item.unit.includes('Coal Miners')) {
@@ -15482,6 +15482,9 @@ export function buildQuestionsDatabase() {
         exampleSentence: item.exampleSentence,
         unit: item.unit,
         boardExamTag: item.boardExamTag,
+        sources: item.sources || [item.unit],
+        isCrossReferenced: item.isCrossReferenced || false,
+        crossReferencedWords: item.crossReferencedWords || [],
         difficulty: 'Medium'
       });
     }
@@ -15511,6 +15514,9 @@ export function buildQuestionsDatabase() {
         exampleSentence: item.exampleSentence,
         unit: item.unit,
         boardExamTag: item.boardExamTag,
+        sources: item.sources || [item.unit],
+        isCrossReferenced: item.isCrossReferenced || false,
+        crossReferencedWords: item.crossReferencedWords || [],
         difficulty: 'Medium'
       });
     }
@@ -15541,6 +15547,9 @@ export function buildQuestionsDatabase() {
         exampleSentence: item.exampleSentence,
         unit: item.unit,
         boardExamTag: item.boardExamTag,
+        sources: item.sources || [item.unit],
+        isCrossReferenced: item.isCrossReferenced || false,
+        crossReferencedWords: item.crossReferencedWords || [],
         difficulty: 'Easy'
       });
     }
