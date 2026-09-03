@@ -2,8 +2,8 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1018 Authentic Textbook Vocabulary Words
- * Total MCQs: 4072 Board-Standard Multiple Choice Questions
+ * Total Words: 1028 Authentic Textbook Vocabulary Words
+ * Total MCQs: 4112 Board-Standard Multiple Choice Questions
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -3536,6 +3536,90 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
+    "id": "vocab-u2-l3-02",
+    "word": "Evoke",
+    "bengaliMeaning": "জাগিয়ে তোলা / স্মরণ করানো / অনুভূতি সৃষ্টি করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Kindle, elicit, awaken, invoke, stimulate",
+    "antonyms": "Suppress, stifle, quench, extinguish",
+    "englishMeaning": "To bring or recall a feeling, memory, or image to the conscious mind.",
+    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
+    "unit": "Unit 2: Lesson 3 (Art)",
+    "boardExamTag": "Unit 2 • Lesson 3",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Invoke",
+      "Suppress"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Invoke"
+    ],
+    "crossRefAntonyms": [
+      "Suppress"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u11-l1-03",
+    "word": "Racial",
+    "bengaliMeaning": "জাতিগত / বর্ণভিত্তিক ও জাতিবৈষম্যমূলক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Ethnic, racialist, ancestral, lineage-based",
+    "antonyms": "Universal, non-racial, colorblind",
+    "englishMeaning": "Relating to the major groupings into which humankind is divided on the basis of physical traits.",
+    "exampleSentence": "Angelou's experience of racial discrimination in her childhood and her involvement in civil rights movement in the 1960s made her a committed campaigner for human rights, social justice and peace.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Ethnic",
+      "Universal"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Ethnic"
+    ],
+    "crossRefAntonyms": [
+      "Universal"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l1-new-2",
+    "word": "Ethnic",
+    "bengaliMeaning": "জাতিগত / নৃগোষ্ঠীগত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Indigenous, racial, cultural, traditional, tribal",
+    "antonyms": "Alien, foreign, cosmopolitan",
+    "englishMeaning": "Relating to a population subgroup with a common national or cultural tradition.",
+    "exampleSentence": "Find out stories about violation of human rights regarding rights of children, women, the disadvantaged, and ethnic minorities.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Indigenous",
+      "Racial"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Indigenous",
+      "Racial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
     "id": "vocab-u2-l2-17",
     "word": "Devotion",
     "bengaliMeaning": "ভক্তি / নিষ্ঠা / আত্মনিবেদন / অনুরাগ",
@@ -6249,31 +6333,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u2-l3-02",
-    "word": "Evoke",
-    "bengaliMeaning": "জাগিয়ে তোলা / স্মরণ করানো / অনুভূতি সৃষ্টি করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Kindle, elicit, awaken, invoke, stimulate",
-    "antonyms": "Suppress, stifle, quench, extinguish",
-    "englishMeaning": "To bring or recall a feeling, memory, or image to the conscious mind.",
-    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
-    "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Unit 2 • Lesson 3",
-    "sources": [
-      "Unit 2: Lesson 3 (Art)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Suppress"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Suppress"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u2-l3-16",
     "word": "Enduring",
     "bengaliMeaning": "স্থায়ী / দীর্ঘস্থায়ী / কালজয়ী",
@@ -6760,7 +6819,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -7626,31 +7686,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u11-l1-03",
-    "word": "Racial",
-    "bengaliMeaning": "জাতিগত / বর্ণভিত্তিক ও জাতিবৈষম্যমূলক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Ethnic, racialist, ancestral, lineage-based",
-    "antonyms": "Universal, non-racial, colorblind",
-    "englishMeaning": "Relating to the major groupings into which humankind is divided on the basis of physical traits.",
-    "exampleSentence": "Angelou's experience of racial discrimination in her childhood and her involvement in civil rights movement in the 1960s made her a committed campaigner for human rights, social justice and peace.",
-    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Unit 11 • Lesson 1",
-    "sources": [
-      "Unit 11: Lesson 1 (Situations of Conflict)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Universal"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Universal"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u11-l2-08",
     "word": "Anxious",
     "bengaliMeaning": "উদ্বিগ্ন / শঙ্কিত ও আশঙ্কাকুল",
@@ -8255,7 +8290,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -9092,7 +9128,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -11069,6 +11106,189 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Effectively"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-impulse",
+    "word": "Impulse",
+    "bengaliMeaning": "আকস্মিক তাড়না বা খেয়াল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Urge, whim, instinct, compulsion, caprice",
+    "antonyms": "Premeditation, deliberation, planning, restraint",
+    "englishMeaning": "A sudden strong and unreflective urge or desire to act.",
+    "exampleSentence": "Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+    "lesson": "Are We Aware of These Rights-I?",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Whim"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Whim"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-new-1",
+    "word": "Dissolution",
+    "bengaliMeaning": "অবসান / বিলুপ্তি / অবলুপ্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "End, extinction, termination, conclusion, disbandment",
+    "antonyms": "Beginning, retention, commencement, inauguration",
+    "englishMeaning": "The closing down or dismissal of an assembly, partnership, or official body.",
+    "exampleSentence": "Dissolution: the closing down or dismissal of an assembly, body etc.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Extinction"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Extinction"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-new-3",
+    "word": "Frontier",
+    "bengaliMeaning": "সীমান্ত / সীমানা / ভৌগোলিক পরিধি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Borderline, boundary, limit, perimeter, edge",
+    "antonyms": "Centre, interior, core",
+    "englishMeaning": "A line or border separating two countries or regions; outer limits of knowledge or media.",
+    "exampleSentence": "Everyone has the right to seek, receive and impart information and ideas through any media and regardless of frontiers.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Edge"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Edge"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-new-4",
+    "word": "Imply",
+    "bengaliMeaning": "ইঙ্গিত করা / সূচিত করা / পরোক্ষভাবে বোঝানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Indicate, suggest, hint, denote, signify",
+    "antonyms": "State explicitly, declare, express directly",
+    "englishMeaning": "Indicate the truth or existence of something by suggestion rather than explicit statement.",
+    "exampleSentence": "These universal human rights imply that every human being is born free and equal in dignity and rights.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Indicate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Indicate"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-new-5",
+    "word": "Invoke",
+    "bengaliMeaning": "প্রার্থনা করা / অধিকার দাবি করা / কার্যকর করার আহ্বান জানানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Pray, beg, crave, request, petition, appeal to",
+    "antonyms": "Waive, revoke, relinquish, dismiss",
+    "englishMeaning": "Cite or appeal to someone or something as an authority for an action or in support of an argument.",
+    "exampleSentence": "This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Crave"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Crave"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-new-9",
+    "word": "Reputation",
+    "bengaliMeaning": "সুনাম / খ্যাতি / সুখ্যাতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Renown, fame, name, prestige, stature, standing",
+    "antonyms": "Notoriety, disreputableness, infamy, dishonor",
+    "englishMeaning": "The beliefs or opinions that are generally held about someone or something.",
+    "exampleSentence": "No one shall be subjected to arbitrary interference with his privacy nor to attacks upon his honour and reputation.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Stature"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Stature"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-new-10",
+    "word": "Whim",
+    "bengaliMeaning": "খেয়াল / খামখেয়ালিপনা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Caprice, impulse, fancy, vagary, quirk",
+    "antonyms": "Deliberation, reason, consistency, principle",
+    "englishMeaning": "A sudden desire or change of mind, especially one that is unusual or unexplained.",
+    "exampleSentence": "Arbitrarily: determined by chance, whim or impulse and not by reason or principle.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Impulse"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Impulse"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -20157,7 +20377,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20179,7 +20400,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20201,7 +20423,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -21767,28 +21990,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
       "Unit 10: Lifestyle: Consumerism"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u5-l1-impulse",
-    "word": "Impulse",
-    "bengaliMeaning": "আকস্মিক তাড়না বা খেয়াল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Urge, whim, instinct, compulsion, caprice",
-    "antonyms": "Premeditation, deliberation, planning, restraint",
-    "englishMeaning": "A sudden strong and unreflective urge or desire to act.",
-    "exampleSentence": "Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-    "lesson": "Are We Aware of These Rights-I?",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -23814,6 +24015,72 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 4: Lesson 3 (Great Women)",
       "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l1-new-6",
+    "word": "Privacy",
+    "bengaliMeaning": "একাকিত্ব / গোপনীয়তা / ব্যক্তিগত পরিসর",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Secrecy, solitude, confidentiality, seclusion, isolation",
+    "antonyms": "Publicity, disclosure, exposure, openness",
+    "englishMeaning": "A state in which one is not observed or disturbed by other people; freedom from unauthorized intrusion.",
+    "exampleSentence": "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l1-new-7",
+    "word": "Prosecution",
+    "bengaliMeaning": "মামলা / অভিযোগ / বিচারবিভাগীয় ব্যবস্থা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Legal proceeding, trial, lawsuit, case, litigation",
+    "antonyms": "Defence, pardon, exoneration, acquittal",
+    "englishMeaning": "The institution and conducting of legal proceedings against someone in respect of a criminal charge.",
+    "exampleSentence": "Everyone has the right to a fair public trial with all guarantees necessary for defence against unlawful prosecution.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l1-new-8",
+    "word": "Provision",
+    "bengaliMeaning": "ধারা / অনুবিধি / আইনি সংস্থান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Term, clause, stipulation, condition, requirement",
+    "antonyms": "Prohibition, omission, cancellation",
+    "englishMeaning": "A condition or requirement in a legal document; an article or clause in a human rights charter.",
+    "exampleSentence": "The provision of which articles above are denied to them?",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Human Rights: Declarations of Human Rights"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],

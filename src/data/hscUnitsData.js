@@ -204,7 +204,7 @@ export const hscUnits = [
     "bgClass": "bg-[#b81d9f] hover:bg-[#cb23b0]",
     "gradient": "from-[#cb23b0] to-[#8e117a]",
     "progress": 0,
-    "totalWords": 85,
+    "totalWords": 96,
     "masteredWords": 0,
     "lessons": [
       {
@@ -212,8 +212,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Are We Aware of These Rights -I?",
         "titleBn": "আমরা কি অধিকার সম্পর্কে সচেতন?-১",
-        "questionsCount": "৭৬ টি প্রশ্ন",
-        "wordsCount": 19,
+        "questionsCount": "১২০ টি প্রশ্ন",
+        "wordsCount": 30,
         "progress": 0
       },
       {
