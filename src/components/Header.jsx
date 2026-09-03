@@ -66,30 +66,28 @@ export default function Header({
           : 'অ্যাডমিন ড্যাশবোর্ড'
       };
     }
-    if (norm === '/units' || norm === '/textbook' || norm === '/vocabulary' || norm === '/vocabulary-bank' || norm === '/flashcards') {
+    if (norm === '/textbook' || norm === '/vocabulary' || norm === '/vocabulary-bank' || norm === '/flashcards') {
       return {
         sectionEn: 'Study',
         sectionBn: 'পড়াশোনা',
-        titleEn: norm === '/units' ? 'Units & Lessons'
-          : norm === '/textbook' ? 'Textbook Reader'
+        titleEn: norm === '/textbook' ? 'Textbook Reader'
           : norm === '/flashcards' ? '3D Flashcards'
           : 'Vocabulary Bank',
-        titleBn: norm === '/units' ? 'ইউনিট ও লেসন'
-          : norm === '/textbook' ? 'পাঠ্যবই রিডার'
+        titleBn: norm === '/textbook' ? 'পাঠ্যবই রিডার'
           : norm === '/flashcards' ? 'থ্রিডি ফ্ল্যাশকার্ড'
           : 'ভোকাবুলারি ব্যাংক'
       };
     }
-    if (norm === '/practice' || norm === '/exam' || norm === '/exams' || norm === '/weak-words') {
+    if (norm === '/practice' || norm === '/exam' || norm === '/exams' || norm === '/units' || norm === '/weak-words') {
       return {
         sectionEn: 'Practice',
         sectionBn: 'অনুশীলন',
         titleEn: norm === '/practice' ? 'Quick Practice'
           : norm === '/weak-words' ? 'Weak Words Hub'
-          : 'MCQ Vocab',
+          : 'Unit & Lesson MCQ Exam',
         titleBn: norm === '/practice' ? 'দ্রুত অনুশীলন'
           : norm === '/weak-words' ? 'দুর্বল শব্দ ভান্ডার'
-          : 'MCQ ভোকাব'
+          : 'ইউনিট ও লেসন MCQ পরীক্ষা'
       };
     }
     if (norm === '/progress' || norm === '/leaderboard' || norm === '/certificates') {

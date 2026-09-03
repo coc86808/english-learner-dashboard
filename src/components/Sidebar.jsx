@@ -69,15 +69,6 @@ export default function Sidebar({
           badge: null
         },
         {
-          path: '/units',
-          tabId: 'units',
-          labelEn: 'Units & Lessons',
-          labelBn: 'ইউনিট ও লেসন',
-          icon: GraduationCap,
-          badge: '14 Units',
-          badgeColor: 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
-        },
-        {
           path: '/textbook',
           tabId: 'textbook',
           labelEn: 'Textbook Reader',
@@ -92,7 +83,7 @@ export default function Sidebar({
           labelEn: 'Vocabulary Bank',
           labelBn: 'ভোকাবুলারি ব্যাংক',
           icon: BookMarked,
-          badge: '858 Words',
+          badge: '1,077 Words',
           badgeColor: 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
         },
         {
@@ -112,6 +103,15 @@ export default function Sidebar({
       titleBn: 'অনুশীলন',
       items: [
         {
+          path: '/exam',
+          tabId: 'exams',
+          labelEn: 'Unit & Lesson MCQ Exam',
+          labelBn: 'ইউনিট ও লেসন MCQ পরীক্ষা',
+          icon: GraduationCap,
+          badge: '4,308 MCQs',
+          badgeColor: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+        },
+        {
           path: '/practice',
           tabId: 'practice',
           labelEn: 'Quick Practice',
@@ -119,15 +119,6 @@ export default function Sidebar({
           icon: Zap,
           badge: 'MCQ',
           badgeColor: 'bg-teal-500/15 text-teal-300 border border-teal-500/30'
-        },
-        {
-          path: '/exam',
-          tabId: 'exams',
-          labelEn: 'MCQ Vocab',
-          labelBn: 'MCQ ভোকাব',
-          icon: CheckSquare,
-          badge: '2,729 MCQs',
-          badgeColor: 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
         },
         {
           path: '/weak-words',

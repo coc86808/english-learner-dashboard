@@ -415,11 +415,10 @@ export default function App() {
   // Map route to active tab id for sidebar/header compatibility
   const activeTab = useMemo(() => {
     if (currentPath === '/dashboard') return 'dashboard';
-    if (currentPath.startsWith('/units')) return 'units';
+    if (currentPath.startsWith('/units') || currentPath.startsWith('/exam') || currentPath.startsWith('/exams')) return 'exams';
     if (currentPath.startsWith('/vocabulary-bank') || currentPath.startsWith('/vocabulary')) return 'vocab_bank';
     if (currentPath.startsWith('/flashcards')) return 'flashcards';
     if (currentPath.startsWith('/practice')) return 'practice';
-    if (currentPath.startsWith('/exam') || currentPath.startsWith('/exams')) return 'exams';
     if (currentPath.startsWith('/weak-words')) return 'weak-words';
     if (currentPath.startsWith('/textbook')) return 'textbook';
     if (currentPath.startsWith('/progress')) return 'progress';
@@ -611,7 +610,7 @@ export default function App() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <SubjectReport
                       lang={lang}
-                      onOpenAllSubjects={() => navigate('/units')}
+                      onOpenAllSubjects={() => navigate('/exam')}
                       onSelectLesson={(lesson, unit) => {
                         setSelectedExamUnit(unit);
                         setSelectedExamLesson(lesson);
@@ -668,13 +667,6 @@ export default function App() {
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-
-          {/* Route: /units */}
-          {currentPath === '/units' && (
-            <div className="max-w-6xl mx-auto">
-              <HSCUnitsExplorer lang={lang} />
             </div>
           )}
 
