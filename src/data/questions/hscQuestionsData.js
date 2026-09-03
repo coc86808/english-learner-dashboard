@@ -2,116 +2,12 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 858 Authentic Textbook Vocabulary Words
- * Total MCQs: 3432 Board-Standard Multiple Choice Questions
+ * Total Words: 949 Authentic Textbook Vocabulary Words
+ * Total MCQs: 3796 Board-Standard Multiple Choice Questions
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
 export const hscVocabularyList = [
-  {
-    "id": "vocab-u2-l2-17",
-    "word": "Devotion",
-    "bengaliMeaning": "ভক্তি / নিষ্ঠা / আত্মনিবেদন / অনুরাগ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Dedication, loyalty, piety, faithfulness, commitment",
-    "antonyms": "Disloyalty, apathy, indifference, rebellion",
-    "englishMeaning": "Love, loyalty, or enthusiasm for a person, belief, or religious path.",
-    "exampleSentence": "So Lalon returned to Siraj Sain and took up a life of devotion and asceticism under his guidance.",
-    "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Unit 2 • Lesson 2",
-    "sources": [
-      "Unit 2: Lesson 2 (Folk Music)",
-      "Unit 2: Art and Craft: Folk Music"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Apathy"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Apathy"
-    ],
-    "priority": 112
-  },
-  {
-    "id": "vocab-u2-l3-20",
-    "word": "Acclaimed",
-    "bengaliMeaning": "নন্দিত / সর্বজনস্বীকৃত / প্রশংসিত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Celebrated, lauded, acclaimed, distinguished, praised",
-    "antonyms": "Disdained, neglected, condemned, ignored",
-    "englishMeaning": "Publicly praised and celebrated with high honor.",
-    "exampleSentence": "He became internationally acclaimed as a great painter of classic dimensions.",
-    "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Unit 2 • Lesson 3",
-    "sources": [
-      "Unit 2: Lesson 3 (Art)",
-      "Unit 2: Art and Craft: Art"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Distinguished"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Distinguished"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 112
-  },
-  {
-    "id": "vocab-u5-l2-04",
-    "word": "Brotherhood",
-    "bengaliMeaning": "ভ্রাতৃত্ববোধ / সম্প্রীতি / ঐক্য",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Fraternity, fellowship, kinship, solidarity, companionship",
-    "antonyms": "Enmity, hostility, rivalry, discord",
-    "englishMeaning": "An association, or feelings of friendship, mutual support, and solidarity.",
-    "exampleSentence": "They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
-    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Companionship"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Companionship"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 112
-  },
-  {
-    "id": "vocab-u9-l4-08",
-    "word": "Empowerment",
-    "bengaliMeaning": "ক্ষমতায়ন / স্বনির্ভরতা ও মর্যাদার শক্তি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Elevation, enfranchisement, independence, strengthening",
-    "antonyms": "Subjugation, disempowerment, disenfranchisement",
-    "englishMeaning": "The process of becoming stronger and more confident, especially in controlling one's life and claiming one's rights.",
-    "exampleSentence": "Comprehensive analysis, evaluation of Khona's proverbs in rural agriculture, and their enduring relevance in understanding climate dynamics and peasant empowerment.",
-    "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Unit 9 • Lesson 4",
-    "sources": [
-      "Unit 9: Lesson 4 (Story of Shilpi)",
-      "Unit 9: Adolescence: Adolescence and Some (Related) Problems in Bangladesh"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Strengthening"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Strengthening"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 112
-  },
   {
     "id": "vocab-u2-l4-01",
     "word": "Intuitive",
@@ -128,16 +24,16 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Instinctive",
-      "Spontaneous",
+      "Deliberate",
       "Innate",
-      "Deliberate"
+      "Instinctive",
+      "Spontaneous"
     ],
     "crossRefMatchCount": 4,
     "crossRefSynonyms": [
+      "Innate",
       "Instinctive",
-      "Spontaneous",
-      "Innate"
+      "Spontaneous"
     ],
     "crossRefAntonyms": [
       "Deliberate"
@@ -160,9 +56,9 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
+      "Empirical",
       "Individual",
       "Intuitive",
-      "Empirical",
       "Universal"
     ],
     "crossRefMatchCount": 4,
@@ -177,34 +73,36 @@ export const hscVocabularyList = [
     "priority": 108
   },
   {
-    "id": "vocab-u9-l1-41",
-    "word": "Promote",
-    "bengaliMeaning": "উন্নীত করা / উৎসাহ দেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Raise, foster, advance, encourage, boost",
-    "antonyms": "Demote, discourage, impede, hinder",
-    "englishMeaning": "To support, encourage, or actively contribute to the progress or growth of something.",
-    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
+    "id": "vocab-u5-l1-05",
+    "word": "Persecution",
+    "bengaliMeaning": "নিপীড়ন / নির্মম অত্যাচার / নির্যাতন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Oppression, victimization, harassment, torture, tyranny",
+    "antonyms": "Protection, safety, liberation, tolerance",
+    "englishMeaning": "Hostility and ill-treatment, especially because of race or political or religious beliefs.",
+    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Foster",
-      "Discouraged",
-      "Hinder"
+      "Harassment",
+      "Oppression",
+      "Tolerance",
+      "Torture"
     ],
-    "crossRefMatchCount": 3,
+    "crossRefMatchCount": 4,
     "crossRefSynonyms": [
-      "Foster"
+      "Harassment",
+      "Oppression",
+      "Torture"
     ],
     "crossRefAntonyms": [
-      "Discouraged",
-      "Hinder"
+      "Tolerance"
     ],
-    "priority": 106
+    "priority": 108
   },
   {
     "id": "vocab-u9-l1-42",
@@ -252,17 +150,17 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
+      "Affluent",
       "Deprived",
-      "Privileged",
-      "Affluent"
+      "Privileged"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
       "Deprived"
     ],
     "crossRefAntonyms": [
-      "Privileged",
-      "Affluent"
+      "Affluent",
+      "Privileged"
     ],
     "priority": 106
   },
@@ -283,8 +181,8 @@ export const hscVocabularyList = [
     "isCrossReferenced": true,
     "crossReferencedWords": [
       "Advocacy",
-      "Engagement",
-      "Apathy"
+      "Apathy",
+      "Engagement"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
@@ -312,17 +210,17 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Flourish",
-      "Suffering",
-      "Despair"
+      "Despair",
+      "Prosperity",
+      "Suffering"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
-      "Flourish"
+      "Prosperity"
     ],
     "crossRefAntonyms": [
-      "Suffering",
-      "Despair"
+      "Despair",
+      "Suffering"
     ],
     "priority": 106
   },
@@ -343,46 +241,16 @@ export const hscVocabularyList = [
     "isCrossReferenced": true,
     "crossReferencedWords": [
       "Hardships",
-      "Distressing",
-      "Privileges"
+      "Privileges",
+      "Prosperity"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
-      "Hardships",
-      "Distressing"
+      "Hardships"
     ],
     "crossRefAntonyms": [
-      "Privileges"
-    ],
-    "priority": 106
-  },
-  {
-    "id": "vocab-u8-l1-04",
-    "word": "Fostered",
-    "bengaliMeaning": "লালিত-পালিত বা গড়ে তোলা / পরিপুষ্ট করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Nurtured, cultivated, encouraged, promoted, cherished",
-    "antonyms": "Neglected, stifled, suppressed, discouraged",
-    "englishMeaning": "Encouraged or promoted the development of something desirable.",
-    "exampleSentence": "Relationships can also be fostered in workplaces, which may quickly change from professional to social.",
-    "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Unit 8 • Lesson 1",
-    "sources": [
-      "Unit 8: Lesson 1 (Family)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Promote",
-      "Cherished",
-      "Discouraged"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Promote",
-      "Cherished"
-    ],
-    "crossRefAntonyms": [
-      "Discouraged"
+      "Privileges",
+      "Prosperity"
     ],
     "priority": 106
   },
@@ -402,14 +270,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Splendid",
       "Glorious",
-      "Modest"
+      "Modest",
+      "Splendid"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
-      "Splendid",
-      "Glorious"
+      "Glorious",
+      "Splendid"
     ],
     "crossRefAntonyms": [
       "Modest"
@@ -434,8 +302,8 @@ export const hscVocabularyList = [
     "isCrossReferenced": true,
     "crossReferencedWords": [
       "Magnificent",
-      "Splendid",
-      "Modest"
+      "Modest",
+      "Splendid"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
@@ -444,37 +312,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Modest"
-    ],
-    "priority": 106
-  },
-  {
-    "id": "vocab-u2-l3-inspire",
-    "word": "Inspire",
-    "bengaliMeaning": "অনুপ্রাণিত করা / উদ্দীপনা জাগানো",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Motivate, stimulate, encourage, animate",
-    "antonyms": "Discourage, dishearten, deter, repress",
-    "englishMeaning": "Fill someone with the urge or ability to do or feel something, especially to do something creative.",
-    "exampleSentence": "His watercolors, scroll paintings and drawings inspire our artists even today.",
-    "unit": "Unit 2: Art and Craft: Art",
-    "lesson": "Art",
-    "boardExamTag": "Unit 2 • Lesson 3",
-    "sources": [
-      "Unit 2: Art and Craft: Art"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Animate",
-      "Discouraged",
-      "Repressed"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Animate"
-    ],
-    "crossRefAntonyms": [
-      "Discouraged",
-      "Repressed"
     ],
     "priority": 106
   },
@@ -495,9 +332,9 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
+      "Deliberate",
       "Innate",
-      "Intuitive",
-      "Deliberate"
+      "Intuitive"
     ],
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
@@ -506,67 +343,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Deliberate"
-    ],
-    "priority": 106
-  },
-  {
-    "id": "vocab-u3-l2-suffering",
-    "word": "Suffering",
-    "bengaliMeaning": "দুর্ভোগ / যন্ত্রণা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Hardship, anguish, torment, distress",
-    "antonyms": "Comfort, ease, delight, pleasure",
-    "englishMeaning": "The state of undergoing pain, distress, or hardship.",
-    "exampleSentence": "Vocabulary definitions and critical inquiry on human suffering and existential indifference in Pieter Brueghel's painting and William Carlos Williams' poetry.",
-    "unit": "Unit 3: Myths and Literature: Icarus",
-    "lesson": "Icarus",
-    "boardExamTag": "Unit 3 • Lesson 2",
-    "sources": [
-      "Unit 3: Myths and Literature: Icarus"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Anguish",
-      "Distressing",
-      "Delighted"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Anguish",
-      "Distressing"
-    ],
-    "crossRefAntonyms": [
-      "Delighted"
-    ],
-    "priority": 106
-  },
-  {
-    "id": "vocab-u5-l1-05",
-    "word": "Persecution",
-    "bengaliMeaning": "নিপীড়ন / নির্মম অত্যাচার / নির্যাতন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Oppression, victimization, harassment, torture, tyranny",
-    "antonyms": "Protection, safety, liberation, tolerance",
-    "englishMeaning": "Hostility and ill-treatment, especially because of race or political or religious beliefs.",
-    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
-    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Harassment",
-      "Torture",
-      "Tolerance"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Harassment",
-      "Torture"
-    ],
-    "crossRefAntonyms": [
-      "Tolerance"
     ],
     "priority": 106
   },
@@ -587,8 +363,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Infant",
       "Adult",
+      "Infant",
       "Maternal"
     ],
     "crossRefMatchCount": 3,
@@ -632,6 +408,305 @@ export const hscVocabularyList = [
     "priority": 106
   },
   {
+    "id": "vocab-u10-l2-33",
+    "word": "Take a hand",
+    "bengaliMeaning": "হস্তক্ষেপ করা / অংশ নেওয়া",
+    "partsOfSpeech": "Idiom / Phrase",
+    "synonyms": "Participate, step in, intervene, take part, lend a hand",
+    "antonyms": "Stay out, withdraw, abstain, hold back",
+    "englishMeaning": "To become actively involved or take part in solving a problem.",
+    "exampleSentence": "The brave girls decided to take a hand in solving the mystery of the stolen words.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Abstain",
+      "Intervene",
+      "Withdraw"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Intervene"
+    ],
+    "crossRefAntonyms": [
+      "Abstain",
+      "Withdraw"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u9-l1-61",
+    "word": "Passage",
+    "bengaliMeaning": "উত্তরণ / রূপান্তর / অতিক্রম",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Transition, crossing, progression, evolution",
+    "antonyms": "Stagnation, standstill, halt, cessation",
+    "englishMeaning": "The process of moving or transitioning from one life stage, condition, or state to another.",
+    "exampleSentence": "Biological processes drive many aspects of this growth and development with the onset of puberty marking the passage from childhood to adolescence.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Cessation",
+      "Standstill",
+      "Transition"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Transition"
+    ],
+    "crossRefAntonyms": [
+      "Cessation",
+      "Standstill"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u7-l3-10",
+    "word": "Persuaded",
+    "bengaliMeaning": "প্ররোচিত বা সম্মত করেছিল / বোঝাতে সক্ষম হয়েছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Convinced, coaxed, influenced, swayed, induced",
+    "antonyms": "Dissuaded, deterred, discouraged",
+    "englishMeaning": "Induced someone to do something through reasoning or argument.",
+    "exampleSentence": "But Minati Rani Sheel and Mohammad Mafiz Uddin persuaded them to allow their daughters to play.",
+    "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
+    "boardExamTag": "Unit 7 • Lesson 3",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Convinced",
+      "Discouraged",
+      "Influenced"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Convinced",
+      "Influenced"
+    ],
+    "crossRefAntonyms": [
+      "Discouraged"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u5-l5-hardships",
+    "word": "Hardships",
+    "bengaliMeaning": "কঠোর দুঃখকষ্ট / দুর্দশা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Adversities, privations, suffering, trials",
+    "antonyms": "Comfort, ease, prosperity, abundance",
+    "englishMeaning": "Severe suffering or privation.",
+    "exampleSentence": "Death soon ended what little we could have while she lived, and with it her hardships and suffering.",
+    "unit": "Unit 5: Human Rights: Frederick Douglass",
+    "lesson": "Frederick Douglass",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Adversities",
+      "Prosperity",
+      "Suffering"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Adversities",
+      "Suffering"
+    ],
+    "crossRefAntonyms": [
+      "Prosperity"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l2-6",
+    "word": "Agony",
+    "bengaliMeaning": "নিদারুণ যন্ত্রণা / চরম মানসিক বা শারীরিক কষ্ট",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Anguish, torment, distress, suffering, affliction",
+    "antonyms": "Ecstasy, delight, rapture, bliss, comfort",
+    "englishMeaning": "Extreme physical or mental suffering and deep distress.",
+    "exampleSentence": "Twenty-three years of a history of men and women in agony!",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Anguish",
+      "Ecstasy",
+      "Suffering"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Anguish",
+      "Suffering"
+    ],
+    "crossRefAntonyms": [
+      "Ecstasy"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l2-10",
+    "word": "Apartheid",
+    "bengaliMeaning": "বর্ণবৈষম্য নীতি / জাতিবিদ্বেষ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Racism, segregation, racial discrimination, prejudice",
+    "antonyms": "Equality, integration, inclusion, egalitarianism",
+    "englishMeaning": "A policy or system of segregation or discrimination on grounds of race.",
+    "exampleSentence": "The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Prejudice",
+      "Racism",
+      "Segregation"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Prejudice",
+      "Racism",
+      "Segregation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l2-13",
+    "word": "Attitude",
+    "bengaliMeaning": "মনোভাব / দৃষ্টিভঙ্গি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Outlook, perspective, stance, mindset, disposition",
+    "antonyms": "Indifference, neutrality, apathy",
+    "englishMeaning": "A settled way of thinking or feeling about someone or something.",
+    "exampleSentence": "It will enable the Court to appreciate the attitude eventually adopted by the various bodies in the National Liberation Movement.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Apathy",
+      "Disposition",
+      "Perspective"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Disposition",
+      "Perspective"
+    ],
+    "crossRefAntonyms": [
+      "Apathy"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u5-l2-04",
+    "word": "Brotherhood",
+    "bengaliMeaning": "ভ্রাতৃত্ববোধ / সম্প্রীতি / ঐক্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Fraternity, fellowship, kinship, solidarity, companionship",
+    "antonyms": "Enmity, hostility, rivalry, discord",
+    "englishMeaning": "An association, or feelings of friendship, mutual support, and solidarity.",
+    "exampleSentence": "They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Companionship",
+      "Discord"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Companionship"
+    ],
+    "crossRefAntonyms": [
+      "Discord"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-41",
+    "word": "Promote",
+    "bengaliMeaning": "উন্নীত করা / উৎসাহ দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Raise, foster, advance, encourage, boost",
+    "antonyms": "Demote, discourage, impede, hinder",
+    "englishMeaning": "To support, encourage, or actively contribute to the progress or growth of something.",
+    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Foster",
+      "Hinder"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Foster"
+    ],
+    "crossRefAntonyms": [
+      "Hinder"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u8-l1-04",
+    "word": "Fostered",
+    "bengaliMeaning": "লালিত-পালিত বা গড়ে তোলা / পরিপুষ্ট করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Nurtured, cultivated, encouraged, promoted, cherished",
+    "antonyms": "Neglected, stifled, suppressed, discouraged",
+    "englishMeaning": "Encouraged or promoted the development of something desirable.",
+    "exampleSentence": "Relationships can also be fostered in workplaces, which may quickly change from professional to social.",
+    "unit": "Unit 8: Lesson 1 (Family)",
+    "boardExamTag": "Unit 8 • Lesson 1",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Cherished",
+      "Discouraged"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Cherished"
+    ],
+    "crossRefAntonyms": [
+      "Discouraged"
+    ],
+    "priority": 104
+  },
+  {
     "id": "vocab-u1-l1-09",
     "word": "Exquisite",
     "bengaliMeaning": "অপরূপ সুন্দর / চমৎকার / নিখুঁত কারুকাজময়",
@@ -647,13 +722,13 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Splendid",
-      "Magnificent"
+      "Magnificent",
+      "Splendid"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Splendid",
-      "Magnificent"
+      "Magnificent",
+      "Splendid"
     ],
     "crossRefAntonyms": [],
     "priority": 104
@@ -674,15 +749,15 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Prosper",
-      "Declined"
+      "Languish",
+      "Prosper"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
       "Prosper"
     ],
     "crossRefAntonyms": [
-      "Declined"
+      "Languish"
     ],
     "priority": 104
   },
@@ -714,33 +789,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u1-l1-29",
-    "word": "Percussion",
-    "bengaliMeaning": "ঘাতবাদ্য / বাদ্যযন্ত্রের আঘাতধ্বনি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Drumming, beat, percussion instrument",
-    "antonyms": "Silence, hush, quietness, stillness",
-    "englishMeaning": "Musical instruments played by striking with the hand or a beater.",
-    "exampleSentence": "At once the musicians at the gate struck up on their many wind and percussion instruments.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced",
-      "Hush"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced",
-      "Hush"
-    ],
-    "priority": 104
-  },
-  {
     "id": "vocab-u1-l1-37",
     "word": "Sigh",
     "bengaliMeaning": "দীর্ঘশ্বাস ফেলা / হা-হুতাশ করা",
@@ -756,8 +804,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Moan",
-      "Cheer"
+      "Cheer",
+      "Moan"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -838,99 +886,15 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Prohibited",
-      "Banned"
+      "Banned",
+      "Prohibited"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Prohibited",
-      "Banned"
+      "Banned",
+      "Prohibited"
     ],
     "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u10-l2-02",
-    "word": "Blow",
-    "bengaliMeaning": "বাজানো / ভেঁপু বাজানো",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Honk, sound, blast, blare, toot",
-    "antonyms": "Mute, silence, quiet",
-    "englishMeaning": "To sound a horn, whistle, or instrument loudly.",
-    "exampleSentence": "I wanted mountain air to blow out the malaria from too long a time in the subtropics.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Honk",
-      "Silenced"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Honk"
-    ],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u10-l2-18",
-    "word": "Honk",
-    "bengaliMeaning": "মোটরগাড়ির ভেঁপু বাজানো",
-    "partsOfSpeech": "Verb / Noun",
-    "synonyms": "Hoot, blow, blare, toot",
-    "antonyms": "Silence, quietness, mute",
-    "englishMeaning": "To emit or cause a car horn to emit a loud sound.",
-    "exampleSentence": "Polite drivers do not honk aggressively at pedestrians in crosswalks.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Blow",
-      "Silenced"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Blow"
-    ],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u10-l2-19",
-    "word": "Invent",
-    "bengaliMeaning": "উদ্ভাবন করা / সৃষ্টি করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Create, devise, formulate, originate, design",
-    "antonyms": "Destroy, shatter, demolish, ruin",
-    "englishMeaning": "To create or design something that has not existed before.",
-    "exampleSentence": "ho succeeded in inventing machine he desired long time.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Formulated",
-      "Shattered"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Formulated"
-    ],
-    "crossRefAntonyms": [
-      "Shattered"
-    ],
     "priority": 104
   },
   {
@@ -949,8 +913,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Seldom",
-      "Frequently"
+      "Frequently",
+      "Seldom"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -977,8 +941,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Rarely",
-      "Frequently"
+      "Frequently",
+      "Rarely"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -1018,61 +982,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u10-l2-33",
-    "word": "Take a hand",
-    "bengaliMeaning": "হস্তক্ষেপ করা / অংশ নেওয়া",
-    "partsOfSpeech": "Idiom / Phrase",
-    "synonyms": "Participate, step in, intervene, take part, lend a hand",
-    "antonyms": "Stay out, withdraw, abstain, hold back",
-    "englishMeaning": "To become actively involved or take part in solving a problem.",
-    "exampleSentence": "The brave girls decided to take a hand in solving the mystery of the stolen words.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Intervene",
-      "Abstain"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Intervene"
-    ],
-    "crossRefAntonyms": [
-      "Abstain"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u10-l2-36",
-    "word": "Trouble",
-    "bengaliMeaning": "কষ্ট দেওয়া / বিরক্ত করা / উদ্বিগ্ন করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Bother, Disturb, Annoy, Afflict, Distress",
-    "antonyms": "Comfort, Soothe, Calm, Assist, Reassure",
-    "englishMeaning": "To cause distress, discomfort, pain, or inconvenience to someone.",
-    "exampleSentence": "Worried about his son's future, Varaha saw in the stars that Mihir was destined for a life of trouble and death.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Bother",
-      "Distressing"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Bother",
-      "Distressing"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
     "id": "vocab-u10-05",
     "word": "Cheer",
     "bengaliMeaning": "উল্লাস / আনন্দ / শুভকামনা",
@@ -1088,14 +997,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Melancholy",
-      "Despair"
+      "Despair",
+      "Melancholy"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Melancholy",
-      "Despair"
+      "Despair",
+      "Melancholy"
     ],
     "priority": 104
   },
@@ -1124,34 +1033,6 @@ export const hscVocabularyList = [
       "Ponder"
     ],
     "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u10-17",
-    "word": "Disgusted",
-    "bengaliMeaning": "নিদারুণ বিরক্ত / বিতৃষ্ণ / অসন্তুষ্ট",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Repelled, Revolted, Sickened, Appalled, Offended",
-    "antonyms": "Delighted, Pleased, Gratified, Charmed",
-    "englishMeaning": "Feeling or showing strong disapproval, revulsion, or intense annoyance.",
-    "exampleSentence": "Hosts may feel disgusted if guests violate basic table sanitation rules.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Offend",
-      "Delighted"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Offend"
-    ],
-    "crossRefAntonyms": [
-      "Delighted"
-    ],
     "priority": 104
   },
   {
@@ -1197,8 +1078,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Solid",
-      "Feeble"
+      "Feeble",
+      "Solid"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -1225,13 +1106,13 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Customary",
-      "Chronic"
+      "Chronic",
+      "Customary"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Customary",
-      "Chronic"
+      "Chronic",
+      "Customary"
     ],
     "crossRefAntonyms": [],
     "priority": 104
@@ -1265,61 +1146,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u10-39",
-    "word": "Offend",
-    "bengaliMeaning": "অসন্তুষ্ট করা / অপমানিত করা / ক্ষুব্ধ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Insult, Displease, Upset, Affront, Hurt",
-    "antonyms": "Please, Delight, Gratify, Charm, Flatter",
-    "englishMeaning": "To cause someone to feel hurt, angry, or upset by bad behavior.",
-    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Delighted",
-      "Flattering"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Delighted",
-      "Flattering"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u10-45",
-    "word": "Refuse",
-    "bengaliMeaning": "প্রত্যাখ্যান করা / অসম্মত হওয়া / নাকচ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Decline, Reject, Turn down, Spurn, Deny",
-    "antonyms": "Accept, Agree, Receive, Consent",
-    "englishMeaning": "To indicate or show that one is not willing to do or accept something.",
-    "exampleSentence": "Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Declined",
-      "Consent"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Declined"
-    ],
-    "crossRefAntonyms": [
-      "Consent"
-    ],
-    "priority": 104
-  },
-  {
     "id": "vocab-u9-l1-03",
     "word": "Adolescence",
     "bengaliMeaning": "কৈশোর / বয়ঃসন্ধিকাল",
@@ -1335,8 +1161,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Puberty",
-      "Adulthood"
+      "Adulthood",
+      "Puberty"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -1344,34 +1170,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Adulthood"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u9-l1-11",
-    "word": "Communication",
-    "bengaliMeaning": "যোগাযোগ / ভাববিনিময়",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Interaction, contact, dialogue, interchange",
-    "antonyms": "Isolation, disconnect, silence",
-    "englishMeaning": "The imparting or exchanging of information by speaking, writing, or using digital media.",
-    "exampleSentence": "But there is another form of art which is called modern art, which owes its origin to the industrial revolution in Western Europe in the middle of the 19th century and the changes it brought in technology, education, manufacturing and communication.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Interaction",
-      "Silenced"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Interaction"
-    ],
-    "crossRefAntonyms": [
-      "Silenced"
     ],
     "priority": 104
   },
@@ -1446,42 +1244,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Intentional",
-      "Deliberate"
+      "Deliberate",
+      "Intentional"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Intentional",
-      "Deliberate"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u9-l1-61",
-    "word": "Passage",
-    "bengaliMeaning": "উত্তরণ / রূপান্তর / অতিক্রম",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Transition, crossing, progression, evolution",
-    "antonyms": "Stagnation, standstill, halt, cessation",
-    "englishMeaning": "The process of moving or transitioning from one life stage, condition, or state to another.",
-    "exampleSentence": "Biological processes drive many aspects of this growth and development with the onset of puberty marking the passage from childhood to adolescence.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Transition",
-      "Cessation"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Transition"
-    ],
-    "crossRefAntonyms": [
-      "Cessation"
+      "Deliberate",
+      "Intentional"
     ],
     "priority": 104
   },
@@ -1514,116 +1284,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u1-l2-20",
-    "word": "Alternative",
-    "bengaliMeaning": "বিকল্প",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Substitute, optional, alternate, substitute",
-    "antonyms": "Compulsory, mandatory, sole, fixed",
-    "englishMeaning": "Available as another possibility or choice.",
-    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Substituted",
-      "Compulsory"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Substituted"
-    ],
-    "crossRefAntonyms": [
-      "Compulsory"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u1-l3-29",
-    "word": "Absent-minded",
-    "bengaliMeaning": "অন্যমনস্ক / আনমনা / ভাবুক স্বভাবের",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Inattentive, distracted, preoccupied, oblivious, daydreaming",
-    "antonyms": "Attentive, alert, focused, mindful, observant",
-    "englishMeaning": "Having or showing a habitually forgetful or inattentive disposition.",
-    "exampleSentence": "Again, maybe the hiring manager doesn't care if you have bad table manners, but they may worry that your potential clients Will be bothered that you eat like an absent-minded caveman.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Oblivious",
-      "Daydream"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Oblivious",
-      "Daydream"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u2-l1-02",
-    "word": "Perceptions",
-    "bengaliMeaning": "উপলব্ধি / দৃষ্টিভঙ্গি / ইন্দ্রিয়ানুভূতি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Insights, perspectives, impressions, viewpoints, observations",
-    "antonyms": "Blindness, misconceptions, ignorance",
-    "englishMeaning": "The ability to see, hear, or become aware of something through the senses or intellect.",
-    "exampleSentence": "Is it universal, or is it shaped by individual perceptions?",
-    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Unit 2 • Lesson 1",
-    "sources": [
-      "Unit 2: Lesson 1 (What is Beauty?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Perspective",
-      "Impression"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Perspective",
-      "Impression"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u2-l1-10",
-    "word": "Mellowed",
-    "bengaliMeaning": "কোমল বা পরিপক্ব হওয়া / স্নিগ্ধ রূপ ধারণ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Softened, ripened, subdued, harmonized",
-    "antonyms": "Harsh, aggravated, worsened, toughened",
-    "englishMeaning": "Made pleasantly smooth, soft, or tender in quality.",
-    "exampleSentence": "She walks in beauty, like the night Of cloudless climes and starry skies; And all that's best of dark and bright Meet in her aspect and her eyes; Thus mellowed to that tender light Which heaven to gaudy day denies.",
-    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Unit 2 • Lesson 1",
-    "sources": [
-      "Unit 2: Lesson 1 (What is Beauty?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Subdue",
-      "Harsh"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Subdue"
-    ],
-    "crossRefAntonyms": [
-      "Harsh"
-    ],
-    "priority": 104
-  },
-  {
     "id": "vocab-u2-l1-12",
     "word": "Gaudy",
     "bengaliMeaning": "অতিরিক্ত জমকালো / চটুল / ভড়ংপূর্ণ",
@@ -1639,8 +1299,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Showy",
-      "Modest"
+      "Modest",
+      "Showy"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -1679,34 +1339,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u2-l3-04",
-    "word": "Commentary",
-    "bengaliMeaning": "ভাষ্য / পর্যালোচনা / সামাজিক সমালোচনা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Critique, evaluation, analysis, interpretation, review",
-    "antonyms": "Silence, disregard, omission",
-    "englishMeaning": "An expression of opinions or an explanation about an event or situation.",
-    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
-    "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Unit 2 • Lesson 3",
-    "sources": [
-      "Unit 2: Lesson 3 (Art)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Interpretation",
-      "Silenced"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Interpretation"
-    ],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 104
-  },
-  {
     "id": "vocab-u2-l3-06",
     "word": "Anguish",
     "bengaliMeaning": "তীব্র মনোকষ্ট / মানসিক বা শারীরিক যন্ত্রণা",
@@ -1722,70 +1354,15 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Distressing",
+      "Agony",
       "Contentment"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Distressing"
+      "Agony"
     ],
     "crossRefAntonyms": [
       "Contentment"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u2-l4-10",
-    "word": "Prosperous",
-    "bengaliMeaning": "সমৃদ্ধ / বর্ধিষ্ণু / সম্পদশালী",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Thriving, affluent, flourishing, opulent, wealthy",
-    "antonyms": "Impoverished, destitute, declining, bankrupt",
-    "englishMeaning": "Successful in material terms; flourishing financially.",
-    "exampleSentence": "Greek and Roman writers and travelers from abroad mentioned Sonargaon which was a prosperous trading post with a splendid river port.",
-    "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Unit 2 • Lesson 4",
-    "sources": [
-      "Unit 2: Lesson 4 (Craft)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Affluent",
-      "Flourish"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Affluent",
-      "Flourish"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u1-l4-07",
-    "word": "Onrush",
-    "bengaliMeaning": "প্রবল স্রোত / পাহাড়ি ঢল / আকস্মিক প্লাবন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Surge, flood, deluge, influx, onslaught, torrent",
-    "antonyms": "Retreat, ebb, receding, stagnation",
-    "englishMeaning": "A sudden forceful rush or flow forward, as of floodwaters.",
-    "exampleSentence": "All the rivers and water bodies there had overflowed their banks because of the onrush of flood water from the hills beyond our border.",
-    "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Unit 1 • Lesson 4",
-    "sources": [
-      "Unit 1: Lesson 4 (Civic Engagement)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Torrent",
-      "Ebbing"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Torrent"
-    ],
-    "crossRefAntonyms": [
-      "Ebbing"
     ],
     "priority": 104
   },
@@ -1845,145 +1422,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u3-l1-05",
-    "word": "Hush",
-    "bengaliMeaning": "নিস্তব্ধতা / গভীর নীরবতা / স্তব্ধতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Silence, stillness, quietude, tranquility, calm",
-    "antonyms": "Noise, clamor, uproar, din",
-    "englishMeaning": "A period of profound silence, quiet, or stillness.",
-    "exampleSentence": "I look around me And discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
-    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Unit 3 • Lesson 1",
-    "sources": [
-      "Unit 3: Lesson 1 (Myths of Bengal)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced",
-      "Din"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Silenced"
-    ],
-    "crossRefAntonyms": [
-      "Din"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u3-l1-10",
-    "word": "Desolate",
-    "bengaliMeaning": "বিমর্ষ / সঙ্গীহীন / নিঃসঙ্গ / নিরাশ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Forlorn, solitary, lonely, grieving, bleak",
-    "antonyms": "Joyful, companionable, cheerful, flourishing",
-    "englishMeaning": "Feeling or showing misery, unhappiness, or loneliness.",
-    "exampleSentence": "One day, arriving in Amara, Where gods held court, when she danced like a desolate wagtail, Bengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
-    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Unit 3 • Lesson 1",
-    "sources": [
-      "Unit 3: Lesson 1 (Myths of Bengal)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Solitary",
-      "Flourish"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Solitary"
-    ],
-    "crossRefAntonyms": [
-      "Flourish"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u3-l1-12",
-    "word": "Wailed",
-    "bengaliMeaning": "বিলাপ করেছিল / কেঁদে উঠেছিল / হাহাকার করেছিল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Mourned, lamented, wept, cried out, sobbed",
-    "antonyms": "Rejoiced, celebrated, cheered",
-    "englishMeaning": "Made a prolonged high-pitched cry of pain, grief, or anger.",
-    "exampleSentence": "One day, arriving in Amara, Where gods held court, when she danced like a desolate wagtail, Bengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
-    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Unit 3 • Lesson 1",
-    "sources": [
-      "Unit 3: Lesson 1 (Myths of Bengal)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Mourned",
-      "Cheer"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Mourned"
-    ],
-    "crossRefAntonyms": [
-      "Cheer"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u3-l2-10",
-    "word": "Ascended",
-    "bengaliMeaning": "উপরে উঠল / আরোহণ করল / ঊর্ধ্বগমন করল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Soared, climbed, rose, elevated, mounted",
-    "antonyms": "Descended, plummeted, dropped, fallen",
-    "englishMeaning": "Went up or climbed; rose move up through the air.",
-    "exampleSentence": "As he ascended, the sun's heat melted the wax binding his wings.",
-    "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Unit 3 • Lesson 2",
-    "sources": [
-      "Unit 3: Lesson 2 (Icarus)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Mount",
-      "Plummeted"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Mount"
-    ],
-    "crossRefAntonyms": [
-      "Plummeted"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u3-l3-01",
-    "word": "Legends",
-    "bengaliMeaning": "কিংবদন্তি / ঐতিহ্যবাহী ঐতিহাসিক লোকগাথা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Myths, folk tales, folklore, sagas, epics",
-    "antonyms": "Verified facts, scientific data",
-    "englishMeaning": "Traditional stories sometimes regarded as historical but unauthenticated.",
-    "exampleSentence": "Now read the following text and answer the questions that follow: The Legend of Gazi According to some myths and legends, Gazi Pir was a Muslim saint who is said to have spread Islam in the parts of Bengal close to the Sunderbans.",
-    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Unit 3 • Lesson 3",
-    "sources": [
-      "Unit 3: Lesson 3 (The Legend of Gazi)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Folklore",
-      "Epic"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Folklore",
-      "Epic"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
     "id": "vocab-u3-l3-06",
     "word": "Vigilant",
     "bengaliMeaning": "সতর্ক / সদা সজাগ / জাগ্রত দৃষ্টিসম্পন্ন",
@@ -2027,14 +1465,14 @@ export const hscVocabularyList = [
     "isCrossReferenced": true,
     "crossReferencedWords": [
       "Flourish",
-      "Declined"
+      "Languish"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
       "Flourish"
     ],
     "crossRefAntonyms": [
-      "Declined"
+      "Languish"
     ],
     "priority": 104
   },
@@ -2054,8 +1492,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Identity",
-      "Exile"
+      "Exile",
+      "Identity"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -2082,14 +1520,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Privileged",
-      "Endowed"
+      "Endowed",
+      "Privileged"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Privileged",
-      "Endowed"
+      "Endowed",
+      "Privileged"
     ],
     "priority": 104
   },
@@ -2109,8 +1547,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Stature",
-      "Degradation"
+      "Degradation",
+      "Stature"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -2118,34 +1556,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Degradation"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u5-l5-08",
-    "word": "Hinder",
-    "bengaliMeaning": "বাধা দেওয়া / বিঘ্ন সৃষ্টি করা / আটকে রাখা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Obstruct, impede, hamper, thwart, prevent",
-    "antonyms": "Encourage, facilitate, assist, foster",
-    "englishMeaning": "Create difficulties for someone or something, resulting in delay or obstruction.",
-    "exampleSentence": "For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother, and to blunt and destroy the natural affection of the mother for the child.",
-    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Lesson 5 (Frederick Douglass)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Obstructed",
-      "Foster"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Obstructed"
-    ],
-    "crossRefAntonyms": [
-      "Foster"
     ],
     "priority": 104
   },
@@ -2165,8 +1575,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Unquiet",
-      "Docile"
+      "Docile",
+      "Unquiet"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -2174,34 +1584,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Docile"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u6-l1-02",
-    "word": "Vivid",
-    "bengaliMeaning": "সুস্পষ্ট / উজ্জ্বল / প্রাণবন্ত ও সতেজ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Clear, graphic, striking, brilliant, detailed",
-    "antonyms": "Vague, dull, indistinct, blurry",
-    "englishMeaning": "Producing powerful feelings or strong, clear images in the mind.",
-    "exampleSentence": "The poem offers a vivid description of the plants and vegetation found in the nature of Bangladesh.",
-    "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Unit 6 • Lesson 1",
-    "sources": [
-      "Unit 6: Lesson 1 (What is a Dream?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Strike",
-      "Vague"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Strike"
-    ],
-    "crossRefAntonyms": [
-      "Vague"
     ],
     "priority": 104
   },
@@ -2221,8 +1603,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Intellectual",
-      "Instinctive"
+      "Instinctive",
+      "Intellectual"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -2249,43 +1631,15 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Struggling",
+      "Struggle",
       "Toil"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Struggling",
+      "Struggle",
       "Toil"
     ],
     "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u6-l2-05",
-    "word": "Barren",
-    "bengaliMeaning": "অনুর্বর / বন্ধ্যা / শস্যহীন শুষ্ক প্রান্তর",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Infertile, sterile, desolate, arid, unproductive",
-    "antonyms": "Fertile, productive, fruitful, flourishing",
-    "englishMeaning": "Too poor to produce much or any vegetation; bleak and lifeless.",
-    "exampleSentence": "When cherished dreams die, human life resembles a frozen and barren field.",
-    "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Unit 6 • Lesson 2",
-    "sources": [
-      "Unit 6: Lesson 2 (Dreams in Literature)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Desolate",
-      "Flourish"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Desolate"
-    ],
-    "crossRefAntonyms": [
-      "Flourish"
-    ],
     "priority": 104
   },
   {
@@ -2304,67 +1658,12 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Impelled",
-      "Discouraged"
+      "Discouraged",
+      "Impelled"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
       "Impelled"
-    ],
-    "crossRefAntonyms": [
-      "Discouraged"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u7-l1-05",
-    "word": "Subdue",
-    "bengaliMeaning": "বশীভূত বা জয় করা / দমন করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Conquer, overcome, tame, defeat, master",
-    "antonyms": "Yield to, submit, succumb, surrender",
-    "englishMeaning": "Overcome, quieten, or bring under control.",
-    "exampleSentence": "Apart from stamina and practice of long distance swimming, one must have the grit, determination and courage to subdue the Channel.",
-    "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Unit 7 • Lesson 1",
-    "sources": [
-      "Unit 7: Lesson 1 (Brojen Das)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Conquered",
-      "Overcome"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Conquered",
-      "Overcome"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u7-l3-10",
-    "word": "Persuaded",
-    "bengaliMeaning": "প্ররোচিত বা সম্মত করেছিল / বোঝাতে সক্ষম হয়েছিল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Convinced, coaxed, influenced, swayed, induced",
-    "antonyms": "Dissuaded, deterred, discouraged",
-    "englishMeaning": "Induced someone to do something through reasoning or argument.",
-    "exampleSentence": "But Minati Rani Sheel and Mohammad Mafiz Uddin persuaded them to allow their daughters to play.",
-    "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Unit 7 • Lesson 3",
-    "sources": [
-      "Unit 7: Lesson 3 (The Unbeaten Girls)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Convinced",
-      "Discouraged"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Convinced"
     ],
     "crossRefAntonyms": [
       "Discouraged"
@@ -2414,69 +1713,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Infancy",
-      "Adolescence"
+      "Adolescence",
+      "Infancy"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Infancy",
-      "Adolescence"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u9-l2-08",
-    "word": "Hazards",
-    "bengaliMeaning": "বিপদাপদ / স্বাস্থ্যঝুঁকি ও ক্ষতিকর বিষয়সমূহ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Dangers, perils, risks, threats, jeopardy",
-    "antonyms": "Safeties, protections, shelters",
-    "englishMeaning": "Dangers or risks, especially regarding health or well-being.",
-    "exampleSentence": "List of headings A journey towards adulthood Adolescence and education Stages ofhuman life Need for collective efforts An observation by World Health Organisation A transition period The adverse effects of taking drugs Influence of culture on adolescents Potential health hazards j.",
-    "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Unit 9 • Lesson 2",
-    "sources": [
-      "Unit 9: Lesson 2 (Problems in Bangladesh)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Risk",
-      "Threat"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Risk",
-      "Threat"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u9-l3-07",
-    "word": "Curtails",
-    "bengaliMeaning": "সংকোচন করে / হ্রাস করে বা স্বাধীনতা কেড়ে নেয়",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Restricts, limits, reduces, slashes, cuts short",
-    "antonyms": "Expands, increases, lengthens, extends",
-    "englishMeaning": "Reduces in extent or quantity; imposes a restriction on.",
-    "exampleSentence": "Early motherhood abruptly curtails a young woman's academic development.",
-    "unit": "Unit 9: Lesson 3 (Child Marriage)",
-    "boardExamTag": "Unit 9 • Lesson 3",
-    "sources": [
-      "Unit 9: Lesson 3 (Child Marriage)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Restrict",
-      "Extend"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Restrict"
-    ],
-    "crossRefAntonyms": [
-      "Extend"
+      "Adolescence",
+      "Infancy"
     ],
     "priority": 104
   },
@@ -2523,70 +1767,15 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Splendid",
-      "Magnificent"
+      "Magnificent",
+      "Splendid"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Splendid",
-      "Magnificent"
+      "Magnificent",
+      "Splendid"
     ],
     "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u11-l1-07",
-    "word": "Obsessing",
-    "bengaliMeaning": "আচ্ছন্ন করে রাখা / মনে সার্বক্ষণিক প্রভাব বিস্তার করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Preoccupying, haunting, dominating, consuming, fixating",
-    "antonyms": "Ignoring, releasing, disregarding",
-    "englishMeaning": "Preoccupying or continually filling the mind of someone.",
-    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
-    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Unit 11 • Lesson 1",
-    "sources": [
-      "Unit 11: Lesson 1 (Situations of Conflict)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Haunting",
-      "Dominate"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Haunting",
-      "Dominate"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u11-l4-01",
-    "word": "Crave",
-    "bengaliMeaning": "ব্যাকুলভাবে প্রার্থনা করা / চরম আকাঙ্ক্ষা করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Yearn, desire, beg, plead, covet, solicit",
-    "antonyms": "Spurn, reject, despise, decline",
-    "englishMeaning": "Feel a powerful desire for something; ask for earnestly.",
-    "exampleSentence": "I humbly crave, Let me once know.",
-    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Unit 11 • Lesson 4",
-    "sources": [
-      "Unit 11: Lesson 4 (Peace in Literature)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Plea",
-      "Declined"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Plea"
-    ],
-    "crossRefAntonyms": [
-      "Declined"
-    ],
     "priority": 104
   },
   {
@@ -2605,13 +1794,13 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Splendid",
-      "Magnificent"
+      "Magnificent",
+      "Splendid"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Splendid",
-      "Magnificent"
+      "Magnificent",
+      "Splendid"
     ],
     "crossRefAntonyms": [],
     "priority": 104
@@ -2659,42 +1848,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Solitary",
-      "Abandoned"
+      "Abandoned",
+      "Solitary"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Solitary",
-      "Abandoned"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u12-l3-01",
-    "word": "Endangered",
-    "bengaliMeaning": "বিলুপ্তির ঝুঁকিতে থাকা / মারাত্মকভাবে বিপন্ন",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Threatened, imperiled, vulnerable, at-risk, dying out",
-    "antonyms": "Abundant, thriving, flourishing, safe",
-    "englishMeaning": "Seriously at risk of extinction.",
-    "exampleSentence": "Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.",
-    "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Unit 12 • Lesson 3",
-    "sources": [
-      "Unit 12: Lesson 3 (Endangered Species)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Vulnerable",
-      "Flourish"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Vulnerable"
-    ],
-    "crossRefAntonyms": [
-      "Flourish"
+      "Abandoned",
+      "Solitary"
     ],
     "priority": 104
   },
@@ -2727,89 +1888,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u12-l5-01",
-    "word": "Philosophers",
-    "bengaliMeaning": "দার্শনিক / তত্ত্বজ্ঞানী চিন্তাবিদ ও তত্ত্ববিদ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Thinkers, sages, theorists, scholars, visionaries, logicians",
-    "antonyms": "Dogmatists, literalists",
-    "englishMeaning": "Persons engaged or learned in philosophy, especially as an academic discipline.",
-    "exampleSentence": "Let us read an excerpt from Japanese natural farming practitioner and philosopher Masanobu Fukuoka's celebrated book One-Straw Revolution: \"Before researchers become researchers they should become philosophers.",
-    "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Unit 12 • Lesson 5",
-    "sources": [
-      "Unit 12: Lesson 5 (Limits of Scientific Method)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Scholar",
-      "Visionary"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Scholar",
-      "Visionary"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u1-l1-snuff",
-    "word": "Snuff",
-    "bengaliMeaning": "বিলুপ্ত করা / নির্বাপিত করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Extinguish, quench, stifle, put out",
-    "antonyms": "Ignite, kindle, spark, illuminate",
-    "englishMeaning": "Extinguish a flame or end something abruptly.",
-    "exampleSentence": "He took a pinch of snuff and declared, \"This isn't a matter of just a few texts.\" One of the royal nephews sent for scribes.",
-    "unit": "Unit 1: Education and Life: The Parrot's Tale",
-    "lesson": "The Parrot's Tale",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Education and Life: The Parrot's Tale"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Kindling",
-      "Illuminate"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Kindling",
-      "Illuminate"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u2-l4-conquered",
-    "word": "Conquered",
-    "bengaliMeaning": "বিজয়ী হওয়া / জয় করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Vanquished, mastered, overcome, subdued",
-    "antonyms": "Surrendered, submitted, yielded, failed",
-    "englishMeaning": "Successfully overcome or mastered.",
-    "exampleSentence": "One of the historical landmarks of Sonargaon is the ancient city of Panam (also known as Painam) or Panam Nagar, which was developed to the south of the old city to provide residential quarters to the governors after the Moghuls conquered Sonargaon in 1611.",
-    "unit": "Unit 2: Art and Craft: Craft",
-    "lesson": "Craft",
-    "boardExamTag": "Unit 2 • Lesson 4",
-    "sources": [
-      "Unit 2: Art and Craft: Craft"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Overcome",
-      "Subdue"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Overcome",
-      "Subdue"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
     "id": "vocab-u5-l2-servitude",
     "word": "Servitude",
     "bengaliMeaning": "দাসত্ব / পরাধীনতা",
@@ -2826,8 +1904,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Slavery",
-      "Liberty"
+      "Liberty",
+      "Slavery"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -2855,13 +1933,13 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Forbidden",
-      "Banned"
+      "Banned",
+      "Forbidden"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Forbidden",
-      "Banned"
+      "Banned",
+      "Forbidden"
     ],
     "crossRefAntonyms": [],
     "priority": 104
@@ -2883,8 +1961,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Transformation",
-      "Maintenance"
+      "Maintenance",
+      "Transformation"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -2921,120 +1999,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Tolerance"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u5-l5-hardships",
-    "word": "Hardships",
-    "bengaliMeaning": "কঠোর দুঃখকষ্ট / দুর্দশা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Adversities, privations, suffering, trials",
-    "antonyms": "Comfort, ease, prosperity, abundance",
-    "englishMeaning": "Severe suffering or privation.",
-    "exampleSentence": "Death soon ended what little we could have while she lived, and with it her hardships and suffering.",
-    "unit": "Unit 5: Human Rights: Frederick Douglass",
-    "lesson": "Frederick Douglass",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Adversities",
-      "Suffering"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Adversities",
-      "Suffering"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u5-l5-privileges",
-    "word": "Privileges",
-    "bengaliMeaning": "বিশেষ অধিকার / সুযোগ-সুবিধা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Prerogatives, advantages, benefits, entitlements",
-    "antonyms": "Deprivations, disadvantages, penalties",
-    "englishMeaning": "Special rights, advantages, or immunities granted to a particular person or group.",
-    "exampleSentence": "privileges - special rights or advantages granted to a particular group v.",
-    "unit": "Unit 5: Human Rights: Frederick Douglass",
-    "lesson": "Frederick Douglass",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Deprivation",
-      "Penalty"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Deprivation",
-      "Penalty"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u8-l2-duties",
-    "word": "Duties",
-    "bengaliMeaning": "দায়িত্ব ও কর্তব্য",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Obligations, responsibilities, tasks, charges",
-    "antonyms": "Privileges, rights, exemptions",
-    "englishMeaning": "Moral or legal obligations; responsibilities.",
-    "exampleSentence": "Now, he can look back on his childhood and appreciate the way his father was carrying out his duties and responsibilities.",
-    "unit": "Unit 8: Relationships: Warmth in Relationships",
-    "lesson": "Warmth in Relationships",
-    "boardExamTag": "Unit 8 • Lesson 2",
-    "sources": [
-      "Unit 8: Relationships: Warmth in Relationships"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Responsibility",
-      "Privileges"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Responsibility"
-    ],
-    "crossRefAntonyms": [
-      "Privileges"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u8-l2-beset",
-    "word": "Beset",
-    "bengaliMeaning": "ঘিরে ধরা / সংকটাপন্ন করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Plagued, troubled, surrounded, besieged",
-    "antonyms": "Relieved, freed, untroubled, cleared",
-    "englishMeaning": "Trouble or threaten persistently.",
-    "exampleSentence": "About the poet: Robert Hayden was born into a poor family in Detroit in USA in 1913 and had a difficult childhood beset by eyesight problems.",
-    "unit": "Unit 8: Relationships: Warmth in Relationships",
-    "lesson": "Warmth in Relationships",
-    "boardExamTag": "Unit 8 • Lesson 2",
-    "sources": [
-      "Unit 8: Relationships: Warmth in Relationships"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Trouble",
-      "Relieve"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Trouble"
-    ],
-    "crossRefAntonyms": [
-      "Relieve"
     ],
     "priority": 104
   },
@@ -3083,157 +2047,14 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Despair",
-      "Anguish"
+      "Anguish",
+      "Despair"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Despair",
-      "Anguish"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u11-l1-moan",
-    "word": "Moan",
-    "bengaliMeaning": "আর্তনাদ / দীর্ঘশ্বাস",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Groan, lament, whimper, wail",
-    "antonyms": "Cheer, applause, laughter, rejoicing",
-    "englishMeaning": "A long, low sound made by a person expressing physical or mental suffering.",
-    "exampleSentence": "Now if you listen closely I'll tell you what I know Storm clouds are gathering The wind is gonna blow The race of man is suffering And I can hear the moan.",
-    "unit": "Unit 11: Peace and Conflict: Situations of Conflict",
-    "lesson": "Situations of Conflict",
-    "boardExamTag": "Unit 11 • Lesson 1",
-    "sources": [
-      "Unit 11: Peace and Conflict: Situations of Conflict"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Wailed",
-      "Cheer"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Wailed"
-    ],
-    "crossRefAntonyms": [
-      "Cheer"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u5-l5-unquiet",
-    "word": "Unquiet",
-    "bengaliMeaning": "অশান্ত / অস্থির",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Restless, turbulent, agitated, troubled",
-    "antonyms": "Peaceful, serene, tranquil, quiet",
-    "englishMeaning": "Unable to be still; agitated or anxious.",
-    "exampleSentence": "restless spirit - an unquiet nature yearning for truth and liberation viii.",
-    "unit": "Unit 5: Human Rights: Frederick Douglass",
-    "lesson": "Frederick Douglass",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Restless",
-      "Trouble"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Restless",
-      "Trouble"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u11-l3-struggling",
-    "word": "Struggling",
-    "bengaliMeaning": "সংগ্রাম করা / টিকে থাকার যুদ্ধ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Striving, battling, laboring, contending",
-    "antonyms": "Yielding, surrendering, relaxing, prospering",
-    "englishMeaning": "Striving to achieve or attain something in the face of difficulty or resistance.",
-    "exampleSentence": "Listen to the song and read the final part of the lyrics: Then Tom said: \"Ma, whenever ya seen a cop beating a guy Wherever a hungry new born baby cries Wherever there's a fight against the blood and hatred in the air Look for me ma, I'll be there Wherever somebody's struggling for a place to stand For a decent job or a helping hand Wherever somebody is struggling to be free Look in their eyes ma, you'll see me\" And the highway is alive tonight Nobody's fooling nobody as to where it goes I'm sitting down here in the campfire light With the ghost of Tom Joad.",
-    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
-    "lesson": "Stories From Gaza",
-    "boardExamTag": "Unit 11 • Lesson 3",
-    "sources": [
-      "Unit 11: Peace and Conflict: Stories From Gaza"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Strive",
-      "Prosper"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Strive"
-    ],
-    "crossRefAntonyms": [
-      "Prosper"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u1-l2-assignment",
-    "word": "Assignment",
-    "bengaliMeaning": "নির্ধারিত দায়িত্ব বা কাজ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Task, mission, project, duty",
-    "antonyms": "Idleness, discharge, vacancy",
-    "englishMeaning": "A task or piece of work assigned to someone as part of a job or course of study.",
-    "exampleSentence": "It can grade assignments and quizzes, which can free up teachers' time for other tasks, such as lesson planning and providing more one-on-one attention to students.",
-    "unit": "Unit 1: Education and Life: Education and Technology",
-    "lesson": "Education and Technology",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Education and Life: Education and Technology"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Mission",
-      "Duties"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Mission",
-      "Duties"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u12-l1-survive",
-    "word": "Survive",
-    "bengaliMeaning": "বেঁচে থাকা / টিকে থাকা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Endure, subsist, live, outlast",
-    "antonyms": "Perish, succumb, expire, die",
-    "englishMeaning": "Continue to live or exist, especially in spite of danger or hardship.",
-    "exampleSentence": "We know we cannot survive without it.",
-    "unit": "Unit 12: Environment and Nature: Water, Water Everywhere...",
-    "lesson": "Water, Water Everywhere...",
-    "boardExamTag": "Unit 12 • Lesson 1",
-    "sources": [
-      "Unit 12: Environment and Nature: Water, Water Everywhere..."
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Enduring",
-      "Expire"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Enduring"
-    ],
-    "crossRefAntonyms": [
-      "Expire"
+      "Anguish",
+      "Despair"
     ],
     "priority": 104
   },
@@ -3264,34 +2085,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Considerate"
     ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u12-l2-strike",
-    "word": "Strike",
-    "bengaliMeaning": "ধর্মঘট / কর্মবিরতি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Walkout, protest, boycott, work stoppage",
-    "antonyms": "Compliance, return to work, submission",
-    "englishMeaning": "A refusal to work organized by a body of employees as a form of protest.",
-    "exampleSentence": "Instead of going to school, she made a large sign that read 'Skolstrejk för Klimatet' (SCHOOL STRIKE FOR CLIMATE), and calmly sat down outside the Swedish parliament.",
-    "unit": "Unit 12: Environment and Nature: The Greta Effect",
-    "lesson": "The Greta Effect",
-    "boardExamTag": "Unit 12 • Lesson 2",
-    "sources": [
-      "Unit 12: Environment and Nature: The Greta Effect"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Protesting",
-      "Boycott"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Protesting",
-      "Boycott"
-    ],
-    "crossRefAntonyms": [],
     "priority": 104
   },
   {
@@ -3367,8 +2160,8 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Stamina",
-      "Fatigue"
+      "Fatigue",
+      "Stamina"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
@@ -3396,16 +2189,1518 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Emotional",
-      "Cognitive"
+      "Cognitive",
+      "Emotional"
     ],
     "crossRefMatchCount": 2,
     "crossRefSynonyms": [
-      "Emotional",
-      "Cognitive"
+      "Cognitive",
+      "Emotional"
     ],
     "crossRefAntonyms": [],
     "priority": 104
+  },
+  {
+    "id": "vocab-u10-l2-32",
+    "word": "Spirit",
+    "bengaliMeaning": "উদ্দীপনা / মনোভাব / আমেজ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Mood, feelings, attitude, atmosphere, enthusiasm",
+    "antonyms": "Apathy, lifelessness, dullness",
+    "englishMeaning": "The prevailing tone or tendency of what is said or done; mood.",
+    "exampleSentence": "Modern art rejected traditional art forms and began to create new types of artistic expression using styles, techniques, colours and materials that could adequately reflect the spirit of the time and the profound changes in human thought.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Apathy",
+      "Attitude"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Attitude"
+    ],
+    "crossRefAntonyms": [
+      "Apathy"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u10-01",
+    "word": "Approach",
+    "bengaliMeaning": "দৃষ্টিভঙ্গি / কর্মপদ্ধতি / আগমন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Attitude, Method, Manner, Strategy, Advance",
+    "antonyms": "Departure, Retreat, Withdrawal, Avoidance",
+    "englishMeaning": "A way of dealing with situations or coming nearer to someone.",
+    "exampleSentence": "A polite and humble approach helps foreigners adapt to different international customs.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Attitude",
+      "Avoidance"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Attitude"
+    ],
+    "crossRefAntonyms": [
+      "Avoidance"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-58",
+    "word": "Well-being",
+    "bengaliMeaning": "হিতাবস্থা / কল্যাণ / মঙ্গল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Welfare, betterment, prosperity, health",
+    "antonyms": "Ill-being, woe, misery, suffering",
+    "englishMeaning": "The state of being comfortable, healthy, or happy.",
+    "exampleSentence": "The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Prosperity",
+      "Suffering"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Prosperity"
+    ],
+    "crossRefAntonyms": [
+      "Suffering"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l2-10",
+    "word": "Interaction",
+    "bengaliMeaning": "মিথস্ক্রিয়া / পারস্পরিক যোগাযোগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Communication, dialogue, contact, interplay, connection",
+    "antonyms": "Isolation, detachment, alienation, segregation",
+    "englishMeaning": "Reciprocal action or social communication between individuals.",
+    "exampleSentence": "There is also the lack of human interaction and emotional support that students receive when using AI-powered educational tools.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Communication",
+      "Segregation"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Communication"
+    ],
+    "crossRefAntonyms": [
+      "Segregation"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u3-l2-07",
+    "word": "Moderate",
+    "bengaliMeaning": "পরিমিত / মধ্যম মাত্রার / সহনশীল",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Temperate, reasonable, modest, intermediate, balanced",
+    "antonyms": "Extreme, excessive, drastic, radical",
+    "englishMeaning": "Average in amount, intensity, quality, or degree; not extreme.",
+    "exampleSentence": "He warned Icarus to fly at a moderate height—too close to the sea, and the wings would become heavy with moisture; too close to the sun, and the wax would melt.",
+    "unit": "Unit 3: Lesson 2 (Icarus)",
+    "boardExamTag": "Unit 3 • Lesson 2",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Extreme",
+      "Modest"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Modest"
+    ],
+    "crossRefAntonyms": [
+      "Extreme"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l3-04",
+    "word": "Elementary",
+    "bengaliMeaning": "প্রাথমিক / বুনিয়াদি পর্যায় / মৌলিক স্তর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Basic, primary, foundational, rudimentary, introductory",
+    "antonyms": "Advanced, complex, sophisticated",
+    "englishMeaning": "Relating to the basic elements of a subject; primary.",
+    "exampleSentence": "Education shall be free, at least in the elementary and fundamental stages.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Advanced",
+      "Sophisticated"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Advanced",
+      "Sophisticated"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u7-l1-11",
+    "word": "Momentum",
+    "bengaliMeaning": "গতিশক্তি / তীব্র গতিবেগ ও উদ্যম",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Impetus, drive, thrust, velocity, force",
+    "antonyms": "Inertia, stagnation, standstill",
+    "englishMeaning": "The quantity of motion of a moving body; impetus gained by movement.",
+    "exampleSentence": "the momentum was building up...",
+    "unit": "Unit 7: Lesson 1 (Brojen Das)",
+    "boardExamTag": "Unit 7 • Lesson 1",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Standstill",
+      "Thrust"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Thrust"
+    ],
+    "crossRefAntonyms": [
+      "Standstill"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u11-l1-05",
+    "word": "Togetherness",
+    "bengaliMeaning": "একাত্মতা / সৌহার্দ্যপূর্ণ ঐক্য ও ভ্রাতৃত্ববোধ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Solidarity, unity, camaraderie, fellowship, communion",
+    "antonyms": "Isolation, alienation, estrangement, discord",
+    "englishMeaning": "The state of being close to another person or other people; affection and closeness.",
+    "exampleSentence": "Here is a poem Angelou wrote about human relationship, more particularly, togetherness, without which our lives become meaningless, no matter how wealthy or well-connected we are.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Communion",
+      "Discord"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Communion"
+    ],
+    "crossRefAntonyms": [
+      "Discord"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u8-l1-foster",
+    "word": "Foster",
+    "bengaliMeaning": "লালন-পালন করা / প্রবৃদ্ধি ঘটানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Nurture, cultivate, encourage, cherish",
+    "antonyms": "Neglect, suppress, destroy, stifle",
+    "englishMeaning": "Encourage or promote the development of something.",
+    "exampleSentence": "Relationships can also be fostered in workplaces, which may quickly change from professional to social.",
+    "unit": "Unit 8: Relationships: Family Relationship",
+    "lesson": "Family Relationship",
+    "boardExamTag": "Unit 8 • Lesson 1",
+    "sources": [
+      "Unit 8: Relationships: Family Relationship"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Cherish",
+      "Suppress"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Cherish"
+    ],
+    "crossRefAntonyms": [
+      "Suppress"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u8-l3-impelled",
+    "word": "Impelled",
+    "bengaliMeaning": "প্রণোদিত করা / বাধ্য করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Driven, urged, propelled, motivated",
+    "antonyms": "Deterred, discouraged, restrained",
+    "englishMeaning": "Drive, force, or urge (someone) to do something.",
+    "exampleSentence": "He was suddenly impelled to speak.",
+    "unit": "Unit 8: Relationships: A Mother in Mannville",
+    "lesson": "A Mother in Mannville",
+    "boardExamTag": "Unit 8 • Lesson 3",
+    "sources": [
+      "Unit 8: Relationships: A Mother in Mannville"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discouraged",
+      "Motivated"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Motivated"
+    ],
+    "crossRefAntonyms": [
+      "Discouraged"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u11-l2-politics",
+    "word": "Politics",
+    "bengaliMeaning": "রাজনীতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Governance, statecraft, civic affairs, political science",
+    "antonyms": "Apathy, lawlessness, anarchy",
+    "englishMeaning": "The activities associated with the governance of a country or area.",
+    "exampleSentence": "A cat can look out for itself, but I cannot think what will become of the others.\" \"What politics have you?\" I asked.",
+    "unit": "Unit 11: Peace and Conflict: \"The Old Man at the Bridge\" by Ernest Hemingway",
+    "lesson": "\"The Old Man at the Bridge\" by Ernest Hemingway",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Peace and Conflict: \"The Old Man at the Bridge\" by Ernest Hemingway"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Anarchy",
+      "Apathy"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Anarchy",
+      "Apathy"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-15",
+    "word": "Awash",
+    "bengaliMeaning": "বিধৌত / রক্তে প্লাবিত বা রঞ্জিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Flooded, covered, submerged, inundated, overflowing",
+    "antonyms": "Dried, barren, arid, drained",
+    "englishMeaning": "Covered or flooded with water or another liquid such as blood.",
+    "exampleSentence": "The streets of Dhaka, Chattogram, Khulna, Rajshahi and Rangpur are awash with the blood of our brothers.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Barren",
+      "Overflowing"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Overflowing"
+    ],
+    "crossRefAntonyms": [
+      "Barren"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-51",
+    "word": "Injustice",
+    "bengaliMeaning": "অবিচার / অন্যায় / অসঙ্গতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Unfairness, inequity, wrong, grievance, oppression",
+    "antonyms": "Justice, fairness, righteousness, equity",
+    "englishMeaning": "Lack of fairness or justice; an unjust act or occurrence.",
+    "exampleSentence": "A state sweltering with the heat of injustice will be transformed into an oasis of freedom and justice.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Equity",
+      "Oppression"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Oppression"
+    ],
+    "crossRefAntonyms": [
+      "Equity"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-52",
+    "word": "Interposition",
+    "bengaliMeaning": "হস্তক্ষেপ / বাধা দেওয়া",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Intervention, interference, mediation, intrusion",
+    "antonyms": "Non-intervention, withdrawal, disregard, neutrality",
+    "englishMeaning": "The action of interposing and interfering with federal authority or civil rights.",
+    "exampleSentence": "With its governor having his lips dripping with the words of 'interposition' and 'nullification'.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Interference",
+      "Intervention"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Interference",
+      "Intervention"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-55",
+    "word": "Languish",
+    "bengaliMeaning": "নিস্তেজ হওয়া / কষ্টে ধুঁকা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Decay, deteriorate, wither, suffer, pine",
+    "antonyms": "Flourish, thrive, prosper, bloom",
+    "englishMeaning": "Grow weak or feeble; suffer from being forced to remain in an unpleasant place or situation.",
+    "exampleSentence": "The Negro is still languishing in the corners of American society and finds himself an exile in his own land.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Flourish",
+      "Prosper"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Flourish",
+      "Prosper"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-64",
+    "word": "Oppression",
+    "bengaliMeaning": "নিপীড়ন / অত্যাচার / ভারাক্রান্ত অবস্থা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Persecution, tyranny, subjugation, cruelty, harassment",
+    "antonyms": "Freedom, liberation, justice, cheerfulness",
+    "englishMeaning": "Prolonged cruel or unjust treatment or exercise of authority.",
+    "exampleSentence": "A state sweltering with the heat of oppression will be transformed into an oasis of freedom and justice.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harassment",
+      "Persecution"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Harassment",
+      "Persecution"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-74",
+    "word": "Resistance",
+    "bengaliMeaning": "প্রতিরোধ / বাধা দান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Opposition, defiance, counteraction, struggle",
+    "antonyms": "Surrender, submission, compliance, yielding",
+    "englishMeaning": "The refusal to accept or comply with something; the attempt to prevent something by action or argument.",
+    "exampleSentence": "This campaign was based on the principles of passive resistance.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Defiance",
+      "Struggle"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Defiance",
+      "Struggle"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-78",
+    "word": "Self-evident",
+    "bengaliMeaning": "স্বতঃসিদ্ধ / স্বতঃপ্রমাণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Obvious, apparent, manifest, indisputable, clear",
+    "antonyms": "Unclear, questionable, obscure, doubtful",
+    "englishMeaning": "Not needing to be demonstrated or explained; obvious.",
+    "exampleSentence": "We hold these truths to be self-evident; that all men are created equal.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Apparent",
+      "Manifest"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Apparent",
+      "Manifest"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-87",
+    "word": "Unforgettable",
+    "bengaliMeaning": "অবিস্মরণীয় / সহজে ভোলা যায় না এমন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Memorable, haunting, indelible, epoch-making",
+    "antonyms": "Forgettable, unremarkable, ordinary, transient",
+    "englishMeaning": "Impossible to forget; very memorable because of significance.",
+    "exampleSentence": "The historic 7th March speech delivered by Bangabandhu is an unforgettable moment in the history of human freedom.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Haunting",
+      "Transient"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Haunting"
+    ],
+    "crossRefAntonyms": [
+      "Transient"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-91",
+    "word": "Withdraw",
+    "bengaliMeaning": "প্রত্যাহার করা / বাতিল করা / ফিরিয়ে নেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Revoke, retract, cancel, recall, rescind",
+    "antonyms": "Impose, maintain, deposit, establish",
+    "englishMeaning": "Discontinue, cancel, or remove an order, rule, or military martial law.",
+    "exampleSentence": "Although you have called the Assembly into session, you'll have to withdraw Martial Law.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Impose",
+      "Maintain"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Impose",
+      "Maintain"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u2-l2-17",
+    "word": "Devotion",
+    "bengaliMeaning": "ভক্তি / নিষ্ঠা / আত্মনিবেদন / অনুরাগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Dedication, loyalty, piety, faithfulness, commitment",
+    "antonyms": "Disloyalty, apathy, indifference, rebellion",
+    "englishMeaning": "Love, loyalty, or enthusiasm for a person, belief, or religious path.",
+    "exampleSentence": "So Lalon returned to Siraj Sain and took up a life of devotion and asceticism under his guidance.",
+    "unit": "Unit 2: Lesson 2 (Folk Music)",
+    "boardExamTag": "Unit 2 • Lesson 2",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)",
+      "Unit 2: Art and Craft: Folk Music"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Apathy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Apathy"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l3-20",
+    "word": "Acclaimed",
+    "bengaliMeaning": "নন্দিত / সর্বজনস্বীকৃত / প্রশংসিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Celebrated, lauded, acclaimed, distinguished, praised",
+    "antonyms": "Disdained, neglected, condemned, ignored",
+    "englishMeaning": "Publicly praised and celebrated with high honor.",
+    "exampleSentence": "He became internationally acclaimed as a great painter of classic dimensions.",
+    "unit": "Unit 2: Lesson 3 (Art)",
+    "boardExamTag": "Unit 2 • Lesson 3",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)",
+      "Unit 2: Art and Craft: Art"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Distinguished"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Distinguished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l4-08",
+    "word": "Empowerment",
+    "bengaliMeaning": "ক্ষমতায়ন / স্বনির্ভরতা ও মর্যাদার শক্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Elevation, enfranchisement, independence, strengthening",
+    "antonyms": "Subjugation, disempowerment, disenfranchisement",
+    "englishMeaning": "The process of becoming stronger and more confident, especially in controlling one's life and claiming one's rights.",
+    "exampleSentence": "Comprehensive analysis, evaluation of Khona's proverbs in rural agriculture, and their enduring relevance in understanding climate dynamics and peasant empowerment.",
+    "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
+    "boardExamTag": "Unit 9 • Lesson 4",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)",
+      "Unit 9: Adolescence: Adolescence and Some (Related) Problems in Bangladesh"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Strengthening"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Strengthening"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l3-inspire",
+    "word": "Inspire",
+    "bengaliMeaning": "অনুপ্রাণিত করা / উদ্দীপনা জাগানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Motivate, stimulate, encourage, animate",
+    "antonyms": "Discourage, dishearten, deter, repress",
+    "englishMeaning": "Fill someone with the urge or ability to do or feel something, especially to do something creative.",
+    "exampleSentence": "His watercolors, scroll paintings and drawings inspire our artists even today.",
+    "unit": "Unit 2: Art and Craft: Art",
+    "lesson": "Art",
+    "boardExamTag": "Unit 2 • Lesson 3",
+    "sources": [
+      "Unit 2: Art and Craft: Art"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Animate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Animate"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l2-suffering",
+    "word": "Suffering",
+    "bengaliMeaning": "দুর্ভোগ / যন্ত্রণা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Hardship, anguish, torment, distress",
+    "antonyms": "Comfort, ease, delight, pleasure",
+    "englishMeaning": "The state of undergoing pain, distress, or hardship.",
+    "exampleSentence": "Vocabulary definitions and critical inquiry on human suffering and existential indifference in Pieter Brueghel's painting and William Carlos Williams' poetry.",
+    "unit": "Unit 3: Myths and Literature: Icarus",
+    "lesson": "Icarus",
+    "boardExamTag": "Unit 3 • Lesson 2",
+    "sources": [
+      "Unit 3: Myths and Literature: Icarus"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Anguish"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Anguish"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-29",
+    "word": "Percussion",
+    "bengaliMeaning": "ঘাতবাদ্য / বাদ্যযন্ত্রের আঘাতধ্বনি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Drumming, beat, percussion instrument",
+    "antonyms": "Silence, hush, quietness, stillness",
+    "englishMeaning": "Musical instruments played by striking with the hand or a beater.",
+    "exampleSentence": "At once the musicians at the gate struck up on their many wind and percussion instruments.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Hush"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Hush"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-l2-02",
+    "word": "Blow",
+    "bengaliMeaning": "বাজানো / ভেঁপু বাজানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Honk, sound, blast, blare, toot",
+    "antonyms": "Mute, silence, quiet",
+    "englishMeaning": "To sound a horn, whistle, or instrument loudly.",
+    "exampleSentence": "I wanted mountain air to blow out the malaria from too long a time in the subtropics.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Honk"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Honk"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-l2-18",
+    "word": "Honk",
+    "bengaliMeaning": "মোটরগাড়ির ভেঁপু বাজানো",
+    "partsOfSpeech": "Verb / Noun",
+    "synonyms": "Hoot, blow, blare, toot",
+    "antonyms": "Silence, quietness, mute",
+    "englishMeaning": "To emit or cause a car horn to emit a loud sound.",
+    "exampleSentence": "Polite drivers do not honk aggressively at pedestrians in crosswalks.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Blow"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Blow"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-l2-36",
+    "word": "Trouble",
+    "bengaliMeaning": "কষ্ট দেওয়া / বিরক্ত করা / উদ্বিগ্ন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Bother, Disturb, Annoy, Afflict, Distress",
+    "antonyms": "Comfort, Soothe, Calm, Assist, Reassure",
+    "englishMeaning": "To cause distress, discomfort, pain, or inconvenience to someone.",
+    "exampleSentence": "Worried about his son's future, Varaha saw in the stars that Mihir was destined for a life of trouble and death.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Bother"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Bother"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-17",
+    "word": "Disgusted",
+    "bengaliMeaning": "নিদারুণ বিরক্ত / বিতৃষ্ণ / অসন্তুষ্ট",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Repelled, Revolted, Sickened, Appalled, Offended",
+    "antonyms": "Delighted, Pleased, Gratified, Charmed",
+    "englishMeaning": "Feeling or showing strong disapproval, revulsion, or intense annoyance.",
+    "exampleSentence": "Hosts may feel disgusted if guests violate basic table sanitation rules.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Delighted"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Delighted"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-45",
+    "word": "Refuse",
+    "bengaliMeaning": "প্রত্যাখ্যান করা / অসম্মত হওয়া / নাকচ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Decline, Reject, Turn down, Spurn, Deny",
+    "antonyms": "Accept, Agree, Receive, Consent",
+    "englishMeaning": "To indicate or show that one is not willing to do or accept something.",
+    "exampleSentence": "Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Consent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Consent"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l1-11",
+    "word": "Communication",
+    "bengaliMeaning": "যোগাযোগ / ভাববিনিময়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Interaction, contact, dialogue, interchange",
+    "antonyms": "Isolation, disconnect, silence",
+    "englishMeaning": "The imparting or exchanging of information by speaking, writing, or using digital media.",
+    "exampleSentence": "But there is another form of art which is called modern art, which owes its origin to the industrial revolution in Western Europe in the middle of the 19th century and the changes it brought in technology, education, manufacturing and communication.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Interaction"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Interaction"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l2-20",
+    "word": "Alternative",
+    "bengaliMeaning": "বিকল্প",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Substitute, optional, alternate, substitute",
+    "antonyms": "Compulsory, mandatory, sole, fixed",
+    "englishMeaning": "Available as another possibility or choice.",
+    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Compulsory"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Compulsory"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l3-29",
+    "word": "Absent-minded",
+    "bengaliMeaning": "অন্যমনস্ক / আনমনা / ভাবুক স্বভাবের",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Inattentive, distracted, preoccupied, oblivious, daydreaming",
+    "antonyms": "Attentive, alert, focused, mindful, observant",
+    "englishMeaning": "Having or showing a habitually forgetful or inattentive disposition.",
+    "exampleSentence": "Again, maybe the hiring manager doesn't care if you have bad table manners, but they may worry that your potential clients Will be bothered that you eat like an absent-minded caveman.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Oblivious"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Oblivious"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l1-10",
+    "word": "Mellowed",
+    "bengaliMeaning": "কোমল বা পরিপক্ব হওয়া / স্নিগ্ধ রূপ ধারণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Softened, ripened, subdued, harmonized",
+    "antonyms": "Harsh, aggravated, worsened, toughened",
+    "englishMeaning": "Made pleasantly smooth, soft, or tender in quality.",
+    "exampleSentence": "She walks in beauty, like the night Of cloudless climes and starry skies; And all that's best of dark and bright Meet in her aspect and her eyes; Thus mellowed to that tender light Which heaven to gaudy day denies.",
+    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
+    "boardExamTag": "Unit 2 • Lesson 1",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harsh"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Harsh"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l3-04",
+    "word": "Commentary",
+    "bengaliMeaning": "ভাষ্য / পর্যালোচনা / সামাজিক সমালোচনা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Critique, evaluation, analysis, interpretation, review",
+    "antonyms": "Silence, disregard, omission",
+    "englishMeaning": "An expression of opinions or an explanation about an event or situation.",
+    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
+    "unit": "Unit 2: Lesson 3 (Art)",
+    "boardExamTag": "Unit 2 • Lesson 3",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Interpretation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Interpretation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l4-10",
+    "word": "Prosperous",
+    "bengaliMeaning": "সমৃদ্ধ / বর্ধিষ্ণু / সম্পদশালী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Thriving, affluent, flourishing, opulent, wealthy",
+    "antonyms": "Impoverished, destitute, declining, bankrupt",
+    "englishMeaning": "Successful in material terms; flourishing financially.",
+    "exampleSentence": "Greek and Roman writers and travelers from abroad mentioned Sonargaon which was a prosperous trading post with a splendid river port.",
+    "unit": "Unit 2: Lesson 4 (Craft)",
+    "boardExamTag": "Unit 2 • Lesson 4",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Affluent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Affluent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l4-07",
+    "word": "Onrush",
+    "bengaliMeaning": "প্রবল স্রোত / পাহাড়ি ঢল / আকস্মিক প্লাবন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Surge, flood, deluge, influx, onslaught, torrent",
+    "antonyms": "Retreat, ebb, receding, stagnation",
+    "englishMeaning": "A sudden forceful rush or flow forward, as of floodwaters.",
+    "exampleSentence": "All the rivers and water bodies there had overflowed their banks because of the onrush of flood water from the hills beyond our border.",
+    "unit": "Unit 1: Lesson 4 (Civic Engagement)",
+    "boardExamTag": "Unit 1 • Lesson 4",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Torrent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Torrent"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l1-05",
+    "word": "Hush",
+    "bengaliMeaning": "নিস্তব্ধতা / গভীর নীরবতা / স্তব্ধতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Silence, stillness, quietude, tranquility, calm",
+    "antonyms": "Noise, clamor, uproar, din",
+    "englishMeaning": "A period of profound silence, quiet, or stillness.",
+    "exampleSentence": "I look around me And discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
+    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
+    "boardExamTag": "Unit 3 • Lesson 1",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Din"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Din"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l1-10",
+    "word": "Desolate",
+    "bengaliMeaning": "বিমর্ষ / সঙ্গীহীন / নিঃসঙ্গ / নিরাশ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Forlorn, solitary, lonely, grieving, bleak",
+    "antonyms": "Joyful, companionable, cheerful, flourishing",
+    "englishMeaning": "Feeling or showing misery, unhappiness, or loneliness.",
+    "exampleSentence": "One day, arriving in Amara, Where gods held court, when she danced like a desolate wagtail, Bengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
+    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
+    "boardExamTag": "Unit 3 • Lesson 1",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Solitary"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Solitary"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l1-12",
+    "word": "Wailed",
+    "bengaliMeaning": "বিলাপ করেছিল / কেঁদে উঠেছিল / হাহাকার করেছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Mourned, lamented, wept, cried out, sobbed",
+    "antonyms": "Rejoiced, celebrated, cheered",
+    "englishMeaning": "Made a prolonged high-pitched cry of pain, grief, or anger.",
+    "exampleSentence": "One day, arriving in Amara, Where gods held court, when she danced like a desolate wagtail, Bengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
+    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
+    "boardExamTag": "Unit 3 • Lesson 1",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Mourned"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Mourned"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l2-10",
+    "word": "Ascended",
+    "bengaliMeaning": "উপরে উঠল / আরোহণ করল / ঊর্ধ্বগমন করল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Soared, climbed, rose, elevated, mounted",
+    "antonyms": "Descended, plummeted, dropped, fallen",
+    "englishMeaning": "Went up or climbed; rose move up through the air.",
+    "exampleSentence": "As he ascended, the sun's heat melted the wax binding his wings.",
+    "unit": "Unit 3: Lesson 2 (Icarus)",
+    "boardExamTag": "Unit 3 • Lesson 2",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Plummeted"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Plummeted"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l3-01",
+    "word": "Legends",
+    "bengaliMeaning": "কিংবদন্তি / ঐতিহ্যবাহী ঐতিহাসিক লোকগাথা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Myths, folk tales, folklore, sagas, epics",
+    "antonyms": "Verified facts, scientific data",
+    "englishMeaning": "Traditional stories sometimes regarded as historical but unauthenticated.",
+    "exampleSentence": "Now read the following text and answer the questions that follow: The Legend of Gazi According to some myths and legends, Gazi Pir was a Muslim saint who is said to have spread Islam in the parts of Bengal close to the Sunderbans.",
+    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
+    "boardExamTag": "Unit 3 • Lesson 3",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Folklore"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Folklore"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l5-08",
+    "word": "Hinder",
+    "bengaliMeaning": "বাধা দেওয়া / বিঘ্ন সৃষ্টি করা / আটকে রাখা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Obstruct, impede, hamper, thwart, prevent",
+    "antonyms": "Encourage, facilitate, assist, foster",
+    "englishMeaning": "Create difficulties for someone or something, resulting in delay or obstruction.",
+    "exampleSentence": "For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother, and to blunt and destroy the natural affection of the mother for the child.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Foster"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Foster"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u6-l1-02",
+    "word": "Vivid",
+    "bengaliMeaning": "সুস্পষ্ট / উজ্জ্বল / প্রাণবন্ত ও সতেজ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Clear, graphic, striking, brilliant, detailed",
+    "antonyms": "Vague, dull, indistinct, blurry",
+    "englishMeaning": "Producing powerful feelings or strong, clear images in the mind.",
+    "exampleSentence": "The poem offers a vivid description of the plants and vegetation found in the nature of Bangladesh.",
+    "unit": "Unit 6: Lesson 1 (What is a Dream?)",
+    "boardExamTag": "Unit 6 • Lesson 1",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Vague"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Vague"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u6-l2-05",
+    "word": "Barren",
+    "bengaliMeaning": "অনুর্বর / বন্ধ্যা / শস্যহীন শুষ্ক প্রান্তর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Infertile, sterile, desolate, arid, unproductive",
+    "antonyms": "Fertile, productive, fruitful, flourishing",
+    "englishMeaning": "Too poor to produce much or any vegetation; bleak and lifeless.",
+    "exampleSentence": "When cherished dreams die, human life resembles a frozen and barren field.",
+    "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
+    "boardExamTag": "Unit 6 • Lesson 2",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Desolate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Desolate"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u7-l1-05",
+    "word": "Subdue",
+    "bengaliMeaning": "বশীভূত বা জয় করা / দমন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Conquer, overcome, tame, defeat, master",
+    "antonyms": "Yield to, submit, succumb, surrender",
+    "englishMeaning": "Overcome, quieten, or bring under control.",
+    "exampleSentence": "Apart from stamina and practice of long distance swimming, one must have the grit, determination and courage to subdue the Channel.",
+    "unit": "Unit 7: Lesson 1 (Brojen Das)",
+    "boardExamTag": "Unit 7 • Lesson 1",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Overcome"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Overcome"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u11-l1-07",
+    "word": "Obsessing",
+    "bengaliMeaning": "আচ্ছন্ন করে রাখা / মনে সার্বক্ষণিক প্রভাব বিস্তার করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Preoccupying, haunting, dominating, consuming, fixating",
+    "antonyms": "Ignoring, releasing, disregarding",
+    "englishMeaning": "Preoccupying or continually filling the mind of someone.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Haunting"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Haunting"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u12-l3-01",
+    "word": "Endangered",
+    "bengaliMeaning": "বিলুপ্তির ঝুঁকিতে থাকা / মারাত্মকভাবে বিপন্ন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Threatened, imperiled, vulnerable, at-risk, dying out",
+    "antonyms": "Abundant, thriving, flourishing, safe",
+    "englishMeaning": "Seriously at risk of extinction.",
+    "exampleSentence": "Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.",
+    "unit": "Unit 12: Lesson 3 (Endangered Species)",
+    "boardExamTag": "Unit 12 • Lesson 3",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Vulnerable"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Vulnerable"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-snuff",
+    "word": "Snuff",
+    "bengaliMeaning": "বিলুপ্ত করা / নির্বাপিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Extinguish, quench, stifle, put out",
+    "antonyms": "Ignite, kindle, spark, illuminate",
+    "englishMeaning": "Extinguish a flame or end something abruptly.",
+    "exampleSentence": "He took a pinch of snuff and declared, \"This isn't a matter of just a few texts.\" One of the royal nephews sent for scribes.",
+    "unit": "Unit 1: Education and Life: The Parrot's Tale",
+    "lesson": "The Parrot's Tale",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Education and Life: The Parrot's Tale"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Illuminate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Illuminate"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l4-conquered",
+    "word": "Conquered",
+    "bengaliMeaning": "বিজয়ী হওয়া / জয় করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Vanquished, mastered, overcome, subdued",
+    "antonyms": "Surrendered, submitted, yielded, failed",
+    "englishMeaning": "Successfully overcome or mastered.",
+    "exampleSentence": "One of the historical landmarks of Sonargaon is the ancient city of Panam (also known as Painam) or Panam Nagar, which was developed to the south of the old city to provide residential quarters to the governors after the Moghuls conquered Sonargaon in 1611.",
+    "unit": "Unit 2: Art and Craft: Craft",
+    "lesson": "Craft",
+    "boardExamTag": "Unit 2 • Lesson 4",
+    "sources": [
+      "Unit 2: Art and Craft: Craft"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Overcome"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Overcome"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u8-l2-duties",
+    "word": "Duties",
+    "bengaliMeaning": "দায়িত্ব ও কর্তব্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Obligations, responsibilities, tasks, charges",
+    "antonyms": "Privileges, rights, exemptions",
+    "englishMeaning": "Moral or legal obligations; responsibilities.",
+    "exampleSentence": "Now, he can look back on his childhood and appreciate the way his father was carrying out his duties and responsibilities.",
+    "unit": "Unit 8: Relationships: Warmth in Relationships",
+    "lesson": "Warmth in Relationships",
+    "boardExamTag": "Unit 8 • Lesson 2",
+    "sources": [
+      "Unit 8: Relationships: Warmth in Relationships"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Privileges"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Privileges"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u11-l1-moan",
+    "word": "Moan",
+    "bengaliMeaning": "আর্তনাদ / দীর্ঘশ্বাস",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Groan, lament, whimper, wail",
+    "antonyms": "Cheer, applause, laughter, rejoicing",
+    "englishMeaning": "A long, low sound made by a person expressing physical or mental suffering.",
+    "exampleSentence": "Now if you listen closely I'll tell you what I know Storm clouds are gathering The wind is gonna blow The race of man is suffering And I can hear the moan.",
+    "unit": "Unit 11: Peace and Conflict: Situations of Conflict",
+    "lesson": "Situations of Conflict",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Peace and Conflict: Situations of Conflict"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Cheer"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Cheer"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l5-unquiet",
+    "word": "Unquiet",
+    "bengaliMeaning": "অশান্ত / অস্থির",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Restless, turbulent, agitated, troubled",
+    "antonyms": "Peaceful, serene, tranquil, quiet",
+    "englishMeaning": "Unable to be still; agitated or anxious.",
+    "exampleSentence": "restless spirit - an unquiet nature yearning for truth and liberation viii.",
+    "unit": "Unit 5: Human Rights: Frederick Douglass",
+    "lesson": "Frederick Douglass",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Restless"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Restless"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l2-assignment",
+    "word": "Assignment",
+    "bengaliMeaning": "নির্ধারিত দায়িত্ব বা কাজ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Task, mission, project, duty",
+    "antonyms": "Idleness, discharge, vacancy",
+    "englishMeaning": "A task or piece of work assigned to someone as part of a job or course of study.",
+    "exampleSentence": "It can grade assignments and quizzes, which can free up teachers' time for other tasks, such as lesson planning and providing more one-on-one attention to students.",
+    "unit": "Unit 1: Education and Life: Education and Technology",
+    "lesson": "Education and Technology",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Education and Life: Education and Technology"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Mission"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Mission"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u12-l1-survive",
+    "word": "Survive",
+    "bengaliMeaning": "বেঁচে থাকা / টিকে থাকা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Endure, subsist, live, outlast",
+    "antonyms": "Perish, succumb, expire, die",
+    "englishMeaning": "Continue to live or exist, especially in spite of danger or hardship.",
+    "exampleSentence": "We know we cannot survive without it.",
+    "unit": "Unit 12: Environment and Nature: Water, Water Everywhere...",
+    "lesson": "Water, Water Everywhere...",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Environment and Nature: Water, Water Everywhere..."
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Expire"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Expire"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u12-l2-strike",
+    "word": "Strike",
+    "bengaliMeaning": "ধর্মঘট / কর্মবিরতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Walkout, protest, boycott, work stoppage",
+    "antonyms": "Compliance, return to work, submission",
+    "englishMeaning": "A refusal to work organized by a body of employees as a form of protest.",
+    "exampleSentence": "Instead of going to school, she made a large sign that read 'Skolstrejk för Klimatet' (SCHOOL STRIKE FOR CLIMATE), and calmly sat down outside the Swedish parliament.",
+    "unit": "Unit 12: Environment and Nature: The Greta Effect",
+    "lesson": "The Greta Effect",
+    "boardExamTag": "Unit 12 • Lesson 2",
+    "sources": [
+      "Unit 12: Environment and Nature: The Greta Effect"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Boycott"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Boycott"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u1-l1-01",
@@ -3455,31 +3750,6 @@ export const hscVocabularyList = [
       "Ponder"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l1-06",
-    "word": "Din",
-    "bengaliMeaning": "কোলাহল / হট্টগোল / বিকট শব্দ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Uproar, tumult, commotion, racket, clamor",
-    "antonyms": "Silence, quietude, peace, serenity",
-    "englishMeaning": "A loud, unpleasant, and prolonged tumult or noise.",
-    "exampleSentence": "The nephew commented, \"Your Majesty can see how things are going on.\" \"Astonishing!\" replied the King, \"the din isn't negligible.\" \"Not only the noise,\" said the nephew.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
     "priority": 102
   },
   {
@@ -3553,31 +3823,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Instinctive"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l1-24",
-    "word": "Mount",
-    "bengaliMeaning": "আরোহণ করা / চড়া / ওঠা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Ascend, climb, ride, scale",
-    "antonyms": "Dismount, descend, drop, step down",
-    "englishMeaning": "To climb up on or get on top of something, such as a horse or platform.",
-    "exampleSentence": "The meaning behind it isn't negligible either.\" The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\" The King was startled.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Ascended"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Ascended"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -3658,31 +3903,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u1-l1-42",
-    "word": "Thunderous",
-    "bengaliMeaning": "বজ্রনিনাদপূর্ণ / প্রচণ্ড শব্দময় / বজ্রসম গর্জনপূর্ণ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Booming, deafening, roaring, thundering",
-    "antonyms": "Quiet, silent, muted, subdued",
-    "englishMeaning": "Making a very loud and deep noise like thunder.",
-    "exampleSentence": "Thunderous hammering began then.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Subdue"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Subdue"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-24",
     "word": "Etiquette",
     "bengaliMeaning": "শিষ্টাচার / সামাজিক আদব-কায়দা / আচরণবিধি",
@@ -3723,12 +3943,12 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Inspire"
+      "Motivated"
     ],
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
-      "Inspire"
+      "Motivated"
     ],
     "priority": 102
   },
@@ -4008,56 +4228,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u10-l2-09",
-    "word": "Explode",
-    "bengaliMeaning": "বিস্ফোরিত হওয়া / ফেটে যাওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Blow up, burst, detonate, shatter, erupt",
-    "antonyms": "Implode, stabilize, remain intact",
-    "englishMeaning": "To burst or shatter violently and noisily.",
-    "exampleSentence": "don\" mention it etc , It wubled him a lot when people around smiling to use these expressiotw As a the exploded.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Shattered"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Shattered"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-l2-10",
-    "word": "Expression",
-    "bengaliMeaning": "শব্দ / অভিব্যক্তি / প্রকাশভঙ্গি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Utterance, phrase, remark, statement, idiom",
-    "antonyms": "Silence, inexpression, speechlessness",
-    "englishMeaning": "A word or phrase used to express an idea or polite feeling.",
-    "exampleSentence": "Folk music may be described as the music of the ancient times that sprang from the heart of a community, based on their natural style of expression uninfluenced by the rules of classical music or modern popular songs.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u10-l2-11",
     "word": "Extravagant",
     "bengaliMeaning": "অতিরিক্ত / অপব্যয়ী / বাড়াবাড়ি",
@@ -4080,31 +4250,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Moderate"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-l2-14",
-    "word": "Forbid",
-    "bengaliMeaning": "নিষেধ করা / বারণ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Prohibit, prevent, disallow, ban, bar",
-    "antonyms": "Allow, permit, approve, authorize",
-    "englishMeaning": "To refuse to allow something; prohibit.",
-    "exampleSentence": "Thanks to the godforsaken detractors the rumour went round, \"The bird is dead.\" The King called his nephew and said, \"What is this I hear?\" \"Your Majesty,\" the nephew replied, \"the bird's education has been completed.\" The King asked, \"Does it hop?\" \"God forbid,\" said the nephew.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Prohibited"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Prohibited"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -4208,31 +4353,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u10-l2-32",
-    "word": "Spirit",
-    "bengaliMeaning": "উদ্দীপনা / মনোভাব / আমেজ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Mood, feelings, attitude, atmosphere, enthusiasm",
-    "antonyms": "Apathy, lifelessness, dullness",
-    "englishMeaning": "The prevailing tone or tendency of what is said or done; mood.",
-    "exampleSentence": "Modern art rejected traditional art forms and began to create new types of artistic expression using styles, techniques, colours and materials that could adequately reflect the spirit of the time and the profound changes in human thought.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Apathy"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Apathy"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u10-l2-34",
     "word": "Terribly",
     "bengaliMeaning": "অত্যন্ত / ভীষণভাবে / প্রচণ্ডভাবে",
@@ -4273,38 +4393,13 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Struggling"
+      "Struggle"
     ],
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
-      "Struggling"
+      "Struggle"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-01",
-    "word": "Approach",
-    "bengaliMeaning": "দৃষ্টিভঙ্গি / কর্মপদ্ধতি / আগমন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Attitude, Method, Manner, Strategy, Advance",
-    "antonyms": "Departure, Retreat, Withdrawal, Avoidance",
-    "englishMeaning": "A way of dealing with situations or coming nearer to someone.",
-    "exampleSentence": "A polite and humble approach helps foreigners adapt to different international customs.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Avoidance"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Avoidance"
-    ],
     "priority": 102
   },
   {
@@ -4483,81 +4578,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u10-14",
-    "word": "Conversation",
-    "bengaliMeaning": "কথোপকথন / আলাপচারিতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Dialogue, Discussion, Talk, Chat, Discourse",
-    "antonyms": "Silence, Speechlessness, Taciturnity",
-    "englishMeaning": "A talk, especially an informal one, between two or more people.",
-    "exampleSentence": "South African greetings involve warm eye-contact and pleasant conversations.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-18",
-    "word": "Edge",
-    "bengaliMeaning": "কিনারা / প্রান্ত / ধার",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Border, Rim, Margin, Brink, Boundary",
-    "antonyms": "Center, Middle, Interior",
-    "englishMeaning": "The outside limit of an object, surface, or area.",
-    "exampleSentence": "Landscape with the Fall of Icarus According to Brueghel when Icarus fell it was spring a farmer was ploughing his field the whole pageantry of the year was awake tingling near the edge of the sea concerned with itself sweating in the sun that melted the wings' wax unsignificantly off the coast there was a splash quite unnoticed this was Icarus drowning",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Centering"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Centering"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-29",
-    "word": "Identify",
-    "bengaliMeaning": "শনাক্ত করা / চিহ্নিত করা / চিনে নেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Recognize, Distinguish, Spot, Discern, Determine",
-    "antonyms": "Mistake, Confuse, Misidentify, Overlook",
-    "englishMeaning": "To establish or indicate who or what someone or something is.",
-    "exampleSentence": "For example, AI-powered educational tools can provide students with immediate feedback on their work, allowing them to identify and correct mistakes quickly.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Distinguished"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Distinguished"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u10-33",
     "word": "Insistent",
     "bengaliMeaning": "নাছোড়বান্দা / অবিচল / দৃঢ়প্রতিজ্ঞ",
@@ -4580,31 +4600,6 @@ export const hscVocabularyList = [
       "Firm"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-36",
-    "word": "Maintain",
-    "bengaliMeaning": "বজায় রাখা / সংরক্ষণ করা / অব্যাহত রাখা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Sustain, Preserve, Keep, Continue, Uphold",
-    "antonyms": "Discontinue, Abandon, Neglect, Drop",
-    "englishMeaning": "To cause or enable a condition or state of affairs to continue.",
-    "exampleSentence": "Edtech companies must ensure that the sensitive personal data collected and stored by AI-powered educational tools are properly secured and that privacy is maintained.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Abandoned"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Abandoned"
-    ],
     "priority": 102
   },
   {
@@ -4733,31 +4728,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-05",
-    "word": "Alcohol",
-    "bengaliMeaning": "মদ্য / মাদক পানীয়",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Liquor, intoxicant, spirits, brew",
-    "antonyms": "Non-alcoholic beverage, soft drink",
-    "englishMeaning": "A colorless volatile flammable liquid which is the intoxicating constituent of wine, beer, and spirits.",
-    "exampleSentence": "They are also more likely to get exposed to drugs and alcohol.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Spirit"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Spirit"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-06",
     "word": "Arise",
     "bengaliMeaning": "উদ্ভূত হওয়া / সৃষ্টি হওয়া",
@@ -4828,31 +4798,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Substantial"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l1-15",
-    "word": "Cope",
-    "bengaliMeaning": "মানিয়ে নেওয়া / সামাল দেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Manage, adjust, handle, tackle, endure",
-    "antonyms": "Crumble, collapse, surrender, fail",
-    "englishMeaning": "To deal successfully with something difficult, stressful, or demanding.",
-    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Enduring"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Enduring"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -4983,31 +4928,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-30",
-    "word": "Irrespective",
-    "bengaliMeaning": "বিবেচনা করা হয় না এমন / নির্বিশেষে",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Regardless, notwithstanding, heedless",
-    "antonyms": "Considered, mindful, attentive",
-    "englishMeaning": "Not taking something into account; regardless of external conditions.",
-    "exampleSentence": "But, for the most pari, most individuals have to go through these stages irrespective Of their economic or social status.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Consider"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Consider"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-31",
     "word": "Key",
     "bengaliMeaning": "মূখ্য / প্রধান",
@@ -5054,31 +4974,6 @@ export const hscVocabularyList = [
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
       "Instant"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l1-34",
-    "word": "Maturation",
-    "bengaliMeaning": "পূর্ণতা / পরিপক্বতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Fulfillment, development, ripening, growth",
-    "antonyms": "Decline, immaturity, regression",
-    "englishMeaning": "The biological and psychological process of reaching full development and maturity.",
-    "exampleSentence": "Physical and sexual maturation marks the transition toward adulthood.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Declined"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Declined"
     ],
     "priority": 102
   },
@@ -5233,31 +5128,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-47",
-    "word": "Role",
-    "bengaliMeaning": "ভূমিকা / দায়িত্ব",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Part, function, duty, capacity, position",
-    "antonyms": "Disregard, neglect",
-    "englishMeaning": "The function assumed or part played by a person or thing in a particular situation.",
-    "exampleSentence": "Let us explore the pros and cons of AI as a tool in the classroom, address the concern that AI could be a threat to teachers' and instructors' jobs and discuss the role of edtech companies in advancing this AI use case.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Duties"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Duties"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-48",
     "word": "Several",
     "bengaliMeaning": "কয়েকটি / একাধিক",
@@ -5308,81 +5178,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-57",
-    "word": "Vulnerable",
-    "bengaliMeaning": "সুরক্ষিত নয় এমন / অরক্ষিত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Exposed, susceptible, defenseless, at risk",
-    "antonyms": "Invulnerable, protected, secure, safe",
-    "englishMeaning": "Susceptible to physical harm, emotional injury, or exploitation.",
-    "exampleSentence": "A vulnerable age",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Secured"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Secured"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l1-58",
-    "word": "Well-being",
-    "bengaliMeaning": "হিতাবস্থা / কল্যাণ / মঙ্গল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Welfare, betterment, prosperity, health",
-    "antonyms": "Ill-being, woe, misery, suffering",
-    "englishMeaning": "The state of being comfortable, healthy, or happy.",
-    "exampleSentence": "The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Suffering"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Suffering"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l1-59",
-    "word": "Wide",
-    "bengaliMeaning": "ব্যাপক / বিস্তৃত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Broad, extensive, comprehensive, expansive",
-    "antonyms": "Narrow, limited, restricted",
-    "englishMeaning": "Including a great variety of people or things; broad in scope.",
-    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Restrict"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Restrict"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-60",
     "word": "Span",
     "bengaliMeaning": "ব্যাপ্তি / বিস্তার / স্থিতিকাল",
@@ -5408,31 +5203,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u1-l2-04",
-    "word": "Repetitive",
-    "bengaliMeaning": "পুনরাবৃত্তিমূলক / একঘেয়ে",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Monotonous, recurrent, routine, tedious, reiterative",
-    "antonyms": "Varied, diverse, sporadic, irregular",
-    "englishMeaning": "Containing or characterized by repetition, especially when routine or uninteresting.",
-    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Vary"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Vary"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u1-l2-07",
     "word": "Threat",
     "bengaliMeaning": "হুমকি / ভীতি / বিপদের লক্ষণ",
@@ -5453,31 +5223,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Risk"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-10",
-    "word": "Interaction",
-    "bengaliMeaning": "মিথস্ক্রিয়া / পারস্পরিক যোগাযোগ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Communication, dialogue, contact, interplay, connection",
-    "antonyms": "Isolation, detachment, alienation, segregation",
-    "englishMeaning": "Reciprocal action or social communication between individuals.",
-    "exampleSentence": "There is also the lack of human interaction and emotional support that students receive when using AI-powered educational tools.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Communication"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Communication"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -5530,56 +5275,6 @@ export const hscVocabularyList = [
       "Fairly"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-18",
-    "word": "Accessible",
-    "bengaliMeaning": "সহজলভ্য / প্রবেশযোগ্য / ব্যবহারোপযোগী",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Available, reachable, attainable, approachable",
-    "antonyms": "Inaccessible, unreachable, limited, restricted",
-    "englishMeaning": "Able to be easily reached, entered, used, or obtained by diverse users.",
-    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Restrict"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Restrict"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-19",
-    "word": "Broader",
-    "bengaliMeaning": "ব্যাপক / বিস্তৃত / প্রশস্ত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Wider, extensive, comprehensive, expansive",
-    "antonyms": "Narrower, restricted, confined",
-    "englishMeaning": "Covering a large number and wide scope of subjects or individuals.",
-    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Restrict"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Restrict"
-    ],
     "priority": 102
   },
   {
@@ -5658,56 +5353,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u1-l2-27",
-    "word": "Overcome",
-    "bengaliMeaning": "কাটিয়ে ওঠা / পরাস্ত করা / জয় করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Conquer, surmount, defeat, master, triumph over",
-    "antonyms": "Succumb, surrender, yield, lose",
-    "englishMeaning": "To succeed in dealing with a problem, difficulty, or obstacle.",
-    "exampleSentence": "Edtech companies should aim to improve AI capabilities and overcome these limitations to create more advanced, innovative and effective AI tools for the classroom.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Conquered"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Conquered"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-29",
-    "word": "Implications",
-    "bengaliMeaning": "তাৎপর্য / দূরবর্তী প্রভাব / ফলাফল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Consequences, ramifications, effects, repercussions",
-    "antonyms": "Causes, origins, antecedents",
-    "englishMeaning": "The conclusion that can be drawn from something or prospective future effects.",
-    "exampleSentence": "Ethical considerations: Edtech companies should consider the ethical implications of AI technology in education and develop AI tools in a transparent, fair and responsible manner.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Consequence"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Consequence"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u1-l2-32",
     "word": "Intellectual",
     "bengaliMeaning": "মেধাসম্পর্কিত / বুদ্ধিভিত্তিক",
@@ -5730,156 +5375,6 @@ export const hscVocabularyList = [
       "Cognitive"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-01",
-    "word": "Consisted",
-    "bengaliMeaning": "গঠিত হয়েছিল / অন্তর্ভুক্ত ছিল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Comprised, composed, constituted, formed, included",
-    "antonyms": "Excluded, lacked, omitted",
-    "englishMeaning": "Was made up or composed of specific parts or elements.",
-    "exampleSentence": "of Our Bengali meals consist of five flavours of food—bitter, savoury, hot, sour sides and desserts.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Lack"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Lack"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-03",
-    "word": "Glimpse",
-    "bengaliMeaning": "একপলক দেখা / ক্ষণিক দৃষ্টি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Peek, glance, sighting, peep, quick look",
-    "antonyms": "Gaze, stare, scrutiny, observation",
-    "englishMeaning": "A momentary or partial view of someone or something.",
-    "exampleSentence": "To-mo-e Ga-ku-en.\" Totto-chan was about to ask Mother what \"Tomoe' • meant, when she caught a glimpse of something that made her think she must be dreaming.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Gazing"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Gazing"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-04",
-    "word": "Squatted",
-    "bengaliMeaning": "উবু হয়ে বসল / হাঁটু ভেঙে বসল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Crouched, hunkered, bent, stooped",
-    "antonyms": "Stood upright, straightened, rose",
-    "englishMeaning": "Crouched or sat with the knees bent and the heels close to or touching the buttocks.",
-    "exampleSentence": "She squatted down and peered through the shrubbery to get a better look.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Stoop"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Stoop"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-07",
-    "word": "Abandoned",
-    "bengaliMeaning": "পরিত্যক্ত / অব্যবহৃত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Deserted, discarded, forsaken, derelict, unused",
-    "antonyms": "Inhabited, occupied, utilized, maintained",
-    "englishMeaning": "Having been deserted or left behind by former owners or users.",
-    "exampleSentence": "in the school grounds!\" For its classrooms, the school had made use of six abandoned railroad cars.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Maintain"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Maintain"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-09",
-    "word": "Rosy-cheeked",
-    "bengaliMeaning": "গোলাপী গালবিশিষ্ট / স্বাস্থ্যোজ্জ্বল",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Blooming, radiant, healthy, flushed, rubicund",
-    "antonyms": "Pale, pallid, sickly, anemic, wan",
-    "englishMeaning": "Having healthy pink or reddish cheeks indicating vibrant youth.",
-    "exampleSentence": "But the eyes of the rosy-cheeked little girl gazing at them through the shrubbery sparkled even more.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Waning"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Waning"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-10",
-    "word": "Spacious",
-    "bengaliMeaning": "প্রশস্ত / সুবিশাল / খোলামেলা",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Roomy, expansive, commodious, capacious, large",
-    "antonyms": "Cramped, narrow, confined, restricted",
-    "englishMeaning": "Having ample space; commodious and roomy.",
-    "exampleSentence": "The not very spacious school grounds felt lively and welcoming with green plants.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Restrict"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Restrict"
-    ],
     "priority": 102
   },
   {
@@ -6008,31 +5503,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u2-l1-04",
-    "word": "Faculties",
-    "bengaliMeaning": "অনুষদ / মানসিক বা সৃষ্টিশীল ক্ষমতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Capabilities, talents, aptitudes, powers, faculties",
-    "antonyms": "Inabilities, weaknesses, incapacities",
-    "englishMeaning": "Inherent mental or physical powers and creative talents.",
-    "exampleSentence": "Poets make use of words to paint images of beauty, while artists create representations of beauty using their creative faculties.",
-    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Unit 2 • Lesson 1",
-    "sources": [
-      "Unit 2: Lesson 1 (What is Beauty?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Inability"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Inability"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u2-l1-05",
     "word": "Idealizes",
     "bengaliMeaning": "আদর্শায়িত করা / শ্রেষ্ঠ রূপে কল্পনা করা",
@@ -6053,31 +5523,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Glorifies"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u2-l1-07",
-    "word": "Climes",
-    "bengaliMeaning": "জলবায়ু / দেশ বা অঞ্চল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Climates, regions, territories, lands, realms",
-    "antonyms": "Void, emptiness",
-    "englishMeaning": "Regions or areas considered with reference to their climate and atmosphere.",
-    "exampleSentence": "She walks in beauty, like the night Of cloudless climes and starry skies; And all that's best of dark and bright Meet in her aspect and her eyes; Thus mellowed to that tender light Which heaven to gaudy day denies.",
-    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
-    "boardExamTag": "Unit 2 • Lesson 1",
-    "sources": [
-      "Unit 2: Lesson 1 (What is Beauty?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Territory"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Territory"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -6223,11 +5668,11 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Polish"
+      "Advanced"
     ],
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
-      "Polish"
+      "Advanced"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -6323,13 +5768,13 @@ export const hscVocabularyList = [
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Kindling"
+      "Suppress"
     ],
     "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Kindling"
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Suppress"
     ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -6433,31 +5878,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u2-l4-04",
-    "word": "Anonymous",
-    "bengaliMeaning": "বেনামী / অজ্ঞাতনামা / যার নাম প্রকাশ পায় না",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Unnamed, unidentified, nameless, uncredited",
-    "antonyms": "Named, identified, famous, renowned",
-    "englishMeaning": "Not identified by name; of unknown authorship or identity.",
-    "exampleSentence": "The maker of a terracotta doll or a shatranji (cotton floor mat) remains anonymous but the work retains a personal touch.",
-    "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Unit 2 • Lesson 4",
-    "sources": [
-      "Unit 2: Lesson 4 (Craft)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Identify"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Identify"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u1-l4-02",
     "word": "Engagement",
     "bengaliMeaning": "সম্পৃক্ততা / সক্রিয় অংশগ্রহণ / প্রতিশ্রুতি",
@@ -6505,31 +5925,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Apathy"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l4-05",
-    "word": "Petitions",
-    "bengaliMeaning": "আবেদনপত্র / গণস্বাক্ষরযুক্ত নাগরিক দাবি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Appeals, pleas, supplications, solicitations, representations",
-    "antonyms": "Orders, decrees, commands",
-    "englishMeaning": "Formal written requests, typically signed by many people, appealing to authority.",
-    "exampleSentence": "Citizens submitted petitions to the municipal authority against unfair tax hikes.",
-    "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Unit 1 • Lesson 4",
-    "sources": [
-      "Unit 1: Lesson 4 (Civic Engagement)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Plea"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Plea"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -6683,31 +6078,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u3-l2-07",
-    "word": "Moderate",
-    "bengaliMeaning": "পরিমিত / মধ্যম মাত্রার / সহনশীল",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Temperate, reasonable, modest, intermediate, balanced",
-    "antonyms": "Extreme, excessive, drastic, radical",
-    "englishMeaning": "Average in amount, intensity, quality, or degree; not extreme.",
-    "exampleSentence": "He warned Icarus to fly at a moderate height—too close to the sea, and the wings would become heavy with moisture; too close to the sun, and the wax would melt.",
-    "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Unit 3 • Lesson 2",
-    "sources": [
-      "Unit 3: Lesson 2 (Icarus)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Modest"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Modest"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u3-l2-09",
     "word": "Overwhelmed",
     "bengaliMeaning": "অভিভূত / দিশেহারা / আবেগে আচ্ছন্ন",
@@ -6755,31 +6125,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Ascended"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u3-l3-05",
-    "word": "Creeks",
-    "bengaliMeaning": "ছোট নদী / খাঁড়ি / বনভূমির জলপ্রণালী",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Inlets, streams, rivulets, tributaries, bayous",
-    "antonyms": "Oceans, mainlands",
-    "englishMeaning": "Narrow, sheltered waterways, especially an inlet for a river.",
-    "exampleSentence": "According to some stories, he also fought crocodiles who threatened the people of the region full of canals and creeks, indeed, a kind of watery jungle bordering the Bay of Bengal.",
-    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Unit 3 • Lesson 3",
-    "sources": [
-      "Unit 3: Lesson 3 (The Legend of Gazi)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Tributary"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Tributary"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -6958,31 +6303,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u5-l3-04",
-    "word": "Elementary",
-    "bengaliMeaning": "প্রাথমিক / বুনিয়াদি পর্যায় / মৌলিক স্তর",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Basic, primary, foundational, rudimentary, introductory",
-    "antonyms": "Advanced, complex, sophisticated",
-    "englishMeaning": "Relating to the basic elements of a subject; primary.",
-    "exampleSentence": "Education shall be free, at least in the elementary and fundamental stages.",
-    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Unit 5 • Lesson 3",
-    "sources": [
-      "Unit 5: Lesson 3 (Rights to Health and Education)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Sophisticated"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Sophisticated"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u5-l4-03",
     "word": "Exploitations",
     "bengaliMeaning": "শোষণ / অসহায়তার অনুচিত সুযোগ গ্রহণ",
@@ -7005,31 +6325,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Empowerment"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u5-l4-04",
-    "word": "Testimonies",
-    "bengaliMeaning": "সাক্ষ্য / চাক্ষুষ বিবৃতি ও প্রমাণমালা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Statements, evidence, declarations, affidavits, accounts",
-    "antonyms": "Denials, retractions, fables",
-    "englishMeaning": "Formal written or spoken statements, especially given in an investigation or court.",
-    "exampleSentence": "Historical Context & Testimonies: 'Sharing the Earth' is a collection of justice-oriented environmental writings.",
-    "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Unit 5 • Lesson 4",
-    "sources": [
-      "Unit 5: Lesson 4 (Coal Miners)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Declaration"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Declaration"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -7158,31 +6453,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u6-l2-02",
-    "word": "Renaissance",
-    "bengaliMeaning": "পুনর্জাগরণ / নবজাগরণ / সাহিত্য ও সংস্কৃতির নবযুগ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Revival, rebirth, renewal, resurgence, regeneration",
-    "antonyms": "Decay, decline, collapse, stagnation",
-    "englishMeaning": "A revival of or renewed interest in something, especially culture or art.",
-    "exampleSentence": "Hughes was also a leader of the Harlem Renaissance which attempted to bring changes in the lives of the Black people in the 1920s.",
-    "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
-    "boardExamTag": "Unit 6 • Lesson 2",
-    "sources": [
-      "Unit 6: Lesson 2 (Dreams in Literature)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Declined"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Declined"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u6-l2-06",
     "word": "Daydream",
     "bengaliMeaning": "দিবাস্বপ্ন / জাগ্রত অবস্থার মধুর কল্পনা",
@@ -7253,31 +6523,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Waning"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u7-l1-11",
-    "word": "Momentum",
-    "bengaliMeaning": "গতিশক্তি / তীব্র গতিবেগ ও উদ্যম",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Impetus, drive, thrust, velocity, force",
-    "antonyms": "Inertia, stagnation, standstill",
-    "englishMeaning": "The quantity of motion of a moving body; impetus gained by movement.",
-    "exampleSentence": "the momentum was building up...",
-    "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Unit 7 • Lesson 1",
-    "sources": [
-      "Unit 7: Lesson 1 (Brojen Das)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Thrust"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Thrust"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -7433,31 +6678,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u8-l1-08",
-    "word": "Preconditions",
-    "bengaliMeaning": "পূর্বশর্ত / আবশ্যিক প্রাথমিক শর্তমালা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Prerequisites, requirements, essentials, foundations",
-    "antonyms": "Consequences, subsequent outcomes",
-    "englishMeaning": "Conditions that must exist or be established before something can occur.",
-    "exampleSentence": "Mutual respect and loyalty are indispensable preconditions for enduring friendships.",
-    "unit": "Unit 8: Lesson 1 (Family)",
-    "boardExamTag": "Unit 8 • Lesson 1",
-    "sources": [
-      "Unit 8: Lesson 1 (Family)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Consequence"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Consequence"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u8-l2-04",
     "word": "Chronic",
     "bengaliMeaning": "দীর্ঘস্থায়ী / স্থায়ী মনস্তাত্ত্বিক ক্ষোভ বা টানাপোড়েন",
@@ -7605,31 +6825,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Accompanied"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l2-02",
-    "word": "Responsibility",
-    "bengaliMeaning": "দায়িত্ব / সামাজিক দায়বদ্ধতা ও কর্তব্য",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Duty, obligation, accountability, liability",
-    "antonyms": "Irresponsibility, carelessness, neglect",
-    "englishMeaning": "The state or fact of having a duty to deal with something or of having control over someone.",
-    "exampleSentence": "Now, he can look back on his childhood and appreciate the way his father was carrying out his duties and responsibilities.",
-    "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Unit 9 • Lesson 2",
-    "sources": [
-      "Unit 9: Lesson 2 (Problems in Bangladesh)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Duties"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Duties"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -7783,31 +6978,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l4-06",
-    "word": "Obstructed",
-    "bengaliMeaning": "বাধাপ্রাপ্ত / রুদ্ধ ও জটিল প্রসব",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Blocked, impeded, hindered, jammed, hampered",
-    "antonyms": "Unobstructed, smooth, clear",
-    "englishMeaning": "Prevented or hindered from movement or progress; blocked.",
-    "exampleSentence": "Immature pelvic development frequently results in obstructed delivery in teenage girls.",
-    "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Unit 9 • Lesson 4",
-    "sources": [
-      "Unit 9: Lesson 4 (Story of Shilpi)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Hinder"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Hinder"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u10-l4-05",
     "word": "Contentment",
     "bengaliMeaning": "পরম আত্মতৃপ্তি / প্রশান্ত মানসিক সন্তুষ্টি",
@@ -7830,31 +7000,6 @@ export const hscVocabularyList = [
       "Satisfaction"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-l4-07",
-    "word": "Centering",
-    "bengaliMeaning": "মনঃসংযোগ / আত্মস্থ হওয়া ও ভারসাম্য রক্ষা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Focusing, grounding, stabilizing, balancing, concentrating",
-    "antonyms": "Scattering, distracting",
-    "englishMeaning": "Finding a calm point of mental equilibrium and focus.",
-    "exampleSentence": "Centering your breathing before an exam curbs panic and sharpen recall.",
-    "unit": "Unit 10: Lesson 4 (Fitness)",
-    "boardExamTag": "Unit 10 • Lesson 4",
-    "sources": [
-      "Unit 10: Lesson 4 (Fitness)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Scatter"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Scatter"
-    ],
     "priority": 102
   },
   {
@@ -8008,56 +7153,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u11-l1-05",
-    "word": "Togetherness",
-    "bengaliMeaning": "একাত্মতা / সৌহার্দ্যপূর্ণ ঐক্য ও ভ্রাতৃত্ববোধ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Solidarity, unity, camaraderie, fellowship, communion",
-    "antonyms": "Isolation, alienation, estrangement, discord",
-    "englishMeaning": "The state of being close to another person or other people; affection and closeness.",
-    "exampleSentence": "Here is a poem Angelou wrote about human relationship, more particularly, togetherness, without which our lives become meaningless, no matter how wealthy or well-connected we are.",
-    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Unit 11 • Lesson 1",
-    "sources": [
-      "Unit 11: Lesson 1 (Situations of Conflict)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Communion"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Communion"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u11-l1-06",
-    "word": "Expire",
-    "bengaliMeaning": "বিলীন হওয়া / শেষ বা অপসারিত হয়ে যাওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Terminate, vanish, run out, perish, cease",
-    "antonyms": "Commence, begin, inaugurate, blossom",
-    "englishMeaning": "Come to an end; become invalid or extinguished.",
-    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
-    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Unit 11 • Lesson 1",
-    "sources": [
-      "Unit 11: Lesson 1 (Situations of Conflict)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Inaugurated"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Inaugurated"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u11-l2-08",
     "word": "Anxious",
     "bengaliMeaning": "উদ্বিগ্ন / শঙ্কিত ও আশঙ্কাকুল",
@@ -8080,31 +7175,6 @@ export const hscVocabularyList = [
       "Restless"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u11-l3-01",
-    "word": "Monologues",
-    "bengaliMeaning": "স্বগতোক্তি / একক নাট্য সংলাপ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Soliloquies, dramatic addresses, single discourses, orations",
-    "antonyms": "Dialogues, colloquies, conversations",
-    "englishMeaning": "Long speeches by one actor in a play or movie, or as part of a theatrical program.",
-    "exampleSentence": "Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.",
-    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Unit 11 • Lesson 3",
-    "sources": [
-      "Unit 11: Lesson 3 (Stories From Gaza)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Conversation"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Conversation"
-    ],
     "priority": 102
   },
   {
@@ -8144,7 +7214,8 @@ export const hscVocabularyList = [
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Lesson 3 (Stories From Gaza)"
+      "Unit 11: Lesson 3 (Stories From Gaza)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8155,31 +7226,6 @@ export const hscVocabularyList = [
       "Anguish"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u11-l4-07",
-    "word": "Dwell",
-    "bengaliMeaning": "বাস করা / চিরকাল অবস্থান করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Reside, inhabit, abide, stay, settle, lodge",
-    "antonyms": "Depart, wander, vacate, abandon",
-    "englishMeaning": "Live in or at a specified place; remain in a given state.",
-    "exampleSentence": "Peace by George Herbert (1593-1633): Sweet Peace, where dost thou dwell?",
-    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
-    "boardExamTag": "Unit 11 • Lesson 4",
-    "sources": [
-      "Unit 11: Lesson 4 (Peace in Literature)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Abandoned"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Abandoned"
-    ],
     "priority": 102
   },
   {
@@ -8255,31 +7301,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Transient"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l1-07",
-    "word": "Shrink",
-    "bengaliMeaning": "কুঁকড়ে যাওয়া / শুকিয়ে সংকুচিত হওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Contract, diminish, shrivel, compress, constrict",
-    "antonyms": "Expand, swell, grow, inflate",
-    "englishMeaning": "Become or make smaller in size or amount.",
-    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
-    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Unit 12 • Lesson 1",
-    "sources": [
-      "Unit 12: Lesson 1 (Water Everywhere)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Contracted"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Contracted"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -8383,31 +7404,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u12-l5-02",
-    "word": "Whittling",
-    "bengaliMeaning": "ছেঁটে ফেলা / অপ্রয়োজনীয় অংশ ধীরে ধীরে কেটে বাদ দেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Paring down, trimming, pruning, carving away, reducing gradually",
-    "antonyms": "Expanding, augmenting, multiplying, heaping on",
-    "englishMeaning": "Carving wood into an object by repeatedly cutting small slices from it; reducing something in size gradually.",
-    "exampleSentence": "I have done this by whittling away unnecessary agricultural practices.",
-    "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
-    "boardExamTag": "Unit 12 • Lesson 5",
-    "sources": [
-      "Unit 12: Lesson 5 (Limits of Scientific Method)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Augment"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Augment"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u1-l1-scholar",
     "word": "Scholar",
     "bengaliMeaning": "পণ্ডিত / বিদ্যান ব্যক্তি",
@@ -8457,32 +7453,6 @@ export const hscVocabularyList = [
       "Substantial"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-feedback",
-    "word": "Feedback",
-    "bengaliMeaning": "মতামত / প্রতিক্রিয়া",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Assessment, evaluation, reaction, critique",
-    "antonyms": "Silence, neglect, ignore",
-    "englishMeaning": "Information about reactions to a product or a person's performance.",
-    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
-    "unit": "Unit 1: Education and Life: Education and Technology",
-    "lesson": "Education and Technology",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Education and Life: Education and Technology"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
     "priority": 102
   },
   {
@@ -8590,32 +7560,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u5-l1-refugees",
-    "word": "Refugees",
-    "bengaliMeaning": "উদ্বাস্তু / শরণার্থী",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Displaced persons, asylees, exiles, fugitives",
-    "antonyms": "Citizens, inhabitants, natives",
-    "englishMeaning": "Persons who have been forced to leave their country in order to escape war, persecution, or natural disaster.",
-    "exampleSentence": "Refugees who have to leave their own countries for political, economic and other reasons have to lose many of the rights above.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-    "lesson": "Are We Aware of These Rights-I?",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Exile"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Exile"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u5-l1-violation",
     "word": "Violation",
     "bengaliMeaning": "লঙ্ঘন / অবমাননা",
@@ -8639,58 +7583,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Respect"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u5-l2-dominate",
-    "word": "Dominate",
-    "bengaliMeaning": "আধিপত্য বিস্তার করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Prevail, govern, control, overshadow",
-    "antonyms": "Subordinate, yield, follow, obey",
-    "englishMeaning": "Have a commanding influence on; exercise control over.",
-    "exampleSentence": "Some people dominate others who belong to different gender or race or cultural identity.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-    "lesson": "Are We Aware of These Rights-II?",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Governing"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Governing"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u5-l2-torture",
-    "word": "Torture",
-    "bengaliMeaning": "নির্যাতন / শারীরিক পীড়ন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Abuse, torment, cruelty, infliction of pain",
-    "antonyms": "Relief, comfort, kindness, mercy",
-    "englishMeaning": "The action or practice of inflicting severe pain or suffering on someone.",
-    "exampleSentence": "Article 5: No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-    "lesson": "Are We Aware of These Rights-II?",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Cruelties"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Cruelties"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -8798,58 +7690,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u5-l5-tidings",
-    "word": "Tidings",
-    "bengaliMeaning": "সংবাদ / বার্তা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "News, reports, information, messages",
-    "antonyms": "Silence, secret, suppression",
-    "englishMeaning": "News; information.",
-    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
-    "unit": "Unit 5: Human Rights: Frederick Douglass",
-    "lesson": "Frederick Douglass",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u5-l5-protesting",
-    "word": "Protesting",
-    "bengaliMeaning": "প্রতিবাদ করা / বিক্ষোভ প্রদর্শন",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Objecting, demonstrating, dissenting, opposing",
-    "antonyms": "Assenting, accepting, approving, consenting",
-    "englishMeaning": "Expressing an objection to what someone has said or done.",
-    "exampleSentence": "Read the excerpt from the Al Jazeera article titled \"Why Are Bangladesh Tea Garden Workers Protesting?\": \"We hardly get any type of facilities, don't have enough money for our children's education, we barely get 3 kg flour as ration once a week.",
-    "unit": "Unit 5: Human Rights: Frederick Douglass",
-    "lesson": "Frederick Douglass",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Consent"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Consent"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u1-l4-plight",
     "word": "Plight",
     "bengaliMeaning": "চরম সংকটময় অবস্থা / দুর্দশা",
@@ -8899,32 +7739,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Indigenous"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u8-l1-foster",
-    "word": "Foster",
-    "bengaliMeaning": "লালন-পালন করা / প্রবৃদ্ধি ঘটানো",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Nurture, cultivate, encourage, cherish",
-    "antonyms": "Neglect, suppress, destroy, stifle",
-    "englishMeaning": "Encourage or promote the development of something.",
-    "exampleSentence": "Relationships can also be fostered in workplaces, which may quickly change from professional to social.",
-    "unit": "Unit 8: Relationships: Family Relationship",
-    "lesson": "Family Relationship",
-    "boardExamTag": "Unit 8 • Lesson 1",
-    "sources": [
-      "Unit 8: Relationships: Family Relationship"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Cherish"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Cherish"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -9003,84 +7817,6 @@ export const hscVocabularyList = [
       "Late"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u8-l3-impelled",
-    "word": "Impelled",
-    "bengaliMeaning": "প্রণোদিত করা / বাধ্য করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Driven, urged, propelled, motivated",
-    "antonyms": "Deterred, discouraged, restrained",
-    "englishMeaning": "Drive, force, or urge (someone) to do something.",
-    "exampleSentence": "He was suddenly impelled to speak.",
-    "unit": "Unit 8: Relationships: A Mother in Mannville",
-    "lesson": "A Mother in Mannville",
-    "boardExamTag": "Unit 8 • Lesson 3",
-    "sources": [
-      "Unit 8: Relationships: A Mother in Mannville"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Discouraged"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Discouraged"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u8-l3-savoring",
-    "word": "Savoring",
-    "bengaliMeaning": "উপভোগ করা / আস্বাদন করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Relishing, enjoying, appreciating, tasting",
-    "antonyms": "Disdaining, hating, ignoring",
-    "englishMeaning": "Taste good food or drink and enjoy it completely; appreciate fully.",
-    "exampleSentence": "The Christmas before that\" — he drew a long breath, savoring the memory — \"she sent me a pair of skates....",
-    "unit": "Unit 8: Relationships: A Mother in Mannville",
-    "lesson": "A Mother in Mannville",
-    "boardExamTag": "Unit 8 • Lesson 3",
-    "sources": [
-      "Unit 8: Relationships: A Mother in Mannville"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Appreciate"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Appreciate"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u11-l2-politics",
-    "word": "Politics",
-    "bengaliMeaning": "রাজনীতি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Governance, statecraft, civic affairs, political science",
-    "antonyms": "Apathy, lawlessness, anarchy",
-    "englishMeaning": "The activities associated with the governance of a country or area.",
-    "exampleSentence": "A cat can look out for itself, but I cannot think what will become of the others.\" \"What politics have you?\" I asked.",
-    "unit": "Unit 11: Peace and Conflict: \"The Old Man at the Bridge\" by Ernest Hemingway",
-    "lesson": "\"The Old Man at the Bridge\" by Ernest Hemingway",
-    "boardExamTag": "Unit 11 • Lesson 2",
-    "sources": [
-      "Unit 11: Peace and Conflict: \"The Old Man at the Bridge\" by Ernest Hemingway"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Apathy"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Apathy"
-    ],
     "priority": 102
   },
   {
@@ -9188,32 +7924,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u11-l5-civilians",
-    "word": "Civilians",
-    "bengaliMeaning": "বেসামরিক নাগরিকবৃন্দ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Non-combatants, citizens, inhabitants, private persons",
-    "antonyms": "Soldiers, military personnel, armed combatants",
-    "englishMeaning": "Persons not in the armed services or the police force.",
-    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
-    "unit": "Unit 11: Peace and Conflict: Opinions through Images",
-    "lesson": "Opinions through Images",
-    "boardExamTag": "Unit 11 • Lesson 5",
-    "sources": [
-      "Unit 11: Peace and Conflict: Opinions through Images"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Soldier"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Soldier"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u12-l1-millennium",
     "word": "Millennium",
     "bengaliMeaning": "সহস্রাব্দ / এক হাজার বছর",
@@ -9261,58 +7971,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Assembly"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l2-rousing",
-    "word": "Rousing",
-    "bengaliMeaning": "উদ্দীপক / আলোড়ন সৃষ্টিকারী",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Stirring, inspiring, exciting, electrifying",
-    "antonyms": "Boring, dull, disheartening, uninspiring",
-    "englishMeaning": "Exciting; stirring.",
-    "exampleSentence": "She's given rousing speeches to politicians, to the EU parliament, the UK parliament, to protesters and more.",
-    "unit": "Unit 12: Environment and Nature: The Greta Effect",
-    "lesson": "The Greta Effect",
-    "boardExamTag": "Unit 12 • Lesson 2",
-    "sources": [
-      "Unit 12: Environment and Nature: The Greta Effect"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Inspire"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Inspire"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l2-degradation",
-    "word": "Degradation",
-    "bengaliMeaning": "পরিবেশ দূষণ বা অবক্ষয়",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Deterioration, degeneration, decline, breakdown",
-    "antonyms": "Improvement, restoration, conservation, renewal",
-    "englishMeaning": "The condition or process of degrading or being degraded.",
-    "exampleSentence": "Did you ever feel angry like Greta seeing environmental degradation in your locality?",
-    "unit": "Unit 12: Environment and Nature: The Greta Effect",
-    "lesson": "The Greta Effect",
-    "boardExamTag": "Unit 12 • Lesson 2",
-    "sources": [
-      "Unit 12: Environment and Nature: The Greta Effect"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Declined"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Declined"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -9367,32 +8025,6 @@ export const hscVocabularyList = [
       "Activism"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l4-reparations",
-    "word": "Reparations",
-    "bengaliMeaning": "ক্ষতিপূরণ / ক্ষতিসাধন সংশোধন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Restitution, amends, compensation, redress",
-    "antonyms": "Damage, injury, penalties, penalties",
-    "englishMeaning": "The making of amends for a wrong one has done, by paying money to or otherwise helping those who have been wronged.",
-    "exampleSentence": ") Environmental Justice protects the right of victims of environmental injustice to receive full compensation and reparations for damages as well as quality health care.",
-    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
-    "lesson": "What is Environmental Justice?",
-    "boardExamTag": "Unit 12 • Lesson 4",
-    "sources": [
-      "Unit 12: Environment and Nature: What is Environmental Justice?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Penalty"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Penalty"
-    ],
     "priority": 102
   },
   {
@@ -9482,7 +8114,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
-      "Unit 1: Lesson 4 (Civic Engagement)"
+      "Unit 1: Lesson 4 (Civic Engagement)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -9546,56 +8179,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u6-l1-13",
-    "word": "Stimuli",
-    "bengaliMeaning": "উত্তেজক সংকেত / উদ্দীপক / প্রেরণা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Incentives, impulses, triggers, inputs, prods",
-    "antonyms": "Deterrents, suppressants, depressants",
-    "englishMeaning": "Things that evoke a specific functional reaction in an organ or tissue.",
-    "exampleSentence": "External sensory stimuli like barking dogs can be woven into the fabric of a dream.",
-    "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Unit 6 • Lesson 1",
-    "sources": [
-      "Unit 6: Lesson 1 (What is a Dream?)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Impulse"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Impulse"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u7-l2-02",
-    "word": "Trekking",
-    "bengaliMeaning": "দুর্গম পর্বতারোহণ যাত্রা / পদব্রজে গিরি অভিযান",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Hiking, mountaineering, tramping, backpacking, rambling",
-    "antonyms": "Resting, idling",
-    "englishMeaning": "Go on a long arduous journey, typically on foot across rough terrain.",
-    "exampleSentence": "Nishat joined Bangladesh Mountaineering and Trekking Club (BMTC) in 2006, and completed a basic training course at Himalayan Mountaineering Institute, Darjeeling, India in 2007.",
-    "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Unit 7 • Lesson 2",
-    "sources": [
-      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Mountaineer"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Mountaineer"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l4-harassment",
     "word": "Harassment",
     "bengaliMeaning": "হয়রানি / মানসিক নিপীড়ন",
@@ -9648,58 +8231,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u8-l4-screeching",
-    "word": "Screeching",
-    "bengaliMeaning": "তীক্ষ্ণ চিৎকার করা / কর্কশ শব্দ",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Shrieking, squealing, howling, crying out",
-    "antonyms": "Whispering, murmuring, silence",
-    "englishMeaning": "Making a loud, harsh, piercing cry or sound.",
-    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
-    "unit": "Unit 8: Relationships: Love",
-    "lesson": "Love",
-    "boardExamTag": "Unit 8 • Lesson 4",
-    "sources": [
-      "Unit 8: Relationships: Love"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Silenced"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Silenced"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u6-l1-cherish",
-    "word": "Cherish",
-    "bengaliMeaning": "সযত্নে লালন করা / পরম স্নেহে স্মরণ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Treasure, prize, hold dear, nurture, value",
-    "antonyms": "Despise, disdain, neglect, abandon",
-    "englishMeaning": "Protect and care for (someone) lovingly; hold (something) dear.",
-    "exampleSentence": "Now give examples of a sweet dream while sleeping a nightmare a dream that you cherish consciously a day dream H.",
-    "unit": "Unit 6: Dreams: What is a Dream?",
-    "lesson": "What is a Dream?",
-    "boardExamTag": "Unit 6 • Lesson 1",
-    "sources": [
-      "Unit 6: Dreams: What is a Dream?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Abandoned"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Abandoned"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l4-prejudice",
     "word": "Prejudice",
     "bengaliMeaning": "কুসংস্কার / পক্ষপাতদুষ্ট বৈষম্য",
@@ -9726,6 +8257,2809 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
+    "id": "vocab-u1-l1-02",
+    "word": "Contextual",
+    "bengaliMeaning": "প্রাসঙ্গিক / পরিপ্রেক্ষিতমূলক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Relevant, related, circumstantial, pertinent",
+    "antonyms": "Irrelevant, unrelated, out-of-context",
+    "englishMeaning": "Depending on, related to, or clarifying the surrounding circumstances.",
+    "exampleSentence": "Contextual vocabulary and literary devices: gazing, waning, roosting, desolate, dome, wagtail, hush, wailed, honeycombed.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Irrelevant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Irrelevant"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-28",
+    "word": "Pace",
+    "bengaliMeaning": "গতি / চলার গতি / বেগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Speed, tempo, rate, velocity, swiftness",
+    "antonyms": "Sluggishness, slowness, standstill",
+    "englishMeaning": "Speed in walking, running, or movement; rate of progress.",
+    "exampleSentence": "The King wished to see for himself at what an awesome pace the bird's schooling was going on.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Standstill"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Standstill"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-41",
+    "word": "Thrust",
+    "bengaliMeaning": "জোরপূর্বক ঢোকানো / ঠেলা দেওয়া / ধাক্কা দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Shove, push, force, drive, plunge",
+    "antonyms": "Withdraw, extract, pull back, retract",
+    "englishMeaning": "To push someone or something suddenly or violently in a specified direction.",
+    "exampleSentence": "Only reams of texts were being torn and the pieces of paper thrust into the bird's mouth with the point of a quill.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Withdraw"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Withdraw"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-39",
+    "word": "Extend",
+    "bengaliMeaning": "প্রসারিত করা / বাড়িয়ে দেওয়া / বিস্তার করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Stretch out, Reach out, Offer, Proffer, Prolong",
+    "antonyms": "Withdraw, Retract, Shorten, Pull back",
+    "englishMeaning": "To hold out something toward someone; offer.",
+    "exampleSentence": "Extended Essay: Write an essay in 500-800 words on the following topic: \"Modern day slavery is rooted in the legacies of colonial exploitation.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Withdraw"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Withdraw"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l1-29",
+    "word": "Intervene",
+    "bengaliMeaning": "হস্তক্ষেপ করা / মধ্যস্থতা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Interfere, mediate, intercede, step in",
+    "antonyms": "Ignore, overlook, disregard, withdraw",
+    "englishMeaning": "To step into a situation to prevent undesirable outcomes or resolve conflict.",
+    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Withdraw"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Withdraw"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l1-50",
+    "word": "Transmit",
+    "bengaliMeaning": "সঞ্চারিত করা / ছড়ানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Spread, convey, transfer, pass on",
+    "antonyms": "Hide, withhold, suppress, stop",
+    "englishMeaning": "To pass or cause something to spread from one person or place to another.",
+    "exampleSentence": "Unprotected risky behaviors can transmit serious infections such as HIV.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Suppress"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Suppress"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l2-12",
+    "word": "Heavily",
+    "bengaliMeaning": "অতিরিক্ত মাত্রায় / গভীরভাবে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Excessively, deeply, profoundly, severely",
+    "antonyms": "Lightly, slightly, marginally, scarcely",
+    "englishMeaning": "To a great degree; intensely or excessively.",
+    "exampleSentence": "While AI can provide personalized learning and instant feedback, it cannot replace the human and emotional support that students need to succeed, and relying too heavily on AI-powered educational tools may impact students negatively.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Deeply"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Deeply"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l2-13",
+    "word": "Impact",
+    "bengaliMeaning": "প্রভাব ফেলা / প্রতিক্রিয়া সৃষ্টি করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Influence, affect, alter, impress, shape",
+    "antonyms": "Leave unaffected, ignore, overlook",
+    "englishMeaning": "To have a strong effect on someone or something.",
+    "exampleSentence": "While AI can provide personalized learning and instant feedback, it cannot replace the human and emotional support that students need to succeed, and relying too heavily on AI-powered educational tools may impact students negatively.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Influence"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Influence"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l3-02",
+    "word": "Askew",
+    "bengaliMeaning": "বাঁকাভাবে / তির্যকভাবে / একপাশে হেলে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Crooked, slanted, tilted, awry, obliquely",
+    "antonyms": "Straight, aligned, symmetrical, upright",
+    "englishMeaning": "Not in a straight or level position; crookedly or to one side.",
+    "exampleSentence": "When she got closer, she had to put her head to one side to read the name of the school because the wind had blown the sign askew.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Crooked"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Crooked"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l4-11",
+    "word": "Splendor",
+    "bengaliMeaning": "মহিমা / জাঁকজমক / অপরূপ শোভা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Magnificence, grandeur, brilliance, glory, opulence",
+    "antonyms": "Drabness, squalor, modesty, ugliness",
+    "englishMeaning": "Magnificent and splendid appearance; grandeur.",
+    "exampleSentence": "Ibn Battuta visited it in 1346 and was amazed by its splendor.",
+    "unit": "Unit 2: Lesson 4 (Craft)",
+    "boardExamTag": "Unit 2 • Lesson 4",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Glory"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Glory"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l4-06",
+    "word": "Defiance",
+    "bengaliMeaning": "স্পর্ধা / অবাধ্যতা / অনমনীয় প্রতিরোধ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Rebellion, resistance, non-compliance, challenge, courage",
+    "antonyms": "Submission, obedience, compliance, surrender",
+    "englishMeaning": "Open resistance; bold disobedience against an authoritarian rule.",
+    "exampleSentence": "The rulers, not pleased with her defiance, punished her cruelly by cutting out her tongue.",
+    "unit": "Unit 3: Lesson 4 (Khona)",
+    "boardExamTag": "Unit 3 • Lesson 4",
+    "sources": [
+      "Unit 3: Lesson 4 (Khona)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Resistance"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Resistance"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l5-09",
+    "word": "Blunt",
+    "bengaliMeaning": "ভোঁতা করা / অনুভূতি নিস্তেজ করা / ভোঁতা হওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Dull, deaden, numb, dampen, weaken",
+    "antonyms": "Sharpen, intensify, heighten, sensitize",
+    "englishMeaning": "Make less sharp, intense, or sensitive.",
+    "exampleSentence": "For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother, and to blunt and destroy the natural affection of the mother for the child.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Heighten"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Heighten"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u6-l1-05",
+    "word": "Consensus",
+    "bengaliMeaning": "সর্বসম্মত অভিমত / সামগ্রিক ঐক্যমত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Agreement, unanimity, accord, harmony, general consent",
+    "antonyms": "Disagreement, conflict, discord, dissension",
+    "englishMeaning": "A general agreement among members of a group or community.",
+    "exampleSentence": "No scientific consensus has emerged regarding the primary biological function of dreaming.",
+    "unit": "Unit 6: Lesson 1 (What is a Dream?)",
+    "boardExamTag": "Unit 6 • Lesson 1",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discord"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Discord"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l2-03",
+    "word": "Adjustment",
+    "bengaliMeaning": "অভিযোজন / পরিবর্তনের সাথে খাপ খাওয়ানো",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Adaptation, accommodation, orientation, acclimation",
+    "antonyms": "Maladjustment, resistance, disharmony",
+    "englishMeaning": "A small alteration or movement made to achieve a desired fit, appearance, or result; psychological coping.",
+    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
+    "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
+    "boardExamTag": "Unit 9 • Lesson 2",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Resistance"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Resistance"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l4-01",
+    "word": "Pertaining",
+    "bengaliMeaning": "সম্পর্কিত / প্রাসঙ্গিক বিষয় সংক্রান্ত",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Relating, concerning, regarding, appertaining, bearing on",
+    "antonyms": "Unrelated, irrelevant, disconnected",
+    "englishMeaning": "Be appropriate, related, or applicable to something.",
+    "exampleSentence": "The workshop addressed issues pertaining to adolescent reproductive rights.",
+    "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
+    "boardExamTag": "Unit 9 • Lesson 4",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Irrelevant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Irrelevant"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u11-l3-03",
+    "word": "Deprivation",
+    "bengaliMeaning": "বঞ্চনা / মৌলিক মানবিক চাহিদাহীনতা ও অভাব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Privation, hardship, destitution, deficiency, impoverishment",
+    "antonyms": "Abundance, opulence, prosperity",
+    "englishMeaning": "The damaging lack of material benefits considered to be basic necessities in a society.",
+    "exampleSentence": "I can't not see the deprivation in every house, the fear and the sickness.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Prosperity"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Prosperity"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-manifest",
+    "word": "Manifest",
+    "bengaliMeaning": "প্রকাশ করা / সুস্পষ্ট করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Demonstrate, reveal, exhibit, display",
+    "antonyms": "Hide, conceal, obscure, mask",
+    "englishMeaning": "Display or show a quality or feeling by one's acts or appearance.",
+    "exampleSentence": "Article 18: Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+    "lesson": "Are We Aware of These Rights-I?",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Reveal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Reveal"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-representatives",
+    "word": "Representatives",
+    "bengaliMeaning": "প্রতিনিধিগণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Delegates, spokespersons, deputies, envoys",
+    "antonyms": "Principals, opponents, usurpers",
+    "englishMeaning": "Persons chosen or appointed to act or speak for another or others.",
+    "exampleSentence": "Article 21: (1) Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+    "lesson": "Are We Aware of These Rights-I?",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Opponents"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Opponents"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l2-impose",
+    "word": "Impose",
+    "bengaliMeaning": "চাপিয়ে দেওয়া / বলপ্রয়োগ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Enforce, inflict, levy, foist",
+    "antonyms": "Withdraw, repeal, lift, exempt",
+    "englishMeaning": "Force something unwelcome or unfamiliar to be accepted or put in place.",
+    "exampleSentence": "Will you impose your own beliefs on them?",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+    "lesson": "Are We Aware of These Rights-II?",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Withdraw"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Withdraw"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-declaration",
+    "word": "Declaration",
+    "bengaliMeaning": "ঘোষণা / সনদ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Proclamation, announcement, decree, statement",
+    "antonyms": "Suppression, revocation, secrecy",
+    "englishMeaning": "A formal or explicit statement or announcement.",
+    "exampleSentence": "Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+    "lesson": "Are We Aware of These Rights-I?",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Proclamation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Proclamation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-empowered",
+    "word": "Empowered",
+    "bengaliMeaning": "ক্ষমতায়িত করা / সামর্থ্য দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Authorized, enabled, liberated, strengthened",
+    "antonyms": "Disempowered, crippled, suppressed",
+    "englishMeaning": "Given the authority or power to do something.",
+    "exampleSentence": "How will the knowledge of this declaration help you as an empowered citizen?",
+    "unit": "Unit 5: Human Rights: Rights to Health and Education",
+    "lesson": "Rights to Health and Education",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Human Rights: Rights to Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Crippled"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Crippled"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u8-l3-thoughtfulness",
+    "word": "Thoughtfulness",
+    "bengaliMeaning": "বিবেচনাশীলতা / পরার্থপরতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Consideration, attentiveness, kindness, empathy",
+    "antonyms": "Selfishness, thoughtlessness, heedlessness",
+    "englishMeaning": "The state of being considerate of the needs of other people.",
+    "exampleSentence": "I found that when I tried to return his thoughtfulness with such things as candy and apples, he was wordless.",
+    "unit": "Unit 8: Relationships: A Mother in Mannville",
+    "lesson": "A Mother in Mannville",
+    "boardExamTag": "Unit 8 • Lesson 3",
+    "sources": [
+      "Unit 8: Relationships: A Mother in Mannville"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Consideration"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Consideration"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u8-l3-vermilion",
+    "word": "Vermilion",
+    "bengaliMeaning": "টকটকে লাল বা সিঁদুরে বর্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Scarlet, bright red, crimson, ruby",
+    "antonyms": "Pale, colorless, drab, dull",
+    "englishMeaning": "A brilliant red or scarlet pigment.",
+    "exampleSentence": "Other days they ran with a common ecstasy through the laurel and he brought me back vermilion maple leaves, and chestnut boughs dripping with imperial yellow.",
+    "unit": "Unit 8: Relationships: A Mother in Mannville",
+    "lesson": "A Mother in Mannville",
+    "boardExamTag": "Unit 8 • Lesson 3",
+    "sources": [
+      "Unit 8: Relationships: A Mother in Mannville"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Crimson"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Crimson"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u11-l5-offensive",
+    "word": "Offensive",
+    "bengaliMeaning": "আক্রমণ অভিযান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Assault, onslaught, push, incursion",
+    "antonyms": "Defense, retreat, surrender, resistance",
+    "englishMeaning": "An actively aggressive military campaign or attack.",
+    "exampleSentence": "Nguyen Ngoc Loan, chief of the National Police, fires his pistol into the head of suspected Viet Cong officer Nguyen Van Lem (also known as Bay Lop) on a Saigon street, early in the Tet Offensive of the Vietnam War.",
+    "unit": "Unit 11: Peace and Conflict: Opinions through Images",
+    "lesson": "Opinions through Images",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Peace and Conflict: Opinions through Images"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Resistance"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Resistance"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u12-l4-equity",
+    "word": "Equity",
+    "bengaliMeaning": "ন্যায়পরায়ণতা / সমান অধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Fairness, justice, impartiality, even-handedness",
+    "antonyms": "Injustice, unfairness, inequity, bias",
+    "englishMeaning": "The quality of being fair and impartial.",
+    "exampleSentence": "It yokes concern for the environment, including all life on the planet, to commitment to social justice: human equity in terms of race, gender, religion, nationality, and class.",
+    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
+    "lesson": "What is Environmental Justice?",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Environment and Nature: What is Environmental Justice?"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Injustice"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Injustice"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u12-l5-assimilation",
+    "word": "Assimilation",
+    "bengaliMeaning": "পরিপাকীকরণ / আত্মস্থকরণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Absorption, integration, incorporation, digestion",
+    "antonyms": "Rejection, segregation, exclusion",
+    "englishMeaning": "The absorption and integration of people, ideas, or nutrients.",
+    "exampleSentence": "But do not ask if your theory of assimilation is going to be relevant to the yield.",
+    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "lesson": "Limits of the Scientific Method",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Segregation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Segregation"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-1",
+    "word": "Abject",
+    "bengaliMeaning": "নিকৃষ্ট / চরম শোচনীয় / হীন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Miserable, despicable, heinous, wretched, degrading",
+    "antonyms": "Noble, proud, exalted, dignified",
+    "englishMeaning": "Experienced to the maximum degree of misery or degradation; utterly hopeless.",
+    "exampleSentence": "Anything else would have been abject surrender.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Exalted"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Exalted"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-4",
+    "word": "Adhered",
+    "bengaliMeaning": "মেনে চলা / অবিচল থাকা / লেগে থাকা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Followed, observed, complied, attached, stuck",
+    "antonyms": "Disobeyed, violated, abandoned, strayed",
+    "englishMeaning": "Believed in and followed the practices of; stayed firm to a rule or principle.",
+    "exampleSentence": "For thirty-seven years - that is until 1949 - it adhered strictly to a constitutional struggle.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Abandoned"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Abandoned"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-7",
+    "word": "Allegation",
+    "bengaliMeaning": "অভিযোগ / দাবি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Accusation, charge, claim, assertion, indictment",
+    "antonyms": "Exoneration, vindication, defense, acquittal",
+    "englishMeaning": "A claim or assertion that someone has done something illegal or wrong, typically made without proof.",
+    "exampleSentence": "This allegation has been repeated in the present case, but as I will show, the ANC is not, and never has been, a communist organization.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Claim"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Claim"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-19",
+    "word": "Consideration",
+    "bengaliMeaning": "বিবেচনা / গভীর চিন্তা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Thought, reflection, deliberation, contemplation, scrutiny",
+    "antonyms": "Disregard, neglect, omission, oversight",
+    "englishMeaning": "Careful thought, typically over a period of time, before making a crucial decision.",
+    "exampleSentence": "My colleagues and I, after careful consideration, decided that we would not obey this decree.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Contemplation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Contemplation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-20",
+    "word": "Constitution",
+    "bengaliMeaning": "শাসনতন্ত্র / সংবিধান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Fundamental law, charter, establishment, statute",
+    "antonyms": "Lawlessness, anarchy, disorganization",
+    "englishMeaning": "A body of fundamental principles or established precedents according to which a state is governed.",
+    "exampleSentence": "We were to sit in the National Assembly, draw a constitution for ourselves there, and build our country.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Anarchy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Anarchy"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-21",
+    "word": "Constitutional",
+    "bengaliMeaning": "সাংবিধানিক / আইনসম্মত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Legal, lawful, chartered, sanctioned, legitimate",
+    "antonyms": "Unconstitutional, illegal, unlawful, prohibited",
+    "englishMeaning": "Relating to or in accordance with an established constitution or legal framework.",
+    "exampleSentence": "For thirty-seven years it adhered strictly to a constitutional struggle.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Prohibited"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Prohibited"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-24",
+    "word": "Crippled",
+    "bengaliMeaning": "পঙ্গু / খোঁড়া / মারাত্মকভাবে ক্ষতিগ্রস্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Disabled, paralyzed, incapacitated, impaired, debilitated",
+    "antonyms": "Healthy, vigorous, robust, strong",
+    "englishMeaning": "Severely damaged, impaired, or deprived of the ability to function properly.",
+    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Impaired"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Impaired"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-30",
+    "word": "Dissolve",
+    "bengaliMeaning": "ভেঙে দেওয়া / অবসান করা / বিলুপ্ত হওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Disband, disperse, terminate, dismiss, evanesce",
+    "antonyms": "Assemble, unite, establish, maintain",
+    "englishMeaning": "Officially close down, disband, or bring an end to a parliament, assembly, or partnership.",
+    "exampleSentence": "The ANC refused to dissolve, but instead went underground.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Maintain"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Maintain"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-36",
+    "word": "Extreme",
+    "bengaliMeaning": "চরম / তীব্র / চূড়ান্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Ultimate, utmost, drastic, severe, acute",
+    "antonyms": "Moderate, mild, temperate, reasonable",
+    "englishMeaning": "Reaching a high or the highest degree; very severe or intense.",
+    "exampleSentence": "We all accept the need for some form of socialism to enable our people to catch up with advanced countries and overcome their legacy of extreme poverty.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Moderate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Moderate"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-37",
+    "word": "Fatherland",
+    "bengaliMeaning": "পিতৃভূমি / স্বদেশ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Homeland, motherland, native land, country",
+    "antonyms": "Foreign land, exile, alien territory",
+    "englishMeaning": "A person's native country, especially when referred to with patriotic feelings.",
+    "exampleSentence": "Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Exile"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Exile"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-40",
+    "word": "Hamlet",
+    "bengaliMeaning": "ক্ষুদ্র পল্লী / ছোট গ্রাম",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Small village, settlement, township, parish",
+    "antonyms": "Metropolis, megacity, urban center",
+    "englishMeaning": "A small settlement, generally smaller than a village, without its own church or local administration.",
+    "exampleSentence": "When we let freedom ring from every village and every hamlet, from every state and every city.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Township"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Township"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-48",
+    "word": "Inflicted",
+    "bengaliMeaning": "আরোপিত / চাপানো / কষ্টকর আঘাত হিসেবে প্রাপ্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Imposed, administered, dealt, perpetrated",
+    "antonyms": "Withheld, spared, relieved, pardoned",
+    "englishMeaning": "Caused something unpleasant or painful to be suffered by someone.",
+    "exampleSentence": "Bengal's history of those years is full of stories of torture inflicted on our people.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Withheld"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Withheld"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-49",
+    "word": "Influence",
+    "bengaliMeaning": "প্রভাব / প্রতিপত্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Power, sway, dominance, impact, prestige",
+    "antonyms": "Powerlessness, weakness, insignificance",
+    "englishMeaning": "The capacity to have an effect on the character, development, or behaviour of someone or something.",
+    "exampleSentence": "The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Impact"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Impact"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-50",
+    "word": "Influenced",
+    "bengaliMeaning": "প্রভাবিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Affected, inspired, swayed, motivated, touched",
+    "antonyms": "Uninfluenced, unaffected, detached, indifferent",
+    "englishMeaning": "Guided or affected by a particular philosophy, person, or ideology.",
+    "exampleSentence": "It is true, as I have already stated, that I have been influenced by Marxist thought.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Motivated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Motivated"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-54",
+    "word": "Jangling",
+    "bengaliMeaning": "কর্কশ / শ্রুতিকটু / খটখট শব্দময়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Harsh, grating, discordant, clashing, strident",
+    "antonyms": "Harmonious, melodious, soothing, musical",
+    "englishMeaning": "Making or causing to make a harsh, unpleasantly discordant ringing metallic sound.",
+    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harsh"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Harsh"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-57",
+    "word": "Mighty",
+    "bengaliMeaning": "বিশাল / পরাক্রমশালী / মহাশক্তিশালী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Powerful, potent, colossal, majestic, sturdy",
+    "antonyms": "Weak, frail, tiny, puny, feeble",
+    "englishMeaning": "Possessing great and impressive power, strength, or size.",
+    "exampleSentence": "Let freedom ring from the mighty mountains of New York.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Feeble"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Feeble"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-59",
+    "word": "Motivated",
+    "bengaliMeaning": "অনুপ্রাণিত / চালিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Inspired, driven, spurred, stimulated, prompted",
+    "antonyms": "Unmotivated, discouraged, disincentivized, deterred",
+    "englishMeaning": "Stimulated into action by strong desire, principle, or enthusiasm.",
+    "exampleSentence": "This is what has motivated me in all that I have done in relation to the charges made against me in this case.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discouraged"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Discouraged"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-60",
+    "word": "Non-violence",
+    "bengaliMeaning": "অহিংসা / অহিংস আন্দোলন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Pacifism, peaceful resistance, ahimsa, passivism",
+    "antonyms": "Violence, aggression, bloodshed, warfare",
+    "englishMeaning": "The use of peaceful means, not force or weapons, to bring about political or social change.",
+    "exampleSentence": "The sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Aggression"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Aggression"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-61",
+    "word": "Non-violent",
+    "bengaliMeaning": "অহিংস / শান্তিপূর্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Peaceful, bloodless, pacifist, passive, calm",
+    "antonyms": "Violent, aggressive, bloody, destructive",
+    "englishMeaning": "Using peaceful methods instead of force or violence.",
+    "exampleSentence": "Fifty years of non-violent struggle had brought the African people nothing but more repressive legislation.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Violent"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Violent"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-68",
+    "word": "Proclamation",
+    "bengaliMeaning": "ঘোষণা / রাষ্ট্রীয় প্রজ্ঞাপন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Declaration, pronouncement, decree, manifesto, edict",
+    "antonyms": "Retraction, revocation, concealment, silence",
+    "englishMeaning": "A public or official announcement, especially one dealing with a matter of great importance.",
+    "exampleSentence": "In 1960 there was the shooting at Sharpeville, which resulted in the proclamation of a state of emergency.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Declaration"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Declaration"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-69",
+    "word": "Prodigious",
+    "bengaliMeaning": "অতিবৃহৎ / বিপুল / অপূর্ব",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Colossal, immense, enormous, mammoth, gigantic",
+    "antonyms": "Tiny, small, little, trivial, miniscule",
+    "englishMeaning": "Remarkably or impressively great in extent, size, or degree.",
+    "exampleSentence": "So let freedom ring from the prodigious hilltops of New Hampshire.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Enormous"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Enormous"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-70",
+    "word": "Prosperity",
+    "bengaliMeaning": "সমৃদ্ধি / প্রাচুর্য / আর্থিক স্বচ্ছলতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Wealth, success, affluence, well-being, fortune",
+    "antonyms": "Poverty, hardship, failure, adversity",
+    "englishMeaning": "The state of flourishing, thriving, good fortune and successful social status.",
+    "exampleSentence": "The Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Well-being"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Well-being"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-76",
+    "word": "Reveal",
+    "bengaliMeaning": "প্রকাশ করা / উন্মোচন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Disclose, unveil, manifest, uncover, exhibit",
+    "antonyms": "Conceal, hide, obscure, cover",
+    "englishMeaning": "Make previously unknown or secret information known to others.",
+    "exampleSentence": "And the glory of the Lord shall be revealed, and all flesh shall see it together.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Manifest"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Manifest"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-77",
+    "word": "Segregation",
+    "bengaliMeaning": "বিচ্ছিন্নকরণ / বর্ণবিভেদ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Isolation, separation, partition, discrimination",
+    "antonyms": "Integration, combination, inclusion, desegregation",
+    "englishMeaning": "The enforced separation of different racial groups in a country, community, or establishment.",
+    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discrimination"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Discrimination"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-83",
+    "word": "Suppress",
+    "bengaliMeaning": "দমন করা / চেপে রাখা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Restrain, subdue, quell, crush, inhibit",
+    "antonyms": "Liberate, encourage, release, incite",
+    "englishMeaning": "Forcibly put an end to or prevent the development, action, or expression of people.",
+    "exampleSentence": "You can't suppress seventy million people forever. Since we have learned to sacrifice ourselves no one can suppress us anymore.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Subdue"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Subdue"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-86",
+    "word": "Symphony",
+    "bengaliMeaning": "ঐকতানসংগীত / সুরের অপূর্ব মেলবন্ধন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Harmonious composition, musical harmony, concord, unison",
+    "antonyms": "Discord, cacophony, clamour, dissonance",
+    "englishMeaning": "An elaborate musical composition or an agreeable, harmonious blending of sounds and spirits.",
+    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discord"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Discord"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-l2-19",
+    "word": "Invent",
+    "bengaliMeaning": "উদ্ভাবন করা / সৃষ্টি করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Create, devise, formulate, originate, design",
+    "antonyms": "Destroy, shatter, demolish, ruin",
+    "englishMeaning": "To create or design something that has not existed before.",
+    "exampleSentence": "ho succeeded in inventing machine he desired long time.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-39",
+    "word": "Offend",
+    "bengaliMeaning": "অসন্তুষ্ট করা / অপমানিত করা / ক্ষুব্ধ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Insult, Displease, Upset, Affront, Hurt",
+    "antonyms": "Please, Delight, Gratify, Charm, Flatter",
+    "englishMeaning": "To cause someone to feel hurt, angry, or upset by bad behavior.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u2-l1-02",
+    "word": "Perceptions",
+    "bengaliMeaning": "উপলব্ধি / দৃষ্টিভঙ্গি / ইন্দ্রিয়ানুভূতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Insights, perspectives, impressions, viewpoints, observations",
+    "antonyms": "Blindness, misconceptions, ignorance",
+    "englishMeaning": "The ability to see, hear, or become aware of something through the senses or intellect.",
+    "exampleSentence": "Is it universal, or is it shaped by individual perceptions?",
+    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
+    "boardExamTag": "Unit 2 • Lesson 1",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l2-08",
+    "word": "Hazards",
+    "bengaliMeaning": "বিপদাপদ / স্বাস্থ্যঝুঁকি ও ক্ষতিকর বিষয়সমূহ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Dangers, perils, risks, threats, jeopardy",
+    "antonyms": "Safeties, protections, shelters",
+    "englishMeaning": "Dangers or risks, especially regarding health or well-being.",
+    "exampleSentence": "List of headings A journey towards adulthood Adolescence and education Stages ofhuman life Need for collective efforts An observation by World Health Organisation A transition period The adverse effects of taking drugs Influence of culture on adolescents Potential health hazards j.",
+    "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
+    "boardExamTag": "Unit 9 • Lesson 2",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l3-07",
+    "word": "Curtails",
+    "bengaliMeaning": "সংকোচন করে / হ্রাস করে বা স্বাধীনতা কেড়ে নেয়",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Restricts, limits, reduces, slashes, cuts short",
+    "antonyms": "Expands, increases, lengthens, extends",
+    "englishMeaning": "Reduces in extent or quantity; imposes a restriction on.",
+    "exampleSentence": "Early motherhood abruptly curtails a young woman's academic development.",
+    "unit": "Unit 9: Lesson 3 (Child Marriage)",
+    "boardExamTag": "Unit 9 • Lesson 3",
+    "sources": [
+      "Unit 9: Lesson 3 (Child Marriage)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-01",
+    "word": "Crave",
+    "bengaliMeaning": "ব্যাকুলভাবে প্রার্থনা করা / চরম আকাঙ্ক্ষা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Yearn, desire, beg, plead, covet, solicit",
+    "antonyms": "Spurn, reject, despise, decline",
+    "englishMeaning": "Feel a powerful desire for something; ask for earnestly.",
+    "exampleSentence": "I humbly crave, Let me once know.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-01",
+    "word": "Philosophers",
+    "bengaliMeaning": "দার্শনিক / তত্ত্বজ্ঞানী চিন্তাবিদ ও তত্ত্ববিদ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Thinkers, sages, theorists, scholars, visionaries, logicians",
+    "antonyms": "Dogmatists, literalists",
+    "englishMeaning": "Persons engaged or learned in philosophy, especially as an academic discipline.",
+    "exampleSentence": "Let us read an excerpt from Japanese natural farming practitioner and philosopher Masanobu Fukuoka's celebrated book One-Straw Revolution: \"Before researchers become researchers they should become philosophers.",
+    "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-privileges",
+    "word": "Privileges",
+    "bengaliMeaning": "বিশেষ অধিকার / সুযোগ-সুবিধা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Prerogatives, advantages, benefits, entitlements",
+    "antonyms": "Deprivations, disadvantages, penalties",
+    "englishMeaning": "Special rights, advantages, or immunities granted to a particular person or group.",
+    "exampleSentence": "privileges - special rights or advantages granted to a particular group v.",
+    "unit": "Unit 5: Human Rights: Frederick Douglass",
+    "lesson": "Frederick Douglass",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u8-l2-beset",
+    "word": "Beset",
+    "bengaliMeaning": "ঘিরে ধরা / সংকটাপন্ন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Plagued, troubled, surrounded, besieged",
+    "antonyms": "Relieved, freed, untroubled, cleared",
+    "englishMeaning": "Trouble or threaten persistently.",
+    "exampleSentence": "About the poet: Robert Hayden was born into a poor family in Detroit in USA in 1913 and had a difficult childhood beset by eyesight problems.",
+    "unit": "Unit 8: Relationships: Warmth in Relationships",
+    "lesson": "Warmth in Relationships",
+    "boardExamTag": "Unit 8 • Lesson 2",
+    "sources": [
+      "Unit 8: Relationships: Warmth in Relationships"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-struggling",
+    "word": "Struggling",
+    "bengaliMeaning": "সংগ্রাম করা / টিকে থাকার যুদ্ধ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Striving, battling, laboring, contending",
+    "antonyms": "Yielding, surrendering, relaxing, prospering",
+    "englishMeaning": "Striving to achieve or attain something in the face of difficulty or resistance.",
+    "exampleSentence": "Listen to the song and read the final part of the lyrics: Then Tom said: \"Ma, whenever ya seen a cop beating a guy Wherever a hungry new born baby cries Wherever there's a fight against the blood and hatred in the air Look for me ma, I'll be there Wherever somebody's struggling for a place to stand For a decent job or a helping hand Wherever somebody is struggling to be free Look in their eyes ma, you'll see me\" And the highway is alive tonight Nobody's fooling nobody as to where it goes I'm sitting down here in the campfire light With the ghost of Tom Joad.",
+    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
+    "lesson": "Stories From Gaza",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Peace and Conflict: Stories From Gaza"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l1-06",
+    "word": "Din",
+    "bengaliMeaning": "কোলাহল / হট্টগোল / বিকট শব্দ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Uproar, tumult, commotion, racket, clamor",
+    "antonyms": "Silence, quietude, peace, serenity",
+    "englishMeaning": "A loud, unpleasant, and prolonged tumult or noise.",
+    "exampleSentence": "The nephew commented, \"Your Majesty can see how things are going on.\" \"Astonishing!\" replied the King, \"the din isn't negligible.\" \"Not only the noise,\" said the nephew.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l1-24",
+    "word": "Mount",
+    "bengaliMeaning": "আরোহণ করা / চড়া / ওঠা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Ascend, climb, ride, scale",
+    "antonyms": "Dismount, descend, drop, step down",
+    "englishMeaning": "To climb up on or get on top of something, such as a horse or platform.",
+    "exampleSentence": "The meaning behind it isn't negligible either.\" The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\" The King was startled.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l1-42",
+    "word": "Thunderous",
+    "bengaliMeaning": "বজ্রনিনাদপূর্ণ / প্রচণ্ড শব্দময় / বজ্রসম গর্জনপূর্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Booming, deafening, roaring, thundering",
+    "antonyms": "Quiet, silent, muted, subdued",
+    "englishMeaning": "Making a very loud and deep noise like thunder.",
+    "exampleSentence": "Thunderous hammering began then.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-l2-09",
+    "word": "Explode",
+    "bengaliMeaning": "বিস্ফোরিত হওয়া / ফেটে যাওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Blow up, burst, detonate, shatter, erupt",
+    "antonyms": "Implode, stabilize, remain intact",
+    "englishMeaning": "To burst or shatter violently and noisily.",
+    "exampleSentence": "don\" mention it etc , It wubled him a lot when people around smiling to use these expressiotw As a the exploded.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-l2-10",
+    "word": "Expression",
+    "bengaliMeaning": "শব্দ / অভিব্যক্তি / প্রকাশভঙ্গি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Utterance, phrase, remark, statement, idiom",
+    "antonyms": "Silence, inexpression, speechlessness",
+    "englishMeaning": "A word or phrase used to express an idea or polite feeling.",
+    "exampleSentence": "Folk music may be described as the music of the ancient times that sprang from the heart of a community, based on their natural style of expression uninfluenced by the rules of classical music or modern popular songs.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-l2-14",
+    "word": "Forbid",
+    "bengaliMeaning": "নিষেধ করা / বারণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Prohibit, prevent, disallow, ban, bar",
+    "antonyms": "Allow, permit, approve, authorize",
+    "englishMeaning": "To refuse to allow something; prohibit.",
+    "exampleSentence": "Thanks to the godforsaken detractors the rumour went round, \"The bird is dead.\" The King called his nephew and said, \"What is this I hear?\" \"Your Majesty,\" the nephew replied, \"the bird's education has been completed.\" The King asked, \"Does it hop?\" \"God forbid,\" said the nephew.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-14",
+    "word": "Conversation",
+    "bengaliMeaning": "কথোপকথন / আলাপচারিতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Dialogue, Discussion, Talk, Chat, Discourse",
+    "antonyms": "Silence, Speechlessness, Taciturnity",
+    "englishMeaning": "A talk, especially an informal one, between two or more people.",
+    "exampleSentence": "South African greetings involve warm eye-contact and pleasant conversations.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-18",
+    "word": "Edge",
+    "bengaliMeaning": "কিনারা / প্রান্ত / ধার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Border, Rim, Margin, Brink, Boundary",
+    "antonyms": "Center, Middle, Interior",
+    "englishMeaning": "The outside limit of an object, surface, or area.",
+    "exampleSentence": "Landscape with the Fall of Icarus According to Brueghel when Icarus fell it was spring a farmer was ploughing his field the whole pageantry of the year was awake tingling near the edge of the sea concerned with itself sweating in the sun that melted the wings' wax unsignificantly off the coast there was a splash quite unnoticed this was Icarus drowning",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-29",
+    "word": "Identify",
+    "bengaliMeaning": "শনাক্ত করা / চিহ্নিত করা / চিনে নেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Recognize, Distinguish, Spot, Discern, Determine",
+    "antonyms": "Mistake, Confuse, Misidentify, Overlook",
+    "englishMeaning": "To establish or indicate who or what someone or something is.",
+    "exampleSentence": "For example, AI-powered educational tools can provide students with immediate feedback on their work, allowing them to identify and correct mistakes quickly.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-36",
+    "word": "Maintain",
+    "bengaliMeaning": "বজায় রাখা / সংরক্ষণ করা / অব্যাহত রাখা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Sustain, Preserve, Keep, Continue, Uphold",
+    "antonyms": "Discontinue, Abandon, Neglect, Drop",
+    "englishMeaning": "To cause or enable a condition or state of affairs to continue.",
+    "exampleSentence": "Edtech companies must ensure that the sensitive personal data collected and stored by AI-powered educational tools are properly secured and that privacy is maintained.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-05",
+    "word": "Alcohol",
+    "bengaliMeaning": "মদ্য / মাদক পানীয়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Liquor, intoxicant, spirits, brew",
+    "antonyms": "Non-alcoholic beverage, soft drink",
+    "englishMeaning": "A colorless volatile flammable liquid which is the intoxicating constituent of wine, beer, and spirits.",
+    "exampleSentence": "They are also more likely to get exposed to drugs and alcohol.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-15",
+    "word": "Cope",
+    "bengaliMeaning": "মানিয়ে নেওয়া / সামাল দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Manage, adjust, handle, tackle, endure",
+    "antonyms": "Crumble, collapse, surrender, fail",
+    "englishMeaning": "To deal successfully with something difficult, stressful, or demanding.",
+    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-30",
+    "word": "Irrespective",
+    "bengaliMeaning": "বিবেচনা করা হয় না এমন / নির্বিশেষে",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Regardless, notwithstanding, heedless",
+    "antonyms": "Considered, mindful, attentive",
+    "englishMeaning": "Not taking something into account; regardless of external conditions.",
+    "exampleSentence": "But, for the most pari, most individuals have to go through these stages irrespective Of their economic or social status.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-34",
+    "word": "Maturation",
+    "bengaliMeaning": "পূর্ণতা / পরিপক্বতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Fulfillment, development, ripening, growth",
+    "antonyms": "Decline, immaturity, regression",
+    "englishMeaning": "The biological and psychological process of reaching full development and maturity.",
+    "exampleSentence": "Physical and sexual maturation marks the transition toward adulthood.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-47",
+    "word": "Role",
+    "bengaliMeaning": "ভূমিকা / দায়িত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Part, function, duty, capacity, position",
+    "antonyms": "Disregard, neglect",
+    "englishMeaning": "The function assumed or part played by a person or thing in a particular situation.",
+    "exampleSentence": "Let us explore the pros and cons of AI as a tool in the classroom, address the concern that AI could be a threat to teachers' and instructors' jobs and discuss the role of edtech companies in advancing this AI use case.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-57",
+    "word": "Vulnerable",
+    "bengaliMeaning": "সুরক্ষিত নয় এমন / অরক্ষিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Exposed, susceptible, defenseless, at risk",
+    "antonyms": "Invulnerable, protected, secure, safe",
+    "englishMeaning": "Susceptible to physical harm, emotional injury, or exploitation.",
+    "exampleSentence": "A vulnerable age",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l1-59",
+    "word": "Wide",
+    "bengaliMeaning": "ব্যাপক / বিস্তৃত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Broad, extensive, comprehensive, expansive",
+    "antonyms": "Narrow, limited, restricted",
+    "englishMeaning": "Including a great variety of people or things; broad in scope.",
+    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l2-04",
+    "word": "Repetitive",
+    "bengaliMeaning": "পুনরাবৃত্তিমূলক / একঘেয়ে",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Monotonous, recurrent, routine, tedious, reiterative",
+    "antonyms": "Varied, diverse, sporadic, irregular",
+    "englishMeaning": "Containing or characterized by repetition, especially when routine or uninteresting.",
+    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l2-18",
+    "word": "Accessible",
+    "bengaliMeaning": "সহজলভ্য / প্রবেশযোগ্য / ব্যবহারোপযোগী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Available, reachable, attainable, approachable",
+    "antonyms": "Inaccessible, unreachable, limited, restricted",
+    "englishMeaning": "Able to be easily reached, entered, used, or obtained by diverse users.",
+    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l2-19",
+    "word": "Broader",
+    "bengaliMeaning": "ব্যাপক / বিস্তৃত / প্রশস্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Wider, extensive, comprehensive, expansive",
+    "antonyms": "Narrower, restricted, confined",
+    "englishMeaning": "Covering a large number and wide scope of subjects or individuals.",
+    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l2-27",
+    "word": "Overcome",
+    "bengaliMeaning": "কাটিয়ে ওঠা / পরাস্ত করা / জয় করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Conquer, surmount, defeat, master, triumph over",
+    "antonyms": "Succumb, surrender, yield, lose",
+    "englishMeaning": "To succeed in dealing with a problem, difficulty, or obstacle.",
+    "exampleSentence": "Edtech companies should aim to improve AI capabilities and overcome these limitations to create more advanced, innovative and effective AI tools for the classroom.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l2-29",
+    "word": "Implications",
+    "bengaliMeaning": "তাৎপর্য / দূরবর্তী প্রভাব / ফলাফল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Consequences, ramifications, effects, repercussions",
+    "antonyms": "Causes, origins, antecedents",
+    "englishMeaning": "The conclusion that can be drawn from something or prospective future effects.",
+    "exampleSentence": "Ethical considerations: Edtech companies should consider the ethical implications of AI technology in education and develop AI tools in a transparent, fair and responsible manner.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l3-01",
+    "word": "Consisted",
+    "bengaliMeaning": "গঠিত হয়েছিল / অন্তর্ভুক্ত ছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Comprised, composed, constituted, formed, included",
+    "antonyms": "Excluded, lacked, omitted",
+    "englishMeaning": "Was made up or composed of specific parts or elements.",
+    "exampleSentence": "of Our Bengali meals consist of five flavours of food—bitter, savoury, hot, sour sides and desserts.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l3-03",
+    "word": "Glimpse",
+    "bengaliMeaning": "একপলক দেখা / ক্ষণিক দৃষ্টি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Peek, glance, sighting, peep, quick look",
+    "antonyms": "Gaze, stare, scrutiny, observation",
+    "englishMeaning": "A momentary or partial view of someone or something.",
+    "exampleSentence": "To-mo-e Ga-ku-en.\" Totto-chan was about to ask Mother what \"Tomoe' • meant, when she caught a glimpse of something that made her think she must be dreaming.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l3-04",
+    "word": "Squatted",
+    "bengaliMeaning": "উবু হয়ে বসল / হাঁটু ভেঙে বসল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Crouched, hunkered, bent, stooped",
+    "antonyms": "Stood upright, straightened, rose",
+    "englishMeaning": "Crouched or sat with the knees bent and the heels close to or touching the buttocks.",
+    "exampleSentence": "She squatted down and peered through the shrubbery to get a better look.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l3-07",
+    "word": "Abandoned",
+    "bengaliMeaning": "পরিত্যক্ত / অব্যবহৃত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Deserted, discarded, forsaken, derelict, unused",
+    "antonyms": "Inhabited, occupied, utilized, maintained",
+    "englishMeaning": "Having been deserted or left behind by former owners or users.",
+    "exampleSentence": "in the school grounds!\" For its classrooms, the school had made use of six abandoned railroad cars.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l3-09",
+    "word": "Rosy-cheeked",
+    "bengaliMeaning": "গোলাপী গালবিশিষ্ট / স্বাস্থ্যোজ্জ্বল",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Blooming, radiant, healthy, flushed, rubicund",
+    "antonyms": "Pale, pallid, sickly, anemic, wan",
+    "englishMeaning": "Having healthy pink or reddish cheeks indicating vibrant youth.",
+    "exampleSentence": "But the eyes of the rosy-cheeked little girl gazing at them through the shrubbery sparkled even more.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l3-10",
+    "word": "Spacious",
+    "bengaliMeaning": "প্রশস্ত / সুবিশাল / খোলামেলা",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Roomy, expansive, commodious, capacious, large",
+    "antonyms": "Cramped, narrow, confined, restricted",
+    "englishMeaning": "Having ample space; commodious and roomy.",
+    "exampleSentence": "The not very spacious school grounds felt lively and welcoming with green plants.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u2-l1-04",
+    "word": "Faculties",
+    "bengaliMeaning": "অনুষদ / মানসিক বা সৃষ্টিশীল ক্ষমতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Capabilities, talents, aptitudes, powers, faculties",
+    "antonyms": "Inabilities, weaknesses, incapacities",
+    "englishMeaning": "Inherent mental or physical powers and creative talents.",
+    "exampleSentence": "Poets make use of words to paint images of beauty, while artists create representations of beauty using their creative faculties.",
+    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
+    "boardExamTag": "Unit 2 • Lesson 1",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u2-l1-07",
+    "word": "Climes",
+    "bengaliMeaning": "জলবায়ু / দেশ বা অঞ্চল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Climates, regions, territories, lands, realms",
+    "antonyms": "Void, emptiness",
+    "englishMeaning": "Regions or areas considered with reference to their climate and atmosphere.",
+    "exampleSentence": "She walks in beauty, like the night Of cloudless climes and starry skies; And all that's best of dark and bright Meet in her aspect and her eyes; Thus mellowed to that tender light Which heaven to gaudy day denies.",
+    "unit": "Unit 2: Lesson 1 (What is Beauty?)",
+    "boardExamTag": "Unit 2 • Lesson 1",
+    "sources": [
+      "Unit 2: Lesson 1 (What is Beauty?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u2-l4-04",
+    "word": "Anonymous",
+    "bengaliMeaning": "বেনামী / অজ্ঞাতনামা / যার নাম প্রকাশ পায় না",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Unnamed, unidentified, nameless, uncredited",
+    "antonyms": "Named, identified, famous, renowned",
+    "englishMeaning": "Not identified by name; of unknown authorship or identity.",
+    "exampleSentence": "The maker of a terracotta doll or a shatranji (cotton floor mat) remains anonymous but the work retains a personal touch.",
+    "unit": "Unit 2: Lesson 4 (Craft)",
+    "boardExamTag": "Unit 2 • Lesson 4",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l4-05",
+    "word": "Petitions",
+    "bengaliMeaning": "আবেদনপত্র / গণস্বাক্ষরযুক্ত নাগরিক দাবি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Appeals, pleas, supplications, solicitations, representations",
+    "antonyms": "Orders, decrees, commands",
+    "englishMeaning": "Formal written requests, typically signed by many people, appealing to authority.",
+    "exampleSentence": "Citizens submitted petitions to the municipal authority against unfair tax hikes.",
+    "unit": "Unit 1: Lesson 4 (Civic Engagement)",
+    "boardExamTag": "Unit 1 • Lesson 4",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u3-l3-05",
+    "word": "Creeks",
+    "bengaliMeaning": "ছোট নদী / খাঁড়ি / বনভূমির জলপ্রণালী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Inlets, streams, rivulets, tributaries, bayous",
+    "antonyms": "Oceans, mainlands",
+    "englishMeaning": "Narrow, sheltered waterways, especially an inlet for a river.",
+    "exampleSentence": "According to some stories, he also fought crocodiles who threatened the people of the region full of canals and creeks, indeed, a kind of watery jungle bordering the Bay of Bengal.",
+    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
+    "boardExamTag": "Unit 3 • Lesson 3",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-04",
+    "word": "Testimonies",
+    "bengaliMeaning": "সাক্ষ্য / চাক্ষুষ বিবৃতি ও প্রমাণমালা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Statements, evidence, declarations, affidavits, accounts",
+    "antonyms": "Denials, retractions, fables",
+    "englishMeaning": "Formal written or spoken statements, especially given in an investigation or court.",
+    "exampleSentence": "Historical Context & Testimonies: 'Sharing the Earth' is a collection of justice-oriented environmental writings.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u6-l2-02",
+    "word": "Renaissance",
+    "bengaliMeaning": "পুনর্জাগরণ / নবজাগরণ / সাহিত্য ও সংস্কৃতির নবযুগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Revival, rebirth, renewal, resurgence, regeneration",
+    "antonyms": "Decay, decline, collapse, stagnation",
+    "englishMeaning": "A revival of or renewed interest in something, especially culture or art.",
+    "exampleSentence": "Hughes was also a leader of the Harlem Renaissance which attempted to bring changes in the lives of the Black people in the 1920s.",
+    "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
+    "boardExamTag": "Unit 6 • Lesson 2",
+    "sources": [
+      "Unit 6: Lesson 2 (Dreams in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u8-l1-08",
+    "word": "Preconditions",
+    "bengaliMeaning": "পূর্বশর্ত / আবশ্যিক প্রাথমিক শর্তমালা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Prerequisites, requirements, essentials, foundations",
+    "antonyms": "Consequences, subsequent outcomes",
+    "englishMeaning": "Conditions that must exist or be established before something can occur.",
+    "exampleSentence": "Mutual respect and loyalty are indispensable preconditions for enduring friendships.",
+    "unit": "Unit 8: Lesson 1 (Family)",
+    "boardExamTag": "Unit 8 • Lesson 1",
+    "sources": [
+      "Unit 8: Lesson 1 (Family)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l2-02",
+    "word": "Responsibility",
+    "bengaliMeaning": "দায়িত্ব / সামাজিক দায়বদ্ধতা ও কর্তব্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Duty, obligation, accountability, liability",
+    "antonyms": "Irresponsibility, carelessness, neglect",
+    "englishMeaning": "The state or fact of having a duty to deal with something or of having control over someone.",
+    "exampleSentence": "Now, he can look back on his childhood and appreciate the way his father was carrying out his duties and responsibilities.",
+    "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
+    "boardExamTag": "Unit 9 • Lesson 2",
+    "sources": [
+      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u9-l4-06",
+    "word": "Obstructed",
+    "bengaliMeaning": "বাধাপ্রাপ্ত / রুদ্ধ ও জটিল প্রসব",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Blocked, impeded, hindered, jammed, hampered",
+    "antonyms": "Unobstructed, smooth, clear",
+    "englishMeaning": "Prevented or hindered from movement or progress; blocked.",
+    "exampleSentence": "Immature pelvic development frequently results in obstructed delivery in teenage girls.",
+    "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
+    "boardExamTag": "Unit 9 • Lesson 4",
+    "sources": [
+      "Unit 9: Lesson 4 (Story of Shilpi)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u10-l4-07",
+    "word": "Centering",
+    "bengaliMeaning": "মনঃসংযোগ / আত্মস্থ হওয়া ও ভারসাম্য রক্ষা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Focusing, grounding, stabilizing, balancing, concentrating",
+    "antonyms": "Scattering, distracting",
+    "englishMeaning": "Finding a calm point of mental equilibrium and focus.",
+    "exampleSentence": "Centering your breathing before an exam curbs panic and sharpen recall.",
+    "unit": "Unit 10: Lesson 4 (Fitness)",
+    "boardExamTag": "Unit 10 • Lesson 4",
+    "sources": [
+      "Unit 10: Lesson 4 (Fitness)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-06",
+    "word": "Expire",
+    "bengaliMeaning": "বিলীন হওয়া / শেষ বা অপসারিত হয়ে যাওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Terminate, vanish, run out, perish, cease",
+    "antonyms": "Commence, begin, inaugurate, blossom",
+    "englishMeaning": "Come to an end; become invalid or extinguished.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-01",
+    "word": "Monologues",
+    "bengaliMeaning": "স্বগতোক্তি / একক নাট্য সংলাপ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Soliloquies, dramatic addresses, single discourses, orations",
+    "antonyms": "Dialogues, colloquies, conversations",
+    "englishMeaning": "Long speeches by one actor in a play or movie, or as part of a theatrical program.",
+    "exampleSentence": "Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-07",
+    "word": "Dwell",
+    "bengaliMeaning": "বাস করা / চিরকাল অবস্থান করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Reside, inhabit, abide, stay, settle, lodge",
+    "antonyms": "Depart, wander, vacate, abandon",
+    "englishMeaning": "Live in or at a specified place; remain in a given state.",
+    "exampleSentence": "Peace by George Herbert (1593-1633): Sweet Peace, where dost thou dwell?",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-07",
+    "word": "Shrink",
+    "bengaliMeaning": "কুঁকড়ে যাওয়া / শুকিয়ে সংকুচিত হওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Contract, diminish, shrivel, compress, constrict",
+    "antonyms": "Expand, swell, grow, inflate",
+    "englishMeaning": "Become or make smaller in size or amount.",
+    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-02",
+    "word": "Whittling",
+    "bengaliMeaning": "ছেঁটে ফেলা / অপ্রয়োজনীয় অংশ ধীরে ধীরে কেটে বাদ দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Paring down, trimming, pruning, carving away, reducing gradually",
+    "antonyms": "Expanding, augmenting, multiplying, heaping on",
+    "englishMeaning": "Carving wood into an object by repeatedly cutting small slices from it; reducing something in size gradually.",
+    "exampleSentence": "I have done this by whittling away unnecessary agricultural practices.",
+    "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u1-l2-feedback",
+    "word": "Feedback",
+    "bengaliMeaning": "মতামত / প্রতিক্রিয়া",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Assessment, evaluation, reaction, critique",
+    "antonyms": "Silence, neglect, ignore",
+    "englishMeaning": "Information about reactions to a product or a person's performance.",
+    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
+    "unit": "Unit 1: Education and Life: Education and Technology",
+    "lesson": "Education and Technology",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Education and Life: Education and Technology"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l1-refugees",
+    "word": "Refugees",
+    "bengaliMeaning": "উদ্বাস্তু / শরণার্থী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Displaced persons, asylees, exiles, fugitives",
+    "antonyms": "Citizens, inhabitants, natives",
+    "englishMeaning": "Persons who have been forced to leave their country in order to escape war, persecution, or natural disaster.",
+    "exampleSentence": "Refugees who have to leave their own countries for political, economic and other reasons have to lose many of the rights above.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+    "lesson": "Are We Aware of These Rights-I?",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l2-dominate",
+    "word": "Dominate",
+    "bengaliMeaning": "আধিপত্য বিস্তার করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Prevail, govern, control, overshadow",
+    "antonyms": "Subordinate, yield, follow, obey",
+    "englishMeaning": "Have a commanding influence on; exercise control over.",
+    "exampleSentence": "Some people dominate others who belong to different gender or race or cultural identity.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+    "lesson": "Are We Aware of These Rights-II?",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l2-torture",
+    "word": "Torture",
+    "bengaliMeaning": "নির্যাতন / শারীরিক পীড়ন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Abuse, torment, cruelty, infliction of pain",
+    "antonyms": "Relief, comfort, kindness, mercy",
+    "englishMeaning": "The action or practice of inflicting severe pain or suffering on someone.",
+    "exampleSentence": "Article 5: No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+    "lesson": "Are We Aware of These Rights-II?",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-tidings",
+    "word": "Tidings",
+    "bengaliMeaning": "সংবাদ / বার্তা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "News, reports, information, messages",
+    "antonyms": "Silence, secret, suppression",
+    "englishMeaning": "News; information.",
+    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
+    "unit": "Unit 5: Human Rights: Frederick Douglass",
+    "lesson": "Frederick Douglass",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-protesting",
+    "word": "Protesting",
+    "bengaliMeaning": "প্রতিবাদ করা / বিক্ষোভ প্রদর্শন",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Objecting, demonstrating, dissenting, opposing",
+    "antonyms": "Assenting, accepting, approving, consenting",
+    "englishMeaning": "Expressing an objection to what someone has said or done.",
+    "exampleSentence": "Read the excerpt from the Al Jazeera article titled \"Why Are Bangladesh Tea Garden Workers Protesting?\": \"We hardly get any type of facilities, don't have enough money for our children's education, we barely get 3 kg flour as ration once a week.",
+    "unit": "Unit 5: Human Rights: Frederick Douglass",
+    "lesson": "Frederick Douglass",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u8-l3-savoring",
+    "word": "Savoring",
+    "bengaliMeaning": "উপভোগ করা / আস্বাদন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Relishing, enjoying, appreciating, tasting",
+    "antonyms": "Disdaining, hating, ignoring",
+    "englishMeaning": "Taste good food or drink and enjoy it completely; appreciate fully.",
+    "exampleSentence": "The Christmas before that\" — he drew a long breath, savoring the memory — \"she sent me a pair of skates....",
+    "unit": "Unit 8: Relationships: A Mother in Mannville",
+    "lesson": "A Mother in Mannville",
+    "boardExamTag": "Unit 8 • Lesson 3",
+    "sources": [
+      "Unit 8: Relationships: A Mother in Mannville"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-civilians",
+    "word": "Civilians",
+    "bengaliMeaning": "বেসামরিক নাগরিকবৃন্দ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Non-combatants, citizens, inhabitants, private persons",
+    "antonyms": "Soldiers, military personnel, armed combatants",
+    "englishMeaning": "Persons not in the armed services or the police force.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
+    "unit": "Unit 11: Peace and Conflict: Opinions through Images",
+    "lesson": "Opinions through Images",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Peace and Conflict: Opinions through Images"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l2-rousing",
+    "word": "Rousing",
+    "bengaliMeaning": "উদ্দীপক / আলোড়ন সৃষ্টিকারী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Stirring, inspiring, exciting, electrifying",
+    "antonyms": "Boring, dull, disheartening, uninspiring",
+    "englishMeaning": "Exciting; stirring.",
+    "exampleSentence": "She's given rousing speeches to politicians, to the EU parliament, the UK parliament, to protesters and more.",
+    "unit": "Unit 12: Environment and Nature: The Greta Effect",
+    "lesson": "The Greta Effect",
+    "boardExamTag": "Unit 12 • Lesson 2",
+    "sources": [
+      "Unit 12: Environment and Nature: The Greta Effect"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l2-degradation",
+    "word": "Degradation",
+    "bengaliMeaning": "পরিবেশ দূষণ বা অবক্ষয়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Deterioration, degeneration, decline, breakdown",
+    "antonyms": "Improvement, restoration, conservation, renewal",
+    "englishMeaning": "The condition or process of degrading or being degraded.",
+    "exampleSentence": "Did you ever feel angry like Greta seeing environmental degradation in your locality?",
+    "unit": "Unit 12: Environment and Nature: The Greta Effect",
+    "lesson": "The Greta Effect",
+    "boardExamTag": "Unit 12 • Lesson 2",
+    "sources": [
+      "Unit 12: Environment and Nature: The Greta Effect"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-reparations",
+    "word": "Reparations",
+    "bengaliMeaning": "ক্ষতিপূরণ / ক্ষতিসাধন সংশোধন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Restitution, amends, compensation, redress",
+    "antonyms": "Damage, injury, penalties, penalties",
+    "englishMeaning": "The making of amends for a wrong one has done, by paying money to or otherwise helping those who have been wronged.",
+    "exampleSentence": ") Environmental Justice protects the right of victims of environmental injustice to receive full compensation and reparations for damages as well as quality health care.",
+    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
+    "lesson": "What is Environmental Justice?",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Environment and Nature: What is Environmental Justice?"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u6-l1-13",
+    "word": "Stimuli",
+    "bengaliMeaning": "উত্তেজক সংকেত / উদ্দীপক / প্রেরণা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Incentives, impulses, triggers, inputs, prods",
+    "antonyms": "Deterrents, suppressants, depressants",
+    "englishMeaning": "Things that evoke a specific functional reaction in an organ or tissue.",
+    "exampleSentence": "External sensory stimuli like barking dogs can be woven into the fabric of a dream.",
+    "unit": "Unit 6: Lesson 1 (What is a Dream?)",
+    "boardExamTag": "Unit 6 • Lesson 1",
+    "sources": [
+      "Unit 6: Lesson 1 (What is a Dream?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u7-l2-02",
+    "word": "Trekking",
+    "bengaliMeaning": "দুর্গম পর্বতারোহণ যাত্রা / পদব্রজে গিরি অভিযান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Hiking, mountaineering, tramping, backpacking, rambling",
+    "antonyms": "Resting, idling",
+    "englishMeaning": "Go on a long arduous journey, typically on foot across rough terrain.",
+    "exampleSentence": "Nishat joined Bangladesh Mountaineering and Trekking Club (BMTC) in 2006, and completed a basic training course at Himalayan Mountaineering Institute, Darjeeling, India in 2007.",
+    "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
+    "boardExamTag": "Unit 7 • Lesson 2",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u8-l4-screeching",
+    "word": "Screeching",
+    "bengaliMeaning": "তীক্ষ্ণ চিৎকার করা / কর্কশ শব্দ",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Shrieking, squealing, howling, crying out",
+    "antonyms": "Whispering, murmuring, silence",
+    "englishMeaning": "Making a loud, harsh, piercing cry or sound.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
+    "unit": "Unit 8: Relationships: Love",
+    "lesson": "Love",
+    "boardExamTag": "Unit 8 • Lesson 4",
+    "sources": [
+      "Unit 8: Relationships: Love"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u6-l1-cherish",
+    "word": "Cherish",
+    "bengaliMeaning": "সযত্নে লালন করা / পরম স্নেহে স্মরণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Treasure, prize, hold dear, nurture, value",
+    "antonyms": "Despise, disdain, neglect, abandon",
+    "englishMeaning": "Protect and care for (someone) lovingly; hold (something) dear.",
+    "exampleSentence": "Now give examples of a sweet dream while sleeping a nightmare a dream that you cherish consciously a day dream H.",
+    "unit": "Unit 6: Dreams: What is a Dream?",
+    "lesson": "What is a Dream?",
+    "boardExamTag": "Unit 6 • Lesson 1",
+    "sources": [
+      "Unit 6: Dreams: What is a Dream?"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
     "id": "vocab-u2-l3-18",
     "word": "Accolades",
     "bengaliMeaning": "স্বীকৃতি / ভূয়সী প্রশংসা / অর্জিত পুরস্কার",
@@ -9745,7 +11079,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-08",
@@ -9767,7 +11101,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-09",
@@ -9789,7 +11123,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-08",
@@ -9811,7 +11145,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-03",
@@ -9833,7 +11167,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-08",
@@ -9855,7 +11189,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-01",
@@ -9877,7 +11211,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-03",
@@ -9899,7 +11233,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-04",
@@ -9921,7 +11255,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
+    "priority": 100
   },
   {
     "id": "vocab-u11-l4-04",
@@ -9943,28 +11277,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 20
-  },
-  {
-    "id": "vocab-u1-l1-02",
-    "word": "Contextual",
-    "bengaliMeaning": "প্রাসঙ্গিক / পরিপ্রেক্ষিতমূলক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Relevant, related, circumstantial, pertinent",
-    "antonyms": "Irrelevant, unrelated, out-of-context",
-    "englishMeaning": "Depending on, related to, or clarifying the surrounding circumstances.",
-    "exampleSentence": "Contextual vocabulary and literary devices: gazing, waning, roosting, desolate, dome, wagtail, hush, wailed, honeycombed.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-04",
@@ -9985,7 +11298,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-05",
@@ -10006,7 +11319,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-07",
@@ -10027,7 +11340,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-10",
@@ -10048,7 +11361,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-12",
@@ -10069,7 +11382,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-13",
@@ -10090,7 +11403,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-14",
@@ -10111,7 +11424,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-15",
@@ -10132,7 +11445,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-16",
@@ -10153,7 +11466,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-18",
@@ -10174,7 +11487,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-20",
@@ -10195,7 +11508,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-21",
@@ -10216,7 +11529,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-22",
@@ -10237,7 +11550,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-23",
@@ -10258,7 +11571,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-27",
@@ -10279,28 +11592,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u1-l1-28",
-    "word": "Pace",
-    "bengaliMeaning": "গতি / চলার গতি / বেগ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Speed, tempo, rate, velocity, swiftness",
-    "antonyms": "Sluggishness, slowness, standstill",
-    "englishMeaning": "Speed in walking, running, or movement; rate of progress.",
-    "exampleSentence": "The King wished to see for himself at what an awesome pace the bird's schooling was going on.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-30",
@@ -10321,7 +11613,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-31",
@@ -10342,7 +11634,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-32",
@@ -10363,7 +11655,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-33",
@@ -10384,7 +11676,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-35",
@@ -10405,7 +11697,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-38",
@@ -10426,7 +11718,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-39",
@@ -10447,7 +11739,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-40",
@@ -10468,28 +11760,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u1-l1-41",
-    "word": "Thrust",
-    "bengaliMeaning": "জোরপূর্বক ঢোকানো / ঠেলা দেওয়া / ধাক্কা দেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Shove, push, force, drive, plunge",
-    "antonyms": "Withdraw, extract, pull back, retract",
-    "englishMeaning": "To push someone or something suddenly or violently in a specified direction.",
-    "exampleSentence": "Only reams of texts were being torn and the pieces of paper thrust into the bird's mouth with the point of a quill.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-43",
@@ -10510,7 +11781,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-45",
@@ -10531,7 +11802,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-46",
@@ -10552,7 +11823,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-26",
@@ -10573,7 +11844,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-27",
@@ -10594,7 +11865,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-28",
@@ -10615,7 +11886,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-29",
@@ -10636,7 +11907,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-31",
@@ -10657,7 +11928,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-32",
@@ -10678,7 +11949,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-35",
@@ -10699,7 +11970,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-37",
@@ -10720,7 +11991,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-38",
@@ -10741,28 +12012,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-39",
-    "word": "Extend",
-    "bengaliMeaning": "প্রসারিত করা / বাড়িয়ে দেওয়া / বিস্তার করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Stretch out, Reach out, Offer, Proffer, Prolong",
-    "antonyms": "Withdraw, Retract, Shorten, Pull back",
-    "englishMeaning": "To hold out something toward someone; offer.",
-    "exampleSentence": "Extended Essay: Write an essay in 500-800 words on the following topic: \"Modern day slavery is rooted in the legacies of colonial exploitation.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-44",
@@ -10783,7 +12033,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-47",
@@ -10804,7 +12054,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-01",
@@ -10825,7 +12075,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-03",
@@ -10846,7 +12096,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-04",
@@ -10867,7 +12117,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-06",
@@ -10888,7 +12138,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-07",
@@ -10909,7 +12159,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-12",
@@ -10930,7 +12180,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-13",
@@ -10951,7 +12201,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-15",
@@ -10972,7 +12222,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-17",
@@ -10993,7 +12243,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-20",
@@ -11014,7 +12264,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-23",
@@ -11035,7 +12285,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-25",
@@ -11056,7 +12306,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-26",
@@ -11077,7 +12327,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-27",
@@ -11098,7 +12348,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l2-29",
@@ -11119,7 +12369,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-74",
@@ -11140,7 +12390,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-75",
@@ -11161,7 +12411,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-76",
@@ -11182,7 +12432,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-02",
@@ -11203,7 +12453,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-04",
@@ -11224,7 +12474,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-07",
@@ -11245,7 +12495,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-15",
@@ -11266,7 +12516,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-16",
@@ -11287,7 +12537,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-19",
@@ -11308,7 +12558,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-22",
@@ -11329,7 +12579,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-23",
@@ -11350,7 +12600,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-24",
@@ -11371,7 +12621,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-25",
@@ -11392,7 +12642,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-27",
@@ -11413,7 +12663,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-28",
@@ -11434,7 +12684,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-30",
@@ -11455,7 +12705,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-31",
@@ -11476,7 +12726,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-32",
@@ -11497,7 +12747,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-34",
@@ -11518,7 +12768,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-35",
@@ -11539,7 +12789,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-37",
@@ -11560,7 +12810,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-43",
@@ -11581,7 +12831,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-46",
@@ -11602,7 +12852,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-01",
@@ -11623,7 +12873,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-02",
@@ -11644,7 +12894,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-07",
@@ -11665,7 +12915,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-08",
@@ -11686,7 +12936,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-09",
@@ -11707,7 +12957,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-10",
@@ -11728,7 +12978,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-13",
@@ -11749,7 +12999,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-18",
@@ -11770,7 +13020,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-20",
@@ -11791,7 +13041,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-21",
@@ -11805,14 +13055,15 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-23",
@@ -11833,7 +13084,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-25",
@@ -11854,7 +13105,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-26",
@@ -11868,35 +13119,15 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u9-l1-29",
-    "word": "Intervene",
-    "bengaliMeaning": "হস্তক্ষেপ করা / মধ্যস্থতা করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Interfere, mediate, intercede, step in",
-    "antonyms": "Ignore, overlook, disregard, withdraw",
-    "englishMeaning": "To step into a situation to prevent undesirable outcomes or resolve conflict.",
-    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-32",
@@ -11917,7 +13148,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-37",
@@ -11938,7 +13169,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-39",
@@ -11959,7 +13190,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-40",
@@ -11980,7 +13211,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-45",
@@ -12001,7 +13232,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-49",
@@ -12022,28 +13253,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u9-l1-50",
-    "word": "Transmit",
-    "bengaliMeaning": "সঞ্চারিত করা / ছড়ানো",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Spread, convey, transfer, pass on",
-    "antonyms": "Hide, withhold, suppress, stop",
-    "englishMeaning": "To pass or cause something to spread from one person or place to another.",
-    "exampleSentence": "Unprotected risky behaviors can transmit serious infections such as HIV.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-51",
@@ -12064,7 +13274,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-52",
@@ -12085,7 +13295,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-55",
@@ -12106,7 +13316,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-56",
@@ -12127,7 +13337,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-01",
@@ -12148,7 +13358,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-03",
@@ -12169,7 +13379,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-05",
@@ -12190,7 +13400,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-06",
@@ -12211,7 +13421,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-08",
@@ -12232,7 +13442,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-09",
@@ -12253,49 +13463,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u1-l2-12",
-    "word": "Heavily",
-    "bengaliMeaning": "অতিরিক্ত মাত্রায় / গভীরভাবে",
-    "partsOfSpeech": "Adverb",
-    "synonyms": "Excessively, deeply, profoundly, severely",
-    "antonyms": "Lightly, slightly, marginally, scarcely",
-    "englishMeaning": "To a great degree; intensely or excessively.",
-    "exampleSentence": "While AI can provide personalized learning and instant feedback, it cannot replace the human and emotional support that students need to succeed, and relying too heavily on AI-powered educational tools may impact students negatively.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u1-l2-13",
-    "word": "Impact",
-    "bengaliMeaning": "প্রভাব ফেলা / প্রতিক্রিয়া সৃষ্টি করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Influence, affect, alter, impress, shape",
-    "antonyms": "Leave unaffected, ignore, overlook",
-    "englishMeaning": "To have a strong effect on someone or something.",
-    "exampleSentence": "While AI can provide personalized learning and instant feedback, it cannot replace the human and emotional support that students need to succeed, and relying too heavily on AI-powered educational tools may impact students negatively.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-14",
@@ -12316,7 +13484,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-17",
@@ -12337,7 +13505,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-21",
@@ -12358,7 +13526,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-22",
@@ -12379,7 +13547,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-23",
@@ -12400,7 +13568,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-28",
@@ -12421,7 +13589,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-30",
@@ -12442,7 +13610,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-31",
@@ -12463,7 +13631,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-33",
@@ -12484,7 +13652,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-34",
@@ -12505,28 +13673,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u1-l3-02",
-    "word": "Askew",
-    "bengaliMeaning": "বাঁকাভাবে / তির্যকভাবে / একপাশে হেলে",
-    "partsOfSpeech": "Adverb",
-    "synonyms": "Crooked, slanted, tilted, awry, obliquely",
-    "antonyms": "Straight, aligned, symmetrical, upright",
-    "englishMeaning": "Not in a straight or level position; crookedly or to one side.",
-    "exampleSentence": "When she got closer, she had to put her head to one side to read the name of the school because the wind had blown the sign askew.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-05",
@@ -12547,7 +13694,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-06",
@@ -12568,7 +13715,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-08",
@@ -12589,7 +13736,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-11",
@@ -12610,7 +13757,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-13",
@@ -12631,7 +13778,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-14",
@@ -12652,7 +13799,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-15",
@@ -12673,7 +13820,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-16",
@@ -12694,7 +13841,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-17",
@@ -12715,7 +13862,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-18",
@@ -12736,7 +13883,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-19",
@@ -12757,7 +13904,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-20",
@@ -12778,7 +13925,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-21",
@@ -12799,7 +13946,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-23",
@@ -12820,7 +13967,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-24",
@@ -12841,7 +13988,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-27",
@@ -12862,7 +14009,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-28",
@@ -12883,7 +14030,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l3-30",
@@ -12904,7 +14051,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-03",
@@ -12925,7 +14072,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-06",
@@ -12946,7 +14093,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-08",
@@ -12967,7 +14114,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-09",
@@ -12988,7 +14135,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-13",
@@ -13009,7 +14156,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-15",
@@ -13030,7 +14177,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-16",
@@ -13051,7 +14198,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-18",
@@ -13072,7 +14219,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-20",
@@ -13093,7 +14240,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-21",
@@ -13114,7 +14261,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-03",
@@ -13135,7 +14282,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-07",
@@ -13156,7 +14303,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-08",
@@ -13177,7 +14324,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-09",
@@ -13198,7 +14345,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-10",
@@ -13219,7 +14366,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-11",
@@ -13240,7 +14387,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-12",
@@ -13261,7 +14408,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-14",
@@ -13275,14 +14422,15 @@ export const hscVocabularyList = [
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
-      "Unit 2: Lesson 2 (Folk Music)"
+      "Unit 2: Lesson 2 (Folk Music)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-16",
@@ -13303,7 +14451,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-18",
@@ -13324,7 +14472,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-19",
@@ -13345,7 +14493,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-20",
@@ -13366,7 +14514,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-01",
@@ -13387,7 +14535,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-03",
@@ -13408,7 +14556,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-05",
@@ -13429,7 +14577,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-07",
@@ -13450,7 +14598,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-08",
@@ -13471,7 +14619,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-09",
@@ -13492,7 +14640,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-10",
@@ -13513,7 +14661,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-11",
@@ -13534,7 +14682,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-12",
@@ -13555,7 +14703,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-13",
@@ -13576,7 +14724,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-14",
@@ -13597,7 +14745,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-17",
@@ -13618,7 +14766,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-21",
@@ -13639,7 +14787,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-23",
@@ -13660,7 +14808,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-24",
@@ -13681,7 +14829,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-25",
@@ -13702,7 +14850,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-26",
@@ -13723,7 +14871,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l3-28",
@@ -13744,7 +14892,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-02",
@@ -13765,7 +14913,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-03",
@@ -13786,7 +14934,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-05",
@@ -13807,7 +14955,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-06",
@@ -13828,7 +14976,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-07",
@@ -13849,7 +14997,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-08",
@@ -13870,7 +15018,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-09",
@@ -13891,28 +15039,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u2-l4-11",
-    "word": "Splendor",
-    "bengaliMeaning": "মহিমা / জাঁকজমক / অপরূপ শোভা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Magnificence, grandeur, brilliance, glory, opulence",
-    "antonyms": "Drabness, squalor, modesty, ugliness",
-    "englishMeaning": "Magnificent and splendid appearance; grandeur.",
-    "exampleSentence": "Ibn Battuta visited it in 1346 and was amazed by its splendor.",
-    "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Unit 2 • Lesson 4",
-    "sources": [
-      "Unit 2: Lesson 4 (Craft)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l4-01",
@@ -13933,7 +15060,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l4-06",
@@ -13954,7 +15081,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l4-08",
@@ -13975,7 +15102,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l4-10",
@@ -13996,7 +15123,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l4-12",
@@ -14017,7 +15144,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l4-13",
@@ -14038,7 +15165,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l1-01",
@@ -14059,7 +15186,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l1-02",
@@ -14080,7 +15207,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l1-07",
@@ -14101,7 +15228,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l1-08",
@@ -14122,7 +15249,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l1-11",
@@ -14143,7 +15270,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-02",
@@ -14164,7 +15291,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-03",
@@ -14185,7 +15312,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-04",
@@ -14206,7 +15333,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-05",
@@ -14227,7 +15354,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-08",
@@ -14248,7 +15375,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-12",
@@ -14269,7 +15396,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-02",
@@ -14290,7 +15417,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-03",
@@ -14311,7 +15438,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-04",
@@ -14332,7 +15459,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-07",
@@ -14353,7 +15480,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l3-10",
@@ -14374,7 +15501,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-02",
@@ -14395,28 +15522,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u3-l4-06",
-    "word": "Defiance",
-    "bengaliMeaning": "স্পর্ধা / অবাধ্যতা / অনমনীয় প্রতিরোধ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Rebellion, resistance, non-compliance, challenge, courage",
-    "antonyms": "Submission, obedience, compliance, surrender",
-    "englishMeaning": "Open resistance; bold disobedience against an authoritarian rule.",
-    "exampleSentence": "The rulers, not pleased with her defiance, punished her cruelly by cutting out her tongue.",
-    "unit": "Unit 3: Lesson 4 (Khona)",
-    "boardExamTag": "Unit 3 • Lesson 4",
-    "sources": [
-      "Unit 3: Lesson 4 (Khona)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-07",
@@ -14437,7 +15543,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-08",
@@ -14458,7 +15564,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-09",
@@ -14479,7 +15585,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-10",
@@ -14500,7 +15606,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-11",
@@ -14521,7 +15627,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-01",
@@ -14542,7 +15648,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-04",
@@ -14563,7 +15669,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-08",
@@ -14584,7 +15690,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l2-06",
@@ -14605,7 +15711,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l2-07",
@@ -14626,7 +15732,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-01",
@@ -14647,7 +15753,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-03",
@@ -14668,7 +15774,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-05",
@@ -14689,7 +15795,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-06",
@@ -14710,7 +15816,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-07",
@@ -14731,7 +15837,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-01",
@@ -14752,7 +15858,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-02",
@@ -14773,7 +15879,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-05",
@@ -14794,7 +15900,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-06",
@@ -14815,7 +15921,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-07",
@@ -14836,7 +15942,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-09",
@@ -14857,7 +15963,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-10",
@@ -14878,7 +15984,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-03",
@@ -14899,7 +16005,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-04",
@@ -14920,7 +16026,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-05",
@@ -14941,7 +16047,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-06",
@@ -14962,28 +16068,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u5-l5-09",
-    "word": "Blunt",
-    "bengaliMeaning": "ভোঁতা করা / অনুভূতি নিস্তেজ করা / ভোঁতা হওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Dull, deaden, numb, dampen, weaken",
-    "antonyms": "Sharpen, intensify, heighten, sensitize",
-    "englishMeaning": "Make less sharp, intense, or sensitive.",
-    "exampleSentence": "For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother, and to blunt and destroy the natural affection of the mother for the child.",
-    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
-    "boardExamTag": "Unit 5 • Lesson 5",
-    "sources": [
-      "Unit 5: Lesson 5 (Frederick Douglass)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-01",
@@ -15004,7 +16089,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-04",
@@ -15025,28 +16110,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u6-l1-05",
-    "word": "Consensus",
-    "bengaliMeaning": "সর্বসম্মত অভিমত / সামগ্রিক ঐক্যমত",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Agreement, unanimity, accord, harmony, general consent",
-    "antonyms": "Disagreement, conflict, discord, dissension",
-    "englishMeaning": "A general agreement among members of a group or community.",
-    "exampleSentence": "No scientific consensus has emerged regarding the primary biological function of dreaming.",
-    "unit": "Unit 6: Lesson 1 (What is a Dream?)",
-    "boardExamTag": "Unit 6 • Lesson 1",
-    "sources": [
-      "Unit 6: Lesson 1 (What is a Dream?)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-06",
@@ -15067,7 +16131,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-08",
@@ -15088,7 +16152,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-09",
@@ -15109,7 +16173,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-10",
@@ -15130,7 +16194,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-14",
@@ -15151,7 +16215,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l1-15",
@@ -15172,7 +16236,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l2-03",
@@ -15193,7 +16257,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l2-04",
@@ -15214,7 +16278,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l2-07",
@@ -15235,7 +16299,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l2-09",
@@ -15256,7 +16320,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u6-l2-10",
@@ -15277,7 +16341,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-01",
@@ -15298,7 +16362,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-03",
@@ -15319,7 +16383,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-04",
@@ -15340,7 +16404,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-06",
@@ -15361,7 +16425,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-08",
@@ -15382,7 +16446,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-09",
@@ -15403,7 +16467,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-10",
@@ -15424,7 +16488,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-12",
@@ -15445,7 +16509,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-01",
@@ -15466,7 +16530,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-06",
@@ -15487,7 +16551,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-07",
@@ -15508,7 +16572,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-08",
@@ -15529,7 +16593,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-11",
@@ -15550,7 +16614,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-01",
@@ -15571,7 +16635,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-03",
@@ -15592,7 +16656,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-05",
@@ -15613,7 +16677,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-06",
@@ -15634,7 +16698,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-09",
@@ -15655,7 +16719,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l3-11",
@@ -15676,7 +16740,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l1-01",
@@ -15697,7 +16761,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l1-03",
@@ -15718,7 +16782,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l1-05",
@@ -15739,7 +16803,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l1-06",
@@ -15760,7 +16824,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l1-07",
@@ -15781,7 +16845,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-01",
@@ -15802,7 +16866,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-02",
@@ -15823,7 +16887,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-03",
@@ -15844,7 +16908,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-05",
@@ -15865,7 +16929,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-06",
@@ -15886,7 +16950,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-08",
@@ -15907,7 +16971,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-02",
@@ -15928,7 +16992,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-03",
@@ -15949,7 +17013,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-04",
@@ -15970,7 +17034,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-05",
@@ -15991,7 +17055,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-07",
@@ -16012,7 +17076,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-08",
@@ -16033,7 +17097,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-09",
@@ -16054,7 +17118,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-10",
@@ -16075,7 +17139,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l4-03",
@@ -16096,7 +17160,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l4-04",
@@ -16117,7 +17181,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l4-05",
@@ -16138,7 +17202,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l4-07",
@@ -16159,7 +17223,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l4-08",
@@ -16180,28 +17244,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u9-l2-03",
-    "word": "Adjustment",
-    "bengaliMeaning": "অভিযোজন / পরিবর্তনের সাথে খাপ খাওয়ানো",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Adaptation, accommodation, orientation, acclimation",
-    "antonyms": "Maladjustment, resistance, disharmony",
-    "englishMeaning": "A small alteration or movement made to achieve a desired fit, appearance, or result; psychological coping.",
-    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
-    "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
-    "boardExamTag": "Unit 9 • Lesson 2",
-    "sources": [
-      "Unit 9: Lesson 2 (Problems in Bangladesh)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l2-04",
@@ -16222,7 +17265,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l2-05",
@@ -16243,7 +17286,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l3-04",
@@ -16264,7 +17307,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l3-05",
@@ -16285,7 +17328,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l3-06",
@@ -16306,7 +17349,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l3-08",
@@ -16327,28 +17370,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u9-l4-01",
-    "word": "Pertaining",
-    "bengaliMeaning": "সম্পর্কিত / প্রাসঙ্গিক বিষয় সংক্রান্ত",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Relating, concerning, regarding, appertaining, bearing on",
-    "antonyms": "Unrelated, irrelevant, disconnected",
-    "englishMeaning": "Be appropriate, related, or applicable to something.",
-    "exampleSentence": "The workshop addressed issues pertaining to adolescent reproductive rights.",
-    "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
-    "boardExamTag": "Unit 9 • Lesson 4",
-    "sources": [
-      "Unit 9: Lesson 4 (Story of Shilpi)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-02",
@@ -16369,7 +17391,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-04",
@@ -16390,7 +17412,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-05",
@@ -16411,7 +17433,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-07",
@@ -16432,7 +17454,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-02",
@@ -16453,7 +17475,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-04",
@@ -16474,7 +17496,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-05",
@@ -16495,7 +17517,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-06",
@@ -16516,7 +17538,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-07",
@@ -16537,7 +17559,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-08",
@@ -16558,7 +17580,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-01",
@@ -16579,7 +17601,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-02",
@@ -16600,7 +17622,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-03",
@@ -16621,7 +17643,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-04",
@@ -16642,7 +17664,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-06",
@@ -16663,7 +17685,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-08",
@@ -16684,7 +17706,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l5-03",
@@ -16705,7 +17727,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l5-06",
@@ -16726,7 +17748,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l5-07",
@@ -16747,7 +17769,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l1-01",
@@ -16768,7 +17790,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l1-04",
@@ -16789,7 +17811,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l1-08",
@@ -16810,7 +17832,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-01",
@@ -16831,7 +17853,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-02",
@@ -16852,7 +17874,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-03",
@@ -16873,7 +17895,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-05",
@@ -16894,7 +17916,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-06",
@@ -16915,7 +17937,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l2-07",
@@ -16936,7 +17958,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-02",
@@ -16957,28 +17979,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u11-l3-03",
-    "word": "Deprivation",
-    "bengaliMeaning": "বঞ্চনা / মৌলিক মানবিক চাহিদাহীনতা ও অভাব",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Privation, hardship, destitution, deficiency, impoverishment",
-    "antonyms": "Abundance, opulence, prosperity",
-    "englishMeaning": "The damaging lack of material benefits considered to be basic necessities in a society.",
-    "exampleSentence": "I can't not see the deprivation in every house, the fear and the sickness.",
-    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Unit 11 • Lesson 3",
-    "sources": [
-      "Unit 11: Lesson 3 (Stories From Gaza)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-04",
@@ -16999,7 +18000,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-06",
@@ -17020,7 +18021,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-07",
@@ -17041,7 +18042,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l4-03",
@@ -17062,7 +18063,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l4-06",
@@ -17083,7 +18084,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-01",
@@ -17104,7 +18105,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-02",
@@ -17125,7 +18126,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-03",
@@ -17146,7 +18147,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-04",
@@ -17167,7 +18168,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-05",
@@ -17188,7 +18189,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-07",
@@ -17209,7 +18210,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-04",
@@ -17230,7 +18231,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-05",
@@ -17251,7 +18252,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-06",
@@ -17272,7 +18273,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-01",
@@ -17286,14 +18287,15 @@ export const hscVocabularyList = [
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
-      "Unit 12: Lesson 2 (The Greta Effect)"
+      "Unit 12: Lesson 2 (The Greta Effect)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-02",
@@ -17314,7 +18316,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-03",
@@ -17335,7 +18337,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-04",
@@ -17356,7 +18358,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-05",
@@ -17377,7 +18379,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-06",
@@ -17398,7 +18400,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-07",
@@ -17419,7 +18421,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-08",
@@ -17440,7 +18442,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-02",
@@ -17461,7 +18463,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-03",
@@ -17482,7 +18484,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-04",
@@ -17503,7 +18505,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-05",
@@ -17524,7 +18526,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-07",
@@ -17545,7 +18547,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-08",
@@ -17566,7 +18568,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-01",
@@ -17587,7 +18589,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-02",
@@ -17608,7 +18610,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-06",
@@ -17629,7 +18631,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-07",
@@ -17650,7 +18652,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-08",
@@ -17671,7 +18673,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-03",
@@ -17692,7 +18694,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-04",
@@ -17713,7 +18715,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-05",
@@ -17734,7 +18736,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-06",
@@ -17755,7 +18757,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-07",
@@ -17776,7 +18778,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-08",
@@ -17797,7 +18799,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l1-melancholy",
@@ -17819,7 +18821,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-instant",
@@ -17841,7 +18843,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-tailored",
@@ -17863,7 +18865,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-performance",
@@ -17885,7 +18887,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-dynamic",
@@ -17907,7 +18909,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-evolving",
@@ -17929,7 +18931,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l4-landmarks",
@@ -17951,7 +18953,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-heritage",
@@ -17973,29 +18975,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u5-l1-manifest",
-    "word": "Manifest",
-    "bengaliMeaning": "প্রকাশ করা / সুস্পষ্ট করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Demonstrate, reveal, exhibit, display",
-    "antonyms": "Hide, conceal, obscure, mask",
-    "englishMeaning": "Display or show a quality or feeling by one's acts or appearance.",
-    "exampleSentence": "Article 18: Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-    "lesson": "Are We Aware of These Rights-I?",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-assembly",
@@ -18010,14 +18990,15 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-association",
@@ -18039,29 +19020,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u5-l1-representatives",
-    "word": "Representatives",
-    "bengaliMeaning": "প্রতিনিধিগণ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Delegates, spokespersons, deputies, envoys",
-    "antonyms": "Principals, opponents, usurpers",
-    "englishMeaning": "Persons chosen or appointed to act or speak for another or others.",
-    "exampleSentence": "Article 21: (1) Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-    "lesson": "Are We Aware of These Rights-I?",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-suffrage",
@@ -18083,29 +19042,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u5-l2-impose",
-    "word": "Impose",
-    "bengaliMeaning": "চাপিয়ে দেওয়া / বলপ্রয়োগ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Enforce, inflict, levy, foist",
-    "antonyms": "Withdraw, repeal, lift, exempt",
-    "englishMeaning": "Force something unwelcome or unfamiliar to be accepted or put in place.",
-    "exampleSentence": "Will you impose your own beliefs on them?",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-    "lesson": "Are We Aware of These Rights-II?",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l1-identity",
@@ -18127,7 +19064,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u1-l2-security",
@@ -18149,7 +19086,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l2-exile",
@@ -18164,36 +19101,15 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u5-l1-declaration",
-    "word": "Declaration",
-    "bengaliMeaning": "ঘোষণা / সনদ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Proclamation, announcement, decree, statement",
-    "antonyms": "Suppression, revocation, secrecy",
-    "englishMeaning": "A formal or explicit statement or announcement.",
-    "exampleSentence": "Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-    "lesson": "Are We Aware of These Rights-I?",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l2-formulated",
@@ -18215,29 +19131,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u5-l3-empowered",
-    "word": "Empowered",
-    "bengaliMeaning": "ক্ষমতায়িত করা / সামর্থ্য দেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Authorized, enabled, liberated, strengthened",
-    "antonyms": "Disempowered, crippled, suppressed",
-    "englishMeaning": "Given the authority or power to do something.",
-    "exampleSentence": "How will the knowledge of this declaration help you as an empowered citizen?",
-    "unit": "Unit 5: Human Rights: Rights to Health and Education",
-    "lesson": "Rights to Health and Education",
-    "boardExamTag": "Unit 5 • Lesson 3",
-    "sources": [
-      "Unit 5: Human Rights: Rights to Health and Education"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-consciousness",
@@ -18259,7 +19153,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-impression",
@@ -18274,14 +19168,15 @@ export const hscVocabularyList = [
     "lesson": "Coal Miners",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
-      "Unit 5: Human Rights: Coal Miners"
+      "Unit 5: Human Rights: Coal Miners",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l4-indirect",
@@ -18303,7 +19198,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-autobiography",
@@ -18325,7 +19220,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-penalty",
@@ -18347,7 +19242,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-recollect",
@@ -18369,7 +19264,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-abolitionist",
@@ -18391,7 +19286,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-facilities",
@@ -18413,7 +19308,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l1-bonds",
@@ -18435,7 +19330,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l3-respect",
@@ -18457,7 +19352,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-perspective",
@@ -18479,7 +19374,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-sacrifices",
@@ -18501,7 +19396,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-nostalgic",
@@ -18523,7 +19418,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l2-regretful",
@@ -18545,7 +19440,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l1-sonnet",
@@ -18567,7 +19462,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l4-harsh",
@@ -18589,7 +19484,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-autumn",
@@ -18611,7 +19506,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-fireplace",
@@ -18633,7 +19528,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-overalls",
@@ -18655,7 +19550,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-rhythmic",
@@ -18677,7 +19572,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-miraculous",
@@ -18699,7 +19594,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-careless",
@@ -18721,7 +19616,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-accurately",
@@ -18743,7 +19638,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-subterfuge",
@@ -18765,7 +19660,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-predicated",
@@ -18787,7 +19682,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-cubbyhole",
@@ -18809,29 +19704,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u8-l3-thoughtfulness",
-    "word": "Thoughtfulness",
-    "bengaliMeaning": "বিবেচনাশীলতা / পরার্থপরতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Consideration, attentiveness, kindness, empathy",
-    "antonyms": "Selfishness, thoughtlessness, heedlessness",
-    "englishMeaning": "The state of being considerate of the needs of other people.",
-    "exampleSentence": "I found that when I tried to return his thoughtfulness with such things as candy and apples, he was wordless.",
-    "unit": "Unit 8: Relationships: A Mother in Mannville",
-    "lesson": "A Mother in Mannville",
-    "boardExamTag": "Unit 8 • Lesson 3",
-    "sources": [
-      "Unit 8: Relationships: A Mother in Mannville"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-communion",
@@ -18853,7 +19726,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u8-l3-treacherously",
@@ -18875,29 +19748,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u8-l3-vermilion",
-    "word": "Vermilion",
-    "bengaliMeaning": "টকটকে লাল বা সিঁদুরে বর্ণ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Scarlet, bright red, crimson, ruby",
-    "antonyms": "Pale, colorless, drab, dull",
-    "englishMeaning": "A brilliant red or scarlet pigment.",
-    "exampleSentence": "Other days they ran with a common ecstasy through the laurel and he brought me back vermilion maple leaves, and chestnut boughs dripping with imperial yellow.",
-    "unit": "Unit 8: Relationships: A Mother in Mannville",
-    "lesson": "A Mother in Mannville",
-    "boardExamTag": "Unit 8 • Lesson 3",
-    "sources": [
-      "Unit 8: Relationships: A Mother in Mannville"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-suffocating",
@@ -18919,7 +19770,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-ambulances",
@@ -18941,7 +19792,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-caretaker",
@@ -18963,7 +19814,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-resilience",
@@ -18985,7 +19836,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l4-repose",
@@ -19007,7 +19858,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l4-cannonballs",
@@ -19029,7 +19880,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u3-l2-mourning",
@@ -19051,29 +19902,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u11-l5-offensive",
-    "word": "Offensive",
-    "bengaliMeaning": "আক্রমণ অভিযান",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Assault, onslaught, push, incursion",
-    "antonyms": "Defense, retreat, surrender, resistance",
-    "englishMeaning": "An actively aggressive military campaign or attack.",
-    "exampleSentence": "Nguyen Ngoc Loan, chief of the National Police, fires his pistol into the head of suspected Viet Cong officer Nguyen Van Lem (also known as Bay Lop) on a Saigon street, early in the Tet Offensive of the Vietnam War.",
-    "unit": "Unit 11: Peace and Conflict: Opinions through Images",
-    "lesson": "Opinions through Images",
-    "boardExamTag": "Unit 11 • Lesson 5",
-    "sources": [
-      "Unit 11: Peace and Conflict: Opinions through Images"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l3-ballad",
@@ -19095,7 +19924,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-marveled",
@@ -19117,7 +19946,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-toxic",
@@ -19139,7 +19968,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-digest",
@@ -19161,7 +19990,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l1-extricates",
@@ -19183,7 +20012,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-superpower",
@@ -19205,7 +20034,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-whirlwind",
@@ -19227,7 +20056,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l2-necessity",
@@ -19249,7 +20078,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-wetlands",
@@ -19271,7 +20100,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-threshold",
@@ -19293,7 +20122,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-orangutans",
@@ -19315,7 +20144,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-gatherers",
@@ -19337,7 +20166,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l3-animists",
@@ -19359,7 +20188,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-violent",
@@ -19381,29 +20210,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u12-l4-equity",
-    "word": "Equity",
-    "bengaliMeaning": "ন্যায়পরায়ণতা / সমান অধিকার",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Fairness, justice, impartiality, even-handedness",
-    "antonyms": "Injustice, unfairness, inequity, bias",
-    "englishMeaning": "The quality of being fair and impartial.",
-    "exampleSentence": "It yokes concern for the environment, including all life on the planet, to commitment to social justice: human equity in terms of race, gender, religion, nationality, and class.",
-    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
-    "lesson": "What is Environmental Justice?",
-    "boardExamTag": "Unit 12 • Lesson 4",
-    "sources": [
-      "Unit 12: Environment and Nature: What is Environmental Justice?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-toxicity",
@@ -19425,7 +20232,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-depletion",
@@ -19447,7 +20254,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-sacredness",
@@ -19469,7 +20276,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l4-cessation",
@@ -19491,7 +20298,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-metabolism",
@@ -19513,29 +20320,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
-  },
-  {
-    "id": "vocab-u12-l5-assimilation",
-    "word": "Assimilation",
-    "bengaliMeaning": "পরিপাকীকরণ / আত্মস্থকরণ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Absorption, integration, incorporation, digestion",
-    "antonyms": "Rejection, segregation, exclusion",
-    "englishMeaning": "The absorption and integration of people, ideas, or nutrients.",
-    "exampleSentence": "But do not ask if your theory of assimilation is going to be relevant to the yield.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
-    "lesson": "Limits of the Scientific Method",
-    "boardExamTag": "Unit 12 • Lesson 5",
-    "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-topography",
@@ -19557,7 +20342,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-drainage",
@@ -19579,7 +20364,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-fertilizer",
@@ -19601,7 +20386,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-insecticides",
@@ -19623,7 +20408,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-microorganisms",
@@ -19645,7 +20430,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-inherently",
@@ -19667,7 +20452,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-rehabilitated",
@@ -19689,7 +20474,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-hyperbole",
@@ -19711,7 +20496,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u12-l5-convulsed",
@@ -19733,7 +20518,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l1-reproductive",
@@ -19755,7 +20540,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l3-counsellor",
@@ -19777,7 +20562,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-perpetrator",
@@ -19799,7 +20584,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u9-l4-intervention",
@@ -19821,7 +20606,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l3-delicacy",
@@ -19843,7 +20628,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l4-archery",
@@ -19865,7 +20650,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-stamina",
@@ -19887,7 +20672,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u10-l5-overspending",
@@ -19909,7 +20694,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l1-impulse",
@@ -19931,7 +20716,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u11-l5-iconic",
@@ -19953,7 +20738,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u5-l5-documentation",
@@ -19975,7 +20760,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u2-l2-spiritual",
@@ -19990,14 +20775,15 @@ export const hscVocabularyList = [
     "lesson": "Folk Music",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
-      "Unit 2: Art and Craft: Folk Music"
+      "Unit 2: Art and Craft: Folk Music",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l1-channel",
@@ -20019,7 +20805,7 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
   },
   {
     "id": "vocab-u7-l2-mountaineer",
@@ -20041,7 +20827,1173 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 0,
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
-    "priority": 10
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-2",
+    "word": "Abridged",
+    "bengaliMeaning": "সংক্ষিপ্ত / সংক্ষেপিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Shortened, brief, condensed, truncated",
+    "antonyms": "Broad, expanded, unabridged, comprehensive",
+    "englishMeaning": "Shortened or condensed from a longer piece of writing or speech.",
+    "exampleSentence": "The following is an abridged version of a famous speech made by Martin Luther King Jr.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-3",
+    "word": "Accused",
+    "bengaliMeaning": "অভিযুক্ত ব্যক্তি / আসামি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Suspect, indictee, defendant, prisoner",
+    "antonyms": "Victim, innocent, accuser, prosecutor",
+    "englishMeaning": "A person or group of people who are charged with a crime.",
+    "exampleSentence": "I am the First Accused in this case.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-5",
+    "word": "Advanced",
+    "bengaliMeaning": "উন্নত / প্রগতিশীল / আধুনিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Developed, progressive, forward-looking, refined",
+    "antonyms": "Basic, primitive, backward, undeveloped",
+    "englishMeaning": "Far along in progress or development; ahead of standard times.",
+    "exampleSentence": "We all accept the need for some form of socialism to enable our people to catch up with the advanced countries of this world.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-8",
+    "word": "Anarchy",
+    "bengaliMeaning": "নৈরাজ্য / বিশৃঙ্খলা / অরাজকতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Misrule, chaos, lawlessness, disorder, turmoil",
+    "antonyms": "Order, discipline, lawfulness, governance, harmony",
+    "englishMeaning": "A state of disorder due to absence or non-recognition of authority or other controlling systems.",
+    "exampleSentence": "They feared that unchecked oppression would inevitably lead to widespread social anarchy.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-9",
+    "word": "Ancestors",
+    "bengaliMeaning": "পূর্বপুরুষ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Predecessors, forebears, progenitors, forefathers",
+    "antonyms": "Descendants, successors, progeny, offspring",
+    "englishMeaning": "People from whom one is descended, usually more remote than grandparents.",
+    "exampleSentence": "Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-11",
+    "word": "Apparently",
+    "bengaliMeaning": "স্পষ্টতভাবে / দৃশ্যত / আপাতদৃষ্টিতে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Seemingly, ostensibly, evidently, visibly",
+    "antonyms": "Dubiously, improbably, uncertainly, questionably",
+    "englishMeaning": "As far as one knows or can see; seemingly true based on appearance.",
+    "exampleSentence": "He has apparently said that I had agreed to attend a Round Table Conference on the 10th of March.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-12",
+    "word": "Assume",
+    "bengaliMeaning": "দায়িত্ব গ্রহণ করা / অধিগ্রহণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Undertake, take over, accept, adopt, shoulder",
+    "antonyms": "Disallow, disclaim, relinquish, renounce",
+    "englishMeaning": "Take on a role or take over power, responsibility, or leadership.",
+    "exampleSentence": "When after the movement of 1969 Ayub Khan fell from power and Yahya Khan assumed the reins of the government, he declared that he would give us a constitution.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-14",
+    "word": "Avoided",
+    "bengaliMeaning": "এড়ানো / এড়িয়ে চলা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Evaded, dodged, shunned, bypassed, sidestepped",
+    "antonyms": "Confronted, faced, encountered, embraced",
+    "englishMeaning": "Kept away from or stopped oneself from doing something unwanted or violent.",
+    "exampleSentence": "When I went to jail in 1962, the dominant idea was that loss of life should be avoided.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-16",
+    "word": "Blame",
+    "bengaliMeaning": "দোষত্রুটির দায় / তিরস্কার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Censure, guilt, fault, accountability, condemnation",
+    "antonyms": "Praise, commendation, credit, approval",
+    "englishMeaning": "Responsibility for a fault, wrongdoing, or failure.",
+    "exampleSentence": "After sitting in a secret meeting for five hours he gave a speech where he has put all the blame on me.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-17",
+    "word": "Communists",
+    "bengaliMeaning": "সাম্যবাদী / কমিউনিস্ট ব্যক্তিবর্গ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Socialists, leftists, Marxists, collectivists",
+    "antonyms": "Individualists, capitalists, monarchists",
+    "englishMeaning": "Adherents of communism who advocate collective ownership of property and resources.",
+    "exampleSentence": "The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-18",
+    "word": "Confront",
+    "bengaliMeaning": "মোকাবিলা করা / সামনাসামনি হওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Encounter, face up to, brave, tackle, resist",
+    "antonyms": "Avoid, escape, evade, flee, surrender",
+    "englishMeaning": "Meet face to face in opposition or face a hostile force bravely.",
+    "exampleSentence": "Convert every house into a fort; confront the enemy with whatever you have.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-22",
+    "word": "Convicted",
+    "bengaliMeaning": "দোষী সাব্যস্ত / দণ্ডপ্রাপ্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Sentenced, condemned, found guilty, imprisoned",
+    "antonyms": "Acquitted, cleared, exonerated, released",
+    "englishMeaning": "Having been officially found guilty of a criminal offense by the verdict of a jury or judge.",
+    "exampleSentence": "I am a convicted prisoner serving five years for leaving the country without a permit.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-23",
+    "word": "Crimson",
+    "bengaliMeaning": "গাঢ় বা টকটকে লাল",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Deep red, ruby, blood-red, scarlet",
+    "antonyms": "Pale, colourless, white",
+    "englishMeaning": "Of a rich, deep red colour, typically inclining to purple or blood-like hue.",
+    "exampleSentence": "The history of Bengal is the history of a people who have repeatedly made their highways crimson red with their blood.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-25",
+    "word": "Crooked",
+    "bengaliMeaning": "আঁকাবাঁকা / কুটিল / বক্র",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Curved, twisted, bent, zigzag, winding",
+    "antonyms": "Straight, direct, unbent, level",
+    "englishMeaning": "Bent, twisted, or not in a straight, honest line.",
+    "exampleSentence": "The rough places will be made plain, and the crooked places will be made straight.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-26",
+    "word": "Curtailed",
+    "bengaliMeaning": "সীমিত করা / খর্ব করা / কমানো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Reduced, diminished, shortened, trimmed, restricted",
+    "antonyms": "Expanded, extended, increased, enlarged",
+    "englishMeaning": "Reduced in extent, size, or quantity; imposed a restriction on.",
+    "exampleSentence": "The African National Congress was formed in 1912 to defend the rights of the African people which had been seriously curtailed by the South Africa Act.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-27",
+    "word": "Deeply",
+    "bengaliMeaning": "গভীরভাবে / অন্তর দিয়ে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Intensely, profoundly, thoroughly, sincerely",
+    "antonyms": "Mildly, superficially, slightly",
+    "englishMeaning": "To a thorough, profound, or intense extent.",
+    "exampleSentence": "It is a dream deeply rooted in the American dream.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-28",
+    "word": "Defend",
+    "bengaliMeaning": "প্রতিরক্ষা করা / অধিকার রক্ষা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Protect, safeguard, shield, champion, uphold",
+    "antonyms": "Attack, surrender, abandon, renounce",
+    "englishMeaning": "Resist an attack made on someone or protect rights and principles from harm.",
+    "exampleSentence": "The African National Congress was formed in 1912 to defend the rights of the African people.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-29",
+    "word": "Discord",
+    "bengaliMeaning": "অনৈক্য / মতানৈক্য / সুরের অসঙ্গতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Disagreement, disharmony, strife, friction, clash",
+    "antonyms": "Harmony, agreement, concord, unity",
+    "englishMeaning": "Disagreement between people; lack of harmony between notes sounding together.",
+    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-31",
+    "word": "Dominant",
+    "bengaliMeaning": "প্রভাবশালী / সর্বপ্রধান / শাসনকারী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Controlling, ruling, commanding, prevailing, chief",
+    "antonyms": "Submissive, inferior, subordinate, weak",
+    "englishMeaning": "Most important, powerful, or influential over others.",
+    "exampleSentence": "When I went to jail in 1962, the dominant idea was that loss of life should be avoided.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-32",
+    "word": "Dramatize",
+    "bengaliMeaning": "স্পষ্টভাবে তুলে ধরা / নাটকীয় রূপ দান করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Amplify, overstate, highlight, emphasize, stage",
+    "antonyms": "Understate, minimize, conceal, ignore",
+    "englishMeaning": "Present an issue or condition in a striking, vivid, or dramatic way.",
+    "exampleSentence": "So we have come here today to dramatize a shameful condition.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-33",
+    "word": "Embodied",
+    "bengaliMeaning": "মূর্ত হওয়া / সুস্পষ্টভাবে প্রকাশিত হওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Personified, revealed, manifested, incorporated, symbolized",
+    "antonyms": "Disembodied, concealed, obscured, excluded",
+    "englishMeaning": "Gave a tangible, concrete, or visible form to an idea, quality, or concept.",
+    "exampleSentence": "The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-34",
+    "word": "Equivalent",
+    "bengaliMeaning": "সমতুল্য / সমান অর্থবহ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Equal, identical, parallel, synonymous, corresponding",
+    "antonyms": "Different, unequal, dissimilar, opposite",
+    "englishMeaning": "Equal in value, amount, function, meaning, or significance.",
+    "exampleSentence": "For us to accept the banning was equivalent to accepting the silencing of the Africans for all time.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-35",
+    "word": "Exalted",
+    "bengaliMeaning": "মর্যাদাসম্পন্ন / উন্নীত / উচ্চস্থানপ্রাপ্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Dignified, elevated, noble, glorified, raised",
+    "antonyms": "Condemned, degraded, humbled, lowered",
+    "englishMeaning": "Raised to a high moral, intellectual, or spiritual level or status.",
+    "exampleSentence": "I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-38",
+    "word": "Gentile",
+    "bengaliMeaning": "ইহুদি ভিন্ন অন্য ধর্মের ব্যক্তি / অ-ইহুদি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Non-Jew, non-Jewish person",
+    "antonyms": "Jew, Jewish person",
+    "englishMeaning": "A person who is not Jewish.",
+    "exampleSentence": "When all of God's children, black men and white men, Jews and gentiles, will be able to join hands and sing.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-39",
+    "word": "Glory",
+    "bengaliMeaning": "গৌরব / মহিমা / প্রতাপ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Honor, fame, magnificence, splendour, majesty",
+    "antonyms": "Shame, disgrace, dishonor, ignominy",
+    "englishMeaning": "High renown, magnificence, or honor won by notable achievements.",
+    "exampleSentence": "The names of Dingane and Bambata were praised as the glory of the entire African nation.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-41",
+    "word": "Heighten",
+    "bengaliMeaning": "তীব্রতর করা / বাড়ানো / বর্ধিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Enlarge, intensify, elevate, amplify, boost",
+    "antonyms": "Decrease, reduce, diminish, lower",
+    "englishMeaning": "Make or become more intense, prominent, or elevated.",
+    "exampleSentence": "Let freedom ring from the heightening Alleghenies of Pennsylvania.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-42",
+    "word": "Hew",
+    "bengaliMeaning": "খোদাই করা / কেটে রূপ দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Cut, carve, sculpt, chisel, shape",
+    "antonyms": "Join, attach, assemble, build",
+    "englishMeaning": "Chop, carve, or cut something with an axe or chisel, creating something with effort.",
+    "exampleSentence": "With this faith we will be able to hew out of the mountain of despair a stone of hope.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-43",
+    "word": "Hilltop",
+    "bengaliMeaning": "পাহাড়ের চূড়া / শীর্ষদেশ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Peak, summit, crest, knoll, ridge",
+    "antonyms": "Valley, base, bottom, abyss",
+    "englishMeaning": "The top or summit of a hill.",
+    "exampleSentence": "So let freedom ring from the prodigious hilltops of New Hampshire.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-44",
+    "word": "Humanitarian",
+    "bengaliMeaning": "মানবহিতৈষী / পরোপকারী ব্যক্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Philanthropist, benefactor, altuist, patron",
+    "antonyms": "Self-seeker, egoist, misanthrope",
+    "englishMeaning": "A person who seeks to promote human welfare and help those in distress.",
+    "exampleSentence": "Mandela was recognized worldwide as a legendary leader and humanitarian who resisted tyranny.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-45",
+    "word": "Humble Contribution",
+    "bengaliMeaning": "সামান্য বা বিনম্র অবদান",
+    "partsOfSpeech": "Phrase",
+    "synonyms": "Modest effort, small share, respectful service",
+    "antonyms": "Grand claim, boastful imposition",
+    "englishMeaning": "A modest or unpretentious offering or service rendered for a greater noble cause.",
+    "exampleSentence": "I hoped then that life might offer me the opportunity to serve my people and make my own humble contribution to their freedom struggle.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-46",
+    "word": "Implied",
+    "bengaliMeaning": "পরোক্ষভাবে ইঙ্গিত করা / নিহিত রাখা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Hinted, indicated, suggested, insinuated, signified",
+    "antonyms": "Expressed explicitly, stated openly, declared",
+    "englishMeaning": "Suggested but not directly expressed; hinted at through circumstances.",
+    "exampleSentence": "Were we to give in to the show of force and the implied threat against future action?",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-47",
+    "word": "Import",
+    "bengaliMeaning": "তাৎপর্য / নিহিতার্থ / গুরুত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Significance, implication, meaning, importance, weight",
+    "antonyms": "Insignificance, triviality, meaninglessness",
+    "englishMeaning": "The implicit meaning, significance, or profound importance of something.",
+    "exampleSentence": "You are fully aware of the events that are going on and understand their import.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-53",
+    "word": "Irrelevant",
+    "bengaliMeaning": "অপ্রাসঙ্গিক / অবান্তর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Unrelated, inapplicable, immaterial, extraneous",
+    "antonyms": "Relevant, pertinent, applicable, significant",
+    "englishMeaning": "Not connected with or relevant to something; having no bearing on a matter.",
+    "exampleSentence": "In fact, I believe none of it is irrelevant because it will enable the Court to appreciate the attitude adopted by the Liberation Movement.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-56",
+    "word": "Manacle",
+    "bengaliMeaning": "হাতকড়ি / বেড়ী / শৃঙ্খল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Handcuff, fetter, shackle, chain, bond",
+    "antonyms": "Liberation, freedom, release",
+    "englishMeaning": "A metal band, chain, or shackle for fastening someone's hands or ankles.",
+    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-58",
+    "word": "Molehill",
+    "bengaliMeaning": "মাটির ঢিপি / ছুঁচোর ঢিবি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Mound, hillock, hummock, small heap",
+    "antonyms": "Mountain, peak, abyss",
+    "englishMeaning": "A small mound of earth thrown up by a burrowing mole; a tiny trivial hill.",
+    "exampleSentence": "Let freedom ring from every hill and molehill of Mississippi.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-62",
+    "word": "Nullification",
+    "bengaliMeaning": "বাতিলকরণ / অসিদ্ধকরণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Cancellation, invalidation, revocation, veto, nullity",
+    "antonyms": "Validation, legalization, ratification, confirmation",
+    "englishMeaning": "The act of cancelling something or declaring a law or order null and void.",
+    "exampleSentence": "With its governor having his lips dripping with the words of 'interposition' and 'nullification'.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-63",
+    "word": "Opponents",
+    "bengaliMeaning": "প্রতিপক্ষ / বিরোধী পক্ষ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Rivals, adversaries, enemies, challengers, foes",
+    "antonyms": "Allies, supporters, comrades, partners",
+    "englishMeaning": "People who compete with, fight, or oppose another in a contest, debate, or struggle.",
+    "exampleSentence": "Government has always sought to label all its opponents as communists.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-65",
+    "word": "Outset",
+    "bengaliMeaning": "শুরু / সূত্রপাত / আরম্ভ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Beginning, start, inception, kickoff, commencement",
+    "antonyms": "End, conclusion, finale, termination",
+    "englishMeaning": "The start or point of beginning of something.",
+    "exampleSentence": "At the outset, I want to say that the suggestion made by the State in its opening is wholly incorrect.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-66",
+    "word": "Outsider",
+    "bengaliMeaning": "বহিরাগত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Stranger, foreigner, alien, newcomer, non-member",
+    "antonyms": "Insider, native, member, local",
+    "englishMeaning": "A person who does not belong to a particular organization or social group.",
+    "exampleSentence": "I acted because of my own proudly felt African background, and not because of what any outsider might have said.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-67",
+    "word": "Overflowing",
+    "bengaliMeaning": "উপচানো / প্লাবিত / ছাপিয়ে যাওয়া",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Full, flooding, brimful, packed, spilling over",
+    "antonyms": "Empty, meagre, depleted, drained",
+    "englishMeaning": "So full that the liquid or emotional contents spill over the edges.",
+    "exampleSentence": "I stand before you today with a heart overflowing with grief.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-71",
+    "word": "Protestant",
+    "bengaliMeaning": "প্রোটেস্ট্যান্ট খ্রিস্টান সম্প্রদায়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Reformed Christian, non-Catholic Christian",
+    "antonyms": "Roman Catholic, Orthodox",
+    "englishMeaning": "A member or follower of any of the Western Christian churches that are separate from the Roman Catholic Church.",
+    "exampleSentence": "When all of God's children, black men and white men, Jews and gentiles, Protestants and Catholics, will be able to join hands and sing.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-72",
+    "word": "Racist",
+    "bengaliMeaning": "বর্ণবাদী ব্যক্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Racial bigot, chauvinist, segregationist",
+    "antonyms": "Egalitarian, integrationist, antiracist",
+    "englishMeaning": "A person who is prejudiced against or antagonistic towards people on the basis of their membership of a particular racial or ethnic group.",
+    "exampleSentence": "Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-73",
+    "word": "Repressive",
+    "bengaliMeaning": "দমনমূলক / উৎপীড়নকারী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Oppressive, restrictive, authoritarian, tyrannical",
+    "antonyms": "Liberating, permissive, emancipatory, free",
+    "englishMeaning": "Inhibiting or restraining the personal freedom of a person or group of people.",
+    "exampleSentence": "Fifty years of non-violence had brought the African people nothing but more and more repressive legislation, and fewer and fewer rights.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-75",
+    "word": "Restore",
+    "bengaliMeaning": "পুনরুদ্ধার করা / ফিরিয়ে আনা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Recover, reinstate, revive, reclaim, return",
+    "antonyms": "Abolish, destroy, break, forfeit",
+    "englishMeaning": "Bring back or re-establish a previous right, practice, or condition.",
+    "exampleSentence": "He declared that he would give us a constitution and restore democracy; we listened to him then.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-79",
+    "word": "Spill",
+    "bengaliMeaning": "ঝরানো / উপচে ফেলা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Shed, pour, overflow, ooze, exude",
+    "antonyms": "Collect, gather, hold, retain",
+    "englishMeaning": "Cause or allow blood or liquid to flow over the edge of its container or upon streets.",
+    "exampleSentence": "The blood spilled on our streets has not yet dried.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-80",
+    "word": "Standstill",
+    "bengaliMeaning": "স্থবিরতা / অচল অবস্থা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Deadlock, halt, impasse, stagnation, standstill",
+    "antonyms": "Motion, activity, progress, continuous flow",
+    "englishMeaning": "A state of cessation of movement or work; a complete halt.",
+    "exampleSentence": "Make sure that traffic on all roads and ports are brought to a standstill.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-81",
+    "word": "Starve",
+    "bengaliMeaning": "অনাহারে থাকা / ক্ষুধায় কষ্ট পাওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Famish, fast, suffer from hunger, hunger",
+    "antonyms": "Feed, feast, nourish, gorge",
+    "englishMeaning": "Suffer severely or die from hunger.",
+    "exampleSentence": "If need be, we will starve to death, but we'll go down striving for our rights.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-82",
+    "word": "Struggle",
+    "bengaliMeaning": "সংগ্রাম / মুক্তিযুদ্ধ / লড়াই",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Battle, fight, conflict, crusade, striving",
+    "antonyms": "Surrender, yield, peace, acquiescence",
+    "englishMeaning": "A forceful or determined effort against difficult circumstances or tyrannical opposition.",
+    "exampleSentence": "The struggle this time is a struggle for our emancipation - the struggle this time is a struggle for freedom.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-84",
+    "word": "Suspended",
+    "bengaliMeaning": "স্থগিত রাখা / সাময়িক স্থগিত",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Paused, halted, deferred, postponed, held back",
+    "antonyms": "Enforced, continued, resumed, executed",
+    "englishMeaning": "Temporarily prevented from continuing or being in force.",
+    "exampleSentence": "Our sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-85",
+    "word": "Swelter",
+    "bengaliMeaning": "গরমে হাঁসফাঁস করা / তীব্র উত্তাপে ছটফট করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Roast, bake, sweat, burn, simmer",
+    "antonyms": "Freeze, shiver, cool down",
+    "englishMeaning": "Be uncomfortably or oppressively hot, sweating profusely.",
+    "exampleSentence": "Even the state of Mississippi, a state sweltering with the heat of injustice, will be transformed into an oasis of freedom.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-88",
+    "word": "Vicious",
+    "bengaliMeaning": "পাপাচার সম্পর্কিত / হিংস্র / চরম ঘৃণিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Cruel, malicious, ferocious, spiteful, savage",
+    "antonyms": "Clean, decent, innocent, kind, benevolent",
+    "englishMeaning": "Deliberately cruel, violent, or intensely spiteful and viciously malicious.",
+    "exampleSentence": "Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-89",
+    "word": "Wading over",
+    "bengaliMeaning": "রক্ত বা পানির উপর দিয়ে হেঁটে যাওয়া / মাড়িয়ে যাওয়া",
+    "partsOfSpeech": "Phrasal Verb",
+    "synonyms": "Walking through, traversing, trudging through",
+    "antonyms": "Avoiding, circumventing, turning back",
+    "englishMeaning": "Walking with effort through water or another substance, such as shed blood.",
+    "exampleSentence": "Mujibur Rahman won't join the Round Table Conference because that would mean wading over the blood that has been shed.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l2-90",
+    "word": "Widely",
+    "bengaliMeaning": "ব্যাপকভাবে / দূর-দূরান্ত পর্যন্ত",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Broadly, extensively, universally, far and wide",
+    "antonyms": "Narrowly, marginally, locally, restrictedly",
+    "englishMeaning": "Over a wide range or area; by a great number of people.",
+    "exampleSentence": "It is widely recognized as one of the most iconic speeches in American history.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
   }
 ];
 
