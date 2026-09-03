@@ -204,7 +204,7 @@ export const hscUnits = [
     "bgClass": "bg-[#b81d9f] hover:bg-[#cb23b0]",
     "gradient": "from-[#cb23b0] to-[#8e117a]",
     "progress": 0,
-    "totalWords": 151,
+    "totalWords": 178,
     "masteredWords": 0,
     "lessons": [
       {
@@ -248,8 +248,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Frederick Douglass",
         "titleBn": "ফ্রেডরিক ডগলাস",
-        "questionsCount": "১০০ টি প্রশ্ন",
-        "wordsCount": 25,
+        "questionsCount": "২০৮ টি প্রশ্ন",
+        "wordsCount": 52,
         "progress": 0
       }
     ]

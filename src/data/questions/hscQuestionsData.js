@@ -2,8 +2,8 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1058 Authentic Textbook Vocabulary Words
- * Total MCQs: 4232 Board-Standard Multiple Choice Questions
+ * Total Words: 1077 Authentic Textbook Vocabulary Words
+ * Total MCQs: 4308 Board-Standard Multiple Choice Questions
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -174,6 +174,38 @@ export const hscVocabularyList = [
     "priority": 108
   },
   {
+    "id": "vocab-u5-l3-02",
+    "word": "Wellbeing",
+    "bengaliMeaning": "সুস্থতা / সার্বিক কল্যাণ ও মঙ্গলজনক অবস্থা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Welfare, prosperity, health, happiness, flourishing",
+    "antonyms": "Misery, suffering, hardship, despair",
+    "englishMeaning": "The state of being comfortable, healthy, or happy.",
+    "exampleSentence": "Access to clean water and sanitation directly affects human wellbeing.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Despair",
+      "Hardship",
+      "Prosperity",
+      "Suffering"
+    ],
+    "crossRefMatchCount": 4,
+    "crossRefSynonyms": [
+      "Prosperity"
+    ],
+    "crossRefAntonyms": [
+      "Despair",
+      "Hardship",
+      "Suffering"
+    ],
+    "priority": 108
+  },
+  {
     "id": "vocab-u9-l1-42",
     "word": "Puberty",
     "bengaliMeaning": "বয়ঃসন্ধিকাল / যৌবনারম্ভ",
@@ -261,36 +293,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Apathy"
-    ],
-    "priority": 106
-  },
-  {
-    "id": "vocab-u5-l3-02",
-    "word": "Wellbeing",
-    "bengaliMeaning": "সুস্থতা / সার্বিক কল্যাণ ও মঙ্গলজনক অবস্থা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Welfare, prosperity, health, happiness, flourishing",
-    "antonyms": "Misery, suffering, hardship, despair",
-    "englishMeaning": "The state of being comfortable, healthy, or happy.",
-    "exampleSentence": "Access to clean water and sanitation directly affects human wellbeing.",
-    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Unit 5 • Lesson 3",
-    "sources": [
-      "Unit 5: Lesson 3 (Rights to Health and Education)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Despair",
-      "Prosperity",
-      "Suffering"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Prosperity"
-    ],
-    "crossRefAntonyms": [
-      "Despair",
-      "Suffering"
     ],
     "priority": 106
   },
@@ -781,6 +783,127 @@ export const hscVocabularyList = [
     "priority": 106
   },
   {
+    "id": "vocab-u3-l3-06",
+    "word": "Vigilant",
+    "bengaliMeaning": "সতর্ক / সদা সজাগ / জাগ্রত দৃষ্টিসম্পন্ন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Watchful, alert, attentive, observant, guarded",
+    "antonyms": "Heedless, careless, negligent, oblivious",
+    "englishMeaning": "Keeping careful watch for possible danger or difficulties.",
+    "exampleSentence": "Because of his alert and vigilant presence, all predatory animals were said to have been kept within bounds.",
+    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
+    "boardExamTag": "Unit 3 • Lesson 3",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Careless",
+      "Oblivious",
+      "Watchful"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Watchful"
+    ],
+    "crossRefAntonyms": [
+      "Careless",
+      "Oblivious"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l2-77",
+    "word": "Segregation",
+    "bengaliMeaning": "বিচ্ছিন্নকরণ / বর্ণবিভেদ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Isolation, separation, partition, discrimination",
+    "antonyms": "Integration, combination, inclusion, desegregation",
+    "englishMeaning": "The enforced separation of different racial groups in a country, community, or establishment.",
+    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discrimination",
+      "Partition",
+      "Separation"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Discrimination",
+      "Partition",
+      "Separation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u9-l1-60",
+    "word": "Span",
+    "bengaliMeaning": "ব্যাপ্তি / বিস্তার / স্থিতিকাল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Duration, extent, stretch, period, length",
+    "antonyms": "Instant, point, brevity, compression",
+    "englishMeaning": "The full duration, extent, or reach of something from beginning to end.",
+    "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Duration",
+      "Extent",
+      "Instant"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Duration",
+      "Extent"
+    ],
+    "crossRefAntonyms": [
+      "Instant"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u5-l5-new-6",
+    "word": "Duration",
+    "bengaliMeaning": "সময়কাল / স্থায়িত্বকাল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Period, term, span, length of time, extent",
+    "antonyms": "Instant, flash, moment",
+    "englishMeaning": "The time during which something continues or lasts.",
+    "exampleSentence": "And each of these times was very short in duration, and at night.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Extent",
+      "Instant",
+      "Span"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Extent",
+      "Span"
+    ],
+    "crossRefAntonyms": [
+      "Instant"
+    ],
+    "priority": 106
+  },
+  {
     "id": "vocab-u5-l2-04",
     "word": "Brotherhood",
     "bengaliMeaning": "ভ্রাতৃত্ববোধ / সম্প্রীতি / ঐক্য",
@@ -1098,7 +1221,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
+      "Unit 10: Lesson 2 (Etiquette Netquette)",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -1557,33 +1681,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u3-l3-06",
-    "word": "Vigilant",
-    "bengaliMeaning": "সতর্ক / সদা সজাগ / জাগ্রত দৃষ্টিসম্পন্ন",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Watchful, alert, attentive, observant, guarded",
-    "antonyms": "Heedless, careless, negligent, oblivious",
-    "englishMeaning": "Keeping careful watch for possible danger or difficulties.",
-    "exampleSentence": "Because of his alert and vigilant presence, all predatory animals were said to have been kept within bounds.",
-    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Unit 3 • Lesson 3",
-    "sources": [
-      "Unit 3: Lesson 3 (The Legend of Gazi)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Careless",
-      "Oblivious"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Careless",
-      "Oblivious"
-    ],
-    "priority": 104
-  },
-  {
     "id": "vocab-u3-l4-01",
     "word": "Prosper",
     "bengaliMeaning": "সমৃদ্ধ হওয়া / উন্নতি করা / সুফল পাওয়া",
@@ -1651,7 +1748,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3292,34 +3390,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u4-l2-77",
-    "word": "Segregation",
-    "bengaliMeaning": "বিচ্ছিন্নকরণ / বর্ণবিভেদ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Isolation, separation, partition, discrimination",
-    "antonyms": "Integration, combination, inclusion, desegregation",
-    "englishMeaning": "The enforced separation of different racial groups in a country, community, or establishment.",
-    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Discrimination",
-      "Partition"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Discrimination",
-      "Partition"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 104
-  },
-  {
     "id": "vocab-u4-l3-28",
     "word": "Evident",
     "bengaliMeaning": "স্পষ্ট / স্পষ্টত দৃশ্যমান",
@@ -3828,6 +3898,319 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
+    "id": "vocab-u3-l2-suffering",
+    "word": "Suffering",
+    "bengaliMeaning": "দুর্ভোগ / যন্ত্রণা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Hardship, anguish, torment, distress",
+    "antonyms": "Comfort, ease, delight, pleasure",
+    "englishMeaning": "The state of undergoing pain, distress, or hardship.",
+    "exampleSentence": "Vocabulary definitions and critical inquiry on human suffering and existential indifference in Pieter Brueghel's painting and William Carlos Williams' poetry.",
+    "unit": "Unit 3: Myths and Literature: Icarus",
+    "lesson": "Icarus",
+    "boardExamTag": "Unit 3 • Lesson 2",
+    "sources": [
+      "Unit 3: Myths and Literature: Icarus",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Anguish",
+      "Hardship"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Anguish",
+      "Hardship"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-43",
+    "word": "Range",
+    "bengaliMeaning": "পরিসর / ব্যাপ্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Extent, scope, variety, spectrum, reach",
+    "antonyms": "Limitation, narrowness",
+    "englishMeaning": "The area of variation between upper and lower limits on a particular scale.",
+    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Extent",
+      "Limitation"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Extent"
+    ],
+    "crossRefAntonyms": [
+      "Limitation"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l4-11",
+    "word": "Distressing",
+    "bengaliMeaning": "মর্মান্তিক / উদ্বেগজনক / কষ্টদায়ক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Heartbreaking, agonizing, upsetting, painful, harrowing",
+    "antonyms": "Comforting, soothing, reassuring, pleasant",
+    "englishMeaning": "Causing anxiety, sorrow, or deep mental pain.",
+    "exampleSentence": "Then I understood my distress.",
+    "unit": "Unit 1: Lesson 4 (Civic Engagement)",
+    "boardExamTag": "Unit 1 • Lesson 4",
+    "sources": [
+      "Unit 1: Lesson 4 (Civic Engagement)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harrowing",
+      "Soothing"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Harrowing"
+    ],
+    "crossRefAntonyms": [
+      "Soothing"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u3-l2-01",
+    "word": "Fearsome",
+    "bengaliMeaning": "ভীতিপ্রদ / ভয়ংকর / ত্রাস সৃষ্টিকারী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Formidable, dreadful, terrifying, menacing, frightening",
+    "antonyms": "Harmless, inviting, soothing, comforting",
+    "englishMeaning": "Frightening, especially in appearance to an extreme degree.",
+    "exampleSentence": "Now read the following story about a rebellious mythical character, Icarus, and answer the questions that follow: On the island of Crete, the fearsome Minotaur, a creature that was half-man and half-bull, terrorized the inhabitants.",
+    "unit": "Unit 3: Lesson 2 (Icarus)",
+    "boardExamTag": "Unit 3 • Lesson 2",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Inviting",
+      "Soothing"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Inviting",
+      "Soothing"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u12-l1-01",
+    "word": "Harrowing",
+    "bengaliMeaning": "মর্মান্তিক / লোমহর্ষক ও নিদারুণ কষ্টদায়ক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Traumatic, agonizing, distressing, heartbreaking, painful",
+    "antonyms": "Pleasurable, soothing, calming, pleasant",
+    "englishMeaning": "Acutely distressing or painful.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Distressing",
+      "Soothing"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Distressing"
+    ],
+    "crossRefAntonyms": [
+      "Soothing"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u11-l3-03",
+    "word": "Deprivation",
+    "bengaliMeaning": "বঞ্চনা / মৌলিক মানবিক চাহিদাহীনতা ও অভাব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Privation, hardship, destitution, deficiency, impoverishment",
+    "antonyms": "Abundance, opulence, prosperity",
+    "englishMeaning": "The damaging lack of material benefits considered to be basic necessities in a society.",
+    "exampleSentence": "I can't not see the deprivation in every house, the fear and the sickness.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Hardship",
+      "Prosperity"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Hardship"
+    ],
+    "crossRefAntonyms": [
+      "Prosperity"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-54",
+    "word": "Jangling",
+    "bengaliMeaning": "কর্কশ / শ্রুতিকটু / খটখট শব্দময়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Harsh, grating, discordant, clashing, strident",
+    "antonyms": "Harmonious, melodious, soothing, musical",
+    "englishMeaning": "Making or causing to make a harsh, unpleasantly discordant ringing metallic sound.",
+    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harsh",
+      "Soothing"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Harsh"
+    ],
+    "crossRefAntonyms": [
+      "Soothing"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-70",
+    "word": "Prosperity",
+    "bengaliMeaning": "সমৃদ্ধি / প্রাচুর্য / আর্থিক স্বচ্ছলতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Wealth, success, affluence, well-being, fortune",
+    "antonyms": "Poverty, hardship, failure, adversity",
+    "englishMeaning": "The state of flourishing, thriving, good fortune and successful social status.",
+    "exampleSentence": "The Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Hardship",
+      "Well-being"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Well-being"
+    ],
+    "crossRefAntonyms": [
+      "Hardship"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l4-new-10",
+    "word": "Sore",
+    "bengaliMeaning": "যন্ত্রণাদায়ক / কষ্টকর / ব্যথাতুর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Aching, painful, tender, agonizing, agonizingly difficult",
+    "antonyms": "Comfortable, painless, soothing, easy",
+    "englishMeaning": "Causing great physical pain, anguish, or suffering.",
+    "exampleSentence": "I am wrought with sister and brother; it is very sore work.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Soothing",
+      "Tender"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Tender"
+    ],
+    "crossRefAntonyms": [
+      "Soothing"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l5-new-8",
+    "word": "Extent",
+    "bengaliMeaning": "ব্যাপ্তি / মাত্রা / পরিধি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Scope, range, degree, scale, magnitude",
+    "antonyms": "Narrowness, limitation",
+    "englishMeaning": "The area covered by something or the degree to which something extends.",
+    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Limitation",
+      "Range"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Range"
+    ],
+    "crossRefAntonyms": [
+      "Limitation"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l5-new-17",
+    "word": "Watchful",
+    "bengaliMeaning": "সতর্ক / সদা জাগ্রত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Vigilant, observant, alert, attentive, heedful",
+    "antonyms": "Careless, unaware, negligent, inattentive",
+    "englishMeaning": "Watching or observing someone or something closely; alert and vigilant.",
+    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Careless",
+      "Vigilant"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Vigilant"
+    ],
+    "crossRefAntonyms": [
+      "Careless"
+    ],
+    "priority": 104
+  },
+  {
     "id": "vocab-u2-l2-17",
     "word": "Devotion",
     "bengaliMeaning": "ভক্তি / নিষ্ঠা / আত্মনিবেদন / অনুরাগ",
@@ -3902,32 +4285,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Animate"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u3-l2-suffering",
-    "word": "Suffering",
-    "bengaliMeaning": "দুর্ভোগ / যন্ত্রণা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Hardship, anguish, torment, distress",
-    "antonyms": "Comfort, ease, delight, pleasure",
-    "englishMeaning": "The state of undergoing pain, distress, or hardship.",
-    "exampleSentence": "Vocabulary definitions and critical inquiry on human suffering and existential indifference in Pieter Brueghel's painting and William Carlos Williams' poetry.",
-    "unit": "Unit 3: Myths and Literature: Icarus",
-    "lesson": "Icarus",
-    "boardExamTag": "Unit 3 • Lesson 2",
-    "sources": [
-      "Unit 3: Myths and Literature: Icarus"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Anguish"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Anguish"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -5677,7 +6034,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -5891,31 +6249,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-43",
-    "word": "Range",
-    "bengaliMeaning": "পরিসর / ব্যাপ্তি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Extent, scope, variety, spectrum, reach",
-    "antonyms": "Limitation, narrowness",
-    "englishMeaning": "The area of variation between upper and lower limits on a particular scale.",
-    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Limitation"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Limitation"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-44",
     "word": "Reproduction",
     "bengaliMeaning": "বংশবৃদ্ধি বা প্রজনন-সংক্রান্ত",
@@ -5962,31 +6295,6 @@ export const hscVocabularyList = [
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
       "Solitary"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l1-60",
-    "word": "Span",
-    "bengaliMeaning": "ব্যাপ্তি / বিস্তার / স্থিতিকাল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Duration, extent, stretch, period, length",
-    "antonyms": "Instant, point, brevity, compression",
-    "englishMeaning": "The full duration, extent, or reach of something from beginning to end.",
-    "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Instant"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Instant"
     ],
     "priority": 102
   },
@@ -6277,7 +6585,8 @@ export const hscVocabularyList = [
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
     "boardExamTag": "Unit 2 • Lesson 1",
     "sources": [
-      "Unit 2: Lesson 1 (What is Beauty?)"
+      "Unit 2: Lesson 1 (What is Beauty?)",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -6641,31 +6950,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u1-l4-11",
-    "word": "Distressing",
-    "bengaliMeaning": "মর্মান্তিক / উদ্বেগজনক / কষ্টদায়ক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Heartbreaking, agonizing, upsetting, painful, harrowing",
-    "antonyms": "Comforting, soothing, reassuring, pleasant",
-    "englishMeaning": "Causing anxiety, sorrow, or deep mental pain.",
-    "exampleSentence": "Then I understood my distress.",
-    "unit": "Unit 1: Lesson 4 (Civic Engagement)",
-    "boardExamTag": "Unit 1 • Lesson 4",
-    "sources": [
-      "Unit 1: Lesson 4 (Civic Engagement)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Harrowing"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Harrowing"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u3-l1-04",
     "word": "Dome",
     "bengaliMeaning": "গম্বুজ / প্রাকৃতিক বা নান্দনিক ছাউনি",
@@ -6738,31 +7022,6 @@ export const hscVocabularyList = [
       "Pontoon"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u3-l2-01",
-    "word": "Fearsome",
-    "bengaliMeaning": "ভীতিপ্রদ / ভয়ংকর / ত্রাস সৃষ্টিকারী",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Formidable, dreadful, terrifying, menacing, frightening",
-    "antonyms": "Harmless, inviting, soothing, comforting",
-    "englishMeaning": "Frightening, especially in appearance to an extreme degree.",
-    "exampleSentence": "Now read the following story about a rebellious mythical character, Icarus, and answer the questions that follow: On the island of Crete, the fearsome Minotaur, a creature that was half-man and half-bull, terrorized the inhabitants.",
-    "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Unit 3 • Lesson 2",
-    "sources": [
-      "Unit 3: Lesson 2 (Icarus)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Inviting"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Inviting"
-    ],
     "priority": 102
   },
   {
@@ -7279,7 +7538,8 @@ export const hscVocabularyList = [
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
-      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -7915,31 +8175,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Anguish"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l1-01",
-    "word": "Harrowing",
-    "bengaliMeaning": "মর্মান্তিক / লোমহর্ষক ও নিদারুণ কষ্টদায়ক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Traumatic, agonizing, distressing, heartbreaking, painful",
-    "antonyms": "Pleasurable, soothing, calming, pleasant",
-    "englishMeaning": "Acutely distressing or painful.",
-    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
-    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Unit 12 • Lesson 1",
-    "sources": [
-      "Unit 12: Lesson 1 (Water Everywhere)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Distressing"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Distressing"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -9176,31 +9411,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u11-l3-03",
-    "word": "Deprivation",
-    "bengaliMeaning": "বঞ্চনা / মৌলিক মানবিক চাহিদাহীনতা ও অভাব",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Privation, hardship, destitution, deficiency, impoverishment",
-    "antonyms": "Abundance, opulence, prosperity",
-    "englishMeaning": "The damaging lack of material benefits considered to be basic necessities in a society.",
-    "exampleSentence": "I can't not see the deprivation in every house, the fear and the sickness.",
-    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
-    "boardExamTag": "Unit 11 • Lesson 3",
-    "sources": [
-      "Unit 11: Lesson 3 (Stories From Gaza)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Prosperity"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Prosperity"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u5-l1-manifest",
     "word": "Manifest",
     "bengaliMeaning": "প্রকাশ করা / সুস্পষ্ট করা",
@@ -9831,32 +10041,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u4-l2-54",
-    "word": "Jangling",
-    "bengaliMeaning": "কর্কশ / শ্রুতিকটু / খটখট শব্দময়",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Harsh, grating, discordant, clashing, strident",
-    "antonyms": "Harmonious, melodious, soothing, musical",
-    "englishMeaning": "Making or causing to make a harsh, unpleasantly discordant ringing metallic sound.",
-    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Harsh"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Harsh"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u4-l2-57",
     "word": "Mighty",
     "bengaliMeaning": "বিশাল / পরাক্রমশালী / মহাশক্তিশালী",
@@ -9982,32 +10166,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Declaration"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u4-l2-70",
-    "word": "Prosperity",
-    "bengaliMeaning": "সমৃদ্ধি / প্রাচুর্য / আর্থিক স্বচ্ছলতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Wealth, success, affluence, well-being, fortune",
-    "antonyms": "Poverty, hardship, failure, adversity",
-    "englishMeaning": "The state of flourishing, thriving, good fortune and successful social status.",
-    "exampleSentence": "The Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Well-being"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Well-being"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -11821,27 +11979,306 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u5-l4-new-10",
-    "word": "Sore",
-    "bengaliMeaning": "যন্ত্রণাদায়ক / কষ্টকর / ব্যথাতুর",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Aching, painful, tender, agonizing, agonizingly difficult",
-    "antonyms": "Comfortable, painless, soothing, easy",
-    "englishMeaning": "Causing great physical pain, anguish, or suffering.",
-    "exampleSentence": "I am wrought with sister and brother; it is very sore work.",
+    "id": "vocab-u5-l4-04",
+    "word": "Testimonies",
+    "bengaliMeaning": "সাক্ষ্য / চাক্ষুষ বিবৃতি ও প্রমাণমালা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Statements, evidence, declarations, affidavits, accounts",
+    "antonyms": "Denials, retractions, fables",
+    "englishMeaning": "Formal written or spoken statements, especially given in an investigation or court.",
+    "exampleSentence": "Historical Context & Testimonies: 'Sharing the Earth' is a collection of justice-oriented environmental writings.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
-      "Unit 5: Lesson 4 (Coal Miners)",
-      "Unit 5: Human Rights: Coal Miners"
+      "Unit 5: Lesson 4 (Coal Miners)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
-      "Tender"
+      "Evidence"
     ],
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
-      "Tender"
+      "Evidence"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-43",
+    "word": "Unlettered",
+    "bengaliMeaning": "নিরক্ষর / অশিক্ষিত / বিদ্যাবুদ্ধিহীন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Illiterate, uneducated, unlearned, ignorant",
+    "antonyms": "Literate, educated, learned, scholarly",
+    "englishMeaning": "Not educated; illiterate; unable to read or write.",
+    "exampleSentence": "It was unlettered.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Ignorant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Ignorant"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-29",
+    "word": "Norm",
+    "bengaliMeaning": "সামাজিক রীতি / প্রচলিত প্রথা / আদর্শ মাপকাঠি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Standard, convention, custom, rule, tradition",
+    "antonyms": "Anomaly, exception, irregularity, deviation",
+    "englishMeaning": "A standard or pattern, especially of social behavior, that is typical or expected of a group.",
+    "exampleSentence": "Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Custom"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Custom"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l3-20",
+    "word": "Racking",
+    "bengaliMeaning": "তীব্রভাবে চিন্তা করা / মাথা খাটানো / তোলপাড় করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Straining, agonizing, searching, tormenting, pondering deeply",
+    "antonyms": "Relaxing, resting, easing, soothing",
+    "englishMeaning": "Subjecting someone or one's mind to extreme mental effort or strain.",
+    "exampleSentence": "Racking her brains for new topics to share, she remembered her torn play dresses.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Soothing"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Soothing"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l4-06",
+    "word": "Abreast",
+    "bengaliMeaning": "তাল মিলিয়ে / সমান গতিতে বা হালনাগাদ থাকা",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Up to date, alongside, abreast of, informed of",
+    "antonyms": "Behind, lagging, unaware, ignorant",
+    "englishMeaning": "Up to a particular standard or keeping up with recent developments.",
+    "exampleSentence": "A craftwork is a dynamic object—always evolving and always abreast of changing tastes and needs.",
+    "unit": "Unit 2: Lesson 4 (Craft)",
+    "boardExamTag": "Unit 2 • Lesson 4",
+    "sources": [
+      "Unit 2: Lesson 4 (Craft)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Ignorant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Ignorant"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l2-06",
+    "word": "Distinction",
+    "bengaliMeaning": "পার্থক্য / বৈষম্যমূলক বিভেদ / স্বাতন্ত্র্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Differentiation, separation, disparity, divergence",
+    "antonyms": "Equality, sameness, uniformity",
+    "englishMeaning": "A difference or contrast between similar things or people.",
+    "exampleSentence": "Article 2: Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Separation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Separation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-03",
+    "word": "Wedlock",
+    "bengaliMeaning": "বিবাহবন্ধন / পরিণয় সূত্রে আবদ্ধতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Matrimony, marriage, wedded state, marital union",
+    "antonyms": "Divorce, celibacy, separation",
+    "englishMeaning": "The state of being married; matrimony.",
+    "exampleSentence": "All children, whether born in or out of wedlock, shall enjoy the same social protection.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Separation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Separation"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-66",
+    "word": "Outsider",
+    "bengaliMeaning": "বহিরাগত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Stranger, foreigner, alien, newcomer, non-member",
+    "antonyms": "Insider, native, member, local",
+    "englishMeaning": "A person who does not belong to a particular organization or social group.",
+    "exampleSentence": "I acted because of my own proudly felt African background, and not because of what any outsider might have said.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Stranger"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Stranger"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-46",
+    "word": "Partition",
+    "bengaliMeaning": "বিভাজন / ঐতিহাসিক দেশভাগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Division, separation, dismemberment, splitting up",
+    "antonyms": "Unification, merger, union, integration",
+    "englishMeaning": "The division of a country or state into separate parts or sovereign entities.",
+    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Separation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Separation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l5-new-9",
+    "word": "Hardship",
+    "bengaliMeaning": "কষ্ট / চরম দুর্দশা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Difficulties, struggles, adversity, privation, misery",
+    "antonyms": "Comforts, luxuries, prosperity, ease",
+    "englishMeaning": "Severe suffering or privation.",
+    "exampleSentence": "Death soon ended what little we could have while she lived, and with it her hardships and suffering.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Prosperity"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Prosperity"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l5-new-13",
+    "word": "Privilege",
+    "bengaliMeaning": "বিশেষ নাগরিক সুবিধা বা অধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Advantage, benefit, prerogative, entitlement, right",
+    "antonyms": "Disadvantage, handicap, deprivation",
+    "englishMeaning": "A special right, advantage, or immunity granted or available only to a particular person or group.",
+    "exampleSentence": "I could not tell why I ought to be deprived of the same privilege.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Deprivation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Deprivation"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l5-new-16",
+    "word": "Stranger",
+    "bengaliMeaning": "অচেনা ব্যক্তি / পরবাসী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Foreigner, outsider, unknown person, alien",
+    "antonyms": "Friend, acquaintance, kin",
+    "englishMeaning": "A person whom one does not know or with whom one is not familiar.",
+    "exampleSentence": "I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Outsider"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Outsider"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -12713,27 +13150,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u5-l4-04",
-    "word": "Testimonies",
-    "bengaliMeaning": "সাক্ষ্য / চাক্ষুষ বিবৃতি ও প্রমাণমালা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Statements, evidence, declarations, affidavits, accounts",
-    "antonyms": "Denials, retractions, fables",
-    "englishMeaning": "Formal written or spoken statements, especially given in an investigation or court.",
-    "exampleSentence": "Historical Context & Testimonies: 'Sharing the Earth' is a collection of justice-oriented environmental writings.",
-    "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Unit 5 • Lesson 4",
-    "sources": [
-      "Unit 5: Lesson 4 (Coal Miners)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u6-l2-02",
     "word": "Renaissance",
     "bengaliMeaning": "পুনর্জাগরণ / নবজাগরণ / সাহিত্য ও সংস্কৃতির নবযুগ",
@@ -13047,7 +13463,8 @@ export const hscVocabularyList = [
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
+      "Unit 5: Human Rights: Frederick Douglass",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -13892,27 +14309,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u1-l1-43",
-    "word": "Unlettered",
-    "bengaliMeaning": "নিরক্ষর / অশিক্ষিত / বিদ্যাবুদ্ধিহীন",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Illiterate, uneducated, unlearned, ignorant",
-    "antonyms": "Literate, educated, learned, scholarly",
-    "englishMeaning": "Not educated; illiterate; unable to read or write.",
-    "exampleSentence": "It was unlettered.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u1-l1-45",
     "word": "Vice",
     "bengaliMeaning": "পাপ / অনাচার / অনৈতিকতা / অসদাচরণ",
@@ -14005,27 +14401,6 @@ export const hscVocabularyList = [
     "antonyms": "Bare hands, fingers, eating by hands",
     "englishMeaning": "A pair of small, thin sticks used especially in East Asia for eating food.",
     "exampleSentence": "Be graceful and polite when taking food with chopsticks.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-29",
-    "word": "Norm",
-    "bengaliMeaning": "সামাজিক রীতি / প্রচলিত প্রথা / আদর্শ মাপকাঠি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Standard, convention, custom, rule, tradition",
-    "antonyms": "Anomaly, exception, irregularity, deviation",
-    "englishMeaning": "A standard or pattern, especially of social behavior, that is typical or expected of a group.",
-    "exampleSentence": "Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15976,27 +16351,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u1-l3-20",
-    "word": "Racking",
-    "bengaliMeaning": "তীব্রভাবে চিন্তা করা / মাথা খাটানো / তোলপাড় করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Straining, agonizing, searching, tormenting, pondering deeply",
-    "antonyms": "Relaxing, resting, easing, soothing",
-    "englishMeaning": "Subjecting someone or one's mind to extreme mental effort or strain.",
-    "exampleSentence": "Racking her brains for new topics to share, she remembered her torn play dresses.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u1-l3-21",
     "word": "Shreds",
     "bengaliMeaning": "টুকরো টুকরো / ছিন্নভিন্ন অবস্থা",
@@ -16963,27 +17317,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u2-l4-06",
-    "word": "Abreast",
-    "bengaliMeaning": "তাল মিলিয়ে / সমান গতিতে বা হালনাগাদ থাকা",
-    "partsOfSpeech": "Adverb",
-    "synonyms": "Up to date, alongside, abreast of, informed of",
-    "antonyms": "Behind, lagging, unaware, ignorant",
-    "englishMeaning": "Up to a particular standard or keeping up with recent developments.",
-    "exampleSentence": "A craftwork is a dynamic object—always evolving and always abreast of changing tastes and needs.",
-    "unit": "Unit 2: Lesson 4 (Craft)",
-    "boardExamTag": "Unit 2 • Lesson 4",
-    "sources": [
-      "Unit 2: Lesson 4 (Craft)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u2-l4-07",
     "word": "Signifier",
     "bengaliMeaning": "প্রতীক / পরিচায়ক / সামাজিক নির্দেশক",
@@ -17635,27 +17968,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u5-l2-06",
-    "word": "Distinction",
-    "bengaliMeaning": "পার্থক্য / বৈষম্যমূলক বিভেদ / স্বাতন্ত্র্য",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Differentiation, separation, disparity, divergence",
-    "antonyms": "Equality, sameness, uniformity",
-    "englishMeaning": "A difference or contrast between similar things or people.",
-    "exampleSentence": "Article 2: Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.",
-    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u5-l2-07",
     "word": "Jurisdictional",
     "bengaliMeaning": "আইনগত এক্তিয়ারভুক্ত / শাসন সীমানা সংক্রান্ত",
@@ -17685,27 +17997,6 @@ export const hscVocabularyList = [
     "antonyms": "Inadequate, insufficient, deficient, meager",
     "englishMeaning": "Satisfactory or acceptable in quality or quantity.",
     "exampleSentence": "The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
-    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
-    "boardExamTag": "Unit 5 • Lesson 3",
-    "sources": [
-      "Unit 5: Lesson 3 (Rights to Health and Education)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u5-l3-03",
-    "word": "Wedlock",
-    "bengaliMeaning": "বিবাহবন্ধন / পরিণয় সূত্রে আবদ্ধতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Matrimony, marriage, wedded state, marital union",
-    "antonyms": "Divorce, celibacy, separation",
-    "englishMeaning": "The state of being married; matrimony.",
-    "exampleSentence": "All children, whether born in or out of wedlock, shall enjoy the same social protection.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -20631,7 +20922,8 @@ export const hscVocabularyList = [
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+      "Unit 12: Lesson 5 (Limits of Scientific Method)",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20989,7 +21281,8 @@ export const hscVocabularyList = [
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
+      "Unit 5: Human Rights: Frederick Douglass",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -21011,7 +21304,8 @@ export const hscVocabularyList = [
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
+      "Unit 5: Human Rights: Frederick Douglass",
+      "Unit 5: Lesson 5 (Frederick Douglass)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -23267,28 +23561,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u4-l2-66",
-    "word": "Outsider",
-    "bengaliMeaning": "বহিরাগত",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Stranger, foreigner, alien, newcomer, non-member",
-    "antonyms": "Insider, native, member, local",
-    "englishMeaning": "A person who does not belong to a particular organization or social group.",
-    "exampleSentence": "I acted because of my own proudly felt African background, and not because of what any outsider might have said.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u4-l2-67",
     "word": "Overflowing",
     "bengaliMeaning": "উপচানো / প্লাবিত / ছাপিয়ে যাওয়া",
@@ -24125,28 +24397,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u4-l3-46",
-    "word": "Partition",
-    "bengaliMeaning": "বিভাজন / ঐতিহাসিক দেশভাগ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Division, separation, dismemberment, splitting up",
-    "antonyms": "Unification, merger, union, integration",
-    "englishMeaning": "The division of a country or state into separate parts or sovereign entities.",
-    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
-    "unit": "Unit 4: Lesson 3 (Great Women)",
-    "boardExamTag": "Unit 4 • Lesson 3",
-    "sources": [
-      "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u4-l3-47",
     "word": "Patriarchal",
     "bengaliMeaning": "পুরুষতান্ত্রিক / পুরুষপ্রধান",
@@ -24864,6 +25114,292 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 5: Lesson 4 (Coal Miners)",
       "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-1",
+    "word": "Accurate",
+    "bengaliMeaning": "সঠিক / নির্ভুল / যথার্থ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Correct, exact, precise, faultless, error-free",
+    "antonyms": "Inaccurate, wrong, incorrect, imprecise",
+    "englishMeaning": "Correct in all details; exact and free from error.",
+    "exampleSentence": "I have no accurate knowledge of my age, never having seen any authentic record containing it.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-2",
+    "word": "Burial",
+    "bengaliMeaning": "দাফন / অন্ত্যেষ্টিক্রিয়া",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Interment, entombment, funeral, sepulture",
+    "antonyms": "Exhumation, disinterment",
+    "englishMeaning": "The action or practice of burying a dead body.",
+    "exampleSentence": "I was not allowed to be present during her illness, at her death, or burial.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-3",
+    "word": "Custom",
+    "bengaliMeaning": "প্রথা / সামাজিক রীতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Tradition, practice, habit, convention, ritual",
+    "antonyms": "Innovation, departure, irregularity",
+    "englishMeaning": "A widely accepted way of behaving or doing something that is specific to a particular society.",
+    "exampleSentence": "It is a common custom in the part of Maryland from which I ran away, to part children from their mothers at a very early age.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-4",
+    "word": "Darker complexion",
+    "bengaliMeaning": "গাঢ় ত্বকের বর্ণ / কৃষ্ণাঙ্গ গায়ের রঙ",
+    "partsOfSpeech": "Noun phrase",
+    "synonyms": "Dusky skin, brown-skinned, deep pigmentation",
+    "antonyms": "Fair complexion, light-skinned, pale skin",
+    "englishMeaning": "Skin tone that has deeper natural pigmentation.",
+    "exampleSentence": "My mother was of a darker complexion than either my grandmother or grandfather.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-5",
+    "word": "Deemed",
+    "bengaliMeaning": "বিবেচনা করেছিল / গণ্য করেছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Considered, judged, regarded, viewed, reckoned",
+    "antonyms": "Disregarded, ignored, dismissed",
+    "englishMeaning": "Regarded or considered in a specified way.",
+    "exampleSentence": "He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-7",
+    "word": "Evidence",
+    "bengaliMeaning": "প্রমাণ / সাক্ষ্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Testimony, confirmation, proof, verification, attestation",
+    "antonyms": "Disproof, contradiction, refutation",
+    "englishMeaning": "The available body of facts or information indicating whether a belief or proposition is true.",
+    "exampleSentence": "He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-10",
+    "word": "Ignorant",
+    "bengaliMeaning": "অজ্ঞ / অন্ধকারে রাখা / অনবগত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Uneducated, uninformed, unaware, unenlightened",
+    "antonyms": "Knowledgeable, educated, informed, enlightened",
+    "englishMeaning": "Lacking knowledge or awareness in general; uneducated.",
+    "exampleSentence": "It is the wish of most masters within my knowledge to keep their slaves thus ignorant.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-11",
+    "word": "Improper",
+    "bengaliMeaning": "অনুচিত / অন্যায় / অসঙ্গত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Inappropriate, unsuitable, unbecoming, unfitting",
+    "antonyms": "Proper, suitable, correct, appropriate",
+    "englishMeaning": "Not in accordance with accepted rules of social behavior or morality.",
+    "exampleSentence": "He deemed all such inquiries on the part of a slave improper and impertinent.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-12",
+    "word": "Inquiries",
+    "bengaliMeaning": "অনুসন্ধান / জিজ্ঞাসা / প্রশ্ন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Questions, investigations, probes, queries, inquiries",
+    "antonyms": "Answers, replies, responses",
+    "englishMeaning": "Acts of asking for information or investigating a matter.",
+    "exampleSentence": "I was not allowed to make any inquiries of my master concerning it.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-14",
+    "word": "Separation",
+    "bengaliMeaning": "বিচ্ছেদ / বিচ্ছিন্নকরণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Division, disconnection, detachment, parting, isolation",
+    "antonyms": "Union, connection, reunion, attachment",
+    "englishMeaning": "The action or state of moving or being moved apart.",
+    "exampleSentence": "For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-15",
+    "word": "Soothing",
+    "bengaliMeaning": "শান্তিদায়ক / আরামদায়ক / সান্ত্বনাকর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Calming, comforting, relaxing, tranquilizing, pacifying",
+    "antonyms": "Agitating, disturbing, jarring, irritating",
+    "englishMeaning": "Having a gently calming or comforting effect.",
+    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-18",
+    "word": "Whipping",
+    "bengaliMeaning": "চাবুক মারা / নির্মম বেত্রাঘাত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Beating, flogging, lashing, scourging, thrashing",
+    "antonyms": "Gentle touch, reward",
+    "englishMeaning": "A punishment or beating with a whip or lash.",
+    "exampleSentence": "She was a field hand, and a whipping is the penalty of not being in the field at sunrise.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l5-new-19",
+    "word": "Whispered",
+    "bengaliMeaning": "ফিসফিস করে বলেছিল / গোপনে রটনা করেছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Murmured, hissed, muttered, breathed softly",
+    "antonyms": "Shouted, yelled, bellowed",
+    "englishMeaning": "Spoke very softly using one's breath without one's vocal cords.",
+    "exampleSentence": "The opinion was also whispered that my master was my father, but of the correctness of this opinion, I know nothing.",
+    "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
+    "boardExamTag": "Unit 5 • Lesson 5",
+    "sources": [
+      "Unit 5: Lesson 5 (Frederick Douglass)",
+      "Unit 5: Human Rights: Frederick Douglass"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
