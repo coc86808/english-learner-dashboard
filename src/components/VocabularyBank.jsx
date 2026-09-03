@@ -401,8 +401,8 @@ export default function VocabularyBank({
             </h1>
             <p className="hidden sm:block text-slate-300 text-xs sm:text-sm leading-relaxed">
               {isBn
-                ? 'পাঠ্যবই ও বোর্ড স্ট্যান্ডার্ড প্রতিটি শব্দের বাংলা অর্থ, সমার্থক শব্দ (Synonyms), বিপরীত শব্দ (Antonyms), ইংরেজি সংজ্ঞা ও বাক্যে প্রয়োগের পূর্ণাঙ্গ শিট। একবারে কতটি শব্দ শিখবেন তা পছন্দ করুন (ডিফল্ট: ১০টি)।'
-                : 'Interactive 4-column textbook sheet with Bengali Meanings, Synonyms, Antonyms, English Definitions, and Board Exam Tags. Choose how many words to learn at a time (Default: 10).'}
+                ? 'পাঠ্যবইয়ের প্রতিটি শব্দের বাংলা অর্থ, সমার্থক শব্দ (Synonyms), বিপরীত শব্দ (Antonyms), ইংরেজি সংজ্ঞা ও বাক্যে প্রয়োগের পূর্ণাঙ্গ শিট। একবারে কতটি শব্দ শিখবেন তা পছন্দ করুন (ডিফল্ট: ১০টি)।'
+                : 'Interactive 4-column textbook sheet with Bengali Meanings, Synonyms, Antonyms, English Definitions, and Lesson Unit Tags. Choose how many words to learn at a time (Default: 10).'}
             </p>
           </div>
 

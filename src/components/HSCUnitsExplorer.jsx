@@ -740,7 +740,7 @@ export default function HSCUnitsExplorer({
                   <span>{isBn ? 'এনসিটিবি এইচএসসি কারিকুলাম' : 'NCTB HSC Curriculum'}</span>
                 </div>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
-                  {isBn ? 'ইউনিটভিত্তিক পরীক্ষা ও প্রস্তুতি (Exam & Practice)' : 'Unit-wise Board Exam & Practice'}
+                  {isBn ? 'ইউনিট ও লেসন ভিত্তিক MCQ অনুশীলন ও পরীক্ষা' : 'Unit-wise MCQ Practice & Exam'}
                 </h1>
                 <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
                   {isBn
