@@ -204,7 +204,7 @@ export const hscUnits = [
     "bgClass": "bg-[#b81d9f] hover:bg-[#cb23b0]",
     "gradient": "from-[#cb23b0] to-[#8e117a]",
     "progress": 0,
-    "totalWords": 96,
+    "totalWords": 151,
     "masteredWords": 0,
     "lessons": [
       {
@@ -221,8 +221,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Are We Aware of These Rights -II?",
         "titleBn": "আমরা কি অধিকার সম্পর্কে সচেতন?-২",
-        "questionsCount": "৬৮ টি প্রশ্ন",
-        "wordsCount": 17,
+        "questionsCount": "১৩২ টি প্রশ্ন",
+        "wordsCount": 33,
         "progress": 0
       },
       {
@@ -230,8 +230,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Rights to Health and Education",
         "titleBn": "স্বাস্থ্য ও শিক্ষার অধিকার",
-        "questionsCount": "৪৪ টি প্রশ্ন",
-        "wordsCount": 11,
+        "questionsCount": "১৪০ টি প্রশ্ন",
+        "wordsCount": 35,
         "progress": 0
       },
       {
@@ -239,8 +239,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Coal Miners",
         "titleBn": "কয়লা খনি শ্রমিকদের জীবন",
-        "questionsCount": "৫২ টি প্রশ্ন",
-        "wordsCount": 13,
+        "questionsCount": "১১২ টি প্রশ্ন",
+        "wordsCount": 28,
         "progress": 0
       },
       {

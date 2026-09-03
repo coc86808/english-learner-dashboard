@@ -2,12 +2,47 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1028 Authentic Textbook Vocabulary Words
- * Total MCQs: 4112 Board-Standard Multiple Choice Questions
+ * Total Words: 1058 Authentic Textbook Vocabulary Words
+ * Total MCQs: 4232 Board-Standard Multiple Choice Questions
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
 export const hscVocabularyList = [
+  {
+    "id": "vocab-u5-l1-05",
+    "word": "Persecution",
+    "bengaliMeaning": "নিপীড়ন / নির্মম অত্যাচার / নির্যাতন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Oppression, victimization, harassment, torture, tyranny",
+    "antonyms": "Protection, safety, liberation, tolerance",
+    "englishMeaning": "Hostility and ill-treatment, especially because of race or political or religious beliefs.",
+    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 4: Lesson 3 (Great Women)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harassment",
+      "Oppression",
+      "Protection",
+      "Tolerance",
+      "Torture"
+    ],
+    "crossRefMatchCount": 5,
+    "crossRefSynonyms": [
+      "Harassment",
+      "Oppression",
+      "Torture"
+    ],
+    "crossRefAntonyms": [
+      "Protection",
+      "Tolerance"
+    ],
+    "priority": 110
+  },
   {
     "id": "vocab-u2-l4-01",
     "word": "Intuitive",
@@ -73,39 +108,6 @@ export const hscVocabularyList = [
     "priority": 108
   },
   {
-    "id": "vocab-u5-l1-05",
-    "word": "Persecution",
-    "bengaliMeaning": "নিপীড়ন / নির্মম অত্যাচার / নির্যাতন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Oppression, victimization, harassment, torture, tyranny",
-    "antonyms": "Protection, safety, liberation, tolerance",
-    "englishMeaning": "Hostility and ill-treatment, especially because of race or political or religious beliefs.",
-    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
-    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-      "Unit 4: Lesson 3 (Great Women)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Harassment",
-      "Oppression",
-      "Tolerance",
-      "Torture"
-    ],
-    "crossRefMatchCount": 4,
-    "crossRefSynonyms": [
-      "Harassment",
-      "Oppression",
-      "Torture"
-    ],
-    "crossRefAntonyms": [
-      "Tolerance"
-    ],
-    "priority": 108
-  },
-  {
     "id": "vocab-u2-l4-glorious",
     "word": "Glorious",
     "bengaliMeaning": "মহিমান্বিত / গৌরবময়",
@@ -135,6 +137,39 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Modest"
+    ],
+    "priority": 108
+  },
+  {
+    "id": "vocab-u4-l3-12",
+    "word": "Conservation",
+    "bengaliMeaning": "সংরক্ষণ / সুরক্ষা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Preservation, safeguarding, upkeep, protection, maintenance",
+    "antonyms": "Destruction, demolition, devastation, degradation",
+    "englishMeaning": "The protection of animals, plants, natural resources, and habitats from decay or loss.",
+    "exampleSentence": "She received that honour in 2004 as the founder of the Green Belt Movement in Kenya, a nonprofit organization dedicated to planting trees, environmental conservation, and women's rights.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Degradation",
+      "Devastation",
+      "Maintenance",
+      "Protection"
+    ],
+    "crossRefMatchCount": 4,
+    "crossRefSynonyms": [
+      "Maintenance",
+      "Protection"
+    ],
+    "crossRefAntonyms": [
+      "Degradation",
+      "Devastation"
     ],
     "priority": 108
   },
@@ -656,37 +691,6 @@ export const hscVocabularyList = [
     "priority": 106
   },
   {
-    "id": "vocab-u4-l3-12",
-    "word": "Conservation",
-    "bengaliMeaning": "সংরক্ষণ / সুরক্ষা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Preservation, safeguarding, upkeep, protection, maintenance",
-    "antonyms": "Destruction, demolition, devastation, degradation",
-    "englishMeaning": "The protection of animals, plants, natural resources, and habitats from decay or loss.",
-    "exampleSentence": "She received that honour in 2004 as the founder of the Green Belt Movement in Kenya, a nonprofit organization dedicated to planting trees, environmental conservation, and women's rights.",
-    "unit": "Unit 4: Lesson 3 (Great Women)",
-    "boardExamTag": "Unit 4 • Lesson 3",
-    "sources": [
-      "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Degradation",
-      "Devastation",
-      "Maintenance"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Maintenance"
-    ],
-    "crossRefAntonyms": [
-      "Degradation",
-      "Devastation"
-    ],
-    "priority": 106
-  },
-  {
     "id": "vocab-u4-l3-15",
     "word": "Decisive",
     "bengaliMeaning": "নিষ্পত্তিমূলক / মোড় ঘোরানো / চূড়ান্ত",
@@ -748,6 +752,35 @@ export const hscVocabularyList = [
     "priority": 106
   },
   {
+    "id": "vocab-u9-l1-22",
+    "word": "Exploitation",
+    "bengaliMeaning": "শোষণ / অনুচিত সুযোগ গ্রহণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Abuse, manipulation, victimization, misuse",
+    "antonyms": "Protection, empowerment, fairness, respect",
+    "englishMeaning": "The action of treating someone unfairly in order to benefit from their work or vulnerability.",
+    "exampleSentence": "Discuss how educational empowerment protects society from exploitation.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Empowerment",
+      "Protection",
+      "Respect"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Empowerment",
+      "Protection",
+      "Respect"
+    ],
+    "priority": 106
+  },
+  {
     "id": "vocab-u5-l2-04",
     "word": "Brotherhood",
     "bengaliMeaning": "ভ্রাতৃত্ববোধ / সম্প্রীতি / ঐক্য",
@@ -789,7 +822,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -1174,7 +1208,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
+      "Unit 10: Lesson 1 (Manners Around the World)",
+      "Unit 5: Lesson 4 (Coal Miners)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -1297,33 +1332,6 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Adulthood"
-    ],
-    "priority": 104
-  },
-  {
-    "id": "vocab-u9-l1-22",
-    "word": "Exploitation",
-    "bengaliMeaning": "শোষণ / অনুচিত সুযোগ গ্রহণ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Abuse, manipulation, victimization, misuse",
-    "antonyms": "Protection, empowerment, fairness, respect",
-    "englishMeaning": "The action of treating someone unfairly in order to benefit from their work or vulnerability.",
-    "exampleSentence": "Discuss how educational empowerment protects society from exploitation.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Empowerment",
-      "Respect"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Empowerment",
-      "Respect"
     ],
     "priority": 104
   },
@@ -3125,7 +3133,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3236,7 +3245,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3575,7 +3585,8 @@ export const hscVocabularyList = [
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
-      "Unit 11: Lesson 1 (Situations of Conflict)"
+      "Unit 11: Lesson 1 (Situations of Conflict)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3615,6 +3626,203 @@ export const hscVocabularyList = [
     "crossRefSynonyms": [
       "Indigenous",
       "Racial"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-46",
+    "word": "Risk",
+    "bengaliMeaning": "ঝুঁকি / বিপদের সম্ভাবনা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Hazard, danger, peril, jeopardy",
+    "antonyms": "Safety, security, protection",
+    "englishMeaning": "A situation involving exposure to danger, injury, or loss.",
+    "exampleSentence": "The aim, which goaded me to swim the Channel six times, each time risking my life and reputation, was so close.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Protection",
+      "Security"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Protection",
+      "Security"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l2-07",
+    "word": "Threat",
+    "bengaliMeaning": "হুমকি / ভীতি / বিপদের লক্ষণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Danger, menace, hazard, risk, warning",
+    "antonyms": "Protection, safety, blessing, reassurance",
+    "englishMeaning": "A person or thing likely to cause damage, job loss, or danger.",
+    "exampleSentence": "Let us explore the pros and cons of AI as a tool in the classroom, address the concern that AI could be a threat to teachers' and instructors' jobs and discuss the role of edtech companies in advancing this AI use case.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Protection",
+      "Risk"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Risk"
+    ],
+    "crossRefAntonyms": [
+      "Protection"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l3-excerpt",
+    "word": "Excerpt",
+    "bengaliMeaning": "উদ্ধৃতাংশ / অংশবিশেষ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Extract, passage, selection, snippet",
+    "antonyms": "Entire text, complete volume, whole",
+    "englishMeaning": "A short extract from a text, film, piece of music, or speech.",
+    "exampleSentence": "a) b) c) What is the excerpt about?",
+    "unit": "Unit 1: Education and Life: Children in School",
+    "lesson": "Children in School",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Education and Life: Children in School",
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Extract",
+      "Passage"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Extract",
+      "Passage"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l4-harassment",
+    "word": "Harassment",
+    "bengaliMeaning": "হয়রানি / মানসিক নিপীড়ন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Intimidation, persecution, victimization, bullying",
+    "antonyms": "Protection, comfort, encouragement, support",
+    "englishMeaning": "Aggressive pressure or intimidation.",
+    "exampleSentence": "This is an excerpt from the desk review titled 'Sexual Harassment in Public Spaces in Bangladesh' which was issued by Share-Net Bangladesh secretariat.",
+    "unit": "Unit 9: Adolescence: Say 'No' to Bullying",
+    "lesson": "Say 'No' to Bullying",
+    "boardExamTag": "Unit 9 • Lesson 4",
+    "sources": [
+      "Unit 9: Adolescence: Say 'No' to Bullying"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Persecution",
+      "Protection"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Persecution"
+    ],
+    "crossRefAntonyms": [
+      "Protection"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l1-41",
+    "word": "Thrust",
+    "bengaliMeaning": "জোরপূর্বক ঢোকানো / ঠেলা দেওয়া / ধাক্কা দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Shove, push, force, drive, plunge",
+    "antonyms": "Withdraw, extract, pull back, retract",
+    "englishMeaning": "To push someone or something suddenly or violently in a specified direction.",
+    "exampleSentence": "Only reams of texts were being torn and the pieces of paper thrust into the bird's mouth with the point of a quill.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Extract",
+      "Withdraw"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Extract",
+      "Withdraw"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l2-security",
+    "word": "Security",
+    "bengaliMeaning": "নিরাপত্তা / সুরক্ষা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Safety, protection, safeguard, shield",
+    "antonyms": "Danger, vulnerability, insecurity, peril",
+    "englishMeaning": "The state of being free from danger or threat.",
+    "exampleSentence": "AI-powered educational tools may collect and store sensitive personal data, which raises concerns about privacy and security.",
+    "unit": "Unit 1: Education and Life: Education and Technology",
+    "lesson": "Education and Technology",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Education and Life: Education and Technology"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Insecurity",
+      "Protection"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Protection"
+    ],
+    "crossRefAntonyms": [
+      "Insecurity"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l3-new-5",
+    "word": "Extract",
+    "bengaliMeaning": "উদ্ধৃতি / প্রামাণ্য পাঠ্য থেকে নেওয়া অংশ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Quotation, excerpt, citation, passage, selection",
+    "antonyms": "Whole, entirety, totality",
+    "englishMeaning": "A short passage taken from a book, speech, piece of music, or document.",
+    "exampleSentence": "The following text has extracts from the Universal Declaration of Human Rights and is about health and education.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Excerpt",
+      "Passage"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Excerpt",
+      "Passage"
     ],
     "crossRefAntonyms": [],
     "priority": 104
@@ -5733,31 +5941,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-46",
-    "word": "Risk",
-    "bengaliMeaning": "ঝুঁকি / বিপদের সম্ভাবনা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Hazard, danger, peril, jeopardy",
-    "antonyms": "Safety, security, protection",
-    "englishMeaning": "A situation involving exposure to danger, injury, or loss.",
-    "exampleSentence": "The aim, which goaded me to swim the Channel six times, each time risking my life and reputation, was so close.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Security"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Security"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-48",
     "word": "Several",
     "bengaliMeaning": "কয়েকটি / একাধিক",
@@ -5805,31 +5988,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Instant"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-07",
-    "word": "Threat",
-    "bengaliMeaning": "হুমকি / ভীতি / বিপদের লক্ষণ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Danger, menace, hazard, risk, warning",
-    "antonyms": "Protection, safety, blessing, reassurance",
-    "englishMeaning": "A person or thing likely to cause damage, job loss, or danger.",
-    "exampleSentence": "Let us explore the pros and cons of AI as a tool in the classroom, address the concern that AI could be a threat to teachers' and instructors' jobs and discuss the role of edtech companies in advancing this AI use case.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Risk"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Risk"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -8055,7 +8213,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-I?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-I?",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8082,7 +8241,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-      "Unit 4: Lesson 3 (Great Women)"
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8119,32 +8279,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Apathy"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l3-excerpt",
-    "word": "Excerpt",
-    "bengaliMeaning": "উদ্ধৃতাংশ / অংশবিশেষ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Extract, passage, selection, snippet",
-    "antonyms": "Entire text, complete volume, whole",
-    "englishMeaning": "A short extract from a text, film, piece of music, or speech.",
-    "exampleSentence": "a) b) c) What is the excerpt about?",
-    "unit": "Unit 1: Education and Life: Children in School",
-    "lesson": "Children in School",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Education and Life: Children in School"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Passage"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Passage"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -8548,7 +8682,8 @@ export const hscVocabularyList = [
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
-      "Unit 2: Lesson 2 (Folk Music)"
+      "Unit 2: Lesson 2 (Folk Music)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8574,7 +8709,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
       "Unit 1: Lesson 4 (Civic Engagement)",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8633,32 +8769,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Psychological"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l4-harassment",
-    "word": "Harassment",
-    "bengaliMeaning": "হয়রানি / মানসিক নিপীড়ন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Intimidation, persecution, victimization, bullying",
-    "antonyms": "Protection, comfort, encouragement, support",
-    "englishMeaning": "Aggressive pressure or intimidation.",
-    "exampleSentence": "This is an excerpt from the desk review titled 'Sexual Harassment in Public Spaces in Bangladesh' which was issued by Share-Net Bangladesh secretariat.",
-    "unit": "Unit 9: Adolescence: Say 'No' to Bullying",
-    "lesson": "Say 'No' to Bullying",
-    "boardExamTag": "Unit 9 • Lesson 4",
-    "sources": [
-      "Unit 9: Adolescence: Say 'No' to Bullying"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Persecution"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Persecution"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -8762,31 +8872,6 @@ export const hscVocabularyList = [
     "crossRefSynonyms": [],
     "crossRefAntonyms": [
       "Standstill"
-    ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l1-41",
-    "word": "Thrust",
-    "bengaliMeaning": "জোরপূর্বক ঢোকানো / ঠেলা দেওয়া / ধাক্কা দেওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Shove, push, force, drive, plunge",
-    "antonyms": "Withdraw, extract, pull back, retract",
-    "englishMeaning": "To push someone or something suddenly or violently in a specified direction.",
-    "exampleSentence": "Only reams of texts were being torn and the pieces of paper thrust into the bird's mouth with the point of a quill.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Withdraw"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Withdraw"
     ],
     "priority": 102
   },
@@ -9181,7 +9266,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -9208,7 +9294,9 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -10067,7 +10155,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
+      "Unit 1: Lesson 1 (The Parrot's Tale)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -10380,32 +10469,6 @@ export const hscVocabularyList = [
       "Legacy"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-security",
-    "word": "Security",
-    "bengaliMeaning": "নিরাপত্তা / সুরক্ষা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Safety, protection, safeguard, shield",
-    "antonyms": "Danger, vulnerability, insecurity, peril",
-    "englishMeaning": "The state of being free from danger or threat.",
-    "exampleSentence": "AI-powered educational tools may collect and store sensitive personal data, which raises concerns about privacy and security.",
-    "unit": "Unit 1: Education and Life: Education and Technology",
-    "lesson": "Education and Technology",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Education and Life: Education and Technology"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Insecurity"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Insecurity"
-    ],
     "priority": 102
   },
   {
@@ -11307,12 +11370,481 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 10: Lesson 2 (Etiquette Netquette)"
     ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Formulate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Formulate"
+    ],
     "crossRefAntonyms": [],
-    "priority": 100
+    "priority": 102
+  },
+  {
+    "id": "vocab-u10-l2-14",
+    "word": "Forbid",
+    "bengaliMeaning": "নিষেধ করা / বারণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Prohibit, prevent, disallow, ban, bar",
+    "antonyms": "Allow, permit, approve, authorize",
+    "englishMeaning": "To refuse to allow something; prohibit.",
+    "exampleSentence": "Thanks to the godforsaken detractors the rumour went round, \"The bird is dead.\" The King called his nephew and said, \"What is this I hear?\" \"Your Majesty,\" the nephew replied, \"the bird's education has been completed.\" The King asked, \"Does it hop?\" \"God forbid,\" said the nephew.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Prohibit"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Prohibit"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l3-28",
+    "word": "Disposition",
+    "bengaliMeaning": "স্বভাব / মানসিক মেজাজ / প্রকৃতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Temperament, nature, personality, character, mood",
+    "antonyms": "Attitude shift, disinclination",
+    "englishMeaning": "A person's inherent qualities of mind and character; natural temperament.",
+    "exampleSentence": "Having a naturally sunny disposition and being a bit absent- minded gave her an air of itmocence.",
+    "unit": "Unit 1: Lesson 3 (Children in School)",
+    "boardExamTag": "Unit 1 • Lesson 3",
+    "sources": [
+      "Unit 1: Lesson 3 (Children in School)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Personality"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Personality"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l2-14",
+    "word": "Creed",
+    "bengaliMeaning": "ধর্মবিশ্বাস / মতবাদ / মূলনীতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Faith, dogma, doctrine, belief, persuasion",
+    "antonyms": "Disbelief, skepticism, agnosticism",
+    "englishMeaning": "A set of religious beliefs or principles that guide someone's actions.",
+    "exampleSentence": "He preached religious tolerance and rejected social differences based on class, caste and creed.",
+    "unit": "Unit 2: Lesson 2 (Folk Music)",
+    "boardExamTag": "Unit 2 • Lesson 2",
+    "sources": [
+      "Unit 2: Lesson 2 (Folk Music)",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Belief"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Belief"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l1-04",
+    "word": "Asylum",
+    "bengaliMeaning": "রাজনৈতিক বা মানবিক আশ্রয় / নিরাপদ শরণার্থী স্থান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Refuge, sanctuary, haven, shelter, protection",
+    "antonyms": "Expulsion, eviction, deportation",
+    "englishMeaning": "The protection granted by a nation to someone who has left their native country as a political refugee.",
+    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
+    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+    "boardExamTag": "Unit 5 • Lesson 1",
+    "sources": [
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Protection"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Protection"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l4-01",
+    "word": "Colliery",
+    "bengaliMeaning": "কয়লা খনি ও সংলগ্ন কারখানা চত্বর",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Coalmine, pit, quarry, excavation shaft",
+    "antonyms": "Open meadow, farmland",
+    "englishMeaning": "A coal mine and the buildings connected with it.",
+    "exampleSentence": "We will read three testimonies collected by Lord Ashley's commission that investigated a serious accident at Huskar Colliery, Yorkshire in 1838.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Pit"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Pit"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l4-impression",
+    "word": "Impression",
+    "bengaliMeaning": "অভিভাবনা / প্রভাব বা ধারণা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Perception, notion, imprint, belief",
+    "antonyms": "Fact, tangible evidence, reality",
+    "englishMeaning": "An idea, feeling, or opinion about something or someone.",
+    "exampleSentence": "What is your impression about these three children's education?",
+    "unit": "Unit 5: Human Rights: Coal Miners",
+    "lesson": "Coal Miners",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Human Rights: Coal Miners",
+      "Unit 4: Lesson 2 (Transformative Speeches)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Belief"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Belief"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l2-new-1",
+    "word": "Belief",
+    "bengaliMeaning": "বিশ্বাস / ধর্মানুভূতি / নিজস্ব দৃষ্টিভঙ্গি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Opinion, view, conviction, faith, creed",
+    "antonyms": "Disbelief, skepticism, doubt, incredulity",
+    "englishMeaning": "An acceptance that something exists or is true, especially one without proof; religious conviction.",
+    "exampleSentence": "Some of your friends do not agree with you on certain issues; they have their own beliefs.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Civil Freedoms"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Creed"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Creed"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l2-new-3",
+    "word": "Issue",
+    "bengaliMeaning": "বিচার্য বিষয় / প্রসঙ্গ / বিতর্কিত আলোচ্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Matter, subject, topic, problem, question",
+    "antonyms": "Non-issue, irrelevance",
+    "englishMeaning": "An important topic or problem for debate or discussion.",
+    "exampleSentence": "Some of your friends do not agree with you on certain issues.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Civil Freedoms"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Subject"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Subject"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l2-new-4",
+    "word": "Prohibit",
+    "bengaliMeaning": "আইন দ্বারা নিষেধ করা / নিষিদ্ধ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Forbid, ban, bar, disallow, outlaw, interdict",
+    "antonyms": "Allow, permit, legalize, authorize",
+    "englishMeaning": "Formally forbid something by law, rule, or other authority.",
+    "exampleSentence": "Slavery and the slave trade shall be prohibited in all their forms.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Civil Freedoms"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Forbid"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Forbid"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l2-new-5",
+    "word": "Protection",
+    "bengaliMeaning": "সুরক্ষা / নিরাপত্তা বিধান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Safety, defence, safeguarding, shield, security",
+    "antonyms": "Vulnerability, danger, peril, endangerment",
+    "englishMeaning": "The action of protecting someone or something, or the state of being protected.",
+    "exampleSentence": "All are equal before the law and are entitled without any discrimination to equal protection of the law.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Civil Freedoms"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Security"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Security"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-new-2",
+    "word": "Comply",
+    "bengaliMeaning": "সম্মত হওয়া / নিয়ম মেনে চলা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Agree, follow, obey, observe, conform to, abide by",
+    "antonyms": "Disobey, defy, rebel, violate",
+    "englishMeaning": "Act in accordance with a wish or command; meet specified standards.",
+    "exampleSentence": "Every member state is bound to comply with the declarations and charters of human rights.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Rebel"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Rebel"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-new-4",
+    "word": "Entitle",
+    "bengaliMeaning": "অধিকার প্রদান করা / আইনসম্মত প্রাপ্যতা দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Legitimize, qualify, authorize, sanction, empower",
+    "antonyms": "Prevent, forbid, disqualify, deny",
+    "englishMeaning": "Give someone a legal right or a just claim to receive or do something.",
+    "exampleSentence": "Motherhood and childhood are entitled to special care and assistance.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Forbid"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Forbid"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-new-8",
+    "word": "Livelihood",
+    "bengaliMeaning": "জীবিকা / অন্নসংস্থান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Occupation, living, vocation, income, sustenance, employment",
+    "antonyms": "Unemployment, insolvency, poverty",
+    "englishMeaning": "A means of securing the necessities of life.",
+    "exampleSentence": "Or other lack of livelihood in circumstances beyond his control.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Unemployment"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Unemployment"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-new-9",
+    "word": "Personality",
+    "bengaliMeaning": "ব্যক্তিত্ব / চারিত্রিক বৈশিষ্ট্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Identity, character, individuality, temperament, nature",
+    "antonyms": "Impersonality, uniformity",
+    "englishMeaning": "The combination of characteristics or qualities that form an individual's distinctive character.",
+    "exampleSentence": "Education shall be directed to the full development of the human personality.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Identity"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Identity"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-new-12",
+    "word": "Widowhood",
+    "bengaliMeaning": "বৈধব্য / স্বামীহারা অবস্থা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Bereavement of husband, loss of spouse",
+    "antonyms": "Matrimony, wedlock",
+    "englishMeaning": "The state or period of being a widow.",
+    "exampleSentence": "In the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Wedlock"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Wedlock"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l4-new-6",
+    "word": "Oriented",
+    "bengaliMeaning": "প্রণোদিত / নির্দিষ্ট লক্ষ্যাভিমুখী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Adjusted, aligned, directed, focused, tailored",
+    "antonyms": "Disoriented, undirected, haphazard",
+    "englishMeaning": "Aligned, directed toward or focused on a particular topic or cause.",
+    "exampleSentence": "'Sharing the Earth' is a collection of justice-oriented environmental writings.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Tailored"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Tailored"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l4-new-8",
+    "word": "Rake",
+    "bengaliMeaning": "কয়লা বহনের এককালীন যাত্রা বা চক্র",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Trip, journey, round, haul, shift",
+    "antonyms": "Rest, pause, standstill",
+    "englishMeaning": "A journey or haul made by coal carts or miners back and forth along the mine shaft.",
+    "exampleSentence": "Cannot say how many rakes or journeys I make from pit's bottom to wall face and back.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Standstill"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Standstill"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l4-new-10",
+    "word": "Sore",
+    "bengaliMeaning": "যন্ত্রণাদায়ক / কষ্টকর / ব্যথাতুর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Aching, painful, tender, agonizing, agonizingly difficult",
+    "antonyms": "Comfortable, painless, soothing, easy",
+    "englishMeaning": "Causing great physical pain, anguish, or suffering.",
+    "exampleSentence": "I am wrought with sister and brother; it is very sore work.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Tender"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Tender"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
   },
   {
     "id": "vocab-u10-39",
@@ -11612,27 +12144,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u10-l2-14",
-    "word": "Forbid",
-    "bengaliMeaning": "নিষেধ করা / বারণ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Prohibit, prevent, disallow, ban, bar",
-    "antonyms": "Allow, permit, approve, authorize",
-    "englishMeaning": "To refuse to allow something; prohibit.",
-    "exampleSentence": "Thanks to the godforsaken detractors the rumour went round, \"The bird is dead.\" The King called his nephew and said, \"What is this I hear?\" \"Your Majesty,\" the nephew replied, \"the bird's education has been completed.\" The King asked, \"Does it hop?\" \"God forbid,\" said the nephew.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u10-14",
     "word": "Conversation",
     "bengaliMeaning": "কথোপকথন / আলাপচারিতা",
@@ -11896,7 +12407,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
     "boardExamTag": "Unit 1 • Lesson 2",
     "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
+      "Unit 1: Lesson 2 (Education and Technology)",
+      "Unit 5: Lesson 3 (Rights to Health and Education)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -12489,7 +13001,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -14042,7 +14555,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
+      "Unit 10: Lesson 1 (Manners Around the World)",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -15567,27 +16081,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u1-l3-28",
-    "word": "Disposition",
-    "bengaliMeaning": "স্বভাব / মানসিক মেজাজ / প্রকৃতি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Temperament, nature, personality, character, mood",
-    "antonyms": "Attitude shift, disinclination",
-    "englishMeaning": "A person's inherent qualities of mind and character; natural temperament.",
-    "exampleSentence": "Having a naturally sunny disposition and being a bit absent- minded gave her an air of itmocence.",
-    "unit": "Unit 1: Lesson 3 (Children in School)",
-    "boardExamTag": "Unit 1 • Lesson 3",
-    "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u1-l3-30",
     "word": "Innocence",
     "bengaliMeaning": "সরলতা / নিষ্পাপতা / সারল্য",
@@ -15957,28 +16450,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
       "Unit 2: Lesson 2 (Folk Music)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u2-l2-14",
-    "word": "Creed",
-    "bengaliMeaning": "ধর্মবিশ্বাস / মতবাদ / মূলনীতি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Faith, dogma, doctrine, belief, persuasion",
-    "antonyms": "Disbelief, skepticism, agnosticism",
-    "englishMeaning": "A set of religious beliefs or principles that guide someone's actions.",
-    "exampleSentence": "He preached religious tolerance and rejected social differences based on class, caste and creed.",
-    "unit": "Unit 2: Lesson 2 (Folk Music)",
-    "boardExamTag": "Unit 2 • Lesson 2",
-    "sources": [
-      "Unit 2: Lesson 2 (Folk Music)",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -17143,27 +17614,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u5-l1-04",
-    "word": "Asylum",
-    "bengaliMeaning": "রাজনৈতিক বা মানবিক আশ্রয় / নিরাপদ শরণার্থী স্থান",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Refuge, sanctuary, haven, shelter, protection",
-    "antonyms": "Expulsion, eviction, deportation",
-    "englishMeaning": "The protection granted by a nation to someone who has left their native country as a political refugee.",
-    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
-    "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-    "boardExamTag": "Unit 5 • Lesson 1",
-    "sources": [
-      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u5-l1-08",
     "word": "Consent",
     "bengaliMeaning": "সম্মতি / অনুমোদন / স্বেচ্ছায় রাজি হওয়া",
@@ -17323,27 +17773,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
       "Unit 5: Lesson 3 (Rights to Health and Education)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u5-l4-01",
-    "word": "Colliery",
-    "bengaliMeaning": "কয়লা খনি ও সংলগ্ন কারখানা চত্বর",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Coalmine, pit, quarry, excavation shaft",
-    "antonyms": "Open meadow, farmland",
-    "englishMeaning": "A coal mine and the buildings connected with it.",
-    "exampleSentence": "We will read three testimonies collected by Lord Ashley's commission that investigated a serious accident at Huskar Colliery, Yorkshire in 1838.",
-    "unit": "Unit 5: Lesson 4 (Coal Miners)",
-    "boardExamTag": "Unit 5 • Lesson 4",
-    "sources": [
-      "Unit 5: Lesson 4 (Coal Miners)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -19611,7 +20040,8 @@ export const hscVocabularyList = [
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
-      "Unit 11: Lesson 5 (Opinions through Images)"
+      "Unit 11: Lesson 5 (Opinions through Images)",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20470,7 +20900,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20493,29 +20924,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u5-l4-impression",
-    "word": "Impression",
-    "bengaliMeaning": "অভিভাবনা / প্রভাব বা ধারণা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Perception, notion, imprint, belief",
-    "antonyms": "Fact, tangible evidence, reality",
-    "englishMeaning": "An idea, feeling, or opinion about something or someone.",
-    "exampleSentence": "What is your impression about these three children's education?",
-    "unit": "Unit 5: Human Rights: Coal Miners",
-    "lesson": "Coal Miners",
-    "boardExamTag": "Unit 5 • Lesson 4",
-    "sources": [
-      "Unit 5: Human Rights: Coal Miners",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22518,7 +22926,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -24081,6 +24490,380 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
       "Unit 5: Human Rights: Declarations of Human Rights"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l2-new-2",
+    "word": "Endow",
+    "bengaliMeaning": "দান করা / জন্মসূত্রে কোনো গুণে ভূষিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Bestow, bless, gift, confer on, equip",
+    "antonyms": "Deprive, strip, divest, dispossess",
+    "englishMeaning": "Provide with a quality, ability, or asset by nature; bestow upon.",
+    "exampleSentence": "They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Civil Freedoms"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l2-new-6",
+    "word": "Subject",
+    "bengaliMeaning": "পরাধীন করা / অনিচ্ছাসত্ত্বেও কোনো কিছুর মুখে ঠেলে দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Expose to, treat with, lay open to, subjugate",
+    "antonyms": "Exempt, protect, shield, liberate",
+    "englishMeaning": "Cause or force someone or something to undergo a particular experience.",
+    "exampleSentence": "No one shall be subjected to arbitrary arrest, detention or exile.",
+    "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 5: Human Rights: Civil Freedoms"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l3-new-1",
+    "word": "Circumstance",
+    "bengaliMeaning": "পরিস্থিতি / অবস্থা / ঘটনাচক্র",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Situation, condition, state of affairs, context, factor",
+    "antonyms": "Certainty, inevitability",
+    "englishMeaning": "A fact or condition connected with or relevant to an event or action.",
+    "exampleSentence": "In the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l3-new-3",
+    "word": "Disability",
+    "bengaliMeaning": "শারীরিক বা মানসিক অক্ষমতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Incapability, impairment, handicap, physical limitation",
+    "antonyms": "Ability, fitness, capability, strength",
+    "englishMeaning": "A physical or mental condition that limits a person's movements, senses, or activities.",
+    "exampleSentence": "Right to security in the event of unemployment, sickness, disability, widowhood, old age.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l3-new-6",
+    "word": "Formulate",
+    "bengaliMeaning": "যথাযথভাবে প্রকাশ করা / প্রণয়ন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Systematize, devise, draft, construct, frame",
+    "antonyms": "Disorganize, dismantle, ruin",
+    "englishMeaning": "Create or prepare methodically; express systematically in words.",
+    "exampleSentence": "Which organization has formulated this declaration?",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l3-new-7",
+    "word": "Intention",
+    "bengaliMeaning": "অভিপ্রায় / উদ্দেশ্য / সংকল্প",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Aim, purpose, goal, objective, design, intent",
+    "antonyms": "Accident, chance, coincidence",
+    "englishMeaning": "A thing intended; an aim or plan.",
+    "exampleSentence": "What do you know about the intentions of the UN regarding the declaration?",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l3-new-10",
+    "word": "Strengthen",
+    "bengaliMeaning": "শক্তিশালী করা / সুদৃঢ় করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Toughen, bolster, reinforce, solidify, intensify",
+    "antonyms": "Weaken, undermine, diminish, enfeeble",
+    "englishMeaning": "Make or become stronger in power, quality, or effect.",
+    "exampleSentence": "And to the strengthening of respect for human rights and fundamental freedoms.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l3-new-11",
+    "word": "Unemployment",
+    "bengaliMeaning": "বেকারত্ব / কর্মহীনতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Joblessness, redundancy, out of work, worklessness",
+    "antonyms": "Employment, work, occupation",
+    "englishMeaning": "The state of being unemployed or having no paid employment.",
+    "exampleSentence": "Right to security in the event of unemployment, sickness, disability, widowhood, old age.",
+    "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 5: Human Rights: Health and Education"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-1",
+    "word": "Calves",
+    "bengaliMeaning": "পায়ের পেছনের মাংসপেশি / পায়ের ডিম",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Lower legs, leg muscles, hind limbs",
+    "antonyms": "Upper body, torso",
+    "englishMeaning": "The fleshy back parts of the human leg below the knee.",
+    "exampleSentence": "Have to stoop much and creep through water, which is frequently up to the calves of my legs.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-2",
+    "word": "Docking",
+    "bengaliMeaning": "বেতন বা মজুরি কেটে নেওয়া / কর্তন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Deduction, cut, withholding of wages, docking of pay",
+    "antonyms": "Bonus, addition, enhancement",
+    "englishMeaning": "Deducting money from a worker's wages or pay as a penalty or fine.",
+    "exampleSentence": "Docking: the severe penalty of deducting pay imposed on child coal miners.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-3",
+    "word": "Interviewed",
+    "bengaliMeaning": "সাক্ষাৎকার নিয়েছিল / জিজ্ঞাসাবাদ করেছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Questioned, queried, interrogated, consulted",
+    "antonyms": "Ignored, dismissed, overlooked",
+    "englishMeaning": "Asked questions in an interview to obtain factual testimonies.",
+    "exampleSentence": "During his investigation, he interviewed a large number of people working in Britain's factories and mines.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-4",
+    "word": "Investigate",
+    "bengaliMeaning": "তদন্ত করা / পুঙ্খানুপুঙ্খ অনুসন্ধান করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Examined, probed, scrutinized, inspected, explored",
+    "antonyms": "Overlooked, disregarded, neglected",
+    "englishMeaning": "Carry out a systematic or formal inquiry to discover and examine the facts.",
+    "exampleSentence": "Lord Ashley's commission that investigated a serious accident at Huskar Colliery, Yorkshire in 1838.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-5",
+    "word": "Lassies",
+    "bengaliMeaning": "কিশোরী / অল্পবয়সী তরুণী শ্রমিক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Girls, maidens, young women, damsels",
+    "antonyms": "Boys, youths, men",
+    "englishMeaning": "Young girls or young unmarried women.",
+    "exampleSentence": "I do not like the work, nor do the lassies, but they are made to like it.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-7",
+    "word": "Pit",
+    "bengaliMeaning": "কয়লাখনির সুড়ঙ্গ বা গহ্বর",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Coal mine, shaft, hole, excavation, quarry",
+    "antonyms": "Mound, hill, summit",
+    "englishMeaning": "A coal mine, including the shafts and subterranean workings.",
+    "exampleSentence": "I would like to be at school far better than in the pit.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-9",
+    "word": "Scared",
+    "bengaliMeaning": "ভীত / আতঙ্কিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Terrified, frightened, alarmed, panicked, horrified",
+    "antonyms": "Brave, fearless, courageous, bold",
+    "englishMeaning": "Fearful; frightened of something dangerous or terrifying.",
+    "exampleSentence": "I have a trap without a light and I'm scared.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-11",
+    "word": "Weave",
+    "bengaliMeaning": "বোনা / কাপড় বোনা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Interlace, knit, entwine, braid, fabricate",
+    "antonyms": "Unweave, unravel, dismantle",
+    "englishMeaning": "Form fabric or a web by interlacing long threads passing in one direction with others at a right angle.",
+    "exampleSentence": "All of them but one live at home; they weave, and wind, and hurry.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u5-l4-new-12",
+    "word": "Wrought",
+    "bengaliMeaning": "কঠোর শ্রমে নিযুক্ত / রূপদান করা",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Worked, employed, fashioned, crafted, laboured",
+    "antonyms": "Idle, unworked, raw",
+    "englishMeaning": "Put to work; shaped or created with intensive labor.",
+    "exampleSentence": "I am wrought with sister and brother; it is very sore work.",
+    "unit": "Unit 5: Lesson 4 (Coal Miners)",
+    "boardExamTag": "Unit 5 • Lesson 4",
+    "sources": [
+      "Unit 5: Lesson 4 (Coal Miners)",
+      "Unit 5: Human Rights: Coal Miners"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
