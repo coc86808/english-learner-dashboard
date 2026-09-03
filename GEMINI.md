@@ -13,18 +13,22 @@ Whenever the user uploads or provides vocabulary (via photo or text):
    - If a word was already added before, explicitly notify the user:
      *"You have already added the word '[Word]' before."*
 2. **Dual Addition (Vocabulary + MCQ)**:
-   - Add new words into `hscVocabularyList` in `src/data/questions/hscQuestionsData.js` with:
+   - Every single word provided by the user MUST be added to `hscVocabularyList` in `src/data/questions/hscQuestionsData.js` with:
      - Exact Bengali meaning from the textbook.
      - Primary and secondary synonyms.
      - Primary and secondary antonyms.
      - Concise English definition.
      - Example sentence matching curriculum context.
      - Board Exam tag.
-   - The engine automatically generates **4 Board-Standard MCQs** per word:
+   - The engine automatically generates **Board-Standard MCQs** per word in the 4 formats:
      - 🔄 **Synonym Question**
      - 🔀 **Antonym Question**
      - 📖 **English Definition Question**
      - 🇧🇩 **Bangla Meaning Question**
+   - **Conditional MCQ Skipping Rule (Mandatory)**:
+     - If a word does NOT have any synonyms (empty, blank, "-", "None"), skip the Synonym MCQ for that word only.
+     - If a word does NOT have any antonyms (empty, blank, "-", "None"), skip the Antonym MCQ for that word only.
+     - Never generate artificial, placeholder, or bogus questions/distractors for missing synonyms or antonyms.
 3. **Curriculum & Explorer Synchronization**:
    - Update `totalWords` and `wordsCount` in `src/data/hscUnitsData.js`.
    - Update `questionsCount` (wordsCount × 4) in Bengali numerals in `src/data/hscUnitsData.js`.

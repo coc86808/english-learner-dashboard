@@ -25424,21 +25424,32 @@ export function buildQuestionsDatabase() {
   hscVocabularyList.forEach((item, idx) => {
     const word = item.word;
     const pos = item.partsOfSpeech || 'Word';
-    const primarySyn = (item.synonyms || '').split(',')[0].trim();
-    const primaryAnt = (item.antonyms || '').split(',')[0].trim();
+    
+    const isCleanValue = (val) => {
+      if (!val) return false;
+      const s = String(val).trim().toLowerCase();
+      return s !== '' && s !== '-' && s !== '—' && s !== 'none' && s !== 'n/a' && s !== 'nil';
+    };
+
+    const rawSyn = (item.synonyms || '').split(',')[0].trim();
+    const rawAnt = (item.antonyms || '').split(',')[0].trim();
+    const primarySyn = isCleanValue(rawSyn) ? rawSyn : null;
+    const primaryAnt = isCleanValue(rawAnt) ? rawAnt : null;
     const boardTag = item.boardExamTag || 'Unit 1 • Lesson 1';
 
     // Distractor helpers
     const getOtherSyns = (excludeIdx, count = 3) => {
       const distractors = [];
       let step = 1;
-      while (distractors.length < count) {
+      let attempts = 0;
+      while (distractors.length < count && attempts < total * 2) {
         const candidate = hscVocabularyList[(excludeIdx + step * 7) % total];
         const cSyn = (candidate.synonyms || '').split(',')[0].trim();
-        if (cSyn && cSyn !== primarySyn && !distractors.includes(cSyn)) {
+        if (isCleanValue(cSyn) && cSyn !== primarySyn && !distractors.includes(cSyn)) {
           distractors.push(cSyn);
         }
         step++;
+        attempts++;
       }
       return distractors;
     };
@@ -25446,13 +25457,15 @@ export function buildQuestionsDatabase() {
     const getOtherAnts = (excludeIdx, count = 3) => {
       const distractors = [];
       let step = 1;
-      while (distractors.length < count) {
+      let attempts = 0;
+      while (distractors.length < count && attempts < total * 2) {
         const candidate = hscVocabularyList[(excludeIdx + step * 11) % total];
         const cAnt = (candidate.antonyms || '').split(',')[0].trim();
-        if (cAnt && cAnt !== primaryAnt && !distractors.includes(cAnt)) {
+        if (isCleanValue(cAnt) && cAnt !== primaryAnt && !distractors.includes(cAnt)) {
           distractors.push(cAnt);
         }
         step++;
+        attempts++;
       }
       return distractors;
     };
