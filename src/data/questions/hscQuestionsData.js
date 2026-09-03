@@ -2,8 +2,8 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 949 Authentic Textbook Vocabulary Words
- * Total MCQs: 3796 Board-Standard Multiple Choice Questions
+ * Total Words: 1018 Authentic Textbook Vocabulary Words
+ * Total MCQs: 4072 Board-Standard Multiple Choice Questions
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -84,7 +84,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
-      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -101,6 +102,39 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Tolerance"
+    ],
+    "priority": 108
+  },
+  {
+    "id": "vocab-u2-l4-glorious",
+    "word": "Glorious",
+    "bengaliMeaning": "মহিমান্বিত / গৌরবময়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Magnificent, splendid, illustrious, celebrated",
+    "antonyms": "Inglorious, shameful, obscure, modest",
+    "englishMeaning": "Having, worthy of, or bringing fame or admiration.",
+    "exampleSentence": "Some of you who live outside Sonargaon Upazila in the district of Narayanganj, may have visited the ancient township with its Folk Arts and Crafts Museum set up by the famous artist Zainul Abedin in 1975, and a number of old buildings which speak of a glorious past.",
+    "unit": "Unit 2: Art and Craft: Craft",
+    "lesson": "Craft",
+    "boardExamTag": "Unit 2 • Lesson 4",
+    "sources": [
+      "Unit 2: Art and Craft: Craft"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated",
+      "Magnificent",
+      "Modest",
+      "Splendid"
+    ],
+    "crossRefMatchCount": 4,
+    "crossRefSynonyms": [
+      "Celebrated",
+      "Magnificent",
+      "Splendid"
+    ],
+    "crossRefAntonyms": [
+      "Modest"
     ],
     "priority": 108
   },
@@ -176,7 +210,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -277,37 +312,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 3,
     "crossRefSynonyms": [
       "Glorious",
-      "Splendid"
-    ],
-    "crossRefAntonyms": [
-      "Modest"
-    ],
-    "priority": 106
-  },
-  {
-    "id": "vocab-u2-l4-glorious",
-    "word": "Glorious",
-    "bengaliMeaning": "মহিমান্বিত / গৌরবময়",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Magnificent, splendid, illustrious, celebrated",
-    "antonyms": "Inglorious, shameful, obscure, modest",
-    "englishMeaning": "Having, worthy of, or bringing fame or admiration.",
-    "exampleSentence": "Some of you who live outside Sonargaon Upazila in the district of Narayanganj, may have visited the ancient township with its Folk Arts and Crafts Museum set up by the famous artist Zainul Abedin in 1975, and a number of old buildings which speak of a glorious past.",
-    "unit": "Unit 2: Art and Craft: Craft",
-    "lesson": "Craft",
-    "boardExamTag": "Unit 2 • Lesson 4",
-    "sources": [
-      "Unit 2: Art and Craft: Craft"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Magnificent",
-      "Modest",
-      "Splendid"
-    ],
-    "crossRefMatchCount": 3,
-    "crossRefSynonyms": [
-      "Magnificent",
       "Splendid"
     ],
     "crossRefAntonyms": [
@@ -617,6 +621,129 @@ export const hscVocabularyList = [
     ],
     "crossRefAntonyms": [
       "Apathy"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u5-l2-servitude",
+    "word": "Servitude",
+    "bengaliMeaning": "দাসত্ব / পরাধীনতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Slavery, bondage, subjugation, thralldom",
+    "antonyms": "Freedom, liberty, emancipation, independence",
+    "englishMeaning": "The state of being a slave or completely subject to someone more powerful.",
+    "exampleSentence": "Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+    "lesson": "Are We Aware of These Rights-II?",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Emancipation",
+      "Liberty",
+      "Slavery"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Slavery"
+    ],
+    "crossRefAntonyms": [
+      "Emancipation",
+      "Liberty"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l3-12",
+    "word": "Conservation",
+    "bengaliMeaning": "সংরক্ষণ / সুরক্ষা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Preservation, safeguarding, upkeep, protection, maintenance",
+    "antonyms": "Destruction, demolition, devastation, degradation",
+    "englishMeaning": "The protection of animals, plants, natural resources, and habitats from decay or loss.",
+    "exampleSentence": "She received that honour in 2004 as the founder of the Green Belt Movement in Kenya, a nonprofit organization dedicated to planting trees, environmental conservation, and women's rights.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Degradation",
+      "Devastation",
+      "Maintenance"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Maintenance"
+    ],
+    "crossRefAntonyms": [
+      "Degradation",
+      "Devastation"
+    ],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l3-15",
+    "word": "Decisive",
+    "bengaliMeaning": "নিষ্পত্তিমূলক / মোড় ঘোরানো / চূড়ান্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Conclusive, pivotal, key, significant, influential, critical",
+    "antonyms": "Insignificant, uncertain, indecisive, hesitant",
+    "englishMeaning": "Settling an issue; producing a definite result or turning point.",
+    "exampleSentence": "The sudden death of Pierre Curie was a bitter blow to Marie Curie, but it was also a decisive turning point in her career.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Critical",
+      "Influential",
+      "Key"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Critical",
+      "Influential",
+      "Key"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 106
+  },
+  {
+    "id": "vocab-u4-l3-34",
+    "word": "Immense",
+    "bengaliMeaning": "অপরিমেয় / বিপুল / সীমাহীন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Immeasurable, incalculable, enormous, mammoth, gigantic, vast",
+    "antonyms": "Tiny, miniature, minuscule, negligible",
+    "englishMeaning": "Extremely large or great, especially in scale or degree.",
+    "exampleSentence": "Her contribution to physics had been immense, not only in her own work, but because of her influence on subsequent generations.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Enormous",
+      "Miniature",
+      "Negligible"
+    ],
+    "crossRefMatchCount": 3,
+    "crossRefSynonyms": [
+      "Enormous"
+    ],
+    "crossRefAntonyms": [
+      "Miniature",
+      "Negligible"
     ],
     "priority": 106
   },
@@ -1888,35 +2015,6 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
-    "id": "vocab-u5-l2-servitude",
-    "word": "Servitude",
-    "bengaliMeaning": "দাসত্ব / পরাধীনতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Slavery, bondage, subjugation, thralldom",
-    "antonyms": "Freedom, liberty, emancipation, independence",
-    "englishMeaning": "The state of being a slave or completely subject to someone more powerful.",
-    "exampleSentence": "Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-    "lesson": "Are We Aware of These Rights-II?",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Liberty",
-      "Slavery"
-    ],
-    "crossRefMatchCount": 2,
-    "crossRefSynonyms": [
-      "Slavery"
-    ],
-    "crossRefAntonyms": [
-      "Liberty"
-    ],
-    "priority": 104
-  },
-  {
     "id": "vocab-u5-l2-prohibited",
     "word": "Prohibited",
     "bengaliMeaning": "নিষিদ্ধ করা",
@@ -2240,7 +2338,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
+      "Unit 10: Lesson 1 (Manners Around the World)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -2636,7 +2735,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -2664,7 +2764,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -2765,6 +2866,676 @@ export const hscVocabularyList = [
     "priority": 104
   },
   {
+    "id": "vocab-u2-l3-20",
+    "word": "Acclaimed",
+    "bengaliMeaning": "নন্দিত / সর্বজনস্বীকৃত / প্রশংসিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Celebrated, lauded, acclaimed, distinguished, praised",
+    "antonyms": "Disdained, neglected, condemned, ignored",
+    "englishMeaning": "Publicly praised and celebrated with high honor.",
+    "exampleSentence": "He became internationally acclaimed as a great painter of classic dimensions.",
+    "unit": "Unit 2: Lesson 3 (Art)",
+    "boardExamTag": "Unit 2 • Lesson 3",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)",
+      "Unit 2: Art and Craft: Art"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated",
+      "Distinguished"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Celebrated",
+      "Distinguished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u3-l1-12",
+    "word": "Wailed",
+    "bengaliMeaning": "বিলাপ করেছিল / কেঁদে উঠেছিল / হাহাকার করেছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Mourned, lamented, wept, cried out, sobbed",
+    "antonyms": "Rejoiced, celebrated, cheered",
+    "englishMeaning": "Made a prolonged high-pitched cry of pain, grief, or anger.",
+    "exampleSentence": "One day, arriving in Amara, Where gods held court, when she danced like a desolate wagtail, Bengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
+    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
+    "boardExamTag": "Unit 3 • Lesson 1",
+    "sources": [
+      "Unit 3: Lesson 1 (Myths of Bengal)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated",
+      "Mourned"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Mourned"
+    ],
+    "crossRefAntonyms": [
+      "Celebrated"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u12-l2-strike",
+    "word": "Strike",
+    "bengaliMeaning": "ধর্মঘট / কর্মবিরতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Walkout, protest, boycott, work stoppage",
+    "antonyms": "Compliance, return to work, submission",
+    "englishMeaning": "A refusal to work organized by a body of employees as a form of protest.",
+    "exampleSentence": "Instead of going to school, she made a large sign that read 'Skolstrejk för Klimatet' (SCHOOL STRIKE FOR CLIMATE), and calmly sat down outside the Swedish parliament.",
+    "unit": "Unit 12: Environment and Nature: The Greta Effect",
+    "lesson": "The Greta Effect",
+    "boardExamTag": "Unit 12 • Lesson 2",
+    "sources": [
+      "Unit 12: Environment and Nature: The Greta Effect"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Boycott",
+      "Protest"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Boycott",
+      "Protest"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l1-25",
+    "word": "Negligible",
+    "bengaliMeaning": "নগণ্য / তুচ্ছ / উপেক্ষণীয়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Insignificant, trivial, minor, slight, petty",
+    "antonyms": "Significant, substantial, important, remarkable",
+    "englishMeaning": "So small or unimportant as to be not worth considering.",
+    "exampleSentence": "The nephew commented, \"Your Majesty can see how things are going on.\" \"Astonishing!\" replied the King, \"the din isn't negligible.\" \"Not only the noise,\" said the nephew.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Remarkable",
+      "Substantial"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Remarkable",
+      "Substantial"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u10-l2-08",
+    "word": "Enormous",
+    "bengaliMeaning": "প্রকাণ্ড / বিশালাকার / দানবাকৃতি",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Huge, massive, gigantic, colossal, immense",
+    "antonyms": "Small, tiny, minute, miniature",
+    "englishMeaning": "Very large in size, quantity, or extent.",
+    "exampleSentence": "The scientist constructed an enormous machine inside the hilltop cave.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Immense",
+      "Miniature"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Immense"
+    ],
+    "crossRefAntonyms": [
+      "Miniature"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u10-l2-21",
+    "word": "Liberty",
+    "bengaliMeaning": "স্বাধীনতা / স্বাধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Freedom, autonomy, independence, emancipation",
+    "antonyms": "Captivity, bondage, imprisonment, slavery",
+    "englishMeaning": "The state of being free within society from oppressive restrictions.",
+    "exampleSentence": "Article 3: Everyone has the right to life, liberty and security of person.",
+    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
+    "boardExamTag": "Unit 10 • Lesson 2",
+    "sources": [
+      "Unit 10: Lesson 2 (Etiquette Netquette)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Emancipation",
+      "Slavery"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Emancipation"
+    ],
+    "crossRefAntonyms": [
+      "Slavery"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u10-09",
+    "word": "Claim",
+    "bengaliMeaning": "দাবি করা / ঘোষণা দেওয়া / অভিমত প্রকাশ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Assert, Declare, State, Maintain, Profess",
+    "antonyms": "Deny, Disclaim, Renounce, Disavow",
+    "englishMeaning": "To state or assert that something is true or belongs to oneself.",
+    "exampleSentence": "We cannot claim ourselves civilized when we lack them.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Assert",
+      "Maintain"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Assert",
+      "Maintain"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-16",
+    "word": "Critical",
+    "bengaliMeaning": "জটিল / সংকটপূর্ণ / গুরুত্বপূর্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Troublesome, crucial, vital, decisive, pivotal",
+    "antonyms": "Uncritical, trivial, minor, insignificant",
+    "englishMeaning": "Having decisive importance in the success, failure, or development of something.",
+    "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Crucial",
+      "Decisive"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Crucial",
+      "Decisive"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-24",
+    "word": "Global",
+    "bengaliMeaning": "বিশ্বব্যাপী / সামগ্রিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Worldwide, cosmopolitan, universal, international",
+    "antonyms": "Local, regional, provincial, isolated",
+    "englishMeaning": "Relating to or encompassing the whole world; worldwide.",
+    "exampleSentence": "Alex proved that he was a global citizen.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Universal",
+      "Worldwide"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Universal",
+      "Worldwide"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u9-l1-54",
+    "word": "Universal",
+    "bengaliMeaning": "সার্বজনীন / সর্বব্যাপী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Worldwide, general, all-inclusive, omnipresent",
+    "antonyms": "Particular, individual, local, specific",
+    "englishMeaning": "Applicable to, existing in, or characteristic of all people, places, or conditions.",
+    "exampleSentence": "The biological determinants of adolescence are fairly universal: however.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Individual",
+      "Worldwide"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Worldwide"
+    ],
+    "crossRefAntonyms": [
+      "Individual"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u1-l2-15",
+    "word": "Crucial",
+    "bengaliMeaning": "অত্যন্ত গুরুত্বপূর্ণ / নির্ণায়ক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Vital, critical, essential, pivotal, decisive",
+    "antonyms": "Trivial, minor, insignificant, optional",
+    "englishMeaning": "Decisive or critical, especially in the success or failure of something.",
+    "exampleSentence": "Edtech companies play a crucial role in advancing the use of AI in the classroom and ensuring that it is used ethically and responsibly.",
+    "unit": "Unit 1: Lesson 2 (Education and Technology)",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Lesson 2 (Education and Technology)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Critical",
+      "Decisive"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Critical",
+      "Decisive"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u12-l3-06",
+    "word": "Habitat",
+    "bengaliMeaning": "প্রাকৃতিক আবাসস্থল / প্রাণীর বেঁচে থাকার প্রাকৃতিক ক্ষেত্র",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Natural home, territory, biotope, ecosystem, native environment",
+    "antonyms": "Captivity, artificial cage, unnatural enclosure",
+    "englishMeaning": "The natural home or environment of an animal, plant, or other organism.",
+    "exampleSentence": ") The Asian small-clawed otter lives in riverine habitats, freshwater wetlands and mangrove swamps.",
+    "unit": "Unit 12: Lesson 3 (Endangered Species)",
+    "boardExamTag": "Unit 12 • Lesson 3",
+    "sources": [
+      "Unit 12: Lesson 3 (Endangered Species)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Ecosystem",
+      "Territory"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Ecosystem",
+      "Territory"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u12-l4-05",
+    "word": "Overconsumption",
+    "bengaliMeaning": "অতিরিক্ত ভোগ / সম্পদের লাগামহীন অপব্যয়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Excessive consumption, squandering, depletion, resource gorging",
+    "antonyms": "Conservation, moderation, frugal stewardship",
+    "englishMeaning": "The action of consuming something in excessive amounts.",
+    "exampleSentence": "It recognizes that currently the negative impacts of ecological devastation, particularly the environmental harm and hazards created by overconsumption of resources in the global North and by elites worldwide, fall disproportionately on the world's poor, the vast majority of whom are people of color, especially women and children.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Conservation",
+      "Depletion"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Depletion"
+    ],
+    "crossRefAntonyms": [
+      "Conservation"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u5-l2-slavery",
+    "word": "Slavery",
+    "bengaliMeaning": "দাসপ্রথা / দাসত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Bondage, enslavement, captivity, servitude",
+    "antonyms": "Freedom, liberation, emancipation",
+    "englishMeaning": "The state of being a slave; the practice of owning slaves.",
+    "exampleSentence": "Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
+    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+    "lesson": "Are We Aware of These Rights-II?",
+    "boardExamTag": "Unit 5 • Lesson 2",
+    "sources": [
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Emancipation",
+      "Servitude"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Servitude"
+    ],
+    "crossRefAntonyms": [
+      "Emancipation"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-69",
+    "word": "Prodigious",
+    "bengaliMeaning": "অতিবৃহৎ / বিপুল / অপূর্ব",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Colossal, immense, enormous, mammoth, gigantic",
+    "antonyms": "Tiny, small, little, trivial, miniscule",
+    "englishMeaning": "Remarkably or impressively great in extent, size, or degree.",
+    "exampleSentence": "So let freedom ring from the prodigious hilltops of New Hampshire.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 4: Lesson 3 (Great Women)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Enormous",
+      "Immense"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Enormous",
+      "Immense"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l2-77",
+    "word": "Segregation",
+    "bengaliMeaning": "বিচ্ছিন্নকরণ / বর্ণবিভেদ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Isolation, separation, partition, discrimination",
+    "antonyms": "Integration, combination, inclusion, desegregation",
+    "englishMeaning": "The enforced separation of different racial groups in a country, community, or establishment.",
+    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Discrimination",
+      "Partition"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Discrimination",
+      "Partition"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-28",
+    "word": "Evident",
+    "bengaliMeaning": "স্পষ্ট / স্পষ্টত দৃশ্যমান",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Obvious, apparent, conspicuous, noticeable, distinct",
+    "antonyms": "Obscure, unclear, hidden, vague, indistinct",
+    "englishMeaning": "Plain or obvious to the eye or mind; readily visible.",
+    "exampleSentence": "Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Apparent",
+      "Vague"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Apparent"
+    ],
+    "crossRefAntonyms": [
+      "Vague"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-36",
+    "word": "Influential",
+    "bengaliMeaning": "প্রভাবশালী / ক্ষমতাবান",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Powerful, dominant, leading, prominent, prestigious",
+    "antonyms": "Ineffectual, unimportant, powerless, obscure",
+    "englishMeaning": "Having great influence on someone or something.",
+    "exampleSentence": "Time Magazine identified her as one of 100 most influential people in the world in 2005.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Dominant",
+      "Prestigious"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Dominant",
+      "Prestigious"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-49",
+    "word": "Prestigious",
+    "bengaliMeaning": "মর্যাদাপূর্ণ / অতি সম্মানিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Admired, esteemed, celebrated, distinguished, reputable",
+    "antonyms": "Insignificant, disreputable, obscure, dishonorable",
+    "englishMeaning": "Inspiring respect and admiration; having high status.",
+    "exampleSentence": "Among the prestigious awards she received are the PEN Lay Writing Award, the Pope Gold Medal, and Ekushey Padak.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated",
+      "Distinguished"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Celebrated",
+      "Distinguished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-50",
+    "word": "Progressive",
+    "bengaliMeaning": "প্রগতিশীল / সংস্কারবাদী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Forward-looking, dynamic, modern, reformist, advanced",
+    "antonyms": "Conservative, regressive, reactionary, backward",
+    "englishMeaning": "Happening or developing gradually or in stages; advocating for social reform.",
+    "exampleSentence": "Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Advanced",
+      "Dynamic"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Advanced",
+      "Dynamic"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-57",
+    "word": "Significance",
+    "bengaliMeaning": "তাৎপর্য / গুরুত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Importance, impact, consequence, gravity, weight",
+    "antonyms": "Meaninglessness, insignificance, triviality",
+    "englishMeaning": "The quality of being worthy of attention; importance.",
+    "exampleSentence": "Their marriage marked the start of a partnership that was soon to achieve results of world significance.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Consequence",
+      "Impact"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Consequence",
+      "Impact"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-59",
+    "word": "Stark",
+    "bengaliMeaning": "কঠোর / অনমনীয় / স্পষ্ট ও চরম বাস্তবসম্মত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Unambiguous, stiff, blatant, glaring, grim, harsh",
+    "antonyms": "Gentle, mild, vague, ambiguous",
+    "englishMeaning": "Severe, grim, or bare in appearance or outline; harshly plain.",
+    "exampleSentence": "Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Harsh",
+      "Vague"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Harsh"
+    ],
+    "crossRefAntonyms": [
+      "Vague"
+    ],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-61",
+    "word": "Sustainable",
+    "bengaliMeaning": "টেকসই / টেকসই ব্যবস্থাপনাযুক্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Maintainable, supportable, viable, enduring, ecological",
+    "antonyms": "Unsustainable, exhaustible, depleting",
+    "englishMeaning": "Able to be maintained at a certain rate or level without exhausting natural resources.",
+    "exampleSentence": "The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Ecological",
+      "Enduring"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Ecological",
+      "Enduring"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
+    "id": "vocab-u4-l3-69",
+    "word": "Worldwide",
+    "bengaliMeaning": "বিশ্বব্যাপী / সারা বিশ্বজুড়ে",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Universal, global, international, planetary",
+    "antonyms": "Local, regional, limited, parochial",
+    "englishMeaning": "Extending or reaching throughout the world.",
+    "exampleSentence": "Her legacy continues in many projects worldwide, such as in 'Plant for the Planet: The Billion Tree Campaign'.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Global",
+      "Universal"
+    ],
+    "crossRefMatchCount": 2,
+    "crossRefSynonyms": [
+      "Global",
+      "Universal"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 104
+  },
+  {
     "id": "vocab-u2-l2-17",
     "word": "Devotion",
     "bengaliMeaning": "ভক্তি / নিষ্ঠা / আত্মনিবেদন / অনুরাগ",
@@ -2791,32 +3562,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u2-l3-20",
-    "word": "Acclaimed",
-    "bengaliMeaning": "নন্দিত / সর্বজনস্বীকৃত / প্রশংসিত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Celebrated, lauded, acclaimed, distinguished, praised",
-    "antonyms": "Disdained, neglected, condemned, ignored",
-    "englishMeaning": "Publicly praised and celebrated with high honor.",
-    "exampleSentence": "He became internationally acclaimed as a great painter of classic dimensions.",
-    "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Unit 2 • Lesson 3",
-    "sources": [
-      "Unit 2: Lesson 3 (Art)",
-      "Unit 2: Art and Craft: Art"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Distinguished"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Distinguished"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l4-08",
     "word": "Empowerment",
     "bengaliMeaning": "ক্ষমতায়ন / স্বনির্ভরতা ও মর্যাদার শক্তি",
@@ -2829,7 +3574,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
       "Unit 9: Lesson 4 (Story of Shilpi)",
-      "Unit 9: Adolescence: Adolescence and Some (Related) Problems in Bangladesh"
+      "Unit 9: Adolescence: Adolescence and Some (Related) Problems in Bangladesh",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3270,31 +4016,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u3-l1-12",
-    "word": "Wailed",
-    "bengaliMeaning": "বিলাপ করেছিল / কেঁদে উঠেছিল / হাহাকার করেছিল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Mourned, lamented, wept, cried out, sobbed",
-    "antonyms": "Rejoiced, celebrated, cheered",
-    "englishMeaning": "Made a prolonged high-pitched cry of pain, grief, or anger.",
-    "exampleSentence": "One day, arriving in Amara, Where gods held court, when she danced like a desolate wagtail, Bengal's rivers, fields, flowers, wailed like strings of bells on her feet.",
-    "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
-    "boardExamTag": "Unit 3 • Lesson 1",
-    "sources": [
-      "Unit 3: Lesson 1 (Myths of Bengal)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Mourned"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Mourned"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u3-l2-10",
     "word": "Ascended",
     "bengaliMeaning": "উপরে উঠল / আরোহণ করল / ঊর্ধ্বগমন করল",
@@ -3663,7 +4384,8 @@ export const hscVocabularyList = [
     "lesson": "Water, Water Everywhere...",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
-      "Unit 12: Environment and Nature: Water, Water Everywhere..."
+      "Unit 12: Environment and Nature: Water, Water Everywhere...",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3674,32 +4396,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Expire"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l2-strike",
-    "word": "Strike",
-    "bengaliMeaning": "ধর্মঘট / কর্মবিরতি",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Walkout, protest, boycott, work stoppage",
-    "antonyms": "Compliance, return to work, submission",
-    "englishMeaning": "A refusal to work organized by a body of employees as a form of protest.",
-    "exampleSentence": "Instead of going to school, she made a large sign that read 'Skolstrejk för Klimatet' (SCHOOL STRIKE FOR CLIMATE), and calmly sat down outside the Swedish parliament.",
-    "unit": "Unit 12: Environment and Nature: The Greta Effect",
-    "lesson": "The Greta Effect",
-    "boardExamTag": "Unit 12 • Lesson 2",
-    "sources": [
-      "Unit 12: Environment and Nature: The Greta Effect"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Boycott"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Boycott"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -3825,31 +4521,6 @@ export const hscVocabularyList = [
       "Instinctive"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l1-25",
-    "word": "Negligible",
-    "bengaliMeaning": "নগণ্য / তুচ্ছ / উপেক্ষণীয়",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Insignificant, trivial, minor, slight, petty",
-    "antonyms": "Significant, substantial, important, remarkable",
-    "englishMeaning": "So small or unimportant as to be not worth considering.",
-    "exampleSentence": "The nephew commented, \"Your Majesty can see how things are going on.\" \"Astonishing!\" replied the King, \"the din isn't negligible.\" \"Not only the noise,\" said the nephew.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Substantial"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Substantial"
-    ],
     "priority": 102
   },
   {
@@ -4203,31 +4874,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u10-l2-08",
-    "word": "Enormous",
-    "bengaliMeaning": "প্রকাণ্ড / বিশালাকার / দানবাকৃতি",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Huge, massive, gigantic, colossal, immense",
-    "antonyms": "Small, tiny, minute, miniature",
-    "englishMeaning": "Very large in size, quantity, or extent.",
-    "exampleSentence": "The scientist constructed an enormous machine inside the hilltop cave.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Miniature"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Miniature"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u10-l2-11",
     "word": "Extravagant",
     "bengaliMeaning": "অতিরিক্ত / অপব্যয়ী / বাড়াবাড়ি",
@@ -4275,31 +4921,6 @@ export const hscVocabularyList = [
       "Gratitude"
     ],
     "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-l2-21",
-    "word": "Liberty",
-    "bengaliMeaning": "স্বাধীনতা / স্বাধিকার",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Freedom, autonomy, independence, emancipation",
-    "antonyms": "Captivity, bondage, imprisonment, slavery",
-    "englishMeaning": "The state of being free within society from oppressive restrictions.",
-    "exampleSentence": "Article 3: Everyone has the right to life, liberty and security of person.",
-    "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
-    "boardExamTag": "Unit 10 • Lesson 2",
-    "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Slavery"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Slavery"
-    ],
     "priority": 102
   },
   {
@@ -4473,31 +5094,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Courteous"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u10-09",
-    "word": "Claim",
-    "bengaliMeaning": "দাবি করা / ঘোষণা দেওয়া / অভিমত প্রকাশ করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Assert, Declare, State, Maintain, Profess",
-    "antonyms": "Deny, Disclaim, Renounce, Disavow",
-    "englishMeaning": "To state or assert that something is true or belongs to oneself.",
-    "exampleSentence": "We cannot claim ourselves civilized when we lack them.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Maintain"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Maintain"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -4803,31 +5399,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-16",
-    "word": "Critical",
-    "bengaliMeaning": "জটিল / সংকটপূর্ণ / গুরুত্বপূর্ণ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Troublesome, crucial, vital, decisive, pivotal",
-    "antonyms": "Uncritical, trivial, minor, insignificant",
-    "englishMeaning": "Having decisive importance in the success, failure, or development of something.",
-    "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Crucial"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Crucial"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-17",
     "word": "Determinant",
     "bengaliMeaning": "নির্ধারক / নির্ণায়ক উপাদান",
@@ -4873,31 +5444,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Financial"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u9-l1-24",
-    "word": "Global",
-    "bengaliMeaning": "বিশ্বব্যাপী / সামগ্রিক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Worldwide, cosmopolitan, universal, international",
-    "antonyms": "Local, regional, provincial, isolated",
-    "englishMeaning": "Relating to or encompassing the whole world; worldwide.",
-    "exampleSentence": "Alex proved that he was a global citizen.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Universal"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Universal"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -5153,31 +5699,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u9-l1-54",
-    "word": "Universal",
-    "bengaliMeaning": "সার্বজনীন / সর্বব্যাপী",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Worldwide, general, all-inclusive, omnipresent",
-    "antonyms": "Particular, individual, local, specific",
-    "englishMeaning": "Applicable to, existing in, or characteristic of all people, places, or conditions.",
-    "exampleSentence": "The biological determinants of adolescence are fairly universal: however.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Individual"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [
-      "Individual"
-    ],
-    "priority": 102
-  },
-  {
     "id": "vocab-u9-l1-60",
     "word": "Span",
     "bengaliMeaning": "ব্যাপ্তি / বিস্তার / স্থিতিকাল",
@@ -5223,31 +5744,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Risk"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u1-l2-15",
-    "word": "Crucial",
-    "bengaliMeaning": "অত্যন্ত গুরুত্বপূর্ণ / নির্ণায়ক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Vital, critical, essential, pivotal, decisive",
-    "antonyms": "Trivial, minor, insignificant, optional",
-    "englishMeaning": "Decisive or critical, especially in the success or failure of something.",
-    "exampleSentence": "Edtech companies play a crucial role in advancing the use of AI in the classroom and ensuring that it is used ethically and responsibly.",
-    "unit": "Unit 1: Lesson 2 (Education and Technology)",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Critical"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Critical"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -6289,7 +6785,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -6939,7 +7436,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
-      "Unit 9: Lesson 3 (Child Marriage)"
+      "Unit 9: Lesson 3 (Child Marriage)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -7329,31 +7827,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u12-l3-06",
-    "word": "Habitat",
-    "bengaliMeaning": "প্রাকৃতিক আবাসস্থল / প্রাণীর বেঁচে থাকার প্রাকৃতিক ক্ষেত্র",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Natural home, territory, biotope, ecosystem, native environment",
-    "antonyms": "Captivity, artificial cage, unnatural enclosure",
-    "englishMeaning": "The natural home or environment of an animal, plant, or other organism.",
-    "exampleSentence": ") The Asian small-clawed otter lives in riverine habitats, freshwater wetlands and mangrove swamps.",
-    "unit": "Unit 12: Lesson 3 (Endangered Species)",
-    "boardExamTag": "Unit 12 • Lesson 3",
-    "sources": [
-      "Unit 12: Lesson 3 (Endangered Species)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Territory"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Territory"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u12-l4-03",
     "word": "Disproportionately",
     "bengaliMeaning": "অসমভাবে / মাত্রাতিরিক্ত অসম অনুপাতে",
@@ -7376,31 +7849,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Fairly"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l4-05",
-    "word": "Overconsumption",
-    "bengaliMeaning": "অতিরিক্ত ভোগ / সম্পদের লাগামহীন অপব্যয়",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Excessive consumption, squandering, depletion, resource gorging",
-    "antonyms": "Conservation, moderation, frugal stewardship",
-    "englishMeaning": "The action of consuming something in excessive amounts.",
-    "exampleSentence": "It recognizes that currently the negative impacts of ecological devastation, particularly the environmental harm and hazards created by overconsumption of resources in the global North and by elites worldwide, fall disproportionately on the world's poor, the vast majority of whom are people of color, especially women and children.",
-    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
-    "boardExamTag": "Unit 12 • Lesson 4",
-    "sources": [
-      "Unit 12: Lesson 4 (Environmental Justice)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Depletion"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Depletion"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -7598,7 +8046,8 @@ export const hscVocabularyList = [
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
+      "Unit 5: Human Rights: Are We Aware of These Rights-II?",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -7635,32 +8084,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Apathy"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u5-l2-slavery",
-    "word": "Slavery",
-    "bengaliMeaning": "দাসপ্রথা / দাসত্ব",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Bondage, enslavement, captivity, servitude",
-    "antonyms": "Freedom, liberation, emancipation",
-    "englishMeaning": "The state of being a slave; the practice of owning slaves.",
-    "exampleSentence": "Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
-    "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
-    "lesson": "Are We Aware of These Rights-II?",
-    "boardExamTag": "Unit 5 • Lesson 2",
-    "sources": [
-      "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Servitude"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Servitude"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -9242,7 +9665,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -9438,32 +9862,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u4-l2-69",
-    "word": "Prodigious",
-    "bengaliMeaning": "অতিবৃহৎ / বিপুল / অপূর্ব",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Colossal, immense, enormous, mammoth, gigantic",
-    "antonyms": "Tiny, small, little, trivial, miniscule",
-    "englishMeaning": "Remarkably or impressively great in extent, size, or degree.",
-    "exampleSentence": "So let freedom ring from the prodigious hilltops of New Hampshire.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Enormous"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Enormous"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u4-l2-70",
     "word": "Prosperity",
     "bengaliMeaning": "সমৃদ্ধি / প্রাচুর্য / আর্থিক স্বচ্ছলতা",
@@ -9511,32 +9909,6 @@ export const hscVocabularyList = [
     "crossRefMatchCount": 1,
     "crossRefSynonyms": [
       "Manifest"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u4-l2-77",
-    "word": "Segregation",
-    "bengaliMeaning": "বিচ্ছিন্নকরণ / বর্ণবিভেদ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Isolation, separation, partition, discrimination",
-    "antonyms": "Integration, combination, inclusion, desegregation",
-    "englishMeaning": "The enforced separation of different racial groups in a country, community, or establishment.",
-    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Discrimination"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Discrimination"
     ],
     "crossRefAntonyms": [],
     "priority": 102
@@ -9591,6 +9963,1114 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Discord"
     ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u12-l2-degradation",
+    "word": "Degradation",
+    "bengaliMeaning": "পরিবেশ দূষণ বা অবক্ষয়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Deterioration, degeneration, decline, breakdown",
+    "antonyms": "Improvement, restoration, conservation, renewal",
+    "englishMeaning": "The condition or process of degrading or being degraded.",
+    "exampleSentence": "Did you ever feel angry like Greta seeing environmental degradation in your locality?",
+    "unit": "Unit 12: Environment and Nature: The Greta Effect",
+    "lesson": "The Greta Effect",
+    "boardExamTag": "Unit 12 • Lesson 2",
+    "sources": [
+      "Unit 12: Environment and Nature: The Greta Effect",
+      "Unit 4: Lesson 3 (Great Women)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Conservation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Conservation"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u7-l2-03",
+    "word": "Perseverance",
+    "bengaliMeaning": "অধ্যবসায় / অবিচল নিষ্ঠা ও একনিষ্ঠ সাধনা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Persistence, dedication, tenacity, steadfastness, resolve",
+    "antonyms": "Laziness, quitting, surrender, irresolution",
+    "englishMeaning": "Persistence in doing something despite difficulty or delay in achieving success.",
+    "exampleSentence": "Factors like chance, dedication and creating opportunities are important for anyone's success, but a sportsperson should also have discipline and perseverance to succeed.",
+    "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
+    "boardExamTag": "Unit 7 • Lesson 2",
+    "sources": [
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
+      "Unit 7: Youthful Achievers: Scaling a Mountain Peak"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Resolve"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Resolve"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-23",
+    "word": "Maintenance",
+    "bengaliMeaning": "রক্ষণাবেক্ষণ / সংস্কার / দেখাশোনা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Upkeep, preservation, conservation, sustenance",
+    "antonyms": "Neglect, destruction, abandonment, disregard",
+    "englishMeaning": "The process of preserving a condition or keeping something in good repair.",
+    "exampleSentence": "A large maintenance crew was needed, and more personnel to supervise them.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Conservation"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Conservation"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l1-38",
+    "word": "Satire",
+    "bengaliMeaning": "ব্যঙ্গরচনা / বিদ্রূপাত্মক সাহিত্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Parody, lampoon, sarcasm, irony, mockery",
+    "antonyms": "Praise, tribute, eulogy, panegyric",
+    "englishMeaning": "The use of humor, irony, or exaggeration to expose human folly and vices.",
+    "exampleSentence": "The Parrot's Tale is a world-famous political and pedagogical satire by Tagore.",
+    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
+    "boardExamTag": "Unit 1 • Lesson 1",
+    "sources": [
+      "Unit 1: Lesson 1 (The Parrot's Tale)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Tribute"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Tribute"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-32",
+    "word": "Senior",
+    "bengaliMeaning": "বয়োজ্যেষ্ঠ / ঊর্ধ্বতন / প্রবীণ ব্যক্তি",
+    "partsOfSpeech": "Noun / Adjective",
+    "synonyms": "Elder, Older, Superior, Higher-ranking",
+    "antonyms": "Junior, Subordinate, Youth, Minor",
+    "englishMeaning": "A person who is older or has a higher rank or standing than another.",
+    "exampleSentence": "Greet the most senior first and gradually others.",
+    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
+    "boardExamTag": "Unit 10 • Lesson 1",
+    "sources": [
+      "Unit 10: Lesson 1 (Manners Around the World)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Superior"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Superior"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l1-37",
+    "word": "Pose",
+    "bengaliMeaning": "সৃষ্টি করা / উত্থাপন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Cause, present, create, produce",
+    "antonyms": "Hide, conceal, resolve",
+    "englishMeaning": "To present or constitute a problem, danger, or difficulty.",
+    "exampleSentence": "In addition, even when services do exist, provider attitudes about adolescents often pose a significant barrier to the use of those services.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Resolve"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Resolve"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u9-l1-52",
+    "word": "Tremendous",
+    "bengaliMeaning": "বিশাল / প্রচণ্ড / অসাধারণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Great, awesome, immense, colossal, huge",
+    "antonyms": "Tiny, insignificant, trivial, slight",
+    "englishMeaning": "Extremely great in scale, amount, intensity, or potential.",
+    "exampleSentence": "Adolescence is a time of tremendous intellectual and emotional growth.",
+    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+    "boardExamTag": "Unit 9 • Lesson 1",
+    "sources": [
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Immense"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Immense"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l3-12",
+    "word": "Distinguished",
+    "bengaliMeaning": "বিশিষ্ট / প্রখ্যাত / অনন্য মর্যাদাপূর্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Eminent, illustrious, celebrated, renowned, honored",
+    "antonyms": "Obscure, unknown, undistinguished, common",
+    "englishMeaning": "Successful, authoritative, and commanding great public respect.",
+    "exampleSentence": "Sheikh Mohammed Sultan, widely known as S M Sultan, was a distinguished Bangladeshi painter renowned for his distinctive personal and artistic style.",
+    "unit": "Unit 2: Lesson 3 (Art)",
+    "boardExamTag": "Unit 2 • Lesson 3",
+    "sources": [
+      "Unit 2: Lesson 3 (Art)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Celebrated"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l2-12",
+    "word": "Mourned",
+    "bengaliMeaning": "শোক প্রকাশ করল / বিলাপ করল / কাতর হলো",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Grieved, lamented, sorrowed, deplored, wept for",
+    "antonyms": "Celebrated, rejoiced, rejoiced at",
+    "englishMeaning": "Felt or expressed deep sorrow for the death of someone loved.",
+    "exampleSentence": "He eventually reached Sicily, where he mourned Icarus and named the sea where his son fell the Icarian Sea in his memory.",
+    "unit": "Unit 3: Lesson 2 (Icarus)",
+    "boardExamTag": "Unit 3 • Lesson 2",
+    "sources": [
+      "Unit 3: Lesson 2 (Icarus)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Celebrated"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u3-l3-04",
+    "word": "Apparent",
+    "bengaliMeaning": "দৃশ্যমান / স্পষ্ট / আপাতদৃষ্ট",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Evident, visible, noticeable, obvious, perceptible",
+    "antonyms": "Hidden, concealed, obscure, disguised",
+    "englishMeaning": "Clearly visible or understood; seeming rather than actual.",
+    "exampleSentence": "He is usually depicted in paats or scroll paintings riding a fierce-looking Bengal tiger, a snake in his hand, but in no apparent danger.",
+    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
+    "boardExamTag": "Unit 3 • Lesson 3",
+    "sources": [
+      "Unit 3: Lesson 3 (The Legend of Gazi)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Evident"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Evident"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u7-l1-04",
+    "word": "Grit",
+    "bengaliMeaning": "দৃঢ় মানসিক মনোবল / অটল সাহসিকতা ও চরিত্রবল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Courage, resolve, determination, pluck, fortitude",
+    "antonyms": "Cowardice, spinelessness, timidity",
+    "englishMeaning": "Courage and resolve; strength of character.",
+    "exampleSentence": "Apart from stamina and practice of long distance swimming, one must have the grit, determination and courage to subdue the Channel.",
+    "unit": "Unit 7: Lesson 1 (Brojen Das)",
+    "boardExamTag": "Unit 7 • Lesson 1",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Resolve"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Resolve"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u7-l1-09",
+    "word": "Proverbial",
+    "bengaliMeaning": "প্রবাদপ্রতিম / বহুল পরিচিত ও দৃষ্টান্তমূলক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Legendary, well-known, famous, celebrated, renowned",
+    "antonyms": "Unknown, obscure, nameless",
+    "englishMeaning": "Well known, especially so as to be stereotypical.",
+    "exampleSentence": "I could see the record, like the proverbial carrot, dangling before my swollen eyes....",
+    "unit": "Unit 7: Lesson 1 (Brojen Das)",
+    "boardExamTag": "Unit 7 • Lesson 1",
+    "sources": [
+      "Unit 7: Lesson 1 (Brojen Das)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Celebrated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Celebrated"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u7-l3-01",
+    "word": "Miniature",
+    "bengaliMeaning": "ক্ষুদ্র সংস্করণের / ক্ষুদ্রাকৃতির খেলনা",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Small-scale, tiny, diminutive, compact, micro",
+    "antonyms": "Giant, colossal, immense, massive",
+    "englishMeaning": "Representing or being on a small or much smaller scale than normal.",
+    "exampleSentence": "While toys for boys include cars, guns or footballs, girls have to be satisfied with dolls (often Barbie dolls) and doll-houses or miniature cooking utensils.",
+    "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
+    "boardExamTag": "Unit 7 • Lesson 3",
+    "sources": [
+      "Unit 7: Lesson 3 (The Unbeaten Girls)"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Immense"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Immense"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l2-instant",
+    "word": "Instant",
+    "bengaliMeaning": "তাৎক্ষণিক / আশু",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Immediate, instantaneous, prompt, swift",
+    "antonyms": "Delayed, sluggish, gradual, postponed",
+    "englishMeaning": "Happening or coming immediately.",
+    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
+    "unit": "Unit 1: Education and Life: Education and Technology",
+    "lesson": "Education and Technology",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Education and Life: Education and Technology"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Immediate"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Immediate"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u2-l2-heritage",
+    "word": "Heritage",
+    "bengaliMeaning": "ঐতিহ্য / উত্তরাধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Inheritance, legacy, tradition, cultural birthright",
+    "antonyms": "Novelty, disconnection, alienation",
+    "englishMeaning": "Property or cultural attributes that are inherited from past generations.",
+    "exampleSentence": "Bangladesh has a heritage of rich folk music which includes both religious and secular songs.",
+    "unit": "Unit 2: Art and Craft: Folk Music",
+    "lesson": "Folk Music",
+    "boardExamTag": "Unit 2 • Lesson 2",
+    "sources": [
+      "Unit 2: Art and Craft: Folk Music"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Legacy"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Legacy"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u1-l2-security",
+    "word": "Security",
+    "bengaliMeaning": "নিরাপত্তা / সুরক্ষা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Safety, protection, safeguard, shield",
+    "antonyms": "Danger, vulnerability, insecurity, peril",
+    "englishMeaning": "The state of being free from danger or threat.",
+    "exampleSentence": "AI-powered educational tools may collect and store sensitive personal data, which raises concerns about privacy and security.",
+    "unit": "Unit 1: Education and Life: Education and Technology",
+    "lesson": "Education and Technology",
+    "boardExamTag": "Unit 1 • Lesson 2",
+    "sources": [
+      "Unit 1: Education and Life: Education and Technology"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Insecurity"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Insecurity"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u5-l3-consciousness",
+    "word": "Consciousness",
+    "bengaliMeaning": "চেতনা / সচেতনতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Awareness, mindfulness, perception, alertness",
+    "antonyms": "Unconsciousness, oblivion, ignorance",
+    "englishMeaning": "The state of being aware of and responsive to one's surroundings or rights.",
+    "exampleSentence": "Educational Consciousness: It is said that education makes an individual aware of his/her own rights and the rights of others.",
+    "unit": "Unit 5: Human Rights: Rights to Health and Education",
+    "lesson": "Rights to Health and Education",
+    "boardExamTag": "Unit 5 • Lesson 3",
+    "sources": [
+      "Unit 5: Human Rights: Rights to Health and Education"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Awareness"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Awareness"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u11-l4-repose",
+    "word": "Repose",
+    "bengaliMeaning": "প্রশান্তি / বিশ্রাম / শয়ন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Tranquility, rest, calm, peace",
+    "antonyms": "Restlessness, agitation, turmoil, exhaustion",
+    "englishMeaning": "A state of rest, sleep, or tranquility.",
+    "exampleSentence": "Take of this grain, which in my garden grows, And grows for you; Make bread of it: and that repose And peace, which ev'ry where With so much earnestness you do pursue, Is only there.",
+    "unit": "Unit 11: Peace and Conflict: Peace in Literature",
+    "lesson": "Peace in Literature",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Peace and Conflict: Peace in Literature"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Turmoil"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Turmoil"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u11-l3-ballad",
+    "word": "Ballad",
+    "bengaliMeaning": "গাথা কবিতা / গীতিকবিতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Poem, narrative verse, song, folk lyric",
+    "antonyms": "Treatise, monograph, document",
+    "englishMeaning": "A poem or song narrating a story in short stanzas.",
+    "exampleSentence": "Springsteen wrote the song for his 1995 album, inspired by Woody Guthrie's \"The Ballad of Tom Joad.\" Guthrie's ballad, in turn, was inspired by John Steinbeck's 1939 novel, The Grapes of Wrath.",
+    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
+    "lesson": "Stories From Gaza",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Peace and Conflict: Stories From Gaza"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Treatise"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Treatise"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-5",
+    "word": "Advanced",
+    "bengaliMeaning": "উন্নত / প্রগতিশীল / আধুনিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Developed, progressive, forward-looking, refined",
+    "antonyms": "Basic, primitive, backward, undeveloped",
+    "englishMeaning": "Far along in progress or development; ahead of standard times.",
+    "exampleSentence": "We all accept the need for some form of socialism to enable our people to catch up with the advanced countries of this world.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Progressive"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Progressive"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-8",
+    "word": "Anarchy",
+    "bengaliMeaning": "নৈরাজ্য / বিশৃঙ্খলা / অরাজকতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Misrule, chaos, lawlessness, disorder, turmoil",
+    "antonyms": "Order, discipline, lawfulness, governance, harmony",
+    "englishMeaning": "A state of disorder due to absence or non-recognition of authority or other controlling systems.",
+    "exampleSentence": "They feared that unchecked oppression would inevitably lead to widespread social anarchy.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Turmoil"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Turmoil"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-22",
+    "word": "Convicted",
+    "bengaliMeaning": "দোষী সাব্যস্ত / দণ্ডপ্রাপ্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Sentenced, condemned, found guilty, imprisoned",
+    "antonyms": "Acquitted, cleared, exonerated, released",
+    "englishMeaning": "Having been officially found guilty of a criminal offense by the verdict of a jury or judge.",
+    "exampleSentence": "I am a convicted prisoner serving five years for leaving the country without a permit.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Imprisoned"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Imprisoned"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l2-47",
+    "word": "Import",
+    "bengaliMeaning": "তাৎপর্য / নিহিতার্থ / গুরুত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Significance, implication, meaning, importance, weight",
+    "antonyms": "Insignificance, triviality, meaninglessness",
+    "englishMeaning": "The implicit meaning, significance, or profound importance of something.",
+    "exampleSentence": "You are fully aware of the events that are going on and understand their import.",
+    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
+    "boardExamTag": "Unit 4 • Lesson 2",
+    "sources": [
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 4: Transformative Speeches: Three Speeches"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Significance"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Significance"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-1",
+    "word": "Anti-colonial",
+    "bengaliMeaning": "উপনিবেশকতার বিরোধী / ঔপনিবেশিকতাবিরোধী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Independence-seeking, nationalist, anti-imperialist, liberationist",
+    "antonyms": "Colonial, imperialist, subjugating",
+    "englishMeaning": "Opposed to colonial rule or imperialism; seeking national sovereignty and independence.",
+    "exampleSentence": "In 1923, she founded Deepali Sangha which served as a training institute for anti-colonial activists.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Colonial"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Colonial"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-2",
+    "word": "Assert",
+    "bengaliMeaning": "জোর দাবি করা / প্রতিষ্ঠিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Proclaim, insist on, affirm, declare, maintain",
+    "antonyms": "Deny, oppose, disclaim, surrender",
+    "englishMeaning": "State a fact or belief confidently and forcefully; promote rights or leadership qualities.",
+    "exampleSentence": "To give women a positive image in the community and to assert their leadership qualities.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Maintain"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Maintain"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-4",
+    "word": "Awareness",
+    "bengaliMeaning": "সচেতনতা / সংবেদনশীলতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Consciousness, mindfulness, responsiveness, understanding, recognition",
+    "antonyms": "Unconsciousness, ignorance, obliviousness, heedlessness",
+    "englishMeaning": "Knowledge or perception of a situation, fact, or critical environmental need.",
+    "exampleSentence": "The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Consciousness"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Consciousness"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-5",
+    "word": "Barricade",
+    "bengaliMeaning": "প্রতিবন্ধক / প্রতিরোধ প্রাচীর",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Blockade, barrier, hurdle, obstacle, defense, roadblock",
+    "antonyms": "Open path, free passage, access",
+    "englishMeaning": "An improvised barrier that blocks passage and prevents progress during social movements.",
+    "exampleSentence": "In Cheman Ara's article entitled 'The Women who broke the barricades', it is stated that their names shine through.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Barrier"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Barrier"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-8",
+    "word": "Celebrated",
+    "bengaliMeaning": "সুপ্রসিদ্ধ / নন্দিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Famous, renowned, eminent, distinguished, notable, admired",
+    "antonyms": "Unknown, obscure, infamous, notorious",
+    "englishMeaning": "Widely known and praised for great creative or intellectual accomplishments.",
+    "exampleSentence": "She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Distinguished"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Distinguished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-16",
+    "word": "Defamation",
+    "bengaliMeaning": "মানহানি / অপবাদ / কলঙ্ক লেপন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Slander, vilification, calumny, libel, disparagement",
+    "antonyms": "Praise, compliment, commendation, honor",
+    "englishMeaning": "The action of damaging the good reputation of someone through false claims.",
+    "exampleSentence": "Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Slander"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Slander"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-17",
+    "word": "Democratic",
+    "bengaliMeaning": "গণতান্ত্রিক / সমতাভিত্তিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Self-governing, autonomous, representative, egalitarian",
+    "antonyms": "Autocratic, repressive, tyrannical, authoritarian",
+    "englishMeaning": "Relating to or supporting democracy or its principles of equality and liberty.",
+    "exampleSentence": "Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Repressive"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Repressive"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-22",
+    "word": "Earnest",
+    "bengaliMeaning": "আন্তরিক / পূর্ণোদ্যমে নিয়োজিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Heartfelt, warm, sincere, solemn, serious, resolute",
+    "antonyms": "Superficial, frivolous, insincere, casual",
+    "englishMeaning": "Resulting from or showing sincere and intense conviction and dedication.",
+    "exampleSentence": "In 1918 the Radium Institute began to operate in earnest, and it was to become a universal centre for nuclear physics and chemistry.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Casual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Casual"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-24",
+    "word": "Educationist",
+    "bengaliMeaning": "শিক্ষাবিদ / শিক্ষাব্রতী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Educationalist, educator, academician, scholar, pedagogue",
+    "antonyms": "Pupil, student, learner",
+    "englishMeaning": "A specialist in the theory and practice of education.",
+    "exampleSentence": "She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Scholar"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Scholar"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-25",
+    "word": "Emancipation",
+    "bengaliMeaning": "মুক্তি / স্বাধীনতা / শৃংখলমোচন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Liberation, freedom, deliverance, enfranchisement",
+    "antonyms": "Enslavement, oppression, subjugation, bondage",
+    "englishMeaning": "The fact or process of being set free from legal, social, or political restrictions.",
+    "exampleSentence": "Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Oppression"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Oppression"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-27",
+    "word": "Enshrined",
+    "bengaliMeaning": "সযত্নে সুরক্ষিত রাখা / মর্যাদার সাথে প্রতিষ্ঠিত",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Preserved, cherished, treasured, honored, safeguarded",
+    "antonyms": "Desecrated, defiled, forgotten, rejected",
+    "englishMeaning": "Placed a revered or precious object or memory in an appropriate shrine or sanctuary.",
+    "exampleSentence": "In 1995 Marie Curie's ashes were enshrined in the Panthéon in Paris; she was the first woman to receive this honour for her own achievements.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Cherished"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Cherished"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-29",
+    "word": "Expose",
+    "bengaliMeaning": "(সত্য) প্রকাশ করা / উন্মোচন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Uncover, reveal, disclose, lay bare, unmask",
+    "antonyms": "Cover, hide, conceal, mask",
+    "englishMeaning": "Make something visible by uncovering it; reveal the true, objectionable nature of something.",
+    "exampleSentence": "Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Reveal"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Reveal"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-33",
+    "word": "Immediate",
+    "bengaliMeaning": "আশু / অবিলম্বে প্রয়োজন এমন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Imminent, urgent, pressing, instant, prompt",
+    "antonyms": "Distant, eventual, delayed, deferred",
+    "englishMeaning": "Occurring or done at once; nearest in time or relationship.",
+    "exampleSentence": "Using the income to meet immediate domestic needs such as education of their children.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Instant"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Instant"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-37",
+    "word": "Insecurity",
+    "bengaliMeaning": "নিরাপত্তাহীনতা / অনিশ্চয়তা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Uncertainty, vulnerability, peril, instability, anxiety",
+    "antonyms": "Security, stability, certainty, safety",
+    "englishMeaning": "Uncertainty or anxiety about oneself; lack of confidence or protection.",
+    "exampleSentence": "Assists people to make the link between environmental degradation and many of the problems they face, including poverty and livelihood insecurity.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Security"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Security"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-38",
+    "word": "Intensive",
+    "bengaliMeaning": "প্রগাঢ় / গভীর / কঠোর শ্রমসাধ্য",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Concentrated, rigorous, exhaustive, thorough, profound",
+    "antonyms": "Sketchy, superficial, easy, casual",
+    "englishMeaning": "Concentrated on a single subject or into a short time; very thorough or vigorous.",
+    "exampleSentence": "The birth of her two daughters did not interrupt Marie's intensive scientific work.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Casual"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [
+      "Casual"
+    ],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-39",
+    "word": "Legacy",
+    "bengaliMeaning": "ঐতিহ্য / পরম্পরা / উত্তরাধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Heritage, tradition, bequest, succession, footprint",
+    "antonyms": "Debt, blank slate, eradication",
+    "englishMeaning": "Something left or handed down by a predecessor; lasting achievements.",
+    "exampleSentence": "Rokeya's legacy is strong among subsequent generations of women in the region.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Heritage"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Heritage"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-51",
+    "word": "Protest",
+    "bengaliMeaning": "প্রতিবাদ / বিক্ষোভ / গণদাবি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Objection, demonstration, rally, dissent, grievance",
+    "antonyms": "Agreement, approval, submission, compliance",
+    "englishMeaning": "A statement or action expressing disapproval of or objection to something.",
+    "exampleSentence": "She was the only woman seen standing near Sheikh Mujibur Rahman during those protests.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Demonstration"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Demonstration"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-56",
+    "word": "Showcased",
+    "bengaliMeaning": "উন্মোচন করেছিল / ফুটিয়ে তুলেছিল",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Displayed, exhibited, presented, demonstrated, featured",
+    "antonyms": "Concealed, masked, shrouded, obscured",
+    "englishMeaning": "Exhibited or displayed prominently in an attractive manner.",
+    "exampleSentence": "Razia Khan Amin, who joined as a faculty member of the department in 1962, showcased her activism through her writing and her cultural interests.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Demonstrated"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Demonstrated"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-60",
+    "word": "Superior",
+    "bengaliMeaning": "শ্রেয়তর / অপেক্ষাকৃত উৎকৃষ্ট",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Better, higher, finer, advanced, surpassing",
+    "antonyms": "Inferior, poorer, subordinate",
+    "englishMeaning": "Higher in rank, status, or quality than another.",
+    "exampleSentence": "Pitchblende, a mineral whose activity, superior to that of pure uranium, could be explained only by the presence in the ore of small quantities of an unknown substance.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Advanced"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Advanced"
+    ],
+    "crossRefAntonyms": [],
+    "priority": 102
+  },
+  {
+    "id": "vocab-u4-l3-68",
+    "word": "Virtually",
+    "bengaliMeaning": "কার্যত / প্রায় পুরোপুরি",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Nearly, almost, practically, effectively",
+    "antonyms": "Completely, entirely, partially",
+    "englishMeaning": "Nearly; almost; for all practical purposes.",
+    "exampleSentence": "Sklodowska worked far into the night in her student-quarters garret and virtually lived on bread and butter and tea.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": true,
+    "crossReferencedWords": [
+      "Effectively"
+    ],
+    "crossRefMatchCount": 1,
+    "crossRefSynonyms": [
+      "Effectively"
+    ],
+    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -10343,7 +11823,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
-      "Unit 1: Lesson 3 (Children in School)"
+      "Unit 1: Lesson 3 (Children in School)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -10574,7 +12055,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
-      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+      "Unit 9: Lesson 2 (Problems in Bangladesh)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -10930,28 +12412,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u12-l2-degradation",
-    "word": "Degradation",
-    "bengaliMeaning": "পরিবেশ দূষণ বা অবক্ষয়",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Deterioration, degeneration, decline, breakdown",
-    "antonyms": "Improvement, restoration, conservation, renewal",
-    "englishMeaning": "The condition or process of degrading or being degraded.",
-    "exampleSentence": "Did you ever feel angry like Greta seeing environmental degradation in your locality?",
-    "unit": "Unit 12: Environment and Nature: The Greta Effect",
-    "lesson": "The Greta Effect",
-    "boardExamTag": "Unit 12 • Lesson 2",
-    "sources": [
-      "Unit 12: Environment and Nature: The Greta Effect"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u12-l4-reparations",
     "word": "Reparations",
     "bengaliMeaning": "ক্ষতিপূরণ / ক্ষতিসাধন সংশোধন",
@@ -11139,28 +12599,6 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 5: Lesson 4 (Coal Miners)",
       "Unit 5: Human Rights: Coal Miners"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u7-l2-03",
-    "word": "Perseverance",
-    "bengaliMeaning": "অধ্যবসায় / অবিচল নিষ্ঠা ও একনিষ্ঠ সাধনা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Persistence, dedication, tenacity, steadfastness, resolve",
-    "antonyms": "Laziness, quitting, surrender, irresolution",
-    "englishMeaning": "Persistence in doing something despite difficulty or delay in achieving success.",
-    "exampleSentence": "Factors like chance, dedication and creating opportunities are important for anyone's success, but a sportsperson should also have discipline and perseverance to succeed.",
-    "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-    "boardExamTag": "Unit 7 • Lesson 2",
-    "sources": [
-      "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
-      "Unit 7: Youthful Achievers: Scaling a Mountain Peak"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -11553,27 +12991,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u1-l1-23",
-    "word": "Maintenance",
-    "bengaliMeaning": "রক্ষণাবেক্ষণ / সংস্কার / দেখাশোনা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Upkeep, preservation, conservation, sustenance",
-    "antonyms": "Neglect, destruction, abandonment, disregard",
-    "englishMeaning": "The process of preserving a condition or keeping something in good repair.",
-    "exampleSentence": "A large maintenance crew was needed, and more personnel to supervise them.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u1-l1-27",
     "word": "Personnel",
     "bengaliMeaning": "কর্মীবৃন্দ / কর্মকর্তা-কর্মচারী / কর্মী",
@@ -11687,27 +13104,6 @@ export const hscVocabularyList = [
     "antonyms": "Praise, applaud, commend, laud",
     "englishMeaning": "To make false and damaging spoken statements about someone.",
     "exampleSentence": "Those who haven't got a share of the royal bounty are resorting to slander.\" Everything became clear to the King and he rewarded his nephew with a gold chain.",
-    "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
-    "boardExamTag": "Unit 1 • Lesson 1",
-    "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u1-l1-38",
-    "word": "Satire",
-    "bengaliMeaning": "ব্যঙ্গরচনা / বিদ্রূপাত্মক সাহিত্য",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Parody, lampoon, sarcasm, irony, mockery",
-    "antonyms": "Praise, tribute, eulogy, panegyric",
-    "englishMeaning": "The use of humor, irony, or exaggeration to expose human folly and vices.",
-    "exampleSentence": "The Parrot's Tale is a world-famous political and pedagogical satire by Tagore.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -11918,27 +13314,6 @@ export const hscVocabularyList = [
     "antonyms": "Misrepresent, Conceal, Obscure",
     "englishMeaning": "To represent or identify by means of a symbol or emblem.",
     "exampleSentence": "White flowers are not good as gifts as they symbolise death.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
-    "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-32",
-    "word": "Senior",
-    "bengaliMeaning": "বয়োজ্যেষ্ঠ / ঊর্ধ্বতন / প্রবীণ ব্যক্তি",
-    "partsOfSpeech": "Noun / Adjective",
-    "synonyms": "Elder, Older, Superior, Higher-ranking",
-    "antonyms": "Junior, Subordinate, Youth, Minor",
-    "englishMeaning": "A person who is older or has a higher rank or standing than another.",
-    "exampleSentence": "Greet the most senior first and gradually others.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -12383,7 +13758,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
+      "Unit 10: Lesson 1 (Manners Around the World)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -13151,27 +14527,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u9-l1-37",
-    "word": "Pose",
-    "bengaliMeaning": "সৃষ্টি করা / উত্থাপন করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Cause, present, create, produce",
-    "antonyms": "Hide, conceal, resolve",
-    "englishMeaning": "To present or constitute a problem, danger, or difficulty.",
-    "exampleSentence": "In addition, even when services do exist, provider attitudes about adolescents often pose a significant barrier to the use of those services.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u9-l1-39",
     "word": "Pregnancy",
     "bengaliMeaning": "গর্ভাবস্থা",
@@ -13246,7 +14601,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -13264,27 +14620,6 @@ export const hscVocabularyList = [
     "antonyms": "Preservation, permanence, stagnation",
     "englishMeaning": "The process or a period of changing from one state or condition to another.",
     "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
-    "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
-    "boardExamTag": "Unit 9 • Lesson 1",
-    "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u9-l1-52",
-    "word": "Tremendous",
-    "bengaliMeaning": "বিশাল / প্রচণ্ড / অসাধারণ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Great, awesome, immense, colossal, huge",
-    "antonyms": "Tiny, insignificant, trivial, slight",
-    "englishMeaning": "Extremely great in scale, amount, intensity, or potential.",
-    "exampleSentence": "Adolescence is a time of tremendous intellectual and emotional growth.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -14685,27 +16020,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u2-l3-12",
-    "word": "Distinguished",
-    "bengaliMeaning": "বিশিষ্ট / প্রখ্যাত / অনন্য মর্যাদাপূর্ণ",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Eminent, illustrious, celebrated, renowned, honored",
-    "antonyms": "Obscure, unknown, undistinguished, common",
-    "englishMeaning": "Successful, authoritative, and commanding great public respect.",
-    "exampleSentence": "Sheikh Mohammed Sultan, widely known as S M Sultan, was a distinguished Bangladeshi painter renowned for his distinctive personal and artistic style.",
-    "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Unit 2 • Lesson 3",
-    "sources": [
-      "Unit 2: Lesson 3 (Art)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u2-l3-13",
     "word": "Bohemian",
     "bengaliMeaning": "উদাসীন / বাউন্ডুলে / প্রথাহীন স্বাধীনচেতা",
@@ -15378,27 +16692,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u3-l2-12",
-    "word": "Mourned",
-    "bengaliMeaning": "শোক প্রকাশ করল / বিলাপ করল / কাতর হলো",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Grieved, lamented, sorrowed, deplored, wept for",
-    "antonyms": "Celebrated, rejoiced, rejoiced at",
-    "englishMeaning": "Felt or expressed deep sorrow for the death of someone loved.",
-    "exampleSentence": "He eventually reached Sicily, where he mourned Icarus and named the sea where his son fell the Icarian Sea in his memory.",
-    "unit": "Unit 3: Lesson 2 (Icarus)",
-    "boardExamTag": "Unit 3 • Lesson 2",
-    "sources": [
-      "Unit 3: Lesson 2 (Icarus)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u3-l3-02",
     "word": "Miracles",
     "bengaliMeaning": "অলৌকিক ঘটনা / আশ্চর্য পরাবাস্তব ক্ষমতা",
@@ -15428,27 +16721,6 @@ export const hscVocabularyList = [
     "antonyms": "Ferocious, wild, untamable, defiant",
     "englishMeaning": "Ready to accept control or instruction; submissive and calm.",
     "exampleSentence": "For example, he could supposedly calm dangerous animals and make them docile.",
-    "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
-    "boardExamTag": "Unit 3 • Lesson 3",
-    "sources": [
-      "Unit 3: Lesson 3 (The Legend of Gazi)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u3-l3-04",
-    "word": "Apparent",
-    "bengaliMeaning": "দৃশ্যমান / স্পষ্ট / আপাতদৃষ্ট",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Evident, visible, noticeable, obvious, perceptible",
-    "antonyms": "Hidden, concealed, obscure, disguised",
-    "englishMeaning": "Clearly visible or understood; seeming rather than actual.",
-    "exampleSentence": "He is usually depicted in paats or scroll paintings riding a fierce-looking Bengal tiger, a snake in his hand, but in no apparent danger.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
     "boardExamTag": "Unit 3 • Lesson 3",
     "sources": [
@@ -16386,27 +17658,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u7-l1-04",
-    "word": "Grit",
-    "bengaliMeaning": "দৃঢ় মানসিক মনোবল / অটল সাহসিকতা ও চরিত্রবল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Courage, resolve, determination, pluck, fortitude",
-    "antonyms": "Cowardice, spinelessness, timidity",
-    "englishMeaning": "Courage and resolve; strength of character.",
-    "exampleSentence": "Apart from stamina and practice of long distance swimming, one must have the grit, determination and courage to subdue the Channel.",
-    "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Unit 7 • Lesson 1",
-    "sources": [
-      "Unit 7: Lesson 1 (Brojen Das)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u7-l1-06",
     "word": "Oblivious",
     "bengaliMeaning": "বেখবর / অচেতন / আশপাশের বিষয়ে আত্মমগ্ন",
@@ -16436,27 +17687,6 @@ export const hscVocabularyList = [
     "antonyms": "Sated, full, satisfied, glutted",
     "englishMeaning": "Extremely hungry; starving.",
     "exampleSentence": "Last Efforts I felt hungry and famished and shouted for my manager.",
-    "unit": "Unit 7: Lesson 1 (Brojen Das)",
-    "boardExamTag": "Unit 7 • Lesson 1",
-    "sources": [
-      "Unit 7: Lesson 1 (Brojen Das)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u7-l1-09",
-    "word": "Proverbial",
-    "bengaliMeaning": "প্রবাদপ্রতিম / বহুল পরিচিত ও দৃষ্টান্তমূলক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Legendary, well-known, famous, celebrated, renowned",
-    "antonyms": "Unknown, obscure, nameless",
-    "englishMeaning": "Well known, especially so as to be stereotypical.",
-    "exampleSentence": "I could see the record, like the proverbial carrot, dangling before my swollen eyes....",
     "unit": "Unit 7: Lesson 1 (Brojen Das)",
     "boardExamTag": "Unit 7 • Lesson 1",
     "sources": [
@@ -16608,27 +17838,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
       "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u7-l3-01",
-    "word": "Miniature",
-    "bengaliMeaning": "ক্ষুদ্র সংস্করণের / ক্ষুদ্রাকৃতির খেলনা",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Small-scale, tiny, diminutive, compact, micro",
-    "antonyms": "Giant, colossal, immense, massive",
-    "englishMeaning": "Representing or being on a small or much smaller scale than normal.",
-    "exampleSentence": "While toys for boys include cars, guns or footballs, girls have to be satisfied with dolls (often Barbie dolls) and doll-houses or miniature cooking utensils.",
-    "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
-    "boardExamTag": "Unit 7 • Lesson 3",
-    "sources": [
-      "Unit 7: Lesson 3 (The Unbeaten Girls)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -18540,7 +19749,8 @@ export const hscVocabularyList = [
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
-      "Unit 12: Lesson 3 (Endangered Species)"
+      "Unit 12: Lesson 3 (Endangered Species)",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -18824,28 +20034,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u1-l2-instant",
-    "word": "Instant",
-    "bengaliMeaning": "তাৎক্ষণিক / আশু",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Immediate, instantaneous, prompt, swift",
-    "antonyms": "Delayed, sluggish, gradual, postponed",
-    "englishMeaning": "Happening or coming immediately.",
-    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
-    "unit": "Unit 1: Education and Life: Education and Technology",
-    "lesson": "Education and Technology",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Education and Life: Education and Technology"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u1-l2-tailored",
     "word": "Tailored",
     "bengaliMeaning": "বিশেষভাবে উপযোগী / কাস্টমাইজড",
@@ -18956,28 +20144,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u2-l2-heritage",
-    "word": "Heritage",
-    "bengaliMeaning": "ঐতিহ্য / উত্তরাধিকার",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Inheritance, legacy, tradition, cultural birthright",
-    "antonyms": "Novelty, disconnection, alienation",
-    "englishMeaning": "Property or cultural attributes that are inherited from past generations.",
-    "exampleSentence": "Bangladesh has a heritage of rich folk music which includes both religious and secular songs.",
-    "unit": "Unit 2: Art and Craft: Folk Music",
-    "lesson": "Folk Music",
-    "boardExamTag": "Unit 2 • Lesson 2",
-    "sources": [
-      "Unit 2: Art and Craft: Folk Music"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u5-l1-assembly",
     "word": "Assembly",
     "bengaliMeaning": "সমাবেশ / সভা",
@@ -19057,29 +20223,8 @@ export const hscVocabularyList = [
     "lesson": "What is Beauty?",
     "boardExamTag": "Unit 2 • Lesson 1",
     "sources": [
-      "Unit 2: Art and Craft: What is Beauty?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u1-l2-security",
-    "word": "Security",
-    "bengaliMeaning": "নিরাপত্তা / সুরক্ষা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Safety, protection, safeguard, shield",
-    "antonyms": "Danger, vulnerability, insecurity, peril",
-    "englishMeaning": "The state of being free from danger or threat.",
-    "exampleSentence": "AI-powered educational tools may collect and store sensitive personal data, which raises concerns about privacy and security.",
-    "unit": "Unit 1: Education and Life: Education and Technology",
-    "lesson": "Education and Technology",
-    "boardExamTag": "Unit 1 • Lesson 2",
-    "sources": [
-      "Unit 1: Education and Life: Education and Technology"
+      "Unit 2: Art and Craft: What is Beauty?",
+      "Unit 4: Lesson 3 (Great Women)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -19125,28 +20270,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-II?"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u5-l3-consciousness",
-    "word": "Consciousness",
-    "bengaliMeaning": "চেতনা / সচেতনতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Awareness, mindfulness, perception, alertness",
-    "antonyms": "Unconsciousness, oblivion, ignorance",
-    "englishMeaning": "The state of being aware of and responsive to one's surroundings or rights.",
-    "exampleSentence": "Educational Consciousness: It is said that education makes an individual aware of his/her own rights and the rights of others.",
-    "unit": "Unit 5: Human Rights: Rights to Health and Education",
-    "lesson": "Rights to Health and Education",
-    "boardExamTag": "Unit 5 • Lesson 3",
-    "sources": [
-      "Unit 5: Human Rights: Rights to Health and Education"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -19839,28 +20962,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u11-l4-repose",
-    "word": "Repose",
-    "bengaliMeaning": "প্রশান্তি / বিশ্রাম / শয়ন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Tranquility, rest, calm, peace",
-    "antonyms": "Restlessness, agitation, turmoil, exhaustion",
-    "englishMeaning": "A state of rest, sleep, or tranquility.",
-    "exampleSentence": "Take of this grain, which in my garden grows, And grows for you; Make bread of it: and that repose And peace, which ev'ry where With so much earnestness you do pursue, Is only there.",
-    "unit": "Unit 11: Peace and Conflict: Peace in Literature",
-    "lesson": "Peace in Literature",
-    "boardExamTag": "Unit 11 • Lesson 4",
-    "sources": [
-      "Unit 11: Peace and Conflict: Peace in Literature"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u11-l4-cannonballs",
     "word": "Cannonballs",
     "bengaliMeaning": "কামানের গোলা",
@@ -19896,28 +20997,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 3 • Lesson 2",
     "sources": [
       "Unit 3: Myths and Literature: Icarus"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u11-l3-ballad",
-    "word": "Ballad",
-    "bengaliMeaning": "গাথা কবিতা / গীতিকবিতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Poem, narrative verse, song, folk lyric",
-    "antonyms": "Treatise, monograph, document",
-    "englishMeaning": "A poem or song narrating a story in short stanzas.",
-    "exampleSentence": "Springsteen wrote the song for his 1995 album, inspired by Woody Guthrie's \"The Ballad of Tom Joad.\" Guthrie's ballad, in turn, was inspired by John Steinbeck's 1939 novel, The Grapes of Wrath.",
-    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
-    "lesson": "Stories From Gaza",
-    "boardExamTag": "Unit 11 • Lesson 3",
-    "sources": [
-      "Unit 11: Peace and Conflict: Stories From Gaza"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20874,50 +21953,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u4-l2-5",
-    "word": "Advanced",
-    "bengaliMeaning": "উন্নত / প্রগতিশীল / আধুনিক",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Developed, progressive, forward-looking, refined",
-    "antonyms": "Basic, primitive, backward, undeveloped",
-    "englishMeaning": "Far along in progress or development; ahead of standard times.",
-    "exampleSentence": "We all accept the need for some form of socialism to enable our people to catch up with the advanced countries of this world.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u4-l2-8",
-    "word": "Anarchy",
-    "bengaliMeaning": "নৈরাজ্য / বিশৃঙ্খলা / অরাজকতা",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Misrule, chaos, lawlessness, disorder, turmoil",
-    "antonyms": "Order, discipline, lawfulness, governance, harmony",
-    "englishMeaning": "A state of disorder due to absence or non-recognition of authority or other controlling systems.",
-    "exampleSentence": "They feared that unchecked oppression would inevitably lead to widespread social anarchy.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u4-l2-9",
     "word": "Ancestors",
     "bengaliMeaning": "পূর্বপুরুষ",
@@ -21058,28 +22093,6 @@ export const hscVocabularyList = [
     "antonyms": "Avoid, escape, evade, flee, surrender",
     "englishMeaning": "Meet face to face in opposition or face a hostile force bravely.",
     "exampleSentence": "Convert every house into a fort; confront the enemy with whatever you have.",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u4-l2-22",
-    "word": "Convicted",
-    "bengaliMeaning": "দোষী সাব্যস্ত / দণ্ডপ্রাপ্ত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Sentenced, condemned, found guilty, imprisoned",
-    "antonyms": "Acquitted, cleared, exonerated, released",
-    "englishMeaning": "Having been officially found guilty of a criminal offense by the verdict of a jury or judge.",
-    "exampleSentence": "I am a convicted prisoner serving five years for leaving the country without a permit.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -21498,28 +22511,6 @@ export const hscVocabularyList = [
     "antonyms": "Expressed explicitly, stated openly, declared",
     "englishMeaning": "Suggested but not directly expressed; hinted at through circumstances.",
     "exampleSentence": "Were we to give in to the show of force and the implied threat against future action?",
-    "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
-    "boardExamTag": "Unit 4 • Lesson 2",
-    "sources": [
-      "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u4-l2-47",
-    "word": "Import",
-    "bengaliMeaning": "তাৎপর্য / নিহিতার্থ / গুরুত্ব",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Significance, implication, meaning, importance, weight",
-    "antonyms": "Insignificance, triviality, meaninglessness",
-    "englishMeaning": "The implicit meaning, significance, or profound importance of something.",
-    "exampleSentence": "You are fully aware of the events that are going on and understand their import.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -21994,6 +22985,842 @@ export const hscVocabularyList = [
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
     "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-3",
+    "word": "Awarded",
+    "bengaliMeaning": "ভূষিত / পুরস্কৃত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Endowed with, bestowed, rewarded, decorated",
+    "antonyms": "Revoked, stripped, denied",
+    "englishMeaning": "Given an official honour, prize, or reward in recognition of exceptional service or merit.",
+    "exampleSentence": "The first African woman and first environmentalist awarded the Nobel Peace Prize, Wangari Maathai received that honour in 2004.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-6",
+    "word": "Broke the glass ceiling",
+    "bengaliMeaning": "অদৃশ্য বাধা ভেঙে সর্বোচ্চ সাফল্য অর্জন করা",
+    "partsOfSpeech": "Idiom",
+    "synonyms": "Surpassed barriers, overcame restrictions, shattered barriers",
+    "antonyms": "Remained constrained, stayed suppressed, limited",
+    "englishMeaning": "Overcame the unacknowledged discriminatory barrier preventing women from advancing to leadership.",
+    "exampleSentence": "Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-7",
+    "word": "Brutality",
+    "bengaliMeaning": "বর্বরতা / নৃশংসতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Savagery, cruelty, ruthlessness, inhumaneness, atrocity",
+    "antonyms": "Gentleness, kindness, benevolence, mercy",
+    "englishMeaning": "Savage physical violence and profound cruelty inflicted on innocent people.",
+    "exampleSentence": "Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-9",
+    "word": "Chiefly",
+    "bengaliMeaning": "মুখ্যত / প্রধানত / বিশেষত",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Mainly, primarily, essentially, mostly, principally",
+    "antonyms": "Insignificantly, secondarily, marginally",
+    "englishMeaning": "Above all; for the most part or primarily.",
+    "exampleSentence": "While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-10",
+    "word": "Clandestinely",
+    "bengaliMeaning": "গোপনে / লোকচক্ষুর অন্তরালে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Covertly, surreptitiously, privately, secretly, furtively",
+    "antonyms": "Openly, publicly, blatantly",
+    "englishMeaning": "In a secretive, covert manner, often to avoid prohibition by oppressive authorities.",
+    "exampleSentence": "She had to take work as a teacher and, at the same time, took part clandestinely in the nationalist 'free university', reading in Polish to women workers.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-11",
+    "word": "Completion",
+    "bengaliMeaning": "সমাপন / সম্পূর্ণতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Finalization, conclusion, accomplishment, termination, finishing point",
+    "antonyms": "Start, commencement, inception, onset",
+    "englishMeaning": "The state of being finished, completed, or concluded successfully.",
+    "exampleSentence": "From childhood she was remarkable for her prodigious memory, and at the age of 16 she won a gold medal on completion of her secondary education at the Russian lycée.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-13",
+    "word": "Consistently",
+    "bengaliMeaning": "ধারাবাহিকভাবে / অবিরাম",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Regularly, constantly, systematically, persistently, steadily",
+    "antonyms": "Inconsistently, irregularly, erratically, sporadically",
+    "englishMeaning": "In an unchanging or dependable way over time; continuously and steadily.",
+    "exampleSentence": "Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-14",
+    "word": "Contribution",
+    "bengaliMeaning": "অনবদ্য অবদান / কার্যকর ভূমিকা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Involvement, participation, donation, offering, service",
+    "antonyms": "Obstruction, hindrance, detraction",
+    "englishMeaning": "A gift or payment to a common fund or collection; the part played in bringing about a result.",
+    "exampleSentence": "We know of the contribution of Rokeya Sakhawat Hossain to women's education in undivided Bengal.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-18",
+    "word": "Demonstrated",
+    "bengaliMeaning": "প্রমাণিত / প্রদর্শিত",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Illustrated, proved, exhibited, shown, verified",
+    "antonyms": "Disproved, invalidated, concealed, refuted",
+    "englishMeaning": "Clearly showed or proved the existence or truth of something by evidence.",
+    "exampleSentence": "Her contribution to physics had been immense, not only in her own work, the importance of which had been demonstrated by the award to her of two Nobel Prizes.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-19",
+    "word": "Depict",
+    "bengaliMeaning": "চিত্রিত করা / বর্ণনা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Portray, represent, illustrate, delineate, characterize",
+    "antonyms": "Distort, blur, misrepresent, obscure",
+    "englishMeaning": "Represent by a drawing, painting, or other art form; portray in words.",
+    "exampleSentence": "Being a scholar herself, Amin had a unique approach to depicting the lives of women.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-20",
+    "word": "Devoted",
+    "bengaliMeaning": "নিবেদিত / একনিষ্ঠ / আত্মোৎসর্গীকৃত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Attentive, dedicated, ardent, loyal, steadfast",
+    "antonyms": "Uncommitted, unenthusiastic, uncaring, negligent",
+    "englishMeaning": "Very loving, loyal, and giving a large amount of time or energy to a specific cause.",
+    "exampleSentence": "While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-21",
+    "word": "Discovery",
+    "bengaliMeaning": "আবিষ্কার / সন্ধান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Revelation, innovation, unearthing, detection, disclosure",
+    "antonyms": "Loss, miss, concealment, oversight",
+    "englishMeaning": "The act of finding or learning something for the first time.",
+    "exampleSentence": "Pierre Curie then joined her in the work that she had undertaken to resolve this problem and that led to the discovery of the new elements, polonium and radium.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-23",
+    "word": "Ecosystem",
+    "bengaliMeaning": "বাস্তুতন্ত্র / প্রাকৃতিক পরিবেশব্যবস্থা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Environment, bionetwork, ecology, biome, natural community",
+    "antonyms": "Artificial habitat, sterility",
+    "englishMeaning": "A biological community of interacting organisms and their physical environment.",
+    "exampleSentence": "We have a special responsibility to the ecosystem of this planet.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-26",
+    "word": "Embroil",
+    "bengaliMeaning": "জড়িত করা / বিপাকে ফেলা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Involve, entangle, ensnare, mire, implicate",
+    "antonyms": "Detach, disentangle, free, liberate",
+    "englishMeaning": "Involve someone deeply in an argument, conflict, or difficult situation.",
+    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-30",
+    "word": "Feminism",
+    "bengaliMeaning": "নারীবাদ / নারীর সমানাধিকারের মতবাদ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Female emancipation, women's liberation, egalitarianism",
+    "antonyms": "Anti-feminism, misogyny, patriarchy",
+    "englishMeaning": "The advocacy of women's rights on the ground of the equality of the sexes.",
+    "exampleSentence": "Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-31",
+    "word": "Feminist",
+    "bengaliMeaning": "নারীবাদী / নারীর অধিকারের প্রবক্তা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Egalitarian, women's rights advocate, suffragist",
+    "antonyms": "Misogynist, chauvinist, anti-feminist",
+    "englishMeaning": "A person who supports feminism and defends equality of rights for women.",
+    "exampleSentence": "Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-32",
+    "word": "Henceforth",
+    "bengaliMeaning": "অতঃপর / এর পর থেকে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Hereafter, henceforward, from now on, in the future",
+    "antonyms": "Hitherto, previously, formerly",
+    "englishMeaning": "From this time on or from that time forward.",
+    "exampleSentence": "The sudden death of Pierre Curie was a decisive turning point: henceforth she was to devote all her energy to completing alone the scientific work.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-35",
+    "word": "Imprisoned",
+    "bengaliMeaning": "কারারুদ্ধ / বন্দী",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Detained, incarcerated, jailed, confined, captured",
+    "antonyms": "Released, freed, liberated, discharged",
+    "englishMeaning": "Kept in prison or captivity as a punishment or political consequence.",
+    "exampleSentence": "She had been imprisoned on several occasions for her fearless anti-colonial struggle.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-40",
+    "word": "Liberal ideas",
+    "bengaliMeaning": "উদার চিন্তাধারা / মুক্তমনা আদর্শ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Progressive thoughts, enlightened views, open-minded philosophy",
+    "antonyms": "Conservatism, dogmatism, orthodoxy",
+    "englishMeaning": "Opinions and beliefs characterized by openness to new ideas and individual liberty.",
+    "exampleSentence": "Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-41",
+    "word": "Melancholic",
+    "bengaliMeaning": "বিষণ্ণ / শোকাতুর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Mournful, lamenting, dejected, sorrowful, somber",
+    "antonyms": "Cheerful, joyous, upbeat, jubilant",
+    "englishMeaning": "Feeling or expressing pensive, deep, or persistent sadness.",
+    "exampleSentence": "In yet another poem, 'God in the Goblet', a melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-42",
+    "word": "Mercilessly",
+    "bengaliMeaning": "নির্দয়ভাবে / নির্মমভাবে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Cruelly, pitilessly, ruthlessly, heartlessly, brutally",
+    "antonyms": "Sympathetically, kindly, mercifully, compassionately",
+    "englishMeaning": "In a way that shows no mercy or compassion to victims.",
+    "exampleSentence": "A melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-43",
+    "word": "Multigenerational",
+    "bengaliMeaning": "বহু প্রজন্ম ধরে প্রচলিত / বহুপ্ৰজন্মিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Intergenerational, cross-generational, transgenerational",
+    "antonyms": "Single-generation, ephemeral",
+    "englishMeaning": "Relating to, involving, or consisting of several generations.",
+    "exampleSentence": "Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-44",
+    "word": "Obtain",
+    "bengaliMeaning": "অর্জন করা / আহরণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Acquire, secure, attain, derive, gain",
+    "antonyms": "Lose, forfeit, surrender, relinquish",
+    "englishMeaning": "Get, acquire, or secure something as a result of effort or research.",
+    "exampleSentence": "Marie Curie struggled to obtain pure radium in the metallic state.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-45",
+    "word": "Ore",
+    "bengaliMeaning": "আকরিক / খনিজ কাঁচামাল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Mineral deposit, rock, unrefined mineral",
+    "antonyms": "Refined metal, purified compound",
+    "englishMeaning": "A naturally occurring solid material from which a metal or valuable mineral can be extracted.",
+    "exampleSentence": "Could be explained only by the presence in the ore of small quantities of an unknown substance of very high activity.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-46",
+    "word": "Partition",
+    "bengaliMeaning": "বিভাজন / ঐতিহাসিক দেশভাগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Division, separation, dismemberment, splitting up",
+    "antonyms": "Unification, merger, union, integration",
+    "englishMeaning": "The division of a country or state into separate parts or sovereign entities.",
+    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-47",
+    "word": "Patriarchal",
+    "bengaliMeaning": "পুরুষতান্ত্রিক / পুরুষপ্রধান",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Male-dominated, paternalistic",
+    "antonyms": "Matriarchal, egalitarian",
+    "englishMeaning": "Relating to or characteristic of a system of society or government controlled by men.",
+    "exampleSentence": "Breaking patriarchal barriers, Leela Nag established the identity of the Department of English from the very beginning.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-48",
+    "word": "Phenomenon",
+    "bengaliMeaning": "ঘটমান বিষয় / বিস্ময়কর প্রাকৃতিক ঘটনা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Occurrence, event, happening, wonder, marvel",
+    "antonyms": "Regularity, commonality",
+    "englishMeaning": "A fact or situation that is observed to exist or happen, especially one whose cause is in question.",
+    "exampleSentence": "Following Henri Becquerel's discovery of a new phenomenon (which she later called 'radioactivity'), Marie Curie decided to investigate.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-52",
+    "word": "Rebel",
+    "bengaliMeaning": "বিদ্রোহী / বিপ্লববাদী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Mutineer, insurgent, nonconformist, maverick, freedom fighter",
+    "antonyms": "Loyalist, conformist, obedient follower",
+    "englishMeaning": "A person who rises in opposition or armed resistance against an established government or ruler.",
+    "exampleSentence": "She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-53",
+    "word": "Reformer",
+    "bengaliMeaning": "সংস্কারক / সমাজ সংস্কারক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Reformist, changemaker, innovator, crusader",
+    "antonyms": "Reactionary, traditionalist, oppressor",
+    "englishMeaning": "A person who makes changes to something in order to improve it.",
+    "exampleSentence": "She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-54",
+    "word": "Remarkable",
+    "bengaliMeaning": "অসাধারণ / উল্লেখযোগ্য / চমকপ্রদ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Extraordinary, outstanding, significant, incredible, amazing",
+    "antonyms": "Ordinary, usual, commonplace, mediocre",
+    "englishMeaning": "Worthy of attention; striking or extraordinary.",
+    "exampleSentence": "From childhood she was remarkable for her prodigious memory.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-55",
+    "word": "Resolve",
+    "bengaliMeaning": "সমাধান করা / নিষ্পত্তি করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Settle, solve, answer, unravel, determine",
+    "antonyms": "Complicate, confuse, hesitate, worsen",
+    "englishMeaning": "Find a solution to a problem, dispute, or contentious matter.",
+    "exampleSentence": "Pierre Curie then joined her in the work that she had undertaken to resolve this problem.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-58",
+    "word": "Simultaneously",
+    "bengaliMeaning": "একই সাথে / যুগপৎ",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Concurrently, instantaneously, together, in tandem",
+    "antonyms": "Independently, separately, consecutively",
+    "englishMeaning": "At the same time; concurrently.",
+    "exampleSentence": "She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-62",
+    "word": "Throttle",
+    "bengaliMeaning": "টুটি টিপে শ্বাসরোধ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Strangle, choke, suffocate, stifle, asphyxiate",
+    "antonyms": "Release, breathe, liberate",
+    "englishMeaning": "Attack or kill someone by choking or strangling them.",
+    "exampleSentence": "A mother frenzied by the roar of mortars throttled her whining infant; its life for the life of millions.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-63",
+    "word": "Titular",
+    "bengaliMeaning": "নামেমাত্র / নামকাওয়াস্তে",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Nominal, in name only, formal, ceremonial, symbolic",
+    "antonyms": "Actual, real, operational, substantive",
+    "englishMeaning": "Holding or constituting a purely formal, honorary, or titular position.",
+    "exampleSentence": "In 1908 she became titular professor, and in 1910 her fundamental treatise on radioactivity was published.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-64",
+    "word": "Treatise",
+    "bengaliMeaning": "গবেষণাগ্রন্থ / নির্দিষ্ট বিষয়ে সারগর্ভ প্রবন্ধ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Dissertation, discourse, essay, thesis, monograph",
+    "antonyms": "Brief sketch, casual note",
+    "englishMeaning": "A written work dealing formally and systematically with a subject.",
+    "exampleSentence": "In 1910 her fundamental treatise on radioactivity was published.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-65",
+    "word": "Tribute",
+    "bengaliMeaning": "শ্রদ্ধাঞ্জলি / প্রশংসাসূচক অর্ঘ্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Homage, testimonial, accolade, encomium, honor",
+    "antonyms": "Condemnation, criticism, reproach",
+    "englishMeaning": "An act, statement, or gift that is intended to show gratitude and respect.",
+    "exampleSentence": "References to Muneer, Hyder, Fazle and Kaiser form a tribute to the sacrifices of scholars of Bangladesh.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-66",
+    "word": "Tumultuous",
+    "bengaliMeaning": "উত্তাল / টালমাটাল / কোলাহলপূর্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Rowdy, turbulent, stormy, riotous, chaotic",
+    "antonyms": "Peaceful, tranquil, calm, serene",
+    "englishMeaning": "Making an uproar or loud, confused noise; marked by chaos or turbulent change.",
+    "exampleSentence": "This is why, during the tumultuous 60s, soon after the Language Movement, we can find yet another woman as a valiant fighter against oppression.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u4-l3-67",
+    "word": "Turmoil",
+    "bengaliMeaning": "অশান্তি / তুমুল বিশৃঙ্খলা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Chaos, disorder, tumult, unrest, turbulence",
+    "antonyms": "Order, peace, tranquility, harmony",
+    "englishMeaning": "A state of great disturbance, confusion, or uncertainty.",
+    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "unit": "Unit 4: Lesson 3 (Great Women)",
+    "boardExamTag": "Unit 4 • Lesson 3",
+    "sources": [
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 4: Great Women: Pioneers of Education & Science"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
   }
 ];
 
@@ -22231,14 +24058,15 @@ export function matchesUnitAndLesson(item, unitId, lessonId) {
   const uNum = typeof unitId === 'string' && unitId.startsWith('unit-')
     ? unitId.replace('unit-', '')
     : String(unitId).replace(/[^0-9]/g, '');
-  const itemTag = (item.boardExamTag || '') + ' ' + (item.unit || '') + ' ' + (item.id || '');
+  const sourcesStr = Array.isArray(item.sources) ? item.sources.join(' ') : '';
+  const itemTag = (item.boardExamTag || '') + ' ' + (item.unit || '') + ' ' + (item.id || '') + ' ' + sourcesStr;
   const unitRegex = new RegExp('\\bUnit\\s*' + uNum + '\\b|vocab-u' + uNum + '(-|\\b)', 'i');
   if (!unitRegex.test(itemTag)) return false;
   if (!lessonId || lessonId === 'all') return true;
   const lNum = typeof lessonId === 'string' && lessonId.includes('-l')
     ? lessonId.split('-l')[1]
     : String(lessonId).replace(/[^0-9]/g, '');
-  const lessonRegex = new RegExp('(?:•|:)\\s*Lesson\\s*' + lNum + '(\\b|\\s|\\()|vocab-u' + uNum + '-l' + lNum + '(\\b|-)', 'i');
+  const lessonRegex = new RegExp('(?:•|:|\\b)Lesson\\s*' + lNum + '(\\b|\\s|\\()|vocab-u' + uNum + '-l' + lNum + '(\\b|-)', 'i');
   return lessonRegex.test(itemTag);
 }
 

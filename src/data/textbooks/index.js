@@ -16,6 +16,7 @@ import { unit3Lesson3Textbook } from './unit3Lesson3Text.js';
 import { unit3Lesson4Textbook } from './unit3Lesson4Text.js';
 
 import { unit4Lesson2Textbook } from './unit4Lesson2Text.js';
+import { unit4Lesson3Textbook } from './unit4Lesson3Text.js';
 
 import { unit5Lesson1Textbook } from './unit5Lesson1Text.js';
 import { unit5Lesson2Textbook } from './unit5Lesson2Text.js';
@@ -82,6 +83,7 @@ export const ALL_TEXTBOOKS = {
 
   // Unit 4
   'u4-l2': unit4Lesson2Textbook,
+  'u4-l3': unit4Lesson3Textbook,
   'unit-4': unit4Lesson2Textbook,
 
   // Unit 5

@@ -158,12 +158,12 @@ export const hscUnits = [
     "id": "unit-4",
     "number": 4,
     "unitNumber": "Unit 4",
-    "unitTitle": "Transformative Speeches",
-    "unitTitleBn": "ঐতিহাসিক ও বৈপ্লবিক ভাষণ (Transformative Speeches)",
+    "unitTitle": "Transformative Speeches & Great Women",
+    "unitTitleBn": "ঐতিহাসিক ভাষণ ও মহীয়সী নারীগণ (Speeches & Great Women)",
     "bgClass": "bg-[#8338bd] hover:bg-[#9345ce]",
     "gradient": "from-[#9345ce] to-[#68249a]",
     "progress": 0,
-    "totalWords": 91,
+    "totalWords": 180,
     "masteredWords": 0,
     "lessons": [
       {
@@ -182,6 +182,15 @@ export const hscUnits = [
         "titleBn": "ট্র্যান্সফরমেটিভ স্পীচেস্ (বৈপ্লবিক ভাষণ/বক্তৃতা)",
         "questionsCount": "৩৬৪ টি প্রশ্ন",
         "wordsCount": 91,
+        "progress": 0
+      },
+      {
+        "id": "u4-l3",
+        "number": "Lesson 3",
+        "title": "Great Women",
+        "titleBn": "মহীয়সী নারীগণ (Great Women)",
+        "questionsCount": "৩৫৬ টি প্রশ্ন",
+        "wordsCount": 89,
         "progress": 0
       }
     ]
