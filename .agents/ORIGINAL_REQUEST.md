@@ -1,4 +1,4 @@
-﻿# Original User Request
+# Original User Request
 
 ## 2026-08-30T08:00:19Z
 
@@ -156,3 +156,45 @@ After all changes:
 ---
 
 *Expecting this to run as a large full-project build — many components to create and wire. The team will work across new pages, routing, design system, and deployment.*
+
+## 2026-09-14T19:54:06Z
+
+# Complete Ingestion of NCTB HSC English 11-12 (2025–2026 Edition) into Interactive Textbook Reader
+
+Extract, transcribe, and integrate all units and lessons (Units 1–14) from the 285-page official NCTB HSC English For Today revised 2025–2026 PDF (C:\Users\infinix\Downloads\English 11-12 All PDF 06.10.25.pdf) into the website's interactive Textbook Reader with authentic full texts, sentence-by-sentence Bengali translations, and vocabulary keyword highlights.
+
+Working directory: e:/english leaner
+Integrity mode: development
+
+## Requirements
+
+### R1. Complete 285-Page Textbook Ingestion (Units 1–14)
+- Process the official 285-page NCTB HSC English For Today PDF (C:\Users\infinix\Downloads\English 11-12 All PDF 06.10.25.pdf) covering all units from Unit 1 to Unit 14, including all 2024/2025 revised curriculum contents.
+- Transcribe and format all reading passages verbatim with accurate chapter titles, lesson headings, and paragraph numbers.
+
+### R2. Interactive Textbook Reader Data Structures
+- For each lesson, generate structured data files in src/data/textbooks/ containing:
+  - unitId, unitTitle, unitTitleBn, lessonId, lessonTitle, lessonTitleBn
+  - Array of paragraphs, each with:
+    - number: Paragraph index / number
+    - heading: Descriptive Bengali & English section heading
+    - text: Verbatim English passage text
+    - bengaliTranslation: Accurate, natural Bengali translation
+    - highlightWords: Array of important vocabulary keywords matching hscVocabularyList
+- Register all lesson files in the central textbook index (src/data/textbooks/index.js) under ALL_TEXTBOOKS.
+
+### R3. Curriculum & Navigation Synchronization
+- Ensure all lessons are selectable and navigable in src/data/hscUnitsData.js and src/components/pages/TextbookPage.jsx.
+- Verify smooth TTS (Text-to-Speech), bilingual side-by-side toggles, font scaling, and keyword click popup behaviors.
+
+## Acceptance Criteria
+
+### Content Fidelity & Completeness
+- [ ] All units (1–14) and their respective lessons from the 285-page PDF are fully transcribed into src/data/textbooks/.
+- [ ] Every paragraph contains authentic English text and corresponding Bengali translation without missing or truncated sections.
+- [ ] ALL_TEXTBOOKS exports an entry for every lesson ID and unit ID.
+
+### Quality & System Verification
+- [ ] Node verification script passes with 0 missing lessons, 0 empty paragraphs, and 100% valid structure.
+- [ ] npm run build succeeds with 0 errors.
+- [ ] Interactive Textbook Reader in TextbookPage.jsx renders all lessons properly with translation toggle and vocabulary highlights.

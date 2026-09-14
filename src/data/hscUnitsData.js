@@ -158,8 +158,8 @@ export const hscUnits = [
     "id": "unit-4",
     "number": 4,
     "unitNumber": "Unit 4",
-    "unitTitle": "Transformative Speeches & Great Women",
-    "unitTitleBn": "ঐতিহাসিক ভাষণ ও মহীয়সী নারীগণ (Speeches & Great Women)",
+    "unitTitle": "History",
+    "unitTitleBn": "ইতিহাস ও রূপান্তর (History)",
     "bgClass": "bg-[#8338bd] hover:bg-[#9345ce]",
     "gradient": "from-[#9345ce] to-[#68249a]",
     "progress": 0,
@@ -169,8 +169,8 @@ export const hscUnits = [
       {
         "id": "u4-l1",
         "number": "Lesson 1",
-        "title": "Three Speeches",
-        "titleBn": "তিনটি ঐতিহাসিক ভাষণ",
+        "title": "July Uprising: A Transformative Movement",
+        "titleBn": "জুলাই গণ-অভ্যুত্থান: এক যুগান্তকারী আন্দোলন",
         "questionsCount": "০ টি প্রশ্ন",
         "wordsCount": 0,
         "progress": 0
@@ -419,8 +419,8 @@ export const hscUnits = [
       {
         "id": "u9-l4",
         "number": "Lesson 4",
-        "title": "The Story of Shilpi",
-        "titleBn": "শিল্পীর গল্প",
+        "title": "Say 'No' to Bullying",
+        "titleBn": "বুলিংকে 'না' বলুন (Say 'No' to Bullying)",
         "questionsCount": "৫৬ টি প্রশ্ন",
         "wordsCount": 14,
         "progress": 0
