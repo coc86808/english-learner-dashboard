@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1177 Authentic Textbook Vocabulary Words
+ * Total Words: 1186 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -1776,7 +1776,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -2095,12 +2096,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-04",
     "word": "Shortsighted",
-    "bengaliMeaning": "অদূরদর্শী / সংকীর্ণ ও ভবিষ্যৎহীন দৃষ্টিভঙ্গিসম্পন্ন",
+    "bengaliMeaning": "দূরদৃষ্টিহীন",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Myopic, improvident, unthinking, narrow-minded, careless",
-    "antonyms": "Farsighted, visionary, prudent, provident",
-    "englishMeaning": "Lacking foresight or intellectual insight.",
-    "exampleSentence": "What is often regarded as a natural disaster is upon closer examination the result of sometimes shortsighted and other times reckless, even pernicious corporate, governmental, or individual environmental practices that target and disadvantage vulnerable groups.",
+    "synonyms": "Thoughtless, ill-considered, ill-judged",
+    "antonyms": "Far-sighted, visionary",
+    "englishMeaning": "Lacking foresight or consideration of the future consequences of an action.",
+    "exampleSentence": "Upon closer examination the result of sometimes shortsighted corporate practices.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -2304,7 +2305,8 @@ export const hscVocabularyList = [
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
+      "Unit 5: Human Rights: Frederick Douglass",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -3601,7 +3603,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
       "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
+      "Unit 4: Great Women: Pioneers of Education & Science",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8214,12 +8217,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-03",
     "word": "Disproportionately",
-    "bengaliMeaning": "অসমভাবে / মাত্রাতিরিক্ত অসম অনুপাতে",
+    "bengaliMeaning": "অনুপাতহীনভাবে",
     "partsOfSpeech": "Adverb",
-    "synonyms": "Unequally, unevenly, excessively, unfair in proportion",
-    "antonyms": "Equitably, proportionately, fairly, evenly",
+    "synonyms": "Excessively, unreasonably, extremely, overly",
+    "antonyms": "Proportionately, evenly",
     "englishMeaning": "To an extent that is too large or too small in comparison with something else.",
-    "exampleSentence": "Rather, they are clearly interconnected; they are caused by human beings; and they disproportionately negatively impact poor people and women.",
+    "exampleSentence": "Environmental disasters disproportionately negatively impact poor people and women.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -8767,17 +8770,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-inextricable",
     "word": "Inextricable",
-    "bengaliMeaning": "অবিচ্ছেদ্য / অবিভাজ্য",
+    "bengaliMeaning": "অবিচ্ছেদ্য",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Inseparable, indivisible, entangled, interlinked",
-    "antonyms": "Separable, divisible, independent, detached",
+    "synonyms": "Inseparable, tangled",
+    "antonyms": "Separable, disconnected",
     "englishMeaning": "Impossible to disentangle or separate.",
-    "exampleSentence": "It not only brings them together for positive change but also shows their inextricable connectedness.",
-    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
+    "exampleSentence": "It not only brings them together but also shows their inextricable connectedness.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "lesson": "What is Environmental Justice?",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
-      "Unit 12: Environment and Nature: What is Environmental Justice?"
+      "Unit 12: Environment and Nature: What is Environmental Justice?",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8793,17 +8797,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-advocacy",
     "word": "Advocacy",
-    "bengaliMeaning": "সমর্থন / অধিকার রক্ষা ও প্রচার",
+    "bengaliMeaning": "পক্ষ সমর্থন",
     "partsOfSpeech": "Noun",
-    "synonyms": "Championing, campaigning, endorsement, activism",
-    "antonyms": "Opposition, discouragement, obstruction",
+    "synonyms": "Support, backing",
+    "antonyms": "Opposition",
     "englishMeaning": "Public support for or recommendation of a particular cause or policy.",
-    "exampleSentence": "Environmental Justice bridges the gap between the two movements: environmentalism and human rights advocacy.",
-    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
+    "exampleSentence": "Environmental Justice bridges the gap between environmentalism and human rights advocacy.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "lesson": "What is Environmental Justice?",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
-      "Unit 12: Environment and Nature: What is Environmental Justice?"
+      "Unit 12: Environment and Nature: What is Environmental Justice?",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -12749,7 +12754,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -17991,7 +17997,8 @@ export const hscVocabularyList = [
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
-      "Unit 5: Lesson 3 (Rights to Health and Education)"
+      "Unit 5: Lesson 3 (Rights to Health and Education)",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20572,12 +20579,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-01",
     "word": "Devastation",
-    "bengaliMeaning": "ব্যাপক ধ্বংসযজ্ঞ / চরম বিপর্যয় ও ধ্বংসস্তূপ",
+    "bengaliMeaning": "ধ্বংস",
     "partsOfSpeech": "Noun",
-    "synonyms": "Destruction, desolation, ruin, catastrophe, havoc",
-    "antonyms": "Restoration, building, rehabilitation",
+    "synonyms": "Destruction, ruin",
+    "antonyms": "Restoration",
     "englishMeaning": "Great destruction or damage.",
-    "exampleSentence": "It recognizes that currently the negative impacts of ecological devastation, particularly the environmental harm and hazards created by overconsumption of resources in the global North and by elites worldwide, fall disproportionately on the world's poor, the vast majority of whom are people of color, especially women and children.",
+    "exampleSentence": "Currently the negative impacts of ecological devastation fall disproportionately on the world's poor.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20614,12 +20621,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-06",
     "word": "Interconnected",
-    "bengaliMeaning": "পরস্পর সংযুক্ত / ওতপ্রোতভাবে জড়িয়ে থাকা",
+    "bengaliMeaning": "আন্তঃসংযুক্ত",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Interlinked, interrelated, interdependent, mutually tied",
-    "antonyms": "Isolated, disconnected, separate, independent",
-    "englishMeaning": "Having all constituent parts linked or connected.",
-    "exampleSentence": "Rather, they are clearly interconnected; they are caused by human beings; and they disproportionately negatively impact poor people and women.",
+    "synonyms": "Linked, related",
+    "antonyms": "Disconnected, separated",
+    "englishMeaning": "Having all constituent parts linked or connected mutually.",
+    "exampleSentence": "Rather, they are clearly interconnected; they are caused by human beings.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20635,12 +20642,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-07",
     "word": "Explosion",
-    "bengaliMeaning": "বিস্ফোরণ / রাসায়নিক বা পারমাণবিক প্রচণ্ড নির্গমন",
+    "bengaliMeaning": "বিস্ফোরণ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Blast, detonation, blowup, burst, eruption",
-    "antonyms": "Implosion, containment, suppression",
-    "englishMeaning": "A violent and destructive shattering or blowing apart of something.",
-    "exampleSentence": "When an explosion in the Union Carbide Chemical Plant in Bhopal, India, killed thousands of people on the night of December 2, 1984, it was regarded as a terrible but singular disaster.",
+    "synonyms": "Eruption, blast",
+    "antonyms": "Implosion, calm",
+    "englishMeaning": "A violent shattering or blowing apart of something, as is caused by a bomb or gas.",
+    "exampleSentence": "When an explosion in the Union Carbide Chemical Plant in Bhopal killed thousands.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20656,12 +20663,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-08",
     "word": "Ecological",
-    "bengaliMeaning": "বাস্তুসংস্থানিক / পরিবেশ ও জীবজগতের সম্পর্ক বিষয়ক",
+    "bengaliMeaning": "পরিবেশগত",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Environmental, ecosystemic, bionomic, green, natural",
-    "antonyms": "Anti-ecological, artificial",
+    "synonyms": "",
+    "antonyms": "Unnatural",
     "englishMeaning": "Relating to or concerned with the relation of living organisms to one another and to their physical surroundings.",
-    "exampleSentence": "So too when the world learned of the ecological and human cost of decades of petroleum-waste dumping in the Niger Delta by Royal Dutch Shell in the last quarter of the twentieth century, the attempt to privatize water in Bolivia by the Bechtel Corporation in the 1990s, the death of close to two thousand people in New Orleans following Hurricane Katrina in 2005, or even the horrific aftermath of the atomic bombing of Hiroshima and Nagasaki six decades earlier, each was regarded as a terrible but singular disaster.",
+    "exampleSentence": "The world learned of the ecological and human cost of petroleum-waste dumping.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -22047,17 +22054,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l4-toxicity",
     "word": "Toxicity",
-    "bengaliMeaning": "বিষাক্ততা / ক্ষতিকারক ক্ষমতা",
+    "bengaliMeaning": "বিষাক্ততা",
     "partsOfSpeech": "Noun",
-    "synonyms": "Poisonousness, lethality, virulence, venomousness",
-    "antonyms": "Harmlessness, non-toxicity, wholesomeness",
-    "englishMeaning": "The quality of being toxic or poisonous.",
-    "exampleSentence": "Environmental Justice therefore represents a new, important body of thought and action at the beginning of the twenty-first century, especially as people around the world face the realities of climate change, increasing toxicity, resource depletion, and the rapid disappearance of species and arable land on which the health of many human communities depends.",
-    "unit": "Unit 12: Environment and Nature: What is Environmental Justice?",
+    "synonyms": "Venomness",
+    "antonyms": "",
+    "englishMeaning": "The quality, state, or relative degree of being toxic or poisonous.",
+    "exampleSentence": "People around the world face the realities of climate change and increasing toxicity.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "lesson": "What is Environmental Justice?",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
-      "Unit 12: Environment and Nature: What is Environmental Justice?"
+      "Unit 12: Environment and Nature: What is Environmental Justice?",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -27080,7 +27088,8 @@ export const hscVocabularyList = [
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
-      "Unit 12: Lesson 1 (Water Everywhere)"
+      "Unit 12: Lesson 1 (Water Everywhere)",
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -27522,6 +27531,195 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
       "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-aftermath",
+    "word": "Aftermath",
+    "bengaliMeaning": "পরিণতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Consequence, outcome",
+    "antonyms": "Origin",
+    "englishMeaning": "The consequences or aftereffects of a significant unpleasant event.",
+    "exampleSentence": "The horrific aftermath of the atomic bombing of Hiroshima and Nagasaki.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-collectively",
+    "word": "Collectively",
+    "bengaliMeaning": "সমষ্টিগতভাবে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Together, jointly",
+    "antonyms": "Separately",
+    "englishMeaning": "As a whole or group; cooperatively.",
+    "exampleSentence": "Collectively creating a future in which the dignity and rights of all people are respected.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-commitment",
+    "word": "Commitment",
+    "bengaliMeaning": "অঙ্গীকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Obligation, dedication",
+    "antonyms": "Indifference, apathy",
+    "englishMeaning": "The state or quality of being dedicated to a cause, activity, or promise.",
+    "exampleSentence": "It yokes concern for the environment to commitment to social justice.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-concept",
+    "word": "Concept",
+    "bengaliMeaning": "ধারণা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Idea, perception, view, theory",
+    "antonyms": "",
+    "englishMeaning": "An abstract idea or a general notion.",
+    "exampleSentence": "As a concept and a movement now global in scope, Environmental Justice holds that burdens should be shared equally.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-disappearance",
+    "word": "Disappearance",
+    "bengaliMeaning": "অদৃশ্য হওয়া",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Vanishing",
+    "antonyms": "Presence, appearance",
+    "englishMeaning": "An act of someone or something ceasing to be visible or to exist.",
+    "exampleSentence": "Face increasing toxicity, resource depletion, and the rapid disappearance of species.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-horrific",
+    "word": "Horrific",
+    "bengaliMeaning": "ভয়াবহ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Frightening, dreadful",
+    "antonyms": "Delightful, soothing",
+    "englishMeaning": "Causing horror; dreadfully shocking or terrifying.",
+    "exampleSentence": "The horrific aftermath of the atomic bombing of Hiroshima and Nagasaki.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-movement",
+    "word": "Movement",
+    "bengaliMeaning": "আন্দোলন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Campaign, protest",
+    "antonyms": "",
+    "englishMeaning": "A group of people working together to advance their shared political, social, or artistic ideas.",
+    "exampleSentence": "That is what Environmental Justice as a movement understands.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-terrible",
+    "word": "Terrible",
+    "bengaliMeaning": "ভয়ংকর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Awful, horrible",
+    "antonyms": "Pleasant",
+    "englishMeaning": "Extremely bad, severe, or serious; formidable.",
+    "exampleSentence": "Each was regarded as a terrible but singular disaster.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l4-undisclosed",
+    "word": "Undisclosed",
+    "bengaliMeaning": "অপ্রকাশিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Secret, hidden",
+    "antonyms": "Revealed, known",
+    "englishMeaning": "Not made known to the public; secret or unrevealed.",
+    "exampleSentence": "The reactor at Chernobyl exploded killing an undisclosed number of workers.",
+    "unit": "Unit 12: Lesson 4 (Environmental Justice)",
+    "boardExamTag": "Unit 12 • Lesson 4",
+    "sources": [
+      "Unit 12: Lesson 4 (Environmental Justice)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],

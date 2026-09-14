@@ -554,7 +554,7 @@ export const hscUnits = [
     "bgClass": "bg-[#15803d] hover:bg-[#166534]",
     "gradient": "from-[#22c55e] to-[#15803d]",
     "progress": 0,
-    "totalWords": 113,
+    "totalWords": 127,
     "masteredWords": 0,
     "lessons": [
       {
@@ -589,8 +589,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "What is Environmental Justice?",
         "titleBn": "পরিবেশগত সুবিচার",
-        "questionsCount": "৬৮ টি প্রশ্ন",
-        "wordsCount": 17,
+        "questionsCount": "১৩২ টি প্রশ্ন",
+        "wordsCount": 33,
         "progress": 0
       },
       {
