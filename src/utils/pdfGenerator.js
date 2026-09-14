@@ -814,7 +814,7 @@ export function generatePrintableFlashcardsPDF({
 
     @page {
       size: A4 portrait;
-      margin: 6mm 6mm 6mm 6mm;
+      margin: 6mm;
     }
 
     * {
@@ -901,7 +901,7 @@ export function generatePrintableFlashcardsPDF({
       transform: translateY(-1px);
     }
 
-    /* Print Sheets Layout */
+    /* Print Sheets Layout - Full A4 Page Dimension */
     .print-container {
       margin: 0 auto;
       padding: 12px 0;
@@ -910,10 +910,11 @@ export function generatePrintableFlashcardsPDF({
     .sheet-page {
       width: 198mm;
       height: 285mm;
+      min-height: 285mm;
       max-height: 285mm;
       margin: 0 auto 16px auto;
       background: #ffffff;
-      padding: 3mm;
+      padding: 2mm 1mm;
       box-sizing: border-box;
       position: relative;
       page-break-after: always;
@@ -922,33 +923,43 @@ export function generatePrintableFlashcardsPDF({
       border-radius: 4px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     .sheet-watermark-guide {
-      font-size: 8.5px;
+      font-size: 8px;
       color: #94a3b8;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       text-align: right;
-      padding-bottom: 2mm;
-      font-weight: 600;
+      padding: 0 2mm 1.5mm 0;
+      font-weight: 700;
+      line-height: 1;
     }
 
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      gap: 2.5mm;
-      flex: 1;
-      height: calc(100% - 4mm);
+      grid-template-columns: 96.5mm 96.5mm;
+      grid-template-rows: 66.5mm 66.5mm 66.5mm 66.5mm;
+      gap: 3.5mm 3.5mm;
+      justify-content: center;
+      align-content: space-between;
+      width: 100%;
+      height: 277mm;
+      min-height: 277mm;
+      box-sizing: border-box;
     }
 
-    /* Flashcard Style */
+    /* Flashcard Style - Standard A4 8-Up Full Page */
     .flashcard {
-      border: 1.2px dashed #94a3b8;
-      border-radius: 6px;
+      width: 96.5mm;
+      height: 66.5mm;
+      min-height: 66.5mm;
+      max-height: 66.5mm;
+      border: 1.5px dashed #94a3b8;
+      border-radius: 8px;
       background: #ffffff;
-      padding: 8px 10px;
+      padding: 10px 12px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -966,7 +977,7 @@ export function generatePrintableFlashcardsPDF({
       position: absolute;
       top: 1px;
       left: 3px;
-      font-size: 8px;
+      font-size: 8.5px;
       color: #cbd5e1;
       pointer-events: none;
       line-height: 1;
@@ -986,26 +997,26 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .card-unit-tag {
-      font-size: 9px;
-      font-weight: 600;
-      color: #64748b;
+      font-size: 10px;
+      font-weight: 700;
+      color: #475569;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 65%;
+      max-width: 68%;
       letter-spacing: -0.2px;
     }
 
     .pos-badge {
-      font-size: 8.5px;
-      font-weight: 700;
+      font-size: 9px;
+      font-weight: 800;
       text-transform: uppercase;
       color: #0369a1;
       background: #e0f2fe;
-      border: 0.8px solid #bae6fd;
-      padding: 1.5px 5px;
-      border-radius: 4px;
-      letter-spacing: 0.3px;
+      border: 1px solid #bae6fd;
+      padding: 2px 6px;
+      border-radius: 5px;
+      letter-spacing: 0.4px;
       flex-shrink: 0;
     }
 
@@ -1015,45 +1026,45 @@ export function generatePrintableFlashcardsPDF({
       align-items: center;
       justify-content: center;
       flex: 1;
-      padding: 4px 0;
+      padding: 6px 0;
       text-align: center;
     }
 
     .card-word {
-      font-size: 21px;
+      font-size: 26px;
       font-weight: 800;
       color: #0f172a;
-      letter-spacing: -0.4px;
+      letter-spacing: -0.5px;
       line-height: 1.15;
       word-break: break-word;
     }
 
     .card-phonetic {
-      font-size: 10px;
+      font-size: 11px;
       color: #64748b;
       font-family: monospace;
-      margin-top: 3px;
+      margin-top: 4px;
     }
 
     .card-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 0.8px solid #f1f5f9;
-      padding-top: 3px;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 4px;
       margin-top: 2px;
     }
 
     .card-brand-sub {
-      font-size: 8px;
-      font-weight: 600;
+      font-size: 8.5px;
+      font-weight: 700;
       color: #94a3b8;
     }
 
     .card-duplex-hint {
-      font-size: 7.5px;
+      font-size: 8px;
       color: #cbd5e1;
-      font-weight: 500;
+      font-weight: 600;
     }
 
     /* Back Card Styling */
@@ -1066,25 +1077,25 @@ export function generatePrintableFlashcardsPDF({
       justify-content: space-between;
       align-items: center;
       gap: 6px;
-      border-bottom: 0.8px solid #e2e8f0;
-      padding-bottom: 2px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
       margin-bottom: 3px;
     }
 
     .card-word-sm {
-      font-size: 11.5px;
+      font-size: 13px;
       font-weight: 800;
-      color: #1e293b;
+      color: #0f172a;
       letter-spacing: -0.2px;
     }
 
     .pos-badge-sm {
-      font-size: 8px;
-      font-weight: 700;
+      font-size: 8.5px;
+      font-weight: 800;
       color: #0369a1;
       background: #e0f2fe;
-      padding: 1px 4px;
-      border-radius: 3px;
+      padding: 1.5px 5px;
+      border-radius: 4px;
     }
 
     .card-back-body {
@@ -1092,12 +1103,12 @@ export function generatePrintableFlashcardsPDF({
       flex-direction: column;
       justify-content: space-between;
       flex: 1;
-      gap: 2.5px;
+      gap: 3px;
     }
 
     .bangla-meaning {
       font-family: 'Hind Siliguri', 'Inter', sans-serif;
-      font-size: 13.5px;
+      font-size: 14.5px;
       font-weight: 700;
       color: #047857;
       line-height: 1.25;
@@ -1105,9 +1116,9 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .english-definition {
-      font-size: 9.5px;
+      font-size: 10px;
       color: #334155;
-      line-height: 1.25;
+      line-height: 1.3;
       font-style: italic;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -1118,24 +1129,24 @@ export function generatePrintableFlashcardsPDF({
     .relations-grid {
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 2.5px;
       background: #f8fafc;
-      border: 0.8px solid #e2e8f0;
-      border-radius: 4px;
-      padding: 3px 5px;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 3.5px 6px;
     }
 
     .relation-row {
       display: flex;
       align-items: baseline;
-      gap: 4px;
-      font-size: 9px;
-      line-height: 1.25;
+      gap: 5px;
+      font-size: 9.5px;
+      line-height: 1.3;
     }
 
     .rel-label {
       font-weight: 800;
-      font-size: 8.5px;
+      font-size: 9px;
       flex-shrink: 0;
     }
 
@@ -1145,7 +1156,7 @@ export function generatePrintableFlashcardsPDF({
 
     .syn-text {
       color: #1e3a8a;
-      font-weight: 500;
+      font-weight: 600;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
@@ -1158,7 +1169,7 @@ export function generatePrintableFlashcardsPDF({
 
     .ant-text {
       color: #991b1b;
-      font-weight: 500;
+      font-weight: 600;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
@@ -1166,19 +1177,19 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .example-box {
-      font-size: 8.5px;
-      color: #64748b;
+      font-size: 9px;
+      color: #475569;
       font-style: italic;
-      line-height: 1.2;
+      line-height: 1.25;
       display: -webkit-box;
-      -webkit-line-clamp: 1;
+      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
       padding-top: 1px;
     }
 
     .ex-quote {
-      color: #475569;
+      color: #334155;
     }
 
     /* Print Overrides */
@@ -1200,13 +1211,15 @@ export function generatePrintableFlashcardsPDF({
 
       .sheet-page {
         margin: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        max-height: none !important;
+        width: 198mm !important;
+        height: 285mm !important;
+        max-height: 285mm !important;
+        min-height: 285mm !important;
         box-shadow: none !important;
         border-radius: 0 !important;
         page-break-after: always !important;
         break-after: page !important;
+        padding: 2mm 1mm !important;
       }
 
       .sheet-page:last-child {
@@ -1214,8 +1227,22 @@ export function generatePrintableFlashcardsPDF({
         break-after: auto !important;
       }
 
+      .cards-grid {
+        width: 100% !important;
+        height: 277mm !important;
+        min-height: 277mm !important;
+        grid-template-columns: 96.5mm 96.5mm !important;
+        grid-template-rows: 66.5mm 66.5mm 66.5mm 66.5mm !important;
+        gap: 3.5mm 3.5mm !important;
+      }
+
       .flashcard {
+        width: 96.5mm !important;
+        height: 66.5mm !important;
+        min-height: 66.5mm !important;
+        max-height: 66.5mm !important;
         border-color: #94a3b8 !important;
+        page-break-inside: avoid !important;
       }
     }
   </style>
