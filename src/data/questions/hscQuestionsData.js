@@ -2,8 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1077 Authentic Textbook Vocabulary Words
- * Total MCQs: 4308 Board-Standard Multiple Choice Questions
+ * Total Words: 1091 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -4815,31 +4814,6 @@ export const hscVocabularyList = [
     "priority": 102
   },
   {
-    "id": "vocab-u11-l1-07",
-    "word": "Obsessing",
-    "bengaliMeaning": "আচ্ছন্ন করে রাখা / মনে সার্বক্ষণিক প্রভাব বিস্তার করা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Preoccupying, haunting, dominating, consuming, fixating",
-    "antonyms": "Ignoring, releasing, disregarding",
-    "englishMeaning": "Preoccupying or continually filling the mind of someone.",
-    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
-    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
-    "boardExamTag": "Unit 11 • Lesson 1",
-    "sources": [
-      "Unit 11: Lesson 1 (Situations of Conflict)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Haunting"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Haunting"
-    ],
-    "crossRefAntonyms": [],
-    "priority": 102
-  },
-  {
     "id": "vocab-u12-l3-01",
     "word": "Endangered",
     "bengaliMeaning": "বিলুপ্তির ঝুঁকিতে থাকা / মারাত্মকভাবে বিপন্ন",
@@ -4945,17 +4919,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l1-moan",
     "word": "Moan",
-    "bengaliMeaning": "আর্তনাদ / দীর্ঘশ্বাস",
+    "bengaliMeaning": "বিলাপ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Groan, lament, whimper, wail",
-    "antonyms": "Cheer, applause, laughter, rejoicing",
-    "englishMeaning": "A long, low sound made by a person expressing physical or mental suffering.",
-    "exampleSentence": "Now if you listen closely I'll tell you what I know Storm clouds are gathering The wind is gonna blow The race of man is suffering And I can hear the moan.",
-    "unit": "Unit 11: Peace and Conflict: Situations of Conflict",
+    "synonyms": "Cry, lamentation",
+    "antonyms": "Laugh",
+    "englishMeaning": "A long, low sound expressing physical or mental pain or grief.",
+    "exampleSentence": "The race of man is suffering and I can hear the moan.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "lesson": "Situations of Conflict",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
-      "Unit 11: Peace and Conflict: Situations of Conflict"
+      "Unit 11: Peace and Conflict: Situations of Conflict",
+      "Unit 11: Lesson 1 (Situations of Conflict)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8166,7 +8141,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
       "Unit 11: Lesson 3 (Stories From Gaza)",
-      "Unit 4: Lesson 2 (Transformative Speeches)"
+      "Unit 4: Lesson 2 (Transformative Speeches)",
+      "Unit 11: Lesson 1 (Situations of Conflict)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8945,7 +8921,8 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 1: Lesson 4 (Civic Engagement)",
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)"
+      "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
+      "Unit 11: Lesson 1 (Situations of Conflict)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -12286,16 +12263,17 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u10-39",
     "word": "Offend",
-    "bengaliMeaning": "অসন্তুষ্ট করা / অপমানিত করা / ক্ষুব্ধ করা",
+    "bengaliMeaning": "রাগিয়ে দেওয়া",
     "partsOfSpeech": "Verb",
-    "synonyms": "Insult, Displease, Upset, Affront, Hurt",
-    "antonyms": "Please, Delight, Gratify, Charm, Flatter",
-    "englishMeaning": "To cause someone to feel hurt, angry, or upset by bad behavior.",
-    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
-    "unit": "Unit 10: Lesson 1 (Manners Around the World)",
-    "boardExamTag": "Unit 10 • Lesson 1",
+    "synonyms": "Resent",
+    "antonyms": "",
+    "englishMeaning": "Cause someone to feel hurt, angry, or resentful.",
+    "exampleSentence": "The unmentionable odour of death offends the September night.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
+      "Unit 10: Lesson 1 (Manners Around the World)",
+      "Unit 11: Lesson 1 (Situations of Conflict)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -19923,11 +19901,11 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l1-01",
     "word": "Cruelties",
-    "bengaliMeaning": "নিষ্ঠুরতা / বর্বর নির্যাতন ও পৈশাচিক আচরণ",
+    "bengaliMeaning": "নিষ্ঠুর আচরণ, নিষ্ঠুর কাজ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Atrocities, brutalities, barbarities, inhumanities",
-    "antonyms": "Kindnesses, compassions, benevolences",
-    "englishMeaning": "Cruel acts or behaviors; callous indifference to or enjoyment of another's suffering.",
+    "synonyms": "Barbarity, brutality",
+    "antonyms": "Kindness, heartedness",
+    "englishMeaning": "Cruel, callous, or inhuman acts and behaviors.",
     "exampleSentence": "Cruelties of conflict affect people in different ways.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
@@ -19944,11 +19922,11 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l1-04",
     "word": "Traumatized",
-    "bengaliMeaning": "মানসিকভাবে চরম আঘাতপ্রাপ্ত / বিপর্যস্ত ও সন্ত্রস্ত",
-    "partsOfSpeech": "Adjective",
-    "synonyms": "Distressed, emotionally scarred, shocked, horrified",
-    "antonyms": "Healed, comforted, tranquil, serene",
-    "englishMeaning": "Subject to lasting shock as a result of an emotionally disturbing experience.",
+    "bengaliMeaning": "আঘাতপ্রাপ্ত",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Frightened, injured",
+    "antonyms": "",
+    "englishMeaning": "Subject to lasting shock as a result of an emotionally disturbing experience or injury.",
     "exampleSentence": "The experience left her traumatized, and for several years, she could not speak.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
@@ -19965,12 +19943,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l1-08",
     "word": "Unmentionable",
-    "bengaliMeaning": "অনুল্লেখ্য / মুখে আনার অযোগ্য জঘন্য বিষয়",
+    "bengaliMeaning": "উল্লেখের অযোগ্য",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Unspeakable, taboo, ineffable, shocking, abhorrent",
-    "antonyms": "Mentionable, praiseworthy, speakable",
-    "englishMeaning": "Too bad, embarrassing, or shocking to be spoken about.",
-    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
+    "synonyms": "Unspeakable, trivial",
+    "antonyms": "Mentionable, notable",
+    "englishMeaning": "Too bad, shocking, or taboo to be spoken about.",
+    "exampleSentence": "The unmentionable odour of death offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -24497,7 +24475,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
       "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
+      "Unit 4: Great Women: Pioneers of Education & Science",
+      "Unit 11: Lesson 1 (Situations of Conflict)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -25400,6 +25379,321 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 5: Lesson 5 (Frederick Douglass)",
       "Unit 5: Human Rights: Frederick Douglass"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-abuse",
+    "word": "Abuse",
+    "bengaliMeaning": "অবমাননা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Misbehavior",
+    "antonyms": "Appreciate, compliment",
+    "englishMeaning": "Improper, hurtful, or wrongful treatment or speech toward a person.",
+    "exampleSentence": "When she was eight, she became a victim of abuse by someone close to her mother.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-cure",
+    "word": "Cure",
+    "bengaliMeaning": "সুস্থ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Heal, repair, recover",
+    "antonyms": "Exacerbate",
+    "englishMeaning": "Relieve a person of illness or distress; restore to health.",
+    "exampleSentence": "They've got expensive doctors to cure their hearts of stone.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-decade",
+    "word": "Decade",
+    "bengaliMeaning": "দশক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "",
+    "antonyms": "",
+    "englishMeaning": "A period of ten years.",
+    "exampleSentence": "As the clever hopes expire of a low dishonest decade.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-depressed",
+    "word": "Depressed",
+    "bengaliMeaning": "বিষণ্ণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Sad, bored",
+    "antonyms": "Happy",
+    "englishMeaning": "In a state of general unhappiness, sorrow, or despondency.",
+    "exampleSentence": "The persistent shadow of war left the citizens feeling depressed and vulnerable.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-dive",
+    "word": "Dive",
+    "bengaliMeaning": "ছোট পানশালা, ঠেকি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Bar, pub, tavern",
+    "antonyms": "",
+    "englishMeaning": "A small, shabby, or disreputable bar or establishment.",
+    "exampleSentence": "I sit on one of the dives on Fifty-second Street uncertain and afraid.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-expensive",
+    "word": "Expensive",
+    "bengaliMeaning": "ব্যয়বহুল",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Costly, valuable",
+    "antonyms": "Inexpensive, cheap",
+    "englishMeaning": "Costing a lot of money; high-priced.",
+    "exampleSentence": "They've got expensive doctors to cure their hearts of stone.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-humour",
+    "word": "Humour",
+    "bengaliMeaning": "ব্যঙ্গকৌতুক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Satire, comedy, comic",
+    "antonyms": "Seriousness",
+    "englishMeaning": "The quality of being amusing or satirical.",
+    "exampleSentence": "Her poems often deal with serious matters but they also use humour and give out hope.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-ironically",
+    "word": "Ironically",
+    "bengaliMeaning": "বিদ্রূপাত্মকভাবে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Jokingly, satirically",
+    "antonyms": "Seriously, sincerely",
+    "englishMeaning": "In an ironic manner; expressing meaning by using language of the opposite sense.",
+    "exampleSentence": "She has used these words ironically to bring home the message that no one should be alone.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-obsess",
+    "word": "Obsess",
+    "bengaliMeaning": "প্রভাবিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Influence, impress",
+    "antonyms": "",
+    "englishMeaning": "Preoccupy or fill the mind of someone continually and deeply.",
+    "exampleSentence": "Waves of anger and fear circulate over the bright and darkened lands of the earth, obsessing our private lives.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-odour",
+    "word": "Odour",
+    "bengaliMeaning": "গন্ধ, ঘ্রাণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Smell, scent",
+    "antonyms": "",
+    "englishMeaning": "A distinctive smell, especially an unpleasant one.",
+    "exampleSentence": "The unmentionable odour of death offends the September night.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-parental",
+    "word": "Parental",
+    "bengaliMeaning": "পিতা-মাতা সংক্রান্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "",
+    "antonyms": "Filial",
+    "englishMeaning": "Relating to a parent or parents.",
+    "exampleSentence": "She spent much of her childhood in Stamps, Arkansas, with her parental guardian and grandmother.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-praised",
+    "word": "Praised",
+    "bengaliMeaning": "প্রশংসিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Admired, appreciated",
+    "antonyms": "Condemned, criticized",
+    "englishMeaning": "Acclaimed or admired for qualities or achievements.",
+    "exampleSentence": "She was a popular poet praised for the way she incorporated social and political themes in her poems.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-shriek",
+    "word": "Shriek",
+    "bengaliMeaning": "তীক্ষ্ণ চিৎকার করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Scream",
+    "antonyms": "",
+    "englishMeaning": "Utter a high-pitched piercing cry of terror, pain, or anguish.",
+    "exampleSentence": "Victims of violent warfare were heard to shriek in distress during the night attack.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-victim",
+    "word": "Victim",
+    "bengaliMeaning": "শিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Prey",
+    "antonyms": "",
+    "englishMeaning": "A person harmed, injured, or killed as a result of a crime, conflict, or calamity.",
+    "exampleSentence": "When she was eight, she became a victim of abuse by someone close to her mother.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l1-wail",
+    "word": "Wail",
+    "bengaliMeaning": "ক্রন্দন, হাহাকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Mourn, weep, lament",
+    "antonyms": "Laughter",
+    "englishMeaning": "A prolonged high-pitched cry of pain, grief, or lamentation.",
+    "exampleSentence": "A mournful wail echoed across the ruined settlement after the bombardment.",
+    "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
+    "boardExamTag": "Unit 11 • Lesson 1",
+    "sources": [
+      "Unit 11: Lesson 1 (Situations of Conflict)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],

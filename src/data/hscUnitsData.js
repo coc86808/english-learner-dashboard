@@ -495,7 +495,7 @@ export const hscUnits = [
     "bgClass": "bg-[#4f46e5] hover:bg-[#4338ca]",
     "gradient": "from-[#6366f1] to-[#4f46e5]",
     "progress": 0,
-    "totalWords": 56,
+    "totalWords": 74,
     "masteredWords": 0,
     "lessons": [
       {
@@ -503,8 +503,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Situations of Conflict",
         "titleBn": "সংঘাতময় পরিস্থিতি",
-        "questionsCount": "৪৪ টি প্রশ্ন",
-        "wordsCount": 11,
+        "questionsCount": "১১৬ টি প্রশ্ন",
+        "wordsCount": 29,
         "progress": 0
       },
       {
