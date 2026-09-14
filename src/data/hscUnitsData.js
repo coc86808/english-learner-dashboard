@@ -1,6 +1,6 @@
 /**
  * Official NCTB HSC English For Today Textbook Units & Lessons
- * Updated with exact authentic textbook vocabulary and question counts
+ * Synchronized with 100% Verbatim NCTB Curriculum Vocabulary Database
  */
 
 export const hscUnits = [
@@ -13,7 +13,7 @@ export const hscUnits = [
     "bgClass": "bg-[#1b8a43] hover:bg-[#1f9c4c]",
     "gradient": "from-[#1e9649] to-[#146e33]",
     "progress": 0,
-    "totalWords": 136,
+    "totalWords": 123,
     "masteredWords": 0,
     "lessons": [
       {
@@ -21,8 +21,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "The Parrot's Tale",
         "titleBn": "তোতাকাহিনী",
-        "questionsCount": "২০৪ টি প্রশ্ন",
-        "wordsCount": 51,
+        "questionsCount": "১৮৪ টি প্রশ্ন",
+        "wordsCount": 46,
         "progress": 0
       },
       {
@@ -30,8 +30,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Education and Technology",
         "titleBn": "শিক্ষা ও প্রযুক্তি",
-        "questionsCount": "১৬০ টি প্রশ্ন",
-        "wordsCount": 40,
+        "questionsCount": "১৩৬ টি প্রশ্ন",
+        "wordsCount": 34,
         "progress": 0
       },
       {
@@ -39,8 +39,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Children in School",
         "titleBn": "বিদ্যালয়ে শিশু (তোত্তো-চান)",
-        "questionsCount": "১২৪ টি প্রশ্ন",
-        "wordsCount": 31,
+        "questionsCount": "১২০ টি প্রশ্ন",
+        "wordsCount": 30,
         "progress": 0
       },
       {
@@ -48,8 +48,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Civic Engagement",
         "titleBn": "নাগরিক সম্পৃক্ততা",
-        "questionsCount": "৫৬ টি প্রশ্ন",
-        "wordsCount": 14,
+        "questionsCount": "৫২ টি প্রশ্ন",
+        "wordsCount": 13,
         "progress": 0
       }
     ]
@@ -63,7 +63,7 @@ export const hscUnits = [
     "bgClass": "bg-[#1d63d8] hover:bg-[#256fe8]",
     "gradient": "from-[#226fe8] to-[#154db0]",
     "progress": 0,
-    "totalWords": 93,
+    "totalWords": 80,
     "masteredWords": 0,
     "lessons": [
       {
@@ -71,8 +71,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "What is Beauty?",
         "titleBn": "সৌন্দর্য কী?",
-        "questionsCount": "৯২ টি প্রশ্ন",
-        "wordsCount": 23,
+        "questionsCount": "৮৮ টি প্রশ্ন",
+        "wordsCount": 22,
         "progress": 0
       },
       {
@@ -80,8 +80,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Folk Music",
         "titleBn": "লোকসংগীত",
-        "questionsCount": "৮৮ টি প্রশ্ন",
-        "wordsCount": 22,
+        "questionsCount": "৮০ টি প্রশ্ন",
+        "wordsCount": 20,
         "progress": 0
       },
       {
@@ -89,8 +89,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Art",
         "titleBn": "শিল্পকলা",
-        "questionsCount": "১১৬ টি প্রশ্ন",
-        "wordsCount": 29,
+        "questionsCount": "১০৮ টি প্রশ্ন",
+        "wordsCount": 27,
         "progress": 0
       },
       {
@@ -98,8 +98,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Craft",
         "titleBn": "কারুশিল্প",
-        "questionsCount": "৭৬ টি প্রশ্ন",
-        "wordsCount": 19,
+        "questionsCount": "৪৪ টি প্রশ্ন",
+        "wordsCount": 11,
         "progress": 0
       }
     ]
@@ -113,7 +113,7 @@ export const hscUnits = [
     "bgClass": "bg-[#432ec4] hover:bg-[#5239e0]",
     "gradient": "from-[#5b42e6] to-[#3a26a8]",
     "progress": 0,
-    "totalWords": 49,
+    "totalWords": 45,
     "masteredWords": 0,
     "lessons": [
       {
@@ -121,8 +121,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Myths of Bengal",
         "titleBn": "বাংলার পৌরাণিক রূপকথা",
-        "questionsCount": "৫২ টি প্রশ্ন",
-        "wordsCount": 13,
+        "questionsCount": "৪৮ টি প্রশ্ন",
+        "wordsCount": 12,
         "progress": 0
       },
       {
@@ -130,8 +130,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Icarus",
         "titleBn": "ইকারাস",
-        "questionsCount": "৫৬ টি প্রশ্ন",
-        "wordsCount": 14,
+        "questionsCount": "৪৮ টি প্রশ্ন",
+        "wordsCount": 12,
         "progress": 0
       },
       {
@@ -148,8 +148,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Khona",
         "titleBn": "খনার বচন ও জীবন",
-        "questionsCount": "৪৮ টি প্রশ্ন",
-        "wordsCount": 12,
+        "questionsCount": "৪৪ টি প্রশ্ন",
+        "wordsCount": 11,
         "progress": 0
       }
     ]
@@ -163,7 +163,7 @@ export const hscUnits = [
     "bgClass": "bg-[#8338bd] hover:bg-[#9345ce]",
     "gradient": "from-[#9345ce] to-[#68249a]",
     "progress": 0,
-    "totalWords": 180,
+    "totalWords": 175,
     "masteredWords": 0,
     "lessons": [
       {
@@ -171,8 +171,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "July Uprising: A Transformative Movement",
         "titleBn": "জুলাই গণ-অভ্যুত্থান: এক যুগান্তকারী আন্দোলন",
-        "questionsCount": "০ টি প্রশ্ন",
-        "wordsCount": 0,
+        "questionsCount": "৬০ টি প্রশ্ন",
+        "wordsCount": 15,
         "progress": 0
       },
       {
@@ -189,8 +189,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Great Women",
         "titleBn": "মহীয়সী নারীগণ (Great Women)",
-        "questionsCount": "৩৫৬ টি প্রশ্ন",
-        "wordsCount": 89,
+        "questionsCount": "২৭৬ টি প্রশ্ন",
+        "wordsCount": 69,
         "progress": 0
       }
     ]
@@ -204,7 +204,7 @@ export const hscUnits = [
     "bgClass": "bg-[#b81d9f] hover:bg-[#cb23b0]",
     "gradient": "from-[#cb23b0] to-[#8e117a]",
     "progress": 0,
-    "totalWords": 178,
+    "totalWords": 103,
     "masteredWords": 0,
     "lessons": [
       {
@@ -212,8 +212,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Are We Aware of These Rights -I?",
         "titleBn": "আমরা কি অধিকার সম্পর্কে সচেতন?-১",
-        "questionsCount": "১২০ টি প্রশ্ন",
-        "wordsCount": 30,
+        "questionsCount": "৭২ টি প্রশ্ন",
+        "wordsCount": 18,
         "progress": 0
       },
       {
@@ -221,8 +221,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Are We Aware of These Rights -II?",
         "titleBn": "আমরা কি অধিকার সম্পর্কে সচেতন?-২",
-        "questionsCount": "১৩২ টি প্রশ্ন",
-        "wordsCount": 33,
+        "questionsCount": "৫৬ টি প্রশ্ন",
+        "wordsCount": 14,
         "progress": 0
       },
       {
@@ -230,8 +230,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Rights to Health and Education",
         "titleBn": "স্বাস্থ্য ও শিক্ষার অধিকার",
-        "questionsCount": "১৪০ টি প্রশ্ন",
-        "wordsCount": 35,
+        "questionsCount": "৭৬ টি প্রশ্ন",
+        "wordsCount": 19,
         "progress": 0
       },
       {
@@ -239,8 +239,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Coal Miners",
         "titleBn": "কয়লা খনি শ্রমিকদের জীবন",
-        "questionsCount": "১১২ টি প্রশ্ন",
-        "wordsCount": 28,
+        "questionsCount": "৮৮ টি প্রশ্ন",
+        "wordsCount": 22,
         "progress": 0
       },
       {
@@ -248,8 +248,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Frederick Douglass",
         "titleBn": "ফ্রেডরিক ডগলাস",
-        "questionsCount": "২০৮ টি প্রশ্ন",
-        "wordsCount": 52,
+        "questionsCount": "১২০ টি প্রশ্ন",
+        "wordsCount": 30,
         "progress": 0
       }
     ]
@@ -263,7 +263,7 @@ export const hscUnits = [
     "bgClass": "bg-[#c21818] hover:bg-[#d62020]",
     "gradient": "from-[#d62020] to-[#960f0f]",
     "progress": 0,
-    "totalWords": 26,
+    "totalWords": 25,
     "masteredWords": 0,
     "lessons": [
       {
@@ -271,8 +271,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "What is a Dream?",
         "titleBn": "স্বপ্ন কী?",
-        "questionsCount": "৬৪ টি প্রশ্ন",
-        "wordsCount": 16,
+        "questionsCount": "৬০ টি প্রশ্ন",
+        "wordsCount": 15,
         "progress": 0
       },
       {
@@ -295,7 +295,7 @@ export const hscUnits = [
     "bgClass": "bg-[#d97706] hover:bg-[#b45309]",
     "gradient": "from-[#f59e0b] to-[#d97706]",
     "progress": 0,
-    "totalWords": 37,
+    "totalWords": 34,
     "masteredWords": 0,
     "lessons": [
       {
@@ -303,8 +303,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Brojen Das: On Crossing the English Channel",
         "titleBn": "ব্রজেন দাস ও ইংলিশ চ্যানেল",
-        "questionsCount": "৫৬ টি প্রশ্ন",
-        "wordsCount": 14,
+        "questionsCount": "৪৮ টি প্রশ্ন",
+        "wordsCount": 12,
         "progress": 0
       },
       {
@@ -312,8 +312,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Scaling a Mountain Peak",
         "titleBn": "পর্বতচূড়া আরোহণ",
-        "questionsCount": "৪৮ টি প্রশ্ন",
-        "wordsCount": 12,
+        "questionsCount": "৪৪ টি প্রশ্ন",
+        "wordsCount": 11,
         "progress": 0
       },
       {
@@ -336,7 +336,7 @@ export const hscUnits = [
     "bgClass": "bg-[#059669] hover:bg-[#10b981]",
     "gradient": "from-[#10b981] to-[#047857]",
     "progress": 0,
-    "totalWords": 65,
+    "totalWords": 37,
     "masteredWords": 0,
     "lessons": [
       {
@@ -344,8 +344,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Family Relationship",
         "titleBn": "পারিবারিক সম্পর্ক",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -353,8 +353,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Warmth in Relationships",
         "titleBn": "সম্পর্কে উষ্ণতা (রবার্ট হেইডেন)",
-        "questionsCount": "৫৬ টি প্রশ্ন",
-        "wordsCount": 14,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -362,8 +362,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "A Mother in Mannville",
         "titleBn": "ম্যানভিলে এক মা (জেরি)",
-        "questionsCount": "১২৪ টি প্রশ্ন",
-        "wordsCount": 31,
+        "questionsCount": "৪৮ টি প্রশ্ন",
+        "wordsCount": 12,
         "progress": 0
       },
       {
@@ -371,8 +371,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Love (Butterfly Forever)",
         "titleBn": "ভালোবাসা (প্রজাপতি চিরন্তন)",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "৩৬ টি প্রশ্ন",
+        "wordsCount": 9,
         "progress": 0
       }
     ]
@@ -386,7 +386,7 @@ export const hscUnits = [
     "bgClass": "bg-[#d97706] hover:bg-[#b45309]",
     "gradient": "from-[#f59e0b] to-[#d97706]",
     "progress": 0,
-    "totalWords": 94,
+    "totalWords": 93,
     "masteredWords": 0,
     "lessons": [
       {
@@ -394,8 +394,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "The Storm and Stress at Adolescence",
         "titleBn": "বয়ঃসন্ধিকালের ঝড় ও চাপ",
-        "questionsCount": "২৪৮ টি প্রশ্ন",
-        "wordsCount": 62,
+        "questionsCount": "২৪৪ টি প্রশ্ন",
+        "wordsCount": 61,
         "progress": 0
       },
       {
@@ -403,8 +403,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "Adolescence and Some (Related) Problems in Bangladesh",
         "titleBn": "কৈশোর ও সমস্যা",
-        "questionsCount": "৩৬ টি প্রশ্ন",
-        "wordsCount": 9,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -412,8 +412,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Why Does Child Marriage Happen?",
         "titleBn": "বাল্যবিবাহ কেন ঘটে?",
-        "questionsCount": "৩৬ টি প্রশ্ন",
-        "wordsCount": 9,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -421,8 +421,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Say 'No' to Bullying",
         "titleBn": "বুলিংকে 'না' বলুন (Say 'No' to Bullying)",
-        "questionsCount": "৫৬ টি প্রশ্ন",
-        "wordsCount": 14,
+        "questionsCount": "৬৪ টি প্রশ্ন",
+        "wordsCount": 16,
         "progress": 0
       }
     ]
@@ -436,7 +436,7 @@ export const hscUnits = [
     "bgClass": "bg-[#0284c7] hover:bg-[#0369a1]",
     "gradient": "from-[#38bdf8] to-[#0284c7]",
     "progress": 0,
-    "totalWords": 138,
+    "totalWords": 133,
     "masteredWords": 0,
     "lessons": [
       {
@@ -444,8 +444,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Manners Around the World",
         "titleBn": "বিশ্বজুড়ে শিষ্টাচার",
-        "questionsCount": "২৯৬ টি প্রশ্ন",
-        "wordsCount": 74,
+        "questionsCount": "২৯২ টি প্রশ্ন",
+        "wordsCount": 73,
         "progress": 0
       },
       {
@@ -462,8 +462,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Food and Culture",
         "titleBn": "খাদ্য ও সংস্কৃতি (মুজতবা আলী)",
-        "questionsCount": "৩৬ টি প্রশ্ন",
-        "wordsCount": 9,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -471,8 +471,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Fitness",
         "titleBn": "ফিটনেস ও মেডিটেশন",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -480,8 +480,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Consumerism",
         "titleBn": "ভোক্তাবাদ ও ব্যয়",
-        "questionsCount": "৩৬ টি প্রশ্ন",
-        "wordsCount": 9,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       }
     ]
@@ -495,7 +495,7 @@ export const hscUnits = [
     "bgClass": "bg-[#4f46e5] hover:bg-[#4338ca]",
     "gradient": "from-[#6366f1] to-[#4f46e5]",
     "progress": 0,
-    "totalWords": 143,
+    "totalWords": 120,
     "masteredWords": 0,
     "lessons": [
       {
@@ -503,8 +503,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Situations of Conflict",
         "titleBn": "সংঘাতময় পরিস্থিতি",
-        "questionsCount": "১১৬ টি প্রশ্ন",
-        "wordsCount": 29,
+        "questionsCount": "৯৬ টি প্রশ্ন",
+        "wordsCount": 24,
         "progress": 0
       },
       {
@@ -512,8 +512,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "\"The Old Man at the Bridge\" by Ernest Hemingway",
         "titleBn": "ব্রিজের ধারের বৃদ্ধটি (হেমিংওয়ে)",
-        "questionsCount": "১৩৬ টি প্রশ্ন",
-        "wordsCount": 34,
+        "questionsCount": "১১২ টি প্রশ্ন",
+        "wordsCount": 28,
         "progress": 0
       },
       {
@@ -521,8 +521,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Stories From Gaza",
         "titleBn": "গাজার গল্প (নাট্য সংলাপ)",
-        "questionsCount": "১৩২ টি প্রশ্ন",
-        "wordsCount": 33,
+        "questionsCount": "৯৬ টি প্রশ্ন",
+        "wordsCount": 24,
         "progress": 0
       },
       {
@@ -530,8 +530,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Peace in Literature",
         "titleBn": "সাহিত্যে শান্তি (জর্জ হারবার্ট)",
-        "questionsCount": "১২০ টি প্রশ্ন",
-        "wordsCount": 30,
+        "questionsCount": "৯২ টি প্রশ্ন",
+        "wordsCount": 23,
         "progress": 0
       },
       {
@@ -539,8 +539,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Opinions through images",
         "titleBn": "ছবির ভাষায় যুদ্ধ ও সংঘাত",
-        "questionsCount": "১০৮ টি প্রশ্ন",
-        "wordsCount": 27,
+        "questionsCount": "৮৪ টি প্রশ্ন",
+        "wordsCount": 21,
         "progress": 0
       }
     ]
@@ -554,7 +554,7 @@ export const hscUnits = [
     "bgClass": "bg-[#15803d] hover:bg-[#166534]",
     "gradient": "from-[#22c55e] to-[#15803d]",
     "progress": 0,
-    "totalWords": 160,
+    "totalWords": 121,
     "masteredWords": 0,
     "lessons": [
       {
@@ -562,8 +562,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Water, Water Everywhere...",
         "titleBn": "পানি দূষণ ও হাহাকার",
-        "questionsCount": "১৯৬ টি প্রশ্ন",
-        "wordsCount": 49,
+        "questionsCount": "১৫৬ টি প্রশ্ন",
+        "wordsCount": 39,
         "progress": 0
       },
       {
@@ -571,8 +571,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "The Greta Effect",
         "titleBn": "গ্রেটা প্রভাব ও জলবায়ু আন্দোলন",
-        "questionsCount": "৬০ টি প্রশ্ন",
-        "wordsCount": 15,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -580,8 +580,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Endangered Species",
         "titleBn": "বিপন্ন বন্যপ্রাণী",
-        "questionsCount": "৫২ টি প্রশ্ন",
-        "wordsCount": 13,
+        "questionsCount": "৩২ টি প্রশ্ন",
+        "wordsCount": 8,
         "progress": 0
       },
       {
@@ -589,8 +589,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "What is Environmental Justice?",
         "titleBn": "পরিবেশগত সুবিচার",
-        "questionsCount": "১৩২ টি প্রশ্ন",
-        "wordsCount": 33,
+        "questionsCount": "৮৮ টি প্রশ্ন",
+        "wordsCount": 22,
         "progress": 0
       },
       {
@@ -598,8 +598,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Limits of the Scientific Method",
         "titleBn": "প্রাকৃতিক কৃষি ও মাসানোবু ফুকুওকা",
-        "questionsCount": "২১৬ টি প্রশ্ন",
-        "wordsCount": 54,
+        "questionsCount": "১৭৬ টি প্রশ্ন",
+        "wordsCount": 44,
         "progress": 0
       }
     ]

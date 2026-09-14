@@ -1,6 +1,6 @@
 /**
  * Official HSC English For Today Vocabulary & Question Engine Database
- * All 45 Lessons | Units 1-12 (Unit 4: Speeches & Great Women included)
+ * All 45 Lessons | Units 1-12 (Unit 4: History & Great Women included)
  * 100% Verbatim NCTB Textbook Example Sentences & Multi-Unit Cross-References
  */
 
@@ -28328,6 +28328,573 @@ export const hscVocabularyList = [
     "crossRefSynonyms": [],
     "crossRefAntonyms": [],
     "priority": 100
+  },
+  {
+    "id": "vocab-enrich-92",
+    "word": "Uprising",
+    "bengaliMeaning": "গণ-অভ্যুত্থান / গণজাগরণ / বিদ্রোহ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Rebellion, insurrection, revolt, surge, revolution",
+    "antonyms": "Submission, obedience, compliance, surrender",
+    "englishMeaning": "An act of resistance or rebellion; a popular rising.",
+    "exampleSentence": "The July Uprising was a mass movement in Bangladesh that led to the overthrow of Sheikh Hasina's regime in July–August 2024.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "HSC Board Exam Model 2026",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-93",
+    "word": "Overthrow",
+    "bengaliMeaning": "ক্ষমতাচ্যুত করা / পতন ঘটানো",
+    "partsOfSpeech": "Verb / Noun",
+    "synonyms": "Oust, unseat, topple, depose, dethrone",
+    "antonyms": "Install, establish, reinstate, restore",
+    "englishMeaning": "To remove forcibly from power or overthrow a government.",
+    "exampleSentence": "The movement began with a student-led protest that led to the overthrow of Sheikh Hasina's regime.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Dhaka Board Model",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-94",
+    "word": "Regime",
+    "bengaliMeaning": "শাসনব্যবস্থা / শাসকগোষ্ঠী / শাসনকাল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Administration, government, authority, reign, rule",
+    "antonyms": "Anarchy, lawlessness, disorder",
+    "englishMeaning": "A government, especially an authoritarian one, or a system of rule.",
+    "exampleSentence": "Subsequent general elections held under the regime were widely marked by fraudulent practices.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Chattogram Board Model",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-95",
+    "word": "Repression",
+    "bengaliMeaning": "দমনপীড়ন / নিপীড়ন / নির্মম দমন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Suppression, oppression, subjugation, persecution",
+    "antonyms": "Freedom, liberation, emancipation, liberty",
+    "englishMeaning": "The action of subduing someone or something by force.",
+    "exampleSentence": "The government's brutal repression and the tragic loss of life transformed the initially apolitical protest into a widespread uprising.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Rajshahi Board Standard",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-96",
+    "word": "Culmination",
+    "bengaliMeaning": "চূড়ান্ত পরিণতি / শীর্ষবিন্দু / পরিসমাপ্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Climax, peak, apex, pinnacle, highest point",
+    "antonyms": "Beginning, start, inception, initiation",
+    "englishMeaning": "The highest or climactic point of something, especially attained after a long time.",
+    "exampleSentence": "The uprising was not a sudden event, rather it was the culmination of 16 years of public frustration.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Jashore Board Standard",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-97",
+    "word": "Tyranny",
+    "bengaliMeaning": "স্বৈরাচার / চরম নির্যাতনমূলক শাসন / অত্যাচার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Despotism, autocracy, oppression, dictatorship, absolute rule",
+    "antonyms": "Democracy, freedom, justice, liberty",
+    "englishMeaning": "Cruel and oppressive government or rule.",
+    "exampleSentence": "Public frustration stemmed from tyranny, human rights abuses, and the systematic dismantling of state institutions.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Cumilla Board Standard",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-98",
+    "word": "Reinstatement",
+    "bengaliMeaning": "পুনর্বহাল / পুনরায় কার্যকরীকরণ / পুনঃপ্রতিষ্ঠা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Restoration, re-establishment, return, reinstitution",
+    "antonyms": "Cancellation, abolition, repeal, nullification",
+    "englishMeaning": "The action of giving someone back their position, or restoring a rule/system.",
+    "exampleSentence": "The movement was ignited by the reinstatement of a discriminatory quota system in government jobs.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Barishal Board Standard",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-99",
+    "word": "Discriminatory",
+    "bengaliMeaning": "বৈষম্যমূলক / পক্ষপাতদুষ্ট",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Biased, unfair, prejudiced, inequitable, partisan",
+    "antonyms": "Fair, unbiased, egalitarian, impartial, equitable",
+    "englishMeaning": "Making or showing an unjust or prejudicial distinction between different categories of people.",
+    "exampleSentence": "The movement was ignited by the reinstatement of a discriminatory quota system in government jobs.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Sylhet Board Model",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-100",
+    "word": "Disenfranchised",
+    "bengaliMeaning": "ভোটাধিকারবঞ্চিত / নাগরিক অধিকারবঞ্চিত / ক্ষমতাহীন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Deprived, marginalized, powerless, stripped of rights",
+    "antonyms": "Enfranchised, empowered, privileged, voting",
+    "englishMeaning": "Deprived of power, marginal in society, or denied the right to vote.",
+    "exampleSentence": "The populace felt disenfranchised and oppressed under the authoritarian regime.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-101",
+    "word": "Kleptocratic",
+    "bengaliMeaning": "লুণ্ঠনমূলক / চোরতন্ত্রভিত্তিক / শাসকগোষ্ঠীর আত্মসাৎপ্রবণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Corrupt, plundering, thieving, fraudulent, predatory",
+    "antonyms": "Honest, transparent, accountable, upright",
+    "englishMeaning": "Characterized by the rampant theft of public resources by corrupt leaders.",
+    "exampleSentence": "Rampant corruption, financial mismanagement, and kleptocratic practices severely damaged the country's economy.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Mymensingh Board Standard",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-102",
+    "word": "Disillusioned",
+    "bengaliMeaning": "মোহভঙ্গ হওয়া / হতাশ / বিভ্রান্তিমুক্ত কিন্তু ব্যথিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Disenchanted, disappointed, discouraged, cynical",
+    "antonyms": "Optimistic, hopeful, enthused, captivated",
+    "englishMeaning": "Disappointed in someone or something that one previously believed in or admired.",
+    "exampleSentence": "Young people, particularly students, were deeply disillusioned with the corrupt state system.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Dhaka Board 1st Paper",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-103",
+    "word": "Nepotism",
+    "bengaliMeaning": "স্বজনপ্রীতি / আত্মীয়পোষণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Cronyism, favoritism, bias, partiality, patronage",
+    "antonyms": "Meritocracy, fairness, impartiality, equity",
+    "englishMeaning": "The practice among those with power or influence of favouring relatives or friends.",
+    "exampleSentence": "Students felt that their merit and hard work were being ignored in favour of nepotism and partisanship.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Rajshahi Board Exam",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-104",
+    "word": "Curfew",
+    "bengaliMeaning": "সান্ধ্য আইন / কারফিউ / চলাচলের ওপর সরকারি নিষেধাজ্ঞা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Lockdown, confinement, restriction, stay-at-home order",
+    "antonyms": "Freedom of movement, open access, unrestricted mobility",
+    "englishMeaning": "A regulation requiring people to remain indoors between specified hours, typically at night.",
+    "exampleSentence": "In response to the 'March to Dhaka' programme, millions broke the curfew and marched on the capital.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Chattogram Board Exam",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-105",
+    "word": "Extrajudicial",
+    "bengaliMeaning": "বিচারবহির্ভূত / আইনের বাইরের",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Unauthorized, lawless, arbitrary, illegal, summary",
+    "antonyms": "Judicial, lawful, legal, constitutional, court-ordered",
+    "englishMeaning": "Not formed by or not according to the principles of law or court proceedings.",
+    "exampleSentence": "Disappearances, murders, and extrajudicial killings were the main features of the fallen regime.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Sylhet Board Exam",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-106",
+    "word": "Fascism",
+    "bengaliMeaning": "ফ্যাসিবাদ / স্বৈরতান্ত্রিক একনায়কত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Authoritarianism, totalitarianism, dictatorship, autocracy",
+    "antonyms": "Democracy, liberalism, pluralism, self-governance",
+    "englishMeaning": "A mass political movement and regime that emphasizes extreme authoritarian nationalism and oppression of opposition.",
+    "exampleSentence": "However, history has taught us that fascism cannot last forever.",
+    "unit": "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)",
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 4: Lesson 1 (July Uprising: A Transformative Movement)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-107",
+    "word": "Bullying",
+    "bengaliMeaning": "বুলিং / অত্যাচার / সহপাঠী বা অন্যকে পীড়ন বা ভয় দেখানো",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Harassment, intimidation, tormenting, victimization, persecution",
+    "antonyms": "Protection, kindness, compassion, support, defense",
+    "englishMeaning": "The repetitive use of force, coercion, or threat to abuse, aggressively dominate or intimidate.",
+    "exampleSentence": "In Bangladesh, 35 percent of students aged between 13 and 15 reported being bullied in school.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Dhaka Board 2026 Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-108",
+    "word": "Cyberbullying",
+    "bengaliMeaning": "সাইবার বুলিং / ডিজিটাল মাধ্যমে হয়রানি ও হুমকি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Online harassment, cyber harassment, digital intimidation, trolling",
+    "antonyms": "Online safety, digital courtesy, respectful communication",
+    "englishMeaning": "The use of electronic communication to bully a person, typically by sending messages of an intimidating or threatening nature.",
+    "exampleSentence": "Cyberbullying is basically an act done by a person against another by using electronic communication.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Cumilla Board Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-109",
+    "word": "Benign",
+    "bengaliMeaning": "নিরীহ / মৃদু / অক্ষতিকর / অমায়িক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Gentle, harmless, mild, inoffensive, non-threatening",
+    "antonyms": "Malignant, harmful, malicious, hostile, poisonous",
+    "englishMeaning": "Gentle and kindly; not harmful or threatening in effect.",
+    "exampleSentence": "By using a benign word such as 'teasing' to express grossly inappropriate behaviour, it reduces the gravity of the action.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Jashore Board Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-110",
+    "word": "Normalised",
+    "bengaliMeaning": "স্বাভাবিকীকৃত / স্বাভাবিক হিসেবে প্রতিষ্ঠিত",
+    "partsOfSpeech": "Adjective / Verb",
+    "synonyms": "Standardized, accepted, routine, conventionalized",
+    "antonyms": "Abnormal, rejected, prohibited, condemned",
+    "englishMeaning": "Made or accepted as normal, regular, or standard.",
+    "exampleSentence": "The gravity of sexual harassment in public spaces has been diluted and almost normalised through calling it 'eve-teasing'.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Rajshahi Board Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-111",
+    "word": "Imperative",
+    "bengaliMeaning": "অপরিহার্য / অতীব জরুরি / বাধ্যতামূলক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Essential, vital, crucial, critical, indispensable",
+    "antonyms": "Optional, nonessential, minor, unnecessary",
+    "englishMeaning": "Of vital importance; crucial or indispensable.",
+    "exampleSentence": "It is imperative that we as a society listen more to the survivors, rather than blaming them.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Dinajpur Board Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-112",
+    "word": "Defames",
+    "bengaliMeaning": "মানহানি করে / সুনাম নষ্ট করে",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Slanders, libels, disparages, vilifies, smears",
+    "antonyms": "Praises, honors, extols, commends",
+    "englishMeaning": "Damages the good reputation of someone through false or malicious statements.",
+    "exampleSentence": "The Act provides that deliberately publishing material that defames a person is a criminal offence.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Chattogram Board Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-113",
+    "word": "Punishable",
+    "bengaliMeaning": "শাস্তিযোগ্য / দণ্ডনীয়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Penalizable, culpable, illegal, indictable",
+    "antonyms": "Pardonable, blameless, lawful, innocent",
+    "englishMeaning": "Liable to be punished by law or judicial statute.",
+    "exampleSentence": "In Bangladesh, cyberbullying is an offence punishable under the ICT Act 2006.",
+    "unit": "Unit 9: Lesson 4 (Say 'No' to Bullying)",
+    "boardExamTag": "Mymensingh Board Model",
+    "sources": [
+      "Unit 9: Lesson 4 (Say 'No' to Bullying)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-114",
+    "word": "Gracious",
+    "bengaliMeaning": "বিনম্র ও কৃপাপূর্ণ / অমায়িক / মহৎ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Courteous, polite, chivalrous, gentle, elegant",
+    "antonyms": "Rude, churlish, abrasive, discourteous",
+    "englishMeaning": "Courteous, kind, and pleasant, especially towards someone of lower social status.",
+    "exampleSentence": "Jerry possessed a rare integrity and a gracious, instinctive courtesy.",
+    "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
+    "boardExamTag": "Barishal Board Model",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-115",
+    "word": "Spinster",
+    "bengaliMeaning": "অনূঢ়া নারী / অবিবাহিতা নারী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Unmarried woman, single woman, maiden",
+    "antonyms": "Married woman, matron, wife",
+    "englishMeaning": "An unmarried woman, typically one who is beyond the usual age for marriage.",
+    "exampleSentence": "Miss Clark, the spinster orphanage manager, revealed the shocking truth about Jerry's imaginary mother.",
+    "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
+    "boardExamTag": "Sylhet Board Model",
+    "sources": [
+      "Unit 8: Lesson 3 (A Mother in Mannville)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-116",
+    "word": "Sovereignty",
+    "bengaliMeaning": "সার্বভৌমত্ব / পূর্ণ কর্তৃত্ব ও স্বায়ত্তশাসন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Autonomy, self-governance, supremacy, independence",
+    "antonyms": "Subjugation, dependency, colonization, subservience",
+    "englishMeaning": "Supreme power or authority; the authority of a state to govern itself or another state.",
+    "exampleSentence": "Environmental justice asserts the sovereignty and ecological rights of indigenous communities.",
+    "unit": "Unit 12: Lesson 4 (What is Environmental Justice?)",
+    "boardExamTag": "Dhaka Board Model",
+    "sources": [
+      "Unit 12: Lesson 4 (What is Environmental Justice?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-117",
+    "word": "Multinational",
+    "bengaliMeaning": "বহুজাতিক / একাধিক দেশজুড়ে পরিচালিত",
+    "partsOfSpeech": "Adjective / Noun",
+    "synonyms": "Global, international, transnational, worldwide",
+    "antonyms": "National, local, domestic, regional",
+    "englishMeaning": "Including or involving several countries or individuals of several nationalities.",
+    "exampleSentence": "Multinational corporations must be held accountable for hazardous waste dumping in poorer nations.",
+    "unit": "Unit 12: Lesson 4 (What is Environmental Justice?)",
+    "boardExamTag": "Cumilla Board Model",
+    "sources": [
+      "Unit 12: Lesson 4 (What is Environmental Justice?)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
+  },
+  {
+    "id": "vocab-enrich-118",
+    "word": "Reductionist",
+    "bengaliMeaning": "হ্রাসমূলক / খণ্ডিত ধারণাবিশিষ্ট / ক্ষুদ্রাতিক্ষুদ্র খণ্ডায়নবাদী",
+    "partsOfSpeech": "Adjective / Noun",
+    "synonyms": "Oversimplified, mechanistic, fragmented, atomic",
+    "antonyms": "Holistic, comprehensive, integrated, all-encompassing",
+    "englishMeaning": "Analyzing and describing a complex phenomenon in terms of its simple constituents.",
+    "exampleSentence": "Masanobu Fukuoka criticized the reductionist approach of modern chemical agriculture.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Rajshahi Board Model",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 10
   }
 ];
 
