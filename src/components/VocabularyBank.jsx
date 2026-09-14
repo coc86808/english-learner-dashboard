@@ -32,6 +32,7 @@ import {
 import { hscVocabularyList, matchesUnitAndLesson } from '../data/questions';
 import { hscUnits } from '../data/hscUnitsData';
 import { generateVocabularyBankPDF } from '../utils/pdfGenerator';
+import FlashcardPrintModal from './FlashcardPrintModal';
 
 export default function VocabularyBank({
   lang = 'en',
@@ -63,6 +64,7 @@ export default function VocabularyBank({
 
   // PDF Export Customization Modal State
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [isFlashcardPrintModalOpen, setIsFlashcardPrintModalOpen] = useState(false);
   const [pdfStudentName, setPdfStudentName] = useState(() => {
     try {
       if (currentUser?.name && currentUser.name !== 'Tanvir Ahmed' && currentUser.name !== 'HSC Candidate') {
@@ -413,7 +415,15 @@ export default function VocabularyBank({
               className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs sm:text-sm font-extrabold flex items-center gap-2 shadow-lg shadow-emerald-950/60 cursor-pointer transition-all active:scale-95"
             >
               <Download size={16} />
-              <span>{isBn ? 'PDF ডাউনলোড / প্রিন্ট' : 'Download PDF / Print'}</span>
+              <span>{isBn ? 'PDF শিট ডাউনলোড' : 'Download PDF Sheet'}</span>
+            </button>
+
+            <button
+              onClick={() => setIsFlashcardPrintModalOpen(true)}
+              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:bg-amber-500/30 text-amber-300 hover:text-amber-200 text-xs sm:text-sm font-bold flex items-center gap-2 border border-amber-500/40 shadow-lg shadow-amber-950/40 cursor-pointer transition-all active:scale-95"
+            >
+              <Printer size={16} />
+              <span>{isBn ? '🖨️ ফ্ল্যাশকার্ড প্রিন্ট (PDF)' : 'Print Flashcards PDF'}</span>
             </button>
 
             {onStartExam && (
@@ -1428,6 +1438,17 @@ export default function VocabularyBank({
           </div>
         </div>
       )}
+
+      {/* Printable Double-Sided Flashcards PDF Modal */}
+      <FlashcardPrintModal
+        isOpen={isFlashcardPrintModalOpen}
+        onClose={() => setIsFlashcardPrintModalOpen(false)}
+        initialUnitId={selectedUnitId}
+        initialLessonId={selectedLessonId}
+        lang={lang}
+        currentUser={currentUser}
+        weakWords={weakWords}
+      />
     </div>
   );
 }

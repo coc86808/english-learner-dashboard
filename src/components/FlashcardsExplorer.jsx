@@ -20,11 +20,13 @@ import {
   Check,
   RefreshCw,
   X,
-  Play
+  Play,
+  Printer
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { hscVocabularyList, matchesUnitAndLesson } from '../data/questions/hscQuestionsData';
 import { hscUnits } from '../data/hscUnitsData';
+import FlashcardPrintModal from './FlashcardPrintModal';
 
 export default function FlashcardsExplorer({ 
   lang = 'en', 
@@ -51,6 +53,7 @@ export default function FlashcardsExplorer({
   const [masteredWords, setMasteredWords] = useState(savedFC?.masteredWords || []);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isCompletionModalOpen, setIsCompletionModalOpen] = useState(false);
+  const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
 
   // Touch gesture state
   const touchState = useRef({
@@ -316,6 +319,16 @@ export default function FlashcardsExplorer({
           >
             <Shuffle size={15} />
             <span className="hidden sm:inline">{isBn ? 'শাফল' : 'Shuffle'}</span>
+          </button>
+
+          <button
+            onClick={() => setIsPrintModalOpen(true)}
+            data-testid="print-flashcards-btn"
+            className="p-2.5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 hover:text-emerald-200 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95 shadow-emerald-950/30"
+            title={isBn ? "প্রিন্টযোগ্য ফ্ল্যাশকার্ড পিডিএফ (এপিঠ-ওপিঠ)" : "Printable Double-Sided Flashcards PDF"}
+          >
+            <Printer size={15} />
+            <span>{isBn ? 'ফ্ল্যাশকার্ড প্রিন্ট (PDF)' : 'Print Flashcards'}</span>
           </button>
         </div>
       </div>
@@ -712,6 +725,16 @@ export default function FlashcardsExplorer({
           </motion.div>
         </div>
       )}
+
+      {/* Printable Flashcards PDF Modal */}
+      <FlashcardPrintModal
+        isOpen={isPrintModalOpen}
+        onClose={() => setIsPrintModalOpen(false)}
+        initialUnitId={selectedLessonId.startsWith('unit-') ? selectedLessonId : selectedLessonId === 'weak_only' ? 'weak_only' : selectedLessonId === 'all' ? 'all' : (selectedLessonId.match(/^u(\d+)-/) ? `unit-${selectedLessonId.match(/^u(\d+)-/)[1]}` : 'all')}
+        initialLessonId={selectedLessonId}
+        lang={lang}
+        weakWords={weakWords}
+      />
     </div>
   );
 }

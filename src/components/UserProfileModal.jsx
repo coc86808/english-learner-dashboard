@@ -329,6 +329,7 @@ export default function UserProfileModal({
           }}
           lang={lang}
           studentInfo={studentInfo}
+          currentUser={currentUser}
         />
       </div>
     </div>

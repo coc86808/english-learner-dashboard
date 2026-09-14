@@ -1,2 +1,3 @@
 export * from './hscQuestionsData';
-export { default } from './hscQuestionsData';
+import { hscVocabularyList } from './hscQuestionsData';
+export default hscVocabularyList;

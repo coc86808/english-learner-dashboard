@@ -25685,3 +25685,4 @@ export function getFilteredCategoryQuestions(
   return smartInterleaveQuestions(matched);
 }
 
+export default hscVocabularyList;

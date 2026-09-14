@@ -644,6 +644,634 @@ export function generateVocabularyBankPDF({
   openPrintWindow(htmlContent);
 }
 
+/**
+ * Printable Double-Sided (Duplex) Flashcards PDF Generator
+ * Designed for standard A4 paper with exact front-to-back mirrored alignment for cutting.
+ * 8 cards per sheet (2 cols x 4 rows). Front page has words; Back page has meanings/synonyms/antonyms.
+ */
+export function generatePrintableFlashcardsPDF({
+  words = [],
+  unitTitle = 'All Units',
+  lessonTitle = 'All Lessons',
+  studentInfo = {},
+  lang = 'en'
+}) {
+  const isBn = lang === 'bn';
+  const { name, college, batch } = resolveStudentDetails(studentInfo);
+  const currentDate = new Date().toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+
+  const CARDS_PER_PAGE = 8;
+  const COLS = 2;
+  const ROWS = 4;
+  const totalSheets = Math.ceil(words.length / CARDS_PER_PAGE) || 1;
+
+  // Render individual front card HTML
+  const renderFrontCard = (item) => {
+    if (!item) {
+      return `
+        <div class="flashcard card-front card-empty">
+          <div class="cut-guide-corner top-left">✂</div>
+          <div class="empty-inner"></div>
+        </div>
+      `;
+    }
+
+    const posTag = item.partsOfSpeech ? `<span class="pos-badge">${escapeHtml(item.partsOfSpeech)}</span>` : '';
+    const boardTag = item.boardExamTag || item.unit || 'HSC English';
+
+    return `
+      <div class="flashcard card-front">
+        <div class="cut-guide-corner top-left">✂</div>
+        <div class="card-header">
+          <span class="card-unit-tag">${escapeHtml(boardTag)}</span>
+          ${posTag}
+        </div>
+        <div class="card-front-body">
+          <div class="card-word">${escapeHtml(item.word)}</div>
+          ${item.phonetic ? `<div class="card-phonetic">${escapeHtml(item.phonetic)}</div>` : ''}
+        </div>
+        <div class="card-footer">
+          <span class="card-brand-sub">HSC English 1st Paper</span>
+          <span class="card-duplex-hint">Front Side • শব্দ</span>
+        </div>
+      </div>
+    `;
+  };
+
+  // Render individual back card HTML
+  const renderBackCard = (item) => {
+    if (!item) {
+      return `
+        <div class="flashcard card-back card-empty">
+          <div class="cut-guide-corner top-left">✂</div>
+          <div class="empty-inner"></div>
+        </div>
+      `;
+    }
+
+    const hasSynonyms = item.synonyms && item.synonyms.trim() !== '' && item.synonyms.trim() !== '-';
+    const hasAntonyms = item.antonyms && item.antonyms.trim() !== '' && item.antonyms.trim() !== '-';
+    const hasMeaning = item.bengaliMeaning && item.bengaliMeaning.trim() !== '';
+    const hasEngMeaning = item.englishMeaning && item.englishMeaning.trim() !== '';
+    const hasExample = item.exampleSentence && item.exampleSentence.trim() !== '';
+
+    return `
+      <div class="flashcard card-back">
+        <div class="cut-guide-corner top-left">✂</div>
+        <div class="card-header-back">
+          <div class="card-word-sm">${escapeHtml(item.word)}</div>
+          ${item.partsOfSpeech ? `<span class="pos-badge-sm">${escapeHtml(item.partsOfSpeech)}</span>` : ''}
+        </div>
+        
+        <div class="card-back-body">
+          ${hasMeaning ? `<div class="bangla-meaning">${escapeHtml(item.bengaliMeaning)}</div>` : ''}
+          ${hasEngMeaning ? `<div class="english-definition">${escapeHtml(item.englishMeaning)}</div>` : ''}
+          
+          <div class="relations-grid">
+            ${hasSynonyms ? `
+              <div class="relation-row syn-row">
+                <span class="rel-label syn-label">Syn:</span>
+                <span class="rel-text syn-text">${escapeHtml(item.synonyms)}</span>
+              </div>
+            ` : ''}
+            ${hasAntonyms ? `
+              <div class="relation-row ant-row">
+                <span class="rel-label ant-label">Ant:</span>
+                <span class="rel-text ant-text">${escapeHtml(item.antonyms)}</span>
+              </div>
+            ` : ''}
+          </div>
+
+          ${hasExample ? `
+            <div class="example-box">
+              <span class="ex-quote">“${escapeHtml(item.exampleSentence.length > 110 ? item.exampleSentence.slice(0, 107) + '...' : item.exampleSentence)}”</span>
+            </div>
+          ` : ''}
+        </div>
+
+        <div class="card-footer">
+          <span class="card-brand-sub">Learner Hub Flashcards</span>
+          <span class="card-duplex-hint">Back Side • অর্থ ও সম্পর্ক</span>
+        </div>
+      </div>
+    `;
+  };
+
+  // Generate Sheets (Each sheet has 1 Front Page + 1 Back Page with Mirrored Columns for Duplex)
+  let pagesHtml = '';
+
+  for (let s = 0; s < totalSheets; s++) {
+    const sheetCards = [];
+    for (let c = 0; c < CARDS_PER_PAGE; c++) {
+      const wordIdx = s * CARDS_PER_PAGE + c;
+      sheetCards.push(wordIdx < words.length ? words[wordIdx] : null);
+    }
+
+    // 1. Front Page: Rows 0..3, Cols 0..1
+    const frontCardsHtml = sheetCards.map((card) => renderFrontCard(card)).join('');
+
+    // 2. Back Page: Rows 0..3, Mirrored Cols (Col 1, Col 0) so long-edge duplex printing aligns front & back
+    const backCardsMirrored = [];
+    for (let r = 0; r < ROWS; r++) {
+      const leftIndex = r * COLS + 0;
+      const rightIndex = r * COLS + 1;
+      // On the back page of a long-edge flip, the right card on front flips to the left
+      backCardsMirrored.push(sheetCards[rightIndex]);
+      backCardsMirrored.push(sheetCards[leftIndex]);
+    }
+    const backCardsHtml = backCardsMirrored.map((card) => renderBackCard(card)).join('');
+
+    pagesHtml += `
+      <!-- Sheet ${s + 1} - Front Page -->
+      <div class="sheet-page sheet-front">
+        <div class="sheet-watermark-guide">Sheet ${s + 1} of ${totalSheets} • FRONT (Words)</div>
+        <div class="cards-grid">
+          ${frontCardsHtml}
+        </div>
+      </div>
+
+      <!-- Sheet ${s + 1} - Back Page (Duplex Mirrored) -->
+      <div class="sheet-page sheet-back">
+        <div class="sheet-watermark-guide">Sheet ${s + 1} of ${totalSheets} • BACK (Meanings / Synonyms / Antonyms)</div>
+        <div class="cards-grid">
+          ${backCardsHtml}
+        </div>
+      </div>
+    `;
+  }
+
+  const htmlContent = `<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>${escapeHtml(name)} - HSC Flashcards (${escapeHtml(unitTitle)})</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+    @page {
+      size: A4 portrait;
+      margin: 6mm 6mm 6mm 6mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      font-family: 'Plus Jakarta Sans', 'Inter', 'Hind Siliguri', sans-serif;
+      color: #0f172a;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Preview Control Bar (Hidden in Print) */
+    .no-print-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0f172a;
+      color: #ffffff;
+      padding: 12px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .no-print-bar .title-grp {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .no-print-bar .main-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .no-print-bar .sub-title {
+      font-size: 11.5px;
+      color: #94a3b8;
+    }
+
+    .no-print-bar .tip-badge {
+      background: #1e293b;
+      border: 1px solid #334155;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 11.5px;
+      color: #fde047;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .no-print-bar .btn-print {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 10px rgba(16,185,129,0.4);
+      transition: transform 0.15s ease;
+    }
+
+    .no-print-bar .btn-print:hover {
+      transform: translateY(-1px);
+    }
+
+    /* Print Sheets Layout */
+    .print-container {
+      margin: 0 auto;
+      padding: 12px 0;
+    }
+
+    .sheet-page {
+      width: 198mm;
+      height: 285mm;
+      max-height: 285mm;
+      margin: 0 auto 16px auto;
+      background: #ffffff;
+      padding: 3mm;
+      box-sizing: border-box;
+      position: relative;
+      page-break-after: always;
+      break-after: page;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sheet-watermark-guide {
+      font-size: 8.5px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-align: right;
+      padding-bottom: 2mm;
+      font-weight: 600;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 2.5mm;
+      flex: 1;
+      height: calc(100% - 4mm);
+    }
+
+    /* Flashcard Style */
+    .flashcard {
+      border: 1.2px dashed #94a3b8;
+      border-radius: 6px;
+      background: #ffffff;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .card-empty {
+      background: #fafafa;
+      border-color: #e2e8f0;
+    }
+
+    .cut-guide-corner {
+      position: absolute;
+      top: 1px;
+      left: 3px;
+      font-size: 8px;
+      color: #cbd5e1;
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    /* Front Card Styling */
+    .card-front {
+      background: #ffffff;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .card-unit-tag {
+      font-size: 9px;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 65%;
+      letter-spacing: -0.2px;
+    }
+
+    .pos-badge {
+      font-size: 8.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      border: 0.8px solid #bae6fd;
+      padding: 1.5px 5px;
+      border-radius: 4px;
+      letter-spacing: 0.3px;
+      flex-shrink: 0;
+    }
+
+    .card-front-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 4px 0;
+      text-align: center;
+    }
+
+    .card-word {
+      font-size: 21px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      word-break: break-word;
+    }
+
+    .card-phonetic {
+      font-size: 10px;
+      color: #64748b;
+      font-family: monospace;
+      margin-top: 3px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 0.8px solid #f1f5f9;
+      padding-top: 3px;
+      margin-top: 2px;
+    }
+
+    .card-brand-sub {
+      font-size: 8px;
+      font-weight: 600;
+      color: #94a3b8;
+    }
+
+    .card-duplex-hint {
+      font-size: 7.5px;
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+
+    /* Back Card Styling */
+    .card-back {
+      background: #fafcff;
+    }
+
+    .card-header-back {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      border-bottom: 0.8px solid #e2e8f0;
+      padding-bottom: 2px;
+      margin-bottom: 3px;
+    }
+
+    .card-word-sm {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #1e293b;
+      letter-spacing: -0.2px;
+    }
+
+    .pos-badge-sm {
+      font-size: 8px;
+      font-weight: 700;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .card-back-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      gap: 2.5px;
+    }
+
+    .bangla-meaning {
+      font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #047857;
+      line-height: 1.25;
+      letter-spacing: -0.1px;
+    }
+
+    .english-definition {
+      font-size: 9.5px;
+      color: #334155;
+      line-height: 1.25;
+      font-style: italic;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .relations-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: #f8fafc;
+      border: 0.8px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 3px 5px;
+    }
+
+    .relation-row {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      font-size: 9px;
+      line-height: 1.25;
+    }
+
+    .rel-label {
+      font-weight: 800;
+      font-size: 8.5px;
+      flex-shrink: 0;
+    }
+
+    .syn-label {
+      color: #1d4ed8;
+    }
+
+    .syn-text {
+      color: #1e3a8a;
+      font-weight: 500;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .ant-label {
+      color: #b91c1c;
+    }
+
+    .ant-text {
+      color: #991b1b;
+      font-weight: 500;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .example-box {
+      font-size: 8.5px;
+      color: #64748b;
+      font-style: italic;
+      line-height: 1.2;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      padding-top: 1px;
+    }
+
+    .ex-quote {
+      color: #475569;
+    }
+
+    /* Print Overrides */
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .no-print, .no-print-bar {
+        display: none !important;
+      }
+
+      .print-container {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .sheet-page {
+        margin: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+
+      .sheet-page:last-child {
+        page-break-after: auto !important;
+        break-after: auto !important;
+      }
+
+      .flashcard {
+        border-color: #94a3b8 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print-bar no-print">
+    <div class="title-grp">
+      <div class="main-title">
+        <span>🖨️ HSC English Flashcards Printable PDF</span>
+        <span style="font-size: 11px; font-weight: normal; color: #a7f3d0; background: #064e3b; padding: 2px 8px; border-radius: 6px;">
+          ${escapeHtml(unitTitle)}
+        </span>
+      </div>
+      <div class="sub-title">
+        Total Words: <strong>${words.length}</strong> • Total Sheets: <strong>${totalSheets}</strong> (${totalSheets * 2} Pages Duplex)
+      </div>
+    </div>
+
+    <div class="tip-badge">
+      💡 <strong>প্রিন্ট টিপস:</strong> Two-Sided Printing সেটিংসে <strong>'Flip on Long Edge'</strong> নির্বাচন করুন। প্রিন্ট শেষে দাগ বরাবর কেটে নিন।
+    </div>
+
+    <div style="display: flex; gap: 8px;">
+      <button class="btn-print" onclick="window.print()">
+        <span>প্রিন্ট করুন (Print)</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="print-container">
+    ${pagesHtml}
+  </div>
+
+  <script>
+    window.onload = function() {
+      setTimeout(() => {
+        window.print();
+      }, 400);
+    };
+  </script>
+</body>
+</html>`;
+
+  openPrintWindow(htmlContent);
+}
+
+function escapeHtml(str) {
+  if (typeof str !== 'string') return '';
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 function openPrintWindow(htmlContent) {
   const printWindow = window.open('', '_blank', 'width=950,height=800');
   if (printWindow) {
@@ -672,3 +1300,4 @@ function openPrintWindow(htmlContent) {
     }, 350);
   }
 }
+

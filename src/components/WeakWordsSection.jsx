@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { generateWeakWordsPDF } from '../utils/pdfGenerator';
 import { hscVocabularyList } from '../data/questions/hscQuestionsData';
+import FlashcardPrintModal from './FlashcardPrintModal';
 
 export default function WeakWordsSection({ 
   weakWords = [], 
@@ -30,6 +31,7 @@ export default function WeakWordsSection({
 
   // PDF Export Customization Modal State
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [isFlashcardPrintModalOpen, setIsFlashcardPrintModalOpen] = useState(false);
   const [pdfStudentName, setPdfStudentName] = useState(() => {
     try {
       if (currentUser?.name && currentUser.name !== 'Tanvir Ahmed' && currentUser.name !== 'HSC Candidate') {
@@ -169,7 +171,7 @@ export default function WeakWordsSection({
           </p>
         </div>
 
-        {/* Action Buttons: Download PDF & Practice */}
+        {/* Action Buttons: Download PDF & Print Flashcards & Practice */}
         <div className="flex flex-wrap items-center gap-3 shrink-0 w-full md:w-auto">
           {/* Download PDF Button */}
           <button
@@ -178,7 +180,17 @@ export default function WeakWordsSection({
             title="Download PDF format: Word | Meaning Bangla | Synonym | Antonym"
           >
             <FileDown size={17} />
-            <span>{isBn ? '📄 PDF ডাউনলোড করুন' : '📄 Download PDF Sheet'}</span>
+            <span>{isBn ? '📄 PDF শিট ডাউনলোড' : 'Download PDF Sheet'}</span>
+          </button>
+
+          {/* Print Double-Sided Flashcards Button */}
+          <button
+            onClick={() => setIsFlashcardPrintModalOpen(true)}
+            className="flex-1 md:flex-initial px-5 py-3 rounded-2xl bg-gradient-to-r from-amber-500/20 via-orange-500/20 to-amber-500/20 hover:bg-amber-500/30 text-amber-300 hover:text-amber-200 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 border border-amber-500/40 shadow-lg shadow-amber-950/40 transition-all cursor-pointer active:scale-95"
+            title="Print Double-Sided Flashcards PDF (Duplex)"
+          >
+            <Printer size={16} />
+            <span>{isBn ? '🖨️ ফ্ল্যাশকার্ড প্রিন্ট (PDF)' : 'Print Flashcards (PDF)'}</span>
           </button>
 
           {/* Practice in Flashcards */}
@@ -401,6 +413,16 @@ export default function WeakWordsSection({
           </div>
         </div>
       )}
+
+      {/* Printable Double-Sided Flashcards PDF Modal */}
+      <FlashcardPrintModal
+        isOpen={isFlashcardPrintModalOpen}
+        onClose={() => setIsFlashcardPrintModalOpen(false)}
+        initialUnitId="weak_only"
+        lang={lang}
+        currentUser={currentUser}
+        weakWords={effectiveWeakWords}
+      />
     </div>
   );
 }
