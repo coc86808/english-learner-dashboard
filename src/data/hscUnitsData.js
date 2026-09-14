@@ -495,7 +495,7 @@ export const hscUnits = [
     "bgClass": "bg-[#4f46e5] hover:bg-[#4338ca]",
     "gradient": "from-[#6366f1] to-[#4f46e5]",
     "progress": 0,
-    "totalWords": 110,
+    "totalWords": 129,
     "masteredWords": 0,
     "lessons": [
       {
@@ -530,8 +530,8 @@ export const hscUnits = [
         "number": "Lesson 4",
         "title": "Peace in Literature",
         "titleBn": "সাহিত্যে শান্তি (জর্জ হারবার্ট)",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "১২০ টি প্রশ্ন",
+        "wordsCount": 30,
         "progress": 0
       },
       {

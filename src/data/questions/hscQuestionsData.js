@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1123 Authentic Textbook Vocabulary Words
+ * Total Words: 1137 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -2013,12 +2013,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-02",
     "word": "Gallant",
-    "bengaliMeaning": "বীরত্বপূর্ণ / তেজস্বী, মনোহর ও চমৎকার",
+    "bengaliMeaning": "শৌর্যশীল",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Valiant, heroic, noble, splendid, courtly, magnificent",
-    "antonyms": "Cowardly, timid, wretched, ignoble",
-    "englishMeaning": "Brave; heroic; charming or exceptionally splendid.",
-    "exampleSentence": "Then went I to a garden and did spy A gallant flower, The crown-imperial: Sure, said I, Peace at the root must dwell.",
+    "synonyms": "Gracious",
+    "antonyms": "Discourteous",
+    "englishMeaning": "Brave, heroic, or exceptionally noble and grand.",
+    "exampleSentence": "Then went I to a garden and did spy a gallant flower.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -2040,12 +2040,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-05",
     "word": "Hollow",
-    "bengaliMeaning": "ফাঁপা / অন্তঃসারশূন্য ও প্রতিধ্বনিত",
+    "bengaliMeaning": "ফাঁপা",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Empty, cavernous, void, echoey, unsubstantial",
-    "antonyms": "Solid, dense, full, substantial",
-    "englishMeaning": "Having a hole or empty space inside; without significance or sincerity.",
-    "exampleSentence": "A hollow wind did seem to answer, No: Go seek elsewhere.",
+    "synonyms": "Void, empty",
+    "antonyms": "Real",
+    "englishMeaning": "Having a hole or empty space inside; devoid of substance or truth.",
+    "exampleSentence": "A hollow wind did seem to answer, No: go seek elsewhere.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -8708,17 +8708,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-banned",
     "word": "Banned",
-    "bengaliMeaning": "নিষিদ্ধ ঘোষিত",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Prohibited, outlawed, barred, interdicted",
-    "antonyms": "Allowed, permitted, sanctioned, authorized",
-    "englishMeaning": "Officially or legally prohibit.",
-    "exampleSentence": "Yes, and how many times must the cannonballs fly Before they're forever banned?",
-    "unit": "Unit 11: Peace and Conflict: Peace in Literature",
+    "bengaliMeaning": "নিষিদ্ধ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Outlawed, illegal",
+    "antonyms": "",
+    "englishMeaning": "Officially or legally prohibited; forbidden.",
+    "exampleSentence": "Yes, and how many times must the cannonballs fly before they're forever banned?",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "lesson": "Peace in Literature",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
-      "Unit 11: Peace and Conflict: Peace in Literature"
+      "Unit 11: Peace and Conflict: Peace in Literature",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -10639,17 +10640,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-repose",
     "word": "Repose",
-    "bengaliMeaning": "প্রশান্তি / বিশ্রাম / শয়ন",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Tranquility, rest, calm, peace",
-    "antonyms": "Restlessness, agitation, turmoil, exhaustion",
-    "englishMeaning": "A state of rest, sleep, or tranquility.",
-    "exampleSentence": "Take of this grain, which in my garden grows, And grows for you; Make bread of it: and that repose And peace, which ev'ry where With so much earnestness you do pursue, Is only there.",
-    "unit": "Unit 11: Peace and Conflict: Peace in Literature",
+    "bengaliMeaning": "বিশ্রাম করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Relax, recline",
+    "antonyms": "Move, energize",
+    "englishMeaning": "A state of rest, sleep, or tranquility; be situated in peace.",
+    "exampleSentence": "Make bread of it: and that repose and peace, which ev'ry where.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "lesson": "Peace in Literature",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
-      "Unit 11: Peace and Conflict: Peace in Literature"
+      "Unit 11: Peace and Conflict: Peace in Literature",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -12352,12 +12354,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-01",
     "word": "Crave",
-    "bengaliMeaning": "ব্যাকুলভাবে প্রার্থনা করা / চরম আকাঙ্ক্ষা করা",
+    "bengaliMeaning": "কামনা করা",
     "partsOfSpeech": "Verb",
-    "synonyms": "Yearn, desire, beg, plead, covet, solicit",
-    "antonyms": "Spurn, reject, despise, decline",
-    "englishMeaning": "Feel a powerful desire for something; ask for earnestly.",
-    "exampleSentence": "I humbly crave, Let me once know.",
+    "synonyms": "Desire, yearn for",
+    "antonyms": "Reject",
+    "englishMeaning": "Feel a powerful desire for something.",
+    "exampleSentence": "Sweet Peace, where dost thou dwell? I humbly crave, let me once know.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -13282,12 +13284,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-07",
     "word": "Dwell",
-    "bengaliMeaning": "বাস করা / চিরকাল অবস্থান করা",
+    "bengaliMeaning": "বাস করা",
     "partsOfSpeech": "Verb",
-    "synonyms": "Reside, inhabit, abide, stay, settle, lodge",
-    "antonyms": "Depart, wander, vacate, abandon",
-    "englishMeaning": "Live in or at a specified place; remain in a given state.",
-    "exampleSentence": "Peace by George Herbert (1593-1633): Sweet Peace, where dost thou dwell?",
+    "synonyms": "Reside, live, stay",
+    "antonyms": "Move",
+    "englishMeaning": "Live in or at a specified place.",
+    "exampleSentence": "Sweet Peace, where dost thou dwell?",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -14827,7 +14829,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
+      "Unit 10: Lesson 2 (Etiquette Netquette)",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -16659,7 +16662,8 @@ export const hscVocabularyList = [
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
-      "Unit 2: Lesson 2 (Folk Music)"
+      "Unit 2: Lesson 2 (Folk Music)",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -18697,7 +18701,8 @@ export const hscVocabularyList = [
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
-      "Unit 7: Lesson 2 (Scaling a Mountain Peak)"
+      "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -19264,7 +19269,8 @@ export const hscVocabularyList = [
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
-      "Unit 8: Lesson 3 (A Mother in Mannville)"
+      "Unit 8: Lesson 3 (A Mother in Mannville)",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20116,12 +20122,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l4-03",
     "word": "Devour",
-    "bengaliMeaning": "গ্রাস করা / গোগ্রাসে ভক্ষণ বা ধ্বংস করা",
+    "bengaliMeaning": "গ্রাস করা",
     "partsOfSpeech": "Verb",
-    "synonyms": "Consume, engulf, swallow up, ravage, destroy",
-    "antonyms": "Preserve, protect, nourish, spare",
-    "englishMeaning": "Eat food or prey hungrily or quickly; destroy or consume entirely.",
-    "exampleSentence": "But when I digged, I saw a worm devour What showed so well.",
+    "synonyms": "Gobble, gulp",
+    "antonyms": "",
+    "englishMeaning": "Eat greedily; destroy completely or consume destructively.",
+    "exampleSentence": "But when I digged, I saw a worm devour what showed so well.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -24575,7 +24581,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
       "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
+      "Unit 4: Great Women: Pioneers of Education & Science",
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -26374,6 +26381,300 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
       "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-collapse",
+    "word": "Collapse",
+    "bengaliMeaning": "ভেঙে পড়া",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Breakdown, downfall",
+    "antonyms": "Success",
+    "englishMeaning": "A sudden failure, breakdown, or falling down.",
+    "exampleSentence": "The collapse of peace agreements plunged the region into turmoil.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-earnestness",
+    "word": "Earnestness",
+    "bengaliMeaning": "আন্তরিকতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Determination, devotion",
+    "antonyms": "Indifference",
+    "englishMeaning": "Sincere and intense conviction or seriousness.",
+    "exampleSentence": "With so much earnestness you do pursue, is only there.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-exist",
+    "word": "Exist",
+    "bengaliMeaning": "বিদ্যমান থাকা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Endure, prevail",
+    "antonyms": "Depart",
+    "englishMeaning": "Have objective reality or active being; survive.",
+    "exampleSentence": "Yes, and how many years must a mountain exist before it is washed to the sea?",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-foe",
+    "word": "Foe",
+    "bengaliMeaning": "শত্রু, প্রতিপক্ষ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Enemy, opponent",
+    "antonyms": "Friend",
+    "englishMeaning": "An enemy or opponent in a war, battle, or dispute.",
+    "exampleSentence": "He sweetly lived; yet sweetness did not save his life from foes.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-invader",
+    "word": "Invader",
+    "bengaliMeaning": "আক্রমণকারী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Attacker, intruder",
+    "antonyms": "",
+    "englishMeaning": "A person or group that invades a country, territory, or home by force.",
+    "exampleSentence": "The citizens fought courageously to defend their soil from the foreign invader.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-mirth",
+    "word": "Mirth",
+    "bengaliMeaning": "আনন্দ, স্ফূর্তি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Hilarity, great joy",
+    "antonyms": "Depression, gloom",
+    "englishMeaning": "Amusement, especially as expressed in laughter and celebration.",
+    "exampleSentence": "A secret virtue, bringing peace and mirth by flight of sin.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-pretend",
+    "word": "Pretend",
+    "bengaliMeaning": "ভান করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Feign, fake",
+    "antonyms": "Be honest",
+    "englishMeaning": "Behave so as to make it appear that something is the case when in fact it is not.",
+    "exampleSentence": "And pretend that he just doesn't see? The answer, my friend, is blowin' in the wind.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-pursue",
+    "word": "Pursue",
+    "bengaliMeaning": "লেগে থাকা, পশ্চাদ্ধাবন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Seek",
+    "antonyms": "Quit, give up",
+    "englishMeaning": "Follow or chase someone or something; persist in seeking a goal.",
+    "exampleSentence": "With so much earnestness you do pursue, is only there.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-rehearse",
+    "word": "Rehearse",
+    "bengaliMeaning": "মহড়া দেওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Practise, prepare",
+    "antonyms": "Ignore, stop",
+    "englishMeaning": "Practise or recite repeatedly for public performance or deep memorization.",
+    "exampleSentence": "For they that taste it do rehearse that virtue lies therein.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-settler",
+    "word": "Settler",
+    "bengaliMeaning": "বসতি স্থাপনকারী",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Colonist, immigrant",
+    "antonyms": "",
+    "englishMeaning": "A person who moves with a group of others to live in a new country or area.",
+    "exampleSentence": "The early settler sought tranquility in fertile lands far from war.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-stalk",
+    "word": "Stalk",
+    "bengaliMeaning": "বৃন্ত, ডগা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Twig",
+    "antonyms": "",
+    "englishMeaning": "The main stem of a herbaceous plant supporting leaves or flowers.",
+    "exampleSentence": "There sprang twelve stalks of wheat.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-therein",
+    "word": "Therein",
+    "bengaliMeaning": "তথায়",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "There",
+    "antonyms": "Here",
+    "englishMeaning": "In that place, document, or matter.",
+    "exampleSentence": "That virtue lies therein; a secret virtue, bringing peace and mirth.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-unrest",
+    "word": "Unrest",
+    "bengaliMeaning": "অশান্তি, অস্থিরতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Anarchy, crisis, strife",
+    "antonyms": "Calmness, order",
+    "englishMeaning": "A state of dissatisfaction, disturbance, and agitation.",
+    "exampleSentence": "Amid deep social unrest, poets and songwriters call for mutual harmony.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l4-virtue",
+    "word": "Virtue",
+    "bengaliMeaning": "গুণ, সদাচার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Honour, integrity",
+    "antonyms": "Evil",
+    "englishMeaning": "Behavior showing high moral standards; a commendable quality.",
+    "exampleSentence": "That virtue lies therein; a secret virtue, bringing peace and mirth.",
+    "unit": "Unit 11: Lesson 4 (Peace in Literature)",
+    "boardExamTag": "Unit 11 • Lesson 4",
+    "sources": [
+      "Unit 11: Lesson 4 (Peace in Literature)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
