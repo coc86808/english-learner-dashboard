@@ -217,6 +217,11 @@ export default function FlashcardsExplorer({
 
   // Touch Swipe Handlers for Mobile
   const handleTouchStart = (e) => {
+    // If touched an interactive control, cancel swiping to avoid accidental flips
+    if (e.target.closest('button, select, input, a, [data-no-flip="true"]')) {
+      touchState.current.isSwiping = false;
+      return;
+    }
     const touch = e.touches[0];
     touchState.current = {
       startX: touch.clientX,
@@ -227,6 +232,10 @@ export default function FlashcardsExplorer({
   };
 
   const handleTouchEnd = (e) => {
+    if (e.target.closest('button, select, input, a, [data-no-flip="true"]')) {
+      touchState.current.isSwiping = false;
+      return;
+    }
     if (!touchState.current.isSwiping) return;
     const touch = e.changedTouches[0];
     const deltaX = touch.clientX - touchState.current.startX;
@@ -234,7 +243,7 @@ export default function FlashcardsExplorer({
     const deltaTime = Date.now() - touchState.current.startTime;
     touchState.current.isSwiping = false;
 
-    // Minimum swipe thresholds
+    // Horizontal Swipe detection (min 45px distance)
     if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY) * 1.3 && deltaTime < 600) {
       if (deltaX < 0) {
         // Swiped Left -> Next Card
@@ -244,12 +253,17 @@ export default function FlashcardsExplorer({
         handlePrev();
       }
     } else if (Math.abs(deltaY) > 50 && Math.abs(deltaY) > Math.abs(deltaX) * 1.3 && deltaTime < 600) {
-      // Swiped Up / Down -> Flip
-      setIsFlipped(prev => !prev);
-    } else if (Math.abs(deltaX) < 10 && Math.abs(deltaY) < 10) {
-      // Clean tap -> Flip
+      // Swiped Up / Down -> Flip Card
       setIsFlipped(prev => !prev);
     }
+  };
+
+  // Safe Click Flip Handler: Flips only when clicking card body, never on buttons or controls
+  const handleCardFlipClick = (e) => {
+    if (e.target.closest('button, select, input, a, [data-no-flip="true"]')) {
+      return;
+    }
+    setIsFlipped(prev => !prev);
   };
 
   // Mastery percentage calculation
@@ -404,13 +418,13 @@ export default function FlashcardsExplorer({
       ) : (
         /* 3. True 3D Dual-Sided Flip Interactive Card Container */
         <div 
-          className="w-full [perspective:1200px] min-h-[320px] sm:min-h-[420px] select-none"
+          className="w-full [perspective:1200px] min-h-[340px] sm:min-h-[420px] select-none"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
           <div 
-            onClick={() => setIsFlipped(prev => !prev)}
-            className={`w-full min-h-[320px] sm:min-h-[420px] relative transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer ${
+            onClick={handleCardFlipClick}
+            className={`w-full min-h-[340px] sm:min-h-[420px] relative transition-transform duration-500 [transform-style:preserve-3d] cursor-pointer ${
               isFlipped ? '[transform:rotateY(180deg)]' : '[transform:rotateY(0deg)]'
             }`}
           >
@@ -421,52 +435,60 @@ export default function FlashcardsExplorer({
               } hover:border-emerald-500/40 p-4 sm:p-7 flex flex-col justify-between shadow-2xl transition-all`}
             >
               {/* Card Header Row */}
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-1.5 flex-wrap">
                   {getWordUnitSources(currentCard).map((src, i) => (
                     <span
                       key={i}
-                      className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 shadow-sm flex items-center gap-1"
+                      className="text-[11px] sm:text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 shadow-sm flex items-center gap-1"
                     >
                       <BookOpen size={11} />
-                      <span>{src}</span>
+                      <span className="truncate max-w-[180px] sm:max-w-none">{src}</span>
                     </span>
                   ))}
                   {currentCard.isCrossReferenced && (
                     <span className="text-[10px] font-black text-rose-300 bg-rose-500/20 px-2.5 py-1 rounded-full border border-rose-500/50 shadow-sm flex items-center gap-1 animate-pulse">
-                      🔥 {isBn ? 'রেড মার্ক শব্দ' : 'Red Mark Key Word'}
+                      🔥 {isBn ? 'রেড মার্ক' : 'Red Mark'}
                     </span>
                   )}
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 shrink-0">
                   {currentCard.partsOfSpeech && (
-                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-md bg-[#161e2e] border border-[#243048] text-slate-300">
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#161e2e] border border-[#243048] text-slate-300">
                       {currentCard.partsOfSpeech}
                     </span>
                   )}
-                  {/* Front Audio Button */}
+                  {/* Front Audio Button with full event isolation */}
                   <button
-                    onClick={(e) => handleSpeak(e, currentCard.word)}
-                    className={`p-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${
+                    type="button"
+                    data-no-flip="true"
+                    onTouchStart={(e) => e.stopPropagation()}
+                    onTouchEnd={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleSpeak(e, currentCard.word);
+                    }}
+                    className={`p-3 rounded-2xl border transition-all cursor-pointer shadow-md active:scale-90 ${
                       isSpeaking
-                        ? 'bg-emerald-500 text-white border-emerald-400 ring-2 ring-emerald-400/50 animate-pulse'
+                        ? 'bg-emerald-500 text-white border-emerald-400 ring-4 ring-emerald-400/40 animate-pulse'
                         : 'bg-[#161e2e] hover:bg-emerald-500/20 text-emerald-400 border-[#1e293b]'
                     }`}
                     title="Audio Pronunciation"
+                    aria-label="Audio Pronunciation"
                   >
-                    <Volume2 size={18} />
+                    <Volume2 size={20} />
                   </button>
                 </div>
               </div>
 
               {/* Center Main Word */}
-              <div className="text-center my-auto py-6 sm:py-8">
+              <div className="text-center my-auto py-5 sm:py-8">
                 <motion.h1 
                   key={currentCard.word}
                   initial={{ scale: 0.95, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  className="text-4xl sm:text-6xl font-black text-white tracking-tight mb-2 sm:mb-3 drop-shadow-md"
+                  className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight mb-2 sm:mb-3 drop-shadow-md break-words"
                 >
                   {currentCard.word}
                 </motion.h1>
@@ -487,18 +509,18 @@ export default function FlashcardsExplorer({
                     ))}
                   </div>
                 )}
-                <p className="text-xs sm:text-sm text-slate-400 font-medium flex items-center justify-center gap-1.5">
-                  <span>{isBn ? 'অর্থ ও বিস্তারিত দেখতে কার্ডে ট্যাপ করুন' : 'Tap card or press Space to flip & reveal meaning'}</span>
+                <p className="text-xs sm:text-sm text-slate-400 font-medium flex items-center justify-center gap-1.5 pt-2">
+                  <span>{isBn ? 'অর্থ দেখতে কার্ডে ট্যাপ করুন' : 'Tap card to flip & reveal meaning'}</span>
                   <span className="text-emerald-400">👆</span>
                 </p>
               </div>
 
               {/* Card Footer Status Badges & Flip Hint */}
-              <div className="flex items-center justify-between pt-4 border-t border-[#1e293b] text-xs">
+              <div className="flex items-center justify-between pt-3 border-t border-[#1e293b] text-xs">
                 <span className="text-slate-400 flex items-center gap-1.5 font-medium">
                   <RotateCw size={13} className="text-emerald-400" />
                   <span className="hidden sm:inline">{isBn ? 'স্পেসবার বা ট্যাপ করে উল্টান' : 'Space / Tap / Swipe to flip'}</span>
-                  <span className="sm:hidden">{isBn ? 'ট্যাপ করে উল্টান' : 'Tap / Swipe to flip'}</span>
+                  <span className="sm:hidden">{isBn ? 'ট্যাপ / সোয়াইপ করুন' : 'Tap / Swipe to flip'}</span>
                 </span>
 
                 <div className="flex items-center gap-2">
@@ -522,28 +544,36 @@ export default function FlashcardsExplorer({
             >
               {/* Back Header */}
               <div className="flex flex-col gap-2 border-b border-[#1e293b] pb-3">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2.5">
-                    <h3 className="text-2xl sm:text-3xl font-black text-emerald-400">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <h3 className="text-xl sm:text-3xl font-black text-emerald-400 truncate">
                       {currentCard.word}
                     </h3>
                     {currentCard.partsOfSpeech && (
-                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[#161e2e] text-slate-300 border border-[#243048]">
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[#161e2e] text-slate-300 border border-[#243048] shrink-0">
                         {currentCard.partsOfSpeech}
                       </span>
                     )}
                   </div>
-                  {/* Back Audio Button */}
+                  {/* Back Audio Button with full event isolation */}
                   <button
-                    onClick={(e) => handleSpeak(e, `${currentCard.word}. ${currentCard.englishMeaning || ''}. ${currentCard.bengaliMeaning || ''}`)}
-                    className={`p-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${
+                    type="button"
+                    data-no-flip="true"
+                    onTouchStart={(e) => e.stopPropagation()}
+                    onTouchEnd={(e) => e.stopPropagation()}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleSpeak(e, `${currentCard.word}. ${currentCard.englishMeaning || ''}. ${currentCard.bengaliMeaning || ''}`);
+                    }}
+                    className={`p-3 rounded-2xl border transition-all cursor-pointer shadow-md active:scale-90 shrink-0 ${
                       isSpeaking
-                        ? 'bg-emerald-500 text-white border-emerald-400 ring-2 ring-emerald-400/50 animate-pulse'
+                        ? 'bg-emerald-500 text-white border-emerald-400 ring-4 ring-emerald-400/40 animate-pulse'
                         : 'bg-[#161e2e] hover:bg-emerald-500/20 text-emerald-400 border-[#1e293b]'
                     }`}
                     title="Listen Full Explanation"
+                    aria-label="Listen Full Explanation"
                   >
-                    <Volume2 size={18} />
+                    <Volume2 size={20} />
                   </button>
                 </div>
                 {/* Back Unit Sources Badges */}
@@ -554,7 +584,7 @@ export default function FlashcardsExplorer({
                       className="text-[10px] font-bold text-cyan-300 bg-[#162033] border border-cyan-500/30 px-2 py-0.5 rounded-md shadow-sm flex items-center gap-1"
                     >
                       <BookOpen size={10} />
-                      <span>{src}</span>
+                      <span className="truncate max-w-[200px] sm:max-w-none">{src}</span>
                     </span>
                   ))}
                 </div>
@@ -613,7 +643,7 @@ export default function FlashcardsExplorer({
                 {currentCard.exampleSentence && (
                   <div className="bg-[#161e2e]/90 border border-[#1e293b] p-3 rounded-2xl text-slate-300 italic text-xs">
                     <strong className="text-amber-400 not-italic font-bold">Textbook Context: </strong>
-                    "{currentCard.exampleSentence}"
+                    <div className="whitespace-pre-line mt-1">"{currentCard.exampleSentence}"</div>
                   </div>
                 )}
 
@@ -631,27 +661,41 @@ export default function FlashcardsExplorer({
 
               {/* Back Footer */}
               <div className="pt-2 text-center text-slate-500 text-[11px] border-t border-[#1e293b]">
-                {isBn ? 'পুনরায় কার্ড উল্টাতে ট্যাপ করুন' : 'Tap anywhere to flip back to front'}
+                {isBn ? 'সামনের পৃষ্ঠায় ফিরতে কার্ডে ট্যাপ করুন' : 'Tap anywhere to flip back to front'}
               </div>
             </div>
           </div>
         </div>
       )}
 
-      {/* 4. Action Buttons: Prev, Weak, Mastered, Next */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
-        <div className="flex items-center gap-2 w-full sm:w-auto">
+      {/* Mobile Dedicated Flip Pill */}
+      <div className="flex sm:hidden items-center justify-center -my-1">
+        <button
+          type="button"
+          onClick={() => setIsFlipped(prev => !prev)}
+          className="px-6 py-2.5 rounded-full bg-[#162033] hover:bg-[#1e2a42] active:scale-95 border border-emerald-500/30 text-emerald-300 font-bold text-xs flex items-center gap-2 shadow-lg"
+        >
+          <RotateCw size={14} className="text-emerald-400" />
+          <span>{isFlipped ? (isBn ? '🔄 সামনের পৃষ্ঠা দেখুন' : '🔄 Show Front') : (isBn ? '🔄 কার্ড উল্টান ও অর্থ দেখুন' : '🔄 Flip Card & See Meaning')}</span>
+        </button>
+      </div>
+
+      {/* 4. Action Buttons: Prev, Next, Weak, Mastered */}
+      <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-2.5 pt-1">
+        <div className="col-span-2 sm:col-span-1 flex items-center gap-2 w-full sm:w-auto">
           <button
+            type="button"
             onClick={handlePrev}
-            className="flex-1 sm:flex-initial px-4 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] text-slate-300 font-bold text-xs flex items-center justify-center gap-1.5 border border-[#1e293b] transition-all cursor-pointer shadow-md active:scale-95"
+            className="flex-1 sm:flex-initial px-4 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] active:scale-95 text-slate-300 font-bold text-xs flex items-center justify-center gap-1.5 border border-[#1e293b] transition-all cursor-pointer shadow-md min-h-[46px]"
           >
             <ChevronLeft size={16} />
             <span>{isBn ? 'পূর্ববর্তী' : 'Previous'}</span>
           </button>
 
           <button
+            type="button"
             onClick={handleNext}
-            className="flex-1 sm:flex-initial px-4 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] text-slate-300 font-bold text-xs flex items-center justify-center gap-1.5 border border-[#1e293b] transition-all cursor-pointer shadow-md active:scale-95"
+            className="flex-1 sm:flex-initial px-4 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] active:scale-95 text-slate-300 font-bold text-xs flex items-center justify-center gap-1.5 border border-[#1e293b] transition-all cursor-pointer shadow-md min-h-[46px]"
           >
             <span>{isBn ? 'পরবর্তী' : 'Next'}</span>
             <ChevronRight size={16} />
@@ -659,27 +703,29 @@ export default function FlashcardsExplorer({
         </div>
 
         {/* Quality Rating Buttons */}
-        <div className="flex items-center gap-2.5 w-full sm:w-auto">
+        <div className="col-span-2 sm:col-span-1 flex items-center gap-2 w-full sm:w-auto">
           {/* Mark as Weak Word button */}
           <button
+            type="button"
             onClick={handleMarkWeak}
-            className={`flex-1 sm:flex-initial px-4 py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 border transition-all cursor-pointer shadow-md active:scale-95 ${
+            className={`flex-1 sm:flex-initial px-3 sm:px-4 py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-1.5 sm:gap-2 border transition-all cursor-pointer shadow-md active:scale-95 min-h-[46px] ${
               isWeak
                 ? 'bg-rose-600 border-rose-400 text-white shadow-rose-950/50'
                 : 'bg-rose-950/40 hover:bg-rose-900/60 border-rose-800/60 text-rose-300'
             }`}
           >
             <AlertCircle size={15} />
-            <span>{isWeak ? (isBn ? 'দুর্বল শব্দে সংরক্ষিত' : 'Marked Weak') : (isBn ? 'দুর্বল শব্দে যোগ করুন' : 'Mark as Weak Word')}</span>
+            <span>{isWeak ? (isBn ? 'দুর্বল শব্দ' : 'Marked Weak') : (isBn ? 'দুর্বল শব্দে যোগ' : 'Mark Weak')}</span>
           </button>
 
           {/* Mark Mastered button */}
           <button
+            type="button"
             onClick={handleMarkMastered}
-            className="flex-1 sm:flex-initial px-5 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer active:scale-95"
+            className="flex-1 sm:flex-initial px-4 sm:px-5 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold flex items-center justify-center gap-1.5 sm:gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer active:scale-95 min-h-[46px]"
           >
             <CheckCircle2 size={15} />
-            <span>{isBn ? 'আয়ত্ত হয়েছে (Mastered)' : 'Mastered & Next'}</span>
+            <span>{isBn ? 'আয়ত্ত হয়েছে' : 'Mastered'}</span>
           </button>
         </div>
       </div>
