@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1186 Authentic Textbook Vocabulary Words
+ * Total Words: 1214 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -8621,7 +8621,8 @@ export const hscVocabularyList = [
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-I?",
       "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
-      "Unit 11: Lesson 3 (Stories From Gaza)"
+      "Unit 11: Lesson 3 (Stories From Gaza)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -9620,17 +9621,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-assimilation",
     "word": "Assimilation",
-    "bengaliMeaning": "পরিপাকীকরণ / আত্মস্থকরণ",
+    "bengaliMeaning": "আত্তীকরণ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Absorption, integration, incorporation, digestion",
-    "antonyms": "Rejection, segregation, exclusion",
-    "englishMeaning": "The absorption and integration of people, ideas, or nutrients.",
-    "exampleSentence": "But do not ask if your theory of assimilation is going to be relevant to the yield.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "synonyms": "Absorption, integration",
+    "antonyms": "Separation, dissimilation",
+    "englishMeaning": "The process of taking in and fully understanding information or absorbing nutrients.",
+    "exampleSentence": "The assimilation of nutrients by plants requires a balanced ecosystem.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -12163,7 +12165,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
       "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
+      "Unit 4: Great Women: Pioneers of Education & Science",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -12363,16 +12366,17 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-01",
     "word": "Philosophers",
-    "bengaliMeaning": "দার্শনিক / তত্ত্বজ্ঞানী চিন্তাবিদ ও তত্ত্ববিদ",
+    "bengaliMeaning": "দার্শনিক",
     "partsOfSpeech": "Noun",
-    "synonyms": "Thinkers, sages, theorists, scholars, visionaries, logicians",
-    "antonyms": "Dogmatists, literalists",
-    "englishMeaning": "Persons engaged or learned in philosophy, especially as an academic discipline.",
-    "exampleSentence": "Let us read an excerpt from Japanese natural farming practitioner and philosopher Masanobu Fukuoka's celebrated book One-Straw Revolution: \"Before researchers become researchers they should become philosophers.",
-    "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
+    "synonyms": "Thinkers, theorists",
+    "antonyms": "",
+    "englishMeaning": "Persons engaged or learned in philosophy, especially as academic practitioners.",
+    "exampleSentence": "Ancient philosophers emphasized living in harmony with nature.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+      "Unit 12: Lesson 5 (Limits of Scientific Method)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -13316,16 +13320,17 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-02",
     "word": "Whittling",
-    "bengaliMeaning": "ছেঁটে ফেলা / অপ্রয়োজনীয় অংশ ধীরে ধীরে কেটে বাদ দেওয়া",
+    "bengaliMeaning": "কমানো",
     "partsOfSpeech": "Verb",
-    "synonyms": "Paring down, trimming, pruning, carving away, reducing gradually",
-    "antonyms": "Expanding, augmenting, multiplying, heaping on",
-    "englishMeaning": "Carving wood into an object by repeatedly cutting small slices from it; reducing something in size gradually.",
-    "exampleSentence": "I have done this by whittling away unnecessary agricultural practices.",
-    "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
+    "synonyms": "Reducing, trimming",
+    "antonyms": "Increasing, enlarging",
+    "englishMeaning": "Repeatedly reducing something in size, amount, or number in small increments.",
+    "exampleSentence": "Modern practices are whittling away the natural defenses of the ecosystem.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Lesson 5 (Limits of Scientific Method)"
+      "Unit 12: Lesson 5 (Limits of Scientific Method)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -14524,7 +14529,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
-      "Unit 10: Lesson 2 (Etiquette Netquette)"
+      "Unit 10: Lesson 2 (Etiquette Netquette)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -17998,7 +18004,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
       "Unit 5: Lesson 3 (Rights to Health and Education)",
-      "Unit 12: Lesson 4 (Environmental Justice)"
+      "Unit 12: Lesson 4 (Environmental Justice)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -19365,7 +19372,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
-      "Unit 9: Lesson 2 (Problems in Bangladesh)"
+      "Unit 9: Lesson 2 (Problems in Bangladesh)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20081,7 +20089,8 @@ export const hscVocabularyList = [
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Lesson 3 (Stories From Gaza)"
+      "Unit 11: Lesson 3 (Stories From Gaza)",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22143,17 +22152,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-metabolism",
     "word": "Metabolism",
-    "bengaliMeaning": "বিপাক প্রক্রিয়া",
+    "bengaliMeaning": "বিপাক",
     "partsOfSpeech": "Noun",
-    "synonyms": "Organic process, energy conversion, digestion",
-    "antonyms": "Inactivity, stasis, dormancy",
+    "synonyms": "",
+    "antonyms": "",
     "englishMeaning": "The chemical processes that occur within a living organism in order to maintain life.",
-    "exampleSentence": "Recently Professor Tsuno of Ehime University wrote a lengthy book on the relationship of plant metabolism to rice harvests.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "exampleSentence": "Plant metabolism relies on sunlight, water, and organic soil balance.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22231,17 +22241,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-insecticides",
     "word": "Insecticides",
-    "bengaliMeaning": "কীটনাশক বিষ",
+    "bengaliMeaning": "কীটনাশক",
     "partsOfSpeech": "Noun",
-    "synonyms": "Pesticides, bug sprays, agrochemicals",
-    "antonyms": "Beneficial insects, pollinator foods",
+    "synonyms": "Pesticides, bug-killers",
+    "antonyms": "",
     "englishMeaning": "Substances used for killing insects.",
-    "exampleSentence": "You hear a lot of talk these days about the benefits of the \"Good Rice Movement\" and the \"Green Revolution.\" Because these methods depend on weak, \"improved\" seed varieties, it becomes necessary for the farmer to apply chemicals and insecticides eight or ten times during the growing season.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "exampleSentence": "The use of insecticides destroys beneficial predators along with pests.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22253,17 +22264,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-microorganisms",
     "word": "Microorganisms",
-    "bengaliMeaning": "অণুজীব (ব্যাকটেরিয়া/ভাইরাস)",
+    "bengaliMeaning": "অণুজীব",
     "partsOfSpeech": "Noun",
-    "synonyms": "Microbes, bacteria, germs, microscopic organisms",
-    "antonyms": "Macroscopic organisms, animals",
+    "synonyms": "Microbes, germs",
+    "antonyms": "",
     "englishMeaning": "Microscopic organisms, especially bacteria, viruses, or fungi.",
-    "exampleSentence": "In a short time the soil is burned clean of microorganisms and organic matter.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "exampleSentence": "Billions of microorganisms thrive in healthy, chemical-free soil.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22275,17 +22287,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-inherently",
     "word": "Inherently",
-    "bengaliMeaning": "স্বভাবগতভাবে / সহজাতভাবে",
+    "bengaliMeaning": "স্বভাবগতভাবে",
     "partsOfSpeech": "Adverb",
-    "synonyms": "Intrinsically, innately, naturally, fundamentally",
-    "antonyms": "Extrinsically, artificially, superficially",
+    "synonyms": "Naturally, intrinsically",
+    "antonyms": "Extrinsically, artificially",
     "englishMeaning": "In a permanent, essential, or characteristic way.",
-    "exampleSentence": "It appears that things go better when the farmer applies \"scientific\" techniques, but this does not mean that science must come to the rescue because the natural fertility is inherently insufficient.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "exampleSentence": "Scientific research is inherently limited by the narrow scope of its specialization.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22297,17 +22310,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-rehabilitated",
     "word": "Rehabilitated",
-    "bengaliMeaning": "পুনরুদ্ধার বা সংস্কারকৃত",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Restored, recovered, healed, re-established",
-    "antonyms": "Ruined, damaged, degraded, broken",
-    "englishMeaning": "Restored to health or normal life by training and therapy.",
-    "exampleSentence": "By natural farming, fields that have already been damaged by cultivation or the use of agricultural chemicals can be effectively rehabilitated.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "bengaliMeaning": "পুনর্বাসিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Restored, reformed",
+    "antonyms": "Damaged",
+    "englishMeaning": "Restored to health, normal life, or former condition.",
+    "exampleSentence": "Degraded agricultural lands can be rehabilitated through organic mulching.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -22319,17 +22333,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l5-hyperbole",
     "word": "Hyperbole",
-    "bengaliMeaning": "অতিশয়োক্তি / অতিরঞ্জন",
+    "bengaliMeaning": "অতিশয়োক্তি/অতিরঞ্জন",
     "partsOfSpeech": "Noun",
-    "synonyms": "Exaggeration, overstatement, embellishment",
-    "antonyms": "Understatement, meiosis, literal fact",
+    "synonyms": "Exaggeration, overstatement",
+    "antonyms": "Understatement",
     "englishMeaning": "Exaggerated statements or claims not meant to be taken literally.",
-    "exampleSentence": "You have to murmur it for fear of being accused of hyperbole.",
-    "unit": "Unit 12: Environment and Nature: Limits of the Scientific Method",
+    "exampleSentence": "Saying big dams solve all water crises is mere political hyperbole.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
-      "Unit 12: Environment and Nature: Limits of the Scientific Method"
+      "Unit 12: Environment and Nature: Limits of the Scientific Method",
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -27720,6 +27735,594 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
       "Unit 12: Lesson 4 (Environmental Justice)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-absorb",
+    "word": "Absorb",
+    "bengaliMeaning": "শোষণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Soak, imbibe",
+    "antonyms": "Expel, release",
+    "englishMeaning": "Take in or soak up energy or a liquid or other substance by chemical or physical action.",
+    "exampleSentence": "Plants absorb minerals and water from the soil naturally.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-abundant",
+    "word": "Abundant",
+    "bengaliMeaning": "আধিক্যপূর্ণ, প্রচুর",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Plentiful, copious, ample",
+    "antonyms": "Scarce",
+    "englishMeaning": "Existing or available in large quantities; plentiful.",
+    "exampleSentence": "There was abundant evidence to support the theory of natural farming.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-affect",
+    "word": "Affect",
+    "bengaliMeaning": "প্রভাবিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Influence, impact",
+    "antonyms": "Neutralize",
+    "englishMeaning": "Have an effect on; make a difference to.",
+    "exampleSentence": "Chemical fertilizers negatively affect the natural microorganisms in soil.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-array",
+    "word": "Array",
+    "bengaliMeaning": "বিন্যাস",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Setting, layout",
+    "antonyms": "Disarray",
+    "englishMeaning": "An impressive display or range of a particular type of thing.",
+    "exampleSentence": "A vast array of biological processes occur naturally in healthy soil.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-average",
+    "word": "Average",
+    "bengaliMeaning": "গড়",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Mean, median",
+    "antonyms": "Total, whole",
+    "englishMeaning": "A standard or level that is considered to be typical or usual.",
+    "exampleSentence": "The average harvest was sufficient without the need for artificial chemicals.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-conduct",
+    "word": "Conduct",
+    "bengaliMeaning": "পরিচালনা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Manage, oversee",
+    "antonyms": "Mismanage, disorganize",
+    "englishMeaning": "Organize and carry out.",
+    "exampleSentence": "Researchers conduct experiments to examine the limits of the scientific method.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-convulse",
+    "word": "Convulse",
+    "bengaliMeaning": "আন্দোলিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Agitate",
+    "antonyms": "Becalm",
+    "englishMeaning": "Throw into turmoil or violent agitation.",
+    "exampleSentence": "Massive development projects convulse ancient river valleys and communities.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-dam",
+    "word": "Dam",
+    "bengaliMeaning": "জলবন্ধন, বাঁধ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Embankment, barrier, block, barrage, obstruction",
+    "antonyms": "",
+    "englishMeaning": "A barrier constructed to hold back water and raise its level.",
+    "exampleSentence": "Big dams have displaced millions of people across river basins.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-determine",
+    "word": "Determine",
+    "bengaliMeaning": "নির্ধারণ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Decide, conclude",
+    "antonyms": "Doubt, question",
+    "englishMeaning": "Cause something to occur in a particular way or be of a particular nature.",
+    "exampleSentence": "Soil tests determine the nutrient composition under laboratory conditions.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-exposure",
+    "word": "Exposure",
+    "bengaliMeaning": "প্রকাশ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Disclosure, uncovering",
+    "antonyms": "Concealment, hiding",
+    "englishMeaning": "The state of being exposed to contact with something or revelation of something secret.",
+    "exampleSentence": "Prolonged exposure to pesticides harms human health and the ecosystem.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-fertility",
+    "word": "Fertility",
+    "bengaliMeaning": "উর্বরতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Fruitfulness",
+    "antonyms": "Infertility",
+    "englishMeaning": "The quality of being fertile; productiveness.",
+    "exampleSentence": "Natural straw improves the fertility of the topsoil over time.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-formation",
+    "word": "Formation",
+    "bengaliMeaning": "গঠন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Configuration, composition",
+    "antonyms": "Destruction, disbandment",
+    "englishMeaning": "The action of forming or process of being formed.",
+    "exampleSentence": "The natural formation of humus takes decades of undisturbed organic decay.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-impossibility",
+    "word": "Impossibility",
+    "bengaliMeaning": "অসম্ভবতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Unfeasibility, impracticality",
+    "antonyms": "Possibility, likelihood",
+    "englishMeaning": "The state or condition of not being able to occur, exist, or be done.",
+    "exampleSentence": "Complete comprehension of nature through reductionist science is an impossibility.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-infinite",
+    "word": "Infinite",
+    "bengaliMeaning": "অসীম/অশেষ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Immeasurable, unlimited, countless, inestimable",
+    "antonyms": "Limited, finite",
+    "englishMeaning": "Limitless or endless in space, extent, or size; impossible to measure or calculate.",
+    "exampleSentence": "Nature possesses infinite complexity beyond human laboratory measurements.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-insufficient",
+    "word": "Insufficient",
+    "bengaliMeaning": "অপর্যাপ্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Inadequate, lacking",
+    "antonyms": "Sufficient, adequate",
+    "englishMeaning": "Not enough; inadequate.",
+    "exampleSentence": "Isolated chemical data is insufficient to grasp the holistic vitality of soil.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-invariable",
+    "word": "Invariable",
+    "bengaliMeaning": "অপরিবর্তনীয়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Constant, unchanging",
+    "antonyms": "Variable, inconsistent",
+    "englishMeaning": "Never changing; constant.",
+    "exampleSentence": "Natural laws remain invariable regardless of human technological intervention.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-muddled",
+    "word": "Muddled",
+    "bengaliMeaning": "তালগোল পাকানো",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Messed up, jumbled, baffled, upside down, higgledy-piggledy",
+    "antonyms": "Ordered, disentangled",
+    "englishMeaning": "In a state of bewildered or bewildering confusion or disorder.",
+    "exampleSentence": "Human understanding became muddled when science separated agriculture from nature.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-practical",
+    "word": "Practical",
+    "bengaliMeaning": "ব্যবহারিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Pragmatic, realistic",
+    "antonyms": "Impractical, theoretical",
+    "englishMeaning": "Of or concerned with the actual doing or use of something rather than with theory and ideas.",
+    "exampleSentence": "Fukuoka demonstrated practical natural farming with zero chemical inputs.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-productivity",
+    "word": "Productivity",
+    "bengaliMeaning": "উৎপাদনশীলতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Output",
+    "antonyms": "",
+    "englishMeaning": "The state or quality of being productive; the effectiveness of productive effort.",
+    "exampleSentence": "Natural farming matched the high productivity of industrial agriculture without chemicals.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-rescue",
+    "word": "Rescue",
+    "bengaliMeaning": "উদ্ধার",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Save, recover",
+    "antonyms": "Abandon",
+    "englishMeaning": "Save someone or something from a dangerous or distressing situation.",
+    "exampleSentence": "Traditional farming methods can rescue depleted soils from chemical toxicity.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-researchers",
+    "word": "Researchers",
+    "bengaliMeaning": "গবেষক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Investigators, examiners, scientists",
+    "antonyms": "",
+    "englishMeaning": "People who carry out academic or scientific research.",
+    "exampleSentence": "Agricultural researchers often overlook the complex interdependence of soil organisms.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-scientific",
+    "word": "Scientific",
+    "bengaliMeaning": "বৈজ্ঞানিক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Logical, empirical",
+    "antonyms": "Unscientific",
+    "englishMeaning": "Based on or characterized by the methods and principles of science.",
+    "exampleSentence": "The limits of the scientific method become evident in complex living ecosystems.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-tumbled",
+    "word": "Tumbled",
+    "bengaliMeaning": "গড়াগড়ি খাওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Fallen, plunged",
+    "antonyms": "Risen, stand up",
+    "englishMeaning": "Fallen suddenly, clumsily, or headlong.",
+    "exampleSentence": "Soil fertility tumbled sharply after decades of chemical overuse.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-unbelievable",
+    "word": "Unbelievable",
+    "bengaliMeaning": "অবিশ্বাস্য",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Implausible, incredible, unlikely, unreliable",
+    "antonyms": "Believable, reliable",
+    "englishMeaning": "Not able to be believed; unlikely; extraordinary.",
+    "exampleSentence": "The harvest achieved without weeding or plowing was almost unbelievable.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-unnecessary",
+    "word": "Unnecessary",
+    "bengaliMeaning": "অপ্রয়োজনীয়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Needless, inessential, useless",
+    "antonyms": "Necessary, essential",
+    "englishMeaning": "Not needed; more than is needed.",
+    "exampleSentence": "Plowing and chemical fertilizers proved completely unnecessary in natural farming.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-variations",
+    "word": "Variations",
+    "bengaliMeaning": "বৈচিত্র্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Diversities, differences",
+    "antonyms": "Similarity, uniformity",
+    "englishMeaning": "A change or slight difference in condition, amount, or level.",
+    "exampleSentence": "Seasonal variations in weather influence plant growth patterns naturally.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-variety",
+    "word": "Variety",
+    "bengaliMeaning": "বৈচিত্র্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Diversity, assortment",
+    "antonyms": "Uniformity, monotony",
+    "englishMeaning": "The quality or state of being different or diverse; the absence of uniformity or monotony.",
+    "exampleSentence": "A rich variety of crops supports a healthy and resilient ecosystem.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l5-whisper",
+    "word": "Whisper",
+    "bengaliMeaning": "ফিস্ ফিস্ স্বর",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Murmur, undertone",
+    "antonyms": "Shout",
+    "englishMeaning": "Speak very softly using one's breath without vibrating the vocal cords.",
+    "exampleSentence": "The subtle whisper of nature is easily drowned out by industrial machinery.",
+    "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
+    "boardExamTag": "Unit 12 • Lesson 5",
+    "sources": [
+      "Unit 12: Lesson 5 (Limits of the Scientific Method)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],

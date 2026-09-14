@@ -554,7 +554,7 @@ export const hscUnits = [
     "bgClass": "bg-[#15803d] hover:bg-[#166534]",
     "gradient": "from-[#22c55e] to-[#15803d]",
     "progress": 0,
-    "totalWords": 127,
+    "totalWords": 160,
     "masteredWords": 0,
     "lessons": [
       {
@@ -598,8 +598,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Limits of the Scientific Method",
         "titleBn": "প্রাকৃতিক কৃষি ও মাসানোবু ফুকুওকা",
-        "questionsCount": "৭৬ টি প্রশ্ন",
-        "wordsCount": 19,
+        "questionsCount": "২১৬ টি প্রশ্ন",
+        "wordsCount": 54,
         "progress": 0
       }
     ]
