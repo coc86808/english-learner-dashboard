@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1111 Authentic Textbook Vocabulary Words
+ * Total Words: 1123 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -4040,11 +4040,11 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l3-03",
     "word": "Deprivation",
-    "bengaliMeaning": "বঞ্চনা / মৌলিক মানবিক চাহিদাহীনতা ও অভাব",
+    "bengaliMeaning": "বিকাশ বাধা / বঞ্চনা",
     "partsOfSpeech": "Noun",
-    "synonyms": "Privation, hardship, destitution, deficiency, impoverishment",
-    "antonyms": "Abundance, opulence, prosperity",
-    "englishMeaning": "The damaging lack of material benefits considered to be basic necessities in a society.",
+    "synonyms": "Privation, absence",
+    "antonyms": "",
+    "englishMeaning": "The damaging lack of material benefits and basic necessities considered to be basic necessities.",
     "exampleSentence": "I can't not see the deprivation in every house, the fear and the sickness.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
@@ -8638,7 +8638,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
       "Unit 5: Human Rights: Are We Aware of These Rights-I?",
-      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)"
+      "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8680,17 +8681,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l3-outspoken",
     "word": "Outspoken",
-    "bengaliMeaning": "স্পষ্টভাষী / অকপট",
+    "bengaliMeaning": "স্পষ্টভাষী",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Candid, blunt, frank, forthright",
-    "antonyms": "Secretive, reserved, reticent, hesitant",
-    "englishMeaning": "Frank in stating one's opinions, especially if they are critical or controversial.",
+    "synonyms": "Free-spoken",
+    "antonyms": "",
+    "englishMeaning": "Frank in stating one’s opinions, especially if they are critical or controversial.",
     "exampleSentence": "I became very outspoken and brave even in front of Dad, and I could face anyone.",
-    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Peace and Conflict: Stories From Gaza"
+      "Unit 11: Peace and Conflict: Stories From Gaza",
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -16942,16 +16944,17 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u2-l3-07",
     "word": "Famine",
-    "bengaliMeaning": "দুর্ভিক্ষ / চরম খাদ্যাভাব / মন্বন্তর",
+    "bengaliMeaning": "দুর্ভিক্ষ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Starvation, scarcity, destitution, food crisis",
-    "antonyms": "Abundance, plenty, surplus, feast",
-    "englishMeaning": "Extreme scarcity of food causing starvation and widespread death.",
-    "exampleSentence": "Zainul had earned all-India fame for his Famine Sketches, a series of haunting sketches based on the Bengal famine of 1943 which took hundreds of thousands of lives.",
-    "unit": "Unit 2: Lesson 3 (Art)",
-    "boardExamTag": "Unit 2 • Lesson 3",
+    "synonyms": "Starvation, acute shortage",
+    "antonyms": "Plenty, abundance",
+    "englishMeaning": "Extreme scarcity of food leading to severe starvation.",
+    "exampleSentence": "I can't not see the poverty, siege and famine in Gaza.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 2: Lesson 3 (Art)"
+      "Unit 2: Lesson 3 (Art)",
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20029,12 +20032,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l3-02",
     "word": "Siege",
-    "bengaliMeaning": "অবরোধ / সামরিক বেষ্টনী ও প্রবেশপথ রুদ্ধকরণ",
+    "bengaliMeaning": "সামরিক অবরোধ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Blockade, encirclement, containment, cordon",
-    "antonyms": "Liberation, relief, breakout",
+    "synonyms": "Beleaguerment, repression, control",
+    "antonyms": "",
     "englishMeaning": "A military operation in which enemy forces surround a town or building, cutting off essential supplies.",
-    "exampleSentence": "I can't not see the poverty, siege and famine, especially when all Gaza city flooded into Al-Areesh and emptied it from all goods in two hours.",
+    "exampleSentence": "I can't not see the poverty, siege and famine in Gaza.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -21718,17 +21721,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l3-suffocating",
     "word": "Suffocating",
-    "bengaliMeaning": "শ্বাসরোধকারী / অসহ্য রুদ্ধশ্বাস",
+    "bengaliMeaning": "শ্বাসরোধী",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Smothering, stifling, oppressive, choking",
-    "antonyms": "Refreshing, airy, liberating, breathable",
-    "englishMeaning": "Causing difficulty in breathing; oppressive.",
-    "exampleSentence": "I go back to the reality of Gaza: the dirty market, overflowing sewage, the cans, and what's on top of the carts, the suffocating smell, and the silent people who can't speak.",
-    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
+    "synonyms": "Choky",
+    "antonyms": "Airy",
+    "englishMeaning": "Causing difficulty in breathing; oppressive and stifling.",
+    "exampleSentence": "The overflowing sewage, the cans, and what's on top of the carts, the suffocating smell.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Peace and Conflict: Stories From Gaza"
+      "Unit 11: Peace and Conflict: Stories From Gaza",
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -21762,17 +21766,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l3-caretaker",
     "word": "Caretaker",
-    "bengaliMeaning": "তত্ত্বাবধায়ক / অভিভাবক",
+    "bengaliMeaning": "তত্ত্বাবধায়ক",
     "partsOfSpeech": "Noun",
-    "synonyms": "Custodian, warden, guardian, keeper",
-    "antonyms": "Intruder, trespasser, destroyer",
-    "englishMeaning": "A person employed to look after a building or person.",
-    "exampleSentence": "In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
-    "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
+    "synonyms": "Guardian, overseer",
+    "antonyms": "",
+    "englishMeaning": "A person employed to look after or take care of people or a place.",
+    "exampleSentence": "I want to be a children's caretaker and defend their rights.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Peace and Conflict: Stories From Gaza"
+      "Unit 11: Peace and Conflict: Stories From Gaza",
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -23027,7 +23032,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -26116,6 +26122,258 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
       "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-achievement",
+    "word": "Achievement",
+    "bengaliMeaning": "অর্জন, কৃতিত্ব",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Attainment, gaining",
+    "antonyms": "Failure",
+    "englishMeaning": "A thing done successfully, typically by effort, courage, or skill.",
+    "exampleSentence": "In Gaza it's an achievement to grow up, because death is standing at your doorstep.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-doorstep",
+    "word": "Doorstep",
+    "bengaliMeaning": "দোরগোড়া",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Gateway, entrance",
+    "antonyms": "",
+    "englishMeaning": "A step leading up to the outer door of a building; very close proximity.",
+    "exampleSentence": "In Gaza it's an achievement to grow up, because death is standing at your doorstep.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-empty",
+    "word": "Empty",
+    "bengaliMeaning": "খালি",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Bare, unoccupied",
+    "antonyms": "Occupied",
+    "englishMeaning": "Containing nothing; not filled or occupied.",
+    "exampleSentence": "All Gaza city flooded into Al-Areesh and emptied it from all goods in two hours.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-escape",
+    "word": "Escape",
+    "bengaliMeaning": "পলায়ন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Flee, make off",
+    "antonyms": "Face something",
+    "englishMeaning": "Break free from confinement or danger; run away.",
+    "exampleSentence": "That's why I'm now escaping outside the house all the time, because of the many flies.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-mature",
+    "word": "Mature",
+    "bengaliMeaning": "পূর্ণবয়স্ক",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Adult, grown-up",
+    "antonyms": "Immature",
+    "englishMeaning": "Fully developed physically and mentally; behaving in an adult way.",
+    "exampleSentence": "My friends changed, and I made older and more mature ones.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-rights",
+    "word": "Rights",
+    "bengaliMeaning": "অধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Claim",
+    "antonyms": "",
+    "englishMeaning": "Moral or legal entitlements to have or obtain something or to act in a certain way.",
+    "exampleSentence": "I want to be a children's caretaker and defend their rights.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-scare",
+    "word": "Scare",
+    "bengaliMeaning": "আতঙ্কিত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Terrify, horrify",
+    "antonyms": "Fearless",
+    "englishMeaning": "Cause great fear or alarm in someone.",
+    "exampleSentence": "Not only the clock scares me — everything that flies does, even the flies.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-sewage",
+    "word": "Sewage",
+    "bengaliMeaning": "নর্দমার ময়লা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Garbage, trash",
+    "antonyms": "",
+    "englishMeaning": "Waste water and excrement conveyed in sewers.",
+    "exampleSentence": "I go back to the reality of Gaza: the dirty market, overflowing sewage, the cans.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-sissy",
+    "word": "Sissy",
+    "bengaliMeaning": "মাইমুষো লোক / দুর্বলচিত্ত লোক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Weakling",
+    "antonyms": "Bold person",
+    "englishMeaning": "A person regarded as weak, cowardly, or unmanly.",
+    "exampleSentence": "I can't tell anyone about my fear so they don't call me a wimp or a sissy.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-support",
+    "word": "Support",
+    "bengaliMeaning": "সমর্থন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Assist, help, aid",
+    "antonyms": "Oppose",
+    "englishMeaning": "Give assistance, encouragement, or financial approval to.",
+    "exampleSentence": "A kid can be 6 years old and yet supporting a family.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-wimp",
+    "word": "Wimp",
+    "bengaliMeaning": "ভীতু",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Coward, crybaby",
+    "antonyms": "Brave",
+    "englishMeaning": "A weak, cowardly, or timid person.",
+    "exampleSentence": "I can't tell anyone about my fear so they don't call me a wimp or a sissy.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l3-worried",
+    "word": "Worried",
+    "bengaliMeaning": "চিন্তিত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Anxious, concerned",
+    "antonyms": "Unconcerned",
+    "englishMeaning": "Feeling anxious and troubled about actual or potential problems.",
+    "exampleSentence": "When the war started, we were in Russia, which made me always worried about Dad.",
+    "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
+    "boardExamTag": "Unit 11 • Lesson 3",
+    "sources": [
+      "Unit 11: Lesson 3 (Stories From Gaza)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],

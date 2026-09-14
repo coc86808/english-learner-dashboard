@@ -495,7 +495,7 @@ export const hscUnits = [
     "bgClass": "bg-[#4f46e5] hover:bg-[#4338ca]",
     "gradient": "from-[#6366f1] to-[#4f46e5]",
     "progress": 0,
-    "totalWords": 95,
+    "totalWords": 110,
     "masteredWords": 0,
     "lessons": [
       {
@@ -521,8 +521,8 @@ export const hscUnits = [
         "number": "Lesson 3",
         "title": "Stories From Gaza",
         "titleBn": "গাজার গল্প (নাট্য সংলাপ)",
-        "questionsCount": "৬৪ টি প্রশ্ন",
-        "wordsCount": 16,
+        "questionsCount": "১৩২ টি প্রশ্ন",
+        "wordsCount": 33,
         "progress": 0
       },
       {
