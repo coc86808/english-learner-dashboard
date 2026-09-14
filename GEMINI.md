@@ -54,3 +54,10 @@ Whenever the user uploads or provides vocabulary (via photo or text):
 2. **5 Correct Answers Threshold (Auto Mastery / Recovery)**:
    - If a student answers that word correctly **5 times in MCQ**, the word is automatically **removed from Weak Words** (marked as Mastered/Recovered) and cleared from the weak word queue.
 
+## 6. Verbatim Textbook Example Sentence & Multi-Unit Reference Rules
+1. **Verbatim Example Sentence (Mandatory)**:
+   - For every vocabulary word in `hscVocabularyList`, the `exampleSentence` MUST be the exact verbatim sentence from the official NCTB textbook passage where the word appears.
+2. **Multi-Unit / Multi-Lesson References**:
+   - If a word appears in multiple units or lessons (e.g. `sources`), the `exampleSentence` MUST include the authentic verbatim sentence from each unit/lesson, clearly prefaced by its unit and lesson tag:
+     `"[Unit X: Lesson Y]: <Exact sentence>\n[Unit A: Lesson B]: <Exact sentence>"`
+

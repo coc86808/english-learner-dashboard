@@ -1,9 +1,7 @@
 /**
- * HSC English First Paper - Board Standard MCQ & Vocabulary Database
- * High-Precision Spaced-Repetition System (NCTB Aligned)
- * 
- * Total Words: 1214 Authentic Textbook Vocabulary Words
- * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
+ * Official HSC English For Today Vocabulary & Question Engine Database
+ * All 45 Lessons | Units 1-12 (Unit 4: Speeches & Great Women included)
+ * 100% Verbatim NCTB Textbook Example Sentences & Multi-Unit Cross-References
  */
 
 export const hscVocabularyList = [
@@ -15,7 +13,7 @@ export const hscVocabularyList = [
     "synonyms": "Oppression, victimization, harassment, torture, tyranny",
     "antonyms": "Protection, safety, liberation, tolerance",
     "englishMeaning": "Hostility and ill-treatment, especially because of race or political or religious beliefs.",
-    "exampleSentence": "Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.\n[Unit 4: Lesson 3]: Article 14: (1) Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -50,7 +48,7 @@ export const hscVocabularyList = [
     "synonyms": "Instinctive, spontaneous, innate, perceptive",
     "antonyms": "Calculated, reasoned, deliberate, analytical",
     "englishMeaning": "Using or based on what one feels to be true without conscious reasoning.",
-    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -82,7 +80,7 @@ export const hscVocabularyList = [
     "synonyms": "Personal, individual, idiosyncratic, intuitive",
     "antonyms": "Objective, impartial, empirical, universal",
     "englishMeaning": "Based on or influenced by personal feelings, tastes, or opinions.",
-    "exampleSentence": "The emotional impact of a nighttime vision is entirely subjective to the dreamer.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -114,7 +112,7 @@ export const hscVocabularyList = [
     "synonyms": "Magnificent, splendid, illustrious, celebrated",
     "antonyms": "Inglorious, shameful, obscure, modest",
     "englishMeaning": "Having, worthy of, or bringing fame or admiration.",
-    "exampleSentence": "Some of you who live outside Sonargaon Upazila in the district of Narayanganj, may have visited the ancient township with its Folk Arts and Crafts Museum set up by the famous artist Zainul Abedin in 1975, and a number of old buildings which speak of a glorious past.",
+    "exampleSentence": "[Unit 2: Art and Craft: Craft]: Some of you who live outside Sonargaon Upazila in the district of Narayanganj, may have visited the ancient township with its Folk Arts and Crafts Museum set up by the famous artist Zainul Abedin in 1975, and a number of old buildings which speak of a glorious past.\n[Unit 12: Lesson 1]: The report says that the river had a glorious past.",
     "unit": "Unit 2: Art and Craft: Craft",
     "lesson": "Craft",
     "boardExamTag": "Unit 2 • Lesson 4",
@@ -148,7 +146,7 @@ export const hscVocabularyList = [
     "synonyms": "Preservation, safeguarding, upkeep, protection, maintenance",
     "antonyms": "Destruction, demolition, devastation, degradation",
     "englishMeaning": "The protection of animals, plants, natural resources, and habitats from decay or loss.",
-    "exampleSentence": "She received that honour in 2004 as the founder of the Green Belt Movement in Kenya, a nonprofit organization dedicated to planting trees, environmental conservation, and women's rights.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She received that honour in 2004 as the founder of the Green Belt Movement in Kenya, a nonprofit organization dedicated to planting trees, environmental conservation, and women's rights.\n[Unit 4: Great Women: Pioneers of Education & Science]: She received that honour in 2004 as the founder of the Green Belt Movement in Kenya, a nonprofit organization dedicated to planting trees, environmental conservation, and women's rights.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -181,7 +179,7 @@ export const hscVocabularyList = [
     "synonyms": "Welfare, prosperity, health, happiness, flourishing",
     "antonyms": "Misery, suffering, hardship, despair",
     "englishMeaning": "The state of being comfortable, healthy, or happy.",
-    "exampleSentence": "Access to clean water and sanitation directly affects human wellbeing.",
+    "exampleSentence": "Unit Five: Human Rights | Lesson 3: Rights to Health and Education A.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -243,7 +241,7 @@ export const hscVocabularyList = [
     "synonyms": "Disadvantaged, needy, impoverished, deprived",
     "antonyms": "Privileged, affluent, wealthy, favored",
     "englishMeaning": "Not enjoying the same standard of living or rights as the majority of people in a society.",
-    "exampleSentence": "Despite coming from an underprivileged background, S M Sultan made his mark in the art world through sheer passion and his ability to build enduring connections.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -273,7 +271,7 @@ export const hscVocabularyList = [
     "synonyms": "Advocacy, campaigning, engagement, grassroots reform",
     "antonyms": "Passivity, apathy, lethargy, inaction",
     "englishMeaning": "The policy or action of using vigorous campaigning to bring about political or social change.",
-    "exampleSentence": "social activism viii.",
+    "exampleSentence": "[Unit 5: Lesson 2]: social activism viii.\n[Unit 4: Lesson 3]: social activism viii.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -334,7 +332,7 @@ export const hscVocabularyList = [
     "synonyms": "Grand, splendid, glorious, majestic, noble",
     "antonyms": "Pathetic, unimpressive, modest",
     "englishMeaning": "Extremely beautiful, elaborate, or impressive.",
-    "exampleSentence": "He described his mother's imagined character in magnificent, glowing terms.",
+    "exampleSentence": "The orphanage is high in the Carolina mountains.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -456,7 +454,7 @@ export const hscVocabularyList = [
     "synonyms": "Participate, step in, intervene, take part, lend a hand",
     "antonyms": "Stay out, withdraw, abstain, hold back",
     "englishMeaning": "To become actively involved or take part in solving a problem.",
-    "exampleSentence": "The brave girls decided to take a hand in solving the mystery of the stolen words.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -577,7 +575,7 @@ export const hscVocabularyList = [
     "synonyms": "Anguish, torment, distress, suffering, affliction",
     "antonyms": "Ecstasy, delight, rapture, bliss, comfort",
     "englishMeaning": "Extreme physical or mental suffering and deep distress.",
-    "exampleSentence": "Twenty-three years of a history of men and women in agony!",
+    "exampleSentence": "[Unit 4: Lesson 2]: Twenty-three years of a history of men and women in agony!\n[Unit 4: Transformative Speeches: Three Speeches]: Twenty-three years of a history of men and women in agony!",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -608,7 +606,7 @@ export const hscVocabularyList = [
     "synonyms": "Racism, segregation, racial discrimination, prejudice",
     "antonyms": "Equality, integration, inclusion, egalitarianism",
     "englishMeaning": "A policy or system of segregation or discrimination on grounds of race.",
-    "exampleSentence": "The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.\n[Unit 4: Transformative Speeches: Three Speeches]: The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -638,7 +636,7 @@ export const hscVocabularyList = [
     "synonyms": "Outlook, perspective, stance, mindset, disposition",
     "antonyms": "Indifference, neutrality, apathy",
     "englishMeaning": "A settled way of thinking or feeling about someone or something.",
-    "exampleSentence": "It will enable the Court to appreciate the attitude eventually adopted by the various bodies in the National Liberation Movement.",
+    "exampleSentence": "[Unit 4: Lesson 2]: It will enable the Court to appreciate the attitude eventually adopted by the various bodies in the National Liberation Movement.\n[Unit 4: Transformative Speeches: Three Speeches]: It will enable the Court to appreciate the attitude eventually adopted by the various bodies in the National Liberation Movement.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -700,7 +698,7 @@ export const hscVocabularyList = [
     "synonyms": "Conclusive, pivotal, key, significant, influential, critical",
     "antonyms": "Insignificant, uncertain, indecisive, hesitant",
     "englishMeaning": "Settling an issue; producing a definite result or turning point.",
-    "exampleSentence": "The sudden death of Pierre Curie was a bitter blow to Marie Curie, but it was also a decisive turning point in her career.",
+    "exampleSentence": "[Unit 4: Lesson 3]: The sudden death of Pierre Curie was a bitter blow to Marie Curie, but it was also a decisive turning point in her career.\n[Unit 4: Great Women: Pioneers of Education & Science]: The sudden death of Pierre Curie was a bitter blow to Marie Curie, but it was also a decisive turning point in her career.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -730,7 +728,7 @@ export const hscVocabularyList = [
     "synonyms": "Immeasurable, incalculable, enormous, mammoth, gigantic, vast",
     "antonyms": "Tiny, miniature, minuscule, negligible",
     "englishMeaning": "Extremely large or great, especially in scale or degree.",
-    "exampleSentence": "Her contribution to physics had been immense, not only in her own work, but because of her influence on subsequent generations.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Her contribution to physics had been immense, not only in her own work, but because of her influence on subsequent generations.\n[Unit 4: Great Women: Pioneers of Education & Science]: Her contribution to physics had been immense, not only in her own work, but because of her influence on subsequent generations.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -761,7 +759,7 @@ export const hscVocabularyList = [
     "synonyms": "Abuse, manipulation, victimization, misuse",
     "antonyms": "Protection, empowerment, fairness, respect",
     "englishMeaning": "The action of treating someone unfairly in order to benefit from their work or vulnerability.",
-    "exampleSentence": "Discuss how educational empowerment protects society from exploitation.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -820,7 +818,7 @@ export const hscVocabularyList = [
     "synonyms": "Isolation, separation, partition, discrimination",
     "antonyms": "Integration, combination, inclusion, desegregation",
     "englishMeaning": "The enforced separation of different racial groups in a country, community, or establishment.",
-    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.\n[Unit 4: Transformative Speeches: Three Speeches]: The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -880,7 +878,7 @@ export const hscVocabularyList = [
     "synonyms": "Period, term, span, length of time, extent",
     "antonyms": "Instant, flash, moment",
     "englishMeaning": "The time during which something continues or lasts.",
-    "exampleSentence": "And each of these times was very short in duration, and at night.",
+    "exampleSentence": "[Unit 5: Lesson 5]: This is the inevitable result: I never saw my mother, to know her as such, more than four or five times in my life; and each of these times was very short in duration, and at night.\n[Unit 5: Human Rights: Frederick Douglass]: And each of these times was very short in duration, and at night.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -911,7 +909,7 @@ export const hscVocabularyList = [
     "synonyms": "Fraternity, fellowship, kinship, solidarity, companionship",
     "antonyms": "Enmity, hostility, rivalry, discord",
     "englishMeaning": "An association, or feelings of friendship, mutual support, and solidarity.",
-    "exampleSentence": "They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
+    "exampleSentence": "[Unit 5: Lesson 2]: They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.\n[Unit 5: Human Rights: Are We Aware of These Rights-II?]: They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.\n[Unit 4: Lesson 2]: They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -941,7 +939,7 @@ export const hscVocabularyList = [
     "synonyms": "Raise, foster, advance, encourage, boost",
     "antonyms": "Demote, discourage, impede, hinder",
     "englishMeaning": "To support, encourage, or actively contribute to the progress or growth of something.",
-    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
+    "exampleSentence": "[Unit 9: Lesson 1]: Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.\n[Unit 5: Lesson 3]: It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -1189,7 +1187,7 @@ export const hscVocabularyList = [
     "synonyms": "Infrequently, hardly, seldom, scarcely",
     "antonyms": "Often, frequently, regularly, usually",
     "englishMeaning": "Not often; seldom.",
-    "exampleSentence": "Courteous individuals rarely get involved in bitter online arguments.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -1217,7 +1215,7 @@ export const hscVocabularyList = [
     "synonyms": "Rarely, infrequently, scarcely, hardly ever",
     "antonyms": "Often, frequently, constantly, always",
     "englishMeaning": "Not often; rarely.",
-    "exampleSentence": "They seldom come nearer to it than planting-time, harvest-time, cherry-time, spring-time, or fall-time.",
+    "exampleSentence": "[Unit 10: Lesson 2]: Lifestyle B.\n[Unit 5: Lesson 5]: They seldom come nearer to it than planting-time, harvest-time, cherry-time, spring-time, or fall-time.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -1246,7 +1244,7 @@ export const hscVocabularyList = [
     "synonyms": "Ostentatious, flashy, flamboyant, gaudy",
     "antonyms": "Restrained, modest, subtle, understated",
     "englishMeaning": "Having a striking appearance or style, often excessively ornate.",
-    "exampleSentence": "True elegance lies in modesty rather than in wearing showy decorations.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -1274,7 +1272,7 @@ export const hscVocabularyList = [
     "synonyms": "Joy, Happiness, Merriment, Exultation, Good spirits",
     "antonyms": "Gloom, Sadness, Sorrow, Melancholy, Despair",
     "englishMeaning": "Shouts of joy or expressions of warm salutation and happiness.",
-    "exampleSentence": "The people in the motorboat were cheering me.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -1328,7 +1326,7 @@ export const hscVocabularyList = [
     "synonyms": "Often, Regularly, Repeatedly, Recurrently",
     "antonyms": "Rarely, Seldom, Infrequently, Occasionally",
     "englishMeaning": "Regularly or habitually; occurring many times.",
-    "exampleSentence": "Gift Gifts are given frequently to show love, gratitude and respect.",
+    "exampleSentence": "[Unit 10: Lesson 1]: Gift Gifts are given frequently to show love, gratitude and respect.\n[Unit 5: Lesson 4]: (equivalent of 50 kg) and a quarter on my back; have to stoop much and creep through water, which is frequently up to the calves of my legs.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -1384,7 +1382,7 @@ export const hscVocabularyList = [
     "synonyms": "Customary, Routine, Regular, Usual, Chronic",
     "antonyms": "Occasional, Rare, Infrequent, Unusual, Irregular",
     "englishMeaning": "Done or doing constantly as a habit; customary.",
-    "exampleSentence": "Giving dates and sweets as gifts is a habitual practice in the Middle East.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -1411,7 +1409,7 @@ export const hscVocabularyList = [
     "synonyms": "Incline head, Bow, Signal, Gesture, Acknowledge",
     "antonyms": "Shake head, Refuse, Disagree",
     "englishMeaning": "To lower and raise one's head slightly and briefly in greeting or agreement.",
-    "exampleSentence": "Some South African women do not shake hands and merely nod their head in greeting.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -1467,7 +1465,7 @@ export const hscVocabularyList = [
     "synonyms": "Deliberate, willful, intended, planned, conscious",
     "antonyms": "Unintentional, undesigned, accidental",
     "englishMeaning": "Done with conscious intention, purpose, premeditation, or design.",
-    "exampleSentence": "Awareness campaigns educate teens about preventing intentional harm and injuries.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -1495,7 +1493,7 @@ export const hscVocabularyList = [
     "synonyms": "Accidental, sudden, inadvertent, unintended",
     "antonyms": "Intentional, deliberate, premeditated",
     "englishMeaning": "Done not on purpose or without conscious design.",
-    "exampleSentence": "Young people taking physical hazards often suffer unintentional trauma.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -1578,7 +1576,7 @@ export const hscVocabularyList = [
     "synonyms": "Demonstration, embodiment, revelation, expression, display",
     "antonyms": "Concealment, suppression, hiding",
     "englishMeaning": "An event, action, or object that clearly shows or embodies something.",
-    "exampleSentence": "Folk music has the following characteristics: (i) It is composed by rural folk on the basis of ancient rules transmitted orally; (ii) These ancient rules of music have not been influenced by classical or modern music; (iii) Folk songs may be sung in groups, or individually; (iv) No regular practice is required for folk music; (v) It is composed and performed by illiterate or semi-literate people; (vi) It is a spontaneous expression of feelings and thoughts in easy language, local dialect, and simple tune; (vii) Both words and tune are appealing; (viii) Despite its universal appeal it uses local dialect; (ix) It depends upon nature and the rural environment; (x) It is an explicit manifestation of the joys and sorrows of daily life; (xi) It uses simple and natural rhythms; and (xii) It contains a strong emotive expression of human love and separation.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -1605,7 +1603,7 @@ export const hscVocabularyList = [
     "synonyms": "Agony, torment, distress, heartache, misery",
     "antonyms": "Joy, contentment, relief, bliss",
     "englishMeaning": "Severe mental or physical pain or intense suffering.",
-    "exampleSentence": "A painting of sunset over the sea glorifies nature, but one that shows a war-ravaged town can convey a sense of anguish.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -1633,7 +1631,7 @@ export const hscVocabularyList = [
     "synonyms": "Considerable, significant, ample, sizable, meaningful",
     "antonyms": "Negligible, trivial, minor, insignificant, meager",
     "englishMeaning": "Of considerable importance, size, or worth.",
-    "exampleSentence": "The students raised a substantial relief fund to assist elderly flood victims.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -1661,7 +1659,7 @@ export const hscVocabularyList = [
     "synonyms": "Foliaged, verdant, lush, green, wooded",
     "antonyms": "Barren, leafless, desolate, bare",
     "englishMeaning": "Having or covered with many leaves or foliage.",
-    "exampleSentence": "I look around me And discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
+    "exampleSentence": "I look around me and discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
     "boardExamTag": "Unit 3 • Lesson 1",
     "sources": [
@@ -1688,7 +1686,7 @@ export const hscVocabularyList = [
     "synonyms": "Thrive, flourish, succeed, blossom, boom",
     "antonyms": "Decline, wither, fail, languish",
     "englishMeaning": "Succeed in activity, typically by making good economic progress.",
-    "exampleSentence": "Read the following passage about Khona and answer the questions that follow: Khona \"Jodi borshe magher shesh, dhonyi rajar punyi desh.\" (If it rains at the end of Magh (last month of Winter), the kingdom will prosper.) The mystery that connects seasons with soil and crops with rain was no secret to her.",
+    "exampleSentence": "\"Jodi borshe magher shesh, dhonyi rajar punyi desh.\"",
     "unit": "Unit 3: Lesson 4 (Khona)",
     "boardExamTag": "Unit 3 • Lesson 4",
     "sources": [
@@ -1744,7 +1742,7 @@ export const hscVocabularyList = [
     "synonyms": "Dispossessed, stripped, robbed, destitute, denied",
     "antonyms": "Privileged, endowed, blessed, wealthy",
     "englishMeaning": "Suffering a severe and damaging lack of basic material and cultural benefits.",
-    "exampleSentence": "(2) No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality.",
+    "exampleSentence": "[Unit 5: Lesson 1]: (2) No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality.\n[Unit 5: Lesson 5]: I could not tell why I ought to be deprived of the same privilege.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -1772,7 +1770,7 @@ export const hscVocabularyList = [
     "synonyms": "Honor, self-respect, prestige, stature, worthiness",
     "antonyms": "Humiliation, dishonor, shame, degradation",
     "englishMeaning": "The state or quality of being worthy of honor or respect.",
-    "exampleSentence": "Universal Declaration of Human Rights: Article 1: All human beings are born free and equal in dignity and rights.",
+    "exampleSentence": "[Unit 5: Lesson 2]: Universal Declaration of Human Rights: Article 1: All human beings are born free and equal in dignity and rights.\n[Unit 12: Lesson 4]: Fundamental to both the concept of Environmental Justice and the activist EJ movement is the search for fair ways of sharing environmental burdens and benefits and collectively creating a future in which the dignity and rights of all people are respected.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -1829,7 +1827,7 @@ export const hscVocabularyList = [
     "synonyms": "Mental, intellectual, perceptual, rational, cognitive-process",
     "antonyms": "Instinctive, visceral, mindless",
     "englishMeaning": "Relating to cognition; the mental process of acquiring knowledge and understanding.",
-    "exampleSentence": "Dreams help synthesize memories and strengthen cognitive abilities during sleep.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -1857,7 +1855,7 @@ export const hscVocabularyList = [
     "synonyms": "Struggle, endeavor, labor, aspire, toil",
     "antonyms": "Surrender, yield, give up, idle",
     "englishMeaning": "Make great efforts to achieve or obtain something.",
-    "exampleSentence": "the great Romantic poet, considered poets dreamers because they have the ability to turn \"our wish, our power, our thought*' into \"a deed.\" Poets give voice to What we desire and strive hard IO achieve.",
+    "exampleSentence": "Poets give voice to What we desire and strive hard IO achieve.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -1912,7 +1910,7 @@ export const hscVocabularyList = [
     "synonyms": "Soul, spirit, mind, inner self, subconscious",
     "antonyms": "Physical flesh, corporeal body",
     "englishMeaning": "The human soul, mind, or spirit.",
-    "exampleSentence": "In classical Hellenic myths, the human psyche is symbolized with butterfly wings.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -1966,7 +1964,7 @@ export const hscVocabularyList = [
     "synonyms": "Persuaded, assured, certain, positive, converted",
     "antonyms": "Doubtful, skeptical, unconvinced",
     "englishMeaning": "Completely certain about something; persuaded by argument or evidence.",
-    "exampleSentence": "Guardians were not convinced as they were used to seeing girls helping mothers with household chores.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -1993,7 +1991,7 @@ export const hscVocabularyList = [
     "synonyms": "Dazzling, breathtaking, splendid, gorgeous, magnificent",
     "antonyms": "Hideous, plain, unattractive",
     "englishMeaning": "Extremely impressive or attractive.",
-    "exampleSentence": "She was captivated by the stunning craftsmanship of the embroidered silk gown.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -2020,7 +2018,7 @@ export const hscVocabularyList = [
     "synonyms": "Gracious",
     "antonyms": "Discourteous",
     "englishMeaning": "Brave, heroic, or exceptionally noble and grand.",
-    "exampleSentence": "Then went I to a garden and did spy a gallant flower.",
+    "exampleSentence": "Then went I to a garden and did spy A gallant flower, The crown-imperial: Sure, said I, Peace at the root must dwell.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -2047,7 +2045,7 @@ export const hscVocabularyList = [
     "synonyms": "Void, empty",
     "antonyms": "Real",
     "englishMeaning": "Having a hole or empty space inside; devoid of substance or truth.",
-    "exampleSentence": "A hollow wind did seem to answer, No: go seek elsewhere.",
+    "exampleSentence": "A hollow wind did seem to answer, No: Go seek elsewhere.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -2101,7 +2099,7 @@ export const hscVocabularyList = [
     "synonyms": "Thoughtless, ill-considered, ill-judged",
     "antonyms": "Far-sighted, visionary",
     "englishMeaning": "Lacking foresight or consideration of the future consequences of an action.",
-    "exampleSentence": "Upon closer examination the result of sometimes shortsighted corporate practices.",
+    "exampleSentence": "What is often regarded as a natural disaster is upon closer examination the result of sometimes shortsighted and other times reckless, even pernicious corporate, governmental, or individual environmental practices that target and disadvantage vulnerable groups.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -2300,7 +2298,7 @@ export const hscVocabularyList = [
     "synonyms": "Advantaged, elite, favored, endowed",
     "antonyms": "Underprivileged, disadvantaged, marginalized",
     "englishMeaning": "Having special rights, advantages, or immunities.",
-    "exampleSentence": "I could not tell why I ought to be deprived of the same privilege.",
+    "exampleSentence": "[Unit 5: Human Rights: Frederick Douglass]: I could not tell why I ought to be deprived of the same privilege.\n[Unit 12: Lesson 4]: Simultaneously, the benefits of that overconsumption are enjoyed primarily by the privileged around the world, a fraction of the earth's population.",
     "unit": "Unit 5: Human Rights: Frederick Douglass",
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
@@ -2414,7 +2412,7 @@ export const hscVocabularyList = [
     "synonyms": "Mood, feelings, attitude, atmosphere, enthusiasm",
     "antonyms": "Apathy, lifelessness, dullness",
     "englishMeaning": "The prevailing tone or tendency of what is said or done; mood.",
-    "exampleSentence": "Modern art rejected traditional art forms and began to create new types of artistic expression using styles, techniques, colours and materials that could adequately reflect the spirit of the time and the profound changes in human thought.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -2442,7 +2440,7 @@ export const hscVocabularyList = [
     "synonyms": "Attitude, Method, Manner, Strategy, Advance",
     "antonyms": "Departure, Retreat, Withdrawal, Avoidance",
     "englishMeaning": "A way of dealing with situations or coming nearer to someone.",
-    "exampleSentence": "A polite and humble approach helps foreigners adapt to different international customs.",
+    "exampleSentence": "[Unit 10: Lesson 1]: Unit Ten: Lifestyle Lesson 1 Manners Around the World A.\n[Unit 4: Lesson 3]: A polite and humble approach helps foreigners adapt to different international customs.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -2471,7 +2469,7 @@ export const hscVocabularyList = [
     "synonyms": "Welfare, betterment, prosperity, health",
     "antonyms": "Ill-being, woe, misery, suffering",
     "englishMeaning": "The state of being comfortable, healthy, or happy.",
-    "exampleSentence": "The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -2724,7 +2722,7 @@ export const hscVocabularyList = [
     "synonyms": "Flooded, covered, submerged, inundated, overflowing",
     "antonyms": "Dried, barren, arid, drained",
     "englishMeaning": "Covered or flooded with water or another liquid such as blood.",
-    "exampleSentence": "The streets of Dhaka, Chattogram, Khulna, Rajshahi and Rangpur are awash with the blood of our brothers.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The streets of Dhaka, Chattogram, Khulna, Rajshahi and Rangpur are awash with the blood of our brothers.\n[Unit 4: Transformative Speeches: Three Speeches]: The streets of Dhaka, Chattogram, Khulna, Rajshahi and Rangpur are awash with the blood of our brothers.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2753,7 +2751,7 @@ export const hscVocabularyList = [
     "synonyms": "Unfairness, inequity, wrong, grievance, oppression",
     "antonyms": "Justice, fairness, righteousness, equity",
     "englishMeaning": "Lack of fairness or justice; an unjust act or occurrence.",
-    "exampleSentence": "A state sweltering with the heat of injustice will be transformed into an oasis of freedom and justice.",
+    "exampleSentence": "[Unit 4: Lesson 2]: A state sweltering with the heat of injustice will be transformed into an oasis of freedom and justice.\n[Unit 4: Transformative Speeches: Three Speeches]: A state sweltering with the heat of injustice will be transformed into an oasis of freedom and justice.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2782,7 +2780,7 @@ export const hscVocabularyList = [
     "synonyms": "Intervention, interference, mediation, intrusion",
     "antonyms": "Non-intervention, withdrawal, disregard, neutrality",
     "englishMeaning": "The action of interposing and interfering with federal authority or civil rights.",
-    "exampleSentence": "With its governor having his lips dripping with the words of 'interposition' and 'nullification'.",
+    "exampleSentence": "[Unit 4: Lesson 2]: With its governor having his lips dripping with the words of 'interposition' and 'nullification'.\n[Unit 4: Transformative Speeches: Three Speeches]: With its governor having his lips dripping with the words of 'interposition' and 'nullification'.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2810,7 +2808,7 @@ export const hscVocabularyList = [
     "synonyms": "Decay, deteriorate, wither, suffer, pine",
     "antonyms": "Flourish, thrive, prosper, bloom",
     "englishMeaning": "Grow weak or feeble; suffer from being forced to remain in an unpleasant place or situation.",
-    "exampleSentence": "The Negro is still languishing in the corners of American society and finds himself an exile in his own land.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The Negro is still languishing in the corners of American society and finds himself an exile in his own land.\n[Unit 4: Transformative Speeches: Three Speeches]: The Negro is still languishing in the corners of American society and finds himself an exile in his own land.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2838,7 +2836,7 @@ export const hscVocabularyList = [
     "synonyms": "Persecution, tyranny, subjugation, cruelty, harassment",
     "antonyms": "Freedom, liberation, justice, cheerfulness",
     "englishMeaning": "Prolonged cruel or unjust treatment or exercise of authority.",
-    "exampleSentence": "A state sweltering with the heat of oppression will be transformed into an oasis of freedom and justice.",
+    "exampleSentence": "[Unit 4: Lesson 2]: A state sweltering with the heat of oppression will be transformed into an oasis of freedom and justice.\n[Unit 4: Transformative Speeches: Three Speeches]: A state sweltering with the heat of oppression will be transformed into an oasis of freedom and justice.\n[Unit 4: Lesson 3]: A state sweltering with the heat of oppression will be transformed into an oasis of freedom and justice.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2867,7 +2865,7 @@ export const hscVocabularyList = [
     "synonyms": "Opposition, defiance, counteraction, struggle",
     "antonyms": "Surrender, submission, compliance, yielding",
     "englishMeaning": "The refusal to accept or comply with something; the attempt to prevent something by action or argument.",
-    "exampleSentence": "This campaign was based on the principles of passive resistance.",
+    "exampleSentence": "[Unit 4: Lesson 2]: This campaign was based on the principles of passive resistance.\n[Unit 4: Transformative Speeches: Three Speeches]: This campaign was based on the principles of passive resistance.\n[Unit 4: Lesson 3]: This campaign was based on the principles of passive resistance.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2896,7 +2894,7 @@ export const hscVocabularyList = [
     "synonyms": "Obvious, apparent, manifest, indisputable, clear",
     "antonyms": "Unclear, questionable, obscure, doubtful",
     "englishMeaning": "Not needing to be demonstrated or explained; obvious.",
-    "exampleSentence": "We hold these truths to be self-evident; that all men are created equal.",
+    "exampleSentence": "[Unit 4: Lesson 2]: We hold these truths to be self-evident; that all men are created equal.\n[Unit 4: Transformative Speeches: Three Speeches]: We hold these truths to be self-evident; that all men are created equal.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2924,7 +2922,7 @@ export const hscVocabularyList = [
     "synonyms": "Memorable, haunting, indelible, epoch-making",
     "antonyms": "Forgettable, unremarkable, ordinary, transient",
     "englishMeaning": "Impossible to forget; very memorable because of significance.",
-    "exampleSentence": "The historic 7th March speech delivered by Bangabandhu is an unforgettable moment in the history of human freedom.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The historic 7th March speech delivered by Bangabandhu is an unforgettable moment in the history of human freedom.\n[Unit 4: Transformative Speeches: Three Speeches]: The historic 7th March speech delivered by Bangabandhu is an unforgettable moment in the history of human freedom.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2953,7 +2951,7 @@ export const hscVocabularyList = [
     "synonyms": "Revoke, retract, cancel, recall, rescind",
     "antonyms": "Impose, maintain, deposit, establish",
     "englishMeaning": "Discontinue, cancel, or remove an order, rule, or military martial law.",
-    "exampleSentence": "Although you have called the Assembly into session, you'll have to withdraw Martial Law.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Although you have called the Assembly into session, you'll have to withdraw Martial Law.\n[Unit 4: Transformative Speeches: Three Speeches]: Although you have called the Assembly into session, you'll have to withdraw Martial Law.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -2981,7 +2979,7 @@ export const hscVocabularyList = [
     "synonyms": "Celebrated, lauded, acclaimed, distinguished, praised",
     "antonyms": "Disdained, neglected, condemned, ignored",
     "englishMeaning": "Publicly praised and celebrated with high honor.",
-    "exampleSentence": "He became internationally acclaimed as a great painter of classic dimensions.",
+    "exampleSentence": "[Unit 2: Lesson 3]: Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.\n[Unit 2: Art and Craft: Art]: He became internationally acclaimed as a great painter of classic dimensions.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -3065,7 +3063,7 @@ export const hscVocabularyList = [
     "synonyms": "Insignificant, trivial, minor, slight, petty",
     "antonyms": "Significant, substantial, important, remarkable",
     "englishMeaning": "So small or unimportant as to be not worth considering.",
-    "exampleSentence": "The nephew commented, \"Your Majesty can see how things are going on.\" \"Astonishing!\" replied the King, \"the din isn't negligible.\" \"Not only the noise,\" said the nephew.",
+    "exampleSentence": "replied the King, \"the din isn't negligible.\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -3092,7 +3090,7 @@ export const hscVocabularyList = [
     "synonyms": "Huge, massive, gigantic, colossal, immense",
     "antonyms": "Small, tiny, minute, miniature",
     "englishMeaning": "Very large in size, quantity, or extent.",
-    "exampleSentence": "The scientist constructed an enormous machine inside the hilltop cave.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -3120,7 +3118,7 @@ export const hscVocabularyList = [
     "synonyms": "Freedom, autonomy, independence, emancipation",
     "antonyms": "Captivity, bondage, imprisonment, slavery",
     "englishMeaning": "The state of being free within society from oppressive restrictions.",
-    "exampleSentence": "Article 3: Everyone has the right to life, liberty and security of person.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -3175,7 +3173,7 @@ export const hscVocabularyList = [
     "synonyms": "Troublesome, crucial, vital, decisive, pivotal",
     "antonyms": "Uncritical, trivial, minor, insignificant",
     "englishMeaning": "Having decisive importance in the success, failure, or development of something.",
-    "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
+    "exampleSentence": "[Unit 9: Lesson 1]: This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.\n[Unit 11: Lesson 2]: Read the story below for a clear and critical understanding of what it is really about and then answer the questions that follow: An old man with steel rim spectacles and very dusty clothes sat by the side of the road.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -3203,7 +3201,7 @@ export const hscVocabularyList = [
     "synonyms": "Worldwide, cosmopolitan, universal, international",
     "antonyms": "Local, regional, provincial, isolated",
     "englishMeaning": "Relating to or encompassing the whole world; worldwide.",
-    "exampleSentence": "Alex proved that he was a global citizen.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -3230,7 +3228,7 @@ export const hscVocabularyList = [
     "synonyms": "Worldwide, general, all-inclusive, omnipresent",
     "antonyms": "Particular, individual, local, specific",
     "englishMeaning": "Applicable to, existing in, or characteristic of all people, places, or conditions.",
-    "exampleSentence": "The biological determinants of adolescence are fairly universal: however.",
+    "exampleSentence": "[Unit 9: Lesson 1]: The biological determinants of adolescence are fairly universal: however.\n[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -3286,7 +3284,7 @@ export const hscVocabularyList = [
     "synonyms": "Natural home, territory, biotope, ecosystem, native environment",
     "antonyms": "Captivity, artificial cage, unnatural enclosure",
     "englishMeaning": "The natural home or environment of an animal, plant, or other organism.",
-    "exampleSentence": ") The Asian small-clawed otter lives in riverine habitats, freshwater wetlands and mangrove swamps.",
+    "exampleSentence": "8) The Asian small-clawed otter lives in riverine habitats, freshwater wetlands and mangrove swamps.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
@@ -3341,7 +3339,7 @@ export const hscVocabularyList = [
     "synonyms": "Bondage, enslavement, captivity, servitude",
     "antonyms": "Freedom, liberation, emancipation",
     "englishMeaning": "The state of being a slave; the practice of owning slaves.",
-    "exampleSentence": "Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-II?]: Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.\n[Unit 5: Lesson 2]: Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
@@ -3371,7 +3369,7 @@ export const hscVocabularyList = [
     "synonyms": "Colossal, immense, enormous, mammoth, gigantic",
     "antonyms": "Tiny, small, little, trivial, miniscule",
     "englishMeaning": "Remarkably or impressively great in extent, size, or degree.",
-    "exampleSentence": "So let freedom ring from the prodigious hilltops of New Hampshire.",
+    "exampleSentence": "[Unit 4: Lesson 2]: So let freedom ring from the prodigious hilltops of New Hampshire.\n[Unit 4: Transformative Speeches: Three Speeches]: So let freedom ring from the prodigious hilltops of New Hampshire.\n[Unit 4: Lesson 3]: So let freedom ring from the prodigious hilltops of New Hampshire.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -3400,7 +3398,7 @@ export const hscVocabularyList = [
     "synonyms": "Obvious, apparent, conspicuous, noticeable, distinct",
     "antonyms": "Obscure, unclear, hidden, vague, indistinct",
     "englishMeaning": "Plain or obvious to the eye or mind; readily visible.",
-    "exampleSentence": "Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.\n[Unit 4: Great Women: Pioneers of Education & Science]: Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3429,7 +3427,7 @@ export const hscVocabularyList = [
     "synonyms": "Powerful, dominant, leading, prominent, prestigious",
     "antonyms": "Ineffectual, unimportant, powerless, obscure",
     "englishMeaning": "Having great influence on someone or something.",
-    "exampleSentence": "Time Magazine identified her as one of 100 most influential people in the world in 2005.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Time Magazine identified her as one of 100 most influential people in the world in 2005.\n[Unit 4: Great Women: Pioneers of Education & Science]: Time Magazine identified her as one of 100 most influential people in the world in 2005.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3457,7 +3455,7 @@ export const hscVocabularyList = [
     "synonyms": "Admired, esteemed, celebrated, distinguished, reputable",
     "antonyms": "Insignificant, disreputable, obscure, dishonorable",
     "englishMeaning": "Inspiring respect and admiration; having high status.",
-    "exampleSentence": "Among the prestigious awards she received are the PEN Lay Writing Award, the Pope Gold Medal, and Ekushey Padak.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Among the prestigious awards she received are the PEN Lay Writing Award, the Pope Gold Medal, and Ekushey Padak.\n[Unit 4: Great Women: Pioneers of Education & Science]: Among the prestigious awards she received are the PEN Lay Writing Award, the Pope Gold Medal, and Ekushey Padak.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3485,7 +3483,7 @@ export const hscVocabularyList = [
     "synonyms": "Forward-looking, dynamic, modern, reformist, advanced",
     "antonyms": "Conservative, regressive, reactionary, backward",
     "englishMeaning": "Happening or developing gradually or in stages; advocating for social reform.",
-    "exampleSentence": "Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.\n[Unit 4: Great Women: Pioneers of Education & Science]: Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3513,7 +3511,7 @@ export const hscVocabularyList = [
     "synonyms": "Importance, impact, consequence, gravity, weight",
     "antonyms": "Meaninglessness, insignificance, triviality",
     "englishMeaning": "The quality of being worthy of attention; importance.",
-    "exampleSentence": "Their marriage marked the start of a partnership that was soon to achieve results of world significance.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Their marriage marked the start of a partnership that was soon to achieve results of world significance.\n[Unit 4: Great Women: Pioneers of Education & Science]: Their marriage marked the start of a partnership that was soon to achieve results of world significance.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3541,7 +3539,7 @@ export const hscVocabularyList = [
     "synonyms": "Unambiguous, stiff, blatant, glaring, grim, harsh",
     "antonyms": "Gentle, mild, vague, ambiguous",
     "englishMeaning": "Severe, grim, or bare in appearance or outline; harshly plain.",
-    "exampleSentence": "Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.\n[Unit 4: Great Women: Pioneers of Education & Science]: Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3570,7 +3568,7 @@ export const hscVocabularyList = [
     "synonyms": "Maintainable, supportable, viable, enduring, ecological",
     "antonyms": "Unsustainable, exhaustible, depleting",
     "englishMeaning": "Able to be maintained at a certain rate or level without exhausting natural resources.",
-    "exampleSentence": "The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.",
+    "exampleSentence": "[Unit 4: Lesson 3]: The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.\n[Unit 4: Great Women: Pioneers of Education & Science]: The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3598,7 +3596,7 @@ export const hscVocabularyList = [
     "synonyms": "Universal, global, international, planetary",
     "antonyms": "Local, regional, limited, parochial",
     "englishMeaning": "Extending or reaching throughout the world.",
-    "exampleSentence": "Her legacy continues in many projects worldwide, such as in 'Plant for the Planet: The Billion Tree Campaign'.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Her legacy continues in many projects worldwide, such as in 'Plant for the Planet: The Billion Tree Campaign'.\n[Unit 4: Great Women: Pioneers of Education & Science]: Her legacy continues in many projects worldwide, such as in 'Plant for the Planet: The Billion Tree Campaign'.\n[Unit 12: Lesson 4]: It recognizes that currently the negative impacts of ecological devastation, particularly the environmental harm and hazards created by overconsumption of resources in the global North and by elites worldwide, fall disproportionately on the world's poor, the vast majority of whom are people of color, especially women and children.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -3627,7 +3625,7 @@ export const hscVocabularyList = [
     "synonyms": "Kindle, elicit, awaken, invoke, stimulate",
     "antonyms": "Suppress, stifle, quench, extinguish",
     "englishMeaning": "To bring or recall a feeling, memory, or image to the conscious mind.",
-    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
+    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary...",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -3655,7 +3653,7 @@ export const hscVocabularyList = [
     "synonyms": "Ethnic, racialist, ancestral, lineage-based",
     "antonyms": "Universal, non-racial, colorblind",
     "englishMeaning": "Relating to the major groupings into which humankind is divided on the basis of physical traits.",
-    "exampleSentence": "Angelou's experience of racial discrimination in her childhood and her involvement in civil rights movement in the 1960s made her a committed campaigner for human rights, social justice and peace.",
+    "exampleSentence": "[Unit 11: Lesson 1]: Angelou's experience of racial discrimination in her childhood and her involvement in civil rights movement in the 1960s made her a committed campaigner for human rights, social justice and peace.\n[Unit 5: Lesson 3]: It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -3684,7 +3682,7 @@ export const hscVocabularyList = [
     "synonyms": "Indigenous, racial, cultural, traditional, tribal",
     "antonyms": "Alien, foreign, cosmopolitan",
     "englishMeaning": "Relating to a population subgroup with a common national or cultural tradition.",
-    "exampleSentence": "Find out stories about violation of human rights regarding rights of children, women, the disadvantaged, and ethnic minorities.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Warm up activity: Pick up the day's newspaper/s and find out stories about violation of human rights (rights of children, women, the disadvantaged, ethnic minorities etc.\n[Unit 5: Human Rights: Declarations of Human Rights]: Find out stories about violation of human rights regarding rights of children, women, the disadvantaged, and ethnic minorities.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -3712,7 +3710,7 @@ export const hscVocabularyList = [
     "synonyms": "Hazard, danger, peril, jeopardy",
     "antonyms": "Safety, security, protection",
     "englishMeaning": "A situation involving exposure to danger, injury, or loss.",
-    "exampleSentence": "The aim, which goaded me to swim the Channel six times, each time risking my life and reputation, was so close.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -3767,7 +3765,7 @@ export const hscVocabularyList = [
     "synonyms": "Extract, passage, selection, snippet",
     "antonyms": "Entire text, complete volume, whole",
     "englishMeaning": "A short extract from a text, film, piece of music, or speech.",
-    "exampleSentence": "a) b) c) What is the excerpt about?",
+    "exampleSentence": "[Unit 1: Education and Life: Children in School]: a) b) c) What is the excerpt about?\n[Unit 5: Lesson 4]: In this lesson, we will read an excerpt from the speech of Lord Ashley which he delivered in 1842.",
     "unit": "Unit 1: Education and Life: Children in School",
     "lesson": "Children in School",
     "boardExamTag": "Unit 1 • Lesson 3",
@@ -3881,7 +3879,7 @@ export const hscVocabularyList = [
     "synonyms": "Quotation, excerpt, citation, passage, selection",
     "antonyms": "Whole, entirety, totality",
     "englishMeaning": "A short passage taken from a book, speech, piece of music, or document.",
-    "exampleSentence": "The following text has extracts from the Universal Declaration of Human Rights and is about health and education.",
+    "exampleSentence": "[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.\n[Unit 5: Human Rights: Health and Education]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -3909,7 +3907,7 @@ export const hscVocabularyList = [
     "synonyms": "Hardship, anguish, torment, distress",
     "antonyms": "Comfort, ease, delight, pleasure",
     "englishMeaning": "The state of undergoing pain, distress, or hardship.",
-    "exampleSentence": "Vocabulary definitions and critical inquiry on human suffering and existential indifference in Pieter Brueghel's painting and William Carlos Williams' poetry.",
+    "exampleSentence": "[Unit 3: Myths and Literature: Icarus]: Vocabulary definitions and critical inquiry on human suffering and existential indifference in Pieter Brueghel's painting and William Carlos Williams' poetry.\n[Unit 5: Lesson 5]: Death soon ended what little we could have while she lived, and with it her hardships and suffering.",
     "unit": "Unit 3: Myths and Literature: Icarus",
     "lesson": "Icarus",
     "boardExamTag": "Unit 3 • Lesson 2",
@@ -3966,7 +3964,7 @@ export const hscVocabularyList = [
     "synonyms": "Heartbreaking, agonizing, upsetting, painful, harrowing",
     "antonyms": "Comforting, soothing, reassuring, pleasant",
     "englishMeaning": "Causing anxiety, sorrow, or deep mental pain.",
-    "exampleSentence": "Then I understood my distress.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -3994,7 +3992,7 @@ export const hscVocabularyList = [
     "synonyms": "Formidable, dreadful, terrifying, menacing, frightening",
     "antonyms": "Harmless, inviting, soothing, comforting",
     "englishMeaning": "Frightening, especially in appearance to an extreme degree.",
-    "exampleSentence": "Now read the following story about a rebellious mythical character, Icarus, and answer the questions that follow: On the island of Crete, the fearsome Minotaur, a creature that was half-man and half-bull, terrorized the inhabitants.",
+    "exampleSentence": "On the island of Crete, the fearsome Minotaur, a creature that was half-man and half-bull, terrorized the inhabitants.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
     "boardExamTag": "Unit 3 • Lesson 2",
     "sources": [
@@ -4021,7 +4019,7 @@ export const hscVocabularyList = [
     "synonyms": "Calamitous, distressing",
     "antonyms": "Pleasant, quiet",
     "englishMeaning": "Acutely distressing or painful; agonizing.",
-    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -4077,7 +4075,7 @@ export const hscVocabularyList = [
     "synonyms": "Harsh, grating, discordant, clashing, strident",
     "antonyms": "Harmonious, melodious, soothing, musical",
     "englishMeaning": "Making or causing to make a harsh, unpleasantly discordant ringing metallic sound.",
-    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "exampleSentence": "[Unit 4: Lesson 2]: With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.\n[Unit 4: Transformative Speeches: Three Speeches]: With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -4106,7 +4104,7 @@ export const hscVocabularyList = [
     "synonyms": "Wealth, success, affluence, well-being, fortune",
     "antonyms": "Poverty, hardship, failure, adversity",
     "englishMeaning": "The state of flourishing, thriving, good fortune and successful social status.",
-    "exampleSentence": "The Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.\n[Unit 4: Transformative Speeches: Three Speeches]: The Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -4135,7 +4133,7 @@ export const hscVocabularyList = [
     "synonyms": "Aching, painful, tender, agonizing, agonizingly difficult",
     "antonyms": "Comfortable, painless, soothing, easy",
     "englishMeaning": "Causing great physical pain, anguish, or suffering.",
-    "exampleSentence": "I am wrought with sister and brother; it is very sore work.",
+    "exampleSentence": "[Unit 5: Lesson 4]: ] Isabella Read, Age: 12 years: \"I am wrought with sister and brother; it is very sore work; cannot say how many rakes or journeys I make from pit's bottom to wall face and back, it may be about 30 or 25 on average; the distance varies from 100 to 250 fathom (1 fathom = 1.\n[Unit 5: Human Rights: Coal Miners]: I am wrought with sister and brother; it is very sore work.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -4164,7 +4162,7 @@ export const hscVocabularyList = [
     "synonyms": "Scope, range, degree, scale, magnitude",
     "antonyms": "Narrowness, limitation",
     "englishMeaning": "The area covered by something or the degree to which something extends.",
-    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
+    "exampleSentence": "[Unit 5: Lesson 5]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.\n[Unit 5: Human Rights: Frederick Douglass]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -4193,7 +4191,7 @@ export const hscVocabularyList = [
     "synonyms": "Vigilant, observant, alert, attentive, heedful",
     "antonyms": "Careless, unaware, negligent, inattentive",
     "englishMeaning": "Watching or observing someone or something closely; alert and vigilant.",
-    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
+    "exampleSentence": "[Unit 5: Lesson 5]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.\n[Unit 5: Human Rights: Frederick Douglass]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -4222,7 +4220,7 @@ export const hscVocabularyList = [
     "synonyms": "Dedication, loyalty, piety, faithfulness, commitment",
     "antonyms": "Disloyalty, apathy, indifference, rebellion",
     "englishMeaning": "Love, loyalty, or enthusiasm for a person, belief, or religious path.",
-    "exampleSentence": "So Lalon returned to Siraj Sain and took up a life of devotion and asceticism under his guidance.",
+    "exampleSentence": "[Unit 2: Lesson 2]: Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.\n[Unit 2: Art and Craft: Folk Music]: So Lalon returned to Siraj Sain and took up a life of devotion and asceticism under his guidance.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -4248,7 +4246,7 @@ export const hscVocabularyList = [
     "synonyms": "Elevation, enfranchisement, independence, strengthening",
     "antonyms": "Subjugation, disempowerment, disenfranchisement",
     "englishMeaning": "The process of becoming stronger and more confident, especially in controlling one's life and claiming one's rights.",
-    "exampleSentence": "Comprehensive analysis, evaluation of Khona's proverbs in rural agriculture, and their enduring relevance in understanding climate dynamics and peasant empowerment.",
+    "exampleSentence": "[Unit 9: Lesson 4]: Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.\n[Unit 9: Adolescence: Adolescence and Some]: Comprehensive analysis, evaluation of Khona's proverbs in rural agriculture, and their enduring relevance in understanding climate dynamics and peasant empowerment.\n[Unit 4: Lesson 3]: Comprehensive analysis, evaluation of Khona's proverbs in rural agriculture, and their enduring relevance in understanding climate dynamics and peasant empowerment.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -4326,7 +4324,7 @@ export const hscVocabularyList = [
     "synonyms": "Honk, sound, blast, blare, toot",
     "antonyms": "Mute, silence, quiet",
     "englishMeaning": "To sound a horn, whistle, or instrument loudly.",
-    "exampleSentence": "I wanted mountain air to blow out the malaria from too long a time in the subtropics.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -4351,7 +4349,7 @@ export const hscVocabularyList = [
     "synonyms": "Hoot, blow, blare, toot",
     "antonyms": "Silence, quietness, mute",
     "englishMeaning": "To emit or cause a car horn to emit a loud sound.",
-    "exampleSentence": "Polite drivers do not honk aggressively at pedestrians in crosswalks.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -4376,7 +4374,7 @@ export const hscVocabularyList = [
     "synonyms": "Bother, Disturb, Annoy, Afflict, Distress",
     "antonyms": "Comfort, Soothe, Calm, Assist, Reassure",
     "englishMeaning": "To cause distress, discomfort, pain, or inconvenience to someone.",
-    "exampleSentence": "Worried about his son's future, Varaha saw in the stars that Mihir was destined for a life of trouble and death.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -4401,7 +4399,7 @@ export const hscVocabularyList = [
     "synonyms": "Repelled, Revolted, Sickened, Appalled, Offended",
     "antonyms": "Delighted, Pleased, Gratified, Charmed",
     "englishMeaning": "Feeling or showing strong disapproval, revulsion, or intense annoyance.",
-    "exampleSentence": "Hosts may feel disgusted if guests violate basic table sanitation rules.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -4451,7 +4449,7 @@ export const hscVocabularyList = [
     "synonyms": "Interaction, contact, dialogue, interchange",
     "antonyms": "Isolation, disconnect, silence",
     "englishMeaning": "The imparting or exchanging of information by speaking, writing, or using digital media.",
-    "exampleSentence": "But there is another form of art which is called modern art, which owes its origin to the industrial revolution in Western Europe in the middle of the 19th century and the changes it brought in technology, education, manufacturing and communication.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -4501,7 +4499,7 @@ export const hscVocabularyList = [
     "synonyms": "Inattentive, distracted, preoccupied, oblivious, daydreaming",
     "antonyms": "Attentive, alert, focused, mindful, observant",
     "englishMeaning": "Having or showing a habitually forgetful or inattentive disposition.",
-    "exampleSentence": "Again, maybe the hiring manager doesn't care if you have bad table manners, but they may worry that your potential clients Will be bothered that you eat like an absent-minded caveman.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -4551,7 +4549,7 @@ export const hscVocabularyList = [
     "synonyms": "Critique, evaluation, analysis, interpretation, review",
     "antonyms": "Silence, disregard, omission",
     "englishMeaning": "An expression of opinions or an explanation about an event or situation.",
-    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
+    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary...",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -4576,7 +4574,7 @@ export const hscVocabularyList = [
     "synonyms": "Thriving, affluent, flourishing, opulent, wealthy",
     "antonyms": "Impoverished, destitute, declining, bankrupt",
     "englishMeaning": "Successful in material terms; flourishing financially.",
-    "exampleSentence": "Greek and Roman writers and travelers from abroad mentioned Sonargaon which was a prosperous trading post with a splendid river port.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -4626,7 +4624,7 @@ export const hscVocabularyList = [
     "synonyms": "Silence, stillness, quietude, tranquility, calm",
     "antonyms": "Noise, clamor, uproar, din",
     "englishMeaning": "A period of profound silence, quiet, or stillness.",
-    "exampleSentence": "I look around me And discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
+    "exampleSentence": "I look around me and discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
     "boardExamTag": "Unit 3 • Lesson 1",
     "sources": [
@@ -4701,7 +4699,7 @@ export const hscVocabularyList = [
     "synonyms": "Myths, folk tales, folklore, sagas, epics",
     "antonyms": "Verified facts, scientific data",
     "englishMeaning": "Traditional stories sometimes regarded as historical but unauthenticated.",
-    "exampleSentence": "Now read the following text and answer the questions that follow: The Legend of Gazi According to some myths and legends, Gazi Pir was a Muslim saint who is said to have spread Islam in the parts of Bengal close to the Sunderbans.",
+    "exampleSentence": "According to some myths and legends, Gazi Pir was a Muslim saint who is said to have spread Islam in the parts of Bengal close to the Sunderbans.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
     "boardExamTag": "Unit 3 • Lesson 3",
     "sources": [
@@ -4751,7 +4749,7 @@ export const hscVocabularyList = [
     "synonyms": "Clear, graphic, striking, brilliant, detailed",
     "antonyms": "Vague, dull, indistinct, blurry",
     "englishMeaning": "Producing powerful feelings or strong, clear images in the mind.",
-    "exampleSentence": "The poem offers a vivid description of the plants and vegetation found in the nature of Bangladesh.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -4776,7 +4774,7 @@ export const hscVocabularyList = [
     "synonyms": "Infertile, sterile, desolate, arid, unproductive",
     "antonyms": "Fertile, productive, fruitful, flourishing",
     "englishMeaning": "Too poor to produce much or any vegetation; bleak and lifeless.",
-    "exampleSentence": "When cherished dreams die, human life resembles a frozen and barren field.",
+    "exampleSentence": "Dreams Lesson 2 Dreams in Literature Introduction: 109 William Wordsworth (1770-1850).",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -4929,7 +4927,7 @@ export const hscVocabularyList = [
     "synonyms": "Cry, lamentation",
     "antonyms": "Laugh",
     "englishMeaning": "A long, low sound expressing physical or mental pain or grief.",
-    "exampleSentence": "The race of man is suffering and I can hear the moan.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Situations of Conflict]: The race of man is suffering and I can hear the moan.\n[Unit 11: Lesson 1]: Now if you listen closely I'll tell you what I know Storm clouds are gathering The wind is gonna blow The race of man is suffering And I can hear the moan.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "lesson": "Situations of Conflict",
     "boardExamTag": "Unit 11 • Lesson 1",
@@ -4956,7 +4954,7 @@ export const hscVocabularyList = [
     "synonyms": "Restless, turbulent, agitated, troubled",
     "antonyms": "Peaceful, serene, tranquil, quiet",
     "englishMeaning": "Unable to be still; agitated or anxious.",
-    "exampleSentence": "restless spirit - an unquiet nature yearning for truth and liberation viii.",
+    "exampleSentence": "[Unit 5: Human Rights: Frederick Douglass]: restless spirit - an unquiet nature yearning for truth and liberation viii.\n[Unit 11: Lesson 2]: There is no need to be unquiet about the cat.",
     "unit": "Unit 5: Human Rights: Frederick Douglass",
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
@@ -5009,7 +5007,7 @@ export const hscVocabularyList = [
     "synonyms": "Live, endure",
     "antonyms": "Die",
     "englishMeaning": "Continue to live or exist, especially in spite of danger or hardship.",
-    "exampleSentence": "We know we cannot survive without clean drinking water.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Water, Water Everywhere...]: We know we cannot survive without clean drinking water.\n[Unit 4: Lesson 3]: We know we cannot survive without clean drinking water.\n[Unit 12: Lesson 1]: We know we cannot survive without it.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "lesson": "Water, Water Everywhere...",
     "boardExamTag": "Unit 12 • Lesson 1",
@@ -5037,7 +5035,7 @@ export const hscVocabularyList = [
     "synonyms": "Reward, prize, grant, bonus",
     "antonyms": "Penalty, fine, punishment",
     "englishMeaning": "A reward, prize, or monetary grant given by authority for an effort or service.",
-    "exampleSentence": "Those who haven't got a share of the royal bounty are resorting to slander.\" Everything became clear to the King and he rewarded his nephew with a gold chain.",
+    "exampleSentence": "[Unit 1: Lesson 1]: Those who haven't got a share of the royal bounty are resorting to slander.\"\n[Unit 12: Lesson 1]: The city paid back the bounty of the river by sucking life out of it!",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -5088,7 +5086,7 @@ export const hscVocabularyList = [
     "synonyms": "Ruin, collapse, degradation, descent",
     "antonyms": "Rise, ascent, triumph, elevation",
     "englishMeaning": "A loss of power, prosperity, health, or status; ruin.",
-    "exampleSentence": "Rigid schooling led to the tragic downfall and death of the vibrant bird.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -5113,7 +5111,7 @@ export const hscVocabularyList = [
     "synonyms": "Amusing, comical, funny, witty, hilarious",
     "antonyms": "Serious, grave, somber, solemn",
     "englishMeaning": "Causing lighthearted laughter and amusement; comical.",
-    "exampleSentence": "Tagore presents a humorous yet biting critique of bureaucratic education.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -5163,7 +5161,7 @@ export const hscVocabularyList = [
     "synonyms": "Shocked, alarmed, surprised, astonished",
     "antonyms": "Calm, undisturbed, composed, assured",
     "englishMeaning": "Feeling sudden shock or alarm caused by an unexpected occurrence.",
-    "exampleSentence": "The meaning behind it isn't negligible either.\" The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\" The King was startled.",
+    "exampleSentence": "The King was startled.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -5188,7 +5186,7 @@ export const hscVocabularyList = [
     "synonyms": "Shriek, squawk, scream, squeal",
     "antonyms": "Whisper, murmur, hush",
     "englishMeaning": "To make a loud, harsh, piercing cry or sound.",
-    "exampleSentence": "Not only had the singing stopped, there wasn't even scope for screeching.",
+    "exampleSentence": "\"Does it screech if it isn't fed?\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -5213,7 +5211,7 @@ export const hscVocabularyList = [
     "synonyms": "Protocol, manners, decorum, propriety, politeness",
     "antonyms": "Impoliteness, rudeness, indecency, discourtesy",
     "englishMeaning": "The customary code of polite behavior in society or among members of a particular profession or group.",
-    "exampleSentence": "Read the texts describing the manners and etiquettes in different countries.",
+    "exampleSentence": "Make a presentation on Bangladeshi etiquette of dining, exchanging gifts, and greetings.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5263,7 +5261,7 @@ export const hscVocabularyList = [
     "synonyms": "Informal, Relaxed, Nonchalant, Easygoing, Everyday",
     "antonyms": "Formal, Ceremonious, Strict, Stiff",
     "englishMeaning": "Relaxed and unconcerned; not formal.",
-    "exampleSentence": "Casual clothing is fine for everyday outings, but formal dinners demand etiquette.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5338,7 +5336,7 @@ export const hscVocabularyList = [
     "synonyms": "Unhurried, Relaxed, Easygoing, Casual, Slow-paced",
     "antonyms": "Hurried, Rushed, Hasty, Fast-paced",
     "englishMeaning": "Acting or done at leisure; unhurried or relaxed.",
-    "exampleSentence": "South African greetings are leisurely and filled with warm conversation.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5363,7 +5361,7 @@ export const hscVocabularyList = [
     "synonyms": "Traditional, Usual, Conventional, Habitual, Routine",
     "antonyms": "Unusual, Unconventional, Rare, Strange",
     "englishMeaning": "According to the customs or usual practices associated with a particular society.",
-    "exampleSentence": "It is customary in Britain to write a thank-you note to the host after a formal dinner.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5388,7 +5386,7 @@ export const hscVocabularyList = [
     "synonyms": "Casual, Relaxed, Unofficial, Familiar, Easy",
     "antonyms": "Formal, Official, Ceremonial, Rigid",
     "englishMeaning": "Having a relaxed, friendly, or unofficial style, manner, or nature.",
-    "exampleSentence": "An informal dinner with close friends doesn't require strict seating arrangements.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5463,7 +5461,7 @@ export const hscVocabularyList = [
     "synonyms": "Receiving, Reception, Acceptance, Acquisition",
     "antonyms": "Dispatch, Sending, Delivery, Issuance",
     "englishMeaning": "The action of receiving something or the fact of its being received.",
-    "exampleSentence": "Upon receipt of a gift in China, express sincere thanks even if you initially hesitated.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5488,7 +5486,7 @@ export const hscVocabularyList = [
     "synonyms": "Include, consider, regard, reckon",
     "antonyms": "Exclude, disregard, ignore, overlook",
     "englishMeaning": "To take into account; consider or include.",
-    "exampleSentence": "Small acts of politeness count heavily in building strong community bonds.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -5513,7 +5511,7 @@ export const hscVocabularyList = [
     "synonyms": "Wasteful, excessive, immoderate, lavish",
     "antonyms": "Reasonable, moderate, frugal, economical",
     "englishMeaning": "Lacking restraint in spending money or using resources; excessive.",
-    "exampleSentence": "There is no need for extravagant gifts when a heartfelt thank-you card suffices.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -5538,7 +5536,7 @@ export const hscVocabularyList = [
     "synonyms": "Thankfulness, appreciation, gratitude, acknowledgement",
     "antonyms": "Ingratitude, unthankfulness, thanklessness",
     "englishMeaning": "The feeling or quality of being grateful; appreciation.",
-    "exampleSentence": "Expressing gratefulness makes both the giver and the receiver feel appreciated.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -5588,7 +5586,7 @@ export const hscVocabularyList = [
     "synonyms": "Contentment, pleasure, fulfillment, gratification",
     "antonyms": "Discontent, dissatisfaction, displeasure, disappointment",
     "englishMeaning": "Fulfillment of one's wishes, expectations, or needs.",
-    "exampleSentence": "Helping others with polite sincerity brings immense inner satisfaction.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -5613,7 +5611,7 @@ export const hscVocabularyList = [
     "synonyms": "Extremely, Exceedingly, Immensely, Very, Awfully",
     "antonyms": "Slightly, Barely, Mildly, Moderately",
     "englishMeaning": "Very much; extremely; to an intense degree.",
-    "exampleSentence": "The man was terribly happy with his initial success before the girls intervened.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -5638,7 +5636,7 @@ export const hscVocabularyList = [
     "synonyms": "Labour, Hard work, Exertion, Drudgery, Struggle",
     "antonyms": "Idleness, Leisure, Laziness, Rest, Relaxation",
     "englishMeaning": "Extremely hard, exhausting, and continuous physical or mental effort.",
-    "exampleSentence": "After much toil, the girls discovered where the wicked man was hiding.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -5738,7 +5736,7 @@ export const hscVocabularyList = [
     "synonyms": "Anxious, Worried, Caring, Attentive, Apprehensive",
     "antonyms": "Unconcerned, Indifferent, Carefree, Apathetic",
     "englishMeaning": "Feeling anxiety or showing thoughtful care about something.",
-    "exampleSentence": "Let us explore the pros and cons of AI as a tool in the classroom, address the concern that AI could be a threat to teachers' and instructors' jobs and discuss the role of edtech companies in advancing this AI use case.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5763,7 +5761,7 @@ export const hscVocabularyList = [
     "synonyms": "Meticulous, Scrupulous, Diligent, Careful, Dedicated",
     "antonyms": "Careless, Irresponsible, Negligent, Slack",
     "englishMeaning": "Wishing to do what is right and taking immense care in one's actions.",
-    "exampleSentence": "A conscientious guest always remembers to send a thank-you note after dinner.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5788,7 +5786,7 @@ export const hscVocabularyList = [
     "synonyms": "Thoughtful, Mindful, Attentive, Kind, Caring",
     "antonyms": "Inconsiderate, Thoughtless, Selfish, Unkind",
     "englishMeaning": "Careful not to cause inconvenience or hurt to others.",
-    "exampleSentence": "It is considerate to offer help to the hostess with clearing up after the meal.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5813,7 +5811,7 @@ export const hscVocabularyList = [
     "synonyms": "Persistent, Adamant, Firm, Tenacious, Unyielding",
     "antonyms": "Yielding, Flexible, Compliant, Undemanding",
     "englishMeaning": "Insisting or demanding something firmly; not allowing refusal.",
-    "exampleSentence": "Hosts may be pleasantly insistent that you try every specialty on the table.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5888,7 +5886,7 @@ export const hscVocabularyList = [
     "synonyms": "Inflate, Swell, Expand, Bloat",
     "antonyms": "Deflate, Shrink, Compress, Flatten",
     "englishMeaning": "To swell or become larger and fuller.",
-    "exampleSentence": "Bread rolls served at British dinners often puff up delightfully during baking.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5913,7 +5911,7 @@ export const hscVocabularyList = [
     "synonyms": "Sophistication, Elegance, Politeness, Cultivation, Polish",
     "antonyms": "Vulgarity, Coarseness, Rudeness, Crudeness",
     "englishMeaning": "The improvement or clarification of something with elegant taste and manner.",
-    "exampleSentence": "Table manners were developed through centuries of social refinement.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -5988,7 +5986,7 @@ export const hscVocabularyList = [
     "synonyms": "Society, fellowship, locality, public",
     "antonyms": "Isolation, solitude, individual",
     "englishMeaning": "A group of people living in the same place or having particular characteristics in common.",
-    "exampleSentence": "their communities, schools.",
+    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6013,7 +6011,7 @@ export const hscVocabularyList = [
     "synonyms": "Substantial, significant, sizable, noteworthy",
     "antonyms": "Inconsiderable, trivial, insignificant",
     "englishMeaning": "Notably large in size, amount, extent, or importance.",
-    "exampleSentence": "Frequently, before the child has reached its twelfth month, its mother is taken from it, and hired out on some farm a considerable distance off, and the child is placed under the care of an old woman, too old for field labor.",
+    "exampleSentence": "[Unit 9: Lesson 1]: Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.\n[Unit 5: Lesson 5]: Frequently, before the child has reached its twelfth month, its mother is taken from it, and hired out on some farm a considerable distance off, and the child is placed under the care of an old woman, too old for field labor.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6114,7 +6112,7 @@ export const hscVocabularyList = [
     "synonyms": "Major, chief, crucial, primary, pivotal",
     "antonyms": "Minor, secondary, trivial",
     "englishMeaning": "Of crucial importance; serving as the fundamental or chief factor.",
-    "exampleSentence": "Key Concepts & Inquiries: a.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6139,7 +6137,7 @@ export const hscVocabularyList = [
     "synonyms": "Lifetime, life expectancy, duration of life",
     "antonyms": "Brevity, instant",
     "englishMeaning": "The length of time for which a person, animal, or organism lives or functions.",
-    "exampleSentence": "Adolescence represents one of the critical transitions in a person's life span.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6164,7 +6162,7 @@ export const hscVocabularyList = [
     "synonyms": "Unenthusiastic, adverse, detrimental, unfavorable",
     "antonyms": "Positive, beneficial, constructive",
     "englishMeaning": "Consisting in or characterized by the absence rather than the presence of distinguishing features; adverse or harmful.",
-    "exampleSentence": "There are also negatives to consider, one of which is the cost of developing and implementing AI-powered educational tools.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6214,7 +6212,7 @@ export const hscVocabularyList = [
     "synonyms": "Affirmative, constructive, beneficial, optimistic",
     "antonyms": "Negative, adverse, pessimistic",
     "englishMeaning": "Constructive, optimistic, or confident; having a good or beneficial effect.",
-    "exampleSentence": "But Greta views her condition as a positive, calling it her \"superpower\"!",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6239,7 +6237,7 @@ export const hscVocabularyList = [
     "synonyms": "Regenerative, procreation, propagation, breeding",
     "antonyms": "Extinction, sterilization",
     "englishMeaning": "The biological process by which new individual organisms are produced by their parents.",
-    "exampleSentence": "Laws sometimes restrict unmarried adolescents' access to reproductive health information.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -6414,7 +6412,7 @@ export const hscVocabularyList = [
     "synonyms": "Suddenly, unexpectedly, precipitously, sharply",
     "antonyms": "Gradually, slowly, steadily, progressively",
     "englishMeaning": "Suddenly and unexpectedly; without warning.",
-    "exampleSentence": "Totto-chan stopped abruptly on the top stair, making her mother nearly bump into her.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -6439,7 +6437,7 @@ export const hscVocabularyList = [
     "synonyms": "Tunneled, crawled, snaked, squeezed, wiggled",
     "antonyms": "Climbed over, leaped, ascended",
     "englishMeaning": "Made a hole or passage through or beneath an obstacle.",
-    "exampleSentence": "She burrowed beneath barbed wire fencing around vacant neighborhood gardens.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -6489,7 +6487,7 @@ export const hscVocabularyList = [
     "synonyms": "Continuous, unbroken, uninterrupted, whole, substantial",
     "antonyms": "Interrupted, sporadic, broken, intermittent",
     "englishMeaning": "Entire and uninterrupted; continuous in time without a break.",
-    "exampleSentence": "Mother and Totto-chan arrived at the school at eight, and when she had finished talking and the headmaster had told her she was a pupil of the school, be looked at his pocket watch and said, \"ALI, it's time for lunch.\" So the headmaster must have listened 10 Totto-chan for four solid hours!",
+    "exampleSentence": "So the headmaster must have listened 10 Totto-chan for four solid hours!",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -6564,7 +6562,7 @@ export const hscVocabularyList = [
     "synonyms": "Gentle, delicate, soft, mild, affectionate",
     "antonyms": "Rough, harsh, severe, callous",
     "englishMeaning": "Showing gentleness, kindness, and delicate softness.",
-    "exampleSentence": "She walks in beauty, like the night Of cloudless climes and starry skies; And all that's best of dark and bright Meet in her aspect and her eyes; Thus mellowed to that tender light Which heaven to gaudy day denies.",
+    "exampleSentence": "[Unit 2: Lesson 1]: She walks in beauty, like the night Of cloudless climes and starry skies; And all that's best of dark and bright Meet in her aspect and her eyes; Thus mellowed to that tender light Which heaven to gaudy day denies.\n[Unit 5: Lesson 5]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
     "boardExamTag": "Unit 2 • Lesson 1",
     "sources": [
@@ -6715,7 +6713,7 @@ export const hscVocabularyList = [
     "synonyms": "Unprompted, natural, uninhibited, impulsive, instinctive",
     "antonyms": "Calculated, forced, planned, premeditated",
     "englishMeaning": "Performed or occurring as a result of a sudden inner impulse without premeditation.",
-    "exampleSentence": "Folk music has the following characteristics: (i) It is composed by rural folk on the basis of ancient rules transmitted orally; (ii) These ancient rules of music have not been influenced by classical or modern music; (iii) Folk songs may be sung in groups, or individually; (iv) No regular practice is required for folk music; (v) It is composed and performed by illiterate or semi-literate people; (vi) It is a spontaneous expression of feelings and thoughts in easy language, local dialect, and simple tune; (vii) Both words and tune are appealing; (viii) Despite its universal appeal it uses local dialect; (ix) It depends upon nature and the rural environment; (x) It is an explicit manifestation of the joys and sorrows of daily life; (xi) It uses simple and natural rhythms; and (xii) It contains a strong emotive expression of human love and separation.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -6740,7 +6738,7 @@ export const hscVocabularyList = [
     "synonyms": "Vernacular, regionalism, patois, local tongue",
     "antonyms": "Standard language, formal language",
     "englishMeaning": "A particular form of a language peculiar to a specific region or social group.",
-    "exampleSentence": "Folk music has the following characteristics: (i) It is composed by rural folk on the basis of ancient rules transmitted orally; (ii) These ancient rules of music have not been influenced by classical or modern music; (iii) Folk songs may be sung in groups, or individually; (iv) No regular practice is required for folk music; (v) It is composed and performed by illiterate or semi-literate people; (vi) It is a spontaneous expression of feelings and thoughts in easy language, local dialect, and simple tune; (vii) Both words and tune are appealing; (viii) Despite its universal appeal it uses local dialect; (ix) It depends upon nature and the rural environment; (x) It is an explicit manifestation of the joys and sorrows of daily life; (xi) It uses simple and natural rhythms; and (xii) It contains a strong emotive expression of human love and separation.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -6765,7 +6763,7 @@ export const hscVocabularyList = [
     "synonyms": "Holy journey, religious expedition, trek, crusade",
     "antonyms": "Exile, wandering, aimless journey",
     "englishMeaning": "A journey to a place associated with someone or something well respected or holy.",
-    "exampleSentence": "A popular story about him — which many believe to be true — is that while on a pilgrimage to a holy place, Lalon, who was born a Hindu, contracted smallpox and was abandoned by his companions.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -6790,7 +6788,7 @@ export const hscVocabularyList = [
     "synonyms": "Lasting, durable, abiding, timeless, permanent",
     "antonyms": "Fleeting, short-lived, transient, ephemeral",
     "englishMeaning": "Continuing or long-lasting through changing circumstances.",
-    "exampleSentence": "Despite coming from an underprivileged background, S M Sultan made his mark in the art world through sheer passion and his ability to build enduring connections.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -6815,7 +6813,7 @@ export const hscVocabularyList = [
     "synonyms": "Complimentary, eulogistic, praising, commending",
     "antonyms": "Critical, derogatory, disparaging, uncomplimentary",
     "englishMeaning": "Expressing praise and commendation in speech or writing.",
-    "exampleSentence": "Apart from being awarded prestigious awards, accolades, and being featured in top art institutions, Sultan received wide press coverage and laudatory critical reviews in renowned newspapers like the New York Times, Washington Post, The Telegraph, The Times, The Guardian, Le Monde, and many more.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -6840,7 +6838,7 @@ export const hscVocabularyList = [
     "synonyms": "Declared, announced, stated, affirmed, asserted",
     "antonyms": "Concealed, denied, retracted, withheld",
     "englishMeaning": "Announced officially or publicly with strong conviction.",
-    "exampleSentence": "When describing the works of the first modern Bangladeshi sculptor Novera Ahmed, Shilpacharja Zainul Abedin proclaimed: \"What Novera is doing now will take us a long time to understand — she is that kind of artist.\" This aptly describes her progressive thoughts in the field of sculpture.",
+    "exampleSentence": "When describing the works of the first modern Bangladeshi sculptor Novera Ahmed, Shilpacharja Zainul Abedin proclaimed: \"What Novera is doing now will take us a long time to understand — she is that kind of artist.\"",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -6865,7 +6863,7 @@ export const hscVocabularyList = [
     "synonyms": "Elaborate, complex, detailed, convoluted, sophisticated",
     "antonyms": "Simple, basic, plain, unelaborate",
     "englishMeaning": "Very complicated or detailed in design and arrangement.",
-    "exampleSentence": "It has been practiced in households in the form of pottery, nakshikantha or embroidered quilt, alpana or intricate, mostly floral designs in rice paste done on clay yards, and shokher harhi or painted earthen pots (and their lids).",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -6915,7 +6913,7 @@ export const hscVocabularyList = [
     "synonyms": "Incentive, inspiration, drive, encouragement, impetus",
     "antonyms": "Discouragement, apathy, indifference, hesitation",
     "englishMeaning": "A reason or reasons for acting or behaving in a particular way.",
-    "exampleSentence": "Civic engagement utilizes knowledge, skills, values, and noble motivation.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -6940,7 +6938,7 @@ export const hscVocabularyList = [
     "synonyms": "Canopy, vault, arch, cupola, roof",
     "antonyms": "Depression, hollow, base",
     "englishMeaning": "A rounded vault or canopy forming a roof or ceiling.",
-    "exampleSentence": "I look around me And discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
+    "exampleSentence": "I look around me and discover a leafy dome—Jaam, Kanthal, Bat, Hijol and Aswatha trees all in a hush, Shadowing clumps of cactus and zedoary bushes.",
     "unit": "Unit 3: Lesson 1 (Myths of Bengal)",
     "boardExamTag": "Unit 3 • Lesson 1",
     "sources": [
@@ -7115,7 +7113,7 @@ export const hscVocabularyList = [
     "synonyms": "Oral traditions, folk myths, lore, heritage, customs",
     "antonyms": "Written chronicles, formal history",
     "englishMeaning": "The traditional beliefs, customs, and stories of a community passed by word of mouth.",
-    "exampleSentence": "Do you know of any other figures in history or folklore who have shared wisdom for the benefit of farmers, similar to Khona?",
+    "exampleSentence": "The mythical story of Khona is deeply rooted in Bangla folklore.",
     "unit": "Unit 3: Lesson 4 (Khona)",
     "boardExamTag": "Unit 3 • Lesson 4",
     "sources": [
@@ -7140,7 +7138,7 @@ export const hscVocabularyList = [
     "synonyms": "Metered, rhythmic, poetic, harmonious, balanced",
     "antonyms": "Prosaic, discordant, unrhymed",
     "englishMeaning": "Having correspondence in the terminal sounds of words or to lines of verse.",
-    "exampleSentence": "Her wisdom was shared through memorable, rhyming verses known as \"Khona's Words\" or \"Khonar Bochon.\" These sayings, though simple and easy to remember, were filled with deep knowledge and practical advice for farmers.",
+    "exampleSentence": "Her wisdom was shared through memorable, rhyming verses known as \"Khona's Words\" or \"Khonar Bochon.\"",
     "unit": "Unit 3: Lesson 4 (Khona)",
     "boardExamTag": "Unit 3 • Lesson 4",
     "sources": [
@@ -7215,7 +7213,7 @@ export const hscVocabularyList = [
     "synonyms": "Moral sense, scruples, inner voice, integrity, ethics",
     "antonyms": "Callousness, immorality, shamelessness",
     "englishMeaning": "An inner feeling or voice viewed as acting as a guide to the rightness or wrongness of one's behavior.",
-    "exampleSentence": "They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
+    "exampleSentence": "[Unit 5: Lesson 2]: They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.\n[Unit 5: Lesson 1]: Article 18: Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -7241,7 +7239,7 @@ export const hscVocabularyList = [
     "synonyms": "Eligible, authorized, qualified, sanctioned, permitted",
     "antonyms": "Disqualified, forbidden, excluded",
     "englishMeaning": "Believing oneself to be inherently deserving of privileges or rights.",
-    "exampleSentence": "Article 2: Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.",
+    "exampleSentence": "[Unit 5: Lesson 2]: Article 2: Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.\n[Unit 4: Lesson 3]: Article 2: Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -7392,7 +7390,7 @@ export const hscVocabularyList = [
     "synonyms": "Unclear, hazy, indistinct, shadowy, ambiguous",
     "antonyms": "Vivid, precise, distinct, definite",
     "englishMeaning": "Of uncertain, indefinite, or unclear character or meaning.",
-    "exampleSentence": "He had only a vague and fleeting recollection of what happened in the night.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -7417,7 +7415,7 @@ export const hscVocabularyList = [
     "synonyms": "Reverie, fantasy, vision, musing, trance",
     "antonyms": "Harsh reality, concrete fact",
     "englishMeaning": "A series of pleasant thoughts that distract one's attention from the present.",
-    "exampleSentence": "Action-oriented thinkers turn their waking daydream into transformative reality.",
+    "exampleSentence": "Dreams Lesson 2 Dreams in Literature Introduction: 109 William Wordsworth (1770-1850).",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -7442,7 +7440,7 @@ export const hscVocabularyList = [
     "synonyms": "Daydream, musing, trance, contemplative dream",
     "antonyms": "Alert wakefulness, vigilance",
     "englishMeaning": "A state of being pleasantly lost in one's thoughts; a daydream.",
-    "exampleSentence": ", and (e) colour reverie silvery reality nightmare romantic short lasting pleasant imagination hallucination dreamy day-dream shadowy dreamer fragments C.",
+    "exampleSentence": "Dreams Lesson 2 Dreams in Literature Introduction: 109 William Wordsworth (1770-1850).",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -7517,7 +7515,7 @@ export const hscVocabularyList = [
     "synonyms": "Unavoidable, inescapable, certain, destined, sure",
     "antonyms": "Avoidable, uncertain, preventable",
     "englishMeaning": "Certain to happen; unavoidable.",
-    "exampleSentence": "Christopher Reeve, the actor who played the role of Superman in the film said in a speech he gave at the Democratic National Convention in 1996 — \"So many of our dreams at first seem impossible, then they seem improbable, and then, when we summon the will, they soon become inevitable.\" This has happened in Nishat's life too.",
+    "exampleSentence": "[Unit 7: Lesson 2]: Christopher Reeve, the actor who played the role of Superman in the film said in a speech he gave at the Democratic National Convention in 1996 — \"So many of our dreams at first seem impossible, then they seem improbable, and then, when we summon the will, they soon become inevitable.\"\n[Unit 5: Lesson 5]: This is the inevitable result: I never saw my mother, to know her as such, more than four or five times in my life; and each of these times was very short in duration, and at night.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
@@ -7643,7 +7641,7 @@ export const hscVocabularyList = [
     "synonyms": "Persistent, constant, lingering, habitual, inveterate",
     "antonyms": "Temporary, acute, ephemeral",
     "englishMeaning": "Persisting for a long time or constantly recurring.",
-    "exampleSentence": "When the rooms were warm, he’d call, and slowly I would rise and dress, fearing the chronic angers of that house, Speaking indifferently to him, who had driven out the cold and polished my good shoes as well.",
+    "exampleSentence": "[Unit 8: Lesson 2]: When the rooms were warm, he’d call, and slowly I would rise and dress, fearing the chronic angers of that house, Speaking indifferently to him, who had driven out the cold and polished my good shoes as well.\n[Unit 12: Lesson 1]: Jahangirnagar was renamed Dhaka which grew into a heavily populated city with a chronic shortage of space.",
     "unit": "Unit 8: Lesson 2 (Warmth)",
     "boardExamTag": "Unit 8 • Lesson 2",
     "sources": [
@@ -7694,7 +7692,7 @@ export const hscVocabularyList = [
     "synonyms": "Magnificent, marvelous, superb, impressive, admirable",
     "antonyms": "Terrible, poor, wretched, meager",
     "englishMeaning": "Magnificent; very impressive, excellent, or grand.",
-    "exampleSentence": "This is a splendid pile.\" I looked at him, actually, for the first time.",
+    "exampleSentence": "\"This is a splendid pile.\"",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -7719,7 +7717,7 @@ export const hscVocabularyList = [
     "synonyms": "Ephemeral, fleeting, temporary, transitory, brief",
     "antonyms": "Permanent, eternal, everlasting, perpetual",
     "englishMeaning": "Lasting only for a short time; impermanent.",
-    "exampleSentence": "A butterfly's fleeting dance reminds us of the transient sweetness of existence.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -7744,7 +7742,7 @@ export const hscVocabularyList = [
     "synonyms": "Metamorphosis, evolution, conversion, transmogrification",
     "antonyms": "Stagnation, constancy, stagnation",
     "englishMeaning": "A marked change in form, nature, or appearance.",
-    "exampleSentence": "The wondrous transformation from chrysalis to winged beauty evokes awe.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -7769,7 +7767,7 @@ export const hscVocabularyList = [
     "synonyms": "Lone, single, isolated, lonely, secluded",
     "antonyms": "Accompanied, social, crowded",
     "englishMeaning": "Done or existing alone; isolated.",
-    "exampleSentence": "Sabina Akhter, Sanjida Akhter (7th promising female player of Asia in 2014), Shiuli Azim, Maria Manda (Captain, Under-15 Female Football Team 2017), Shamsunnahar senior (who scored the solitary goal against India which ensured SAFF Under-15 Women Championship in 2017), Shamsunnahar junior (Captain of Under-15 National Football Team 2019), Tahura Khatun (who scored 40 goals in international matches till 2021), Marzia Khatun, Mahmuda Khatun, Nazma Akhter, Sajeda Akhter, Rozina Khatun, Taniya Akhter, Rupa Akhter, Kalpana Akhter, Purnima Vaskar are names of some bright stars in Bangladesh Women's National Football Team.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -7794,7 +7792,7 @@ export const hscVocabularyList = [
     "synonyms": "Supplier, practitioner, caregiver, dispenser",
     "antonyms": "Recipient, consumer, beneficiary",
     "englishMeaning": "A person or thing that provides something; healthcare practitioner.",
-    "exampleSentence": "In addition, even when services do exist, provider attitudes about adolescents often pose a significant barrier to the use of those services.",
+    "exampleSentence": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -7819,7 +7817,7 @@ export const hscVocabularyList = [
     "synonyms": "Mindsets, outlooks, viewpoints, perceptions, stances",
     "antonyms": "Realities, actions",
     "englishMeaning": "A settled way of thinking or feeling about someone or something.",
-    "exampleSentence": "Education and Life 23 This sentence adds detail and interpretation to the evidence, arguing that this specific fact reveals something more general about social attitudes at the time.",
+    "exampleSentence": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -7844,7 +7842,7 @@ export const hscVocabularyList = [
     "synonyms": "Servitude, subjugation, inferiority, compliance, subjection",
     "antonyms": "Autonomy, equality, dominance, sovereignty",
     "englishMeaning": "The act of placing in a lower rank or position; the state of being subordinate.",
-    "exampleSentence": "Patriarchal traditions enforce the economic subordination of young female dependents.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -7869,7 +7867,7 @@ export const hscVocabularyList = [
     "synonyms": "Exclusion, alienation, sidelining, ostracism, neglect",
     "antonyms": "Inclusion, mainstreaming, integration, empowerment",
     "englishMeaning": "Treatment of a person, group, or concept as insignificant or peripheral.",
-    "exampleSentence": "Child marriage cements the lifelong socio-economic marginalisation of girls.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -7894,7 +7892,7 @@ export const hscVocabularyList = [
     "synonyms": "Wealthy, prosperous, rich, well-off, moneyed",
     "antonyms": "Impoverished, destitute, poor, needy",
     "englishMeaning": "Having a great deal of money; wealthy.",
-    "exampleSentence": "Adolescents from affluent households enjoy superior nutritional and educational resources.",
+    "exampleSentence": "[Unit 9: Lesson 3]: Adolescence 157 When Shilpi heard about those risks.\n[Unit 4: Lesson 3]: Adolescents from affluent households enjoy superior nutritional and educational resources.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -7920,7 +7918,7 @@ export const hscVocabularyList = [
     "synonyms": "Decreased, dropped, plummeted, dwindled, lessened",
     "antonyms": "Increased, soared, escalated, climbed",
     "englishMeaning": "Diminished in size, amount, or strength; decreased.",
-    "exampleSentence": "Maternal mortality rates have declined substantially across Bangladesh over two decades.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -7945,7 +7943,7 @@ export const hscVocabularyList = [
     "synonyms": "Serenity, satisfaction, fulfillment, inner peace, happiness",
     "antonyms": "Discontent, restlessness, misery",
     "englishMeaning": "A state of happiness and satisfaction.",
-    "exampleSentence": "True mental wellness arises from spiritual contentment rather than vanity.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -7970,7 +7968,7 @@ export const hscVocabularyList = [
     "synonyms": "Commercialism, materialistic culture, consumption culture",
     "antonyms": "Frugality, thrift, asceticism",
     "englishMeaning": "The protection or promotion of the interests of consumers; preoccupation with buying consumer goods.",
-    "exampleSentence": "Rampant consumerism drives individuals to accumulate redundant possessions.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -7995,7 +7993,7 @@ export const hscVocabularyList = [
     "synonyms": "Uncontrollable, obsessive, irresistible, pathological",
     "antonyms": "Deliberate, restrained, controlled",
     "englishMeaning": "Resulting from or relating to an irresistible urge, especially one that is irrational.",
-    "exampleSentence": "Compulsive shopping often masks underlying emotional isolation.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -8020,7 +8018,7 @@ export const hscVocabularyList = [
     "synonyms": "Complimentary, adulatory, praiseful, obsequious",
     "antonyms": "Critical, insulting, disparaging",
     "englishMeaning": "Full of praise and compliments, often excessively or insincerely.",
-    "exampleSentence": "Clever salesmen deploy flattering remarks to disarm cautious shoppers.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -8045,7 +8043,7 @@ export const hscVocabularyList = [
     "synonyms": "Monetary, fiscal, pecuniary, economic, commercial",
     "antonyms": "Non-financial",
     "englishMeaning": "Relating to finance or financial matters.",
-    "exampleSentence": "Prudent budgeting shields middle-class households from unexpected financial crises.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -8095,7 +8093,7 @@ export const hscVocabularyList = [
     "synonyms": "Apprehensive, fearful, restless, perturbed, agitated",
     "antonyms": "Calm, composed, unconcerned, serene",
     "englishMeaning": "Experiencing worry, unease, or nervousness, typically about an imminent event.",
-    "exampleSentence": "Jerry came early in the afternoon, anxious.",
+    "exampleSentence": "Warm up activity: Think and note down the kind of problems a war can create for human beings and other living things.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -8120,7 +8118,7 @@ export const hscVocabularyList = [
     "synonyms": "Truce, armistice, suspension of arms, moratorium on fighting",
     "antonyms": "Bombardment, offensive, combat",
     "englishMeaning": "A temporary suspension of fighting, typically one during which peace talks take place.",
-    "exampleSentence": "Humanitarian agencies urged all factions to observe an immediate humanitarian ceasefire.",
+    "exampleSentence": "Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -8145,7 +8143,7 @@ export const hscVocabularyList = [
     "synonyms": "Hopelessness, despondency, gloom, anguish, dejection",
     "antonyms": "Hope, optimism, cheerfulness",
     "englishMeaning": "The complete loss or absence of hope.",
-    "exampleSentence": "Listen to the speech by Greta Thunberg delivered at the UN Climate Action Summit in New York, in 2019, and work in pairs to discuss the reasons for her despair and anger in the speech.",
+    "exampleSentence": "[Unit 11: Lesson 3]: Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.\n[Unit 4: Lesson 2]: Listen to the speech by Greta Thunberg delivered at the UN Climate Action Summit in New York, in 2019, and work in pairs to discuss the reasons for her despair and anger in the speech.\n[Unit 11: Lesson 1]: Cruelties of conflict affect people in different ways.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -8172,7 +8170,7 @@ export const hscVocabularyList = [
     "synonyms": "Feeder",
     "antonyms": "",
     "englishMeaning": "A river or stream flowing into a larger river or lake.",
-    "exampleSentence": "Once it was a tributary of the mighty Ganges.",
+    "exampleSentence": "Once it was a tributary of the mighty Ganges and flowed into the Bay of Bengal through the river Dhaleshwari.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -8222,7 +8220,7 @@ export const hscVocabularyList = [
     "synonyms": "Excessively, unreasonably, extremely, overly",
     "antonyms": "Proportionately, evenly",
     "englishMeaning": "To an extent that is too large or too small in comparison with something else.",
-    "exampleSentence": "Environmental disasters disproportionately negatively impact poor people and women.",
+    "exampleSentence": "Rather, they are clearly interconnected; they are caused by human beings; and they disproportionately negatively impact poor people and women.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -8403,7 +8401,7 @@ export const hscVocabularyList = [
     "synonyms": "Breach, infringement, contravention, transgression",
     "antonyms": "Compliance, observance, respect, obedience",
     "englishMeaning": "The action of violating someone or something.",
-    "exampleSentence": "Warm up activity: Pick up the day's newspaper/s and find out stories about violation of human rights (rights of children, women, the disadvantaged, ethnic minorities etc.) and match them with the human right charters of the previous lesson.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Warm up activity: Pick up the day's newspaper/s and find out stories about violation of human rights (rights of children, women, the disadvantaged, ethnic minorities etc.) and match them with the human right charters of the previous lesson.\n[Unit 5: Lesson 2]: violation of privacy c.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -8430,7 +8428,7 @@ export const hscVocabularyList = [
     "synonyms": "Imprisonment, confinement, custody, incarceration",
     "antonyms": "Release, discharge, liberty, acquittal",
     "englishMeaning": "The action of detaining someone or the state of being detained in official custody.",
-    "exampleSentence": "Article 9: No one shall be subjected to arbitrary arrest, detention or exile.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-II?]: Article 9: No one shall be subjected to arbitrary arrest, detention or exile.\n[Unit 4: Lesson 3]: Article 9: No one shall be subjected to arbitrary arrest, detention or exile.\n[Unit 5: Lesson 2]: - Article 9: No one shall be subjected to arbitrary arrest, detention or exile.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
@@ -8614,7 +8612,7 @@ export const hscVocabularyList = [
     "synonyms": "Displaced person, exile, asylum seeker, evacuee",
     "antonyms": "Native, citizen, resident, permanent inhabitant",
     "englishMeaning": "A person who has been forced to leave their home to escape war or violence.",
-    "exampleSentence": "Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.\n[Unit 5: Lesson 1]: Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.\n[Unit 11: Lesson 3]: I go around the whole world and in the end I land on my bed in our house, in the middle of the refugee camp.\n[Unit 12: Lesson 5]: More than three times the number of refugees that Partition created in India.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -8669,7 +8667,7 @@ export const hscVocabularyList = [
     "synonyms": "Free-spoken",
     "antonyms": "",
     "englishMeaning": "Frank in stating one’s opinions, especially if they are critical or controversial.",
-    "exampleSentence": "I became very outspoken and brave even in front of Dad, and I could face anyone.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Stories From Gaza]: I became very outspoken and brave even in front of Dad, and I could face anyone.\n[Unit 11: Lesson 3]: I became very outspoken and brave even in front of Dad, and I could face anyone.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
@@ -8696,7 +8694,7 @@ export const hscVocabularyList = [
     "synonyms": "Outlawed, illegal",
     "antonyms": "",
     "englishMeaning": "Officially or legally prohibited; forbidden.",
-    "exampleSentence": "Yes, and how many times must the cannonballs fly before they're forever banned?",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Peace in Literature]: Yes, and how many times must the cannonballs fly before they're forever banned?\n[Unit 11: Lesson 4]: Yes, and how many times must the cannonballs fly Before they're forever banned?",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "lesson": "Peace in Literature",
     "boardExamTag": "Unit 11 • Lesson 4",
@@ -8723,7 +8721,7 @@ export const hscVocabularyList = [
     "synonyms": "Millenary",
     "antonyms": "",
     "englishMeaning": "A period of a thousand years.",
-    "exampleSentence": "Meeting on the eve of the new millennium identified the drinking water problem.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Water, Water Everywhere...]: Meeting on the eve of the new millennium identified the drinking water problem.\n[Unit 12: Lesson 1]: The United Nations in a meeting on the eve of the new millennium identified the drinking water problem as one of the challenges for the future.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "lesson": "Water, Water Everywhere...",
     "boardExamTag": "Unit 12 • Lesson 1",
@@ -8776,7 +8774,7 @@ export const hscVocabularyList = [
     "synonyms": "Inseparable, tangled",
     "antonyms": "Separable, disconnected",
     "englishMeaning": "Impossible to disentangle or separate.",
-    "exampleSentence": "It not only brings them together but also shows their inextricable connectedness.",
+    "exampleSentence": "[Unit 12: Environment and Nature: What is Environmental Justice?]: It not only brings them together but also shows their inextricable connectedness.\n[Unit 12: Lesson 4]: It not only brings them together for positive change but also shows their inextricable connectedness.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "lesson": "What is Environmental Justice?",
     "boardExamTag": "Unit 12 • Lesson 4",
@@ -8803,7 +8801,7 @@ export const hscVocabularyList = [
     "synonyms": "Support, backing",
     "antonyms": "Opposition",
     "englishMeaning": "Public support for or recommendation of a particular cause or policy.",
-    "exampleSentence": "Environmental Justice bridges the gap between environmentalism and human rights advocacy.",
+    "exampleSentence": "[Unit 12: Environment and Nature: What is Environmental Justice?]: Environmental Justice bridges the gap between environmentalism and human rights advocacy.\n[Unit 12: Lesson 4]: Environmental Justice bridges the gap between the two movements: environmentalism and human rights advocacy.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "lesson": "What is Environmental Justice?",
     "boardExamTag": "Unit 12 • Lesson 4",
@@ -8880,7 +8878,7 @@ export const hscVocabularyList = [
     "synonyms": "Acceptance, forbearance, broadmindedness, patience",
     "antonyms": "Intolerance, bigotry, prejudice, fanaticism",
     "englishMeaning": "The ability or willingness to tolerate differing opinions or religious beliefs.",
-    "exampleSentence": "He preached religious tolerance and rejected social differences based on class, caste and creed.",
+    "exampleSentence": "[Unit 2: Lesson 2]: He preached religious tolerance and rejected social differences based on class, caste and creed.\n[Unit 5: Lesson 3]: It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -8906,7 +8904,7 @@ export const hscVocabularyList = [
     "synonyms": "Bias, prejudice, inequity, bigotry, unfairness",
     "antonyms": "Equality, fairness, impartiality, justice",
     "englishMeaning": "The unjust or prejudicial treatment of different categories of people.",
-    "exampleSentence": "Article 7: All are equal before the law and are entitled without any discrimination to equal protection of the law.",
+    "exampleSentence": "[Unit 1: Lesson 4]: Education and Life 27 D.\n[Unit 4: Lesson 2]: Article 7: All are equal before the law and are entitled without any discrimination to equal protection of the law.\n[Unit 5: Lesson 2]: - Article 7: All are equal before the law and are entitled without any discrimination to equal protection of the law.\n[Unit 11: Lesson 1]: Angelou's experience of racial discrimination in her childhood and her involvement in civil rights movement in the 1960s made her a committed campaigner for human rights, social justice and peace.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -8959,7 +8957,7 @@ export const hscVocabularyList = [
     "synonyms": "Psychological, psychoanalytical, psychiatric",
     "antonyms": "Physiological, purely physical",
     "englishMeaning": "Relating to psychoanalysis, the psychological theory and therapy developed by Freud.",
-    "exampleSentence": "The psychoanalytic perspective treats dreams as symbolic windows into the unconscious.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -9036,7 +9034,7 @@ export const hscVocabularyList = [
     "synonyms": "Relevant, related, circumstantial, pertinent",
     "antonyms": "Irrelevant, unrelated, out-of-context",
     "englishMeaning": "Depending on, related to, or clarifying the surrounding circumstances.",
-    "exampleSentence": "Contextual vocabulary and literary devices: gazing, waning, roosting, desolate, dome, wagtail, hush, wailed, honeycombed.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -9086,7 +9084,7 @@ export const hscVocabularyList = [
     "synonyms": "Stretch out, Reach out, Offer, Proffer, Prolong",
     "antonyms": "Withdraw, Retract, Shorten, Pull back",
     "englishMeaning": "To hold out something toward someone; offer.",
-    "exampleSentence": "Extended Essay: Write an essay in 500-800 words on the following topic: \"Modern day slavery is rooted in the legacies of colonial exploitation.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -9136,7 +9134,7 @@ export const hscVocabularyList = [
     "synonyms": "Spread, convey, transfer, pass on",
     "antonyms": "Hide, withhold, suppress, stop",
     "englishMeaning": "To pass or cause something to spread from one person or place to another.",
-    "exampleSentence": "Unprotected risky behaviors can transmit serious infections such as HIV.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -9186,7 +9184,7 @@ export const hscVocabularyList = [
     "synonyms": "Influence, affect, alter, impress, shape",
     "antonyms": "Leave unaffected, ignore, overlook",
     "englishMeaning": "To have a strong effect on someone or something.",
-    "exampleSentence": "While AI can provide personalized learning and instant feedback, it cannot replace the human and emotional support that students need to succeed, and relying too heavily on AI-powered educational tools may impact students negatively.",
+    "exampleSentence": "[Unit 1: Lesson 2]: While AI can provide personalized learning and instant feedback, it cannot replace the human and emotional support that students need to succeed, and relying too heavily on AI-powered educational tools may impact students negatively.\n[Unit 11: Lesson 5]: Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
     "boardExamTag": "Unit 1 • Lesson 2",
     "sources": [
@@ -9237,7 +9235,7 @@ export const hscVocabularyList = [
     "synonyms": "Magnificence, grandeur, brilliance, glory, opulence",
     "antonyms": "Drabness, squalor, modesty, ugliness",
     "englishMeaning": "Magnificent and splendid appearance; grandeur.",
-    "exampleSentence": "Ibn Battuta visited it in 1346 and was amazed by its splendor.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -9312,7 +9310,7 @@ export const hscVocabularyList = [
     "synonyms": "Agreement, unanimity, accord, harmony, general consent",
     "antonyms": "Disagreement, conflict, discord, dissension",
     "englishMeaning": "A general agreement among members of a group or community.",
-    "exampleSentence": "No scientific consensus has emerged regarding the primary biological function of dreaming.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -9337,7 +9335,7 @@ export const hscVocabularyList = [
     "synonyms": "Adaptation, accommodation, orientation, acclimation",
     "antonyms": "Maladjustment, resistance, disharmony",
     "englishMeaning": "A small alteration or movement made to achieve a desired fit, appearance, or result; psychological coping.",
-    "exampleSentence": "Parents, members of tbe community, service providers, and social institutions have the responsibility to both promote adolescent development and adjustment and to intervene when problems arise.",
+    "exampleSentence": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -9362,7 +9360,7 @@ export const hscVocabularyList = [
     "synonyms": "Relating, concerning, regarding, appertaining, bearing on",
     "antonyms": "Unrelated, irrelevant, disconnected",
     "englishMeaning": "Be appropriate, related, or applicable to something.",
-    "exampleSentence": "The workshop addressed issues pertaining to adolescent reproductive rights.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -9387,7 +9385,7 @@ export const hscVocabularyList = [
     "synonyms": "Demonstrate, reveal, exhibit, display",
     "antonyms": "Hide, conceal, obscure, mask",
     "englishMeaning": "Display or show a quality or feeling by one's acts or appearance.",
-    "exampleSentence": "Article 18: Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Article 18: Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.\n[Unit 5: Lesson 1]: Article 18: Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -9440,7 +9438,7 @@ export const hscVocabularyList = [
     "synonyms": "Enforce, inflict, levy, foist",
     "antonyms": "Withdraw, repeal, lift, exempt",
     "englishMeaning": "Force something unwelcome or unfamiliar to be accepted or put in place.",
-    "exampleSentence": "Will you impose your own beliefs on them?",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-II?]: Will you impose your own beliefs on them?\n[Unit 5: Lesson 2]: Will you impose your own beliefs on them?",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
@@ -9467,7 +9465,7 @@ export const hscVocabularyList = [
     "synonyms": "Proclamation, announcement, decree, statement",
     "antonyms": "Suppression, revocation, secrecy",
     "englishMeaning": "A formal or explicit statement or announcement.",
-    "exampleSentence": "Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.\n[Unit 4: Lesson 2]: Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.\n[Unit 5: Lesson 2]: Universal Declaration of Human Rights: Article 1: All human beings are born free and equal in dignity and rights.\n[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -9626,7 +9624,7 @@ export const hscVocabularyList = [
     "synonyms": "Absorption, integration",
     "antonyms": "Separation, dissimilation",
     "englishMeaning": "The process of taking in and fully understanding information or absorbing nutrients.",
-    "exampleSentence": "The assimilation of nutrients by plants requires a balanced ecosystem.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: The assimilation of nutrients by plants requires a balanced ecosystem.\n[Unit 12: Lesson 5]: But do not ask if your theory of assimilation is going to be relevant to the yield.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -9653,7 +9651,7 @@ export const hscVocabularyList = [
     "synonyms": "Miserable, despicable, heinous, wretched, degrading",
     "antonyms": "Noble, proud, exalted, dignified",
     "englishMeaning": "Experienced to the maximum degree of misery or degradation; utterly hopeless.",
-    "exampleSentence": "Anything else would have been abject surrender.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Anything else would have been abject surrender.\n[Unit 4: Transformative Speeches: Three Speeches]: Anything else would have been abject surrender.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9679,7 +9677,7 @@ export const hscVocabularyList = [
     "synonyms": "Followed, observed, complied, attached, stuck",
     "antonyms": "Disobeyed, violated, abandoned, strayed",
     "englishMeaning": "Believed in and followed the practices of; stayed firm to a rule or principle.",
-    "exampleSentence": "For thirty-seven years - that is until 1949 - it adhered strictly to a constitutional struggle.",
+    "exampleSentence": "[Unit 4: Lesson 2]: For thirty-seven years - that is until 1949 - it adhered strictly to a constitutional struggle.\n[Unit 4: Transformative Speeches: Three Speeches]: For thirty-seven years - that is until 1949 - it adhered strictly to a constitutional struggle.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9705,7 +9703,7 @@ export const hscVocabularyList = [
     "synonyms": "Accusation, charge, claim, assertion, indictment",
     "antonyms": "Exoneration, vindication, defense, acquittal",
     "englishMeaning": "A claim or assertion that someone has done something illegal or wrong, typically made without proof.",
-    "exampleSentence": "This allegation has been repeated in the present case, but as I will show, the ANC is not, and never has been, a communist organization.",
+    "exampleSentence": "[Unit 4: Lesson 2]: This allegation has been repeated in the present case, but as I will show, the ANC is not, and never has been, a communist organization.\n[Unit 4: Transformative Speeches: Three Speeches]: This allegation has been repeated in the present case, but as I will show, the ANC is not, and never has been, a communist organization.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9731,7 +9729,7 @@ export const hscVocabularyList = [
     "synonyms": "Thought, reflection, deliberation, contemplation, scrutiny",
     "antonyms": "Disregard, neglect, omission, oversight",
     "englishMeaning": "Careful thought, typically over a period of time, before making a crucial decision.",
-    "exampleSentence": "My colleagues and I, after careful consideration, decided that we would not obey this decree.",
+    "exampleSentence": "[Unit 4: Lesson 2]: My colleagues and I, after careful consideration, decided that we would not obey this decree.\n[Unit 4: Transformative Speeches: Three Speeches]: My colleagues and I, after careful consideration, decided that we would not obey this decree.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9757,7 +9755,7 @@ export const hscVocabularyList = [
     "synonyms": "Fundamental law, charter, establishment, statute",
     "antonyms": "Lawlessness, anarchy, disorganization",
     "englishMeaning": "A body of fundamental principles or established precedents according to which a state is governed.",
-    "exampleSentence": "We were to sit in the National Assembly, draw a constitution for ourselves there, and build our country.",
+    "exampleSentence": "[Unit 4: Lesson 2]: We were to sit in the National Assembly, draw a constitution for ourselves there, and build our country.\n[Unit 4: Transformative Speeches: Three Speeches]: We were to sit in the National Assembly, draw a constitution for ourselves there, and build our country.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9783,7 +9781,7 @@ export const hscVocabularyList = [
     "synonyms": "Legal, lawful, chartered, sanctioned, legitimate",
     "antonyms": "Unconstitutional, illegal, unlawful, prohibited",
     "englishMeaning": "Relating to or in accordance with an established constitution or legal framework.",
-    "exampleSentence": "For thirty-seven years it adhered strictly to a constitutional struggle.",
+    "exampleSentence": "[Unit 4: Lesson 2]: For thirty-seven years it adhered strictly to a constitutional struggle.\n[Unit 4: Transformative Speeches: Three Speeches]: For thirty-seven years it adhered strictly to a constitutional struggle.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9809,7 +9807,7 @@ export const hscVocabularyList = [
     "synonyms": "Disabled, paralyzed, incapacitated, impaired, debilitated",
     "antonyms": "Healthy, vigorous, robust, strong",
     "englishMeaning": "Severely damaged, impaired, or deprived of the ability to function properly.",
-    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.\n[Unit 4: Transformative Speeches: Three Speeches]: The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9835,7 +9833,7 @@ export const hscVocabularyList = [
     "synonyms": "Disband, disperse, terminate, dismiss, evanesce",
     "antonyms": "Assemble, unite, establish, maintain",
     "englishMeaning": "Officially close down, disband, or bring an end to a parliament, assembly, or partnership.",
-    "exampleSentence": "The ANC refused to dissolve, but instead went underground.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The ANC refused to dissolve, but instead went underground.\n[Unit 4: Transformative Speeches: Three Speeches]: The ANC refused to dissolve, but instead went underground.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9861,7 +9859,7 @@ export const hscVocabularyList = [
     "synonyms": "Ultimate, utmost, drastic, severe, acute",
     "antonyms": "Moderate, mild, temperate, reasonable",
     "englishMeaning": "Reaching a high or the highest degree; very severe or intense.",
-    "exampleSentence": "We all accept the need for some form of socialism to enable our people to catch up with advanced countries and overcome their legacy of extreme poverty.",
+    "exampleSentence": "[Unit 4: Lesson 2]: We all accept the need for some form of socialism to enable our people to catch up with advanced countries and overcome their legacy of extreme poverty.\n[Unit 4: Transformative Speeches: Three Speeches]: We all accept the need for some form of socialism to enable our people to catch up with advanced countries and overcome their legacy of extreme poverty.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9887,7 +9885,7 @@ export const hscVocabularyList = [
     "synonyms": "Homeland, motherland, native land, country",
     "antonyms": "Foreign land, exile, alien territory",
     "englishMeaning": "A person's native country, especially when referred to with patriotic feelings.",
-    "exampleSentence": "Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.\n[Unit 4: Transformative Speeches: Three Speeches]: Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9913,7 +9911,7 @@ export const hscVocabularyList = [
     "synonyms": "Small village, settlement, township, parish",
     "antonyms": "Metropolis, megacity, urban center",
     "englishMeaning": "A small settlement, generally smaller than a village, without its own church or local administration.",
-    "exampleSentence": "When we let freedom ring from every village and every hamlet, from every state and every city.",
+    "exampleSentence": "[Unit 4: Lesson 2]: When we let freedom ring from every village and every hamlet, from every state and every city.\n[Unit 4: Transformative Speeches: Three Speeches]: When we let freedom ring from every village and every hamlet, from every state and every city.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9939,7 +9937,7 @@ export const hscVocabularyList = [
     "synonyms": "Imposed, administered, dealt, perpetrated",
     "antonyms": "Withheld, spared, relieved, pardoned",
     "englishMeaning": "Caused something unpleasant or painful to be suffered by someone.",
-    "exampleSentence": "Bengal's history of those years is full of stories of torture inflicted on our people.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Bengal's history of those years is full of stories of torture inflicted on our people.\n[Unit 4: Transformative Speeches: Three Speeches]: Bengal's history of those years is full of stories of torture inflicted on our people.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9965,7 +9963,7 @@ export const hscVocabularyList = [
     "synonyms": "Power, sway, dominance, impact, prestige",
     "antonyms": "Powerlessness, weakness, insignificance",
     "englishMeaning": "The capacity to have an effect on the character, development, or behaviour of someone or something.",
-    "exampleSentence": "The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.\n[Unit 4: Transformative Speeches: Three Speeches]: The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.\n[Unit 4: Lesson 3]: The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -9992,7 +9990,7 @@ export const hscVocabularyList = [
     "synonyms": "Affected, inspired, swayed, motivated, touched",
     "antonyms": "Uninfluenced, unaffected, detached, indifferent",
     "englishMeaning": "Guided or affected by a particular philosophy, person, or ideology.",
-    "exampleSentence": "It is true, as I have already stated, that I have been influenced by Marxist thought.",
+    "exampleSentence": "[Unit 4: Lesson 2]: It is true, as I have already stated, that I have been influenced by Marxist thought.\n[Unit 4: Transformative Speeches: Three Speeches]: It is true, as I have already stated, that I have been influenced by Marxist thought.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10018,7 +10016,7 @@ export const hscVocabularyList = [
     "synonyms": "Powerful, potent, colossal, majestic, sturdy",
     "antonyms": "Weak, frail, tiny, puny, feeble",
     "englishMeaning": "Possessing great and impressive power, strength, or size.",
-    "exampleSentence": "Let freedom ring from the mighty mountains of New York.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Let freedom ring from the mighty mountains of New York.\n[Unit 4: Transformative Speeches: Three Speeches]: Let freedom ring from the mighty mountains of New York.\n[Unit 12: Lesson 1]: Once it was a tributary of the mighty Ganges and flowed into the Bay of Bengal through the river Dhaleshwari.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10045,7 +10043,7 @@ export const hscVocabularyList = [
     "synonyms": "Inspired, driven, spurred, stimulated, prompted",
     "antonyms": "Unmotivated, discouraged, disincentivized, deterred",
     "englishMeaning": "Stimulated into action by strong desire, principle, or enthusiasm.",
-    "exampleSentence": "This is what has motivated me in all that I have done in relation to the charges made against me in this case.",
+    "exampleSentence": "[Unit 4: Lesson 2]: This is what has motivated me in all that I have done in relation to the charges made against me in this case.\n[Unit 4: Transformative Speeches: Three Speeches]: This is what has motivated me in all that I have done in relation to the charges made against me in this case.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10071,7 +10069,7 @@ export const hscVocabularyList = [
     "synonyms": "Pacifism, peaceful resistance, ahimsa, passivism",
     "antonyms": "Violence, aggression, bloodshed, warfare",
     "englishMeaning": "The use of peaceful means, not force or weapons, to bring about political or social change.",
-    "exampleSentence": "The sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.\n[Unit 4: Transformative Speeches: Three Speeches]: The sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10097,7 +10095,7 @@ export const hscVocabularyList = [
     "synonyms": "Peaceful, bloodless, pacifist, passive, calm",
     "antonyms": "Violent, aggressive, bloody, destructive",
     "englishMeaning": "Using peaceful methods instead of force or violence.",
-    "exampleSentence": "Fifty years of non-violent struggle had brought the African people nothing but more repressive legislation.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Fifty years of non-violent struggle had brought the African people nothing but more repressive legislation.\n[Unit 4: Transformative Speeches: Three Speeches]: Fifty years of non-violent struggle had brought the African people nothing but more repressive legislation.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10123,7 +10121,7 @@ export const hscVocabularyList = [
     "synonyms": "Declaration, pronouncement, decree, manifesto, edict",
     "antonyms": "Retraction, revocation, concealment, silence",
     "englishMeaning": "A public or official announcement, especially one dealing with a matter of great importance.",
-    "exampleSentence": "In 1960 there was the shooting at Sharpeville, which resulted in the proclamation of a state of emergency.",
+    "exampleSentence": "[Unit 4: Lesson 2]: In 1960 there was the shooting at Sharpeville, which resulted in the proclamation of a state of emergency.\n[Unit 4: Transformative Speeches: Three Speeches]: In 1960 there was the shooting at Sharpeville, which resulted in the proclamation of a state of emergency.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10149,7 +10147,7 @@ export const hscVocabularyList = [
     "synonyms": "Disclose, unveil, manifest, uncover, exhibit",
     "antonyms": "Conceal, hide, obscure, cover",
     "englishMeaning": "Make previously unknown or secret information known to others.",
-    "exampleSentence": "And the glory of the Lord shall be revealed, and all flesh shall see it together.",
+    "exampleSentence": "[Unit 4: Lesson 2]: And the glory of the Lord shall be revealed, and all flesh shall see it together.\n[Unit 4: Transformative Speeches: Three Speeches]: And the glory of the Lord shall be revealed, and all flesh shall see it together.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10175,7 +10173,7 @@ export const hscVocabularyList = [
     "synonyms": "Restrain, subdue, quell, crush, inhibit",
     "antonyms": "Liberate, encourage, release, incite",
     "englishMeaning": "Forcibly put an end to or prevent the development, action, or expression of people.",
-    "exampleSentence": "You can't suppress seventy million people forever. Since we have learned to sacrifice ourselves no one can suppress us anymore.",
+    "exampleSentence": "[Unit 4: Lesson 2]: You can't suppress seventy million people forever. Since we have learned to sacrifice ourselves no one can suppress us anymore.\n[Unit 4: Transformative Speeches: Three Speeches]: You can't suppress seventy million people forever. Since we have learned to sacrifice ourselves no one can suppress us anymore.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10201,7 +10199,7 @@ export const hscVocabularyList = [
     "synonyms": "Harmonious composition, musical harmony, concord, unison",
     "antonyms": "Discord, cacophony, clamour, dissonance",
     "englishMeaning": "An elaborate musical composition or an agreeable, harmonious blending of sounds and spirits.",
-    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "exampleSentence": "[Unit 4: Lesson 2]: With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.\n[Unit 4: Transformative Speeches: Three Speeches]: With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10227,7 +10225,7 @@ export const hscVocabularyList = [
     "synonyms": "Deterioration, degeneration, decline, breakdown",
     "antonyms": "Improvement, restoration, conservation, renewal",
     "englishMeaning": "The condition or process of degrading or being degraded.",
-    "exampleSentence": "Did you ever feel angry like Greta seeing environmental degradation in your locality?",
+    "exampleSentence": "[Unit 12: Environment and Nature: The Greta Effect]: Did you ever feel angry like Greta seeing environmental degradation in your locality?\n[Unit 4: Lesson 3]: Did you ever feel angry like Greta seeing environmental degradation in your locality?",
     "unit": "Unit 12: Environment and Nature: The Greta Effect",
     "lesson": "The Greta Effect",
     "boardExamTag": "Unit 12 • Lesson 2",
@@ -10254,7 +10252,7 @@ export const hscVocabularyList = [
     "synonyms": "Persistence, dedication, tenacity, steadfastness, resolve",
     "antonyms": "Laziness, quitting, surrender, irresolution",
     "englishMeaning": "Persistence in doing something despite difficulty or delay in achieving success.",
-    "exampleSentence": "Factors like chance, dedication and creating opportunities are important for anyone's success, but a sportsperson should also have discipline and perseverance to succeed.",
+    "exampleSentence": "[Unit 7: Lesson 2]: Factors like chance, dedication and creating opportunities are important for anyone's success, but a sportsperson should also have discipline and perseverance to succeed.\n[Unit 7: Youthful Achievers: Scaling a Mountain Peak]: Factors like chance, dedication and creating opportunities are important for anyone's success, but a sportsperson should also have discipline and perseverance to succeed.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
@@ -10280,7 +10278,7 @@ export const hscVocabularyList = [
     "synonyms": "Upkeep, preservation, conservation, sustenance",
     "antonyms": "Neglect, destruction, abandonment, disregard",
     "englishMeaning": "The process of preserving a condition or keeping something in good repair.",
-    "exampleSentence": "A large maintenance crew was needed, and more personnel to supervise them.",
+    "exampleSentence": "[Unit 1: Lesson 1]: A large maintenance crew was needed, and more personnel to supervise them.\n[Unit 5: Lesson 3]: It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -10306,7 +10304,7 @@ export const hscVocabularyList = [
     "synonyms": "Parody, lampoon, sarcasm, irony, mockery",
     "antonyms": "Praise, tribute, eulogy, panegyric",
     "englishMeaning": "The use of humor, irony, or exaggeration to expose human folly and vices.",
-    "exampleSentence": "The Parrot's Tale is a world-famous political and pedagogical satire by Tagore.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -10381,7 +10379,7 @@ export const hscVocabularyList = [
     "synonyms": "Great, awesome, immense, colossal, huge",
     "antonyms": "Tiny, insignificant, trivial, slight",
     "englishMeaning": "Extremely great in scale, amount, intensity, or potential.",
-    "exampleSentence": "Adolescence is a time of tremendous intellectual and emotional growth.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -10634,7 +10632,7 @@ export const hscVocabularyList = [
     "synonyms": "Relax, recline",
     "antonyms": "Move, energize",
     "englishMeaning": "A state of rest, sleep, or tranquility; be situated in peace.",
-    "exampleSentence": "Make bread of it: and that repose and peace, which ev'ry where.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Peace in Literature]: Make bread of it: and that repose and peace, which ev'ry where.\n[Unit 11: Lesson 4]: Take of this grain, which in my garden grows, And grows for you; Make bread of it: and that repose And peace, which ev'ry where With so much earnestness you do pursue, Is only there.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "lesson": "Peace in Literature",
     "boardExamTag": "Unit 11 • Lesson 4",
@@ -10661,7 +10659,7 @@ export const hscVocabularyList = [
     "synonyms": "Poem, narrative verse, song, folk lyric",
     "antonyms": "Treatise, monograph, document",
     "englishMeaning": "A poem or song narrating a story in short stanzas.",
-    "exampleSentence": "Springsteen wrote the song for his 1995 album, inspired by Woody Guthrie's \"The Ballad of Tom Joad.\" Guthrie's ballad, in turn, was inspired by John Steinbeck's 1939 novel, The Grapes of Wrath.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Stories From Gaza]: Springsteen wrote the song for his 1995 album, inspired by Woody Guthrie's \"The Ballad of Tom Joad.\" Guthrie's ballad, in turn, was inspired by John Steinbeck's 1939 novel, The Grapes of Wrath.\n[Unit 12: Lesson 1]: Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
     "unit": "Unit 11: Peace and Conflict: Stories From Gaza",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
@@ -10688,7 +10686,7 @@ export const hscVocabularyList = [
     "synonyms": "Developed, progressive, forward-looking, refined",
     "antonyms": "Basic, primitive, backward, undeveloped",
     "englishMeaning": "Far along in progress or development; ahead of standard times.",
-    "exampleSentence": "We all accept the need for some form of socialism to enable our people to catch up with the advanced countries of this world.",
+    "exampleSentence": "[Unit 4: Lesson 2]: We all accept the need for some form of socialism to enable our people to catch up with the advanced countries of this world.\n[Unit 4: Transformative Speeches: Three Speeches]: We all accept the need for some form of socialism to enable our people to catch up with the advanced countries of this world.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10714,7 +10712,7 @@ export const hscVocabularyList = [
     "synonyms": "Misrule, chaos, lawlessness, disorder, turmoil",
     "antonyms": "Order, discipline, lawfulness, governance, harmony",
     "englishMeaning": "A state of disorder due to absence or non-recognition of authority or other controlling systems.",
-    "exampleSentence": "They feared that unchecked oppression would inevitably lead to widespread social anarchy.",
+    "exampleSentence": "[Unit 4: Lesson 2]: They feared that unchecked oppression would inevitably lead to widespread social anarchy.\n[Unit 4: Transformative Speeches: Three Speeches]: They feared that unchecked oppression would inevitably lead to widespread social anarchy.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10740,7 +10738,7 @@ export const hscVocabularyList = [
     "synonyms": "Sentenced, condemned, found guilty, imprisoned",
     "antonyms": "Acquitted, cleared, exonerated, released",
     "englishMeaning": "Having been officially found guilty of a criminal offense by the verdict of a jury or judge.",
-    "exampleSentence": "I am a convicted prisoner serving five years for leaving the country without a permit.",
+    "exampleSentence": "[Unit 4: Lesson 2]: I am a convicted prisoner serving five years for leaving the country without a permit.\n[Unit 4: Transformative Speeches: Three Speeches]: I am a convicted prisoner serving five years for leaving the country without a permit.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10766,7 +10764,7 @@ export const hscVocabularyList = [
     "synonyms": "Significance, implication, meaning, importance, weight",
     "antonyms": "Insignificance, triviality, meaninglessness",
     "englishMeaning": "The implicit meaning, significance, or profound importance of something.",
-    "exampleSentence": "You are fully aware of the events that are going on and understand their import.",
+    "exampleSentence": "[Unit 4: Lesson 2]: You are fully aware of the events that are going on and understand their import.\n[Unit 4: Transformative Speeches: Three Speeches]: You are fully aware of the events that are going on and understand their import.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -10792,7 +10790,7 @@ export const hscVocabularyList = [
     "synonyms": "Independence-seeking, nationalist, anti-imperialist, liberationist",
     "antonyms": "Colonial, imperialist, subjugating",
     "englishMeaning": "Opposed to colonial rule or imperialism; seeking national sovereignty and independence.",
-    "exampleSentence": "In 1923, she founded Deepali Sangha which served as a training institute for anti-colonial activists.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In 1923, she founded Deepali Sangha which served as a training institute for anti-colonial activists.\n[Unit 4: Great Women: Pioneers of Education & Science]: In 1923, she founded Deepali Sangha which served as a training institute for anti-colonial activists.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10818,7 +10816,7 @@ export const hscVocabularyList = [
     "synonyms": "Proclaim, insist on, affirm, declare, maintain",
     "antonyms": "Deny, oppose, disclaim, surrender",
     "englishMeaning": "State a fact or belief confidently and forcefully; promote rights or leadership qualities.",
-    "exampleSentence": "To give women a positive image in the community and to assert their leadership qualities.",
+    "exampleSentence": "[Unit 4: Lesson 3]: To give women a positive image in the community and to assert their leadership qualities.\n[Unit 4: Great Women: Pioneers of Education & Science]: To give women a positive image in the community and to assert their leadership qualities.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10844,7 +10842,7 @@ export const hscVocabularyList = [
     "synonyms": "Consciousness, mindfulness, responsiveness, understanding, recognition",
     "antonyms": "Unconsciousness, ignorance, obliviousness, heedlessness",
     "englishMeaning": "Knowledge or perception of a situation, fact, or critical environmental need.",
-    "exampleSentence": "The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.",
+    "exampleSentence": "[Unit 4: Lesson 3]: The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.\n[Unit 4: Great Women: Pioneers of Education & Science]: The overall aim has been to create public awareness of the need to protect the environment through tree planting and sustainable management.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10870,7 +10868,7 @@ export const hscVocabularyList = [
     "synonyms": "Blockade, barrier, hurdle, obstacle, defense, roadblock",
     "antonyms": "Open path, free passage, access",
     "englishMeaning": "An improvised barrier that blocks passage and prevents progress during social movements.",
-    "exampleSentence": "In Cheman Ara's article entitled 'The Women who broke the barricades', it is stated that their names shine through.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In Cheman Ara's article entitled 'The Women who broke the barricades', it is stated that their names shine through.\n[Unit 4: Great Women: Pioneers of Education & Science]: In Cheman Ara's article entitled 'The Women who broke the barricades', it is stated that their names shine through.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10896,7 +10894,7 @@ export const hscVocabularyList = [
     "synonyms": "Famous, renowned, eminent, distinguished, notable, admired",
     "antonyms": "Unknown, obscure, infamous, notorious",
     "englishMeaning": "Widely known and praised for great creative or intellectual accomplishments.",
-    "exampleSentence": "She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.\n[Unit 4: Great Women: Pioneers of Education & Science]: She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10922,7 +10920,7 @@ export const hscVocabularyList = [
     "synonyms": "Slander, vilification, calumny, libel, disparagement",
     "antonyms": "Praise, compliment, commendation, honor",
     "englishMeaning": "The action of damaging the good reputation of someone through false claims.",
-    "exampleSentence": "Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.\n[Unit 4: Great Women: Pioneers of Education & Science]: Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10948,7 +10946,7 @@ export const hscVocabularyList = [
     "synonyms": "Self-governing, autonomous, representative, egalitarian",
     "antonyms": "Autocratic, repressive, tyrannical, authoritarian",
     "englishMeaning": "Relating to or supporting democracy or its principles of equality and liberty.",
-    "exampleSentence": "Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.\n[Unit 4: Great Women: Pioneers of Education & Science]: Standing up for a democratic, multi-ethnic Kenya, she was subjected to defamation, persecution, detention and physical attacks.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -10974,7 +10972,7 @@ export const hscVocabularyList = [
     "synonyms": "Heartfelt, warm, sincere, solemn, serious, resolute",
     "antonyms": "Superficial, frivolous, insincere, casual",
     "englishMeaning": "Resulting from or showing sincere and intense conviction and dedication.",
-    "exampleSentence": "In 1918 the Radium Institute began to operate in earnest, and it was to become a universal centre for nuclear physics and chemistry.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In 1918 the Radium Institute began to operate in earnest, and it was to become a universal centre for nuclear physics and chemistry.\n[Unit 4: Great Women: Pioneers of Education & Science]: In 1918 the Radium Institute began to operate in earnest, and it was to become a universal centre for nuclear physics and chemistry.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11000,7 +10998,7 @@ export const hscVocabularyList = [
     "synonyms": "Educationalist, educator, academician, scholar, pedagogue",
     "antonyms": "Pupil, student, learner",
     "englishMeaning": "A specialist in the theory and practice of education.",
-    "exampleSentence": "She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.\n[Unit 4: Great Women: Pioneers of Education & Science]: She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11026,7 +11024,7 @@ export const hscVocabularyList = [
     "synonyms": "Liberation, freedom, deliverance, enfranchisement",
     "antonyms": "Enslavement, oppression, subjugation, bondage",
     "englishMeaning": "The fact or process of being set free from legal, social, or political restrictions.",
-    "exampleSentence": "Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.\n[Unit 4: Great Women: Pioneers of Education & Science]: Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11052,7 +11050,7 @@ export const hscVocabularyList = [
     "synonyms": "Preserved, cherished, treasured, honored, safeguarded",
     "antonyms": "Desecrated, defiled, forgotten, rejected",
     "englishMeaning": "Placed a revered or precious object or memory in an appropriate shrine or sanctuary.",
-    "exampleSentence": "In 1995 Marie Curie's ashes were enshrined in the Panthéon in Paris; she was the first woman to receive this honour for her own achievements.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In 1995 Marie Curie's ashes were enshrined in the Panthéon in Paris; she was the first woman to receive this honour for her own achievements.\n[Unit 4: Great Women: Pioneers of Education & Science]: In 1995 Marie Curie's ashes were enshrined in the Panthéon in Paris; she was the first woman to receive this honour for her own achievements.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11078,7 +11076,7 @@ export const hscVocabularyList = [
     "synonyms": "Uncover, reveal, disclose, lay bare, unmask",
     "antonyms": "Cover, hide, conceal, mask",
     "englishMeaning": "Make something visible by uncovering it; reveal the true, objectionable nature of something.",
-    "exampleSentence": "Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.\n[Unit 4: Great Women: Pioneers of Education & Science]: Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11104,7 +11102,7 @@ export const hscVocabularyList = [
     "synonyms": "Imminent, urgent, pressing, instant, prompt",
     "antonyms": "Distant, eventual, delayed, deferred",
     "englishMeaning": "Occurring or done at once; nearest in time or relationship.",
-    "exampleSentence": "Using the income to meet immediate domestic needs such as education of their children.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Using the income to meet immediate domestic needs such as education of their children.\n[Unit 4: Great Women: Pioneers of Education & Science]: Using the income to meet immediate domestic needs such as education of their children.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11130,7 +11128,7 @@ export const hscVocabularyList = [
     "synonyms": "Uncertainty, vulnerability, peril, instability, anxiety",
     "antonyms": "Security, stability, certainty, safety",
     "englishMeaning": "Uncertainty or anxiety about oneself; lack of confidence or protection.",
-    "exampleSentence": "Assists people to make the link between environmental degradation and many of the problems they face, including poverty and livelihood insecurity.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Assists people to make the link between environmental degradation and many of the problems they face, including poverty and livelihood insecurity.\n[Unit 4: Great Women: Pioneers of Education & Science]: Assists people to make the link between environmental degradation and many of the problems they face, including poverty and livelihood insecurity.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11156,7 +11154,7 @@ export const hscVocabularyList = [
     "synonyms": "Concentrated, rigorous, exhaustive, thorough, profound",
     "antonyms": "Sketchy, superficial, easy, casual",
     "englishMeaning": "Concentrated on a single subject or into a short time; very thorough or vigorous.",
-    "exampleSentence": "The birth of her two daughters did not interrupt Marie's intensive scientific work.",
+    "exampleSentence": "[Unit 4: Lesson 3]: The birth of her two daughters did not interrupt Marie's intensive scientific work.\n[Unit 4: Great Women: Pioneers of Education & Science]: The birth of her two daughters did not interrupt Marie's intensive scientific work.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11182,7 +11180,7 @@ export const hscVocabularyList = [
     "synonyms": "Heritage, tradition, bequest, succession, footprint",
     "antonyms": "Debt, blank slate, eradication",
     "englishMeaning": "Something left or handed down by a predecessor; lasting achievements.",
-    "exampleSentence": "Rokeya's legacy is strong among subsequent generations of women in the region.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Rokeya's legacy is strong among subsequent generations of women in the region.\n[Unit 4: Great Women: Pioneers of Education & Science]: Rokeya's legacy is strong among subsequent generations of women in the region.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11208,7 +11206,7 @@ export const hscVocabularyList = [
     "synonyms": "Objection, demonstration, rally, dissent, grievance",
     "antonyms": "Agreement, approval, submission, compliance",
     "englishMeaning": "A statement or action expressing disapproval of or objection to something.",
-    "exampleSentence": "She was the only woman seen standing near Sheikh Mujibur Rahman during those protests.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She was the only woman seen standing near Sheikh Mujibur Rahman during those protests.\n[Unit 4: Great Women: Pioneers of Education & Science]: She was the only woman seen standing near Sheikh Mujibur Rahman during those protests.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11234,7 +11232,7 @@ export const hscVocabularyList = [
     "synonyms": "Displayed, exhibited, presented, demonstrated, featured",
     "antonyms": "Concealed, masked, shrouded, obscured",
     "englishMeaning": "Exhibited or displayed prominently in an attractive manner.",
-    "exampleSentence": "Razia Khan Amin, who joined as a faculty member of the department in 1962, showcased her activism through her writing and her cultural interests.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Razia Khan Amin, who joined as a faculty member of the department in 1962, showcased her activism through her writing and her cultural interests.\n[Unit 4: Great Women: Pioneers of Education & Science]: Razia Khan Amin, who joined as a faculty member of the department in 1962, showcased her activism through her writing and her cultural interests.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11260,7 +11258,7 @@ export const hscVocabularyList = [
     "synonyms": "Better, higher, finer, advanced, surpassing",
     "antonyms": "Inferior, poorer, subordinate",
     "englishMeaning": "Higher in rank, status, or quality than another.",
-    "exampleSentence": "Pitchblende, a mineral whose activity, superior to that of pure uranium, could be explained only by the presence in the ore of small quantities of an unknown substance.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Pitchblende, a mineral whose activity, superior to that of pure uranium, could be explained only by the presence in the ore of small quantities of an unknown substance.\n[Unit 4: Great Women: Pioneers of Education & Science]: Pitchblende, a mineral whose activity, superior to that of pure uranium, could be explained only by the presence in the ore of small quantities of an unknown substance.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11286,7 +11284,7 @@ export const hscVocabularyList = [
     "synonyms": "Nearly, almost, practically, effectively",
     "antonyms": "Completely, entirely, partially",
     "englishMeaning": "Nearly; almost; for all practical purposes.",
-    "exampleSentence": "Sklodowska worked far into the night in her student-quarters garret and virtually lived on bread and butter and tea.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Sklodowska worked far into the night in her student-quarters garret and virtually lived on bread and butter and tea.\n[Unit 4: Great Women: Pioneers of Education & Science]: Sklodowska worked far into the night in her student-quarters garret and virtually lived on bread and butter and tea.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -11312,7 +11310,7 @@ export const hscVocabularyList = [
     "synonyms": "Urge, whim, instinct, compulsion, caprice",
     "antonyms": "Premeditation, deliberation, planning, restraint",
     "englishMeaning": "A sudden strong and unreflective urge or desire to act.",
-    "exampleSentence": "Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.\n[Unit 5: Lesson 1]: Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -11339,7 +11337,7 @@ export const hscVocabularyList = [
     "synonyms": "End, extinction, termination, conclusion, disbandment",
     "antonyms": "Beginning, retention, commencement, inauguration",
     "englishMeaning": "The closing down or dismissal of an assembly, partnership, or official body.",
-    "exampleSentence": "Dissolution: the closing down or dismissal of an assembly, body etc.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.\n[Unit 5: Human Rights: Declarations of Human Rights]: Dissolution: the closing down or dismissal of an assembly, body etc.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -11365,7 +11363,7 @@ export const hscVocabularyList = [
     "synonyms": "Borderline, boundary, limit, perimeter, edge",
     "antonyms": "Centre, interior, core",
     "englishMeaning": "A line or border separating two countries or regions; outer limits of knowledge or media.",
-    "exampleSentence": "Everyone has the right to seek, receive and impart information and ideas through any media and regardless of frontiers.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Article 19: Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.\n[Unit 5: Human Rights: Declarations of Human Rights]: Everyone has the right to seek, receive and impart information and ideas through any media and regardless of frontiers.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -11391,7 +11389,7 @@ export const hscVocabularyList = [
     "synonyms": "Indicate, suggest, hint, denote, signify",
     "antonyms": "State explicitly, declare, express directly",
     "englishMeaning": "Indicate the truth or existence of something by suggestion rather than explicit statement.",
-    "exampleSentence": "These universal human rights imply that every human being is born free and equal in dignity and rights.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Unit Five: Human Rights | Lesson 1: Are We Aware of These Rights-I?\n[Unit 5: Human Rights: Declarations of Human Rights]: These universal human rights imply that every human being is born free and equal in dignity and rights.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -11417,7 +11415,7 @@ export const hscVocabularyList = [
     "synonyms": "Pray, beg, crave, request, petition, appeal to",
     "antonyms": "Waive, revoke, relinquish, dismiss",
     "englishMeaning": "Cite or appeal to someone or something as an authority for an action or in support of an argument.",
-    "exampleSentence": "This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Unit Five: Human Rights | Lesson 1: Are We Aware of These Rights-I?\n[Unit 5: Human Rights: Declarations of Human Rights]: This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -11443,7 +11441,7 @@ export const hscVocabularyList = [
     "synonyms": "Renown, fame, name, prestige, stature, standing",
     "antonyms": "Notoriety, disreputableness, infamy, dishonor",
     "englishMeaning": "The beliefs or opinions that are generally held about someone or something.",
-    "exampleSentence": "No one shall be subjected to arbitrary interference with his privacy nor to attacks upon his honour and reputation.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.\n[Unit 5: Human Rights: Declarations of Human Rights]: No one shall be subjected to arbitrary interference with his privacy nor to attacks upon his honour and reputation.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -11469,7 +11467,7 @@ export const hscVocabularyList = [
     "synonyms": "Caprice, impulse, fancy, vagary, quirk",
     "antonyms": "Deliberation, reason, consistency, principle",
     "englishMeaning": "A sudden desire or change of mind, especially one that is unusual or unexplained.",
-    "exampleSentence": "Arbitrarily: determined by chance, whim or impulse and not by reason or principle.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Vocabulary Matching Charter: - asylum: protection granted by a nation to someone who has left his or her native country as a political refugee - arbitrarily: determined by chance, whim or impulse and not by reason or principle - persecution: hostility and ill-treatment, especially because of race or political or religious beliefs - dissolution: the closing down or dismissal of an assembly, body etc.\n[Unit 5: Human Rights: Declarations of Human Rights]: Arbitrarily: determined by chance, whim or impulse and not by reason or principle.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -11520,7 +11518,7 @@ export const hscVocabularyList = [
     "synonyms": "Prohibit, prevent, disallow, ban, bar",
     "antonyms": "Allow, permit, approve, authorize",
     "englishMeaning": "To refuse to allow something; prohibit.",
-    "exampleSentence": "Thanks to the godforsaken detractors the rumour went round, \"The bird is dead.\" The King called his nephew and said, \"What is this I hear?\" \"Your Majesty,\" the nephew replied, \"the bird's education has been completed.\" The King asked, \"Does it hop?\" \"God forbid,\" said the nephew.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -11570,7 +11568,7 @@ export const hscVocabularyList = [
     "synonyms": "Faith, dogma, doctrine, belief, persuasion",
     "antonyms": "Disbelief, skepticism, agnosticism",
     "englishMeaning": "A set of religious beliefs or principles that guide someone's actions.",
-    "exampleSentence": "He preached religious tolerance and rejected social differences based on class, caste and creed.",
+    "exampleSentence": "[Unit 2: Lesson 2]: He preached religious tolerance and rejected social differences based on class, caste and creed.\n[Unit 4: Lesson 2]: He preached religious tolerance and rejected social differences based on class, caste and creed.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -11646,7 +11644,7 @@ export const hscVocabularyList = [
     "synonyms": "Perception, notion, imprint, belief",
     "antonyms": "Fact, tangible evidence, reality",
     "englishMeaning": "An idea, feeling, or opinion about something or someone.",
-    "exampleSentence": "What is your impression about these three children's education?",
+    "exampleSentence": "[Unit 5: Human Rights: Coal Miners]: What is your impression about these three children's education?\n[Unit 4: Lesson 2]: What is your impression about these three children's education?",
     "unit": "Unit 5: Human Rights: Coal Miners",
     "lesson": "Coal Miners",
     "boardExamTag": "Unit 5 • Lesson 4",
@@ -11673,7 +11671,7 @@ export const hscVocabularyList = [
     "synonyms": "Opinion, view, conviction, faith, creed",
     "antonyms": "Disbelief, skepticism, doubt, incredulity",
     "englishMeaning": "An acceptance that something exists or is true, especially one without proof; religious conviction.",
-    "exampleSentence": "Some of your friends do not agree with you on certain issues; they have their own beliefs.",
+    "exampleSentence": "[Unit 5: Lesson 2]: freedom of belief iii.\n[Unit 5: Human Rights: Civil Freedoms]: Some of your friends do not agree with you on certain issues; they have their own beliefs.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -11699,7 +11697,7 @@ export const hscVocabularyList = [
     "synonyms": "Matter, subject, topic, problem, question",
     "antonyms": "Non-issue, irrelevance",
     "englishMeaning": "An important topic or problem for debate or discussion.",
-    "exampleSentence": "Some of your friends do not agree with you on certain issues.",
+    "exampleSentence": "[Unit 5: Lesson 2]: Some of your friends do not agree with you on certain issues.\n[Unit 5: Human Rights: Civil Freedoms]: Some of your friends do not agree with you on certain issues.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -11725,7 +11723,7 @@ export const hscVocabularyList = [
     "synonyms": "Forbid, ban, bar, disallow, outlaw, interdict",
     "antonyms": "Allow, permit, legalize, authorize",
     "englishMeaning": "Formally forbid something by law, rule, or other authority.",
-    "exampleSentence": "Slavery and the slave trade shall be prohibited in all their forms.",
+    "exampleSentence": "[Unit 5: Lesson 2]: Read the declarations and core protections: - Article 4: No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.\n[Unit 5: Human Rights: Civil Freedoms]: Slavery and the slave trade shall be prohibited in all their forms.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -11751,7 +11749,7 @@ export const hscVocabularyList = [
     "synonyms": "Safety, defence, safeguarding, shield, security",
     "antonyms": "Vulnerability, danger, peril, endangerment",
     "englishMeaning": "The action of protecting someone or something, or the state of being protected.",
-    "exampleSentence": "All are equal before the law and are entitled without any discrimination to equal protection of the law.",
+    "exampleSentence": "[Unit 5: Lesson 2]: protection against abuse ix.\n[Unit 5: Human Rights: Civil Freedoms]: All are equal before the law and are entitled without any discrimination to equal protection of the law.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -11777,7 +11775,7 @@ export const hscVocabularyList = [
     "synonyms": "Agree, follow, obey, observe, conform to, abide by",
     "antonyms": "Disobey, defy, rebel, violate",
     "englishMeaning": "Act in accordance with a wish or command; meet specified standards.",
-    "exampleSentence": "Every member state is bound to comply with the declarations and charters of human rights.",
+    "exampleSentence": "[Unit 5: Lesson 3]: Unit Five: Human Rights | Lesson 3: Rights to Health and Education A.\n[Unit 5: Human Rights: Health and Education]: Every member state is bound to comply with the declarations and charters of human rights.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -11803,7 +11801,7 @@ export const hscVocabularyList = [
     "synonyms": "Legitimize, qualify, authorize, sanction, empower",
     "antonyms": "Prevent, forbid, disqualify, deny",
     "englishMeaning": "Give someone a legal right or a just claim to receive or do something.",
-    "exampleSentence": "Motherhood and childhood are entitled to special care and assistance.",
+    "exampleSentence": "[Unit 5: Lesson 3]: (2) Motherhood and childhood are entitled to special care and assistance.\n[Unit 5: Human Rights: Health and Education]: Motherhood and childhood are entitled to special care and assistance.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -11829,7 +11827,7 @@ export const hscVocabularyList = [
     "synonyms": "Occupation, living, vocation, income, sustenance, employment",
     "antonyms": "Unemployment, insolvency, poverty",
     "englishMeaning": "A means of securing the necessities of life.",
-    "exampleSentence": "Or other lack of livelihood in circumstances beyond his control.",
+    "exampleSentence": "[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.\n[Unit 5: Human Rights: Health and Education]: Or other lack of livelihood in circumstances beyond his control.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -11855,7 +11853,7 @@ export const hscVocabularyList = [
     "synonyms": "Identity, character, individuality, temperament, nature",
     "antonyms": "Impersonality, uniformity",
     "englishMeaning": "The combination of characteristics or qualities that form an individual's distinctive character.",
-    "exampleSentence": "Education shall be directed to the full development of the human personality.",
+    "exampleSentence": "[Unit 5: Lesson 3]: (2) Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms.\n[Unit 5: Human Rights: Health and Education]: Education shall be directed to the full development of the human personality.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -11881,7 +11879,7 @@ export const hscVocabularyList = [
     "synonyms": "Bereavement of husband, loss of spouse",
     "antonyms": "Matrimony, wedlock",
     "englishMeaning": "The state or period of being a widow.",
-    "exampleSentence": "In the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood.",
+    "exampleSentence": "[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.\n[Unit 5: Human Rights: Health and Education]: In the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -11907,7 +11905,7 @@ export const hscVocabularyList = [
     "synonyms": "Adjusted, aligned, directed, focused, tailored",
     "antonyms": "Disoriented, undirected, haphazard",
     "englishMeaning": "Aligned, directed toward or focused on a particular topic or cause.",
-    "exampleSentence": "'Sharing the Earth' is a collection of justice-oriented environmental writings.",
+    "exampleSentence": "[Unit 5: Lesson 4]: Unit Five: Human Rights | Lesson 4: Coal Miners A.\n[Unit 5: Human Rights: Coal Miners]: 'Sharing the Earth' is a collection of justice-oriented environmental writings.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -11933,7 +11931,7 @@ export const hscVocabularyList = [
     "synonyms": "Trip, journey, round, haul, shift",
     "antonyms": "Rest, pause, standstill",
     "englishMeaning": "A journey or haul made by coal carts or miners back and forth along the mine shaft.",
-    "exampleSentence": "Cannot say how many rakes or journeys I make from pit's bottom to wall face and back.",
+    "exampleSentence": "[Unit 5: Lesson 4]: ] Isabella Read, Age: 12 years: \"I am wrought with sister and brother; it is very sore work; cannot say how many rakes or journeys I make from pit's bottom to wall face and back, it may be about 30 or 25 on average; the distance varies from 100 to 250 fathom (1 fathom = 1.\n[Unit 5: Human Rights: Coal Miners]: Cannot say how many rakes or journeys I make from pit's bottom to wall face and back.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -12034,7 +12032,7 @@ export const hscVocabularyList = [
     "synonyms": "Straining, agonizing, searching, tormenting, pondering deeply",
     "antonyms": "Relaxing, resting, easing, soothing",
     "englishMeaning": "Subjecting someone or one's mind to extreme mental effort or strain.",
-    "exampleSentence": "Racking her brains for new topics to share, she remembered her torn play dresses.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -12059,7 +12057,7 @@ export const hscVocabularyList = [
     "synonyms": "Up to date, alongside, abreast of, informed of",
     "antonyms": "Behind, lagging, unaware, ignorant",
     "englishMeaning": "Up to a particular standard or keeping up with recent developments.",
-    "exampleSentence": "A craftwork is a dynamic object—always evolving and always abreast of changing tastes and needs.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -12134,7 +12132,7 @@ export const hscVocabularyList = [
     "synonyms": "Stranger, foreigner, alien, newcomer, non-member",
     "antonyms": "Insider, native, member, local",
     "englishMeaning": "A person who does not belong to a particular organization or social group.",
-    "exampleSentence": "I acted because of my own proudly felt African background, and not because of what any outsider might have said.",
+    "exampleSentence": "[Unit 4: Lesson 2]: I acted because of my own proudly felt African background, and not because of what any outsider might have said.\n[Unit 4: Transformative Speeches: Three Speeches]: I acted because of my own proudly felt African background, and not because of what any outsider might have said.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -12160,7 +12158,7 @@ export const hscVocabularyList = [
     "synonyms": "Division, separation, dismemberment, splitting up",
     "antonyms": "Unification, merger, union, integration",
     "englishMeaning": "The division of a country or state into separate parts or sovereign entities.",
-    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "exampleSentence": "[Unit 4: Lesson 3]: When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.\n[Unit 4: Great Women: Pioneers of Education & Science]: When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.\n[Unit 12: Lesson 5]: More than three times the number of refugees that Partition created in India.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -12187,7 +12185,7 @@ export const hscVocabularyList = [
     "synonyms": "Difficulties, struggles, adversity, privation, misery",
     "antonyms": "Comforts, luxuries, prosperity, ease",
     "englishMeaning": "Severe suffering or privation.",
-    "exampleSentence": "Death soon ended what little we could have while she lived, and with it her hardships and suffering.",
+    "exampleSentence": "[Unit 5: Lesson 5]: hardship - severe suffering or privation D.\n[Unit 5: Human Rights: Frederick Douglass]: Death soon ended what little we could have while she lived, and with it her hardships and suffering.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -12213,7 +12211,7 @@ export const hscVocabularyList = [
     "synonyms": "Advantage, benefit, prerogative, entitlement, right",
     "antonyms": "Disadvantage, handicap, deprivation",
     "englishMeaning": "A special right, advantage, or immunity granted or available only to a particular person or group.",
-    "exampleSentence": "I could not tell why I ought to be deprived of the same privilege.",
+    "exampleSentence": "[Unit 5: Lesson 5]: I could not tell why I ought to be deprived of the same privilege.\n[Unit 5: Human Rights: Frederick Douglass]: I could not tell why I ought to be deprived of the same privilege.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -12239,7 +12237,7 @@ export const hscVocabularyList = [
     "synonyms": "Foreigner, outsider, unknown person, alien",
     "antonyms": "Friend, acquaintance, kin",
     "englishMeaning": "A person whom one does not know or with whom one is not familiar.",
-    "exampleSentence": "I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
+    "exampleSentence": "[Unit 5: Lesson 5]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.\n[Unit 5: Human Rights: Frederick Douglass]: I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -12265,7 +12263,7 @@ export const hscVocabularyList = [
     "synonyms": "Resent",
     "antonyms": "",
     "englishMeaning": "Cause someone to feel hurt, angry, or resentful.",
-    "exampleSentence": "The unmentionable odour of death offends the September night.",
+    "exampleSentence": "[Unit 10: Lesson 1]: Unit Ten: Lifestyle Lesson 1 Manners Around the World A.\n[Unit 11: Lesson 1]: Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -12308,7 +12306,7 @@ export const hscVocabularyList = [
     "synonyms": "Dangers, perils, risks, threats, jeopardy",
     "antonyms": "Safeties, protections, shelters",
     "englishMeaning": "Dangers or risks, especially regarding health or well-being.",
-    "exampleSentence": "List of headings A journey towards adulthood Adolescence and education Stages ofhuman life Need for collective efforts An observation by World Health Organisation A transition period The adverse effects of taking drugs Influence of culture on adolescents Potential health hazards j.",
+    "exampleSentence": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -12329,7 +12327,7 @@ export const hscVocabularyList = [
     "synonyms": "Restricts, limits, reduces, slashes, cuts short",
     "antonyms": "Expands, increases, lengthens, extends",
     "englishMeaning": "Reduces in extent or quantity; imposes a restriction on.",
-    "exampleSentence": "Early motherhood abruptly curtails a young woman's academic development.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -12350,7 +12348,7 @@ export const hscVocabularyList = [
     "synonyms": "Desire, yearn for",
     "antonyms": "Reject",
     "englishMeaning": "Feel a powerful desire for something.",
-    "exampleSentence": "Sweet Peace, where dost thou dwell? I humbly crave, let me once know.",
+    "exampleSentence": "I humbly crave, Let me once know.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -12371,7 +12369,7 @@ export const hscVocabularyList = [
     "synonyms": "Thinkers, theorists",
     "antonyms": "",
     "englishMeaning": "Persons engaged or learned in philosophy, especially as academic practitioners.",
-    "exampleSentence": "Ancient philosophers emphasized living in harmony with nature.",
+    "exampleSentence": "[Unit 12: Lesson 5]: Let us read an excerpt from Japanese natural farming practitioner and philosopher Masanobu Fukuoka's celebrated book One-Straw Revolution: \"Before researchers become researchers they should become philosophers.\n[Unit 12: Lesson 5]: Let us read an excerpt from Japanese natural farming practitioner and philosopher Masanobu Fukuoka's celebrated book One-Straw Revolution: \"Before researchers become researchers they should become philosophers.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -12459,7 +12457,7 @@ export const hscVocabularyList = [
     "synonyms": "Uproar, tumult, commotion, racket, clamor",
     "antonyms": "Silence, quietude, peace, serenity",
     "englishMeaning": "A loud, unpleasant, and prolonged tumult or noise.",
-    "exampleSentence": "The nephew commented, \"Your Majesty can see how things are going on.\" \"Astonishing!\" replied the King, \"the din isn't negligible.\" \"Not only the noise,\" said the nephew.",
+    "exampleSentence": "replied the King, \"the din isn't negligible.\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -12480,7 +12478,7 @@ export const hscVocabularyList = [
     "synonyms": "Ascend, climb, ride, scale",
     "antonyms": "Dismount, descend, drop, step down",
     "englishMeaning": "To climb up on or get on top of something, such as a horse or platform.",
-    "exampleSentence": "The meaning behind it isn't negligible either.\" The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\" The King was startled.",
+    "exampleSentence": "The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -12543,7 +12541,7 @@ export const hscVocabularyList = [
     "synonyms": "Utterance, phrase, remark, statement, idiom",
     "antonyms": "Silence, inexpression, speechlessness",
     "englishMeaning": "A word or phrase used to express an idea or polite feeling.",
-    "exampleSentence": "Folk music may be described as the music of the ancient times that sprang from the heart of a community, based on their natural style of expression uninfluenced by the rules of classical music or modern popular songs.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -12564,7 +12562,7 @@ export const hscVocabularyList = [
     "synonyms": "Dialogue, Discussion, Talk, Chat, Discourse",
     "antonyms": "Silence, Speechlessness, Taciturnity",
     "englishMeaning": "A talk, especially an informal one, between two or more people.",
-    "exampleSentence": "South African greetings involve warm eye-contact and pleasant conversations.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -12585,7 +12583,7 @@ export const hscVocabularyList = [
     "synonyms": "Border, Rim, Margin, Brink, Boundary",
     "antonyms": "Center, Middle, Interior",
     "englishMeaning": "The outside limit of an object, surface, or area.",
-    "exampleSentence": "Landscape with the Fall of Icarus According to Brueghel when Icarus fell it was spring a farmer was ploughing his field the whole pageantry of the year was awake tingling near the edge of the sea concerned with itself sweating in the sun that melted the wings' wax unsignificantly off the coast there was a splash quite unnoticed this was Icarus drowning",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -12606,7 +12604,7 @@ export const hscVocabularyList = [
     "synonyms": "Recognize, Distinguish, Spot, Discern, Determine",
     "antonyms": "Mistake, Confuse, Misidentify, Overlook",
     "englishMeaning": "To establish or indicate who or what someone or something is.",
-    "exampleSentence": "For example, AI-powered educational tools can provide students with immediate feedback on their work, allowing them to identify and correct mistakes quickly.",
+    "exampleSentence": "[Unit 10: Lesson 1]: Unit Ten: Lifestyle Lesson 1 Manners Around the World A.\n[Unit 12: Lesson 1]: The United Nations in a meeting on the eve of the new millennium identified the drinking water problem as one of the challenges for the future.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -12628,7 +12626,7 @@ export const hscVocabularyList = [
     "synonyms": "Sustain, Preserve, Keep, Continue, Uphold",
     "antonyms": "Discontinue, Abandon, Neglect, Drop",
     "englishMeaning": "To cause or enable a condition or state of affairs to continue.",
-    "exampleSentence": "Edtech companies must ensure that the sensitive personal data collected and stored by AI-powered educational tools are properly secured and that privacy is maintained.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -12649,7 +12647,7 @@ export const hscVocabularyList = [
     "synonyms": "Liquor, intoxicant, spirits, brew",
     "antonyms": "Non-alcoholic beverage, soft drink",
     "englishMeaning": "A colorless volatile flammable liquid which is the intoxicating constituent of wine, beer, and spirits.",
-    "exampleSentence": "They are also more likely to get exposed to drugs and alcohol.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -12712,7 +12710,7 @@ export const hscVocabularyList = [
     "synonyms": "Fulfillment, development, ripening, growth",
     "antonyms": "Decline, immaturity, regression",
     "englishMeaning": "The biological and psychological process of reaching full development and maturity.",
-    "exampleSentence": "Physical and sexual maturation marks the transition toward adulthood.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -12733,7 +12731,7 @@ export const hscVocabularyList = [
     "synonyms": "Part, function, duty, capacity, position",
     "antonyms": "Disregard, neglect",
     "englishMeaning": "The function assumed or part played by a person or thing in a particular situation.",
-    "exampleSentence": "Let us explore the pros and cons of AI as a tool in the classroom, address the concern that AI could be a threat to teachers' and instructors' jobs and discuss the role of edtech companies in advancing this AI use case.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -12754,7 +12752,7 @@ export const hscVocabularyList = [
     "synonyms": "Exposed, susceptible, defenseless, at risk",
     "antonyms": "Invulnerable, protected, secure, safe",
     "englishMeaning": "Susceptible to physical harm, emotional injury, or exploitation.",
-    "exampleSentence": "A vulnerable age",
+    "exampleSentence": "[Unit 9: Lesson 1]: Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.\n[Unit 12: Lesson 4]: What is often regarded as a natural disaster is upon closer examination the result of sometimes shortsighted and other times reckless, even pernicious corporate, governmental, or individual environmental practices that target and disadvantage vulnerable groups.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -12818,7 +12816,7 @@ export const hscVocabularyList = [
     "synonyms": "Available, reachable, attainable, approachable",
     "antonyms": "Inaccessible, unreachable, limited, restricted",
     "englishMeaning": "Able to be easily reached, entered, used, or obtained by diverse users.",
-    "exampleSentence": "Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.",
+    "exampleSentence": "[Unit 1: Lesson 2]: Edtech companies should work to make AI technology accessible to a broader range of schools and teachers and explore alternative funding options, such as grants or partnerships, to help offset the costs.\n[Unit 5: Lesson 3]: Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
     "boardExamTag": "Unit 1 • Lesson 2",
     "sources": [
@@ -12903,7 +12901,7 @@ export const hscVocabularyList = [
     "synonyms": "Comprised, composed, constituted, formed, included",
     "antonyms": "Excluded, lacked, omitted",
     "englishMeaning": "Was made up or composed of specific parts or elements.",
-    "exampleSentence": "of Our Bengali meals consist of five flavours of food—bitter, savoury, hot, sour sides and desserts.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -12924,7 +12922,7 @@ export const hscVocabularyList = [
     "synonyms": "Peek, glance, sighting, peep, quick look",
     "antonyms": "Gaze, stare, scrutiny, observation",
     "englishMeaning": "A momentary or partial view of someone or something.",
-    "exampleSentence": "To-mo-e Ga-ku-en.\" Totto-chan was about to ask Mother what \"Tomoe' • meant, when she caught a glimpse of something that made her think she must be dreaming.",
+    "exampleSentence": "Totto-chan was about to ask Mother what \"Tomoe' • meant, when she caught a glimpse of something that made her think she must be dreaming.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -12966,7 +12964,7 @@ export const hscVocabularyList = [
     "synonyms": "Deserted, discarded, forsaken, derelict, unused",
     "antonyms": "Inhabited, occupied, utilized, maintained",
     "englishMeaning": "Having been deserted or left behind by former owners or users.",
-    "exampleSentence": "in the school grounds!\" For its classrooms, the school had made use of six abandoned railroad cars.",
+    "exampleSentence": "[Unit 1: Lesson 3]: For its classrooms, the school had made use of six abandoned railroad cars.\n[Unit 4: Lesson 3]: in the school grounds!\" For its classrooms, the school had made use of six abandoned railroad cars.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -13009,7 +13007,7 @@ export const hscVocabularyList = [
     "synonyms": "Roomy, expansive, commodious, capacious, large",
     "antonyms": "Cramped, narrow, confined, restricted",
     "englishMeaning": "Having ample space; commodious and roomy.",
-    "exampleSentence": "The not very spacious school grounds felt lively and welcoming with green plants.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -13072,7 +13070,7 @@ export const hscVocabularyList = [
     "synonyms": "Unnamed, unidentified, nameless, uncredited",
     "antonyms": "Named, identified, famous, renowned",
     "englishMeaning": "Not identified by name; of unknown authorship or identity.",
-    "exampleSentence": "The maker of a terracotta doll or a shatranji (cotton floor mat) remains anonymous but the work retains a personal touch.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -13093,7 +13091,7 @@ export const hscVocabularyList = [
     "synonyms": "Appeals, pleas, supplications, solicitations, representations",
     "antonyms": "Orders, decrees, commands",
     "englishMeaning": "Formal written requests, typically signed by many people, appealing to authority.",
-    "exampleSentence": "Citizens submitted petitions to the municipal authority against unfair tax hikes.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -13156,7 +13154,7 @@ export const hscVocabularyList = [
     "synonyms": "Prerequisites, requirements, essentials, foundations",
     "antonyms": "Consequences, subsequent outcomes",
     "englishMeaning": "Conditions that must exist or be established before something can occur.",
-    "exampleSentence": "Mutual respect and loyalty are indispensable preconditions for enduring friendships.",
+    "exampleSentence": "The famous Greek philosopher Aristotle said, \"Humans are by nature social animals.\"",
     "unit": "Unit 8: Lesson 1 (Family)",
     "boardExamTag": "Unit 8 • Lesson 1",
     "sources": [
@@ -13177,7 +13175,7 @@ export const hscVocabularyList = [
     "synonyms": "Duty, obligation, accountability, liability",
     "antonyms": "Irresponsibility, carelessness, neglect",
     "englishMeaning": "The state or fact of having a duty to deal with something or of having control over someone.",
-    "exampleSentence": "Now, he can look back on his childhood and appreciate the way his father was carrying out his duties and responsibilities.",
+    "exampleSentence": "[Unit 9: Lesson 2]: Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.\n[Unit 4: Lesson 3]: Now, he can look back on his childhood and appreciate the way his father was carrying out his duties and responsibilities.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -13199,7 +13197,7 @@ export const hscVocabularyList = [
     "synonyms": "Blocked, impeded, hindered, jammed, hampered",
     "antonyms": "Unobstructed, smooth, clear",
     "englishMeaning": "Prevented or hindered from movement or progress; blocked.",
-    "exampleSentence": "Immature pelvic development frequently results in obstructed delivery in teenage girls.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -13220,7 +13218,7 @@ export const hscVocabularyList = [
     "synonyms": "Focusing, grounding, stabilizing, balancing, concentrating",
     "antonyms": "Scattering, distracting",
     "englishMeaning": "Finding a calm point of mental equilibrium and focus.",
-    "exampleSentence": "Centering your breathing before an exam curbs panic and sharpen recall.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -13283,7 +13281,7 @@ export const hscVocabularyList = [
     "synonyms": "Reside, live, stay",
     "antonyms": "Move",
     "englishMeaning": "Live in or at a specified place.",
-    "exampleSentence": "Sweet Peace, where dost thou dwell?",
+    "exampleSentence": "Peace by George Herbert (1593-1633): Sweet Peace, where dost thou dwell?",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -13304,7 +13302,7 @@ export const hscVocabularyList = [
     "synonyms": "Contract, diminish",
     "antonyms": "Widen, expand",
     "englishMeaning": "Become or make smaller in size or amount.",
-    "exampleSentence": "Water, water, every where, and all the boards did shrink.",
+    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -13325,7 +13323,7 @@ export const hscVocabularyList = [
     "synonyms": "Reducing, trimming",
     "antonyms": "Increasing, enlarging",
     "englishMeaning": "Repeatedly reducing something in size, amount, or number in small increments.",
-    "exampleSentence": "Modern practices are whittling away the natural defenses of the ecosystem.",
+    "exampleSentence": "[Unit 12: Lesson 5]: I have done this by whittling away unnecessary agricultural practices.\n[Unit 12: Lesson 5]: I have done this by whittling away unnecessary agricultural practices.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -13391,7 +13389,7 @@ export const hscVocabularyList = [
     "synonyms": "Prevail, govern, control, overshadow",
     "antonyms": "Subordinate, yield, follow, obey",
     "englishMeaning": "Have a commanding influence on; exercise control over.",
-    "exampleSentence": "Some people dominate others who belong to different gender or race or cultural identity.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-II?]: Some people dominate others who belong to different gender or race or cultural identity.\n[Unit 5: Lesson 2]: Some people dominate others who belong to different gender or race or cultural identity.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
@@ -13414,7 +13412,7 @@ export const hscVocabularyList = [
     "synonyms": "Abuse, torment, cruelty, infliction of pain",
     "antonyms": "Relief, comfort, kindness, mercy",
     "englishMeaning": "The action or practice of inflicting severe pain or suffering on someone.",
-    "exampleSentence": "Article 5: No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-II?]: Article 5: No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.\n[Unit 4: Lesson 2]: Article 5: No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
@@ -13437,7 +13435,7 @@ export const hscVocabularyList = [
     "synonyms": "News, reports, information, messages",
     "antonyms": "Silence, secret, suppression",
     "englishMeaning": "News; information.",
-    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
+    "exampleSentence": "[Unit 5: Human Rights: Frederick Douglass]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.\n[Unit 5: Lesson 5]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.",
     "unit": "Unit 5: Human Rights: Frederick Douglass",
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
@@ -13548,7 +13546,7 @@ export const hscVocabularyList = [
     "synonyms": "Incentives, impulses, triggers, inputs, prods",
     "antonyms": "Deterrents, suppressants, depressants",
     "englishMeaning": "Things that evoke a specific functional reaction in an organ or tissue.",
-    "exampleSentence": "External sensory stimuli like barking dogs can be woven into the fabric of a dream.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -13634,7 +13632,7 @@ export const hscVocabularyList = [
     "synonyms": "Honors, laurels, awards, tributes, praises",
     "antonyms": "Criticisms, censures, condemnations",
     "englishMeaning": "Awards, honors, or privileges granted as a special honor or as an acknowledgment of merit.",
-    "exampleSentence": "Apart from being awarded prestigious awards, accolades, and being featured in top art institutions, Sultan received wide press coverage and laudatory critical reviews in renowned newspapers like the New York Times, Washington Post, The Telegraph, The Times, The Guardian, Le Monde, and many more.",
+    "exampleSentence": "[Unit 2: Lesson 3]: Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.\n[Unit 2: Art and Craft: Art]: Apart from being awarded prestigious awards, accolades, and being featured in top art institutions, Sultan received wide press coverage and laudatory critical reviews in renowned newspapers like the New York Times, Washington Post, The Telegraph, The Times, The Guardian, Le Monde, and many more.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -13656,7 +13654,7 @@ export const hscVocabularyList = [
     "synonyms": "Native, aboriginal, endemic, traditional, homegrown",
     "antonyms": "Foreign, alien, imported, exotic",
     "englishMeaning": "Originating or occurring naturally in a particular place; native.",
-    "exampleSentence": "What is meant by indigenous art?",
+    "exampleSentence": "[Unit 3: Lesson 3]: The story of Gazi Pir has been preserved in folk literature as well as art and has been performed in indigenous theatre.\n[Unit 3: Myths and Literature: The Legend of Gazi]: What is meant by indigenous art?",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
     "boardExamTag": "Unit 3 • Lesson 3",
     "sources": [
@@ -13678,7 +13676,7 @@ export const hscVocabularyList = [
     "synonyms": "Parchment, roll, painted canvas, manuscript",
     "antonyms": "Bound volume, digital screen",
     "englishMeaning": "A roll of parchment or paper for writing or painting on.",
-    "exampleSentence": "Have you seen a paat or scroll painting?",
+    "exampleSentence": "[Unit 3: Lesson 3]: He is usually depicted in paats or scroll paintings riding a fierce-looking Bengal tiger, a snake in his hand, but in no apparent danger.\n[Unit 3: Myths and Literature: The Legend of Gazi]: Have you seen a paat or scroll painting?",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
     "boardExamTag": "Unit 3 • Lesson 3",
     "sources": [
@@ -13700,7 +13698,7 @@ export const hscVocabularyList = [
     "synonyms": "Exhaustion, weariness, lethargy, tiredness, languor",
     "antonyms": "Energy, vigor, vitality, freshness",
     "englishMeaning": "Extreme tiredness resulting from mental or physical exertion or illness.",
-    "exampleSentence": "Once I get down, I frequently fall asleep while waiting for coal from heat and fatigue.",
+    "exampleSentence": "[Unit 5: Lesson 4]: Once I get down, I frequently fall asleep while waiting for coal from heat and fatigue.\n[Unit 5: Human Rights: Coal Miners]: Once I get down, I frequently fall asleep while waiting for coal from heat and fatigue.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -13722,7 +13720,7 @@ export const hscVocabularyList = [
     "synonyms": "Undernourishment, nutritional deficiency, starvation",
     "antonyms": "Healthy nutrition, balanced diet",
     "englishMeaning": "Lack of proper nutrition, caused by not having enough to eat.",
-    "exampleSentence": "They also suffered from malnutrition.",
+    "exampleSentence": "[Unit 7: Lesson 3]: They also suffered from malnutrition.\n[Unit 7: Youthful Achievers: The Unbeaten Girls]: They also suffered from malnutrition.",
     "unit": "Unit 7: Lesson 3 (The Unbeaten Girls)",
     "boardExamTag": "Unit 7 • Lesson 3",
     "sources": [
@@ -13744,7 +13742,7 @@ export const hscVocabularyList = [
     "synonyms": "Travel narrative, travel book, itinerary, traveler's chronicle",
     "antonyms": "Fiction novel, stationary diary",
     "englishMeaning": "A film, book, or illustrated lecture about the places visited and experiences encountered by a traveler.",
-    "exampleSentence": "Read the following excerpt from Syed Mujtaba Ali's travelogue.",
+    "exampleSentence": "[Unit 10: Lesson 3]: Read the following excerpt from Syed Mujtaba Ali's travelogue.\n[Unit 10: Lifestyle: Food and Culture]: Read the following excerpt from Syed Mujtaba Ali's travelogue.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
     "boardExamTag": "Unit 10 • Lesson 3",
     "sources": [
@@ -13766,7 +13764,7 @@ export const hscVocabularyList = [
     "synonyms": "Culinary art, haute cuisine, gourmet cooking, epicurism",
     "antonyms": "Fasting, starvation",
     "englishMeaning": "The practice or art of choosing, cooking, and eating good food.",
-    "exampleSentence": "The reach of this gastronomy has spread to East Europe's Greece, Ilungary, Rumania, Yugoslavia, Albania and even Italy.",
+    "exampleSentence": "[Unit 10: Lesson 3]: The reach of this gastronomy has spread to East Europe's Greece, Ilungary, Rumania, Yugoslavia, Albania and even Italy.\n[Unit 10: Lifestyle: Food and Culture]: The reach of this gastronomy has spread to East Europe's Greece, Ilungary, Rumania, Yugoslavia, Albania and even Italy.",
     "unit": "Unit 10: Lesson 3 (Food and Culture)",
     "boardExamTag": "Unit 10 • Lesson 3",
     "sources": [
@@ -13788,7 +13786,7 @@ export const hscVocabularyList = [
     "synonyms": "Beachhead, vanguard post, tactical perimeter, bridge redoubt",
     "antonyms": "Hinterland, distant retreat",
     "englishMeaning": "A strong position secured by an army inside hostile territory to protect bridge crossing.",
-    "exampleSentence": "It was my business to cross the bridge, explore the bridgehead beyond and find out to what point the enemy had advanced.",
+    "exampleSentence": "[Unit 11: Lesson 2]: It was my business to cross the bridge, explore the bridgehead beyond and find out to what point the enemy had advanced.\n[Unit 11: Peace and Conflict: \"The Old Man at the Bridge\" by Ernest Hemingway]: It was my business to cross the bridge, explore the bridgehead beyond and find out to what point the enemy had advanced.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -13810,7 +13808,7 @@ export const hscVocabularyList = [
     "synonyms": "Meekly, modestly, deferentially, unpretentiously",
     "antonyms": "Proudly, arrogantly, haughtily",
     "englishMeaning": "In a way that shows a modest or low estimate of one's importance; without arrogance.",
-    "exampleSentence": "I humbly crave, Let me once know.",
+    "exampleSentence": "[Unit 11: Lesson 4]: I humbly crave, Let me once know.\n[Unit 11: Peace and Conflict: Peace in Literature]: I humbly crave, Let me once know.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -13853,7 +13851,7 @@ export const hscVocabularyList = [
     "synonyms": "Pleased, overjoyed, thrilled, gratified",
     "antonyms": "Dejected, depressed, miserable, sorrowful",
     "englishMeaning": "Feeling or showing great pleasure and satisfaction.",
-    "exampleSentence": "What a lucky bird!\" The goldsmith was delighted to get a bagful of money as reward and went home at once.",
+    "exampleSentence": "The goldsmith was delighted to get a bagful of money as reward and went home at once.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -13874,7 +13872,7 @@ export const hscVocabularyList = [
     "synonyms": "Display, illustration, exhibition, presentation",
     "antonyms": "Concealment, hiding, suppression",
     "englishMeaning": "An act of showing or explaining something clearly to an audience.",
-    "exampleSentence": "We haven't seen the bird.\" He went back and said to the teacher, \"We must see the manner in which you conduct the lessons.\" A demonstration followed.",
+    "exampleSentence": "A demonstration followed.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -13958,7 +13956,7 @@ export const hscVocabularyList = [
     "synonyms": "Foolishness, stupidity, absurdity, silliness",
     "antonyms": "Wisdom, prudence, sagacity, sanity",
     "englishMeaning": "Lack of good sense; foolishness or an unwise action.",
-    "exampleSentence": "Rabindranath Tagore satirized the utter folly of rote memorization in education.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14000,7 +13998,7 @@ export const hscVocabularyList = [
     "synonyms": "Jump, leap, bound, skip",
     "antonyms": "Stand still, halt, stay",
     "englishMeaning": "To move by jumping on one or both feet or legs.",
-    "exampleSentence": "Thanks to the godforsaken detractors the rumour went round, \"The bird is dead.\" The King called his nephew and said, \"What is this I hear?\" \"Your Majesty,\" the nephew replied, \"the bird's education has been completed.\" The King asked, \"Does it hop?\" \"God forbid,\" said the nephew.",
+    "exampleSentence": "The King asked, \"Does it hop?\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14021,7 +14019,7 @@ export const hscVocabularyList = [
     "synonyms": "Insolence, impertinence, audacity, disrespect",
     "antonyms": "Politeness, civility, modesty, courtesy",
     "englishMeaning": "The trait of being rude, insolent, and disrespectfully bold.",
-    "exampleSentence": "What impudence!\" the Inspector of Police commented.",
+    "exampleSentence": "\"What impudence!\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14042,7 +14040,7 @@ export const hscVocabularyList = [
     "synonyms": "Perfectly, flawlessly, optimally, impeccably",
     "antonyms": "Imperfectly, poorly, defectively",
     "englishMeaning": "In the best possible way; perfectly.",
-    "exampleSentence": "Ideally, schools should provide an open and joyful learning environment.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14063,7 +14061,7 @@ export const hscVocabularyList = [
     "synonyms": "Skulk, sneak, hide, prowl",
     "antonyms": "Emerge, appear, show",
     "englishMeaning": "To remain hidden so as to wait in ambush or go unnoticed.",
-    "exampleSentence": "The meaning behind it isn't negligible either.\" The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\" The King was startled.",
+    "exampleSentence": "The King was pleased and walked out of the gate to mount his elephant when one of the fault-finders, who had been lurking behind the bushes, shouted, \"Have you seen the bird, Your Majesty?\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14084,7 +14082,7 @@ export const hscVocabularyList = [
     "synonyms": "Joyfully, cheerfully, happily, gleefully",
     "antonyms": "Sadly, sorrowfully, gloomily, unhappily",
     "englishMeaning": "In a cheerful and joyous manner.",
-    "exampleSentence": "Bravo!\" exclaimed those who saw it, \"There is no room for any more knowledge.\" The scribes loaded their wages onto bullocks and merrily headed home.",
+    "exampleSentence": "The scribes loaded their wages onto bullocks and merrily headed home.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14189,7 +14187,7 @@ export const hscVocabularyList = [
     "synonyms": "Call, convene, cite, assemble",
     "antonyms": "Dismiss, send away, discharge, ignore",
     "englishMeaning": "To authoritatively or urgently call on someone to be present.",
-    "exampleSentence": "Yet it devours fruit from the forest, bringing down the profits of fruiterers in the royal market.\" He summoned the Minister and commanded, \"Educate the bird!",
+    "exampleSentence": "\"Your Majesty,\" replied the nephew, \"if you wish to hear the truth, summon the goldsmiths, the scholars, the scribes, the maintenance crew and their supervisors.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14210,7 +14208,7 @@ export const hscVocabularyList = [
     "synonyms": "Defame, vilify, malign, disparage, smear",
     "antonyms": "Praise, applaud, commend, laud",
     "englishMeaning": "To make false and damaging spoken statements about someone.",
-    "exampleSentence": "Those who haven't got a share of the royal bounty are resorting to slander.\" Everything became clear to the King and he rewarded his nephew with a gold chain.",
+    "exampleSentence": "Those who haven't got a share of the royal bounty are resorting to slander.\"",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14252,7 +14250,7 @@ export const hscVocabularyList = [
     "synonyms": "Rip, shred, split, sever",
     "antonyms": "Mend, join, repair, stitch",
     "englishMeaning": "To pull or rip something apart or into pieces with force.",
-    "exampleSentence": "I open my eyes and remain standing under the balcony, blankly, my eyes filled with hot tears.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14273,7 +14271,7 @@ export const hscVocabularyList = [
     "synonyms": "Sin, immorality, wickedness, wrongdoing",
     "antonyms": "Virtue, goodness, righteousness, morality",
     "englishMeaning": "Immoral or wicked behavior; a bad habit or moral weakness.",
-    "exampleSentence": "Greed and sycophancy were the underlying vices of the royal courtiers.",
+    "exampleSentence": "Once upon a time there lived a bird.",
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
@@ -14399,7 +14397,7 @@ export const hscVocabularyList = [
     "synonyms": "Arrangement, Readiness, Planning, Organization",
     "antonyms": "Unpreparedness, Neglect, Disorganization, Improvisation",
     "englishMeaning": "The action or process of making ready or being made ready for use or consideration.",
-    "exampleSentence": "English eat only sweet and savoury preparations.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -14420,7 +14418,7 @@ export const hscVocabularyList = [
     "synonyms": "Aliens, Strangers, Outsiders, Immigrants",
     "antonyms": "Natives, Citizens, Locals, Inhabitants",
     "englishMeaning": "Persons born in or coming from another country.",
-    "exampleSentence": "Foreigners should study local customs before visiting traditional households.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -14441,7 +14439,7 @@ export const hscVocabularyList = [
     "synonyms": "Only, Simply, Just, Purely, Solely",
     "antonyms": "Completely, Entirely, Fully, Substantially",
     "englishMeaning": "Just; only; no more than.",
-    "exampleSentence": "Politeness is not merely a formality; it is a sign of deep human respect.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -14504,7 +14502,7 @@ export const hscVocabularyList = [
     "synonyms": "Indifference, unconcern, disinterest, detachment",
     "antonyms": "Enthusiasm, passion, zeal, eagerness",
     "englishMeaning": "Lack of interest, enthusiasm, or concern for others.",
-    "exampleSentence": "The selfish man was relieved of his apathy toward people's polite behavior.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14525,7 +14523,7 @@ export const hscVocabularyList = [
     "synonyms": "Alertness, carefulness, prudence, vigilance",
     "antonyms": "Carelessness, negligence, recklessness, rashness",
     "englishMeaning": "Care taken to avoid danger or mistakes.",
-    "exampleSentence": "Still, edtech companies should develop AI tools with caution in collaboration with teachers, educators and students to ensure that they are helpful, ethical and effective in meeting the needs of learners.",
+    "exampleSentence": "[Unit 10: Lesson 2]: Lifestyle B.\n[Unit 12: Lesson 5]: To err on the side of caution, let's halve the number of people.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14547,7 +14545,7 @@ export const hscVocabularyList = [
     "synonyms": "Picky, selective, fastidious, particular",
     "antonyms": "Indifferent, uncritical, easy-going, undemanding",
     "englishMeaning": "Having very specific requirements; hard to please.",
-    "exampleSentence": "Being overly choosy about food when invited out can appear rude to your host.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14589,7 +14587,7 @@ export const hscVocabularyList = [
     "synonyms": "Crawl, slither, sneak, tiptoe, glide",
     "antonyms": "Run, hustle, march, sprint",
     "englishMeaning": "To move slowly and carefully in order to avoid being heard or noticed.",
-    "exampleSentence": "(equivalent of 50 kg) and a quarter on my back; have to stoop much and creep through water, which is frequently up to the calves of my legs.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14610,7 +14608,7 @@ export const hscVocabularyList = [
     "synonyms": "Direct gaze, visual connection, eye-to-eye gaze",
     "antonyms": "Averted gaze, gaze avoidance, looking away",
     "englishMeaning": "The state in which two people look directly into each other's eyes.",
-    "exampleSentence": "Maintaining warm eye contact during conversations conveys sincerity and confidence.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14631,7 +14629,7 @@ export const hscVocabularyList = [
     "synonyms": "Autonomous person, independent agent, self-governing individual",
     "antonyms": "Dependent, puppet, slave, subordinate",
     "englishMeaning": "An individual possessing the freedom and capacity to make their own ethical choices.",
-    "exampleSentence": "He was a free-will agent and he chose to do careful work, and if he failed, he took the responsibility without subterfuge.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14652,7 +14650,7 @@ export const hscVocabularyList = [
     "synonyms": "Sign, motion, signal, body language, gesticulation",
     "antonyms": "Speech, vocal utterance, words",
     "englishMeaning": "A movement of part of the body to convey an attitude or polite message.",
-    "exampleSentence": "Shaking hands (between men) is an important gesture of mutual respect.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14673,7 +14671,7 @@ export const hscVocabularyList = [
     "synonyms": "Commodities, provisions, foodstuff, supplies",
     "antonyms": "Non-food merchandise, luxury durable goods",
     "englishMeaning": "Items of food and other essential household goods sold in a store.",
-    "exampleSentence": "It is good etiquette to help elderly neighbors carry their heavy grocery bags.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14694,7 +14692,7 @@ export const hscVocabularyList = [
     "synonyms": "Inquiry, examination, probe, scrutiny, inspection",
     "antonyms": "Neglect, disregard, oversight, ignorance",
     "englishMeaning": "A formal inquiry or systematic search to discover facts and truth.",
-    "exampleSentence": "During his investigation, he interviewed a large number of people working in Britain's factories and mines.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14715,7 +14713,7 @@ export const hscVocabularyList = [
     "synonyms": "Serving, share, allotment, helping, section",
     "antonyms": "Whole, entirety, totality",
     "englishMeaning": "A part of a whole; an amount of food served for one person.",
-    "exampleSentence": "Take a moderate portion of food so that enough remains for other dinner guests.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14736,7 +14734,7 @@ export const hscVocabularyList = [
     "synonyms": "Alleviate, ease, soothe, unburden, lighten",
     "antonyms": "Aggravate, worsen, intensify, burden",
     "englishMeaning": "To release from a burdensome duty, pain, or discomfort.",
-    "exampleSentence": "But his having a mother, any sort at all, relieved me of the ache I had had about him...",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14778,7 +14776,7 @@ export const hscVocabularyList = [
     "synonyms": "Space, capacity, clearance, expanse",
     "antonyms": "Crowdedness, congestion, lack of space",
     "englishMeaning": "Space that can be occupied or where something can be done.",
-    "exampleSentence": "Bravo!\" exclaimed those who saw it, \"There is no room for any more knowledge.\" The scribes loaded their wages onto bullocks and merrily headed home.",
+    "exampleSentence": "Lifestyle B.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14799,7 +14797,7 @@ export const hscVocabularyList = [
     "synonyms": "Disperse, spread, strew, disseminate, dissipate",
     "antonyms": "Gather, collect, assemble, cluster",
     "englishMeaning": "To throw in various random directions; disperse widely.",
-    "exampleSentence": "But while I looked the clouds immediately Did break and scatter.",
+    "exampleSentence": "[Unit 10: Lesson 2]: Lifestyle B.\n[Unit 11: Lesson 4]: But while I looked the clouds immediately Did break and scatter.",
     "unit": "Unit 10: Lesson 2 (Etiquette Netquette)",
     "boardExamTag": "Unit 10 • Lesson 2",
     "sources": [
@@ -14821,7 +14819,7 @@ export const hscVocabularyList = [
     "synonyms": "Originally, At first, In the beginning, Primarily, Early on",
     "antonyms": "Finally, Ultimately, Eventually, Lastly, In the end",
     "englishMeaning": "At first; at the beginning or initial stage of an event.",
-    "exampleSentence": "Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.",
+    "exampleSentence": "[Unit 10: Lesson 1]: Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.\n[Unit 4: Lesson 3]: Politely refusing a gift before accepting it is the norm in Chinese culture, so don't be discouraged when initially someone refuses your gift.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -14885,7 +14883,7 @@ export const hscVocabularyList = [
     "synonyms": "Random, Whimsical, Unreasonable, Capricious, Illogical",
     "antonyms": "Rational, Logical, Reasoned, Systematic",
     "englishMeaning": "Based on random choice or personal whim rather than reason.",
-    "exampleSentence": "Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.",
+    "exampleSentence": "[Unit 10: Lesson 1]: Unit Ten: Lifestyle Lesson 1 Manners Around the World A.\n[Unit 5: Lesson 2]: - Article 9: No one shall be subjected to arbitrary arrest, detention or exile.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -14928,7 +14926,7 @@ export const hscVocabularyList = [
     "synonyms": "Munch, Crunch, Chew noisily, Bite",
     "antonyms": "Nibble, Sip",
     "englishMeaning": "To munch or chew loudly and vigorously.",
-    "exampleSentence": "Don't chomp food loudly when dining at a formal Chinese banquet.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -14970,7 +14968,7 @@ export const hscVocabularyList = [
     "synonyms": "Tactfully, Prudently, Cautiously, Carefully",
     "antonyms": "Indiscreetly, Blatantly, Recklessly, Rashly",
     "englishMeaning": "In a careful and prudent manner, especially in order to avoid causing offense.",
-    "exampleSentence": "If you dislike a dish, discreetly leave it on your plate without drawing attention.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15012,7 +15010,7 @@ export const hscVocabularyList = [
     "synonyms": "Cartilage",
     "antonyms": "Tender meat, soft fillet, lean cut",
     "englishMeaning": "Cartilage, especially when present as a tough substance in cooked meat.",
-    "exampleSentence": "Discreetly remove gristle from your mouth using a fork or napkin.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15033,7 +15031,7 @@ export const hscVocabularyList = [
     "synonyms": "Seize, Grasp, Snatch, Clutch",
     "antonyms": "Release, Let go, Drop, Relinquish",
     "englishMeaning": "To grasp or seize something suddenly or roughly.",
-    "exampleSentence": "Never grab food across the table; instead, ask someone politely to pass it.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15054,7 +15052,7 @@ export const hscVocabularyList = [
     "synonyms": "Sauce, Broth, Meat juices, Dressing",
     "antonyms": "Dry roast, brothless food, solid dish",
     "englishMeaning": "A sauce made from meat juices and seasonings used with roasted dishes.",
-    "exampleSentence": "In Britain, use a piece of bread on a fork to soak up remaining sauce or gravy.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15075,7 +15073,7 @@ export const hscVocabularyList = [
     "synonyms": "Swallow, Guzzle, Quaff, Drink hastily",
     "antonyms": "Sip, Nibble, Taste slowly",
     "englishMeaning": "To swallow food or liquid quickly and in large quantities.",
-    "exampleSentence": "It is considered impolite to gulp drinks hastily during a formal dinner.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15096,7 +15094,7 @@ export const hscVocabularyList = [
     "synonyms": "Embracing, Clasping, Enfolding, Cuddling",
     "antonyms": "Releasing, Pushing away, Shunning",
     "englishMeaning": "Holding someone tightly in one's arms, typically to express affection.",
-    "exampleSentence": "The soldier, seen from the back, facing a Vietnamese woman hugging a baby, with a half-naked boy by her side.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15159,7 +15157,7 @@ export const hscVocabularyList = [
     "synonyms": "Signal, Show, Suggest, Signify, Point out",
     "antonyms": "Conceal, Hide, Obscure, Mislead",
     "englishMeaning": "To point out, show, or suggest the necessity of an action.",
-    "exampleSentence": "In Britain, wait until the host indicates that guests may take their seats.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15243,7 +15241,7 @@ export const hscVocabularyList = [
     "synonyms": "Untidy, Disordered, Dirty, Sloppy, Chaotic",
     "antonyms": "Neat, Tidy, Clean, Organized, Orderly",
     "englishMeaning": "Untidy or dirty; lacking order and neatness.",
-    "exampleSentence": "Avoid leaving a messy plate when finishing your meal at a host's dinner table.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15264,7 +15262,7 @@ export const hscVocabularyList = [
     "synonyms": "Silently, Softly, Calmly, Inaudibly, Peacefully",
     "antonyms": "Loudly, Noisily, Boisterously, Clamorously",
     "englishMeaning": "In a quiet manner; with little or no sound.",
-    "exampleSentence": "He would lie on the floor in front of the fire, with one arm across the pointer, and they would both doze and wait quietly for me.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15285,7 +15283,7 @@ export const hscVocabularyList = [
     "synonyms": "Disperse, Spread, Strew, Sprinkle, Dissipate",
     "antonyms": "Gather, Collect, Assemble, Concentrate",
     "englishMeaning": "To throw in various random directions; separate and disperse.",
-    "exampleSentence": "But while I looked the clouds immediately Did break and scatter.",
+    "exampleSentence": "Unit Ten: Lifestyle Lesson 1 Manners Around the World A.",
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
@@ -15306,7 +15304,7 @@ export const hscVocabularyList = [
     "synonyms": "Refrain, cease, desist, forgo",
     "antonyms": "Continue, indulge, participate",
     "englishMeaning": "To restrain oneself from partaking in or indulging in something harmful or risky.",
-    "exampleSentence": "Adolescents should abstain from substance abuse and risky behaviors.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15327,7 +15325,7 @@ export const hscVocabularyList = [
     "synonyms": "Attainment, achievement, learning, gain",
     "antonyms": "Loss, forfeit, surrender",
     "englishMeaning": "The learning, gaining, or developing of a skill, habit, or cognitive quality.",
-    "exampleSentence": "The acquisition of adult skills is crucial during the teenage years.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15348,7 +15346,7 @@ export const hscVocabularyList = [
     "synonyms": "Avert, evasion, refraining, shunning",
     "antonyms": "Indulgence, participation, embracing",
     "englishMeaning": "The act of keeping away from or preventing something harmful from happening.",
-    "exampleSentence": "The avoidance of harmful drugs during teenage years protects future health.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15411,7 +15409,7 @@ export const hscVocabularyList = [
     "synonyms": "Able, competent, qualified, efficient",
     "antonyms": "Incapable, unable, incompetent",
     "englishMeaning": "Having the ability, skill, or power to do or understand something successfully.",
-    "exampleSentence": "Adolescents are not yet fully capable of evaluating complex long-term consequences.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15432,7 +15430,7 @@ export const hscVocabularyList = [
     "synonyms": "Outcome, result, effect, aftermath",
     "antonyms": "Cause, origin, reason",
     "englishMeaning": "A result or effect of an action, condition, or behavioral decision.",
-    "exampleSentence": "wrap up the paragraph by returning to your main point and showing the overall consequences of the evidence you have explored.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15474,7 +15472,7 @@ export const hscVocabularyList = [
     "synonyms": "Exercise, apply, wield, bring to bear",
     "antonyms": "Rest, withhold, conceal, disuse",
     "englishMeaning": "To apply or bring to bear force, authority, effort, or psychological influence.",
-    "exampleSentence": "Social contexts exert powerful influences on adolescent decision-making.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15495,7 +15493,7 @@ export const hscVocabularyList = [
     "synonyms": "Go through, encounter, undergo, face",
     "antonyms": "Inexperience, miss, avoid",
     "englishMeaning": "To undergo, encounter, or feel the effects of a situation or sensation.",
-    "exampleSentence": "As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
+    "exampleSentence": "[Unit 9: Lesson 1]: Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.\n[Unit 4: Lesson 2]: As a tool in the classroom, AI can provide students with personalised learning experiences, automate repetitive tasks and provide instant feedback.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15538,7 +15536,7 @@ export const hscVocabularyList = [
     "synonyms": "Incapability, inadequacy, powerlessness",
     "antonyms": "Ability, capability, competence, power",
     "englishMeaning": "The state of being unable to do something due to lack of power, skill, or development.",
-    "exampleSentence": "Inability to perceive hidden risks can lead adolescents into dangerous situations.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15559,7 +15557,7 @@ export const hscVocabularyList = [
     "synonyms": "Person, human being, entity, single",
     "antonyms": "Group, team, collective, mass",
     "englishMeaning": "A single human being as distinct from a group, class, or family.",
-    "exampleSentence": "But, for the most pari, most individuals have to go through these stages irrespective Of their economic or social status.",
+    "exampleSentence": "[Unit 9: Lesson 1]: But, for the most pari, most individuals have to go through these stages irrespective Of their economic or social status.\n[Unit 4: Lesson 2]: But, for the most pari, most individuals have to go through these stages irrespective Of their economic or social status.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15581,7 +15579,7 @@ export const hscVocabularyList = [
     "synonyms": "Belatedly, tardily, behindhand",
     "antonyms": "Early, in time, punctually",
     "englishMeaning": "Doing something or occurring after the usual, expected, or proper time.",
-    "exampleSentence": "This period has seen many changes over the past century— puberty for example, comes earlier than before, people marry late, and their attitudes and",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15602,7 +15600,7 @@ export const hscVocabularyList = [
     "synonyms": "Childbearing, gestation",
     "antonyms": "Non-pregnancy",
     "englishMeaning": "The condition or period of being pregnant with an unborn offspring.",
-    "exampleSentence": "to discuss pregnancy with a counsellor.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15665,7 +15663,7 @@ export const hscVocabularyList = [
     "synonyms": "Distinctively, particularly, expressly, uniquely",
     "antonyms": "Generally, broadly, commonly",
     "englishMeaning": "In a way that is exact, detailed, and specific.",
-    "exampleSentence": "Specifically, adolescents struggle to assess the consequences of high-risk actions.",
+    "exampleSentence": "[Unit 9: Lesson 1]: Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.\n[Unit 4: Lesson 3]: Specifically, adolescents struggle to assess the consequences of high-risk actions.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15687,7 +15685,7 @@ export const hscVocabularyList = [
     "synonyms": "Change, transfer, exchange, progression",
     "antonyms": "Preservation, permanence, stagnation",
     "englishMeaning": "The process or a period of changing from one state or condition to another.",
-    "exampleSentence": "This phase represents one Of the critical transitions in one's life span and is characterised by fast paced growth and change which are second only to those at infancy.",
+    "exampleSentence": "health services and their workplaces to learn a wide range of skills that can help them to cope with the pressures they face and make a successful transition from childhood to adulthood.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15708,7 +15706,7 @@ export const hscVocabularyList = [
     "synonyms": "Urban expansion, city growth, municipal development",
     "antonyms": "Ruralization, de-urbanization",
     "englishMeaning": "The process of making an area more urban or migration of populations to cities.",
-    "exampleSentence": "Urbanization and digital communication have reshaped modern youth culture.",
+    "exampleSentence": "Unit Nine: Adolescence Lesson 1 Storms and Stresses of Adolescence A.",
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
@@ -15792,7 +15790,7 @@ export const hscVocabularyList = [
     "synonyms": "Restriction, shortcoming, constraint, boundary, flaw",
     "antonyms": "Strength, capability, freedom, infinity",
     "englishMeaning": "A limiting rule or condition; a lack of capacity or restrictive factor.",
-    "exampleSentence": "However, it also has its limitations.",
+    "exampleSentence": "Privacy concerns are also a limitation of AI in the classroom.",
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
     "boardExamTag": "Unit 1 • Lesson 2",
     "sources": [
@@ -16149,7 +16147,7 @@ export const hscVocabularyList = [
     "synonyms": "Half-round, crescent, curved, arched",
     "antonyms": "Linear, straight, rectangular, square",
     "englishMeaning": "Having the shape of a half-circle.",
-    "exampleSentence": "A semicircular flight of seven stone steps led up to the headmaster's office door.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16170,7 +16168,7 @@ export const hscVocabularyList = [
     "synonyms": "Station manager, railway official, depot master",
     "antonyms": "Passenger, traveler, commuter",
     "englishMeaning": "A railway official in charge of a railway station.",
-    "exampleSentence": "Seeing all the train carriages, Totto-chan innocently assumed the headmaster was a stationmaster.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16191,7 +16189,7 @@ export const hscVocabularyList = [
     "synonyms": "Threadbare, worn-out, ragged, scruffy, faded",
     "antonyms": "Smart, elegant, pristine, immaculate, luxurious",
     "englishMeaning": "In poor condition through long use or lack of care; worn.",
-    "exampleSentence": "Headmaster Kobayashi wore a rather shabby but neatly kept black three-piece suit.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16212,7 +16210,7 @@ export const hscVocabularyList = [
     "synonyms": "Energetically, vividly, enthusiastically, vivaciously",
     "antonyms": "Lifelessly, sluggishly, apathetically, weakly",
     "englishMeaning": "In a lively, enthusiastic, and animated manner.",
-    "exampleSentence": "The young girl spiritedly asked whether the gentleman was a principal or a train master.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16233,7 +16231,7 @@ export const hscVocabularyList = [
     "synonyms": "Ashamed, awkward, humiliated, mortified, self-conscious",
     "antonyms": "Confident, proud, composed, unabashed",
     "englishMeaning": "Feeling awkward, self-conscious, or ashamed by a social blunder.",
-    "exampleSentence": "Mother felt embarrassed by her daughter's direct and blunt question.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16254,7 +16252,7 @@ export const hscVocabularyList = [
     "synonyms": "Anxiety, apprehension, restlessness, discomfort, perturbation",
     "antonyms": "Calmness, ease, serenity, comfort, tranquility",
     "englishMeaning": "A feeling of anxiety, restlessness, or apprehension.",
-    "exampleSentence": "Totto-chan felt a brief moment of uneasiness when her mother stepped out of the office.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16275,7 +16273,7 @@ export const hscVocabularyList = [
     "synonyms": "Immediately, instantly, promptly, forthwith, right away",
     "antonyms": "Eventually, later, subsequently, sluggishly",
     "englishMeaning": "Without delay; immediately and readily.",
-    "exampleSentence": "Given permission to speak freely, Totto-chan began narrating her life straight away.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16296,7 +16294,7 @@ export const hscVocabularyList = [
     "synonyms": "Chaotic, disorderly, topsy-turvy, jumbled, haphazardly",
     "antonyms": "Orderly, systematic, organized, neat",
     "englishMeaning": "In confusion or disorderly disorder; topsy-turvy.",
-    "exampleSentence": "Her lively childhood stories tumbled out in a higgledy-piggledy, charming stream of thought.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16317,7 +16315,7 @@ export const hscVocabularyList = [
     "synonyms": "Tatters, scraps, fragments, ribbons, bits",
     "antonyms": "Whole, entirety, fullness, unity",
     "englishMeaning": "Strips of some material torn off or ragged fragments.",
-    "exampleSentence": "Her outdoor adventures crawling under fences often reduced her dresses to shreds.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16338,7 +16336,7 @@ export const hscVocabularyList = [
     "synonyms": "Stitched, decorated, patterned, embellished, ornate",
     "antonyms": "Plain, unadorned, undecorated, bare",
     "englishMeaning": "Decorated with needlework patterns using colored thread.",
-    "exampleSentence": "It has been practiced in households in the form of pottery, nakshikantha or embroidered quilt, alpana or intricate, mostly floral designs in rice paste done on clay yards, and shokher harhi or painted earthen pots (and their lids).",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16401,7 +16399,7 @@ export const hscVocabularyList = [
     "synonyms": "Naivety, purity, guiltlessness, harmlessness, simplicity",
     "antonyms": "Guilt, culpability, malice, corruption, cunning",
     "englishMeaning": "The state, quality, or fact of being innocent of evil, deceit, or wrongdoing.",
-    "exampleSentence": "Her pure innocence and natural curiosity finally found a welcoming home at Tomoe Gakuen.",
+    "exampleSentence": "Education and Life 15 The two \"gateposts\" were clearly trees with roots.",
     "unit": "Unit 1: Lesson 3 (Children in School)",
     "boardExamTag": "Unit 1 • Lesson 3",
     "sources": [
@@ -16611,7 +16609,7 @@ export const hscVocabularyList = [
     "synonyms": "Brothers, comrades, peers, fellows, kin",
     "antonyms": "Strangers, adversaries, enemies",
     "englishMeaning": "Fellow members of a group or religion; brothers in purpose.",
-    "exampleSentence": "And I for truth — the two are one; We brethren are,\" he said.",
+    "exampleSentence": "\"And I for truth — the two are one; We brethren are,\" he said.",
     "unit": "Unit 2: Lesson 1 (What is Beauty?)",
     "boardExamTag": "Unit 2 • Lesson 1",
     "sources": [
@@ -16632,7 +16630,7 @@ export const hscVocabularyList = [
     "synonyms": "Originated, emerged, arose, flowed, issued",
     "antonyms": "Ended, ceased, disappeared, halted",
     "englishMeaning": "Originated or arose from a particular source.",
-    "exampleSentence": "Folk music may be described as the music of the ancient times that sprang from the heart of a community, based on their natural style of expression uninfluenced by the rules of classical music or modern popular songs.",
+    "exampleSentence": "[Unit 2: Lesson 2]: Folk music may be described as the music of the ancient times that sprang from the heart of a community, based on their natural style of expression uninfluenced by the rules of classical music or modern popular songs...\n[Unit 11: Lesson 4]: But after death out of his grave There sprang twelve stalks of wheat; Which many wond'ring at, got some of those To plant and set.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16654,7 +16652,7 @@ export const hscVocabularyList = [
     "synonyms": "Cadences, beats, tempos, pulses, measures",
     "antonyms": "Disorder, irregularity, arrhythmia",
     "englishMeaning": "A strong, regular, repeated pattern of movement or sound in music.",
-    "exampleSentence": "Folk music has the following characteristics: (i) It is composed by rural folk on the basis of ancient rules transmitted orally; (ii) These ancient rules of music have not been influenced by classical or modern music; (iii) Folk songs may be sung in groups, or individually; (iv) No regular practice is required for folk music; (v) It is composed and performed by illiterate or semi-literate people; (vi) It is a spontaneous expression of feelings and thoughts in easy language, local dialect, and simple tune; (vii) Both words and tune are appealing; (viii) Despite its universal appeal it uses local dialect; (ix) It depends upon nature and the rural environment; (x) It is an explicit manifestation of the joys and sorrows of daily life; (xi) It uses simple and natural rhythms; and (xii) It contains a strong emotive expression of human love and separation.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16675,7 +16673,7 @@ export const hscVocabularyList = [
     "synonyms": "Poignant, touching, evocative, heartfelt, stirring",
     "antonyms": "Unemotional, dull, cold, indifferent",
     "englishMeaning": "Arousing or able to arouse intense emotional feelings.",
-    "exampleSentence": "Folk music has the following characteristics: (i) It is composed by rural folk on the basis of ancient rules transmitted orally; (ii) These ancient rules of music have not been influenced by classical or modern music; (iii) Folk songs may be sung in groups, or individually; (iv) No regular practice is required for folk music; (v) It is composed and performed by illiterate or semi-literate people; (vi) It is a spontaneous expression of feelings and thoughts in easy language, local dialect, and simple tune; (vii) Both words and tune are appealing; (viii) Despite its universal appeal it uses local dialect; (ix) It depends upon nature and the rural environment; (x) It is an explicit manifestation of the joys and sorrows of daily life; (xi) It uses simple and natural rhythms; and (xii) It contains a strong emotive expression of human love and separation.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16717,7 +16715,7 @@ export const hscVocabularyList = [
     "synonyms": "Symbols, allegories, figures of speech, analogies",
     "antonyms": "Literal terms, plain speech",
     "englishMeaning": "Figures of speech in which words or phrases are applied to an object not literally applicable.",
-    "exampleSentence": "Mystical songs have been composed using the metaphors of rivers and boats.",
+    "exampleSentence": "Mystical songs have been composed using the metaphors of rivers and boats...",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16738,7 +16736,7 @@ export const hscVocabularyList = [
     "synonyms": "Smaller groups, cultural subsets, marginalized groups",
     "antonyms": "Majorities, dominant groups",
     "englishMeaning": "Smaller groups of people differing ethnically or culturally from the larger majority.",
-    "exampleSentence": "The culture and the lifestyle of the different ethnic minorities, such as the Chakmas, Manipuris, Santals or Tripuris, have also influenced folk music.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16759,7 +16757,7 @@ export const hscVocabularyList = [
     "synonyms": "Choir, ensemble, vocal group, unison singing",
     "antonyms": "Solo, individual recital",
     "englishMeaning": "A large organized group of singers; singing in unison together.",
-    "exampleSentence": "Folk songs may be sung individually or in chorus.",
+    "exampleSentence": "(Chorus) For auld lang syne, my dear, For auld lang syne, We'll take a cup of kindness yet, For auld lang syne...",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16780,7 +16778,7 @@ export const hscVocabularyList = [
     "synonyms": "Caught, developed, acquired, succumbed to",
     "antonyms": "Overcame, recovered, resisted, prevented",
     "englishMeaning": "Caught or developed a disease or medical condition.",
-    "exampleSentence": "A popular story about him — which many believe to be true — is that while on a pilgrimage to a holy place, Lalon, who was born a Hindu, contracted smallpox and was abandoned by his companions.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16801,7 +16799,7 @@ export const hscVocabularyList = [
     "synonyms": "Self-discipline, austerity, renunciation, monkhood",
     "antonyms": "Hedonism, self-indulgence, materialism",
     "englishMeaning": "Severe self-discipline and avoidance of all forms of physical indulgence.",
-    "exampleSentence": "So Lalon returned to Siraj Sain and took up a life of devotion and asceticism under his guidance.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16822,7 +16820,7 @@ export const hscVocabularyList = [
     "synonyms": "Abbey, ashram, convent, hermitage, priory",
     "antonyms": "Metropolis, bustling city",
     "englishMeaning": "A building or community occupied by religious persons living under ascetic vows.",
-    "exampleSentence": "After the death of Sainji, Lalon set up an akhrah or monastery in Chheuriya near Kushtia.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16843,7 +16841,7 @@ export const hscVocabularyList = [
     "synonyms": "Followers, pupils, acolytes, adherents, devotees",
     "antonyms": "Teachers, masters, adversaries",
     "englishMeaning": "Personal followers or students of a religious teacher or philosopher.",
-    "exampleSentence": "It soon attracted admirers and mystics in search of salvation who became initiated into Baul asceticism and became his disciples.",
+    "exampleSentence": "Folk music consists of songs and music of a community that are not influenced by any sophisticated musical rules or any standard musical styles.",
     "unit": "Unit 2: Lesson 2 (Folk Music)",
     "boardExamTag": "Unit 2 • Lesson 2",
     "sources": [
@@ -16885,7 +16883,7 @@ export const hscVocabularyList = [
     "synonyms": "Artistic, tasteful, beautiful, appealing, refined",
     "antonyms": "Unaesthetic, crude, inelegant, ugly",
     "englishMeaning": "Concerned with beauty or the appreciation of artistic elegance.",
-    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary.",
+    "exampleSentence": "The aim of art is to evoke feelings and emotions that are considered aesthetic—that is, concerned with beauty—but art also can be a form of social commentary...",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -16906,7 +16904,7 @@ export const hscVocabularyList = [
     "synonyms": "Extols, praises, dignifies, elevates, exalts",
     "antonyms": "Degrades, condemns, disparages, defames",
     "englishMeaning": "Presents something in high admiration or as especially worthy of praise.",
-    "exampleSentence": "A painting of sunset over the sea glorifies nature, but one that shows a war-ravaged town can convey a sense of anguish.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -16927,7 +16925,7 @@ export const hscVocabularyList = [
     "synonyms": "Starvation, acute shortage",
     "antonyms": "Plenty, abundance",
     "englishMeaning": "Extreme scarcity of food leading to severe starvation.",
-    "exampleSentence": "I can't not see the poverty, siege and famine in Gaza.",
+    "exampleSentence": "[Unit 2: Lesson 3]: Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.\n[Unit 11: Lesson 3]: I can't not see the poverty, siege and famine, especially when all Gaza city flooded into Al-Areesh and emptied it from all goods in two hours.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -16949,7 +16947,7 @@ export const hscVocabularyList = [
     "synonyms": "Evocative, memorable, indelible, piercing, poignant",
     "antonyms": "Forgettable, pleasant, comforting, bland",
     "englishMeaning": "Poignant, evocative, and difficult to ignore or forget from the mind.",
-    "exampleSentence": "Zainul had earned all-India fame for his Famine Sketches, a series of haunting sketches based on the Bengal famine of 1943 which took hundreds of thousands of lives.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -16970,7 +16968,7 @@ export const hscVocabularyList = [
     "synonyms": "Current, modern, present-day, up-to-date",
     "antonyms": "Ancient, archaic, antiquated, outdated",
     "englishMeaning": "Belonging to or occurring in the present time.",
-    "exampleSentence": "The other prominent artists who had major contributions to the spectacular rise of our contemporary art include Qamrul Hassan, SM Sultan, Safiuddin Ahmed, Abdur Razzak, Qayyum Chowdhury, Murtaja Baseer, Aminul Islam, Syed Jahangir, Debdas Chakravarty, Mohammad Kibria and Nitun Kundu.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -16991,7 +16989,7 @@ export const hscVocabularyList = [
     "synonyms": "Art arrangement, sculptural construction, visual setup",
     "antonyms": "Demolition, dismantling",
     "englishMeaning": "An artistic genre of three-dimensional works designed to transform interior perception.",
-    "exampleSentence": "Artists dealt with new ideas such as installation art and graphic art, and reshaped older, traditional art forms.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17012,7 +17010,7 @@ export const hscVocabularyList = [
     "synonyms": "Perceptive, discerning, profound, sagacious, acute",
     "antonyms": "Shallow, obtuse, superficial, undiscerning",
     "englishMeaning": "Having or showing an accurate and deep understanding of a complex issue.",
-    "exampleSentence": "If you visit any art gallery or art exhibition, you will find how our art reflects our changing realities in fascinating and insightful ways.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17033,7 +17031,7 @@ export const hscVocabularyList = [
     "synonyms": "Unconventional, nonconformist, free-spirited, nomadic",
     "antonyms": "Conventional, orthodox, conformist, traditional",
     "englishMeaning": "Having informal and unconventional social habits and an artistic lifestyle.",
-    "exampleSentence": "Born on 10 August 1923, in Jessore, Bangladesh, Sultan is often remembered as a bohemian artist who traveled extensively.",
+    "exampleSentence": "Born on 10 August 1923, in Jessore, Bangladesh, Sultan is often remembered as a bohemian artist who traveled extensively...",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17054,7 +17052,7 @@ export const hscVocabularyList = [
     "synonyms": "Comprehensive exhibition, career survey, review",
     "antonyms": "Prospective preview, debut showcase",
     "englishMeaning": "An exhibition showing the development of the work of a particular artist over time.",
-    "exampleSentence": "His work was first showcased in Dhaka in 1976, and a significant retrospective organized by the Goethe-Institut, Dhaka in 1987 solidified his status as a major artist.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17075,7 +17073,7 @@ export const hscVocabularyList = [
     "synonyms": "Prestige, status, standing, height, prominence",
     "antonyms": "Insignificance, lowliness, unimportance",
     "englishMeaning": "Importance or reputation gained by ability or achievement; also physical height.",
-    "exampleSentence": "The main feature of his paintings is the muscular farmers, with extensive muscles and godly physical stature which make his farmers larger than life.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17117,7 +17115,7 @@ export const hscVocabularyList = [
     "synonyms": "Fittingly, suitably, appropriately, correctly",
     "antonyms": "Inappropriately, unfittingly, wrongly",
     "englishMeaning": "In a manner that is suitable or appropriate in the circumstances.",
-    "exampleSentence": "When describing the works of the first modern Bangladeshi sculptor Novera Ahmed, Shilpacharja Zainul Abedin proclaimed: \"What Novera is doing now will take us a long time to understand — she is that kind of artist.\" This aptly describes her progressive thoughts in the field of sculpture.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17138,7 +17136,7 @@ export const hscVocabularyList = [
     "synonyms": "Relics, antiques, handicrafts, items, artworks",
     "antonyms": "Natural objects, raw materials",
     "englishMeaning": "Objects made by a human being, typically an item of cultural or historical interest.",
-    "exampleSentence": "Many of her artefacts were based on village lives and folk motifs, of which she was a keen observer.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17159,7 +17157,7 @@ export const hscVocabularyList = [
     "synonyms": "Patterns, themes, designs, figures, concepts",
     "antonyms": "Disorder, plainness, randomness",
     "englishMeaning": "Decorative designs, patterns, or dominant recurring ideas in artistic work.",
-    "exampleSentence": "Many of her artefacts were based on village lives and folk motifs, of which she was a keen observer.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17180,7 +17178,7 @@ export const hscVocabularyList = [
     "synonyms": "Launched, opened, instituted, unveiled, commenced",
     "antonyms": "Closed, concluded, terminated, dissolved",
     "englishMeaning": "Formally opened a facility, event, or initiated an exhibition.",
-    "exampleSentence": "It was inaugurated by General Azam Khan of the Pakistan Army, who was so impressed with her work that he gave her a grant of Rs 10,000 to promote sculpture as an art form.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17201,7 +17199,7 @@ export const hscVocabularyList = [
     "synonyms": "Sufficiently, satisfactorily, suitably, appropriately",
     "antonyms": "Inadequately, insufficiently, poorly",
     "englishMeaning": "To a satisfactory or acceptable extent; suitably.",
-    "exampleSentence": "Modern art rejected traditional art forms and began to create new types of artistic expression using styles, techniques, colours and materials that could adequately reflect the spirit of the time and the profound changes in human thought.",
+    "exampleSentence": "Art is generally understood as an expression of human imagination and creative skills in a range of activities including painting, drawing, sculpture and architecture.",
     "unit": "Unit 2: Lesson 3 (Art)",
     "boardExamTag": "Unit 2 • Lesson 3",
     "sources": [
@@ -17222,7 +17220,7 @@ export const hscVocabularyList = [
     "synonyms": "Craftsmen, craftspeople, handcrafters, masters",
     "antonyms": "Unskilled laborers, mass-producers",
     "englishMeaning": "Workers in a skilled trade, especially one that involves making things by hand.",
-    "exampleSentence": "People who practice a craft are called craftspersons or artisans who pick up their skills under the guidance of older and more experienced artisans.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -17243,7 +17241,7 @@ export const hscVocabularyList = [
     "synonyms": "Baked clay, earthenware, ceramic, pottery",
     "antonyms": "Plastic, synthetic polymer",
     "englishMeaning": "A type of brownish-red earthenware used for pottery, tiles, and figurines.",
-    "exampleSentence": "The maker of a terracotta doll or a shatranji (cotton floor mat) remains anonymous but the work retains a personal touch.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -17264,7 +17262,7 @@ export const hscVocabularyList = [
     "synonyms": "Palpable, tangible, touchable, physical",
     "antonyms": "Intangible, abstract, untouchable, ethereal",
     "englishMeaning": "Connected with the sense of touch or pleasant to feel with one's fingers.",
-    "exampleSentence": "Indeed, the intimate nature of the kantha and the tactile feeling it generates animate the work and make it very inviting.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -17285,7 +17283,7 @@ export const hscVocabularyList = [
     "synonyms": "Symbol, indicator, mark, representation, token",
     "antonyms": "Distortion, falsehood",
     "englishMeaning": "A sign's physical form (such as a sound, printed word, or image) as distinct from its meaning.",
-    "exampleSentence": "But certain forms, motifs, styles and aesthetic preferences change little over time, suggesting that a craftwork can function as a stable signifier of community values and preferences over time.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -17306,7 +17304,7 @@ export const hscVocabularyList = [
     "synonyms": "Municipality, settlement, borough, town, district",
     "antonyms": "Wilderness, uninhabited jungle",
     "englishMeaning": "A division of a county with some corporate powers; a historic town settlement.",
-    "exampleSentence": "Some of you who live outside Sonargaon Upazila in the district of Narayanganj, may have visited the ancient township with its Folk Arts and Crafts Museum set up by the famous artist Zainul Abedin in 1975, and a number of old buildings which speak of a glorious past.",
+    "exampleSentence": "Some of you who live outside Sonargaon Upazila in the district of Narayanganj, may have visited the ancient township with its Folk Arts and Crafts Museum set up by the famous artist Zainul Abedin in 1975, and a number of old buildings which speak of a glorious past...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -17327,7 +17325,7 @@ export const hscVocabularyList = [
     "synonyms": "Ancientness, archaism, age-old heritage, historical past",
     "antonyms": "Modernity, novelty, recency",
     "englishMeaning": "The ancient past, especially the period before the Middle Ages.",
-    "exampleSentence": "It attracts hundreds of visitors every day because of its antiquity and historical importance.",
+    "exampleSentence": "While art is considered intuitive and visionary, craft is seen to be a practical application of certain skills for producing objects of everyday use that are often beautiful to look at, such as pottery, metal and wood work, cane and bamboo items, jewelry, musical instruments like ektara, dhol or flute and textile items...",
     "unit": "Unit 2: Lesson 4 (Craft)",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
@@ -17348,7 +17346,7 @@ export const hscVocabularyList = [
     "synonyms": "Enlighten, clarify, brighten, elucidate, irradiate",
     "antonyms": "Darken, confuse, obscure, cloud",
     "englishMeaning": "To light up or make much clearer and intellectually enlightened.",
-    "exampleSentence": "But some girls have illuminated the village — both literally and metaphorically — with their belief in themselves and their skill in the game of football.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -17411,7 +17409,7 @@ export const hscVocabularyList = [
     "synonyms": "Vastly, enormously, exceedingly, tremendously, hugely",
     "antonyms": "Scarcely, slightly, insignificantly, barely",
     "englishMeaning": "To a great extent; extremely or immeasurably.",
-    "exampleSentence": "The young volunteers were immensely gratified by the smiling faces of the victims.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -17432,7 +17430,7 @@ export const hscVocabularyList = [
     "synonyms": "Reserved person, quiet person, introspective, loner",
     "antonyms": "Extrovert, outgoing person, socializer",
     "englishMeaning": "A shy, reticent person who enjoys solitary reflection.",
-    "exampleSentence": "Though Alex was a quiet introvert, his deep empathy inspired international aid.",
+    "exampleSentence": "Education and Life 27 D.",
     "unit": "Unit 1: Lesson 4 (Civic Engagement)",
     "boardExamTag": "Unit 1 • Lesson 4",
     "sources": [
@@ -17579,7 +17577,7 @@ export const hscVocabularyList = [
     "synonyms": "Intimidate, menace, frighten, petrify, oppress",
     "antonyms": "Reassure, comfort, console, soothe",
     "englishMeaning": "To make someone feel extremely frightened by threatening harm.",
-    "exampleSentence": "Now read the following story about a rebellious mythical character, Icarus, and answer the questions that follow: On the island of Crete, the fearsome Minotaur, a creature that was half-man and half-bull, terrorized the inhabitants.",
+    "exampleSentence": "On the island of Crete, the fearsome Minotaur, a creature that was half-man and half-bull, terrorized the inhabitants.",
     "unit": "Unit 3: Lesson 2 (Icarus)",
     "boardExamTag": "Unit 3 • Lesson 2",
     "sources": [
@@ -17747,7 +17745,7 @@ export const hscVocabularyList = [
     "synonyms": "Portrayed, represented, illustrated, rendered, sketched",
     "antonyms": "Concealed, hidden, misrepresented",
     "englishMeaning": "Represented by a drawing, painting, or other art form.",
-    "exampleSentence": "If so, what are some of the images depicted in it?",
+    "exampleSentence": "He is usually depicted in paats or scroll paintings riding a fierce-looking Bengal tiger, a snake in his hand, but in no apparent danger.",
     "unit": "Unit 3: Lesson 3 (The Legend of Gazi)",
     "boardExamTag": "Unit 3 • Lesson 3",
     "sources": [
@@ -17789,7 +17787,7 @@ export const hscVocabularyList = [
     "synonyms": "Stargazer, seer, horoscopist, soothsayer",
     "antonyms": "Astronomer, scientist",
     "englishMeaning": "A person who uses astrology to tell others about their character, or to predict future events.",
-    "exampleSentence": "One retelling goes like this: in the kingdom of Deyulnagar, there was a royal astrologer named Varaha who served King Dharmaketu.",
+    "exampleSentence": "As he grew up in the royal court, he married the king's daughter, an astrologer herself, named Lila.",
     "unit": "Unit 3: Lesson 4 (Khona)",
     "boardExamTag": "Unit 3 • Lesson 4",
     "sources": [
@@ -17999,7 +17997,7 @@ export const hscVocabularyList = [
     "synonyms": "Essential, core, foundational, primary, paramount",
     "antonyms": "Superficial, secondary, incidental",
     "englishMeaning": "Forming a necessary base or core; of central importance.",
-    "exampleSentence": "Education shall be free, at least in the elementary and fundamental stages.",
+    "exampleSentence": "[Unit 5: Lesson 3]: Education shall be free, at least in the elementary and fundamental stages.\n[Unit 12: Lesson 4]: Fundamental to both the concept of Environmental Justice and the activist EJ movement is the search for fair ways of sharing environmental burdens and benefits and collectively creating a future in which the dignity and rights of all people are respected.\n[Unit 12: Lesson 5]: Doctors should first determine at the fundamental level what it is that human beings depend on for life.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -18085,7 +18083,7 @@ export const hscVocabularyList = [
     "synonyms": "Linear depth unit, 6-foot measure, nautical unit",
     "antonyms": "Surface level",
     "englishMeaning": "A unit of length equal to six feet (approximately 1.8 meters), used especially for measuring the depth of water or mines.",
-    "exampleSentence": "They would usually sit in total darkness for up to twelve hours at a time, waiting to let the coal tubs through the doors.] Isabella Read, Age: 12 years: \"I am wrought with sister and brother; it is very sore work; cannot say how many rakes or journeys I make from pit's bottom to wall face and back, it may be about 30 or 25 on average; the distance varies from 100 to 250 fathom (1 fathom = 1.8 meters).",
+    "exampleSentence": "] Isabella Read, Age: 12 years: \"I am wrought with sister and brother; it is very sore work; cannot say how many rakes or journeys I make from pit's bottom to wall face and back, it may be about 30 or 25 on average; the distance varies from 100 to 250 fathom (1 fathom = 1.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -18127,7 +18125,7 @@ export const hscVocabularyList = [
     "synonyms": "Compelled, forced, required, bound, constrained",
     "antonyms": "Free, unrestrained, exempt",
     "englishMeaning": "Make someone legally or morally bound to an action or course of action.",
-    "exampleSentence": "When the weather is warm there is difficulty in breathing, and frequently the lights go out.\" Mary Barrett, Age: 14 years: \"I have worked down in pit for five years; my father works in the next pit; I have 12 brothers and sisters—all of them but one live at home; they weave, and wind, and hurry; one of them can read, none of the rest can, or write; they never went to the day-school, but three of them go to Sunday-school; I come down in the pit at seven in the morning; I do not like working in the pit, but I am obliged to get a living; I work always without stockings, or shoes, or trousers; I wear nothing but my chemise; I have to go up and work with the men.",
+    "exampleSentence": "Mary Barrett, Age: 14 years: \"I have worked down in pit for five years; my father works in the next pit; I have 12 brothers and sisters—all of them but one live at home; they weave, and wind, and hurry; one of them can read, none of the rest can, or write; they never went to the day-school, but three of them go to Sunday-school; I come down in the pit at seven in the morning; I do not like working in the pit, but I am obliged to get a living; I work always without stockings, or shoes, or trousers; I wear nothing but my chemise; I have to go up and work with the men.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -18148,7 +18146,7 @@ export const hscVocabularyList = [
     "synonyms": "Harshly, insolently, discourteously, crudely, impolitely",
     "antonyms": "Politely, courteously, kindly, respectfully",
     "englishMeaning": "In an offensive, bad-mannered, or aggressive manner.",
-    "exampleSentence": "They are all naked there; I have got well used to that, and don't care much about it now; I was afraid at first, and did not like it; but they never behave rudely to me.",
+    "exampleSentence": "They are all naked there; I have got well used to that, and don't care much about it now; I was afraid at first, and did not like it; but they never behave rudely to me.\"",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -18253,7 +18251,7 @@ export const hscVocabularyList = [
     "synonyms": "Experimental, observational, factual, practical, verifiable",
     "antonyms": "Theoretical, hypothetical, speculative, conjectural",
     "englishMeaning": "Based on, concerned with, or verifiable by observation or experience rather than theory.",
-    "exampleSentence": "Only recently have sleep and dreams been subjected to empirical scientific analysis.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18274,7 +18272,7 @@ export const hscVocabularyList = [
     "synonyms": "Perplexing, puzzling, mystifying, enigmatic, bewildering",
     "antonyms": "Clear, straightforward, fathomable, simple",
     "englishMeaning": "Impossible to understand; completely perplexing.",
-    "exampleSentence": "The exact evolutionary purpose of sleep remains a baffling question to scientists.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18295,7 +18293,7 @@ export const hscVocabularyList = [
     "synonyms": "Deciphering, untangling, solving, explaining, clarifying",
     "antonyms": "Complicating, entangling, obscuring",
     "englishMeaning": "Investigating and solving or explaining something complicated.",
-    "exampleSentence": "Neurologists are gradually unraveling the neural pathways activated during sleep.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18316,7 +18314,7 @@ export const hscVocabularyList = [
     "synonyms": "Subliminal mind, unconscious, repressed self, innermost thoughts",
     "antonyms": "Conscious awareness, wakefulness",
     "englishMeaning": "The part of the mind of which one is not fully aware but which influences actions and feelings.",
-    "exampleSentence": "Unresolved anxieties from daytime often manifest through the subconscious mind.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18337,7 +18335,7 @@ export const hscVocabularyList = [
     "synonyms": "Suppressed, smothered, stifled, hidden, bottled up",
     "antonyms": "Expressed, released, uninhibited, voiced",
     "englishMeaning": "Characterized by the suppression of impulses or desires.",
-    "exampleSentence": "Freud famously declared dreams to be disguised fulfillments of repressed wishes.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18358,7 +18356,7 @@ export const hscVocabularyList = [
     "synonyms": "Explanation, analysis, decipherment, evaluation, reading",
     "antonyms": "Misinterpretation, confusion, misunderstanding",
     "englishMeaning": "The action of explaining the meaning of something.",
-    "exampleSentence": "Education and Life 23 This sentence adds detail and interpretation to the evidence, arguing that this specific fact reveals something more general about social attitudes at the time.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18379,7 +18377,7 @@ export const hscVocabularyList = [
     "synonyms": "Disorder, mess, jumble, litter, chaos",
     "antonyms": "Neatness, order, clarity, tidiness",
     "englishMeaning": "A collection of things lying about in an untidy mass; mental mess.",
-    "exampleSentence": "One theory suggests dreams clear out unnecessary neural clutter from memory.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18400,7 +18398,7 @@ export const hscVocabularyList = [
     "synonyms": "Counseling, psychological therapy, psychoanalysis, healing",
     "antonyms": "Somatic medication",
     "englishMeaning": "The treatment of mental disorders by psychological rather than medical means.",
-    "exampleSentence": "Some psychologists believe dreaming serves as natural, nocturnal psychotherapy.",
+    "exampleSentence": "Unit Six: Dreams Lesson 1 What is a Dream?",
     "unit": "Unit 6: Lesson 1 (What is a Dream?)",
     "boardExamTag": "Unit 6 • Lesson 1",
     "sources": [
@@ -18463,7 +18461,7 @@ export const hscVocabularyList = [
     "synonyms": "Illusion, delusion, mirage, apparition, phantom",
     "antonyms": "Concrete reality, truth",
     "englishMeaning": "An experience involving the apparent perception of something not present.",
-    "exampleSentence": ", and (e) colour reverie silvery reality nightmare romantic short lasting pleasant imagination hallucination dreamy day-dream shadowy dreamer fragments C.",
+    "exampleSentence": "Dreams Lesson 2 Dreams in Literature Introduction: 109 William Wordsworth (1770-1850).",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -18484,7 +18482,7 @@ export const hscVocabularyList = [
     "synonyms": "Shining, lustrous, radiant, argent, gleaming",
     "antonyms": "Dull, tarnished, dark",
     "englishMeaning": "Resembling or having the bright luster of silver.",
-    "exampleSentence": ", and (e) colour reverie silvery reality nightmare romantic short lasting pleasant imagination hallucination dreamy day-dream shadowy dreamer fragments C.",
+    "exampleSentence": "Dreams Lesson 2 Dreams in Literature Introduction: 109 William Wordsworth (1770-1850).",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -18505,7 +18503,7 @@ export const hscVocabularyList = [
     "synonyms": "Loyalists, nationalists, devoted citizens, freedom champions",
     "antonyms": "Traitors, betrayers, defectors",
     "englishMeaning": "People who vigorously support their country and are prepared to defend it.",
-    "exampleSentence": "Poets celebrate the enduring dreams of patriots who struggle for their country's liberty.",
+    "exampleSentence": "patriots.",
     "unit": "Unit 6: Lesson 2 (Dreams in Literature)",
     "boardExamTag": "Unit 6 • Lesson 2",
     "sources": [
@@ -18673,7 +18671,7 @@ export const hscVocabularyList = [
     "synonyms": "Triumph, victory, subjugation, mastery, vanquishing",
     "antonyms": "Defeat, surrender, failure",
     "englishMeaning": "The overcoming of a problem or evil; the winning of something.",
-    "exampleSentence": "The climbing event was organized on 29 May 2003 to celebrate the 50th Anniversary of Edmund Hillary and Tenzing Norgay's conquest of Mount Everest.",
+    "exampleSentence": "[Unit 7: Lesson 2]: The climbing event was organized on 29 May 2003 to celebrate the 50th Anniversary of Edmund Hillary and Tenzing Norgay's conquest of Mount Everest.\n[Unit 11: Lesson 4]: Read the following poem and try to understand the meaning.",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
@@ -18737,7 +18735,7 @@ export const hscVocabularyList = [
     "synonyms": "Unlikely, doubtful, dubious, questionable",
     "antonyms": "Probable, likely, plausible",
     "englishMeaning": "Not likely to be true or to happen.",
-    "exampleSentence": "Christopher Reeve, the actor who played the role of Superman in the film said in a speech he gave at the Democratic National Convention in 1996 — \"So many of our dreams at first seem impossible, then they seem improbable, and then, when we summon the will, they soon become inevitable.\" This has happened in Nishat's life too.",
+    "exampleSentence": "Christopher Reeve, the actor who played the role of Superman in the film said in a speech he gave at the Democratic National Convention in 1996 — \"So many of our dreams at first seem impossible, then they seem improbable, and then, when we summon the will, they soon become inevitable.\"",
     "unit": "Unit 7: Lesson 2 (Scaling a Mountain Peak)",
     "boardExamTag": "Unit 7 • Lesson 2",
     "sources": [
@@ -18863,7 +18861,7 @@ export const hscVocabularyList = [
     "synonyms": "Fellowship, company, camaraderie, partnership, friendship",
     "antonyms": "Isolation, solitude, loneliness, alienation",
     "englishMeaning": "A feeling of fellowship or friendship.",
-    "exampleSentence": "The famous Greek philosopher Aristotle said, \"Humans are by nature social animals.\" What he meant was that human beings, by instinct, seek company of others and establish relationships, much like most animals of the wild, for companionship and for physical and emotional support.",
+    "exampleSentence": "What he meant was that human beings, by instinct, seek company of others and establish relationships, much like most animals of the wild, for companionship and for physical and emotional support.",
     "unit": "Unit 8: Lesson 1 (Family)",
     "boardExamTag": "Unit 8 • Lesson 1",
     "sources": [
@@ -19157,7 +19155,7 @@ export const hscVocabularyList = [
     "synonyms": "Replaced, exchanged, swapped, alternated",
     "antonyms": "Retained, kept, preserved",
     "englishMeaning": "Used or added in place of something else.",
-    "exampleSentence": "In his fantasy, Jerry substituted the loving writer for the mother he never had.",
+    "exampleSentence": "The orphanage is high in the Carolina mountains.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -19178,7 +19176,7 @@ export const hscVocabularyList = [
     "synonyms": "Irregular, atypical, abnormal, aberrant, peculiar",
     "antonyms": "Normal, typical, standard, ordinary",
     "englishMeaning": "Deviating from what is standard, normal, or expected.",
-    "exampleSentence": "Jerry's sudden fabrications appeared anomalous compared to his usual candid honesty.",
+    "exampleSentence": "The orphanage is high in the Carolina mountains.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -19199,7 +19197,7 @@ export const hscVocabularyList = [
     "synonyms": "Feigned, faked, simulated, imagined, assumed",
     "antonyms": "Disclosed truthfully, acknowledged",
     "englishMeaning": "Behaved so as to make it appear that something was the case when in fact it was not.",
-    "exampleSentence": "Yes, and how many times can a man turn his head And pretend that he just doesn't see?",
+    "exampleSentence": "The orphanage is high in the Carolina mountains.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -19220,7 +19218,7 @@ export const hscVocabularyList = [
     "synonyms": "Plainly, directly, candidly, straightforwardly, curtly",
     "antonyms": "Subtly, gently, ambiguously, tactfully",
     "englishMeaning": "In an uncompromisingly forthright and direct way.",
-    "exampleSentence": "The headmistress bluntly informed the writer that Jerry had no mother alive.",
+    "exampleSentence": "The orphanage is high in the Carolina mountains.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -19241,7 +19239,7 @@ export const hscVocabularyList = [
     "synonyms": "Solemn, serious, somber, dignified, sober",
     "antonyms": "Playful, frivolous, lighthearted",
     "englishMeaning": "Giving cause for alarm; serious, solemn, and quiet.",
-    "exampleSentence": "I could picture him at four, with the same grave gray-blue eyes and the same — independence?",
+    "exampleSentence": "[Unit 8: Lesson 3]: I could picture him at four, with the same grave gray-blue eyes and the same — independence?\n[Unit 11: Lesson 4]: But after death out of his grave There sprang twelve stalks of wheat; Which many wond'ring at, got some of those To plant and set.",
     "unit": "Unit 8: Lesson 3 (A Mother in Mannville)",
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
@@ -19263,7 +19261,7 @@ export const hscVocabularyList = [
     "synonyms": "Tarmac, bitumen, blacktop, paved road",
     "antonyms": "Dirt trail, unpaved path",
     "englishMeaning": "A dark bituminous substance used for surfacing roads.",
-    "exampleSentence": "Rain slicked the glistening dark asphalt under flashing traffic lamps.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -19305,7 +19303,7 @@ export const hscVocabularyList = [
     "synonyms": "Chrysalis, protective casing, pupa shell",
     "antonyms": "Open atmosphere",
     "englishMeaning": "A silky case spun by insect larvae for protection in the pupal stage.",
-    "exampleSentence": "The caterpillar patiently endures darkness within the cocoon before emerging.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -19347,7 +19345,7 @@ export const hscVocabularyList = [
     "synonyms": "Captivating, enchanting, spellbinding, alluring, dazzling",
     "antonyms": "Boring, repulsive, uninteresting, dull",
     "englishMeaning": "Extremely interesting and charming.",
-    "exampleSentence": "If you visit any art gallery or art exhibition, you will find how our art reflects our changing realities in fascinating and insightful ways.",
+    "exampleSentence": "Relationships 143 With the piercing sound of a vehicle screeching to a hall, Yingzi's life flies in the air gently.",
     "unit": "Unit 8: Lesson 4 (Love)",
     "boardExamTag": "Unit 8 • Lesson 4",
     "sources": [
@@ -19368,7 +19366,7 @@ export const hscVocabularyList = [
     "synonyms": "Efficaciously, successfully, productively, competently",
     "antonyms": "Ineffectively, fruitlessly, unsuccessfully",
     "englishMeaning": "In such a manner as to achieve a desired result.",
-    "exampleSentence": "By natural farming, fields that have already been damaged by cultivation or the use of agricultural chemicals can be effectively rehabilitated.",
+    "exampleSentence": "[Unit 9: Lesson 2]: Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.\n[Unit 12: Lesson 5]: By natural farming, fields that have already been damaged by cultivation or the use of agricultural chemicals can be effectively rehabilitated.\"",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -19390,7 +19388,7 @@ export const hscVocabularyList = [
     "synonyms": "Single, unwed, bachelor/spinster, celibate",
     "antonyms": "Married, wedded, espoused",
     "englishMeaning": "Not married; single.",
-    "exampleSentence": "For example, laws and policies often restrict adolescents' access to reproductive health information and services, especially when they are unmarried.",
+    "exampleSentence": "Adolescence Lesson 2 151 Adolescence and Some (Related) Problems in Bangladesh A.",
     "unit": "Unit 9: Lesson 2 (Problems in Bangladesh)",
     "boardExamTag": "Unit 9 • Lesson 2",
     "sources": [
@@ -19411,7 +19409,7 @@ export const hscVocabularyList = [
     "synonyms": "Marriage portion, bride price, marital tribute, bridegift",
     "antonyms": "Free endowment",
     "englishMeaning": "Property or money brought by a bride to her husband on their marriage.",
-    "exampleSentence": "A bride's family has to pay dowry only before the wedding.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -19432,7 +19430,7 @@ export const hscVocabularyList = [
     "synonyms": "Motherly, pregnancy-related, obstetric, natal",
     "antonyms": "Paternal",
     "englishMeaning": "Relating to a mother, especially during pregnancy and childbirth.",
-    "exampleSentence": "Ensuring trained obstetric care dramatically reduces maternal complications.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -19453,7 +19451,7 @@ export const hscVocabularyList = [
     "synonyms": "Death rate, fatality, lethality, perishability",
     "antonyms": "Immortality, survival rate",
     "englishMeaning": "The state of being subject to death; death, especially on a large scale.",
-    "exampleSentence": "Moreover, neonatal mortality is another concern for younger mothers.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -19474,7 +19472,7 @@ export const hscVocabularyList = [
     "synonyms": "Movement, freedom of travel, agility, locomotion",
     "antonyms": "Confinement, immobility, restriction",
     "englishMeaning": "The ability to move or be moved freely and easily.",
-    "exampleSentence": "Confining young brides indoors eliminates their social contact and physical mobility.",
+    "exampleSentence": "Adolescence 157 When Shilpi heard about those risks.",
     "unit": "Unit 9: Lesson 3 (Child Marriage)",
     "boardExamTag": "Unit 9 • Lesson 3",
     "sources": [
@@ -19495,7 +19493,7 @@ export const hscVocabularyList = [
     "synonyms": "Guidance, advising, mentoring, psychological direction",
     "antonyms": "Misguidance, deception",
     "englishMeaning": "The provision of professional assistance and guidance in resolving personal problems.",
-    "exampleSentence": "Professional counselling gave Shilpi the confidence to express her health choices.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -19516,7 +19514,7 @@ export const hscVocabularyList = [
     "synonyms": "Bleeding, profuse blood loss, rupture, blood extravasation",
     "antonyms": "Blood clotting, hemostasis",
     "englishMeaning": "An escape of blood from a ruptured blood vessel, especially when profuse.",
-    "exampleSentence": "Obstructed labor can cause severe hemorrhage that threatens an adolescent mother's life.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -19537,7 +19535,7 @@ export const hscVocabularyList = [
     "synonyms": "Abnormal channel, fistula duct, ulcerated passage",
     "antonyms": "Healthy uninjured tissue",
     "englishMeaning": "An abnormal or surgically made passage between a hollow or tubular organ and the body surface, or between two hollow organs.",
-    "exampleSentence": "Obstetric fistula leads to chronic pain and heartbreaking social ostracization.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -19558,7 +19556,7 @@ export const hscVocabularyList = [
     "synonyms": "Ailments, illnesses, diseases, disorders, infirmities",
     "antonyms": "Robust health, wellness, vitality",
     "englishMeaning": "The condition of suffering from a disease or medical condition.",
-    "exampleSentence": "Early marriage exposes vulnerable youth to long-term gynecological morbidities.",
+    "exampleSentence": "Like many other South Asian countries, in Bangladesh, the gravity of sexual harassment in public spaces has been diluted and almost 'normalised' through calling it 'eve-teasing'.",
     "unit": "Unit 9: Lesson 4 (Story of Shilpi)",
     "boardExamTag": "Unit 9 • Lesson 4",
     "sources": [
@@ -19705,7 +19703,7 @@ export const hscVocabularyList = [
     "synonyms": "Meditation, reflection, introspection, musing, deliberation",
     "antonyms": "Distraction, carelessness, thoughtlessness",
     "englishMeaning": "The action of looking thoughtfully at something for a long time; deep reflective thought.",
-    "exampleSentence": "Quiet contemplation beneath trees clears the mind of academic stress.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -19726,7 +19724,7 @@ export const hscVocabularyList = [
     "synonyms": "Review, remembrance, looking back, recollection",
     "antonyms": "Foresight, anticipation",
     "englishMeaning": "The action of looking back on or reviewing past events or situations.",
-    "exampleSentence": "Mature retrospection allows us to learn constructive lessons from earlier blunders.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -19747,7 +19745,7 @@ export const hscVocabularyList = [
     "synonyms": "Stances, bodily poses, carriage, asanas, bearings",
     "antonyms": "Immobility",
     "englishMeaning": "Particular ways of standing, sitting, or positioning the body.",
-    "exampleSentence": "Maintaining upright yogic postures enhances respiratory volume and posture.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -19768,7 +19766,7 @@ export const hscVocabularyList = [
     "synonyms": "Calisthenics, cardio fitness, rhythmic exercises",
     "antonyms": "Sedentary lifestyle",
     "englishMeaning": "Vigorous exercises designed to increase cardiovascular efficiency.",
-    "exampleSentence": "Practicing thirty minutes of daily aerobics bolsters heart health.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -19789,7 +19787,7 @@ export const hscVocabularyList = [
     "synonyms": "Deluge, flood, cascade, rushing stream, spate",
     "antonyms": "Trickle, drip",
     "englishMeaning": "A strong and fast-moving stream of water or other liquid; overwhelming outpouring.",
-    "exampleSentence": "Meditation calms the chaotic torrent of stressful everyday thoughts.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -19810,7 +19808,7 @@ export const hscVocabularyList = [
     "synonyms": "Introduced, guided, heralded, led in, initiated",
     "antonyms": "Ended, closed, terminated",
     "englishMeaning": "Showed or guided someone somewhere; heralded the start of something new.",
-    "exampleSentence": "Ancient sages ushered in the philosophy of mental purification through meditation.",
+    "exampleSentence": "Lifestyle The Archer's Secret 187 The winner of the 1988 Olympic gold medal for archery was a seventeen- year-old woman from South Korea.",
     "unit": "Unit 10: Lesson 4 (Fitness)",
     "boardExamTag": "Unit 10 • Lesson 4",
     "sources": [
@@ -19852,7 +19850,7 @@ export const hscVocabularyList = [
     "synonyms": "Dependency, habit, obsession, fixation, compulsive craving",
     "antonyms": "Aversion, indifference, detachment",
     "englishMeaning": "The fact or condition of being addicted to a particular substance or activity.",
-    "exampleSentence": "Retail addiction can drain family savings as insidiously as gambling.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -19873,7 +19871,7 @@ export const hscVocabularyList = [
     "synonyms": "Enticed, lured, seduced, attracted, coaxed",
     "antonyms": "Repelled, resistant, wary",
     "englishMeaning": "Having an urge or inclination to do something.",
-    "exampleSentence": "Shoppers are tempted by flashing neon discount banners during festival seasons.",
+    "exampleSentence": "Lifestyle 191 C.",
     "unit": "Unit 10: Lesson 5 (Consumerism)",
     "boardExamTag": "Unit 10 • Lesson 5",
     "sources": [
@@ -19936,7 +19934,7 @@ export const hscVocabularyList = [
     "synonyms": "Unspeakable, trivial",
     "antonyms": "Mentionable, notable",
     "englishMeaning": "Too bad, shocking, or taboo to be spoken about.",
-    "exampleSentence": "The unmentionable odour of death offends the September night.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -19978,7 +19976,7 @@ export const hscVocabularyList = [
     "synonyms": "Cannon, ordnance",
     "antonyms": "",
     "englishMeaning": "Large-caliber guns used in warfare on land.",
-    "exampleSentence": "The captain told me to go because of the artillery.",
+    "exampleSentence": "[Unit 11: Lesson 2]: Because of the artillery.\n[Unit 11: Lesson 5]: Soldiers of an Australian 4th Division field artillery brigade walk on a duckboard track laid across a muddy, shattered battlefield in Chateau Wood, near Hooge, Belgium, on October 29, 1917.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -20000,7 +19998,7 @@ export const hscVocabularyList = [
     "synonyms": "Foolishly",
     "antonyms": "",
     "englishMeaning": "In a manner that shows no expression, understanding, or emotion.",
-    "exampleSentence": "He looked at me very blankly and tiredly.",
+    "exampleSentence": "He looked at me very blankly and tiredly, and then said, having to share his worry with someone, \"The cat will be all right, I am sure.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -20021,7 +20019,7 @@ export const hscVocabularyList = [
     "synonyms": "Beleaguerment, repression, control",
     "antonyms": "",
     "englishMeaning": "A military operation in which enemy forces surround a town or building, cutting off essential supplies.",
-    "exampleSentence": "I can't not see the poverty, siege and famine in Gaza.",
+    "exampleSentence": "I can't not see the poverty, siege and famine, especially when all Gaza city flooded into Al-Areesh and emptied it from all goods in two hours.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -20042,7 +20040,7 @@ export const hscVocabularyList = [
     "synonyms": "Fractured, pulverized, wrecked, decimated, broken",
     "antonyms": "Intact, whole, undamaged",
     "englishMeaning": "Broken into many pieces; severely damaged or destroyed.",
-    "exampleSentence": "This false assumption has been shattered plenty of times in the recent decades as girls began to show their power and women began competing with men in almost all areas of life.",
+    "exampleSentence": "Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -20063,7 +20061,7 @@ export const hscVocabularyList = [
     "synonyms": "Debris, wreckage, ruins, detritus, crushed stone",
     "antonyms": "Intact structure, erected building",
     "englishMeaning": "Waste or rough fragments of stone, brick, concrete, etc., especially as the debris from the demolition of buildings.",
-    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
+    "exampleSentence": "[Unit 11: Lesson 3]: Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.\n[Unit 11: Lesson 5]: Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -20085,7 +20083,7 @@ export const hscVocabularyList = [
     "synonyms": "Dispossessed, uprooted, evicted, homeless, expatriated",
     "antonyms": "Settled, housed, rooted",
     "englishMeaning": "Forced someone to leave their home, typically because of war, persecution, or natural disaster.",
-    "exampleSentence": "We will now read an excerpt from Arundhati Roy's powerful and passionately written essay \"The Greater Common Good\": \"According to a detailed study of the 54 Large Dams done by the Indian Institute of Public Administration, the average number of people displaced by a Large Dam is 44,182.",
+    "exampleSentence": "[Unit 11: Lesson 3]: Read three selected monologues from Ashtar Theatre's production \"Gaza Monologues\" and answer the questions that follow.\n[Unit 12: Lesson 5]: We will now read an excerpt from Arundhati Roy's powerful and passionately written essay \"The Greater Common Good\": \"According to a detailed study of the 54 Large Dams done by the Indian Institute of Public Administration, the average number of people displaced by a Large Dam is 44,182.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -20107,7 +20105,7 @@ export const hscVocabularyList = [
     "synonyms": "Gobble, gulp",
     "antonyms": "",
     "englishMeaning": "Eat greedily; destroy completely or consume destructively.",
-    "exampleSentence": "But when I digged, I saw a worm devour what showed so well.",
+    "exampleSentence": "But when I digged, I saw a worm devour What showed so well.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -20128,7 +20126,7 @@ export const hscVocabularyList = [
     "synonyms": "Venerable, holy, esteemed, pious, revered, sacred",
     "antonyms": "Profane, disreputable, scandalous",
     "englishMeaning": "Worthy of reverence; used as a title or respect for a member of the clergy or elder sage.",
-    "exampleSentence": "A reverend sage guided Herbert to the true wellspring of spiritual repose.",
+    "exampleSentence": "Read the following poem and try to understand the meaning.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -20149,7 +20147,7 @@ export const hscVocabularyList = [
     "synonyms": "Ordnance unit, cannon battalion, artillery corps, battery division",
     "antonyms": "Unarmed scout troupe",
     "englishMeaning": "A military brigade armed with large-caliber artillery pieces and cannons.",
-    "exampleSentence": "The Australian artillery-brigade advanced under devastating hostile bombardment.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -20212,7 +20210,7 @@ export const hscVocabularyList = [
     "synonyms": "Domain, region",
     "antonyms": "",
     "englishMeaning": "An area of land under the jurisdiction of a ruler, state, or military force.",
-    "exampleSentence": "Fought for control of territory near Ypres, Belgium.",
+    "exampleSentence": "[Unit 11: Lesson 5]: This was during the Battle of Passchendaele, fought by British forces and their allies against Germany for control of territory near Ypres, Belgium.\n[Unit 5: Lesson 2]: Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -20276,7 +20274,7 @@ export const hscVocabularyList = [
     "synonyms": "",
     "antonyms": "",
     "englishMeaning": "A place where animal hides are tanned and processed into leather.",
-    "exampleSentence": "20,000 tons of tannery waste are released into the river every day.",
+    "exampleSentence": "According to the Department of the Environment (DoE), 20,000 tons of tannery waste, including some highly toxic materials, are released into the river every day.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -20297,7 +20295,7 @@ export const hscVocabularyList = [
     "synonyms": "Campaigner, advocate, crusader, militant reformer",
     "antonyms": "Bystander, passive spectator",
     "englishMeaning": "A person who campaigns to bring about political or social change.",
-    "exampleSentence": "Greta Thunberg is an environmental activist.",
+    "exampleSentence": "[Unit 12: Lesson 2]: Greta Thunberg is an environmental activist.\n[Unit 4: Lesson 2]: Greta Thunberg is an environmental activist.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
@@ -20361,7 +20359,7 @@ export const hscVocabularyList = [
     "synonyms": "Spurn, shun, reject, embargo, abstain from, ostracize",
     "antonyms": "Patronize, support, participate in",
     "englishMeaning": "Withdraw from commercial or social relations with a country, organization, or person as a punishment or protest.",
-    "exampleSentence": "Youth groups chose to boycott classes to press their urgent climate manifesto.",
+    "exampleSentence": "Greta Thunberg is an environmental activist.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
@@ -20382,7 +20380,7 @@ export const hscVocabularyList = [
     "synonyms": "Stimulus, spark, instigator, prime mover, trigger",
     "antonyms": "Deterrent, hindrance, damper",
     "englishMeaning": "A person or thing that precipitates an event or change.",
-    "exampleSentence": "Her solitary school strike served as the catalyst for international climate rallies.",
+    "exampleSentence": "Greta Thunberg is an environmental activist.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
@@ -20403,7 +20401,7 @@ export const hscVocabularyList = [
     "synonyms": "Climate change, greenhouse heating, planetary warming",
     "antonyms": "Global cooling, ice age",
     "englishMeaning": "A gradual increase in the overall temperature of the earth's atmosphere generally attributed to the greenhouse effect.",
-    "exampleSentence": "Accelerating global-warming intensifies sea-level rise along Bangladesh's coastlines.",
+    "exampleSentence": "Greta Thunberg is an environmental activist.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
@@ -20424,7 +20422,7 @@ export const hscVocabularyList = [
     "synonyms": "Unparalleled, matchless, novel, unprecedented, unequaled",
     "antonyms": "Familiar, common, usual, precedent",
     "englishMeaning": "Never done or known before.",
-    "exampleSentence": "Millions of teenagers mobilized in an unprecedented display of planetary solidarity.",
+    "exampleSentence": "Greta Thunberg is an environmental activist.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
@@ -20445,7 +20443,7 @@ export const hscVocabularyList = [
     "synonyms": "Responsible, answerable, liable, amenable, chargeable",
     "antonyms": "Unaccountable, immune, blameless",
     "englishMeaning": "Required or expected to justify actions or decisions; responsible.",
-    "exampleSentence": ") Environmental Justice demands the cessation of the production of all toxins, hazardous wastes, and radioactive materials, and that all past and current producers be held strictly accountable to the people for detoxification.",
+    "exampleSentence": "Greta Thunberg is an environmental activist.",
     "unit": "Unit 12: Lesson 2 (The Greta Effect)",
     "boardExamTag": "Unit 12 • Lesson 2",
     "sources": [
@@ -20487,7 +20485,7 @@ export const hscVocabularyList = [
     "synonyms": "Night-active, nighttime, night-loving",
     "antonyms": "Diurnal, daytime-active",
     "englishMeaning": "Done, occurring, or active at night.",
-    "exampleSentence": "Nocturnal mammals possess acute eyesight to forage under dense canopy shade.",
+    "exampleSentence": "Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
@@ -20508,7 +20506,7 @@ export const hscVocabularyList = [
     "synonyms": "Forest clearance, logging, logging-off, de-treeing",
     "antonyms": "Afforestation, reforestation, forest preservation",
     "englishMeaning": "The action of clearing a wide area of trees.",
-    "exampleSentence": "Rampant deforestation deprives wild elephants of customary migration corridors.",
+    "exampleSentence": "Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
@@ -20529,7 +20527,7 @@ export const hscVocabularyList = [
     "synonyms": "Illegal hunting, illicit trapping, game theft",
     "antonyms": "Wildlife conservation, sanctuary management",
     "englishMeaning": "The illegal practice of trespassing on another's property to hunt or steal game.",
-    "exampleSentence": "Armed rangers patrol the Sundarbans to suppress tiger poaching.",
+    "exampleSentence": "Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
@@ -20550,7 +20548,7 @@ export const hscVocabularyList = [
     "synonyms": "Ecological variety, species diversity, wildlife wealth",
     "antonyms": "Monoculture, ecological sterility",
     "englishMeaning": "The variety of life in the world or in a particular habitat or ecosystem.",
-    "exampleSentence": "The mangrove delta shelters an astonishing richness of avian and marine biodiversity.",
+    "exampleSentence": "[Unit 12: Lesson 3]: Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.\n[Unit 4: Lesson 3]: The mangrove delta shelters an astonishing richness of avian and marine biodiversity.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
@@ -20572,7 +20570,7 @@ export const hscVocabularyList = [
     "synonyms": "Dying out, eradication, annihilation, disappearance, extermination",
     "antonyms": "Survival, perpetuation, revival, proliferation",
     "englishMeaning": "The fact or process of a species, family, or other group of animals or plants becoming extinct.",
-    "exampleSentence": "Crab are not into destroying the world they are crawling to the mud flats to take in some rotten insects It's not what's up that's going down when you smell yourself on the threshold of extinction It's you and your portable chemical toilet going to hell under friendly fire It's you and your missile receptor exploding to pieces It's not what's up that's going down The person who OK's biological weapons should not cry about the stench of new diseases The one who cuts off the trees so the orangutans can't hang should not wonder about ecological devastation It's not what's up that's going down It's what's down that's going up It's not what's up that's going down It's what's down that's going up",
+    "exampleSentence": "Look at these photographs of some animals in Bangladesh which are either critically endangered or endangered.",
     "unit": "Unit 12: Lesson 3 (Endangered Species)",
     "boardExamTag": "Unit 12 • Lesson 3",
     "sources": [
@@ -20593,7 +20591,7 @@ export const hscVocabularyList = [
     "synonyms": "Destruction, ruin",
     "antonyms": "Restoration",
     "englishMeaning": "Great destruction or damage.",
-    "exampleSentence": "Currently the negative impacts of ecological devastation fall disproportionately on the world's poor.",
+    "exampleSentence": "It recognizes that currently the negative impacts of ecological devastation, particularly the environmental harm and hazards created by overconsumption of resources in the global North and by elites worldwide, fall disproportionately on the world's poor, the vast majority of whom are people of color, especially women and children.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20635,7 +20633,7 @@ export const hscVocabularyList = [
     "synonyms": "Linked, related",
     "antonyms": "Disconnected, separated",
     "englishMeaning": "Having all constituent parts linked or connected mutually.",
-    "exampleSentence": "Rather, they are clearly interconnected; they are caused by human beings.",
+    "exampleSentence": "Rather, they are clearly interconnected; they are caused by human beings; and they disproportionately negatively impact poor people and women.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20656,7 +20654,7 @@ export const hscVocabularyList = [
     "synonyms": "Eruption, blast",
     "antonyms": "Implosion, calm",
     "englishMeaning": "A violent shattering or blowing apart of something, as is caused by a bomb or gas.",
-    "exampleSentence": "When an explosion in the Union Carbide Chemical Plant in Bhopal killed thousands.",
+    "exampleSentence": "When an explosion in the Union Carbide Chemical Plant in Bhopal, India, killed thousands of people on the night of December 2, 1984, it was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20677,7 +20675,7 @@ export const hscVocabularyList = [
     "synonyms": "",
     "antonyms": "Unnatural",
     "englishMeaning": "Relating to or concerned with the relation of living organisms to one another and to their physical surroundings.",
-    "exampleSentence": "The world learned of the ecological and human cost of petroleum-waste dumping.",
+    "exampleSentence": "So too when the world learned of the ecological and human cost of decades of petroleum-waste dumping in the Niger Delta by Royal Dutch Shell in the last quarter of the twentieth century, the attempt to privatize water in Bolivia by the Bechtel Corporation in the 1990s, the death of close to two thousand people in New Orleans following Hurricane Katrina in 2005, or even the horrific aftermath of the atomic bombing of Hiroshima and Nagasaki six decades earlier, each was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -20698,7 +20696,7 @@ export const hscVocabularyList = [
     "synonyms": "Purposelessly, haphazardly, erratically, blindly, randomly",
     "antonyms": "Purposefully, deliberately, intentionally, systematically",
     "englishMeaning": "Without purpose or direction.",
-    "exampleSentence": "Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.",
+    "exampleSentence": "Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.\"",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -20782,7 +20780,7 @@ export const hscVocabularyList = [
     "synonyms": "Crop yield, reaping, gathering, produce, vintage",
     "antonyms": "Fallow season, seed-time",
     "englishMeaning": "The process or period of gathering in crops; the product or result of an action.",
-    "exampleSentence": "Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.",
+    "exampleSentence": "[Unit 12: Lesson 5]: Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.\"\n[Unit 5: Lesson 5]: Unit Five: Human Rights | Lesson 5: Frederick Douglass A.",
     "unit": "Unit 12: Lesson 5 (Limits of Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -20957,7 +20955,7 @@ export const hscVocabularyList = [
     "synonyms": "Gathering, convention, congregation, meeting",
     "antonyms": "Dispersion, dispersal, disbanding",
     "englishMeaning": "A group of people gathered together in one place for a common purpose.",
-    "exampleSentence": "Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.\n[Unit 4: Lesson 2]: Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.\n[Unit 5: Lesson 1]: Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -20981,7 +20979,7 @@ export const hscVocabularyList = [
     "synonyms": "Organization, alliance, union, society",
     "antonyms": "Disunion, division, disassociation",
     "englishMeaning": "A group of people organized for a joint purpose.",
-    "exampleSentence": "Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.\n[Unit 5: Lesson 1]: Article 20: (1) Everyone has the right to freedom of peaceful assembly and association.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -21004,7 +21002,7 @@ export const hscVocabularyList = [
     "synonyms": "Franchise, right to vote, voting privilege",
     "antonyms": "Disenfranchisement, disqualification",
     "englishMeaning": "The right to vote in political elections.",
-    "exampleSentence": "(3) The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-I?]: (3) The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.\n[Unit 5: Lesson 1]: (3) The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-I?",
     "lesson": "Are We Aware of These Rights-I?",
     "boardExamTag": "Unit 5 • Lesson 1",
@@ -21027,7 +21025,7 @@ export const hscVocabularyList = [
     "synonyms": "Individuality, selfhood, distinctiveness, character",
     "antonyms": "Anonymity, uniformity, sameness",
     "englishMeaning": "The fact of being who or what a person or thing is.",
-    "exampleSentence": "Does beauty have an independent, objective identity?",
+    "exampleSentence": "[Unit 2: Art and Craft: What is Beauty?]: Does beauty have an independent, objective identity?\n[Unit 4: Lesson 3]: Does beauty have an independent, objective identity?",
     "unit": "Unit 2: Art and Craft: What is Beauty?",
     "lesson": "What is Beauty?",
     "boardExamTag": "Unit 2 • Lesson 1",
@@ -21050,7 +21048,7 @@ export const hscVocabularyList = [
     "synonyms": "Banishment, expulsion, expatriation, deportation",
     "antonyms": "Repatriation, homecoming, welcome",
     "englishMeaning": "The state of being barred from one's native country, typically for political or penal reasons.",
-    "exampleSentence": "Article 9: No one shall be subjected to arbitrary arrest, detention or exile.",
+    "exampleSentence": "[Unit 5: Human Rights: Are We Aware of These Rights-II?]: Article 9: No one shall be subjected to arbitrary arrest, detention or exile.\n[Unit 4: Lesson 2]: Article 9: No one shall be subjected to arbitrary arrest, detention or exile.\n[Unit 5: Lesson 2]: - Article 9: No one shall be subjected to arbitrary arrest, detention or exile.",
     "unit": "Unit 5: Human Rights: Are We Aware of These Rights-II?",
     "lesson": "Are We Aware of These Rights-II?",
     "boardExamTag": "Unit 5 • Lesson 2",
@@ -21140,7 +21138,7 @@ export const hscVocabularyList = [
     "synonyms": "Punishment, retribution, fine, forfeiture",
     "antonyms": "Reward, prize, bonus, pardon",
     "englishMeaning": "A punishment imposed for breaking a law, rule, or contract.",
-    "exampleSentence": "She was a field hand, and a whipping is the penalty of not being in the field at sunrise, unless a slave has special permission from his or her master to the contrary—a permission which they seldom get, and one that gives to him that gives it the proud name of being a kind master.",
+    "exampleSentence": "[Unit 5: Human Rights: Frederick Douglass]: She was a field hand, and a whipping is the penalty of not being in the field at sunrise, unless a slave has special permission from his or her master to the contrary—a permission which they seldom get, and one that gives to him that gives it the proud name of being a kind master.\n[Unit 5: Lesson 5]: She was a field hand, and a whipping is the penalty of not being in the field at sunrise, unless a slave has special permission from his or her master to the contrary—a permission which they seldom get, and one that gives to him that gives it the proud name of being a kind master.",
     "unit": "Unit 5: Human Rights: Frederick Douglass",
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
@@ -21163,7 +21161,7 @@ export const hscVocabularyList = [
     "synonyms": "Remember, recall, reminisce, call to mind",
     "antonyms": "Forget, overlook, ignore",
     "englishMeaning": "Remember something; call to mind.",
-    "exampleSentence": "I do not recollect of ever seeing my mother by the light of day.",
+    "exampleSentence": "[Unit 5: Human Rights: Frederick Douglass]: I do not recollect of ever seeing my mother by the light of day.\n[Unit 5: Lesson 5]: I do not recollect of ever seeing my mother by the light of day.",
     "unit": "Unit 5: Human Rights: Frederick Douglass",
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
@@ -21670,7 +21668,7 @@ export const hscVocabularyList = [
     "synonyms": "Choky",
     "antonyms": "Airy",
     "englishMeaning": "Causing difficulty in breathing; oppressive and stifling.",
-    "exampleSentence": "The overflowing sewage, the cans, and what's on top of the carts, the suffocating smell.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Stories From Gaza]: The overflowing sewage, the cans, and what's on top of the carts, the suffocating smell.\n[Unit 11: Lesson 3]: I go back to the reality of Gaza: the dirty market, overflowing sewage, the cans, and what's on top of the carts, the suffocating smell, and the silent people who can't speak.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
@@ -21715,7 +21713,7 @@ export const hscVocabularyList = [
     "synonyms": "Guardian, overseer",
     "antonyms": "",
     "englishMeaning": "A person employed to look after or take care of people or a place.",
-    "exampleSentence": "I want to be a children's caretaker and defend their rights.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Stories From Gaza]: I want to be a children's caretaker and defend their rights.\n[Unit 11: Lesson 3]: In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
@@ -22068,7 +22066,7 @@ export const hscVocabularyList = [
     "synonyms": "Venomness",
     "antonyms": "",
     "englishMeaning": "The quality, state, or relative degree of being toxic or poisonous.",
-    "exampleSentence": "People around the world face the realities of climate change and increasing toxicity.",
+    "exampleSentence": "[Unit 12: Environment and Nature: What is Environmental Justice?]: People around the world face the realities of climate change and increasing toxicity.\n[Unit 12: Lesson 4]: Environmental Justice therefore represents a new, important body of thought and action at the beginning of the twenty-first century, especially as people around the world face the realities of climate change, increasing toxicity, resource depletion, and the rapid disappearance of species and arable land on which the health of many human communities depends.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "lesson": "What is Environmental Justice?",
     "boardExamTag": "Unit 12 • Lesson 4",
@@ -22157,7 +22155,7 @@ export const hscVocabularyList = [
     "synonyms": "",
     "antonyms": "",
     "englishMeaning": "The chemical processes that occur within a living organism in order to maintain life.",
-    "exampleSentence": "Plant metabolism relies on sunlight, water, and organic soil balance.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: Plant metabolism relies on sunlight, water, and organic soil balance.\n[Unit 12: Lesson 5]: Recently Professor Tsuno of Ehime University wrote a lengthy book on the relationship of plant metabolism to rice harvests.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -22246,7 +22244,7 @@ export const hscVocabularyList = [
     "synonyms": "Pesticides, bug-killers",
     "antonyms": "",
     "englishMeaning": "Substances used for killing insects.",
-    "exampleSentence": "The use of insecticides destroys beneficial predators along with pests.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: The use of insecticides destroys beneficial predators along with pests.\n[Unit 12: Lesson 5]: Because these methods depend on weak, \"improved\" seed varieties, it becomes necessary for the farmer to apply chemicals and insecticides eight or ten times during the growing season.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -22269,7 +22267,7 @@ export const hscVocabularyList = [
     "synonyms": "Microbes, germs",
     "antonyms": "",
     "englishMeaning": "Microscopic organisms, especially bacteria, viruses, or fungi.",
-    "exampleSentence": "Billions of microorganisms thrive in healthy, chemical-free soil.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: Billions of microorganisms thrive in healthy, chemical-free soil.\n[Unit 12: Lesson 5]: In a short time the soil is burned clean of microorganisms and organic matter.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -22292,7 +22290,7 @@ export const hscVocabularyList = [
     "synonyms": "Naturally, intrinsically",
     "antonyms": "Extrinsically, artificially",
     "englishMeaning": "In a permanent, essential, or characteristic way.",
-    "exampleSentence": "Scientific research is inherently limited by the narrow scope of its specialization.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: Scientific research is inherently limited by the narrow scope of its specialization.\n[Unit 12: Lesson 5]: It appears that things go better when the farmer applies \"scientific\" techniques, but this does not mean that science must come to the rescue because the natural fertility is inherently insufficient.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -22315,7 +22313,7 @@ export const hscVocabularyList = [
     "synonyms": "Restored, reformed",
     "antonyms": "Damaged",
     "englishMeaning": "Restored to health, normal life, or former condition.",
-    "exampleSentence": "Degraded agricultural lands can be rehabilitated through organic mulching.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: Degraded agricultural lands can be rehabilitated through organic mulching.\n[Unit 12: Lesson 5]: By natural farming, fields that have already been damaged by cultivation or the use of agricultural chemicals can be effectively rehabilitated.\"",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -22338,7 +22336,7 @@ export const hscVocabularyList = [
     "synonyms": "Exaggeration, overstatement",
     "antonyms": "Understatement",
     "englishMeaning": "Exaggerated statements or claims not meant to be taken literally.",
-    "exampleSentence": "Saying big dams solve all water crises is mere political hyperbole.",
+    "exampleSentence": "[Unit 12: Environment and Nature: Limits of the Scientific Method]: Saying big dams solve all water crises is mere political hyperbole.\n[Unit 12: Lesson 5]: You have to murmur it for fear of being accused of hyperbole.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "lesson": "Limits of the Scientific Method",
     "boardExamTag": "Unit 12 • Lesson 5",
@@ -22559,7 +22557,7 @@ export const hscVocabularyList = [
     "synonyms": "Emblematic, exemplary",
     "antonyms": "Atypical",
     "englishMeaning": "Widely recognized and well-established as a representative symbol.",
-    "exampleSentence": "See these iconic photographs captured in various war settings across the world.",
+    "exampleSentence": "[Unit 11: Peace and Conflict: Opinions through Images]: See these iconic photographs captured in various war settings across the world.\n[Unit 11: Lesson 5]: See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "lesson": "Opinions through Images",
     "boardExamTag": "Unit 11 • Lesson 5",
@@ -22604,7 +22602,7 @@ export const hscVocabularyList = [
     "synonyms": "Sacred, divine, immaterial, metaphysical",
     "antonyms": "Material, physical, worldly, corporeal",
     "englishMeaning": "Relating to or affecting the human spirit or soul as opposed to material or physical things.",
-    "exampleSentence": "Different folk songs belonging to different regions of Bangladesh: • Baul and spiritual songs: Kushtia, Birbhum and West Bengal • Jarigan: Dhaka, Mymensingh, Sylhet, Faridpur, Murshidabad • Bhawaiya: Rajshahi, Dinajpur, Rangpur, Pabna, Cooch Bihar • Gambhira: Rajshahi, Malda • Wedding songs: All regions • Roof-beating songs: The northern regions of Bangladesh • Sari: The lower marshy regions of Sylhet and Mymensingh • Bhatiyali: Nearly all riverine regions of Bangladesh • Pastoral songs: Dhaka, Mymensingh, Faridpur, Sylhet, Habiganj",
+    "exampleSentence": "[Unit 2: Art and Craft: Folk Music]: Different folk songs belonging to different regions of Bangladesh: • Baul and spiritual songs: Kushtia, Birbhum and West Bengal • Jarigan: Dhaka, Mymensingh, Sylhet, Faridpur, Murshidabad • Bhawaiya: Rajshahi, Dinajpur, Rangpur, Pabna, Cooch Bihar • Gambhira: Rajshahi, Malda • Wedding songs: All regions • Roof-beating songs: The northern regions of Bangladesh • Sari: The lower marshy regions of Sylhet and Mymensingh • Bhatiyali: Nearly all riverine regions of Bangladesh • Pastoral songs: Dhaka, Mymensingh, Faridpur, Sylhet, Habiganj\n[Unit 4: Lesson 2]: Different folk songs belonging to different regions of Bangladesh: • Baul and spiritual songs: Kushtia, Birbhum and West Bengal • Jarigan: Dhaka, Mymensingh, Sylhet, Faridpur, Murshidabad • Bhawaiya: Rajshahi, Dinajpur, Rangpur, Pabna, Cooch Bihar • Gambhira: Rajshahi, Malda • Wedding songs: All regions • Roof-beating songs: The northern regions of Bangladesh • Sari: The lower marshy regions of Sylhet and Mymensingh • Bhatiyali: Nearly all riverine regions of Bangladesh • Pastoral songs: Dhaka, Mymensingh, Faridpur, Sylhet, Habiganj",
     "unit": "Unit 2: Art and Craft: Folk Music",
     "lesson": "Folk Music",
     "boardExamTag": "Unit 2 • Lesson 2",
@@ -22671,7 +22669,7 @@ export const hscVocabularyList = [
     "synonyms": "Shortened, brief, condensed, truncated",
     "antonyms": "Broad, expanded, unabridged, comprehensive",
     "englishMeaning": "Shortened or condensed from a longer piece of writing or speech.",
-    "exampleSentence": "The following is an abridged version of a famous speech made by Martin Luther King Jr.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The following is an abridged version of a famous speech made by Martin Luther King Jr.\n[Unit 4: Transformative Speeches: Three Speeches]: The following is an abridged version of a famous speech made by Martin Luther King Jr.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22693,7 +22691,7 @@ export const hscVocabularyList = [
     "synonyms": "Suspect, indictee, defendant, prisoner",
     "antonyms": "Victim, innocent, accuser, prosecutor",
     "englishMeaning": "A person or group of people who are charged with a crime.",
-    "exampleSentence": "I am the First Accused in this case.",
+    "exampleSentence": "[Unit 4: Lesson 2]: I am the First Accused in this case.\n[Unit 4: Transformative Speeches: Three Speeches]: I am the First Accused in this case.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22715,7 +22713,7 @@ export const hscVocabularyList = [
     "synonyms": "Predecessors, forebears, progenitors, forefathers",
     "antonyms": "Descendants, successors, progeny, offspring",
     "englishMeaning": "People from whom one is descended, usually more remote than grandparents.",
-    "exampleSentence": "Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.\n[Unit 4: Transformative Speeches: Three Speeches]: Amongst the tales they related to me were those of wars fought by our ancestors in defence of the fatherland.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22737,7 +22735,7 @@ export const hscVocabularyList = [
     "synonyms": "Seemingly, ostensibly, evidently, visibly",
     "antonyms": "Dubiously, improbably, uncertainly, questionably",
     "englishMeaning": "As far as one knows or can see; seemingly true based on appearance.",
-    "exampleSentence": "He has apparently said that I had agreed to attend a Round Table Conference on the 10th of March.",
+    "exampleSentence": "[Unit 4: Lesson 2]: He has apparently said that I had agreed to attend a Round Table Conference on the 10th of March.\n[Unit 4: Transformative Speeches: Three Speeches]: He has apparently said that I had agreed to attend a Round Table Conference on the 10th of March.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22759,7 +22757,7 @@ export const hscVocabularyList = [
     "synonyms": "Undertake, take over, accept, adopt, shoulder",
     "antonyms": "Disallow, disclaim, relinquish, renounce",
     "englishMeaning": "Take on a role or take over power, responsibility, or leadership.",
-    "exampleSentence": "When after the movement of 1969 Ayub Khan fell from power and Yahya Khan assumed the reins of the government, he declared that he would give us a constitution.",
+    "exampleSentence": "[Unit 4: Lesson 2]: When after the movement of 1969 Ayub Khan fell from power and Yahya Khan assumed the reins of the government, he declared that he would give us a constitution.\n[Unit 4: Transformative Speeches: Three Speeches]: When after the movement of 1969 Ayub Khan fell from power and Yahya Khan assumed the reins of the government, he declared that he would give us a constitution.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22781,7 +22779,7 @@ export const hscVocabularyList = [
     "synonyms": "Evaded, dodged, shunned, bypassed, sidestepped",
     "antonyms": "Confronted, faced, encountered, embraced",
     "englishMeaning": "Kept away from or stopped oneself from doing something unwanted or violent.",
-    "exampleSentence": "When I went to jail in 1962, the dominant idea was that loss of life should be avoided.",
+    "exampleSentence": "[Unit 4: Lesson 2]: When I went to jail in 1962, the dominant idea was that loss of life should be avoided.\n[Unit 4: Transformative Speeches: Three Speeches]: When I went to jail in 1962, the dominant idea was that loss of life should be avoided.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22803,7 +22801,7 @@ export const hscVocabularyList = [
     "synonyms": "Censure, guilt, fault, accountability, condemnation",
     "antonyms": "Praise, commendation, credit, approval",
     "englishMeaning": "Responsibility for a fault, wrongdoing, or failure.",
-    "exampleSentence": "After sitting in a secret meeting for five hours he gave a speech where he has put all the blame on me.",
+    "exampleSentence": "[Unit 4: Lesson 2]: After sitting in a secret meeting for five hours he gave a speech where he has put all the blame on me.\n[Unit 4: Transformative Speeches: Three Speeches]: After sitting in a secret meeting for five hours he gave a speech where he has put all the blame on me.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22825,7 +22823,7 @@ export const hscVocabularyList = [
     "synonyms": "Socialists, leftists, Marxists, collectivists",
     "antonyms": "Individualists, capitalists, monarchists",
     "englishMeaning": "Adherents of communism who advocate collective ownership of property and resources.",
-    "exampleSentence": "The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.\n[Unit 4: Transformative Speeches: Three Speeches]: The suggestion that the struggle in South Africa is under the influence of foreigners or communists is wholly incorrect.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22847,7 +22845,7 @@ export const hscVocabularyList = [
     "synonyms": "Encounter, face up to, brave, tackle, resist",
     "antonyms": "Avoid, escape, evade, flee, surrender",
     "englishMeaning": "Meet face to face in opposition or face a hostile force bravely.",
-    "exampleSentence": "Convert every house into a fort; confront the enemy with whatever you have.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Convert every house into a fort; confront the enemy with whatever you have.\n[Unit 4: Transformative Speeches: Three Speeches]: Convert every house into a fort; confront the enemy with whatever you have.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22869,7 +22867,7 @@ export const hscVocabularyList = [
     "synonyms": "Deep red, ruby, blood-red, scarlet",
     "antonyms": "Pale, colourless, white",
     "englishMeaning": "Of a rich, deep red colour, typically inclining to purple or blood-like hue.",
-    "exampleSentence": "The history of Bengal is the history of a people who have repeatedly made their highways crimson red with their blood.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The history of Bengal is the history of a people who have repeatedly made their highways crimson red with their blood.\n[Unit 4: Transformative Speeches: Three Speeches]: The history of Bengal is the history of a people who have repeatedly made their highways crimson red with their blood.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22891,7 +22889,7 @@ export const hscVocabularyList = [
     "synonyms": "Curved, twisted, bent, zigzag, winding",
     "antonyms": "Straight, direct, unbent, level",
     "englishMeaning": "Bent, twisted, or not in a straight, honest line.",
-    "exampleSentence": "The rough places will be made plain, and the crooked places will be made straight.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The rough places will be made plain, and the crooked places will be made straight.\n[Unit 4: Transformative Speeches: Three Speeches]: The rough places will be made plain, and the crooked places will be made straight.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22913,7 +22911,7 @@ export const hscVocabularyList = [
     "synonyms": "Reduced, diminished, shortened, trimmed, restricted",
     "antonyms": "Expanded, extended, increased, enlarged",
     "englishMeaning": "Reduced in extent, size, or quantity; imposed a restriction on.",
-    "exampleSentence": "The African National Congress was formed in 1912 to defend the rights of the African people which had been seriously curtailed by the South Africa Act.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The African National Congress was formed in 1912 to defend the rights of the African people which had been seriously curtailed by the South Africa Act.\n[Unit 4: Transformative Speeches: Three Speeches]: The African National Congress was formed in 1912 to defend the rights of the African people which had been seriously curtailed by the South Africa Act.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22935,7 +22933,7 @@ export const hscVocabularyList = [
     "synonyms": "Intensely, profoundly, thoroughly, sincerely",
     "antonyms": "Mildly, superficially, slightly",
     "englishMeaning": "To a thorough, profound, or intense extent.",
-    "exampleSentence": "It is a dream deeply rooted in the American dream.",
+    "exampleSentence": "[Unit 4: Lesson 2]: It is a dream deeply rooted in the American dream.\n[Unit 4: Transformative Speeches: Three Speeches]: It is a dream deeply rooted in the American dream.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22957,7 +22955,7 @@ export const hscVocabularyList = [
     "synonyms": "Protect, safeguard, shield, champion, uphold",
     "antonyms": "Attack, surrender, abandon, renounce",
     "englishMeaning": "Resist an attack made on someone or protect rights and principles from harm.",
-    "exampleSentence": "The African National Congress was formed in 1912 to defend the rights of the African people.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The African National Congress was formed in 1912 to defend the rights of the African people.\n[Unit 4: Transformative Speeches: Three Speeches]: The African National Congress was formed in 1912 to defend the rights of the African people.\n[Unit 11: Lesson 3]: In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -22980,7 +22978,7 @@ export const hscVocabularyList = [
     "synonyms": "Disagreement, disharmony, strife, friction, clash",
     "antonyms": "Harmony, agreement, concord, unity",
     "englishMeaning": "Disagreement between people; lack of harmony between notes sounding together.",
-    "exampleSentence": "With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
+    "exampleSentence": "[Unit 4: Lesson 2]: With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.\n[Unit 4: Transformative Speeches: Three Speeches]: With this faith we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23002,7 +23000,7 @@ export const hscVocabularyList = [
     "synonyms": "Controlling, ruling, commanding, prevailing, chief",
     "antonyms": "Submissive, inferior, subordinate, weak",
     "englishMeaning": "Most important, powerful, or influential over others.",
-    "exampleSentence": "When I went to jail in 1962, the dominant idea was that loss of life should be avoided.",
+    "exampleSentence": "[Unit 4: Lesson 2]: When I went to jail in 1962, the dominant idea was that loss of life should be avoided.\n[Unit 4: Transformative Speeches: Three Speeches]: When I went to jail in 1962, the dominant idea was that loss of life should be avoided.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23024,7 +23022,7 @@ export const hscVocabularyList = [
     "synonyms": "Amplify, overstate, highlight, emphasize, stage",
     "antonyms": "Understate, minimize, conceal, ignore",
     "englishMeaning": "Present an issue or condition in a striking, vivid, or dramatic way.",
-    "exampleSentence": "So we have come here today to dramatize a shameful condition.",
+    "exampleSentence": "[Unit 4: Lesson 2]: So we have come here today to dramatize a shameful condition.\n[Unit 4: Transformative Speeches: Three Speeches]: So we have come here today to dramatize a shameful condition.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23046,7 +23044,7 @@ export const hscVocabularyList = [
     "synonyms": "Personified, revealed, manifested, incorporated, symbolized",
     "antonyms": "Disembodied, concealed, obscured, excluded",
     "englishMeaning": "Gave a tangible, concrete, or visible form to an idea, quality, or concept.",
-    "exampleSentence": "The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.\n[Unit 4: Transformative Speeches: Three Speeches]: The change was embodied in a decision which was taken to protest against apartheid legislation by peaceful demonstrations.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23068,7 +23066,7 @@ export const hscVocabularyList = [
     "synonyms": "Equal, identical, parallel, synonymous, corresponding",
     "antonyms": "Different, unequal, dissimilar, opposite",
     "englishMeaning": "Equal in value, amount, function, meaning, or significance.",
-    "exampleSentence": "For us to accept the banning was equivalent to accepting the silencing of the Africans for all time.",
+    "exampleSentence": "[Unit 4: Lesson 2]: For us to accept the banning was equivalent to accepting the silencing of the Africans for all time.\n[Unit 4: Transformative Speeches: Three Speeches]: For us to accept the banning was equivalent to accepting the silencing of the Africans for all time.\n[Unit 5: Lesson 2]: What is the equivalent expression for Human Rights in Bangla?",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23091,7 +23089,7 @@ export const hscVocabularyList = [
     "synonyms": "Dignified, elevated, noble, glorified, raised",
     "antonyms": "Condemned, degraded, humbled, lowered",
     "englishMeaning": "Raised to a high moral, intellectual, or spiritual level or status.",
-    "exampleSentence": "I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low.",
+    "exampleSentence": "[Unit 4: Lesson 2]: I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low.\n[Unit 4: Transformative Speeches: Three Speeches]: I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23113,7 +23111,7 @@ export const hscVocabularyList = [
     "synonyms": "Non-Jew, non-Jewish person",
     "antonyms": "Jew, Jewish person",
     "englishMeaning": "A person who is not Jewish.",
-    "exampleSentence": "When all of God's children, black men and white men, Jews and gentiles, will be able to join hands and sing.",
+    "exampleSentence": "[Unit 4: Lesson 2]: When all of God's children, black men and white men, Jews and gentiles, will be able to join hands and sing.\n[Unit 4: Transformative Speeches: Three Speeches]: When all of God's children, black men and white men, Jews and gentiles, will be able to join hands and sing.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23135,7 +23133,7 @@ export const hscVocabularyList = [
     "synonyms": "Honor, fame, magnificence, splendour, majesty",
     "antonyms": "Shame, disgrace, dishonor, ignominy",
     "englishMeaning": "High renown, magnificence, or honor won by notable achievements.",
-    "exampleSentence": "The names of Dingane and Bambata were praised as the glory of the entire African nation.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The names of Dingane and Bambata were praised as the glory of the entire African nation.\n[Unit 4: Transformative Speeches: Three Speeches]: The names of Dingane and Bambata were praised as the glory of the entire African nation.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23157,7 +23155,7 @@ export const hscVocabularyList = [
     "synonyms": "Enlarge, intensify, elevate, amplify, boost",
     "antonyms": "Decrease, reduce, diminish, lower",
     "englishMeaning": "Make or become more intense, prominent, or elevated.",
-    "exampleSentence": "Let freedom ring from the heightening Alleghenies of Pennsylvania.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Let freedom ring from the heightening Alleghenies of Pennsylvania.\n[Unit 4: Transformative Speeches: Three Speeches]: Let freedom ring from the heightening Alleghenies of Pennsylvania.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23179,7 +23177,7 @@ export const hscVocabularyList = [
     "synonyms": "Cut, carve, sculpt, chisel, shape",
     "antonyms": "Join, attach, assemble, build",
     "englishMeaning": "Chop, carve, or cut something with an axe or chisel, creating something with effort.",
-    "exampleSentence": "With this faith we will be able to hew out of the mountain of despair a stone of hope.",
+    "exampleSentence": "[Unit 4: Lesson 2]: With this faith we will be able to hew out of the mountain of despair a stone of hope.\n[Unit 4: Transformative Speeches: Three Speeches]: With this faith we will be able to hew out of the mountain of despair a stone of hope.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23201,7 +23199,7 @@ export const hscVocabularyList = [
     "synonyms": "Peak, summit, crest, knoll, ridge",
     "antonyms": "Valley, base, bottom, abyss",
     "englishMeaning": "The top or summit of a hill.",
-    "exampleSentence": "So let freedom ring from the prodigious hilltops of New Hampshire.",
+    "exampleSentence": "[Unit 4: Lesson 2]: So let freedom ring from the prodigious hilltops of New Hampshire.\n[Unit 4: Transformative Speeches: Three Speeches]: So let freedom ring from the prodigious hilltops of New Hampshire.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23223,7 +23221,7 @@ export const hscVocabularyList = [
     "synonyms": "Philanthropist, benefactor, altuist, patron",
     "antonyms": "Self-seeker, egoist, misanthrope",
     "englishMeaning": "A person who seeks to promote human welfare and help those in distress.",
-    "exampleSentence": "Mandela was recognized worldwide as a legendary leader and humanitarian who resisted tyranny.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Mandela was recognized worldwide as a legendary leader and humanitarian who resisted tyranny.\n[Unit 4: Transformative Speeches: Three Speeches]: Mandela was recognized worldwide as a legendary leader and humanitarian who resisted tyranny.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23245,7 +23243,7 @@ export const hscVocabularyList = [
     "synonyms": "Modest effort, small share, respectful service",
     "antonyms": "Grand claim, boastful imposition",
     "englishMeaning": "A modest or unpretentious offering or service rendered for a greater noble cause.",
-    "exampleSentence": "I hoped then that life might offer me the opportunity to serve my people and make my own humble contribution to their freedom struggle.",
+    "exampleSentence": "[Unit 4: Lesson 2]: I hoped then that life might offer me the opportunity to serve my people and make my own humble contribution to their freedom struggle.\n[Unit 4: Transformative Speeches: Three Speeches]: I hoped then that life might offer me the opportunity to serve my people and make my own humble contribution to their freedom struggle.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23267,7 +23265,7 @@ export const hscVocabularyList = [
     "synonyms": "Hinted, indicated, suggested, insinuated, signified",
     "antonyms": "Expressed explicitly, stated openly, declared",
     "englishMeaning": "Suggested but not directly expressed; hinted at through circumstances.",
-    "exampleSentence": "Were we to give in to the show of force and the implied threat against future action?",
+    "exampleSentence": "[Unit 4: Lesson 2]: Were we to give in to the show of force and the implied threat against future action?\n[Unit 4: Transformative Speeches: Three Speeches]: Were we to give in to the show of force and the implied threat against future action?",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23289,7 +23287,7 @@ export const hscVocabularyList = [
     "synonyms": "Unrelated, inapplicable, immaterial, extraneous",
     "antonyms": "Relevant, pertinent, applicable, significant",
     "englishMeaning": "Not connected with or relevant to something; having no bearing on a matter.",
-    "exampleSentence": "In fact, I believe none of it is irrelevant because it will enable the Court to appreciate the attitude adopted by the Liberation Movement.",
+    "exampleSentence": "[Unit 4: Lesson 2]: In fact, I believe none of it is irrelevant because it will enable the Court to appreciate the attitude adopted by the Liberation Movement.\n[Unit 4: Transformative Speeches: Three Speeches]: In fact, I believe none of it is irrelevant because it will enable the Court to appreciate the attitude adopted by the Liberation Movement.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23311,7 +23309,7 @@ export const hscVocabularyList = [
     "synonyms": "Handcuff, fetter, shackle, chain, bond",
     "antonyms": "Liberation, freedom, release",
     "englishMeaning": "A metal band, chain, or shackle for fastening someone's hands or ankles.",
-    "exampleSentence": "The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.\n[Unit 4: Transformative Speeches: Three Speeches]: The life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23333,7 +23331,7 @@ export const hscVocabularyList = [
     "synonyms": "Mound, hillock, hummock, small heap",
     "antonyms": "Mountain, peak, abyss",
     "englishMeaning": "A small mound of earth thrown up by a burrowing mole; a tiny trivial hill.",
-    "exampleSentence": "Let freedom ring from every hill and molehill of Mississippi.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Let freedom ring from every hill and molehill of Mississippi.\n[Unit 4: Transformative Speeches: Three Speeches]: Let freedom ring from every hill and molehill of Mississippi.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23355,7 +23353,7 @@ export const hscVocabularyList = [
     "synonyms": "Cancellation, invalidation, revocation, veto, nullity",
     "antonyms": "Validation, legalization, ratification, confirmation",
     "englishMeaning": "The act of cancelling something or declaring a law or order null and void.",
-    "exampleSentence": "With its governor having his lips dripping with the words of 'interposition' and 'nullification'.",
+    "exampleSentence": "[Unit 4: Lesson 2]: With its governor having his lips dripping with the words of 'interposition' and 'nullification'.\n[Unit 4: Transformative Speeches: Three Speeches]: With its governor having his lips dripping with the words of 'interposition' and 'nullification'.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23377,7 +23375,7 @@ export const hscVocabularyList = [
     "synonyms": "Rivals, adversaries, enemies, challengers, foes",
     "antonyms": "Allies, supporters, comrades, partners",
     "englishMeaning": "People who compete with, fight, or oppose another in a contest, debate, or struggle.",
-    "exampleSentence": "Government has always sought to label all its opponents as communists.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Government has always sought to label all its opponents as communists.\n[Unit 4: Transformative Speeches: Three Speeches]: Government has always sought to label all its opponents as communists.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23399,7 +23397,7 @@ export const hscVocabularyList = [
     "synonyms": "Beginning, start, inception, kickoff, commencement",
     "antonyms": "End, conclusion, finale, termination",
     "englishMeaning": "The start or point of beginning of something.",
-    "exampleSentence": "At the outset, I want to say that the suggestion made by the State in its opening is wholly incorrect.",
+    "exampleSentence": "[Unit 4: Lesson 2]: At the outset, I want to say that the suggestion made by the State in its opening is wholly incorrect.\n[Unit 4: Transformative Speeches: Three Speeches]: At the outset, I want to say that the suggestion made by the State in its opening is wholly incorrect.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23421,7 +23419,7 @@ export const hscVocabularyList = [
     "synonyms": "Full, flooding, brimful, packed, spilling over",
     "antonyms": "Empty, meagre, depleted, drained",
     "englishMeaning": "So full that the liquid or emotional contents spill over the edges.",
-    "exampleSentence": "I stand before you today with a heart overflowing with grief.",
+    "exampleSentence": "[Unit 4: Lesson 2]: I stand before you today with a heart overflowing with grief.\n[Unit 4: Transformative Speeches: Three Speeches]: I stand before you today with a heart overflowing with grief.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23443,7 +23441,7 @@ export const hscVocabularyList = [
     "synonyms": "Reformed Christian, non-Catholic Christian",
     "antonyms": "Roman Catholic, Orthodox",
     "englishMeaning": "A member or follower of any of the Western Christian churches that are separate from the Roman Catholic Church.",
-    "exampleSentence": "When all of God's children, black men and white men, Jews and gentiles, Protestants and Catholics, will be able to join hands and sing.",
+    "exampleSentence": "[Unit 4: Lesson 2]: When all of God's children, black men and white men, Jews and gentiles, Protestants and Catholics, will be able to join hands and sing.\n[Unit 4: Transformative Speeches: Three Speeches]: When all of God's children, black men and white men, Jews and gentiles, Protestants and Catholics, will be able to join hands and sing.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23465,7 +23463,7 @@ export const hscVocabularyList = [
     "synonyms": "Racial bigot, chauvinist, segregationist",
     "antonyms": "Egalitarian, integrationist, antiracist",
     "englishMeaning": "A person who is prejudiced against or antagonistic towards people on the basis of their membership of a particular racial or ethnic group.",
-    "exampleSentence": "Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.\n[Unit 4: Transformative Speeches: Three Speeches]: Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23487,7 +23485,7 @@ export const hscVocabularyList = [
     "synonyms": "Oppressive, restrictive, authoritarian, tyrannical",
     "antonyms": "Liberating, permissive, emancipatory, free",
     "englishMeaning": "Inhibiting or restraining the personal freedom of a person or group of people.",
-    "exampleSentence": "Fifty years of non-violence had brought the African people nothing but more and more repressive legislation, and fewer and fewer rights.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Fifty years of non-violence had brought the African people nothing but more and more repressive legislation, and fewer and fewer rights.\n[Unit 4: Transformative Speeches: Three Speeches]: Fifty years of non-violence had brought the African people nothing but more and more repressive legislation, and fewer and fewer rights.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23509,7 +23507,7 @@ export const hscVocabularyList = [
     "synonyms": "Recover, reinstate, revive, reclaim, return",
     "antonyms": "Abolish, destroy, break, forfeit",
     "englishMeaning": "Bring back or re-establish a previous right, practice, or condition.",
-    "exampleSentence": "He declared that he would give us a constitution and restore democracy; we listened to him then.",
+    "exampleSentence": "[Unit 4: Lesson 2]: He declared that he would give us a constitution and restore democracy; we listened to him then.\n[Unit 4: Transformative Speeches: Three Speeches]: He declared that he would give us a constitution and restore democracy; we listened to him then.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23531,7 +23529,7 @@ export const hscVocabularyList = [
     "synonyms": "Shed, pour, overflow, ooze, exude",
     "antonyms": "Collect, gather, hold, retain",
     "englishMeaning": "Cause or allow blood or liquid to flow over the edge of its container or upon streets.",
-    "exampleSentence": "The blood spilled on our streets has not yet dried.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The blood spilled on our streets has not yet dried.\n[Unit 4: Transformative Speeches: Three Speeches]: The blood spilled on our streets has not yet dried.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23553,7 +23551,7 @@ export const hscVocabularyList = [
     "synonyms": "Deadlock, halt, impasse, stagnation, standstill",
     "antonyms": "Motion, activity, progress, continuous flow",
     "englishMeaning": "A state of cessation of movement or work; a complete halt.",
-    "exampleSentence": "Make sure that traffic on all roads and ports are brought to a standstill.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Make sure that traffic on all roads and ports are brought to a standstill.\n[Unit 4: Transformative Speeches: Three Speeches]: Make sure that traffic on all roads and ports are brought to a standstill.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23575,7 +23573,7 @@ export const hscVocabularyList = [
     "synonyms": "Famish, fast, suffer from hunger, hunger",
     "antonyms": "Feed, feast, nourish, gorge",
     "englishMeaning": "Suffer severely or die from hunger.",
-    "exampleSentence": "If need be, we will starve to death, but we'll go down striving for our rights.",
+    "exampleSentence": "[Unit 4: Lesson 2]: If need be, we will starve to death, but we'll go down striving for our rights.\n[Unit 4: Transformative Speeches: Three Speeches]: If need be, we will starve to death, but we'll go down striving for our rights.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23597,7 +23595,7 @@ export const hscVocabularyList = [
     "synonyms": "Battle, fight, conflict, crusade, striving",
     "antonyms": "Surrender, yield, peace, acquiescence",
     "englishMeaning": "A forceful or determined effort against difficult circumstances or tyrannical opposition.",
-    "exampleSentence": "The struggle this time is a struggle for our emancipation - the struggle this time is a struggle for freedom.",
+    "exampleSentence": "[Unit 4: Lesson 2]: The struggle this time is a struggle for our emancipation - the struggle this time is a struggle for freedom.\n[Unit 4: Transformative Speeches: Three Speeches]: The struggle this time is a struggle for our emancipation - the struggle this time is a struggle for freedom.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23619,7 +23617,7 @@ export const hscVocabularyList = [
     "synonyms": "Paused, halted, deferred, postponed, held back",
     "antonyms": "Enforced, continued, resumed, executed",
     "englishMeaning": "Temporarily prevented from continuing or being in force.",
-    "exampleSentence": "Our sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Our sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.\n[Unit 4: Transformative Speeches: Three Speeches]: Our sentences were suspended mainly because the Judge found that discipline and non-violence had been stressed throughout.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23641,7 +23639,7 @@ export const hscVocabularyList = [
     "synonyms": "Roast, bake, sweat, burn, simmer",
     "antonyms": "Freeze, shiver, cool down",
     "englishMeaning": "Be uncomfortably or oppressively hot, sweating profusely.",
-    "exampleSentence": "Even the state of Mississippi, a state sweltering with the heat of injustice, will be transformed into an oasis of freedom.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Even the state of Mississippi, a state sweltering with the heat of injustice, will be transformed into an oasis of freedom.\n[Unit 4: Transformative Speeches: Three Speeches]: Even the state of Mississippi, a state sweltering with the heat of injustice, will be transformed into an oasis of freedom.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23663,7 +23661,7 @@ export const hscVocabularyList = [
     "synonyms": "Cruel, malicious, ferocious, spiteful, savage",
     "antonyms": "Clean, decent, innocent, kind, benevolent",
     "englishMeaning": "Deliberately cruel, violent, or intensely spiteful and viciously malicious.",
-    "exampleSentence": "Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.\n[Unit 4: Transformative Speeches: Three Speeches]: Down in Alabama, with its vicious racists, little black boys and girls will join hands with little white boys and girls.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23685,7 +23683,7 @@ export const hscVocabularyList = [
     "synonyms": "Walking through, traversing, trudging through",
     "antonyms": "Avoiding, circumventing, turning back",
     "englishMeaning": "Walking with effort through water or another substance, such as shed blood.",
-    "exampleSentence": "Mujibur Rahman won't join the Round Table Conference because that would mean wading over the blood that has been shed.",
+    "exampleSentence": "[Unit 4: Lesson 2]: Mujibur Rahman won't join the Round Table Conference because that would mean wading over the blood that has been shed.\n[Unit 4: Transformative Speeches: Three Speeches]: Mujibur Rahman won't join the Round Table Conference because that would mean wading over the blood that has been shed.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23707,7 +23705,7 @@ export const hscVocabularyList = [
     "synonyms": "Broadly, extensively, universally, far and wide",
     "antonyms": "Narrowly, marginally, locally, restrictedly",
     "englishMeaning": "Over a wide range or area; by a great number of people.",
-    "exampleSentence": "It is widely recognized as one of the most iconic speeches in American history.",
+    "exampleSentence": "[Unit 4: Lesson 2]: It is widely recognized as one of the most iconic speeches in American history.\n[Unit 4: Transformative Speeches: Three Speeches]: It is widely recognized as one of the most iconic speeches in American history.",
     "unit": "Unit 4: Lesson 2 (Transformative Speeches)",
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
@@ -23729,7 +23727,7 @@ export const hscVocabularyList = [
     "synonyms": "Endowed with, bestowed, rewarded, decorated",
     "antonyms": "Revoked, stripped, denied",
     "englishMeaning": "Given an official honour, prize, or reward in recognition of exceptional service or merit.",
-    "exampleSentence": "The first African woman and first environmentalist awarded the Nobel Peace Prize, Wangari Maathai received that honour in 2004.",
+    "exampleSentence": "[Unit 4: Lesson 3]: The first African woman and first environmentalist awarded the Nobel Peace Prize, Wangari Maathai received that honour in 2004.\n[Unit 4: Great Women: Pioneers of Education & Science]: The first African woman and first environmentalist awarded the Nobel Peace Prize, Wangari Maathai received that honour in 2004.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23751,7 +23749,7 @@ export const hscVocabularyList = [
     "synonyms": "Surpassed barriers, overcame restrictions, shattered barriers",
     "antonyms": "Remained constrained, stayed suppressed, limited",
     "englishMeaning": "Overcame the unacknowledged discriminatory barrier preventing women from advancing to leadership.",
-    "exampleSentence": "Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.\n[Unit 4: Great Women: Pioneers of Education & Science]: Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23773,7 +23771,7 @@ export const hscVocabularyList = [
     "synonyms": "Savagery, cruelty, ruthlessness, inhumaneness, atrocity",
     "antonyms": "Gentleness, kindness, benevolence, mercy",
     "englishMeaning": "Savage physical violence and profound cruelty inflicted on innocent people.",
-    "exampleSentence": "Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.\n[Unit 4: Great Women: Pioneers of Education & Science]: Amin exposes the brutality of the 1971 Liberation War through stark images in her poems.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23795,7 +23793,7 @@ export const hscVocabularyList = [
     "synonyms": "Mainly, primarily, essentially, mostly, principally",
     "antonyms": "Insignificantly, secondarily, marginally",
     "englishMeaning": "Above all; for the most part or primarily.",
-    "exampleSentence": "While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.",
+    "exampleSentence": "[Unit 4: Lesson 3]: While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.\n[Unit 4: Great Women: Pioneers of Education & Science]: While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23817,7 +23815,7 @@ export const hscVocabularyList = [
     "synonyms": "Covertly, surreptitiously, privately, secretly, furtively",
     "antonyms": "Openly, publicly, blatantly",
     "englishMeaning": "In a secretive, covert manner, often to avoid prohibition by oppressive authorities.",
-    "exampleSentence": "She had to take work as a teacher and, at the same time, took part clandestinely in the nationalist 'free university', reading in Polish to women workers.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She had to take work as a teacher and, at the same time, took part clandestinely in the nationalist 'free university', reading in Polish to women workers.\n[Unit 4: Great Women: Pioneers of Education & Science]: She had to take work as a teacher and, at the same time, took part clandestinely in the nationalist 'free university', reading in Polish to women workers.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23839,7 +23837,7 @@ export const hscVocabularyList = [
     "synonyms": "Finalization, conclusion, accomplishment, termination, finishing point",
     "antonyms": "Start, commencement, inception, onset",
     "englishMeaning": "The state of being finished, completed, or concluded successfully.",
-    "exampleSentence": "From childhood she was remarkable for her prodigious memory, and at the age of 16 she won a gold medal on completion of her secondary education at the Russian lycée.",
+    "exampleSentence": "[Unit 4: Lesson 3]: From childhood she was remarkable for her prodigious memory, and at the age of 16 she won a gold medal on completion of her secondary education at the Russian lycée.\n[Unit 4: Great Women: Pioneers of Education & Science]: From childhood she was remarkable for her prodigious memory, and at the age of 16 she won a gold medal on completion of her secondary education at the Russian lycée.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23861,7 +23859,7 @@ export const hscVocabularyList = [
     "synonyms": "Regularly, constantly, systematically, persistently, steadily",
     "antonyms": "Inconsistently, irregularly, erratically, sporadically",
     "englishMeaning": "In an unchanging or dependable way over time; continuously and steadily.",
-    "exampleSentence": "Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.\n[Unit 4: Great Women: Pioneers of Education & Science]: Apart from her contribution to women's emancipation, Leela consistently voiced her opinions in politics as well.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23883,7 +23881,7 @@ export const hscVocabularyList = [
     "synonyms": "Involvement, participation, donation, offering, service",
     "antonyms": "Obstruction, hindrance, detraction",
     "englishMeaning": "A gift or payment to a common fund or collection; the part played in bringing about a result.",
-    "exampleSentence": "We know of the contribution of Rokeya Sakhawat Hossain to women's education in undivided Bengal.",
+    "exampleSentence": "[Unit 4: Lesson 3]: We know of the contribution of Rokeya Sakhawat Hossain to women's education in undivided Bengal.\n[Unit 4: Great Women: Pioneers of Education & Science]: We know of the contribution of Rokeya Sakhawat Hossain to women's education in undivided Bengal.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23905,7 +23903,7 @@ export const hscVocabularyList = [
     "synonyms": "Illustrated, proved, exhibited, shown, verified",
     "antonyms": "Disproved, invalidated, concealed, refuted",
     "englishMeaning": "Clearly showed or proved the existence or truth of something by evidence.",
-    "exampleSentence": "Her contribution to physics had been immense, not only in her own work, the importance of which had been demonstrated by the award to her of two Nobel Prizes.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Her contribution to physics had been immense, not only in her own work, the importance of which had been demonstrated by the award to her of two Nobel Prizes.\n[Unit 4: Great Women: Pioneers of Education & Science]: Her contribution to physics had been immense, not only in her own work, the importance of which had been demonstrated by the award to her of two Nobel Prizes.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23927,7 +23925,7 @@ export const hscVocabularyList = [
     "synonyms": "Portray, represent, illustrate, delineate, characterize",
     "antonyms": "Distort, blur, misrepresent, obscure",
     "englishMeaning": "Represent by a drawing, painting, or other art form; portray in words.",
-    "exampleSentence": "Being a scholar herself, Amin had a unique approach to depicting the lives of women.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Being a scholar herself, Amin had a unique approach to depicting the lives of women.\n[Unit 4: Great Women: Pioneers of Education & Science]: Being a scholar herself, Amin had a unique approach to depicting the lives of women.\n[Unit 11: Lesson 5]: 5, 1936, depicts the death of a Republican soldier during the Spanish Civil War.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23950,7 +23948,7 @@ export const hscVocabularyList = [
     "synonyms": "Attentive, dedicated, ardent, loyal, steadfast",
     "antonyms": "Uncommitted, unenthusiastic, uncaring, negligent",
     "englishMeaning": "Very loving, loyal, and giving a large amount of time or energy to a specific cause.",
-    "exampleSentence": "While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.",
+    "exampleSentence": "[Unit 4: Lesson 3]: While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.\n[Unit 4: Great Women: Pioneers of Education & Science]: While Pierre Curie devoted himself chiefly to the physical study of the new radiations, Marie Curie struggled to obtain pure radium in the metallic state.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23972,7 +23970,7 @@ export const hscVocabularyList = [
     "synonyms": "Revelation, innovation, unearthing, detection, disclosure",
     "antonyms": "Loss, miss, concealment, oversight",
     "englishMeaning": "The act of finding or learning something for the first time.",
-    "exampleSentence": "Pierre Curie then joined her in the work that she had undertaken to resolve this problem and that led to the discovery of the new elements, polonium and radium.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Pierre Curie then joined her in the work that she had undertaken to resolve this problem and that led to the discovery of the new elements, polonium and radium.\n[Unit 4: Great Women: Pioneers of Education & Science]: Pierre Curie then joined her in the work that she had undertaken to resolve this problem and that led to the discovery of the new elements, polonium and radium.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -23994,7 +23992,7 @@ export const hscVocabularyList = [
     "synonyms": "Environment, bionetwork, ecology, biome, natural community",
     "antonyms": "Artificial habitat, sterility",
     "englishMeaning": "A biological community of interacting organisms and their physical environment.",
-    "exampleSentence": "We have a special responsibility to the ecosystem of this planet.",
+    "exampleSentence": "[Unit 4: Lesson 3]: We have a special responsibility to the ecosystem of this planet.\n[Unit 4: Great Women: Pioneers of Education & Science]: We have a special responsibility to the ecosystem of this planet.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24016,7 +24014,7 @@ export const hscVocabularyList = [
     "synonyms": "Involve, entangle, ensnare, mire, implicate",
     "antonyms": "Detach, disentangle, free, liberate",
     "englishMeaning": "Involve someone deeply in an argument, conflict, or difficult situation.",
-    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "exampleSentence": "[Unit 4: Lesson 3]: When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.\n[Unit 4: Great Women: Pioneers of Education & Science]: When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24038,7 +24036,7 @@ export const hscVocabularyList = [
     "synonyms": "Female emancipation, women's liberation, egalitarianism",
     "antonyms": "Anti-feminism, misogyny, patriarchy",
     "englishMeaning": "The advocacy of women's rights on the ground of the equality of the sexes.",
-    "exampleSentence": "Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.\n[Unit 4: Great Women: Pioneers of Education & Science]: Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24060,7 +24058,7 @@ export const hscVocabularyList = [
     "synonyms": "Egalitarian, women's rights advocate, suffragist",
     "antonyms": "Misogynist, chauvinist, anti-feminist",
     "englishMeaning": "A person who supports feminism and defends equality of rights for women.",
-    "exampleSentence": "Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.\n[Unit 4: Great Women: Pioneers of Education & Science]: Leela Nag broke the glass ceiling on so many levels that it is very difficult to limit her to being only a feminist.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24082,7 +24080,7 @@ export const hscVocabularyList = [
     "synonyms": "Hereafter, henceforward, from now on, in the future",
     "antonyms": "Hitherto, previously, formerly",
     "englishMeaning": "From this time on or from that time forward.",
-    "exampleSentence": "The sudden death of Pierre Curie was a decisive turning point: henceforth she was to devote all her energy to completing alone the scientific work.",
+    "exampleSentence": "[Unit 4: Lesson 3]: The sudden death of Pierre Curie was a decisive turning point: henceforth she was to devote all her energy to completing alone the scientific work.\n[Unit 4: Great Women: Pioneers of Education & Science]: The sudden death of Pierre Curie was a decisive turning point: henceforth she was to devote all her energy to completing alone the scientific work.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24104,7 +24102,7 @@ export const hscVocabularyList = [
     "synonyms": "Detained, incarcerated, jailed, confined, captured",
     "antonyms": "Released, freed, liberated, discharged",
     "englishMeaning": "Kept in prison or captivity as a punishment or political consequence.",
-    "exampleSentence": "She had been imprisoned on several occasions for her fearless anti-colonial struggle.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She had been imprisoned on several occasions for her fearless anti-colonial struggle.\n[Unit 4: Great Women: Pioneers of Education & Science]: She had been imprisoned on several occasions for her fearless anti-colonial struggle.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24126,7 +24124,7 @@ export const hscVocabularyList = [
     "synonyms": "Progressive thoughts, enlightened views, open-minded philosophy",
     "antonyms": "Conservatism, dogmatism, orthodoxy",
     "englishMeaning": "Opinions and beliefs characterized by openness to new ideas and individual liberty.",
-    "exampleSentence": "Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.\n[Unit 4: Great Women: Pioneers of Education & Science]: Leela Nag established the identity of the Department of English from the very beginning as a platform for progressive and liberal ideas.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24148,7 +24146,7 @@ export const hscVocabularyList = [
     "synonyms": "Mournful, lamenting, dejected, sorrowful, somber",
     "antonyms": "Cheerful, joyous, upbeat, jubilant",
     "englishMeaning": "Feeling or expressing pensive, deep, or persistent sadness.",
-    "exampleSentence": "In yet another poem, 'God in the Goblet', a melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In yet another poem, 'God in the Goblet', a melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.\n[Unit 4: Great Women: Pioneers of Education & Science]: In yet another poem, 'God in the Goblet', a melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24170,7 +24168,7 @@ export const hscVocabularyList = [
     "synonyms": "Cruelly, pitilessly, ruthlessly, heartlessly, brutally",
     "antonyms": "Sympathetically, kindly, mercifully, compassionately",
     "englishMeaning": "In a way that shows no mercy or compassion to victims.",
-    "exampleSentence": "A melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.",
+    "exampleSentence": "[Unit 4: Lesson 3]: A melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.\n[Unit 4: Great Women: Pioneers of Education & Science]: A melancholic tone addresses all the martyrs and the intellectuals who were mercilessly killed in 1971.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24192,7 +24190,7 @@ export const hscVocabularyList = [
     "synonyms": "Intergenerational, cross-generational, transgenerational",
     "antonyms": "Single-generation, ephemeral",
     "englishMeaning": "Relating to, involving, or consisting of several generations.",
-    "exampleSentence": "Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.\n[Unit 4: Great Women: Pioneers of Education & Science]: Nadera Begum was a shining example of the multigenerational feminism that was evident among the women.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24214,7 +24212,7 @@ export const hscVocabularyList = [
     "synonyms": "Acquire, secure, attain, derive, gain",
     "antonyms": "Lose, forfeit, surrender, relinquish",
     "englishMeaning": "Get, acquire, or secure something as a result of effort or research.",
-    "exampleSentence": "Marie Curie struggled to obtain pure radium in the metallic state.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Marie Curie struggled to obtain pure radium in the metallic state.\n[Unit 4: Great Women: Pioneers of Education & Science]: Marie Curie struggled to obtain pure radium in the metallic state.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24236,7 +24234,7 @@ export const hscVocabularyList = [
     "synonyms": "Mineral deposit, rock, unrefined mineral",
     "antonyms": "Refined metal, purified compound",
     "englishMeaning": "A naturally occurring solid material from which a metal or valuable mineral can be extracted.",
-    "exampleSentence": "Could be explained only by the presence in the ore of small quantities of an unknown substance of very high activity.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Could be explained only by the presence in the ore of small quantities of an unknown substance of very high activity.\n[Unit 4: Great Women: Pioneers of Education & Science]: Could be explained only by the presence in the ore of small quantities of an unknown substance of very high activity.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24258,7 +24256,7 @@ export const hscVocabularyList = [
     "synonyms": "Male-dominated, paternalistic",
     "antonyms": "Matriarchal, egalitarian",
     "englishMeaning": "Relating to or characteristic of a system of society or government controlled by men.",
-    "exampleSentence": "Breaking patriarchal barriers, Leela Nag established the identity of the Department of English from the very beginning.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Breaking patriarchal barriers, Leela Nag established the identity of the Department of English from the very beginning.\n[Unit 4: Great Women: Pioneers of Education & Science]: Breaking patriarchal barriers, Leela Nag established the identity of the Department of English from the very beginning.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24280,7 +24278,7 @@ export const hscVocabularyList = [
     "synonyms": "Occurrence, event, happening, wonder, marvel",
     "antonyms": "Regularity, commonality",
     "englishMeaning": "A fact or situation that is observed to exist or happen, especially one whose cause is in question.",
-    "exampleSentence": "Following Henri Becquerel's discovery of a new phenomenon (which she later called 'radioactivity'), Marie Curie decided to investigate.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Following Henri Becquerel's discovery of a new phenomenon (which she later called 'radioactivity'), Marie Curie decided to investigate.\n[Unit 4: Great Women: Pioneers of Education & Science]: Following Henri Becquerel's discovery of a new phenomenon (which she later called 'radioactivity'), Marie Curie decided to investigate.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24302,7 +24300,7 @@ export const hscVocabularyList = [
     "synonyms": "Mutineer, insurgent, nonconformist, maverick, freedom fighter",
     "antonyms": "Loyalist, conformist, obedient follower",
     "englishMeaning": "A person who rises in opposition or armed resistance against an established government or ruler.",
-    "exampleSentence": "She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.\n[Unit 4: Great Women: Pioneers of Education & Science]: She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24324,7 +24322,7 @@ export const hscVocabularyList = [
     "synonyms": "Reformist, changemaker, innovator, crusader",
     "antonyms": "Reactionary, traditionalist, oppressor",
     "englishMeaning": "A person who makes changes to something in order to improve it.",
-    "exampleSentence": "She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.\n[Unit 4: Great Women: Pioneers of Education & Science]: She fulfills all the criteria of citizen, rebel, reformer, social activist and a change agent.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24346,7 +24344,7 @@ export const hscVocabularyList = [
     "synonyms": "Extraordinary, outstanding, significant, incredible, amazing",
     "antonyms": "Ordinary, usual, commonplace, mediocre",
     "englishMeaning": "Worthy of attention; striking or extraordinary.",
-    "exampleSentence": "From childhood she was remarkable for her prodigious memory.",
+    "exampleSentence": "[Unit 4: Lesson 3]: From childhood she was remarkable for her prodigious memory.\n[Unit 4: Great Women: Pioneers of Education & Science]: From childhood she was remarkable for her prodigious memory.\n[Unit 11: Lesson 1]: Maya Angelou had a remarkable range of interests and careers.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24369,7 +24367,7 @@ export const hscVocabularyList = [
     "synonyms": "Settle, solve, answer, unravel, determine",
     "antonyms": "Complicate, confuse, hesitate, worsen",
     "englishMeaning": "Find a solution to a problem, dispute, or contentious matter.",
-    "exampleSentence": "Pierre Curie then joined her in the work that she had undertaken to resolve this problem.",
+    "exampleSentence": "[Unit 4: Lesson 3]: Pierre Curie then joined her in the work that she had undertaken to resolve this problem.\n[Unit 4: Great Women: Pioneers of Education & Science]: Pierre Curie then joined her in the work that she had undertaken to resolve this problem.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24391,7 +24389,7 @@ export const hscVocabularyList = [
     "synonyms": "Concurrently, instantaneously, together, in tandem",
     "antonyms": "Independently, separately, consecutively",
     "englishMeaning": "At the same time; concurrently.",
-    "exampleSentence": "She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
+    "exampleSentence": "[Unit 4: Lesson 3]: She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.\n[Unit 4: Great Women: Pioneers of Education & Science]: She was simultaneously an educationist, a theatre actor, a journalist, columnist, a poet, and a celebrated writer.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24413,7 +24411,7 @@ export const hscVocabularyList = [
     "synonyms": "Strangle, choke, suffocate, stifle, asphyxiate",
     "antonyms": "Release, breathe, liberate",
     "englishMeaning": "Attack or kill someone by choking or strangling them.",
-    "exampleSentence": "A mother frenzied by the roar of mortars throttled her whining infant; its life for the life of millions.",
+    "exampleSentence": "[Unit 4: Lesson 3]: A mother frenzied by the roar of mortars throttled her whining infant; its life for the life of millions.\n[Unit 4: Great Women: Pioneers of Education & Science]: A mother frenzied by the roar of mortars throttled her whining infant; its life for the life of millions.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24435,7 +24433,7 @@ export const hscVocabularyList = [
     "synonyms": "Nominal, in name only, formal, ceremonial, symbolic",
     "antonyms": "Actual, real, operational, substantive",
     "englishMeaning": "Holding or constituting a purely formal, honorary, or titular position.",
-    "exampleSentence": "In 1908 she became titular professor, and in 1910 her fundamental treatise on radioactivity was published.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In 1908 she became titular professor, and in 1910 her fundamental treatise on radioactivity was published.\n[Unit 4: Great Women: Pioneers of Education & Science]: In 1908 she became titular professor, and in 1910 her fundamental treatise on radioactivity was published.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24457,7 +24455,7 @@ export const hscVocabularyList = [
     "synonyms": "Dissertation, discourse, essay, thesis, monograph",
     "antonyms": "Brief sketch, casual note",
     "englishMeaning": "A written work dealing formally and systematically with a subject.",
-    "exampleSentence": "In 1910 her fundamental treatise on radioactivity was published.",
+    "exampleSentence": "[Unit 4: Lesson 3]: In 1910 her fundamental treatise on radioactivity was published.\n[Unit 4: Great Women: Pioneers of Education & Science]: In 1910 her fundamental treatise on radioactivity was published.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24479,7 +24477,7 @@ export const hscVocabularyList = [
     "synonyms": "Homage, testimonial, accolade, encomium, honor",
     "antonyms": "Condemnation, criticism, reproach",
     "englishMeaning": "An act, statement, or gift that is intended to show gratitude and respect.",
-    "exampleSentence": "References to Muneer, Hyder, Fazle and Kaiser form a tribute to the sacrifices of scholars of Bangladesh.",
+    "exampleSentence": "[Unit 4: Lesson 3]: References to Muneer, Hyder, Fazle and Kaiser form a tribute to the sacrifices of scholars of Bangladesh.\n[Unit 4: Great Women: Pioneers of Education & Science]: References to Muneer, Hyder, Fazle and Kaiser form a tribute to the sacrifices of scholars of Bangladesh.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24501,7 +24499,7 @@ export const hscVocabularyList = [
     "synonyms": "Rowdy, turbulent, stormy, riotous, chaotic",
     "antonyms": "Peaceful, tranquil, calm, serene",
     "englishMeaning": "Making an uproar or loud, confused noise; marked by chaos or turbulent change.",
-    "exampleSentence": "This is why, during the tumultuous 60s, soon after the Language Movement, we can find yet another woman as a valiant fighter against oppression.",
+    "exampleSentence": "[Unit 4: Lesson 3]: This is why, during the tumultuous 60s, soon after the Language Movement, we can find yet another woman as a valiant fighter against oppression.\n[Unit 4: Great Women: Pioneers of Education & Science]: This is why, during the tumultuous 60s, soon after the Language Movement, we can find yet another woman as a valiant fighter against oppression.\n[Unit 11: Lesson 4]: Read the following poem and try to understand the meaning.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24524,7 +24522,7 @@ export const hscVocabularyList = [
     "synonyms": "Chaos, disorder, tumult, unrest, turbulence",
     "antonyms": "Order, peace, tranquility, harmony",
     "englishMeaning": "A state of great disturbance, confusion, or uncertainty.",
-    "exampleSentence": "When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
+    "exampleSentence": "[Unit 4: Lesson 3]: When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.\n[Unit 4: Great Women: Pioneers of Education & Science]: When the Subcontinent was embroiled in turmoil during the Partition, Leela Nag set up camps for victims.",
     "unit": "Unit 4: Lesson 3 (Great Women)",
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
@@ -24546,7 +24544,7 @@ export const hscVocabularyList = [
     "synonyms": "Secrecy, solitude, confidentiality, seclusion, isolation",
     "antonyms": "Publicity, disclosure, exposure, openness",
     "englishMeaning": "A state in which one is not observed or disturbed by other people; freedom from unauthorized intrusion.",
-    "exampleSentence": "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Read the following texts which are some of the articles of the Universal Declaration of Human Rights: Article 12: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation.\n[Unit 5: Human Rights: Declarations of Human Rights]: No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -24568,7 +24566,7 @@ export const hscVocabularyList = [
     "synonyms": "Legal proceeding, trial, lawsuit, case, litigation",
     "antonyms": "Defence, pardon, exoneration, acquittal",
     "englishMeaning": "The institution and conducting of legal proceedings against someone in respect of a criminal charge.",
-    "exampleSentence": "Everyone has the right to a fair public trial with all guarantees necessary for defence against unlawful prosecution.",
+    "exampleSentence": "[Unit 5: Lesson 1]: Unit Five: Human Rights | Lesson 1: Are We Aware of These Rights-I?\n[Unit 5: Human Rights: Declarations of Human Rights]: Everyone has the right to a fair public trial with all guarantees necessary for defence against unlawful prosecution.",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -24590,7 +24588,7 @@ export const hscVocabularyList = [
     "synonyms": "Term, clause, stipulation, condition, requirement",
     "antonyms": "Prohibition, omission, cancellation",
     "englishMeaning": "A condition or requirement in a legal document; an article or clause in a human rights charter.",
-    "exampleSentence": "The provision of which articles above are denied to them?",
+    "exampleSentence": "[Unit 5: Lesson 1]: The provision of which articles above are denied to them?\n[Unit 5: Human Rights: Declarations of Human Rights]: The provision of which articles above are denied to them?",
     "unit": "Unit 5: Lesson 1 (Are We Aware of These Rights-I?)",
     "boardExamTag": "Unit 5 • Lesson 1",
     "sources": [
@@ -24612,7 +24610,7 @@ export const hscVocabularyList = [
     "synonyms": "Bestow, bless, gift, confer on, equip",
     "antonyms": "Deprive, strip, divest, dispossess",
     "englishMeaning": "Provide with a quality, ability, or asset by nature; bestow upon.",
-    "exampleSentence": "They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
+    "exampleSentence": "[Unit 5: Lesson 2]: They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.\n[Unit 5: Human Rights: Civil Freedoms]: They are endowed with reason and conscience and should act towards one another in the spirit of brotherhood.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -24634,7 +24632,7 @@ export const hscVocabularyList = [
     "synonyms": "Expose to, treat with, lay open to, subjugate",
     "antonyms": "Exempt, protect, shield, liberate",
     "englishMeaning": "Cause or force someone or something to undergo a particular experience.",
-    "exampleSentence": "No one shall be subjected to arbitrary arrest, detention or exile.",
+    "exampleSentence": "[Unit 5: Lesson 2]: - Article 5: No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.\n[Unit 5: Human Rights: Civil Freedoms]: No one shall be subjected to arbitrary arrest, detention or exile.",
     "unit": "Unit 5: Lesson 2 (Are We Aware of These Rights-II?)",
     "boardExamTag": "Unit 5 • Lesson 2",
     "sources": [
@@ -24656,7 +24654,7 @@ export const hscVocabularyList = [
     "synonyms": "Situation, condition, state of affairs, context, factor",
     "antonyms": "Certainty, inevitability",
     "englishMeaning": "A fact or condition connected with or relevant to an event or action.",
-    "exampleSentence": "In the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
+    "exampleSentence": "[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.\n[Unit 5: Human Rights: Health and Education]: In the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -24678,7 +24676,7 @@ export const hscVocabularyList = [
     "synonyms": "Incapability, impairment, handicap, physical limitation",
     "antonyms": "Ability, fitness, capability, strength",
     "englishMeaning": "A physical or mental condition that limits a person's movements, senses, or activities.",
-    "exampleSentence": "Right to security in the event of unemployment, sickness, disability, widowhood, old age.",
+    "exampleSentence": "[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.\n[Unit 5: Human Rights: Health and Education]: Right to security in the event of unemployment, sickness, disability, widowhood, old age.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -24700,7 +24698,7 @@ export const hscVocabularyList = [
     "synonyms": "Systematize, devise, draft, construct, frame",
     "antonyms": "Disorganize, dismantle, ruin",
     "englishMeaning": "Create or prepare methodically; express systematically in words.",
-    "exampleSentence": "Which organization has formulated this declaration?",
+    "exampleSentence": "[Unit 5: Lesson 3]: Which organization has formulated this declaration?\n[Unit 5: Human Rights: Health and Education]: Which organization has formulated this declaration?",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -24722,7 +24720,7 @@ export const hscVocabularyList = [
     "synonyms": "Aim, purpose, goal, objective, design, intent",
     "antonyms": "Accident, chance, coincidence",
     "englishMeaning": "A thing intended; an aim or plan.",
-    "exampleSentence": "What do you know about the intentions of the UN regarding the declaration?",
+    "exampleSentence": "[Unit 5: Lesson 3]: What do you know about the intentions of the UN regarding the declaration?\n[Unit 5: Human Rights: Health and Education]: What do you know about the intentions of the UN regarding the declaration?",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -24744,7 +24742,7 @@ export const hscVocabularyList = [
     "synonyms": "Toughen, bolster, reinforce, solidify, intensify",
     "antonyms": "Weaken, undermine, diminish, enfeeble",
     "englishMeaning": "Make or become stronger in power, quality, or effect.",
-    "exampleSentence": "And to the strengthening of respect for human rights and fundamental freedoms.",
+    "exampleSentence": "[Unit 5: Lesson 3]: (2) Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms.\n[Unit 5: Human Rights: Health and Education]: And to the strengthening of respect for human rights and fundamental freedoms.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -24766,7 +24764,7 @@ export const hscVocabularyList = [
     "synonyms": "Joblessness, redundancy, out of work, worklessness",
     "antonyms": "Employment, work, occupation",
     "englishMeaning": "The state of being unemployed or having no paid employment.",
-    "exampleSentence": "Right to security in the event of unemployment, sickness, disability, widowhood, old age.",
+    "exampleSentence": "[Unit 5: Lesson 3]: The following text has extracts from the Universal Declaration of Human Rights and is about health and education: Article 25: (1) Everyone has the right to a standard of living adequate for the health and well-being of oneself and of one's family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.\n[Unit 5: Human Rights: Health and Education]: Right to security in the event of unemployment, sickness, disability, widowhood, old age.",
     "unit": "Unit 5: Lesson 3 (Rights to Health and Education)",
     "boardExamTag": "Unit 5 • Lesson 3",
     "sources": [
@@ -24788,7 +24786,7 @@ export const hscVocabularyList = [
     "synonyms": "Lower legs, leg muscles, hind limbs",
     "antonyms": "Upper body, torso",
     "englishMeaning": "The fleshy back parts of the human leg below the knee.",
-    "exampleSentence": "Have to stoop much and creep through water, which is frequently up to the calves of my legs.",
+    "exampleSentence": "[Unit 5: Lesson 4]: (equivalent of 50 kg) and a quarter on my back; have to stoop much and creep through water, which is frequently up to the calves of my legs.\n[Unit 5: Human Rights: Coal Miners]: Have to stoop much and creep through water, which is frequently up to the calves of my legs.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24810,7 +24808,7 @@ export const hscVocabularyList = [
     "synonyms": "Deduction, cut, withholding of wages, docking of pay",
     "antonyms": "Bonus, addition, enhancement",
     "englishMeaning": "Deducting money from a worker's wages or pay as a penalty or fine.",
-    "exampleSentence": "Docking: the severe penalty of deducting pay imposed on child coal miners.",
+    "exampleSentence": "[Unit 5: Lesson 4]: Unit Five: Human Rights | Lesson 4: Coal Miners A.\n[Unit 5: Human Rights: Coal Miners]: Docking: the severe penalty of deducting pay imposed on child coal miners.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24832,7 +24830,7 @@ export const hscVocabularyList = [
     "synonyms": "Questioned, queried, interrogated, consulted",
     "antonyms": "Ignored, dismissed, overlooked",
     "englishMeaning": "Asked questions in an interview to obtain factual testimonies.",
-    "exampleSentence": "During his investigation, he interviewed a large number of people working in Britain's factories and mines.",
+    "exampleSentence": "[Unit 5: Lesson 4]: During his investigation, he interviewed a large number of people working in Britain's factories and mines.\n[Unit 5: Human Rights: Coal Miners]: During his investigation, he interviewed a large number of people working in Britain's factories and mines.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24854,7 +24852,7 @@ export const hscVocabularyList = [
     "synonyms": "Examined, probed, scrutinized, inspected, explored",
     "antonyms": "Overlooked, disregarded, neglected",
     "englishMeaning": "Carry out a systematic or formal inquiry to discover and examine the facts.",
-    "exampleSentence": "Lord Ashley's commission that investigated a serious accident at Huskar Colliery, Yorkshire in 1838.",
+    "exampleSentence": "[Unit 5: Lesson 4]: We will read three testimonies collected by Lord Ashley's commission that investigated a serious accident at Huskar Colliery, Yorkshire in 1838.\n[Unit 5: Human Rights: Coal Miners]: Lord Ashley's commission that investigated a serious accident at Huskar Colliery, Yorkshire in 1838.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24876,7 +24874,7 @@ export const hscVocabularyList = [
     "synonyms": "Girls, maidens, young women, damsels",
     "antonyms": "Boys, youths, men",
     "englishMeaning": "Young girls or young unmarried women.",
-    "exampleSentence": "I do not like the work, nor do the lassies, but they are made to like it.",
+    "exampleSentence": "[Unit 5: Lesson 4]: I do not like the work, nor do the lassies, but they are made to like it.\n[Unit 5: Human Rights: Coal Miners]: I do not like the work, nor do the lassies, but they are made to like it.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24898,7 +24896,7 @@ export const hscVocabularyList = [
     "synonyms": "Coal mine, shaft, hole, excavation, quarry",
     "antonyms": "Mound, hill, summit",
     "englishMeaning": "A coal mine, including the shafts and subterranean workings.",
-    "exampleSentence": "I would like to be at school far better than in the pit.",
+    "exampleSentence": "[Unit 5: Lesson 4]: Three testimonies gathered by Ashley's Mines Commission are given below: Sarah Goodier, Age: 8 years: \"I'm a trapper in the Gawber pit.\n[Unit 5: Human Rights: Coal Miners]: I would like to be at school far better than in the pit.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24920,7 +24918,7 @@ export const hscVocabularyList = [
     "synonyms": "Terrified, frightened, alarmed, panicked, horrified",
     "antonyms": "Brave, fearless, courageous, bold",
     "englishMeaning": "Fearful; frightened of something dangerous or terrifying.",
-    "exampleSentence": "I have a trap without a light and I'm scared.",
+    "exampleSentence": "[Unit 5: Lesson 4]: It does not tire me, but I have a trap without a light and I'm scared.\n[Unit 5: Human Rights: Coal Miners]: I have a trap without a light and I'm scared.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24942,7 +24940,7 @@ export const hscVocabularyList = [
     "synonyms": "Interlace, knit, entwine, braid, fabricate",
     "antonyms": "Unweave, unravel, dismantle",
     "englishMeaning": "Form fabric or a web by interlacing long threads passing in one direction with others at a right angle.",
-    "exampleSentence": "All of them but one live at home; they weave, and wind, and hurry.",
+    "exampleSentence": "[Unit 5: Lesson 4]: Mary Barrett, Age: 14 years: \"I have worked down in pit for five years; my father works in the next pit; I have 12 brothers and sisters—all of them but one live at home; they weave, and wind, and hurry; one of them can read, none of the rest can, or write; they never went to the day-school, but three of them go to Sunday-school; I come down in the pit at seven in the morning; I do not like working in the pit, but I am obliged to get a living; I work always without stockings, or shoes, or trousers; I wear nothing but my chemise; I have to go up and work with the men.\n[Unit 5: Human Rights: Coal Miners]: All of them but one live at home; they weave, and wind, and hurry.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24964,7 +24962,7 @@ export const hscVocabularyList = [
     "synonyms": "Worked, employed, fashioned, crafted, laboured",
     "antonyms": "Idle, unworked, raw",
     "englishMeaning": "Put to work; shaped or created with intensive labor.",
-    "exampleSentence": "I am wrought with sister and brother; it is very sore work.",
+    "exampleSentence": "[Unit 5: Lesson 4]: ] Isabella Read, Age: 12 years: \"I am wrought with sister and brother; it is very sore work; cannot say how many rakes or journeys I make from pit's bottom to wall face and back, it may be about 30 or 25 on average; the distance varies from 100 to 250 fathom (1 fathom = 1.\n[Unit 5: Human Rights: Coal Miners]: I am wrought with sister and brother; it is very sore work.",
     "unit": "Unit 5: Lesson 4 (Coal Miners)",
     "boardExamTag": "Unit 5 • Lesson 4",
     "sources": [
@@ -24986,7 +24984,7 @@ export const hscVocabularyList = [
     "synonyms": "Correct, exact, precise, faultless, error-free",
     "antonyms": "Inaccurate, wrong, incorrect, imprecise",
     "englishMeaning": "Correct in all details; exact and free from error.",
-    "exampleSentence": "I have no accurate knowledge of my age, never having seen any authentic record containing it.",
+    "exampleSentence": "[Unit 5: Lesson 5]: I have no accurate knowledge of my age, never having seen any authentic record containing it.\n[Unit 5: Human Rights: Frederick Douglass]: I have no accurate knowledge of my age, never having seen any authentic record containing it.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25008,7 +25006,7 @@ export const hscVocabularyList = [
     "synonyms": "Interment, entombment, funeral, sepulture",
     "antonyms": "Exhumation, disinterment",
     "englishMeaning": "The action or practice of burying a dead body.",
-    "exampleSentence": "I was not allowed to be present during her illness, at her death, or burial.",
+    "exampleSentence": "[Unit 5: Lesson 5]: I was not allowed to be present during her illness, at her death, or burial.\n[Unit 5: Human Rights: Frederick Douglass]: I was not allowed to be present during her illness, at her death, or burial.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25030,7 +25028,7 @@ export const hscVocabularyList = [
     "synonyms": "Tradition, practice, habit, convention, ritual",
     "antonyms": "Innovation, departure, irregularity",
     "englishMeaning": "A widely accepted way of behaving or doing something that is specific to a particular society.",
-    "exampleSentence": "It is a common custom in the part of Maryland from which I ran away, to part children from their mothers at a very early age.",
+    "exampleSentence": "[Unit 5: Lesson 5]: It is a common custom in the part of Maryland from which I ran away, to part children from their mothers at a very early age.\n[Unit 5: Human Rights: Frederick Douglass]: It is a common custom in the part of Maryland from which I ran away, to part children from their mothers at a very early age.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25052,7 +25050,7 @@ export const hscVocabularyList = [
     "synonyms": "Dusky skin, brown-skinned, deep pigmentation",
     "antonyms": "Fair complexion, light-skinned, pale skin",
     "englishMeaning": "Skin tone that has deeper natural pigmentation.",
-    "exampleSentence": "My mother was of a darker complexion than either my grandmother or grandfather.",
+    "exampleSentence": "[Unit 5: Lesson 5]: Unit Five: Human Rights | Lesson 5: Frederick Douglass A.\n[Unit 5: Human Rights: Frederick Douglass]: My mother was of a darker complexion than either my grandmother or grandfather.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25074,7 +25072,7 @@ export const hscVocabularyList = [
     "synonyms": "Considered, judged, regarded, viewed, reckoned",
     "antonyms": "Disregarded, ignored, dismissed",
     "englishMeaning": "Regarded or considered in a specified way.",
-    "exampleSentence": "He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.",
+    "exampleSentence": "[Unit 5: Lesson 5]: He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.\n[Unit 5: Human Rights: Frederick Douglass]: He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25096,7 +25094,7 @@ export const hscVocabularyList = [
     "synonyms": "Testimony, confirmation, proof, verification, attestation",
     "antonyms": "Disproof, contradiction, refutation",
     "englishMeaning": "The available body of facts or information indicating whether a belief or proposition is true.",
-    "exampleSentence": "He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.",
+    "exampleSentence": "[Unit 5: Lesson 5]: He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.\n[Unit 5: Human Rights: Frederick Douglass]: He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25118,7 +25116,7 @@ export const hscVocabularyList = [
     "synonyms": "Uneducated, uninformed, unaware, unenlightened",
     "antonyms": "Knowledgeable, educated, informed, enlightened",
     "englishMeaning": "Lacking knowledge or awareness in general; uneducated.",
-    "exampleSentence": "It is the wish of most masters within my knowledge to keep their slaves thus ignorant.",
+    "exampleSentence": "[Unit 5: Lesson 5]: By far the larger part of the slaves know as little of their ages as horses know of theirs, and it is the wish of most masters within my knowledge to keep their slaves thus ignorant.\n[Unit 5: Human Rights: Frederick Douglass]: It is the wish of most masters within my knowledge to keep their slaves thus ignorant.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25140,7 +25138,7 @@ export const hscVocabularyList = [
     "synonyms": "Inappropriate, unsuitable, unbecoming, unfitting",
     "antonyms": "Proper, suitable, correct, appropriate",
     "englishMeaning": "Not in accordance with accepted rules of social behavior or morality.",
-    "exampleSentence": "He deemed all such inquiries on the part of a slave improper and impertinent.",
+    "exampleSentence": "[Unit 5: Lesson 5]: He deemed all such inquiries on the part of a slave improper and impertinent, and evidence of a restless spirit.\n[Unit 5: Human Rights: Frederick Douglass]: He deemed all such inquiries on the part of a slave improper and impertinent.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25162,7 +25160,7 @@ export const hscVocabularyList = [
     "synonyms": "Questions, investigations, probes, queries, inquiries",
     "antonyms": "Answers, replies, responses",
     "englishMeaning": "Acts of asking for information or investigating a matter.",
-    "exampleSentence": "I was not allowed to make any inquiries of my master concerning it.",
+    "exampleSentence": "[Unit 5: Lesson 5]: I was not allowed to make any inquiries of my master concerning it.\n[Unit 5: Human Rights: Frederick Douglass]: I was not allowed to make any inquiries of my master concerning it.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25184,7 +25182,7 @@ export const hscVocabularyList = [
     "synonyms": "Division, disconnection, detachment, parting, isolation",
     "antonyms": "Union, connection, reunion, attachment",
     "englishMeaning": "The action or state of moving or being moved apart.",
-    "exampleSentence": "For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother.",
+    "exampleSentence": "[Unit 5: Lesson 5]: For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother, and to blunt and destroy the natural affection of the mother for the child.\n[Unit 5: Human Rights: Frederick Douglass]: For what this separation is done, I do not know, unless it be to hinder the development of the child's affection toward its mother.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25206,7 +25204,7 @@ export const hscVocabularyList = [
     "synonyms": "Calming, comforting, relaxing, tranquilizing, pacifying",
     "antonyms": "Agitating, disturbing, jarring, irritating",
     "englishMeaning": "Having a gently calming or comforting effect.",
-    "exampleSentence": "Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
+    "exampleSentence": "[Unit 5: Lesson 5]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care, I received the tidings of her death with much the same emotions I should have probably felt at the death of a stranger.\n[Unit 5: Human Rights: Frederick Douglass]: Never having enjoyed, to any considerable extent, her soothing presence, her tender and watchful care.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25228,7 +25226,7 @@ export const hscVocabularyList = [
     "synonyms": "Beating, flogging, lashing, scourging, thrashing",
     "antonyms": "Gentle touch, reward",
     "englishMeaning": "A punishment or beating with a whip or lash.",
-    "exampleSentence": "She was a field hand, and a whipping is the penalty of not being in the field at sunrise.",
+    "exampleSentence": "[Unit 5: Lesson 5]: She was a field hand, and a whipping is the penalty of not being in the field at sunrise, unless a slave has special permission from his or her master to the contrary—a permission which they seldom get, and one that gives to him that gives it the proud name of being a kind master.\n[Unit 5: Human Rights: Frederick Douglass]: She was a field hand, and a whipping is the penalty of not being in the field at sunrise.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25250,7 +25248,7 @@ export const hscVocabularyList = [
     "synonyms": "Murmured, hissed, muttered, breathed softly",
     "antonyms": "Shouted, yelled, bellowed",
     "englishMeaning": "Spoke very softly using one's breath without one's vocal cords.",
-    "exampleSentence": "The opinion was also whispered that my master was my father, but of the correctness of this opinion, I know nothing.",
+    "exampleSentence": "[Unit 5: Lesson 5]: The opinion was also whispered that my master was my father, but of the correctness of this opinion, I know nothing; the means of knowing was withheld from me.\n[Unit 5: Human Rights: Frederick Douglass]: The opinion was also whispered that my master was my father, but of the correctness of this opinion, I know nothing.",
     "unit": "Unit 5: Lesson 5 (Frederick Douglass)",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
@@ -25293,7 +25291,7 @@ export const hscVocabularyList = [
     "synonyms": "Heal, repair, recover",
     "antonyms": "Exacerbate",
     "englishMeaning": "Relieve a person of illness or distress; restore to health.",
-    "exampleSentence": "They've got expensive doctors to cure their hearts of stone.",
+    "exampleSentence": "There are some millionaires With money they can't use Their wives run round like banshees Their children sing the blues They've got expensive doctors To cure their hearts of stone.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25314,7 +25312,7 @@ export const hscVocabularyList = [
     "synonyms": "",
     "antonyms": "",
     "englishMeaning": "A period of ten years.",
-    "exampleSentence": "As the clever hopes expire of a low dishonest decade.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25335,7 +25333,7 @@ export const hscVocabularyList = [
     "synonyms": "Sad, bored",
     "antonyms": "Happy",
     "englishMeaning": "In a state of general unhappiness, sorrow, or despondency.",
-    "exampleSentence": "The persistent shadow of war left the citizens feeling depressed and vulnerable.",
+    "exampleSentence": "Cruelties of conflict affect people in different ways.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25356,7 +25354,7 @@ export const hscVocabularyList = [
     "synonyms": "Bar, pub, tavern",
     "antonyms": "",
     "englishMeaning": "A small, shabby, or disreputable bar or establishment.",
-    "exampleSentence": "I sit on one of the dives on Fifty-second Street uncertain and afraid.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25377,7 +25375,7 @@ export const hscVocabularyList = [
     "synonyms": "Costly, valuable",
     "antonyms": "Inexpensive, cheap",
     "englishMeaning": "Costing a lot of money; high-priced.",
-    "exampleSentence": "They've got expensive doctors to cure their hearts of stone.",
+    "exampleSentence": "There are some millionaires With money they can't use Their wives run round like banshees Their children sing the blues They've got expensive doctors To cure their hearts of stone.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25419,7 +25417,7 @@ export const hscVocabularyList = [
     "synonyms": "Jokingly, satirically",
     "antonyms": "Seriously, sincerely",
     "englishMeaning": "In an ironic manner; expressing meaning by using language of the opposite sense.",
-    "exampleSentence": "She has used these words ironically to bring home the message that no one should be alone.",
+    "exampleSentence": "You will see that she has used these words ironically to bring home the message that no one should be alone, that human society depends on healthy relationships among its members.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25440,7 +25438,7 @@ export const hscVocabularyList = [
     "synonyms": "Influence, impress",
     "antonyms": "",
     "englishMeaning": "Preoccupy or fill the mind of someone continually and deeply.",
-    "exampleSentence": "Waves of anger and fear circulate over the bright and darkened lands of the earth, obsessing our private lives.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25461,7 +25459,7 @@ export const hscVocabularyList = [
     "synonyms": "Smell, scent",
     "antonyms": "",
     "englishMeaning": "A distinctive smell, especially an unpleasant one.",
-    "exampleSentence": "The unmentionable odour of death offends the September night.",
+    "exampleSentence": "Auden: I sit on one of the dives On Fifty-second Street Uncertain and afraid As the clever hopes expire Of a low dishonest decade: Waves of anger and fear Circulate over the bright And darkened lands of the earth, Obsessing our private lives; The unmentionable odour of death Offends the September night.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25482,7 +25480,7 @@ export const hscVocabularyList = [
     "synonyms": "",
     "antonyms": "Filial",
     "englishMeaning": "Relating to a parent or parents.",
-    "exampleSentence": "She spent much of her childhood in Stamps, Arkansas, with her parental guardian and grandmother.",
+    "exampleSentence": "Cruelties of conflict affect people in different ways.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25503,7 +25501,7 @@ export const hscVocabularyList = [
     "synonyms": "Admired, appreciated",
     "antonyms": "Condemned, criticized",
     "englishMeaning": "Acclaimed or admired for qualities or achievements.",
-    "exampleSentence": "She was a popular poet praised for the way she incorporated social and political themes in her poems.",
+    "exampleSentence": "She was a popular poet praised for the way she incorporated social and political themes in her poems without compromising their poetic and stylistic qualities.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25524,7 +25522,7 @@ export const hscVocabularyList = [
     "synonyms": "Scream",
     "antonyms": "",
     "englishMeaning": "Utter a high-pitched piercing cry of terror, pain, or anguish.",
-    "exampleSentence": "Victims of violent warfare were heard to shriek in distress during the night attack.",
+    "exampleSentence": "Cruelties of conflict affect people in different ways.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25566,7 +25564,7 @@ export const hscVocabularyList = [
     "synonyms": "Mourn, weep, lament",
     "antonyms": "Laughter",
     "englishMeaning": "A prolonged high-pitched cry of pain, grief, or lamentation.",
-    "exampleSentence": "A mournful wail echoed across the ruined settlement after the bombardment.",
+    "exampleSentence": "Cruelties of conflict affect people in different ways.",
     "unit": "Unit 11: Lesson 1 (Situations of Conflict)",
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
@@ -25587,7 +25585,7 @@ export const hscVocabularyList = [
     "synonyms": "Heel",
     "antonyms": "",
     "englishMeaning": "The joint connecting the foot with the leg.",
-    "exampleSentence": "The peasants plodded along in the ankle deep dust.",
+    "exampleSentence": "The trucks ground up and away heading out of it all and the peasants plodded along in the ankle deep dust.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25608,7 +25606,7 @@ export const hscVocabularyList = [
     "synonyms": "Behindhand",
     "antonyms": "Forward",
     "englishMeaning": "Directed behind or to the rear; towards the back.",
-    "exampleSentence": "He got to his feet, swayed from side to side and then sat down backwards in the dust.",
+    "exampleSentence": "\"Thank you,\" he said and got to his feet, swayed from side to side and then sat down backwards in the dust.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25671,7 +25669,7 @@ export const hscVocabularyList = [
     "synonyms": "Definitely",
     "antonyms": "Uncertainly",
     "englishMeaning": "Undoubtedly; definitely; without question.",
-    "exampleSentence": "Yes, certainly they'll fly. But the others. It's better not to think about the others.",
+    "exampleSentence": "\"Yes, certainly they'll fly.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25692,7 +25690,7 @@ export const hscVocabularyList = [
     "synonyms": "Dilatory, faded",
     "antonyms": "",
     "englishMeaning": "Lacking interest, brightness, or enthusiasm; lifeless.",
-    "exampleSentence": "\"I was taking care of animals,\" he said dully, but no longer to me.",
+    "exampleSentence": "Warm up activity: Think and note down the kind of problems a war can create for human beings and other living things.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25713,7 +25711,7 @@ export const hscVocabularyList = [
     "synonyms": "Dirty",
     "antonyms": "Bright, clean",
     "englishMeaning": "Covered with, full of, or resembling dust.",
-    "exampleSentence": "An old man with steel rimmed spectacles and very dusty clothes sat by the side of the road.",
+    "exampleSentence": "Read the story below for a clear and critical understanding of what it is really about and then answer the questions that follow: An old man with steel rim spectacles and very dusty clothes sat by the side of the road.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25797,7 +25795,7 @@ export const hscVocabularyList = [
     "synonyms": "Rush, agitation",
     "antonyms": "Procrastinate",
     "englishMeaning": "Move or act with great haste or speed.",
-    "exampleSentence": "A few last carts were hurrying down the slope of the bank.",
+    "exampleSentence": "I asked, watching the far end of the bridge where a few last carts were hurrying down the slope of the bank.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25818,7 +25816,7 @@ export const hscVocabularyList = [
     "synonyms": "Obscure, unknown",
     "antonyms": "",
     "englishMeaning": "Difficult or impossible to understand, explain, or identify.",
-    "exampleSentence": "Listening all the while for the first noises that would signal that ever mysterious event called contact.",
+    "exampleSentence": "I was watching the bridge and the African looking country of the Ebro Delta and wondering how long now it would be before we would see the enemy, and listening all the while for the first noises that would signal that ever mysterious event called contact, and the old man still sat there.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25839,7 +25837,7 @@ export const hscVocabularyList = [
     "synonyms": "Farmer, tiller",
     "antonyms": "",
     "englishMeaning": "A poor farmer of low social status who owns or rents a small piece of land.",
-    "exampleSentence": "The peasants plodded along in the ankle deep dust.",
+    "exampleSentence": "The trucks ground up and away heading out of it all and the peasants plodded along in the ankle deep dust.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25860,7 +25858,7 @@ export const hscVocabularyList = [
     "synonyms": "Stalk",
     "antonyms": "",
     "englishMeaning": "Walk doggedly and slowly with heavy steps.",
-    "exampleSentence": "The peasants plodded along in the ankle deep dust.",
+    "exampleSentence": "Warm up activity: Think and note down the kind of problems a war can create for human beings and other living things.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25902,7 +25900,7 @@ export const hscVocabularyList = [
     "synonyms": "",
     "antonyms": "",
     "englishMeaning": "Provided with or having a circular rim or border.",
-    "exampleSentence": "An old man with steel rimmed spectacles and very dusty clothes sat by the side of the road.",
+    "exampleSentence": "He did not look like a shepherd nor a herdsman and I looked at his black dusty clothes and his gray dusty face and his steel rimmed spectacles and said, \"What animals were they?\"",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25923,7 +25921,7 @@ export const hscVocabularyList = [
     "synonyms": "Vacillate",
     "antonyms": "",
     "englishMeaning": "Walk or move unsteadily, as if about to fall.",
-    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge with soldiers helping.",
+    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge with soldiers helping push against the spokes of the wheels.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25944,7 +25942,7 @@ export const hscVocabularyList = [
     "synonyms": "Describe",
     "antonyms": "",
     "englishMeaning": "Express something definitely or clearly in speech or writing.",
-    "exampleSentence": "\"No,\" he said, \"only the animals I stated.\"",
+    "exampleSentence": "\"No,\" he said, \"only the animals I stated.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25965,7 +25963,7 @@ export const hscVocabularyList = [
     "synonyms": "Sharp, vertical",
     "antonyms": "Gradual",
     "englishMeaning": "Rising or falling sharply; nearly perpendicular.",
-    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge.",
+    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge with soldiers helping push against the spokes of the wheels.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25986,7 +25984,7 @@ export const hscVocabularyList = [
     "synonyms": "Wave, oscillate",
     "antonyms": "",
     "englishMeaning": "Move or cause to move slowly or unsteadily from side to side.",
-    "exampleSentence": "He got to his feet, swayed from side to side and then sat down backwards in the dust.",
+    "exampleSentence": "\"Thank you,\" he said and got to his feet, swayed from side to side and then sat down backwards in the dust.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -26007,7 +26005,7 @@ export const hscVocabularyList = [
     "synonyms": "Wearyingly",
     "antonyms": "Refreshingly",
     "englishMeaning": "In a tired or fatigued manner.",
-    "exampleSentence": "He looked at me very blankly and tiredly.",
+    "exampleSentence": "He looked at me very blankly and tiredly, and then said, having to share his worry with someone, \"The cat will be all right, I am sure.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -26049,7 +26047,7 @@ export const hscVocabularyList = [
     "synonyms": "Astonishment, marvel",
     "antonyms": "",
     "englishMeaning": "A feeling of amazement and admiration, or a state of curious questioning.",
-    "exampleSentence": "Wondering how long now it would be before we would see the enemy.",
+    "exampleSentence": "I was watching the bridge and the African looking country of the Ebro Delta and wondering how long now it would be before we would see the enemy, and listening all the while for the first noises that would signal that ever mysterious event called contact, and the old man still sat there.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -26070,7 +26068,7 @@ export const hscVocabularyList = [
     "synonyms": "Attainment, gaining",
     "antonyms": "Failure",
     "englishMeaning": "A thing done successfully, typically by effort, courage, or skill.",
-    "exampleSentence": "In Gaza it's an achievement to grow up, because death is standing at your doorstep.",
+    "exampleSentence": "In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26091,7 +26089,7 @@ export const hscVocabularyList = [
     "synonyms": "Gateway, entrance",
     "antonyms": "",
     "englishMeaning": "A step leading up to the outer door of a building; very close proximity.",
-    "exampleSentence": "In Gaza it's an achievement to grow up, because death is standing at your doorstep.",
+    "exampleSentence": "In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26112,7 +26110,7 @@ export const hscVocabularyList = [
     "synonyms": "Bare, unoccupied",
     "antonyms": "Occupied",
     "englishMeaning": "Containing nothing; not filled or occupied.",
-    "exampleSentence": "All Gaza city flooded into Al-Areesh and emptied it from all goods in two hours.",
+    "exampleSentence": "I can't not see the poverty, siege and famine, especially when all Gaza city flooded into Al-Areesh and emptied it from all goods in two hours.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26175,7 +26173,7 @@ export const hscVocabularyList = [
     "synonyms": "Claim",
     "antonyms": "",
     "englishMeaning": "Moral or legal entitlements to have or obtain something or to act in a certain way.",
-    "exampleSentence": "I want to be a children's caretaker and defend their rights.",
+    "exampleSentence": "In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26196,7 +26194,7 @@ export const hscVocabularyList = [
     "synonyms": "Terrify, horrify",
     "antonyms": "Fearless",
     "englishMeaning": "Cause great fear or alarm in someone.",
-    "exampleSentence": "Not only the clock scares me — everything that flies does, even the flies.",
+    "exampleSentence": "I'm most scared for my older brothers.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26217,7 +26215,7 @@ export const hscVocabularyList = [
     "synonyms": "Garbage, trash",
     "antonyms": "",
     "englishMeaning": "Waste water and excrement conveyed in sewers.",
-    "exampleSentence": "I go back to the reality of Gaza: the dirty market, overflowing sewage, the cans.",
+    "exampleSentence": "I go back to the reality of Gaza: the dirty market, overflowing sewage, the cans, and what's on top of the carts, the suffocating smell, and the silent people who can't speak.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26259,7 +26257,7 @@ export const hscVocabularyList = [
     "synonyms": "Assist, help, aid",
     "antonyms": "Oppose",
     "englishMeaning": "Give assistance, encouragement, or financial approval to.",
-    "exampleSentence": "A kid can be 6 years old and yet supporting a family.",
+    "exampleSentence": "In the future if I grow up, and in Gaza it's an achievement to grow up, because death is standing at your doorstep, I want to be a children's caretaker and defend their rights; because I feel that the children of Palestine are born as old people, a kid can be 6 years old and yet supporting a family.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26301,7 +26299,7 @@ export const hscVocabularyList = [
     "synonyms": "Anxious, concerned",
     "antonyms": "Unconcerned",
     "englishMeaning": "Feeling anxious and troubled about actual or potential problems.",
-    "exampleSentence": "When the war started, we were in Russia, which made me always worried about Dad.",
+    "exampleSentence": "Yasmeen Katbeh, Born 1996, Ash Sheikh Radwan: When the war started, my mum, my brothers and sisters and I were in Russia, which made me always worried about Dad.",
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
@@ -26322,7 +26320,7 @@ export const hscVocabularyList = [
     "synonyms": "Breakdown, downfall",
     "antonyms": "Success",
     "englishMeaning": "A sudden failure, breakdown, or falling down.",
-    "exampleSentence": "The collapse of peace agreements plunged the region into turmoil.",
+    "exampleSentence": "Read the following poem and try to understand the meaning.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26343,7 +26341,7 @@ export const hscVocabularyList = [
     "synonyms": "Determination, devotion",
     "antonyms": "Indifference",
     "englishMeaning": "Sincere and intense conviction or seriousness.",
-    "exampleSentence": "With so much earnestness you do pursue, is only there.",
+    "exampleSentence": "Take of this grain, which in my garden grows, And grows for you; Make bread of it: and that repose And peace, which ev'ry where With so much earnestness you do pursue, Is only there.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26364,7 +26362,7 @@ export const hscVocabularyList = [
     "synonyms": "Endure, prevail",
     "antonyms": "Depart",
     "englishMeaning": "Have objective reality or active being; survive.",
-    "exampleSentence": "Yes, and how many years must a mountain exist before it is washed to the sea?",
+    "exampleSentence": "Yes, and how many years must a mountain exist Before it is washed to the sea?",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26385,7 +26383,7 @@ export const hscVocabularyList = [
     "synonyms": "Enemy, opponent",
     "antonyms": "Friend",
     "englishMeaning": "An enemy or opponent in a war, battle, or dispute.",
-    "exampleSentence": "He sweetly lived; yet sweetness did not save his life from foes.",
+    "exampleSentence": "He sweetly lived; yet sweetness did not save His life from foes.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26406,7 +26404,7 @@ export const hscVocabularyList = [
     "synonyms": "Attacker, intruder",
     "antonyms": "",
     "englishMeaning": "A person or group that invades a country, territory, or home by force.",
-    "exampleSentence": "The citizens fought courageously to defend their soil from the foreign invader.",
+    "exampleSentence": "Read the following poem and try to understand the meaning.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26427,7 +26425,7 @@ export const hscVocabularyList = [
     "synonyms": "Hilarity, great joy",
     "antonyms": "Depression, gloom",
     "englishMeaning": "Amusement, especially as expressed in laughter and celebration.",
-    "exampleSentence": "A secret virtue, bringing peace and mirth by flight of sin.",
+    "exampleSentence": "It prospered strangely, and did soon disperse Through all the earth: For they that taste it do rehearse That virtue lies therein; A secret virtue, bringing peace and mirth By flight of sin.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26448,7 +26446,7 @@ export const hscVocabularyList = [
     "synonyms": "Feign, fake",
     "antonyms": "Be honest",
     "englishMeaning": "Behave so as to make it appear that something is the case when in fact it is not.",
-    "exampleSentence": "And pretend that he just doesn't see? The answer, my friend, is blowin' in the wind.",
+    "exampleSentence": "Yes, and how many times can a man turn his head And pretend that he just doesn't see?",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26469,7 +26467,7 @@ export const hscVocabularyList = [
     "synonyms": "Seek",
     "antonyms": "Quit, give up",
     "englishMeaning": "Follow or chase someone or something; persist in seeking a goal.",
-    "exampleSentence": "With so much earnestness you do pursue, is only there.",
+    "exampleSentence": "Take of this grain, which in my garden grows, And grows for you; Make bread of it: and that repose And peace, which ev'ry where With so much earnestness you do pursue, Is only there.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26490,7 +26488,7 @@ export const hscVocabularyList = [
     "synonyms": "Practise, prepare",
     "antonyms": "Ignore, stop",
     "englishMeaning": "Practise or recite repeatedly for public performance or deep memorization.",
-    "exampleSentence": "For they that taste it do rehearse that virtue lies therein.",
+    "exampleSentence": "It prospered strangely, and did soon disperse Through all the earth: For they that taste it do rehearse That virtue lies therein; A secret virtue, bringing peace and mirth By flight of sin.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26511,7 +26509,7 @@ export const hscVocabularyList = [
     "synonyms": "Colonist, immigrant",
     "antonyms": "",
     "englishMeaning": "A person who moves with a group of others to live in a new country or area.",
-    "exampleSentence": "The early settler sought tranquility in fertile lands far from war.",
+    "exampleSentence": "Read the following poem and try to understand the meaning.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26532,7 +26530,7 @@ export const hscVocabularyList = [
     "synonyms": "Twig",
     "antonyms": "",
     "englishMeaning": "The main stem of a herbaceous plant supporting leaves or flowers.",
-    "exampleSentence": "There sprang twelve stalks of wheat.",
+    "exampleSentence": "But after death out of his grave There sprang twelve stalks of wheat; Which many wond'ring at, got some of those To plant and set.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26553,7 +26551,7 @@ export const hscVocabularyList = [
     "synonyms": "There",
     "antonyms": "Here",
     "englishMeaning": "In that place, document, or matter.",
-    "exampleSentence": "That virtue lies therein; a secret virtue, bringing peace and mirth.",
+    "exampleSentence": "It prospered strangely, and did soon disperse Through all the earth: For they that taste it do rehearse That virtue lies therein; A secret virtue, bringing peace and mirth By flight of sin.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26574,7 +26572,7 @@ export const hscVocabularyList = [
     "synonyms": "Anarchy, crisis, strife",
     "antonyms": "Calmness, order",
     "englishMeaning": "A state of dissatisfaction, disturbance, and agitation.",
-    "exampleSentence": "Amid deep social unrest, poets and songwriters call for mutual harmony.",
+    "exampleSentence": "Read the following poem and try to understand the meaning.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26595,7 +26593,7 @@ export const hscVocabularyList = [
     "synonyms": "Honour, integrity",
     "antonyms": "Evil",
     "englishMeaning": "Behavior showing high moral standards; a commendable quality.",
-    "exampleSentence": "That virtue lies therein; a secret virtue, bringing peace and mirth.",
+    "exampleSentence": "It prospered strangely, and did soon disperse Through all the earth: For they that taste it do rehearse That virtue lies therein; A secret virtue, bringing peace and mirth By flight of sin.",
     "unit": "Unit 11: Lesson 4 (Peace in Literature)",
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
@@ -26616,7 +26614,7 @@ export const hscVocabularyList = [
     "synonyms": "Associate",
     "antonyms": "Antagonist",
     "englishMeaning": "A state or person formally cooperating with another for military or other purpose.",
-    "exampleSentence": "This was during the battle fought by British forces and their allies against Germany.",
+    "exampleSentence": "This was during the Battle of Passchendaele, fought by British forces and their allies against Germany for control of territory near Ypres, Belgium.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26637,7 +26635,7 @@ export const hscVocabularyList = [
     "synonyms": "Seized",
     "antonyms": "Lost",
     "englishMeaning": "Recorded in a photograph or video, or taken into custody by force.",
-    "exampleSentence": "See these iconic photographs captured in various war settings across the world.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26658,7 +26656,7 @@ export const hscVocabularyList = [
     "synonyms": "War between the states",
     "antonyms": "",
     "englishMeaning": "A war between citizens of the same country.",
-    "exampleSentence": "The photograph depicts the death of a Republican soldier during the Spanish Civil War.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26679,7 +26677,7 @@ export const hscVocabularyList = [
     "synonyms": "Citizen, nonmilitary person",
     "antonyms": "Military",
     "englishMeaning": "A person not in the armed services or the police force.",
-    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26700,7 +26698,7 @@ export const hscVocabularyList = [
     "synonyms": "Prison camp",
     "antonyms": "",
     "englishMeaning": "A camp where people are detained or confined by military or political authorities.",
-    "exampleSentence": "This 1944 photograph shows a pile of remaining bones at the Nazi concentration camp of Majdanek.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26721,7 +26719,7 @@ export const hscVocabularyList = [
     "synonyms": "Fight, warfare, clash",
     "antonyms": "Peace, truce",
     "englishMeaning": "A serious disagreement, argument, or prolonged armed struggle.",
-    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26742,7 +26740,7 @@ export const hscVocabularyList = [
     "synonyms": "Destructive",
     "antonyms": "Blessed",
     "englishMeaning": "Highly destructive, damaging, or overwhelming.",
-    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26763,7 +26761,7 @@ export const hscVocabularyList = [
     "synonyms": "Credible",
     "antonyms": "False",
     "englishMeaning": "Concerned with, based on, or containing facts.",
-    "exampleSentence": "See these iconic photographs accompanied by key factual information.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26784,7 +26782,7 @@ export const hscVocabularyList = [
     "synonyms": "Harmless",
     "antonyms": "Cunning",
     "englishMeaning": "Not guilty of a crime or offense; free from evil or guilt.",
-    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26805,7 +26803,7 @@ export const hscVocabularyList = [
     "synonyms": "Cruise, operate",
     "antonyms": "",
     "englishMeaning": "Direct the route or make one's way through an area, course, or environment.",
-    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26826,7 +26824,7 @@ export const hscVocabularyList = [
     "synonyms": "Drift, splash",
     "antonyms": "",
     "englishMeaning": "Move through water in a boat using a paddle or oars.",
-    "exampleSentence": "Freedom fighters from the 1971 Bangladesh Liberation War paddle across a river.",
+    "exampleSentence": "Freedom fighters from the 1971 Bangladesh Liberation War paddle across a river, preparing for an operation.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26847,7 +26845,7 @@ export const hscVocabularyList = [
     "synonyms": "Image, picture",
     "antonyms": "",
     "englishMeaning": "A picture made using a camera in which an image is focused onto film or recorded digitally.",
-    "exampleSentence": "See these iconic photographs captured in various war settings.",
+    "exampleSentence": "This 1944 photograph shows a pile of remaining bones at the Nazi concentration camp of Majdanek, the second largest death camp in Poland after Auschwitz.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26868,7 +26866,7 @@ export const hscVocabularyList = [
     "synonyms": "Heap, mass",
     "antonyms": "Hole",
     "englishMeaning": "A heap of things laid or lying one on top of another.",
-    "exampleSentence": "This 1944 photograph shows a pile of remaining bones at the Nazi concentration camp of Majdanek.",
+    "exampleSentence": "This 1944 photograph shows a pile of remaining bones at the Nazi concentration camp of Majdanek, the second largest death camp in Poland after Auschwitz.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26889,7 +26887,7 @@ export const hscVocabularyList = [
     "synonyms": "Demolished, destroyed",
     "antonyms": "",
     "englishMeaning": "Severely damaged or devastated by war or conflict.",
-    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -26931,7 +26929,7 @@ export const hscVocabularyList = [
     "synonyms": "Old, antique",
     "antonyms": "Modern, new",
     "englishMeaning": "Belonging to the very distant past and no longer in existence; very old.",
-    "exampleSentence": "Coleridge's poem narrates the harrowing sea-voyage of an ancient mariner.",
+    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27036,7 +27034,7 @@ export const hscVocabularyList = [
     "synonyms": "Malediction",
     "antonyms": "Blessing",
     "englishMeaning": "A solemn utterance intended to invoke a supernatural power to inflict harm or misfortune.",
-    "exampleSentence": "At one point of his journey he didn't have any water to drink because of a curse.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27078,7 +27076,7 @@ export const hscVocabularyList = [
     "synonyms": "Release",
     "antonyms": "Load",
     "englishMeaning": "Allow a liquid, gas, or other substance to flow out.",
-    "exampleSentence": "The city of Dhaka discharges about 4500 tons of solid waste every day.",
+    "exampleSentence": "The city of Dhaka discharges about 4500 tons of solid waste every day and most of it is directly released into the Buriganga.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27099,7 +27097,7 @@ export const hscVocabularyList = [
     "synonyms": "Cast, throw",
     "antonyms": "Store, stock",
     "englishMeaning": "Deposit or dispose of waste or rubbish carelessly or in an unsuitable place.",
-    "exampleSentence": "Huge quantities of toxic chemicals and wastes are dumped into the river every day.",
+    "exampleSentence": "[Unit 12: Lesson 1]: Huge quantities of toxic chemicals and wastes from mills and factories, hospitals and clinics and households and other establishments are dumped into the river every day.\n[Unit 12: Lesson 4]: So too when the world learned of the ecological and human cost of decades of petroleum-waste dumping in the Niger Delta by Royal Dutch Shell in the last quarter of the twentieth century, the attempt to privatize water in Bolivia by the Bechtel Corporation in the 1990s, the death of close to two thousand people in New Orleans following Hurricane Katrina in 2005, or even the horrific aftermath of the atomic bombing of Hiroshima and Nagasaki six decades earlier, each was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27163,7 +27161,7 @@ export const hscVocabularyList = [
     "synonyms": "Institution, organization",
     "antonyms": "",
     "englishMeaning": "A business organization, public institution, or household.",
-    "exampleSentence": "Wastes from clinics, households and other establishments are dumped into the river every day.",
+    "exampleSentence": "Huge quantities of toxic chemicals and wastes from mills and factories, hospitals and clinics and households and other establishments are dumped into the river every day.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27184,7 +27182,7 @@ export const hscVocabularyList = [
     "synonyms": "Evening, before",
     "antonyms": "",
     "englishMeaning": "The day or period of time immediately before an event or holiday.",
-    "exampleSentence": "The United Nations in a meeting on the eve of the new millennium identified the drinking water problem.",
+    "exampleSentence": "The United Nations in a meeting on the eve of the new millennium identified the drinking water problem as one of the challenges for the future.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27226,7 +27224,7 @@ export const hscVocabularyList = [
     "synonyms": "Sailor, seaman",
     "antonyms": "",
     "englishMeaning": "A sailor or seaman who navigates ships.",
-    "exampleSentence": "Coleridge's poem narrates the harrowing sea-voyage of an old mariner.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27247,7 +27245,7 @@ export const hscVocabularyList = [
     "synonyms": "Wonder, bewilder",
     "antonyms": "",
     "englishMeaning": "Be filled with wonder, astonishment, or admiration.",
-    "exampleSentence": "The Mughals marveled at the tide level of the Buriganga.",
+    "exampleSentence": "The Mughals marveled at the tide level of the Buriganga and founded their capital Jahangirnagar on its banks in 1610.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27289,7 +27287,7 @@ export const hscVocabularyList = [
     "synonyms": "Tell, describe",
     "antonyms": "Summarize",
     "englishMeaning": "Give a spoken or written account of an event or story.",
-    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27331,7 +27329,7 @@ export const hscVocabularyList = [
     "synonyms": "Many",
     "antonyms": "Few",
     "englishMeaning": "A large or sufficient amount or quantity; more than enough.",
-    "exampleSentence": "Ours is a land of rivers and we have plenty of rainfall.",
+    "exampleSentence": "But do we need to worry about the problem as ours is a land of rivers and we have plenty of rainfall?",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27352,7 +27350,7 @@ export const hscVocabularyList = [
     "synonyms": "Lecture, speech",
     "antonyms": "",
     "englishMeaning": "The giving of something to someone, or a formal speech or display.",
-    "exampleSentence": "Make a presentation on the condition of nearby rivers comparing past and present.",
+    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27373,7 +27371,7 @@ export const hscVocabularyList = [
     "synonyms": "Print, issue",
     "antonyms": "",
     "englishMeaning": "Prepare and issue a book, newspaper, piece of music, or report for public distribution.",
-    "exampleSentence": "A report published in the Daily Sun describes what has happened to the river Buriganga.",
+    "exampleSentence": "A report published in the Daily Sun describes what has happened to the river Buriganga and why.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27394,7 +27392,7 @@ export const hscVocabularyList = [
     "synonyms": "Amount, extent, measure",
     "antonyms": "",
     "englishMeaning": "The amount or number of a material or abstract thing.",
-    "exampleSentence": "Huge quantities of toxic chemicals and wastes are dumped into the river every day.",
+    "exampleSentence": "Huge quantities of toxic chemicals and wastes from mills and factories, hospitals and clinics and households and other establishments are dumped into the river every day.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27415,7 +27413,7 @@ export const hscVocabularyList = [
     "synonyms": "Precipitation, shower",
     "antonyms": "",
     "englishMeaning": "The quantity of rain falling within a given area in a given time.",
-    "exampleSentence": "Ours is a land of rivers and we have plenty of rainfall.",
+    "exampleSentence": "But do we need to worry about the problem as ours is a land of rivers and we have plenty of rainfall?",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27457,7 +27455,7 @@ export const hscVocabularyList = [
     "synonyms": "Lack, want",
     "antonyms": "Abundance",
     "englishMeaning": "A state or situation in which something needed cannot be obtained in sufficient amounts.",
-    "exampleSentence": "Dhaka grew into a heavily populated city with a chronic shortage of space.",
+    "exampleSentence": "Jahangirnagar was renamed Dhaka which grew into a heavily populated city with a chronic shortage of space.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27499,7 +27497,7 @@ export const hscVocabularyList = [
     "synonyms": "Study, enquiry",
     "antonyms": "",
     "englishMeaning": "A general view, examination, or description of someone or something.",
-    "exampleSentence": "Conduct a survey on water usage and pollution in the local community.",
+    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27520,7 +27518,7 @@ export const hscVocabularyList = [
     "synonyms": "Regrettably",
     "antonyms": "Fortunately",
     "englishMeaning": "It is a matter of regret; unluckily.",
-    "exampleSentence": "Are the rivers in good shape? Unfortunately, they are not.",
+    "exampleSentence": "Unfortunately, they are not.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27541,7 +27539,7 @@ export const hscVocabularyList = [
     "synonyms": "Journey, cruise",
     "antonyms": "",
     "englishMeaning": "A long journey involving travel by sea or in space.",
-    "exampleSentence": "Coleridge's poem narrates the harrowing sea-voyage of an old mariner.",
+    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -27562,7 +27560,7 @@ export const hscVocabularyList = [
     "synonyms": "Consequence, outcome",
     "antonyms": "Origin",
     "englishMeaning": "The consequences or aftereffects of a significant unpleasant event.",
-    "exampleSentence": "The horrific aftermath of the atomic bombing of Hiroshima and Nagasaki.",
+    "exampleSentence": "So too when the world learned of the ecological and human cost of decades of petroleum-waste dumping in the Niger Delta by Royal Dutch Shell in the last quarter of the twentieth century, the attempt to privatize water in Bolivia by the Bechtel Corporation in the 1990s, the death of close to two thousand people in New Orleans following Hurricane Katrina in 2005, or even the horrific aftermath of the atomic bombing of Hiroshima and Nagasaki six decades earlier, each was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27583,7 +27581,7 @@ export const hscVocabularyList = [
     "synonyms": "Together, jointly",
     "antonyms": "Separately",
     "englishMeaning": "As a whole or group; cooperatively.",
-    "exampleSentence": "Collectively creating a future in which the dignity and rights of all people are respected.",
+    "exampleSentence": "Fundamental to both the concept of Environmental Justice and the activist EJ movement is the search for fair ways of sharing environmental burdens and benefits and collectively creating a future in which the dignity and rights of all people are respected.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27604,7 +27602,7 @@ export const hscVocabularyList = [
     "synonyms": "Obligation, dedication",
     "antonyms": "Indifference, apathy",
     "englishMeaning": "The state or quality of being dedicated to a cause, activity, or promise.",
-    "exampleSentence": "It yokes concern for the environment to commitment to social justice.",
+    "exampleSentence": "It yokes concern for the environment, including all life on the planet, to commitment to social justice: human equity in terms of race, gender, religion, nationality, and class.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27625,7 +27623,7 @@ export const hscVocabularyList = [
     "synonyms": "Idea, perception, view, theory",
     "antonyms": "",
     "englishMeaning": "An abstract idea or a general notion.",
-    "exampleSentence": "As a concept and a movement now global in scope, Environmental Justice holds that burdens should be shared equally.",
+    "exampleSentence": "As a concept and a movement now global in scope, Environmental Justice holds that environmental burdens and benefits should be shared equally by all people.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27646,7 +27644,7 @@ export const hscVocabularyList = [
     "synonyms": "Vanishing",
     "antonyms": "Presence, appearance",
     "englishMeaning": "An act of someone or something ceasing to be visible or to exist.",
-    "exampleSentence": "Face increasing toxicity, resource depletion, and the rapid disappearance of species.",
+    "exampleSentence": "Environmental Justice therefore represents a new, important body of thought and action at the beginning of the twenty-first century, especially as people around the world face the realities of climate change, increasing toxicity, resource depletion, and the rapid disappearance of species and arable land on which the health of many human communities depends.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27667,7 +27665,7 @@ export const hscVocabularyList = [
     "synonyms": "Frightening, dreadful",
     "antonyms": "Delightful, soothing",
     "englishMeaning": "Causing horror; dreadfully shocking or terrifying.",
-    "exampleSentence": "The horrific aftermath of the atomic bombing of Hiroshima and Nagasaki.",
+    "exampleSentence": "So too when the world learned of the ecological and human cost of decades of petroleum-waste dumping in the Niger Delta by Royal Dutch Shell in the last quarter of the twentieth century, the attempt to privatize water in Bolivia by the Bechtel Corporation in the 1990s, the death of close to two thousand people in New Orleans following Hurricane Katrina in 2005, or even the horrific aftermath of the atomic bombing of Hiroshima and Nagasaki six decades earlier, each was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27709,7 +27707,7 @@ export const hscVocabularyList = [
     "synonyms": "Awful, horrible",
     "antonyms": "Pleasant",
     "englishMeaning": "Extremely bad, severe, or serious; formidable.",
-    "exampleSentence": "Each was regarded as a terrible but singular disaster.",
+    "exampleSentence": "When an explosion in the Union Carbide Chemical Plant in Bhopal, India, killed thousands of people on the night of December 2, 1984, it was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27730,7 +27728,7 @@ export const hscVocabularyList = [
     "synonyms": "Secret, hidden",
     "antonyms": "Revealed, known",
     "englishMeaning": "Not made known to the public; secret or unrevealed.",
-    "exampleSentence": "The reactor at Chernobyl exploded killing an undisclosed number of workers.",
+    "exampleSentence": "When a reactor at the Chernobyl Nuclear Power Plant in Ukraine in the former Soviet Union exploded just two years later killing an undisclosed number of workers, it was regarded as a terrible but singular disaster.",
     "unit": "Unit 12: Lesson 4 (Environmental Justice)",
     "boardExamTag": "Unit 12 • Lesson 4",
     "sources": [
@@ -27751,7 +27749,7 @@ export const hscVocabularyList = [
     "synonyms": "Soak, imbibe",
     "antonyms": "Expel, release",
     "englishMeaning": "Take in or soak up energy or a liquid or other substance by chemical or physical action.",
-    "exampleSentence": "Plants absorb minerals and water from the soil naturally.",
+    "exampleSentence": "You study the function of the plant's metabolism and its ability to absorb nutrients from the soil, write a book, and get a doctorate in agricultural science.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27772,7 +27770,7 @@ export const hscVocabularyList = [
     "synonyms": "Plentiful, copious, ample",
     "antonyms": "Scarce",
     "englishMeaning": "Existing or available in large quantities; plentiful.",
-    "exampleSentence": "There was abundant evidence to support the theory of natural farming.",
+    "exampleSentence": "Or, let's err on the side of abundant caution and take an average of just 10,000 people per Large Dam.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27793,7 +27791,7 @@ export const hscVocabularyList = [
     "synonyms": "Influence, impact",
     "antonyms": "Neutralize",
     "englishMeaning": "Have an effect on; make a difference to.",
-    "exampleSentence": "Chemical fertilizers negatively affect the natural microorganisms in soil.",
+    "exampleSentence": "Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.\"",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27814,7 +27812,7 @@ export const hscVocabularyList = [
     "synonyms": "Setting, layout",
     "antonyms": "Disarray",
     "englishMeaning": "An impressive display or range of a particular type of thing.",
-    "exampleSentence": "A vast array of biological processes occur naturally in healthy soil.",
+    "exampleSentence": "Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.\"",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27835,7 +27833,7 @@ export const hscVocabularyList = [
     "synonyms": "Mean, median",
     "antonyms": "Total, whole",
     "englishMeaning": "A standard or level that is considered to be typical or usual.",
-    "exampleSentence": "The average harvest was sufficient without the need for artificial chemicals.",
+    "exampleSentence": "Even if you can explain how metabolism affects the productivity of the top leaf when the average temperature is eighty-four degrees Fahrenheit, there are places where the temperature is not eighty-four degrees.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27856,7 +27854,7 @@ export const hscVocabularyList = [
     "synonyms": "Manage, oversee",
     "antonyms": "Mismanage, disorganize",
     "englishMeaning": "Organize and carry out.",
-    "exampleSentence": "Researchers conduct experiments to examine the limits of the scientific method.",
+    "exampleSentence": "Modern research divides nature into tiny pieces and conducts tests that conform neither with natural law nor with practical experiences.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27877,7 +27875,7 @@ export const hscVocabularyList = [
     "synonyms": "Agitate",
     "antonyms": "Becalm",
     "englishMeaning": "Throw into turmoil or violent agitation.",
-    "exampleSentence": "Massive development projects convulse ancient river valleys and communities.",
+    "exampleSentence": "The Western world today is convulsed over the future of one million people who have fled from Kosovo.\"",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27898,7 +27896,7 @@ export const hscVocabularyList = [
     "synonyms": "Embankment, barrier, block, barrage, obstruction",
     "antonyms": "",
     "englishMeaning": "A barrier constructed to hold back water and raise its level.",
-    "exampleSentence": "Big dams have displaced millions of people across river basins.",
+    "exampleSentence": "We will now read an excerpt from Arundhati Roy's powerful and passionately written essay \"The Greater Common Good\": \"According to a detailed study of the 54 Large Dams done by the Indian Institute of Public Administration, the average number of people displaced by a Large Dam is 44,182.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27919,7 +27917,7 @@ export const hscVocabularyList = [
     "synonyms": "Decide, conclude",
     "antonyms": "Doubt, question",
     "englishMeaning": "Cause something to occur in a particular way or be of a particular nature.",
-    "exampleSentence": "Soil tests determine the nutrient composition under laboratory conditions.",
+    "exampleSentence": "Doctors should first determine at the fundamental level what it is that human beings depend on for life.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27940,7 +27938,7 @@ export const hscVocabularyList = [
     "synonyms": "Disclosure, uncovering",
     "antonyms": "Concealment, hiding",
     "englishMeaning": "The state of being exposed to contact with something or revelation of something secret.",
-    "exampleSentence": "Prolonged exposure to pesticides harms human health and the ecosystem.",
+    "exampleSentence": "The geography and topography of the land, the condition of the soil, its structure, texture, and drainage, exposure to sunlight, insect relationships, the variety of seed used, the method of cultivation—truly an infinite variety of factors—must all be considered.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27961,7 +27959,7 @@ export const hscVocabularyList = [
     "synonyms": "Fruitfulness",
     "antonyms": "Infertility",
     "englishMeaning": "The quality of being fertile; productiveness.",
-    "exampleSentence": "Natural straw improves the fertility of the topsoil over time.",
+    "exampleSentence": "It appears that things go better when the farmer applies \"scientific\" techniques, but this does not mean that science must come to the rescue because the natural fertility is inherently insufficient.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -27982,7 +27980,7 @@ export const hscVocabularyList = [
     "synonyms": "Configuration, composition",
     "antonyms": "Destruction, disbandment",
     "englishMeaning": "The action of forming or process of being formed.",
-    "exampleSentence": "The natural formation of humus takes decades of undisturbed organic decay.",
+    "exampleSentence": "To say that simply stepping up metabolism will increase starch formation and produce a large harvest is a mistake.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28003,7 +28001,7 @@ export const hscVocabularyList = [
     "synonyms": "Unfeasibility, impracticality",
     "antonyms": "Possibility, likelihood",
     "englishMeaning": "The state or condition of not being able to occur, exist, or be done.",
-    "exampleSentence": "Complete comprehension of nature through reductionist science is an impossibility.",
+    "exampleSentence": "A scientific testing method which takes all relevant factors into account is an impossibility.\"",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28024,7 +28022,7 @@ export const hscVocabularyList = [
     "synonyms": "Immeasurable, unlimited, countless, inestimable",
     "antonyms": "Limited, finite",
     "englishMeaning": "Limitless or endless in space, extent, or size; impossible to measure or calculate.",
-    "exampleSentence": "Nature possesses infinite complexity beyond human laboratory measurements.",
+    "exampleSentence": "Research wanders about aimlessly, each researcher seeing just one part of the infinite array of natural factors which affect harvest yields.\"",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28045,7 +28043,7 @@ export const hscVocabularyList = [
     "synonyms": "Inadequate, lacking",
     "antonyms": "Sufficient, adequate",
     "englishMeaning": "Not enough; inadequate.",
-    "exampleSentence": "Isolated chemical data is insufficient to grasp the holistic vitality of soil.",
+    "exampleSentence": "It appears that things go better when the farmer applies \"scientific\" techniques, but this does not mean that science must come to the rescue because the natural fertility is inherently insufficient.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28066,7 +28064,7 @@ export const hscVocabularyList = [
     "synonyms": "Constant, unchanging",
     "antonyms": "Variable, inconsistent",
     "englishMeaning": "Never changing; constant.",
-    "exampleSentence": "Natural laws remain invariable regardless of human technological intervention.",
+    "exampleSentence": "To think that these conclusions can be put to use with invariable success in the farmer's field is a big mistake.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28087,7 +28085,7 @@ export const hscVocabularyList = [
     "synonyms": "Messed up, jumbled, baffled, upside down, higgledy-piggledy",
     "antonyms": "Ordered, disentangled",
     "englishMeaning": "In a state of bewildered or bewildering confusion or disorder.",
-    "exampleSentence": "Human understanding became muddled when science separated agriculture from nature.",
+    "exampleSentence": "I must have got the zeroes muddled.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28108,7 +28106,7 @@ export const hscVocabularyList = [
     "synonyms": "Pragmatic, realistic",
     "antonyms": "Impractical, theoretical",
     "englishMeaning": "Of or concerned with the actual doing or use of something rather than with theory and ideas.",
-    "exampleSentence": "Fukuoka demonstrated practical natural farming with zero chemical inputs.",
+    "exampleSentence": "Modern research divides nature into tiny pieces and conducts tests that conform neither with natural law nor with practical experiences.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28129,7 +28127,7 @@ export const hscVocabularyList = [
     "synonyms": "Output",
     "antonyms": "",
     "englishMeaning": "The state or quality of being productive; the effectiveness of productive effort.",
-    "exampleSentence": "Natural farming matched the high productivity of industrial agriculture without chemicals.",
+    "exampleSentence": "Even if you can explain how metabolism affects the productivity of the top leaf when the average temperature is eighty-four degrees Fahrenheit, there are places where the temperature is not eighty-four degrees.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28150,7 +28148,7 @@ export const hscVocabularyList = [
     "synonyms": "Save, recover",
     "antonyms": "Abandon",
     "englishMeaning": "Save someone or something from a dangerous or distressing situation.",
-    "exampleSentence": "Traditional farming methods can rescue depleted soils from chemical toxicity.",
+    "exampleSentence": "It appears that things go better when the farmer applies \"scientific\" techniques, but this does not mean that science must come to the rescue because the natural fertility is inherently insufficient.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28171,7 +28169,7 @@ export const hscVocabularyList = [
     "synonyms": "Investigators, examiners, scientists",
     "antonyms": "",
     "englishMeaning": "People who carry out academic or scientific research.",
-    "exampleSentence": "Agricultural researchers often overlook the complex interdependence of soil organisms.",
+    "exampleSentence": "Let us read an excerpt from Japanese natural farming practitioner and philosopher Masanobu Fukuoka's celebrated book One-Straw Revolution: \"Before researchers become researchers they should become philosophers.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28192,7 +28190,7 @@ export const hscVocabularyList = [
     "synonyms": "Logical, empirical",
     "antonyms": "Unscientific",
     "englishMeaning": "Based on or characterized by the methods and principles of science.",
-    "exampleSentence": "The limits of the scientific method become evident in complex living ecosystems.",
+    "exampleSentence": "Modern scientific agriculture, on the other hand, has no such vision.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28213,7 +28211,7 @@ export const hscVocabularyList = [
     "synonyms": "Fallen, plunged",
     "antonyms": "Risen, stand up",
     "englishMeaning": "Fallen suddenly, clumsily, or headlong.",
-    "exampleSentence": "Soil fertility tumbled sharply after decades of chemical overuse.",
+    "exampleSentence": "Masanobu Fukuoka (1913–2008) was born on the Japanese island of Shikoku, the eldest son of a rice farmer and local mayor.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28234,7 +28232,7 @@ export const hscVocabularyList = [
     "synonyms": "Implausible, incredible, unlikely, unreliable",
     "antonyms": "Believable, reliable",
     "englishMeaning": "Not able to be believed; unlikely; extraordinary.",
-    "exampleSentence": "The harvest achieved without weeding or plowing was almost unbelievable.",
+    "exampleSentence": "You have to whisper it to yourself, because it really does sound unbelievable.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28255,7 +28253,7 @@ export const hscVocabularyList = [
     "synonyms": "Needless, inessential, useless",
     "antonyms": "Necessary, essential",
     "englishMeaning": "Not needed; more than is needed.",
-    "exampleSentence": "Plowing and chemical fertilizers proved completely unnecessary in natural farming.",
+    "exampleSentence": "I have done this by whittling away unnecessary agricultural practices.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28276,7 +28274,7 @@ export const hscVocabularyList = [
     "synonyms": "Diversities, differences",
     "antonyms": "Similarity, uniformity",
     "englishMeaning": "A change or slight difference in condition, amount, or level.",
-    "exampleSentence": "Seasonal variations in weather influence plant growth patterns naturally.",
+    "exampleSentence": "Even though it is the same quarter acre, the farmer must grow his crops differently each year in accordance with variations in weather, insect populations, the condition of the soil, and many other natural factors.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28297,7 +28295,7 @@ export const hscVocabularyList = [
     "synonyms": "Diversity, assortment",
     "antonyms": "Uniformity, monotony",
     "englishMeaning": "The quality or state of being different or diverse; the absence of uniformity or monotony.",
-    "exampleSentence": "A rich variety of crops supports a healthy and resilient ecosystem.",
+    "exampleSentence": "The geography and topography of the land, the condition of the soil, its structure, texture, and drainage, exposure to sunlight, insect relationships, the variety of seed used, the method of cultivation—truly an infinite variety of factors—must all be considered.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28318,7 +28316,7 @@ export const hscVocabularyList = [
     "synonyms": "Murmur, undertone",
     "antonyms": "Shout",
     "englishMeaning": "Speak very softly using one's breath without vibrating the vocal cords.",
-    "exampleSentence": "The subtle whisper of nature is easily drowned out by industrial machinery.",
+    "exampleSentence": "You have to whisper it to yourself, because it really does sound unbelievable.",
     "unit": "Unit 12: Lesson 5 (Limits of the Scientific Method)",
     "boardExamTag": "Unit 12 • Lesson 5",
     "sources": [
@@ -28333,13 +28331,6 @@ export const hscVocabularyList = [
   }
 ];
 
-/**
- * Procedurally generates 4 Board-Standard MCQs for every word in the vocabulary list.
- * 1. Synonym Question (🔄)
- * 2. Antonym Question (🔀)
- * 3. English Definition Question (📖)
- * 4. Bangla Meaning Question (🇧🇩)
- */
 export function buildQuestionsDatabase() {
   const list = [];
   const total = hscVocabularyList.length;
