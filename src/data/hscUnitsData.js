@@ -495,7 +495,7 @@ export const hscUnits = [
     "bgClass": "bg-[#4f46e5] hover:bg-[#4338ca]",
     "gradient": "from-[#6366f1] to-[#4f46e5]",
     "progress": 0,
-    "totalWords": 74,
+    "totalWords": 95,
     "masteredWords": 0,
     "lessons": [
       {
@@ -512,8 +512,8 @@ export const hscUnits = [
         "number": "Lesson 2",
         "title": "\"The Old Man at the Bridge\" by Ernest Hemingway",
         "titleBn": "ব্রিজের ধারের বৃদ্ধটি (হেমিংওয়ে)",
-        "questionsCount": "৩৬ টি প্রশ্ন",
-        "wordsCount": 9,
+        "questionsCount": "১৩৬ টি প্রশ্ন",
+        "wordsCount": 34,
         "progress": 0
       },
       {

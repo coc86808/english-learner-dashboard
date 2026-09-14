@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1091 Authentic Textbook Vocabulary Words
+ * Total Words: 1111 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -3176,7 +3176,8 @@ export const hscVocabularyList = [
     "unit": "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
     "boardExamTag": "Unit 9 • Lesson 1",
     "sources": [
-      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)"
+      "Unit 9: Lesson 1 (Storms and Stresses of Adolescence)",
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -4956,7 +4957,8 @@ export const hscVocabularyList = [
     "lesson": "Frederick Douglass",
     "boardExamTag": "Unit 5 • Lesson 5",
     "sources": [
-      "Unit 5: Human Rights: Frederick Douglass"
+      "Unit 5: Human Rights: Frederick Douglass",
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -19964,54 +19966,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l2-01",
     "word": "Pontoon",
-    "bengaliMeaning": "নৌকাসেতু / ভাসমান সামরিক সেতু",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Floating bridge, ponton, barge bridge, floating pier",
-    "antonyms": "Suspension bridge, stone viaduct",
-    "englishMeaning": "A flat-bottomed boat or hollow cylinder, used with others to support a temporary bridge.",
+    "bengaliMeaning": "ভাসমান ধাতব সেতু",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Platform",
+    "antonyms": "",
+    "englishMeaning": "A flat-bottomed boat or hollow structure used with others to support a temporary bridge.",
     "exampleSentence": "There was a pontoon bridge across the river and carts, trucks, and men, women and children were crossing it.",
-    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Unit 11 • Lesson 2",
-    "sources": [
-      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u11-l2-02",
-    "word": "Staggered",
-    "bengaliMeaning": "টলে টলে হাঁটা / কাঁপতে কাঁপতে কোনোমতে চলা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Reeled, tottered, stumbled, swayed, wavered",
-    "antonyms": "Strode, marched steadily, bolted",
-    "englishMeaning": "Walked or moved unsteadily, as if about to fall.",
-    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge with soldiers helping push against the spokes of the wheels.",
-    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Unit 11 • Lesson 2",
-    "sources": [
-      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u11-l2-03",
-    "word": "Plodded",
-    "bengaliMeaning": "ক্লান্ত পায়ে ভারাক্রান্ত হয়ে চলা",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Trudged, lumbered, stamped, dragged along, sllogged",
-    "antonyms": "Sprinted, skipped, dashed",
-    "englishMeaning": "Walked doggedly and slowly with heavy steps.",
-    "exampleSentence": "The trucks ground up and away heading out of it all and the peasants plodded along in the ankle deep dust.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -20027,12 +19987,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l2-05",
     "word": "Artillery",
-    "bengaliMeaning": "ভারী কামান ও গোলাবারুদ বাহিনী",
+    "bengaliMeaning": "গোলন্দাজ বাহিনী",
     "partsOfSpeech": "Noun",
-    "synonyms": "Ordnance, cannonry, heavy weaponry, battery",
-    "antonyms": "Infantry rifles, sidearms",
+    "synonyms": "Cannon, ordnance",
+    "antonyms": "",
     "englishMeaning": "Large-caliber guns used in warfare on land.",
-    "exampleSentence": "Because of the artillery.",
+    "exampleSentence": "The captain told me to go because of the artillery.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -20048,33 +20008,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l2-06",
     "word": "Blankly",
-    "bengaliMeaning": "শূন্যদৃষ্টিতে / অভিব্যক্তিশূন্য নির্বিকার ভঙ্গিতে",
+    "bengaliMeaning": "কোনো আবেগ ছাড়া",
     "partsOfSpeech": "Adverb",
-    "synonyms": "Vacantly, expressionlessly, dully, numbly",
-    "antonyms": "Expressively, keenly, sharply",
-    "englishMeaning": "In a way that shows no emotion, understanding, or interest.",
-    "exampleSentence": "He looked at me very blankly and tiredly, and then said, having to share his worry with someone, \"The cat will be all right, I am sure.",
-    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
-    "boardExamTag": "Unit 11 • Lesson 2",
-    "sources": [
-      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u11-l2-07",
-    "word": "Fascists",
-    "bengaliMeaning": "ফ্যাসিস্ট বাহিনী / উগ্র স্বৈরাচারী দল",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Authoritarians, totalitarian invaders, autocrats, oppressors",
-    "antonyms": "Democrats, anti-fascists, liberators",
-    "englishMeaning": "Followers of a political philosophy characterized by dictatorial power and forcible suppression.",
-    "exampleSentence": "It was Easter Sunday and the Fascists were advancing toward the Ebro.",
+    "synonyms": "Foolishly",
+    "antonyms": "",
+    "englishMeaning": "In a manner that shows no expression, understanding, or emotion.",
+    "exampleSentence": "He looked at me very blankly and tiredly.",
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
@@ -25694,6 +25633,489 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 11 • Lesson 1",
     "sources": [
       "Unit 11: Lesson 1 (Situations of Conflict)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-ankle",
+    "word": "Ankle",
+    "bengaliMeaning": "গোড়ালি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Heel",
+    "antonyms": "",
+    "englishMeaning": "The joint connecting the foot with the leg.",
+    "exampleSentence": "The peasants plodded along in the ankle deep dust.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-backward",
+    "word": "Backward",
+    "bengaliMeaning": "পশ্চাৎ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Behindhand",
+    "antonyms": "Forward",
+    "englishMeaning": "Directed behind or to the rear; towards the back.",
+    "exampleSentence": "He got to his feet, swayed from side to side and then sat down backwards in the dust.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-beyond",
+    "word": "Beyond",
+    "bengaliMeaning": "কোনো কিছু ছাড়িয়ে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Above",
+    "antonyms": "Inside",
+    "englishMeaning": "At or to the further side of; further away.",
+    "exampleSentence": "It was my business to cross the bridge, explore the bridgehead beyond and find out to what point the enemy had advanced.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-cart",
+    "word": "Cart",
+    "bengaliMeaning": "মালবাহী গাড়ি/ট্রলি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Cab",
+    "antonyms": "",
+    "englishMeaning": "An open horse- or mule-drawn vehicle for carrying loads.",
+    "exampleSentence": "There was a pontoon bridge across the river and carts, trucks, and men, women and children were crossing it.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-certainly",
+    "word": "Certainly",
+    "bengaliMeaning": "নিঃসন্দেহে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Definitely",
+    "antonyms": "Uncertainly",
+    "englishMeaning": "Undoubtedly; definitely; without question.",
+    "exampleSentence": "Yes, certainly they'll fly. But the others. It's better not to think about the others.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-dull",
+    "word": "Dull",
+    "bengaliMeaning": "নিষ্প্রভ, নিরানন্দ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Dilatory, faded",
+    "antonyms": "",
+    "englishMeaning": "Lacking interest, brightness, or enthusiasm; lifeless.",
+    "exampleSentence": "\"I was taking care of animals,\" he said dully, but no longer to me.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-dusty",
+    "word": "Dusty",
+    "bengaliMeaning": "ধূলিমলিন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Dirty",
+    "antonyms": "Bright, clean",
+    "englishMeaning": "Covered with, full of, or resembling dust.",
+    "exampleSentence": "An old man with steel rimmed spectacles and very dusty clothes sat by the side of the road.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-explain",
+    "word": "Explain",
+    "bengaliMeaning": "ব্যাখ্যা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Clarify",
+    "antonyms": "",
+    "englishMeaning": "Make an idea, situation, or problem clear to someone by describing it in detail.",
+    "exampleSentence": "\"I was taking care of animals,\" he explained.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-explore",
+    "word": "Explore",
+    "bengaliMeaning": "ভ্রমণ/উদ্ঘাটন করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Visit",
+    "antonyms": "",
+    "englishMeaning": "Travel through an unfamiliar area to learn about it or inspect it.",
+    "exampleSentence": "It was my business to cross the bridge, explore the bridgehead beyond and find out to what point the enemy had advanced.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-fascist",
+    "word": "Fascist",
+    "bengaliMeaning": "ফ্যাসিবাদের সমর্থক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "",
+    "antonyms": "",
+    "englishMeaning": "An advocate or follower of authoritarian and totalitarian fascism.",
+    "exampleSentence": "It was Easter Sunday and the Fascists were advancing toward the Ebro.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-hurry",
+    "word": "Hurry",
+    "bengaliMeaning": "তাড়াহুড়ো করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Rush, agitation",
+    "antonyms": "Procrastinate",
+    "englishMeaning": "Move or act with great haste or speed.",
+    "exampleSentence": "A few last carts were hurrying down the slope of the bank.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-mysterious",
+    "word": "Mysterious",
+    "bengaliMeaning": "রহস্যজনক, রহস্যময়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Obscure, unknown",
+    "antonyms": "",
+    "englishMeaning": "Difficult or impossible to understand, explain, or identify.",
+    "exampleSentence": "Listening all the while for the first noises that would signal that ever mysterious event called contact.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-peasant",
+    "word": "Peasant",
+    "bengaliMeaning": "ক্ষুদ্র কৃষক, অল্প জমি আছে এমন কৃষক",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Farmer, tiller",
+    "antonyms": "",
+    "englishMeaning": "A poor farmer of low social status who owns or rents a small piece of land.",
+    "exampleSentence": "The peasants plodded along in the ankle deep dust.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-plod",
+    "word": "Plod",
+    "bengaliMeaning": "ধীরে তবে বড় ধাপ ফেলে হাঁটা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Stalk",
+    "antonyms": "",
+    "englishMeaning": "Walk doggedly and slowly with heavy steps.",
+    "exampleSentence": "The peasants plodded along in the ankle deep dust.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-quite",
+    "word": "Quite",
+    "bengaliMeaning": "বেশ, অনেক, একেবারে, সম্পূর্ণ",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Entirely, completely",
+    "antonyms": "Slightly",
+    "englishMeaning": "To the utmost or most absolute extent or degree; completely.",
+    "exampleSentence": "\"Oh,\" I said, not quite understanding.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-rimmed",
+    "word": "Rimmed",
+    "bengaliMeaning": "কোনোকিছুর বৃত্তাকার প্রান্ত-বিশিষ্ট",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "",
+    "antonyms": "",
+    "englishMeaning": "Provided with or having a circular rim or border.",
+    "exampleSentence": "An old man with steel rimmed spectacles and very dusty clothes sat by the side of the road.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-stagger",
+    "word": "Stagger",
+    "bengaliMeaning": "টলমলভাবে চলা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Vacillate",
+    "antonyms": "",
+    "englishMeaning": "Walk or move unsteadily, as if about to fall.",
+    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge with soldiers helping.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-state",
+    "word": "State",
+    "bengaliMeaning": "বর্ণনা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Describe",
+    "antonyms": "",
+    "englishMeaning": "Express something definitely or clearly in speech or writing.",
+    "exampleSentence": "\"No,\" he said, \"only the animals I stated.\"",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-steep",
+    "word": "Steep",
+    "bengaliMeaning": "ঢালু বা খাড়া হয়ে উঠেছে এমন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Sharp, vertical",
+    "antonyms": "Gradual",
+    "englishMeaning": "Rising or falling sharply; nearly perpendicular.",
+    "exampleSentence": "The mule-drawn carts staggered up the steep bank from the bridge.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-sway",
+    "word": "Sway",
+    "bengaliMeaning": "দোলানো, আন্দোলিত হওয়া/করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Wave, oscillate",
+    "antonyms": "",
+    "englishMeaning": "Move or cause to move slowly or unsteadily from side to side.",
+    "exampleSentence": "He got to his feet, swayed from side to side and then sat down backwards in the dust.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-tiredly",
+    "word": "Tiredly",
+    "bengaliMeaning": "ক্লান্তভাবে, ক্লান্তিকরভাবে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Wearyingly",
+    "antonyms": "Refreshingly",
+    "englishMeaning": "In a tired or fatigued manner.",
+    "exampleSentence": "He looked at me very blankly and tiredly.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-towards",
+    "word": "Towards",
+    "bengaliMeaning": "দিকে",
+    "partsOfSpeech": "Preposition",
+    "synonyms": "Directed to",
+    "antonyms": "",
+    "englishMeaning": "In the direction of someone or something.",
+    "exampleSentence": "\"Towards Barcelona,\" I told him.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l2-wonder",
+    "word": "Wonder",
+    "bengaliMeaning": "বিস্ময়/বিস্ময়াভিভূত হয়ে ভাবতে থাকা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Astonishment, marvel",
+    "antonyms": "",
+    "englishMeaning": "A feeling of amazement and admiration, or a state of curious questioning.",
+    "exampleSentence": "Wondering how long now it would be before we would see the enemy.",
+    "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+    "boardExamTag": "Unit 11 • Lesson 2",
+    "sources": [
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
