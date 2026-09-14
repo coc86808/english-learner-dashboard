@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1149 Authentic Textbook Vocabulary Words
+ * Total Words: 1177 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -119,7 +119,8 @@ export const hscVocabularyList = [
     "lesson": "Craft",
     "boardExamTag": "Unit 2 • Lesson 4",
     "sources": [
-      "Unit 2: Art and Craft: Craft"
+      "Unit 2: Art and Craft: Craft",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -4012,12 +4013,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-01",
     "word": "Harrowing",
-    "bengaliMeaning": "মর্মান্তিক / লোমহর্ষক ও নিদারুণ কষ্টদায়ক",
+    "bengaliMeaning": "চরম দুর্দশাপূর্ণ, মর্মভেদী",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Traumatic, agonizing, distressing, heartbreaking, painful",
-    "antonyms": "Pleasurable, soothing, calming, pleasant",
-    "englishMeaning": "Acutely distressing or painful.",
-    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner who at one point of his journey didn't have any water to drink because of a curse.",
+    "synonyms": "Calamitous, distressing",
+    "antonyms": "Pleasant, quiet",
+    "englishMeaning": "Acutely distressing or painful; agonizing.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -5000,18 +5001,19 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-survive",
     "word": "Survive",
-    "bengaliMeaning": "বেঁচে থাকা / টিকে থাকা",
+    "bengaliMeaning": "বেঁচে থাকা, টিকে থাকা",
     "partsOfSpeech": "Verb",
-    "synonyms": "Endure, subsist, live, outlast",
-    "antonyms": "Perish, succumb, expire, die",
+    "synonyms": "Live, endure",
+    "antonyms": "Die",
     "englishMeaning": "Continue to live or exist, especially in spite of danger or hardship.",
-    "exampleSentence": "We know we cannot survive without it.",
-    "unit": "Unit 12: Environment and Nature: Water, Water Everywhere...",
+    "exampleSentence": "We know we cannot survive without clean drinking water.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "lesson": "Water, Water Everywhere...",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
       "Unit 12: Environment and Nature: Water, Water Everywhere...",
-      "Unit 4: Lesson 3 (Great Women)"
+      "Unit 4: Lesson 3 (Great Women)",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -5036,7 +5038,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 1 (The Parrot's Tale)",
     "boardExamTag": "Unit 1 • Lesson 1",
     "sources": [
-      "Unit 1: Lesson 1 (The Parrot's Tale)"
+      "Unit 1: Lesson 1 (The Parrot's Tale)",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -7641,7 +7644,8 @@ export const hscVocabularyList = [
     "unit": "Unit 8: Lesson 2 (Warmth)",
     "boardExamTag": "Unit 8 • Lesson 2",
     "sources": [
-      "Unit 8: Lesson 2 (Warmth)"
+      "Unit 8: Lesson 2 (Warmth)",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -8160,12 +8164,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-02",
     "word": "Tributary",
-    "bengaliMeaning": "উপনদী / প্রধান নদীর সাথে মিলিত শাখানদী",
+    "bengaliMeaning": "উপনদী",
     "partsOfSpeech": "Noun",
-    "synonyms": "Branch river, stream, affluent, feeder, side channel",
-    "antonyms": "Main stream, sea, estuary",
+    "synonyms": "Feeder",
+    "antonyms": "",
     "englishMeaning": "A river or stream flowing into a larger river or lake.",
-    "exampleSentence": "Once it was a tributary of the mighty Ganges and flowed into the Bay of Bengal through the river Dhaleshwari.",
+    "exampleSentence": "Once it was a tributary of the mighty Ganges.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -8185,10 +8189,10 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-03",
     "word": "Perpetual",
-    "bengaliMeaning": "চিরস্থায়ী / নিরবচ্ছিন্ন ও অবিরাম",
+    "bengaliMeaning": "চিরস্থায়ী",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Continuous, endless, permanent, ceaseless, eternal",
-    "antonyms": "Temporary, fleeting, transient, intermittent",
+    "synonyms": "Constant, permanent",
+    "antonyms": "Temporary",
     "englishMeaning": "Never ending or changing; occurring repeatedly.",
     "exampleSentence": "Its water is polluted and a perpetual stench fills the air around it.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
@@ -8205,31 +8209,6 @@ export const hscVocabularyList = [
     "crossRefAntonyms": [
       "Transient"
     ],
-    "priority": 102
-  },
-  {
-    "id": "vocab-u12-l1-08",
-    "word": "Marvelled",
-    "bengaliMeaning": "বিস্মিত হয়েছিল / অপরিসীম শ্রদ্ধায় মুগ্ধ হয়েছিল",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Wondered, astonished, gazed in awe, admired",
-    "antonyms": "Disregarded, ignored, scoffed",
-    "englishMeaning": "Be filled with wonder or astonishment.",
-    "exampleSentence": "Mughal explorers marvelled at the pristine tide of the sparkling river.",
-    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Unit 12 • Lesson 1",
-    "sources": [
-      "Unit 12: Lesson 1 (Water Everywhere)"
-    ],
-    "isCrossReferenced": true,
-    "crossReferencedWords": [
-      "Astonished"
-    ],
-    "crossRefMatchCount": 1,
-    "crossRefSynonyms": [
-      "Astonished"
-    ],
-    "crossRefAntonyms": [],
     "priority": 102
   },
   {
@@ -8735,17 +8714,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-millennium",
     "word": "Millennium",
-    "bengaliMeaning": "সহস্রাব্দ / এক হাজার বছর",
+    "bengaliMeaning": "সহস্রাব্দ, সহস্র বৎসর",
     "partsOfSpeech": "Noun",
-    "synonyms": "One thousand years, millenary, golden era",
-    "antonyms": "Moment, second, instant",
+    "synonyms": "Millenary",
+    "antonyms": "",
     "englishMeaning": "A period of a thousand years.",
-    "exampleSentence": "The United Nations in a meeting on the eve of the new millennium identified the drinking water problem as one of the challenges for the future.",
-    "unit": "Unit 12: Environment and Nature: Water, Water Everywhere...",
+    "exampleSentence": "Meeting on the eve of the new millennium identified the drinking water problem.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "lesson": "Water, Water Everywhere...",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
-      "Unit 12: Environment and Nature: Water, Water Everywhere..."
+      "Unit 12: Environment and Nature: Water, Water Everywhere...",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -10036,7 +10016,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 2",
     "sources": [
       "Unit 4: Lesson 2 (Transformative Speeches)",
-      "Unit 4: Transformative Speeches: Three Speeches"
+      "Unit 4: Transformative Speeches: Three Speeches",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -10678,7 +10659,8 @@ export const hscVocabularyList = [
     "lesson": "Stories From Gaza",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Peace and Conflict: Stories From Gaza"
+      "Unit 11: Peace and Conflict: Stories From Gaza",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -12619,7 +12601,8 @@ export const hscVocabularyList = [
     "unit": "Unit 10: Lesson 1 (Manners Around the World)",
     "boardExamTag": "Unit 10 • Lesson 1",
     "sources": [
-      "Unit 10: Lesson 1 (Manners Around the World)"
+      "Unit 10: Lesson 1 (Manners Around the World)",
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -13306,12 +13289,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-07",
     "word": "Shrink",
-    "bengaliMeaning": "কুঁকড়ে যাওয়া / শুকিয়ে সংকুচিত হওয়া",
+    "bengaliMeaning": "সংকুচিত হওয়া বা করা",
     "partsOfSpeech": "Verb",
-    "synonyms": "Contract, diminish, shrivel, compress, constrict",
-    "antonyms": "Expand, swell, grow, inflate",
+    "synonyms": "Contract, diminish",
+    "antonyms": "Widen, expand",
     "englishMeaning": "Become or make smaller in size or amount.",
-    "exampleSentence": "Water, water, every where, And all the boards did shrink; Water, water, every where, Nor any drop to drink.",
+    "exampleSentence": "Water, water, every where, and all the boards did shrink.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -20251,10 +20234,10 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u12-l1-04",
     "word": "Stench",
-    "bengaliMeaning": "দুর্গন্ধ / তীব্র পচা দুর্গন্ধযুক্ত বাতাস",
+    "bengaliMeaning": "দুর্গন্ধ",
     "partsOfSpeech": "Noun",
-    "synonyms": "Foul odor, reek, stink, fetor, malodor",
-    "antonyms": "Fragrance, perfume, sweet scent, aroma",
+    "synonyms": "Odour, stink",
+    "antonyms": "Perfume",
     "englishMeaning": "A strong and very unpleasant smell.",
     "exampleSentence": "Its water is polluted and a perpetual stench fills the air around it.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
@@ -20270,35 +20253,14 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u12-l1-05",
-    "word": "Discharges",
-    "bengaliMeaning": "নির্গমন করে / অপদ্রব্য ও তরল বর্জ্য ফেলে দেয়",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Emits, expels, releases, unloads, flushes, dumps",
-    "antonyms": "Absorbs, retains, holds, purifies",
-    "englishMeaning": "Allows a liquid, gas, or other substance to flow out from where it has been confined.",
-    "exampleSentence": "The city of Dhaka discharges about 4500 tons of solid waste every day and most of it is directly released into the Buriganga.",
-    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
-    "boardExamTag": "Unit 12 • Lesson 1",
-    "sources": [
-      "Unit 12: Lesson 1 (Water Everywhere)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u12-l1-06",
     "word": "Tannery",
-    "bengaliMeaning": "চামড়া প্রক্রিয়াকরণ কারখানা / ট্যানারি",
+    "bengaliMeaning": "চামড়া কারখানা",
     "partsOfSpeech": "Noun",
-    "synonyms": "Leather-works, tanyard, curriery, pelt processor",
-    "antonyms": "Organic wildlife sanctuary",
-    "englishMeaning": "A place where animal hides are tanned and turned into leather.",
-    "exampleSentence": "According to the Department of the Environment (DoE), 20,000 tons of tannery waste, including some highly toxic materials, are released into the river every day.",
+    "synonyms": "",
+    "antonyms": "",
+    "englishMeaning": "A place where animal hides are tanned and processed into leather.",
+    "exampleSentence": "20,000 tons of tannery waste are released into the river every day.",
     "unit": "Unit 12: Lesson 1 (Water Everywhere)",
     "boardExamTag": "Unit 12 • Lesson 1",
     "sources": [
@@ -21810,28 +21772,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 3 • Lesson 2",
     "sources": [
       "Unit 3: Myths and Literature: Icarus"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u12-l1-marveled",
-    "word": "Marveled",
-    "bengaliMeaning": "বিস্মিত হওয়া / তাজ্জব বনে যাওয়া",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Wondered, admired, gaped, stood in awe",
-    "antonyms": "Disregarded, scoffed, ignored",
-    "englishMeaning": "Be filled with wonder or astonishment.",
-    "exampleSentence": "The Mughals marveled at the tide level of the Buriganga and founded their capital Jahangirnagar on its banks in 1610.",
-    "unit": "Unit 12: Environment and Nature: Water, Water Everywhere...",
-    "lesson": "Water, Water Everywhere...",
-    "boardExamTag": "Unit 12 • Lesson 1",
-    "sources": [
-      "Unit 12: Environment and Nature: Water, Water Everywhere..."
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -26931,6 +26871,657 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
       "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-access",
+    "word": "Access",
+    "bengaliMeaning": "প্রবেশাধিকার",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Opportunity",
+    "antonyms": "",
+    "englishMeaning": "The means or opportunity to approach, enter, or obtain something.",
+    "exampleSentence": "Is there a crisis in our time with regard to access to clean drinking water?",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-ancient",
+    "word": "Ancient",
+    "bengaliMeaning": "পুরাতন, প্রাচীন",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Old, antique",
+    "antonyms": "Modern, new",
+    "englishMeaning": "Belonging to the very distant past and no longer in existence; very old.",
+    "exampleSentence": "Coleridge's poem narrates the harrowing sea-voyage of an ancient mariner.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-backyard",
+    "word": "Backyard",
+    "bengaliMeaning": "পেছন দিক, পশ্চাদ্ভাগ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Back",
+    "antonyms": "Front",
+    "englishMeaning": "A yard behind a house, or an area close to home.",
+    "exampleSentence": "Besides, we have a sea in our backyard too.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-crisis",
+    "word": "Crisis",
+    "bengaliMeaning": "সংকট, সংকটকাল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Emergency, disaster",
+    "antonyms": "Success",
+    "englishMeaning": "A time of intense difficulty, trouble, or danger.",
+    "exampleSentence": "Is there a crisis in our time with regard to access to clean drinking water?",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-cruel",
+    "word": "Cruel",
+    "bengaliMeaning": "নিষ্ঠুর, নিদারুণ",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Brutal, inhuman",
+    "antonyms": "Compassionate",
+    "englishMeaning": "Willfully causing pain or suffering to others, or feeling no concern about it.",
+    "exampleSentence": "There is a limit up to which it can put up with its cruel and thoughtless treatment.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-culture",
+    "word": "Culture",
+    "bengaliMeaning": "সংস্কৃতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Lifestyle, customs, tradition",
+    "antonyms": "",
+    "englishMeaning": "The customs, arts, social institutions, and achievements of a particular nation or people.",
+    "exampleSentence": "Rivers are everywhere in our life, literature, economy and culture.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-curse",
+    "word": "Curse",
+    "bengaliMeaning": "অভিশাপ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Malediction",
+    "antonyms": "Blessing",
+    "englishMeaning": "A solemn utterance intended to invoke a supernatural power to inflict harm or misfortune.",
+    "exampleSentence": "At one point of his journey he didn't have any water to drink because of a curse.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-describe",
+    "word": "Describe",
+    "bengaliMeaning": "বর্ণনা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "State, narrate, illustrate",
+    "antonyms": "Summarize",
+    "englishMeaning": "Give an account in words of someone or something, including all relevant characteristics.",
+    "exampleSentence": "A report published in the Daily Sun describes what has happened to the river Buriganga and why.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-discharge",
+    "word": "Discharge",
+    "bengaliMeaning": "নির্গত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Release",
+    "antonyms": "Load",
+    "englishMeaning": "Allow a liquid, gas, or other substance to flow out.",
+    "exampleSentence": "The city of Dhaka discharges about 4500 tons of solid waste every day.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-dump",
+    "word": "Dump",
+    "bengaliMeaning": "নিক্ষেপ করা, মাল খালাস করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Cast, throw",
+    "antonyms": "Store, stock",
+    "englishMeaning": "Deposit or dispose of waste or rubbish carelessly or in an unsuitable place.",
+    "exampleSentence": "Huge quantities of toxic chemicals and wastes are dumped into the river every day.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-dying",
+    "word": "Dying",
+    "bengaliMeaning": "মুমূর্ষু/মৃতপ্রায়",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Moribund",
+    "antonyms": "Thriving",
+    "englishMeaning": "On the point of death; in a state of terminal decline.",
+    "exampleSentence": "The river Buriganga is an example of a dying river.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-economy",
+    "word": "Economy",
+    "bengaliMeaning": "অর্থনীতি",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Budget, wealth",
+    "antonyms": "",
+    "englishMeaning": "The state of a country or region in terms of the production and consumption of goods.",
+    "exampleSentence": "Rivers are everywhere in our life, literature, economy and culture.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-establishment",
+    "word": "Establishment",
+    "bengaliMeaning": "প্রতিষ্ঠান",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Institution, organization",
+    "antonyms": "",
+    "englishMeaning": "A business organization, public institution, or household.",
+    "exampleSentence": "Wastes from clinics, households and other establishments are dumped into the river every day.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-eve",
+    "word": "Eve",
+    "bengaliMeaning": "আগের দিন, প্রাক্কাল",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Evening, before",
+    "antonyms": "",
+    "englishMeaning": "The day or period of time immediately before an event or holiday.",
+    "exampleSentence": "The United Nations in a meeting on the eve of the new millennium identified the drinking water problem.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-literature",
+    "word": "Literature",
+    "bengaliMeaning": "সাহিত্য",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Writing",
+    "antonyms": "",
+    "englishMeaning": "Written works, especially those considered of superior or lasting artistic merit.",
+    "exampleSentence": "Rivers are everywhere in our life, literature, economy and culture.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-mariner",
+    "word": "Mariner",
+    "bengaliMeaning": "নাবিক, মাল্লা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Sailor, seaman",
+    "antonyms": "",
+    "englishMeaning": "A sailor or seaman who navigates ships.",
+    "exampleSentence": "Coleridge's poem narrates the harrowing sea-voyage of an old mariner.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-marvel",
+    "word": "Marvel",
+    "bengaliMeaning": "বিস্মিত হওয়া বা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Wonder, bewilder",
+    "antonyms": "",
+    "englishMeaning": "Be filled with wonder, astonishment, or admiration.",
+    "exampleSentence": "The Mughals marveled at the tide level of the Buriganga.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-monster",
+    "word": "Monster",
+    "bengaliMeaning": "দৈত্য, রাক্ষস",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Giant, demon",
+    "antonyms": "Angel",
+    "englishMeaning": "An imaginary or frightening creature of huge size and grotesque form.",
+    "exampleSentence": "The river would need a monster's stomach to digest all the wastes mentioned above.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-narrate",
+    "word": "Narrate",
+    "bengaliMeaning": "বর্ণনা করা, বিবৃত করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Tell, describe",
+    "antonyms": "Summarize",
+    "englishMeaning": "Give a spoken or written account of an event or story.",
+    "exampleSentence": "Coleridge's poem, a ballad, narrates the harrowing sea-voyage of an old mariner.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-pang",
+    "word": "Pang",
+    "bengaliMeaning": "তীব্র যন্ত্রণা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Agony",
+    "antonyms": "Comfort",
+    "englishMeaning": "A sudden sharp pain or painful emotion.",
+    "exampleSentence": "A few are already dead and several are going through the pangs of death.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-plenty",
+    "word": "Plenty",
+    "bengaliMeaning": "প্রচুর",
+    "partsOfSpeech": "Pronoun",
+    "synonyms": "Many",
+    "antonyms": "Few",
+    "englishMeaning": "A large or sufficient amount or quantity; more than enough.",
+    "exampleSentence": "Ours is a land of rivers and we have plenty of rainfall.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-presentation",
+    "word": "Presentation",
+    "bengaliMeaning": "উপস্থাপনা, প্রদত্ত বস্তু",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Lecture, speech",
+    "antonyms": "",
+    "englishMeaning": "The giving of something to someone, or a formal speech or display.",
+    "exampleSentence": "Make a presentation on the condition of nearby rivers comparing past and present.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-publish",
+    "word": "Publish",
+    "bengaliMeaning": "প্রকাশ করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Print, issue",
+    "antonyms": "",
+    "englishMeaning": "Prepare and issue a book, newspaper, piece of music, or report for public distribution.",
+    "exampleSentence": "A report published in the Daily Sun describes what has happened to the river Buriganga.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-quantity",
+    "word": "Quantity",
+    "bengaliMeaning": "পরিমাণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Amount, extent, measure",
+    "antonyms": "",
+    "englishMeaning": "The amount or number of a material or abstract thing.",
+    "exampleSentence": "Huge quantities of toxic chemicals and wastes are dumped into the river every day.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-rainfall",
+    "word": "Rainfall",
+    "bengaliMeaning": "বৃষ্টিপাত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Precipitation, shower",
+    "antonyms": "",
+    "englishMeaning": "The quantity of rain falling within a given area in a given time.",
+    "exampleSentence": "Ours is a land of rivers and we have plenty of rainfall.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-regard",
+    "word": "Regard",
+    "bengaliMeaning": "সম্পর্ক, প্রসঙ্গ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Relation, connection",
+    "antonyms": "",
+    "englishMeaning": "Attention to or concern for something; reference or relation.",
+    "exampleSentence": "Is there a crisis in our time with regard to access to clean drinking water?",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-shortage",
+    "word": "Shortage",
+    "bengaliMeaning": "ঘাটতি, স্বল্পতা",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Lack, want",
+    "antonyms": "Abundance",
+    "englishMeaning": "A state or situation in which something needed cannot be obtained in sufficient amounts.",
+    "exampleSentence": "Dhaka grew into a heavily populated city with a chronic shortage of space.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-stomach",
+    "word": "Stomach",
+    "bengaliMeaning": "পাকস্থলী, উদর",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Belly, paunch",
+    "antonyms": "",
+    "englishMeaning": "The internal organ in which the first part of digestion occurs.",
+    "exampleSentence": "The river would need a monster's stomach to digest all the wastes mentioned above.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-survey",
+    "word": "Survey",
+    "bengaliMeaning": "জরিপ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Study, enquiry",
+    "antonyms": "",
+    "englishMeaning": "A general view, examination, or description of someone or something.",
+    "exampleSentence": "Conduct a survey on water usage and pollution in the local community.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-unfortunately",
+    "word": "Unfortunately",
+    "bengaliMeaning": "দুর্ভাগ্যবশত, দুর্ভাগ্যক্রমে",
+    "partsOfSpeech": "Adverb",
+    "synonyms": "Regrettably",
+    "antonyms": "Fortunately",
+    "englishMeaning": "It is a matter of regret; unluckily.",
+    "exampleSentence": "Are the rivers in good shape? Unfortunately, they are not.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u12-l1-voyage",
+    "word": "Voyage",
+    "bengaliMeaning": "জলযানে নৌপথে গমন",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Journey, cruise",
+    "antonyms": "",
+    "englishMeaning": "A long journey involving travel by sea or in space.",
+    "exampleSentence": "Coleridge's poem narrates the harrowing sea-voyage of an old mariner.",
+    "unit": "Unit 12: Lesson 1 (Water Everywhere)",
+    "boardExamTag": "Unit 12 • Lesson 1",
+    "sources": [
+      "Unit 12: Lesson 1 (Water Everywhere)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],

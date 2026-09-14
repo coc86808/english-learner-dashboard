@@ -554,7 +554,7 @@ export const hscUnits = [
     "bgClass": "bg-[#15803d] hover:bg-[#166534]",
     "gradient": "from-[#22c55e] to-[#15803d]",
     "progress": 0,
-    "totalWords": 79,
+    "totalWords": 113,
     "masteredWords": 0,
     "lessons": [
       {
@@ -562,8 +562,8 @@ export const hscUnits = [
         "number": "Lesson 1",
         "title": "Water, Water Everywhere...",
         "titleBn": "পানি দূষণ ও হাহাকার",
-        "questionsCount": "৬০ টি প্রশ্ন",
-        "wordsCount": 15,
+        "questionsCount": "১৯৬ টি প্রশ্ন",
+        "wordsCount": 49,
         "progress": 0
       },
       {
