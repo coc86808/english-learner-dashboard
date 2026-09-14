@@ -31,7 +31,7 @@ import {
 import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
-import { smartInterleaveQuestions, hscVocabularyList } from '../data/questions/hscQuestionsData';
+import { smartInterleaveQuestions, hscVocabularyList, getWordUnitSources } from '../data/questions/hscQuestionsData';
 import { recordCompletedExam, syncLearningStateToCloudDebounced } from '../services/scoreManager';
 
 export default function HSCExamInterface({
@@ -809,9 +809,14 @@ export default function HSCExamInterface({
                   )}
                 </div>
 
-                <span className="text-xs font-semibold px-3 py-1 rounded-xl bg-[#111723] text-cyan-300 border border-[#1e293b]">
-                  {currentQ.unit || 'HSC English Textbook'}
-                </span>
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {getWordUnitSources(currentQ).map((src, idx) => (
+                    <span key={idx} className="text-xs font-semibold px-2.5 py-1 rounded-xl bg-[#111723] text-cyan-300 border border-[#1e293b] flex items-center gap-1">
+                      <BookOpen size={11} className="text-cyan-400" />
+                      <span>{src}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
 
               {/* Question Prompt Card */}
@@ -834,6 +839,20 @@ export default function HSCExamInterface({
                       </span>
                     )}
                   </div>
+
+                  {/* Multi-Source Unit Badges Under Word */}
+                  {currentQ.sources && currentQ.sources.length > 1 && (
+                    <div className="flex items-center gap-1.5 flex-wrap w-full mt-1.5">
+                      <span className="text-[11px] text-slate-400 font-semibold">
+                        {isBn ? 'উপস্থিত ইউনিটসমূহ:' : 'Appears in:'}
+                      </span>
+                      {currentQ.sources.map((src, sIdx) => (
+                        <span key={sIdx} className="text-[10px] font-bold text-cyan-300 bg-[#162033] border border-cyan-500/30 px-2 py-0.5 rounded-md shadow-sm">
+                          📍 {src}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   {/* Pronunciation Audio Button */}
                   <button

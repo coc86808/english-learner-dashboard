@@ -24,7 +24,7 @@ import {
   Printer
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
-import { hscVocabularyList, matchesUnitAndLesson } from '../data/questions/hscQuestionsData';
+import { hscVocabularyList, matchesUnitAndLesson, getWordUnitSources } from '../data/questions/hscQuestionsData';
 import { hscUnits } from '../data/hscUnitsData';
 import FlashcardPrintModal from './FlashcardPrintModal';
 
@@ -422,10 +422,16 @@ export default function FlashcardsExplorer({
             >
               {/* Card Header Row */}
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/25 shadow-sm">
-                    {currentCard.unit || "Unit 1: The Parrot's Tale"}
-                  </span>
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {getWordUnitSources(currentCard).map((src, i) => (
+                    <span
+                      key={i}
+                      className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 shadow-sm flex items-center gap-1"
+                    >
+                      <BookOpen size={11} />
+                      <span>{src}</span>
+                    </span>
+                  ))}
                   {currentCard.isCrossReferenced && (
                     <span className="text-[10px] font-black text-rose-300 bg-rose-500/20 px-2.5 py-1 rounded-full border border-rose-500/50 shadow-sm flex items-center gap-1 animate-pulse">
                       🔥 {isBn ? 'রেড মার্ক শব্দ' : 'Red Mark Key Word'}
@@ -455,15 +461,32 @@ export default function FlashcardsExplorer({
               </div>
 
               {/* Center Main Word */}
-              <div className="text-center my-auto py-8">
+              <div className="text-center my-auto py-6 sm:py-8">
                 <motion.h1 
                   key={currentCard.word}
                   initial={{ scale: 0.95, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  className="text-4xl sm:text-6xl font-black text-white tracking-tight mb-3 drop-shadow-md"
+                  className="text-4xl sm:text-6xl font-black text-white tracking-tight mb-2 sm:mb-3 drop-shadow-md"
                 >
                   {currentCard.word}
                 </motion.h1>
+                {/* Multi-Unit Location Badges Under Word */}
+                {currentCard.sources && currentCard.sources.length > 1 && (
+                  <div className="flex items-center justify-center gap-1.5 flex-wrap my-2">
+                    <span className="text-[11px] font-semibold text-slate-400">
+                      {isBn ? 'উপস্থিত ইউনিটসমূহ:' : 'Appears in:'}
+                    </span>
+                    {currentCard.sources.map((src, i) => (
+                      <span
+                        key={i}
+                        className="text-[11px] font-bold text-cyan-300 bg-[#162033] border border-cyan-500/30 px-2 py-0.5 rounded-lg shadow-sm flex items-center gap-1"
+                      >
+                        <span>📍</span>
+                        <span>{src}</span>
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <p className="text-xs sm:text-sm text-slate-400 font-medium flex items-center justify-center gap-1.5">
                   <span>{isBn ? 'অর্থ ও বিস্তারিত দেখতে কার্ডে ট্যাপ করুন' : 'Tap card or press Space to flip & reveal meaning'}</span>
                   <span className="text-emerald-400">👆</span>
@@ -498,29 +521,43 @@ export default function FlashcardsExplorer({
               className="absolute inset-0 [backface-visibility:hidden] [-webkit-backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl sm:rounded-3xl bg-gradient-to-b from-[#131926] via-[#0e1420] to-[#0c0f17] border border-emerald-500/40 p-4 sm:p-7 flex flex-col justify-between shadow-2xl shadow-emerald-950/40 overflow-y-auto"
             >
               {/* Back Header */}
-              <div className="flex items-center justify-between border-b border-[#1e293b] pb-3">
-                <div className="flex items-center gap-2.5">
-                  <h3 className="text-2xl sm:text-3xl font-black text-emerald-400">
-                    {currentCard.word}
-                  </h3>
-                  {currentCard.partsOfSpeech && (
-                    <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[#161e2e] text-slate-300 border border-[#243048]">
-                      {currentCard.partsOfSpeech}
-                    </span>
-                  )}
+              <div className="flex flex-col gap-2 border-b border-[#1e293b] pb-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2.5">
+                    <h3 className="text-2xl sm:text-3xl font-black text-emerald-400">
+                      {currentCard.word}
+                    </h3>
+                    {currentCard.partsOfSpeech && (
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded bg-[#161e2e] text-slate-300 border border-[#243048]">
+                        {currentCard.partsOfSpeech}
+                      </span>
+                    )}
+                  </div>
+                  {/* Back Audio Button */}
+                  <button
+                    onClick={(e) => handleSpeak(e, `${currentCard.word}. ${currentCard.englishMeaning || ''}. ${currentCard.bengaliMeaning || ''}`)}
+                    className={`p-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${
+                      isSpeaking
+                        ? 'bg-emerald-500 text-white border-emerald-400 ring-2 ring-emerald-400/50 animate-pulse'
+                        : 'bg-[#161e2e] hover:bg-emerald-500/20 text-emerald-400 border-[#1e293b]'
+                    }`}
+                    title="Listen Full Explanation"
+                  >
+                    <Volume2 size={18} />
+                  </button>
                 </div>
-                {/* Back Audio Button */}
-                <button
-                  onClick={(e) => handleSpeak(e, `${currentCard.word}. ${currentCard.englishMeaning || ''}. ${currentCard.bengaliMeaning || ''}`)}
-                  className={`p-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${
-                    isSpeaking
-                      ? 'bg-emerald-500 text-white border-emerald-400 ring-2 ring-emerald-400/50 animate-pulse'
-                      : 'bg-[#161e2e] hover:bg-emerald-500/20 text-emerald-400 border-[#1e293b]'
-                  }`}
-                  title="Listen Full Explanation"
-                >
-                  <Volume2 size={18} />
-                </button>
+                {/* Back Unit Sources Badges */}
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {getWordUnitSources(currentCard).map((src, i) => (
+                    <span
+                      key={i}
+                      className="text-[10px] font-bold text-cyan-300 bg-[#162033] border border-cyan-500/30 px-2 py-0.5 rounded-md shadow-sm flex items-center gap-1"
+                    >
+                      <BookOpen size={10} />
+                      <span>{src}</span>
+                    </span>
+                  ))}
+                </div>
               </div>
 
               {/* Meaning, Synonyms, Antonyms Grid */}

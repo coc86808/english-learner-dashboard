@@ -29,7 +29,7 @@ import {
   SlidersHorizontal,
   ArrowRight
 } from 'lucide-react';
-import { hscVocabularyList, matchesUnitAndLesson } from '../data/questions';
+import { hscVocabularyList, matchesUnitAndLesson, getWordUnitSources } from '../data/questions';
 import { hscUnits } from '../data/hscUnitsData';
 import { generateVocabularyBankPDF } from '../utils/pdfGenerator';
 import FlashcardPrintModal from './FlashcardPrintModal';
@@ -814,26 +814,25 @@ export default function VocabularyBank({
                                 {item.partsOfSpeech}
                               </span>
                             )}
-                            {item.boardExamTag && (
-                              <span className="px-2 py-0.5 rounded-md bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 text-[10px] font-bold flex items-center gap-1">
-                                <BookOpen size={10} />
-                                <span>{item.boardExamTag}</span>
-                              </span>
+                            </div>
+
+                            {/* Unit Location Badges */}
+                            <div className="flex items-center gap-1.5 flex-wrap my-1">
+                              {getWordUnitSources(item).map((src, sIdx) => (
+                                <span key={sIdx} className="px-2 py-0.5 rounded-md bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 text-[10px] font-bold flex items-center gap-1">
+                                  <BookOpen size={10} />
+                                  <span>{src}</span>
+                                </span>
+                              ))}
+                            </div>
+
+                            {item.isCrossReferenced && (
+                              <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-rose-500/15 border border-rose-500/30 text-rose-300 text-[10px] font-bold mb-1">
+                                <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping" />
+                                <span>{isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}</span>
+                              </div>
                             )}
                           </div>
-
-                          {item.isCrossReferenced && (
-                            <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-rose-500/15 border border-rose-500/30 text-rose-300 text-[10px] font-bold mb-1">
-                              <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping" />
-                              <span>{isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}</span>
-                            </div>
-                          )}
-                          {item.sources && item.sources.length > 1 && (
-                            <span className="inline-block px-1.5 py-0.5 rounded bg-blue-500/20 border border-blue-500/40 text-blue-300 text-[9px] font-bold mb-1 ml-1">
-                              📚 {item.sources.length} {isBn ? 'লেসনে' : 'lessons'}
-                            </span>
-                          )}
-                        </div>
 
                         {/* Quick Audio & Bookmark */}
                         <div className="flex items-center gap-1 shrink-0">
@@ -921,9 +920,13 @@ export default function VocabularyBank({
 
                       {/* Card Footer */}
                       <div className="mt-3 pt-2.5 border-t border-[#1a2538] flex items-center justify-between gap-2">
-                        <span className="text-[10px] text-slate-400 truncate max-w-[180px]">
-                          {item.unit}
-                        </span>
+                        <div className="flex items-center gap-1 flex-wrap max-w-[220px]">
+                          {getWordUnitSources(item).map((src, sIdx) => (
+                            <span key={sIdx} className="text-[10px] text-cyan-300/90 font-medium">
+                              📍 {src}
+                            </span>
+                          ))}
+                        </div>
                         {onStartExam && (
                           <button
                             onClick={() => onStartExam(item.unit, item.lesson)}
@@ -1026,22 +1029,17 @@ export default function VocabularyBank({
                                     {isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}
                                   </span>
                                 )}
-                                {item.sources && item.sources.length > 1 && (
-                                  <span className="px-1.5 py-0.5 rounded bg-blue-500/20 border border-blue-500/40 text-blue-300 text-[9px] font-bold">
-                                    📚 {item.sources.length} লেসনে
-                                  </span>
-                                )}
                                 {item.partsOfSpeech && (
                                   <span className="px-2 py-0.5 rounded bg-[#1e2a3d] border border-[#2b3b55] text-slate-300 text-[10px] font-bold">
                                     {item.partsOfSpeech}
                                   </span>
                                 )}
-                                {item.boardExamTag && (
-                                  <span className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-[10px] font-bold truncate max-w-[140px] flex items-center gap-1 shadow-sm">
+                                {getWordUnitSources(item).map((src, sIdx) => (
+                                  <span key={sIdx} className="px-2 py-0.5 rounded bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-[10px] font-bold flex items-center gap-1 shadow-sm">
                                     <BookOpen size={10} />
-                                    <span>{item.boardExamTag}</span>
+                                    <span>{src}</span>
                                   </span>
-                                )}
+                                ))}
                               </div>
                             </div>
 
@@ -1132,21 +1130,16 @@ export default function VocabularyBank({
                               className="rounded-2xl bg-[#080d16] border border-[#1e2a3f] p-4 sm:p-5 space-y-3.5 shadow-inner"
                             >
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1a2336] pb-2.5">
-                                <div className="flex items-center gap-2 flex-wrap">
+                                <div className="flex items-center gap-1.5 flex-wrap">
                                   <span className="text-xs font-black text-emerald-400 bg-emerald-500/15 border border-emerald-500/30 px-2.5 py-0.5 rounded-md">
                                     {item.word} ({item.partsOfSpeech || 'Word'})
                                   </span>
-                                  {item.unit && (
-                                    <span className="text-xs font-semibold text-slate-300 bg-[#162033] px-2.5 py-0.5 rounded-md border border-[#24334a]">
-                                      {item.unit}
-                                    </span>
-                                  )}
-                                  {item.boardExamTag && (
-                                    <span className="text-xs font-bold text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-0.5 rounded-md flex items-center gap-1">
+                                  {getWordUnitSources(item).map((src, sIdx) => (
+                                    <span key={sIdx} className="text-xs font-bold text-cyan-300 bg-cyan-500/15 border border-cyan-500/30 px-2.5 py-0.5 rounded-md flex items-center gap-1">
                                       <BookOpen size={12} />
-                                      <span>{item.boardExamTag}</span>
+                                      <span>{src}</span>
                                     </span>
-                                  )}
+                                  ))}
                                 </div>
 
                                 <div className="flex items-center gap-2">

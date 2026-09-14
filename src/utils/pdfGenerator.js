@@ -681,7 +681,9 @@ export function generatePrintableFlashcardsPDF({
     }
 
     const posTag = item.partsOfSpeech ? `<span class="pos-badge">${escapeHtml(item.partsOfSpeech)}</span>` : '';
-    const boardTag = item.boardExamTag || item.unit || 'HSC English';
+    const boardTag = Array.isArray(item.sources) && item.sources.length > 1
+      ? item.sources.join(' • ')
+      : (item.boardExamTag || item.unit || 'HSC English');
 
     return `
       <div class="flashcard card-front">

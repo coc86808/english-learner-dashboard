@@ -28574,22 +28574,58 @@ export function smartInterleaveQuestions(rawQuestions = []) {
   return interleaved;
 }
 
+export function getWordUnitSources(item) {
+  if (!item) return ['HSC English Textbook'];
+  if (Array.isArray(item.sources) && item.sources.length > 0) {
+    return item.sources;
+  }
+  if (item.boardExamTag) return [item.boardExamTag];
+  if (item.unit) return [item.unit];
+  return ['HSC English Textbook'];
+}
+
+function matchesIndividualSource(srcStr, uNum, lNum) {
+  if (!srcStr) return false;
+  const str = String(srcStr).toLowerCase();
+
+  if (uNum) {
+    const unitRegex = new RegExp('(?:\\bunit\\s*' + uNum + '\\b|\\bu' + uNum + '[-_\\b]|vocab-u' + uNum + '[-_\\b])', 'i');
+    if (!unitRegex.test(str)) return false;
+  }
+
+  if (lNum) {
+    const lessonRegex = new RegExp('(?:\\blesson\\s*' + lNum + '\\b|[-_•]l' + lNum + '\\b|[-_]l' + lNum + '[-_]|\\bl' + lNum + '\\b)', 'i');
+    if (!lessonRegex.test(str)) return false;
+  }
+
+  return true;
+}
+
 export function matchesUnitAndLesson(item, unitId, lessonId) {
   if (!item) return false;
-  if (!unitId || unitId === 'all') return true;
-  const uNum = typeof unitId === 'string' && unitId.startsWith('unit-')
-    ? unitId.replace('unit-', '')
-    : String(unitId).replace(/[^0-9]/g, '');
-  const sourcesStr = Array.isArray(item.sources) ? item.sources.join(' ') : '';
-  const itemTag = (item.boardExamTag || '') + ' ' + (item.unit || '') + ' ' + (item.id || '') + ' ' + sourcesStr;
-  const unitRegex = new RegExp('\\bUnit\\s*' + uNum + '\\b|vocab-u' + uNum + '(-|\\b)', 'i');
-  if (!unitRegex.test(itemTag)) return false;
-  if (!lessonId || lessonId === 'all') return true;
-  const lNum = typeof lessonId === 'string' && lessonId.includes('-l')
-    ? lessonId.split('-l')[1]
-    : String(lessonId).replace(/[^0-9]/g, '');
-  const lessonRegex = new RegExp('(?:•|:|\\b)Lesson\\s*' + lNum + '(\\b|\\s|\\()|vocab-u' + uNum + '-l' + lNum + '(\\b|-)', 'i');
-  return lessonRegex.test(itemTag);
+  if ((!unitId || unitId === 'all') && (!lessonId || lessonId === 'all')) return true;
+
+  const uNum = (unitId && unitId !== 'all')
+    ? (typeof unitId === 'string' && unitId.startsWith('unit-') ? unitId.replace('unit-', '') : String(unitId).replace(/[^0-9]/g, ''))
+    : null;
+
+  const lNum = (lessonId && lessonId !== 'all')
+    ? (typeof lessonId === 'string' && lessonId.includes('-l') ? lessonId.split('-l')[1] : String(lessonId).replace(/[^0-9]/g, ''))
+    : null;
+
+  const candidateSources = [];
+  if (Array.isArray(item.sources)) candidateSources.push(...item.sources);
+  if (item.unit) candidateSources.push(item.unit);
+  if (item.boardExamTag) candidateSources.push(item.boardExamTag);
+  if (item.id) candidateSources.push(item.id);
+
+  for (const src of candidateSources) {
+    if (matchesIndividualSource(src, uNum, lNum)) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 export function getFilteredCategoryQuestions(
