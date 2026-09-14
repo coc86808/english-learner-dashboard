@@ -495,7 +495,7 @@ export const hscUnits = [
     "bgClass": "bg-[#4f46e5] hover:bg-[#4338ca]",
     "gradient": "from-[#6366f1] to-[#4f46e5]",
     "progress": 0,
-    "totalWords": 129,
+    "totalWords": 143,
     "masteredWords": 0,
     "lessons": [
       {
@@ -539,8 +539,8 @@ export const hscUnits = [
         "number": "Lesson 5",
         "title": "Opinions through images",
         "titleBn": "ছবির ভাষায় যুদ্ধ ও সংঘাত",
-        "questionsCount": "৪০ টি প্রশ্ন",
-        "wordsCount": 10,
+        "questionsCount": "১০৮ টি প্রশ্ন",
+        "wordsCount": 27,
         "progress": 0
       }
     ]

@@ -2,7 +2,7 @@
  * HSC English First Paper - Board Standard MCQ & Vocabulary Database
  * High-Precision Spaced-Repetition System (NCTB Aligned)
  * 
- * Total Words: 1137 Authentic Textbook Vocabulary Words
+ * Total Words: 1149 Authentic Textbook Vocabulary Words
  * Verbatim Textbook Sentences: 100% matched to authentic textbook reading passages
  */
 
@@ -9204,7 +9204,8 @@ export const hscVocabularyList = [
     "unit": "Unit 1: Lesson 2 (Education and Technology)",
     "boardExamTag": "Unit 1 • Lesson 2",
     "sources": [
-      "Unit 1: Lesson 2 (Education and Technology)"
+      "Unit 1: Lesson 2 (Education and Technology)",
+      "Unit 11: Lesson 5 (Opinions through Images)"
     ],
     "isCrossReferenced": true,
     "crossReferencedWords": [
@@ -13493,28 +13494,6 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 8 • Lesson 3",
     "sources": [
       "Unit 8: Relationships: A Mother in Mannville"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
-    "id": "vocab-u11-l5-civilians",
-    "word": "Civilians",
-    "bengaliMeaning": "বেসামরিক নাগরিকবৃন্দ",
-    "partsOfSpeech": "Noun",
-    "synonyms": "Non-combatants, citizens, inhabitants, private persons",
-    "antonyms": "Soldiers, military personnel, armed combatants",
-    "englishMeaning": "Persons not in the armed services or the police force.",
-    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area, highlighting the harsh reality of conflict and its devastating impact on innocent civilians, Rafah on Jan.",
-    "unit": "Unit 11: Peace and Conflict: Opinions through Images",
-    "lesson": "Opinions through Images",
-    "boardExamTag": "Unit 11 • Lesson 5",
-    "sources": [
-      "Unit 11: Peace and Conflict: Opinions through Images"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20005,7 +19984,8 @@ export const hscVocabularyList = [
     "unit": "Unit 11: Lesson 2 (The Old Man at the Bridge)",
     "boardExamTag": "Unit 11 • Lesson 2",
     "sources": [
-      "Unit 11: Lesson 2 (The Old Man at the Bridge)"
+      "Unit 11: Lesson 2 (The Old Man at the Bridge)",
+      "Unit 11: Lesson 5 (Opinions through Images)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20089,7 +20069,8 @@ export const hscVocabularyList = [
     "unit": "Unit 11: Lesson 3 (Stories From Gaza)",
     "boardExamTag": "Unit 11 • Lesson 3",
     "sources": [
-      "Unit 11: Lesson 3 (Stories From Gaza)"
+      "Unit 11: Lesson 3 (Stories From Gaza)",
+      "Unit 11: Lesson 5 (Opinions through Images)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -20204,27 +20185,6 @@ export const hscVocabularyList = [
     "priority": 100
   },
   {
-    "id": "vocab-u11-l5-03",
-    "word": "Depicts",
-    "bengaliMeaning": "চিত্রিত করে / নিখুঁতভাবে ফুটিয়ে তোলে",
-    "partsOfSpeech": "Verb",
-    "synonyms": "Portrays, illustrates, delineates, represents, captures",
-    "antonyms": "Conceals, obscures, misrepresents",
-    "englishMeaning": "Show or represent by a drawing, painting, or other art form.",
-    "exampleSentence": ", 1936, depicts the death of a Republican soldier during the Spanish Civil War.",
-    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
-    "boardExamTag": "Unit 11 • Lesson 5",
-    "sources": [
-      "Unit 11: Lesson 5 (Opinions through Images)"
-    ],
-    "isCrossReferenced": false,
-    "crossReferencedWords": [],
-    "crossRefMatchCount": 0,
-    "crossRefSynonyms": [],
-    "crossRefAntonyms": [],
-    "priority": 100
-  },
-  {
     "id": "vocab-u11-l5-04",
     "word": "Battlefield",
     "bengaliMeaning": "রণক্ষেত্র / যুদ্ধক্ষেত্র",
@@ -20248,12 +20208,12 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l5-05",
     "word": "Territory",
-    "bengaliMeaning": "ভূখণ্ড / ভৌগোলিক সার্বভৌম এলাকা",
+    "bengaliMeaning": "এলাকা",
     "partsOfSpeech": "Noun",
-    "synonyms": "Domain, province, tract, terrain, sector, jurisdiction",
-    "antonyms": "No man's land, international waters",
-    "englishMeaning": "An area of land under the jurisdiction of a ruler or state.",
-    "exampleSentence": "This was during the Battle of Passchendaele, fought by British forces and their allies against Germany for control of territory near Ypres, Belgium.",
+    "synonyms": "Domain, region",
+    "antonyms": "",
+    "englishMeaning": "An area of land under the jurisdiction of a ruler, state, or military force.",
+    "exampleSentence": "Fought for control of territory near Ypres, Belgium.",
     "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
@@ -22631,17 +22591,18 @@ export const hscVocabularyList = [
   {
     "id": "vocab-u11-l5-iconic",
     "word": "Iconic",
-    "bengaliMeaning": "ঐতিহাসিক ও স্মরণীয় / প্রতীকী",
+    "bengaliMeaning": "বিখ্যাত",
     "partsOfSpeech": "Adjective",
-    "synonyms": "Famous, legendary, emblematic, representative",
-    "antonyms": "Obscure, generic, ordinary, forgettable",
-    "englishMeaning": "Widely recognized and well-established as representing something significant.",
-    "exampleSentence": "See these iconic photographs captured in various war settings across the world over the past hundred years, accompanied by key factual information.",
-    "unit": "Unit 11: Peace and Conflict: Opinions through Images",
+    "synonyms": "Emblematic, exemplary",
+    "antonyms": "Atypical",
+    "englishMeaning": "Widely recognized and well-established as a representative symbol.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
     "lesson": "Opinions through Images",
     "boardExamTag": "Unit 11 • Lesson 5",
     "sources": [
-      "Unit 11: Peace and Conflict: Opinions through Images"
+      "Unit 11: Peace and Conflict: Opinions through Images",
+      "Unit 11: Lesson 5 (Opinions through Images)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -24008,7 +23969,8 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 4 • Lesson 3",
     "sources": [
       "Unit 4: Lesson 3 (Great Women)",
-      "Unit 4: Great Women: Pioneers of Education & Science"
+      "Unit 4: Great Women: Pioneers of Education & Science",
+      "Unit 11: Lesson 5 (Opinions through Images)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
@@ -26675,6 +26637,300 @@ export const hscVocabularyList = [
     "boardExamTag": "Unit 11 • Lesson 4",
     "sources": [
       "Unit 11: Lesson 4 (Peace in Literature)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-ally",
+    "word": "Ally",
+    "bengaliMeaning": "মিত্র",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Associate",
+    "antonyms": "Antagonist",
+    "englishMeaning": "A state or person formally cooperating with another for military or other purpose.",
+    "exampleSentence": "This was during the battle fought by British forces and their allies against Germany.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-captured",
+    "word": "Captured",
+    "bengaliMeaning": "বন্দি",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Seized",
+    "antonyms": "Lost",
+    "englishMeaning": "Recorded in a photograph or video, or taken into custody by force.",
+    "exampleSentence": "See these iconic photographs captured in various war settings across the world.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-civilwar",
+    "word": "Civil war",
+    "bengaliMeaning": "গৃহযুদ্ধ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "War between the states",
+    "antonyms": "",
+    "englishMeaning": "A war between citizens of the same country.",
+    "exampleSentence": "The photograph depicts the death of a Republican soldier during the Spanish Civil War.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-civilian",
+    "word": "Civilian",
+    "bengaliMeaning": "বেসামরিক জনগণ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Citizen, nonmilitary person",
+    "antonyms": "Military",
+    "englishMeaning": "A person not in the armed services or the police force.",
+    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-concentrationcamp",
+    "word": "Concentration camp",
+    "bengaliMeaning": "রাজনৈতিক বন্দিশিবির",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Prison camp",
+    "antonyms": "",
+    "englishMeaning": "A camp where people are detained or confined by military or political authorities.",
+    "exampleSentence": "This 1944 photograph shows a pile of remaining bones at the Nazi concentration camp of Majdanek.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-conflict",
+    "word": "Conflict",
+    "bengaliMeaning": "সংঘাত",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Fight, warfare, clash",
+    "antonyms": "Peace, truce",
+    "englishMeaning": "A serious disagreement, argument, or prolonged armed struggle.",
+    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-devastating",
+    "word": "Devastating",
+    "bengaliMeaning": "ধ্বংসী",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Destructive",
+    "antonyms": "Blessed",
+    "englishMeaning": "Highly destructive, damaging, or overwhelming.",
+    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-factual",
+    "word": "Factual",
+    "bengaliMeaning": "প্রকৃত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Credible",
+    "antonyms": "False",
+    "englishMeaning": "Concerned with, based on, or containing facts.",
+    "exampleSentence": "See these iconic photographs accompanied by key factual information.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-innocent",
+    "word": "Innocent",
+    "bengaliMeaning": "নিরীহ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Harmless",
+    "antonyms": "Cunning",
+    "englishMeaning": "Not guilty of a crime or offense; free from evil or guilt.",
+    "exampleSentence": "Highlighting the harsh reality of conflict and its devastating impact on innocent civilians.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-navigate",
+    "word": "Navigate",
+    "bengaliMeaning": "পরিচালনা করা",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Cruise, operate",
+    "antonyms": "",
+    "englishMeaning": "Direct the route or make one's way through an area, course, or environment.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-paddle",
+    "word": "Paddle",
+    "bengaliMeaning": "নৌকা বাওয়া",
+    "partsOfSpeech": "Verb",
+    "synonyms": "Drift, splash",
+    "antonyms": "",
+    "englishMeaning": "Move through water in a boat using a paddle or oars.",
+    "exampleSentence": "Freedom fighters from the 1971 Bangladesh Liberation War paddle across a river.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-photograph",
+    "word": "Photograph",
+    "bengaliMeaning": "আলোকচিত্র",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Image, picture",
+    "antonyms": "",
+    "englishMeaning": "A picture made using a camera in which an image is focused onto film or recorded digitally.",
+    "exampleSentence": "See these iconic photographs captured in various war settings.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-pile",
+    "word": "Pile",
+    "bengaliMeaning": "স্তূপ",
+    "partsOfSpeech": "Noun",
+    "synonyms": "Heap, mass",
+    "antonyms": "Hole",
+    "englishMeaning": "A heap of things laid or lying one on top of another.",
+    "exampleSentence": "This 1944 photograph shows a pile of remaining bones at the Nazi concentration camp of Majdanek.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
+    ],
+    "isCrossReferenced": false,
+    "crossReferencedWords": [],
+    "crossRefMatchCount": 0,
+    "crossRefSynonyms": [],
+    "crossRefAntonyms": [],
+    "priority": 100
+  },
+  {
+    "id": "vocab-u11-l5-wartorn",
+    "word": "War-torn",
+    "bengaliMeaning": "যুদ্ধবিধ্বস্ত",
+    "partsOfSpeech": "Adjective",
+    "synonyms": "Demolished, destroyed",
+    "antonyms": "",
+    "englishMeaning": "Severely damaged or devastated by war or conflict.",
+    "exampleSentence": "Children navigate through the rubble of destroyed buildings in a war-torn area.",
+    "unit": "Unit 11: Lesson 5 (Opinions through Images)",
+    "boardExamTag": "Unit 11 • Lesson 5",
+    "sources": [
+      "Unit 11: Lesson 5 (Opinions through Images)"
     ],
     "isCrossReferenced": false,
     "crossReferencedWords": [],
