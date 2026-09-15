@@ -103,8 +103,11 @@ export default function FlashcardPrintModal({
     );
   }, [selectedUnitId, selectedLessonId, weakWords]);
 
+  // Card Density / Layout State (Default: 16 words per sheet)
+  const [cardsPerPage, setCardsPerPage] = useState(16);
+
   // Calculate pages and sheets
-  const CARDS_PER_SHEET = 8;
+  const CARDS_PER_SHEET = Number(cardsPerPage);
   const totalSheets = Math.ceil(filteredWords.length / CARDS_PER_SHEET) || 1;
   const totalPages = totalSheets * 2;
 
@@ -151,6 +154,7 @@ export default function FlashcardPrintModal({
         college: chosenCollege,
         batch: chosenBatch
       },
+      cardsPerPage,
       lang
     });
 
@@ -173,11 +177,11 @@ export default function FlashcardPrintModal({
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
                 <span>{isBn ? 'প্রিন্ট করার ফ্ল্যাশকার্ড পিডিএফ' : 'Printable Flashcards PDF'}</span>
                 <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                  Duplex / এপিঠ-ওপিঠ
+                  A4 Duplex • {cardsPerPage} Words/Sheet
                 </span>
               </h3>
               <p className="text-xs text-slate-400">
-                {isBn ? 'কাটার দাগ সহ এপিঠ-ওপিঠ প্রিন্ট করার রেডিমেড ফ্ল্যাশকার্ড' : 'Double-sided printable flashcards with crop cutting guides'}
+                {isBn ? 'A4 সাইজে নিখুঁত এপিঠ-ওপিঠ অ্যালাইনমেন্ট সহ রেডিমেড ফ্ল্যাশকার্ড' : '100% A4 aligned double-sided printable flashcards with crop cut lines'}
               </p>
             </div>
           </div>
@@ -196,14 +200,14 @@ export default function FlashcardPrintModal({
           <div className="space-y-3">
             <label className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
               <BookOpen size={14} className="text-emerald-400" />
-              <span>{isBn ? 'ইউনিট ও লেসন নির্বাচন করুন' : 'Select Unit & Lesson'}</span>
+              <span>{isBn ? '১. ইউনিট ও লেসন নির্বাচন করুন' : '1. Select Unit & Lesson'}</span>
             </label>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {/* Unit Select */}
               <div>
                 <span className="text-[11px] text-slate-400 font-medium block mb-1">
-                  {isBn ? '১. ইউনিট:' : '1. Unit:'}
+                  {isBn ? 'ইউনিট:' : 'Unit:'}
                 </span>
                 <select
                   value={selectedUnitId}
@@ -225,7 +229,7 @@ export default function FlashcardPrintModal({
               {/* Lesson Select */}
               <div>
                 <span className="text-[11px] text-slate-400 font-medium block mb-1">
-                  {isBn ? '২. লেসন:' : '2. Lesson:'}
+                  {isBn ? 'লেসন:' : 'Lesson:'}
                 </span>
                 <select
                   value={selectedLessonId}
@@ -244,7 +248,65 @@ export default function FlashcardPrintModal({
             </div>
           </div>
 
-          {/* 2. Visual Flashcard Specs & Stats Banner */}
+          {/* 2. Page Density & Layout Selector */}
+          <div className="space-y-3">
+            <label className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
+              <SlidersHorizontal size={14} className="text-emerald-400" />
+              <span>{isBn ? '২. প্রতি পেজে কার্ড সংখ্যা (Grid Layout)' : '2. Cards Per Sheet Layout'}</span>
+            </label>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <button
+                type="button"
+                onClick={() => setCardsPerPage(16)}
+                className={`p-3.5 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between gap-1.5 ${
+                  cardsPerPage === 16
+                    ? 'bg-emerald-500/15 border-emerald-500 text-white shadow-lg shadow-emerald-950/40'
+                    : 'bg-[#141c2b] border-[#223249] text-slate-400 hover:text-slate-200 hover:border-slate-600'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+                    <span>⚡ ১৬ টি শব্দ / পেজ (4×4 Grid)</span>
+                  </span>
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300">
+                    {isBn ? 'প্রস্তাবিত' : 'Recommended'}
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-300 leading-snug">
+                  {isBn 
+                    ? '৫০% কাগজ সাশ্রয়ী, পকেট সাইজ স্টাডি কার্ড এবং A4 পেজে পারফেক্ট ফিট।' 
+                    : '50% paper saving pocket study cards, perfectly aligned on standard A4.'}
+                </p>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setCardsPerPage(8)}
+                className={`p-3.5 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between gap-1.5 ${
+                  cardsPerPage === 8
+                    ? 'bg-emerald-500/15 border-emerald-500 text-white shadow-lg shadow-emerald-950/40'
+                    : 'bg-[#141c2b] border-[#223249] text-slate-400 hover:text-slate-200 hover:border-slate-600'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-bold text-cyan-400 flex items-center gap-1.5">
+                    <span>📖 ৮ টি শব্দ / পেজ (2×4 Grid)</span>
+                  </span>
+                  <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300">
+                    {isBn ? 'বড় ফন্ট' : 'Large Cards'}
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-300 leading-snug">
+                  {isBn 
+                    ? 'বড় সাইজের কার্ড ও বড় হরফে পড়া ও রিভিশনের জন্য উপযুক্ত।' 
+                    : 'Larger text and spacious cards for table study.'}
+                </p>
+              </button>
+            </div>
+          </div>
+
+          {/* 3. Visual Flashcard Specs & Stats Banner */}
           <div className="bg-[#0f1724] border border-[#1e2d44] rounded-2xl p-4 space-y-3">
             <div className="flex items-center justify-between flex-wrap gap-2 text-xs">
               <span className="text-slate-400 flex items-center gap-1.5 font-semibold">
@@ -256,7 +318,7 @@ export default function FlashcardPrintModal({
                   {filteredWords.length} {isBn ? 'টি শব্দ' : 'Words'}
                 </span>
                 <span className="px-2.5 py-1 rounded-lg bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 font-bold font-mono text-xs">
-                  {totalSheets} {isBn ? 'টি শীট' : 'Sheets'} ({totalPages} {isBn ? 'পেজ' : 'Pages'})
+                  {totalSheets} {isBn ? 'টি A4 শীট' : 'A4 Sheets'} ({totalPages} {isBn ? 'পেজ ডুপ্লেক্স' : 'Duplex Pages'})
                 </span>
               </div>
             </div>
@@ -271,7 +333,7 @@ export default function FlashcardPrintModal({
                   বড় হরফে <strong>Word</strong> ও Part of Speech
                 </p>
                 <span className="text-[10px] text-slate-500 block">
-                  (কোন সিরিয়াল নম্বর থাকবে না)
+                  ({cardsPerPage} টি শব্দ / পেজ)
                 </span>
               </div>
 
@@ -283,13 +345,13 @@ export default function FlashcardPrintModal({
                   <strong>বাংলা অর্থ</strong>, Synonyms, Antonyms ও Ex.
                 </p>
                 <span className="text-[10px] text-slate-500 block">
-                  (এপিঠ-ওপিঠ মিলে যাওয়ার জন্য মিরর বিন্যাস)
+                  (১০০% নিখুঁত এপিঠ-ওপিঠ মিরর বিন্যাস)
                 </span>
               </div>
             </div>
           </div>
 
-          {/* 3. Optional Student Personalization */}
+          {/* 4. Optional Student Personalization */}
           <div className="space-y-3 pt-1">
             <label className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
               <User size={14} className="text-emerald-400" />
@@ -338,17 +400,17 @@ export default function FlashcardPrintModal({
             </div>
           </div>
 
-          {/* 4. Printing Instructions Callout */}
+          {/* 5. Printing Instructions Callout */}
           <div className="bg-emerald-950/20 border border-emerald-500/20 rounded-2xl p-3.5 flex items-start gap-3">
             <Scissors size={18} className="text-emerald-400 flex-shrink-0 mt-0.5" />
             <div className="text-xs text-slate-300 space-y-1">
               <p className="font-semibold text-emerald-300">
-                {isBn ? 'সহজ ৩ ধাপে নিজস্ব ফ্ল্যাশকার্ড তৈরি করুন:' : 'How to make your flashcards:'}
+                {isBn ? 'নিখুঁত প্রিন্টের জন্য ৩টি সহজ সেটিংস:' : '3 Easy Print Settings for Perfect Alignment:'}
               </p>
               <ol className="list-decimal list-inside text-slate-400 space-y-0.5 text-[11px]">
-                <li>{isBn ? 'পিডিএফ ওপেন করে প্রিন্টার সেটিংসে Two-Sided (Duplex): Flip on Long Edge সিলেক্ট করুন।' : 'In print dialog, enable Two-Sided Printing with Flip on Long Edge.'}</li>
-                <li>{isBn ? 'এপিঠ-ওপিঠ প্রিন্ট শেষে কাঁচি দিয়ে প্রতিটি কার্ডের ড্যাশড বর্ডার বরাবর কেটে নিন।' : 'Print double-sided, then cut along the dashed lines with scissors.'}</li>
-                <li>{isBn ? 'সামনে ওয়ার্ড দেখে রিভিশন দিন এবং পিছনে উল্টে অর্থ ও সিনোনিম মিলিয়ে নিন।' : 'Study the word on front and test recall against meaning/synonyms on back!'}</li>
+                <li>{isBn ? 'Paper Size: A4 এবং Margins: None (বা 0mm) সিলেক্ট করুন।' : 'Set Paper Size to A4 and Margins to None (or 0mm).'}</li>
+                <li>{isBn ? 'Two-Sided (Duplex) প্রিন্টে Flip on Long Edge সিলেক্ট করুন।' : 'Enable Two-Sided (Duplex) printing with Flip on Long Edge.'}</li>
+                <li>{isBn ? 'প্রিন্ট শেষে ড্যাশড দাগ বরাবর কাঁচি দিয়ে কেটে নিলেই ১৬টি ফ্ল্যাশকার্ড প্রস্তুত!' : 'Cut along the dashed lines to get perfectly matched flashcards!'}</li>
               </ol>
             </div>
           </div>
@@ -372,8 +434,8 @@ export default function FlashcardPrintModal({
             <Printer size={15} />
             <span>
               {isBn 
-                ? `🖨️ ফ্ল্যাশকার্ড পিডিএফ প্রিন্ট করুন (${filteredWords.length} টি শব্দ)` 
-                : `Generate Flashcards PDF (${filteredWords.length} Words)`}
+                ? `🖨️ A4 ফ্ল্যাশকার্ড পিডিএফ প্রিন্ট করুন (${filteredWords.length} টি শব্দ • ${cardsPerPage}/পেজ)` 
+                : `Generate A4 Flashcards PDF (${filteredWords.length} Words • ${cardsPerPage}/Sheet)`}
             </span>
           </button>
         </div>

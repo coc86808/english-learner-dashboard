@@ -646,14 +646,15 @@ export function generateVocabularyBankPDF({
 
 /**
  * Printable Double-Sided (Duplex) Flashcards PDF Generator
- * Designed for standard A4 paper with exact front-to-back mirrored alignment for cutting.
- * 8 cards per sheet (2 cols x 4 rows). Front page has words; Back page has meanings/synonyms/antonyms.
+ * Designed for standard A4 paper (210mm x 297mm) with 100% exact front-to-back mirrored alignment for cutting.
+ * Supports 16 cards per sheet (4 cols x 4 rows) [Default] or 8 cards per sheet (2 cols x 4 rows).
  */
 export function generatePrintableFlashcardsPDF({
   words = [],
   unitTitle = 'All Units',
   lessonTitle = 'All Lessons',
   studentInfo = {},
+  cardsPerPage = 16,
   lang = 'en'
 }) {
   const isBn = lang === 'bn';
@@ -664,8 +665,9 @@ export function generatePrintableFlashcardsPDF({
     year: 'numeric'
   });
 
-  const CARDS_PER_PAGE = 8;
-  const COLS = 2;
+  const is16Grid = Number(cardsPerPage) === 16;
+  const CARDS_PER_PAGE = is16Grid ? 16 : 8;
+  const COLS = is16Grid ? 4 : 2;
   const ROWS = 4;
   const totalSheets = Math.ceil(words.length / CARDS_PER_PAGE) || 1;
 
@@ -673,32 +675,35 @@ export function generatePrintableFlashcardsPDF({
   const renderFrontCard = (item) => {
     if (!item) {
       return `
-        <div class="flashcard card-front card-empty">
-          <div class="cut-guide-corner top-left">✂</div>
+        <div class="flashcard ${is16Grid ? 'flashcard-16' : 'flashcard-8'} card-front card-empty">
           <div class="empty-inner"></div>
         </div>
       `;
     }
 
-    const posTag = item.partsOfSpeech ? `<span class="pos-badge">${escapeHtml(item.partsOfSpeech)}</span>` : '';
+    const posTag = item.partsOfSpeech ? `<span class="pos-badge ${is16Grid ? 'pos-badge-sm' : ''}">${escapeHtml(item.partsOfSpeech)}</span>` : '';
     const boardTag = Array.isArray(item.sources) && item.sources.length > 1
-      ? item.sources.join(' • ')
+      ? item.sources.slice(0, 2).join(' • ')
       : (item.boardExamTag || item.unit || 'HSC English');
 
+    const wordLength = item.word ? item.word.length : 0;
+    const wordClass = is16Grid
+      ? (wordLength > 12 ? 'word-long-16' : (wordLength > 9 ? 'word-med-16' : 'word-std-16'))
+      : (wordLength > 12 ? 'word-long-8' : 'word-std-8');
+
     return `
-      <div class="flashcard card-front">
-        <div class="cut-guide-corner top-left">✂</div>
+      <div class="flashcard ${is16Grid ? 'flashcard-16' : 'flashcard-8'} card-front">
         <div class="card-header">
           <span class="card-unit-tag">${escapeHtml(boardTag)}</span>
           ${posTag}
         </div>
         <div class="card-front-body">
-          <div class="card-word">${escapeHtml(item.word)}</div>
+          <div class="card-word ${wordClass}">${escapeHtml(item.word)}</div>
           ${item.phonetic ? `<div class="card-phonetic">${escapeHtml(item.phonetic)}</div>` : ''}
         </div>
         <div class="card-footer">
-          <span class="card-brand-sub">HSC English 1st Paper</span>
-          <span class="card-duplex-hint">Front Side • শব্দ</span>
+          <span class="card-brand-sub">HSC English 1st</span>
+          <span class="card-duplex-hint">FRONT • শব্দ</span>
         </div>
       </div>
     `;
@@ -708,8 +713,7 @@ export function generatePrintableFlashcardsPDF({
   const renderBackCard = (item) => {
     if (!item) {
       return `
-        <div class="flashcard card-back card-empty">
-          <div class="cut-guide-corner top-left">✂</div>
+        <div class="flashcard ${is16Grid ? 'flashcard-16' : 'flashcard-8'} card-back card-empty">
           <div class="empty-inner"></div>
         </div>
       `;
@@ -722,42 +726,43 @@ export function generatePrintableFlashcardsPDF({
     const hasExample = item.exampleSentence && item.exampleSentence.trim() !== '';
 
     return `
-      <div class="flashcard card-back">
-        <div class="cut-guide-corner top-left">✂</div>
+      <div class="flashcard ${is16Grid ? 'flashcard-16' : 'flashcard-8'} card-back">
         <div class="card-header-back">
           <div class="card-word-sm">${escapeHtml(item.word)}</div>
-          ${item.partsOfSpeech ? `<span class="pos-badge-sm">${escapeHtml(item.partsOfSpeech)}</span>` : ''}
+          ${item.partsOfSpeech ? `<span class="pos-badge-back">${escapeHtml(item.partsOfSpeech)}</span>` : ''}
         </div>
         
         <div class="card-back-body">
-          ${hasMeaning ? `<div class="bangla-meaning">${escapeHtml(item.bengaliMeaning)}</div>` : ''}
-          ${hasEngMeaning ? `<div class="english-definition">${escapeHtml(item.englishMeaning)}</div>` : ''}
+          ${hasMeaning ? `<div class="bangla-meaning ${is16Grid ? 'bn-16' : 'bn-8'}">${escapeHtml(item.bengaliMeaning)}</div>` : ''}
+          ${hasEngMeaning ? `<div class="english-definition ${is16Grid ? 'eng-16' : 'eng-8'}">${escapeHtml(item.englishMeaning)}</div>` : ''}
           
-          <div class="relations-grid">
-            ${hasSynonyms ? `
-              <div class="relation-row syn-row">
-                <span class="rel-label syn-label">Syn:</span>
-                <span class="rel-text syn-text">${escapeHtml(item.synonyms)}</span>
-              </div>
-            ` : ''}
-            ${hasAntonyms ? `
-              <div class="relation-row ant-row">
-                <span class="rel-label ant-label">Ant:</span>
-                <span class="rel-text ant-text">${escapeHtml(item.antonyms)}</span>
-              </div>
-            ` : ''}
-          </div>
+          ${(hasSynonyms || hasAntonyms) ? `
+            <div class="relations-grid ${is16Grid ? 'rel-16' : 'rel-8'}">
+              ${hasSynonyms ? `
+                <div class="relation-row">
+                  <span class="rel-label syn-label">Syn:</span>
+                  <span class="rel-text syn-text">${escapeHtml(item.synonyms)}</span>
+                </div>
+              ` : ''}
+              ${hasAntonyms ? `
+                <div class="relation-row">
+                  <span class="rel-label ant-label">Ant:</span>
+                  <span class="rel-text ant-text">${escapeHtml(item.antonyms)}</span>
+                </div>
+              ` : ''}
+            </div>
+          ` : ''}
 
           ${hasExample ? `
-            <div class="example-box">
-              <span class="ex-quote">“${escapeHtml(item.exampleSentence.length > 110 ? item.exampleSentence.slice(0, 107) + '...' : item.exampleSentence)}”</span>
+            <div class="example-box ${is16Grid ? 'ex-16' : 'ex-8'}">
+              <span class="ex-quote">“${escapeHtml(item.exampleSentence.length > (is16Grid ? 70 : 120) ? item.exampleSentence.slice(0, is16Grid ? 67 : 117) + '...' : item.exampleSentence)}”</span>
             </div>
           ` : ''}
         </div>
 
         <div class="card-footer">
-          <span class="card-brand-sub">Learner Hub Flashcards</span>
-          <span class="card-duplex-hint">Back Side • অর্থ ও সম্পর্ক</span>
+          <span class="card-brand-sub">Learner Hub</span>
+          <span class="card-duplex-hint">BACK • অর্থ</span>
         </div>
       </div>
     `;
@@ -773,33 +778,38 @@ export function generatePrintableFlashcardsPDF({
       sheetCards.push(wordIdx < words.length ? words[wordIdx] : null);
     }
 
-    // 1. Front Page: Rows 0..3, Cols 0..1
+    // 1. Front Page: Rows 0..3, Cols 0..COLS-1
     const frontCardsHtml = sheetCards.map((card) => renderFrontCard(card)).join('');
 
-    // 2. Back Page: Rows 0..3, Mirrored Cols (Col 1, Col 0) so long-edge duplex printing aligns front & back
+    // 2. Back Page: Rows 0..3, Mirrored Columns so Long-Edge Duplex flips with 100% millimeter alignment
     const backCardsMirrored = [];
     for (let r = 0; r < ROWS; r++) {
-      const leftIndex = r * COLS + 0;
-      const rightIndex = r * COLS + 1;
-      // On the back page of a long-edge flip, the right card on front flips to the left
-      backCardsMirrored.push(sheetCards[rightIndex]);
-      backCardsMirrored.push(sheetCards[leftIndex]);
+      for (let c = 0; c < COLS; c++) {
+        // Col c on Back receives Front Card from mirrored column (COLS - 1 - c)
+        const mirroredCol = COLS - 1 - c;
+        const sourceIndex = r * COLS + mirroredCol;
+        backCardsMirrored.push(sheetCards[sourceIndex]);
+      }
     }
     const backCardsHtml = backCardsMirrored.map((card) => renderBackCard(card)).join('');
 
+    const sheetNum = s + 1;
+
     pagesHtml += `
-      <!-- Sheet ${s + 1} - Front Page -->
-      <div class="sheet-page sheet-front">
-        <div class="sheet-watermark-guide">Sheet ${s + 1} of ${totalSheets} • FRONT (Words)</div>
-        <div class="cards-grid">
+      <!-- Sheet ${sheetNum} - Front Page (Words) -->
+      <div class="sheet-page">
+        <div class="sheet-watermark-guide">Sheet ${sheetNum} of ${totalSheets} • FRONT (Words)</div>
+        <div class="sheet-cut-hint">✂ Cut along dashed lines • A4 Perfect Fit</div>
+        <div class="cards-grid ${is16Grid ? 'cards-grid-16' : 'cards-grid-8'}">
           ${frontCardsHtml}
         </div>
       </div>
 
-      <!-- Sheet ${s + 1} - Back Page (Duplex Mirrored) -->
-      <div class="sheet-page sheet-back">
-        <div class="sheet-watermark-guide">Sheet ${s + 1} of ${totalSheets} • BACK (Meanings / Synonyms / Antonyms)</div>
-        <div class="cards-grid">
+      <!-- Sheet ${sheetNum} - Back Page (Meanings / Duplex Mirrored) -->
+      <div class="sheet-page">
+        <div class="sheet-watermark-guide">Sheet ${sheetNum} of ${totalSheets} • BACK (Meanings & Relations)</div>
+        <div class="sheet-cut-hint">✂ Back Side Mirrored • Flip on Long Edge</div>
+        <div class="cards-grid ${is16Grid ? 'cards-grid-16' : 'cards-grid-8'}">
           ${backCardsHtml}
         </div>
       </div>
@@ -810,13 +820,13 @@ export function generatePrintableFlashcardsPDF({
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>${escapeHtml(name)} - HSC Flashcards (${escapeHtml(unitTitle)})</title>
+  <title>${escapeHtml(name)} - HSC Flashcards (${escapeHtml(unitTitle)} - ${CARDS_PER_PAGE} Cards/Page)</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
 
     @page {
       size: A4 portrait;
-      margin: 6mm;
+      margin: 0;
     }
 
     * {
@@ -841,7 +851,7 @@ export function generatePrintableFlashcardsPDF({
       z-index: 1000;
       background: #0f172a;
       color: #ffffff;
-      padding: 12px 20px;
+      padding: 10px 20px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -876,11 +886,13 @@ export function generatePrintableFlashcardsPDF({
       border: 1px solid #334155;
       padding: 6px 14px;
       border-radius: 8px;
-      font-size: 11.5px;
+      font-size: 11px;
       color: #fde047;
       display: flex;
       align-items: center;
       gap: 6px;
+      max-width: 580px;
+      line-height: 1.3;
     }
 
     .no-print-bar .btn-print {
@@ -903,65 +915,109 @@ export function generatePrintableFlashcardsPDF({
       transform: translateY(-1px);
     }
 
-    /* Print Sheets Layout - Full A4 Page Dimension */
+    /* Print Sheets Layout - Exact A4 Physical Dimension (210mm x 297mm) */
     .print-container {
       margin: 0 auto;
       padding: 12px 0;
     }
 
     .sheet-page {
-      width: 198mm;
-      height: 285mm;
-      min-height: 285mm;
-      max-height: 285mm;
+      width: 210mm;
+      height: 297mm;
+      min-height: 297mm;
+      max-height: 297mm;
       margin: 0 auto 16px auto;
       background: #ffffff;
-      padding: 2mm 1mm;
-      box-sizing: border-box;
+      padding: 0;
       position: relative;
       page-break-after: always;
       break-after: page;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      border-radius: 4px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .sheet-watermark-guide {
-      font-size: 8px;
-      color: #94a3b8;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      text-align: right;
-      padding: 0 2mm 1.5mm 0;
-      font-weight: 700;
-      line-height: 1;
-    }
-
-    .cards-grid {
-      display: grid;
-      grid-template-columns: 96.5mm 96.5mm;
-      grid-template-rows: 66.5mm 66.5mm 66.5mm 66.5mm;
-      gap: 3.5mm 3.5mm;
-      justify-content: center;
-      align-content: space-between;
-      width: 100%;
-      height: 277mm;
-      min-height: 277mm;
+      overflow: hidden;
       box-sizing: border-box;
     }
 
-    /* Flashcard Style - Standard A4 8-Up Full Page */
-    .flashcard {
-      width: 96.5mm;
-      height: 66.5mm;
-      min-height: 66.5mm;
-      max-height: 66.5mm;
-      border: 1.5px dashed #94a3b8;
-      border-radius: 8px;
+    .sheet-watermark-guide {
+      position: absolute;
+      top: 2.2mm;
+      right: 6mm;
+      font-size: 7.5px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .sheet-cut-hint {
+      position: absolute;
+      bottom: 2.2mm;
+      left: 6mm;
+      font-size: 7.5px;
+      color: #94a3b8;
+      font-weight: 600;
+      pointer-events: none;
+    }
+
+    /* 16-Cards Grid Layout (4 cols x 4 rows) - Perfectly Centered on 210x297mm A4 */
+    .cards-grid-16 {
+      position: absolute;
+      top: 7.5mm;
+      left: 6mm;
+      width: 198mm;
+      height: 282mm;
+      display: grid;
+      grid-template-columns: repeat(4, 49.5mm);
+      grid-template-rows: repeat(4, 70.5mm);
+      gap: 0;
+      box-sizing: border-box;
+      border-top: 1px dashed #94a3b8;
+      border-left: 1px dashed #94a3b8;
+    }
+
+    .flashcard-16 {
+      width: 49.5mm;
+      height: 70.5mm;
+      min-height: 70.5mm;
+      max-height: 70.5mm;
+      border-right: 1px dashed #94a3b8;
+      border-bottom: 1px dashed #94a3b8;
       background: #ffffff;
-      padding: 10px 12px;
+      padding: 3.5mm 3mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    /* 8-Cards Grid Layout (2 cols x 4 rows) - Perfectly Centered on 210x297mm A4 */
+    .cards-grid-8 {
+      position: absolute;
+      top: 7.5mm;
+      left: 8mm;
+      width: 194mm;
+      height: 282mm;
+      display: grid;
+      grid-template-columns: repeat(2, 97mm);
+      grid-template-rows: repeat(4, 70.5mm);
+      gap: 0;
+      box-sizing: border-box;
+      border-top: 1px dashed #94a3b8;
+      border-left: 1px dashed #94a3b8;
+    }
+
+    .flashcard-8 {
+      width: 97mm;
+      height: 70.5mm;
+      min-height: 70.5mm;
+      max-height: 70.5mm;
+      border-right: 1px dashed #94a3b8;
+      border-bottom: 1px dashed #94a3b8;
+      background: #ffffff;
+      padding: 5mm 6mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -971,105 +1027,104 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .card-empty {
-      background: #fafafa;
-      border-color: #e2e8f0;
+      background: #fafafa !important;
     }
 
-    .cut-guide-corner {
-      position: absolute;
-      top: 1px;
-      left: 3px;
-      font-size: 8.5px;
-      color: #cbd5e1;
-      pointer-events: none;
-      line-height: 1;
-    }
-
-    /* Front Card Styling */
-    .card-front {
-      background: #ffffff;
-    }
-
+    /* Card Header */
     .card-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 6px;
-      margin-bottom: 2px;
+      gap: 4px;
+      line-height: 1;
     }
 
     .card-unit-tag {
-      font-size: 10px;
+      font-size: 7.5px;
       font-weight: 700;
       color: #475569;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 68%;
+      max-width: 65%;
       letter-spacing: -0.2px;
     }
 
     .pos-badge {
-      font-size: 9px;
+      font-size: 7.5px;
       font-weight: 800;
       text-transform: uppercase;
       color: #0369a1;
       background: #e0f2fe;
-      border: 1px solid #bae6fd;
-      padding: 2px 6px;
-      border-radius: 5px;
-      letter-spacing: 0.4px;
+      border: 0.5px solid #bae6fd;
+      padding: 1px 4px;
+      border-radius: 3px;
+      letter-spacing: 0.3px;
       flex-shrink: 0;
     }
 
+    .pos-badge-sm {
+      font-size: 6.5px;
+      padding: 0.5px 3px;
+    }
+
+    /* Card Front Center Word Body */
     .card-front-body {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       flex: 1;
-      padding: 6px 0;
+      padding: 2px 0;
       text-align: center;
     }
 
     .card-word {
-      font-size: 26px;
       font-weight: 800;
       color: #0f172a;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.4px;
       line-height: 1.15;
       word-break: break-word;
+      text-align: center;
     }
+
+    .word-std-16 { font-size: 14px; }
+    .word-med-16 { font-size: 12.5px; }
+    .word-long-16 { font-size: 11px; }
+
+    .word-std-8 { font-size: 22px; }
+    .word-long-8 { font-size: 17px; }
 
     .card-phonetic {
-      font-size: 11px;
+      font-size: 7.5px;
       color: #64748b;
       font-family: monospace;
-      margin-top: 4px;
+      margin-top: 2px;
     }
 
+    /* Card Footer */
     .card-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid #f1f5f9;
-      padding-top: 4px;
-      margin-top: 2px;
+      border-top: 0.5px solid #f1f5f9;
+      padding-top: 2px;
+      line-height: 1;
     }
 
     .card-brand-sub {
-      font-size: 8.5px;
+      font-size: 6.5px;
       font-weight: 700;
       color: #94a3b8;
     }
 
     .card-duplex-hint {
-      font-size: 8px;
+      font-size: 6.5px;
       color: #cbd5e1;
-      font-weight: 600;
+      font-weight: 700;
     }
 
-    /* Back Card Styling */
+    /* Back Card Layout & Elements */
     .card-back {
       background: #fafcff;
     }
@@ -1078,26 +1133,31 @@ export function generatePrintableFlashcardsPDF({
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 6px;
-      border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 3px;
-      margin-bottom: 3px;
+      gap: 4px;
+      border-bottom: 0.5px solid #e2e8f0;
+      padding-bottom: 1.5px;
+      line-height: 1;
     }
 
     .card-word-sm {
-      font-size: 13px;
+      font-size: 9px;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: -0.2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 68%;
     }
 
-    .pos-badge-sm {
-      font-size: 8.5px;
+    .pos-badge-back {
+      font-size: 6.5px;
       font-weight: 800;
       color: #0369a1;
       background: #e0f2fe;
-      padding: 1.5px 5px;
-      border-radius: 4px;
+      padding: 0.5px 3px;
+      border-radius: 3px;
+      text-transform: uppercase;
     }
 
     .card-back-body {
@@ -1105,60 +1165,91 @@ export function generatePrintableFlashcardsPDF({
       flex-direction: column;
       justify-content: space-between;
       flex: 1;
-      gap: 3px;
+      gap: 2px;
+      padding: 1.5px 0;
     }
 
     .bangla-meaning {
       font-family: 'Hind Siliguri', 'Inter', sans-serif;
-      font-size: 14.5px;
       font-weight: 700;
       color: #047857;
-      line-height: 1.25;
       letter-spacing: -0.1px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .bn-16 {
+      font-size: 10.5px;
+      line-height: 1.2;
+      -webkit-line-clamp: 2;
+    }
+
+    .bn-8 {
+      font-size: 13.5px;
+      line-height: 1.25;
+      -webkit-line-clamp: 2;
     }
 
     .english-definition {
-      font-size: 10px;
       color: #334155;
-      line-height: 1.3;
       font-style: italic;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+    }
+
+    .eng-16 {
+      font-size: 7.2px;
+      line-height: 1.15;
+      -webkit-line-clamp: 2;
+    }
+
+    .eng-8 {
+      font-size: 9.5px;
+      line-height: 1.25;
+      -webkit-line-clamp: 2;
     }
 
     .relations-grid {
       display: flex;
       flex-direction: column;
-      gap: 2.5px;
       background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 5px;
-      padding: 3.5px 6px;
+      border: 0.5px solid #e2e8f0;
+      border-radius: 3px;
+    }
+
+    .rel-16 {
+      padding: 1.5px 3px;
+      gap: 1px;
+    }
+
+    .rel-8 {
+      padding: 2.5px 5px;
+      gap: 2px;
     }
 
     .relation-row {
       display: flex;
       align-items: baseline;
-      gap: 5px;
-      font-size: 9.5px;
-      line-height: 1.3;
+      gap: 3px;
+      line-height: 1.15;
     }
 
     .rel-label {
       font-weight: 800;
-      font-size: 9px;
       flex-shrink: 0;
     }
 
     .syn-label {
       color: #1d4ed8;
+      font-size: 6.8px;
     }
 
     .syn-text {
       color: #1e3a8a;
       font-weight: 600;
+      font-size: 6.8px;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
@@ -1167,11 +1258,13 @@ export function generatePrintableFlashcardsPDF({
 
     .ant-label {
       color: #b91c1c;
+      font-size: 6.8px;
     }
 
     .ant-text {
       color: #991b1b;
       font-weight: 600;
+      font-size: 6.8px;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
@@ -1179,22 +1272,31 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .example-box {
-      font-size: 9px;
-      color: #475569;
       font-style: italic;
-      line-height: 1.25;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      padding-top: 1px;
+    }
+
+    .ex-16 {
+      font-size: 6.8px;
+      line-height: 1.15;
+      color: #475569;
+      -webkit-line-clamp: 2;
+    }
+
+    .ex-8 {
+      font-size: 8.5px;
+      line-height: 1.25;
+      color: #475569;
+      -webkit-line-clamp: 2;
     }
 
     .ex-quote {
       color: #334155;
     }
 
-    /* Print Overrides */
+    /* Print Overrides - 100% Exact A4 Sizing */
     @media print {
       body {
         background-color: #ffffff !important;
@@ -1213,15 +1315,15 @@ export function generatePrintableFlashcardsPDF({
 
       .sheet-page {
         margin: 0 !important;
-        width: 198mm !important;
-        height: 285mm !important;
-        max-height: 285mm !important;
-        min-height: 285mm !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        min-height: 297mm !important;
         box-shadow: none !important;
         border-radius: 0 !important;
         page-break-after: always !important;
         break-after: page !important;
-        padding: 2mm 1mm !important;
+        padding: 0 !important;
       }
 
       .sheet-page:last-child {
@@ -1229,21 +1331,39 @@ export function generatePrintableFlashcardsPDF({
         break-after: auto !important;
       }
 
-      .cards-grid {
-        width: 100% !important;
-        height: 277mm !important;
-        min-height: 277mm !important;
-        grid-template-columns: 96.5mm 96.5mm !important;
-        grid-template-rows: 66.5mm 66.5mm 66.5mm 66.5mm !important;
-        gap: 3.5mm 3.5mm !important;
+      .cards-grid-16 {
+        position: absolute !important;
+        top: 7.5mm !important;
+        left: 6mm !important;
+        width: 198mm !important;
+        height: 282mm !important;
+        grid-template-columns: repeat(4, 49.5mm) !important;
+        grid-template-rows: repeat(4, 70.5mm) !important;
       }
 
-      .flashcard {
-        width: 96.5mm !important;
-        height: 66.5mm !important;
-        min-height: 66.5mm !important;
-        max-height: 66.5mm !important;
-        border-color: #94a3b8 !important;
+      .cards-grid-8 {
+        position: absolute !important;
+        top: 7.5mm !important;
+        left: 8mm !important;
+        width: 194mm !important;
+        height: 282mm !important;
+        grid-template-columns: repeat(2, 97mm) !important;
+        grid-template-rows: repeat(4, 70.5mm) !important;
+      }
+
+      .flashcard-16 {
+        width: 49.5mm !important;
+        height: 70.5mm !important;
+        min-height: 70.5mm !important;
+        max-height: 70.5mm !important;
+        page-break-inside: avoid !important;
+      }
+
+      .flashcard-8 {
+        width: 97mm !important;
+        height: 70.5mm !important;
+        min-height: 70.5mm !important;
+        max-height: 70.5mm !important;
         page-break-inside: avoid !important;
       }
     }
@@ -1253,7 +1373,7 @@ export function generatePrintableFlashcardsPDF({
   <div class="no-print-bar no-print">
     <div class="title-grp">
       <div class="main-title">
-        <span>🖨️ HSC English Flashcards Printable PDF</span>
+        <span>🖨️ HSC English Flashcards (A4 Duplex • ${CARDS_PER_PAGE} Words/Page)</span>
         <span style="font-size: 11px; font-weight: normal; color: #a7f3d0; background: #064e3b; padding: 2px 8px; border-radius: 6px;">
           ${escapeHtml(unitTitle)}
         </span>
@@ -1264,12 +1384,12 @@ export function generatePrintableFlashcardsPDF({
     </div>
 
     <div class="tip-badge">
-      💡 <strong>প্রিন্ট টিপস:</strong> Two-Sided Printing সেটিংসে <strong>'Flip on Long Edge'</strong> নির্বাচন করুন। প্রিন্ট শেষে দাগ বরাবর কেটে নিন।
+      💡 <strong>নিখুঁত A4 প্রিন্ট সেটিংস:</strong> Paper Size: <strong>A4</strong> | Margins: <strong>None (বা 0mm)</strong> | Scale: <strong>100% (Default)</strong> | Two-Sided: <strong>Flip on Long Edge</strong>
     </div>
 
     <div style="display: flex; gap: 8px;">
       <button class="btn-print" onclick="window.print()">
-        <span>প্রিন্ট করুন (Print)</span>
+        <span>প্রিন্ট করুন (Print A4)</span>
       </button>
     </div>
   </div>
@@ -1329,4 +1449,5 @@ function openPrintWindow(htmlContent) {
     }, 350);
   }
 }
+
 
