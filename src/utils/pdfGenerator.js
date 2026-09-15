@@ -798,8 +798,7 @@ export function generatePrintableFlashcardsPDF({
     pagesHtml += `
       <!-- Sheet ${sheetNum} - Front Page (Words) -->
       <div class="sheet-page">
-        <div class="sheet-watermark-guide">Sheet ${sheetNum} of ${totalSheets} • FRONT (Words)</div>
-        <div class="sheet-cut-hint">✂ Cut along dashed lines • A4 Perfect Fit</div>
+        <div class="sheet-watermark-guide">Sheet ${sheetNum} of ${totalSheets} • FRONT</div>
         <div class="cards-grid ${is16Grid ? 'cards-grid-16' : 'cards-grid-8'}">
           ${frontCardsHtml}
         </div>
@@ -807,8 +806,7 @@ export function generatePrintableFlashcardsPDF({
 
       <!-- Sheet ${sheetNum} - Back Page (Meanings / Duplex Mirrored) -->
       <div class="sheet-page">
-        <div class="sheet-watermark-guide">Sheet ${sheetNum} of ${totalSheets} • BACK (Meanings & Relations)</div>
-        <div class="sheet-cut-hint">✂ Back Side Mirrored • Flip on Long Edge</div>
+        <div class="sheet-watermark-guide">Sheet ${sheetNum} of ${totalSheets} • BACK</div>
         <div class="cards-grid ${is16Grid ? 'cards-grid-16' : 'cards-grid-8'}">
           ${backCardsHtml}
         </div>
@@ -933,7 +931,7 @@ export function generatePrintableFlashcardsPDF({
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 24px 0;
+      padding: 20px 0;
       box-sizing: border-box;
     }
 
@@ -943,9 +941,9 @@ export function generatePrintableFlashcardsPDF({
       height: 297mm;
       min-height: 297mm;
       max-height: 297mm;
-      margin: 0 auto 24px auto;
+      margin: 0 auto 20px auto;
       background: #ffffff;
-      padding: 6mm;
+      padding: 3.5mm;
       position: relative;
       page-break-after: always;
       break-after: page;
@@ -959,9 +957,9 @@ export function generatePrintableFlashcardsPDF({
 
     .sheet-watermark-guide {
       position: absolute;
-      top: 1.5mm;
-      right: 6mm;
-      font-size: 7.5px;
+      top: 1mm;
+      right: 4mm;
+      font-size: 6.5px;
       color: #94a3b8;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -970,35 +968,23 @@ export function generatePrintableFlashcardsPDF({
       pointer-events: none;
     }
 
-    .sheet-cut-hint {
-      position: absolute;
-      bottom: 1.5mm;
-      left: 6mm;
-      font-size: 7.5px;
-      color: #94a3b8;
-      font-weight: 600;
-      pointer-events: none;
-    }
-
-    /* 16-Cards Grid Layout (4 cols x 4 rows) - Fills 100% Symmetrically */
+    /* 16-Cards Grid Layout (4 cols x 4 rows) - Uniform 2mm gap between cards */
     .cards-grid-16 {
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      gap: 0;
+      gap: 2mm 2mm;
       box-sizing: border-box;
-      border-top: 1.5px dashed #94a3b8;
-      border-left: 1.5px dashed #94a3b8;
     }
 
     .flashcard-16 {
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-      border-right: 1.5px dashed #94a3b8;
-      border-bottom: 1.5px dashed #94a3b8;
+      border: 1.5px dashed #94a3b8;
+      border-radius: 6px;
       background: #ffffff;
       padding: 3.5mm 3mm;
       display: flex;
@@ -1008,25 +994,23 @@ export function generatePrintableFlashcardsPDF({
       overflow: hidden;
     }
 
-    /* 8-Cards Grid Layout (2 cols x 4 rows) - Fills 100% Symmetrically */
+    /* 8-Cards Grid Layout (2 cols x 4 rows) - Uniform 2.5mm gap between cards */
     .cards-grid-8 {
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      gap: 0;
+      gap: 2.5mm 2.5mm;
       box-sizing: border-box;
-      border-top: 1.5px dashed #94a3b8;
-      border-left: 1.5px dashed #94a3b8;
     }
 
     .flashcard-8 {
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-      border-right: 1.5px dashed #94a3b8;
-      border-bottom: 1.5px dashed #94a3b8;
+      border: 1.5px dashed #94a3b8;
+      border-radius: 8px;
       background: #ffffff;
       padding: 5mm 6mm;
       display: flex;
@@ -1038,6 +1022,8 @@ export function generatePrintableFlashcardsPDF({
 
     .card-empty {
       background: #fafafa !important;
+      border-style: dotted !important;
+      border-color: #cbd5e1 !important;
     }
 
     /* Card Header */
@@ -1340,7 +1326,7 @@ export function generatePrintableFlashcardsPDF({
         break-after: page !important;
         page-break-inside: avoid !important;
         break-inside: avoid !important;
-        padding: 6mm !important;
+        padding: 3.5mm !important;
         box-sizing: border-box !important;
         display: block !important;
         background: #ffffff !important;
@@ -1357,6 +1343,7 @@ export function generatePrintableFlashcardsPDF({
         display: grid !important;
         grid-template-columns: repeat(4, 1fr) !important;
         grid-template-rows: repeat(4, 1fr) !important;
+        gap: 2mm 2mm !important;
         box-sizing: border-box !important;
       }
 
@@ -1366,6 +1353,7 @@ export function generatePrintableFlashcardsPDF({
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
         grid-template-rows: repeat(4, 1fr) !important;
+        gap: 2.5mm 2.5mm !important;
         box-sizing: border-box !important;
       }
 
