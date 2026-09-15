@@ -61,3 +61,11 @@ Whenever the user uploads or provides vocabulary (via photo or text):
    - If a word appears in multiple units or lessons (e.g. `sources`), the `exampleSentence` MUST include the authentic verbatim sentence from each unit/lesson, clearly prefaced by its unit and lesson tag:
      `"[Unit X: Lesson Y]: <Exact sentence>\n[Unit A: Lesson B]: <Exact sentence>"`
 
+## 7. Live Production URL & Online Browser Inspection Rules
+1. **Live Production URL Priority (Mandatory)**:
+   - When checking, inspecting, or testing the website with browser automation or review commands (`/browser`), ALWAYS use the official live online URL: `https://english-learner-dashboard.vercel.app` (e.g., `https://english-learner-dashboard.vercel.app/admin/questions`).
+   - Never default to or inspect `localhost` when asked to check the website.
+2. **Automated Production Deployment Sync**:
+   - Whenever changes are completed and verified via `npm run build`, push the commits to GitHub (`git push origin main`) so Vercel automatically deploys the latest version to the live URL.
+
+

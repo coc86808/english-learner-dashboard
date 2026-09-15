@@ -26,10 +26,11 @@ This skill provides step-by-step guidance for visual browser automation using Pu
 
 Always follow the 4-phase observation loop:
 
-1. **Open / Navigate**: Call puppeteer_navigate with target URL (e.g., https://english-learner-dashboard.vercel.app or http://localhost:5173).
+1. **Open / Navigate**: Call puppeteer_navigate with the official live online URL: `https://english-learner-dashboard.vercel.app` (e.g., `https://english-learner-dashboard.vercel.app/admin/questions` or `https://english-learner-dashboard.vercel.app/flashcards`). Do NOT use `localhost`.
 2. **See Screen (Screenshot)**: Call puppeteer_screenshot to view the current rendered UI. Use puppeteer_evaluate to inspect dynamic text, button IDs, and classes.
 3. **Locate & Click**: Execute puppeteer_click on the target button, link, or tab using a precise CSS selector. If ambiguous, query elements by text in puppeteer_evaluate and trigger .click().
 4. **Verify Result**: Take a follow-up screenshot to verify the action succeeded (e.g., modal opened, route changed, answer highlighted).
+
 
 ---
 
