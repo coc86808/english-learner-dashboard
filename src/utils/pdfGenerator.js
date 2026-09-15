@@ -835,12 +835,21 @@ export function generatePrintableFlashcardsPDF({
       print-color-adjust: exact;
     }
 
-    html, body {
+    html {
+      background-color: #334155;
+      min-height: 100%;
+    }
+
+    body {
       margin: 0;
       padding: 0;
-      background-color: #f1f5f9;
+      background-color: #334155;
       font-family: 'Plus Jakarta Sans', 'Inter', 'Hind Siliguri', sans-serif;
       color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -848,17 +857,19 @@ export function generatePrintableFlashcardsPDF({
     .no-print-bar {
       position: sticky;
       top: 0;
+      width: 100%;
       z-index: 1000;
       background: #0f172a;
       color: #ffffff;
-      padding: 10px 20px;
+      padding: 10px 24px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
       font-family: 'Plus Jakarta Sans', sans-serif;
+      box-sizing: border-box;
     }
 
     .no-print-bar .title-grp {
@@ -899,7 +910,7 @@ export function generatePrintableFlashcardsPDF({
       background: linear-gradient(135deg, #10b981, #059669);
       color: white;
       border: none;
-      padding: 8px 20px;
+      padding: 8px 22px;
       border-radius: 8px;
       font-size: 13px;
       font-weight: 700;
@@ -915,26 +926,36 @@ export function generatePrintableFlashcardsPDF({
       transform: translateY(-1px);
     }
 
-    /* Print Sheets Layout - Exact A4 Physical Dimension (210mm x 297mm) */
+    /* Print Sheets Container - Centered on Screen */
     .print-container {
-      margin: 0 auto;
-      padding: 12px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 0;
+      box-sizing: border-box;
     }
 
+    /* Exact A4 Physical Dimension (210mm x 297mm) Centered Page */
     .sheet-page {
       width: 210mm;
       height: 297mm;
       min-height: 297mm;
       max-height: 297mm;
-      margin: 0 auto 16px auto;
+      margin: 0 auto 24px auto;
       background: #ffffff;
       padding: 0;
       position: relative;
       page-break-after: always;
       break-after: page;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      border-radius: 2px;
       overflow: hidden;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .sheet-watermark-guide {
@@ -960,11 +981,8 @@ export function generatePrintableFlashcardsPDF({
       pointer-events: none;
     }
 
-    /* 16-Cards Grid Layout (4 cols x 4 rows) - Perfectly Centered on 210x297mm A4 */
+    /* 16-Cards Grid Layout (4 cols x 4 rows) - Centered inside 210x297mm A4 */
     .cards-grid-16 {
-      position: absolute;
-      top: 7.5mm;
-      left: 6mm;
       width: 198mm;
       height: 282mm;
       display: grid;
@@ -974,6 +992,7 @@ export function generatePrintableFlashcardsPDF({
       box-sizing: border-box;
       border-top: 1px dashed #94a3b8;
       border-left: 1px dashed #94a3b8;
+      margin: auto;
     }
 
     .flashcard-16 {
@@ -993,11 +1012,8 @@ export function generatePrintableFlashcardsPDF({
       overflow: hidden;
     }
 
-    /* 8-Cards Grid Layout (2 cols x 4 rows) - Perfectly Centered on 210x297mm A4 */
+    /* 8-Cards Grid Layout (2 cols x 4 rows) - Centered inside 210x297mm A4 */
     .cards-grid-8 {
-      position: absolute;
-      top: 7.5mm;
-      left: 8mm;
       width: 194mm;
       height: 282mm;
       display: grid;
@@ -1007,6 +1023,7 @@ export function generatePrintableFlashcardsPDF({
       box-sizing: border-box;
       border-top: 1px dashed #94a3b8;
       border-left: 1px dashed #94a3b8;
+      margin: auto;
     }
 
     .flashcard-8 {
@@ -1298,10 +1315,13 @@ export function generatePrintableFlashcardsPDF({
 
     /* Print Overrides - 100% Exact A4 Sizing */
     @media print {
-      body {
+      html, body {
+        width: 210mm !important;
+        height: 297mm !important;
         background-color: #ffffff !important;
         margin: 0 !important;
         padding: 0 !important;
+        display: block !important;
       }
 
       .no-print, .no-print-bar {
@@ -1309,8 +1329,10 @@ export function generatePrintableFlashcardsPDF({
       }
 
       .print-container {
+        width: 210mm !important;
         padding: 0 !important;
         margin: 0 !important;
+        display: block !important;
       }
 
       .sheet-page {
@@ -1323,7 +1345,13 @@ export function generatePrintableFlashcardsPDF({
         border-radius: 0 !important;
         page-break-after: always !important;
         break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
         padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: #ffffff !important;
       }
 
       .sheet-page:last-child {
@@ -1332,23 +1360,19 @@ export function generatePrintableFlashcardsPDF({
       }
 
       .cards-grid-16 {
-        position: absolute !important;
-        top: 7.5mm !important;
-        left: 6mm !important;
         width: 198mm !important;
         height: 282mm !important;
         grid-template-columns: repeat(4, 49.5mm) !important;
         grid-template-rows: repeat(4, 70.5mm) !important;
+        margin: auto !important;
       }
 
       .cards-grid-8 {
-        position: absolute !important;
-        top: 7.5mm !important;
-        left: 8mm !important;
         width: 194mm !important;
         height: 282mm !important;
         grid-template-columns: repeat(2, 97mm) !important;
         grid-template-rows: repeat(4, 70.5mm) !important;
+        margin: auto !important;
       }
 
       .flashcard-16 {
@@ -1422,7 +1446,7 @@ function escapeHtml(str) {
 }
 
 function openPrintWindow(htmlContent) {
-  const printWindow = window.open('', '_blank', 'width=950,height=800');
+  const printWindow = window.open('', '_blank', 'width=1020,height=900');
   if (printWindow) {
     printWindow.document.open();
     printWindow.document.write(htmlContent);
@@ -1449,5 +1473,6 @@ function openPrintWindow(htmlContent) {
     }, 350);
   }
 }
+
 
 
