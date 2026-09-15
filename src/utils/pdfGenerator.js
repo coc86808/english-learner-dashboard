@@ -945,22 +945,21 @@ export function generatePrintableFlashcardsPDF({
       max-height: 297mm;
       margin: 0 auto 24px auto;
       background: #ffffff;
-      padding: 0;
+      padding: 6mm;
       position: relative;
       page-break-after: always;
       break-after: page;
+      page-break-inside: avoid;
+      break-inside: avoid;
       box-shadow: 0 10px 30px rgba(0,0,0,0.35);
       border-radius: 2px;
       overflow: hidden;
       box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .sheet-watermark-guide {
       position: absolute;
-      top: 2.2mm;
+      top: 1.5mm;
       right: 6mm;
       font-size: 7.5px;
       color: #94a3b8;
@@ -973,7 +972,7 @@ export function generatePrintableFlashcardsPDF({
 
     .sheet-cut-hint {
       position: absolute;
-      bottom: 2.2mm;
+      bottom: 1.5mm;
       left: 6mm;
       font-size: 7.5px;
       color: #94a3b8;
@@ -981,65 +980,59 @@ export function generatePrintableFlashcardsPDF({
       pointer-events: none;
     }
 
-    /* 16-Cards Grid Layout (4 cols x 4 rows) - Centered inside 210x297mm A4 */
+    /* 16-Cards Grid Layout (4 cols x 4 rows) - Fills 100% Symmetrically */
     .cards-grid-16 {
-      width: 198mm;
-      height: 282mm;
+      width: 100%;
+      height: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 49.5mm);
-      grid-template-rows: repeat(4, 70.5mm);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       gap: 0;
       box-sizing: border-box;
-      border-top: 1px dashed #94a3b8;
-      border-left: 1px dashed #94a3b8;
-      margin: auto;
+      border-top: 1.5px dashed #94a3b8;
+      border-left: 1.5px dashed #94a3b8;
     }
 
     .flashcard-16 {
-      width: 49.5mm;
-      height: 70.5mm;
-      min-height: 70.5mm;
-      max-height: 70.5mm;
-      border-right: 1px dashed #94a3b8;
-      border-bottom: 1px dashed #94a3b8;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      border-right: 1.5px dashed #94a3b8;
+      border-bottom: 1.5px dashed #94a3b8;
       background: #ffffff;
       padding: 3.5mm 3mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      box-sizing: border-box;
       overflow: hidden;
     }
 
-    /* 8-Cards Grid Layout (2 cols x 4 rows) - Centered inside 210x297mm A4 */
+    /* 8-Cards Grid Layout (2 cols x 4 rows) - Fills 100% Symmetrically */
     .cards-grid-8 {
-      width: 194mm;
-      height: 282mm;
+      width: 100%;
+      height: 100%;
       display: grid;
-      grid-template-columns: repeat(2, 97mm);
-      grid-template-rows: repeat(4, 70.5mm);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
       gap: 0;
       box-sizing: border-box;
-      border-top: 1px dashed #94a3b8;
-      border-left: 1px dashed #94a3b8;
-      margin: auto;
+      border-top: 1.5px dashed #94a3b8;
+      border-left: 1.5px dashed #94a3b8;
     }
 
     .flashcard-8 {
-      width: 97mm;
-      height: 70.5mm;
-      min-height: 70.5mm;
-      max-height: 70.5mm;
-      border-right: 1px dashed #94a3b8;
-      border-bottom: 1px dashed #94a3b8;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      border-right: 1.5px dashed #94a3b8;
+      border-bottom: 1.5px dashed #94a3b8;
       background: #ffffff;
       padding: 5mm 6mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      box-sizing: border-box;
       overflow: hidden;
     }
 
@@ -1347,10 +1340,9 @@ export function generatePrintableFlashcardsPDF({
         break-after: page !important;
         page-break-inside: avoid !important;
         break-inside: avoid !important;
-        padding: 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+        padding: 6mm !important;
+        box-sizing: border-box !important;
+        display: block !important;
         background: #ffffff !important;
       }
 
@@ -1360,34 +1352,27 @@ export function generatePrintableFlashcardsPDF({
       }
 
       .cards-grid-16 {
-        width: 198mm !important;
-        height: 282mm !important;
-        grid-template-columns: repeat(4, 49.5mm) !important;
-        grid-template-rows: repeat(4, 70.5mm) !important;
-        margin: auto !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+        box-sizing: border-box !important;
       }
 
       .cards-grid-8 {
-        width: 194mm !important;
-        height: 282mm !important;
-        grid-template-columns: repeat(2, 97mm) !important;
-        grid-template-rows: repeat(4, 70.5mm) !important;
-        margin: auto !important;
+        width: 100% !important;
+        height: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+        box-sizing: border-box !important;
       }
 
-      .flashcard-16 {
-        width: 49.5mm !important;
-        height: 70.5mm !important;
-        min-height: 70.5mm !important;
-        max-height: 70.5mm !important;
-        page-break-inside: avoid !important;
-      }
-
-      .flashcard-8 {
-        width: 97mm !important;
-        height: 70.5mm !important;
-        min-height: 70.5mm !important;
-        max-height: 70.5mm !important;
+      .flashcard-16, .flashcard-8 {
+        width: 100% !important;
+        height: 100% !important;
+        box-sizing: border-box !important;
         page-break-inside: avoid !important;
       }
     }
