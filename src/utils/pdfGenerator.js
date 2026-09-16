@@ -688,8 +688,8 @@ export function generatePrintableFlashcardsPDF({
 
     const wordLength = item.word ? item.word.length : 0;
     const wordClass = is16Grid
-      ? (wordLength > 12 ? 'word-long-16' : (wordLength > 9 ? 'word-med-16' : 'word-std-16'))
-      : (wordLength > 12 ? 'word-long-8' : 'word-std-8');
+      ? (wordLength >= 13 ? 'word-xl-16' : (wordLength >= 10 ? 'word-long-16' : (wordLength >= 7 ? 'word-med-16' : 'word-short-16')))
+      : (wordLength >= 13 ? 'word-long-8' : (wordLength >= 9 ? 'word-med-8' : 'word-std-8'));
 
     return `
       <div class="flashcard ${is16Grid ? 'flashcard-16' : 'flashcard-8'} card-front">
@@ -1078,18 +1078,20 @@ export function generatePrintableFlashcardsPDF({
     .card-word {
       font-weight: 800;
       color: #0f172a;
-      letter-spacing: -0.4px;
+      letter-spacing: -0.5px;
       line-height: 1.15;
       word-break: break-word;
       text-align: center;
     }
 
-    .word-std-16 { font-size: 16.5px; }
-    .word-med-16 { font-size: 14px; }
-    .word-long-16 { font-size: 12px; }
+    .word-short-16 { font-size: 26px; }
+    .word-med-16 { font-size: 22px; }
+    .word-long-16 { font-size: 18.5px; }
+    .word-xl-16 { font-size: 16px; }
 
-    .word-std-8 { font-size: 24px; }
-    .word-long-8 { font-size: 18px; }
+    .word-std-8 { font-size: 28px; }
+    .word-med-8 { font-size: 24px; }
+    .word-long-8 { font-size: 20px; }
 
     .card-phonetic {
       font-size: 8px;
