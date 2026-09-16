@@ -755,7 +755,7 @@ export function generatePrintableFlashcardsPDF({
 
           ${hasExample ? `
             <div class="example-box ${is16Grid ? 'ex-16' : 'ex-8'}">
-              <span class="ex-quote">“${escapeHtml(item.exampleSentence.length > (is16Grid ? 70 : 120) ? item.exampleSentence.slice(0, is16Grid ? 67 : 117) + '...' : item.exampleSentence)}”</span>
+              <span class="ex-quote">“${escapeHtml(item.exampleSentence)}”</span>
             </div>
           ` : ''}
         </div>
@@ -1036,7 +1036,7 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .card-unit-tag {
-      font-size: 7.5px;
+      font-size: 8px;
       font-weight: 700;
       color: #475569;
       white-space: nowrap;
@@ -1047,21 +1047,21 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .pos-badge {
-      font-size: 7.5px;
+      font-size: 8px;
       font-weight: 800;
       text-transform: uppercase;
       color: #0369a1;
       background: #e0f2fe;
       border: 0.5px solid #bae6fd;
-      padding: 1px 4px;
+      padding: 1px 4.5px;
       border-radius: 3px;
       letter-spacing: 0.3px;
       flex-shrink: 0;
     }
 
     .pos-badge-sm {
-      font-size: 6.5px;
-      padding: 0.5px 3px;
+      font-size: 7px;
+      padding: 0.5px 3.5px;
     }
 
     /* Card Front Center Word Body */
@@ -1084,15 +1084,15 @@ export function generatePrintableFlashcardsPDF({
       text-align: center;
     }
 
-    .word-std-16 { font-size: 14px; }
-    .word-med-16 { font-size: 12.5px; }
-    .word-long-16 { font-size: 11px; }
+    .word-std-16 { font-size: 16.5px; }
+    .word-med-16 { font-size: 14px; }
+    .word-long-16 { font-size: 12px; }
 
-    .word-std-8 { font-size: 22px; }
-    .word-long-8 { font-size: 17px; }
+    .word-std-8 { font-size: 24px; }
+    .word-long-8 { font-size: 18px; }
 
     .card-phonetic {
-      font-size: 7.5px;
+      font-size: 8px;
       color: #64748b;
       font-family: monospace;
       margin-top: 2px;
@@ -1109,13 +1109,13 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .card-brand-sub {
-      font-size: 6.5px;
+      font-size: 6.8px;
       font-weight: 700;
       color: #94a3b8;
     }
 
     .card-duplex-hint {
-      font-size: 6.5px;
+      font-size: 6.8px;
       color: #cbd5e1;
       font-weight: 700;
     }
@@ -1131,12 +1131,12 @@ export function generatePrintableFlashcardsPDF({
       align-items: center;
       gap: 4px;
       border-bottom: 0.5px solid #e2e8f0;
-      padding-bottom: 1.5px;
+      padding-bottom: 2px;
       line-height: 1;
     }
 
     .card-word-sm {
-      font-size: 9px;
+      font-size: 10.5px;
       font-weight: 800;
       color: #0f172a;
       letter-spacing: -0.2px;
@@ -1147,11 +1147,11 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .pos-badge-back {
-      font-size: 6.5px;
+      font-size: 7.5px;
       font-weight: 800;
       color: #0369a1;
       background: #e0f2fe;
-      padding: 0.5px 3px;
+      padding: 1px 4px;
       border-radius: 3px;
       text-transform: uppercase;
     }
@@ -1159,10 +1159,11 @@ export function generatePrintableFlashcardsPDF({
     .card-back-body {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
       flex: 1;
-      gap: 2px;
-      padding: 1.5px 0;
+      min-height: 0;
+      gap: 3px;
+      padding: 2px 0 1px 0;
     }
 
     .bangla-meaning {
@@ -1176,15 +1177,15 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .bn-16 {
-      font-size: 10.5px;
-      line-height: 1.2;
-      -webkit-line-clamp: 2;
+      font-size: 12px;
+      line-height: 1.25;
+      -webkit-line-clamp: 3;
     }
 
     .bn-8 {
-      font-size: 13.5px;
-      line-height: 1.25;
-      -webkit-line-clamp: 2;
+      font-size: 15px;
+      line-height: 1.3;
+      -webkit-line-clamp: 3;
     }
 
     .english-definition {
@@ -1196,13 +1197,13 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .eng-16 {
-      font-size: 7.2px;
-      line-height: 1.15;
+      font-size: 8px;
+      line-height: 1.2;
       -webkit-line-clamp: 2;
     }
 
     .eng-8 {
-      font-size: 9.5px;
+      font-size: 10.5px;
       line-height: 1.25;
       -webkit-line-clamp: 2;
     }
@@ -1212,59 +1213,64 @@ export function generatePrintableFlashcardsPDF({
       flex-direction: column;
       background: #f8fafc;
       border: 0.5px solid #e2e8f0;
-      border-radius: 3px;
+      border-radius: 4px;
     }
 
     .rel-16 {
-      padding: 1.5px 3px;
-      gap: 1px;
+      padding: 2px 3.5px;
+      gap: 2px;
     }
 
     .rel-8 {
-      padding: 2.5px 5px;
-      gap: 2px;
+      padding: 3.5px 6px;
+      gap: 3px;
     }
 
     .relation-row {
       display: flex;
-      align-items: baseline;
-      gap: 3px;
-      line-height: 1.15;
+      align-items: flex-start;
+      gap: 3.5px;
+      line-height: 1.2;
     }
 
     .rel-label {
       font-weight: 800;
       flex-shrink: 0;
+      line-height: 1.2;
     }
 
     .syn-label {
       color: #1d4ed8;
-      font-size: 6.8px;
+      font-size: 8px;
     }
 
     .syn-text {
       color: #1e3a8a;
       font-weight: 600;
-      font-size: 6.8px;
+      font-size: 8px;
+      line-height: 1.2;
       display: -webkit-box;
-      -webkit-line-clamp: 1;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      word-break: break-word;
     }
 
     .ant-label {
       color: #b91c1c;
-      font-size: 6.8px;
+      font-size: 8px;
     }
 
     .ant-text {
       color: #991b1b;
       font-weight: 600;
-      font-size: 6.8px;
+      font-size: 8px;
+      line-height: 1.2;
       display: -webkit-box;
-      -webkit-line-clamp: 1;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      word-break: break-word;
     }
 
     .example-box {
@@ -1275,17 +1281,17 @@ export function generatePrintableFlashcardsPDF({
     }
 
     .ex-16 {
-      font-size: 6.8px;
-      line-height: 1.15;
+      font-size: 7.8px;
+      line-height: 1.22;
       color: #475569;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
     }
 
     .ex-8 {
-      font-size: 8.5px;
-      line-height: 1.25;
+      font-size: 9.5px;
+      line-height: 1.28;
       color: #475569;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
     }
 
     .ex-quote {
