@@ -59,7 +59,6 @@ import VocabularyBank from './components/VocabularyBank';
 import CertificateModal from './components/CertificateModal';
 import StreakWidget from './components/StreakWidget';
 import DailyPointsChart from './components/DailyPointsChart';
-import StudentDashboard from './components/dashboard';
 
 // Milestone 2 & 3 Dedicated Page Views & FAB
 import ProgressPage from './components/pages/ProgressPage';
@@ -594,30 +593,122 @@ export default function App() {
         />
 
         {/* 3. Main View Dispatcher */}
-        <main className={`flex-1 overflow-y-auto ${
-          currentPath === '/dashboard' ? 'bg-[#F7F9FC] text-[#172033]' : 'bg-[#0c0f17] text-slate-100'
-        } p-3.5 sm:p-5 md:p-6 lg:p-7 pb-24 lg:pb-7 space-y-6 transition-colors duration-200`}>
+        <main className="flex-1 overflow-y-auto p-3.5 sm:p-5 md:p-6 lg:p-7 pb-24 lg:pb-7 space-y-6">
           {/* Route: /dashboard */}
           {currentPath === '/dashboard' && (
-            <StudentDashboard
-              lang={lang}
-              currentUser={currentUser}
-              weakWords={weakWords}
-              navigate={navigate}
-              onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
-              onOpenMockExam={(unit, lesson) => {
-                if (unit) setSelectedExamUnit(unit);
-                if (lesson) setSelectedExamLesson(lesson);
-                setIsUnitLessonModalOpen(true);
-              }}
-              onOpenTextbook={(unit, lesson) => navigate('/textbook')}
-              onOpenWeakWords={() => navigate('/weak-words')}
-              onOpenLeaderboard={() => navigate('/leaderboard')}
-              onOpenProgress={() => navigate('/progress')}
-              onOpenFlashcards={() => navigate('/flashcards')}
-              onOpenCertificates={() => navigate('/certificates')}
-              onOpenNotes={() => navigate('/notes')}
-            />
+            <div className="max-w-[1550px] mx-auto space-y-6">
+              {/* Contextual Smart Card: Resume Learning */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#141b2c] via-[#111726] to-[#0c101a] border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg shadow-emerald-950/20">
+                <div className="flex items-start sm:items-center gap-3.5">
+                  <div className="w-11 h-11 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 shadow-inner mt-0.5 sm:mt-0">
+                    <BookOpen size={22} />
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-white font-extrabold text-sm sm:text-base">
+                        {isBn ? 'পড়াশোনা চালিয়ে যান: Unit 1 • The Parrot\'s Tale' : 'Resume Learning: Unit 1 • The Parrot\'s Tale'}
+                      </span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                        NCTB 2026
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-400 mt-1">
+                      {isBn ? '৫১টি শব্দ • ২০৪টি বোর্ড MCQ • তোতাকাহিনী (রবীন্দ্রনাথ ঠাকুর)' : '51 Words • 204 Board MCQs • Interactive Passage & Active Recall'}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 w-full sm:w-auto">
+                  <button
+                    onClick={() => navigate('/textbook')}
+                    className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-[#1a2233] hover:bg-[#222e44] border border-[#2b3952] text-slate-200 hover:text-white text-xs font-bold transition-all active:scale-95 text-center"
+                  >
+                    {isBn ? '📖 পাঠ্যবই পড়ুন' : '📖 Read Passage'}
+                  </button>
+                  <button
+                    onClick={() => setIsUnitLessonModalOpen(true)}
+                    className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold shadow-lg shadow-emerald-950/50 active:scale-95 transition-all text-center flex items-center justify-center gap-1.5"
+                  >
+                    <span>{isBn ? '▶ পরীক্ষা দিন' : '▶ Start Exam'}</span>
+                    <ChevronRight size={14} />
+                  </button>
+                </div>
+              </div>
+
+              {/* 4 Feature Action Cards */}
+              <ActionCards
+                lang={lang}
+                onOpenVocabBank={() => navigate('/vocabulary-bank')}
+                onOpenFlashcards={() => navigate('/flashcards')}
+                onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
+                onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
+              />
+
+              {/* Main Content Grid: 8 cols left + 4 cols right */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <div className="lg:col-span-8 space-y-6">
+                  {/* Subject Report & Recent Exams */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <SubjectReport
+                      lang={lang}
+                      onOpenAllSubjects={() => navigate('/exam')}
+                      onSelectLesson={(lesson, unit) => {
+                        setSelectedExamUnit(unit);
+                        setSelectedExamLesson(lesson);
+                        setIsUnitLessonModalOpen(true);
+                      }}
+                    />
+
+                    <RecentExams
+                      lang={lang}
+                      onOpenAllExams={() => setIsUnitLessonModalOpen(true)}
+                      onStartExam={() => setIsUnitLessonModalOpen(true)}
+                    />
+                  </div>
+
+                  {/* Daily Points Chart */}
+                  <DailyPointsChart lang={lang} />
+                </div>
+
+                <div className="lg:col-span-4 space-y-6">
+                  {/* Streak Widget */}
+                  <StreakWidget lang={lang} streakCount={currentUser?.streak || 0} />
+
+                  {/* How to Learn Step Card */}
+                  <div className="bg-[#111723] border border-[#1e293b] rounded-2xl p-5 space-y-4 shadow-card">
+                    <div className="flex items-center gap-2 mb-1">
+                      <GraduationCap size={18} className="text-emerald-400" />
+                      <h3 className="text-white font-bold text-sm">
+                        {isBn ? 'কীভাবে শিখবেন?' : 'How to Learn?'}
+                      </h3>
+                    </div>
+
+                    <div className="space-y-3 text-xs text-slate-300 leading-relaxed">
+                      {[
+                        { step: '1', text: isBn ? 'ইউনিট ও লেসন নির্বাচন করুন' : 'Select a Unit & Lesson', color: 'bg-emerald-500' },
+                        { step: '2', text: isBn ? '"📖 পাঠ্যবই পড়ুন" এ ক্লিক করে গল্পটি বুঝুন' : 'Read the NCTB passage text', color: 'bg-blue-500' },
+                        { step: '3', text: isBn ? 'MCQ পরীক্ষা শুরু করুন — ভুল হলে ৩ বার রিপিট হবে' : 'Start MCQ exam — spaced repetition active', color: 'bg-violet-500' },
+                        { step: '4', text: isBn ? 'টানা ৩ বার সঠিক উত্তর দিলে Done হবে' : 'Answer 3 consecutive times correctly for Done', color: 'bg-amber-500' },
+                      ].map((item, i) => (
+                        <div key={i} className="flex items-start gap-2.5">
+                          <span className={`w-5 h-5 rounded-full ${item.color} text-white text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5`}>
+                            {item.step}
+                          </span>
+                          <span>{item.text}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <button
+                      onClick={() => setIsUnitLessonModalOpen(true)}
+                      className="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all active:scale-95 shadow-md shadow-emerald-950/40"
+                    >
+                      {isBn ? '▶ এখনই পরীক্ষা শুরু করুন' : '▶ Start Exam Now'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           )}
 
           {/* Route: /vocabulary-bank or /vocabulary */}
