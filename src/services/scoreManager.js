@@ -5,6 +5,7 @@
  */
 
 import { saveUserToFirestore, saveExamResultToFirestore } from './firebase';
+import { syncUserProfileToPostgres, recordExamResultToPostgres } from './supabase';
 
 /**
  * Count total mastered words (words answered correctly 5+ times in MCQ)
@@ -148,9 +149,11 @@ export function recordCompletedExam({
       localStorage.setItem('hsc_exam_history', JSON.stringify(history));
     } catch (e) {}
 
-    // 6. Sync to Cloud Firestore
+    // 6. Sync to Cloud Firestore & PostgreSQL
     saveUserToFirestore(updatedUser);
     saveExamResultToFirestore(examRecord);
+    syncUserProfileToPostgres(updatedUser);
+    recordExamResultToPostgres(examRecord);
 
     // 7. Dispatch events for real-time UI synchronization
     if (typeof window !== 'undefined') {
