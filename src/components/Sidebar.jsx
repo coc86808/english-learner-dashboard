@@ -22,7 +22,8 @@ import {
   LogOut,
   ChevronRight,
   Sparkles,
-  BookMarked
+  BookMarked,
+  Scale
 } from 'lucide-react';
 import { getUserLeague } from '../services/scoreManager';
 
@@ -186,6 +187,14 @@ export default function Sidebar({
           labelEn: 'About & Contact',
           labelBn: 'পরিচিতি ও যোগাযোগ',
           icon: Info,
+          badge: null
+        },
+        {
+          path: '/terms',
+          tabId: 'terms',
+          labelEn: 'Terms & Privacy',
+          labelBn: 'শর্তাবলী ও নীতিমালা',
+          icon: Scale,
           badge: null
         }
       ]

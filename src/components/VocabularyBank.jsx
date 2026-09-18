@@ -33,6 +33,7 @@ import { hscVocabularyList, matchesUnitAndLesson, getWordUnitSources } from '../
 import { hscUnits } from '../data/hscUnitsData';
 import { generateVocabularyBankPDF } from '../utils/pdfGenerator';
 import FlashcardPrintModal from './FlashcardPrintModal';
+import { fetchUserWordStatsFromPostgres } from '../services/supabase';
 
 export default function VocabularyBank({
   lang = 'en',
@@ -61,6 +62,41 @@ export default function VocabularyBank({
   // View Mode State ('card' on mobile by default, user can switch to 'table')
   const [viewMode, setViewMode] = useState('card');
   const [showMobileFilterDrawer, setShowMobileFilterDrawer] = useState(false);
+
+  // PostgreSQL Word Practice Stats State
+  const [wordStatsMap, setWordStatsMap] = useState(() => {
+    try {
+      const cached = localStorage.getItem('hsc_word_practice_stats');
+      return cached ? JSON.parse(cached) : {};
+    } catch (e) {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    let isMounted = true;
+    fetchUserWordStatsFromPostgres(currentUser?.email).then((stats) => {
+      if (isMounted && stats) {
+        setWordStatsMap(stats);
+      }
+    });
+
+    const handleStatsUpdate = (event) => {
+      const updated = event.detail;
+      if (updated && updated.word) {
+        setWordStatsMap((prev) => ({
+          ...prev,
+          [updated.word.toLowerCase()]: updated
+        }));
+      }
+    };
+
+    window.addEventListener('hsc_word_stats_updated', handleStatsUpdate);
+    return () => {
+      isMounted = false;
+      window.removeEventListener('hsc_word_stats_updated', handleStatsUpdate);
+    };
+  }, [currentUser?.email]);
 
   // PDF Export Customization Modal State
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
@@ -793,6 +829,7 @@ export default function VocabularyBank({
                   const serialNum = startIndex + index + 1;
                   const weak = isWeak(item);
                   const isAudioActive = speakingWord === item.word;
+                  const stat = wordStatsMap[(item.word || '').toLowerCase().trim()];
 
                   return (
                     <div
@@ -814,7 +851,13 @@ export default function VocabularyBank({
                                 {item.partsOfSpeech}
                               </span>
                             )}
-                            </div>
+                            {stat && stat.times_practiced > 0 && (
+                              <span className="px-2 py-0.5 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[10px] font-bold flex items-center gap-1">
+                                <span>🎯 {stat.times_practiced}x</span>
+                                <span>({stat.success_rate}%)</span>
+                              </span>
+                            )}
+                          </div>
 
                             {/* Unit Location Badges */}
                             <div className="flex items-center gap-1.5 flex-wrap my-1">
@@ -918,6 +961,60 @@ export default function VocabularyBank({
                         </div>
                       )}
 
+                      {/* PostgreSQL Word Practice & Analytics Bar */}
+                      <div className="mt-2.5 p-2.5 rounded-xl bg-[#090e18] border border-[#1b263b] flex flex-wrap items-center justify-between gap-2 text-[11px]">
+                        <div className="flex items-center gap-2.5 flex-wrap">
+                          <span className="text-slate-300 font-semibold flex items-center gap-1">
+                            <span className="text-amber-400">🎯</span>
+                            <span>{isBn ? 'অনুশীলন:' : 'Practiced:'}</span>
+                            <strong className="text-white font-bold">{stat ? stat.times_practiced : 0} {isBn ? 'বার' : 'times'}</strong>
+                          </span>
+                          {stat && stat.times_practiced > 0 ? (
+                            <>
+                              <span className="text-emerald-400 font-semibold flex items-center gap-0.5">
+                                <span>📈</span>
+                                <span>{isBn ? 'সফলতা:' : 'Success:'}</span>
+                                <strong className="font-bold">{stat.success_rate}%</strong>
+                              </span>
+                              <span className="text-rose-400 font-semibold flex items-center gap-0.5">
+                                <span>📉</span>
+                                <span>{isBn ? 'ভুল:' : 'Failure:'}</span>
+                                <strong className="font-bold">{stat.failure_rate}%</strong>
+                              </span>
+                              <span className="text-cyan-400 font-semibold hidden sm:inline-flex items-center gap-0.5">
+                                <span>⏱️</span>
+                                <span>{isBn ? 'গড় সময়:' : 'Avg:'}</span>
+                                <strong className="font-bold">{stat.avg_time_per_question}s</strong>
+                              </span>
+                            </>
+                          ) : (
+                            <span className="text-slate-500 text-[10px] italic">
+                              {isBn ? 'এখনও অনুশীলন করা হয়নি' : 'Not practiced yet'}
+                            </span>
+                          )}
+                        </div>
+
+                        <div>
+                          {stat?.status === 'mastered' ? (
+                            <span className="px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-bold">
+                              ✓ {isBn ? 'মাস্টার্ড' : 'Mastered'}
+                            </span>
+                          ) : stat?.status === 'weak' ? (
+                            <span className="px-2 py-0.5 rounded-md bg-rose-500/20 text-rose-300 border border-rose-500/40 text-[10px] font-bold">
+                              ⚠️ {isBn ? 'দুর্বল শব্দ' : 'Weak Word'}
+                            </span>
+                          ) : stat?.times_practiced > 0 ? (
+                            <span className="px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[10px] font-bold">
+                              🔄 {isBn ? 'লার্নিং' : 'Learning'}
+                            </span>
+                          ) : (
+                            <span className="px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-400 border border-slate-700/60 text-[10px] font-medium">
+                              {isBn ? 'নতুন' : 'New'}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
                       {/* Card Footer */}
                       <div className="mt-3 pt-2.5 border-t border-[#1a2538] flex items-center justify-between gap-2">
                         <div className="flex items-center gap-1 flex-wrap max-w-[220px]">
@@ -997,6 +1094,7 @@ export default function VocabularyBank({
                   const weak = isWeak(item);
                   const isAudioActive = speakingWord === item.word;
                   const isExpanded = expandedWordIds.has(item.id || item.word);
+                  const stat = wordStatsMap[(item.word || '').toLowerCase().trim()];
 
                   return (
                     <React.Fragment key={item.id || index}>
@@ -1040,6 +1138,11 @@ export default function VocabularyBank({
                                     <span>{src}</span>
                                   </span>
                                 ))}
+                                {stat && stat.times_practiced > 0 && (
+                                  <span className="px-2 py-0.5 rounded bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[10px] font-bold">
+                                    🎯 {stat.times_practiced}x ({stat.success_rate}%)
+                                  </span>
+                                )}
                               </div>
                             </div>
 
@@ -1208,6 +1311,58 @@ export default function VocabularyBank({
                                   <span className="font-bold text-rose-400 shrink-0">🔀 Antonyms:</span>
                                   <span className="text-slate-200 truncate">{item.antonyms || 'None'}</span>
                                 </div>
+                              </div>
+
+                              {/* PostgreSQL Word Practice & Analytics Full Breakdown */}
+                              <div className="p-3.5 rounded-xl bg-[#090e18] border border-[#1d2638] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                                <div className="space-y-1.5">
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-amber-400 font-bold flex items-center gap-1">
+                                      <span>🎯</span>
+                                      <span>{isBn ? 'অনুশীলন বিবরণী:' : 'Practice Analytics:'}</span>
+                                    </span>
+                                    {stat?.status === 'mastered' ? (
+                                      <span className="px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-bold">
+                                        ✓ {isBn ? 'মাস্টার্ড' : 'Mastered'}
+                                      </span>
+                                    ) : stat?.status === 'weak' ? (
+                                      <span className="px-2 py-0.5 rounded-md bg-rose-500/20 text-rose-300 border border-rose-500/40 text-[10px] font-bold">
+                                        ⚠️ {isBn ? 'দুর্বল শব্দ' : 'Weak Word'}
+                                      </span>
+                                    ) : stat?.times_practiced > 0 ? (
+                                      <span className="px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[10px] font-bold">
+                                        🔄 {isBn ? 'লার্নিং' : 'Learning'}
+                                      </span>
+                                    ) : (
+                                      <span className="px-2 py-0.5 rounded-md bg-slate-800/80 text-slate-400 border border-slate-700/60 text-[10px] font-medium">
+                                        {isBn ? 'এখনও পরীক্ষা হয়নি' : 'Not practiced yet'}
+                                      </span>
+                                    )}
+                                  </div>
+                                  <div className="flex items-center gap-3 flex-wrap text-slate-300">
+                                    <span>{isBn ? 'মোট অনুশীলন:' : 'Total Practiced:'} <strong className="text-white">{stat ? stat.times_practiced : 0} {isBn ? 'বার' : 'times'}</strong></span>
+                                    {stat && stat.times_practiced > 0 && (
+                                      <>
+                                        <span>•</span>
+                                        <span className="text-emerald-400">{isBn ? 'সঠিক উত্তর:' : 'Correct:'} <strong className="font-bold">{stat.correct_count} ({stat.success_rate}%)</strong></span>
+                                        <span>•</span>
+                                        <span className="text-rose-400">{isBn ? 'ভুল উত্তর:' : 'Mistakes:'} <strong className="font-bold">{stat.mistake_count} ({stat.failure_rate}%)</strong></span>
+                                        <span>•</span>
+                                        <span className="text-cyan-400">{isBn ? 'গড় সময়:' : 'Avg Time:'} <strong className="font-bold">{stat.avg_time_per_question}s</strong></span>
+                                      </>
+                                    )}
+                                  </div>
+                                </div>
+
+                                {onStartExam && (
+                                  <button
+                                    onClick={() => onStartExam(item.unit, item.lesson)}
+                                    className="px-3 py-1.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-300 font-bold text-xs flex items-center justify-center gap-1.5 transition-colors active:scale-95 cursor-pointer shrink-0"
+                                  >
+                                    <span>{isBn ? 'শব্দটি প্র্যাকটিস করুন' : 'Practice Word'}</span>
+                                    <ArrowRight size={12} />
+                                  </button>
+                                )}
                               </div>
                             </motion.div>
                           </td>

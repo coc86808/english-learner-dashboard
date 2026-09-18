@@ -68,6 +68,7 @@ import CertificatesPage from './components/pages/CertificatesPage';
 import NotesPage from './components/pages/NotesPage';
 import SettingsPage from './components/pages/SettingsPage';
 import AboutPage from './components/pages/AboutPage';
+import TermsPage from './components/pages/TermsPage';
 import QuickNoteFAB from './components/pages/QuickNoteFAB';
 
 // Data Layers
@@ -93,6 +94,7 @@ export const ROUTES = {
   // Public
   LANDING: '/',
   ABOUT: '/about',
+  TERMS: '/terms',
   AUTH: '/auth',
 
   // Student Zone
@@ -359,8 +361,8 @@ export default function App() {
   const navigate = useCallback((toPath, replace = false) => {
     const target = normalizePath(toPath);
 
-    // Guard 1: Public Routes (/ and /about and /auth)
-    const isPublic = target === '/' || target === '/about' || target === '/auth';
+    // Guard 1: Public Routes (/ and /about and /terms and /auth)
+    const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/auth';
 
     // Guard 2: Unauthenticated User attempting Protected Route
     if (!currentUser && !isPublic) {
@@ -399,7 +401,7 @@ export default function App() {
   useEffect(() => {
     const handlePopState = () => {
       const target = normalizePath(window.location.pathname);
-      const isPublic = target === '/' || target === '/about' || target === '/auth';
+      const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/auth';
 
       if (!currentUser && !isPublic) {
         setIsAuthOpen(true);
@@ -852,6 +854,17 @@ export default function App() {
           {currentPath === '/about' && (
             <div className="max-w-6xl mx-auto space-y-6">
               <AboutPage
+                lang={lang}
+                onNavigate={navigate}
+                currentUser={currentUser}
+              />
+            </div>
+          )}
+
+          {/* Route: /terms */}
+          {currentPath === '/terms' && (
+            <div className="max-w-6xl mx-auto space-y-6">
+              <TermsPage
                 lang={lang}
                 onNavigate={navigate}
                 currentUser={currentUser}

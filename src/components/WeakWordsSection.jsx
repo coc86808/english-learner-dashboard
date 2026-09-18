@@ -16,6 +16,7 @@ import {
 import { generateWeakWordsPDF } from '../utils/pdfGenerator';
 import { hscVocabularyList } from '../data/questions/hscQuestionsData';
 import FlashcardPrintModal from './FlashcardPrintModal';
+import { fetchUserWordStatsFromPostgres } from '../services/supabase';
 
 export default function WeakWordsSection({ 
   weakWords = [], 
@@ -110,6 +111,42 @@ export default function WeakWordsSection({
       (item.antonyms && item.antonyms.toLowerCase().includes(q))
     );
   });
+
+  // PostgreSQL Word Practice Stats State
+  const [wordStatsMap, setWordStatsMap] = useState(() => {
+    try {
+      const cached = localStorage.getItem('hsc_word_practice_stats');
+      return cached ? JSON.parse(cached) : {};
+    } catch (e) {
+      return {};
+    }
+  });
+
+  useEffect(() => {
+    let isMounted = true;
+    const email = currentUser?.email || studentInfo?.email;
+    fetchUserWordStatsFromPostgres(email).then((stats) => {
+      if (isMounted && stats) {
+        setWordStatsMap(stats);
+      }
+    });
+
+    const handleStatsUpdate = (event) => {
+      const updated = event.detail;
+      if (updated && updated.word) {
+        setWordStatsMap((prev) => ({
+          ...prev,
+          [updated.word.toLowerCase()]: updated
+        }));
+      }
+    };
+
+    window.addEventListener('hsc_word_stats_updated', handleStatsUpdate);
+    return () => {
+      isMounted = false;
+      window.removeEventListener('hsc_word_stats_updated', handleStatsUpdate);
+    };
+  }, [currentUser?.email, studentInfo?.email]);
 
   const handleSpeak = (text) => {
     if ('speechSynthesis' in window) {
@@ -240,11 +277,14 @@ export default function WeakWordsSection({
                   <th className="py-3.5 px-4">{isBn ? 'বাংলা অর্থ (Meaning)' : 'Meaning (Bangla)'}</th>
                   <th className="py-3.5 px-4">{isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms'}</th>
                   <th className="py-3.5 px-4">{isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms'}</th>
+                  <th className="py-3.5 px-4">{isBn ? 'অনুশীলন ও ফলাফল' : 'Practice & Stats'}</th>
                   <th className="py-3.5 px-3 text-center">{isBn ? 'অ্যাকশন' : 'Action'}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#172030]">
-                {filteredWords.map((item, index) => (
+                {filteredWords.map((item, index) => {
+                  const stat = wordStatsMap[(item.word || '').toLowerCase().trim()];
+                  return (
                   <tr 
                     key={item.id || index}
                     className="hover:bg-[#151b28] transition-colors group"
@@ -283,6 +323,31 @@ export default function WeakWordsSection({
                       {item.antonyms || '-'}
                     </td>
 
+                    {/* Practice & Performance Stats */}
+                    <td className="py-3 px-4 whitespace-nowrap">
+                      {stat && stat.times_practiced > 0 ? (
+                        <div className="space-y-1">
+                          <div className="flex items-center gap-1.5 text-xs font-semibold">
+                            <span className="text-amber-400">🎯 {stat.times_practiced}x</span>
+                            <span className="text-slate-500">•</span>
+                            <span className="text-emerald-400">📈 {stat.success_rate}%</span>
+                            <span className="text-slate-500">•</span>
+                            <span className="text-rose-400">📉 {stat.failure_rate}%</span>
+                          </div>
+                          <div className="flex items-center gap-1.5 text-[10px] text-slate-400">
+                            <span>⏱️ {stat.avg_time_per_question}s {isBn ? 'গড়' : 'avg'}</span>
+                            <span className="px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 font-semibold border border-rose-500/30">
+                              {stat.mistake_count} {isBn ? 'ভুল' : 'misses'}
+                            </span>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="text-slate-500 text-xs italic">
+                          {isBn ? 'অনুশীলন বাকি' : 'Pending practice'}
+                        </div>
+                      )}
+                    </td>
+
                     {/* Action (Remove / Mark Mastered) */}
                     <td className="py-3 px-3 text-center whitespace-nowrap">
                       {onRemoveWeakWord && (
@@ -296,7 +361,8 @@ export default function WeakWordsSection({
                       )}
                     </td>
                   </tr>
-                ))}
+                );
+              })}
               </tbody>
             </table>
           </div>

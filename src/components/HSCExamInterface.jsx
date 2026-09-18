@@ -33,6 +33,7 @@ import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
 import { smartInterleaveQuestions, hscVocabularyList, getWordUnitSources } from '../data/questions/hscQuestionsData';
 import { recordCompletedExam, syncLearningStateToCloudDebounced, awardWeakWordMasteryXP } from '../services/scoreManager';
+import { recordWordPracticeToPostgres } from '../services/supabase';
 
 export default function HSCExamInterface({
   questions = [],
@@ -100,6 +101,7 @@ export default function HSCExamInterface({
     return savedSessionNotice?.timerSeconds || 0;
   });
   const [isTimerRunning, setIsTimerRunning] = useState(true);
+  const questionStartTimeRef = useRef(Date.now());
 
   // Timer Tick Effect
   useEffect(() => {
@@ -113,6 +115,11 @@ export default function HSCExamInterface({
       if (interval) clearInterval(interval);
     };
   }, [isTimerRunning, activeQueue.length, queueIndex]);
+
+  // Reset per-question timer when question changes
+  useEffect(() => {
+    questionStartTimeRef.current = Date.now();
+  }, [queueIndex]);
 
   const formatTimer = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -296,6 +303,10 @@ export default function HSCExamInterface({
    */
   const processAnswer = (isCorrect, isNotSure, usedHint = false) => {
     if (!currentQ) return;
+    const now = Date.now();
+    const timeSpentSeconds = Math.max(1, Math.round((now - (questionStartTimeRef.current || now)) / 1000));
+    questionStartTimeRef.current = Date.now();
+
     const qId = currentQ.id;
     const prevStat = questionStats[qId] || {
       consecutiveCorrect: 0,
@@ -427,7 +438,18 @@ export default function HSCExamInterface({
           const authUser = authUserRaw ? JSON.parse(authUserRaw) : null;
           const uId = authUser?.id || authUser?.uid || 'usr-local-guest';
           syncLearningStateToCloudDebounced(uId);
-        } catch (e) {}
+
+          // PostgreSQL Real-Time Word Practice Analytics (times practiced, success/failure rate, time spent)
+          const userEmail = authUser?.email || studentInfo?.email || 'tanvir.hsc26@gmail.com';
+          recordWordPracticeToPostgres({
+            userEmail,
+            word: wordKey,
+            isCorrect,
+            timeSpentSeconds
+          });
+        } catch (e) {
+          console.warn('Word practice tracking error:', e);
+        }
       } catch (err) {
         console.warn('Word performance tracking error:', err);
       }

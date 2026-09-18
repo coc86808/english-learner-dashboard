@@ -198,3 +198,199 @@ export async function recordExamResultToPostgres(result) {
     return null;
   }
 }
+
+/**
+ * 6. Record Word Practice Event to PostgreSQL (word_practice_stats table)
+ * Tracks:
+ * - times_practiced: total attempts on this word
+ * - correct_count: total correct answers
+ * - mistake_count: total incorrect answers
+ * - success_rate: (correct_count / times_practiced) * 100
+ * - failure_rate: (mistake_count / times_practiced) * 100
+ * - time_spent_seconds: total seconds spent on this word
+ * - avg_time_per_question: average seconds per attempt
+ * - consecutive_correct: current streak of right answers
+ * - status: 'mastered' (>= 5 consecutive right), 'weak' (>= 3 mistakes), or 'learning'
+ */
+export async function recordWordPracticeToPostgres({ userEmail, word, isCorrect, timeSpentSeconds = 5 }) {
+  const cleanWord = (word || '').trim();
+  if (!cleanWord) return null;
+
+  // Resolve user email
+  let cleanEmail = (userEmail || '').toLowerCase().trim();
+  if (!cleanEmail) {
+    try {
+      const authUserRaw = localStorage.getItem('hsc_auth_user');
+      const authUser = authUserRaw ? JSON.parse(authUserRaw) : null;
+      cleanEmail = (authUser?.email || 'guest@hsc2026.com').toLowerCase().trim();
+    } catch (e) {
+      cleanEmail = 'guest@hsc2026.com';
+    }
+  }
+
+  const durationSec = Math.max(1, Number(timeSpentSeconds) || 5);
+
+  // 1. Maintain local instant cache so UI updates with 0 latency
+  let localStats = {};
+  try {
+    const raw = localStorage.getItem('hsc_word_practice_stats');
+    if (raw) localStats = JSON.parse(raw);
+  } catch (e) {}
+
+  const prev = localStats[cleanWord.toLowerCase()] || {
+    times_practiced: 0,
+    correct_count: 0,
+    mistake_count: 0,
+    time_spent_seconds: 0,
+    consecutive_correct: 0,
+    status: 'learning'
+  };
+
+  const timesPracticed = Number(prev.times_practiced || 0) + 1;
+  const correctCount = Number(prev.correct_count || 0) + (isCorrect ? 1 : 0);
+  const mistakeCount = Number(prev.mistake_count || 0) + (isCorrect ? 0 : 1);
+  const totalTime = Number(prev.time_spent_seconds || 0) + durationSec;
+  const successRate = Number(((correctCount / timesPracticed) * 100).toFixed(2));
+  const failureRate = Number(((mistakeCount / timesPracticed) * 100).toFixed(2));
+  const avgTime = Number((totalTime / timesPracticed).toFixed(2));
+  const consecutiveCorrect = isCorrect ? (Number(prev.consecutive_correct || 0) + 1) : 0;
+
+  let newStatus = prev.status || 'learning';
+  if (consecutiveCorrect >= 5) {
+    newStatus = 'mastered';
+  } else if (mistakeCount >= 3) {
+    newStatus = 'weak';
+  } else {
+    newStatus = 'learning';
+  }
+
+  const updatedRecord = {
+    user_email: cleanEmail,
+    word: cleanWord,
+    times_practiced: timesPracticed,
+    correct_count: correctCount,
+    mistake_count: mistakeCount,
+    success_rate: successRate,
+    failure_rate: failureRate,
+    time_spent_seconds: totalTime,
+    avg_time_per_question: avgTime,
+    consecutive_correct: consecutiveCorrect,
+    status: newStatus,
+    last_result: isCorrect ? 'correct' : 'mistake',
+    last_practiced_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  };
+
+  localStats[cleanWord.toLowerCase()] = updatedRecord;
+  try {
+    localStorage.setItem('hsc_word_practice_stats', JSON.stringify(localStats));
+    window.dispatchEvent(new CustomEvent('hsc_word_stats_updated', { detail: updatedRecord }));
+  } catch (e) {}
+
+  // 2. Persist to PostgreSQL if Supabase is connected
+  if (!supabase) return updatedRecord;
+
+  try {
+    const { data, error } = await supabase
+      .from('word_practice_stats')
+      .upsert(updatedRecord, { onConflict: 'user_email,word' })
+      .select()
+      .single();
+
+    if (error) {
+      console.warn('Postgres word practice upsert error:', error.message);
+      return updatedRecord;
+    }
+    return data;
+  } catch (err) {
+    console.warn('recordWordPracticeToPostgres network error:', err);
+    return updatedRecord;
+  }
+}
+
+/**
+ * 7. Fetch all word practice statistics for a user from PostgreSQL
+ */
+export async function fetchUserWordStatsFromPostgres(userEmail) {
+  let cleanEmail = (userEmail || '').toLowerCase().trim();
+  if (!cleanEmail) {
+    try {
+      const authUserRaw = localStorage.getItem('hsc_auth_user');
+      const authUser = authUserRaw ? JSON.parse(authUserRaw) : null;
+      cleanEmail = (authUser?.email || '').toLowerCase().trim();
+    } catch (e) {}
+  }
+
+  // Load from local storage cache first for instant UI response
+  let cached = {};
+  try {
+    const raw = localStorage.getItem('hsc_word_practice_stats');
+    if (raw) cached = JSON.parse(raw);
+  } catch (e) {}
+
+  if (!supabase || !cleanEmail) return cached;
+
+  try {
+    const { data, error } = await supabase
+      .from('word_practice_stats')
+      .select('*')
+      .eq('user_email', cleanEmail);
+
+    if (error) {
+      console.warn('fetchUserWordStatsFromPostgres error:', error.message);
+      return cached;
+    }
+
+    if (Array.isArray(data)) {
+      const statsMap = { ...cached };
+      data.forEach((row) => {
+        if (row && row.word) {
+          statsMap[row.word.toLowerCase()] = row;
+        }
+      });
+      try {
+        localStorage.setItem('hsc_word_practice_stats', JSON.stringify(statsMap));
+      } catch (e) {}
+      return statsMap;
+    }
+    return cached;
+  } catch (err) {
+    console.warn('fetchUserWordStatsFromPostgres exception:', err);
+    return cached;
+  }
+}
+
+/**
+ * 8. Fetch Vocabulary bank from PostgreSQL with optional search or unit filter
+ */
+export async function fetchVocabularyFromPostgres({ unit, search, limit = 1500 } = {}) {
+  if (!supabase) return null;
+  try {
+    let query = supabase
+      .from('vocabulary')
+      .select('*')
+      .order('priority', { ascending: false })
+      .order('word', { ascending: true });
+
+    if (unit && unit !== 'all') {
+      query = query.eq('unit', unit);
+    }
+    if (search && search.trim()) {
+      query = query.ilike('word', `%${search.trim()}%`);
+    }
+    if (limit) {
+      query = query.limit(limit);
+    }
+
+    const { data, error } = await query;
+    if (error) {
+      console.warn('fetchVocabularyFromPostgres error:', error.message);
+      return null;
+    }
+    return data || [];
+  } catch (err) {
+    console.warn('fetchVocabularyFromPostgres exception:', err);
+    return null;
+  }
+}
+
