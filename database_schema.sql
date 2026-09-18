@@ -15,12 +15,14 @@ CREATE TABLE IF NOT EXISTS public.profiles (
     total_xp INTEGER DEFAULT 0,
     accuracy INTEGER DEFAULT 0,
     questions_solved INTEGER DEFAULT 0,
+    league TEXT DEFAULT 'Bronze',
     created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
 
 -- Index for instant leaderboard sorting
 CREATE INDEX IF NOT EXISTS idx_profiles_total_xp ON public.profiles(total_xp DESC);
+CREATE INDEX IF NOT EXISTS idx_profiles_league ON public.profiles(league);
 CREATE INDEX IF NOT EXISTS idx_profiles_email ON public.profiles(email);
 
 -- 2. Create Weak Words Table (Automatic 3-mistakes threshold & 5-correct mastery)

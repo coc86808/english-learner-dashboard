@@ -20,6 +20,7 @@ import {
   ExternalLink,
   BookOpen
 } from 'lucide-react';
+import { getUserLeague } from '../services/scoreManager';
 
 export default function Header({
   activeTabTitle = 'Dashboard',
@@ -46,6 +47,7 @@ export default function Header({
   const searchInputRef = useRef(null);
 
   const isBn = lang === 'bn';
+  const userLeague = getUserLeague(Number(currentUser?.points || currentUser?.xp || 0));
 
   // Breadcrumb generator based on current route
   const getBreadcrumbs = () => {
@@ -225,6 +227,18 @@ export default function Header({
           <span className="hidden sm:inline text-[10px] text-orange-400/80 font-normal">
             {isBn ? 'দিন' : 'd'}
           </span>
+        </button>
+
+        {/* Active League Division Badge */}
+        <button
+          onClick={() => {
+            if (typeof navigate === 'function') navigate('/leaderboard');
+          }}
+          className="flex items-center gap-1.5 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-[#141b2c] border border-amber-500/30 hover:border-amber-400/60 text-amber-300 font-black text-xs shadow-sm hover:scale-105 transition-all cursor-pointer"
+          title={isBn ? `বর্তমান লীগ: ${userLeague.nameBn}` : `Current League: ${userLeague.name} League`}
+        >
+          <span className="text-xs sm:text-sm">{userLeague.icon}</span>
+          <span className="hidden sm:inline text-[11px] font-extrabold">{userLeague.name}</span>
         </button>
 
         {/* Language Switcher Button */}

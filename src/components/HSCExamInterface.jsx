@@ -32,7 +32,7 @@ import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
 import { smartInterleaveQuestions, hscVocabularyList, getWordUnitSources } from '../data/questions/hscQuestionsData';
-import { recordCompletedExam, syncLearningStateToCloudDebounced } from '../services/scoreManager';
+import { recordCompletedExam, syncLearningStateToCloudDebounced, awardWeakWordMasteryXP } from '../services/scoreManager';
 
 export default function HSCExamInterface({
   questions = [],
@@ -366,14 +366,15 @@ export default function HSCExamInterface({
             if (wasWeak) {
               const updatedWeak = currentWeakList.filter((w) => w && w.word?.toLowerCase() !== wordKey.toLowerCase());
               localStorage.setItem('hsc_weak_words', JSON.stringify(updatedWeak));
+              awardWeakWordMasteryXP(wordKey);
               window.dispatchEvent(new CustomEvent('hsc_weak_words_updated', { detail: { word: wordKey, action: 'removed' } }));
 
               setWeakWordToast({
                 type: 'mastered',
                 word: wordKey,
                 message: isBn
-                  ? `🎉 "${wordKey}" ৫ বার সঠিক উত্তর দেওয়ায় দুর্বল তালিকা থেকে সফলভাবে উত্তীর্ণ (Mastered) হয়েছে!`
-                  : `🎉 "${wordKey}" answered correctly 5 times & recovered from Weak Words list!`
+                  ? `🎉 "${wordKey}" ৫ বার সঠিক উত্তর দেওয়ায় মাস্টার হয়েছে (+১০০ XP)!`
+                  : `🎉 "${wordKey}" answered correctly 5 times & recovered from Weak Words (+100 XP)!`
               });
               setTimeout(() => setWeakWordToast(null), 4500);
             }

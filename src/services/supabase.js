@@ -33,6 +33,15 @@ export function setSupabaseAnonKey(anonKey) {
 export async function syncUserProfileToPostgres(user) {
   if (!supabase || !user?.email) return null;
   try {
+    const totalXP = Number(user.points || user.xp || user.total_xp || 0);
+    const computedLeague = user.league || (
+      totalXP >= 8000 ? 'Master / Champion' :
+      totalXP >= 5000 ? 'Diamond' :
+      totalXP >= 3000 ? 'Platinum' :
+      totalXP >= 1500 ? 'Gold' :
+      totalXP >= 500 ? 'Silver' : 'Bronze'
+    );
+
     const payload = {
       email: user.email.toLowerCase().trim(),
       name: user.name || 'HSC Examinee',
@@ -40,9 +49,10 @@ export async function syncUserProfileToPostgres(user) {
       hsc_batch: user.hscBatch || user.batch || 'HSC 2026',
       role: user.role || 'student',
       streak: Number(user.streak || 0),
-      total_xp: Number(user.points || user.xp || 0),
+      total_xp: totalXP,
       accuracy: Number(user.accuracy || 0),
       questions_solved: Number(user.testsCompleted || user.questionsSolved || 0),
+      league: computedLeague,
       updated_at: new Date().toISOString()
     };
 
@@ -66,14 +76,19 @@ export async function syncUserProfileToPostgres(user) {
 /**
  * 2. Fetch Leaderboard from PostgreSQL with instant server-side ordering
  */
-export async function fetchPostgresLeaderboard(limit = 50) {
+export async function fetchPostgresLeaderboard(limit = 100, league = null) {
   if (!supabase) return null;
   try {
-    const { data, error } = await supabase
+    let query = supabase
       .from('profiles')
-      .select('id, name, email, college, hsc_batch, streak, total_xp, accuracy, questions_solved')
-      .order('total_xp', { ascending: false })
-      .limit(limit);
+      .select('id, name, email, college, hsc_batch, streak, total_xp, accuracy, questions_solved, league')
+      .order('total_xp', { ascending: false });
+
+    if (league && league !== 'all') {
+      query = query.eq('league', league);
+    }
+
+    const { data, error } = await query.limit(limit);
 
     if (error) {
       console.warn('Postgres fetch leaderboard error:', error.message);

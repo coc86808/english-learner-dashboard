@@ -24,6 +24,7 @@ import {
   Sparkles,
   BookMarked
 } from 'lucide-react';
+import { getUserLeague } from '../services/scoreManager';
 
 export default function Sidebar({
   activeTab,
@@ -40,6 +41,7 @@ export default function Sidebar({
   weakWordsCount = 0
 }) {
   const isBn = lang === 'bn';
+  const userLeague = getUserLeague(Number(currentUser?.points || currentUser?.xp || 0));
 
   // Navigation handler supporting both path and tab id
   const handleNav = (path, tabId) => {
@@ -149,11 +151,11 @@ export default function Sidebar({
         {
           path: '/leaderboard',
           tabId: 'leaderboard',
-          labelEn: 'Leaderboard',
-          labelBn: 'লিডারবোর্ড',
+          labelEn: 'Leagues & Ranks',
+          labelBn: 'লীগ ও র‍্যাঙ্কিং',
           icon: Trophy,
-          badge: 'TOP 5%',
-          badgeColor: 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/30'
+          badge: `${userLeague.icon} ${userLeague.name}`,
+          badgeColor: 'bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold'
         }
       ]
     },
