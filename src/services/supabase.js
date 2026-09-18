@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
 // Project Configuration
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://rxlvwdioskvwypyhifbt.supabase.co';
 const DEFAULT_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4bHZ3ZGlvc2t2d3lweWhpZmJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk3NTA5MjksImV4cCI6MjEwNTMyNjkyOX0.dCSw834biSsYsb4p-wqbX0xxlHuP62htpYIT9bVydD0';
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || (typeof window !== 'undefined' ? localStorage.getItem('hsc_supabase_anon_key') : '') || DEFAULT_ANON_KEY;
 
