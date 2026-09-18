@@ -4,7 +4,7 @@
  * exam history persistence, and Firestore cloud synchronization.
  */
 
-import { saveUserToFirestore, saveExamResultToFirestore } from './firebase';
+import { saveUserToFirestore, saveExamResultToFirestore, saveLearningStateToFirestore } from './firebase';
 import { syncUserProfileToPostgres, recordExamResultToPostgres } from './supabase';
 
 /**
@@ -438,7 +438,6 @@ export function syncLearningStateToCloudDebounced(userId) {
 
   syncTimeout = setTimeout(async () => {
     try {
-      const { saveLearningStateToFirestore } = await import('./firebase');
       const rawPerf = localStorage.getItem('hsc_word_performance');
       const rawWeak = localStorage.getItem('hsc_weak_words');
       const rawHist = localStorage.getItem('hsc_exam_history');
