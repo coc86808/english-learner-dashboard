@@ -422,95 +422,16 @@ export default function TextbookPage({
             })}
           </div>
         </div>
-      </div>
 
-      {/* Top Header & Breadcrumbs Card */}
-      <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-5 sm:p-7 shadow-card space-y-5">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-2 text-emerald-400 text-xs font-bold bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
-              <BookOpen size={14} />
-              <span>{isBn ? 'এনসিটিবি এইচএসসি পাঠ্যবই রিডার' : 'NCTB HSC English Textbook Reader'}</span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-3">
-              <span>{currentTextbook.title}</span>
-              <span className="text-emerald-400 font-bold text-lg sm:text-2xl font-bengali">
-                ({currentTextbook.titleBn})
-              </span>
-            </h1>
-            <p className="text-xs sm:text-sm text-slate-400">
-              {currentTextbook.unitTitle} • {currentTextbook.lessonNumber} • Author:{' '}
-              <span className="text-slate-200 font-semibold">{currentTextbook.author}</span>
-            </p>
-          </div>
-
-          {/* Quick Actions Bar */}
-          <div className="flex flex-wrap items-center gap-2.5">
-            {/* Font Size Adjuster */}
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#162033] border border-[#2b3b59]">
-              <Type size={14} className="text-emerald-400" />
-              <span className="text-xs text-slate-300 font-bold">{isBn ? 'ফন্ট সাইজ:' : 'Font Size:'}</span>
-              <div className="flex items-center gap-1 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5 ml-1">
-                {[
-                  { label: 'A-', val: 'text-sm' },
-                  { label: 'A', val: 'text-base' },
-                  { label: 'A+', val: 'text-lg' },
-                  { label: 'A++', val: 'text-xl' }
-                ].map((f) => (
-                  <button
-                    key={f.val}
-                    onClick={() => setFontSize(f.val)}
-                    className={`px-2 py-1 rounded text-xs font-bold transition-all cursor-pointer ${
-                      fontSize === f.val
-                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black shadow-sm'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-[#1b253b]'
-                    }`}
-                  >
-                    {f.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Translation Toggle */}
-            <button
-              onClick={() => setShowTranslations(!showTranslations)}
-              className={`px-3.5 py-2.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
-                showTranslations
-                  ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
-                  : 'bg-[#162033] border-[#2b3b59] text-slate-400 hover:text-white'
-              }`}
-            >
-              <Languages size={15} />
-              <span>{isBn ? (showTranslations ? 'অনুবাদ চালু' : 'অনুবাদ বন্ধ') : (showTranslations ? 'BN Meaning On' : 'BN Meaning Off')}</span>
-            </button>
-
-            {/* Launch Exam CTA */}
-            <button
-              onClick={() => {
-                if (onStartExam) {
-                  onStartExam(activeUnitId, activeLessonId);
-                } else if (onNavigate) {
-                  onNavigate('/exam');
-                }
-              }}
-              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold flex items-center gap-2 shadow-lg shadow-emerald-950/60 active:scale-95 transition-all cursor-pointer"
-            >
-              <Play size={14} className="fill-current" />
-              <span>{isBn ? 'এই লেসনের পরীক্ষা শুরু করুন' : 'Launch Practice Exam'}</span>
-            </button>
-          </div>
-        </div>
-
-        {/* TTS Toolbar & Reading Controls */}
-        <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#1e293b]/70 text-xs text-slate-300">
+        {/* Reader Controls Toolbar: Audio, Font Size, Translation & Exam */}
+        <div className="pt-3 border-t border-[#1a2335] flex flex-wrap items-center justify-between gap-3 text-xs">
+          {/* Audio Narration Controls */}
           <div className="flex items-center gap-2 flex-wrap">
             <span className="font-semibold text-slate-400 flex items-center gap-1.5">
               <Volume2 size={15} className="text-cyan-400" />
               <span>{isBn ? 'অডিও রিডার (TTS):' : 'Audio Narration:'}</span>
             </span>
 
-            {/* Full Story Play/Pause */}
             {!isPlayingTTS ? (
               <button
                 onClick={() => {
@@ -542,7 +463,7 @@ export default function TextbookPage({
             )}
 
             {/* Speed Selector */}
-            <div className="flex items-center gap-1 ml-2 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5">
+            <div className="flex items-center gap-1 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5">
               {[0.85, 1.0, 1.25, 1.5].map((speed) => (
                 <button
                   key={speed}
@@ -563,6 +484,63 @@ export default function TextbookPage({
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Right Controls: Font Size, Translation & Exam CTA */}
+          <div className="flex flex-wrap items-center gap-2">
+            {/* Font Size Adjuster */}
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#162033] border border-[#2b3b59]">
+              <Type size={14} className="text-emerald-400" />
+              <span className="text-xs text-slate-300 font-bold">{isBn ? 'ফন্ট:' : 'Font:'}</span>
+              <div className="flex items-center gap-1 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5">
+                {[
+                  { label: 'A-', val: 'text-sm' },
+                  { label: 'A', val: 'text-base' },
+                  { label: 'A+', val: 'text-lg' },
+                  { label: 'A++', val: 'text-xl' }
+                ].map((f) => (
+                  <button
+                    key={f.val}
+                    onClick={() => setFontSize(f.val)}
+                    className={`px-2 py-0.5 rounded text-xs font-bold transition-all cursor-pointer ${
+                      fontSize === f.val
+                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black shadow-sm'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-[#1b253b]'
+                    }`}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Translation Toggle */}
+            <button
+              onClick={() => setShowTranslations(!showTranslations)}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
+                showTranslations
+                  ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
+                  : 'bg-[#162033] border-[#2b3b59] text-slate-400 hover:text-white'
+              }`}
+            >
+              <Languages size={14} />
+              <span>{isBn ? (showTranslations ? 'অনুবাদ চালু' : 'অনুবাদ বন্ধ') : (showTranslations ? 'BN Meaning On' : 'BN Meaning Off')}</span>
+            </button>
+
+            {/* Launch Exam CTA */}
+            <button
+              onClick={() => {
+                if (onStartExam) {
+                  onStartExam(activeUnitId, activeLessonId);
+                } else if (onNavigate) {
+                  onNavigate('/exam');
+                }
+              }}
+              className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold flex items-center gap-1.5 shadow-md shadow-emerald-950/60 active:scale-95 transition-all cursor-pointer"
+            >
+              <Play size={13} className="fill-current" />
+              <span>{isBn ? 'পরীক্ষা শুরু' : 'Launch Exam'}</span>
+            </button>
           </div>
         </div>
       </div>
