@@ -68,4 +68,25 @@ Whenever the user uploads or provides vocabulary (via photo or text):
 2. **Automated Production Deployment Sync**:
    - Whenever changes are completed and verified via `npm run build`, push the commits to GitHub (`git push origin main`) so Vercel automatically deploys the latest version to the live URL.
 
+## 8. Cyber-Academic Command Design System (`DESIGN.md`)
+All frontend UI development, component architecture, styling, and page redesigns MUST strictly adhere to the design tokens and specifications in `DESIGN.md`:
+1. **Surface Luminance & Hierarchy**:
+   - Canvas Base: `#0c0f17` / `#0a0d14`
+   - Container Cards & Arenas: `#111723` / `#141824` with `1px solid #1f2738` hairline borders
+   - Elevated Surfaces & Flyouts: `#181e2e` with `backdrop-filter: blur(16px)`
+2. **Interactive & Accent Channels**:
+   - Primary Emerald (`#00c569` / `#10b981`): Verification, success milestones, active nav.
+   - Action Cobalt (`#2563eb`): Primary transactional command anchors.
+   - Milestone Amber (`#f59e0b` / `#fbbf24`): Streaks, Spaced Repetition attention badges.
+   - Telemetry Cyan (`#06b6d4` / `#22d3ee`): Curriculum unit tags and textbook reader navigation.
+   - Error Crimson (`#ef4444` / `#f43f5e`): Mistake feedback, weak word tags.
+3. **Typography & Tabular Rigor**:
+   - Clean neo-grotesque (Inter) paired with Hind Siliguri for Bengali text.
+   - All live countdown timers, question counters (`Q01` - `Q46`), and XP metrics must enforce tabular figures (`tnum`).
+4. **Component State Standards**:
+   - MCQ Options: Neutral dark card -> Selected correct with emerald flood (`rgba(6, 78, 59, 0.9)`) and `0 0 25px rgba(16, 185, 129, 0.35)` glow -> Incorrect with rose flood (`rgba(136, 19, 55, 0.9)`).
+   - 3D Flashcards: Container `perspective: 1200px` with dual-face flip and SM-2 spaced repetition response bar.
+   - Official Logo: Always use `/logo.png`.
+
+
 
