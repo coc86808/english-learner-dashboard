@@ -160,38 +160,6 @@ export default function ActionCards({
           );
         })}
       </div>
-
-      {/* Quick 1-Line Textbook Reader Banner for Mobile & Desktop */}
-      <button
-        onClick={() => {
-          if (onOpenTextbook) onOpenTextbook();
-          else if (onNavigate) onNavigate('/textbook');
-        }}
-        className="w-full p-2.5 sm:p-3 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-[#111723] to-[#0f172a] border border-emerald-500/30 hover:border-emerald-400/60 transition-all flex items-center justify-between gap-3 text-left cursor-pointer group shadow-sm active:scale-[0.99]"
-      >
-        <div className="flex items-center gap-2.5 min-w-0">
-          <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">
-            <BookOpen size={16} />
-          </div>
-          <div className="min-w-0">
-            <div className="flex items-center gap-2">
-              <span className="text-xs sm:text-sm font-black text-white group-hover:text-emerald-300 transition-colors truncate">
-                {isBn ? 'এনসিটিবি পাঠ্যবই রিডার (Units 1-14)' : 'NCTB Interactive Textbook Reader'}
-              </span>
-              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">
-                {isBn ? '১৪টি ইউনিট' : '14 Units'}
-              </span>
-            </div>
-            <p className="text-[10px] sm:text-xs text-slate-400 truncate">
-              {isBn ? 'শব্দার্থ ও বাংলা অনুবাদসহ মূল পাঠ্যবই পড়ুন' : 'Read original passages with bilingual vocabulary'}
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-1 text-emerald-400 text-xs font-bold shrink-0">
-          <span className="hidden xs:inline">{isBn ? 'পড়ুন' : 'Read'}</span>
-          <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
-        </div>
-      </button>
     </div>
   );
 }
