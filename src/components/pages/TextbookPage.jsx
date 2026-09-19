@@ -7,6 +7,7 @@ import {
   Play,
   Pause,
   RotateCcw,
+  Square,
   Sparkles,
   ChevronRight,
   ChevronDown,
@@ -167,6 +168,13 @@ export default function TextbookPage({
   // Text-to-Speech Engine Handlers
   const handlePlayTTS = (text, sectionIndex = null) => {
     if (!synthRef.current) return;
+
+    // Toggle logic: If currently playing this exact section or full story, clicking again stops it!
+    if ((isPlayingTTS || isPausedTTS) && currentReadingSection === sectionIndex) {
+      handleStopTTS();
+      return;
+    }
+
     synthRef.current.cancel();
 
     const cleanText = text.replace(/[*_#]/g, '');
@@ -587,7 +595,7 @@ export default function TextbookPage({
       {/* Main Passage Paragraphs Stream */}
       <div className="space-y-6">
         {textbookSections.map((sec, idx) => {
-          const isThisReading = currentReadingSection === idx;
+          const isThisReading = isPlayingTTS && currentReadingSection === idx;
           return (
             <motion.div
               key={sec.paraNumber}
@@ -624,14 +632,18 @@ export default function TextbookPage({
                   )}
                   <button
                     onClick={() => handlePlayTTS(sec.content, idx)}
-                    title="Listen to this section"
-                    className={`p-2 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                    title={isThisReading ? (isBn ? 'পড়া বন্ধ করতে ক্লিক করুন' : 'Click to stop reading') : (isBn ? 'এই অনুচ্ছেদ শুনুন' : 'Listen to this section')}
+                    className={`p-2 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all cursor-pointer active:scale-95 ${
                       isThisReading
-                        ? 'bg-cyan-500 text-slate-950 font-bold border-cyan-400'
+                        ? 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold border-cyan-400 shadow-md shadow-cyan-950/50'
                         : 'bg-[#162033] hover:bg-emerald-500/20 text-slate-300 hover:text-emerald-300 border-[#26354d]'
                     }`}
                   >
-                    <Volume2 size={15} />
+                    {isThisReading ? (
+                      <Square size={13} className="fill-current text-slate-950 animate-pulse" />
+                    ) : (
+                      <Volume2 size={15} />
+                    )}
                     <span className="text-[11px] hidden sm:inline">
                       {isThisReading ? (isBn ? 'পড়ছে...' : 'Reading...') : (isBn ? 'শুনুন' : 'Listen')}
                     </span>
