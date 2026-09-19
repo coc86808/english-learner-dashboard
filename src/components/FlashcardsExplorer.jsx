@@ -447,8 +447,8 @@ export default function FlashcardsExplorer({
                     </span>
                   ))}
                   {currentCard.isCrossReferenced && (
-                    <span className="text-[10px] font-black text-rose-300 bg-rose-500/20 px-2.5 py-1 rounded-full border border-rose-500/50 shadow-sm flex items-center gap-1 animate-pulse">
-                      🔥 {isBn ? 'রেড মার্ক' : 'Red Mark'}
+                    <span className="text-[10px] font-black text-amber-300 bg-amber-500/20 px-2.5 py-1 rounded-full border border-amber-500/50 shadow-sm flex items-center gap-1">
+                      ⭐ {isBn ? 'গুরুত্বপূর্ণ শব্দ' : 'Important Word'}
                     </span>
                   )}
                 </div>
@@ -647,10 +647,10 @@ export default function FlashcardsExplorer({
                   </div>
                 )}
 
-                {/* Task 2: Red Mark Inter-Unit Cross-Reference Note */}
+                {/* Important Words Inter-Unit Cross-Reference Note */}
                 {currentCard.isCrossReferenced && currentCard.crossReferencedWords && currentCard.crossReferencedWords.length > 0 && (
-                  <div className="bg-rose-950/40 border border-rose-500/40 p-3 rounded-2xl text-rose-200 text-xs flex items-start gap-2">
-                    <span className="text-rose-400 font-black shrink-0">🔥 রেড মার্ক:</span>
+                  <div className="bg-amber-950/30 border border-amber-500/40 p-3 rounded-2xl text-amber-200 text-xs flex items-start gap-2">
+                    <span className="text-amber-400 font-black shrink-0">⭐ {isBn ? 'গুরুত্বপূর্ণ শব্দ:' : 'Important Words:'}</span>
                     <span>
                       {isBn ? 'অন্যান্য পাঠের সংযুক্ত শব্দসমূহ:' : 'Inter-Unit Syn/Ant Linked Words:'}{' '}
                       <strong className="text-white underline">{currentCard.crossReferencedWords.join(', ')}</strong>

@@ -219,7 +219,7 @@ export default function VocabularyBank({
   const boardFilterOptions = useMemo(() => {
     return [
       { id: 'all', label: isBn ? 'সকল শব্দাবলী (All Words)' : 'All Words (Full Bank)' },
-      { id: 'redMark', label: isBn ? '🔥 রেড মার্ক শব্দ (২০৬টি)' : '🔥 Red Mark Inter-Unit (206)' },
+      { id: 'redMark', label: isBn ? '⭐ গুরুত্বপূর্ণ শব্দ (২০৬টি)' : '⭐ Important Words (206)' },
       { id: 'multiSource', label: isBn ? '📚 একাধিক লেসনে উপস্থিত শব্দ' : '📚 Multi-Lesson Words' },
       { id: 'weak', label: isBn ? '⚠️ দুর্বল শব্দাবলী (Weak Words)' : '⚠️ Weak Words Queue' }
     ];
@@ -705,12 +705,12 @@ export default function VocabularyBank({
                 onClick={() => setSelectedStatusFilter(selectedStatusFilter === 'redMark' ? 'all' : 'redMark')}
                 className={`px-3 py-1 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
                   selectedStatusFilter === 'redMark'
-                    ? 'bg-rose-600 text-white shadow-md shadow-rose-950/60 ring-2 ring-rose-400'
-                    : 'bg-[#1a121c] text-rose-300 hover:bg-rose-950/40 border border-rose-500/40'
+                    ? 'bg-amber-600 text-white shadow-md shadow-amber-950/60 ring-2 ring-amber-400'
+                    : 'bg-[#1c1812] text-amber-300 hover:bg-amber-950/40 border border-amber-500/40'
                 }`}
               >
-                <span className="text-xs">🔥</span>
-                <span>{isBn ? 'রেড মার্ক শব্দাবলী' : 'Red Mark Key Words'}</span>
+                <span className="text-xs">⭐</span>
+                <span>{isBn ? 'গুরুত্বপূর্ণ শব্দাবলী' : 'Important Words'}</span>
               </button>
 
               {/* Part of Speech Quick Filter */}
@@ -870,9 +870,9 @@ export default function VocabularyBank({
                             </div>
 
                             {item.isCrossReferenced && (
-                              <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-rose-500/15 border border-rose-500/30 text-rose-300 text-[10px] font-bold mb-1">
-                                <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping" />
-                                <span>{isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}</span>
+                              <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-500/15 border border-amber-500/30 text-amber-300 text-[10px] font-bold mb-1">
+                                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                                <span>{isBn ? 'গুরুত্বপূর্ণ শব্দ (Important)' : 'Important Word'}</span>
                               </div>
                             )}
                           </div>
@@ -1122,9 +1122,9 @@ export default function VocabularyBank({
 
                               <div className="flex items-center gap-1.5 mt-1 flex-wrap">
                                 {item.isCrossReferenced && (
-                                  <span className="px-2 py-0.5 rounded-full bg-rose-500/25 border border-rose-500/50 text-rose-300 text-[10px] font-black inline-flex items-center gap-1 shadow-sm shadow-rose-950/50">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-ping"></span>
-                                    {isBn ? 'রেড মার্ক: আন্তঃসম্পর্কিত' : 'Red Mark: Inter-Unit'}
+                                  <span className="px-2 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-[10px] font-bold inline-flex items-center gap-1 shadow-sm">
+                                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                                    {isBn ? 'গুরুত্বপূর্ণ শব্দ (Important)' : 'Important Word'}
                                   </span>
                                 )}
                                 {item.partsOfSpeech && (
@@ -1256,13 +1256,13 @@ export default function VocabularyBank({
                                 </div>
                               </div>
 
-                              {/* Task 2: Red Mark Inter-Unit Cross-Reference Box */}
+                              {/* Important Words Inter-Unit Cross-Reference Box */}
                               {item.isCrossReferenced && item.crossReferencedWords && item.crossReferencedWords.length > 0 && (
-                                <div className="p-3 rounded-xl bg-rose-950/40 border border-rose-500/50 flex items-start gap-2.5">
-                                  <span className="text-rose-400 font-bold text-xs shrink-0 flex items-center gap-1">
-                                    🔥 {isBn ? 'রেড মার্ক আন্তঃসংযোগ:' : 'Red Mark Inter-Unit Link:'}
+                                <div className="p-3 rounded-xl bg-amber-950/30 border border-amber-500/40 flex items-start gap-2.5">
+                                  <span className="text-amber-400 font-bold text-xs shrink-0 flex items-center gap-1">
+                                    ⭐ {isBn ? 'গুরুত্বপূর্ণ শব্দ আন্তঃসংযোগ:' : 'Important Words Inter-Unit Link:'}
                                   </span>
-                                  <div className="text-xs text-rose-200 leading-relaxed">
+                                  <div className="text-xs text-amber-200 leading-relaxed">
                                     {isBn ? 'এই শব্দটির সমার্থক / বিপরীতার্থক শব্দ বইটির অন্যান্য পাঠের প্রধান শব্দ হিসেবে বিদ্যমান:' : 'This word connects as a synonym or antonym to other main words in the textbook:'}{' '}
                                     <span className="font-bold text-white underline">{item.crossReferencedWords.join(', ')}</span>
                                   </div>

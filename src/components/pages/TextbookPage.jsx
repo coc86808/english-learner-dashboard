@@ -118,6 +118,41 @@ export default function TextbookPage({
     };
   }, [activeLessonId, activeUnitId, currentUnit]);
 
+  // Handle unit change and automatically select the first lesson of that unit
+  const handleUnitSelect = (newUnitId) => {
+    setActiveUnitId(newUnitId);
+    const unitObj = hscUnits.find((u) => u.id === newUnitId);
+    if (unitObj && unitObj.lessons && unitObj.lessons.length > 0) {
+      setActiveLessonId(unitObj.lessons[0].id);
+    }
+  };
+
+  // Normalize sections and paragraphs so all 45 lessons render flawlessly
+  const textbookSections = useMemo(() => {
+    if (!currentTextbook) return [];
+    if (Array.isArray(currentTextbook.sections) && currentTextbook.sections.length > 0) {
+      return currentTextbook.sections.map((s, i) => ({
+        paraNumber: s.paraNumber || s.number || String(i + 1),
+        heading: s.heading || '',
+        headingBn: s.headingBn || '',
+        content: s.content || s.text || '',
+        bengaliTranslation: s.bengaliTranslation || s.translation || '',
+        highlightWords: s.highlightWords || s.keyVocab || []
+      }));
+    }
+    if (Array.isArray(currentTextbook.paragraphs) && currentTextbook.paragraphs.length > 0) {
+      return currentTextbook.paragraphs.map((p, i) => ({
+        paraNumber: p.number || p.paraNumber || String(i + 1),
+        heading: p.heading || '',
+        headingBn: p.headingBn || '',
+        content: p.text || p.content || '',
+        bengaliTranslation: p.bengaliTranslation || p.translation || '',
+        highlightWords: p.highlightWords || p.keyVocab || []
+      }));
+    }
+    return [];
+  }, [currentTextbook]);
+
   // Fast vocabulary lookup map (lowercase word -> vocab item)
   const vocabMap = useMemo(() => {
     const map = new Map();
@@ -268,6 +303,119 @@ export default function TextbookPage({
 
   return (
     <div className="max-w-6xl mx-auto space-y-6 pb-12">
+      {/* 1. Interactive Unit & Lesson Selection Header Card */}
+      <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-5 sm:p-6 shadow-card space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-[#1c263a] pb-3">
+          <div className="flex items-center gap-2">
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+            <h2 className="text-sm sm:text-base font-extrabold text-white tracking-wide">
+              {isBn ? 'পাঠ্যবইয়ের অধ্যায় ও পাঠ নির্বাচন করুন' : 'Select Unit & Lesson to Read'}
+            </h2>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-slate-400">
+              {hscUnits.length} {isBn ? 'টি ইউনিট' : 'Units'} • 45+ {isBn ? 'টি টেক্সটবুক লেসন' : 'Textbook Lessons'}
+            </span>
+            <button
+              onClick={() => setIsDrawerOpen(true)}
+              className="px-2.5 py-1 rounded-lg bg-[#182236] hover:bg-[#202e48] border border-[#273754] text-emerald-400 text-xs font-bold transition-all flex items-center gap-1 cursor-pointer"
+            >
+              <Layers size={13} />
+              <span>{isBn ? 'সিলেবাস ড্রয়ার' : 'Catalog Drawer'}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Step 1 & Step 2 Dropdowns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Step 1: Select Unit */}
+          <div className="space-y-1.5">
+            <label className="text-xs font-bold text-slate-300 flex items-center justify-between">
+              <span className="flex items-center gap-1.5">
+                <BookOpen size={14} className="text-emerald-400" />
+                <span>{isBn ? '১. ইউনিট নির্বাচন করুন (Select Unit):' : '1. Select Unit:'}</span>
+              </span>
+              <span className="text-[10px] text-emerald-400 font-semibold bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                {currentUnit?.unitNumber}
+              </span>
+            </label>
+            <div className="relative">
+              <select
+                value={activeUnitId}
+                onChange={(e) => handleUnitSelect(e.target.value)}
+                className="w-full bg-[#0c101a] hover:bg-[#121827] border border-[#23314a] focus:border-emerald-500 rounded-xl px-3.5 py-3 text-xs sm:text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/30 transition-all appearance-none cursor-pointer pr-10 shadow-inner"
+              >
+                {hscUnits.map((u) => (
+                  <option key={u.id} value={u.id} className="bg-[#0c101a] text-white py-1">
+                    {u.unitNumber}: {isBn ? u.unitTitleBn : u.unitTitle} ({u.lessons.length} {isBn ? 'টি পাঠ' : 'Lessons'})
+                  </option>
+                ))}
+              </select>
+              <ChevronDown size={16} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-emerald-400 pointer-events-none" />
+            </div>
+          </div>
+
+          {/* Step 2: Select Lesson */}
+          <div className="space-y-1.5">
+            <label className="text-xs font-bold text-slate-300 flex items-center justify-between">
+              <span className="flex items-center gap-1.5">
+                <Layers size={14} className="text-teal-400" />
+                <span>{isBn ? '২. লেসন নির্বাচন করুন (Select Lesson):' : '2. Select Lesson:'}</span>
+              </span>
+              <span className="text-[10px] text-teal-400 font-semibold bg-teal-500/10 px-2 py-0.5 rounded-md border border-teal-500/20">
+                {currentTextbook?.lessonNumber || 'Active'}
+              </span>
+            </label>
+            <div className="relative">
+              <select
+                value={activeLessonId}
+                onChange={(e) => setActiveLessonId(e.target.value)}
+                className="w-full bg-[#0c101a] hover:bg-[#121827] border border-[#23314a] focus:border-teal-500 rounded-xl px-3.5 py-3 text-xs sm:text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-teal-500/30 transition-all appearance-none cursor-pointer pr-10 shadow-inner"
+              >
+                {currentUnit?.lessons?.map((l) => (
+                  <option key={l.id} value={l.id} className="bg-[#0c101a] text-white py-1">
+                    {l.number}: {isBn ? l.titleBn : l.title}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown size={16} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-teal-400 pointer-events-none" />
+            </div>
+          </div>
+        </div>
+
+        {/* Quick Click Lesson Pills for the Active Unit */}
+        <div className="pt-2 border-t border-[#1a2335] space-y-2">
+          <div className="flex items-center justify-between text-[11px] font-semibold text-slate-400">
+            <span>
+              {isBn 
+                ? `${currentUnit?.unitNumber}-এর সকল লেসন (ক্লিক করে সরাসরি পড়ুন):` 
+                : `All Lessons in ${currentUnit?.unitNumber} (Click to read immediately):`}
+            </span>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            {currentUnit?.lessons?.map((l) => {
+              const isCurrent = l.id === activeLessonId;
+              return (
+                <button
+                  key={l.id}
+                  onClick={() => setActiveLessonId(l.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer active:scale-95 ${
+                    isCurrent
+                      ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-950/50 ring-2 ring-emerald-400'
+                      : 'bg-[#141b2b] hover:bg-[#1b253b] text-slate-300 hover:text-white border border-[#212d44]'
+                  }`}
+                >
+                  <span className={isCurrent ? 'text-white' : 'text-emerald-400'}>
+                    {l.number}:
+                  </span>
+                  <span>{isBn ? l.titleBn : l.title}</span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
       {/* Top Header & Breadcrumbs Card */}
       <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-5 sm:p-7 shadow-card space-y-5">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -341,7 +489,7 @@ export default function TextbookPage({
             {!isPlayingTTS ? (
               <button
                 onClick={() => {
-                  const fullStory = currentTextbook.sections.map((s) => s.content).join(' ');
+                  const fullStory = textbookSections.map((s) => s.content).join(' ');
                   handlePlayTTS(fullStory);
                 }}
                 className="px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/30 text-emerald-300 font-bold flex items-center gap-1.5 transition-all"
@@ -376,7 +524,7 @@ export default function TextbookPage({
                   onClick={() => {
                     setTtsSpeed(speed);
                     if (isPlayingTTS) {
-                      const fullStory = currentTextbook.sections.map((s) => s.content).join(' ');
+                      const fullStory = textbookSections.map((s) => s.content).join(' ');
                       handlePlayTTS(fullStory);
                     }
                   }}
@@ -438,7 +586,7 @@ export default function TextbookPage({
 
       {/* Main Passage Paragraphs Stream */}
       <div className="space-y-6">
-        {currentTextbook.sections.map((sec, idx) => {
+        {textbookSections.map((sec, idx) => {
           const isThisReading = currentReadingSection === idx;
           return (
             <motion.div

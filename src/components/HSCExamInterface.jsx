@@ -819,9 +819,9 @@ export default function HSCExamInterface({
                     </span>
                   )}
                   {currentQ.isCrossReferenced && (
-                    <span className="text-xs font-bold px-2.5 py-1 rounded-xl bg-rose-500/20 text-rose-300 border border-rose-500/50 flex items-center gap-1.5 shadow-sm animate-pulse">
-                      <span>🔥</span>
-                      <span>{isBn ? 'রেড মার্ক প্রশ্ন (আন্তঃসংযোগ)' : 'Red Mark Key Word'}</span>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-500/50 flex items-center gap-1.5 shadow-sm">
+                      <span>⭐</span>
+                      <span>{isBn ? 'গুরুত্বপূর্ণ শব্দ (Important Word)' : 'Important Word'}</span>
                     </span>
                   )}
                   {currentStat.consecutiveCorrect > 0 && (
