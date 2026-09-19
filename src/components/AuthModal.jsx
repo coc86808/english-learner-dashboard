@@ -207,9 +207,11 @@ export default function AuthModal({
         {view === 'google' && (
           <div className="p-6 space-y-6 text-center">
             <div className="space-y-2">
-              <div className="w-14 h-14 mx-auto rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-slate-950 shadow-lg shadow-emerald-950/60 ring-2 ring-emerald-500/30">
-                <BookOpen size={28} className="stroke-[2.5]" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Learner Hub"
+                className="w-14 h-14 mx-auto rounded-2xl object-cover shadow-lg shadow-emerald-950/60 ring-2 ring-emerald-500/40 border border-emerald-500/40"
+              />
               <h3 className="text-lg font-black text-white tracking-tight">
                 {isBn ? 'Google দিয়ে ১-ক্লিকে শুরু করুন' : 'Sign in with Google to Start Free'}
               </h3>

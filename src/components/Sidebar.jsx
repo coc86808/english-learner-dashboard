@@ -289,7 +289,7 @@ export default function Sidebar({
         >
           <div className="relative">
             <img
-              src="/logo.jpg"
+              src="/logo.png"
               alt="Learner Hub"
               className="w-10 h-10 rounded-xl object-cover shadow-lg shadow-emerald-950/60 border border-emerald-500/30 group-hover:border-emerald-400/70 transition-all duration-300 group-hover:scale-105"
             />

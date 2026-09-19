@@ -273,10 +273,12 @@ export default function Header({
             >
               {/* Drawer Top Header */}
               <div className="px-5 py-4 bg-[#0a0d16] border-b border-[#1b2538] flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
-                    <Sparkles size={16} />
-                  </div>
+                <div className="flex items-center gap-2.5">
+                  <img
+                    src="/logo.png"
+                    alt="Learner Hub"
+                    className="w-8 h-8 rounded-xl object-cover border border-emerald-500/40 shadow-sm"
+                  />
                   <div>
                     <h3 className="text-white font-bold text-sm sm:text-base leading-tight">
                       {isBn ? 'সম্পূর্ণ ইন্টারফেস কন্ট্রোল' : 'Complete Control Center'}

@@ -258,9 +258,11 @@ export default function LandingPage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Brand Logo */}
           <div className="flex items-center gap-3.5">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-500 via-teal-400 to-emerald-300 flex items-center justify-center text-slate-950 font-black shadow-lg shadow-emerald-950/60 ring-2 ring-emerald-500/30">
-              <BookOpen size={22} className="stroke-[2.5]" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Learner Hub"
+              className="w-11 h-11 rounded-2xl object-cover shadow-lg shadow-emerald-950/60 ring-2 ring-emerald-500/30 border border-emerald-500/40"
+            />
             <div>
               <h1 className="text-lg sm:text-xl font-extrabold text-white tracking-tight flex items-center gap-2">
                 <span>Learner Hub</span>
@@ -957,9 +959,11 @@ export default function LandingPage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#141b29]">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-slate-950 font-black text-sm shadow-md">
-                LH
-              </div>
+              <img
+                src="/logo.png"
+                alt="Learner Hub"
+                className="w-9 h-9 rounded-xl object-cover shadow-md border border-emerald-500/30"
+              />
               <div>
                 <span className="text-white font-extrabold text-base block">Learner Hub</span>
                 <span className="text-slate-500 text-[11px]">NCTB HSC English Smart Learning Engine</span>
