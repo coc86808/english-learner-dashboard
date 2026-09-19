@@ -119,16 +119,18 @@ export default function Header({
           : 'সার্টিফিকেট'
       };
     }
-    if (norm === '/settings' || norm === '/about' || norm === '/profile' || norm === '/terms') {
+    if (norm === '/settings' || norm === '/about' || norm === '/profile' || norm === '/terms' || norm === '/refund') {
       return {
         sectionEn: 'Account',
         sectionBn: 'অ্যাকাউন্ট',
         titleEn: norm === '/settings' ? 'Settings'
           : norm === '/about' ? 'About & Contact'
+          : norm === '/refund' ? 'Refund Policy'
           : norm === '/terms' ? 'Terms & Privacy'
           : 'Profile',
         titleBn: norm === '/settings' ? 'সেটিংস'
           : norm === '/about' ? 'পরিচিতি ও যোগাযোগ'
+          : norm === '/refund' ? 'রিফান্ড নীতিমালা'
           : norm === '/terms' ? 'শর্তাবলী ও নীতিমালা'
           : 'প্রোফাইল'
       };

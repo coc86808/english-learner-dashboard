@@ -92,6 +92,7 @@ export const ROUTES = {
   LANDING: '/',
   ABOUT: '/about',
   TERMS: '/terms',
+  REFUND: '/refund',
   AUTH: '/auth',
 
   // Student Zone
@@ -380,8 +381,8 @@ export default function App() {
   const navigate = useCallback((toPath, replace = false) => {
     const target = normalizePath(toPath);
 
-    // Guard 1: Public Routes (/ and /about and /terms and /auth)
-    const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/auth';
+    // Guard 1: Public Routes (/ and /about and /terms and /refund and /auth)
+    const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/auth';
 
     // Guard 2: Unauthenticated User attempting Protected Route
     if (!currentUser && !isPublic) {
@@ -420,7 +421,7 @@ export default function App() {
   useEffect(() => {
     const handlePopState = () => {
       const target = normalizePath(window.location.pathname);
-      const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/auth';
+      const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/auth';
 
       if (!currentUser && !isPublic) {
         setIsAuthOpen(true);
@@ -527,8 +528,8 @@ export default function App() {
     );
   }
 
-  // If user is unauthenticated and visiting /about or /terms directly
-  if (!currentUser && (currentPath === '/about' || currentPath === '/terms')) {
+  // If user is unauthenticated and visiting /about or /terms or /refund directly
+  if (!currentUser && (currentPath === '/about' || currentPath === '/terms' || currentPath === '/refund')) {
     return (
       <div className="bg-[#0c0f17] text-slate-100 min-h-screen p-4 sm:p-8">
         <div className="max-w-6xl mx-auto space-y-6">
@@ -553,7 +554,11 @@ export default function App() {
           {currentPath === '/about' ? (
             <AboutPage lang={lang} onNavigate={navigate} currentUser={currentUser} />
           ) : (
-            <TermsPage lang={lang} onNavigate={navigate} />
+            <TermsPage
+              lang={lang}
+              onNavigate={navigate}
+              initialSection={currentPath === '/refund' ? 'refund' : null}
+            />
           )}
 
           <AuthModal
@@ -839,13 +844,14 @@ export default function App() {
             </div>
           )}
 
-          {/* Route: /terms */}
-          {currentPath === '/terms' && (
+          {/* Route: /terms and /refund */}
+          {(currentPath === '/terms' || currentPath === '/refund') && (
             <div className="max-w-6xl mx-auto space-y-6">
               <TermsPage
                 lang={lang}
                 onNavigate={navigate}
                 currentUser={currentUser}
+                initialSection={currentPath === '/refund' ? 'refund' : null}
               />
             </div>
           )}

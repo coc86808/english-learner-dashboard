@@ -16,13 +16,25 @@ import {
   Users,
   Globe2,
   ExternalLink,
-  Cookie
+  Cookie,
+  HeartHandshake,
+  RotateCcw,
+  AlertCircle,
+  X
 } from 'lucide-react';
 
-export default function TermsPage({ lang = 'en', onNavigate }) {
+export default function TermsPage({ lang = 'en', onNavigate, initialSection = null }) {
   const isBn = lang === 'bn';
   const [searchQuery, setSearchQuery] = useState('');
-  const [expandedSection, setExpandedSection] = useState(null);
+  const [expandedSection, setExpandedSection] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('section')) return urlParams.get('section');
+      if (window.location.hash) return window.location.hash.replace('#', '');
+    }
+    return initialSection || null;
+  });
+  const [showRefundModal, setShowRefundModal] = useState(false);
 
   const toggleSection = (id) => {
     setExpandedSection((prev) => (prev === id ? null : id));
@@ -126,35 +138,53 @@ export default function TermsPage({ lang = 'en', onNavigate }) {
       ]
     },
     {
+      id: 'refund',
+      titleEn: '6. Premium Membership & Non-Refundable Policy',
+      titleBn: '৬. প্রিমিয়াম মেম্বারশিপ ও রিফান্ড নীতিমালা (Refund Policy)',
+      icon: HeartHandshake,
+      summaryEn: 'Digital service terms, immediate access delivery, and non-refundable policy statement.',
+      summaryBn: 'ডিজিটাল শিক্ষামূলক সেবার নিয়মাবলী, তাৎক্ষণিক আনলক এবং রিফান্ড পলিসি সংক্রান্ত নির্দেশনা।',
+      contentEn: [
+        '6.1. **Instant Digital Access Delivery:** All paid packages, premium diagnostic exam modules, full-length NCTB mock question banks, audio-enabled passage readers, and algorithmic spaced-repetition vocabulary tools are strictly digital intangible goods. Access to all features is provisioned and unlocked immediately upon account authentication or upgrade.',
+        '6.2. **Strict Non-Refundable Policy:** Due to the instant delivery and digital nature of our educational software, study materials, and cloud computing resources, **all purchases and subscription fees are strictly non-refundable**. We do not offer cash refunds, partial credits, or payment reversals once an account has gained access to the platform.',
+        '6.3. **Refund Option Notice & Heartfelt Apology:** We are truly and sincerely sorry, but there is no refund option available from our end. We express our deepest regret and apologies that after taking premium from us, you felt the need to visit this refund option. We strive for 100% student satisfaction, and if you have encountered any technical issue or study impediment, our academic support team is committed to assisting and resolving it for you immediately.'
+      ],
+      contentBn: [
+        '৬.১. **ডিজিটাল সেবার তাৎক্ষণিক অ্যাক্টিভেশন:** আমাদের সকল প্রিমিয়াম কোর্স, পূর্ণাঙ্গ এনসিটিবি বোর্ড স্ট্যান্ডার্ড মডেল টেস্ট, অডিও পাঠ্যবই রিডার এবং স্পেসড রিপিটিশন অ্যালগরিদম ভিত্তিক উইক-ওয়ার্ড রিকভারি ইঞ্জিন সম্পূর্ণ ডিজিটাল শিক্ষামূলক পণ্য। প্রিমিয়াম সক্রিয় করার সাথে সাথেই সকল কন্টেন্ট শিক্ষার্থীর অ্যাকাউন্টে তাৎক্ষণিকভাবে আনলক হয়ে যায়।',
+        '৬.২. **নো-রিফান্ড বা অফেরতযোগ্য নীতিমালা:** ডিজিটাল কন্টেন্টের তাৎক্ষণিক প্রাপ্যতা ও সার্ভার রিসোর্স বরাদ্দের কারণে আমাদের প্ল্যাটফর্মে **যেকোনো পেমেন্ট বা সাবস্ক্রিপশন সম্পূর্ণ অফেরতযোগ্য (Non-refundable)**। একবার সেবা সক্রিয় হওয়ার পর কোনো প্রকার ক্যাশ রিফান্ড, চার্জব্যাক বা অর্থ ফেরতের সুযোগ নেই।',
+        '৬.৩. **রিফান্ড অপশন সংক্রান্ত বিশেষ দুঃখ প্রকাশ:** আমরা আন্তরিকভাবে অত্যন্ত দুঃখিত, কিন্তু আমাদের পক্ষ থেকে রিফান্ডের কোনো অপশন নেই। আমরা গভীরভাবে দুঃখ প্রকাশ করছি কারণ আমাদের থেকে প্রিমিয়াম নেওয়ার পরে আপনাকে রিফান্ড অপশনে আসতে হয়েছে। একজন শিক্ষার্থী হিসেবে আপনার সন্তুষ্টি আমাদের কাছে সর্বাধিক গুরুত্বপূর্ণ। প্ল্যাটফর্মে কোনো কারিগরি সমস্যা বা পড়াশোনায় কোনো অসুবিধা হলে আমাদের সাপোর্ট ডেস্ক সর্বোচ্চ গুরুত্ব দিয়ে আপনার পাশে থাকবে।'
+      ]
+    },
+    {
       id: 'disclaimer',
-      titleEn: '6. Educational Disclaimer & Limitation of Liability',
-      titleBn: '৬. শিক্ষামূলক ডিসক্লেইমার ও দায়বদ্ধতার সীমা',
+      titleEn: '7. Educational Disclaimer & Limitation of Liability',
+      titleBn: '৭. শিক্ষামূলক ডিসক্লেইমার ও দায়বদ্ধতার সীমা',
       icon: AlertTriangle,
       summaryEn: 'Independent study tool, board examination outcome disclaimer.',
       summaryBn: 'স্বাধীন ডিজিটাল অনুশীলন মাধ্যম এবং বোর্ড পরীক্ষার ফলাফল সম্পর্কিত সুস্পষ্ট বার্তা।',
       contentEn: [
-        '6.1. **Educational Study Aid:** This platform is an independent digital learning and revision aid. While our database is built with rigorous NCTB textbook alignment and board exam standards, individual examination grades ultimately depend on personal student effort, comprehensive syllabus coverage, and board examiners.',
-        '6.2. **System Availability:** We maintain high cloud server uptime. However, we are not liable for temporary service delays resulting from public internet failures, mobile network fluctuations, or scheduled infrastructure upgrades.'
+        '7.1. **Educational Study Aid:** This platform is an independent digital learning and revision aid. While our database is built with rigorous NCTB textbook alignment and board exam standards, individual examination grades ultimately depend on personal student effort, comprehensive syllabus coverage, and board examiners.',
+        '7.2. **System Availability:** We maintain high cloud server uptime. However, we are not liable for temporary service delays resulting from public internet failures, mobile network fluctuations, or scheduled infrastructure upgrades.'
       ],
       contentBn: [
-        '৬.১. **সহায়ক ডিজিটাল মাধ্যম:** এই প্ল্যাটফর্মটি একটি সহায়ক অনুশীলন মাধ্যম। পাঠ্যবই ও বিগত বোর্ড পরীক্ষার প্রশ্নের সাথে শতভাগ সামঞ্জস্য রেখে প্রশ্ন তৈরি করা হলেও চূড়ান্ত পরীক্ষার ফলাফল শিক্ষার্থীর সামগ্রিক প্রস্তুতি ও প্রচেষ্টার ওপর নির্ভরশীল।',
-        '৬.২. **সার্ভার প্রাপ্যতা:** সার্বক্ষণিক সেবা সচল রাখার সর্বোচ্চ চেষ্টা করা হলেও ইন্টারনেট সংযোগের ত্রুটি বা সার্ভার রক্ষণাবেক্ষণজনিত সাময়িক বাধার জন্য প্ল্যাটফর্ম দায়ী থাকবে না।'
+        '৭.১. **সহায়ক ডিজিটাল মাধ্যম:** এই প্ল্যাটফর্মটি একটি সহায়ক অনুশীলন মাধ্যম। পাঠ্যবই ও বিগত বোর্ড পরীক্ষার প্রশ্নের সাথে শতভাগ সামঞ্জস্য রেখে প্রশ্ন তৈরি করা হলেও চূড়ান্ত পরীক্ষার ফলাফল শিক্ষার্থীর সামগ্রিক প্রস্তুতি ও প্রচেষ্টার ওপর নির্ভরশীল।',
+        '৭.২. **সার্ভার প্রাপ্যতা:** সার্বক্ষণিক সেবা সচল রাখার সর্বোচ্চ চেষ্টা করা হলেও ইন্টারনেট সংযোগের ত্রুটি বা সার্ভার রক্ষণাবেক্ষণজনিত সাময়িক বাধার জন্য প্ল্যাটফর্ম দায়ী থাকবে না।'
       ]
     },
     {
       id: 'governing',
-      titleEn: '7. Governing Law & Legal Jurisdiction',
-      titleBn: '৭. প্রযোজ্য আইন ও বিচারিক এখতিয়ার',
+      titleEn: '8. Governing Law & Legal Jurisdiction',
+      titleBn: '৮. প্রযোজ্য আইন ও বিচারিক এখতিয়ার',
       icon: Scale,
       summaryEn: 'Governed by the laws of the People\'s Republic of Bangladesh.',
       summaryBn: 'গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধান ও ডিজিটাল আইন দ্বারা পরিচালিত।',
       contentEn: [
-        '7.1. **Jurisdiction:** These Terms and Conditions shall be governed by, interpreted, and enforced in accordance with the laws of the **People\'s Republic of Bangladesh**.',
-        '7.2. **Dispute Resolution:** Any dispute or legal question arising in connection with the use of this website shall be resolved primarily through mutual amicable discussion, and failing that, submitted to the jurisdiction of the civil and cyber tribunals located in **Dhaka, Bangladesh**.'
+        '8.1. **Jurisdiction:** These Terms and Conditions shall be governed by, interpreted, and enforced in accordance with the laws of the **People\'s Republic of Bangladesh**.',
+        '8.2. **Dispute Resolution:** Any dispute or legal question arising in connection with the use of this website shall be resolved primarily through mutual amicable discussion, and failing that, submitted to the jurisdiction of the civil and cyber tribunals located in **Dhaka, Bangladesh**.'
       ],
       contentBn: [
-        '৭.১. **আইনি এখতিয়ার:** এই শর্তাবলী **গণপ্রজাতন্ত্রী বাংলাদেশের প্রচলিত আইন** দ্বারা পরিচালিত ও নিয়ন্ত্রিত হবে।',
-        '৭.২. **বিরোধ নিষ্পত্তি:** ওয়েবসাইট ব্যবহার সংক্রান্ত যেকোনো আইনগত বিরোধ বা জিজ্ঞাসা প্রাথমিকভাবে পারস্পরিক আলোচনার মাধ্যমে এবং প্রয়োজনে **ঢাকা, বাংলাদেশ**-এর উপযুক্ত আদালতের এখতিয়ারে নিষ্পত্তি হবে।'
+        '৮.১. **আইনি এখতিয়ার:** এই শর্তাবলী **গণপ্রজাতন্ত্রী বাংলাদেশের প্রচলিত আইন** দ্বারা পরিচালিত ও নিয়ন্ত্রিত হবে।',
+        '৮.২. **বিরোধ নিষ্পত্তি:** ওয়েবসাইট ব্যবহার সংক্রান্ত যেকোনো আইনগত বিরোধ বা জিজ্ঞাসা প্রাথমিকভাবে পারস্পরিক আলোচনার মাধ্যমে এবং প্রয়োজনে **ঢাকা, বাংলাদেশ**-এর উপযুক্ত আদালতের এখতিয়ারে নিষ্পত্তি হবে।'
       ]
     }
   ];
@@ -162,11 +192,15 @@ export default function TermsPage({ lang = 'en', onNavigate }) {
   const filteredSections = SECTIONS.filter((sec) => {
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
+    const contentEnStr = (sec.contentEn || []).join(' ').toLowerCase();
+    const contentBnStr = (sec.contentBn || []).join(' ').toLowerCase();
     return (
       sec.titleEn.toLowerCase().includes(q) ||
       sec.titleBn.toLowerCase().includes(q) ||
       sec.summaryEn.toLowerCase().includes(q) ||
-      sec.summaryBn.toLowerCase().includes(q)
+      sec.summaryBn.toLowerCase().includes(q) ||
+      contentEnStr.includes(q) ||
+      contentBnStr.includes(q)
     );
   });
 
@@ -354,6 +388,77 @@ export default function TermsPage({ lang = 'en', onNavigate }) {
                         </p>
                       );
                     })}
+
+                    {/* Dedicated Refund Option & Apology Container (Per User Request) */}
+                    {section.id === 'refund' && (
+                      <div className="mt-5 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-[#141b2c] via-[#101522] to-[#0c0f17] border border-amber-500/40 shadow-xl space-y-4">
+                        <div className="flex items-start gap-3.5">
+                          <div className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                            <HeartHandshake size={24} />
+                          </div>
+                          <div className="space-y-2 flex-1">
+                            <div className="flex flex-wrap items-center gap-2">
+                              <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                                {isBn ? 'রিফান্ড অপশন ও বিশেষ বিজ্ঞপ্তি' : 'Refund Option & Special Notice'}
+                              </span>
+                              <span className="text-[11px] font-bold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
+                                {isBn ? 'অফেরতযোগ্য ডিজিটাল সেবা' : 'Non-Refundable Digital Service'}
+                              </span>
+                            </div>
+
+                            <h4 className="text-base sm:text-lg font-extrabold text-white leading-snug">
+                              {isBn
+                                ? 'আমরা আন্তরিকভাবে অত্যন্ত দুঃখিত, কিন্তু আমাদের পক্ষ থেকে রিফান্ডের কোনো অপশন নেই।'
+                                : 'We are very sorry, but there is no refund option available from our end.'}
+                            </h4>
+
+                            <div className="p-4 rounded-xl bg-[#0a0d14] border border-[#1e293b] space-y-2 text-xs sm:text-sm text-slate-300">
+                              <p className="leading-relaxed font-semibold text-amber-200/95">
+                                {isBn
+                                  ? 'আমরা গভীরভাবে দুঃখ প্রকাশ করছি কারণ আমাদের থেকে প্রিমিয়াম নেওয়ার পরে আপনাকে রিফান্ড অপশনে আসতে হয়েছে।'
+                                  : 'We sincerely express our deepest regret and apologize because after taking premium from us, you had to come to the refund option.'}
+                              </p>
+                              <p className="text-xs text-slate-400 leading-relaxed">
+                                {isBn
+                                  ? 'যেহেতু আমাদের সকল প্রশ্নব্যাংক, স্পেসড রিপিটিশন অ্যালগরিদম, পূর্ণাঙ্গ বোর্ড স্ট্যান্ডার্ড মডেল টেস্ট এবং ইন্টারেক্টিভ পাঠ্যবই রিডার সেবা সম্পূর্ণ ডিজিটাল পণ্য এবং সাবস্ক্রিপশন সম্পন্ন হওয়ামাত্রই শিক্ষার্থীর অ্যাকাউন্টে তাৎক্ষণিকভাবে আনলক হয়ে যায়, তাই একবার সেবা সক্রিয় হওয়ার পর অর্থ ফেরতের কোনো সুযোগ রাখা হয়নি। তবে আপনার অ্যাকাডেমিক প্রস্তুতিতে কোনো কারিগরি ত্রুটি বা অসন্তোষ থাকলে অনুগ্রহ করে আমাদের সাপোর্ট টিমে জানান; আপনার সমস্যা সমাধান করে দিতে আমরা প্রতিশ্রুতিবদ্ধ।'
+                                  : 'Because all question banks, spaced repetition algorithms, full-length board mock exams, and textbook readers are instant-access digital goods unlocked upon purchase, no technical or financial refund option exists once active. However, if you encounter any technical difficulty or learning dissatisfaction, our dedicated support team is committed to resolving it for you.'}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Interactive Refund Option Buttons */}
+                        <div className="pt-3 border-t border-[#1e293b] flex flex-wrap items-center justify-between gap-3">
+                          <span className="text-xs text-slate-400 flex items-center gap-1.5">
+                            <AlertCircle size={14} className="text-amber-400" />
+                            <span>{isBn ? 'ডিজিটাল সেবায় নো-রিফান্ড পলিসি কার্যকর' : 'Instant digital access is non-refundable'}</span>
+                          </span>
+
+                          <div className="flex flex-wrap items-center gap-2">
+                            <button
+                              type="button"
+                              onClick={() => setShowRefundModal(true)}
+                              className="px-4 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
+                            >
+                              <RotateCcw size={13} />
+                              <span>{isBn ? 'রিফান্ড অপশন বিস্তারিত' : 'View Refund Details'}</span>
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={() => {
+                                if (onNavigate) onNavigate('/about');
+                                else window.location.href = '/about';
+                              }}
+                              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md shadow-emerald-950/50 transition-all cursor-pointer flex items-center gap-1.5 active:scale-95"
+                            >
+                              <Mail size={13} />
+                              <span>{isBn ? 'সাপোর্ট ডেস্কে যোগাযোগ' : 'Contact Support Desk'}</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -388,6 +493,90 @@ export default function TermsPage({ lang = 'en', onNavigate }) {
           </button>
         </div>
       </div>
+
+      {/* Refund Apology & Notice Interactive Modal */}
+      <AnimatePresence>
+        {showRefundModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="bg-[#101522] border border-amber-500/40 rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl space-y-5 text-slate-100 relative"
+            >
+              <button
+                onClick={() => setShowRefundModal(false)}
+                className="absolute top-4 right-4 text-slate-400 hover:text-white p-1.5 rounded-xl hover:bg-slate-800 transition-colors cursor-pointer"
+              >
+                <X size={18} />
+              </button>
+
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-amber-400 flex items-center justify-center shadow-md">
+                <HeartHandshake size={26} />
+              </div>
+
+              <div className="space-y-2.5">
+                <div className="flex items-center gap-2">
+                  <span className="text-[10px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2.5 py-0.5 rounded-full">
+                    {isBn ? 'রিফান্ড নীতি' : 'Refund Policy'}
+                  </span>
+                  <span className="text-[11px] font-semibold text-slate-400">
+                    {isBn ? 'সরাসরি বিজ্ঞপ্তি' : 'Direct Notice'}
+                  </span>
+                </div>
+
+                <h3 className="text-lg sm:text-xl font-extrabold text-white leading-tight">
+                  {isBn ? 'রিফান্ড সংক্রান্ত বিজ্ঞপ্তি ও আন্তরিক ক্ষমা' : 'Refund Status & Sincere Apology'}
+                </h3>
+
+                <p className="text-sm font-bold text-amber-300 leading-snug">
+                  {isBn
+                    ? 'আমরা আন্তরিকভাবে অত্যন্ত দুঃখিত, কিন্তু আমাদের পক্ষ থেকে রিফান্ডের কোনো অপশন নেই।'
+                    : 'We are very sorry, but there is no refund option available from our end.'}
+                </p>
+
+                <div className="p-3.5 rounded-2xl bg-[#0c101a] border border-[#1e293b] space-y-2 text-xs sm:text-sm text-slate-300">
+                  <p className="leading-relaxed font-semibold text-amber-200/90">
+                    {isBn
+                      ? 'আমরা গভীরভাবে দুঃখ প্রকাশ করছি কারণ আমাদের থেকে প্রিমিয়াম নেওয়ার পরে আপনাকে রিফান্ড অপশনে আসতে হয়েছে।'
+                      : 'We sincerely express our deep regret and apologize because after taking premium from us, you had to come to the refund option.'}
+                  </p>
+                  <p className="text-xs text-slate-400 leading-relaxed">
+                    {isBn
+                      ? 'ডিজিটাল শিক্ষামূলক সেবাসমূহ সাবস্ক্রিপশনের সাথে সাথেই শিক্ষার্থীর প্রোফাইলে আনলক হয়ে যায় বিধায় রিফান্ডের কোনো সুযোগ রাখা হয়নি। তবে আপনার অ্যাকাউন্টে কোনো সমস্যা, লগইন বা প্র্যাকটিস সংক্রান্ত অসুবিধা থাকলে আমরা তাৎক্ষণিকভাবে তা সমাধান করে দেব।'
+                      : 'All premium exam features and study modules are instantly delivered digital assets, making automated refunds unavailable. Our support desk will promptly assist you with any questions.'}
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-[#0a0d14] border border-[#1b2333] text-xs text-slate-400 flex items-center justify-between gap-2">
+                <span>{isBn ? 'সাপোর্ট যোগাযোগ:' : 'Support Contact:'}</span>
+                <span className="font-mono text-emerald-400 font-bold">support@learnerhub.com</span>
+              </div>
+
+              <div className="flex items-center justify-end gap-3 pt-2">
+                <button
+                  onClick={() => setShowRefundModal(false)}
+                  className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition-colors cursor-pointer"
+                >
+                  {isBn ? 'বন্ধ করুন' : 'Close'}
+                </button>
+                <button
+                  onClick={() => {
+                    setShowRefundModal(false);
+                    if (onNavigate) onNavigate('/about');
+                    else window.location.href = '/about';
+                  }}
+                  className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md cursor-pointer flex items-center gap-1.5 active:scale-95"
+                >
+                  <Mail size={14} />
+                  <span>{isBn ? 'সাপোর্ট টিমকে জানান' : 'Message Support'}</span>
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

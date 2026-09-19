@@ -694,10 +694,10 @@ export default function SettingsPage({
                 </div>
                 <div>
                   <span className="font-bold text-white block group-hover:text-emerald-300 transition-colors">
-                    {isBn ? 'শর্তাবলী ও নীতিমালা (Terms & Policy)' : 'Terms & Privacy Policy'}
+                    {isBn ? 'শর্তাবলী ও রিফান্ড নীতি (Terms & Refund)' : 'Terms & Refund Policy'}
                   </span>
                   <span className="text-[10px] text-slate-400 line-clamp-2">
-                    {isBn ? 'শিক্ষার্থী তথ্যের গোপনীয়তা ও ব্যবহারবিধি' : 'Fair use, student data privacy & terms'}
+                    {isBn ? 'ব্যবহারবিধি, তথ্যের গোপনীয়তা ও নো-রিফান্ড শর্তাবলী' : 'Fair use, privacy & non-refundable policy'}
                   </span>
                 </div>
               </button>
