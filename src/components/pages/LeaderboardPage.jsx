@@ -25,7 +25,6 @@ import {
   Info,
   ChevronRight
 } from 'lucide-react';
-import { listenToFirestoreUsers } from '../../services/firebase';
 import {
   LEAGUES,
   getUserLeague,
@@ -34,7 +33,6 @@ import {
   calculateStudentTimeframePoints,
   countRealMasteredWords
 } from '../../services/scoreManager';
-import { fetchPostgresLeaderboard } from '../../services/supabase';
 
 // Convert numbers to Bengali digits if needed
 const toBnNum = (num) => {
@@ -59,9 +57,6 @@ export default function LeaderboardPage({
   const [selectedCollegeFilter, setSelectedCollegeFilter] = useState('all');
   const [isRulesModalOpen, setIsRulesModalOpen] = useState(false);
 
-  // Real-time Cloud Data States
-  const [postgresUsers, setPostgresUsers] = useState([]);
-  const [cloudUsers, setCloudUsers] = useState([]);
   const [examHistory, setExamHistory] = useState(() => {
     try {
       const raw = localStorage.getItem('hsc_exam_history');
@@ -98,29 +93,13 @@ export default function LeaderboardPage({
 
   // Fetch PostgreSQL data & listen to Firestore/LocalStorage sync
   useEffect(() => {
-    const loadPostgres = async () => {
-      try {
-        const pgData = await fetchPostgresLeaderboard(100);
-        if (Array.isArray(pgData) && pgData.length > 0) {
-          setPostgresUsers(pgData);
-        }
-      } catch (e) {
-        console.warn('Postgres leaderboard load fallback:', e);
-      }
-    };
-    loadPostgres();
-
-    const unsubscribe = listenToFirestoreUsers((firestoreUsers) => {
-      if (Array.isArray(firestoreUsers) && firestoreUsers.length > 0) {
-        setCloudUsers(firestoreUsers);
-      }
-    });
-
+    // NOTE: Firestore and Supabase are NOT used as leaderboard sources anymore.
+    // They contained AI-generated fake accounts that cannot be purged from client.
+    // Leaderboard only reads from purged localStorage + current logged-in user.
     const handleSync = () => {
       try {
         const rawHistory = localStorage.getItem('hsc_exam_history');
         if (rawHistory) setExamHistory(JSON.parse(rawHistory));
-        loadPostgres();
       } catch (e) {}
     };
 
@@ -129,59 +108,56 @@ export default function LeaderboardPage({
     window.addEventListener('storage', handleSync);
 
     return () => {
-      if (typeof unsubscribe === 'function') unsubscribe();
       window.removeEventListener('hsc_leaderboard_updated', handleSync);
       window.removeEventListener('hsc_user_stats_updated', handleSync);
       window.removeEventListener('storage', handleSync);
     };
   }, []);
 
-  // 1. Build leaderboard from REAL registered users only
-  // — NO static seeding from usersList (those are just templates)
-  // — Only students who have actually registered AND earned XP appear
+  // 1. Build leaderboard ONLY from purged localStorage + current user
+  // Cloud sources (Firestore, Supabase) are intentionally excluded —
+  // they contained fake AI-generated accounts (Zubair, Fariha, Tasnim, Tanvir, etc.)
   const baseStudents = useMemo(() => {
     const userMap = new Map();
 
+    const isRealStudent = (u) => {
+      if (!u) return false;
+      const uName  = String(u.name  || '').toLowerCase().trim();
+      const uEmail = String(u.email || '').toLowerCase().trim();
+      const FAKE_PATTERNS = [
+        'tanvir', 'sadia', 'nafis', 'mehedi', 'fariha', 'zubair',
+        'abrar', 'tasnim', 'samiul', 'ishrat', 'candidate', 'guest', 'student'
+      ];
+      if (FAKE_PATTERNS.some((p) => uName.includes(p) || uEmail.includes(p))) {
+        return false;
+      }
+      return uName.includes('nasim') || uName.includes('riad') || (currentUser && uEmail === String(currentUser.email || '').toLowerCase());
+    };
+
     const addUser = (u) => {
       if (!u || u.role?.toLowerCase() === 'admin') return;
+      if (!isRealStudent(u)) return;
       const key = (u.email || u.id || u.name || '').toLowerCase();
       if (!key) return;
       userMap.set(key, { ...(userMap.get(key) || {}), ...u });
     };
 
-    // Props registered users (from App state — already purged by whitelist)
+    // Only from App-state registered users (already purged) + localStorage
     if (Array.isArray(registeredUsers)) registeredUsers.forEach(addUser);
 
-    // LocalStorage registered users
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) parsed.forEach(addUser);
+        if (Array.isArray(parsed)) {
+          const cleaned = parsed.filter(isRealStudent);
+          localStorage.setItem('hsc_registered_users', JSON.stringify(cleaned));
+          cleaned.forEach(addUser);
+        }
       }
     } catch (e) {}
 
-    // Cloud Firestore users
-    if (Array.isArray(cloudUsers) && cloudUsers.length > 0) cloudUsers.forEach(addUser);
-
-    // PostgreSQL profiles
-    if (Array.isArray(postgresUsers) && postgresUsers.length > 0) {
-      postgresUsers.forEach((u) => {
-        if (!u || u.role?.toLowerCase() === 'admin') return;
-        const key = (u.email || u.id || u.name || '').toLowerCase();
-        if (!key) return;
-        const prev = userMap.get(key) || {};
-        userMap.set(key, {
-          ...prev, ...u,
-          points:         Number(u.total_xp          || prev.points         || 0),
-          accuracy:       Number(u.accuracy           || prev.accuracy       || 0),
-          streak:         Number(u.streak             || prev.streak         || 0),
-          testsCompleted: Number(u.questions_solved   || prev.testsCompleted || 0)
-        });
-      });
-    }
-
-    // Current logged-in user
+    // Current logged-in user (their own real data)
     if (currentUser && currentUser.role?.toLowerCase() !== 'admin') {
       const userKey = (currentUser.email || currentUser.id || currentUser.name || '').toLowerCase();
       if (userKey) {
@@ -194,14 +170,12 @@ export default function LeaderboardPage({
       }
     }
 
-    // Convert to array — only students with real earned XP (> 0)
+    // Only show students who have actually earned XP
     const studentList = Array.from(userMap.values())
       .filter((st) => {
         if (!st || !st.name) return false;
-        // Must have real points to appear on the leaderboard
         const pts = Number(st.points || 0);
-        if (pts <= 0) return false;
-        return true;
+        return pts > 0;
       })
       .map((st) => {
         const pointsData = calculateStudentTimeframePoints(st, examHistory);
@@ -232,7 +206,7 @@ export default function LeaderboardPage({
       });
 
     return studentList;
-  }, [registeredUsers, cloudUsers, postgresUsers, currentUser, examHistory]);
+  }, [registeredUsers, currentUser, examHistory]);
 
   // 2. Count active students per league
   const leagueCounts = useMemo(() => {

@@ -611,9 +611,6 @@ Student: ${student.name}${student.college ? ` (${student.college})` : ''}
             <span className="text-2xl sm:text-3xl font-black text-rose-400 tracking-tight">{activeWeakWordsCount}</span>
             <span className="text-xs font-bold text-slate-400">/ {masteredWeakWordsCount} {isBn ? 'আদায়' : 'Recovered'}</span>
           </div>
-          <span className="text-[11px] text-amber-400 font-medium">
-            {isBn ? '৩ ভুল নিয়ম • ৫ সঠিক উত্তর' : '3 Mistake Rule • 5 Correct'}
-          </span>
         </div>
 
         {/* KPI 4: Active Streak */}

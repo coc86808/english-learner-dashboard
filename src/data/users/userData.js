@@ -8,7 +8,7 @@ export const usersList = [
   {
     id: 'usr-nasim',
     name: 'Mohammad Nasim',
-    email: 'mohammad.nasim@gmail.com',
+    email: 'learnermcq@gmail.com',
     phone: '',
     college: 'Dhaka College',
     hscBatch: 'HSC 2026',
@@ -24,7 +24,7 @@ export const usersList = [
   {
     id: 'usr-riad',
     name: 'Riad Sarkar',
-    email: 'riad.sarkar@gmail.com',
+    email: 'sarkarriad92@gmail.com',
     phone: '',
     college: 'Dhaka College',
     hscBatch: 'HSC 2026',
@@ -40,7 +40,7 @@ export const usersList = [
   {
     id: 'usr-admin',
     name: 'Sakin',
-    email: 'sakin@gmail.com',
+    email: 'sakin7112@gmail.com',
     phone: '+880 1711-000000',
     college: 'Learner Hub Management',
     hscBatch: 'Admin Team',

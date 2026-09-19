@@ -166,46 +166,63 @@ export default function App() {
 
   // ─── STRICT WHITELIST ────────────────────────────────────────────────────────
   // Only these 3 real people may exist on the website. Every other account —
-  // no matter where it came from (localStorage, Firestore, registration) — is
+  // no matter where it came from (localStorage, Firestore, Supabase) — is
   // permanently removed on every app load.
-  const REAL_ACCOUNT_WHITELIST = [
-    { name: 'mohammad nasim', email: 'mohammad.nasim@gmail.com', id: 'usr-nasim' },
-    { name: 'riad sarkar',    email: 'riad.sarkar@gmail.com',    id: 'usr-riad'  },
-    // Admin (all known aliases for sakin)
-    { name: 'sakin',          email: 'sakin@gmail.com',          id: 'usr-admin' },
-  ];
-
-  /** Returns true only if this user is one of the 3 approved real people */
   const isRealAccount = (u) => {
     if (!u) return false;
     const uName  = String(u.name  || '').toLowerCase().trim();
     const uEmail = String(u.email || '').toLowerCase().trim();
-    const uId    = String(u.id    || '').toLowerCase().trim();
     const uRole  = String(u.role  || '').toLowerCase();
-    // Always keep Admin-role accounts (sakin/admin accounts)
-    if (uRole === 'admin') return true;
-    return REAL_ACCOUNT_WHITELIST.some(
-      (w) => uName.includes(w.name) || uEmail === w.email || (w.id && uId === w.id)
-    );
+
+    // Blacklist: Instantly drop any account matching known fake/AI generated student profiles
+    const FAKE_PATTERNS = [
+      'tanvir', 'sadia', 'nafis', 'mehedi', 'fariha', 'zubair',
+      'abrar', 'tasnim', 'samiul', 'ishrat', 'candidate', 'guest'
+    ];
+    if (FAKE_PATTERNS.some((p) => uName.includes(p) || uEmail.includes(p))) {
+      return false;
+    }
+
+    // Admin: Sakin only
+    if (uRole === 'admin') {
+      return uName.includes('sakin') || uEmail.includes('sakin') || uEmail === 'admin@learnerhub.com' || uEmail === 'admin';
+    }
+
+    // Students: ONLY Mohammad Nasim, Riad Sarkar, or Sakin
+    const isNasim = uName.includes('nasim') || uEmail === 'learnermcq@gmail.com' || uEmail === 'mohammad.nasim@gmail.com';
+    const isRiad  = uName.includes('riad')  || uEmail === 'sarkarriad92@gmail.com' || uEmail === 'riad.sarkar@gmail.com';
+    const isSakin = uName.includes('sakin') || uEmail.includes('sakin');
+
+    return isNasim || isRiad || isSakin;
   };
 
   /** Purge every non-whitelisted account from localStorage right now */
   const purgeNonRealAccounts = () => {
     try {
+      // 1. Clean registered users
       const raw = localStorage.getItem('hsc_registered_users');
-      if (!raw) return null;
-      const all = JSON.parse(raw);
-      if (!Array.isArray(all)) return null;
-      const kept = all.filter(isRealAccount);
-      localStorage.setItem('hsc_registered_users', JSON.stringify(kept));
-      return kept;
+      if (raw) {
+        const all = JSON.parse(raw);
+        if (Array.isArray(all)) {
+          const kept = all.filter(isRealAccount);
+          localStorage.setItem('hsc_registered_users', JSON.stringify(kept));
+        }
+      }
+      // 2. Clean current authenticated user if fake
+      const rawAuth = localStorage.getItem('hsc_auth_user');
+      if (rawAuth) {
+        const authUser = JSON.parse(rawAuth);
+        if (!isRealAccount(authUser)) {
+          localStorage.removeItem('hsc_auth_user');
+        }
+      }
+      return null;
     } catch (e) { return null; }
   };
 
   // 3. Admin Registered Users State & Firestore Realtime Sync
   const [users, setUsers] = useState(() => {
-    const kept = purgeNonRealAccounts();
-    if (kept && kept.length > 0) return kept;
+    purgeNonRealAccounts();
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
