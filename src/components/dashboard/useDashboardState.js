@@ -27,18 +27,18 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
       const saved = localStorage.getItem('hsc_auth_user');
       if (saved) return JSON.parse(saved);
     } catch (e) {}
-    // Realistic default demo student (Tanvir Ahmed, Notre Dame College)
+    // Default fallback student profile (HSC Candidate)
     return {
-      id: 'usr-1',
-      name: 'Tanvir Ahmed',
-      email: 'tanvir.hsc26@gmail.com',
-      college: 'Notre Dame College, Dhaka',
+      id: 'usr-student',
+      name: 'HSC Candidate',
+      email: 'student@hsc2026.edu',
+      college: 'Dhaka College',
       hscBatch: 'HSC 2026',
       role: 'Student',
       streak: 7,
-      points: 1450,
-      testsCompleted: 28,
-      masteredWordsCount: 85,
+      points: 1280,
+      testsCompleted: 22,
+      masteredWordsCount: 72,
       accuracy: 84
     };
   });
@@ -362,10 +362,10 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
 
   const currentUserRank = useMemo(() => ({
     rank: 12,
-    name: userState?.name || 'Tanvir Ahmed',
-    college: userState?.college || 'Notre Dame College',
-    points: Number(userState?.points || 1450),
-    xp: Number(userState?.points || 1450),
+    name: userState?.name || 'HSC Candidate',
+    college: userState?.college || 'Dhaka College',
+    points: Number(userState?.points || 1280),
+    xp: Number(userState?.points || 1280),
     streak: streakCount,
     trend: isBn ? 'এই সপ্তাহে ৩ ধাপ অগ্রগতি' : '+3 ranks this week'
   }), [userState, streakCount, isBn]);

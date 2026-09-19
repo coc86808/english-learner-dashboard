@@ -217,32 +217,46 @@ export default function LeaderboardPage({
     }
 
     // Convert map to array with calculated dynamic metrics and league for each student
-    const studentList = Array.from(userMap.values()).map((st) => {
-      const pointsData = calculateStudentTimeframePoints(st, examHistory);
-      const accuracy = Number(st.accuracy) || 92;
-      const streak = Number(st.streak) || (st.points > 0 ? 3 : 1);
-      const mastered = Number(st.masteredWordsCount) || (st.points ? Math.round(st.points / 15) : 10);
-      const allTimePoints = pointsData.allTime;
-      const league = getUserLeague(allTimePoints);
+    const studentList = Array.from(userMap.values())
+      .filter((st) => {
+        if (!st) return false;
+        const avatar = String(st.avatar || '');
+        if (avatar.includes('photo-1534528741775-53994a69daeb')) return false;
+        const email = String(st.email || '').toLowerCase();
+        if (email === 'tanvir.hsc26@gmail.com') return false;
+        if (st.id === 'usr-1') return false;
+        return true;
+      })
+      .map((st) => {
+        const pointsData = calculateStudentTimeframePoints(st, examHistory);
+        const accuracy = Number(st.accuracy) || 92;
+        const streak = Number(st.streak) || (st.points > 0 ? 3 : 1);
+        const mastered = Number(st.masteredWordsCount) || (st.points ? Math.round(st.points / 15) : 10);
+        const allTimePoints = pointsData.allTime;
+        const league = getUserLeague(allTimePoints);
 
-      return {
-        id: st.id || `usr-${st.name.replace(/\s+/g, '_')}`,
-        name: st.name || 'HSC Candidate',
-        email: st.email || '',
-        college: st.college || 'Notre Dame College, Dhaka',
-        batch: st.hscBatch || st.hsc_batch || 'HSC 2026',
-        streak,
-        pointsWeekly: pointsData.weekly,
-        pointsMonthly: pointsData.monthly,
-        pointsAllTime: allTimePoints,
-        league,
-        accuracy: Math.min(100, Math.max(60, accuracy)),
-        masteredWords: mastered,
-        trend: st.trend || '+1',
-        trendType: st.trendType || 'up',
-        avatar: st.avatar || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop`
-      };
-    });
+        const safeAvatar = (st.avatar && !st.avatar.includes('photo-1534528741775-53994a69daeb'))
+          ? st.avatar
+          : `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120&h=120&fit=crop`;
+
+        return {
+          id: st.id || `usr-${st.name.replace(/\s+/g, '_')}`,
+          name: st.name || 'HSC Candidate',
+          email: st.email || '',
+          college: st.college || 'Notre Dame College, Dhaka',
+          batch: st.hscBatch || st.hsc_batch || 'HSC 2026',
+          streak,
+          pointsWeekly: pointsData.weekly,
+          pointsMonthly: pointsData.monthly,
+          pointsAllTime: allTimePoints,
+          league,
+          accuracy: Math.min(100, Math.max(60, accuracy)),
+          masteredWords: mastered,
+          trend: st.trend || '+1',
+          trendType: st.trendType || 'up',
+          avatar: safeAvatar
+        };
+      });
 
     return studentList;
   }, [registeredUsers, cloudUsers, postgresUsers, currentUser, examHistory]);

@@ -290,7 +290,7 @@ export default function AuthModal({
             <div className="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-emerald-500/40">
                 <img
-                  src={currentUserData?.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop'}
+                  src={currentUserData?.avatar || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop'}
                   alt="Google Avatar"
                   className="w-full h-full object-cover"
                 />

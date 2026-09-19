@@ -163,13 +163,30 @@ export default function App() {
   const [isSignUpMode, setIsSignUpMode] = useState(true);
   const [pendingRedirect, setPendingRedirect] = useState(null);
 
+  // Helper: check if account is a fake account with target image
+  const isFakeTargetAccount = (u) => {
+    if (!u) return false;
+    const avatar = String(u.avatar || '');
+    if (avatar.includes('photo-1534528741775-53994a69daeb')) return true;
+    const email = String(u.email || '').toLowerCase();
+    if (email === 'tanvir.hsc26@gmail.com') return true;
+    if (u.id === 'usr-1') return true;
+    return false;
+  };
+
   // 3. Admin Registered Users State & Firestore Realtime Sync
   const [users, setUsers] = useState(() => {
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          const cleaned = parsed.filter((u) => !isFakeTargetAccount(u));
+          try {
+            localStorage.setItem('hsc_registered_users', JSON.stringify(cleaned));
+          } catch (e) {}
+          return cleaned;
+        }
       }
     } catch (e) {}
     return usersList;
@@ -180,9 +197,15 @@ export default function App() {
       if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
         setUsers((prev) => {
           const map = new Map();
-          usersList.forEach((u) => map.set(u.email?.toLowerCase(), u));
-          prev.forEach((u) => map.set(u.email?.toLowerCase(), u));
-          cloudUsers.forEach((u) => map.set(u.email?.toLowerCase(), u));
+          usersList.forEach((u) => {
+            if (!isFakeTargetAccount(u)) map.set(u.email?.toLowerCase(), u);
+          });
+          prev.forEach((u) => {
+            if (!isFakeTargetAccount(u)) map.set(u.email?.toLowerCase(), u);
+          });
+          cloudUsers.forEach((u) => {
+            if (!isFakeTargetAccount(u)) map.set(u.email?.toLowerCase(), u);
+          });
           const merged = Array.from(map.values());
           try {
             localStorage.setItem('hsc_registered_users', JSON.stringify(merged));
@@ -432,10 +455,10 @@ export default function App() {
 
   const handleDemoLogin = () => {
     const demoUser = {
-      name: 'Tanvir Ahmed',
+      name: 'HSC Candidate',
       college: 'Notre Dame College, Dhaka',
       batch: 'HSC 2026',
-      email: 'tanvir.demo@hsc2026.edu',
+      email: 'candidate.demo@hsc2026.edu',
       role: 'student',
       points: 120,
       streak: 5

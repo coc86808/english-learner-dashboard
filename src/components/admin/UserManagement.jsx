@@ -77,6 +77,12 @@ export default function UserManagement({ users = [], onUpdateUsers, lang = 'en' 
   const processedUsers = useMemo(() => {
     let result = (users || []).filter((u) => {
       if (!u) return false;
+      const avatar = String(u.avatar || '');
+      if (avatar.includes('photo-1534528741775-53994a69daeb')) return false;
+      const email = String(u.email || '').toLowerCase();
+      if (email === 'tanvir.hsc26@gmail.com') return false;
+      if (u.id === 'usr-1') return false;
+
       const term = searchTerm.toLowerCase().trim();
       const matchesSearch =
         !term ||

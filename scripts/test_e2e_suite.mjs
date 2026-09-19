@@ -434,13 +434,13 @@ runner.test('T1.4.2 - Top 3 podium picks Top 3 ranked students', () => {
   const students = usersList.filter(u => u.role?.toLowerCase() === 'student').sort((a, b) => b.points - a.points);
   const podium = students.slice(0, 3);
   runner.assertEqual(podium.length, 3);
-  runner.assertEqual(podium[0].name, 'Tanvir Ahmed');
+  runner.assertEqual(podium[0].name, 'Sadia Rahman');
 });
 runner.test('T1.4.3 - Locate current user rank in leaderboard', () => {
   const currentEmail = 'sadia.rahman@yahoo.com';
   const students = usersList.filter(u => u.role?.toLowerCase() === 'student').sort((a, b) => b.points - a.points);
   const rankIndex = students.findIndex(s => s.email === currentEmail);
-  runner.assertEqual(rankIndex + 1, 2);
+  runner.assertEqual(rankIndex + 1, 1);
 });
 runner.test('T1.4.4 - Leaderboard time filter selection (weekly, monthly, all-time)', () => {
   const filterTimeframe = (users, timeframe) => {

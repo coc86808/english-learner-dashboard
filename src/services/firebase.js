@@ -100,7 +100,7 @@ export async function signInWithGoogle() {
           phone: user.phoneNumber || user.email,
           college: '',
           hscBatch: 'HSC 2026',
-          avatar: user.photoURL || `https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop`,
+          avatar: user.photoURL || `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop`,
           role: isAdmin ? 'admin' : 'student',
           streak: 0,
           points: 0,

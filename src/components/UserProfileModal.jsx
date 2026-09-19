@@ -21,7 +21,7 @@ import { generateWeakWordsPDF } from '../utils/pdfGenerator';
 import { hscVocabularyList } from '../data/questions/hscQuestionsData';
 
 const avatarOptions = [
-  'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop',
+  'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop',
   'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
   'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
   'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
@@ -52,7 +52,11 @@ export default function UserProfileModal({
       setCollege(currentUser.college || '');
       setBatch(currentUser.hscBatch || currentUser.batch || 'HSC 2026');
       setPhone(currentUser.phone || '');
-      setAvatar(currentUser.avatar || avatarOptions[0]);
+      const curAvatar = String(currentUser.avatar || '');
+      const safeAv = (curAvatar && !curAvatar.includes('photo-1534528741775-53994a69daeb'))
+        ? curAvatar
+        : avatarOptions[0];
+      setAvatar(safeAv);
     }
   }, [currentUser, isOpen]);
 

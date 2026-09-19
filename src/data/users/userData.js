@@ -5,22 +5,6 @@
 
 export const usersList = [
   {
-    id: 'usr-1',
-    name: 'Tanvir Ahmed',
-    email: 'tanvir.hsc26@gmail.com',
-    phone: '+880 1712-345678',
-    college: 'Notre Dame College, Dhaka',
-    hscBatch: 'HSC 2026',
-    streak: 14,
-    points: 1450,
-    testsCompleted: 28,
-    masteredWordsCount: 85,
-    status: 'Active',
-    role: 'Student',
-    joinedDate: '12 Aug 2026',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop'
-  },
-  {
     id: 'usr-2',
     name: 'Sadia Rahman',
     email: 'sadia.rahman@yahoo.com',

@@ -94,9 +94,9 @@ export default function MiniLeaderboard({
     : defaultTopPeers;
 
   // 2. Resolve Current User Rank Card
-  const userName = currentUser?.name || 'Tanvir Ahmed';
-  const userCollege = currentUser?.college || 'Notre Dame College';
-  const userPoints = Number(currentUser?.points || currentUserRank?.points || currentUserRank?.xp || 1450);
+  const userName = currentUser?.name || 'HSC Candidate';
+  const userCollege = currentUser?.college || 'Dhaka College';
+  const userPoints = Number(currentUser?.points || currentUserRank?.points || currentUserRank?.xp || 1280);
   const userRankNum = Number(currentUserRank?.rank || currentUserStudent?.rank || 12);
   const userStreak = Number(currentUser?.streak || 7);
   const userTrend = currentUserRank?.trend || (isBn ? 'এই সপ্তাহে ৩ ধাপ অগ্রগতি' : '+3 ranks this week');
