@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Scale,
@@ -15,7 +15,8 @@ import {
   BookOpen,
   Users,
   Globe2,
-  ExternalLink
+  ExternalLink,
+  Cookie
 } from 'lucide-react';
 
 export default function TermsPage({ lang = 'en', onNavigate }) {
@@ -105,35 +106,55 @@ export default function TermsPage({ lang = 'en', onNavigate }) {
       ]
     },
     {
+      id: 'cookies',
+      titleEn: '5. Cookie Usage & Browsing Consent',
+      titleBn: '৫. কুকিজ ব্যবহার ও ব্রাউজিং সম্মতি',
+      icon: Cookie,
+      summaryEn: 'Automatic cookie & local storage consent granted by browsing this website.',
+      summaryBn: 'ওয়েবসাইট ব্রাউজ করার মাধ্যমে স্বয়ংক্রিয়ভাবে প্রয়োজনীয় কুকিজ ব্যবহারের অনুমতি ও সম্মতি।',
+      contentEn: [
+        '5.1. **Implied Consent by Browsing:** By accessing, browsing, interacting with, or continuing to use this website, you explicitly acknowledge, agree, and grant us full legal consent to use essential cookies, browser storage (LocalStorage & SessionStorage), and cached tokens on your device.',
+        '5.2. **Purpose of Cookies & Storage:** Cookies and storage are strictly utilized to deliver an optimal, frictionless educational experience: securely maintaining your active student login session, remembering your selected interface language (বাংলা / English), preserving your theme and font preferences, tracking test timers during mock exams, calculating daily learning streaks, and powering the Spaced Repetition engine by safely saving your weak vocabulary words.',
+        '5.3. **Zero Third-Party Advertising Trackers:** We respect student privacy. We do NOT use intrusive third-party commercial advertising cookies, behavioral trackers, or data-broker profiling scripts. All cookies are purely functional and internal to your HSC learning dashboard.',
+        '5.4. **Managing Cookie Settings:** You may inspect, block, or clear cookies and local browser storage through your web browser preferences at any time. Please note that disabling essential cookies or local storage may disable persistent login, offline flashcard caching, or active exam state preservation.'
+      ],
+      contentBn: [
+        '৫.১. **ব্রাউজিংয়ের মাধ্যমে স্পষ্ট সম্মতি:** আমাদের ওয়েবসাইট প্রবেশ, ব্রাউজ বা যেকোনোভাবে ব্যবহার করার মাধ্যমে আপনি সুস্পষ্টভাবে স্বীকার ও সম্মতি দিচ্ছেন যে, আপনি আমাদেরকে আপনার ডিভাইসে প্রয়োজনীয় কুকিজ (Cookies) এবং ব্রাউজার লোকাল স্টোরেজ (LocalStorage ও SessionStorage) ব্যবহারের পূর্ণ অনুমতি প্রদান করেছেন।',
+        '৫.২. **কুকিজ ব্যবহারের উদ্দেশ্য:** এই কুকিজ ও লোকাল স্টোরেজ সম্পূর্ণভাবে শিক্ষার্থীবান্ধব ও কারিগরি কারণে ব্যবহৃত হয়: আপনার লগইন সেশন সুরক্ষিত রাখা, পছন্দের ভাষা (বাংলা/English) ও ফন্ট সাইজ মনে রাখা, পরীক্ষার সময় লাইভ টাইমার পরিচালনা করা, দৈনিক স্ট্রিক হিসাব করা এবং স্পেসড রিপিটিশন অ্যালগরিদমের মাধ্যমে দুর্বল শব্দসমূহ ডিভাইসে সংরক্ষণ করা।',
+        '৫.৩. **বিজ্ঞাপনমুক্ত ও ব্যক্তিগত তথ্যের সুরক্ষা:** আমরা কোনো প্রকার তৃতীয় পক্ষের বাণিজ্যিক বিজ্ঞাপন ট্র্যাকার বা ডাটা-ব্রোকার কুকিজ ব্যবহার করি না। সংরক্ষিত সকল কুকিজ কেবলমাত্র প্ল্যাটফর্মের গতি ও কার্যক্ষমতা বৃদ্ধির জন্য নিবেদিত।',
+        '৫.৪. **কুকিজ নিয়ন্ত্রণ ও মুছে ফেলা:** আপনি চাইলে যেকোনো সময় আপনার ব্রাউজারের সেটিংস থেকে কুকিজ ও লোকাল ডাটা মুছে ফেলতে বা নিয়ন্ত্রণ করতে পারেন। তবে প্রয়োজনীয় কুকিজ বা স্টোরেজ বন্ধ রাখলে স্বয়ংক্রিয় লগইন বা পরীক্ষার টাইমার সংক্রান্ত কিছু ফিচার সাময়িকভাবে ব্যাহত হতে পারে।'
+      ]
+    },
+    {
       id: 'disclaimer',
-      titleEn: '5. Educational Disclaimer & Limitation of Liability',
-      titleBn: '৫. শিক্ষামূলক ডিসক্লেইমার ও দায়বদ্ধতার সীমা',
+      titleEn: '6. Educational Disclaimer & Limitation of Liability',
+      titleBn: '৬. শিক্ষামূলক ডিসক্লেইমার ও দায়বদ্ধতার সীমা',
       icon: AlertTriangle,
       summaryEn: 'Independent study tool, board examination outcome disclaimer.',
       summaryBn: 'স্বাধীন ডিজিটাল অনুশীলন মাধ্যম এবং বোর্ড পরীক্ষার ফলাফল সম্পর্কিত সুস্পষ্ট বার্তা।',
       contentEn: [
-        '5.1. **Educational Study Aid:** This platform is an independent digital learning and revision aid. While our database is built with rigorous NCTB textbook alignment and board exam standards, individual examination grades ultimately depend on personal student effort, comprehensive syllabus coverage, and board examiners.',
-        '5.2. **System Availability:** We maintain high cloud server uptime. However, we are not liable for temporary service delays resulting from public internet failures, mobile network fluctuations, or scheduled infrastructure upgrades.'
+        '6.1. **Educational Study Aid:** This platform is an independent digital learning and revision aid. While our database is built with rigorous NCTB textbook alignment and board exam standards, individual examination grades ultimately depend on personal student effort, comprehensive syllabus coverage, and board examiners.',
+        '6.2. **System Availability:** We maintain high cloud server uptime. However, we are not liable for temporary service delays resulting from public internet failures, mobile network fluctuations, or scheduled infrastructure upgrades.'
       ],
       contentBn: [
-        '৫.১. **সহায়ক ডিজিটাল মাধ্যম:** এই প্ল্যাটফর্মটি একটি সহায়ক অনুশীলন মাধ্যম। পাঠ্যবই ও বিগত বোর্ড পরীক্ষার প্রশ্নের সাথে শতভাগ সামঞ্জস্য রেখে প্রশ্ন তৈরি করা হলেও চূড়ান্ত পরীক্ষার ফলাফল শিক্ষার্থীর সামগ্রিক প্রস্তুতি ও প্রচেষ্টার ওপর নির্ভরশীল।',
-        '৫.২. **সার্ভার প্রাপ্যতা:** সার্বক্ষণিক সেবা সচল রাখার সর্বোচ্চ চেষ্টা করা হলেও ইন্টারনেট সংযোগের ত্রুটি বা সার্ভার রক্ষণাবেক্ষণজনিত সাময়িক বাধার জন্য প্ল্যাটফর্ম দায়ী থাকবে না।'
+        '৬.১. **সহায়ক ডিজিটাল মাধ্যম:** এই প্ল্যাটফর্মটি একটি সহায়ক অনুশীলন মাধ্যম। পাঠ্যবই ও বিগত বোর্ড পরীক্ষার প্রশ্নের সাথে শতভাগ সামঞ্জস্য রেখে প্রশ্ন তৈরি করা হলেও চূড়ান্ত পরীক্ষার ফলাফল শিক্ষার্থীর সামগ্রিক প্রস্তুতি ও প্রচেষ্টার ওপর নির্ভরশীল।',
+        '৬.২. **সার্ভার প্রাপ্যতা:** সার্বক্ষণিক সেবা সচল রাখার সর্বোচ্চ চেষ্টা করা হলেও ইন্টারনেট সংযোগের ত্রুটি বা সার্ভার রক্ষণাবেক্ষণজনিত সাময়িক বাধার জন্য প্ল্যাটফর্ম দায়ী থাকবে না।'
       ]
     },
     {
       id: 'governing',
-      titleEn: '6. Governing Law & Legal Jurisdiction',
-      titleBn: '৬. প্রযোজ্য আইন ও বিচারিক এখতিয়ার',
+      titleEn: '7. Governing Law & Legal Jurisdiction',
+      titleBn: '৭. প্রযোজ্য আইন ও বিচারিক এখতিয়ার',
       icon: Scale,
       summaryEn: 'Governed by the laws of the People\'s Republic of Bangladesh.',
       summaryBn: 'গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধান ও ডিজিটাল আইন দ্বারা পরিচালিত।',
       contentEn: [
-        '6.1. **Jurisdiction:** These Terms and Conditions shall be governed by, interpreted, and enforced in accordance with the laws of the **People\'s Republic of Bangladesh**.',
-        '6.2. **Dispute Resolution:** Any dispute or legal question arising in connection with the use of this website shall be resolved primarily through mutual amicable discussion, and failing that, submitted to the jurisdiction of the civil and cyber tribunals located in **Dhaka, Bangladesh**.'
+        '7.1. **Jurisdiction:** These Terms and Conditions shall be governed by, interpreted, and enforced in accordance with the laws of the **People\'s Republic of Bangladesh**.',
+        '7.2. **Dispute Resolution:** Any dispute or legal question arising in connection with the use of this website shall be resolved primarily through mutual amicable discussion, and failing that, submitted to the jurisdiction of the civil and cyber tribunals located in **Dhaka, Bangladesh**.'
       ],
       contentBn: [
-        '৬.১. **আইনি এখতিয়ার:** এই শর্তাবলী **গণপ্রজাতন্ত্রী বাংলাদেশের প্রচলিত আইন** দ্বারা পরিচালিত ও নিয়ন্ত্রিত হবে।',
-        '৬.২. **বিরোধ নিষ্পত্তি:** ওয়েবসাইট ব্যবহার সংক্রান্ত যেকোনো আইনগত বিরোধ বা জিজ্ঞাসা প্রাথমিকভাবে পারস্পরিক আলোচনার মাধ্যমে এবং প্রয়োজনে **ঢাকা, বাংলাদেশ**-এর উপযুক্ত আদালতের এখতিয়ারে নিষ্পত্তি হবে।'
+        '৭.১. **আইনি এখতিয়ার:** এই শর্তাবলী **গণপ্রজাতন্ত্রী বাংলাদেশের প্রচলিত আইন** দ্বারা পরিচালিত ও নিয়ন্ত্রিত হবে।',
+        '৭.২. **বিরোধ নিষ্পত্তি:** ওয়েবসাইট ব্যবহার সংক্রান্ত যেকোনো আইনগত বিরোধ বা জিজ্ঞাসা প্রাথমিকভাবে পারস্পরিক আলোচনার মাধ্যমে এবং প্রয়োজনে **ঢাকা, বাংলাদেশ**-এর উপযুক্ত আদালতের এখতিয়ারে নিষ্পত্তি হবে।'
       ]
     }
   ];
@@ -174,8 +195,8 @@ export default function TermsPage({ lang = 'en', onNavigate }) {
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-3xl leading-relaxed">
             {isBn
-              ? 'আমাদের প্ল্যাটফর্ম ব্যবহারের পূর্বে অনুগ্রহ করে এই শর্তাবলী মনোযোগ সহকারে পড়ুন। শিক্ষার্থী সুরক্ষা, ন্যায্য লিডারবোর্ড প্রতিযোগিতা এবং মেধাস্বত্ব সুরক্ষায় আমরা প্রতিশ্রুতিবদ্ধ।'
-              : 'Please read these terms carefully before accessing or using our educational platform. By creating an account or practicing on our platform, you agree to comply with all ethical and legal standards.'}
+              ? 'আমাদের প্ল্যাটফর্ম ব্যবহারের পূর্বে অনুগ্রহ করে এই শর্তাবলী মনোযোগ সহকারে পড়ুন। শিক্ষার্থী সুরক্ষা, ন্যায্য লিডারবোর্ড প্রতিযোগিতা এবং মেধাস্বত্ব সুরক্ষায় আমরা প্রতিশ্রুতিবদ্ধ। আমাদের ওয়েবসাইট ব্রাউজ ও ব্যবহার করার মাধ্যমে আপনি আমাদের শর্তাবলী ও প্রয়োজনীয় কুকিজ (Cookies) ব্যবহারের অনুমতি প্রদান করছেন।'
+              : 'Please read these terms carefully before accessing or using our educational platform. By browsing, accessing, or practicing on our website, you agree to comply with our terms and grant us permission to use essential cookies and local storage for your learning session.'}
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-400 border-t border-[#1e293b]">
