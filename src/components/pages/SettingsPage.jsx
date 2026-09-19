@@ -40,14 +40,21 @@ export default function SettingsPage({
 }) {
   const isBn = lang === 'bn';
 
-  // Settings State initialized from localStorage
+  // Settings State initialized from localStorage & synchronized with getStoredTheme()
   const [settings, setSettings] = useState(() => {
+    const currentTheme = getStoredTheme();
     try {
       const saved = localStorage.getItem('hsc_user_settings');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        return {
+          ...parsed,
+          theme: currentTheme || parsed.theme || 'sage-cream'
+        };
+      }
     } catch (e) {}
     return {
-      theme: 'cyber-dark', // 'cyber-dark' | 'midnight-blue' | 'pure-black' | 'light-clean'
+      theme: currentTheme || 'sage-cream',
       soundEffects: true,
       dailyReminder: true,
       examAnnouncements: true,
@@ -56,6 +63,17 @@ export default function SettingsPage({
       fontSize: 'normal'
     };
   });
+
+  // Keep settings.theme synchronized with live theme changes
+  useEffect(() => {
+    const handleThemeEvent = (e) => {
+      if (e.detail?.theme) {
+        setSettings((prev) => ({ ...prev, theme: e.detail.theme }));
+      }
+    };
+    window.addEventListener('hsc_theme_changed', handleThemeEvent);
+    return () => window.removeEventListener('hsc_theme_changed', handleThemeEvent);
+  }, []);
 
   // Profile Form State
   const [name, setName] = useState(currentUser?.name || 'HSC Candidate');
@@ -185,10 +203,16 @@ export default function SettingsPage({
   // Handle Theme Selection
   const handleSelectTheme = (themeName) => {
     applyTheme(themeName);
-    setSettings((prev) => ({
-      ...prev,
-      theme: themeName
-    }));
+    setSettings((prev) => {
+      const updated = {
+        ...prev,
+        theme: themeName
+      };
+      try {
+        localStorage.setItem('hsc_user_settings', JSON.stringify(updated));
+      } catch (e) {}
+      return updated;
+    });
     setActionNotice(isBn ? `থিম পরিবর্তিত: ${themeName}` : `Theme applied: ${themeName}`);
     setTimeout(() => setActionNotice(''), 2000);
   };
