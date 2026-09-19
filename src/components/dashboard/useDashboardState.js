@@ -27,7 +27,7 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
       const saved = localStorage.getItem('hsc_auth_user');
       if (saved) return JSON.parse(saved);
     } catch (e) {}
-    // Default fallback student profile (HSC Candidate)
+    // Default fallback student profile (HSC Candidate) with 0 initial points
     return {
       id: 'usr-student',
       name: 'HSC Candidate',
@@ -35,11 +35,11 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
       college: 'Dhaka College',
       hscBatch: 'HSC 2026',
       role: 'Student',
-      streak: 7,
-      points: 1280,
-      testsCompleted: 22,
-      masteredWordsCount: 72,
-      accuracy: 84
+      streak: 0,
+      points: 0,
+      testsCompleted: 0,
+      masteredWordsCount: 0,
+      accuracy: 0
     };
   });
 
@@ -50,51 +50,16 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
     }
   }, [initialUser]);
 
-  // 2. Exam History State
+  // 2. Exam History State (empty initially — earned through real tests)
   const [examHistory, setExamHistory] = useState(() => {
     try {
       const saved = localStorage.getItem('hsc_exam_history');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        if (Array.isArray(parsed)) return parsed;
       }
     } catch (e) {}
-    // Realistic default history
-    return [
-      {
-        id: 'hist-1',
-        unit: 'Unit 1',
-        lesson: "The Parrot's Tale (তোতাকাহিনী)",
-        doneCount: 9,
-        totalQuestions: 10,
-        accuracy: 90,
-        earnedXP: 140,
-        timestamp: Date.now() - 2 * 60 * 60 * 1000,
-        isoDate: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString()
-      },
-      {
-        id: 'hist-2',
-        unit: 'Unit 1',
-        lesson: 'Vocabulary Recall Challenge',
-        doneCount: 13,
-        totalQuestions: 15,
-        accuracy: 87,
-        earnedXP: 185,
-        timestamp: Date.now() - 18 * 60 * 60 * 1000,
-        isoDate: new Date(Date.now() - 18 * 60 * 60 * 1000).toISOString()
-      },
-      {
-        id: 'hist-3',
-        unit: 'Unit 2',
-        lesson: 'The Unbeaten Track',
-        doneCount: 8,
-        totalQuestions: 10,
-        accuracy: 80,
-        earnedXP: 125,
-        timestamp: Date.now() - 2 * 24 * 60 * 60 * 1000,
-        isoDate: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
-      }
-    ];
+    return [];
   });
 
   // 3. Weak Words State
@@ -242,24 +207,21 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
     return count;
   }, [examHistory, todayStr, userState]);
 
-  const streakCount = useMemo(() => Number(userState?.streak || 7), [userState]);
-  const accuracy = useMemo(() => Number(userState?.accuracy || 84), [userState]);
+  const streakCount = useMemo(() => Number(userState?.streak || 0), [userState]);
+  const accuracy = useMemo(() => Number(userState?.accuracy || 0), [userState]);
 
   const totalQuestionsSolved = useMemo(() => {
     const fromHistory = examHistory.reduce(
       (sum, e) => sum + (Number(e.doneCount) || Number(e.totalQuestions) || 0),
       0
     );
-    if (fromHistory > 0) {
-      return Math.max(fromHistory, Number(userState?.testsCompleted || 0) * 10, 420);
-    }
-    return 420;
+    return fromHistory > 0 ? fromHistory : (Number(userState?.testsCompleted || 0) * 10);
   }, [examHistory, userState]);
 
   const masteredWordsCount = useMemo(() => {
     const realCount = countRealMasteredWords();
     if (realCount > 0) return realCount;
-    return Number(userState?.masteredWordsCount || 85);
+    return Number(userState?.masteredWordsCount || 0);
   }, [userState]);
 
   // 7. Active Session Resolution (Continue Learning)
@@ -378,13 +340,13 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
   }, []);
 
   const currentUserRank = useMemo(() => ({
-    rank: 12,
+    rank: 1,
     name: userState?.name || 'HSC Candidate',
     college: userState?.college || 'Dhaka College',
-    points: Number(userState?.points || 1280),
-    xp: Number(userState?.points || 1280),
+    points: Number(userState?.points || 0),
+    xp: Number(userState?.points || 0),
     streak: streakCount,
-    trend: isBn ? 'এই সপ্তাহে ৩ ধাপ অগ্রগতি' : '+3 ranks this week'
+    trend: isBn ? 'শুরু থেকে অগ্রগতি' : 'Fresh Start'
   }), [userState, streakCount, isBn]);
 
   // 10. Achievements List

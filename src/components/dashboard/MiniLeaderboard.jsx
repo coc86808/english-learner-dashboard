@@ -44,62 +44,55 @@ export default function MiniLeaderboard({
 }) {
   const isBn = lang === 'bn';
 
-  // 1. Authoritative Top 3 Peers (with fallback demo candidates from top colleges)
+  // 1. Authoritative Top 3 Peers — only real accounts with authentic XP (starts at 0)
   const defaultTopPeers = [
     {
-      id: 'peer-1',
+      id: 'usr-nasim',
       rank: 1,
-      name: 'Nafis Iqbal',
+      name: 'Mohammad Nasim',
       college: 'Dhaka College',
-      points: 2840,
-      xp: 2840,
-      streak: 18,
-      avatarInitials: 'NI',
+      points: 0,
+      xp: 0,
+      streak: 0,
+      avatarInitials: 'MN',
       avatarBg: 'bg-gradient-to-br from-amber-400 to-amber-600 text-white'
     },
     {
-      id: 'peer-2',
+      id: 'usr-riad',
       rank: 2,
-      name: 'Sadia Rahman',
-      college: 'Viqarunnisa Noon College',
-      points: 2610,
-      xp: 2610,
-      streak: 15,
-      avatarInitials: 'SR',
+      name: 'Riad Sarkar',
+      college: 'Dhaka College',
+      points: 0,
+      xp: 0,
+      streak: 0,
+      avatarInitials: 'RS',
       avatarBg: 'bg-gradient-to-br from-slate-400 to-slate-600 text-white'
-    },
-    {
-      id: 'peer-3',
-      rank: 3,
-      name: 'Mehedi Hasan',
-      college: 'Rajuk Uttara Model College',
-      points: 2390,
-      xp: 2390,
-      streak: 12,
-      avatarInitials: 'MH',
-      avatarBg: 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'
     }
   ];
 
   // Resolve peer list
   const rawPeers = topStudents || topUsers;
-  const peersList = (Array.isArray(rawPeers) && rawPeers.length >= 3)
+  const peersList = (Array.isArray(rawPeers) && rawPeers.length > 0)
     ? rawPeers.slice(0, 3).map((p, idx) => ({
-        ...defaultTopPeers[idx],
-        ...p,
+        id: p.id || `peer-${idx}`,
         rank: idx + 1,
-        xp: p.xp || p.points || defaultTopPeers[idx].xp,
-        avatarInitials: p.avatarInitials || (p.name ? p.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() : 'HS')
+        name: p.name || 'Student',
+        college: p.college || '',
+        points: Number(p.points || p.xp || 0),
+        xp: Number(p.xp || p.points || 0),
+        streak: Number(p.streak || 0),
+        avatarInitials: p.avatarInitials || (p.name ? p.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() : 'HS'),
+        avatarBg: ['bg-gradient-to-br from-amber-400 to-amber-600 text-white', 'bg-gradient-to-br from-slate-400 to-slate-600 text-white', 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'][idx] || 'bg-gradient-to-br from-slate-500 to-slate-700 text-white'
       }))
     : defaultTopPeers;
 
   // 2. Resolve Current User Rank Card
   const userName = currentUser?.name || 'HSC Candidate';
   const userCollege = currentUser?.college || 'Dhaka College';
-  const userPoints = Number(currentUser?.points || currentUserRank?.points || currentUserRank?.xp || 1280);
-  const userRankNum = Number(currentUserRank?.rank || currentUserStudent?.rank || 12);
-  const userStreak = Number(currentUser?.streak || 7);
-  const userTrend = currentUserRank?.trend || (isBn ? 'এই সপ্তাহে ৩ ধাপ অগ্রগতি' : '+3 ranks this week');
+  const userPoints = Number(currentUser?.points || currentUserRank?.points || currentUserRank?.xp || 0);
+  const userRankNum = Number(currentUserRank?.rank || currentUserStudent?.rank || 1);
+  const userStreak = Number(currentUser?.streak || 0);
+  const userTrend = currentUserRank?.trend || (isBn ? 'শুরু থেকে অগ্রগতি' : 'Fresh Start');
 
   const userInitials = userName.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 

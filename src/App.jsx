@@ -208,13 +208,32 @@ export default function App() {
           localStorage.setItem('hsc_registered_users', JSON.stringify(kept));
         }
       }
-      // 2. Clean current authenticated user if fake
+      // 2. Clean current authenticated user if fake, or reset points for fresh start
       const rawAuth = localStorage.getItem('hsc_auth_user');
       if (rawAuth) {
         const authUser = JSON.parse(rawAuth);
         if (!isRealAccount(authUser)) {
           localStorage.removeItem('hsc_auth_user');
         }
+      }
+
+      // 3. One-time Global Points Reset for all users (Start from Zero)
+      const RESET_KEY = 'hsc_points_fresh_start_2026_v1';
+      if (!localStorage.getItem(RESET_KEY)) {
+        if (rawAuth) {
+          try {
+            const authUser = JSON.parse(rawAuth);
+            authUser.points = 0;
+            authUser.streak = 0;
+            authUser.testsCompleted = 0;
+            authUser.masteredWordsCount = 0;
+            authUser.accuracy = 0;
+            localStorage.setItem('hsc_auth_user', JSON.stringify(authUser));
+          } catch (err) {}
+        }
+        localStorage.removeItem('hsc_exam_history');
+        localStorage.removeItem('hsc_personal_best_streak');
+        localStorage.setItem(RESET_KEY, 'true');
       }
       return null;
     } catch (e) { return null; }
