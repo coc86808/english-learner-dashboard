@@ -600,7 +600,8 @@ export default function App() {
                 onOpenVocabBank={() => navigate('/vocabulary-bank')}
                 onOpenFlashcards={() => navigate('/flashcards')}
                 onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
-                onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
+                onOpenMockExam={() => navigate('/exam')}
+                onNavigate={navigate}
               />
 
               {/* Main Content Grid: 8 cols left + 4 cols right */}
@@ -620,8 +621,8 @@ export default function App() {
 
                     <RecentExams
                       lang={lang}
-                      onOpenAllExams={() => setIsUnitLessonModalOpen(true)}
-                      onStartExam={() => setIsUnitLessonModalOpen(true)}
+                      onOpenAllExams={() => navigate('/exam')}
+                      onStartExam={() => navigate('/exam')}
                     />
                   </div>
 
@@ -639,7 +640,7 @@ export default function App() {
                     currentUser={currentUser}
                     weakWords={weakWords}
                     onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
-                    onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
+                    onOpenMockExam={() => navigate('/exam')}
                     navigate={navigate}
                   />
                 </div>

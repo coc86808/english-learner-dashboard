@@ -24,6 +24,7 @@ export default function ActionCards({
   onOpenWeakWords,
   onOpenTextbook,
   onResumeLearning,
+  onNavigate,
   lastSession
 }) {
   const isBn = lang === 'bn';
@@ -85,7 +86,15 @@ export default function ActionCards({
       iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-950/60 ring-2 ring-cyan-500/30',
       borderHover: 'hover:border-cyan-500/60 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)]',
       glowColor: 'group-hover:bg-cyan-500/[0.04]',
-      onClick: onOpenMockExam || onOpenQuickPractice
+      onClick: () => {
+        if (onOpenMockExam) {
+          onOpenMockExam();
+        } else if (onNavigate) {
+          onNavigate('/exam');
+        } else if (typeof window !== 'undefined') {
+          window.location.href = '/exam';
+        }
+      }
     },
     {
       id: 'ww',
