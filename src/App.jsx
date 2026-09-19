@@ -164,69 +164,75 @@ export default function App() {
   const [isSignUpMode, setIsSignUpMode] = useState(true);
   const [pendingRedirect, setPendingRedirect] = useState(null);
 
-  // Helper: check if an account is a known fake/demo account that must be purged.
-  // Only 3 real accounts are allowed: Mohammad Nasim, Riad Sarkar, and Sakin (admin).
-  const isFakeTargetAccount = (u) => {
+  // ─── STRICT WHITELIST ────────────────────────────────────────────────────────
+  // Only these 3 real people may exist on the website. Every other account —
+  // no matter where it came from (localStorage, Firestore, registration) — is
+  // permanently removed on every app load.
+  const REAL_ACCOUNT_WHITELIST = [
+    { name: 'mohammad nasim', email: 'mohammad.nasim@gmail.com', id: 'usr-nasim' },
+    { name: 'riad sarkar',    email: 'riad.sarkar@gmail.com',    id: 'usr-riad'  },
+    // Admin (all known aliases for sakin)
+    { name: 'sakin',          email: 'sakin@gmail.com',          id: 'usr-admin' },
+  ];
+
+  /** Returns true only if this user is one of the 3 approved real people */
+  const isRealAccount = (u) => {
     if (!u) return false;
-    // Block by known fake Unsplash avatar photo IDs
-    const avatar = String(u.avatar || '');
-    if (avatar.includes('photo-1534528741775-53994a69daeb')) return true;
-    if (avatar.includes('photo-1494790108377-be9c29b29330')) return true; // Sadia
-    if (avatar.includes('photo-1507003211169-0a1dd7228f2d')) return true; // Nafis
-    if (avatar.includes('photo-1472099645785-5658abf4ff4e')) return true; // old admin placeholder
-    if (avatar.includes('photo-1500648767791-00dcc994a43e')) return true; // Mehedi
-    // Block by known fake IDs
-    const id = String(u.id || '');
-    const FAKE_IDS = new Set(['usr-1', 'usr-2', 'usr-3', 'usr-5', 'peer-1', 'peer-2', 'peer-3']);
-    if (FAKE_IDS.has(id)) return true;
-    // Block by known fake emails
-    const email = String(u.email || '').toLowerCase();
-    const FAKE_EMAILS = new Set([
-      'tanvir.hsc26@gmail.com',
-      'sadia.rahman@yahoo.com',
-      'nafis.dc@gmail.com',
-      'mehedi.hasan99@gmail.com'
-    ]);
-    if (FAKE_EMAILS.has(email)) return true;
-    return false;
+    const uName  = String(u.name  || '').toLowerCase().trim();
+    const uEmail = String(u.email || '').toLowerCase().trim();
+    const uId    = String(u.id    || '').toLowerCase().trim();
+    const uRole  = String(u.role  || '').toLowerCase();
+    // Always keep Admin-role accounts (sakin/admin accounts)
+    if (uRole === 'admin') return true;
+    return REAL_ACCOUNT_WHITELIST.some(
+      (w) => uName.includes(w.name) || uEmail === w.email || (w.id && uId === w.id)
+    );
+  };
+
+  /** Purge every non-whitelisted account from localStorage right now */
+  const purgeNonRealAccounts = () => {
+    try {
+      const raw = localStorage.getItem('hsc_registered_users');
+      if (!raw) return null;
+      const all = JSON.parse(raw);
+      if (!Array.isArray(all)) return null;
+      const kept = all.filter(isRealAccount);
+      localStorage.setItem('hsc_registered_users', JSON.stringify(kept));
+      return kept;
+    } catch (e) { return null; }
   };
 
   // 3. Admin Registered Users State & Firestore Realtime Sync
   const [users, setUsers] = useState(() => {
+    const kept = purgeNonRealAccounts();
+    if (kept && kept.length > 0) return kept;
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          const cleaned = parsed.filter((u) => !isFakeTargetAccount(u));
-          try {
-            localStorage.setItem('hsc_registered_users', JSON.stringify(cleaned));
-          } catch (e) {}
-          return cleaned;
-        }
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed.filter(isRealAccount);
       }
     } catch (e) {}
     return usersList;
   });
 
   useEffect(() => {
+    // Run purge again on mount (catches cached data from previous sessions)
+    const purged = purgeNonRealAccounts();
+    if (purged) setUsers(purged.length > 0 ? purged : usersList);
+
     const unsubscribe = listenToFirestoreUsers((cloudUsers) => {
       if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
         setUsers((prev) => {
           const map = new Map();
-          usersList.forEach((u) => {
-            if (!isFakeTargetAccount(u)) map.set(u.email?.toLowerCase(), u);
-          });
-          prev.forEach((u) => {
-            if (!isFakeTargetAccount(u)) map.set(u.email?.toLowerCase(), u);
-          });
-          cloudUsers.forEach((u) => {
-            if (!isFakeTargetAccount(u)) map.set(u.email?.toLowerCase(), u);
+          // Only keep whitelisted entries from all sources
+          [...usersList, ...prev, ...cloudUsers].forEach((u) => {
+            if (isRealAccount(u)) {
+              map.set((u.email || u.id || '').toLowerCase(), u);
+            }
           });
           const merged = Array.from(map.values());
-          try {
-            localStorage.setItem('hsc_registered_users', JSON.stringify(merged));
-          } catch (e) {}
+          try { localStorage.setItem('hsc_registered_users', JSON.stringify(merged)); } catch (e) {}
           return merged;
         });
       }
