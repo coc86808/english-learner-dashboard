@@ -19,9 +19,11 @@ import {
   ChevronRight,
   BookOpen,
   ArrowRight,
-  Scale
+  Scale,
+  Palette
 } from 'lucide-react';
 import { getUserLeague } from '../services/scoreManager';
+import { AVAILABLE_THEMES, applyTheme, getStoredTheme } from '../services/themeManager';
 
 export default function Header({
   activeTabTitle = 'Dashboard',
@@ -50,6 +52,22 @@ export default function Header({
   });
   const [searchQuery, setSearchQuery] = useState('');
   const menuRef = useRef(null);
+
+  // Active theme state
+  const [currentTheme, setCurrentTheme] = useState(() => getStoredTheme());
+
+  useEffect(() => {
+    const handleThemeEvent = (e) => {
+      if (e.detail?.theme) setCurrentTheme(e.detail.theme);
+    };
+    window.addEventListener('hsc_theme_changed', handleThemeEvent);
+    return () => window.removeEventListener('hsc_theme_changed', handleThemeEvent);
+  }, []);
+
+  const handleThemeChange = (themeId) => {
+    applyTheme(themeId);
+    setCurrentTheme(themeId);
+  };
 
   const isBn = lang === 'bn';
   const userXP = Number(currentUser?.points || currentUser?.xp || 0);
@@ -221,8 +239,26 @@ export default function Header({
             </div>
           </div>
 
-          {/* Right: The Single, Powerful Three-Dot Menu Button (⋮) */}
+          {/* Right: Theme Toggle & The Single, Powerful Three-Dot Menu Button (⋮) */}
           <div className="flex items-center gap-2">
+            {/* Quick Theme Switcher Button with Sage Colors */}
+            <button
+              onClick={() => {
+                const next = currentTheme === 'sage-cream' ? 'cyber-dark' : 'sage-cream';
+                handleThemeChange(next);
+              }}
+              className="px-2 py-1.5 rounded-xl bg-[#111723] hover:bg-[#161f30] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white shadow-sm transition-all flex items-center gap-1.5 cursor-pointer group active:scale-95"
+              title={isBn ? 'থিম পরিবর্তন (সেজ ও ক্রিম / সাইবার ডার্ক)' : 'Toggle Theme (Sage & Cream / Cyber Dark)'}
+            >
+              <Palette size={15} className="text-emerald-400 group-hover:rotate-45 transition-transform" />
+              <div className="flex items-center gap-0.5">
+                <span className="w-2 h-2 rounded-full bg-[#8FA28A] border border-black/20" />
+                <span className="w-2 h-2 rounded-full bg-[#C7D3C0] border border-black/20" />
+                <span className="w-2 h-2 rounded-full bg-[#F7F4ED] border border-black/20" />
+                <span className="w-2 h-2 rounded-full bg-[#C8A96B] border border-black/20" />
+              </div>
+            </button>
+
             <button
               onClick={() => setIsControlMenuOpen(true)}
               className="px-2.5 py-1.5 rounded-xl bg-[#111723] hover:bg-[#161f30] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white shadow-md transition-all flex items-center gap-2 cursor-pointer group active:scale-95"
@@ -424,6 +460,53 @@ export default function Header({
                       >
                         English
                       </button>
+                    </div>
+                  </div>
+
+                  {/* Theme Switcher with Sage & Cream Colors */}
+                  <div className="p-2.5 rounded-xl bg-[#111724] border border-[#1e293b] space-y-2">
+                    <div className="flex items-center justify-between text-xs text-slate-300 font-semibold">
+                      <div className="flex items-center gap-2">
+                        <Palette size={16} className="text-emerald-400" />
+                        <span>{isBn ? 'ওয়েবসাইট থিম' : 'Website Theme'}</span>
+                      </div>
+                      <span className="text-[10px] text-emerald-400 font-bold">
+                        {currentTheme === 'sage-cream' ? '🌿 Sage & Cream' : currentTheme === 'sage-dark' ? '🌲 Sage Dark' : '🌌 Cyber Dark'}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-1.5">
+                      {AVAILABLE_THEMES.map((th) => {
+                        const isActive = currentTheme === th.id;
+                        return (
+                          <button
+                            key={th.id}
+                            type="button"
+                            onClick={() => handleThemeChange(th.id)}
+                            className={`p-2 rounded-lg border text-left transition-all cursor-pointer flex flex-col justify-between ${
+                              isActive
+                                ? 'bg-[#182333] border-emerald-500/60 ring-1 ring-emerald-500/40'
+                                : 'bg-[#0c0f17] border-[#1e293b] hover:border-slate-600'
+                            }`}
+                          >
+                            <div className="flex items-center justify-between mb-1.5">
+                              <span className={`text-[11px] font-bold truncate ${isActive ? 'text-emerald-300' : 'text-slate-300'}`}>
+                                {isBn ? th.nameBn : th.nameEn}
+                              </span>
+                              {isActive && <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />}
+                            </div>
+                            <div className="flex items-center gap-1">
+                              {th.colors.map((c, i) => (
+                                <span
+                                  key={i}
+                                  className="w-3 h-3 rounded-full border border-black/20 shadow-2xs shrink-0"
+                                  style={{ backgroundColor: c }}
+                                />
+                              ))}
+                            </div>
+                          </button>
+                        );
+                      })}
                     </div>
                   </div>
 

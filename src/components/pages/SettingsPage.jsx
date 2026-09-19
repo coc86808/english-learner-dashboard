@@ -28,6 +28,7 @@ import {
   ChevronRight,
   ShieldCheck
 } from 'lucide-react';
+import { AVAILABLE_THEMES, applyTheme, getStoredTheme } from '../../services/themeManager';
 
 export default function SettingsPage({
   currentUser,
@@ -183,11 +184,12 @@ export default function SettingsPage({
 
   // Handle Theme Selection
   const handleSelectTheme = (themeName) => {
+    applyTheme(themeName);
     setSettings((prev) => ({
       ...prev,
       theme: themeName
     }));
-    setActionNotice(isBn ? `থিম পরিবর্তিত: ${themeName}` : `Theme switched to: ${themeName}`);
+    setActionNotice(isBn ? `থিম পরিবর্তিত: ${themeName}` : `Theme applied: ${themeName}`);
     setTimeout(() => setActionNotice(''), 2000);
   };
 
@@ -490,50 +492,51 @@ export default function SettingsPage({
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 text-xs">
-              {[
-                {
-                  id: 'cyber-dark',
-                  label: isBn ? 'সাইবার ডার্ক (মূল)' : 'Cyber Dark (Default)',
-                  desc: 'Deep Navy & Emerald',
-                  bg: 'bg-[#0c0f17] border-emerald-500/40 text-emerald-300'
-                },
-                {
-                  id: 'midnight-blue',
-                  label: isBn ? 'মিডনাইট ব্লু' : 'Midnight Blue',
-                  desc: 'Sapphire & Cyan',
-                  bg: 'bg-[#080e1e] border-cyan-500/40 text-cyan-300'
-                },
-                {
-                  id: 'pure-black',
-                  label: isBn ? 'পিওর ব্ল্যাক OLED' : 'Pure Black OLED',
-                  desc: 'Ultra High Contrast',
-                  bg: 'bg-black border-slate-700 text-slate-100'
-                },
-                {
-                  id: 'light-clean',
-                  label: isBn ? 'হাই-কনট্রাস্ট লাইট' : 'High Contrast Light',
-                  desc: 'Day Mode Reading',
-                  bg: 'bg-slate-900 border-amber-500/40 text-amber-300'
-                }
-              ].map((th) => {
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              {AVAILABLE_THEMES.map((th) => {
                 const isActive = settings.theme === th.id;
                 return (
                   <button
                     key={th.id}
                     type="button"
                     onClick={() => handleSelectTheme(th.id)}
-                    className={`p-3 rounded-2xl border text-left transition-all ${
+                    className={`p-3.5 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
                       isActive
-                        ? `${th.bg} ring-2 ring-emerald-500/50 shadow-md`
-                        : 'bg-[#0c0f17] border-[#1e293b] text-slate-400 hover:text-white'
+                        ? 'bg-[#182436] border-emerald-500/70 ring-2 ring-emerald-500/40 shadow-md'
+                        : 'bg-[#0c0f17] border-[#1e293b] text-slate-300 hover:border-slate-600 hover:text-white'
                     }`}
                   >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-bold text-xs">{th.label}</span>
-                      {isActive && <Check size={13} className="text-emerald-400" />}
+                    <div>
+                      <div className="flex items-center justify-between mb-1">
+                        <span className={`font-black text-xs sm:text-sm ${isActive ? 'text-emerald-300' : 'text-white'}`}>
+                          {isBn ? th.nameBn : th.nameEn}
+                        </span>
+                        {isActive && (
+                          <span className="w-5 h-5 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center shrink-0">
+                            <Check size={12} strokeWidth={3} />
+                          </span>
+                        )}
+                      </div>
+                      <span className="text-[11px] text-slate-400 block mb-2 leading-tight">
+                        {isBn ? th.descBn : th.descEn}
+                      </span>
                     </div>
-                    <span className="text-[10px] text-slate-500 block">{th.desc}</span>
+
+                    <div className="pt-2 border-t border-white/5 flex items-center justify-between gap-2 mt-1">
+                      <div className="flex items-center gap-1.5">
+                        {th.colors.map((c, i) => (
+                          <span
+                            key={i}
+                            className="w-4 h-4 rounded-full border border-black/30 shadow-xs shrink-0"
+                            style={{ backgroundColor: c }}
+                            title={c}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-[10px] font-mono text-slate-500 truncate max-w-[120px]">
+                        {th.hexSummary}
+                      </span>
+                    </div>
                   </button>
                 );
               })}

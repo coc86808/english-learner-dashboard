@@ -6,10 +6,11 @@
   body {
     background-color: #0e111a;
     color: #e2e8f0;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
 }
 
-/* Custom Scrollbar for sleek dark look */
+/* Custom Scrollbar for sleek look */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -56,4 +57,342 @@
 
 .animate-pulse-subtle {
   animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ==========================================================================
+   THEME PALETTE: SAGE & WARM CREAM
+   Requested Colors:
+   - Sage Green:       #8FA28A
+   - Light Sage:       #C7D3C0
+   - Warm Cream Canvas:#F7F4ED
+   - Warm Sand/Gold:   #C8A96B
+   ========================================================================== */
+
+[data-theme="sage-cream"] {
+  --theme-bg-main: #F7F4ED;
+  --theme-bg-card: #FFFFFF;
+  --theme-bg-elevated: #F2EFE7;
+  --theme-border: #C7D3C0;
+  --theme-primary-sage: #8FA28A;
+  --theme-light-sage: #C7D3C0;
+  --theme-ochre-gold: #C8A96B;
+  --theme-text-title: #1C281F;
+  --theme-text-body: #2B3A2E;
+  --theme-text-muted: #556B58;
+}
+
+[data-theme="sage-cream"],
+[data-theme="sage-cream"] body {
+  background-color: #F7F4ED !important;
+  color: #2B3A2E !important;
+}
+
+/* Main Outer Canvas & Container Backgrounds */
+[data-theme="sage-cream"] .bg-\[\#0c0f17\],
+[data-theme="sage-cream"] .bg-\[\#0a0d14\],
+[data-theme="sage-cream"] .bg-\[\#0e111a\],
+[data-theme="sage-cream"] .bg-\[\#0c101a\],
+[data-theme="sage-cream"] .bg-\[\#080e1e\],
+[data-theme="sage-cream"] .bg-\[\#0a0d16\],
+[data-theme="sage-cream"] .bg-\[\#101420\] {
+  background-color: #F7F4ED !important;
+}
+
+/* Card Arenas & Surfaces */
+[data-theme="sage-cream"] .bg-\[\#111723\],
+[data-theme="sage-cream"] .bg-\[\#141824\],
+[data-theme="sage-cream"] .bg-\[\#131824\],
+[data-theme="sage-cream"] .bg-\[\#131826\],
+[data-theme="sage-cream"] .bg-\[\#131a29\],
+[data-theme="sage-cream"] .bg-\[\#141b2b\],
+[data-theme="sage-cream"] .bg-\[\#161e2e\],
+[data-theme="sage-cream"] .bg-\[\#181e2e\],
+[data-theme="sage-cream"] .bg-\[\#141c2c\],
+[data-theme="sage-cream"] .bg-\[\#151c2a\],
+[data-theme="sage-cream"] .bg-\[\#121926\],
+[data-theme="sage-cream"] .bg-\[\#161f30\],
+[data-theme="sage-cream"] .bg-\[\#1a2335\] {
+  background-color: #FFFFFF !important;
+}
+
+/* Secondary / Inset Cards */
+[data-theme="sage-cream"] .bg-\[\#10141f\],
+[data-theme="sage-cream"] .bg-\[\#10141f\]\/60,
+[data-theme="sage-cream"] .bg-\[\#182133\],
+[data-theme="sage-cream"] .bg-\[\#141b29\],
+[data-theme="sage-cream"] .bg-\[\#192233\],
+[data-theme="sage-cream"] .bg-\[\#1f293d\] {
+  background-color: #F2EFE7 !important;
+}
+
+/* Hairline Borders -> #C7D3C0 */
+[data-theme="sage-cream"] .border-\[\#1e293b\],
+[data-theme="sage-cream"] .border-\[\#1f2738\],
+[data-theme="sage-cream"] .border-\[\#1d2536\],
+[data-theme="sage-cream"] .border-\[\#1b2538\],
+[data-theme="sage-cream"] .border-\[\#1f293d\],
+[data-theme="sage-cream"] .border-\[\#1c2436\],
+[data-theme="sage-cream"] .border-\[\#1f2a3f\],
+[data-theme="sage-cream"] .border-\[\#212f46\],
+[data-theme="sage-cream"] .border-\[\#1a2335\],
+[data-theme="sage-cream"] .border-\[\#29364c\],
+[data-theme="sage-cream"] .border-\[\#223049\],
+[data-theme="sage-cream"] .border-\[\#232c3f\],
+[data-theme="sage-cream"] .border-\[\#253045\],
+[data-theme="sage-cream"] .border-slate-800,
+[data-theme="sage-cream"] .border-slate-700 {
+  border-color: #C7D3C0 !important;
+}
+
+/* Typography Headings & Body */
+[data-theme="sage-cream"] .text-white,
+[data-theme="sage-cream"] .text-slate-100,
+[data-theme="sage-cream"] .text-slate-200 {
+  color: #1C281F !important;
+}
+
+[data-theme="sage-cream"] .text-slate-300,
+[data-theme="sage-cream"] .text-slate-400 {
+  color: #4F6352 !important;
+}
+
+[data-theme="sage-cream"] .text-slate-500,
+[data-theme="sage-cream"] .text-slate-600 {
+  color: #718574 !important;
+}
+
+/* Primary Sage Green Accents (#8FA28A) */
+[data-theme="sage-cream"] .text-emerald-400,
+[data-theme="sage-cream"] .text-emerald-300,
+[data-theme="sage-cream"] .text-emerald-500 {
+  color: #436440 !important;
+}
+
+[data-theme="sage-cream"] .bg-emerald-500,
+[data-theme="sage-cream"] .bg-emerald-600 {
+  background-color: #8FA28A !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="sage-cream"] .border-emerald-500,
+[data-theme="sage-cream"] .border-emerald-400,
+[data-theme="sage-cream"] .border-emerald-500\/30,
+[data-theme="sage-cream"] .border-emerald-500\/40,
+[data-theme="sage-cream"] .border-emerald-500\/50,
+[data-theme="sage-cream"] .border-emerald-400\/40,
+[data-theme="sage-cream"] .border-emerald-400\/60 {
+  border-color: #8FA28A !important;
+}
+
+[data-theme="sage-cream"] .bg-emerald-500\/10,
+[data-theme="sage-cream"] .bg-emerald-500\/15,
+[data-theme="sage-cream"] .bg-emerald-500\/20,
+[data-theme="sage-cream"] .bg-emerald-950\/40 {
+  background-color: rgba(143, 162, 138, 0.2) !important;
+  color: #2F472D !important;
+}
+
+/* Warm Ochre Gold Accents (#C8A96B) */
+[data-theme="sage-cream"] .text-amber-400,
+[data-theme="sage-cream"] .text-amber-300,
+[data-theme="sage-cream"] .text-orange-400,
+[data-theme="sage-cream"] .text-yellow-400 {
+  color: #967430 !important;
+}
+
+[data-theme="sage-cream"] .bg-amber-500,
+[data-theme="sage-cream"] .bg-amber-600,
+[data-theme="sage-cream"] .bg-orange-500 {
+  background-color: #C8A96B !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="sage-cream"] .border-amber-500,
+[data-theme="sage-cream"] .border-amber-500\/30,
+[data-theme="sage-cream"] .border-amber-500\/40,
+[data-theme="sage-cream"] .border-orange-500\/30 {
+  border-color: #C8A96B !important;
+}
+
+[data-theme="sage-cream"] .bg-amber-500\/10,
+[data-theme="sage-cream"] .bg-amber-500\/15,
+[data-theme="sage-cream"] .bg-amber-500\/20,
+[data-theme="sage-cream"] .bg-orange-500\/20 {
+  background-color: rgba(200, 169, 107, 0.22) !important;
+  color: #6E511A !important;
+}
+
+/* Gradients for Banners & Overlays */
+[data-theme="sage-cream"] .from-emerald-950\/40,
+[data-theme="sage-cream"] .from-emerald-900\/40 {
+  --tw-gradient-from: rgba(143, 162, 138, 0.18) !important;
+}
+
+[data-theme="sage-cream"] .via-\[\#111723\],
+[data-theme="sage-cream"] .via-\[\#131d2e\] {
+  --tw-gradient-stops: var(--tw-gradient-from), #FFFFFF, var(--tw-gradient-to) !important;
+}
+
+[data-theme="sage-cream"] .to-\[\#0f172a\],
+[data-theme="sage-cream"] .to-\[\#0c101a\] {
+  --tw-gradient-to: #F7F4ED !important;
+}
+
+/* Header & Navigation Bar Styling */
+[data-theme="sage-cream"] header {
+  background-color: rgba(247, 244, 237, 0.95) !important;
+  border-bottom-color: #C7D3C0 !important;
+}
+
+[data-theme="sage-cream"] nav {
+  background-color: rgba(247, 244, 237, 0.96) !important;
+  border-top-color: #C7D3C0 !important;
+}
+
+/* Form Inputs & Textareas */
+[data-theme="sage-cream"] input,
+[data-theme="sage-cream"] textarea,
+[data-theme="sage-cream"] select {
+  background-color: #FFFFFF !important;
+  border-color: #C7D3C0 !important;
+  color: #1C281F !important;
+}
+
+[data-theme="sage-cream"] input::placeholder,
+[data-theme="sage-cream"] textarea::placeholder {
+  color: #8C9F8E !important;
+}
+
+/* Card Shadows */
+[data-theme="sage-cream"] .shadow-card {
+  box-shadow: 0 4px 20px -2px rgba(143, 162, 138, 0.15), 0 2px 6px -1px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Scrollbar in Sage & Cream */
+[data-theme="sage-cream"] ::-webkit-scrollbar-track {
+  background: #F7F4ED;
+}
+[data-theme="sage-cream"] ::-webkit-scrollbar-thumb {
+  background: #C7D3C0;
+}
+[data-theme="sage-cream"] ::-webkit-scrollbar-thumb:hover {
+  background: #8FA28A;
+}
+
+/* ==========================================================================
+   THEME PALETTE: SAGE FOREST DARK
+   Dark aesthetic honoring the same palette colors
+   ========================================================================== */
+[data-theme="sage-dark"] {
+  --theme-bg-main: #111813;
+  --theme-bg-card: #18231C;
+  --theme-border: #2B3D2F;
+}
+
+[data-theme="sage-dark"],
+[data-theme="sage-dark"] body {
+  background-color: #111813 !important;
+  color: #F7F4ED !important;
+}
+
+[data-theme="sage-dark"] .bg-\[\#0c0f17\],
+[data-theme="sage-dark"] .bg-\[\#0a0d14\],
+[data-theme="sage-dark"] .bg-\[\#0e111a\],
+[data-theme="sage-dark"] .bg-\[\#0c101a\],
+[data-theme="sage-dark"] .bg-\[\#080e1e\],
+[data-theme="sage-dark"] .bg-\[\#0a0d16\],
+[data-theme="sage-dark"] .bg-\[\#101420\] {
+  background-color: #111813 !important;
+}
+
+[data-theme="sage-dark"] .bg-\[\#111723\],
+[data-theme="sage-dark"] .bg-\[\#141824\],
+[data-theme="sage-dark"] .bg-\[\#131824\],
+[data-theme="sage-dark"] .bg-\[\#131826\],
+[data-theme="sage-dark"] .bg-\[\#131a29\],
+[data-theme="sage-dark"] .bg-\[\#141b2b\],
+[data-theme="sage-dark"] .bg-\[\#161e2e\],
+[data-theme="sage-dark"] .bg-\[\#181e2e\],
+[data-theme="sage-dark"] .bg-\[\#141c2c\],
+[data-theme="sage-dark"] .bg-\[\#151c2a\] {
+  background-color: #18231C !important;
+}
+
+[data-theme="sage-dark"] .border-\[\#1e293b\],
+[data-theme="sage-dark"] .border-\[\#1f2738\],
+[data-theme="sage-dark"] .border-\[\#1d2536\],
+[data-theme="sage-dark"] .border-\[\#1b2538\],
+[data-theme="sage-dark"] .border-\[\#1f293d\],
+[data-theme="sage-dark"] .border-\[\#1c2436\],
+[data-theme="sage-dark"] .border-\[\#1f2a3f\],
+[data-theme="sage-dark"] .border-\[\#212f46\],
+[data-theme="sage-dark"] .border-\[\#1a2335\] {
+  border-color: #2D4032 !important;
+}
+
+[data-theme="sage-dark"] .text-white,
+[data-theme="sage-dark"] .text-slate-100 {
+  color: #F7F4ED !important;
+}
+
+[data-theme="sage-dark"] .text-slate-200,
+[data-theme="sage-dark"] .text-slate-300 {
+  color: #C7D3C0 !important;
+}
+
+[data-theme="sage-dark"] .text-slate-400,
+[data-theme="sage-dark"] .text-slate-500 {
+  color: #8EAA94 !important;
+}
+
+[data-theme="sage-dark"] .text-emerald-400,
+[data-theme="sage-dark"] .text-emerald-300 {
+  color: #9EC098 !important;
+}
+
+[data-theme="sage-dark"] .bg-emerald-500,
+[data-theme="sage-dark"] .bg-emerald-600 {
+  background-color: #8FA28A !important;
+  color: #111813 !important;
+}
+
+[data-theme="sage-dark"] .border-emerald-500,
+[data-theme="sage-dark"] .border-emerald-500\/30,
+[data-theme="sage-dark"] .border-emerald-500\/40 {
+  border-color: #8FA28A !important;
+}
+
+[data-theme="sage-dark"] .text-amber-400,
+[data-theme="sage-dark"] .text-amber-300 {
+  color: #E2C485 !important;
+}
+
+[data-theme="sage-dark"] .bg-amber-500,
+[data-theme="sage-dark"] .bg-amber-600 {
+  background-color: #C8A96B !important;
+  color: #111813 !important;
+}
+
+/* ==========================================================================
+   THEME PALETTE: PURE BLACK OLED
+   ========================================================================== */
+[data-theme="pure-black"],
+[data-theme="pure-black"] body {
+  background-color: #000000 !important;
+}
+
+[data-theme="pure-black"] .bg-\[\#0c0f17\],
+[data-theme="pure-black"] .bg-\[\#0a0d14\],
+[data-theme="pure-black"] .bg-\[\#0e111a\],
+[data-theme="pure-black"] .bg-\[\#0c101a\],
+[data-theme="pure-black"] .bg-\[\#111723\],
+[data-theme="pure-black"] .bg-\[\#141824\],
+[data-theme="pure-black"] .bg-\[\#131824\] {
+  background-color: #000000 !important;
+}
+
+[data-theme="pure-black"] .border-\[\#1e293b\],
+[data-theme="pure-black"] .border-\[\#1f2738\],
+[data-theme="pure-black"] .border-\[\#1d2536\] {
+  border-color: #27272a !important;
 }

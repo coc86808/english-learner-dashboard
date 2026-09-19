@@ -86,6 +86,7 @@ import {
   syncWeakWordToPostgres, 
   fetchWeakWordsFromPostgres 
 } from './services/supabase';
+import { getStoredTheme, applyTheme } from './services/themeManager';
 
 // Canonical Route Constants for all 20+ Routes
 export const ROUTES = {
@@ -148,6 +149,18 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [lang, setLang] = useState('en'); // 'en' | 'bn'
   const isBn = lang === 'bn';
+
+  // Active Theme State (Sage & Cream by default)
+  const [theme, setTheme] = useState(() => getStoredTheme());
+
+  useEffect(() => {
+    applyTheme(theme);
+    const handleThemeChange = (e) => {
+      if (e.detail?.theme) setTheme(e.detail.theme);
+    };
+    window.addEventListener('hsc_theme_changed', handleThemeChange);
+    return () => window.removeEventListener('hsc_theme_changed', handleThemeChange);
+  }, [theme]);
 
   // Access Alert Toast state for Admin Guard
   const [accessAlert, setAccessAlert] = useState('');
