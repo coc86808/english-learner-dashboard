@@ -23,8 +23,15 @@ import {
   X
 } from 'lucide-react';
 
-export default function TermsPage({ lang = 'en', onNavigate, initialSection = null }) {
-  const isBn = lang === 'bn';
+export default function TermsPage({ lang: initialLang = 'en', onNavigate, initialSection = null }) {
+  const [internalLang, setInternalLang] = useState(() => {
+    try {
+      return localStorage.getItem('hsc_language') || initialLang;
+    } catch (e) {
+      return initialLang;
+    }
+  });
+  const isBn = internalLang === 'bn';
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedSection, setExpandedSection] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -244,13 +251,29 @@ export default function TermsPage({ lang = 'en', onNavigate, initialSection = nu
               <span>{isBn ? 'এখতিয়ার: ঢাকা, বাংলাদেশ' : 'Jurisdiction: Dhaka, Bangladesh'}</span>
             </span>
             <span className="text-slate-600">•</span>
-            <button
-              onClick={handlePrint}
-              className="ml-auto px-3 py-1.5 rounded-xl bg-[#162033] hover:bg-[#1f2c45] border border-[#283854] text-slate-200 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer text-xs font-bold"
-            >
-              <Printer size={13} />
-              <span>{isBn ? 'প্রিন্ট / সেভ করুন' : 'Print Document'}</span>
-            </button>
+            <div className="ml-auto flex items-center gap-2">
+              <button
+                onClick={() => {
+                  const next = isBn ? 'en' : 'bn';
+                  setInternalLang(next);
+                  try {
+                    localStorage.setItem('hsc_language', next);
+                  } catch (e) {}
+                }}
+                className="px-3 py-1.5 rounded-xl bg-[#162033] hover:bg-[#1f2c45] border border-emerald-500/30 text-emerald-300 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer text-xs font-bold"
+              >
+                <Globe2 size={13} className="text-emerald-400" />
+                <span>{isBn ? 'English ভার্সন' : 'বাংলা সংস্করণ'}</span>
+              </button>
+
+              <button
+                onClick={handlePrint}
+                className="px-3 py-1.5 rounded-xl bg-[#162033] hover:bg-[#1f2c45] border border-[#283854] text-slate-200 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer text-xs font-bold"
+              >
+                <Printer size={13} />
+                <span>{isBn ? 'প্রিন্ট / সেভ করুন' : 'Print Document'}</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
