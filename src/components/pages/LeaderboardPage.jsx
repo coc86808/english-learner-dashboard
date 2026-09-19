@@ -25,7 +25,6 @@ import {
   Info,
   ChevronRight
 } from 'lucide-react';
-import { usersList } from '../../data/users/userData';
 import { listenToFirestoreUsers } from '../../services/firebase';
 import {
   LEAGUES,
@@ -137,138 +136,98 @@ export default function LeaderboardPage({
     };
   }, []);
 
-  // ─── STRICT WHITELIST ─────────────────────────────────────────────────────
-  // Only Mohammad Nasim, Riad Sarkar, and the currently logged-in user may
-  // appear in the leaderboard. ALL other accounts — from any source — are
-  // silently dropped before rendering.
-  const ALLOWED_NAMES = ['mohammad nasim', 'riad sarkar'];
-
-  const isAllowedStudent = (u) => {
-    if (!u) return false;
-    const uName  = String(u.name  || '').toLowerCase().trim();
-    const uEmail = String(u.email || '').toLowerCase().trim();
-    const uId    = String(u.id    || '').toLowerCase().trim();
-    // Always include the currently logged-in user (non-admin)
-    if (currentUser && u.role?.toLowerCase() !== 'admin') {
-      const cuEmail = String(currentUser.email || '').toLowerCase().trim();
-      const cuId    = String(currentUser.id    || '').toLowerCase().trim();
-      if (cuEmail && uEmail === cuEmail) return true;
-      if (cuId    && uId    === cuId)    return true;
-    }
-    // Whitelist check
-    return ALLOWED_NAMES.some((n) => uName.includes(n)) ||
-           uEmail === 'mohammad.nasim@gmail.com' ||
-           uEmail === 'riad.sarkar@gmail.com'    ||
-           uId    === 'usr-nasim'               ||
-           uId    === 'usr-riad';
-  };
-
-  // 1. Build authentic merged list of real students only
+  // 1. Build leaderboard from REAL registered users only
+  // — NO static seeding from usersList (those are just templates)
+  // — Only students who have actually registered AND earned XP appear
   const baseStudents = useMemo(() => {
     const userMap = new Map();
 
-    // Add only whitelisted static users
-    usersList.forEach((u) => {
-      if (u.role?.toLowerCase() !== 'admin' && isAllowedStudent(u)) {
-        userMap.set((u.email || u.id).toLowerCase(), { ...u });
-      }
-    });
+    const addUser = (u) => {
+      if (!u || u.role?.toLowerCase() === 'admin') return;
+      const key = (u.email || u.id || u.name || '').toLowerCase();
+      if (!key) return;
+      userMap.set(key, { ...(userMap.get(key) || {}), ...u });
+    };
 
-    // Props registered users — whitelist only
-    if (Array.isArray(registeredUsers)) {
-      registeredUsers.forEach((u) => {
-        if (u && u.role?.toLowerCase() !== 'admin' && isAllowedStudent(u)) {
-          const key = (u.email || u.id || u.name).toLowerCase();
-          userMap.set(key, { ...(userMap.get(key) || {}), ...u });
-        }
-      });
-    }
+    // Props registered users (from App state — already purged by whitelist)
+    if (Array.isArray(registeredUsers)) registeredUsers.forEach(addUser);
 
-    // LocalStorage registered users — whitelist only
+    // LocalStorage registered users
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) {
-          parsed.forEach((u) => {
-            if (u && u.role?.toLowerCase() !== 'admin' && isAllowedStudent(u)) {
-              const key = (u.email || u.id || u.name).toLowerCase();
-              userMap.set(key, { ...(userMap.get(key) || {}), ...u });
-            }
-          });
-        }
+        if (Array.isArray(parsed)) parsed.forEach(addUser);
       }
     } catch (e) {}
 
-    // Cloud Firestore users — whitelist only
-    if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
-      cloudUsers.forEach((u) => {
-        if (u && u.role?.toLowerCase() !== 'admin' && isAllowedStudent(u)) {
-          const key = (u.email || u.id || u.name).toLowerCase();
-          userMap.set(key, { ...(userMap.get(key) || {}), ...u });
-        }
-      });
-    }
+    // Cloud Firestore users
+    if (Array.isArray(cloudUsers) && cloudUsers.length > 0) cloudUsers.forEach(addUser);
 
-    // PostgreSQL profiles — whitelist only
+    // PostgreSQL profiles
     if (Array.isArray(postgresUsers) && postgresUsers.length > 0) {
       postgresUsers.forEach((u) => {
-        if (u && u.role?.toLowerCase() !== 'admin' && isAllowedStudent(u)) {
-          const key = (u.email || u.id || u.name).toLowerCase();
-          const prev = userMap.get(key) || {};
-          userMap.set(key, {
-            ...prev, ...u,
-            points:         Number(u.total_xp          || prev.points         || 0),
-            accuracy:       Number(u.accuracy           || prev.accuracy       || 0),
-            streak:         Number(u.streak             || prev.streak         || 0),
-            testsCompleted: Number(u.questions_solved   || prev.testsCompleted || 0)
-          });
-        }
+        if (!u || u.role?.toLowerCase() === 'admin') return;
+        const key = (u.email || u.id || u.name || '').toLowerCase();
+        if (!key) return;
+        const prev = userMap.get(key) || {};
+        userMap.set(key, {
+          ...prev, ...u,
+          points:         Number(u.total_xp          || prev.points         || 0),
+          accuracy:       Number(u.accuracy           || prev.accuracy       || 0),
+          streak:         Number(u.streak             || prev.streak         || 0),
+          testsCompleted: Number(u.questions_solved   || prev.testsCompleted || 0)
+        });
       });
     }
 
-    // Current logged-in user (non-admin)
+    // Current logged-in user
     if (currentUser && currentUser.role?.toLowerCase() !== 'admin') {
-      const userKey = (currentUser.email || currentUser.id || currentUser.name).toLowerCase();
-      const prev = userMap.get(userKey) || {};
-      userMap.set(userKey, {
-        ...prev,
-        ...currentUser,
-        masteredWordsCount: Math.max(currentUser.masteredWordsCount || 0, countRealMasteredWords())
-      });
+      const userKey = (currentUser.email || currentUser.id || currentUser.name || '').toLowerCase();
+      if (userKey) {
+        const prev = userMap.get(userKey) || {};
+        userMap.set(userKey, {
+          ...prev,
+          ...currentUser,
+          masteredWordsCount: Math.max(currentUser.masteredWordsCount || 0, countRealMasteredWords())
+        });
+      }
     }
 
-    // Convert map to array with calculated metrics
+    // Convert to array — only students with real earned XP (> 0)
     const studentList = Array.from(userMap.values())
-      .filter((st) => !!st)
+      .filter((st) => {
+        if (!st || !st.name) return false;
+        // Must have real points to appear on the leaderboard
+        const pts = Number(st.points || 0);
+        if (pts <= 0) return false;
+        return true;
+      })
       .map((st) => {
         const pointsData = calculateStudentTimeframePoints(st, examHistory);
-        const accuracy = Number(st.accuracy) || 92;
-        const streak = Number(st.streak) || (st.points > 0 ? 3 : 1);
-        const mastered = Number(st.masteredWordsCount) || (st.points ? Math.round(st.points / 15) : 10);
+        const accuracy   = Number(st.accuracy) || 0;
+        const streak     = Number(st.streak)   || 0;
+        const mastered   = Number(st.masteredWordsCount) || 0;
         const allTimePoints = pointsData.allTime;
         const league = getUserLeague(allTimePoints);
-
-        const safeAvatar = (st.avatar && !st.avatar.includes('photo-1534528741775-53994a69daeb'))
-          ? st.avatar
-          : `https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120&h=120&fit=crop`;
+        const safeAvatar = st.avatar && !st.avatar.includes('unsplash') ? st.avatar : '';
 
         return {
-          id: st.id || `usr-${st.name.replace(/\s+/g, '_')}`,
-          name: st.name || 'HSC Candidate',
-          email: st.email || '',
-          college: st.college || 'Notre Dame College, Dhaka',
-          batch: st.hscBatch || st.hsc_batch || 'HSC 2026',
+          id:             st.id || `usr-${String(st.name).replace(/\s+/g, '_')}`,
+          name:           st.name || 'Student',
+          email:          st.email || '',
+          college:        st.college || '',
+          batch:          st.hscBatch || st.hsc_batch || 'HSC 2026',
           streak,
-          pointsWeekly: pointsData.weekly,
-          pointsMonthly: pointsData.monthly,
-          pointsAllTime: allTimePoints,
+          pointsWeekly:   pointsData.weekly,
+          pointsMonthly:  pointsData.monthly,
+          pointsAllTime:  allTimePoints,
           league,
-          accuracy: Math.min(100, Math.max(60, accuracy)),
-          masteredWords: mastered,
-          trend: st.trend || '+1',
-          trendType: st.trendType || 'up',
-          avatar: safeAvatar
+          accuracy:       Math.min(100, Math.max(0, accuracy)),
+          masteredWords:  mastered,
+          trend:          st.trend    || '+0',
+          trendType:      st.trendType || 'neutral',
+          avatar:         safeAvatar
         };
       });
 
