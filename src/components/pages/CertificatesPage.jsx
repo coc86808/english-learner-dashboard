@@ -70,28 +70,9 @@ export default function CertificatesPage({
         ex.unitId === unit.id || ex.title?.toLowerCase().includes(unit.unitTitle.toLowerCase())
       );
 
-      let score = matchingAttempt ? (matchingAttempt.score || 0) : 0;
-      let date = matchingAttempt ? matchingAttempt.date : '28 August 2026';
-      let wordsMastered = unit.masteredWords || 0;
-
-      // Realistic active progress simulation for Unit 1 & Unit 10 (Curriculum Live Data)
-      if (unit.id === 'unit-1') {
-        score = Math.max(score, 95);
-        wordsMastered = 42;
-        date = '28 August 2026';
-      } else if (unit.id === 'unit-10') {
-        score = Math.max(score, 88);
-        wordsMastered = 65;
-        date = '29 August 2026';
-      } else if (unit.id === 'unit-5') {
-        score = Math.max(score, 82);
-        wordsMastered = 28;
-        date = '25 August 2026';
-      } else if (unit.id === 'unit-2') {
-        score = Math.max(score, 65);
-      } else if (unit.id === 'unit-3') {
-        score = Math.max(score, 45);
-      }
+      let score = matchingAttempt ? Number(matchingAttempt.score || matchingAttempt.accuracy || 0) : 0;
+      let date = matchingAttempt ? (matchingAttempt.date || (matchingAttempt.isoDate ? new Date(matchingAttempt.isoDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '')) : '';
+      let wordsMastered = unit.masteredWords || (score >= 80 ? (unit.totalWords || unit.wordsCount || 0) : 0);
 
       const isUnlocked = score >= 80;
       const verificationCode = `HSC-2026-${unit.id.toUpperCase()}-${Math.abs((unit.id.charCodeAt(0) * 8129 + index * 317) % 90000 + 10000)}-VERIFIED`;

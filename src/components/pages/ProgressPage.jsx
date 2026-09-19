@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   TrendingUp,
@@ -50,15 +50,50 @@ export default function ProgressPage({
 
     return {
       name: currentUser?.name || stored?.name || 'HSC Examinee',
-      college: currentUser?.college || stored?.college || '',
+      college: currentUser?.college || stored?.college || 'Notre Dame College, Dhaka',
       batch: currentUser?.batch || currentUser?.hscBatch || stored?.hscBatch || stored?.batch || 'HSC 2026',
-      streak: currentUser?.streak || stored?.streak || 0,
-      points: currentUser?.points || stored?.points || 0,
-      email: currentUser?.email || stored?.email || ''
+      streak: Number(currentUser?.streak || stored?.streak || 0),
+      points: Number(currentUser?.points || stored?.points || 0),
+      email: currentUser?.email || stored?.email || '',
+      accuracy: Number(currentUser?.accuracy || stored?.accuracy || 0)
     };
   }, [currentUser]);
 
-  // Rank Tier Calculation based on XP points
+  // Real Exam History State & Sync
+  const [examHistory, setExamHistory] = useState(() => {
+    try {
+      if (typeof window !== 'undefined') {
+        const saved = localStorage.getItem('hsc_exam_history');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) return parsed;
+        }
+      }
+    } catch (e) {}
+    return [];
+  });
+
+  useEffect(() => {
+    const handleSync = () => {
+      try {
+        const saved = localStorage.getItem('hsc_exam_history');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) setExamHistory(parsed);
+        }
+      } catch (e) {}
+    };
+    window.addEventListener('storage', handleSync);
+    window.addEventListener('hsc_user_stats_updated', handleSync);
+    window.addEventListener('hsc_leaderboard_updated', handleSync);
+    return () => {
+      window.removeEventListener('storage', handleSync);
+      window.removeEventListener('hsc_user_stats_updated', handleSync);
+      window.removeEventListener('hsc_leaderboard_updated', handleSync);
+    };
+  }, []);
+
+  // Rank Tier Calculation based on real XP points
   const rankTierInfo = useMemo(() => {
     const xp = student.points || 0;
     if (xp >= 3000) {
@@ -88,7 +123,7 @@ export default function ProgressPage({
         minXp: 1500,
         progressPct: Math.min(100, Math.round(((xp - 1500) / 1500) * 100)),
         icon: Shield,
-        subtitle: isBn ? 'এইচএসসি চ্যাম্পিয়ন হতে আর ১৫০০ XP বাকি' : '1500 XP to HSC Champion'
+        subtitle: isBn ? 'এইচএসসি চ্যাম্পিয়ন হতে আর কিছু XP বাকি' : `${3000 - xp} XP to HSC Champion`
       };
     }
     if (xp >= 500) {
@@ -103,7 +138,7 @@ export default function ProgressPage({
         minXp: 500,
         progressPct: Math.min(100, Math.round(((xp - 500) / 1000) * 100)),
         icon: BookOpen,
-        subtitle: isBn ? 'মাস্টার স্তরে পৌঁছাতে আর কিছু পয়েন্ট বাকি' : 'Progression to Master tier'
+        subtitle: isBn ? 'মাস্টার স্তরে পৌঁছাতে আর কিছু পয়েন্ট বাকি' : `${1500 - xp} XP to Master Tier`
       };
     }
     return {
@@ -117,36 +152,61 @@ export default function ProgressPage({
       minXp: 0,
       progressPct: Math.min(100, Math.round((xp / 500) * 100)),
       icon: Zap,
-      subtitle: isBn ? '৫০০ XP অর্জনে স্কলার ব্যাজ আনলক হবে' : 'Earn 500 XP to unlock Scholar'
+      subtitle: isBn ? '৫০০ XP অর্জনে স্কলার ব্যাজ আনলক হবে' : `Earn ${Math.max(0, 500 - xp)} XP to unlock Scholar`
     };
   }, [student.points, isBn]);
 
-  // 7-Day Study Hours Data (Real dynamic calculation / historical series)
+  // Active Week Tab for 7-Day Chart
   const [activeWeekTab, setActiveWeekTab] = useState('current'); // 'current' | 'previous'
   const [hoveredBar, setHoveredBar] = useState(null);
 
+  // 7-Day Real Study Hours & MCQs from Authentic Exam History
   const studyHoursData = useMemo(() => {
-    if (activeWeekTab === 'current') {
-      return [
-        { day: 'Sat', dayBn: 'শনি', hours: 2.5, questions: 45, accuracy: 92 },
-        { day: 'Sun', dayBn: 'রবি', hours: 1.8, questions: 32, accuracy: 88 },
-        { day: 'Mon', dayBn: 'সোম', hours: 3.2, questions: 60, accuracy: 95 },
-        { day: 'Tue', dayBn: 'মঙ্গল', hours: 2.0, questions: 40, accuracy: 85 },
-        { day: 'Wed', dayBn: 'বুধ', hours: 2.8, questions: 52, accuracy: 90 },
-        { day: 'Thu', dayBn: 'বৃহ', hours: 1.5, questions: 28, accuracy: 82 },
-        { day: 'Fri', dayBn: 'শুক্র', hours: 3.5, questions: 70, accuracy: 96 }
-      ];
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const dayNamesBn = ['রবি', 'সোম', 'মঙ্গল', 'বুধ', 'বৃহ', 'শুক্র', 'শনি'];
+    const days = [];
+    const offset = activeWeekTab === 'current' ? 0 : 7;
+
+    for (let i = 6; i >= 0; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - (i + offset));
+      const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+      const dayEnd = dayStart + 24 * 60 * 60 * 1000;
+
+      const dayExams = examHistory.filter((ex) => {
+        const ts = Number(ex.timestamp) || (ex.isoDate ? new Date(ex.isoDate).getTime() : 0);
+        return ts >= dayStart && ts < dayEnd;
+      });
+
+      let questions = 0;
+      let mistakes = 0;
+      let seconds = 0;
+
+      dayExams.forEach((ex) => {
+        questions += Number(ex.doneCount || ex.totalQuestions || 0);
+        mistakes += Number(ex.mistakeCount || 0);
+        seconds += Number(ex.timeSpentSeconds || 0);
+      });
+
+      if (questions > 0 && seconds === 0) {
+        seconds = questions * 30;
+      }
+
+      const hours = Number((seconds / 3600).toFixed(1));
+      const accuracy = questions > 0 ? Math.round(((questions - mistakes) / questions) * 100) : 0;
+
+      days.push({
+        day: dayNames[d.getDay()],
+        dayBn: dayNamesBn[d.getDay()],
+        hours,
+        questions,
+        accuracy,
+        dateStr: d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+      });
     }
-    return [
-      { day: 'Sat', dayBn: 'শনি', hours: 1.8, questions: 30, accuracy: 80 },
-      { day: 'Sun', dayBn: 'রবি', hours: 2.0, questions: 35, accuracy: 82 },
-      { day: 'Mon', dayBn: 'সোম', hours: 2.2, questions: 40, accuracy: 84 },
-      { day: 'Tue', dayBn: 'মঙ্গল', hours: 1.2, questions: 20, accuracy: 75 },
-      { day: 'Wed', dayBn: 'বুধ', hours: 2.5, questions: 48, accuracy: 88 },
-      { day: 'Thu', dayBn: 'বৃহ', hours: 1.0, questions: 18, accuracy: 78 },
-      { day: 'Fri', dayBn: 'শুক্র', hours: 2.8, questions: 55, accuracy: 90 }
-    ];
-  }, [activeWeekTab]);
+
+    return days;
+  }, [examHistory, activeWeekTab]);
 
   const totalWeeklyHours = useMemo(() => {
     return studyHoursData.reduce((acc, curr) => acc + curr.hours, 0).toFixed(1);
@@ -156,63 +216,128 @@ export default function ProgressPage({
     return studyHoursData.reduce((acc, curr) => acc + curr.questions, 0);
   }, [studyHoursData]);
 
-  const avgWeeklyAccuracy = useMemo(() => {
-    const total = studyHoursData.reduce((acc, curr) => acc + curr.accuracy, 0);
-    return Math.round(total / studyHoursData.length);
-  }, [studyHoursData]);
+  // Overall Platform & Exam Metrics
+  const overallStats = useMemo(() => {
+    let totalQuestions = 0;
+    let totalMistakes = 0;
 
-  // Unit Mastery & Accuracy Calculations (All 12 Units)
+    examHistory.forEach((ex) => {
+      totalQuestions += Number(ex.doneCount || ex.totalQuestions || 0);
+      totalMistakes += Number(ex.mistakeCount || 0);
+    });
+
+    const accuracy = totalQuestions > 0
+      ? Math.max(0, Math.min(100, Math.round(((totalQuestions - totalMistakes) / totalQuestions) * 100)))
+      : (student.accuracy > 0 ? student.accuracy : 0);
+
+    return {
+      totalQuestions,
+      accuracy,
+      examsCount: examHistory.length
+    };
+  }, [examHistory, student.accuracy]);
+
+  // Real Weekly Study Time Comparison Trend
+  const previousWeekHours = useMemo(() => {
+    let seconds = 0;
+    for (let i = 13; i >= 7; i--) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+      const dayEnd = dayStart + 24 * 60 * 60 * 1000;
+
+      const dayExams = examHistory.filter((ex) => {
+        const ts = Number(ex.timestamp) || (ex.isoDate ? new Date(ex.isoDate).getTime() : 0);
+        return ts >= dayStart && ts < dayEnd;
+      });
+
+      dayExams.forEach((ex) => {
+        const q = Number(ex.doneCount || ex.totalQuestions || 0);
+        const s = Number(ex.timeSpentSeconds || (q > 0 ? q * 30 : 0));
+        seconds += s;
+      });
+    }
+    return Number((seconds / 3600).toFixed(1));
+  }, [examHistory]);
+
+  const studyHoursTrendText = useMemo(() => {
+    const cur = Number(totalWeeklyHours);
+    const prev = Number(previousWeekHours);
+    const diff = (cur - prev).toFixed(1);
+    if (Number(diff) > 0) {
+      return `+${diff}h ${isBn ? 'গত সপ্তাহের তুলনায়' : 'vs last week'}`;
+    } else if (Number(diff) < 0) {
+      return `${diff}h ${isBn ? 'গত সপ্তাহের তুলনায়' : 'vs last week'}`;
+    } else if (cur > 0) {
+      return isBn ? 'চলতি সপ্তাহে নিয়মিত পড়াশোনা' : 'Active study hours this week';
+    }
+    return isBn ? 'অনুশীলন শুরু করে সময় ট্র্যাক করুন' : 'Live Study Timer Active';
+  }, [totalWeeklyHours, previousWeekHours, isBn]);
+
+  // Real Personal Best Streak Calculation
+  const personalBestStreak = useMemo(() => {
+    let stored = 0;
+    try {
+      const b = localStorage.getItem('hsc_personal_best_streak');
+      if (b) stored = Number(b) || 0;
+    } catch (e) {}
+    const current = Number(student.streak) || 0;
+    const best = Math.max(current, stored);
+    if (best > stored && typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('hsc_personal_best_streak', String(best));
+      } catch (e) {}
+    }
+    return best;
+  }, [student.streak]);
+
+  // Unit Mastery & Accuracy Calculations (All 12 Units - Authentic Exam-Driven)
   const [unitTierFilter, setUnitTierFilter] = useState('all'); // 'all' | 'mastered' | 'proficient' | 'needs_focus'
 
   const unitMetrics = useMemo(() => {
-    // Generate authentic metrics per unit based on curriculum
-    return hscUnits.map((unit, index) => {
-      let accuracy = 0;
-      let wordsMastered = 0;
-      let totalUnitWords = unit.totalWords || (index === 0 ? 46 : index === 9 ? 110 : 35);
-      
-      // Unit 1 & Unit 10 have active live datasets
-      if (unit.id === 'unit-1') {
-        accuracy = 92;
-        wordsMastered = 42;
-      } else if (unit.id === 'unit-10') {
-        accuracy = 84;
-        wordsMastered = 68;
-      } else if (unit.id === 'unit-2') {
-        accuracy = 76;
-        wordsMastered = 18;
-      } else if (unit.id === 'unit-3') {
-        accuracy = 62;
-        wordsMastered = 12;
-      } else if (unit.id === 'unit-4') {
-        accuracy = 45;
-        wordsMastered = 8;
-      } else if (unit.id === 'unit-5') {
-        accuracy = 88;
-        wordsMastered = 24;
-      } else if (unit.id === 'unit-6') {
-        accuracy = 58;
-        wordsMastered = 10;
-      } else {
-        accuracy = Math.max(30, Math.min(95, 40 + (index * 7) % 55));
-        wordsMastered = Math.round((totalUnitWords * accuracy) / 100);
-      }
+    return hscUnits.map((unit) => {
+      const unitExams = examHistory.filter((ex) => 
+        ex.unitId === unit.id || (ex.title && ex.title.toLowerCase().includes(unit.unitTitle.toLowerCase()))
+      );
 
-      let tier = 'needs_focus';
-      let tierColor = '#f43f5e';
-      let tierLabel = isBn ? 'মনোযোগ প্রয়োজন (<৫০%)' : 'Needs Focus (<50%)';
-      let badgeBg = 'bg-rose-500/15 text-rose-300 border-rose-500/30';
+      let totalDone = 0;
+      let totalMistakes = 0;
 
-      if (accuracy >= 80) {
-        tier = 'mastered';
-        tierColor = '#10b981';
-        tierLabel = isBn ? 'মাস্টারি অর্জিত (≥৮০%)' : 'Mastered (≥80%)';
-        badgeBg = 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30';
-      } else if (accuracy >= 50) {
-        tier = 'proficient';
-        tierColor = '#f59e0b';
-        tierLabel = isBn ? 'চলমান অগ্রগতি (৫০-৭৯%)' : 'Proficient (50-79%)';
-        badgeBg = 'bg-amber-500/15 text-amber-300 border-amber-500/30';
+      unitExams.forEach((ex) => {
+        totalDone += Number(ex.doneCount || ex.totalQuestions || 0);
+        totalMistakes += Number(ex.mistakeCount || 0);
+      });
+
+      const hasAttempts = totalDone > 0;
+      const accuracy = hasAttempts
+        ? Math.max(0, Math.min(100, Math.round(((totalDone - totalMistakes) / totalDone) * 100)))
+        : 0;
+
+      const totalUnitWords = unit.totalWords || unit.wordsCount || 35;
+      const wordsMastered = hasAttempts ? Math.min(totalUnitWords, Math.round((totalUnitWords * accuracy) / 100)) : 0;
+
+      let tier = 'unattempted';
+      let tierColor = '#64748b';
+      let tierLabel = isBn ? 'পরীক্ষা বাকি (০%)' : 'Not Attempted (0%)';
+      let badgeBg = 'bg-slate-800 text-slate-400 border-slate-700';
+
+      if (hasAttempts) {
+        if (accuracy >= 80) {
+          tier = 'mastered';
+          tierColor = '#10b981';
+          tierLabel = isBn ? 'মাস্টারি অর্জিত (≥৮০%)' : 'Mastered (≥80%)';
+          badgeBg = 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30';
+        } else if (accuracy >= 50) {
+          tier = 'proficient';
+          tierColor = '#f59e0b';
+          tierLabel = isBn ? 'চলমান অগ্রগতি (৫০-৭৯%)' : 'Proficient (50-79%)';
+          badgeBg = 'bg-amber-500/15 text-amber-300 border-amber-500/30';
+        } else {
+          tier = 'needs_focus';
+          tierColor = '#f43f5e';
+          tierLabel = isBn ? 'মনোযোগ প্রয়োজন (<৫০%)' : 'Needs Focus (<50%)';
+          badgeBg = 'bg-rose-500/15 text-rose-300 border-rose-500/30';
+        }
       }
 
       return {
@@ -220,130 +345,97 @@ export default function ProgressPage({
         accuracy,
         totalUnitWords,
         wordsMastered,
+        hasAttempts,
+        attemptsCount: unitExams.length,
         tier,
         tierColor,
         tierLabel,
         badgeBg
       };
     });
-  }, [isBn]);
+  }, [examHistory, isBn]);
 
   const filteredUnitMetrics = useMemo(() => {
     if (unitTierFilter === 'all') return unitMetrics;
     return unitMetrics.filter((u) => u.tier === unitTierFilter);
   }, [unitMetrics, unitTierFilter]);
 
-  // Streak Calendar Heatmap (August 2026 / 31 Days Matrix)
-  const heatmapDays = useMemo(() => {
-    const days = [];
-    for (let day = 1; day <= 31; day++) {
-      // Simulate realistic activity based on student's active streak
-      let questions = 0;
-      let level = 0;
+  // Current Month Dynamic Heatmap (No hardcoded month / No simulated fake activity)
+  const currentMonthInfo = useMemo(() => {
+    const d = new Date();
+    const monthName = d.toLocaleString('en-US', { month: 'long' });
+    const monthNameBn = d.toLocaleString('bn-BD', { month: 'long' });
+    const year = d.getFullYear();
+    const daysInMonth = new Date(year, d.getMonth() + 1, 0).getDate();
+    return { monthName, monthNameBn, year, daysInMonth, monthIndex: d.getMonth() };
+  }, []);
 
-      if (day >= 25 && day <= 30) {
-        questions = 35 + (day * 3) % 25;
-        level = 3;
-      } else if (day % 3 === 0 || day % 5 === 0) {
-        questions = 18 + (day * 2) % 15;
-        level = 2;
-      } else if (day % 2 === 0) {
-        questions = 8 + (day % 7);
-        level = 1;
-      } else {
-        questions = 0;
-        level = 0;
+  const heatmapDays = useMemo(() => {
+    const { year, monthIndex, daysInMonth, monthName } = currentMonthInfo;
+    const days = [];
+
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dayStart = new Date(year, monthIndex, day, 0, 0, 0, 0).getTime();
+      const dayEnd = dayStart + 24 * 60 * 60 * 1000;
+
+      const dayExams = examHistory.filter((ex) => {
+        const ts = Number(ex.timestamp) || (ex.isoDate ? new Date(ex.isoDate).getTime() : 0);
+        return ts >= dayStart && ts < dayEnd;
+      });
+
+      let questions = 0;
+      let seconds = 0;
+
+      dayExams.forEach((ex) => {
+        questions += Number(ex.doneCount || ex.totalQuestions || 0);
+        seconds += Number(ex.timeSpentSeconds || 0);
+      });
+
+      if (questions > 0 && seconds === 0) {
+        seconds = questions * 30;
       }
+
+      let level = 0;
+      if (questions >= 40 || seconds >= 3600) level = 3;
+      else if (questions >= 20 || seconds >= 1800) level = 2;
+      else if (questions > 0 || seconds > 0) level = 1;
 
       days.push({
         day,
-        dateStr: `${day} Aug 2026`,
+        dateStr: `${day} ${monthName} ${year}`,
         questions,
-        hours: (questions * 0.05).toFixed(1),
+        hours: (seconds / 3600).toFixed(1),
         level
       });
     }
     return days;
-  }, []);
+  }, [examHistory, currentMonthInfo]);
 
   const [hoveredHeatmapDay, setHoveredHeatmapDay] = useState(null);
 
-  // Weak Words Recovery Timeline Pipeline
-  // Rule: 3 Mistakes -> Auto Weak Word | 5 Correct Answers -> Auto Mastered
+  // Authentic Weak Words Recovery Pipeline (ZERO hardcoded fake words)
+  // Rule 5: 3 Mistakes -> Auto Weak Word | 5 Correct Answers -> Auto Mastered
   const recoveryPipeline = useMemo(() => {
-    // Combine live weakWords with rich structured items
-    const baseList = [
-      {
-        id: 'ww-1',
-        word: 'Detractor',
-        meaningBn: 'নিন্দুক / সমালোচক / কুৎসাকারী',
-        mistakes: 3,
-        correctStreak: 3,
-        targetStreak: 5,
-        status: 'recovering',
-        unit: 'Unit 1 • Lesson 1'
-      },
-      {
-        id: 'ww-2',
-        word: 'Pedagogy',
-        meaningBn: 'শিক্ষাদান পদ্ধতি / শিক্ষাতত্ত্ব',
-        mistakes: 4,
-        correctStreak: 4,
-        targetStreak: 5,
-        status: 'recovering',
-        unit: 'Unit 1 • Lesson 1'
-      },
-      {
-        id: 'ww-3',
-        word: 'Impertinent',
-        meaningBn: 'অপ্রাসঙ্গিক / উদ্ধত',
-        mistakes: 3,
-        correctStreak: 1,
-        targetStreak: 5,
-        status: 'recovering',
-        unit: 'Unit 10 • Lesson 1'
-      },
-      {
-        id: 'ww-4',
-        word: 'Inquisitive',
-        meaningBn: 'কৌতূহলী / অনুসন্ধিৎসু',
-        mistakes: 3,
-        correctStreak: 5,
-        targetStreak: 5,
-        status: 'mastered',
-        unit: 'Unit 1 • Lesson 1'
-      },
-      {
-        id: 'ww-5',
-        word: 'Benevolence',
-        meaningBn: 'দয়াশীলতা / বদান্যতা',
-        mistakes: 3,
-        correctStreak: 5,
-        targetStreak: 5,
-        status: 'mastered',
-        unit: 'Unit 10 • Lesson 2'
-      }
-    ];
-
-    // Merge any live weak words from storage
-    if (Array.isArray(weakWords) && weakWords.length > 0) {
-      weakWords.forEach((ww) => {
-        if (!baseList.some((b) => b.word.toLowerCase() === ww.word.toLowerCase())) {
-          baseList.unshift({
-            id: ww.id || `ww-custom-${Date.now()}`,
-            word: ww.word,
-            meaningBn: ww.bengaliMeaning || 'পাঠ্যবইয়ের গুরুত্বপূর্ণ শব্দ',
-            mistakes: ww.mistakesCount || 3,
-            correctStreak: ww.correctStreak || 2,
-            targetStreak: 5,
-            status: (ww.correctStreak || 2) >= 5 ? 'mastered' : 'recovering',
-            unit: ww.unit || 'NCTB Syllabus'
-          });
-        }
-      });
+    if (!Array.isArray(weakWords) || weakWords.length === 0) {
+      return [];
     }
 
-    return baseList;
+    return weakWords.map((ww) => {
+      const mistakes = Number(ww.mistakesCount || 3);
+      const correctStreak = Number(ww.correctStreak || 0);
+      const isMastered = correctStreak >= 5;
+
+      return {
+        id: ww.id || `ww-${ww.word}`,
+        word: ww.word,
+        meaningBn: ww.bengaliMeaning || ww.bengali || 'পাঠ্যবইয়ের শব্দ',
+        mistakes,
+        correctStreak: Math.min(5, correctStreak),
+        targetStreak: 5,
+        status: isMastered ? 'mastered' : 'recovering',
+        unit: ww.unit || (ww.source ? `Unit ${ww.source}` : 'NCTB Syllabus')
+      };
+    });
   }, [weakWords]);
 
   const activeWeakWordsCount = useMemo(() => {
@@ -359,15 +451,15 @@ export default function ProgressPage({
   const [copiedToast, setCopiedToast] = useState(false);
 
   const shareSummaryText = useMemo(() => {
-    return `🎓 HSC 2026 English Learner Progress Report
-Student: ${student.name} (${student.college})
+    return `🎓 NCTB ${student.batch || 'HSC'} English Learner Progress Report
+Student: ${student.name}${student.college ? ` (${student.college})` : ''}
 🏆 Total XP: ${student.points} XP (Tier: ${rankTierInfo.tier})
-🔥 Active Streak: ${student.streak} Days
-📊 Weekly Study Hours: ${totalWeeklyHours} hrs (${totalWeeklyQuestions} MCQs)
-🎯 Overall Accuracy: ${avgWeeklyAccuracy}%
-📚 Words Mastered: 122+ Words
+🔥 Active Streak: ${student.streak} Days (Personal Best: ${personalBestStreak} Days)
+📊 Weekly Study Hours: ${totalWeeklyHours} hrs (${overallStats.totalQuestions} MCQs Solved)
+🎯 Overall Accuracy: ${overallStats.accuracy}%
+📚 Weak Words in Recovery: ${activeWeakWordsCount} (${masteredWeakWordsCount} Mastered)
 🌟 Prepared via HSC English Learner Hub`;
-  }, [student, rankTierInfo, totalWeeklyHours, totalWeeklyQuestions, avgWeeklyAccuracy]);
+  }, [student, rankTierInfo, totalWeeklyHours, overallStats, personalBestStreak, activeWeakWordsCount, masteredWeakWordsCount]);
 
   const handleCopySummary = () => {
     if (navigator.clipboard) {
@@ -390,7 +482,7 @@ Student: ${student.name} (${student.college})
             <div className="flex flex-wrap items-center gap-2.5">
               <span className="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
                 <Sparkles size={13} className="text-emerald-400" />
-                <span>NCTB HSC 2026 Analytics</span>
+                <span>{isBn ? `এনসিটিবি ${student.batch} অ্যানালিটিক্স` : `NCTB ${student.batch} Analytics`}</span>
               </span>
               <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-800/80 text-slate-300 border border-slate-700">
                 {student.batch}
@@ -480,7 +572,7 @@ Student: ${student.name} (${student.college})
           </div>
           <span className="text-[11px] text-emerald-400 font-medium flex items-center gap-1">
             <TrendingUp size={12} />
-            <span>+14.2% {isBn ? 'গত সপ্তাহের তুলনায়' : 'vs last week'}</span>
+            <span>{studyHoursTrendText}</span>
           </span>
         </div>
 
@@ -495,11 +587,13 @@ Student: ${student.name} (${student.college})
             </div>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-2xl sm:text-3xl font-black text-teal-400 tracking-tight">{avgWeeklyAccuracy}%</span>
-            <span className="text-xs font-bold text-slate-400">{totalWeeklyQuestions} {isBn ? 'প্রশ্নে' : 'MCQs'}</span>
+            <span className="text-2xl sm:text-3xl font-black text-teal-400 tracking-tight">{overallStats.accuracy}%</span>
+            <span className="text-xs font-bold text-slate-400">{overallStats.totalQuestions} {isBn ? 'প্রশ্নে' : 'MCQs'}</span>
           </div>
           <span className="text-[11px] text-slate-400 font-medium">
-            {isBn ? 'বোর্ড স্ট্যান্ডার্ড মানদণ্ড' : 'Board Standard Benchmark'}
+            {isBn 
+              ? `${overallStats.examsCount}টি পরীক্ষা সম্পন্ন • বোর্ড মানদণ্ড` 
+              : `${overallStats.examsCount} Exams Completed • Board Benchmark`}
           </span>
         </div>
 
@@ -537,7 +631,7 @@ Student: ${student.name} (${student.college})
             <span className="text-xs font-bold text-slate-400">{isBn ? 'দিন সক্রিয়' : 'Days Active'}</span>
           </div>
           <span className="text-[11px] text-amber-300 font-medium">
-            {isBn ? 'সর্বোচ্চ রেকর্ড: ১৪ দিন' : 'Personal Best: 14 Days'}
+            {isBn ? `ব্যক্তিগত সেরা: ${personalBestStreak} দিন` : `Personal Best: ${personalBestStreak} ${personalBestStreak === 1 ? 'Day' : 'Days'}`}
           </span>
         </div>
       </div>
@@ -592,63 +686,67 @@ Student: ${student.name} (${student.college})
           </div>
 
           <div className="grid grid-cols-7 gap-2 sm:gap-4 items-end h-56 pt-8">
-            {studyHoursData.map((item, index) => {
-              const maxHours = 4.0;
-              const heightPct = Math.min(100, Math.round((item.hours / maxHours) * 100));
-              const isHovered = hoveredBar === index;
+            {(() => {
+              const peakHour = Math.max(2.0, ...studyHoursData.map((d) => d.hours));
+              return studyHoursData.map((item, index) => {
+                const heightPct = item.hours > 0 ? Math.min(100, Math.max(8, Math.round((item.hours / peakHour) * 100))) : 0;
+                const isHovered = hoveredBar === index;
 
-              return (
-                <div
-                  key={item.day}
-                  className="flex flex-col items-center gap-2 h-full justify-end group cursor-pointer relative"
-                  onMouseEnter={() => setHoveredBar(index)}
-                  onMouseLeave={() => setHoveredBar(null)}
-                >
-                  {/* Tooltip on Hover */}
-                  <AnimatePresence>
-                    {isHovered && (
+                return (
+                  <div
+                    key={item.day}
+                    className="flex flex-col items-center gap-2 h-full justify-end group cursor-pointer relative"
+                    onMouseEnter={() => setHoveredBar(index)}
+                    onMouseLeave={() => setHoveredBar(null)}
+                  >
+                    {/* Tooltip on Hover */}
+                    <AnimatePresence>
+                      {isHovered && (
+                        <motion.div
+                          initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                          animate={{ opacity: 1, y: -8, scale: 1 }}
+                          exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                          className="absolute -top-20 z-30 px-3 py-2 rounded-xl bg-[#0c0f17] border border-emerald-500/40 text-center shadow-xl min-w-[120px] pointer-events-none"
+                        >
+                          <span className="text-[11px] font-bold text-white block">
+                            {isBn ? item.dayBn : item.day}: {item.hours} {isBn ? 'ঘণ্টা' : 'hrs'}
+                          </span>
+                          <span className="text-[10px] text-emerald-400 block font-semibold">
+                            {item.questions} MCQs • {item.accuracy}% Accuracy
+                          </span>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+
+                    {/* Animated Bar */}
+                    <div className="w-full max-w-[48px] bg-[#0c0f17] rounded-xl overflow-hidden h-full flex items-end p-1 border border-[#1e293b] group-hover:border-emerald-500/50 transition-colors">
                       <motion.div
-                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                        animate={{ opacity: 1, y: -8, scale: 1 }}
-                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                        className="absolute -top-20 z-30 px-3 py-2 rounded-xl bg-[#0c0f17] border border-emerald-500/40 text-center shadow-xl min-w-[120px] pointer-events-none"
-                      >
-                        <span className="text-[11px] font-bold text-white block">
-                          {isBn ? item.dayBn : item.day}: {item.hours} {isBn ? 'ঘণ্টা' : 'hrs'}
-                        </span>
-                        <span className="text-[10px] text-emerald-400 block font-semibold">
-                          {item.questions} MCQs • {item.accuracy}% Accuracy
-                        </span>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                        initial={{ height: 0 }}
+                        animate={{ height: `${heightPct}%` }}
+                        transition={{ duration: 0.6, delay: index * 0.08, ease: 'easeOut' }}
+                        className={`w-full rounded-lg transition-all ${
+                          item.hours >= 2.0
+                            ? 'bg-gradient-to-t from-emerald-600 via-teal-500 to-emerald-400 shadow-md shadow-emerald-950/50'
+                            : item.hours > 0
+                            ? 'bg-gradient-to-t from-slate-600 to-emerald-500/70'
+                            : 'bg-transparent'
+                        }`}
+                      />
+                    </div>
 
-                  {/* Animated Bar */}
-                  <div className="w-full max-w-[48px] bg-[#0c0f17] rounded-xl overflow-hidden h-full flex items-end p-1 border border-[#1e293b] group-hover:border-emerald-500/50 transition-colors">
-                    <motion.div
-                      initial={{ height: 0 }}
-                      animate={{ height: `${heightPct}%` }}
-                      transition={{ duration: 0.6, delay: index * 0.08, ease: 'easeOut' }}
-                      className={`w-full rounded-lg transition-all ${
-                        item.hours >= 2.0
-                          ? 'bg-gradient-to-t from-emerald-600 via-teal-500 to-emerald-400 shadow-md shadow-emerald-950/50'
-                          : 'bg-gradient-to-t from-slate-700 to-slate-500'
-                      }`}
-                    />
+                    {/* Day Label */}
+                    <div className="text-center">
+                      <span className="text-xs font-bold text-slate-300 block">
+                        {isBn ? item.dayBn : item.day}
+                      </span>
+                      <span className="text-[10px] text-slate-500 font-mono block">
+                        {item.hours}h
+                      </span>
+                    </div>
                   </div>
-
-                  {/* Day Label */}
-                  <div className="text-center">
-                    <span className="text-xs font-bold text-slate-300 block">
-                      {isBn ? item.dayBn : item.day}
-                    </span>
-                    <span className="text-[10px] text-slate-500 font-mono block">
-                      {item.hours}h
-                    </span>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              });
+            })()}
           </div>
         </div>
       </div>
@@ -693,77 +791,92 @@ Student: ${student.name} (${student.college})
 
         {/* 12 Units Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredUnitMetrics.map((unit) => {
-            const radius = 34;
-            const circumference = 2 * Math.PI * radius;
-            const strokeDashoffset = circumference - (unit.accuracy / 100) * circumference;
+          {filteredUnitMetrics.length === 0 ? (
+            <div className="col-span-full py-12 text-center rounded-2xl bg-[#0c0f17] border border-[#1e293b] space-y-2">
+              <p className="text-slate-400 text-sm font-semibold">
+                {isBn ? 'এই ফিল্টারে এখনো কোনো ইউনিট নেই' : 'No units in this filter category yet'}
+              </p>
+              <p className="text-xs text-slate-500">
+                {isBn ? 'মাস্টারি অর্জন করতে ইউনিটভিত্তিক পরীক্ষা দিন' : 'Take unit exams to track your accuracy and unlock mastery tiers'}
+              </p>
+            </div>
+          ) : (
+            filteredUnitMetrics.map((unit) => {
+              const radius = 34;
+              const circumference = 2 * Math.PI * radius;
+              const strokeDashoffset = unit.hasAttempts
+                ? circumference - (unit.accuracy / 100) * circumference
+                : circumference;
 
-            return (
-              <div
-                key={unit.id}
-                className="p-5 rounded-2xl bg-[#0c0f17] border border-[#1e293b] hover:border-slate-700 transition-all flex flex-col justify-between space-y-4 group"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="space-y-1">
-                    <span className="text-[10px] font-black uppercase tracking-wider text-slate-500">
-                      {unit.unitNumber}
-                    </span>
-                    <h3 className="font-bold text-white text-sm group-hover:text-emerald-400 transition-colors leading-snug">
-                      {unit.unitTitle}
-                    </h3>
-                    <p className="text-xs text-slate-400">{unit.unitTitleBn}</p>
+              return (
+                <div
+                  key={unit.id}
+                  className="p-5 rounded-2xl bg-[#0c0f17] border border-[#1e293b] hover:border-slate-700 transition-all flex flex-col justify-between space-y-4 group"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="space-y-1">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-slate-500">
+                        {unit.unitNumber}
+                      </span>
+                      <h3 className="font-bold text-white text-sm group-hover:text-emerald-400 transition-colors leading-snug">
+                        {unit.unitTitle}
+                      </h3>
+                      <p className="text-xs text-slate-400">{unit.unitTitleBn}</p>
+                    </div>
+
+                    {/* Donut Progress Ring SVG */}
+                    <div className="relative w-18 h-18 shrink-0 flex items-center justify-center">
+                      <svg className="w-18 h-18 transform -rotate-90" viewBox="0 0 80 80">
+                        <circle
+                          cx="40"
+                          cy="40"
+                          r={radius}
+                          stroke="#1e293b"
+                          strokeWidth="6"
+                          fill="transparent"
+                        />
+                        <motion.circle
+                          cx="40"
+                          cy="40"
+                          r={radius}
+                          stroke={unit.hasAttempts ? unit.tierColor : '#334155'}
+                          strokeWidth="6"
+                          strokeDasharray={circumference}
+                          initial={{ strokeDashoffset: circumference }}
+                          animate={{ strokeDashoffset }}
+                          transition={{ duration: 1, ease: 'easeOut' }}
+                          strokeLinecap="round"
+                          fill="transparent"
+                        />
+                      </svg>
+                      <span className="absolute text-xs font-black text-white">
+                        {unit.hasAttempts ? `${unit.accuracy}%` : '0%'}
+                      </span>
+                    </div>
                   </div>
 
-                  {/* Donut Progress Ring SVG */}
-                  <div className="relative w-18 h-18 shrink-0 flex items-center justify-center">
-                    <svg className="w-18 h-18 transform -rotate-90" viewBox="0 0 80 80">
-                      <circle
-                        cx="40"
-                        cy="40"
-                        r={radius}
-                        stroke="#1e293b"
-                        strokeWidth="6"
-                        fill="transparent"
-                      />
-                      <motion.circle
-                        cx="40"
-                        cy="40"
-                        r={radius}
-                        stroke={unit.tierColor}
-                        strokeWidth="6"
-                        strokeDasharray={circumference}
-                        initial={{ strokeDashoffset: circumference }}
-                        animate={{ strokeDashoffset }}
-                        transition={{ duration: 1, ease: 'easeOut' }}
-                        strokeLinecap="round"
-                        fill="transparent"
-                      />
-                    </svg>
-                    <span className="absolute text-xs font-black text-white">
-                      {unit.accuracy}%
+                  <div className="pt-3 border-t border-[#1a2130] flex items-center justify-between">
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${unit.badgeBg}`}>
+                      {unit.hasAttempts
+                        ? `${unit.wordsMastered}/${unit.totalUnitWords} ${isBn ? 'শব্দ আত্মস্থ' : 'Words'}`
+                        : (isBn ? 'পরীক্ষা বাকি' : 'Not Attempted')}
                     </span>
+
+                    <button
+                      onClick={() => {
+                        onStartExam(unit);
+                        navigate('/exam');
+                      }}
+                      className="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors"
+                    >
+                      <span>{isBn ? 'পরীক্ষা দিন' : 'Take Exam'}</span>
+                      <ChevronRight size={13} />
+                    </button>
                   </div>
                 </div>
-
-                <div className="pt-3 border-t border-[#1a2130] flex items-center justify-between">
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${unit.badgeBg}`}>
-                    {unit.wordsMastered}/{unit.totalUnitWords} {isBn ? 'শব্দ আত্মস্থ' : 'Words'}
-                  </span>
-
-                  <button
-                    onClick={() => {
-                      onStartExam(unit);
-                      navigate('/exam');
-                    }}
-                    className="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1 transition-colors"
-                  >
-                    <span>{isBn ? 'পরীক্ষা দিন' : 'Take Exam'}</span>
-                    <ChevronRight size={13} />
-                  </button>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })
+          )}
         </div>
       </div>
 
@@ -774,7 +887,9 @@ Student: ${student.name} (${student.college})
             <div className="flex items-center gap-2">
               <Calendar size={20} className="text-orange-400" />
               <h2 className="text-lg sm:text-xl font-bold text-white">
-                {isBn ? 'মাসিক পড়াশোনা ও অনুশীলনের হিটম্যাপ (August 2026)' : 'Monthly Study Activity Heatmap (August 2026)'}
+                {isBn 
+                  ? `মাসিক পড়াশোনা ও অনুশীলনের হিটম্যাপ (${currentMonthInfo.monthNameBn || currentMonthInfo.monthName} ${currentMonthInfo.year})` 
+                  : `Monthly Study Activity Heatmap (${currentMonthInfo.monthName} ${currentMonthInfo.year})`}
               </h2>
             </div>
             <p className="text-xs text-slate-400 mt-0.5">
@@ -865,72 +980,97 @@ Student: ${student.name} (${student.college})
 
         {/* Pipeline Cards */}
         <div className="space-y-3">
-          {recoveryPipeline.map((item) => {
-            const isMastered = item.status === 'mastered';
-            const progressPct = Math.min(100, Math.round((item.correctStreak / item.targetStreak) * 100));
-
-            return (
-              <div
-                key={item.id}
-                className={`p-4 sm:p-5 rounded-2xl border transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 ${
-                  isMastered
-                    ? 'bg-emerald-950/20 border-emerald-500/30 text-slate-200'
-                    : 'bg-[#0c0f17] border-[#1e293b] text-slate-300'
-                }`}
+          {recoveryPipeline.length === 0 ? (
+            <div className="p-8 rounded-2xl bg-[#0c0f17] border border-emerald-500/20 text-center space-y-3">
+              <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 mx-auto flex items-center justify-center">
+                <CheckCircle2 size={24} />
+              </div>
+              <div className="space-y-1">
+                <h4 className="text-white font-bold text-base">
+                  {isBn ? 'কোনো দুর্বল শব্দ নেই!' : 'No Weak Words in Queue!'}
+                </h4>
+                <p className="text-xs text-slate-400 max-w-md mx-auto leading-relaxed">
+                  {isBn
+                    ? 'চমৎকার! আপনি কোনো শব্দে ৩ বার ভুল করেননি। পরীক্ষায় কোনো শব্দ ৩ বার ভুল হলে তা স্বয়ংক্রিয়ভাবে এখানে যুক্ত হবে।'
+                    : 'Great job! You have not made 3 mistakes on any vocabulary. If you miss a word 3 times in exams, it will automatically appear here for spaced repetition recovery.'}
+                </p>
+              </div>
+              <button
+                onClick={() => navigate('/exam')}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md active:scale-95"
               >
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2.5">
-                    <h4 className="font-extrabold text-white text-base">{item.word}</h4>
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400">
-                      {item.unit}
-                    </span>
-                    {isMastered ? (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center gap-1">
-                        <Check size={11} />
-                        <span>{isBn ? 'মাস্টারি সম্পন্ন' : 'Mastered'}</span>
+                <Zap size={14} />
+                <span>{isBn ? 'নতুন পরীক্ষা শুরু করুন' : 'Start an Exam'}</span>
+              </button>
+            </div>
+          ) : (
+            recoveryPipeline.map((item) => {
+              const isMastered = item.status === 'mastered';
+              const progressPct = Math.min(100, Math.round((item.correctStreak / item.targetStreak) * 100));
+
+              return (
+                <div
+                  key={item.id}
+                  className={`p-4 sm:p-5 rounded-2xl border transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 ${
+                    isMastered
+                      ? 'bg-emerald-950/20 border-emerald-500/30 text-slate-200'
+                      : 'bg-[#0c0f17] border-[#1e293b] text-slate-300'
+                  }`}
+                >
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2.5">
+                      <h4 className="font-extrabold text-white text-base">{item.word}</h4>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                        {item.unit}
                       </span>
-                    ) : (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/40">
-                        {isBn ? 'রিকভারি চলমান' : 'In Recovery'}
-                      </span>
+                      {isMastered ? (
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center gap-1">
+                          <Check size={11} />
+                          <span>{isBn ? 'মাস্টারি সম্পন্ন' : 'Mastered'}</span>
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/40">
+                          {isBn ? 'রিকভারি চলমান' : 'In Recovery'}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-xs text-slate-400">{item.meaningBn}</p>
+                  </div>
+
+                  {/* 5-Step Visual Ladder */}
+                  <div className="flex items-center gap-4">
+                    <div className="space-y-1.5 min-w-[140px]">
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="text-slate-400">{isBn ? 'সঠিক ধারাবাহিকতা:' : 'Recovery Streak:'}</span>
+                        <span className="font-bold text-emerald-400">{item.correctStreak} / {item.targetStreak}</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        {[1, 2, 3, 4, 5].map((step) => (
+                          <div
+                            key={step}
+                            className={`h-2 flex-1 rounded-full transition-all ${
+                              step <= item.correctStreak
+                                ? isMastered ? 'bg-emerald-400' : 'bg-amber-400'
+                                : 'bg-slate-800'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+
+                    {!isMastered && (
+                      <button
+                        onClick={() => navigate('/practice')}
+                        className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-sm transition-all active:scale-95 shrink-0"
+                      >
+                        {isBn ? 'অনুশীলন' : 'Test Word'}
+                      </button>
                     )}
                   </div>
-                  <p className="text-xs text-slate-400">{item.meaningBn}</p>
                 </div>
-
-                {/* 5-Step Visual Ladder */}
-                <div className="flex items-center gap-4">
-                  <div className="space-y-1.5 min-w-[140px]">
-                    <div className="flex items-center justify-between text-[11px]">
-                      <span className="text-slate-400">{isBn ? 'সঠিক ধারাবাহিকতা:' : 'Recovery Streak:'}</span>
-                      <span className="font-bold text-emerald-400">{item.correctStreak} / {item.targetStreak}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      {[1, 2, 3, 4, 5].map((step) => (
-                        <div
-                          key={step}
-                          className={`h-2 flex-1 rounded-full transition-all ${
-                            step <= item.correctStreak
-                              ? isMastered ? 'bg-emerald-400' : 'bg-amber-400'
-                              : 'bg-slate-800'
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </div>
-
-                  {!isMastered && (
-                    <button
-                      onClick={() => navigate('/practice')}
-                      className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-sm transition-all active:scale-95 shrink-0"
-                    >
-                      {isBn ? 'অনুশীলন' : 'Test Word'}
-                    </button>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+              );
+            })
+          )}
         </div>
       </div>
 
