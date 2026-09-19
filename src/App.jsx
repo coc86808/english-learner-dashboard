@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Trophy,
-  GraduationCap,
   Layers,
   Zap,
   AlertTriangle,
@@ -58,6 +57,7 @@ import VocabularyBank from './components/VocabularyBank';
 import CertificateModal from './components/CertificateModal';
 import StreakWidget from './components/StreakWidget';
 import DailyPointsChart from './components/DailyPointsChart';
+import DailyGoalQuickAction from './components/DailyGoalQuickAction';
 
 // Milestone 2 & 3 Dedicated Page Views & FAB
 import ProgressPage from './components/pages/ProgressPage';
@@ -637,38 +637,15 @@ export default function App() {
                   {/* Streak Widget */}
                   <StreakWidget lang={lang} streakCount={currentUser?.streak || 0} />
 
-                  {/* How to Learn Step Card */}
-                  <div className="bg-[#111723] border border-[#1e293b] rounded-2xl p-5 space-y-4 shadow-card">
-                    <div className="flex items-center gap-2 mb-1">
-                      <GraduationCap size={18} className="text-emerald-400" />
-                      <h3 className="text-white font-bold text-sm">
-                        {isBn ? 'কীভাবে শিখবেন?' : 'How to Learn?'}
-                      </h3>
-                    </div>
-
-                    <div className="space-y-3 text-xs text-slate-300 leading-relaxed">
-                      {[
-                        { step: '1', text: isBn ? 'ইউনিট ও লেসন নির্বাচন করুন' : 'Select a Unit & Lesson', color: 'bg-emerald-500' },
-                        { step: '2', text: isBn ? '"📖 পাঠ্যবই পড়ুন" এ ক্লিক করে গল্পটি বুঝুন' : 'Read the NCTB passage text', color: 'bg-blue-500' },
-                        { step: '3', text: isBn ? 'MCQ পরীক্ষা শুরু করুন — ভুল হলে ৩ বার রিপিট হবে' : 'Start MCQ exam — spaced repetition active', color: 'bg-violet-500' },
-                        { step: '4', text: isBn ? 'টানা ৩ বার সঠিক উত্তর দিলে Done হবে' : 'Answer 3 consecutive times correctly for Done', color: 'bg-amber-500' },
-                      ].map((item, i) => (
-                        <div key={i} className="flex items-start gap-2.5">
-                          <span className={`w-5 h-5 rounded-full ${item.color} text-white text-[10px] font-black flex items-center justify-center shrink-0 mt-0.5`}>
-                            {item.step}
-                          </span>
-                          <span>{item.text}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <button
-                      onClick={() => setIsUnitLessonModalOpen(true)}
-                      className="w-full mt-2 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold transition-all active:scale-95 shadow-md shadow-emerald-950/40"
-                    >
-                      {isBn ? '▶ এখনই পরীক্ষা শুরু করুন' : '▶ Start Exam Now'}
-                    </button>
-                  </div>
+                  {/* Daily Goal & Quick Practice Widget */}
+                  <DailyGoalQuickAction
+                    lang={lang}
+                    currentUser={currentUser}
+                    weakWords={weakWords}
+                    onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
+                    onOpenMockExam={() => setIsUnitLessonModalOpen(true)}
+                    navigate={navigate}
+                  />
                 </div>
               </div>
             </div>
