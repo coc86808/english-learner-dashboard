@@ -1,44 +1,45 @@
 /**
  * User and Student Database
- * Stores all student records, batches, college information, streaks, and test performance.
+ * Only real registered accounts are stored here.
+ * 3 verified real accounts: Mohammad Nasim, Riad Sarkar (Dhaka College), Master Admin (Sakin)
  */
 
 export const usersList = [
   {
-    id: 'usr-2',
-    name: 'Sadia Rahman',
-    email: 'sadia.rahman@yahoo.com',
-    phone: '+880 1819-876543',
-    college: 'Viqarunnisa Noon College',
-    hscBatch: 'HSC 2026',
-    streak: 9,
-    points: 1280,
-    testsCompleted: 22,
-    masteredWordsCount: 72,
-    status: 'Active',
-    role: 'Student',
-    joinedDate: '15 Aug 2026',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop'
-  },
-  {
-    id: 'usr-3',
-    name: 'Nafis Iqbal',
-    email: 'nafis.dc@gmail.com',
-    phone: '+880 1911-223344',
+    id: 'usr-nasim',
+    name: 'Mohammad Nasim',
+    email: 'mohammad.nasim@gmail.com',
+    phone: '',
     college: 'Dhaka College',
-    hscBatch: 'HSC 2027',
-    streak: 5,
-    points: 1120,
-    testsCompleted: 19,
-    masteredWordsCount: 54,
+    hscBatch: 'HSC 2026',
+    streak: 0,
+    points: 0,
+    testsCompleted: 0,
+    masteredWordsCount: 0,
     status: 'Active',
     role: 'Student',
-    joinedDate: '18 Aug 2026',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop'
+    joinedDate: '01 Sep 2026',
+    avatar: ''
   },
   {
-    id: 'usr-4',
-    name: 'Master Admin (Sakin)',
+    id: 'usr-riad',
+    name: 'Riad Sarkar',
+    email: 'riad.sarkar@gmail.com',
+    phone: '',
+    college: 'Dhaka College',
+    hscBatch: 'HSC 2026',
+    streak: 0,
+    points: 0,
+    testsCompleted: 0,
+    masteredWordsCount: 0,
+    status: 'Active',
+    role: 'Student',
+    joinedDate: '01 Sep 2026',
+    avatar: ''
+  },
+  {
+    id: 'usr-admin',
+    name: 'Sakin',
     email: 'sakin@gmail.com',
     phone: '+880 1711-000000',
     college: 'Learner Hub Management',
@@ -46,27 +47,11 @@ export const usersList = [
     streak: 0,
     points: 0,
     testsCompleted: 0,
-    masteredWordsCount: 685,
+    masteredWordsCount: 0,
     status: 'Active',
     role: 'Admin',
     joinedDate: '01 Aug 2026',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop'
-  },
-  {
-    id: 'usr-5',
-    name: 'Mehedi Hasan',
-    email: 'mehedi.hasan99@gmail.com',
-    phone: '+880 1622-334455',
-    college: 'Rajshahi College',
-    hscBatch: 'HSC 2026',
-    streak: 0,
-    points: 240,
-    testsCompleted: 4,
-    masteredWordsCount: 12,
-    status: 'Inactive',
-    role: 'Student',
-    joinedDate: '20 Aug 2026',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop'
+    avatar: ''
   }
 ];
 

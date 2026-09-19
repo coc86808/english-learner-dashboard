@@ -323,42 +323,59 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
     Math.min(100, Math.round((weeklyProgress.completed / weeklyProgress.total) * 100))
   ), [weeklyProgress]);
 
-  // 9. Peer Leaderboard State
-  const topStudents = useMemo(() => [
-    {
-      id: 'peer-1',
-      rank: 1,
-      name: 'Nafis Iqbal',
-      college: 'Dhaka College',
-      points: 2840,
-      xp: 2840,
-      streak: 18,
-      avatarInitials: 'NI',
-      avatarBg: 'bg-gradient-to-br from-amber-400 to-amber-600 text-white'
-    },
-    {
-      id: 'peer-2',
-      rank: 2,
-      name: 'Sadia Rahman',
-      college: 'Viqarunnisa Noon College',
-      points: 2610,
-      xp: 2610,
-      streak: 15,
-      avatarInitials: 'SR',
-      avatarBg: 'bg-gradient-to-br from-slate-400 to-slate-600 text-white'
-    },
-    {
-      id: 'peer-3',
-      rank: 3,
-      name: 'Mehedi Hasan',
-      college: 'Rajuk Uttara Model College',
-      points: 2390,
-      xp: 2390,
-      streak: 12,
-      avatarInitials: 'MH',
-      avatarBg: 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'
-    }
-  ], []);
+  // 9. Peer Leaderboard State — real registered students only
+  const topStudents = useMemo(() => {
+    // Load real registered users from localStorage for live leaderboard
+    try {
+      const raw = localStorage.getItem('hsc_registered_users');
+      if (raw) {
+        const registered = JSON.parse(raw);
+        if (Array.isArray(registered) && registered.length > 0) {
+          return registered
+            .filter((u) => u.role !== 'Admin' && u.role !== 'admin')
+            .sort((a, b) => (Number(b.points) || 0) - (Number(a.points) || 0))
+            .slice(0, 3)
+            .map((u, idx) => ({
+              id: u.id || `peer-${idx}`,
+              rank: idx + 1,
+              name: u.name || 'Student',
+              college: u.college || '',
+              points: Number(u.points) || 0,
+              xp: Number(u.points) || 0,
+              streak: Number(u.streak) || 0,
+              avatarInitials: (u.name || 'S').split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase(),
+              avatarBg: ['bg-gradient-to-br from-amber-400 to-amber-600 text-white', 'bg-gradient-to-br from-slate-400 to-slate-600 text-white', 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'][idx] || 'bg-gradient-to-br from-slate-500 to-slate-700 text-white'
+            }));
+        }
+      }
+    } catch (e) {}
+
+    // Fallback: real accounts with 0 points (no fake data)
+    return [
+      {
+        id: 'usr-nasim',
+        rank: 1,
+        name: 'Mohammad Nasim',
+        college: 'Dhaka College',
+        points: 0,
+        xp: 0,
+        streak: 0,
+        avatarInitials: 'MN',
+        avatarBg: 'bg-gradient-to-br from-amber-400 to-amber-600 text-white'
+      },
+      {
+        id: 'usr-riad',
+        rank: 2,
+        name: 'Riad Sarkar',
+        college: 'Dhaka College',
+        points: 0,
+        xp: 0,
+        streak: 0,
+        avatarInitials: 'RS',
+        avatarBg: 'bg-gradient-to-br from-slate-400 to-slate-600 text-white'
+      }
+    ];
+  }, []);
 
   const currentUserRank = useMemo(() => ({
     rank: 12,

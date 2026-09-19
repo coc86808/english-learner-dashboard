@@ -164,14 +164,30 @@ export default function App() {
   const [isSignUpMode, setIsSignUpMode] = useState(true);
   const [pendingRedirect, setPendingRedirect] = useState(null);
 
-  // Helper: check if account is a fake account with target image
+  // Helper: check if an account is a known fake/demo account that must be purged.
+  // Only 3 real accounts are allowed: Mohammad Nasim, Riad Sarkar, and Sakin (admin).
   const isFakeTargetAccount = (u) => {
     if (!u) return false;
+    // Block by known fake Unsplash avatar photo IDs
     const avatar = String(u.avatar || '');
     if (avatar.includes('photo-1534528741775-53994a69daeb')) return true;
+    if (avatar.includes('photo-1494790108377-be9c29b29330')) return true; // Sadia
+    if (avatar.includes('photo-1507003211169-0a1dd7228f2d')) return true; // Nafis
+    if (avatar.includes('photo-1472099645785-5658abf4ff4e')) return true; // old admin placeholder
+    if (avatar.includes('photo-1500648767791-00dcc994a43e')) return true; // Mehedi
+    // Block by known fake IDs
+    const id = String(u.id || '');
+    const FAKE_IDS = new Set(['usr-1', 'usr-2', 'usr-3', 'usr-5', 'peer-1', 'peer-2', 'peer-3']);
+    if (FAKE_IDS.has(id)) return true;
+    // Block by known fake emails
     const email = String(u.email || '').toLowerCase();
-    if (email === 'tanvir.hsc26@gmail.com') return true;
-    if (u.id === 'usr-1') return true;
+    const FAKE_EMAILS = new Set([
+      'tanvir.hsc26@gmail.com',
+      'sadia.rahman@yahoo.com',
+      'nafis.dc@gmail.com',
+      'mehedi.hasan99@gmail.com'
+    ]);
+    if (FAKE_EMAILS.has(email)) return true;
     return false;
   };
 

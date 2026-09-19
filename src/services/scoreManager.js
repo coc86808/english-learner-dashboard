@@ -291,17 +291,27 @@ export function recordCompletedExam({
     const newMasteredCount = countRealMasteredWords();
     const userLeague = getUserLeague(newPoints);
 
-    // Streak update
+    // Streak update — Rule: 2+ consecutive missed days → full reset to 0
+    // Same day  → unchanged
+    // Yesterday → increment
+    // 2+ days ago (or first time) → reset to 0 then will become 1 after exam completion
     const todayStr = new Date().toISOString().split('T')[0];
     const lastActiveDate = currentUser.lastActiveDate || '';
-    let newStreak = Number(currentUser.streak) || 1;
+    let newStreak = Number(currentUser.streak) || 0;
 
-    if (lastActiveDate !== todayStr) {
+    if (lastActiveDate === todayStr) {
+      // Already studied today, streak unchanged
+    } else {
       const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
       if (lastActiveDate === yesterday) {
+        // Studied yesterday → extend consecutive streak
         newStreak += 1;
       } else if (!lastActiveDate) {
+        // First time ever studying → start at 1
         newStreak = 1;
+      } else {
+        // Missed 2+ consecutive days → full streak reset
+        newStreak = 0;
       }
     }
 
@@ -310,7 +320,7 @@ export function recordCompletedExam({
       points: newPoints,
       testsCompleted: newTestsCompleted,
       masteredWordsCount: newMasteredCount,
-      streak: Math.max(1, newStreak),
+      streak: Math.max(0, newStreak),
       lastActiveDate: todayStr,
       lastEarnedXP: totalEarnedXP,
       league: userLeague.name,

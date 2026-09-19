@@ -482,7 +482,7 @@ Student: ${student.name}${student.college ? ` (${student.college})` : ''}
             <div className="flex flex-wrap items-center gap-2.5">
               <span className="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5">
                 <Sparkles size={13} className="text-emerald-400" />
-                <span>{isBn ? `এনসিটিবি ${student.batch} অ্যানালিটিক্স` : `NCTB ${student.batch} Analytics`}</span>
+                <span>{isBn ? 'এনসিটিবি এইচএসসি বুক অ্যানালিটিক্স' : 'NCTB HSC Book Analytics'}</span>
               </span>
               <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-800/80 text-slate-300 border border-slate-700">
                 {student.batch}
