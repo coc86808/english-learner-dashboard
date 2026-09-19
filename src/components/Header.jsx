@@ -11,7 +11,6 @@ import {
   LogOut,
   Search,
   X,
-  FileText,
   Settings,
   MoreVertical,
   Trophy,
@@ -120,17 +119,15 @@ export default function Header({
           : 'সার্টিফিকেট'
       };
     }
-    if (norm === '/notes' || norm === '/settings' || norm === '/about' || norm === '/profile' || norm === '/terms') {
+    if (norm === '/settings' || norm === '/about' || norm === '/profile' || norm === '/terms') {
       return {
         sectionEn: 'Account',
         sectionBn: 'অ্যাকাউন্ট',
-        titleEn: norm === '/notes' ? 'Personal Notes'
-          : norm === '/settings' ? 'Settings'
+        titleEn: norm === '/settings' ? 'Settings'
           : norm === '/about' ? 'About & Contact'
           : norm === '/terms' ? 'Terms & Privacy'
           : 'Profile',
-        titleBn: norm === '/notes' ? 'ব্যক্তিগত নোটস'
-          : norm === '/settings' ? 'সেটিংস'
+        titleBn: norm === '/settings' ? 'সেটিংস'
           : norm === '/about' ? 'পরিচিতি ও যোগাযোগ'
           : norm === '/terms' ? 'শর্তাবলী ও নীতিমালা'
           : 'প্রোফাইল'
@@ -504,20 +501,6 @@ export default function Header({
                     <div className="flex items-center gap-2">
                       <User size={15} className="text-emerald-400" />
                       <span>{isBn ? 'আমার প্রোফাইল' : 'My Profile'}</span>
-                    </div>
-                    <ChevronRight size={14} className="text-slate-500" />
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      setIsControlMenuOpen(false);
-                      if (navigate) navigate('/notes');
-                    }}
-                    className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-[#141c2c] rounded-xl transition-all cursor-pointer"
-                  >
-                    <div className="flex items-center gap-2">
-                      <FileText size={15} className="text-cyan-400" />
-                      <span>{isBn ? 'ব্যক্তিগত নোটস' : 'Personal Notes'}</span>
                     </div>
                     <ChevronRight size={14} className="text-slate-500" />
                   </button>

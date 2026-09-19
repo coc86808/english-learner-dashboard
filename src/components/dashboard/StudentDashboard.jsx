@@ -43,7 +43,6 @@ export default function StudentDashboard({
   onOpenProgress,
   onOpenFlashcards,
   onOpenCertificates,
-  onOpenNotes,
   className = ''
 }) {
   const isBn = lang === 'bn';

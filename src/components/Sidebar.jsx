@@ -11,7 +11,6 @@ import {
   TrendingUp,
   Trophy,
   Award,
-  FileText,
   Settings,
   Info,
   Shield,
@@ -165,14 +164,6 @@ export default function Sidebar({
       titleEn: 'ACCOUNT',
       titleBn: 'অ্যাকাউন্ট',
       items: [
-        {
-          path: '/notes',
-          tabId: 'notes',
-          labelEn: 'Personal Notes',
-          labelBn: 'ব্যক্তিগত নোটস',
-          icon: FileText,
-          badge: null
-        },
         {
           path: '/settings',
           tabId: 'settings',

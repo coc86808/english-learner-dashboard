@@ -59,16 +59,14 @@ import StreakWidget from './components/StreakWidget';
 import DailyPointsChart from './components/DailyPointsChart';
 import DailyGoalQuickAction from './components/DailyGoalQuickAction';
 
-// Milestone 2 & 3 Dedicated Page Views & FAB
+// Milestone 2 & 3 Dedicated Page Views
 import ProgressPage from './components/pages/ProgressPage';
 import LeaderboardPage from './components/pages/LeaderboardPage';
 import TextbookPage from './components/pages/TextbookPage';
 import CertificatesPage from './components/pages/CertificatesPage';
-import NotesPage from './components/pages/NotesPage';
 import SettingsPage from './components/pages/SettingsPage';
 import AboutPage from './components/pages/AboutPage';
 import TermsPage from './components/pages/TermsPage';
-import QuickNoteFAB from './components/pages/QuickNoteFAB';
 
 // Data Layers
 import { usersList } from './data/users';
@@ -109,7 +107,6 @@ export const ROUTES = {
   TEXTBOOK: '/textbook',
   PROGRESS: '/progress',
   LEADERBOARD: '/leaderboard',
-  NOTES: '/notes',
   CERTIFICATES: '/certificates',
   SETTINGS: '/settings',
   PROFILE: '/profile',
@@ -128,7 +125,7 @@ const normalizePath = (rawPath) => {
   if (!rawPath) return '/';
   const clean = rawPath.trim().replace(/\/+$/, '') || '/';
   const lower = clean.toLowerCase();
-  if (lower === '/home') return '/dashboard';
+  if (lower === '/home' || lower === '/notes') return '/dashboard';
   if (lower === '/vocab' || lower === '/vocabulary') return '/vocabulary-bank';
   if (lower === '/exams') return '/exam';
   if (lower.startsWith('/exams/')) return `/exam/${clean.slice(7)}`;
@@ -465,7 +462,6 @@ export default function App() {
     if (currentPath.startsWith('/textbook')) return 'textbook';
     if (currentPath.startsWith('/progress')) return 'progress';
     if (currentPath.startsWith('/leaderboard')) return 'leaderboard';
-    if (currentPath.startsWith('/notes')) return 'notes';
     if (currentPath.startsWith('/certificates')) return 'certificates';
     if (currentPath.startsWith('/settings')) return 'settings';
     if (currentPath.startsWith('/profile')) return 'profile';
@@ -769,13 +765,6 @@ export default function App() {
             />
           )}
 
-          {/* Route: /notes */}
-          {currentPath === '/notes' && (
-            <div className="max-w-7xl mx-auto space-y-6">
-              <NotesPage lang={lang} onNavigate={navigate} />
-            </div>
-          )}
-
           {/* Route: /settings */}
           {currentPath === '/settings' && (
             <SettingsPage
@@ -895,12 +884,7 @@ export default function App() {
         />
       </div>
 
-      {/* 5. Globally Mounted QuickNote Floating Action Button for Students */}
-      {currentUser && (
-        <QuickNoteFAB lang={lang} onNavigate={navigate} />
-      )}
-
-      {/* 6. Global Interactive Modals */}
+      {/* 5. Global Interactive Modals */}
       <UserProfileModal
         isOpen={isUserProfileOpen}
         onClose={() => setIsUserProfileOpen(false)}

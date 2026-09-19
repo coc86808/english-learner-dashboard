@@ -793,8 +793,8 @@ export default function SettingsPage({
                 </h3>
                 <p className="text-xs text-slate-400">
                   {isBn
-                    ? 'এটি আপনার সকল দুর্বল শব্দের তালিকা এবং অতীতের পরীক্ষার স্কোর মুছে ফেলবে। আপনার অ্যাকাউন্ট ও নোটস সুরক্ষিত থাকবে।'
-                    : 'This action will clear your saved weak words and past exam scores. Your account and study notes will remain intact.'}
+                    ? 'এটি আপনার সকল দুর্বল শব্দের তালিকা এবং অতীতের পরীক্ষার স্কোর মুছে ফেলবে। আপনার অ্যাকাউন্ট সুরক্ষিত থাকবে।'
+                    : 'This action will clear your saved weak words and past exam scores. Your account will remain intact.'}
                 </p>
               </div>
 
