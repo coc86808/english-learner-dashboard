@@ -7,13 +7,9 @@ import {
   Palette,
   Globe,
   Bell,
-  Database,
   Shield,
   Check,
   AlertTriangle,
-  Download,
-  Trash2,
-  RefreshCw,
   Eye,
   EyeOff,
   Sparkles,
@@ -76,10 +72,6 @@ export default function SettingsPage({
   const [passError, setPassError] = useState('');
   const [passSuccessToast, setPassSuccessToast] = useState('');
 
-  // Modals
-  const [isResetDataOpen, setIsResetDataOpen] = useState(false);
-  const [isDeleteAccountOpen, setIsDeleteAccountOpen] = useState(false);
-  const [deleteConfirmInput, setDeleteConfirmInput] = useState('');
   const [actionNotice, setActionNotice] = useState('');
 
   // Sync settings to localStorage
@@ -199,68 +191,7 @@ export default function SettingsPage({
     setTimeout(() => setActionNotice(''), 2000);
   };
 
-  // Export All Student Data
-  const handleExportAllData = () => {
-    const backupObject = {
-      exportDate: new Date().toISOString(),
-      user: currentUser,
-      settings: settings,
-      weakWords: JSON.parse(localStorage.getItem('hsc_weak_words') || '[]'),
-      notes: JSON.parse(localStorage.getItem('hsc_student_notes') || '[]'),
-      examHistory: JSON.parse(localStorage.getItem('hsc_exam_history') || '[]')
-    };
 
-    const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(backupObject, null, 2));
-    const dl = document.createElement('a');
-    dl.setAttribute('href', dataStr);
-    dl.setAttribute('download', `HSC_LearnerHub_Data_Export_${new Date().toISOString().slice(0, 10)}.json`);
-    document.body.appendChild(dl);
-    dl.click();
-    dl.remove();
-  };
-
-  // Clear Local Cache
-  const handleClearCache = () => {
-    try {
-      const authUser = localStorage.getItem('hsc_auth_user');
-      const registeredUsers = localStorage.getItem('hsc_registered_users');
-      localStorage.removeItem('hsc_temp_quiz_state');
-      localStorage.removeItem('hsc_cache_timestamps');
-      if (authUser) localStorage.setItem('hsc_auth_user', authUser);
-      if (registeredUsers) localStorage.setItem('hsc_registered_users', registeredUsers);
-
-      setActionNotice(isBn ? 'ক্যাশ সফলভাবে পরিষ্কার করা হয়েছে!' : 'Local cache cleared successfully!');
-      setTimeout(() => setActionNotice(''), 2500);
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-  // Reset Learning Progress
-  const handleResetLearningData = () => {
-    try {
-      localStorage.removeItem('hsc_weak_words');
-      localStorage.removeItem('hsc_exam_history');
-      window.dispatchEvent(new CustomEvent('hsc_weak_words_updated'));
-      setIsResetDataOpen(false);
-      setActionNotice(isBn ? 'সকল দুর্বল শব্দ ও পরীক্ষার স্কোর রিসেট করা হয়েছে।' : 'Weak words & exam stats reset successfully.');
-      setTimeout(() => setActionNotice(''), 2500);
-    } catch (e) {}
-  };
-
-  // Delete Account
-  const handleDeleteAccount = () => {
-    if (deleteConfirmInput !== 'DELETE') return;
-    try {
-      localStorage.removeItem('hsc_auth_user');
-      localStorage.removeItem('hsc_weak_words');
-      localStorage.removeItem('hsc_student_notes');
-      localStorage.removeItem('hsc_user_settings');
-      setIsDeleteAccountOpen(false);
-      if (onLogout) onLogout();
-      if (onNavigate) onNavigate('/');
-    } catch (e) {}
-  };
 
   return (
     <div className="max-w-5xl mx-auto space-y-6 pb-12">
@@ -704,78 +635,7 @@ export default function SettingsPage({
             </div>
           </div>
 
-          {/* 6. Data Management & Danger Zone */}
-          <div className="bg-[#111723] border border-rose-950/40 rounded-3xl p-5 sm:p-6 shadow-card space-y-4">
-            <div className="flex items-center gap-2.5 border-b border-[#1e293b] pb-3">
-              <div className="w-8 h-8 rounded-xl bg-rose-500/15 text-rose-400 flex items-center justify-center">
-                <Database size={18} />
-              </div>
-              <div>
-                <h3 className="font-bold text-white text-base">
-                  {isBn ? 'ডাটা ব্যবস্থাপনা ও নিয়ন্ত্রণ (Data)' : 'Data Management & Privacy'}
-                </h3>
-                <span className="text-[11px] text-slate-400 block">
-                  {isBn ? 'ব্যাকআপ ডাউনলোড ও রিসেট বিকল্প' : 'Backup exports and reset controls'}
-                </span>
-              </div>
-            </div>
-
-            <div className="space-y-2.5 text-xs">
-              {/* Export Full Data */}
-              <button
-                type="button"
-                onClick={handleExportAllData}
-                className="w-full p-3 rounded-2xl bg-[#141b2a] hover:bg-[#1c273c] border border-[#233148] text-cyan-300 font-bold flex items-center justify-between transition-all"
-              >
-                <div className="flex items-center gap-2">
-                  <Download size={15} />
-                  <span>{isBn ? 'সকল লার্নিং ডাটা ডাউনলোড করুন (JSON)' : 'Export Full Learning Data (JSON)'}</span>
-                </div>
-                <span className="text-[10px] text-slate-400">Download</span>
-              </button>
-
-              {/* Clear Cache */}
-              <button
-                type="button"
-                onClick={handleClearCache}
-                className="w-full p-3 rounded-2xl bg-[#141b2a] hover:bg-[#1c273c] border border-[#233148] text-slate-200 font-bold flex items-center justify-between transition-all"
-              >
-                <div className="flex items-center gap-2">
-                  <RefreshCw size={15} />
-                  <span>{isBn ? 'লোকাল ক্যাশ পরিষ্কার করুন' : 'Clear Local App Cache'}</span>
-                </div>
-                <span className="text-[10px] text-slate-400">Clear Cache</span>
-              </button>
-
-              {/* Reset Stats */}
-              <button
-                type="button"
-                onClick={() => setIsResetDataOpen(true)}
-                className="w-full p-3 rounded-2xl bg-amber-950/20 hover:bg-amber-950/40 border border-amber-500/30 text-amber-300 font-bold flex items-center justify-between transition-all"
-              >
-                <div className="flex items-center gap-2">
-                  <AlertTriangle size={15} />
-                  <span>{isBn ? 'দুর্বল শব্দ ও স্কোর রিসেট করুন' : 'Reset Weak Words & Study Scores'}</span>
-                </div>
-                <span className="text-[10px] text-amber-400">Reset</span>
-              </button>
-
-              {/* Delete Account */}
-              <button
-                type="button"
-                onClick={() => setIsDeleteAccountOpen(true)}
-                className="w-full p-3 rounded-2xl bg-rose-950/20 hover:bg-rose-950/40 border border-rose-500/30 text-rose-300 font-bold flex items-center justify-between transition-all"
-              >
-                <div className="flex items-center gap-2">
-                  <Trash2 size={15} />
-                  <span>{isBn ? 'অ্যাকাউন্ট মুছে ফেলুন (Delete Account)' : 'Delete Account Permanently'}</span>
-                </div>
-                <span className="text-[10px] text-rose-400">Danger</span>
-              </button>
-            </div>
-          </div>
-
-          {/* 7. About Us & Legal Policies Corner Card */}
+          {/* 6. About Us & Legal Policies Corner Card */}
           <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-5 sm:p-6 shadow-card space-y-4">
             <div className="flex items-center gap-2.5 border-b border-[#1e293b] pb-3">
               <div className="w-8 h-8 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center">
@@ -850,109 +710,6 @@ export default function SettingsPage({
           </div>
         </div>
       </div>
-
-      {/* Confirmation Modal: Reset Data */}
-      <AnimatePresence>
-        {isResetDataOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="w-full max-w-md bg-[#131824] border border-[#2b3850] rounded-3xl p-6 shadow-2xl space-y-4 text-slate-100"
-            >
-              <div className="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto">
-                <AlertTriangle size={24} />
-              </div>
-
-              <div className="text-center space-y-1">
-                <h3 className="text-lg font-bold text-white">
-                  {isBn ? 'আপনি কি ডাটা রিসেট করতে চান?' : 'Reset Learning Stats?'}
-                </h3>
-                <p className="text-xs text-slate-400">
-                  {isBn
-                    ? 'এটি আপনার সকল দুর্বল শব্দের তালিকা এবং অতীতের পরীক্ষার স্কোর মুছে ফেলবে। আপনার অ্যাকাউন্ট সুরক্ষিত থাকবে।'
-                    : 'This action will clear your saved weak words and past exam scores. Your account will remain intact.'}
-                </p>
-              </div>
-
-              <div className="flex items-center justify-end gap-3 pt-2">
-                <button
-                  type="button"
-                  onClick={() => setIsResetDataOpen(false)}
-                  className="px-4 py-2 rounded-xl bg-[#1a2334] text-slate-300 text-xs font-semibold"
-                >
-                  {isBn ? 'বাতিল' : 'Cancel'}
-                </button>
-                <button
-                  type="button"
-                  onClick={handleResetLearningData}
-                  className="px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-slate-950 font-extrabold text-xs"
-                >
-                  {isBn ? 'হ্যাঁ, রিসেট করুন' : 'Confirm Reset'}
-                </button>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
-
-      {/* Confirmation Modal: Delete Account */}
-      <AnimatePresence>
-        {isDeleteAccountOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="w-full max-w-md bg-[#131824] border border-rose-900/60 rounded-3xl p-6 shadow-2xl space-y-4 text-slate-100"
-            >
-              <div className="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center mx-auto">
-                <Trash2 size={24} />
-              </div>
-
-              <div className="text-center space-y-1">
-                <h3 className="text-lg font-bold text-white">
-                  {isBn ? 'অ্যাকাউন্ট স্থায়ীভাবে মুছতে চান?' : 'Delete Account Permanently?'}
-                </h3>
-                <p className="text-xs text-slate-400">
-                  {isBn
-                    ? 'এই কাজটি আর ফেরানো যাবে না। নিশ্চিত করতে নিচের ঘরে "DELETE" লিখুন।'
-                    : 'This action is irreversible. Type "DELETE" in uppercase to confirm.'}
-                </p>
-              </div>
-
-              <div>
-                <input
-                  type="text"
-                  value={deleteConfirmInput}
-                  onChange={(e) => setDeleteConfirmInput(e.target.value)}
-                  placeholder='Type "DELETE"'
-                  className="w-full bg-[#0c0f17] border border-rose-900 rounded-xl px-3 py-2 text-center text-xs font-bold text-white focus:outline-none focus:border-rose-500"
-                />
-              </div>
-
-              <div className="flex items-center justify-end gap-3 pt-2">
-                <button
-                  type="button"
-                  onClick={() => setIsDeleteAccountOpen(false)}
-                  className="px-4 py-2 rounded-xl bg-[#1a2334] text-slate-300 text-xs font-semibold"
-                >
-                  {isBn ? 'বাতিল' : 'Cancel'}
-                </button>
-                <button
-                  type="button"
-                  disabled={deleteConfirmInput !== 'DELETE'}
-                  onClick={handleDeleteAccount}
-                  className="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 disabled:opacity-40 text-white font-extrabold text-xs"
-                >
-                  {isBn ? 'স্থায়ীভাবে মুছুন' : 'Delete Account'}
-                </button>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
