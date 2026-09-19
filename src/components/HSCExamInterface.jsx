@@ -961,7 +961,7 @@ export default function HSCExamInterface({
                       key={idx}
                       onClick={() => handleSelectOption(idx)}
                       disabled={isAnswered}
-                      whileHover={!isAnswered ? { scale: 1.01, backgroundColor: '#161e2e' } : {}}
+                      whileHover={!isAnswered ? { scale: 1.01 } : {}}
                       whileTap={!isAnswered ? { scale: 0.99 } : {}}
                       {...motionProps}
                       className={`w-full min-h-[52px] p-3.5 sm:p-4 rounded-2xl border text-sm sm:text-base transition-all duration-200 flex items-center justify-between text-left group cursor-pointer ${optionClasses}`}
