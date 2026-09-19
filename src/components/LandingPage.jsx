@@ -197,8 +197,8 @@ export default function LandingPage({
     {
       q: isBn ? 'Learner Hub কি সম্পূর্ণ বিনামূল্যে ব্যবহার করা যায়?' : 'Is Learner Hub 100% free for all HSC students?',
       a: isBn 
-        ? 'হ্যাঁ, Learner Hub সম্পূর্ণ উন্মুক্ত ও ফ্রি। কোনো গোপন সাবস্ক্রিপশন ফি নেই। সব ফ্ল্যাশকার্ড, MCQ পরীক্ষা ও PDF শিট আনলিমিটেড ব্যবহারযোগ্য।'
-        : 'Yes, Learner Hub is 100% completely free with no hidden charges. All 12 units (45 lessons), 858+ vocabulary words, 3,432+ MCQs, and PDF revision sheets are unlimited.'
+        ? 'হ্যাঁ, Learner Hub সম্পূর্ণ উন্মুক্ত ও ফ্রি। কোনো গোপন সাবস্ক্রিপশন ফি নেই। সব ১৪টি ইউনিট (৪৬ লেসন), ১,০৭৫+ পাঠ্যবই ভোকাবুলারি, ৪,৩০০+ MCQ ও PDF রিভিশন শিট আনলিমিটেড ব্যবহারযোগ্য।'
+        : 'Yes, Learner Hub is 100% completely free with no hidden charges. All 14 units (46 lessons), 1,075+ vocabulary words, 4,300+ MCQs, and PDF revision sheets are unlimited.'
     },
     {
       q: isBn ? 'স্পেসড-রিপিটিশন (Spaced Repetition) কীভাবে কাজ করে?' : 'How does the Spaced Repetition engine work?',
@@ -241,8 +241,8 @@ export default function LandingPage({
           </span>
           <span>
             {isBn 
-              ? '🎉 এইচএসসি ২০২৬ ব্যাচ: ৮৫৮+ পাঠ্যবই ভোকাবুলারি ও ৩,৪৩২+ বোর্ড MCQ লাইভ!'
-              : '🎉 NCTB 2026 HSC English Exam Prep: 858+ Words & 3,432+ Board MCQs Live!'}
+              ? '🎉 এইচএসসি ২০২৬ ব্যাচ: ১,০৭৫+ পাঠ্যবই ভোকাবুলারি ও ৪,৩০০+ বোর্ড MCQ লাইভ!'
+              : '🎉 NCTB 2026 HSC English Exam Prep: 1,075+ Words & 4,300+ Board MCQs Live!'}
           </span>
           <button
             onClick={() => onOpenAuth(true)}
@@ -917,40 +917,107 @@ export default function LandingPage({
       </section>
 
       {/* 8. Big Final Call to Action Box */}
-      <section className="py-20 relative z-10 overflow-hidden">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center bg-gradient-to-r from-emerald-950/80 via-[#121c29] to-teal-950/80 border border-emerald-500/40 rounded-3xl p-8 sm:p-14 shadow-2xl space-y-6">
-          <div className="w-16 h-16 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 flex items-center justify-center mx-auto shadow-lg">
-            <GraduationCap size={34} />
-          </div>
+      <section className="py-24 relative z-10 overflow-hidden">
+        {/* Ambient background radial glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-96 bg-gradient-to-tr from-emerald-500/20 via-teal-500/15 to-cyan-500/20 rounded-full blur-[110px] pointer-events-none" />
+        <div className="absolute -top-10 right-1/4 w-72 h-72 bg-emerald-500/10 rounded-full blur-[90px] pointer-events-none" />
 
-          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-            {isBn 
-              ? 'এইচএসসি পরীক্ষার জন্য প্রস্তুত হতে এখনই জয়েন করুন' 
-              : 'Ready to Conquer Your HSC English Exam?'}
-          </h2>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="relative rounded-[32px] overflow-hidden border border-emerald-500/30 bg-[#111723]/95 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] backdrop-blur-2xl p-8 sm:p-14 lg:p-16 text-center space-y-7">
+            
+            {/* Top hairline border accent */}
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent pointer-events-none" />
 
-          <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            {isBn
-              ? 'কোনো ফি নেই! সম্পূর্ণ বিনামূল্যে অ্যাকাউন্ট খুলে আজ থেকেই স্মার্ট স্পেসড-রিপিটিশন পদ্ধতিতে রিভিশন শুরু করুন।'
-              : 'Join thousands of HSC students across Bangladesh. Sign up for free and master every textbook vocabulary word and board MCQ today.'}
-          </p>
+            {/* Subtle cyber grid texture overlay with soft radial mask */}
+            <div 
+              className="absolute inset-0 bg-[linear-gradient(to_right,#10b9810d_1px,transparent_1px),linear-gradient(to_bottom,#10b9810d_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none"
+              style={{ maskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, #000 40%, transparent 100%)', WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 50% 50%, #000 40%, transparent 100%)' }}
+            />
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-3">
-            <button
-              onClick={() => onOpenAuth(true)}
-              className="w-full sm:w-auto px-9 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-emerald-950/80 transition-all cursor-pointer active:scale-95 border border-emerald-300"
-            >
-              <span>{isBn ? '🚀 ফ্রি একাউন্ট তৈরি করুন' : '🚀 Create Free Account'}</span>
-              <ArrowRight size={18} />
-            </button>
+            {/* Glowing curriculum badge */}
+            <div className="relative z-10 flex flex-col items-center">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-bold tracking-wide shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+                <GraduationCap size={16} className="text-emerald-400" />
+                <span>{isBn ? 'এইচএসসি ২০২৬ স্পেশাল এডিশন • ১০০% ফ্রি' : 'NCTB 2025–2026 Aligned • 100% Free'}</span>
+              </div>
+            </div>
 
-            <button
-              onClick={onDirectLogin}
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-[#141e2e] hover:bg-[#1f2d45] border border-[#2b3c58] text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all cursor-pointer active:scale-95 shadow-lg"
-            >
-              <Zap size={18} className="text-amber-400 fill-amber-400" />
-              <span>{isBn ? '⚡ ১-ক্লিক ডেমো একাউন্ট' : '⚡ 1-Click Instant Demo'}</span>
-            </button>
+            {/* Headline with gradient shimmer */}
+            <div className="relative z-10 space-y-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-[1.2] max-w-3xl mx-auto">
+                {isBn ? (
+                  <>
+                    এইচএসসি ইংরেজি বোর্ড পরীক্ষায় সেরা প্রস্তুতির জন্য{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300">
+                      আজই শুরু করুন
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    Ready to Conquer Your{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300">
+                      HSC English Exam?
+                    </span>
+                  </>
+                )}
+              </h2>
+
+              <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
+                {isBn
+                  ? 'কোনো ফি নেই! সম্পূর্ণ বিনামূল্যে অ্যাকাউন্ট খুলে আজ থেকেই স্মার্ট স্পেসড-রিপিটিশন পদ্ধতিতে ১,০৭৫+ পাঠ্যবই ভোকাবুলারি ও ৪,৩০০+ বোর্ড MCQ আয়ত্ত করুন।'
+                  : 'Join thousands of HSC students across Bangladesh. Sign up for free and master every textbook vocabulary word, board-standard MCQ, and spaced repetition revision today.'}
+              </p>
+            </div>
+
+            {/* Feature trust chips row */}
+            <div className="relative z-10 flex flex-wrap items-center justify-center gap-2 sm:gap-3.5 pt-1">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
+                <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
+                <span>{isBn ? '৪,৩০০+ অথেনটিক MCQ' : '4,300+ Authentic MCQs'}</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
+                <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
+                <span>{isBn ? 'স্পেসড রিপিটিশন রিভিশন' : 'Spaced Repetition Review'}</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
+                <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
+                <span>{isBn ? 'বোর্ড স্ট্যান্ডার্ড টেস্ট' : 'Board-Standard Tests'}</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
+                <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
+                <span>{isBn ? '১০০% ফ্রি এক্সেস' : '100% Free Forever'}</span>
+              </div>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4 pt-3">
+              <button
+                onClick={() => onOpenAuth(true)}
+                className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-emerald-400 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black text-sm sm:text-base tracking-wide shadow-[0_0_30px_rgba(16,185,129,0.35)] hover:shadow-[0_0_40px_rgba(16,185,129,0.55)] transition-all duration-300 cursor-pointer active:scale-95 border border-emerald-200/60 overflow-hidden w-full sm:w-auto"
+              >
+                <div className="absolute inset-0 w-1/2 h-full bg-white/25 skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000 ease-out pointer-events-none" />
+                <span className="relative z-10 flex items-center gap-2">
+                  <span>🚀</span>
+                  <span>{isBn ? 'ফ্রি একাউন্ট তৈরি করুন' : 'Create Free Account'}</span>
+                </span>
+                <ArrowRight size={18} className="relative z-10 text-slate-950 group-hover:translate-x-1 transition-transform" />
+              </button>
+
+              <button
+                onClick={onDirectLogin}
+                className="group inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-[#131b28]/90 hover:bg-[#1b2536] border border-slate-700/80 hover:border-amber-400/50 text-white font-bold text-sm sm:text-base transition-all duration-300 cursor-pointer active:scale-95 shadow-lg hover:shadow-amber-500/10 w-full sm:w-auto"
+              >
+                <Zap size={18} className="text-amber-400 fill-amber-400 group-hover:scale-110 group-hover:rotate-12 transition-transform" />
+                <span>{isBn ? '১-ক্লিক ডেমো একাউন্ট' : '1-Click Instant Demo'}</span>
+              </button>
+            </div>
+
+            {/* Micro trust footnote */}
+            <div className="relative z-10 pt-2 flex items-center justify-center gap-2 text-xs text-slate-400">
+              <CheckCircle2 size={13} className="text-emerald-400" />
+              <span>{isBn ? 'কোনো ক্রেডিট কার্ড বা পেমেন্ট প্রয়োজন নেই • ৩০ সেকেন্ডে প্রস্তুত' : 'No credit card required • Instant access in under 30 seconds'}</span>
+            </div>
+
           </div>
         </div>
       </section>
@@ -1032,7 +1099,7 @@ export default function LandingPage({
                   {isBn ? 'এইচএসসি ২০২৬ ইংলিশ প্র্যাকটিস' : 'HSC 2026 English Prep'}
                 </span>
                 <span className="text-[10px] text-emerald-400 font-medium">
-                  {isBn ? '৮৫৮+ শব্দ • ৩,৪৩২+ MCQ • ১০০% ফ্রি' : '858+ Words • 3,432+ MCQs • Free'}
+                  {isBn ? '১,০৭৫+ শব্দ • ৪,৩০০+ MCQ • ১০০% ফ্রি' : '1,075+ Words • 4,300+ MCQs • Free'}
                 </span>
               </div>
             </div>
