@@ -94,7 +94,9 @@
 [data-theme="sage-cream"] .bg-\[\#0c101a\],
 [data-theme="sage-cream"] .bg-\[\#080e1e\],
 [data-theme="sage-cream"] .bg-\[\#0a0d16\],
-[data-theme="sage-cream"] .bg-\[\#101420\] {
+[data-theme="sage-cream"] .bg-\[\#101420\],
+[data-theme="sage-cream"] .bg-\[\#0c0f17\]\/90,
+[data-theme="sage-cream"] .bg-\[\#0c0f17\]\/95 {
   background-color: #F7F4ED !important;
 }
 
@@ -111,8 +113,15 @@
 [data-theme="sage-cream"] .bg-\[\#151c2a\],
 [data-theme="sage-cream"] .bg-\[\#121926\],
 [data-theme="sage-cream"] .bg-\[\#161f30\],
-[data-theme="sage-cream"] .bg-\[\#1a2335\] {
+[data-theme="sage-cream"] .bg-\[\#1a2335\],
+[data-theme="sage-cream"] .bg-\[\#111723\]\/95,
+[data-theme="sage-cream"] .bg-\[\#111723\]\/90,
+[data-theme="sage-cream"] .bg-\[\#111723\]\/80 {
   background-color: #FFFFFF !important;
+}
+
+[data-theme="sage-cream"] .ring-\[\#0c0f17\] {
+  --tw-ring-color: #F7F4ED !important;
 }
 
 /* Secondary / Inset Cards */
