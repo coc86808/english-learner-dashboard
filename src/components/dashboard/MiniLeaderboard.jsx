@@ -123,26 +123,26 @@ export default function MiniLeaderboard({
   };
 
   return (
-    <div className={`bg-white border border-[#E5E7EB] rounded-[22px] p-5 sm:p-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex flex-col justify-between ${className}`}>
+    <div className={`bg-[#111723] border border-[#1e293b] rounded-3xl p-4 sm:p-6 shadow-card flex flex-col justify-between ${className}`}>
       <div>
         {/* Header */}
-        <div className="flex items-start justify-between gap-3 mb-5">
+        <div className="flex items-start justify-between gap-3 mb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-[#F59E0B] shadow-xs">
-              <Trophy className="w-5 h-5 text-[#F59E0B]" />
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-sm">
+              <Trophy className="w-5 h-5 text-amber-400" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-bold text-[#172033] leading-tight">
+              <h3 className="text-base sm:text-lg font-black text-white leading-tight">
                 {isBn ? 'সাপ্তাহিক লিডারবোর্ড' : 'Weekly Leaderboard'}
               </h3>
-              <p className="text-xs text-[#64748B] mt-0.5">
-                {isBn ? 'শীর্ষ এইচএসসি শিক্ষার্থী ও আপনার অবস্থান' : 'Top HSC examinees & your current standing'}
+              <p className="text-[11px] sm:text-xs text-slate-400 mt-0.5">
+                {isBn ? 'শীর্ষ এইচএসসি শিক্ষার্থী ও আপনার অবস্থান' : 'Top HSC examinees & your standing'}
               </p>
             </div>
           </div>
 
           {/* Live indicator badge */}
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 border border-green-200 text-[#16A34A] text-xs font-bold shadow-2xs">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-bold shrink-0">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -151,40 +151,45 @@ export default function MiniLeaderboard({
           </div>
         </div>
 
-        {/* Top 3 Peers List */}
-        <div className="space-y-2.5 mb-4">
+        {/* Top Peers List */}
+        <div className="space-y-2 mb-3 sm:mb-4">
           {peersList.map((peer) => {
             const rankMeta = getRankBadge(peer.rank);
-            const Icon = rankMeta.icon;
 
             return (
               <div
                 key={peer.id || peer.rank}
-                className="bg-[#F8FAFC] hover:bg-slate-50 border border-[#E5E7EB] hover:border-slate-300 rounded-2xl p-3 transition-all duration-200 flex items-center justify-between gap-3 shadow-2xs"
+                className="bg-[#141b2b] hover:bg-[#1a243a] border border-[#1f2a3f] hover:border-emerald-500/30 rounded-2xl p-2.5 sm:p-3 transition-all duration-200 flex items-center justify-between gap-3"
               >
                 {/* Left: Rank & Avatar & Info */}
-                <div className="flex items-center gap-3 min-w-0 flex-1">
+                <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
                   {/* Rank Badge */}
-                  <div className={`w-7 h-7 rounded-xl border flex items-center justify-center shrink-0 text-xs ${rankMeta.badgeClass}`}>
-                    <span className="font-extrabold">{peer.rank}</span>
+                  <div className={`w-6 h-6 sm:w-7 sm:h-7 rounded-xl border flex items-center justify-center shrink-0 text-xs font-black ${
+                    peer.rank === 1
+                      ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+                      : peer.rank === 2
+                      ? 'bg-slate-500/20 text-slate-300 border-slate-500/40'
+                      : 'bg-orange-500/20 text-orange-300 border-orange-500/40'
+                  }`}>
+                    <span>{peer.rank}</span>
                   </div>
 
                   {/* Avatar */}
-                  <div className={`w-9 h-9 rounded-full flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs ${peer.avatarBg || 'bg-blue-600 text-white'}`}>
+                  <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center font-black text-xs shrink-0 shadow-sm ${peer.avatarBg || 'bg-gradient-to-br from-emerald-600 to-teal-700 text-white'}`}>
                     {peer.avatarInitials || 'HS'}
                   </div>
 
                   {/* Name & College */}
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-1.5">
-                      <h4 className="text-xs sm:text-sm font-bold text-[#172033] truncate">
+                      <h4 className="text-xs sm:text-sm font-bold text-white truncate">
                         {peer.name}
                       </h4>
                       {peer.rank === 1 && (
-                        <Crown className="w-3.5 h-3.5 text-amber-500 fill-amber-500 shrink-0" />
+                        <Crown className="w-3.5 h-3.5 text-amber-400 fill-amber-400 shrink-0" />
                       )}
                     </div>
-                    <p className="text-[11px] text-[#64748B] truncate">
+                    <p className="text-[10px] sm:text-[11px] text-slate-400 truncate">
                       {peer.college}
                     </p>
                   </div>
@@ -192,12 +197,12 @@ export default function MiniLeaderboard({
 
                 {/* Right: XP & Streak */}
                 <div className="shrink-0 text-right">
-                  <div className="flex items-center gap-1 text-xs sm:text-sm font-extrabold text-[#172033] tabular-nums justify-end">
-                    <Zap className="w-3.5 h-3.5 text-[#2563EB] fill-[#2563EB]" />
+                  <div className="flex items-center gap-1 text-xs sm:text-sm font-extrabold text-white tabular-nums justify-end">
+                    <Zap className="w-3.5 h-3.5 text-emerald-400 fill-emerald-400" />
                     <span>{isBn ? `${toBnNum(peer.xp || peer.points)} XP` : `${peer.xp || peer.points} XP`}</span>
                   </div>
-                  {peer.streak && (
-                    <div className="flex items-center gap-1 text-[10px] font-semibold text-[#F59E0B] justify-end mt-0.5">
+                  {peer.streak > 0 && (
+                    <div className="flex items-center gap-1 text-[10px] font-semibold text-amber-400 justify-end mt-0.5">
                       <Flame className="w-2.5 h-2.5 fill-current" />
                       <span>{isBn ? `${toBnNum(peer.streak)} দিন` : `${peer.streak}d`}</span>
                     </div>
@@ -209,28 +214,28 @@ export default function MiniLeaderboard({
         </div>
 
         {/* Pinned Current User Rank Card */}
-        <div className="bg-[#EFF6FF] border border-blue-200 rounded-2xl p-3.5 mb-5 shadow-xs">
+        <div className="bg-gradient-to-r from-emerald-950/40 via-[#131d2e] to-[#0c101a] border border-emerald-500/30 rounded-2xl p-3 sm:p-3.5 mb-3 sm:mb-4 shadow-sm">
           <div className="flex items-center justify-between gap-3">
             {/* Left: Your Rank & Info */}
-            <div className="flex items-center gap-3 min-w-0 flex-1">
-              <div className="px-2.5 py-1 rounded-xl bg-[#2563EB] text-white text-xs font-extrabold shrink-0 shadow-xs">
+            <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
+              <div className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-xl bg-emerald-500 text-slate-950 text-xs font-black shrink-0 shadow-sm">
                 {isBn ? `#${toBnNum(userRankNum)} আপনি` : `#${userRankNum} You`}
               </div>
 
-              <div className="w-9 h-9 rounded-full bg-white border border-blue-200 text-[#2563EB] font-bold text-xs flex items-center justify-center shrink-0 shadow-2xs">
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#182438] border border-emerald-500/30 text-emerald-400 font-bold text-xs flex items-center justify-center shrink-0">
                 {userInitials}
               </div>
 
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-1.5">
-                  <h4 className="text-xs sm:text-sm font-extrabold text-[#172033] truncate">
+                  <h4 className="text-xs sm:text-sm font-black text-white truncate">
                     {userName}
                   </h4>
-                  <span className="hidden sm:inline-flex px-1.5 py-0.2 rounded text-[10px] font-bold bg-blue-100 text-[#2563EB]">
-                    {isBn ? 'আপনার প্রোফাইল' : 'You'}
+                  <span className="hidden xs:inline-flex px-1.5 py-0.2 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300">
+                    {isBn ? 'আপনি' : 'You'}
                   </span>
                 </div>
-                <p className="text-[11px] text-[#64748B] truncate">
+                <p className="text-[10px] sm:text-[11px] text-slate-400 truncate">
                   {userCollege}
                 </p>
               </div>
@@ -238,12 +243,12 @@ export default function MiniLeaderboard({
 
             {/* Right: User XP & Trend */}
             <div className="shrink-0 text-right">
-              <div className="flex items-center gap-1 text-xs sm:text-sm font-extrabold text-[#2563EB] tabular-nums justify-end">
+              <div className="flex items-center gap-1 text-xs sm:text-sm font-extrabold text-emerald-400 tabular-nums justify-end">
                 <Zap className="w-3.5 h-3.5 fill-current" />
                 <span>{isBn ? `${toBnNum(userPoints)} XP` : `${userPoints} XP`}</span>
               </div>
-              <div className="flex items-center gap-1 text-[10px] font-bold text-emerald-700 justify-end mt-0.5">
-                <TrendingUp className="w-3 h-3" />
+              <div className="flex items-center gap-1 text-[10px] font-bold text-slate-400 justify-end mt-0.5">
+                <TrendingUp className="w-3 h-3 text-emerald-400" />
                 <span>{userTrend}</span>
               </div>
             </div>
@@ -255,10 +260,10 @@ export default function MiniLeaderboard({
       <button
         type="button"
         onClick={onViewFullLeaderboard}
-        className="w-full min-h-[44px] px-4 py-2.5 rounded-xl bg-white hover:bg-[#F8FAFC] border border-[#E5E7EB] hover:border-slate-300 text-[#172033] font-bold text-xs sm:text-sm shadow-2xs hover:shadow-xs transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer group"
+        className="w-full min-h-[40px] sm:min-h-[44px] px-4 py-2 sm:py-2.5 rounded-xl bg-[#141c2c] hover:bg-emerald-500/15 border border-[#212f46] hover:border-emerald-500/40 text-white hover:text-emerald-300 font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 cursor-pointer group shadow-sm active:scale-[0.99]"
       >
         <span>{isBn ? 'পূর্ণাঙ্গ লিডারবোর্ড দেখুন →' : 'View Full Leaderboard →'}</span>
-        <ArrowRight className="w-4 h-4 text-[#2563EB] group-hover:translate-x-1 transition-transform" />
+        <ArrowRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-1 transition-transform" />
       </button>
     </div>
   );

@@ -55,8 +55,8 @@ export default function ActionCards({
     {
       id: 'vb',
       title: isBn ? 'ভোকাবুলারি ব্যাংক' : 'Vocabulary Bank',
-      subtitle: isBn ? 'বোর্ড শিট ও শব্দার্থ' : 'NCTB 4-Col Sheet',
-      badge: isBn ? '১,০৭৭+ শব্দ' : '1,077+ Words',
+      subtitle: isBn ? '১,০৭৭+ শব্দ ও অর্থ' : '1,077+ Words & Sheet',
+      badge: isBn ? 'বোর্ড শিট' : 'Board Sheet',
       badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
       icon: BookOpen,
       iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg shadow-emerald-950/60 ring-2 ring-emerald-500/30',
@@ -68,7 +68,7 @@ export default function ActionCards({
       id: 'fc',
       title: isBn ? '৩ডি ফ্ল্যাশকার্ড' : '3D Flashcards',
       subtitle: isBn ? 'অ্যাক্টিভ রিকল ও অডিও' : 'Active Recall & Audio',
-      badge: '3D Flip Mode',
+      badge: '3D Flip',
       badgeColor: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
       icon: Layers,
       iconBg: 'bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-lg shadow-amber-950/60 ring-2 ring-amber-500/30',
@@ -78,9 +78,9 @@ export default function ActionCards({
     },
     {
       id: 'me',
-      title: isBn ? 'ইউনিট ও লেসন MCQ পরীক্ষা' : 'Unit & Lesson MCQ Exam',
-      subtitle: isBn ? '৪-ক্যাটাগরি স্পেসড টেস্ট' : '14 Units • 4,308 MCQs',
-      badge: '4,308+ MCQs',
+      title: isBn ? 'MCQ পরীক্ষা' : 'MCQ Exam',
+      subtitle: isBn ? '১৪ ইউনিট • ৪,৩০৮ MCQ' : '14 Units • 4,308 MCQs',
+      badge: 'Spaced MCQ',
       badgeColor: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30',
       icon: GraduationCap,
       iconBg: 'bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-950/60 ring-2 ring-cyan-500/30',
@@ -99,8 +99,8 @@ export default function ActionCards({
     {
       id: 'ww',
       title: isBn ? 'দুর্বল শব্দ রিভিশন' : 'Weak Words Hub',
-      subtitle: isBn ? 'অটো ৩-ভুল ও PDF শিট' : 'Auto 3-Mistake & PDF',
-      badge: 'Spaced Recovery',
+      subtitle: isBn ? '৩-ভুল রিকভারি ও PDF' : '3-Mistake Recovery',
+      badge: 'Mastery',
       badgeColor: 'bg-rose-500/15 text-rose-300 border-rose-500/30',
       icon: FileDown,
       iconBg: 'bg-gradient-to-br from-rose-600 to-red-600 text-white shadow-lg shadow-rose-950/60 ring-2 ring-rose-500/30',
@@ -111,48 +111,48 @@ export default function ActionCards({
   ];
 
   return (
-    <div className="space-y-4">
-      {/* 4 Feature Action Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div className="space-y-2.5 sm:space-y-4">
+      {/* 4 Feature Action Cards Grid — 2x2 on Mobile, 4-Col on Desktop */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
         {cards.map((card) => {
           const Icon = card.icon;
           return (
             <motion.button
               key={card.id}
               onClick={card.onClick}
-              whileHover={{ y: -4, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className={`p-5 rounded-2xl bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] transition-all duration-300 group ${card.borderHover} cursor-pointer text-left relative overflow-hidden flex flex-col justify-between shadow-card`}
+              whileHover={{ y: -3, scale: 1.01 }}
+              whileTap={{ scale: 0.97 }}
+              className={`p-3 sm:p-5 rounded-2xl bg-[#111723]/95 backdrop-blur-xl border border-[#1e293b] transition-all duration-300 group ${card.borderHover} cursor-pointer text-left relative overflow-hidden flex flex-col justify-between min-h-[110px] sm:min-h-[145px] shadow-card active:border-emerald-500/50`}
             >
               {/* Dynamic Glow Surface */}
               <div className={`absolute inset-0 bg-transparent ${card.glowColor} transition-colors duration-300`} />
 
               {/* Card Header: Icon + Badge */}
-              <div className="flex items-center justify-between gap-2 mb-4 relative z-10">
+              <div className="flex items-center justify-between gap-1.5 mb-2 sm:mb-4 relative z-10">
                 <div
-                  className={`w-13 h-13 rounded-2xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110 ${card.iconBg}`}
+                  className={`w-9 h-9 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-105 ${card.iconBg}`}
                 >
-                  <Icon size={24} className="stroke-[2.2]" />
+                  <Icon className="w-4 h-4 sm:w-6 sm:h-6 stroke-[2.2]" />
                 </div>
 
-                <span className={`text-[10px] font-extrabold px-2.5 py-1 rounded-full border ${card.badgeColor}`}>
+                <span className={`text-[9px] sm:text-[10px] font-extrabold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full border truncate max-w-[90px] sm:max-w-none ${card.badgeColor}`}>
                   {card.badge}
                 </span>
               </div>
 
               {/* Card Content */}
               <div className="relative z-10">
-                <h4 className="text-white font-black text-base sm:text-lg tracking-tight block mb-1 group-hover:text-emerald-300 transition-colors">
+                <h4 className="text-white font-extrabold text-xs sm:text-base tracking-tight block group-hover:text-emerald-300 transition-colors line-clamp-1">
                   {card.title}
                 </h4>
 
-                <p className="text-xs text-slate-400 font-medium leading-relaxed">
+                <p className="text-[10px] sm:text-xs text-slate-400 font-medium leading-tight sm:leading-relaxed line-clamp-1 mt-0.5">
                   {card.subtitle}
                 </p>
               </div>
 
-              {/* Bottom Quick Indicator */}
-              <div className="mt-4 pt-3 border-t border-[#1e293b] flex items-center justify-between text-xs text-slate-400 font-bold group-hover:text-emerald-400 transition-colors relative z-10">
+              {/* Bottom Indicator for Desktop */}
+              <div className="mt-3 pt-2.5 border-t border-[#1e293b] hidden sm:flex items-center justify-between text-xs text-slate-400 font-bold group-hover:text-emerald-400 transition-colors relative z-10">
                 <span>{isBn ? 'শুরু করুন' : 'Launch'}</span>
                 <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </div>
@@ -160,6 +160,38 @@ export default function ActionCards({
           );
         })}
       </div>
+
+      {/* Quick 1-Line Textbook Reader Banner for Mobile & Desktop */}
+      <button
+        onClick={() => {
+          if (onOpenTextbook) onOpenTextbook();
+          else if (onNavigate) onNavigate('/textbook');
+        }}
+        className="w-full p-2.5 sm:p-3 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-[#111723] to-[#0f172a] border border-emerald-500/30 hover:border-emerald-400/60 transition-all flex items-center justify-between gap-3 text-left cursor-pointer group shadow-sm active:scale-[0.99]"
+      >
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">
+            <BookOpen size={16} />
+          </div>
+          <div className="min-w-0">
+            <div className="flex items-center gap-2">
+              <span className="text-xs sm:text-sm font-black text-white group-hover:text-emerald-300 transition-colors truncate">
+                {isBn ? 'এনসিটিবি পাঠ্যবই রিডার (Units 1-14)' : 'NCTB Interactive Textbook Reader'}
+              </span>
+              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 shrink-0">
+                {isBn ? '১৪টি ইউনিট' : '14 Units'}
+              </span>
+            </div>
+            <p className="text-[10px] sm:text-xs text-slate-400 truncate">
+              {isBn ? 'শব্দার্থ ও বাংলা অনুবাদসহ মূল পাঠ্যবই পড়ুন' : 'Read original passages with bilingual vocabulary'}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-1 text-emerald-400 text-xs font-bold shrink-0">
+          <span className="hidden xs:inline">{isBn ? 'পড়ুন' : 'Read'}</span>
+          <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+        </div>
+      </button>
     </div>
   );
 }

@@ -58,6 +58,7 @@ import CertificateModal from './components/CertificateModal';
 import StreakWidget from './components/StreakWidget';
 import DailyPointsChart from './components/DailyPointsChart';
 import DailyGoalQuickAction from './components/DailyGoalQuickAction';
+import MiniLeaderboard from './components/dashboard/MiniLeaderboard';
 
 // Milestone 2 & 3 Dedicated Page Views
 import ProgressPage from './components/pages/ProgressPage';
@@ -684,8 +685,8 @@ export default function App() {
         <main className="flex-1 overflow-y-auto p-3.5 sm:p-5 md:p-6 lg:p-7 pb-24 lg:pb-7 space-y-6">
           {/* Route: /dashboard */}
           {currentPath === '/dashboard' && (
-            <div className="max-w-[1550px] mx-auto space-y-6">
-              {/* 4 Feature Action Cards */}
+            <div className="max-w-[1550px] mx-auto space-y-4 sm:space-y-6">
+              {/* 4 Feature Action Cards (Compact 2x2 on Mobile, 4-Col on Desktop) */}
               <ActionCards
                 lang={lang}
                 onOpenVocabBank={() => navigate('/vocabulary-bank')}
@@ -695,11 +696,36 @@ export default function App() {
                 onNavigate={navigate}
               />
 
-              {/* Main Content Grid: 8 cols left + 4 cols right */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-                <div className="lg:col-span-8 space-y-6">
+              {/* Main Content Grid: Leaderboard & Quick Stats first on mobile, right column on desktop */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 items-start">
+                {/* Column A: Leaderboard & Quick Progress Stats (Order 1 on mobile, 4 cols on desktop) */}
+                <div className="lg:col-span-4 space-y-4 sm:space-y-6 order-1 lg:order-2">
+                  {/* Weekly Leaderboard Widget — Directly under Options on Mobile */}
+                  <MiniLeaderboard
+                    currentUser={currentUser}
+                    topUsers={users}
+                    lang={lang}
+                    onViewFullLeaderboard={() => navigate('/leaderboard')}
+                  />
+
+                  {/* Streak Widget */}
+                  <StreakWidget lang={lang} streakCount={currentUser?.streak || 0} />
+
+                  {/* Daily Goal & Quick Practice Widget */}
+                  <DailyGoalQuickAction
+                    lang={lang}
+                    currentUser={currentUser}
+                    weakWords={weakWords}
+                    onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
+                    onOpenMockExam={() => navigate('/exam')}
+                    navigate={navigate}
+                  />
+                </div>
+
+                {/* Column B: Subject Reports & Analytics (Order 2 on mobile, 8 cols on desktop) */}
+                <div className="lg:col-span-8 space-y-4 sm:space-y-6 order-2 lg:order-1">
                   {/* Subject Report & Recent Exams */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     <SubjectReport
                       lang={lang}
                       onOpenAllSubjects={() => navigate('/exam')}
@@ -719,21 +745,6 @@ export default function App() {
 
                   {/* Daily Points Chart */}
                   <DailyPointsChart lang={lang} />
-                </div>
-
-                <div className="lg:col-span-4 space-y-6">
-                  {/* Streak Widget */}
-                  <StreakWidget lang={lang} streakCount={currentUser?.streak || 0} />
-
-                  {/* Daily Goal & Quick Practice Widget */}
-                  <DailyGoalQuickAction
-                    lang={lang}
-                    currentUser={currentUser}
-                    weakWords={weakWords}
-                    onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
-                    onOpenMockExam={() => navigate('/exam')}
-                    navigate={navigate}
-                  />
                 </div>
               </div>
 
