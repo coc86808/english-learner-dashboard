@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Trophy,
   GraduationCap,
-  BookOpen,
   Layers,
   Zap,
   AlertTriangle,
@@ -599,44 +598,6 @@ export default function App() {
           {/* Route: /dashboard */}
           {currentPath === '/dashboard' && (
             <div className="max-w-[1550px] mx-auto space-y-6">
-              {/* Contextual Smart Card: Resume Learning */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#141b2c] via-[#111726] to-[#0c101a] border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-lg shadow-emerald-950/20">
-                <div className="flex items-start sm:items-center gap-3.5">
-                  <div className="w-11 h-11 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 shadow-inner mt-0.5 sm:mt-0">
-                    <BookOpen size={22} />
-                  </div>
-                  <div>
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-white font-extrabold text-sm sm:text-base">
-                        {isBn ? 'পড়াশোনা চালিয়ে যান: Unit 1 • The Parrot\'s Tale' : 'Resume Learning: Unit 1 • The Parrot\'s Tale'}
-                      </span>
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
-                        NCTB 2026
-                      </span>
-                    </div>
-                    <p className="text-xs text-slate-400 mt-1">
-                      {isBn ? '৫১টি শব্দ • ২০৪টি বোর্ড MCQ • তোতাকাহিনী (রবীন্দ্রনাথ ঠাকুর)' : '51 Words • 204 Board MCQs • Interactive Passage & Active Recall'}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 w-full sm:w-auto">
-                  <button
-                    onClick={() => navigate('/textbook')}
-                    className="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-[#1a2233] hover:bg-[#222e44] border border-[#2b3952] text-slate-200 hover:text-white text-xs font-bold transition-all active:scale-95 text-center"
-                  >
-                    {isBn ? '📖 পাঠ্যবই পড়ুন' : '📖 Read Passage'}
-                  </button>
-                  <button
-                    onClick={() => setIsUnitLessonModalOpen(true)}
-                    className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold shadow-lg shadow-emerald-950/50 active:scale-95 transition-all text-center flex items-center justify-center gap-1.5"
-                  >
-                    <span>{isBn ? '▶ পরীক্ষা দিন' : '▶ Start Exam'}</span>
-                    <ChevronRight size={14} />
-                  </button>
-                </div>
-              </div>
-
               {/* 4 Feature Action Cards */}
               <ActionCards
                 lang={lang}
