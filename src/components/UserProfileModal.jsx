@@ -20,13 +20,8 @@ import WeakWordsSection from './WeakWordsSection';
 import { generateWeakWordsPDF } from '../utils/pdfGenerator';
 import { hscVocabularyList } from '../data/questions/hscQuestionsData';
 
-const avatarOptions = [
-  'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
-  'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop'
-];
+
+
 
 export default function UserProfileModal({ 
   isOpen, 
@@ -282,24 +277,62 @@ export default function UserProfileModal({
               </div>
             </div>
 
-            {/* Avatar Selector */}
+            {/* Profile Picture Upload */}
             <div>
               <label className="block text-xs font-semibold text-slate-300 mb-2">
-                {isBn ? 'অ্যাভাটার ছবি পরিবর্তন করুন' : 'Select Avatar Picture'}
+                {isBn ? 'প্রোফাইল ছবি পরিবর্তন করুন' : 'Change Profile Picture'}
               </label>
-              <div className="flex items-center gap-3">
-                {avatarOptions.map((opt, i) => (
-                  <button
-                    key={i}
-                    type="button"
-                    onClick={() => setAvatar(opt)}
-                    className={`w-10 h-10 rounded-xl overflow-hidden border-2 transition-all cursor-pointer ${
-                      avatar === opt ? 'border-emerald-400 scale-110 shadow-lg ring-2 ring-emerald-500/30' : 'border-transparent opacity-60 hover:opacity-100'
-                    }`}
+              <div className="flex items-center gap-4">
+                {/* Current / Preview Avatar */}
+                <div className="w-14 h-14 rounded-xl overflow-hidden bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-xl shadow-lg ring-2 ring-emerald-500/30 shrink-0">
+                  {avatar ? (
+                    <img src={avatar} alt="Preview" className="w-full h-full object-cover" />
+                  ) : (
+                    <span>{(name || 'S').split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()}</span>
+                  )}
+                </div>
+
+                {/* Upload Button */}
+                <div className="flex flex-col gap-2">
+                  <label
+                    htmlFor="avatar-upload"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold cursor-pointer transition-all active:scale-95 shadow-md"
                   >
-                    <img src={opt} alt="Avatar option" className="w-full h-full object-cover" />
-                  </button>
-                ))}
+                    <Camera size={14} />
+                    <span>{isBn ? 'ছবি আপলোড করুন' : 'Upload Photo'}</span>
+                  </label>
+                  <input
+                    id="avatar-upload"
+                    type="file"
+                    accept="image/*"
+                    className="hidden"
+                    onChange={(e) => {
+                      const file = e.target.files?.[0];
+                      if (!file) return;
+                      if (file.size > 2 * 1024 * 1024) {
+                        alert(isBn ? 'ছবির সাইজ ২MB-এর বেশি হতে পারবে না।' : 'Image must be under 2MB.');
+                        return;
+                      }
+                      const reader = new FileReader();
+                      reader.onload = (ev) => {
+                        setAvatar(ev.target.result);
+                      };
+                      reader.readAsDataURL(file);
+                    }}
+                  />
+                  <p className="text-[10px] text-slate-500">
+                    {isBn ? 'JPG, PNG, WEBP — সর্বোচ্চ ২MB' : 'JPG, PNG, WEBP — max 2MB'}
+                  </p>
+                  {avatar && (
+                    <button
+                      type="button"
+                      onClick={() => setAvatar('')}
+                      className="text-[10px] text-rose-400 hover:text-rose-300 transition-colors text-left"
+                    >
+                      {isBn ? '✕ ছবি সরান' : '✕ Remove photo'}
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
 
