@@ -1,31 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Project Configuration
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://rxlvwdioskvwypyhifbt.supabase.co';
-const DEFAULT_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4bHZ3ZGlvc2t2d3lweWhpZmJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk3NTA5MjksImV4cCI6MjEwNTMyNjkyOX0.dCSw834biSsYsb4p-wqbX0xxlHuP62htpYIT9bVydD0';
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || (typeof window !== 'undefined' ? localStorage.getItem('hsc_supabase_anon_key') : '') || DEFAULT_ANON_KEY;
+// Supabase removed by user — client disabled. All calls will safely return null/cache.
+export const isSupabaseConfigured = false;
+export const supabase = null;
 
-export const isSupabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY && SUPABASE_ANON_KEY.startsWith('ey'));
-
-// Initialize client only when key is provided
-export const supabase = isSupabaseConfigured
-  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
-      auth: {
-        persistSession: true,
-        autoRefreshToken: true
-      }
-    })
-  : null;
-
-/**
- * Configure or update Supabase Anon Key dynamically (e.g. from admin panel or settings)
- */
-export function setSupabaseAnonKey(anonKey) {
-  if (anonKey && typeof window !== 'undefined') {
-    localStorage.setItem('hsc_supabase_anon_key', anonKey.trim());
-    window.location.reload();
-  }
-}
+export function setSupabaseAnonKey() {}
 
 /**
  * 1. Sync User Profile to PostgreSQL (profiles table)
