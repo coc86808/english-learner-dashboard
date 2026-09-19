@@ -26,7 +26,11 @@ import {
   CheckCircle2,
   XCircle,
   HelpCircle,
-  LogOut
+  LogOut,
+  Info,
+  Scale,
+  ChevronRight,
+  ShieldCheck
 } from 'lucide-react';
 
 export default function SettingsPage({
@@ -768,6 +772,80 @@ export default function SettingsPage({
                 </div>
                 <span className="text-[10px] text-rose-400">Danger</span>
               </button>
+            </div>
+          </div>
+
+          {/* 7. About Us & Legal Policies Corner Card */}
+          <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-5 sm:p-6 shadow-card space-y-4">
+            <div className="flex items-center gap-2.5 border-b border-[#1e293b] pb-3">
+              <div className="w-8 h-8 rounded-xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center">
+                <ShieldCheck size={18} />
+              </div>
+              <div>
+                <h3 className="font-bold text-white text-base">
+                  {isBn ? 'পরিচিতি ও নীতিমালা (About & Policies)' : 'About & Legal Policies'}
+                </h3>
+                <span className="text-[11px] text-slate-400 block">
+                  {isBn ? 'প্ল্যাটফর্মের বিবরণ ও শিক্ষার্থীদের সুরক্ষা নীতিমালা' : 'Platform info, contact & student privacy terms'}
+                </span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              {/* About Us Link Card */}
+              <button
+                type="button"
+                onClick={() => {
+                  if (onNavigate) onNavigate('/about');
+                  else window.location.href = '/about';
+                }}
+                className="p-4 rounded-2xl bg-[#0c101a] hover:bg-[#141b2a] border border-[#1e293b] hover:border-cyan-500/40 text-left transition-all group cursor-pointer flex flex-col justify-between space-y-2"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Info size={16} />
+                  </div>
+                  <ChevronRight size={14} className="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-0.5 transition-all" />
+                </div>
+                <div>
+                  <span className="font-bold text-white block group-hover:text-cyan-300 transition-colors">
+                    {isBn ? 'আমাদের পরিচিতি (About Us)' : 'About & Contact'}
+                  </span>
+                  <span className="text-[10px] text-slate-400 line-clamp-2">
+                    {isBn ? 'শিক্ষামূলক মিশন, কারিকুলাম ও যোগাযোগ' : 'Mission, curriculum alignment & contact details'}
+                  </span>
+                </div>
+              </button>
+
+              {/* Terms and Policy Link Card */}
+              <button
+                type="button"
+                onClick={() => {
+                  if (onNavigate) onNavigate('/terms');
+                  else window.location.href = '/terms';
+                }}
+                className="p-4 rounded-2xl bg-[#0c101a] hover:bg-[#141b2a] border border-[#1e293b] hover:border-emerald-500/40 text-left transition-all group cursor-pointer flex flex-col justify-between space-y-2"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Scale size={16} />
+                  </div>
+                  <ChevronRight size={14} className="text-slate-500 group-hover:text-emerald-400 group-hover:translate-x-0.5 transition-all" />
+                </div>
+                <div>
+                  <span className="font-bold text-white block group-hover:text-emerald-300 transition-colors">
+                    {isBn ? 'শর্তাবলী ও নীতিমালা (Terms & Policy)' : 'Terms & Privacy Policy'}
+                  </span>
+                  <span className="text-[10px] text-slate-400 line-clamp-2">
+                    {isBn ? 'শিক্ষার্থী তথ্যের গোপনীয়তা ও ব্যবহারবিধি' : 'Fair use, student data privacy & terms'}
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div className="pt-2 border-t border-[#1e293b]/60 flex items-center justify-between text-[11px] text-slate-500">
+              <span>Learner Hub v2.6.0 (Cyber-Academic)</span>
+              <span className="text-emerald-400 font-semibold">NCTB 2025–2026</span>
             </div>
           </div>
         </div>

@@ -12,7 +12,6 @@ import {
   Trophy,
   Award,
   Settings,
-  Info,
   Shield,
   Users,
   Activity,
@@ -21,8 +20,7 @@ import {
   LogOut,
   ChevronRight,
   Sparkles,
-  BookMarked,
-  Scale
+  BookMarked
 } from 'lucide-react';
 import { getUserLeague } from '../services/scoreManager';
 
@@ -170,22 +168,6 @@ export default function Sidebar({
           labelEn: 'Settings',
           labelBn: 'সেটিংস',
           icon: Settings,
-          badge: null
-        },
-        {
-          path: '/about',
-          tabId: 'about',
-          labelEn: 'About & Contact',
-          labelBn: 'পরিচিতি ও যোগাযোগ',
-          icon: Info,
-          badge: null
-        },
-        {
-          path: '/terms',
-          tabId: 'terms',
-          labelEn: 'Terms & Privacy',
-          labelBn: 'শর্তাবলী ও নীতিমালা',
-          icon: Scale,
           badge: null
         }
       ]

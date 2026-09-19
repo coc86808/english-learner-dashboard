@@ -26,7 +26,8 @@ export default function LandingPage({
   onDirectLogin, 
   lang = 'en', 
   setLang,
-  onNavigateAbout 
+  onNavigateAbout,
+  onNavigateTerms
 }) {
   const isBn = lang === 'bn';
 
@@ -971,17 +972,22 @@ export default function LandingPage({
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-slate-300">
-              <a href="#features" className="hover:text-emerald-400 transition-colors">Features</a>
-              <a href="#curriculum" className="hover:text-emerald-400 transition-colors">Curriculum</a>
-              <a href="#testimonials" className="hover:text-emerald-400 transition-colors">Testimonials</a>
-              <a href="#faq" className="hover:text-emerald-400 transition-colors">FAQ</a>
+              <a href="#features" className="hover:text-emerald-400 transition-colors">{isBn ? 'ফিচারসমূহ' : 'Features'}</a>
+              <a href="#curriculum" className="hover:text-emerald-400 transition-colors">{isBn ? 'পাঠ্যক্রম' : 'Curriculum'}</a>
+              <a href="#testimonials" className="hover:text-emerald-400 transition-colors">{isBn ? 'মতামত' : 'Testimonials'}</a>
+              <a href="#faq" className="hover:text-emerald-400 transition-colors">{isBn ? 'সাধারণ প্রশ্ন' : 'FAQ'}</a>
               {onNavigateAbout && (
-                <button onClick={onNavigateAbout} className="hover:text-emerald-400 transition-colors cursor-pointer">
-                  About & Contact
+                <button onClick={onNavigateAbout} className="hover:text-cyan-400 transition-colors cursor-pointer font-bold">
+                  {isBn ? 'আমাদের পরিচিতি (About Us)' : 'About Us'}
                 </button>
               )}
-              <button onClick={() => onOpenAuth(false)} className="hover:text-emerald-400 transition-colors cursor-pointer">
-                Student Sign In
+              {onNavigateTerms && (
+                <button onClick={onNavigateTerms} className="hover:text-emerald-400 transition-colors cursor-pointer font-bold">
+                  {isBn ? 'শর্তাবলী ও নীতিমালা (Terms & Policy)' : 'Terms & Policy'}
+                </button>
+              )}
+              <button onClick={() => onOpenAuth(false)} className="hover:text-emerald-400 transition-colors cursor-pointer text-emerald-400 font-extrabold">
+                {isBn ? 'লগইন করুন' : 'Student Sign In'}
               </button>
             </div>
           </div>
@@ -990,9 +996,19 @@ export default function LandingPage({
             <p>
               © 2026 Learner Hub. Tailored for NCTB Higher Secondary Certificate (HSC) Students in Bangladesh.
             </p>
-            <p className="text-slate-400 font-medium">
-              858+ Words • 3,432+ MCQs • 12 Units • Spaced Repetition Engine
-            </p>
+            <div className="flex items-center gap-3 text-xs font-medium">
+              {onNavigateAbout && (
+                <button onClick={onNavigateAbout} className="text-slate-400 hover:text-cyan-400 underline decoration-slate-700 transition-colors cursor-pointer">
+                  {isBn ? 'পরিচিতি ও যোগাযোগ' : 'About & Contact'}
+                </button>
+              )}
+              <span className="text-slate-700">•</span>
+              {onNavigateTerms && (
+                <button onClick={onNavigateTerms} className="text-slate-400 hover:text-emerald-400 underline decoration-slate-700 transition-colors cursor-pointer">
+                  {isBn ? 'শর্তাবলী ও নীতিমালা' : 'Terms & Privacy Policy'}
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </footer>

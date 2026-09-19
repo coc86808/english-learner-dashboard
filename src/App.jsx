@@ -484,6 +484,7 @@ export default function App() {
           lang={lang}
           setLang={setLang}
           onNavigateAbout={() => navigate('/about')}
+          onNavigateTerms={() => navigate('/terms')}
         />
 
         <AuthModal
@@ -503,15 +504,15 @@ export default function App() {
     );
   }
 
-  // If user is unauthenticated and visiting /about directly
-  if (!currentUser && currentPath === '/about') {
+  // If user is unauthenticated and visiting /about or /terms directly
+  if (!currentUser && (currentPath === '/about' || currentPath === '/terms')) {
     return (
       <div className="bg-[#0c0f17] text-slate-100 min-h-screen p-4 sm:p-8">
         <div className="max-w-6xl mx-auto space-y-6">
           <div className="flex items-center justify-between pb-4 border-b border-[#1e293b]">
             <button
               onClick={() => navigate('/')}
-              className="px-4 py-2 rounded-xl bg-[#162033] hover:bg-[#1f2d48] border border-[#2b3b59] text-slate-200 text-xs font-bold transition-all"
+              className="px-4 py-2 rounded-xl bg-[#162033] hover:bg-[#1f2d48] border border-[#2b3b59] text-slate-200 text-xs font-bold transition-all cursor-pointer"
             >
               ← {isBn ? 'মূল পাতায় ফিরে যান' : 'Back to Home'}
             </button>
@@ -520,13 +521,17 @@ export default function App() {
                 setIsSignUpMode(false);
                 setIsAuthOpen(true);
               }}
-              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md transition-all"
+              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md transition-all cursor-pointer"
             >
               {isBn ? 'লগইন করুন' : 'Sign In'}
             </button>
           </div>
 
-          <AboutPage lang={lang} onNavigate={navigate} currentUser={currentUser} />
+          {currentPath === '/about' ? (
+            <AboutPage lang={lang} onNavigate={navigate} currentUser={currentUser} />
+          ) : (
+            <TermsPage lang={lang} onNavigate={navigate} />
+          )}
 
           <AuthModal
             isOpen={isAuthOpen}
@@ -643,6 +648,28 @@ export default function App() {
                     onOpenMockExam={() => navigate('/exam')}
                     navigate={navigate}
                   />
+                </div>
+              </div>
+
+              {/* Dashboard Bottom Footer */}
+              <div className="pt-6 pb-2 border-t border-[#1a2335] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>
+                  © 2026 Learner Hub • NCTB HSC English Learning Platform
+                </p>
+                <div className="flex items-center gap-4 text-xs font-medium">
+                  <button
+                    onClick={() => navigate('/about')}
+                    className="text-slate-400 hover:text-cyan-400 transition-colors cursor-pointer"
+                  >
+                    {isBn ? 'আমাদের পরিচিতি (About Us)' : 'About Us'}
+                  </button>
+                  <span className="text-slate-700">•</span>
+                  <button
+                    onClick={() => navigate('/terms')}
+                    className="text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer"
+                  >
+                    {isBn ? 'শর্তাবলী ও নীতিমালা (Terms & Policy)' : 'Terms & Policy'}
+                  </button>
                 </div>
               </div>
             </div>
