@@ -446,19 +446,36 @@ export default function TextbookPage({
 
           {/* Quick Actions Bar */}
           <div className="flex flex-wrap items-center gap-2.5">
-            {/* Unit/Lesson Selector Drawer Toggle */}
-            <button
-              onClick={() => setIsDrawerOpen(true)}
-              className="px-3.5 py-2.5 rounded-xl bg-[#162033] hover:bg-[#1f2d48] border border-[#2b3b59] text-slate-200 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
-            >
-              <Layers size={15} className="text-emerald-400" />
-              <span>{isBn ? 'অন্য লেসন বাছুন' : 'Select Lesson'}</span>
-            </button>
+            {/* Font Size Adjuster */}
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#162033] border border-[#2b3b59]">
+              <Type size={14} className="text-emerald-400" />
+              <span className="text-xs text-slate-300 font-bold">{isBn ? 'ফন্ট সাইজ:' : 'Font Size:'}</span>
+              <div className="flex items-center gap-1 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5 ml-1">
+                {[
+                  { label: 'A-', val: 'text-sm' },
+                  { label: 'A', val: 'text-base' },
+                  { label: 'A+', val: 'text-lg' },
+                  { label: 'A++', val: 'text-xl' }
+                ].map((f) => (
+                  <button
+                    key={f.val}
+                    onClick={() => setFontSize(f.val)}
+                    className={`px-2 py-1 rounded text-xs font-bold transition-all cursor-pointer ${
+                      fontSize === f.val
+                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 font-black shadow-sm'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-[#1b253b]'
+                    }`}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+            </div>
 
             {/* Translation Toggle */}
             <button
               onClick={() => setShowTranslations(!showTranslations)}
-              className={`px-3.5 py-2.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all ${
+              className={`px-3.5 py-2.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
                 showTranslations
                   ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
                   : 'bg-[#162033] border-[#2b3b59] text-slate-400 hover:text-white'
@@ -477,7 +494,7 @@ export default function TextbookPage({
                   onNavigate('/exam');
                 }
               }}
-              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold flex items-center gap-2 shadow-lg shadow-emerald-950/60 active:scale-95 transition-all"
+              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-extrabold flex items-center gap-2 shadow-lg shadow-emerald-950/60 active:scale-95 transition-all cursor-pointer"
             >
               <Play size={14} className="fill-current" />
               <span>{isBn ? 'এই লেসনের পরীক্ষা শুরু করুন' : 'Launch Practice Exam'}</span>
@@ -487,7 +504,7 @@ export default function TextbookPage({
 
         {/* TTS Toolbar & Reading Controls */}
         <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#1e293b]/70 text-xs text-slate-300">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="font-semibold text-slate-400 flex items-center gap-1.5">
               <Volume2 size={15} className="text-cyan-400" />
               <span>{isBn ? 'অডিও রিডার (TTS):' : 'Audio Narration:'}</span>
@@ -500,7 +517,7 @@ export default function TextbookPage({
                   const fullStory = textbookSections.map((s) => s.content).join(' ');
                   handlePlayTTS(fullStory);
                 }}
-                className="px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/30 text-emerald-300 font-bold flex items-center gap-1.5 transition-all"
+                className="px-3 py-1.5 rounded-lg bg-emerald-600/20 hover:bg-emerald-600/30 border border-emerald-500/30 text-emerald-300 font-bold flex items-center gap-1.5 transition-all cursor-pointer"
               >
                 <Play size={13} className="fill-current" />
                 <span>{isBn ? 'সম্পূর্ণ প্যাসেজ শুনুন' : 'Listen Full Story'}</span>
@@ -509,14 +526,14 @@ export default function TextbookPage({
               <div className="flex items-center gap-1.5">
                 <button
                   onClick={handlePauseTTS}
-                  className="px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/30 text-amber-300 font-bold flex items-center gap-1.5 transition-all"
+                  className="px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/30 text-amber-300 font-bold flex items-center gap-1.5 transition-all cursor-pointer"
                 >
                   {isPausedTTS ? <Play size={13} className="fill-current" /> : <Pause size={13} />}
                   <span>{isPausedTTS ? (isBn ? 'পুনরায় চালান' : 'Resume') : (isBn ? 'থামান' : 'Pause')}</span>
                 </button>
                 <button
                   onClick={handleStopTTS}
-                  className="px-2.5 py-1.5 rounded-lg bg-rose-500/20 hover:bg-rose-500/30 border border-rose-500/30 text-rose-300 font-bold flex items-center gap-1 transition-all"
+                  className="px-2.5 py-1.5 rounded-lg bg-rose-500/20 hover:bg-rose-500/30 border border-rose-500/30 text-rose-300 font-bold flex items-center gap-1 transition-all cursor-pointer"
                 >
                   <RotateCcw size={13} />
                   <span>{isBn ? 'বন্ধ' : 'Stop'}</span>
@@ -525,7 +542,7 @@ export default function TextbookPage({
             )}
 
             {/* Speed Selector */}
-            <div className="hidden sm:flex items-center gap-1 ml-2 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5">
+            <div className="flex items-center gap-1 ml-2 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5">
               {[0.85, 1.0, 1.25, 1.5].map((speed) => (
                 <button
                   key={speed}
@@ -536,39 +553,13 @@ export default function TextbookPage({
                       handlePlayTTS(fullStory);
                     }
                   }}
-                  className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-all ${
+                  className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-all cursor-pointer ${
                     ttsSpeed === speed
                       ? 'bg-emerald-500 text-slate-950 font-bold'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
                   {speed}x
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Font Size Adjuster */}
-          <div className="flex items-center gap-1.5">
-            <Type size={14} className="text-slate-400" />
-            <span className="text-[11px] text-slate-400">{isBn ? 'ফন্ট সাইজ:' : 'Font Size:'}</span>
-            <div className="flex items-center gap-1 bg-[#0c0f17] border border-[#1e293b] rounded-lg p-0.5">
-              {[
-                { label: 'A-', val: 'text-sm' },
-                { label: 'A', val: 'text-base' },
-                { label: 'A+', val: 'text-lg' },
-                { label: 'A++', val: 'text-xl' }
-              ].map((f) => (
-                <button
-                  key={f.val}
-                  onClick={() => setFontSize(f.val)}
-                  className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-all ${
-                    fontSize === f.val
-                      ? 'bg-cyan-500 text-slate-950 font-bold'
-                      : 'text-slate-400 hover:text-slate-200'
-                  }`}
-                >
-                  {f.label}
                 </button>
               ))}
             </div>
