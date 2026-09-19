@@ -151,7 +151,7 @@ export default function LandingPage({
       id: 4,
       name: 'Sadia Afrin',
       college: 'Holy Cross College, Dhaka',
-      score: 'Mastered 858+ Words',
+      score: 'Mastered 1,075+ Words',
       avatar: 'SA',
       avatarColor: 'from-cyan-500 to-blue-600',
       badge: 'Mastery Gold',
@@ -173,20 +173,21 @@ export default function LandingPage({
     return () => clearInterval(timer);
   }, [isTestimonialHovered, testimonials.length]);
 
-  // 3. Sticky Bottom CTA Bar Visibility on Scroll
+  // 3. Sticky Bottom CTA Bar Visibility on Scroll (hides when reaching bottom CTA/footer)
   const [showStickyCTA, setShowStickyCTA] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (typeof window !== 'undefined') {
-        if (window.scrollY > 400) {
+        const isNearBottom = window.innerHeight + window.scrollY >= (document.documentElement.scrollHeight - 750);
+        if (window.scrollY > 400 && !isNearBottom) {
           setShowStickyCTA(true);
         } else {
           setShowStickyCTA(false);
         }
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
