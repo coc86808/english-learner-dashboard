@@ -57,18 +57,26 @@ function mapSupabaseToItem(row, baselineMap = new Map()) {
   const wordKey = (row.word || '').trim().toLowerCase();
   const baseline = baselineMap.get(wordKey) || {};
 
+  // If Supabase has the value (even as empty string ''), respect it! Never resurrect deleted values!
+  const cleanVal = (dbVal, fallbackVal = '') => {
+    if (dbVal !== undefined && dbVal !== null) {
+      return String(dbVal).trim();
+    }
+    return fallbackVal ? String(fallbackVal).trim() : '';
+  };
+
   return {
     ...baseline,
     id: baseline.id || `vocab-live-${row.id || wordKey}`,
-    word: (row.word || baseline.word || '').trim(),
-    bengaliMeaning: (row.bengali_meaning || baseline.bengaliMeaning || '').trim(),
-    partsOfSpeech: (row.parts_of_speech || baseline.partsOfSpeech || 'Noun').trim(),
-    synonyms: (row.synonyms || baseline.synonyms || '').trim(),
-    antonyms: (row.antonyms || baseline.antonyms || '').trim(),
-    englishMeaning: (row.english_meaning || baseline.englishMeaning || '').trim(),
-    exampleSentence: (row.example_sentence || baseline.exampleSentence || '').trim(),
-    unit: (row.unit || baseline.unit || '').trim(),
-    boardExamTag: (row.board_exam_tag || baseline.boardExamTag || row.unit || '').trim(),
+    word: cleanVal(row.word, baseline.word),
+    bengaliMeaning: cleanVal(row.bengali_meaning, baseline.bengaliMeaning),
+    partsOfSpeech: cleanVal(row.parts_of_speech, baseline.partsOfSpeech || 'Noun'),
+    synonyms: cleanVal(row.synonyms, baseline.synonyms),
+    antonyms: cleanVal(row.antonyms, baseline.antonyms),
+    englishMeaning: cleanVal(row.english_meaning, baseline.englishMeaning),
+    exampleSentence: cleanVal(row.example_sentence, baseline.exampleSentence),
+    unit: cleanVal(row.unit, baseline.unit),
+    boardExamTag: cleanVal(row.board_exam_tag, baseline.boardExamTag || row.unit),
     sources: baseline.sources || [row.unit || 'HSC English'],
     isCrossReferenced: baseline.isCrossReferenced || false,
     crossReferencedWords: baseline.crossReferencedWords || [],
