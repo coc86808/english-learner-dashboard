@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import CurriculumVisualizer from './landing/CurriculumVisualizer';
+import AnimatedCounter from './landing/AnimatedCounter';
 
 export default function LandingPage({ 
   onOpenAuth, 
@@ -564,13 +565,20 @@ export default function LandingPage({
         </div>
       </section>
 
-      {/* 3. Animated Stats Counter Strip */}
-      <section className="py-8 bg-[#0a0e17] border-y border-[#172030] relative z-20">
+      {/* 3. Animated Stats Counter Strip with Live Scroll Counting & SVG Icons */}
+      <motion.section 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-40px' }}
+        transition={{ duration: 0.6 }}
+        className="py-8 bg-[#0a0e17] border-y border-[#172030] relative z-20"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
-                number: '858+',
+                target: 858,
+                suffix: '+',
                 labelEn: 'Textbook Vocabulary Words',
                 labelBn: 'পাঠ্যবইয়ের শব্দার্থ',
                 icon: BookOpen,
@@ -578,7 +586,8 @@ export default function LandingPage({
                 border: 'border-emerald-500/30 bg-[#111827]/80'
               },
               {
-                number: '3,432+',
+                target: 3432,
+                suffix: '+',
                 labelEn: 'Board Standard MCQs',
                 labelBn: 'বোর্ড স্ট্যান্ডার্ড MCQ প্রশ্ন',
                 icon: GraduationCap,
@@ -586,7 +595,8 @@ export default function LandingPage({
                 border: 'border-teal-500/30 bg-[#111827]/80'
               },
               {
-                number: '12',
+                target: 12,
+                suffix: '',
                 labelEn: 'NCTB Units Covered',
                 labelBn: '১২টি ইউনিট সম্পূর্ণ সিলেবাস',
                 icon: Layers,
@@ -594,7 +604,9 @@ export default function LandingPage({
                 border: 'border-amber-500/30 bg-[#111827]/80'
               },
               {
-                number: '99.4%',
+                target: 99.4,
+                decimals: 1,
+                suffix: '%',
                 labelEn: 'Student Exam Pass Rate',
                 labelBn: 'শিক্ষার্থীদের সাফল্যের হার',
                 icon: Trophy,
@@ -604,32 +616,47 @@ export default function LandingPage({
             ].map((stat, idx) => {
               const Icon = stat.icon;
               return (
-                <div
+                <motion.div
                   key={idx}
-                  className={`p-5 rounded-2xl border ${stat.border} shadow-lg backdrop-blur-md flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-slate-400`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1, duration: 0.5 }}
+                  className={`p-5 rounded-2xl border ${stat.border} shadow-lg backdrop-blur-md flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-slate-400 group`}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#162033] border border-[#22314d] flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-[#162033] border border-[#22314d] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                     <Icon size={24} className={stat.color} />
                   </div>
                   <div>
-                    <div className={`text-2xl sm:text-3xl font-black ${stat.color} tracking-tight`}>
-                      {stat.number}
+                    <div className={`text-2xl sm:text-3xl font-black ${stat.color} tracking-tight font-mono`}>
+                      <AnimatedCounter 
+                        target={stat.target} 
+                        decimals={stat.decimals || 0}
+                        suffix={stat.suffix} 
+                        isBn={isBn} 
+                      />
                     </div>
                     <div className="text-xs text-slate-400 font-medium">
                       {isBn ? stat.labelBn : stat.labelEn}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* 4. Four Core Pillars Grid with Glassmorphic Glowing Cards */}
       <section id="features" className="py-20 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
-          <div className="text-center space-y-3.5 max-w-3xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-40px' }}
+            transition={{ duration: 0.6 }}
+            className="text-center space-y-3.5 max-w-3xl mx-auto"
+          >
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-extrabold">
               <Zap size={14} />
               <span>{isBn ? '৪টি মূল স্তম্ভ' : 'Engineered For Rapid Active Recall'}</span>
@@ -642,11 +669,17 @@ export default function LandingPage({
                 ? 'মুখস্থ করার বদলে বৈজ্ঞানিক স্পেসড-রিপিটিশন পদ্ধতিতে ইংরেজি ভোকাবুলারি ও বোর্ড MCQ অনুশীলন করুন' 
                 : 'Scientific active recall and spaced repetition engine tailored specifically for NCTB English students.'}
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Feature 1: Flashcards */}
-            <div className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-amber-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(245,158,11,0.2)] group cursor-pointer flex flex-col justify-between">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-amber-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(245,158,11,0.2)] group cursor-pointer flex flex-col justify-between"
+            >
               <div className="space-y-4">
                 <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-amber-950/50 group-hover:scale-110 transition-transform">
                   <Layers size={26} />
@@ -664,10 +697,16 @@ export default function LandingPage({
                 <span>{isBn ? 'ফ্ল্যাশকার্ড দেখুন' : 'Explore Flashcards'}</span>
                 <ChevronRight size={14} />
               </div>
-            </div>
+            </motion.div>
 
             {/* Feature 2: 4-Category Exams */}
-            <div className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-emerald-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(16,185,129,0.2)] group cursor-pointer flex flex-col justify-between">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-emerald-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(16,185,129,0.2)] group cursor-pointer flex flex-col justify-between"
+            >
               <div className="space-y-4">
                 <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-white shadow-lg shadow-emerald-950/50 group-hover:scale-110 transition-transform">
                   <GraduationCap size={26} />
@@ -685,10 +724,16 @@ export default function LandingPage({
                 <span>{isBn ? 'পরীক্ষা দিন' : 'Start MCQ Exam'}</span>
                 <ChevronRight size={14} />
               </div>
-            </div>
+            </motion.div>
 
             {/* Feature 3: Weak Words & PDF */}
-            <div className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-rose-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(244,63,94,0.2)] group cursor-pointer flex flex-col justify-between">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-rose-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(244,63,94,0.2)] group cursor-pointer flex flex-col justify-between"
+            >
               <div className="space-y-4">
                 <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-rose-600 to-red-600 flex items-center justify-center text-white shadow-lg shadow-rose-950/50 group-hover:scale-110 transition-transform">
                   <FileDown size={26} />
@@ -706,10 +751,16 @@ export default function LandingPage({
                 <span>{isBn ? 'দুর্বল শব্দ হাব' : 'Open Weak Words'}</span>
                 <ChevronRight size={14} />
               </div>
-            </div>
+            </motion.div>
 
             {/* Feature 4: Leaderboard & Spaced Mastery */}
-            <div className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-cyan-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)] group cursor-pointer flex flex-col justify-between">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-cyan-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)] group cursor-pointer flex flex-col justify-between"
+            >
               <div className="space-y-4">
                 <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-cyan-950/50 group-hover:scale-110 transition-transform">
                   <Trophy size={26} />
@@ -727,7 +778,7 @@ export default function LandingPage({
                 <span>{isBn ? 'র‍্যাংকিং দেখুন' : 'View Leaderboard'}</span>
                 <ChevronRight size={14} />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -742,7 +793,13 @@ export default function LandingPage({
       {/* 5. Complete 12 Units Curriculum Coverage Section */}
       <section id="curriculum" className="py-20 bg-[#0a0d15] border-y border-[#171f2e] relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="text-center space-y-3.5 max-w-3xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-40px' }}
+            transition={{ duration: 0.6 }}
+            className="text-center space-y-3.5 max-w-3xl mx-auto"
+          >
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-extrabold">
               <BookOpen size={14} />
               <span>NCTB English For Today</span>
@@ -753,12 +810,16 @@ export default function LandingPage({
             <p className="text-xs sm:text-sm text-slate-400">
               {isBn ? 'প্রতিটি ইউনিট ও লেসনের গুরুত্বপূর্ণ শব্দ এবং বিগত বোর্ড পরীক্ষার প্রশ্নব্যাংক' : 'Unit-by-unit vocabulary database, passage context, and board standard MCQs.'}
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {hscUnits.map((unit) => (
-              <div 
+            {hscUnits.map((unit, unitIdx) => (
+              <motion.div 
                 key={unit.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-20px' }}
+                transition={{ delay: (unitIdx % 6) * 0.06, duration: 0.4 }}
                 onClick={() => onOpenAuth(true)}
                 className="p-5 rounded-2xl bg-[#111723]/80 border border-[#1e293b] hover:border-emerald-500/60 hover:bg-[#162032] transition-all duration-300 cursor-pointer group flex items-center justify-between shadow-card hover:-translate-y-1"
               >
@@ -782,7 +843,7 @@ export default function LandingPage({
                 <div className="w-10 h-10 rounded-xl bg-[#162033] group-hover:bg-emerald-500 group-hover:text-slate-950 text-slate-400 flex items-center justify-center transition-all shrink-0 border border-[#22314d]">
                   <ChevronRight size={18} />
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -791,7 +852,13 @@ export default function LandingPage({
       {/* 6. Student Testimonials Carousel Section */}
       <section id="testimonials" className="py-20 relative z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="text-center space-y-3 max-w-2xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-40px' }}
+            transition={{ duration: 0.6 }}
+            className="text-center space-y-3 max-w-2xl mx-auto"
+          >
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs font-extrabold">
               <Star size={14} className="fill-amber-400 text-amber-400" />
               <span>{isBn ? 'সফল শিক্ষার্থীদের অভিজ্ঞতা' : 'Proven Results Across Top Colleges'}</span>
@@ -802,7 +869,7 @@ export default function LandingPage({
             <p className="text-xs sm:text-sm text-slate-400">
               {isBn ? 'নটর ডেম, ভিকারুননিসা ও ঢাকা কলেজের শিক্ষার্থীদের অনুপ্রেরণাদায়ক মতামত' : 'Real feedback from HSC 2026 students practicing with Learner Hub daily.'}
             </p>
-          </div>
+          </motion.div>
 
           {/* Testimonial Active Display */}
           <div 
