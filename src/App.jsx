@@ -91,6 +91,7 @@ import {
   listenToPostgresProfiles
 } from './services/supabase';
 import { getStoredTheme, applyTheme } from './services/themeManager';
+import { initVocabularySync } from './services/vocabularyService';
 
 // Canonical Route Constants for all 20+ Routes
 export const ROUTES = {
@@ -341,6 +342,9 @@ export default function App() {
       }
     });
 
+    // Real-time synchronization with Supabase PostgreSQL vocabulary table
+    const unsubscribeVocab = initVocabularySync();
+
     const handleUserStatsSync = (e) => {
       if (e && e.detail) {
         setCurrentUser(e.detail);
@@ -357,6 +361,7 @@ export default function App() {
     return () => {
       if (typeof unsubscribeFirestore === 'function') unsubscribeFirestore();
       if (typeof unsubscribePostgres === 'function') unsubscribePostgres();
+      if (typeof unsubscribeVocab === 'function') unsubscribeVocab();
       window.removeEventListener('hsc_user_stats_updated', handleUserStatsSync);
       window.removeEventListener('storage', handleUserStatsSync);
     };

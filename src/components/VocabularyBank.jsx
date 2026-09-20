@@ -34,6 +34,7 @@ import { hscUnits } from '../data/hscUnitsData';
 import { generateVocabularyBankPDF } from '../utils/pdfGenerator';
 import FlashcardPrintModal from './FlashcardPrintModal';
 import { fetchUserWordStatsFromPostgres } from '../services/supabase';
+import { getLiveVocabulary } from '../services/vocabularyService';
 
 export default function VocabularyBank({
   lang = 'en',
@@ -62,6 +63,21 @@ export default function VocabularyBank({
   // View Mode State ('card' on mobile by default, user can switch to 'table')
   const [viewMode, setViewMode] = useState('card');
   const [showMobileFilterDrawer, setShowMobileFilterDrawer] = useState(false);
+
+  // Live Vocabulary State synchronized with Supabase & Google Sheets
+  const [vocabList, setVocabList] = useState(() => getLiveVocabulary());
+
+  useEffect(() => {
+    const handleVocabUpdate = (e) => {
+      if (e?.detail?.vocabulary) {
+        setVocabList(e.detail.vocabulary);
+      } else {
+        setVocabList(getLiveVocabulary());
+      }
+    };
+    window.addEventListener('hsc_vocabulary_updated', handleVocabUpdate);
+    return () => window.removeEventListener('hsc_vocabulary_updated', handleVocabUpdate);
+  }, []);
 
   // PostgreSQL Word Practice Stats State
   const [wordStatsMap, setWordStatsMap] = useState(() => {
@@ -238,7 +254,7 @@ export default function VocabularyBank({
 
   // Filtered vocabulary list (full pool matching filters)
   const filteredList = useMemo(() => {
-    return hscVocabularyList.filter((item) => {
+    return vocabList.filter((item) => {
       // 1. Unit & Lesson filter
       if (!matchesUnitAndLesson(item, selectedUnitId, selectedLessonId)) {
         return false;
@@ -311,7 +327,8 @@ export default function VocabularyBank({
     sortBy,
     activeUnitObj,
     availableLessons,
-    weakWords
+    weakWords,
+    vocabList
   ]);
 
   // Reset page to 1 whenever filters or limit change
@@ -538,7 +555,7 @@ export default function VocabularyBank({
                   className="w-full px-3.5 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-xs sm:text-sm text-slate-200 outline-none focus:border-emerald-500 cursor-pointer appearance-none font-medium"
                 >
                   <option value="all">
-                    {isBn ? `সকল ইউনিট (${hscVocabularyList.length}টি শব্দ)` : `All Units (${hscVocabularyList.length} Words)`}
+                    {isBn ? `সকল ইউনিট (${vocabList.length}টি শব্দ)` : `All Units (${vocabList.length} Words)`}
                   </option>
                   {hscUnits.map((u) => (
                     <option key={u.id} value={u.id}>

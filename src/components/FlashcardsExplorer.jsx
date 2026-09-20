@@ -27,6 +27,7 @@ import confetti from 'canvas-confetti';
 import { hscVocabularyList, matchesUnitAndLesson, getWordUnitSources } from '../data/questions/hscQuestionsData';
 import { hscUnits } from '../data/hscUnitsData';
 import FlashcardPrintModal from './FlashcardPrintModal';
+import { getLiveVocabulary } from '../services/vocabularyService';
 
 export default function FlashcardsExplorer({ 
   lang = 'en', 
@@ -49,11 +50,24 @@ export default function FlashcardsExplorer({
   const [currentIndex, setCurrentIndex] = useState(savedFC?.currentIndex || 0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(false);
-  const [cardsList, setCardsList] = useState(hscVocabularyList);
+  const [rawVocab, setRawVocab] = useState(() => getLiveVocabulary());
+  const [cardsList, setCardsList] = useState(() => getLiveVocabulary());
   const [masteredWords, setMasteredWords] = useState(savedFC?.masteredWords || []);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isCompletionModalOpen, setIsCompletionModalOpen] = useState(false);
   const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
+
+  useEffect(() => {
+    const handleVocabUpdate = (e) => {
+      if (e?.detail?.vocabulary) {
+        setRawVocab(e.detail.vocabulary);
+      } else {
+        setRawVocab(getLiveVocabulary());
+      }
+    };
+    window.addEventListener('hsc_vocabulary_updated', handleVocabUpdate);
+    return () => window.removeEventListener('hsc_vocabulary_updated', handleVocabUpdate);
+  }, []);
 
   // Touch gesture state
   const touchState = useRef({
@@ -65,24 +79,24 @@ export default function FlashcardsExplorer({
 
   // Filter or shuffle cards based on selected lesson
   useEffect(() => {
-    let list = [...hscVocabularyList];
+    let list = [...rawVocab];
     if (selectedLessonId === 'weak_only') {
       if (weakWords.length > 0) {
-        list = hscVocabularyList.filter((item) =>
+        list = rawVocab.filter((item) =>
           weakWords.some((w) => w && (w.id === item.id || w.word?.toLowerCase() === item.word?.toLowerCase()))
         );
       } else {
         list = [];
       }
     } else if (selectedLessonId === 'all') {
-      list = [...hscVocabularyList];
+      list = [...rawVocab];
     } else if (selectedLessonId?.startsWith('unit-')) {
-      list = hscVocabularyList.filter((item) => matchesUnitAndLesson(item, selectedLessonId, 'all'));
+      list = rawVocab.filter((item) => matchesUnitAndLesson(item, selectedLessonId, 'all'));
     } else {
       const m = selectedLessonId?.match(/^u(\d+)-l(\d+)$/);
       if (m) {
         const uId = `unit-${m[1]}`;
-        list = hscVocabularyList.filter((item) => matchesUnitAndLesson(item, uId, selectedLessonId));
+        list = rawVocab.filter((item) => matchesUnitAndLesson(item, uId, selectedLessonId));
       }
     }
     if (isShuffled) {
@@ -91,7 +105,7 @@ export default function FlashcardsExplorer({
     setCardsList(list);
     setCurrentIndex(0);
     setIsFlipped(false);
-  }, [selectedLessonId, isShuffled, weakWords]);
+  }, [selectedLessonId, isShuffled, weakWords, rawVocab]);
 
   // Persist flashcards progress on change
   useEffect(() => {
@@ -307,7 +321,7 @@ export default function FlashcardsExplorer({
             onChange={(e) => setSelectedLessonId(e.target.value)}
             className="bg-[#161e2e] border border-[#1e293b] text-slate-200 text-xs rounded-xl px-3.5 py-2.5 outline-none focus:border-emerald-500 cursor-pointer font-medium shadow-inner hover:border-slate-600 transition-colors max-w-[260px] sm:max-w-[320px] truncate"
           >
-            <option value="all">{isBn ? `সব শব্দ (${hscVocabularyList.length} টি শব্দ)` : `All Words (${hscVocabularyList.length} Words)`}</option>
+            <option value="all">{isBn ? `সব শব্দ (${rawVocab.length} টি শব্দ)` : `All Words (${rawVocab.length} Words)`}</option>
             {weakWords.length > 0 && (
               <option value="weak_only">⚠️ {isBn ? `দুর্বল শব্দসমূহ (${weakWords.length} টি)` : `Weak Words Queue (${weakWords.length} Words)`}</option>
             )}
