@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useInView } from 'framer-motion';
 
 // Bengali digit map for Bengali locale
 const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
@@ -9,7 +8,7 @@ export const toBnNumber = (numStr) => {
 
 export default function AnimatedCounter({
   target = 0,
-  duration = 1600,
+  duration = 1400,
   decimals = 0,
   prefix = '',
   suffix = '',
@@ -18,36 +17,69 @@ export default function AnimatedCounter({
 }) {
   const [displayValue, setDisplayValue] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '80px 0px' });
   const hasAnimated = useRef(false);
 
   useEffect(() => {
-    if (!isInView || hasAnimated.current) return;
-    hasAnimated.current = true;
+    const el = ref.current;
+    if (!el) return;
 
+    let timer;
     const startVal = 0;
     const endVal = Number(target) || 0;
     const startTime = Date.now();
-
-    // Smooth exponential ease-out
     const easeOutExpo = (x) => (x === 1 ? 1 : 1 - Math.pow(2, -10 * x));
 
-    const timer = setInterval(() => {
-      const elapsed = Date.now() - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = easeOutExpo(progress);
-      const current = startVal + (endVal - startVal) * eased;
+    const startAnimation = () => {
+      if (hasAnimated.current) return;
+      hasAnimated.current = true;
 
-      setDisplayValue(current);
+      timer = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeOutExpo(progress);
+        const current = startVal + (endVal - startVal) * eased;
 
-      if (progress >= 1) {
-        clearInterval(timer);
+        setDisplayValue(current);
+
+        if (progress >= 1) {
+          clearInterval(timer);
+          setDisplayValue(endVal);
+        }
+      }, 20);
+    };
+
+    if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined') {
+      startAnimation();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startAnimation();
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '120px 0px', threshold: 0.01 }
+    );
+
+    observer.observe(el);
+
+    // Safety fallback: if not intersected within 3 seconds, show target value
+    const fallbackTimeout = setTimeout(() => {
+      if (!hasAnimated.current) {
         setDisplayValue(endVal);
       }
-    }, 20);
+    }, 2800);
 
-    return () => clearInterval(timer);
-  }, [isInView, target, duration]);
+    return () => {
+      observer.disconnect();
+      if (timer) clearInterval(timer);
+      clearTimeout(fallbackTimeout);
+    };
+  }, [target, duration]);
 
   const formattedNum = decimals > 0
     ? displayValue.toFixed(decimals)
