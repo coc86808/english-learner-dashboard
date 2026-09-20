@@ -38,7 +38,7 @@ export async function readAllWordsFromGoogleSheet() {
 }
 
 /**
- * 2. Trigger the Google Sheet to sync all words and deletions to Supabase / Website
+ * 2. Trigger Google Sheet to sync all vocabulary sheets to Supabase / Website
  */
 export async function triggerSheetSyncToWebsite() {
   return await followRedirects(GOOGLE_WEBAPP_URL + '?action=sync', { method: 'GET' });
@@ -71,9 +71,43 @@ export async function deleteWordsFromGoogleSheet(wordsArray) {
 }
 
 /**
- * 5. Trigger Google Sheet to create/refresh 'Students Data' sheet from Supabase profiles
+ * 5. Trigger Google Sheet to refresh 'Students Data' sheet from Supabase (Website -> Sheet)
  */
 export async function refreshStudentsDataInGoogleSheet() {
   return await followRedirects(GOOGLE_WEBAPP_URL + '?action=syncStudents', { method: 'GET' });
 }
 
+/**
+ * 6. Trigger Google Sheet to sync student edits back to Website / Supabase (Sheet -> Website)
+ */
+export async function syncStudentsSheetToWebsite() {
+  return await followRedirects(GOOGLE_WEBAPP_URL + '?action=syncStudentsToSupabase', { method: 'GET' });
+}
+
+/**
+ * 7. Trigger Google Sheet to refresh 'Exam Results' sheet from Supabase (Website -> Sheet)
+ */
+export async function refreshExamResultsInGoogleSheet() {
+  return await followRedirects(GOOGLE_WEBAPP_URL + '?action=syncExamResults', { method: 'GET' });
+}
+
+/**
+ * 8. Trigger Google Sheet to refresh 'Weak Words' sheet from Supabase (Website -> Sheet)
+ */
+export async function refreshWeakWordsInGoogleSheet() {
+  return await followRedirects(GOOGLE_WEBAPP_URL + '?action=syncWeakWords', { method: 'GET' });
+}
+
+/**
+ * 9. Trigger Google Sheet to sync weak word edits back to Supabase (Sheet -> Website)
+ */
+export async function syncWeakWordsToWebsite() {
+  return await followRedirects(GOOGLE_WEBAPP_URL + '?action=syncWeakWordsToSupabase', { method: 'GET' });
+}
+
+/**
+ * 10. Trigger Full 2-Way Sync of Everything
+ */
+export async function triggerFullSync() {
+  return await followRedirects(GOOGLE_WEBAPP_URL + '?action=fullSync', { method: 'GET' });
+}

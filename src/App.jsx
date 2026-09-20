@@ -322,16 +322,35 @@ export default function App() {
             if (isRealAccount(p)) {
               const emailKey = (p.email || '').toLowerCase();
               const existing = map.get(emailKey) || {};
-              map.set(emailKey, {
+              const updatedProfile = {
                 ...existing,
                 ...p,
                 name: p.name || existing.name,
+                phone: p.phone || existing.phone || '',
                 college: p.college || existing.college,
+                role: p.role || existing.role || 'student',
                 points: Number(p.total_xp ?? existing.points ?? 0),
                 streak: Number(p.streak ?? existing.streak ?? 0),
                 accuracy: Number(p.accuracy ?? existing.accuracy ?? 0),
                 testsCompleted: Number(p.questions_solved ?? existing.testsCompleted ?? 0),
                 league: p.league || existing.league || 'Bronze'
+              };
+              map.set(emailKey, updatedProfile);
+
+              // Live update active currentUser session if profile was updated (e.g. from Google Sheets)
+              setCurrentUser((current) => {
+                if (current && current.email && current.email.toLowerCase() === emailKey) {
+                  const updatedCurrent = {
+                    ...current,
+                    ...updatedProfile,
+                    id: current.id || updatedProfile.id
+                  };
+                  try {
+                    localStorage.setItem('hsc_auth_user', JSON.stringify(updatedCurrent));
+                  } catch (e) {}
+                  return updatedCurrent;
+                }
+                return current;
               });
             }
           });

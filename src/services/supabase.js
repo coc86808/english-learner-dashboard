@@ -146,6 +146,22 @@ export async function syncWeakWordToPostgres(userEmail, wordItem) {
       console.warn('Postgres weak word upsert error:', error.message);
       return null;
     }
+
+    // Fire-and-forget sync to Google Sheet (Weak Words tab)
+    if (typeof fetch !== 'undefined') {
+      try {
+        fetch('https://script.google.com/macros/s/AKfycbz-pPmvkP0exKnziIqLLcTUypCUpCrGIyoboI4hIJnySlaM4lOjdaAy9R90ta2NZuNq/exec', {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({
+            action: 'syncWeakWord',
+            weakWord: data || payload
+          }),
+          mode: 'no-cors'
+        }).catch(() => {});
+      } catch (e) {}
+    }
+
     return data;
   } catch (err) {
     console.warn('syncWeakWordToPostgres error:', err);
@@ -203,6 +219,22 @@ export async function recordExamResultToPostgres(result) {
       console.warn('Postgres exam result insert error:', error.message);
       return null;
     }
+
+    // Fire-and-forget sync to Google Sheet (Exam Results tab)
+    if (typeof fetch !== 'undefined') {
+      try {
+        fetch('https://script.google.com/macros/s/AKfycbz-pPmvkP0exKnziIqLLcTUypCUpCrGIyoboI4hIJnySlaM4lOjdaAy9R90ta2NZuNq/exec', {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({
+            action: 'syncExamResult',
+            result: data || payload
+          }),
+          mode: 'no-cors'
+        }).catch(() => {});
+      } catch (e) {}
+    }
+
     return data;
   } catch (err) {
     console.warn('recordExamResultToPostgres error:', err);
