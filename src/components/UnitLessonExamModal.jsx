@@ -616,28 +616,41 @@ export default function UnitLessonExamModal({
             </div>
 
             {/* Units Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
               {hscUnits.map((unit) => (
                 <div
                   key={unit.id}
                   onClick={() => handleSelectUnit(unit)}
-                  className={`relative p-5 rounded-2xl border border-white/10 cursor-pointer overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl flex flex-col justify-between min-h-[170px] ${unit.bgClass}`}
+                  className={`relative p-3.5 sm:p-5 rounded-2xl border border-white/15 cursor-pointer overflow-hidden transition-all duration-200 hover:scale-[1.01] hover:shadow-xl flex flex-col justify-between min-h-[120px] sm:min-h-[155px] group shadow-md ${unit.bgClass}`}
                 >
+                  {/* Subtle glass depth & glow overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-black/25 pointer-events-none" />
+
+                  {/* Faint background unit watermark */}
+                  <div className="absolute -right-2 -bottom-2 text-white/[0.08] text-5xl sm:text-6xl font-black select-none pointer-events-none font-mono">
+                    {unit.id.replace('unit-', '').padStart(2, '0')}
+                  </div>
+
                   <div className="relative z-10">
-                    <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-black bg-white/20 text-white backdrop-blur-sm mb-2">
-                      {unit.unitNumber}
-                    </span>
-                    <h3 className="text-base sm:text-lg font-black text-white leading-snug">
+                    <div className="flex items-center justify-between gap-2 mb-1.5">
+                      <span className="inline-block px-2 py-0.5 rounded-lg text-[11px] font-black bg-white/25 text-white backdrop-blur-sm shadow-sm">
+                        {unit.unitNumber}
+                      </span>
+                      <span className="text-[10px] sm:text-[11px] font-bold text-white/90 bg-black/35 px-2 py-0.5 rounded-md">
+                        {unit.lessons.length} {isBn ? 'টি লেসন' : 'Lessons'}
+                      </span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-black text-white leading-tight tracking-tight">
                       {unit.unitTitle}
                     </h3>
-                    <p className="text-xs text-white/80 mt-0.5">
+                    <p className="text-xs text-white/85 font-medium mt-0.5 line-clamp-1">
                       {unit.unitTitleBn}
                     </p>
                   </div>
 
-                  <div className="relative z-10 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-white/90">
-                    <span>{unit.lessons.length} {isBn ? 'টি লেসন' : 'Lessons'}</span>
-                    <span className="flex items-center gap-1 font-bold">
+                  <div className="relative z-10 pt-2.5 mt-2 border-t border-white/20 flex items-center justify-between text-[11px] sm:text-xs text-white/95 font-semibold">
+                    <span>{unit.totalWords || unit.lessons.reduce((acc, l) => acc + (l.wordsCount || 0), 0)} Words</span>
+                    <span className="flex items-center gap-1 font-bold bg-white/25 px-2.5 py-1 rounded-lg text-[11px] sm:text-xs backdrop-blur-sm shadow-sm">
                       <span>{isBn ? 'লেসন দেখুন' : 'View'}</span>
                       <ChevronRight size={13} />
                     </span>

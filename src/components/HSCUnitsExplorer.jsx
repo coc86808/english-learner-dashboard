@@ -688,36 +688,36 @@ export default function HSCUnitsExplorer({
               {isBn ? 'লেসন নির্বাচন করুন:' : 'Select a Lesson to Practice:'}
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5">
               {selectedUnit.lessons.map((lesson) => (
                 <div
                   key={lesson.id}
                   onClick={() => handleSelectLesson(lesson)}
-                  className="p-4 rounded-2xl bg-[#0f1420] hover:bg-[#161e2e] border border-[#1f2738] hover:border-emerald-500/50 transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3 group shadow-md"
+                  className="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#0f1420] hover:bg-[#161e2e] border border-[#1f2738] hover:border-emerald-500/50 transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-2.5 group shadow-md"
                 >
                   <div>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-md border border-emerald-500/20">
+                      <span className="text-[11px] sm:text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
                         {lesson.number}
                       </span>
-                      <span className="text-xs text-slate-400 font-mono">
+                      <span className="text-[11px] sm:text-xs text-slate-400 font-mono">
                         {lesson.wordsCount} Words
                       </span>
                     </div>
 
-                    <h4 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-300 transition-colors mt-2">
+                    <h4 className="text-sm sm:text-base font-bold text-white group-hover:text-emerald-300 transition-colors mt-1.5 leading-snug">
                       {lesson.title}
                     </h4>
-                    <p className="text-xs text-slate-400 mt-0.5">
+                    <p className="text-xs text-slate-400 mt-0.5 line-clamp-1">
                       {lesson.titleBn}
                     </p>
                   </div>
 
-                  <div className="flex items-center justify-between pt-2 border-t border-[#1a2232] text-xs">
+                  <div className="flex items-center justify-between pt-2 border-t border-[#1a2232] text-[11px] sm:text-xs">
                     <span className="text-slate-400 font-medium">{lesson.questionsCount}</span>
                     <span className="text-emerald-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                       <span>{isBn ? 'প্রশ্নের সংখ্যা বেছে নিন' : 'Choose Questions'}</span>
-                      <ArrowRight size={13} />
+                      <ArrowRight size={12} />
                     </span>
                   </div>
                 </div>
@@ -731,18 +731,18 @@ export default function HSCUnitsExplorer({
         /* ------------------------------------------------------------- */
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Header Banner */}
-          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#121927] via-[#0d1320] to-[#121927] border border-[#1e293b] shadow-2xl relative overflow-hidden backdrop-blur-xl">
+          <div className="p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#121927] via-[#0d1320] to-[#121927] border border-[#1e293b] shadow-xl relative overflow-hidden backdrop-blur-xl">
             <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div className="space-y-2 max-w-2xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
-                  <GraduationCap size={14} />
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6">
+              <div className="space-y-1.5 sm:space-y-2 max-w-2xl">
+                <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+                  <GraduationCap size={13} />
                   <span>{isBn ? 'এনসিটিবি এইচএসসি কারিকুলাম' : 'NCTB HSC Curriculum'}</span>
                 </div>
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight">
+                <h1 className="text-xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
                   {isBn ? 'ইউনিট ও লেসন ভিত্তিক MCQ অনুশীলন ও পরীক্ষা' : 'Unit-wise MCQ Practice & Exam'}
                 </h1>
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed line-clamp-2 sm:line-clamp-none">
                   {isBn
                     ? 'আপনার কাঙ্ক্ষিত ইউনিট ও লেসন বেছে নিয়ে প্রশ্নের সংখ্যা (১০টি, ২০টি, ৩০টি বা কাস্টম সংখ্যা) নির্বাচন করে দ্রুত পরীক্ষা দিন।'
                     : 'Select a Unit, choose a Lesson, set how many questions you want to practice (10, 20, 30, or Custom Amount), and start targeted MCQ exams.'}
@@ -750,50 +750,58 @@ export default function HSCUnitsExplorer({
               </div>
 
               {/* Search Bar */}
-              <div className="relative w-full md:w-72">
-                <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              <div className="relative w-full md:w-72 shrink-0">
+                <Search size={15} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                 <input
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder={isBn ? 'ইউনিট বা লেসন খুঁজুন...' : 'Search units, lessons...'}
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-xs sm:text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 transition-colors"
+                  className="w-full pl-9 pr-3.5 py-2 sm:py-2.5 rounded-xl bg-[#0c0f17] border border-[#1e293b] text-xs sm:text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-emerald-500 transition-colors"
                 />
               </div>
             </div>
           </div>
 
           {/* Units Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-4">
             {filteredUnits.map((unit) => (
               <div
                 key={unit.id}
                 onClick={() => handleSelectUnit(unit)}
-                className={`relative p-5 sm:p-6 rounded-3xl border border-white/10 cursor-pointer overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl flex flex-col justify-between min-h-[190px] group ${unit.bgClass}`}
+                className={`relative p-3.5 sm:p-5 rounded-2xl border border-white/15 cursor-pointer overflow-hidden transition-all duration-200 active:scale-[0.99] hover:scale-[1.01] hover:shadow-xl flex flex-col justify-between min-h-[120px] sm:min-h-[160px] group shadow-md ${unit.bgClass}`}
               >
+                {/* Subtle glass depth & glow overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-black/25 pointer-events-none" />
+
+                {/* Faint background unit watermark for cyber-academic polish */}
+                <div className="absolute -right-2 -bottom-2 text-white/[0.08] text-5xl sm:text-6xl font-black select-none pointer-events-none font-mono">
+                  {unit.id.replace('unit-', '').padStart(2, '0')}
+                </div>
+
                 <div className="relative z-10">
-                  <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-black bg-white/20 text-white backdrop-blur-sm">
+                  <div className="flex items-center justify-between gap-2 mb-1.5">
+                    <span className="inline-block px-2 py-0.5 rounded-lg text-[11px] font-black bg-white/25 text-white backdrop-blur-sm shadow-sm">
                       {unit.unitNumber}
                     </span>
-                    <span className="text-[11px] font-bold text-white/80 bg-black/30 px-2 py-0.5 rounded-md">
+                    <span className="text-[10px] sm:text-[11px] font-bold text-white/90 bg-black/35 px-2 py-0.5 rounded-md backdrop-blur-sm">
                       {unit.lessons.length} {isBn ? 'টি লেসন' : 'Lessons'}
                     </span>
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-black text-white leading-snug group-hover:underline underline-offset-4">
+                  <h3 className="text-base sm:text-lg font-black text-white leading-tight tracking-tight group-hover:underline underline-offset-2">
                     {unit.unitTitle}
                   </h3>
-                  <p className="text-xs text-white/80 font-medium mt-1">
+                  <p className="text-xs text-white/85 font-medium mt-0.5 line-clamp-1">
                     {unit.unitTitleBn}
                   </p>
                 </div>
 
-                <div className="relative z-10 pt-4 border-t border-white/15 flex items-center justify-between text-xs text-white/90 font-semibold">
-                  <span>{unit.totalWords} Words • {unit.totalWords * 4} MCQs</span>
-                  <span className="flex items-center gap-1 font-bold group-hover:translate-x-1.5 transition-transform bg-white/20 px-2.5 py-1 rounded-lg">
+                <div className="relative z-10 pt-2.5 mt-2.5 border-t border-white/20 flex items-center justify-between text-[11px] sm:text-xs text-white/95 font-semibold">
+                  <span className="opacity-95 text-[11px] sm:text-xs">{unit.totalWords} Words • {unit.totalWords * 4} MCQs</span>
+                  <span className="flex items-center gap-1 font-bold group-hover:translate-x-1 transition-transform bg-white/25 hover:bg-white/35 px-2.5 py-1 rounded-lg text-[11px] sm:text-xs backdrop-blur-sm shadow-sm">
                     <span>{isBn ? 'লেসন দেখুন' : 'View Lessons'}</span>
-                    <ArrowRight size={13} />
+                    <ArrowRight size={12} />
                   </span>
                 </div>
               </div>
