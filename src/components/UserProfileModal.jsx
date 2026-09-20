@@ -50,7 +50,7 @@ export default function UserProfileModal({
       const curAvatar = String(currentUser.avatar || '');
       const safeAv = (curAvatar && !curAvatar.includes('photo-1534528741775-53994a69daeb'))
         ? curAvatar
-        : avatarOptions[0];
+        : '';
       setAvatar(safeAv);
     }
   }, [currentUser, isOpen]);
