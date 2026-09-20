@@ -137,6 +137,18 @@ export default function Header({
           : 'সার্টিফিকেট'
       };
     }
+    if (norm === '/curriculum' || norm === '/teachers' || norm === '/faq') {
+      return {
+        sectionEn: 'Resources',
+        sectionBn: 'রিসোর্স',
+        titleEn: norm === '/curriculum' ? 'Curriculum Directory'
+          : norm === '/teachers' ? 'Teachers Hub'
+          : 'FAQ & Help',
+        titleBn: norm === '/curriculum' ? 'পাঠ্যক্রম ডিরেক্টরি'
+          : norm === '/teachers' ? 'শিক্ষক কর্নার'
+          : 'প্রশ্নোত্তর ও সাহায্য'
+      };
+    }
     if (norm === '/settings' || norm === '/about' || norm === '/profile' || norm === '/terms' || norm === '/refund') {
       return {
         sectionEn: 'Account',

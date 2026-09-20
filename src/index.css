@@ -59,6 +59,31 @@
   animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* One-Time MCQ Option Selection Animations (Prevents Double-Animation Bug) */
+@keyframes mcq-pop-correct {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.025); }
+  100% { transform: scale(1); }
+}
+
+@keyframes mcq-shake-wrong {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-8px); }
+  30% { transform: translateX(8px); }
+  45% { transform: translateX(-6px); }
+  60% { transform: translateX(6px); }
+  75% { transform: translateX(-3px); }
+  90% { transform: translateX(3px); }
+}
+
+.animate-mcq-correct {
+  animation: mcq-pop-correct 0.35s ease-out forwards;
+}
+
+.animate-mcq-wrong {
+  animation: mcq-shake-wrong 0.42s ease-out forwards;
+}
+
 /* ==========================================================================
    THEME PALETTE 1: SAGE & WARM CREAM (Authentic Botanical System)
    - Sage Green:       #8FA28A (Primary Accent & Interactive)

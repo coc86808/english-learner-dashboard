@@ -20,6 +20,7 @@ import {
   HelpCircle 
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
+import CurriculumVisualizer from './landing/CurriculumVisualizer';
 
 export default function LandingPage({ 
   onOpenAuth, 
@@ -27,7 +28,10 @@ export default function LandingPage({
   lang = 'en', 
   setLang,
   onNavigateAbout,
-  onNavigateTerms
+  onNavigateTerms,
+  onNavigateCurriculum,
+  onNavigateTeachers,
+  onNavigateFAQ
 }) {
   const isBn = lang === 'bn';
 
@@ -196,10 +200,10 @@ export default function LandingPage({
 
   const faqs = [
     {
-      q: isBn ? 'Learner Hub কি সম্পূর্ণ বিনামূল্যে ব্যবহার করা যায়?' : 'Is Learner Hub 100% free for all HSC students?',
+      q: isBn ? 'Learner Hub এ কীভাবে অনুশীলন শুরু করব?' : 'How do I start practicing on Learner Hub?',
       a: isBn 
-        ? 'হ্যাঁ, Learner Hub সম্পূর্ণ উন্মুক্ত ও ফ্রি। কোনো গোপন সাবস্ক্রিপশন ফি নেই। সব ১৪টি ইউনিট (৪৬ লেসন), ১,০৭৫+ পাঠ্যবই ভোকাবুলারি, ৪,৩০০+ MCQ ও PDF রিভিশন শিট আনলিমিটেড ব্যবহারযোগ্য।'
-        : 'Yes, Learner Hub is 100% completely free with no hidden charges. All 14 units (46 lessons), 1,075+ vocabulary words, 4,300+ MCQs, and PDF revision sheets are unlimited.'
+        ? 'সহজেই একাউন্ট খুলে বা ইনস্ট্যান্ট ১-ক্লিক ডেমো দিয়ে আপনি পাঠ্যবই ভোকাবুলারি, ৩ডি ফ্ল্যাশকার্ড ও ৪-ক্যাটাগরি বোর্ড MCQ পরীক্ষা শুরু করতে পারবেন।'
+        : 'Sign up in under 30 seconds or test with our 1-click instant demo to start practicing textbook vocabulary, 3D flashcards, and 4-category board MCQs.'
     },
     {
       q: isBn ? 'স্পেসড-রিপিটিশন (Spaced Repetition) কীভাবে কাজ করে?' : 'How does the Spaced Repetition engine work?',
@@ -242,14 +246,14 @@ export default function LandingPage({
           </span>
           <span>
             {isBn 
-              ? '🎉 এইচএসসি ২০২৬ ব্যাচ: ১,০৭৫+ পাঠ্যবই ভোকাবুলারি ও ৪,৩০০+ বোর্ড MCQ লাইভ!'
-              : '🎉 NCTB 2026 HSC English Exam Prep: 1,075+ Words & 4,300+ Board MCQs Live!'}
+              ? '🎉 এইচএসসি ২০২৬ ব্যাচ: ৮৫৮টি পাঠ্যবই ভোকাবুলারি ও ৩,৪৩২টি বোর্ড MCQ লাইভ!'
+              : '🎉 NCTB 2026 HSC English Exam Prep: 858 Words & 3,432 Board MCQs Live!'}
           </span>
           <button
             onClick={() => onOpenAuth(true)}
             className="hidden md:inline-flex items-center gap-1 text-xs font-bold text-white underline underline-offset-4 hover:text-emerald-300 ml-2 cursor-pointer transition-colors"
           >
-            <span>{isBn ? 'ফ্রি ট্রাই করুন' : 'Try Free'}</span>
+            <span>{isBn ? 'অনুশীলন শুরু করুন' : 'Start Practicing'}</span>
             <ArrowRight size={13} />
           </button>
         </div>
@@ -279,28 +283,31 @@ export default function LandingPage({
           </div>
 
           {/* Center Links (Desktop) */}
-          <nav className="hidden lg:flex items-center gap-8 text-xs font-bold text-slate-300">
+          <nav className="hidden lg:flex items-center gap-7 text-xs font-bold text-slate-300">
             <a href="#features" className="hover:text-emerald-400 transition-colors">
               {isBn ? 'ফিচারসমূহ' : 'Features'}
             </a>
-            <a href="#interactive-demo" className="hover:text-emerald-400 transition-colors">
-              {isBn ? 'ফ্ল্যাশকার্ড ডেমো' : 'Flashcard Demo'}
-            </a>
-            <a href="#curriculum" className="hover:text-emerald-400 transition-colors">
-              {isBn ? 'সিলেবাস ও ইউনিট' : '12 Units'}
-            </a>
-            <a href="#testimonials" className="hover:text-emerald-400 transition-colors">
-              {isBn ? 'শিক্ষার্থীদের রিভিউ' : 'Testimonials'}
-            </a>
-            <a href="#faq" className="hover:text-emerald-400 transition-colors">
-              {isBn ? 'প্রশ্নোত্তর' : 'FAQ'}
-            </a>
+            {onNavigateCurriculum && (
+              <button onClick={onNavigateCurriculum} className="hover:text-emerald-400 transition-colors cursor-pointer">
+                {isBn ? 'পাঠ্যক্রম' : 'Curriculum'}
+              </button>
+            )}
+            {onNavigateTeachers && (
+              <button onClick={onNavigateTeachers} className="hover:text-emerald-400 transition-colors cursor-pointer">
+                {isBn ? 'শিক্ষকদের জন্য' : 'Teachers'}
+              </button>
+            )}
+            {onNavigateFAQ && (
+              <button onClick={onNavigateFAQ} className="hover:text-emerald-400 transition-colors cursor-pointer">
+                {isBn ? 'প্রশ্নোত্তর (FAQ)' : 'FAQ'}
+              </button>
+            )}
             {onNavigateAbout && (
               <button 
                 onClick={onNavigateAbout}
-                className="hover:text-emerald-400 transition-colors cursor-pointer"
+                className="hover:text-cyan-400 transition-colors cursor-pointer"
               >
-                {isBn ? 'আমাদের সম্পর্কে' : 'About & Mission'}
+                {isBn ? 'পরিচিতি' : 'About'}
               </button>
             )}
           </nav>
@@ -327,7 +334,7 @@ export default function LandingPage({
               className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 text-white text-xs font-extrabold shadow-lg shadow-emerald-950/70 transition-all cursor-pointer active:scale-95 border border-emerald-400/20"
             >
               <UserPlus size={14} />
-              <span>{isBn ? 'শুরু করুন (ফ্রি)' : 'Get Started Free'}</span>
+              <span>{isBn ? 'প্রস্তুতি শুরু করুন' : 'Get Started'}</span>
             </button>
           </div>
         </div>
@@ -374,7 +381,7 @@ export default function LandingPage({
                   onClick={() => onOpenAuth(true)}
                   className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-emerald-950/80 transition-all cursor-pointer active:scale-95 border border-emerald-400/30"
                 >
-                  <span>{isBn ? '🚀 ফ্রি সাইন আপ করে শুরু করুন' : '🚀 Start Practicing Free (Sign Up)'}</span>
+                  <span>{isBn ? '🚀 সাইন আপ করে শুরু করুন' : '🚀 Start Practicing (Sign Up)'}</span>
                   <ArrowRight size={18} />
                 </button>
 
@@ -399,7 +406,7 @@ export default function LandingPage({
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-emerald-400 shrink-0" />
-                  <span>{isBn ? '১০০% ফ্রি ও কোনো বিজ্ঞাপন নেই' : '100% Free & Ad-Free'}</span>
+                  <span>{isBn ? 'স্মার্ট স্পেসড-রিপিটিশন ও বিজ্ঞাপনমুক্ত' : 'Spaced Repetition & Ad-Free'}</span>
                 </div>
               </div>
             </div>
@@ -725,6 +732,13 @@ export default function LandingPage({
         </div>
       </section>
 
+      {/* Interactive Curriculum & Memory Retention Visualizer */}
+      <CurriculumVisualizer
+        lang={lang}
+        onExploreCurriculum={() => onNavigateCurriculum ? onNavigateCurriculum() : onOpenAuth(true)}
+        onStartPractice={() => onOpenAuth(true)}
+      />
+
       {/* 5. Complete 12 Units Curriculum Coverage Section */}
       <section id="curriculum" className="py-20 bg-[#0a0d15] border-y border-[#171f2e] relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -939,7 +953,7 @@ export default function LandingPage({
             <div className="relative z-10 flex flex-col items-center">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-bold tracking-wide shadow-[0_0_20px_rgba(16,185,129,0.15)]">
                 <GraduationCap size={16} className="text-emerald-400" />
-                <span>{isBn ? 'এইচএসসি ২০২৬ স্পেশাল এডিশন • ১০০% ফ্রি' : 'NCTB 2025–2026 Aligned • 100% Free'}</span>
+                <span>{isBn ? 'এইচএসসি ২০২৬ স্পেশাল এডিশন • এনসিটিবি সিলেবাস' : 'NCTB 2025–2026 Aligned • Exam Ready'}</span>
               </div>
             </div>
 
@@ -965,8 +979,8 @@ export default function LandingPage({
 
               <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
                 {isBn
-                  ? 'কোনো ফি নেই! সম্পূর্ণ বিনামূল্যে অ্যাকাউন্ট খুলে আজ থেকেই স্মার্ট স্পেসড-রিপিটিশন পদ্ধতিতে ১,০৭৫+ পাঠ্যবই ভোকাবুলারি ও ৪,৩০০+ বোর্ড MCQ আয়ত্ত করুন।'
-                  : 'Join thousands of HSC students across Bangladesh. Sign up for free and master every textbook vocabulary word, board-standard MCQ, and spaced repetition revision today.'}
+                  ? 'অ্যাকাউন্ট খুলে আজ থেকেই স্মার্ট স্পেসড-রিপিটিশন পদ্ধতিতে ৮৫৮টি পাঠ্যবই ভোকাবুলারি ও ৩,৪৩২টি বোর্ড MCQ আয়ত্ত করুন।'
+                  : 'Join thousands of HSC students across Bangladesh. Sign up today and master every textbook vocabulary word, board-standard MCQ, and spaced repetition revision.'}
               </p>
             </div>
 
@@ -974,7 +988,7 @@ export default function LandingPage({
             <div className="relative z-10 flex flex-wrap items-center justify-center gap-2 sm:gap-3.5 pt-1">
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
-                <span>{isBn ? '৪,৩০০+ অথেনটিক MCQ' : '4,300+ Authentic MCQs'}</span>
+                <span>{isBn ? '৩,৪৩২টি অথেনটিক MCQ' : '3,432 Authentic MCQs'}</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
@@ -986,7 +1000,7 @@ export default function LandingPage({
               </div>
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#141d2c]/80 border border-slate-700/60 text-xs font-medium text-slate-300 shadow-sm">
                 <CheckCircle2 size={14} className="text-emerald-400 shrink-0" />
-                <span>{isBn ? '১০০% ফ্রি এক্সেস' : '100% Free Forever'}</span>
+                <span>{isBn ? 'স্মার্ট মেমোরি ট্র্যাকিং' : 'Smart Memory Tracking'}</span>
               </div>
             </div>
 
@@ -999,7 +1013,7 @@ export default function LandingPage({
                 <div className="absolute inset-0 w-1/2 h-full bg-white/25 skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000 ease-out pointer-events-none" />
                 <span className="relative z-10 flex items-center gap-2">
                   <span>🚀</span>
-                  <span>{isBn ? 'ফ্রি একাউন্ট তৈরি করুন' : 'Create Free Account'}</span>
+                  <span>{isBn ? 'একাউন্ট তৈরি করুন' : 'Create Account'}</span>
                 </span>
                 <ArrowRight size={18} className="relative z-10 text-slate-950 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -1016,14 +1030,14 @@ export default function LandingPage({
             {/* Micro trust footnote */}
             <div className="relative z-10 pt-2 flex items-center justify-center gap-2 text-xs text-slate-400">
               <CheckCircle2 size={13} className="text-emerald-400" />
-              <span>{isBn ? 'কোনো ক্রেডিট কার্ড বা পেমেন্ট প্রয়োজন নেই • ৩০ সেকেন্ডে প্রস্তুত' : 'No credit card required • Instant access in under 30 seconds'}</span>
+              <span>{isBn ? 'সহজ সাইন আপ • ৩০ সেকেন্ডে প্রস্তুত' : 'Quick Sign Up • Instant access in under 30 seconds'}</span>
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* 9. Comprehensive Public Footer */}
+      {/* 9. Comprehensive Public Footer with Standalone Page Links */}
       <footer className="border-t border-[#171f2e] bg-[#070a10] py-12 text-xs text-slate-400 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[#141b29]">
@@ -1040,10 +1054,21 @@ export default function LandingPage({
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-slate-300">
-              <a href="#features" className="hover:text-emerald-400 transition-colors">{isBn ? 'ফিচারসমূহ' : 'Features'}</a>
-              <a href="#curriculum" className="hover:text-emerald-400 transition-colors">{isBn ? 'পাঠ্যক্রম' : 'Curriculum'}</a>
-              <a href="#testimonials" className="hover:text-emerald-400 transition-colors">{isBn ? 'মতামত' : 'Testimonials'}</a>
-              <a href="#faq" className="hover:text-emerald-400 transition-colors">{isBn ? 'সাধারণ প্রশ্ন' : 'FAQ'}</a>
+              {onNavigateCurriculum && (
+                <button onClick={onNavigateCurriculum} className="hover:text-emerald-400 transition-colors cursor-pointer">
+                  {isBn ? 'পাঠ্যক্রম (Curriculum)' : 'Curriculum'}
+                </button>
+              )}
+              {onNavigateTeachers && (
+                <button onClick={onNavigateTeachers} className="hover:text-emerald-400 transition-colors cursor-pointer">
+                  {isBn ? 'শিক্ষকদের জন্য (Teachers)' : 'Teachers'}
+                </button>
+              )}
+              {onNavigateFAQ && (
+                <button onClick={onNavigateFAQ} className="hover:text-emerald-400 transition-colors cursor-pointer">
+                  {isBn ? 'সাধারণ প্রশ্ন (FAQ)' : 'FAQ'}
+                </button>
+              )}
               {onNavigateAbout && (
                 <button onClick={onNavigateAbout} className="hover:text-cyan-400 transition-colors cursor-pointer font-bold">
                   {isBn ? 'আমাদের পরিচিতি (About Us)' : 'About Us'}
@@ -1065,9 +1090,27 @@ export default function LandingPage({
               © 2026 Learner Hub. Tailored for NCTB Higher Secondary Certificate (HSC) Students in Bangladesh.
             </p>
             <div className="flex items-center gap-3 text-xs font-medium">
+              {onNavigateCurriculum && (
+                <button onClick={onNavigateCurriculum} className="text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer">
+                  {isBn ? 'পাঠ্যক্রম' : 'Curriculum'}
+                </button>
+              )}
+              <span className="text-slate-700">•</span>
+              {onNavigateTeachers && (
+                <button onClick={onNavigateTeachers} className="text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer">
+                  {isBn ? 'শিক্ষক কর্নার' : 'Teachers'}
+                </button>
+              )}
+              <span className="text-slate-700">•</span>
+              {onNavigateFAQ && (
+                <button onClick={onNavigateFAQ} className="text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer">
+                  {isBn ? 'প্রশ্নোত্তর' : 'FAQ'}
+                </button>
+              )}
+              <span className="text-slate-700">•</span>
               {onNavigateAbout && (
                 <button onClick={onNavigateAbout} className="text-slate-400 hover:text-cyan-400 underline decoration-slate-700 transition-colors cursor-pointer">
-                  {isBn ? 'পরিচিতি ও যোগাযোগ' : 'About & Contact'}
+                  {isBn ? 'পরিচিতি' : 'About'}
                 </button>
               )}
               <span className="text-slate-700">•</span>
@@ -1100,7 +1143,7 @@ export default function LandingPage({
                   {isBn ? 'এইচএসসি ২০২৬ ইংলিশ প্র্যাকটিস' : 'HSC 2026 English Prep'}
                 </span>
                 <span className="text-[10px] text-emerald-400 font-medium">
-                  {isBn ? '১,০৭৫+ শব্দ • ৪,৩০০+ MCQ • ১০০% ফ্রি' : '1,075+ Words • 4,300+ MCQs • Free'}
+                  {isBn ? '৮৫৮টি শব্দ • ৩,৪৩২টি MCQ • স্মার্ট প্র্যাকটিস' : '858 Words • 3,432 MCQs • Smart Prep'}
                 </span>
               </div>
             </div>
@@ -1117,7 +1160,7 @@ export default function LandingPage({
                 onClick={() => onOpenAuth(true)}
                 className="px-4 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white text-[11px] font-extrabold shadow-md shadow-emerald-950/40 transition-all cursor-pointer active:scale-95"
               >
-                {isBn ? 'শুরু করুন' : 'Start Free'}
+                {isBn ? 'শুরু করুন' : 'Start Now'}
               </button>
             </div>
           </motion.div>

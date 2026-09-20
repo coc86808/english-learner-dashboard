@@ -634,29 +634,29 @@ export default function HSCExamInterface({
       {!isAllDone && currentQ ? (
         <div className="space-y-4 sm:space-y-6 relative z-10">
           {/* 1. Top Status Bar: Learning | Mistake | Done + Timer + Controls */}
-          <div className="flex items-center justify-between gap-2 pb-3.5 sm:pb-4 border-b border-[#1e293b]">
-            <div className="flex items-center gap-1.5 sm:gap-2.5 text-xs sm:text-sm font-bold">
+          <div className="flex items-center justify-between gap-1.5 sm:gap-2 pb-3 sm:pb-4 border-b border-[#1e293b] flex-wrap sm:flex-nowrap">
+            <div className="flex items-center gap-1 sm:gap-2 text-xs font-bold shrink-0">
               {/* Learning counter */}
-              <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-blue-500/10 border border-blue-500/25 text-blue-300 shadow-sm">
-                <span className="text-slate-400 font-normal text-[11px] sm:text-xs">Learning</span>
-                <span className="text-sm sm:text-base font-black text-blue-400">{learningCount}</span>
+              <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-xl bg-blue-500/10 border border-blue-500/25 text-blue-300 shadow-sm">
+                <span className="text-slate-400 font-normal text-[10px] sm:text-xs">Learning</span>
+                <span className="text-xs sm:text-sm font-black text-blue-400 font-mono tabular-nums">{learningCount}</span>
               </div>
 
               {/* Mistake counter */}
-              <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-rose-500/10 border border-rose-500/25 text-rose-300 shadow-sm">
-                <span className="text-slate-400 font-normal text-[11px] sm:text-xs">Mistake</span>
-                <span className="text-sm sm:text-base font-black text-rose-400">{mistakeCount}</span>
+              <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-xl bg-rose-500/10 border border-rose-500/25 text-rose-300 shadow-sm">
+                <span className="text-slate-400 font-normal text-[10px] sm:text-xs">Mistake</span>
+                <span className="text-xs sm:text-sm font-black text-rose-400 font-mono tabular-nums">{mistakeCount}</span>
               </div>
 
               {/* Done counter */}
-              <div className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 shadow-sm">
-                <span className="text-slate-400 font-normal text-[11px] sm:text-xs">Done</span>
-                <span className="text-sm sm:text-base font-black text-emerald-400">{doneCount}</span>
+              <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 sm:py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 shadow-sm">
+                <span className="text-slate-400 font-normal text-[10px] sm:text-xs">Done</span>
+                <span className="text-xs sm:text-sm font-black text-emerald-400 font-mono tabular-nums">{doneCount}</span>
               </div>
             </div>
 
             {/* Right Controls: Live Timer, Save & Exit, Sound, Close */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 ml-auto">
               {/* Live Timer Widget with Pause/Resume & Warning state */}
               <div
                 onClick={() => setIsTimerRunning(!isTimerRunning)}
@@ -933,23 +933,14 @@ export default function HSCExamInterface({
 
                   let optionClasses =
                     'bg-[#111723] border-[#1e293b] text-slate-200 hover:bg-[#161e2e] hover:border-slate-600';
-                  let motionProps = {};
 
                   if (isAnswered) {
                     if (isOptionCorrect) {
                       optionClasses =
-                        'bg-emerald-950/90 border-emerald-500 text-emerald-100 font-bold shadow-[0_0_25px_rgba(16,185,129,0.35)] ring-2 ring-emerald-400/60';
-                      motionProps = {
-                        animate: { scale: [1, 1.025, 1] },
-                        transition: { duration: 0.35 }
-                      };
+                        'bg-emerald-950/90 border-emerald-500 text-emerald-100 font-bold shadow-[0_0_25px_rgba(16,185,129,0.35)] ring-2 ring-emerald-400/60 animate-mcq-correct';
                     } else if (isOptionSelected) {
                       optionClasses =
-                        'bg-rose-950/90 border-rose-500 text-rose-100 shadow-[0_0_25px_rgba(244,63,94,0.35)] ring-2 ring-rose-500/60 font-semibold';
-                      motionProps = {
-                        animate: { x: [0, -8, 8, -6, 6, -3, 3, 0] },
-                        transition: { duration: 0.45 }
-                      };
+                        'bg-rose-950/90 border-rose-500 text-rose-100 shadow-[0_0_25px_rgba(244,63,94,0.35)] ring-2 ring-rose-500/60 font-semibold animate-mcq-wrong';
                     } else {
                       optionClasses =
                         'bg-[#090d15] border-[#182030] text-slate-500 opacity-40';
@@ -957,37 +948,34 @@ export default function HSCExamInterface({
                   }
 
                   return (
-                    <motion.button
+                    <button
                       key={idx}
                       onClick={() => handleSelectOption(idx)}
                       disabled={isAnswered}
-                      whileHover={!isAnswered ? { scale: 1.01 } : {}}
-                      whileTap={!isAnswered ? { scale: 0.99 } : {}}
-                      {...motionProps}
-                      className={`w-full min-h-[52px] p-3.5 sm:p-4 rounded-2xl border text-sm sm:text-base transition-all duration-200 flex items-center justify-between text-left group cursor-pointer ${optionClasses}`}
+                      className={`w-full min-h-[48px] sm:min-h-[52px] p-3 sm:p-4 rounded-xl sm:rounded-2xl border text-xs sm:text-sm md:text-base transition-all duration-200 flex items-center justify-between text-left group cursor-pointer active:scale-[0.99] select-none ${optionClasses}`}
                     >
-                      <div className="flex items-center gap-3.5">
+                      <div className="flex items-center gap-3 sm:gap-3.5 min-w-0 pr-2">
                         <span
-                          className={`w-7 h-7 rounded-xl flex items-center justify-center font-bold text-xs shrink-0 transition-colors ${
+                          className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg sm:rounded-xl flex items-center justify-center font-bold text-xs shrink-0 transition-colors ${
                             isAnswered && isOptionCorrect
-                              ? 'bg-emerald-500 text-white'
+                              ? 'bg-emerald-500 text-white shadow-sm shadow-emerald-900/50'
                               : isAnswered && isOptionSelected
-                              ? 'bg-rose-500 text-white'
+                              ? 'bg-rose-500 text-white shadow-sm shadow-rose-900/50'
                               : 'bg-[#161e2e] text-slate-400 group-hover:text-white border border-[#243048]'
                           }`}
                         >
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <span className="font-medium leading-snug">{opt.text}</span>
+                        <span className="font-medium leading-snug break-words text-slate-100">{opt.text}</span>
                       </div>
 
                       {isAnswered && isOptionCorrect && (
-                        <CheckCircle2 size={20} className="text-emerald-400 shrink-0 ml-2" />
+                        <CheckCircle2 size={19} className="text-emerald-400 shrink-0 ml-1.5" />
                       )}
                       {isAnswered && isOptionSelected && !isOptionCorrect && (
-                        <XCircle size={20} className="text-rose-400 shrink-0 ml-2" />
+                        <XCircle size={19} className="text-rose-400 shrink-0 ml-1.5" />
                       )}
-                    </motion.button>
+                    </button>
                   );
                 })}
               </div>

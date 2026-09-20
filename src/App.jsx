@@ -68,6 +68,9 @@ import CertificatesPage from './components/pages/CertificatesPage';
 import SettingsPage from './components/pages/SettingsPage';
 import AboutPage from './components/pages/AboutPage';
 import TermsPage from './components/pages/TermsPage';
+import CurriculumPage from './components/pages/CurriculumPage';
+import TeachersPage from './components/pages/TeachersPage';
+import FAQPage from './components/pages/FAQPage';
 
 // Data Layers
 import { usersList } from './data/users';
@@ -96,6 +99,9 @@ export const ROUTES = {
   ABOUT: '/about',
   TERMS: '/terms',
   REFUND: '/refund',
+  CURRICULUM: '/curriculum',
+  TEACHERS: '/teachers',
+  FAQ: '/faq',
   AUTH: '/auth',
 
   // Student Zone
@@ -516,8 +522,8 @@ export default function App() {
       return;
     }
 
-    // Guard 1: Public Routes (/ and /about and /terms and /refund and /auth)
-    const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/auth';
+    // Guard 1: Public Routes (/ and /about and /terms and /refund and /curriculum and /teachers and /faq and /auth)
+    const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/curriculum' || target === '/teachers' || target === '/faq' || target === '/auth';
 
     // Guard 2: Unauthenticated User attempting Protected Route
     if (!currentUser && !isPublic) {
@@ -556,7 +562,7 @@ export default function App() {
   useEffect(() => {
     const handlePopState = () => {
       const target = normalizePath(window.location.pathname);
-      const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/auth';
+      const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/curriculum' || target === '/teachers' || target === '/faq' || target === '/auth';
 
       if (currentUser && (target === '/' || target === '/auth')) {
         const dest = currentUser.role === 'admin' ? '/admin' : '/dashboard';
@@ -644,6 +650,10 @@ export default function App() {
     if (currentPath.startsWith('/profile')) return 'profile';
     if (currentPath.startsWith('/history')) return 'history';
     if (currentPath.startsWith('/about')) return 'about';
+    if (currentPath.startsWith('/curriculum')) return 'curriculum';
+    if (currentPath.startsWith('/teachers')) return 'teachers';
+    if (currentPath.startsWith('/faq')) return 'faq';
+    if (currentPath.startsWith('/terms') || currentPath.startsWith('/refund')) return 'terms';
     if (currentPath.startsWith('/admin')) return 'admin';
     return 'dashboard';
   }, [currentPath]);
@@ -662,6 +672,9 @@ export default function App() {
           setLang={setLang}
           onNavigateAbout={() => navigate('/about')}
           onNavigateTerms={() => navigate('/terms')}
+          onNavigateCurriculum={() => navigate('/curriculum')}
+          onNavigateTeachers={() => navigate('/teachers')}
+          onNavigateFAQ={() => navigate('/faq')}
         />
 
         <AuthModal
@@ -681,50 +694,90 @@ export default function App() {
     );
   }
 
-  // If user is unauthenticated and visiting /about or /terms or /refund directly
-  if (!currentUser && (currentPath === '/about' || currentPath === '/terms' || currentPath === '/refund')) {
+  // If user is unauthenticated and visiting any public standalone page
+  const isUnauthPublicPage = !currentUser && (
+    currentPath === '/about' || 
+    currentPath === '/terms' || 
+    currentPath === '/refund' || 
+    currentPath === '/curriculum' || 
+    currentPath === '/teachers' || 
+    currentPath === '/faq'
+  );
+
+  if (isUnauthPublicPage) {
     return (
-      <div className="bg-[#0c0f17] text-slate-100 min-h-screen p-4 sm:p-8">
-        <div className="max-w-6xl mx-auto space-y-6">
-          <div className="flex items-center justify-between pb-4 border-b border-[#1e293b]">
-            <button
-              onClick={() => navigate('/')}
-              className="px-4 py-2 rounded-xl bg-[#162033] hover:bg-[#1f2d48] border border-[#2b3b59] text-slate-200 text-xs font-bold transition-all cursor-pointer"
-            >
-              ← {isBn ? 'মূল পাতায় ফিরে যান' : 'Back to Home'}
-            </button>
-            <button
-              onClick={() => {
-                setIsSignUpMode(false);
-                setIsAuthOpen(true);
-              }}
-              className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-md transition-all cursor-pointer"
-            >
-              {isBn ? 'লগইন করুন' : 'Sign In'}
-            </button>
-          </div>
-
-          {currentPath === '/about' ? (
-            <AboutPage lang={lang} onNavigate={navigate} currentUser={currentUser} />
-          ) : (
-            <TermsPage
-              lang={lang}
-              onNavigate={navigate}
-              initialSection={currentPath === '/refund' ? 'refund' : null}
-            />
-          )}
-
-          <AuthModal
-            isOpen={isAuthOpen}
-            onClose={() => setIsAuthOpen(false)}
-            lang={lang}
-            isSignUpDefault={isSignUpMode}
-            onAuthSuccess={handleAuthSuccess}
-            registeredUsers={users}
-            onUpdateUsers={handleUpdateUsers}
+      <div className="bg-[#0c0f17] text-slate-100 min-h-screen">
+        {currentPath === '/about' && (
+          <AboutPage 
+            lang={lang} 
+            onNavigate={navigate} 
+            currentUser={currentUser}
+            onOpenAuth={() => {
+              setIsSignUpMode(false);
+              setIsAuthOpen(true);
+            }} 
           />
-          <Analytics />
-        </div>
+        )}
+        {currentPath === '/curriculum' && (
+          <CurriculumPage 
+            lang={lang} 
+            onNavigate={navigate}
+            currentUser={currentUser}
+            onOpenAuth={() => {
+              setIsSignUpMode(false);
+              setIsAuthOpen(true);
+            }}
+            onSelectUnit={(unit) => {
+              setPendingRedirect(`/exam/${unit.id}`);
+              setIsAuthOpen(true);
+            }}
+          />
+        )}
+        {currentPath === '/teachers' && (
+          <TeachersPage 
+            lang={lang} 
+            onNavigate={navigate}
+            currentUser={currentUser}
+            onOpenAuth={() => {
+              setIsSignUpMode(false);
+              setIsAuthOpen(true);
+            }}
+          />
+        )}
+        {currentPath === '/faq' && (
+          <FAQPage 
+            lang={lang} 
+            onNavigate={navigate}
+            currentUser={currentUser}
+            onOpenAuth={() => {
+              setIsSignUpMode(false);
+              setIsAuthOpen(true);
+            }}
+          />
+        )}
+        {(currentPath === '/terms' || currentPath === '/refund') && (
+          <TermsPage
+            lang={lang}
+            onNavigate={navigate}
+            currentUser={currentUser}
+            initialSection={currentPath === '/refund' ? 'refund' : null}
+            onOpenAuth={() => {
+              setIsSignUpMode(false);
+              setIsAuthOpen(true);
+            }}
+          />
+        )}
+
+        <AuthModal
+          isOpen={isAuthOpen}
+          onClose={() => setIsAuthOpen(false)}
+          lang={lang}
+          isSignUpDefault={isSignUpMode}
+          onAuthSuccess={handleAuthSuccess}
+          registeredUsers={users}
+          onUpdateUsers={handleUpdateUsers}
+        />
+        <Analytics />
       </div>
     );
   }
@@ -1000,6 +1053,43 @@ export default function App() {
           {currentPath === '/about' && (
             <div className="max-w-6xl mx-auto space-y-6">
               <AboutPage
+                lang={lang}
+                onNavigate={navigate}
+                currentUser={currentUser}
+              />
+            </div>
+          )}
+
+          {/* Route: /curriculum */}
+          {currentPath === '/curriculum' && (
+            <div className="max-w-7xl mx-auto space-y-6">
+              <CurriculumPage
+                lang={lang}
+                onNavigate={navigate}
+                currentUser={currentUser}
+                onSelectUnit={(unit) => {
+                  setSelectedExamUnit(unit);
+                  setIsUnitLessonModalOpen(true);
+                }}
+              />
+            </div>
+          )}
+
+          {/* Route: /teachers */}
+          {currentPath === '/teachers' && (
+            <div className="max-w-6xl mx-auto space-y-6">
+              <TeachersPage
+                lang={lang}
+                onNavigate={navigate}
+                currentUser={currentUser}
+              />
+            </div>
+          )}
+
+          {/* Route: /faq */}
+          {currentPath === '/faq' && (
+            <div className="max-w-5xl mx-auto space-y-6">
+              <FAQPage
                 lang={lang}
                 onNavigate={navigate}
                 currentUser={currentUser}

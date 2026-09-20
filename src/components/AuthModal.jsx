@@ -254,7 +254,7 @@ export default function AuthModal({
             <div className="pt-2 flex items-center justify-center gap-4 text-[11px] text-slate-400 font-medium border-t border-[#1b2538]">
               <span className="flex items-center gap-1">
                 <CheckCircle2 size={13} className="text-emerald-400" />
-                {isBn ? '১০০% ফ্রি' : '100% Free'}
+                {isBn ? 'স্মার্ট প্র্যাকটিস' : 'Smart Practice'}
               </span>
               <span className="flex items-center gap-1">
                 <CheckCircle2 size={13} className="text-emerald-400" />

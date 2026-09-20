@@ -8,7 +8,6 @@ import {
   Award,
   AlertTriangle,
   Mail,
-  Printer,
   ChevronDown,
   ChevronUp,
   Search,
@@ -20,10 +19,11 @@ import {
   HeartHandshake,
   RotateCcw,
   AlertCircle,
-  X
+  X,
+  ArrowLeft
 } from 'lucide-react';
 
-export default function TermsPage({ lang: initialLang = 'en', onNavigate, initialSection = null }) {
+export default function TermsPage({ lang: initialLang = 'en', onNavigate, initialSection = null, currentUser, onOpenAuth }) {
   const [internalLang, setInternalLang] = useState(() => {
     try {
       return localStorage.getItem('hsc_language') || initialLang;
@@ -45,10 +45,6 @@ export default function TermsPage({ lang: initialLang = 'en', onNavigate, initia
 
   const toggleSection = (id) => {
     setExpandedSection((prev) => (prev === id ? null : id));
-  };
-
-  const handlePrint = () => {
-    window.print();
   };
 
   const SECTIONS = [
@@ -116,12 +112,14 @@ export default function TermsPage({ lang: initialLang = 'en', onNavigate, initia
       contentEn: [
         '4.1. **Compliance with Bangladesh ICT Act 2006 & Cyber Security Act 2023:** We enforce robust data protection standards to safeguard student records, encrypted passwords, and exam performance histories.',
         '4.2. **Zero Third-Party Commercial Reselling:** We will NEVER sell, rent, or trade student personal data, college info, or contact numbers to advertising networks, third-party coaching centers, or data brokers.',
-        '4.3. **GDPR Right to Erasure / Account Deletion:** Every student possesses the legal right to request complete deletion of their account profile, exam logs, and weak-word history at any time.'
+        '4.3. **GDPR Right to Erasure / Account Deletion:** Every student possesses the legal right to request complete deletion of their account profile, exam logs, and weak-word history at any time.',
+        '4.4. **Third-Party Service Providers for Enhanced Service Quality:** To deliver an uninterrupted, fast, and personalized learning experience, certain necessary operational data (such as secure cloud database storage, performance analytics, and notification services) may be processed through trusted third-party technology providers under strict confidentiality agreements. This data is exclusively utilized to improve educational delivery and platform reliability, and will never be shared with advertisers or external commercial brokers.'
       ],
       contentBn: [
         '৪.১. **বাংলাদেশ আইসিটি আইন ২০০৬ ও সাইবার নিরাপত্তা আইন ২০২৩ অনুগত:** শিক্ষার্থীদের সকল তথ্য, এনক্রিপ্টেড পাসওয়ার্ড এবং পরীক্ষার ফলাফল সর্বোচ্চ ডিজিটাল নিরাপত্তায় সংরক্ষিত থাকে।',
         '৪.২. **তথ্য বিক্রি না করার অঙ্গীকার:** আমরা কোনো অবস্থাতেই শিক্ষার্থীদের ব্যক্তিগত তথ্য, ফোন নম্বর বা ইমেইল কোনো তৃতীয় পক্ষের বিজ্ঞাপনদাতা বা কোচিং সেন্টারের কাছে বিক্রি বা হস্তান্তর করি না।',
-        '৪.৩. **তথ্য মুছে ফেলার অধিকার (GDPR):** যেকোনো শিক্ষার্থী চাইলে যেকোনো সময় তার সম্পূর্ণ অ্যাকাউন্ট এবং পরীক্ষার ইতিহাস স্থায়ীভাবে মুছে ফেলার জন্য অনুরোধ করতে পারেন।'
+        '৪.৩. **তথ্য মুছে ফেলার অধিকার (GDPR):** যেকোনো শিক্ষার্থী চাইলে যেকোনো সময় তার সম্পূর্ণ অ্যাকাউন্ট এবং পরীক্ষার ইতিহাস স্থায়ীভাবে মুছে ফেলার জন্য অনুরোধ করতে পারেন।',
+        '৪.৪. **সেবার মানোন্নয়নে বিশ্বস্ত তৃতীয় পক্ষ সেবা প্রদানকারী (Third-Party Service Providers):** আপনাকে আরো উন্নত, নির্ভরযোগ্য ও ব্যক্তিগতকৃত সেবা প্রদানের উদ্দেশ্যে আপনার প্রয়োজনীয় কিছু তথ্য (যেমন: ক্লাউড সার্ভার ডাটাবেজ ব্যাকআপ, পারফরম্যান্স অ্যানালিটিক্স, ওটিপি বা ইমেইল নোটিফিকেশন) বিশ্বস্ত তৃতীয় পক্ষ প্রযুক্তি পার্টনারদের সাথে সর্বোচ্চ নিরাপত্তা ও গোপনীয়তা বজায় রেখে শেয়ার বা প্রসেস করা হতে পারে। এই ডাটা কেবল সেবার মান বৃদ্ধির জন্য ব্যবহৃত হয় এবং কোনো অবস্থাতেই কোনো বিজ্ঞাপনদাতা বা বাণিজ্যিক সংস্থার কাছে বিক্রি করা হয় না।'
       ]
     },
     {
@@ -212,8 +210,60 @@ export default function TermsPage({ lang: initialLang = 'en', onNavigate, initia
   });
 
   return (
-    <div className="max-w-5xl mx-auto space-y-8 pb-28 font-sans">
-      {/* 1. Hero Header Banner */}
+    <div className="min-h-screen bg-[#0c0f17] text-slate-100 font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
+      {/* Top Header */}
+      {!currentUser && (
+        <header className="sticky top-0 z-40 bg-[#0c0f17]/90 backdrop-blur-xl border-b border-[#1b2538] px-4 sm:px-8 py-3.5 flex items-center justify-between mb-6">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => onNavigate ? onNavigate('/') : window.location.href = '/'}
+              className="p-2 rounded-xl bg-[#111723] hover:bg-[#182234] border border-[#1e293b] text-slate-300 hover:text-white transition-all cursor-pointer flex items-center gap-1.5 text-xs font-bold"
+            >
+              <ArrowLeft size={16} />
+              <span className="hidden sm:inline">{isBn ? 'মূল পাতা' : 'Home'}</span>
+            </button>
+
+            <div 
+              onClick={() => onNavigate ? onNavigate('/') : window.location.href = '/'}
+              className="flex items-center gap-2.5 cursor-pointer ml-1"
+            >
+              <img
+                src="/logo.png"
+                alt="Learner Hub"
+                className="w-8 h-8 rounded-xl object-cover border border-emerald-500/30 shadow-sm"
+              />
+              <div>
+                <span className="text-sm sm:text-base font-extrabold text-white block leading-tight">Learner Hub</span>
+                <span className="text-[10px] text-emerald-400 font-semibold">{isBn ? 'শর্তাবলী ও নীতিমালা' : 'Terms & Policy'}</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2.5">
+            <button
+              onClick={() => {
+                const next = isBn ? 'en' : 'bn';
+                setInternalLang(next);
+                try { localStorage.setItem('hsc_language', next); } catch (e) {}
+              }}
+              className="px-3 py-1.5 rounded-xl bg-[#111723] hover:bg-[#182234] border border-[#1e293b] text-slate-300 hover:text-white transition-all text-xs font-bold flex items-center gap-1.5 cursor-pointer"
+            >
+              <Globe2 size={13} className="text-emerald-400" />
+              <span>{isBn ? 'English' : 'বাংলা'}</span>
+            </button>
+
+            <button
+              onClick={() => onOpenAuth ? onOpenAuth(false) : (onNavigate ? onNavigate('/auth') : window.location.href = '/auth')}
+              className="px-4 py-1.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold shadow-md cursor-pointer transition-all active:scale-95"
+            >
+              {isBn ? 'লগইন করুন' : 'Sign In'}
+            </button>
+          </div>
+        </header>
+      )}
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-8 pb-28 font-sans">
+        {/* 1. Hero Header Banner */}
       <div className="p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-[#121827] via-[#101522] to-[#0c0f17] border border-[#1e293b] shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 -mt-10 -mr-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-60 h-60 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -260,18 +310,10 @@ export default function TermsPage({ lang: initialLang = 'en', onNavigate, initia
                     localStorage.setItem('hsc_language', next);
                   } catch (e) {}
                 }}
-                className="px-3 py-1.5 rounded-xl bg-[#162033] hover:bg-[#1f2c45] border border-emerald-500/30 text-emerald-300 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer text-xs font-bold"
+                className="px-3.5 py-1.5 rounded-xl bg-[#162033] hover:bg-[#1f2c45] border border-emerald-500/30 text-emerald-300 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer text-xs font-bold"
               >
                 <Globe2 size={13} className="text-emerald-400" />
                 <span>{isBn ? 'English ভার্সন' : 'বাংলা সংস্করণ'}</span>
-              </button>
-
-              <button
-                onClick={handlePrint}
-                className="px-3 py-1.5 rounded-xl bg-[#162033] hover:bg-[#1f2c45] border border-[#283854] text-slate-200 hover:text-white flex items-center gap-1.5 transition-all cursor-pointer text-xs font-bold"
-              >
-                <Printer size={13} />
-                <span>{isBn ? 'প্রিন্ট / সেভ করুন' : 'Print Document'}</span>
               </button>
             </div>
           </div>
@@ -600,6 +642,35 @@ export default function TermsPage({ lang: initialLang = 'en', onNavigate, initia
           </div>
         )}
       </AnimatePresence>
+
+      {/* Standalone Footer */}
+      <footer className="mt-16 pt-8 border-t border-[#1a2335] text-center text-xs text-slate-400 space-y-4">
+        <div className="flex flex-wrap items-center justify-center gap-6 text-slate-300 font-medium">
+          <button onClick={() => onNavigate ? onNavigate('/') : window.location.href = '/'} className="hover:text-emerald-400 transition-colors cursor-pointer">
+            {isBn ? 'মূল পাতা (Home)' : 'Home'}
+          </button>
+          <button onClick={() => onNavigate ? onNavigate('/curriculum') : window.location.href = '/curriculum'} className="hover:text-emerald-400 transition-colors cursor-pointer">
+            {isBn ? 'পাঠ্যক্রম (Curriculum)' : 'Curriculum'}
+          </button>
+          <button onClick={() => onNavigate ? onNavigate('/teachers') : window.location.href = '/teachers'} className="hover:text-emerald-400 transition-colors cursor-pointer">
+            {isBn ? 'শিক্ষকদের জন্য (Teachers)' : 'Teachers'}
+          </button>
+          <button onClick={() => onNavigate ? onNavigate('/faq') : window.location.href = '/faq'} className="hover:text-emerald-400 transition-colors cursor-pointer">
+            {isBn ? 'সাধারণ প্রশ্ন (FAQ)' : 'FAQ'}
+          </button>
+          <button onClick={() => onNavigate ? onNavigate('/about') : window.location.href = '/about'} className="hover:text-cyan-400 transition-colors cursor-pointer">
+            {isBn ? 'পরিচিতি (About)' : 'About'}
+          </button>
+          <button onClick={() => onNavigate ? onNavigate('/terms') : window.location.href = '/terms'} className="hover:text-emerald-400 transition-colors cursor-pointer font-bold text-emerald-400">
+            {isBn ? 'শর্তাবলী ও নীতিমালা (Terms & Policy)' : 'Terms & Policy'}
+          </button>
+        </div>
+        <p className="text-slate-500">
+          © 2026 Learner Hub • NCTB HSC English Learning Platform
+        </p>
+      </footer>
+      </div>
     </div>
   );
 }
+
