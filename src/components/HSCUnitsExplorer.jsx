@@ -769,7 +769,7 @@ export default function HSCUnitsExplorer({
               <div
                 key={unit.id}
                 onClick={() => handleSelectUnit(unit)}
-                className={`relative p-3.5 sm:p-5 rounded-2xl border border-white/15 cursor-pointer overflow-hidden transition-all duration-200 active:scale-[0.99] hover:scale-[1.01] hover:shadow-xl flex flex-col justify-between min-h-[120px] sm:min-h-[160px] group shadow-md ${unit.bgClass}`}
+                className={`unit-card relative p-3.5 sm:p-5 rounded-2xl border border-white/15 cursor-pointer overflow-hidden transition-all duration-200 active:scale-[0.99] hover:scale-[1.01] hover:shadow-xl flex flex-col justify-between min-h-[120px] sm:min-h-[160px] group shadow-md ${unit.bgClass}`}
               >
                 {/* Subtle glass depth & glow overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-black/25 pointer-events-none" />

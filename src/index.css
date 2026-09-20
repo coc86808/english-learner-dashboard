@@ -159,8 +159,7 @@
 [data-theme="sage-cream"] .bg-\[\#0f1522\],
 [data-theme="sage-cream"] .bg-\[\#0f1724\],
 [data-theme="sage-cream"] .bg-\[\#F7F9FC\],
-[data-theme="sage-cream"] .bg-slate-950,
-[data-theme="sage-cream"] [class*="bg-[#0"] {
+[data-theme="sage-cream"] [class*="bg-[#0"]:not(.unit-card) {
   background-color: #F7F4ED !important;
 }
 
@@ -235,8 +234,7 @@
 [data-theme="sage-cream"] .bg-slate-800\/30,
 [data-theme="sage-cream"] .bg-slate-800\/80,
 [data-theme="sage-cream"] .bg-slate-700,
-[data-theme="sage-cream"] .bg-slate-700\/60,
-[data-theme="sage-cream"] [class*="bg-[#1"] {
+[data-theme="sage-cream"] [class*="bg-[#1"]:not(.unit-card) {
   background-color: #FFFFFF !important;
 }
 
