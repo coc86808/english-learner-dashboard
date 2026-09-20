@@ -51,18 +51,18 @@ export const AVAILABLE_THEMES = [
 ];
 
 export function getStoredTheme() {
-  if (typeof window === 'undefined') return 'sage-cream';
+  if (typeof window === 'undefined') return 'cyber-dark';
   try {
     const saved = localStorage.getItem('hsc_theme');
     if (saved && AVAILABLE_THEMES.some(t => t.id === saved)) return saved;
   } catch (e) {}
-  // Default to the user's newly requested Sage & Cream theme
-  return 'sage-cream';
+  // Default to Cyber-Academic Command (Rule 8 / DESIGN.md)
+  return 'cyber-dark';
 }
 
 export function applyTheme(themeId) {
   if (typeof document === 'undefined') return themeId;
-  const validTheme = AVAILABLE_THEMES.some(t => t.id === themeId) ? themeId : 'sage-cream';
+  const validTheme = AVAILABLE_THEMES.some(t => t.id === themeId) ? themeId : 'cyber-dark';
   
   // Set both html and body attributes for CSS targeting
   document.documentElement.setAttribute('data-theme', validTheme);

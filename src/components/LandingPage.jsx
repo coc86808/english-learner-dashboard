@@ -17,7 +17,8 @@ import {
   Star, 
   ChevronRight, 
   ChevronLeft, 
-  HelpCircle 
+  HelpCircle,
+  BrainCircuit
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import CurriculumVisualizer from './landing/CurriculumVisualizer';
@@ -377,21 +378,52 @@ export default function LandingPage({
                   : 'Interactive 3D Flashcards, 4-category targeted board exams (Synonyms, Antonyms, Bangla & English Meaning), Spaced Repetition mastery engine, and 1-click printable PDF revision sheets.'}
               </p>
 
+              {/* Floating Dynamic Key Metric Badges */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 pt-1">
+                <motion.div 
+                  animate={{ y: [-3, 3, -3] }}
+                  transition={{ duration: 3.2, repeat: Infinity, ease: 'easeInOut' }}
+                  className="px-3.5 py-1.5 rounded-full bg-[#111827]/90 border border-emerald-500/40 text-emerald-300 text-xs font-bold flex items-center gap-1.5 shadow-md shadow-emerald-950/40"
+                >
+                  <BookOpen size={13} className="text-emerald-400" />
+                  <span>{isBn ? '৮৫৮টি পাঠ্যবই ভোকাবুলারি' : '858 Verified NCTB Words'}</span>
+                </motion.div>
+
+                <motion.div 
+                  animate={{ y: [3, -3, 3] }}
+                  transition={{ duration: 3.8, repeat: Infinity, ease: 'easeInOut' }}
+                  className="px-3.5 py-1.5 rounded-full bg-[#111827]/90 border border-cyan-500/40 text-cyan-300 text-xs font-bold flex items-center gap-1.5 shadow-md shadow-cyan-950/40"
+                >
+                  <GraduationCap size={13} className="text-cyan-400" />
+                  <span>{isBn ? '৩,৪৩২টি বোর্ড MCQ' : '3,432 Board Standard MCQs'}</span>
+                </motion.div>
+
+                <motion.div 
+                  animate={{ y: [-2, 2, -2] }}
+                  transition={{ duration: 4.2, repeat: Infinity, ease: 'easeInOut' }}
+                  className="px-3.5 py-1.5 rounded-full bg-[#111827]/90 border border-amber-500/40 text-amber-300 text-xs font-bold flex items-center gap-1.5 shadow-md shadow-amber-950/40"
+                >
+                  <BrainCircuit size={13} className="text-amber-400" />
+                  <span>{isBn ? 'SM-2 স্পেসড রিপিটিশন' : 'SM-2 Active Recall Engine'}</span>
+                </motion.div>
+              </div>
+
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <button
                   onClick={() => onOpenAuth(true)}
-                  className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-400 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-emerald-950/80 transition-all cursor-pointer active:scale-95 border border-emerald-400/30"
+                  className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-[0_0_30px_rgba(16,185,129,0.45)] transition-all cursor-pointer active:scale-95 border border-emerald-300 relative overflow-hidden group"
                 >
+                  <div className="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-12 -translate-x-full group-hover:translate-x-[300%] transition-transform duration-1000" />
                   <span>{isBn ? '🚀 সাইন আপ করে শুরু করুন' : '🚀 Start Practicing (Sign Up)'}</span>
-                  <ArrowRight size={18} />
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </button>
 
                 <button
                   onClick={onDirectLogin}
-                  className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-[#111723] hover:bg-[#182236] border border-[#243147] hover:border-amber-500/50 text-slate-200 hover:text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all cursor-pointer active:scale-95 shadow-lg"
+                  className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-[#111723] hover:bg-[#182236] border border-[#243147] hover:border-amber-500/60 text-slate-200 hover:text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 transition-all cursor-pointer active:scale-95 shadow-lg group"
                   title="Instant Demo Access"
                 >
-                  <Zap size={18} className="text-amber-400 fill-amber-400" />
+                  <Zap size={18} className="text-amber-400 fill-amber-400 group-hover:scale-125 transition-transform" />
                   <span>{isBn ? '⚡ ১-ক্লিক ডেমো একাউন্ট' : '⚡ 1-Click Instant Demo'}</span>
                 </button>
               </div>
@@ -565,43 +597,55 @@ export default function LandingPage({
         </div>
       </section>
 
-      {/* 3. Animated Stats Counter Strip with Live Scroll Counting & SVG Icons */}
+      {/* 3. Animated Stats Counter Strip: Cyber-Academic Command Pillars */}
       <motion.section 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-40px' }}
         transition={{ duration: 0.6 }}
-        className="py-8 bg-[#0a0e17] border-y border-[#172030] relative z-20"
+        className="py-10 bg-gradient-to-b from-[#090d15] via-[#0b0f1a] to-[#080c14] border-y border-[#1a2336] relative z-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
                 target: 858,
                 suffix: '+',
                 labelEn: 'Textbook Vocabulary Words',
-                labelBn: 'পাঠ্যবইয়ের শব্দার্থ',
+                labelBn: 'পাঠ্যবইয়ের নিশ্চিত শব্দাবলী',
+                badgeEn: '100% NCTB Verified',
+                badgeBn: '১০০% সিলেবাস যাচাইকৃত',
                 icon: BookOpen,
                 color: 'text-emerald-400',
-                border: 'border-emerald-500/30 bg-[#111827]/80'
+                border: 'border-emerald-500/30 hover:border-emerald-500/70',
+                bgGradient: 'from-emerald-500/10 via-[#111a29] to-[#0a0f19]',
+                iconBg: 'bg-emerald-500/20 border-emerald-500/40 text-emerald-400 shadow-emerald-950/50'
               },
               {
                 target: 3432,
                 suffix: '+',
                 labelEn: 'Board Standard MCQs',
-                labelBn: 'বোর্ড স্ট্যান্ডার্ড MCQ প্রশ্ন',
+                labelBn: 'বোর্ড স্ট্যান্ডার্ড MCQ প্রশ্নব্যাংক',
+                badgeEn: '4 Formats per Word',
+                badgeBn: 'প্রতি শব্দে ৪ ফরম্যাট',
                 icon: GraduationCap,
-                color: 'text-teal-400',
-                border: 'border-teal-500/30 bg-[#111827]/80'
+                color: 'text-cyan-400',
+                border: 'border-cyan-500/30 hover:border-cyan-500/70',
+                bgGradient: 'from-cyan-500/10 via-[#111a29] to-[#0a0f19]',
+                iconBg: 'bg-cyan-500/20 border-cyan-500/40 text-cyan-400 shadow-cyan-950/50'
               },
               {
                 target: 12,
                 suffix: '',
                 labelEn: 'NCTB Units Covered',
                 labelBn: '১২টি ইউনিট সম্পূর্ণ সিলেবাস',
+                badgeEn: '45 NCTB Lessons',
+                badgeBn: '৪৫টি প্রামাণ্য লেসন',
                 icon: Layers,
                 color: 'text-amber-400',
-                border: 'border-amber-500/30 bg-[#111827]/80'
+                border: 'border-amber-500/30 hover:border-amber-500/70',
+                bgGradient: 'from-amber-500/10 via-[#111a29] to-[#0a0f19]',
+                iconBg: 'bg-amber-500/20 border-amber-500/40 text-amber-400 shadow-amber-950/50'
               },
               {
                 target: 99.4,
@@ -609,26 +653,39 @@ export default function LandingPage({
                 suffix: '%',
                 labelEn: 'Student Exam Pass Rate',
                 labelBn: 'শিক্ষার্থীদের সাফল্যের হার',
+                badgeEn: 'Board Exam Proven',
+                badgeBn: 'বোর্ড পরীক্ষায় প্রমাণিত',
                 icon: Trophy,
-                color: 'text-cyan-400',
-                border: 'border-cyan-500/30 bg-[#111827]/80'
+                color: 'text-purple-400',
+                border: 'border-purple-500/30 hover:border-purple-500/70',
+                bgGradient: 'from-purple-500/10 via-[#111a29] to-[#0a0f19]',
+                iconBg: 'bg-purple-500/20 border-purple-500/40 text-purple-400 shadow-purple-950/50'
               }
             ].map((stat, idx) => {
               const Icon = stat.icon;
               return (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 24 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1, duration: 0.5 }}
-                  className={`p-5 rounded-2xl border ${stat.border} shadow-lg backdrop-blur-md flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-slate-400 group`}
+                  whileHover={{ y: -6, scale: 1.02 }}
+                  className={`p-6 rounded-3xl border ${stat.border} bg-gradient-to-b ${stat.bgGradient} shadow-xl backdrop-blur-xl flex flex-col justify-between transition-all duration-300 group relative overflow-hidden`}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#162033] border border-[#22314d] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                    <Icon size={24} className={stat.color} />
+                  <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`w-12 h-12 rounded-2xl border ${stat.iconBg} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-md`}>
+                      <Icon size={24} />
+                    </div>
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full bg-black/40 border border-white/10 text-slate-300">
+                      {isBn ? stat.badgeBn : stat.badgeEn}
+                    </span>
                   </div>
-                  <div>
-                    <div className={`text-2xl sm:text-3xl font-black ${stat.color} tracking-tight font-mono`}>
+
+                  <div className="space-y-1">
+                    <div className={`text-3xl sm:text-4xl lg:text-5xl font-black ${stat.color} tracking-tight font-mono`}>
                       <AnimatedCounter 
                         target={stat.target} 
                         decimals={stat.decimals || 0}
@@ -636,7 +693,7 @@ export default function LandingPage({
                         isBn={isBn} 
                       />
                     </div>
-                    <div className="text-xs text-slate-400 font-medium">
+                    <div className="text-xs sm:text-sm text-slate-300 font-semibold leading-snug pt-1">
                       {isBn ? stat.labelBn : stat.labelEn}
                     </div>
                   </div>
@@ -678,13 +735,20 @@ export default function LandingPage({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ delay: 0.1, duration: 0.5 }}
-              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-amber-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(245,158,11,0.2)] group cursor-pointer flex flex-col justify-between"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="bg-gradient-to-b from-[#131a2b] via-[#0f1422] to-[#0a0d15] border border-[#1e293b] hover:border-amber-500/60 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(245,158,11,0.25)] group cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
+              <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="space-y-4">
-                <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-amber-950/50 group-hover:scale-110 transition-transform">
-                  <Layers size={26} />
+                <div className="flex items-center justify-between">
+                  <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-amber-950/60 group-hover:scale-110 transition-transform">
+                    <Layers size={26} />
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300">
+                    {isBn ? '৩ডি ফ্লিপ ও অডিও' : '3D Audio & Flip'}
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-white group-hover:text-amber-300 transition-colors">
+                <h3 className="text-lg font-black text-white group-hover:text-amber-300 transition-colors">
                   {isBn ? 'ইন্টারেক্টিভ ৩ডি ফ্ল্যাশকার্ড' : 'Interactive 3D Flashcards'}
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
@@ -705,13 +769,20 @@ export default function LandingPage({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-emerald-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(16,185,129,0.2)] group cursor-pointer flex flex-col justify-between"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="bg-gradient-to-b from-[#131a2b] via-[#0f1422] to-[#0a0d15] border border-[#1e293b] hover:border-emerald-500/60 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(16,185,129,0.25)] group cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
+              <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="space-y-4">
-                <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-white shadow-lg shadow-emerald-950/50 group-hover:scale-110 transition-transform">
-                  <GraduationCap size={26} />
+                <div className="flex items-center justify-between">
+                  <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-white shadow-lg shadow-emerald-950/60 group-hover:scale-110 transition-transform">
+                    <GraduationCap size={26} />
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-300">
+                    {isBn ? '৪টি ক্যাটাগরি' : '4 Board Formats'}
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">
+                <h3 className="text-lg font-black text-white group-hover:text-emerald-300 transition-colors">
                   {isBn ? '৪-ক্যাটাগরি MCQ পরীক্ষা' : '4-Category Board MCQs'}
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
@@ -732,13 +803,20 @@ export default function LandingPage({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-rose-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(244,63,94,0.2)] group cursor-pointer flex flex-col justify-between"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="bg-gradient-to-b from-[#131a2b] via-[#0f1422] to-[#0a0d15] border border-[#1e293b] hover:border-rose-500/60 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(244,63,94,0.25)] group cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
+              <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-rose-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="space-y-4">
-                <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-rose-600 to-red-600 flex items-center justify-center text-white shadow-lg shadow-rose-950/50 group-hover:scale-110 transition-transform">
-                  <FileDown size={26} />
+                <div className="flex items-center justify-between">
+                  <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-rose-600 to-red-600 flex items-center justify-center text-white shadow-lg shadow-rose-950/60 group-hover:scale-110 transition-transform">
+                    <FileDown size={26} />
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-rose-500/10 border border-rose-500/25 text-rose-300">
+                    {isBn ? '১-ক্লিক PDF এক্সপোর্ট' : '1-Click PDF'}
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-white group-hover:text-rose-300 transition-colors">
+                <h3 className="text-lg font-black text-white group-hover:text-rose-300 transition-colors">
                   {isBn ? 'দুর্বল শব্দ ও PDF রিভিশন' : 'Weak Words PDF Sheets'}
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
@@ -759,13 +837,20 @@ export default function LandingPage({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="bg-[#111723]/90 backdrop-blur-xl border border-[#1e293b] hover:border-cyan-500/50 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)] group cursor-pointer flex flex-col justify-between"
+              whileHover={{ y: -8, scale: 1.02 }}
+              className="bg-gradient-to-b from-[#131a2b] via-[#0f1422] to-[#0a0d15] border border-[#1e293b] hover:border-cyan-500/60 p-6 rounded-3xl space-y-4 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(6,182,212,0.25)] group cursor-pointer flex flex-col justify-between relative overflow-hidden"
             >
+              <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="space-y-4">
-                <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-cyan-950/50 group-hover:scale-110 transition-transform">
-                  <Trophy size={26} />
+                <div className="flex items-center justify-between">
+                  <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-cyan-950/60 group-hover:scale-110 transition-transform">
+                    <Trophy size={26} />
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/25 text-cyan-300">
+                    {isBn ? 'দৈনিক স্ট্রিক ও XP' : 'Daily Flame & XP'}
+                  </span>
                 </div>
-                <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-lg font-black text-white group-hover:text-cyan-300 transition-colors">
                   {isBn ? 'লিডারবোর্ড ও স্ট্রিক' : 'Leaderboard & Streaks'}
                 </h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
