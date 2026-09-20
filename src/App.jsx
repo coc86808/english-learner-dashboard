@@ -142,7 +142,19 @@ export default function App() {
   // 1. Unified Browser History Routing State
   const [currentPath, setCurrentPathState] = useState(() => {
     if (typeof window !== 'undefined') {
-      return normalizePath(window.location.pathname);
+      const norm = normalizePath(window.location.pathname);
+      try {
+        const savedAuth = localStorage.getItem('hsc_auth_user');
+        if (savedAuth && (norm === '/' || norm === '/auth')) {
+          const parsedAuth = JSON.parse(savedAuth);
+          if (parsedAuth && parsedAuth.email) {
+            const dest = parsedAuth.role === 'admin' ? '/admin' : '/dashboard';
+            window.history.replaceState({ path: dest }, '', dest);
+            return dest;
+          }
+        }
+      } catch (e) {}
+      return norm;
     }
     return '/';
   });
@@ -494,6 +506,16 @@ export default function App() {
   const navigate = useCallback((toPath, replace = false) => {
     const target = normalizePath(toPath);
 
+    // Guard 0: Logged-in User going to '/' or '/auth' -> automatically redirect to '/dashboard'
+    if (currentUser && (target === '/' || target === '/auth')) {
+      const dest = currentUser.role === 'admin' ? '/admin' : '/dashboard';
+      if (typeof window !== 'undefined') {
+        window.history.replaceState({ path: dest }, '', dest);
+      }
+      setCurrentPathState(dest);
+      return;
+    }
+
     // Guard 1: Public Routes (/ and /about and /terms and /refund and /auth)
     const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/auth';
 
@@ -536,6 +558,13 @@ export default function App() {
       const target = normalizePath(window.location.pathname);
       const isPublic = target === '/' || target === '/about' || target === '/terms' || target === '/refund' || target === '/auth';
 
+      if (currentUser && (target === '/' || target === '/auth')) {
+        const dest = currentUser.role === 'admin' ? '/admin' : '/dashboard';
+        setCurrentPathState(dest);
+        window.history.replaceState({ path: dest }, '', dest);
+        return;
+      }
+
       if (!currentUser && !isPublic) {
         setIsAuthOpen(true);
         setCurrentPathState('/');
@@ -552,6 +581,17 @@ export default function App() {
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, [currentUser, isBn]);
+
+  // Auto-redirect logged-in user at '/' or '/auth' to '/dashboard'
+  useEffect(() => {
+    if (currentUser && (currentPath === '/' || currentPath === '/auth')) {
+      const dest = currentUser.role === 'admin' ? '/admin' : '/dashboard';
+      if (typeof window !== 'undefined') {
+        window.history.replaceState({ path: dest }, '', dest);
+      }
+      setCurrentPathState(dest);
+    }
+  }, [currentUser, currentPath]);
 
   // Auth Success Handler
   const handleAuthSuccess = (user) => {
@@ -590,7 +630,7 @@ export default function App() {
 
   // Map route to active tab id for sidebar/header compatibility
   const activeTab = useMemo(() => {
-    if (currentPath === '/dashboard') return 'dashboard';
+    if (currentPath === '/dashboard' || currentPath === '/') return 'dashboard';
     if (currentPath.startsWith('/units') || currentPath.startsWith('/exam') || currentPath.startsWith('/exams')) return 'exams';
     if (currentPath.startsWith('/vocabulary-bank') || currentPath.startsWith('/vocabulary')) return 'vocab_bank';
     if (currentPath.startsWith('/flashcards')) return 'flashcards';
@@ -738,7 +778,7 @@ export default function App() {
         {/* 3. Main View Dispatcher */}
         <main className="flex-1 overflow-y-auto p-3.5 sm:p-5 md:p-6 lg:p-7 pb-24 lg:pb-7 space-y-6">
           {/* Route: /dashboard */}
-          {currentPath === '/dashboard' && (
+          {(currentPath === '/dashboard' || (currentUser && currentPath === '/')) && (
             <div className="max-w-[1550px] mx-auto space-y-4 sm:space-y-6">
               {/* 4 Feature Action Cards (Compact 2x2 on Mobile, 4-Col on Desktop) */}
               <ActionCards
