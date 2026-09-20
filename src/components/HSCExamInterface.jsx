@@ -26,7 +26,8 @@ import {
   ChevronRight,
   ShieldCheck,
   Zap,
-  Star
+  Star,
+  LogOut
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { soundManager } from '../utils/soundEffects';
@@ -46,7 +47,6 @@ export default function HSCExamInterface({
   const isBn = lang === 'bn';
   const [isSoundOn, setIsSoundOn] = useState(true);
   const [isCertificateOpen, setIsCertificateOpen] = useState(false);
-  const [isSaveModalOpen, setIsSaveModalOpen] = useState(false);
   const [weakWordToast, setWeakWordToast] = useState(null);
 
   // Compute a unique key for this exam session
@@ -491,19 +491,10 @@ export default function HSCExamInterface({
       };
       localStorage.setItem(`hsc_saved_practice_${activeSessionKey}`, JSON.stringify(saveData));
       localStorage.setItem('hsc_last_saved_session_key', activeSessionKey);
-    } catch (e) {}
-    setIsSaveModalOpen(false);
-    if (onClose) onClose();
-  };
-
-  const handleDiscardAndExit = () => {
-    try {
-      localStorage.removeItem(`hsc_saved_practice_${activeSessionKey}`);
-      if (localStorage.getItem('hsc_last_saved_session_key') === activeSessionKey) {
-        localStorage.removeItem('hsc_last_saved_session_key');
-      }
-    } catch (e) {}
-    setIsSaveModalOpen(false);
+      window.dispatchEvent(new CustomEvent('hsc_practice_saved', { detail: saveData }));
+    } catch (e) {
+      console.warn('Failed to save exam progress on exit:', e);
+    }
     if (onClose) onClose();
   };
 
@@ -655,43 +646,12 @@ export default function HSCExamInterface({
               </div>
             </div>
 
-            {/* Right Controls: Live Timer, Save & Exit, Sound, Close */}
-            <div className="flex items-center gap-1.5 sm:gap-2 ml-auto">
-              {/* Live Timer Widget with Pause/Resume & Warning state */}
-              <div
-                onClick={() => setIsTimerRunning(!isTimerRunning)}
-                title={isTimerRunning ? 'Click to Pause Timer' : 'Click to Resume Timer'}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl border text-xs font-mono font-bold transition-all cursor-pointer shadow-sm select-none ${
-                  !isTimerRunning
-                    ? 'bg-amber-500/15 border-amber-500/40 text-amber-300'
-                    : timerSeconds > 600
-                    ? 'bg-rose-500/15 border-rose-500/40 text-rose-300 animate-pulse'
-                    : 'bg-[#111723] border-[#1e293b] text-slate-300 hover:border-emerald-500/40'
-                }`}
-              >
-                <Clock size={13} className={isTimerRunning ? 'text-emerald-400' : 'text-amber-400'} />
-                <span>{formatTimer(timerSeconds)}</span>
-                {isTimerRunning ? (
-                  <Pause size={10} className="text-slate-400 ml-0.5" />
-                ) : (
-                  <Play size={10} className="text-amber-400 ml-0.5 fill-current" />
-                )}
-              </div>
-
-              {/* Save & Exit button */}
-              <button
-                onClick={() => setIsSaveModalOpen(true)}
-                title={isBn ? 'প্রগ্রেস সংরক্ষণ করে পরবর্তীতে আবার শুরু করুন' : 'Save progress and continue later'}
-                className="px-2.5 sm:px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
-              >
-                <Save size={14} />
-                <span className="hidden sm:inline">{isBn ? 'সেভ ও প্রস্থান' : 'Save & Exit'}</span>
-              </button>
-
+            {/* Right Controls: Sound Toggle and Single Unified Exit Option (Countdown handled in background/backend) */}
+            <div className="flex items-center gap-2 ml-auto">
               {/* Sound Toggle */}
               <button
                 onClick={() => setIsSoundOn(!isSoundOn)}
-                title={isSoundOn ? 'Mute sound effects' : 'Enable sound effects'}
+                title={isSoundOn ? (isBn ? 'শব্দ বন্ধ করুন' : 'Mute sound effects') : (isBn ? 'শব্দ চালু করুন' : 'Enable sound effects')}
                 className={`p-1.5 rounded-xl border transition-all cursor-pointer ${
                   isSoundOn
                     ? 'bg-emerald-500/15 text-emerald-400 border-emerald-500/35'
@@ -701,20 +661,15 @@ export default function HSCExamInterface({
                 {isSoundOn ? <Volume2 size={16} /> : <VolumeX size={16} />}
               </button>
 
-              {/* Exit X button */}
+              {/* Single Unified Exit Option: Automatically saves all progress and exits */}
               {onClose && (
                 <button
-                  onClick={() => {
-                    if (doneCount > 0 || mistakeCount > 0 || learningCount > 0 || queueIndex > 0) {
-                      setIsSaveModalOpen(true);
-                    } else {
-                      onClose();
-                    }
-                  }}
-                  title={isBn ? 'বন্ধ করুন' : 'Close Exam'}
-                  className="p-1.5 rounded-xl bg-[#111723] hover:bg-rose-950/40 border border-[#1e293b] hover:border-rose-700 text-slate-400 hover:text-rose-300 transition-all cursor-pointer"
+                  onClick={handleSaveAndExit}
+                  title={isBn ? 'অগ্রগতি সংরক্ষণ করে প্রস্থান' : 'Save progress & Exit'}
+                  className="px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer shadow-sm active:scale-95"
                 >
-                  <X size={16} />
+                  <LogOut size={14} className="text-amber-400" />
+                  <span>{isBn ? 'প্রস্থান' : 'Exit'}</span>
                 </button>
               )}
             </div>
@@ -1140,70 +1095,7 @@ export default function HSCExamInterface({
         </motion.div>
       )}
 
-      {/* Save & Exit Confirmation Modal */}
-      {isSaveModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
-          <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl space-y-5 text-slate-100 text-center animate-in zoom-in-95 duration-200">
-            <div className="w-14 h-14 rounded-2xl bg-amber-500/20 border border-amber-500/40 text-amber-400 mx-auto flex items-center justify-center shadow-lg">
-              <Save size={28} />
-            </div>
 
-            <div className="space-y-2">
-              <h3 className="text-lg sm:text-xl font-bold text-white">
-                {isBn ? 'প্রগ্রেস সংরক্ষণ করে বের হবেন?' : 'Save Practice Progress & Exit?'}
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                {isBn 
-                  ? 'আপনার বর্তমান অগ্রগতি ও টাইমার সংরক্ষণ করা হবে। পরবর্তীতে পুনরায় প্রবেশ করলে আপনি ঠিক এই প্রশ্ন ও স্কোর থেকেই প্র্যাকটিস চালিয়ে যেতে পারবেন।'
-                  : 'Your progress and live timer will be saved. When you return, you can resume right from this exact question.'}
-              </p>
-            </div>
-
-            {/* Live stats summary preview */}
-            <div className="grid grid-cols-3 gap-2 py-2.5 px-3 bg-[#0c0f17] border border-[#1e293b] rounded-2xl text-xs">
-              <div>
-                <span className="text-slate-400 block text-[10px]">{isBn ? 'প্রশ্ন নম্বর' : 'Question'}</span>
-                <span className="font-bold text-white text-sm">{queueIndex + 1}/{activeQueue.length}</span>
-              </div>
-              <div>
-                <span className="text-slate-400 block text-[10px]">Done</span>
-                <span className="font-bold text-emerald-400 text-sm">{doneCount}</span>
-              </div>
-              <div>
-                <span className="text-slate-400 block text-[10px]">Mistake</span>
-                <span className="font-bold text-rose-400 text-sm">{mistakeCount}</span>
-              </div>
-            </div>
-
-            <div className="space-y-2.5 pt-2">
-              {/* Save & Exit Button */}
-              <button
-                onClick={handleSaveAndExit}
-                className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer active:scale-95"
-              >
-                <Save size={16} />
-                <span>{isBn ? '💾 সংরক্ষণ করে প্রস্থান (Save & Exit)' : '💾 Save Progress & Exit'}</span>
-              </button>
-
-              {/* Continue Practice */}
-              <button
-                onClick={() => setIsSaveModalOpen(false)}
-                className="w-full py-2.5 px-4 rounded-xl bg-[#161e2e] hover:bg-[#1f2a3f] text-slate-200 font-bold text-xs flex items-center justify-center gap-1.5 transition-all cursor-pointer border border-[#1e293b]"
-              >
-                <span>{isBn ? '↩️ অনুশীলন চালিয়ে যান (Continue)' : '↩️ Continue Practicing'}</span>
-              </button>
-
-              {/* Discard & Exit */}
-              <button
-                onClick={handleDiscardAndExit}
-                className="w-full py-1.5 text-rose-400 hover:text-rose-300 text-xs font-medium underline underline-offset-2 transition-colors cursor-pointer"
-              >
-                {isBn ? 'সংরক্ষণ ছাড়াই মুছে প্রস্থান' : 'Discard & Exit Without Saving'}
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Official Certificate Modal */}
       <CertificateModal
