@@ -11,7 +11,8 @@ import {
   CheckCircle2,
   GraduationCap,
   Shield,
-  BookOpen
+  BookOpen,
+  Phone
 } from 'lucide-react';
 import { saveUserToFirestore, signInWithGoogle, fetchAndHydrateUserLearningState } from '../services/firebase';
 
@@ -30,6 +31,7 @@ export default function AuthModal({
 
   // Onboarding Form State
   const [onboardingName, setOnboardingName] = useState('');
+  const [onboardingPhone, setOnboardingPhone] = useState('');
   const [onboardingCollege, setOnboardingCollege] = useState('');
   const [onboardingBatch, setOnboardingBatch] = useState('HSC 2026');
 
@@ -98,6 +100,7 @@ export default function AuthModal({
     const completedProfile = {
       ...currentUserData,
       name: onboardingName.trim(),
+      phone: onboardingPhone.trim(),
       college: onboardingCollege.trim(),
       hscBatch: onboardingBatch
     };
@@ -332,6 +335,24 @@ export default function AuthModal({
                   value={onboardingCollege}
                   onChange={(e) => setOnboardingCollege(e.target.value)}
                   placeholder={isBn ? 'যেমন: Notre Dame College, Dhaka' : 'e.g. Notre Dame College, Dhaka'}
+                  className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
+                />
+              </div>
+            </div>
+
+            {/* Mobile / Phone Number */}
+            <div>
+              <label className="block text-xs font-semibold text-slate-300 mb-1">
+                {isBn ? 'মোবাইল নাম্বার *' : 'Mobile Number *'}
+              </label>
+              <div className="relative">
+                <Phone size={15} className="absolute left-3.5 top-3 text-slate-500" />
+                <input
+                  type="tel"
+                  required
+                  value={onboardingPhone}
+                  onChange={(e) => setOnboardingPhone(e.target.value)}
+                  placeholder={isBn ? 'যেমন: 01712345678' : 'e.g. 01712345678'}
                   className="w-full bg-[#151c2c] border border-[#232f44] focus:border-emerald-500 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm text-white placeholder-slate-500 outline-none"
                 />
               </div>

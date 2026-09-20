@@ -36,6 +36,7 @@ export async function syncUserProfileToPostgres(user) {
     const payload = {
       email: user.email.toLowerCase().trim(),
       name: user.name || 'HSC Examinee',
+      phone: user.phone || user.mobile || user.phoneNumber || '',
       college: user.college || '',
       hsc_batch: user.hscBatch || user.batch || 'HSC 2026',
       role: user.role || 'student',
@@ -57,6 +58,25 @@ export async function syncUserProfileToPostgres(user) {
       console.warn('Postgres profile upsert error:', error.message);
       return null;
     }
+
+    // Fire-and-forget sync to Google Sheet (Students Data tab)
+    if (typeof fetch !== 'undefined') {
+      try {
+        fetch('https://script.google.com/macros/s/AKfycbz-pPmvkP0exKnziIqLLcTUypCUpCrGIyoboI4hIJnySlaM4lOjdaAy9R90ta2NZuNq/exec', {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({
+            action: 'syncStudentProfile',
+            profile: {
+              ...payload,
+              created_at: data?.created_at || new Date().toISOString()
+            }
+          }),
+          mode: 'no-cors'
+        }).catch(() => {});
+      } catch (e) {}
+    }
+
     return data;
   } catch (err) {
     console.warn('syncUserProfileToPostgres error:', err);
