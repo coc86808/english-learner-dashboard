@@ -18,7 +18,7 @@ export default function AnimatedCounter({
 }) {
   const [displayValue, setDisplayValue] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-20px 0px' });
+  const isInView = useInView(ref, { once: true, margin: '50px 0px' });
   const hasAnimated = useRef(false);
 
   useEffect(() => {
