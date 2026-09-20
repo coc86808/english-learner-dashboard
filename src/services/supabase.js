@@ -1,8 +1,20 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Supabase removed by user — client disabled. All calls will safely return null/cache.
-export const isSupabaseConfigured = false;
-export const supabase = null;
+// Supabase Client Initialization
+const DEFAULT_SUPABASE_URL = 'https://rxlvwdioskvwypyhifbt.supabase.co';
+const DEFAULT_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4bHZ3ZGlvc2t2d3lweWhpZmJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk3NTA5MjksImV4cCI6MjEwNTMyNjkyOX0.dCSw834biSsYsb4p-wqbX0xxlHuP62htpYIT9bVydD0';
+
+const SUPABASE_URL = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) || DEFAULT_SUPABASE_URL;
+const SUPABASE_ANON_KEY = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_ANON_KEY) || DEFAULT_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+  auth: {
+    persistSession: true,
+    autoRefreshToken: true
+  }
+});
+
+export const isSupabaseConfigured = true;
 
 export function setSupabaseAnonKey() {}
 
@@ -370,6 +382,87 @@ export async function fetchVocabularyFromPostgres({ unit, search, limit = 1500 }
   } catch (err) {
     console.warn('fetchVocabularyFromPostgres exception:', err);
     return null;
+  }
+}
+
+/**
+ * 9. Fetch all Profiles from PostgreSQL
+ */
+export async function fetchPostgresProfiles() {
+  if (!supabase) return null;
+  try {
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('*')
+      .order('total_xp', { ascending: false });
+
+    if (error) {
+      console.warn('fetchPostgresProfiles error:', error.message);
+      return null;
+    }
+    return data || [];
+  } catch (err) {
+    console.warn('fetchPostgresProfiles exception:', err);
+    return null;
+  }
+}
+
+/**
+ * 10. Real-time Subscription to PostgreSQL Profiles
+ */
+export function listenToPostgresProfiles(onUpdate) {
+  if (!supabase || typeof onUpdate !== 'function') return () => {};
+
+  // Initial fetch
+  fetchPostgresProfiles().then((profiles) => {
+    if (Array.isArray(profiles) && profiles.length > 0) {
+      onUpdate(profiles);
+    }
+  });
+
+  // Real-time Postgres changes listener
+  try {
+    const channel = supabase
+      .channel('realtime_profiles')
+      .on(
+        'postgres_changes',
+        { event: '*', schema: 'public', table: 'profiles' },
+        () => {
+          fetchPostgresProfiles().then((profiles) => {
+            if (Array.isArray(profiles)) onUpdate(profiles);
+          });
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  } catch (e) {
+    console.warn('listenToPostgresProfiles subscription error:', e);
+    return () => {};
+  }
+}
+
+/**
+ * 11. Delete Profile from PostgreSQL
+ */
+export async function deleteUserProfileFromPostgres(email) {
+  if (!supabase || !email) return false;
+  try {
+    const { error } = await supabase
+      .from('profiles')
+      .delete()
+      .eq('email', email.toLowerCase().trim());
+
+    if (error) {
+      console.warn('deleteUserProfileFromPostgres error:', error.message);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.warn('deleteUserProfileFromPostgres exception:', err);
+    return false;
   }
 }
 

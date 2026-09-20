@@ -84,7 +84,8 @@ import {
 import { 
   syncUserProfileToPostgres, 
   syncWeakWordToPostgres, 
-  fetchWeakWordsFromPostgres 
+  fetchWeakWordsFromPostgres,
+  listenToPostgresProfiles
 } from './services/supabase';
 import { getStoredTheme, applyTheme } from './services/themeManager';
 
@@ -271,7 +272,7 @@ export default function App() {
     const purged = purgeNonRealAccounts();
     if (purged) setUsers(purged.length > 0 ? purged : usersList);
 
-    const unsubscribe = listenToFirestoreUsers((cloudUsers) => {
+    const unsubscribeFirestore = listenToFirestoreUsers((cloudUsers) => {
       if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
         setUsers((prev) => {
           const map = new Map();
@@ -287,6 +288,41 @@ export default function App() {
         });
       }
     });
+
+    // Real-time synchronization with Supabase PostgreSQL profiles table
+    const unsubscribePostgres = listenToPostgresProfiles((postgresProfiles) => {
+      if (Array.isArray(postgresProfiles) && postgresProfiles.length > 0) {
+        setUsers((prev) => {
+          const map = new Map();
+          [...usersList, ...prev].forEach((u) => {
+            if (isRealAccount(u)) {
+              map.set((u.email || u.id || '').toLowerCase(), u);
+            }
+          });
+          postgresProfiles.forEach((p) => {
+            if (isRealAccount(p)) {
+              const emailKey = (p.email || '').toLowerCase();
+              const existing = map.get(emailKey) || {};
+              map.set(emailKey, {
+                ...existing,
+                ...p,
+                name: p.name || existing.name,
+                college: p.college || existing.college,
+                points: Number(p.total_xp ?? existing.points ?? 0),
+                streak: Number(p.streak ?? existing.streak ?? 0),
+                accuracy: Number(p.accuracy ?? existing.accuracy ?? 0),
+                testsCompleted: Number(p.questions_solved ?? existing.testsCompleted ?? 0),
+                league: p.league || existing.league || 'Bronze'
+              });
+            }
+          });
+          const merged = Array.from(map.values());
+          try { localStorage.setItem('hsc_registered_users', JSON.stringify(merged)); } catch (e) {}
+          return merged;
+        });
+      }
+    });
+
     const handleUserStatsSync = (e) => {
       if (e && e.detail) {
         setCurrentUser(e.detail);
@@ -301,7 +337,8 @@ export default function App() {
     window.addEventListener('storage', handleUserStatsSync);
 
     return () => {
-      if (typeof unsubscribe === 'function') unsubscribe();
+      if (typeof unsubscribeFirestore === 'function') unsubscribeFirestore();
+      if (typeof unsubscribePostgres === 'function') unsubscribePostgres();
       window.removeEventListener('hsc_user_stats_updated', handleUserStatsSync);
       window.removeEventListener('storage', handleUserStatsSync);
     };
@@ -313,7 +350,10 @@ export default function App() {
       localStorage.setItem('hsc_registered_users', JSON.stringify(updatedUsers));
       if (Array.isArray(updatedUsers)) {
         updatedUsers.forEach((u) => {
-          if (u && u.email) saveUserToFirestore(u);
+          if (u && u.email) {
+            saveUserToFirestore(u);
+            syncUserProfileToPostgres(u);
+          }
         });
       }
     } catch (e) {}
@@ -325,6 +365,7 @@ export default function App() {
     try {
       localStorage.setItem('hsc_auth_user', JSON.stringify(updatedProfile));
       saveUserToFirestore(updatedProfile);
+      syncUserProfileToPostgres(updatedProfile);
       setUsers((prev) => {
         const next = prev.map((u) => 
           (u.email && u.email.toLowerCase() === updatedProfile.email?.toLowerCase()) || (u.id === updatedProfile.id)
