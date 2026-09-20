@@ -251,15 +251,15 @@ export default function Header({
             </div>
           </div>
 
-          {/* Right: Theme Toggle & The Single, Powerful Three-Dot Menu Button (⋮) */}
+          {/* Right: Theme Toggle (Desktop/Tablet) & Control Menu Trigger */}
           <div className="flex items-center gap-2">
-            {/* Quick Theme Switcher Button with Sage Colors */}
+            {/* Quick Theme Switcher Button with Sage Colors - Hidden on mobile */}
             <button
               onClick={() => {
                 const next = currentTheme === 'sage-cream' ? 'cyber-dark' : 'sage-cream';
                 handleThemeChange(next);
               }}
-              className="px-2 py-1.5 rounded-xl bg-[#111723] hover:bg-[#161f30] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white shadow-sm transition-all flex items-center gap-1.5 cursor-pointer group active:scale-95"
+              className="hidden sm:flex px-2 py-1.5 rounded-xl bg-[#111723] hover:bg-[#161f30] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white shadow-sm transition-all items-center gap-1.5 cursor-pointer group active:scale-95"
               title={isBn ? 'থিম পরিবর্তন (সেজ ও ক্রিম / সাইবার ডার্ক)' : 'Toggle Theme (Sage & Cream / Cyber Dark)'}
             >
               <Palette size={15} className="text-emerald-400 group-hover:rotate-45 transition-transform" />
@@ -271,13 +271,14 @@ export default function Header({
               </div>
             </button>
 
+            {/* Profile & Controls Menu Trigger (Clean & Balanced on Mobile) */}
             <button
               onClick={() => setIsControlMenuOpen(true)}
-              className="px-2.5 py-1.5 rounded-xl bg-[#111723] hover:bg-[#161f30] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white shadow-md transition-all flex items-center gap-2 cursor-pointer group active:scale-95"
+              className="p-1 sm:px-2.5 sm:py-1.5 rounded-xl bg-[#111723] hover:bg-[#161f30] border border-[#1e293b] hover:border-emerald-500/50 text-slate-200 hover:text-white shadow-md transition-all flex items-center gap-1.5 sm:gap-2 cursor-pointer group active:scale-95"
               title={isBn ? 'সম্পূর্ণ ইন্টারফেস ও কন্ট্রোল মেনু (⋮)' : 'Full Interface & Controls (⋮)'}
             >
               {/* Quick glance user avatar badge */}
-              <div className="w-5 h-5 rounded-md bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-[10px] shadow-sm">
+              <div className="w-7 h-7 sm:w-5 sm:h-5 rounded-lg bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white font-black text-xs sm:text-[10px] shadow-sm">
                 {currentUser?.name 
                   ? currentUser.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase() 
                   : 'ST'}
@@ -290,7 +291,7 @@ export default function Header({
               </span>
 
               {/* The Three-Dot Icon */}
-              <MoreVertical size={17} className="text-emerald-400 group-hover:rotate-90 transition-transform duration-200" />
+              <MoreVertical size={16} className="text-emerald-400 group-hover:rotate-90 transition-transform duration-200" />
             </button>
           </div>
         </header>
