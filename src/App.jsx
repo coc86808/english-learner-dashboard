@@ -48,6 +48,7 @@ import QuestionBankModal from './components/QuestionBankModal';
 import AuthModal from './components/AuthModal';
 import AdminDashboard from './components/admin/AdminDashboard';
 import HSCUnitsExplorer from './components/HSCUnitsExplorer';
+import HSCExamInterface from './components/HSCExamInterface';
 import UnitLessonExamModal from './components/UnitLessonExamModal';
 import FlashcardsExplorer from './components/FlashcardsExplorer';
 import WeakWordsSection from './components/WeakWordsSection';
@@ -74,7 +75,7 @@ import FAQPage from './components/pages/FAQPage';
 
 // Data Layers
 import { usersList } from './data/users';
-import { hscQuestionsList, hscVocabularyList } from './data/questions';
+import { hscQuestionsList, hscVocabularyList, smartInterleaveQuestions } from './data/questions';
 import { hscUnits } from './data/hscUnitsData';
 import { formatUnitSlug, formatLessonSlug } from './utils/routeHelpers';
 
@@ -532,6 +533,12 @@ export default function App() {
   const [isCertificateModalOpen, setIsCertificateModalOpen] = useState(false);
   const [selectedExamUnit, setSelectedExamUnit] = useState(null);
   const [selectedExamLesson, setSelectedExamLesson] = useState(null);
+  const [isPracticePageActive, setIsPracticePageActive] = useState(false);
+
+  const tenPracticeQuestions = useMemo(() => {
+    const base = questions && questions.length > 0 ? questions : hscQuestionsList;
+    return smartInterleaveQuestions(base).slice(0, 10);
+  }, [questions, isPracticePageActive]);
 
   // 5. Global Router Navigation Engine with Auth and Admin Guards
   const navigate = useCallback((toPath, replace = false) => {
@@ -863,7 +870,10 @@ export default function App() {
                 lang={lang}
                 onOpenVocabBank={() => navigate('/vocabulary-bank')}
                 onOpenFlashcards={() => navigate('/flashcards')}
-                onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
+                onOpenQuickPractice={() => {
+                  setIsPracticePageActive(true);
+                  navigate('/practice');
+                }}
                 onOpenMockExam={() => navigate('/exam')}
                 onNavigate={navigate}
               />
@@ -888,7 +898,10 @@ export default function App() {
                     lang={lang}
                     currentUser={currentUser}
                     weakWords={weakWords}
-                    onOpenQuickPractice={() => setIsQuickPracticeOpen(true)}
+                    onOpenQuickPractice={() => {
+                      setIsPracticePageActive(true);
+                      navigate('/practice');
+                    }}
                     onOpenMockExam={() => navigate('/exam')}
                     navigate={navigate}
                   />
@@ -974,25 +987,48 @@ export default function App() {
           {/* Route: /practice */}
           {currentPath === '/practice' && (
             <div className="max-w-4xl mx-auto space-y-6">
-              <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-card">
-                <div className="w-14 h-14 rounded-2xl bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-300 mx-auto">
-                  <Zap size={28} />
+              {isPracticePageActive ? (
+                <div className="space-y-4">
+                  <div className="bg-[#131824] border border-[#1e2738] p-3.5 rounded-2xl flex items-center justify-between gap-3 text-xs text-slate-300">
+                    <button
+                      onClick={() => setIsPracticePageActive(false)}
+                      className="px-3.5 py-1.5 rounded-xl bg-[#182030] hover:bg-[#222e44] text-emerald-400 font-bold inline-flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                    >
+                      <ArrowLeft size={14} />
+                      <span>{isBn ? 'অনুশীলন মেনুতে ফিরে যান' : 'Back to Practice Menu'}</span>
+                    </button>
+                    <span className="px-2.5 py-0.5 rounded bg-teal-500/20 text-teal-300 font-black border border-teal-500/30">
+                      10 {isBn ? 'টি দ্রুত প্রশ্ন' : 'Quick Questions'}
+                    </span>
+                  </div>
+                  <HSCExamInterface
+                    questions={tenPracticeQuestions}
+                    sessionKey={`quick_practice_page_${isPracticePageActive ? 'active' : 'idle'}`}
+                    onClose={() => setIsPracticePageActive(false)}
+                    lang={lang}
+                  />
                 </div>
-                <h2 className="text-xl sm:text-2xl font-bold text-white">
-                  {isBn ? 'দ্রুত MCQ অনুশীলন (Quick Practice)' : 'Quick MCQ Practice Session'}
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">
-                  {isBn 
-                    ? 'যেকোনো ইউনিট থেকে নির্বাচিত ১০টি বোর্ড স্ট্যান্ডার্ড MCQ প্রশ্ন দিয়ে নিজের দক্ষতা যাচাই করুন।'
-                    : 'Test your vocabulary and board readiness with 10 random interleaved questions across all active units.'}
-                </p>
-                <button
-                  onClick={() => setIsQuickPracticeOpen(true)}
-                  className="px-6 py-3 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-sm shadow-lg shadow-teal-950/50 active:scale-95 transition-all"
-                >
-                  {isBn ? '▶ ১০টি প্রশ্নের কুইজ শুরু করুন' : '▶ Launch 10-Question Quiz'}
-                </button>
-              </div>
+              ) : (
+                <div className="bg-[#111723] border border-[#1e293b] rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-card">
+                  <div className="w-14 h-14 rounded-2xl bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-300 mx-auto">
+                    <Zap size={28} />
+                  </div>
+                  <h2 className="text-xl sm:text-2xl font-bold text-white">
+                    {isBn ? 'দ্রুত MCQ অনুশীলন (Quick Practice)' : 'Quick MCQ Practice Session'}
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-300 max-w-md mx-auto">
+                    {isBn 
+                      ? 'যেকোনো ইউনিট থেকে নির্বাচিত ১০টি বোর্ড স্ট্যান্ডার্ড MCQ প্রশ্ন দিয়ে নিজের দক্ষতা যাচাই করুন।'
+                      : 'Test your vocabulary and board readiness with 10 random interleaved questions across all active units.'}
+                  </p>
+                  <button
+                    onClick={() => setIsPracticePageActive(true)}
+                    className="px-6 py-3 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 hover:from-teal-500 hover:to-emerald-500 text-white font-bold text-sm shadow-lg shadow-teal-950/50 active:scale-95 transition-all cursor-pointer"
+                  >
+                    {isBn ? '▶ ১০টি প্রশ্নের কুইজ শুরু করুন' : '▶ Launch 10-Question Quiz'}
+                  </button>
+                </div>
+              )}
             </div>
           )}
 

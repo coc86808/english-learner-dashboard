@@ -234,7 +234,7 @@ export default function HSCUnitsExplorer({
   };
 
   // Sliced questions based on chosen question limit (Default: 10)
-  const getFilteredQuestions = () => {
+  const filteredQuestions = useMemo(() => {
     const allMatching = allAvailableQuestions;
     const effectiveLimit = isCustomMode
       ? (Number(customInputVal) || 10)
@@ -244,9 +244,9 @@ export default function HSCUnitsExplorer({
       return allMatching;
     }
     return allMatching.slice(0, Number(effectiveLimit));
-  };
+  }, [allAvailableQuestions, isCustomMode, customInputVal, questionLimit]);
 
-  const actualExamCount = getFilteredQuestions().length;
+  const actualExamCount = filteredQuestions.length;
 
   const filteredUnits = hscUnits.filter((u) => {
     if (!searchQuery.trim()) return true;
@@ -265,7 +265,7 @@ export default function HSCUnitsExplorer({
       {/* VIEW 4: LIVE ACTIVE EXAM SCREEN                               */}
       {/* ------------------------------------------------------------- */}
       {isExamActive && selectedUnit && selectedLesson ? (
-        <div className="space-y-4 animate-in fade-in zoom-in-95 duration-200">
+        <div className="space-y-4">
           {/* Breadcrumb Navigation Bar */}
           <div className="bg-[#131824] border border-[#1e2738] p-3.5 rounded-2xl flex flex-wrap items-center justify-between gap-3 text-xs text-slate-300">
             <button
@@ -302,7 +302,7 @@ export default function HSCUnitsExplorer({
           {/* Spaced-Repetition Exam Engine */}
           <ErrorBoundary>
             <HSCExamInterface
-              questions={getFilteredQuestions()}
+              questions={filteredQuestions}
               sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}_q_${actualExamCount}`}
               onClose={() => setIsExamActive(false)}
               lang={lang}

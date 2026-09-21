@@ -125,7 +125,7 @@ export default function UnitLessonExamModal({
     setQuestionLimit(next);
   };
 
-  const getFilteredQuestions = () => {
+  const filteredQuestions = useMemo(() => {
     const allMatching = allAvailableQuestions;
     const effectiveLimit = isCustomMode
       ? (Number(customInputVal) || 10)
@@ -135,9 +135,9 @@ export default function UnitLessonExamModal({
       return allMatching;
     }
     return allMatching.slice(0, Number(effectiveLimit));
-  };
+  }, [allAvailableQuestions, isCustomMode, customInputVal, questionLimit]);
 
-  const actualExamCount = getFilteredQuestions().length;
+  const actualExamCount = filteredQuestions.length;
 
   const hasTextbook =
     (selectedUnit?.id === 'unit-1' && (!selectedLesson || selectedLesson.id === 'u1-l1' || selectedLesson.id === 'all')) ||
@@ -145,7 +145,7 @@ export default function UnitLessonExamModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-5xl my-auto animate-in fade-in zoom-in duration-200">
+      <div className="relative w-full max-w-5xl my-auto">
         {/* Floating Close Button */}
         <button
           onClick={onClose}
@@ -191,7 +191,7 @@ export default function UnitLessonExamModal({
 
             <ErrorBoundary>
               <HSCExamInterface
-                questions={getFilteredQuestions()}
+                questions={filteredQuestions}
                 sessionKey={`u_${selectedUnit.id}_l_${selectedLesson.id}_q_${actualExamCount}`}
                 onClose={() => setIsExamActive(false)}
                 lang={lang}

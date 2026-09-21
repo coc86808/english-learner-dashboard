@@ -151,7 +151,7 @@ export default function HSCExamInterface({
   const [hintRevealed, setHintRevealed] = useState(false);
   const [hintUsedForCurrentQ, setHintUsedForCurrentQ] = useState(false);
 
-  // Re-synchronize when questions prop or sessionKey changes
+  // Re-synchronize when a new exam session starts
   useEffect(() => {
     if (Array.isArray(questions) && questions.length > 0) {
       const initialMap = {};
@@ -174,7 +174,7 @@ export default function HSCExamInterface({
       setHintRevealed(false);
       setHintUsedForCurrentQ(false);
     }
-  }, [sessionKey, questions]);
+  }, [sessionKey]);
 
   // Calculate live counters across all unique questions
   const totalUnique = Array.isArray(questions) ? questions.length : 0;
@@ -754,17 +754,12 @@ export default function HSCExamInterface({
             </div>
           </div>
 
-          {/* Animated Question Transition Shell with Framer Motion */}
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={`${currentQ.id || 'q'}-${queueIndex}`}
-              initial={{ opacity: 0, x: 20, filter: 'blur(3px)' }}
-              animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
-              exit={{ opacity: 0, x: -20, filter: 'blur(3px)' }}
-              transition={{ duration: 0.24, ease: 'easeOut' }}
-              className="space-y-4 sm:space-y-6"
-            >
-              {/* Question Header: Category Badge + Unit Tag */}
+          {/* Clean Question Container (No double slide/blur animation) */}
+          <div
+            key={`${currentQ.id || 'q'}-${queueIndex}`}
+            className="space-y-4 sm:space-y-6"
+          >
+            {/* Question Header: Category Badge + Unit Tag */}
               <div className="flex flex-wrap items-center justify-between gap-2.5">
                 <div className="flex items-center gap-2.5 flex-wrap">
                   {currentQ.categoryLabel && (
@@ -904,7 +899,7 @@ export default function HSCExamInterface({
                       key={idx}
                       onClick={() => handleSelectOption(idx)}
                       disabled={isAnswered}
-                      className={`w-full min-h-[48px] sm:min-h-[52px] p-3 sm:p-4 rounded-xl sm:rounded-2xl border text-xs sm:text-sm md:text-base transition-all duration-200 flex items-center justify-between text-left group cursor-pointer active:scale-[0.99] select-none ${optionClasses}`}
+                      className={`w-full min-h-[48px] sm:min-h-[52px] p-3 sm:p-4 rounded-xl sm:rounded-2xl border text-xs sm:text-sm md:text-base transition-colors duration-150 flex items-center justify-between text-left group cursor-pointer select-none ${optionClasses}`}
                     >
                       <div className="flex items-center gap-3 sm:gap-3.5 min-w-0 pr-2">
                         <span
@@ -947,32 +942,26 @@ export default function HSCExamInterface({
                   {!isAnswered ? (
                     <button
                       onClick={handleNotSure}
-                      className="flex-1 sm:flex-initial px-4 sm:px-5 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] border-2 border-slate-700 hover:border-amber-500/60 text-slate-300 hover:text-amber-300 font-bold text-xs sm:text-sm transition-all shadow-md active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
+                      className="flex-1 sm:flex-initial px-4 sm:px-5 py-3 rounded-2xl bg-[#111723] hover:bg-[#161e2e] border-2 border-slate-700 hover:border-amber-500/60 text-slate-300 hover:text-amber-300 font-bold text-xs sm:text-sm transition-colors shadow-md active:opacity-90 flex items-center justify-center gap-2 cursor-pointer"
                     >
                       <HelpCircle size={17} className="text-amber-400 shrink-0" />
                       <span>{isBn ? 'Not sure (নিশ্চিত নই)' : 'Not sure'}</span>
                     </button>
                   ) : (
-                    <motion.button
-                      initial={{ scale: 0.95, opacity: 0 }}
-                      animate={{ scale: 1, opacity: 1 }}
+                    <button
                       onClick={handleNext}
-                      className="flex-1 sm:flex-initial px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/60 transition-all cursor-pointer active:scale-95"
+                      className="flex-1 sm:flex-initial px-5 sm:px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-lg shadow-emerald-950/60 transition-colors cursor-pointer active:opacity-90"
                     >
                       <span>{isBn ? 'পরবর্তী প্রশ্ন' : 'Next Question'}</span>
                       <ArrowRight size={17} />
-                    </motion.button>
+                    </button>
                   )}
                 </div>
               </div>
 
               {/* Context Explanation Box */}
               {isAnswered && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="p-4 sm:p-5 rounded-2xl bg-[#111723] border border-emerald-500/30 text-xs sm:text-sm text-slate-300 space-y-2.5 shadow-xl"
-                >
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#111723] border border-emerald-500/30 text-xs sm:text-sm text-slate-300 space-y-2.5 shadow-xl">
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <span className="font-bold text-emerald-400 text-sm flex items-center gap-1.5">
                       <Sparkles size={16} />
@@ -1023,11 +1012,10 @@ export default function HSCExamInterface({
                       )}
                     </div>
                   )}
-                </motion.div>
+                </div>
               )}
-            </motion.div>
-          </AnimatePresence>
-        </div>
+            </div>
+          </div>
       ) : (
         /* Final 100% Mastery Screen - ONLY shown when isAllDone is TRUE */
         <motion.div

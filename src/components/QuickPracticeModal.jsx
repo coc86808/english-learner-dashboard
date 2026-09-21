@@ -13,7 +13,7 @@ export default function QuickPracticeModal({ isOpen, onClose, lang, dynamicQuest
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-3xl my-auto animate-in fade-in zoom-in duration-200">
+      <div className="relative w-full max-w-3xl my-auto">
         {/* HSC Exam Interface for exactly 10 questions */}
         <HSCExamInterface
           questions={tenQuestionsList}
