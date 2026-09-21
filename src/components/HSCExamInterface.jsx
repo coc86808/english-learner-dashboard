@@ -127,10 +127,10 @@ export default function HSCExamInterface({
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
-  // Safely resolve current question
+  // Safely resolve current question stably by queueIndex
   const currentQ =
     (activeQueue && activeQueue[queueIndex]) ||
-    (Array.isArray(questions) && questions.find((q) => q && (questionStats[q.id]?.consecutiveCorrect || 0) < 3)) ||
+    (Array.isArray(questions) && questions[queueIndex]) ||
     (Array.isArray(questions) && questions[0]) ||
     null;
 
@@ -151,30 +151,36 @@ export default function HSCExamInterface({
   const [hintRevealed, setHintRevealed] = useState(false);
   const [hintUsedForCurrentQ, setHintUsedForCurrentQ] = useState(false);
 
-  // Re-synchronize when a new exam session starts
+  // Re-synchronize when a new exam session starts or questions first arrive
+  const prevSessionRef = useRef(sessionKey);
   useEffect(() => {
+    const sessionChanged = prevSessionRef.current !== sessionKey;
+    prevSessionRef.current = sessionKey;
+
     if (Array.isArray(questions) && questions.length > 0) {
-      const initialMap = {};
-      questions.forEach((q) => {
-        if (q && q.id) {
-          initialMap[q.id] = {
-            consecutiveCorrect: 0,
-            status: 'learning',
-            totalAttempts: 0,
-            lastAnswerWasCorrect: null
-          };
-        }
-      });
-      setQuestionStats(initialMap);
-      setActiveQueue(smartInterleaveQuestions(questions));
-      setQueueIndex(0);
-      setSelectedOption(null);
-      setIsAnswered(false);
-      setIsNotSureClicked(false);
-      setHintRevealed(false);
-      setHintUsedForCurrentQ(false);
+      if (sessionChanged || activeQueue.length === 0) {
+        const initialMap = {};
+        questions.forEach((q) => {
+          if (q && q.id) {
+            initialMap[q.id] = {
+              consecutiveCorrect: 0,
+              status: 'learning',
+              totalAttempts: 0,
+              lastAnswerWasCorrect: null
+            };
+          }
+        });
+        setQuestionStats(initialMap);
+        setActiveQueue(smartInterleaveQuestions(questions));
+        setQueueIndex(0);
+        setSelectedOption(null);
+        setIsAnswered(false);
+        setIsNotSureClicked(false);
+        setHintRevealed(false);
+        setHintUsedForCurrentQ(false);
+      }
     }
-  }, [sessionKey]);
+  }, [sessionKey, questions]);
 
   // Calculate live counters across all unique questions
   const totalUnique = Array.isArray(questions) ? questions.length : 0;
@@ -220,7 +226,7 @@ export default function HSCExamInterface({
     }
   }, [isAllDone, isSoundOn]);
 
-  // Shuffle options on every question appearance
+  // Shuffle options ONLY on manual queueIndex changes (strictly locked during answering)
   useEffect(() => {
     if (!currentQ || !Array.isArray(currentQ.options) || currentQ.options.length === 0) return;
     const indexed = currentQ.options.map((text, i) => ({ text, originalIndex: i }));
@@ -239,7 +245,7 @@ export default function HSCExamInterface({
     setIsNotSureClicked(false);
     setHintRevealed(false);
     setHintUsedForCurrentQ(false);
-  }, [queueIndex, currentQ?.id]);
+  }, [queueIndex]);
 
   const handleRevealHint = () => {
     setHintRevealed(true);

@@ -211,7 +211,9 @@ export default function HSCUnitsExplorer({
     return smartInterleaveQuestions(unitQuestions.length > 0 ? unitQuestions : categoryFiltered);
   };
 
-  const allAvailableQuestions = getAllMatchingQuestions();
+  const allAvailableQuestions = useMemo(() => {
+    return getAllMatchingQuestions();
+  }, [selectedUnit?.id, selectedLesson?.id, selectedCategories]);
 
   // Handle custom number input change
   const handleCustomInputChange = (e) => {

@@ -105,7 +105,9 @@ export default function UnitLessonExamModal({
     return smartInterleaveQuestions(matched.length > 0 ? matched : categoryFiltered);
   };
 
-  const allAvailableQuestions = getAllMatchingQuestions();
+  const allAvailableQuestions = useMemo(() => {
+    return getAllMatchingQuestions();
+  }, [selectedUnit?.id, selectedLesson?.id, selectedCategories]);
 
   const handleCustomInputChange = (e) => {
     const val = e.target.value.replace(/[^0-9]/g, '');

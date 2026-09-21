@@ -34,6 +34,12 @@ export default class ErrorBoundary extends React.Component {
           <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
             কোনো সংরক্ষিত ডেটা বা ব্রাউজার ক্যাশে কারণে সমস্যা হতে পারে। নিচের বাটনে ক্লিক করে পুনরায় চালু করুন।
           </p>
+          {this.state.error && (
+            <div className="text-left text-rose-300 text-[11px] p-3 bg-black/60 rounded-xl overflow-x-auto max-h-48 border border-rose-500/30">
+              <div className="font-bold">{this.state.error.message || String(this.state.error)}</div>
+              <pre className="mt-1 text-[10px] text-slate-400 whitespace-pre-wrap">{this.state.error.stack}</pre>
+            </div>
+          )}
           <button
             onClick={this.handleReset}
             className="px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm inline-flex items-center gap-2 transition-all shadow-lg cursor-pointer"
