@@ -200,107 +200,26 @@ export default function App() {
   const [isSignUpMode, setIsSignUpMode] = useState(true);
   const [pendingRedirect, setPendingRedirect] = useState(null);
 
-  // ─── STRICT WHITELIST ────────────────────────────────────────────────────────
-  // Only these 3 real people may exist on the website. Every other account —
-  // no matter where it came from (localStorage, Firestore, Supabase) — is
-  // permanently removed on every app load.
-  const isRealAccount = (u) => {
-    if (!u) return false;
-    const uName  = String(u.name  || '').toLowerCase().trim();
-    const uEmail = String(u.email || '').toLowerCase().trim();
-    const uRole  = String(u.role  || '').toLowerCase();
-
-    // Blacklist: Instantly drop any account matching known fake/AI generated student profiles
-    const FAKE_PATTERNS = [
-      'tanvir', 'sadia', 'nafis', 'mehedi', 'fariha', 'zubair',
-      'abrar', 'tasnim', 'samiul', 'ishrat', 'candidate', 'guest'
-    ];
-    if (FAKE_PATTERNS.some((p) => uName.includes(p) || uEmail.includes(p))) {
-      return false;
-    }
-
-    // Admin: Sakin only
-    if (uRole === 'admin') {
-      return uName.includes('sakin') || uEmail.includes('sakin') || uEmail === 'admin@learnerhub.com' || uEmail === 'admin';
-    }
-
-    // Students: ONLY Mohammad Nasim, Riad Sarkar, or Sakin
-    const isNasim = uName.includes('nasim') || uEmail === 'learnermcq@gmail.com' || uEmail === 'mohammad.nasim@gmail.com';
-    const isRiad  = uName.includes('riad')  || uEmail === 'sarkarriad92@gmail.com' || uEmail === 'riad.sarkar@gmail.com';
-    const isSakin = uName.includes('sakin') || uEmail.includes('sakin');
-
-    return isNasim || isRiad || isSakin;
-  };
-
-  /** Purge every non-whitelisted account from localStorage right now */
-  const purgeNonRealAccounts = () => {
-    try {
-      // 1. Clean registered users
-      const raw = localStorage.getItem('hsc_registered_users');
-      if (raw) {
-        const all = JSON.parse(raw);
-        if (Array.isArray(all)) {
-          const kept = all.filter(isRealAccount);
-          localStorage.setItem('hsc_registered_users', JSON.stringify(kept));
-        }
-      }
-      // 2. Clean current authenticated user if fake, or reset points for fresh start
-      const rawAuth = localStorage.getItem('hsc_auth_user');
-      if (rawAuth) {
-        const authUser = JSON.parse(rawAuth);
-        if (!isRealAccount(authUser)) {
-          localStorage.removeItem('hsc_auth_user');
-        }
-      }
-
-      // 3. One-time Global Points Reset for all users (Start from Zero)
-      const RESET_KEY = 'hsc_points_fresh_start_2026_v1';
-      if (!localStorage.getItem(RESET_KEY)) {
-        if (rawAuth) {
-          try {
-            const authUser = JSON.parse(rawAuth);
-            authUser.points = 0;
-            authUser.streak = 0;
-            authUser.testsCompleted = 0;
-            authUser.masteredWordsCount = 0;
-            authUser.accuracy = 0;
-            localStorage.setItem('hsc_auth_user', JSON.stringify(authUser));
-          } catch (err) {}
-        }
-        localStorage.removeItem('hsc_exam_history');
-        localStorage.removeItem('hsc_personal_best_streak');
-        localStorage.setItem(RESET_KEY, 'true');
-      }
-      return null;
-    } catch (e) { return null; }
-  };
-
-  // 3. Admin Registered Users State & Firestore Realtime Sync
+  // 3. Registered Users State & Cloud Realtime Sync
   const [users, setUsers] = useState(() => {
-    purgeNonRealAccounts();
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed.filter(isRealAccount);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
       }
     } catch (e) {}
     return usersList;
   });
 
   useEffect(() => {
-    // Run purge again on mount (catches cached data from previous sessions)
-    const purged = purgeNonRealAccounts();
-    if (purged) setUsers(purged.length > 0 ? purged : usersList);
-
     const unsubscribeFirestore = listenToFirestoreUsers((cloudUsers) => {
       if (Array.isArray(cloudUsers) && cloudUsers.length > 0) {
         setUsers((prev) => {
           const map = new Map();
-          // Only keep whitelisted entries from all sources
           [...usersList, ...prev, ...cloudUsers].forEach((u) => {
-            if (isRealAccount(u)) {
-              map.set((u.email || u.id || '').toLowerCase(), u);
+            if (u && (u.email || u.id)) {
+              map.set((u.email || u.id).toLowerCase().trim(), u);
             }
           });
           const merged = Array.from(map.values());
@@ -316,45 +235,47 @@ export default function App() {
         setUsers((prev) => {
           const map = new Map();
           [...usersList, ...prev].forEach((u) => {
-            if (isRealAccount(u)) {
-              map.set((u.email || u.id || '').toLowerCase(), u);
+            if (u && (u.email || u.id)) {
+              map.set((u.email || u.id).toLowerCase().trim(), u);
             }
           });
           postgresProfiles.forEach((p) => {
-            if (isRealAccount(p)) {
-              const emailKey = (p.email || '').toLowerCase();
-              const existing = map.get(emailKey) || {};
-              const updatedProfile = {
-                ...existing,
-                ...p,
-                name: p.name || existing.name,
-                phone: p.phone || existing.phone || '',
-                college: p.college || existing.college,
-                role: p.role || existing.role || 'student',
-                points: Number(p.total_xp ?? existing.points ?? 0),
-                streak: Number(p.streak ?? existing.streak ?? 0),
-                accuracy: Number(p.accuracy ?? existing.accuracy ?? 0),
-                testsCompleted: Number(p.questions_solved ?? existing.testsCompleted ?? 0),
-                league: p.league || existing.league || 'Bronze'
-              };
-              map.set(emailKey, updatedProfile);
+            const emailKey = (p.email || '').toLowerCase().trim();
+            if (!emailKey) return;
+            const existing = map.get(emailKey) || {};
+            const updatedProfile = {
+              ...existing,
+              ...p,
+              id: p.id || existing.id || `usr-${emailKey}`,
+              name: p.name || existing.name || 'HSC Student',
+              phone: p.phone || existing.phone || '',
+              college: p.college || existing.college || '',
+              hscBatch: p.hsc_batch || existing.hscBatch || 'HSC 2026',
+              role: p.role || existing.role || 'student',
+              points: Number(p.total_xp ?? existing.points ?? 0),
+              total_xp: Number(p.total_xp ?? existing.points ?? 0),
+              streak: Number(p.streak ?? existing.streak ?? 0),
+              accuracy: Number(p.accuracy ?? existing.accuracy ?? 0),
+              testsCompleted: Number(p.questions_solved ?? existing.testsCompleted ?? 0),
+              league: p.league || existing.league || 'Bronze'
+            };
+            map.set(emailKey, updatedProfile);
 
-              // Live update active currentUser session if profile was updated (e.g. from Google Sheets)
-              setCurrentUser((current) => {
-                if (current && current.email && current.email.toLowerCase() === emailKey) {
-                  const updatedCurrent = {
-                    ...current,
-                    ...updatedProfile,
-                    id: current.id || updatedProfile.id
-                  };
-                  try {
-                    localStorage.setItem('hsc_auth_user', JSON.stringify(updatedCurrent));
-                  } catch (e) {}
-                  return updatedCurrent;
-                }
-                return current;
-              });
-            }
+            // Live update active currentUser session if profile was updated
+            setCurrentUser((current) => {
+              if (current && current.email && current.email.toLowerCase().trim() === emailKey) {
+                const updatedCurrent = {
+                  ...current,
+                  ...updatedProfile,
+                  id: current.id || updatedProfile.id
+                };
+                try {
+                  localStorage.setItem('hsc_auth_user', JSON.stringify(updatedCurrent));
+                } catch (e) {}
+                return updatedCurrent;
+              }
+              return current;
+            });
           });
           const merged = Array.from(map.values());
           try { localStorage.setItem('hsc_registered_users', JSON.stringify(merged)); } catch (e) {}

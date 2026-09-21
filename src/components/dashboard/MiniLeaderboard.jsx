@@ -78,8 +78,8 @@ export default function MiniLeaderboard({
         rank: idx + 1,
         name: p.name || 'Student',
         college: p.college || '',
-        points: Number(p.points || p.xp || 0),
-        xp: Number(p.xp || p.points || 0),
+        points: Number(p.total_xp ?? p.points ?? p.xp ?? 0),
+        xp: Number(p.total_xp ?? p.xp ?? p.points ?? 0),
         streak: Number(p.streak || 0),
         avatarInitials: p.avatarInitials || (p.name ? p.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase() : 'HS'),
         avatarBg: ['bg-gradient-to-br from-amber-400 to-amber-600 text-white', 'bg-gradient-to-br from-slate-400 to-slate-600 text-white', 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'][idx] || 'bg-gradient-to-br from-slate-500 to-slate-700 text-white'
@@ -89,7 +89,7 @@ export default function MiniLeaderboard({
   // 2. Resolve Current User Rank Card
   const userName = currentUser?.name || 'HSC Candidate';
   const userCollege = currentUser?.college || 'Dhaka College';
-  const userPoints = Number(currentUser?.points || currentUserRank?.points || currentUserRank?.xp || 0);
+  const userPoints = Number(currentUser?.total_xp ?? currentUser?.points ?? currentUserRank?.points ?? currentUserRank?.xp ?? 0);
   const userRankNum = Number(currentUserRank?.rank || currentUserStudent?.rank || 1);
   const userStreak = Number(currentUser?.streak || 0);
   const userTrend = currentUserRank?.trend || (isBn ? 'শুরু থেকে অগ্রগতি' : 'Fresh Start');

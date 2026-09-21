@@ -33,6 +33,11 @@ import {
   calculateStudentTimeframePoints,
   countRealMasteredWords
 } from '../../services/scoreManager';
+import {
+  fetchPostgresProfiles,
+  listenToPostgresProfiles,
+  fetchExamResultsFromPostgres
+} from '../../services/supabase';
 
 // Convert numbers to Bengali digits if needed
 const toBnNum = (num) => {
@@ -56,6 +61,10 @@ export default function LeaderboardPage({
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCollegeFilter, setSelectedCollegeFilter] = useState('all');
   const [isRulesModalOpen, setIsRulesModalOpen] = useState(false);
+
+  // Live Supabase PostgreSQL Data State
+  const [cloudProfiles, setCloudProfiles] = useState([]);
+  const [cloudExams, setCloudExams] = useState([]);
 
   const [examHistory, setExamHistory] = useState(() => {
     try {
@@ -91,11 +100,29 @@ export default function LeaderboardPage({
     return () => clearInterval(interval);
   }, []);
 
-  // Fetch PostgreSQL data & listen to Firestore/LocalStorage sync
+  // Fetch PostgreSQL data & listen to Supabase Real-time updates
   useEffect(() => {
-    // NOTE: Firestore and Supabase are NOT used as leaderboard sources anymore.
-    // They contained AI-generated fake accounts that cannot be purged from client.
-    // Leaderboard only reads from purged localStorage + current logged-in user.
+    // 1. Initial fetch from Supabase PostgreSQL
+    fetchPostgresProfiles().then((profiles) => {
+      if (Array.isArray(profiles) && profiles.length > 0) {
+        setCloudProfiles(profiles);
+      }
+    });
+
+    fetchExamResultsFromPostgres(null, 250).then((exams) => {
+      if (Array.isArray(exams) && exams.length > 0) {
+        setCloudExams(exams);
+      }
+    });
+
+    // 2. Real-time PostgreSQL subscription
+    const unsubscribePostgres = listenToPostgresProfiles((profiles) => {
+      if (Array.isArray(profiles) && profiles.length > 0) {
+        setCloudProfiles(profiles);
+      }
+    });
+
+    // 3. Local storage and custom events sync
     const handleSync = () => {
       try {
         const rawHistory = localStorage.getItem('hsc_exam_history');
@@ -108,81 +135,93 @@ export default function LeaderboardPage({
     window.addEventListener('storage', handleSync);
 
     return () => {
+      if (unsubscribePostgres) unsubscribePostgres();
       window.removeEventListener('hsc_leaderboard_updated', handleSync);
       window.removeEventListener('hsc_user_stats_updated', handleSync);
       window.removeEventListener('storage', handleSync);
     };
   }, []);
 
-  // 1. Build leaderboard ONLY from purged localStorage + current user
-  // Cloud sources (Firestore, Supabase) are intentionally excluded —
-  // they contained fake AI-generated accounts (Zubair, Fariha, Tasnim, Tanvir, etc.)
+  // 1. Build leaderboard from live Supabase PostgreSQL + registeredUsers + current user
   const baseStudents = useMemo(() => {
     const userMap = new Map();
 
     const isRealStudent = (u) => {
       if (!u) return false;
-      const uName  = String(u.name  || '').toLowerCase().trim();
-      const uEmail = String(u.email || '').toLowerCase().trim();
-      const FAKE_PATTERNS = [
-        'tanvir', 'sadia', 'nafis', 'mehedi', 'fariha', 'zubair',
-        'abrar', 'tasnim', 'samiul', 'ishrat', 'candidate', 'guest', 'student'
-      ];
-      if (FAKE_PATTERNS.some((p) => uName.includes(p) || uEmail.includes(p))) {
-        return false;
-      }
-      return uName.includes('nasim') || uName.includes('riad') || (currentUser && uEmail === String(currentUser.email || '').toLowerCase());
+      const uRole = String(u.role || '').toLowerCase();
+      if (uRole === 'admin') return false;
+      const uName = String(u.name || '').trim();
+      const uEmail = String(u.email || '').trim();
+      return Boolean(uName || uEmail);
     };
 
     const addUser = (u) => {
-      if (!u || u.role?.toLowerCase() === 'admin') return;
       if (!isRealStudent(u)) return;
-      const key = (u.email || u.id || u.name || '').toLowerCase();
+      const key = (u.email || u.id || u.name || '').toLowerCase().trim();
       if (!key) return;
-      userMap.set(key, { ...(userMap.get(key) || {}), ...u });
+      const existing = userMap.get(key) || {};
+      userMap.set(key, {
+        ...existing,
+        ...u,
+        name: u.name || existing.name || 'Student',
+        email: u.email || existing.email || '',
+        college: u.college || existing.college || '',
+        batch: u.hscBatch || u.hsc_batch || existing.batch || 'HSC 2026',
+        streak: Number(u.streak ?? existing.streak ?? 0),
+        points: Number(u.total_xp ?? u.points ?? u.xp ?? existing.points ?? 0),
+        total_xp: Number(u.total_xp ?? u.points ?? u.xp ?? existing.total_xp ?? 0),
+        accuracy: Number(u.accuracy ?? existing.accuracy ?? 0)
+      });
     };
 
-    // Only from App-state registered users (already purged) + localStorage
+    // 1. Supabase PostgreSQL profiles (Authoritative database backend)
+    if (Array.isArray(cloudProfiles)) cloudProfiles.forEach(addUser);
+
+    // 2. App-state registered users
     if (Array.isArray(registeredUsers)) registeredUsers.forEach(addUser);
 
+    // 3. LocalStorage registered users cache
     try {
       const saved = localStorage.getItem('hsc_registered_users');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) {
-          const cleaned = parsed.filter(isRealStudent);
-          localStorage.setItem('hsc_registered_users', JSON.stringify(cleaned));
-          cleaned.forEach(addUser);
-        }
+        if (Array.isArray(parsed)) parsed.forEach(addUser);
       }
     } catch (e) {}
 
-    // Current logged-in user (their own real data)
+    // 4. Current logged-in user (their own real data)
     if (currentUser && currentUser.role?.toLowerCase() !== 'admin') {
-      const userKey = (currentUser.email || currentUser.id || currentUser.name || '').toLowerCase();
+      const userKey = (currentUser.email || currentUser.id || currentUser.name || '').toLowerCase().trim();
       if (userKey) {
         const prev = userMap.get(userKey) || {};
         userMap.set(userKey, {
           ...prev,
           ...currentUser,
+          points: Number(currentUser.total_xp ?? currentUser.points ?? currentUser.xp ?? prev.points ?? 0),
+          total_xp: Number(currentUser.total_xp ?? currentUser.points ?? currentUser.xp ?? prev.total_xp ?? 0),
           masteredWordsCount: Math.max(currentUser.masteredWordsCount || 0, countRealMasteredWords())
         });
       }
     }
 
-    // Only show students who have actually earned XP
+    // Combine local exam history and Supabase exam results
+    const combinedExams = [
+      ...(Array.isArray(examHistory) ? examHistory : []),
+      ...(Array.isArray(cloudExams) ? cloudExams : [])
+    ];
+
+    // Build student list
     const studentList = Array.from(userMap.values())
-      .filter((st) => {
-        if (!st || !st.name) return false;
-        const pts = Number(st.points || 0);
-        return pts > 0;
-      })
+      .filter((st) => st && st.name && st.role?.toLowerCase() !== 'admin')
       .map((st) => {
-        const pointsData = calculateStudentTimeframePoints(st, examHistory);
+        const pointsData = calculateStudentTimeframePoints(st, combinedExams);
         const accuracy   = Number(st.accuracy) || 0;
         const streak     = Number(st.streak)   || 0;
         const mastered   = Number(st.masteredWordsCount) || 0;
-        const allTimePoints = pointsData.allTime;
+        const allTimePoints = Math.max(
+          Number(st.total_xp ?? st.points ?? st.xp ?? 0),
+          Number(pointsData.allTime || 0)
+        );
         const league = getUserLeague(allTimePoints);
         const safeAvatar = st.avatar && !st.avatar.includes('unsplash') ? st.avatar : '';
 
@@ -206,7 +245,7 @@ export default function LeaderboardPage({
       });
 
     return studentList;
-  }, [registeredUsers, currentUser, examHistory]);
+  }, [cloudProfiles, registeredUsers, currentUser, examHistory, cloudExams]);
 
   // 2. Count active students per league
   const leagueCounts = useMemo(() => {

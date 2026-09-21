@@ -15,6 +15,7 @@ import {
   Phone
 } from 'lucide-react';
 import { saveUserToFirestore, signInWithGoogle, fetchAndHydrateUserLearningState } from '../services/firebase';
+import { syncUserProfileToPostgres } from '../services/supabase';
 
 export default function AuthModal({ 
   isOpen, 
@@ -56,6 +57,9 @@ export default function AuthModal({
       setLoading(false);
 
       if (res && res.success && res.user) {
+        // Sync to Supabase PostgreSQL profiles table
+        syncUserProfileToPostgres(res.user);
+
         // If user is Admin, bypass onboarding directly
         if (res.user.role === 'admin') {
           if (onAuthSuccess) onAuthSuccess(res.user);
@@ -73,6 +77,7 @@ export default function AuthModal({
         } else {
           // Returning student with completed profile
           await fetchAndHydrateUserLearningState(res.user.id || res.user.uid);
+          syncUserProfileToPostgres(res.user);
           if (onAuthSuccess) onAuthSuccess(res.user);
           onClose();
         }
@@ -102,11 +107,14 @@ export default function AuthModal({
       name: onboardingName.trim(),
       phone: onboardingPhone.trim(),
       college: onboardingCollege.trim(),
-      hscBatch: onboardingBatch
+      hscBatch: onboardingBatch,
+      role: 'student'
     };
 
     setLoading(true);
+    // Persist to Cloud Firestore & Supabase PostgreSQL
     await saveUserToFirestore(completedProfile);
+    await syncUserProfileToPostgres(completedProfile);
 
     // Update local storage and app state
     try {
@@ -156,6 +164,7 @@ export default function AuthModal({
         points: 0,
         streak: 0
       };
+      syncUserProfileToPostgres(adminUser);
       if (onAuthSuccess) onAuthSuccess(adminUser);
       onClose();
       setView('google');

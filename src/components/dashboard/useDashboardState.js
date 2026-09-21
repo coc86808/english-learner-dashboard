@@ -295,15 +295,15 @@ export function useDashboardState(initialUser = null, lang = 'en', callbacks = {
         if (Array.isArray(registered) && registered.length > 0) {
           return registered
             .filter((u) => u.role !== 'Admin' && u.role !== 'admin')
-            .sort((a, b) => (Number(b.points) || 0) - (Number(a.points) || 0))
+            .sort((a, b) => (Number(b.total_xp ?? b.points ?? b.xp ?? 0)) - (Number(a.total_xp ?? a.points ?? a.xp ?? 0)))
             .slice(0, 3)
             .map((u, idx) => ({
               id: u.id || `peer-${idx}`,
               rank: idx + 1,
               name: u.name || 'Student',
               college: u.college || '',
-              points: Number(u.points) || 0,
-              xp: Number(u.points) || 0,
+              points: Number(u.total_xp ?? u.points ?? u.xp ?? 0),
+              xp: Number(u.total_xp ?? u.xp ?? u.points ?? 0),
               streak: Number(u.streak) || 0,
               avatarInitials: (u.name || 'S').split(' ').map((n) => n[0]).join('').slice(0, 2).toUpperCase(),
               avatarBg: ['bg-gradient-to-br from-amber-400 to-amber-600 text-white', 'bg-gradient-to-br from-slate-400 to-slate-600 text-white', 'bg-gradient-to-br from-orange-400 to-orange-600 text-white'][idx] || 'bg-gradient-to-br from-slate-500 to-slate-700 text-white'

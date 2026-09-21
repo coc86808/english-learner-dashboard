@@ -34,7 +34,7 @@ import { soundManager } from '../utils/soundEffects';
 import CertificateModal from './CertificateModal';
 import { smartInterleaveQuestions, hscVocabularyList, getWordUnitSources } from '../data/questions/hscQuestionsData';
 import { recordCompletedExam, syncLearningStateToCloudDebounced, awardWeakWordMasteryXP } from '../services/scoreManager';
-import { recordWordPracticeToPostgres } from '../services/supabase';
+import { recordWordPracticeToPostgres, syncWeakWordToPostgres } from '../services/supabase';
 
 export default function HSCExamInterface({
   questions = [],
@@ -370,6 +370,14 @@ export default function HSCExamInterface({
         let currentWeakList = weakRaw ? JSON.parse(weakRaw) : [];
         if (!Array.isArray(currentWeakList)) currentWeakList = [];
 
+        // Resolve authenticated student email for cloud persistence
+        let userEmail = 'student@hsc2026.edu';
+        try {
+          const authUserRaw = localStorage.getItem('hsc_auth_user');
+          const authUser = authUserRaw ? JSON.parse(authUserRaw) : null;
+          userEmail = authUser?.email || studentInfo?.email || 'student@hsc2026.edu';
+        } catch (e) {}
+
         if (isCorrect) {
           wordPerf.correctCount = (wordPerf.correctCount || 0) + 1;
           wordPerf.totalCorrect = (wordPerf.totalCorrect || 0) + 1;
@@ -385,6 +393,16 @@ export default function HSCExamInterface({
               localStorage.setItem('hsc_weak_words', JSON.stringify(updatedWeak));
               awardWeakWordMasteryXP(wordKey);
               window.dispatchEvent(new CustomEvent('hsc_weak_words_updated', { detail: { word: wordKey, action: 'removed' } }));
+
+              // Supabase PostgreSQL Recovery / Mastery Sync
+              if (userEmail) {
+                syncWeakWordToPostgres(userEmail, {
+                  word: wordKey,
+                  isWeak: false,
+                  correctCount: wordPerf.correctCount,
+                  mistakeCount: 0
+                });
+              }
 
               setWeakWordToast({
                 type: 'mastered',
@@ -423,6 +441,15 @@ export default function HSCExamInterface({
               localStorage.setItem('hsc_weak_words', JSON.stringify(updatedWeak));
               window.dispatchEvent(new CustomEvent('hsc_weak_words_updated', { detail: { word: wordKey, action: 'added' } }));
 
+              // Supabase PostgreSQL Weak Word Sync
+              if (userEmail) {
+                syncWeakWordToPostgres(userEmail, {
+                  ...vocabItem,
+                  isWeak: true,
+                  mistakeCount: wordPerf.mistakeCount
+                });
+              }
+
               setWeakWordToast({
                 type: 'weak',
                 word: wordKey,
@@ -446,7 +473,6 @@ export default function HSCExamInterface({
           syncLearningStateToCloudDebounced(uId);
 
           // PostgreSQL Real-Time Word Practice Analytics (times practiced, success/failure rate, time spent)
-          const userEmail = authUser?.email || studentInfo?.email || 'tanvir.hsc26@gmail.com';
           recordWordPracticeToPostgres({
             userEmail,
             word: wordKey,
@@ -498,6 +524,18 @@ export default function HSCExamInterface({
       localStorage.setItem(`hsc_saved_practice_${activeSessionKey}`, JSON.stringify(saveData));
       localStorage.setItem('hsc_last_saved_session_key', activeSessionKey);
       window.dispatchEvent(new CustomEvent('hsc_practice_saved', { detail: saveData }));
+
+      // If any questions were completed, record session progress to database
+      if (doneCount > 0 || mistakeCount > 0) {
+        recordCompletedExam({
+          totalQuestions: Math.max(doneCount + mistakeCount, 1),
+          doneCount,
+          mistakeCount,
+          timeSpentSeconds: timerSeconds,
+          unit: currentQ?.unit || 'HSC English',
+          lesson: currentQ?.category || 'Practice Session'
+        });
+      }
     } catch (e) {
       console.warn('Failed to save exam progress on exit:', e);
     }

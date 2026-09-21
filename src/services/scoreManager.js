@@ -318,6 +318,7 @@ export function recordCompletedExam({
     const updatedUser = {
       ...currentUser,
       points: newPoints,
+      total_xp: newPoints,
       testsCompleted: newTestsCompleted,
       masteredWordsCount: newMasteredCount,
       streak: Math.max(0, newStreak),
@@ -405,7 +406,10 @@ export function calculateStudentTimeframePoints(user, examHistory = []) {
   const userId = user.id || user.uid;
 
   const userExams = Array.isArray(examHistory)
-    ? examHistory.filter((e) => (e.userEmail && e.userEmail.toLowerCase() === userEmail) || e.userId === userId)
+    ? examHistory.filter((e) => {
+        const examEmail = (e.userEmail || e.user_email || '').toLowerCase().trim();
+        return (examEmail && examEmail === userEmail) || (e.userId && e.userId === userId);
+      })
     : [];
 
   const now = Date.now();
@@ -417,14 +421,14 @@ export function calculateStudentTimeframePoints(user, examHistory = []) {
   let allTimeFromExams = 0;
 
   userExams.forEach((exam) => {
-    const xp = Number(exam.earnedXP) || 100;
-    const ts = Number(exam.timestamp) || new Date(exam.isoDate || 0).getTime();
+    const xp = Number(exam.earnedXP ?? (exam.score ? Number(exam.score) * 10 : 0) ?? 100);
+    const ts = Number(exam.timestamp) || new Date(exam.isoDate || exam.created_at || 0).getTime() || now;
     if (ts >= oneWeekAgo) weeklyPoints += xp;
     if (ts >= oneMonthAgo) monthlyPoints += xp;
     allTimeFromExams += xp;
   });
 
-  const baseAllTime = Number(user.points) || allTimeFromExams || 0;
+  const baseAllTime = Number(user.total_xp ?? user.points ?? user.xp ?? 0) || allTimeFromExams || 0;
 
   // If user has base points from profile, ensure weekly and monthly are proportionally authentic
   const finalWeekly = weeklyPoints > 0 ? weeklyPoints : Math.round(baseAllTime * 0.35);

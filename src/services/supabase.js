@@ -199,13 +199,18 @@ export async function fetchWeakWordsFromPostgres(userEmail) {
 export async function recordExamResultToPostgres(result) {
   if (!supabase || !result) return null;
   try {
+    const totalQ = Number(result.totalQuestions || result.total_questions || 10);
+    const scoreVal = Number(result.score ?? result.doneCount ?? result.correctCount ?? 0);
+    const accuracyVal = Number(result.percentage ?? result.accuracy ?? (totalQ > 0 ? Math.round((scoreVal / totalQ) * 100) : 0));
+    const timeSpentVal = Number(result.timeSpentSeconds ?? result.time_spent_seconds ?? result.timeSpent ?? 0);
+
     const payload = {
-      user_email: (result.userEmail || result.email || 'anonymous').toLowerCase().trim(),
+      user_email: (result.userEmail || result.email || 'student@hsc.edu').toLowerCase().trim(),
       exam_title: result.examTitle || result.unit || 'Practice Exam',
-      score: Number(result.score || 0),
-      total_questions: Number(result.totalQuestions || 0),
-      percentage: Number(result.percentage || 0),
-      time_spent_seconds: Number(result.timeSpent || 0),
+      score: scoreVal,
+      total_questions: totalQ,
+      percentage: accuracyVal,
+      time_spent_seconds: timeSpentVal,
       created_at: new Date().toISOString()
     };
 
@@ -239,6 +244,34 @@ export async function recordExamResultToPostgres(result) {
   } catch (err) {
     console.warn('recordExamResultToPostgres error:', err);
     return null;
+  }
+}
+
+/**
+ * 5b. Fetch Exam Results from PostgreSQL
+ */
+export async function fetchExamResultsFromPostgres(userEmail = null, limit = 100) {
+  if (!supabase) return [];
+  try {
+    let query = supabase
+      .from('exam_results')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(limit);
+
+    if (userEmail) {
+      query = query.eq('user_email', userEmail.toLowerCase().trim());
+    }
+
+    const { data, error } = await query;
+    if (error) {
+      console.warn('fetchExamResultsFromPostgres error:', error.message);
+      return [];
+    }
+    return data || [];
+  } catch (err) {
+    console.warn('fetchExamResultsFromPostgres exception:', err);
+    return [];
   }
 }
 
