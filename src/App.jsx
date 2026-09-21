@@ -76,6 +76,7 @@ import FAQPage from './components/pages/FAQPage';
 import { usersList } from './data/users';
 import { hscQuestionsList, hscVocabularyList } from './data/questions';
 import { hscUnits } from './data/hscUnitsData';
+import { formatUnitSlug, formatLessonSlug } from './utils/routeHelpers';
 
 // Services & Analytics
 import { Analytics } from '@vercel/analytics/react';
@@ -901,9 +902,9 @@ export default function App() {
                       lang={lang}
                       onOpenAllSubjects={() => navigate('/exam')}
                       onSelectLesson={(lesson, unit) => {
-                        setSelectedExamUnit(unit);
-                        setSelectedExamLesson(lesson);
-                        setIsUnitLessonModalOpen(true);
+                        const uSlug = formatUnitSlug(unit);
+                        const lSlug = formatLessonSlug(lesson);
+                        navigate(`/exam/${uSlug}/${lSlug}`);
                       }}
                     />
 
@@ -1028,9 +1029,9 @@ export default function App() {
                 onStartExam={(unitId, lessonId) => {
                   const targetUnit = hscUnits.find(u => u.id === unitId) || hscUnits[0];
                   const targetLesson = targetUnit?.lessons?.find(l => l.id === lessonId) || targetUnit?.lessons?.[0];
-                  setSelectedExamUnit(targetUnit);
-                  setSelectedExamLesson(targetLesson);
-                  setIsUnitLessonModalOpen(true);
+                  const uSlug = formatUnitSlug(targetUnit);
+                  const lSlug = formatLessonSlug(targetLesson);
+                  navigate(`/exam/${uSlug}/${lSlug}`);
                 }}
                 onNavigate={navigate}
               />
@@ -1045,8 +1046,8 @@ export default function App() {
               weakWords={weakWords}
               navigate={navigate}
               onStartExam={(unit) => {
-                setSelectedExamUnit(unit);
-                setIsUnitLessonModalOpen(true);
+                const uSlug = formatUnitSlug(unit);
+                navigate(`/exam/${uSlug}`);
               }}
             />
           )}
@@ -1092,8 +1093,8 @@ export default function App() {
                 onNavigate={navigate}
                 currentUser={currentUser}
                 onSelectUnit={(unit) => {
-                  setSelectedExamUnit(unit);
-                  setIsUnitLessonModalOpen(true);
+                  const uSlug = formatUnitSlug(unit);
+                  navigate(`/exam/${uSlug}`);
                 }}
               />
             </div>
@@ -1141,8 +1142,8 @@ export default function App() {
                 currentUser={currentUser}
                 navigate={navigate}
                 onStartExam={(unit) => {
-                  setSelectedExamUnit(unit);
-                  setIsUnitLessonModalOpen(true);
+                  const uSlug = formatUnitSlug(unit);
+                  navigate(`/exam/${uSlug}`);
                 }}
               />
             </div>
@@ -1153,8 +1154,8 @@ export default function App() {
             <div className="max-w-4xl mx-auto space-y-6">
               <RecentExams
                 lang={lang}
-                onOpenAllExams={() => setIsUnitLessonModalOpen(true)}
-                onStartExam={() => setIsUnitLessonModalOpen(true)}
+                onOpenAllExams={() => navigate('/exam')}
+                onStartExam={() => navigate('/exam')}
               />
             </div>
           )}
@@ -1243,6 +1244,7 @@ export default function App() {
         initialUnit={selectedExamUnit}
         initialLesson={selectedExamLesson}
         lang={lang}
+        navigate={navigate}
       />
 
       <QuickPracticeModal
@@ -1257,9 +1259,9 @@ export default function App() {
         onClose={() => setIsQuestionBankOpen(false)}
         lang={lang}
         onSelectUnit={(unit) => {
-          setSelectedExamUnit(unit);
-          setSelectedExamLesson(null);
-          setIsUnitLessonModalOpen(true);
+          setIsQuestionBankOpen(false);
+          const uSlug = formatUnitSlug(unit);
+          navigate(`/exam/${uSlug}`);
         }}
       />
 

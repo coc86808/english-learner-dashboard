@@ -22,6 +22,7 @@ import {
 } from 'lucide-react';
 import { hscUnits } from '../data/hscUnitsData';
 import { hscQuestionsList, smartInterleaveQuestions, matchesUnitAndLesson } from '../data/questions/hscQuestionsData';
+import { formatUnitSlug, formatLessonSlug } from '../utils/routeHelpers';
 import HSCExamInterface from './HSCExamInterface';
 import TextbookReaderModal from './TextbookReaderModal';
 import ErrorBoundary from './ErrorBoundary';
@@ -31,7 +32,8 @@ export default function UnitLessonExamModal({
   onClose,
   initialUnit = null,
   initialLesson = null,
-  lang = 'bn'
+  lang = 'bn',
+  navigate = null
 }) {
   const [selectedUnit, setSelectedUnit] = useState(initialUnit || hscUnits[0]);
   const [selectedLesson, setSelectedLesson] = useState(initialLesson || null);
@@ -385,36 +387,36 @@ export default function UnitLessonExamModal({
                   </p>
                 </div>
 
-                {/* 4 Category Cards with Available Question Counts */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                {/* 4 Category Cards (Compact 2x2 Grid, Clean No Question 0 Badge) */}
+                <div className="grid grid-cols-2 gap-2 sm:gap-3.5">
                   {[
                     {
                       id: 'synonyms',
-                      label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
+                      label: isBn ? 'সমার্থক শব্দ' : 'Synonyms',
+                      sub: isBn ? '(Synonyms)' : '',
                       icon: '🔄',
-                      desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
-                      available: hscQuestionsList.filter(q => q.category === 'synonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                      desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs'
                     },
                     {
                       id: 'antonyms',
-                      label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
+                      label: isBn ? 'বিপরীত শব্দ' : 'Antonyms',
+                      sub: isBn ? '(Antonyms)' : '',
                       icon: '⚡',
-                      desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
-                      available: hscQuestionsList.filter(q => q.category === 'antonyms' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                      desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs'
                     },
                     {
                       id: 'english_meaning',
-                      label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
+                      label: isBn ? 'ইংরেজি অর্থ' : 'In English',
+                      sub: isBn ? '(Meaning)' : '',
                       icon: '📖',
-                      desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
-                      available: hscQuestionsList.filter(q => q.category === 'english_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                      desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs'
                     },
                     {
                       id: 'bangla_meaning',
-                      label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
+                      label: isBn ? 'বাংলা অর্থ' : 'In Bangla',
+                      sub: isBn ? '(Meaning)' : '',
                       icon: '🇧🇩',
-                      desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
-                      available: hscQuestionsList.filter(q => q.category === 'bangla_meaning' && q.unit && (q.unit.toLowerCase().includes(selectedUnit.unitNumber.toLowerCase() + ':') || new RegExp(`\\b${selectedUnit.unitNumber}\\b`, 'i').test(q.unit) || q.unit.toLowerCase().includes(selectedUnit.unitTitle.toLowerCase())) && (selectedLesson.id === 'all' || q.unit.toLowerCase().includes(selectedLesson.number.toLowerCase()) || q.unit.toLowerCase().includes(selectedLesson.title.toLowerCase()))).length
+                      desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options'
                     }
                   ].map((cat) => {
                     const isSelected = selectedCategories.includes(cat.id);
@@ -422,22 +424,27 @@ export default function UnitLessonExamModal({
                       <button
                         key={cat.id}
                         onClick={() => toggleCategory(cat.id)}
-                        className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3 relative overflow-hidden group ${
+                        className={`p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between relative overflow-hidden group ${
                           isSelected
-                            ? 'bg-gradient-to-br from-emerald-950/60 to-[#0e1624] border-emerald-500/80 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/30'
+                            ? 'bg-gradient-to-br from-emerald-950/60 to-[#0e1624] border-emerald-500/80 shadow-md shadow-emerald-950/40 ring-1 ring-emerald-500/30'
                             : 'bg-[#0b0e17] border-[#1f2738] text-slate-400 hover:bg-[#131926] hover:border-slate-600'
                         }`}
                       >
-                        <div className="flex items-start justify-between gap-3">
-                          <div className="flex items-center gap-3">
-                            <span className="text-2xl shrink-0 p-2 rounded-xl bg-[#172030] border border-[#232f45]">
+                        <div className="flex items-start justify-between gap-1.5 sm:gap-3 w-full">
+                          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                            <span className="text-base sm:text-2xl shrink-0 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-[#172030] border border-[#232f45]">
                               {cat.icon}
                             </span>
-                            <div>
-                              <span className={`block text-sm sm:text-base font-bold ${isSelected ? 'text-emerald-300' : 'text-white'}`}>
+                            <div className="min-w-0">
+                              <span className={`block text-xs sm:text-sm md:text-base font-bold truncate ${isSelected ? 'text-emerald-300' : 'text-white'}`}>
                                 {cat.label}
                               </span>
-                              <span className="block text-xs text-slate-400 mt-0.5 leading-snug">
+                              {cat.sub && (
+                                <span className="text-[10px] sm:text-xs font-medium text-slate-400 block truncate">
+                                  {cat.sub}
+                                </span>
+                              )}
+                              <span className="hidden sm:block text-xs text-slate-400 mt-0.5 leading-snug">
                                 {cat.desc}
                               </span>
                             </div>
@@ -445,7 +452,7 @@ export default function UnitLessonExamModal({
 
                           {/* Checkbox */}
                           <div
-                            className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs shrink-0 transition-all ${
+                            className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full border flex items-center justify-center text-[10px] sm:text-xs shrink-0 transition-all ${
                               isSelected
                                 ? 'bg-emerald-500 border-emerald-400 text-white font-black scale-110 shadow-md shadow-emerald-500/50'
                                 : 'border-slate-600 bg-transparent'
@@ -453,20 +460,6 @@ export default function UnitLessonExamModal({
                           >
                             {isSelected ? '✓' : ''}
                           </div>
-                        </div>
-
-                        {/* Available Questions Count Badge */}
-                        <div className="pt-2 border-t border-[#1a2334] flex items-center justify-between text-xs">
-                          <span className="text-slate-400 font-medium">
-                            {isBn ? 'উপলব্ধ প্রশ্ন:' : 'Available Questions:'}
-                          </span>
-                          <span className={`font-bold px-2 py-0.5 rounded-md ${
-                            cat.available > 0
-                              ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
-                              : 'bg-slate-800 text-slate-500'
-                          }`}>
-                            {cat.available} {isBn ? 'টি প্রশ্ন' : 'Questions'}
-                          </span>
                         </div>
                       </button>
                     );
@@ -501,9 +494,24 @@ export default function UnitLessonExamModal({
                 </div>
               </div>
 
-              {/* Launch Practice Exam Button */}
+              {/* Launch Practice Exam Button — Redirects to Dedicated Full-Page Exam */}
               <button
-                onClick={() => setIsExamActive(true)}
+                onClick={() => {
+                  if (selectedUnit && selectedLesson) {
+                    const uSlug = formatUnitSlug(selectedUnit);
+                    const lSlug = formatLessonSlug(selectedLesson);
+                    const target = `/exam/${uSlug}/${lSlug}`;
+                    if (typeof navigate === 'function') {
+                      navigate(target);
+                    } else if (typeof window !== 'undefined') {
+                      window.history.pushState({ path: target }, '', target);
+                      window.dispatchEvent(new PopStateEvent('popstate'));
+                    }
+                    onClose();
+                  } else {
+                    setIsExamActive(true);
+                  }
+                }}
                 className="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black text-base sm:text-lg flex items-center justify-center gap-3 shadow-xl shadow-emerald-950/70 transition-all cursor-pointer active:scale-[0.98] hover:shadow-emerald-900/90"
               >
                 <Play size={20} className="fill-current" />

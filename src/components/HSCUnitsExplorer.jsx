@@ -381,13 +381,13 @@ export default function HSCUnitsExplorer({
               </div>
 
               {/* Question Count Pill Selectors Grid (Presets + Custom Card) */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2.5 pt-1">
+              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-2 sm:gap-2.5 pt-1">
                 {[
-                  { value: 10, label: isBn ? '১০টি প্রশ্ন' : '10 Questions', badge: isBn ? '★ ডিফল্ট' : '★ Default' },
-                  { value: 20, label: isBn ? '২০টি প্রশ্ন' : '20 Questions', badge: isBn ? 'স্ট্যান্ডার্ড' : 'Standard' },
-                  { value: 30, label: isBn ? '৩০টি প্রশ্ন' : '30 Questions', badge: isBn ? 'মডেল টেস্ট' : 'Model Test' },
-                  { value: 50, label: isBn ? '৫০টি প্রশ্ন' : '50 Questions', badge: isBn ? 'মেগা টেস্ট' : 'Mega Test' },
-                  { value: 'all', label: isBn ? `সকল প্রশ্ন` : `All Questions`, badge: `${allAvailableQuestions.length} ${isBn ? 'টি' : 'MCQs'}` }
+                  { value: 10, label: isBn ? '১০টি' : '10 Qs', fullLabel: isBn ? '১০টি প্রশ্ন' : '10 Questions', badge: isBn ? '★ ডিফল্ট' : '★ Default' },
+                  { value: 20, label: isBn ? '২০টি' : '20 Qs', fullLabel: isBn ? '২০টি প্রশ্ন' : '20 Questions', badge: isBn ? 'স্ট্যান্ডার্ড' : 'Standard' },
+                  { value: 30, label: isBn ? '৩০টি' : '30 Qs', fullLabel: isBn ? '৩০টি প্রশ্ন' : '30 Questions', badge: isBn ? 'মডেল' : 'Model' },
+                  { value: 50, label: isBn ? '৫০টি' : '50 Qs', fullLabel: isBn ? '৫০টি প্রশ্ন' : '50 Questions', badge: isBn ? 'মেগা' : 'Mega' },
+                  { value: 'all', label: isBn ? `সকল` : `All`, fullLabel: isBn ? `সকল প্রশ্ন` : `All Questions`, badge: `${allAvailableQuestions.length}` }
                 ].map((opt) => {
                   const isSelected = !isCustomMode && questionLimit === opt.value;
                   return (
@@ -397,16 +397,17 @@ export default function HSCUnitsExplorer({
                         setIsCustomMode(false);
                         setQuestionLimit(opt.value);
                       }}
-                      className={`p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-1 ${
+                      className={`p-2 sm:p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-0.5 sm:gap-1 ${
                         isSelected
-                          ? 'bg-gradient-to-b from-emerald-500/30 to-emerald-950/60 border-emerald-400 text-white shadow-lg shadow-emerald-950/50 ring-2 ring-emerald-500/40 scale-[1.03]'
+                          ? 'bg-gradient-to-b from-emerald-500/30 to-emerald-950/60 border-emerald-400 text-white shadow-md shadow-emerald-950/50 ring-2 ring-emerald-500/40 scale-[1.02]'
                           : 'bg-[#121927] border-[#1f2a3e] text-slate-300 hover:bg-[#182234] hover:border-slate-500'
                       }`}
                     >
                       <span className={`text-xs sm:text-sm font-black ${isSelected ? 'text-emerald-300' : 'text-slate-200'}`}>
-                        {opt.label}
+                        <span className="sm:hidden">{opt.label}</span>
+                        <span className="hidden sm:inline">{opt.fullLabel}</span>
                       </span>
-                      <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded ${
+                      <span className={`text-[9px] sm:text-[10px] font-bold px-1.5 py-0.2 rounded ${
                         isSelected ? 'bg-emerald-500 text-slate-950' : 'bg-[#1a2334] text-slate-400'
                       }`}>
                         {opt.badge}
@@ -421,41 +422,41 @@ export default function HSCUnitsExplorer({
                     setIsCustomMode(true);
                     setQuestionLimit(Number(customInputVal) || 10);
                   }}
-                  className={`p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-1 ${
+                  className={`p-2 sm:p-3 rounded-xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-0.5 sm:gap-1 ${
                     isCustomMode
-                      ? 'bg-gradient-to-b from-cyan-500/30 to-blue-950/60 border-cyan-400 text-white shadow-lg shadow-cyan-950/50 ring-2 ring-cyan-500/40 scale-[1.03]'
+                      ? 'bg-gradient-to-b from-cyan-500/30 to-blue-950/60 border-cyan-400 text-white shadow-md shadow-cyan-950/50 ring-2 ring-cyan-500/40 scale-[1.02]'
                       : 'bg-[#121927] border-[#1f2a3e] text-slate-300 hover:bg-[#182234] hover:border-slate-500'
                   }`}
                 >
                   <span className={`text-xs sm:text-sm font-black flex items-center gap-1 ${isCustomMode ? 'text-cyan-300' : 'text-slate-200'}`}>
-                    <PenTool size={12} />
-                    <span>{isBn ? 'কাস্টম সংখ্যা' : 'Custom'}</span>
+                    <PenTool size={11} />
+                    <span>{isBn ? 'কাস্টম' : 'Custom'}</span>
                   </span>
-                  <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded ${
+                  <span className={`text-[9px] sm:text-[10px] font-bold px-1.5 py-0.2 rounded ${
                     isCustomMode ? 'bg-cyan-400 text-slate-950' : 'bg-[#1a2334] text-cyan-400'
                   }`}>
-                    {isCustomMode ? `${customInputVal || 0} ${isBn ? 'টি' : 'MCQs'}` : (isBn ? 'নিজে লিখুন' : 'Type here')}
+                    {isCustomMode ? `${customInputVal || 0}` : (isBn ? 'লিখুন' : 'Input')}
                   </span>
                 </button>
               </div>
 
               {/* Interactive Custom Number Input Box with Increment / Decrement */}
-              <div className="pt-2 border-t border-[#1a2334] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-slate-300 flex items-center gap-1.5">
-                    <PenTool size={13} className="text-cyan-400" />
-                    <span>{isBn ? 'নির্দিষ্ট সংখ্যা লিখুন (Custom Amount):' : 'Or Type Custom Amount:'}</span>
+              <div className="pt-2 border-t border-[#1a2334] flex items-center justify-between gap-2 flex-wrap">
+                <div className="flex items-center gap-1.5">
+                  <PenTool size={12} className="text-cyan-400" />
+                  <span className="text-[11px] sm:text-xs font-bold text-slate-300">
+                    {isBn ? 'কাস্টম সংখ্যা:' : 'Custom Amount:'}
                   </span>
                 </div>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5">
                   {/* Minus button */}
                   <button
                     onClick={() => handleAdjustCustom(-5)}
-                    className="w-8 h-8 rounded-lg bg-[#141d2c] hover:bg-[#1e2a3f] border border-[#24334a] text-slate-300 hover:text-white flex items-center justify-center font-bold cursor-pointer transition-all active:scale-95"
+                    className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#141d2c] hover:bg-[#1e2a3f] border border-[#24334a] text-slate-300 hover:text-white flex items-center justify-center font-bold cursor-pointer transition-all active:scale-95"
                     title="-5 questions"
                   >
-                    <Minus size={14} />
+                    <Minus size={13} />
                   </button>
 
                   {/* Input field */}
@@ -466,27 +467,24 @@ export default function HSCUnitsExplorer({
                       value={customInputVal}
                       onChange={handleCustomInputChange}
                       placeholder="15"
-                      className={`w-20 px-2.5 py-1.5 rounded-xl bg-[#080d16] border text-center text-sm font-black text-white outline-none transition-all shadow-inner ${
+                      className={`w-16 sm:w-20 px-2 py-1 rounded-lg sm:rounded-xl bg-[#080d16] border text-center text-xs sm:text-sm font-black text-white outline-none transition-all shadow-inner ${
                         isCustomMode
-                          ? 'border-cyan-400 ring-2 ring-cyan-500/30 text-cyan-300'
+                          ? 'border-cyan-400 ring-1 ring-cyan-500/30 text-cyan-300'
                           : 'border-[#24334a] focus:border-cyan-400 text-slate-200'
                       }`}
                     />
-                    <span className="absolute -top-2 right-1 text-[9px] font-bold text-slate-500 select-none">
-                      MCQ
-                    </span>
                   </div>
 
                   {/* Plus button */}
                   <button
                     onClick={() => handleAdjustCustom(5)}
-                    className="w-8 h-8 rounded-lg bg-[#141d2c] hover:bg-[#1e2a3f] border border-[#24334a] text-slate-300 hover:text-white flex items-center justify-center font-bold cursor-pointer transition-all active:scale-95"
+                    className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#141d2c] hover:bg-[#1e2a3f] border border-[#24334a] text-slate-300 hover:text-white flex items-center justify-center font-bold cursor-pointer transition-all active:scale-95"
                     title="+5 questions"
                   >
-                    <Plus size={14} />
+                    <Plus size={13} />
                   </button>
 
-                  <span className="text-xs text-slate-400 font-medium ml-1">
+                  <span className="text-[11px] sm:text-xs text-slate-400 font-medium ml-1">
                     {isBn ? `(সর্বোচ্চ ${allAvailableQuestions.length}টি)` : `(Max ${allAvailableQuestions.length})`}
                   </span>
                 </div>
@@ -494,51 +492,52 @@ export default function HSCUnitsExplorer({
             </div>
 
             {/* 2. CATEGORY SELECTION SECTION */}
-            <div className="space-y-3">
-              <div>
-                <div className="flex items-center gap-2.5 mb-1.5">
-                  <span className="text-xl">🎯</span>
-                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight">
-                    {isBn ? 'অনুশীলনের ধরন / ক্যাটাগরি বেছে নিন' : 'Select Practice Question Categories'}
+            <div className="space-y-2.5 sm:space-y-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="text-base sm:text-xl">🎯</span>
+                  <h3 className="text-sm sm:text-lg font-bold text-white tracking-tight">
+                    {isBn ? 'অনুশীলনের ধরন বেছে নিন' : 'Select Practice Categories'}
                   </h3>
                 </div>
-                <p className="text-xs text-slate-400 leading-relaxed">
-                  {isBn
-                    ? 'নিচের ক্যাটাগরিগুলো থেকে পছন্দমতো বিষয় নির্বাচন করুন। প্রতিটি ক্যাটাগরির মোট প্রশ্ন নিচে প্রদর্শিত আছে।'
-                    : 'Select practice categories below. Individual category question counts are shown.'}
-                </p>
+                <button
+                  onClick={selectAllCategories}
+                  className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold underline underline-offset-2 cursor-pointer"
+                >
+                  {isBn ? 'সব সিলেক্ট' : 'Select All'}
+                </button>
               </div>
 
-              {/* 4 Interactive Category Cards with Available Question Counts */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              {/* 4 Interactive Category Cards (Compact 2x2 Grid on Mobile, No Question 0 Badge) */}
+              <div className="grid grid-cols-2 gap-2 sm:gap-3.5">
                 {[
                   {
                     id: 'synonyms',
-                    label: isBn ? 'সমার্থক শব্দ (Synonyms)' : 'Synonyms',
+                    label: isBn ? 'সমার্থক শব্দ' : 'Synonyms',
+                    sub: isBn ? '(Synonyms)' : '',
                     icon: '🔄',
-                    desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs',
-                    available: getCategoryCount('synonyms')
+                    desc: isBn ? 'অনুরূপ ও সমার্থক শব্দের MCQ' : 'Closest meaning synonym MCQs'
                   },
                   {
                     id: 'antonyms',
-                    label: isBn ? 'বিপরীত শব্দ (Antonyms)' : 'Antonyms',
+                    label: isBn ? 'বিপরীত শব্দ' : 'Antonyms',
+                    sub: isBn ? '(Antonyms)' : '',
                     icon: '⚡',
-                    desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs',
-                    available: getCategoryCount('antonyms')
+                    desc: isBn ? 'বিপরীতার্থক শব্দের MCQ' : 'Opposite meaning antonym MCQs'
                   },
                   {
                     id: 'english_meaning',
-                    label: isBn ? 'ইংরেজি অর্থ (Meaning in English)' : 'Meaning in English',
+                    label: isBn ? 'ইংরেজি অর্থ' : 'In English',
+                    sub: isBn ? '(Meaning)' : '',
                     icon: '📖',
-                    desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs',
-                    available: getCategoryCount('english_meaning')
+                    desc: isBn ? 'ইংরেজি সংজ্ঞা ও অর্থভিত্তিক MCQ' : 'English definition & contextual MCQs'
                   },
                   {
                     id: 'bangla_meaning',
-                    label: isBn ? 'বাংলা অর্থ (Meaning in Bangla)' : 'Meaning in Bangla',
+                    label: isBn ? 'বাংলা অর্থ' : 'In Bangla',
+                    sub: isBn ? '(Meaning)' : '',
                     icon: '🇧🇩',
-                    desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options',
-                    available: getCategoryCount('bangla_meaning')
+                    desc: isBn ? '৪টি বিকল্প বাংলা অপশনযুক্ত MCQ' : 'Bengali meaning MCQs with 4 options'
                   }
                 ].map((cat) => {
                   const isSelected = selectedCategories.includes(cat.id);
@@ -546,22 +545,27 @@ export default function HSCUnitsExplorer({
                     <button
                       key={cat.id}
                       onClick={() => toggleCategory(cat.id)}
-                      className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3 relative overflow-hidden group ${
+                      className={`p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border text-left transition-all duration-200 cursor-pointer flex flex-col justify-between relative overflow-hidden group ${
                         isSelected
-                          ? 'bg-gradient-to-br from-emerald-950/60 to-[#0e1624] border-emerald-500/80 shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-500/30'
+                          ? 'bg-gradient-to-br from-emerald-950/60 to-[#0e1624] border-emerald-500/80 shadow-md shadow-emerald-950/40 ring-1 ring-emerald-500/30'
                           : 'bg-[#0f1420] border-[#1f2738] text-slate-400 hover:bg-[#151c2b] hover:border-slate-600'
                       }`}
                     >
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="flex items-center gap-3">
-                          <span className="text-2xl shrink-0 p-2 rounded-xl bg-[#172030] border border-[#232f45]">
+                      <div className="flex items-start justify-between gap-1.5 sm:gap-3 w-full">
+                        <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                          <span className="text-base sm:text-2xl shrink-0 p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-[#172030] border border-[#232f45]">
                             {cat.icon}
                           </span>
-                          <div>
-                            <span className={`block text-sm sm:text-base font-bold ${isSelected ? 'text-emerald-300' : 'text-white'}`}>
+                          <div className="min-w-0">
+                            <span className={`block text-xs sm:text-sm md:text-base font-bold truncate ${isSelected ? 'text-emerald-300' : 'text-white'}`}>
                               {cat.label}
                             </span>
-                            <span className="block text-xs text-slate-400 mt-0.5 leading-snug">
+                            {cat.sub && (
+                              <span className="text-[10px] sm:text-xs font-medium text-slate-400 block truncate">
+                                {cat.sub}
+                              </span>
+                            )}
+                            <span className="hidden sm:block text-xs text-slate-400 mt-0.5 leading-snug">
                               {cat.desc}
                             </span>
                           </div>
@@ -569,7 +573,7 @@ export default function HSCUnitsExplorer({
 
                         {/* Checkbox Checkmark */}
                         <div
-                          className={`w-5 h-5 rounded-full border flex items-center justify-center text-xs shrink-0 transition-all ${
+                          className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full border flex items-center justify-center text-[10px] sm:text-xs shrink-0 transition-all ${
                             isSelected
                               ? 'bg-emerald-500 border-emerald-400 text-white font-black scale-110 shadow-md shadow-emerald-500/50'
                               : 'border-slate-600 bg-transparent'
@@ -577,20 +581,6 @@ export default function HSCUnitsExplorer({
                         >
                           {isSelected ? '✓' : ''}
                         </div>
-                      </div>
-
-                      {/* Available Questions Count Badge */}
-                      <div className="pt-2 border-t border-[#1a2334] flex items-center justify-between text-xs">
-                        <span className="text-slate-400 font-medium">
-                          {isBn ? 'উপলব্ধ প্রশ্ন:' : 'Available Questions:'}
-                        </span>
-                        <span className={`font-bold px-2 py-0.5 rounded-md ${
-                          cat.available > 0
-                            ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30'
-                            : 'bg-slate-800 text-slate-500'
-                        }`}>
-                          {cat.available} {isBn ? 'টি প্রশ্ন' : 'Questions'}
-                        </span>
                       </div>
                     </button>
                   );

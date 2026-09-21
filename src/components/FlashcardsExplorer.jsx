@@ -457,7 +457,7 @@ export default function FlashcardsExplorer({
                       className="text-[11px] sm:text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 shadow-sm flex items-center gap-1"
                     >
                       <BookOpen size={11} />
-                      <span className="truncate max-w-[180px] sm:max-w-none">{src}</span>
+                      <span className="break-words whitespace-normal">{src}</span>
                     </span>
                   ))}
                   {currentCard.isCrossReferenced && (
@@ -560,7 +560,7 @@ export default function FlashcardsExplorer({
               <div className="flex flex-col gap-2 border-b border-[#1e293b] pb-3">
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex items-center gap-2.5 min-w-0">
-                    <h3 className="text-xl sm:text-3xl font-black text-emerald-400 truncate">
+                    <h3 className="text-xl sm:text-3xl font-black text-emerald-400 break-words whitespace-normal">
                       {currentCard.word}
                     </h3>
                     {currentCard.partsOfSpeech && (
@@ -598,7 +598,7 @@ export default function FlashcardsExplorer({
                       className="text-[10px] font-bold text-cyan-300 bg-[#162033] border border-cyan-500/30 px-2 py-0.5 rounded-md shadow-sm flex items-center gap-1"
                     >
                       <BookOpen size={10} />
-                      <span className="truncate max-w-[200px] sm:max-w-none">{src}</span>
+                      <span className="break-words whitespace-normal">{src}</span>
                     </span>
                   ))}
                 </div>

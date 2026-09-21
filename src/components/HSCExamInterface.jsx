@@ -811,11 +811,6 @@ export default function HSCExamInterface({
                         🔥 Inter-Unit Link
                       </span>
                     )}
-                    {currentQ.partsOfSpeech && (
-                      <span className="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-[#161e2e] text-slate-300 border border-[#243048]">
-                        {currentQ.partsOfSpeech}
-                      </span>
-                    )}
                   </div>
 
                   {/* Multi-Source Unit Badges Under Word */}
@@ -844,7 +839,9 @@ export default function HSCExamInterface({
 
                 {/* Question Text */}
                 <p className="text-sm sm:text-base text-slate-200 font-medium leading-relaxed">
-                  {currentQ.questionText || `Choose the correct meaning/synonym of "${currentQ.word}":`}
+                  {isBn
+                    ? (currentQ.questionBn || currentQ.question || `"${currentQ.word}" শব্দটির সঠিক উত্তরটি বেছে নিন:`)
+                    : (currentQ.question || currentQ.questionText || `Choose the correct answer for "${currentQ.word}":`)}
                 </p>
 
                 {/* Bengali Meaning / Hint Area */}
@@ -877,7 +874,7 @@ export default function HSCExamInterface({
                 )}
               </div>
 
-              {/* 4. Options List with Emerald Pulse & Rose Shake Animations */}
+              {/* 4. Options List with Instant Smooth Transition */}
               <div className="space-y-3">
                 {(shuffledOptions && shuffledOptions.length > 0
                   ? shuffledOptions
@@ -892,10 +889,10 @@ export default function HSCExamInterface({
                   if (isAnswered) {
                     if (isOptionCorrect) {
                       optionClasses =
-                        'bg-emerald-950/90 border-emerald-500 text-emerald-100 font-bold shadow-[0_0_25px_rgba(16,185,129,0.35)] ring-2 ring-emerald-400/60 animate-mcq-correct';
+                        'bg-emerald-950/90 border-emerald-500 text-emerald-100 font-bold shadow-[0_0_25px_rgba(16,185,129,0.35)] ring-2 ring-emerald-400/60';
                     } else if (isOptionSelected) {
                       optionClasses =
-                        'bg-rose-950/90 border-rose-500 text-rose-100 shadow-[0_0_25px_rgba(244,63,94,0.35)] ring-2 ring-rose-500/60 font-semibold animate-mcq-wrong';
+                        'bg-rose-950/90 border-rose-500 text-rose-100 shadow-[0_0_25px_rgba(244,63,94,0.35)] ring-2 ring-rose-500/60 font-semibold';
                     } else {
                       optionClasses =
                         'bg-[#090d15] border-[#182030] text-slate-500 opacity-40';

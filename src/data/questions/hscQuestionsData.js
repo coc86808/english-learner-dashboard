@@ -29104,25 +29104,64 @@ export const hscQuestionsList = buildQuestionsDatabase();
 export function smartInterleaveQuestions(rawQuestions = []) {
   if (!rawQuestions || rawQuestions.length <= 1) return rawQuestions;
 
-  const wordBuckets = {};
+  // 1. Group questions into category buckets
+  const categoryBuckets = {
+    synonyms: [],
+    antonyms: [],
+    english_meaning: [],
+    bangla_meaning: []
+  };
+
+  const otherBucket = [];
+
   rawQuestions.forEach((q) => {
-    const key = q.vocabId || q.word;
-    if (!wordBuckets[key]) wordBuckets[key] = [];
-    wordBuckets[key].push(q);
+    if (!q) return;
+    const cat = q.category;
+    if (categoryBuckets[cat]) {
+      categoryBuckets[cat].push(q);
+    } else {
+      otherBucket.push(q);
+    }
   });
 
-  const keys = Object.keys(wordBuckets);
-  const shuffledKeys = [...keys].sort(() => Math.random() - 0.5);
+  // 2. Fisher-Yates shuffle helper
+  const shuffle = (arr) => {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  };
 
+  // Get categories that actually have questions
+  const activeCategories = Object.keys(categoryBuckets).filter(
+    (k) => categoryBuckets[k].length > 0
+  );
+
+  if (otherBucket.length > 0) {
+    categoryBuckets['other'] = shuffle(otherBucket);
+    activeCategories.push('other');
+  }
+
+  // Shuffle questions inside each category bucket
+  activeCategories.forEach((cat) => {
+    categoryBuckets[cat] = shuffle(categoryBuckets[cat]);
+  });
+
+  // Randomize category sequence so exams don't always start with the exact same category
+  const orderedCategories = shuffle(activeCategories);
+
+  // 3. Round-robin interleave across categories (Equal 25% distribution)
   const interleaved = [];
   let hasMore = true;
   let round = 0;
 
   while (hasMore) {
     hasMore = false;
-    for (const key of shuffledKeys) {
-      if (wordBuckets[key].length > round) {
-        interleaved.push(wordBuckets[key][round]);
+    for (const cat of orderedCategories) {
+      if (categoryBuckets[cat] && categoryBuckets[cat].length > round) {
+        interleaved.push(categoryBuckets[cat][round]);
         hasMore = true;
       }
     }
